@@ -8,6 +8,12 @@
 
 matanki.saito@gmail.com
 
+# コミニティチャンネル
+
+Discordへご参加ください！
+
+https://discord.gg/N3JGCYyh5A
+
 # 問題の報告方法
 
 ゲームの翻訳に問題を発見した場合は次に示す通り起票をお願いいたします。
