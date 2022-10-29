@@ -54,7 +54,7 @@ jobs:
           git config --global url."https://${{ secrets.GITHUB_TOKEN }}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
           git add -A
           git commit -m "Save/Update files [ci skip]"
-          git push origin HEAD:master
+          git push origin HEAD:main
         shell: cmd
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
