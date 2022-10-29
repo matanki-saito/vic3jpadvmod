@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  industrial_accident_events.1.t:1 "縫製工場における大規模火災"
  industrial_accident_events.1.d:1 "[SCOPE.sState('triangle_shirtwaist_factory_state').GetName]で発生した深刻な火災により、複数の労働者が死亡した。危険な労働環境と施錠された非常口が事態を悪化させたと思われる。火事が起きた工場の所有者は、[SCOPE.gsInterestGroup('guilty_factory_owner_ig').GetName]の主力メンバーである[SCOPE.sCharacter('guilty_factory_owner').GetFullName]であることが明らかになっている。"
  industrial_accident_events.1.f:1 "消火活動に当たった男性の一人は、事情聴取に対し「部屋の中は黒こげになったものはすべて機器類だと思っていましたが、何やら柔らかいものを踏みました」と証言している。"

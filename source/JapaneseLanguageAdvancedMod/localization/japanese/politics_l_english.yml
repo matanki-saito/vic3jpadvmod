@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  IG_TRAIT_CONDITIONS_TITLE:1 "#title コンディション：#!"
  IG_TRAIT_APPROVAL_MIN:1 "[InterestGroup.GetName]の[concept_approval]は少なくとも #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MIN_RATING$#! (#variable $MIN_VALUE|0+=$#!)#!#! 以上です"
  IG_TRAIT_APPROVAL_MAX:1 "[InterestGroup.GetName]の[concept_approval]は #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN #variable $MAX_RATING$#! (#variable $MAX_VALUE|0+=$#!)#!#! もしくはそれ以下です"

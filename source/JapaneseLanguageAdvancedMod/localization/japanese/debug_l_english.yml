@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  POP_DEBUG_INFO:1 "#tooltip_header デバッグ情報#!\n$TOOLTIP_DELIMITER$\n#bold ID:#! #variable $ID$#!"
  SCOPE_DEBUG_BUILDING:1 "施設 $NAME$ ($ID$)"
  SCOPE_DEBUG_CHARACTER:1 "キャラクター $NAME$ ($ID$)"

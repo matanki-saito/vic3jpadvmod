@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  HOVER_STATE_NAME:1 "[STATE.GetCountry.GetFlagTextIcon] #variable [STATE.GetName]#! $IS_CAPITAL_STATE$"
  HOVER_COUNTRY_NAME:1 "#v [STATE.GetCountry.GetName]#!"
  SPLIT_STATE_REGION:1 "[concept_state_region]: [State.GetStateRegion.GetName]\n"

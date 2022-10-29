@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  SETTING_AUTOSAVE_TO_CLOUD:1 "クラウドにオートセーブ"
  SETTING_SAVE_FILE_FORMAT:1 "デフォルトセーブ形式"
  SETTING_SAVE_FILE_FORMAT_TOOLTIP:1 "このオプションはアイアンマン、クラウド、デバッグモードで上書きされます"

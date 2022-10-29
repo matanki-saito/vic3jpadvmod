@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  ALREADY_STARTED_DIPLO_PLAY:1 "既に有効な[concept_diplomatic_play]が進行中です！"
  WAR_CANNOT_YIELD_IN_DIPLOMATIC_PLAY:1 "この[concept_diplomatic_play]は戦争へと発展しました"
  ACTOR_CANNOT_YIELD_IN_DIPLOMATIC_PLAY:1 "[COUNTRY.GetName]は、この[concept_diplomatic_play]を許容できません"

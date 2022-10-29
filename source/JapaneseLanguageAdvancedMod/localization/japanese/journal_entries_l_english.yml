@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  journal_entry_goal_progress_integer:1 "[JournalEntry.GetGoalProgressValue|0] / [JournalEntry.GetGoalAddValue|0]"
  journal_entry_goal_progress_money:1 "@money![JournalEntry.GetGoalProgressValue|D] / @money![JournalEntry.GetGoalAddValue|D]"
  je_secret_police_research_identification:1 "秘密警察のために$identification_documents$を研究"

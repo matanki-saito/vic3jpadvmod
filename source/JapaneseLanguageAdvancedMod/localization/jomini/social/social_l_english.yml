@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  CREATE_SOCIAL_PROFILE_WINDOW_TITLE:1 "ソーシャルプロフィール作成"
  CREATE_SOCIAL_PROFILE_WINDOW_DESCRIPTION:1 "ソーシャルサービスを使用するにはソーシャルプロフィールを作成する必要があります。ソーシャルプロフィールのための名前を入力してください。"
  FRIEND_LIST_TITLE:1 "フレンド"

@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  SET_CHARACTER_EFFECT:1 "#V $CHARACTER|v$#!が#V $COMMAND$#!統括部隊のキャラクターになります"
  SET_CHARACTER_NONE_EFFECT:1 "#V $COMMAND$のキャラクターが割り当てられていません"
  ADD_TREASURY_EFFECT_POSITIVE:1 "この国が@money!$VALUE|+=$を得ます"

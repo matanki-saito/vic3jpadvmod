@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  ai_secret_goal_befriend:1 "友好"
  ai_secret_goal_befriend_desc:1 "[TARGET_COUNTRY.GetName]を助力します"
  ai_secret_goal_reconcile:1 "調停"

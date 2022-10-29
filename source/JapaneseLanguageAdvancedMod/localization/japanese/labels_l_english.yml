@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  label_flat:1 "平坦"
  label_flat_desc:1 "$label_flat$ [concept_terrain]"
  label_elevated:1 "隆起"

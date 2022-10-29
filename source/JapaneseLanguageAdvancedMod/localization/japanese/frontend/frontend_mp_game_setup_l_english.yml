@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  FRONTEND_MP_GAME_SETUP_HOST_HEADER:1 "マルチプレイゲームをホストする"
  FRONTEND_MP_GAME_SETUP_HOST_NEW_GAME:1 "ニューゲーム"
  FRONTEND_MP_GAME_SETUP_HOST_SAVED_GAME:1 "セーブしたゲームをロードする"

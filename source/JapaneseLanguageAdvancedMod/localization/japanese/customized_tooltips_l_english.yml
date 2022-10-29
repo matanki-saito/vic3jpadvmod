@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  DATA_BUILDING_NAME_FORMAT:1 "#tooltippable_name #tooltip:$TAG$,DATA_BUILDING_NAME_TOOLTIP,BuildingTooltip $NAME$#!#!"
  DATA_BUILDING_TYPE_NAME_FORMAT:1 "#tooltippable_name #tooltip:$TAG$,DATA_BUILDING_TYPE_NAME_TOOLTIP,BuildingTypeTooltip $NAME$#!#!"
  DATA_CHARACTER_NAME_FORMAT:1 "#tooltippable_name #tooltip:$TAG$,DATA_CHARACTER_NAME_TOOLTIP,CharacterTooltip $NAME$#!#!"

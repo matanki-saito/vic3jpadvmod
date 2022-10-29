@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  TRIGGER_LINE_ACTIVE_PASSED:1 "@green_checkmark_box! $TEXT$"
  TRIGGER_LINE_ACTIVE_FAILED:1 "@simple_box! $TEXT$"
  TRIGGER_LINE_ACTIVE_UNDEFINED:1 "  •  $TEXT$"

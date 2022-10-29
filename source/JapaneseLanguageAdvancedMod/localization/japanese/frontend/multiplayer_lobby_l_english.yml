@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  MULTIPLAYER_LOBBY_CHOOSE_RANDOM_CHARACTER:1 "ランダムな国"
  MULTIPLAYER_LOBBY_PLAY_OBSERVER:1 "[Concept('concept_observer_mode','$concept_observer$')]としてプレイ"
  MULTIPLAYER_LOBBY_PLAY_RANDOM_COUNTRY:1 "無作為の[concept_country]としてプレイ"

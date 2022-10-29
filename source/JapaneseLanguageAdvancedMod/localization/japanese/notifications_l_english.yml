@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  notification_tooltip_footer:1 "\n\n#instruction 右クリックで却下#!"
  proposal_tooltip_footer:1 "\n\n#instruction 右クリックで拒否#!"
  zoom_to_tooltip_footer:1 "\n\n#instruction 右クリックで地点にズーム#!"

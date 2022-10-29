@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  GAME_RULES_PRESET_AI_BEHAVIOR:1 "AI挙動: [GameRuleSetting.GetName]"
  rule_ai_behavior:1 "プレイヤーに対するAI挙動"
  setting_lenient_ai_behavior:1 "#high 寛大#!"

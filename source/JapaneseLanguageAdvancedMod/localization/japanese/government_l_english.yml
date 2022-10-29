@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  gov_absolute_kingdom:1 "絶対君主制"
  gov_absolute_kingdom_desc:1 "[Concept('concept_ruler','$RULER_TITLE_KING$')]または[Concept('concept_ruler','$RULER_TITLE_QUEEN$')]が完全なる権力を行使する[concept_government]体制です。"
  gov_kingdom:1 "君主制"

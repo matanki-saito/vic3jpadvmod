@@ -1,4 +1,4 @@
-l_japanese:
+﻿l_japanese:
  ALERT_TOOLTIP_FORMAT:1 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction クリックで[Alert.GetAction]を開く#!"
  EXPANDABLE_IMPORTANT_ACTION_ITEM:1 "[Alert.GetToolTip]$notification_tooltip_footer$"
  alert_country_default_name:1 "[concept_default]中"
