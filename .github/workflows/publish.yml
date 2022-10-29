@@ -41,7 +41,7 @@ jobs:
 
       - name: Pack mod
         run: |
-          python main.py
+          python mod/main.py
         env:
           PARATRANZ_SECRET: ${{ secrets.PARATRANZ_SECRET }}
           RUN_NUMBER: ${{ github.run_number }}
