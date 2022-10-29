@@ -16,6 +16,14 @@ Discordへご参加ください！
 
 https://discord.gg/N3JGCYyh5A
 
+## Steam mod
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=2881605374
+
+## 翻訳作業場所（校正者のみ）
+
+https://paratranz.cn/projects/5456
+
 ## 問題の報告方法
 
 ゲームの翻訳に問題を発見した場合は次に示す通り起票をお願いいたします。
