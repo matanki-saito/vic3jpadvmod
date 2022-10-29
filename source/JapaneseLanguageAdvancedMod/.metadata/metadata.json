@@ -1,0 +1,12 @@
+{
+  "name" : "Japanese Language Advanced Mod",
+  "id" : "",
+  "version" : "0.6.0",
+  "supported_game_version" : "1.0.*",
+  "short_description" : "",
+  "tags" : [],
+  "relationships" : [],
+  "game_custom_data" : {
+    "multiplayer_synchronized" : true
+  }
+}

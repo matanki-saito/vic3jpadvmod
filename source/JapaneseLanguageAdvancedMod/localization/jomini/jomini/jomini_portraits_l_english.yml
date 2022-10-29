@@ -1,0 +1,4 @@
+l_japanese: SETTING_ANIMATED_PORTRAITS:1 "キャラクターのアニメーション"
+ SETTING_ANIMATED_PORTRAITS_TOOLTIP:1 "#T $SETTING_ANIMATED_PORTRAITS$\n#!主要キャラクターをアニメーションさせるかどうかを決定します。\n\nオフにするとパフォーマンスが向上する場合があります。"
+ SETTING_PORTRAITS_SSAO:1 "キャラクターSSAO"
+ SETTING_PORTRAITS_SSAO_TOOLTIP:1 "#T $SETTING_PORTRAITS_SSAO$\n#!スクリーンスペース・アンビエント・オクルージョンを肖像に適用するかどうかを決定します。\n\nオフにするとパフォーマンスが向上する場合があります。"
