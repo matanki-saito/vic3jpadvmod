@@ -1,4 +1,5 @@
-l_japanese: easy_difficulty:1 "難易度：イージー"
+l_japanese:
+ easy_difficulty:1 "難易度：イージー"
  very_easy_difficulty:1 "難易度：ベリーイージー"
  very_easy_difficulty_ai:1 "難易度：ベリーイージー"
  native_conscription_1:1 "先住民武装勢力"

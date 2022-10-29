@@ -1,4 +1,5 @@
-l_japanese: building_food_industry:1 "食品産業"
+l_japanese:
+ building_food_industry:1 "食品産業"
  building_food_industry_lens_option:1 "$building_food_industry$を拡張"
  building_textile_mills:1 "織物工場"
  building_textile_mills_lens_option:1 "$building_textile_mills$を拡張"

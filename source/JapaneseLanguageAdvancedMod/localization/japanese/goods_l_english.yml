@@ -1,4 +1,5 @@
-l_japanese: ammunition:1 "弾薬"
+l_japanese:
+ ammunition:1 "弾薬"
  small_arms:1 "小火器"
  radios:1 "無線"
  tanks:1 "戦車"

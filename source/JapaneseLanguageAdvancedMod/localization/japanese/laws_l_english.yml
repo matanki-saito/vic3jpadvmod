@@ -1,4 +1,5 @@
-l_japanese: ideology_moderate:1 "穏健派"
+l_japanese:
+ ideology_moderate:1 "穏健派"
  ideology_moderate_desc:1 "#lore このリーダーは、自分の利益団体の中では穏健派とされ、特に独自のイデオロギーは持っていません。#!"
  ideology_traditionalist:1 "伝統主義者"
  ideology_traditionalist_desc:1 "#lore このリーダーは、伝統的な習慣を自然の法則の延長線上にあるものと考え、それを維持することを信条としています。 #!"

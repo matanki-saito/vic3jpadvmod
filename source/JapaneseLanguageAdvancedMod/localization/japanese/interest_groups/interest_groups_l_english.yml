@@ -1,4 +1,5 @@
-l_japanese: ig_rural_folk:1 "農村民"
+l_japanese:
+ ig_rural_folk:1 "農村民"
  ig_rural_folk_only_icon:1 "@rural_folk!"
  ig_rural_folk_desc:1 "田舎に住む人々の政治的関心は、主に生業としての農業に沿ったものとなります。"
  ig_devout:1 "敬虔"

@@ -1,4 +1,5 @@
-l_japanese: TICKTASK_NAME:1 "#v $NAME$#!"
+l_japanese:
+ TICKTASK_NAME:1 "#v $NAME$#!"
  TICKTASK_RATE_TICK:1 "時間経過ごと"
  TICKTASK_RATE_DAY:1 "一日一回"
  TICKTASK_RATE_WEEK:1 "週一回"

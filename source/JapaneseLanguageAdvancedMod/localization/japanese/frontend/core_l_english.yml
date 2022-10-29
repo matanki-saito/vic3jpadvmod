@@ -1,4 +1,5 @@
-l_japanese: MAIN_MENU:1 "メインメニュー"
+l_japanese:
+ MAIN_MENU:1 "メインメニュー"
  LOAD_GAME:1 "ゲームをロード"
  SAVE_GAME:1 "ゲームをセーブ"
  DELETE_GAME:1 "ゲームを削除"

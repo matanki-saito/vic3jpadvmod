@@ -1,4 +1,5 @@
-l_japanese: institution_colonial_affairs:1 "植民地関係"
+l_japanese:
+ institution_colonial_affairs:1 "植民地関係"
  institution_colonial_affairs_desc:1 "海外にある植民地の所有物を管理統括するオフィスです。"
  institution_schools:1 "教育"
  institution_schools_desc:1 "人民の識字率を成長させるための国家教育システムです。"

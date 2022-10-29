@@ -1,4 +1,5 @@
-l_japanese: technology_events.1.t:1 "車両通行規制"
+l_japanese:
+ technology_events.1.t:1 "車両通行規制"
  technology_events.1.d:1 "事故が多発しているため、自動車の通行規制を求める声が上がっている。 "
  technology_events.1.f:1 "報告は以下の通り。[SCOPE.GetRootScope.GetCountry.GetCustom('automobile_accident_type')]「馬よりも速くて体重は二倍だ。これで何が危険なのかわからないと言うのなら、これ以上何も言うことはないね」"
  technology_events.1.a:1 "法律の厳格化で通りが安全になる。"

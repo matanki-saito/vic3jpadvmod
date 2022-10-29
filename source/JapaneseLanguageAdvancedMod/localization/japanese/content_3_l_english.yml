@@ -1,4 +1,5 @@
-l_japanese: generic_laws.1.t:1 "奮起を促す演説が大衆を魅了"
+l_japanese:
+ generic_laws.1.t:1 "奮起を促す演説が大衆を魅了"
  generic_laws.1.d:1 "本日午後、[SCOPE.gsInterestGroup('orator_ig_scope').GetName]のリーダー[SCOPE.sCharacter('orator_ig_leader_scope').GetFullName]が、[SCOPE.sLaw('current_law_scope').GetName]制定を熱烈に訴える演説を行った。"
  generic_laws.1.f:1 "[SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName]の大広場で公の場に姿を見せた[SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting]による力強いレトリックは、最も敵対する[SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis]政敵すらも感銘を受けるほどだった。演説は一部抜粋され、すでに[ROOT.GetCountry.GetNameNoFormatting]全土に流布しており、紛糾中の議論に油を注ぐ様相を呈している。"
  generic_laws.1.a:1 "これによって改革の負担がかなり緩和されるだろう。"

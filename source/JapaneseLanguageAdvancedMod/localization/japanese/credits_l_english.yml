@@ -1,4 +1,5 @@
-l_japanese: HEADER_Victoria_3:1 "#credits_title Victoria 3#!"
+l_japanese:
+ HEADER_Victoria_3:1 "#credits_title Victoria 3#!"
  HEADER_PROJECT_LEADS:1 "#credits_header プロジェクトリーダー#!"
  TITLE_PROJECT_LEAD_GAME_DIRECTOR:1 "#credits_subheader ゲームディレクター#!"
  TITLE_PROJECT_LEAD_ART_DIRECTOR:1 "#credits_subheader アートディレクター#!"

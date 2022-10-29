@@ -1,4 +1,5 @@
-l_japanese: GAME_RULES_PRESET_AI_BEHAVIOR:1 "AI挙動: [GameRuleSetting.GetName]"
+l_japanese:
+ GAME_RULES_PRESET_AI_BEHAVIOR:1 "AI挙動: [GameRuleSetting.GetName]"
  rule_ai_behavior:1 "プレイヤーに対するAI挙動"
  setting_lenient_ai_behavior:1 "#high 寛大#!"
  setting_lenient_ai_behavior_desc:1 "プレイヤー国に対するAI国の態度はより友好的で、[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]における対応もより寛容なものになります"

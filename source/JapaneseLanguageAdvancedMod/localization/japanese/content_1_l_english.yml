@@ -1,4 +1,5 @@
-l_japanese: victoria.1.t:1 "ヴィクトリア女王の戴冠式"
+l_japanese:
+ victoria.1.t:1 "ヴィクトリア女王の戴冠式"
  victoria.1.d:1 "国王が死んだ。彼の若き姪[SCOPE.sCharacter('queen_victoria').GetFirstName]の即位により、王国は歓びに包まれ、ハノーファーの王冠はイギリスの支配から外れます。彼女が末永く統治することを願おう！"
  victoria.1.d2:1 "国王が死んだ。彼の若き姪[SCOPE.sCharacter('queen_victoria').GetFirstName]の即位により、王国は歓びに包まれた。彼女が末永く統治することを願おう！"
  victoria.1.f:1 "「私がこの地位に就いたのは神意によるもの。祖国への責務を果たすため、全力を尽くそう」"

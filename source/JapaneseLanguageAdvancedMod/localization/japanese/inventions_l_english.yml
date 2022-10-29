@@ -1,4 +1,5 @@
-l_japanese: admiralty:1 "海軍本部"
+l_japanese:
+ admiralty:1 "海軍本部"
  admiralty_desc:1 "海軍本部では厳格な指揮系統を伴う複雑な階級制度を採用しており、それが海軍の作業効率向上に貢献しています。"
  anaesthetics:1 "麻酔薬"
  anaesthetics_desc:1 "麻酔薬は、手術中の患者が感じるメスや医療スタッフによる体内への刺激といった不快感を和らげるために用いる鎮痛剤または痛み止めです。"

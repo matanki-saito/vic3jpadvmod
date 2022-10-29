@@ -1,4 +1,5 @@
-l_japanese: ig_trait_noblesse_oblige:1 "ノブレス・オブリージュ"
+l_japanese:
+ ig_trait_noblesse_oblige:1 "ノブレス・オブリージュ"
  ig_trait_noblesse_oblige_desc:1 "庶民よりも優れた存在である我々には、市井の人々の世話をする義務があります。彼ら自身による組織化の試みは自己破壊的であり、失敗するのは明らかです。"
  ig_trait_family_ties:1 "家族の絆"
  ig_trait_family_ties_desc:1 "時代が移り変わっても、我々は良い婚姻関係の価値を忘れてはいません。我らの繋がりは同盟や政府が超えてきた国境よりも古く、そして彼らよりも長続きするでしょう。"

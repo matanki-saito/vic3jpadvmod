@@ -1,4 +1,5 @@
-l_japanese: PRESTIGE_FROM_COUNTRY_GDP:1 "[concept_gdp]から#variable $VALUE|+=$#!"
+l_japanese:
+ PRESTIGE_FROM_COUNTRY_GDP:1 "[concept_gdp]から#variable $VALUE|+=$#!"
  PRESTIGE_FROM_ARMY_POWER_PROJECTION:1 "陸軍[concept_power_projection]から#variable $VALUE|+=$#!"
  PRESTIGE_FROM_NAVY_POWER_PROJECTION:1 "海軍[concept_power_projection]から#variable $VALUE|+=$#!"
  PRESTIGE_FROM_COUNTRY_TIER:1 "$TIER|v$の[concept_country_tier]から#variable $VALUE|+=$#!"

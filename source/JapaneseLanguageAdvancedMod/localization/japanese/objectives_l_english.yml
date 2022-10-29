@@ -1,4 +1,5 @@
-l_japanese: objective_tutorial:1 "ゲームを学習する"
+l_japanese:
+ objective_tutorial:1 "ゲームを学習する"
  objective_tutorial_desc:1 "キャンペーンをプレイしながらゲームの仕組みやプレイ方法について学んでいきましょう。"
  objective_tutorial_idle_header:1 "探検しながらゲームをプレイしましょう！"
  objective_tutorial_idle_hint:1 "今からもっとチャレンジが登場します"

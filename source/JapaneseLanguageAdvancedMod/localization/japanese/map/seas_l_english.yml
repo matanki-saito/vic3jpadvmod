@@ -1,4 +1,5 @@
-l_japanese: STATE_BALTIC_SEA:1 "バルト海"
+l_japanese:
+ STATE_BALTIC_SEA:1 "バルト海"
  STATE_DANISH_STRAITS:1 "デンマーク海峡"
  STATE_NORWEGIAN_SEA:1 "ノルウェー海"
  STATE_LABRADOR_SEA:1 "ラブラドール海"

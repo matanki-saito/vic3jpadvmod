@@ -1,1 +1,2 @@
-l_japanese: new_line:1 "\n"
+l_japanese:
+ new_line:1 "\n"

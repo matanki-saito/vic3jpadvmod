@@ -1,4 +1,5 @@
-l_japanese: JOMINI_MSGRDK_SIGNIN_FAILED_TITLE:1 "問題が発生しました"
+l_japanese:
+ JOMINI_MSGRDK_SIGNIN_FAILED_TITLE:1 "問題が発生しました"
  JOMINI_MSGRDK_SIGNIN_FAILED_TEXT:1 "Microsoftアカウントにサインインできませんでした。一部のゲーム機能は使用できない場合があります。"
  JOMINI_MSGRDK_NO_PERMISSION_TITLE:1 "アカウント許可"
  JOMINI_MSGRDK_NO_UGC_TEXT:1 "ユーザー生成コンテンツにアクセスする権限がありません。Modは無効になります"

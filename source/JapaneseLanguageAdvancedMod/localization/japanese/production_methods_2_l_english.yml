@@ -1,4 +1,5 @@
-l_japanese: pm_primary:1 "一次"
+l_japanese:
+ pm_primary:1 "一次"
  pmg_secondary_building_rye_farm:1 "二次"
  pmg_secondary_building_wheat_farm:1 "二次"
  pmg_secondary_building_rice_farm:1 "二次"

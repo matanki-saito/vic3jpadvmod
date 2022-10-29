@@ -1,1 +1,2 @@
-l_japanese: JOMINI_DEBUG_FORMAT:1 "#debug $VALUE$#!"
+l_japanese:
+ JOMINI_DEBUG_FORMAT:1 "#debug $VALUE$#!"

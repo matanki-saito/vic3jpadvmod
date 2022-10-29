@@ -1,4 +1,5 @@
-l_japanese: TAB:1 ""
+l_japanese:
+ TAB:1 ""
  DASH_WITH_SPACING:1 " - "
  POP_WORKPLACE_DAY_LABOURER:1 "日雇い労働者"
  POP_WORKPLACE_UNEMPLOYED:1 "[concept_unemployed]"

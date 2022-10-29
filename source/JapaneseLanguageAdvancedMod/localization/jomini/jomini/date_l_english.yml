@@ -1,3 +1,4 @@
-l_japanese: DATE_AD_YEAR:1 "$YEAR$ CE"
+l_japanese:
+ DATE_AD_YEAR:1 "$YEAR$ CE"
  DATE_BC_YEAR:1 "$YEAR$ BCE"
  DATE_FORMATTING_LONG:1 "$YEAR$年$MONTH$$DAY$日"

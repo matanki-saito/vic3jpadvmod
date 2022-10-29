@@ -1,4 +1,5 @@
-l_japanese: HEADING_ENCYCLOPEDIA:1 "ビッキーペディア"
+l_japanese:
+ HEADING_ENCYCLOPEDIA:1 "ビッキーペディア"
  ENCYCLOPEDIA_PAGE_GAME_CONCEPTS:1 "ゲームコンセプト"
  ENCYCLOPEDIA_PAGE_TUTORIAL_LESSONS:1 "チュートリアルレッスン"
  TOOLTIP_CLOSE_ENCYCLOPEDIA:1 "エンサイクロペディアを閉じる"

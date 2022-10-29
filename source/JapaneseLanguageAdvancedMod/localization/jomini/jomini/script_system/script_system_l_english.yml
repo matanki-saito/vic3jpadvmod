@@ -1,4 +1,5 @@
-l_japanese: JOMINI_GREATER_THAN:1 "以上"
+l_japanese:
+ JOMINI_GREATER_THAN:1 "以上"
  JOMINI_GREATER_EQ_THAN:1 "と等しいまたはそれ以上"
  JOMINI_LESS_THAN:1 "未満"
  JOMINI_LESS_EQ_THAN:1 "と等しいまたはそれ未満"

@@ -1,4 +1,5 @@
-l_japanese: state_trait_swedish_iron_ore:1 "スウェーデンの鉄鉱石鉱床"
+l_japanese:
+ state_trait_swedish_iron_ore:1 "スウェーデンの鉄鉱石鉱床"
  state_trait_sicilian_sulfur_mines:1 "シチリアの硫黄鉱床"
  state_trait_american_chestnuts:1 "アメリカグリの森"
  state_trait_whales:1 "クジラ"

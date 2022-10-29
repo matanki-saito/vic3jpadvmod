@@ -1,4 +1,5 @@
-l_japanese: PARTY_FULL_NAME:1 "$NAME$ ([concept_party])"
+l_japanese:
+ PARTY_FULL_NAME:1 "$NAME$ ([concept_party])"
  party_bolsheviks:1 "ボリシェビキ党"
  party_communist:1 "共産党"
  party_liberal:1 "自由党"

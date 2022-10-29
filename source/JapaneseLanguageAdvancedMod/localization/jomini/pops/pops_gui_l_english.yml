@@ -1,4 +1,5 @@
-l_japanese: CREATE_POPS_ACCOUNT:1 "Paradoxアカウントを作成"
+l_japanese:
+ CREATE_POPS_ACCOUNT:1 "Paradoxアカウントを作成"
  POPS_LOGIN:1 "Paradoxアカウントにログイン"
  POPS_FORGOT_PASSWORD:1 "パスワードを忘れた"
  PDX_USERNAME:1 "Paradoxユーザー名"

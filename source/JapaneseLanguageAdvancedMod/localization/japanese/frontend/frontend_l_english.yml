@@ -1,4 +1,5 @@
-l_japanese: PLAYED_PAST:1 "$WHEN$ 前"
+l_japanese:
+ PLAYED_PAST:1 "$WHEN$ 前"
  PLAYED_TODAY:1 "今日"
  NEW_GAME:1 "ニューゲーム"
  LOAD:1 "ロード"

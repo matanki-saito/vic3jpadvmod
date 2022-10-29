@@ -1,4 +1,5 @@
-l_japanese: GAME_RULES:1 "ゲームルール"
+l_japanese:
+ GAME_RULES:1 "ゲームルール"
  GAME_RULES_HEADER:1 "ゲームルール"
  IRONMAN_LABEL:1 "アイアンマン"
  ENABLE_IRONMAN:1 "有効"

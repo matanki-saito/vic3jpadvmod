@@ -1,4 +1,5 @@
-l_japanese: SETTINGS_PAGE_GRAPHICS:1 "グラフィック"
+l_japanese:
+ SETTINGS_PAGE_GRAPHICS:1 "グラフィック"
  SETTINGS_PAGE_GAME:1 "ゲーム"
  SETTINGS_PAGE_SYSTEM:1 "システム"
  SETTINGS_PAGE_CONTROLS:1 "コントロール"

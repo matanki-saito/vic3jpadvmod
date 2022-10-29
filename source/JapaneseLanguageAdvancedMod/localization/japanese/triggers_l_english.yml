@@ -1,4 +1,5 @@
-l_japanese: ANY_TRIGGER_FILTER_TEXT:1 "#tooltippable #tooltip:[GetRawTextTooltipTag('$FILTER$')] 資格あり#!#! "
+l_japanese:
+ ANY_TRIGGER_FILTER_TEXT:1 "#tooltippable #tooltip:[GetRawTextTooltipTag('$FILTER$')] 資格あり#!#! "
  TRIGGER_PASSED:1 "@green_checkmark_box! $TEXT$"
  TRIGGER_POTENTIAL:1 "@simple_box! $TEXT$"
  TRIGGER_FAILED:1 "@red_cross! $TEXT$"

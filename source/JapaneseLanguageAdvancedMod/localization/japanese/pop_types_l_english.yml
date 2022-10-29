@@ -1,4 +1,5 @@
-l_japanese: aristocrats:1 "@aristocrats! $aristocrats_no_icon$"
+l_japanese:
+ aristocrats:1 "@aristocrats! $aristocrats_no_icon$"
  aristocrats_only_icon:1 "@aristocrats!"
  aristocrats_no_icon:1 "貴族"
  aristocrats_desc:1 "裕福な土地所有者で、古い人脈を持つ資産家。農場やプランテーションの所有者として、利益の一部を[concept_investment_pool]に拠出している。彼らの政治的利益は土地所有者として代表される。"

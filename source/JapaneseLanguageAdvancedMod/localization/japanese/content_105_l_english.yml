@@ -1,4 +1,5 @@
-l_japanese: pm_events.1.t:1 "危険な装備"
+l_japanese:
+ pm_events.1.t:1 "危険な装備"
  pm_events.1.d:1 "[SCOPE.sState('industrialized_pm_state').GetName]にある [SCOPE.sBuilding('industrialized_pm_building').GetName]では、機械化の進展と安全規制の不備により、職場での労働災害が増加しています。"
  pm_events.1.f:1 "事故はいつだってつきものだが、以前は対応する時間があったように思う。今回は違う。私は彼を引き離そうと腕をつかんだが、かろうじて手首をつかんだところで、そこにあったのは腕だけだった。"
  pm_events.1.a:1 "スタッフがこの新しい機械に慣れるまで、生産を遅らせる。"

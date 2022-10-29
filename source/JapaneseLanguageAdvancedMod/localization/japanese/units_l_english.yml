@@ -1,4 +1,5 @@
-l_japanese: flotilla_prefix_hms_sv:1 "HMS"
+l_japanese:
+ flotilla_prefix_hms_sv:1 "HMS"
  flotilla_prefix_uss:1 "USS"
  flotilla_prefix_sms:1 "SMS"
  flotilla_prefix_css:1 "CSS"

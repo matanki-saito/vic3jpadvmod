@@ -1,4 +1,5 @@
-l_japanese: LOU:1 "ルイジアナ"
+l_japanese:
+ LOU:1 "ルイジアナ"
  LOU_ADJ:1 "ルイジアナ系"
  dyn_c_louisiana:1 "$LOU$"
  dyn_c_new_france:1 "ヌーベルフランス"

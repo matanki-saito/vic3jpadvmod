@@ -1,4 +1,5 @@
-l_japanese: STATE_MINSK:1 "ミンスク"
+l_japanese:
+ STATE_MINSK:1 "ミンスク"
  STATE_ALASKA:1 "アラスカ"
  STATE_WASHINGTON:1 "ワシントン"
  STATE_OREGON:1 "オレゴン"

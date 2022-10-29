@@ -1,4 +1,5 @@
-l_japanese: CLOSE_TOOLTIP:1 "#T $CLOSE_LABEL$#!"
+l_japanese:
+ CLOSE_TOOLTIP:1 "#T $CLOSE_LABEL$#!"
  MINIMIZE_TOOLTIP:1 "#T 最小化#!"
  CLOSE_LABEL:1 "閉じる"
  MINIMIZE:1 "#T 非表示#!"
