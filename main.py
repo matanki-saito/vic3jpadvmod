@@ -86,11 +86,12 @@ def assembly_mod(resource_dir_path,
 
 def convert_json_to_yml(target_path):
     for file_path in pathlib.Path(target_path).glob('**/*.json'):
-        with open(_(file_path.parent, file_path.stem + ".yml"), 'wt', encoding='utf_8_sig', errors='ignore', newline='') as fw:
+        with open(_(file_path.parent, file_path.stem.replace("l_english", "l_japanese") + ".yml"),
+                  'wt', encoding='utf_8_sig', errors='ignore', newline='') as fw:
             fw.write("l_japanese:\n")
             with open(file_path, 'r', encoding='utf-8') as fr:
                 for entry in json.load(fr):
-                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], entry["stage"], entry["translation"]))
+                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], entry["stage"], entry["translation"].replace("\"", "\\\"")))
         os.remove(file_path)
 
 
