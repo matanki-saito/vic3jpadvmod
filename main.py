@@ -91,7 +91,8 @@ def convert_json_to_yml(target_path):
             fw.write("l_japanese:\n")
             with open(file_path, 'r', encoding='utf-8') as fr:
                 for entry in json.load(fr):
-                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], entry["stage"], entry["translation"]))
+                    # textのversionはParatranzに読み込めないので0とする
+                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], 0, entry["translation"]))
         os.remove(file_path)
 
 
