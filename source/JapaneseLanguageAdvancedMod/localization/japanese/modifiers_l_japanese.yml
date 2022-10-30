@@ -141,7 +141,7 @@
  battle_navy_average_recovery_rate_desc:1 "$average_unit_value$"
  battle_navy_average_kill_rate:1 "$average_unit_value$"
  battle_navy_average_kill_rate_desc:1 "$average_unit_value$"
- battle_naval_invasion_beachhead_penalty:1 "不十分な海軍の侵略支援"
+ battle_naval_invasion_beachhead_penalty:1 "不十分な上陸作戦支援"
  battle_naval_invasion_beachhead_penalty_desc:1 "陸戦を支援する[Concept('concept_flotilla','$concept_flotillas$')]が十分ではありません"
  battle_naval_invasion_landing_penalty:1 "難着陸"
  battle_naval_invasion_landing_penalty_desc:1 "難着陸により、あなたの[Concept('concept_battalion','$concept_battalions$')]は不利な状態で戦います。"

@@ -540,7 +540,7 @@
  je_sick_man_main_goal:1 "4度の「タンジマート」[Concept('concept_journal_entry', '$concept_journal_entries$')]を完了する"
  je_sick_man_syria:1 "タンジマート：シリア奪還"
  je_sick_man_syria_reason:1 "シリアはエジプトの暴君により、我々の正当な手から支配権を奪われたのです。我々はそれを取り戻さなければならない！"
- je_sick_man_syria_status:1 "エジプトに対して外交プレイを開始すると、ヨーロッパの[Concept('concept_great_power', '$concept_great_powers$')]がこの地域に[concept_active_interest]を持つようになります。"
+ je_sick_man_syria_status:1 "エジプトに対して外交戦を開始すると、ヨーロッパの[Concept('concept_great_power', '$concept_great_powers$')]がこの地域に[concept_active_interest]を持つようになります。"
  je_sick_man_egypt:1 "タンジマート：エジプト奪還"
  je_sick_man_egypt_reason:1 "シリアを奪還したのだから、エジプトに目を向けるべきでしょう。正しくはオスマン帝国の領土だが、簒奪者の手に落ちてしまったのですから。"
  je_sick_man_economy:1 "タンジマート：都市化"

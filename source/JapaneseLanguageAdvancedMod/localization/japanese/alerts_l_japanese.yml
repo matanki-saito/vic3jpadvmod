@@ -120,7 +120,7 @@
  alert_has_no_war_goal_alert_name:1 "[SCOPE.GetRootScope.GetDiplomaticPlay.GetInitiator.GetName]に対する優先的な[concept_war_goal]がありません"
  alert_has_no_war_goal_alert_desc:1 "現在[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]において、[Concept('concept_war_goal', '$concept_war_goals$')]が設定されていません。\n\n[concept_opening_moves]フェーズ中に$concept_war_goals$を追加しない場合、一次[concept_war_goal]が自動的に設定されます。"
  alert_has_no_war_goal_alert_hint:1 "概要画面で$concept_diplomatic_play$の参加メンバーに$concept_war_goal$を追加する事ができます。$concept_diplomatic_play$の参加者が増えると$concept_war_goal$対象を広げる事ができますが、他の参加者を自分の味方として引き寄せるために[Concept('concept_maneuver', '$concept_maneuvers$')]コストが必要になります。"
- alert_has_no_war_goal_alert_action:1 "外交プレイ"
+ alert_has_no_war_goal_alert_action:1 "外交戦"
  alert_stockpiling_gold_alert_name:1 "[GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName]の備蓄"
  alert_stockpiling_gold_alert_desc:1 "[concept_treasury]が備蓄している金が許容量を超えています。"
  alert_stockpiling_gold_alert_hint:1 "支出を増やしたり、収入を減らしたりして、より良い収支を目指しましょう。金の備蓄は経済と[concept_pop]から@money![concept_money]を奪い、収穫逓減を招くことで徐々に[concept_wealth] が減少していきます。"

@@ -296,7 +296,7 @@
  humiliation_action_propose_name:1 "[concept_humiliation]要求"
  humiliation_action_break_name:1 "[concept_humiliation]終了"
  humiliation_pact_desc:1 "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]は、[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]によって[Concept('concept_humiliation', '$concept_humiliated$')]を受けています。"
- humiliation_desc:1 "#header $humiliation$#!\n$TOOLTIP_DELIMITER$\n一方の[concept_country]が他方の[concept_country]に外交プレイで対抗できないようにする[concept_diplomatic_pact]のことです。"
+ humiliation_desc:1 "#header $humiliation$#!\n$TOOLTIP_DELIMITER$\n一方の[concept_country]が他方の[concept_country]に外交戦で対抗できないようにする[concept_diplomatic_pact]のことです。"
  humiliation_type_break_desc:1 "他国の[Concept('concept_humiliation', '$concept_humiliated$')]を終了させる。"
  humiliation_action_notification_name:1 "屈辱"
  humiliation_action_notification_desc:1 "私たちは[TARGET_COUNTRY.GetName]に[Concept('concept_humiliation', '$concept_humiliated$')]を与えています。"
