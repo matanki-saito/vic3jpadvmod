@@ -303,7 +303,7 @@
  pmg_artillery:0 "砲撃支援"
  pm_no_artillery:0 "歩兵集中"
  pm_cannon_artillery:0 "カノン砲"
- pm_mobile_artillery:0 "自走砲"
+ pm_mobile_artillery:0 "騎馬砲兵"
  pm_shrapnel_artillery:0 "榴散弾砲"
  pm_siege_artillery:0 "攻城砲"
  pmg_reconaissance:0 "偵察"
