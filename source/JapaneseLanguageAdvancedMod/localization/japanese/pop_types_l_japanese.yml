@@ -45,7 +45,7 @@
  academics_desc:0 "研究者、医師、弁護士、その他の教育を受けた専門家で、学術機関で研究や教授を行っています。政治的には知識人層として振る舞います。"
  shopkeepers:0 "@shopkeepers! $shopkeepers_no_icon$"
  shopkeepers_only_icon:0 "@shopkeepers!"
- shopkeepers_no_icon:0 "店主"
+ shopkeepers_no_icon:0 "商店主"
  shopkeepers_desc:0 "都市部で顧客に商品を販売する店舗の経営者や管理者。政治的には小ブルジョアに属します。"
  slaves:0 "@slaves! $slaves_no_icon$"
  slaves_only_icon:0 "@slaves!"

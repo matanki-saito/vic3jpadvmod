@@ -369,7 +369,7 @@
  pm_motorized_recon_conscription:0 "$pm_motorized_recon$"
  pmg_escorts:0 "輸送船団護衛"
  pmg_raiders:0 "輸送船団レイダー"
- pm_frigates:0 "フリゲート艦の護衛"
+ pm_frigates:0 "護衛フリゲート"
  pm_destroyers:0 "駆逐艦"
  pm_commerce_raider:0 "レイダー進撃"
  pm_torpedo_boat:0 "水雷艇"

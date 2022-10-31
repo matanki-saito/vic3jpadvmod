@@ -84,7 +84,7 @@
  alert_unproductive_trade_route_alert_name:0 "[concept_trade_route] [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]が非生産的になっています"
  alert_unproductive_trade_route_alert_hint:0 "市場パネルか交易レンズから現存の[Concept('concept_trade_route', '$concept_trade_routes$')]を解除できます"
  alert_unproductive_trade_route_alert_action:0 "[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]のための市場パネル"
- alert_trade_route_needs_convoys_alert_name:0 "[concept_trade_route] [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]のレベルを上げるには追加[concept_convoys]が必要です"
+ alert_trade_route_needs_convoys_alert_name:0 "[concept_trade_route] [SCOPE.GetRootScope.GetTradeRoute.GetDescriptionForActingMarket]のレベルを上げるには追加の[concept_convoys]が必要です"
  alert_trade_route_needs_convoys_alert_hint:0 "港をさらに建設することで使用可能な[concept_convoys]を増やすことができます"
  alert_trade_route_needs_convoys_alert_action:0 "[SCOPE.GetRootScope.GetTradeRoute.GetActingMarket.GetName]のための市場パネル"
  alert_expensive_goods_alert_hint_common:0 "いくつかの方法で、[concept_good]の価格に影響を与えることができます。たとえば、施設を建てたり、既存の施設の生産方法を変えたり、貿易ルートを設定したりすることで、生産量を増やすことができます。また、禁輸や消費税をかけることもできます。"
