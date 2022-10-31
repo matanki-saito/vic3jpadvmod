@@ -2,7 +2,7 @@ name: createXL
 
 on:
   repository_dispatch:
-    types: [publish]
+    types: [create_excel]
   workflow_dispatch:
     inputs:
       name:
