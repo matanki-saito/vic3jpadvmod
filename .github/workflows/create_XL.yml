@@ -1,14 +1,13 @@
 name: createXL
 
 on:
-  repository_dispatch:
-    types: [create_excel]
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Description'
-        required: false
-        
+  push:
+    branches:
+      - auto-report
+  pull_request:
+    branches:
+      - auto-report
+
 jobs:
   build:
     runs-on: windows-2019
