@@ -1,7 +1,7 @@
 ﻿l_japanese:
  je_dynamite:0 "爆発的な成長を遂げる産業"
  je_dynamite_reason:0 "ダイナマイトは非常に危険ですが、とても役に立つ物品でもあります。いずれにせよ、産業や軍事セクターの需要に見合うよう我が国はダイナマイトの製造を増やすべきでしょう。"
- dynamite_production_modifier:0 "爆発物生産"
+ dynamite_production_modifier:0 "爆薬生産"
  mining_production_modifier:0 "採鉱産出"
  munitions_production_modifier:0 "弾薬生産"
  je_shortform_building_munition_plants_tooltip:0 "施設は$building_munition_plants$です"
@@ -23,7 +23,7 @@
  is_plantation_building:0 "農園施設"
  is_raw_industries_building:0 "原材料産業"
  production_tech_events.102.t:0 "産業ブーム"
- production_tech_events.102.d:0 "最近我が国では爆発物の生産と消費の両方が拡大しているため、軍事と産業のどちらを優先させるべきかという議論が活発に行われています。"
+ production_tech_events.102.d:0 "最近我が国では爆薬の生産と消費の両方が拡大しているため、軍事と産業のどちらを優先させるべきかという議論が活発に行われています。"
  production_tech_events.102.f:0 "「どうやって国を守るかを考えるべき時に、どれだけゴミを吹き飛ばせるかを心配しなければならないんだ？」\n\n「あなた方が気に掛けているのは戦争を始めることだけだ。そうではなく、我々は労働者のためにこれを活用すべきだ。彼らの方が大切だ」"
  production_tech_events.102.a:0 "双方を支援できるように試みるべきだ"
  production_tech_events.102.b:0 "産業セクターを優先する"
