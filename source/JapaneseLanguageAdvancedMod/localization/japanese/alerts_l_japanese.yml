@@ -74,7 +74,7 @@
  alert_insufficient_tax_capacity_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName] ([SCOPE.GetRootScope.GetState.CalcTaxCapacityBalance|+0v])"
  alert_insufficient_tax_capacity_alert_hint:0 "[GetBuildingType('building_government_administration').GetName] [Concept('concept_building','$concept_buildings$')]を[concept_state]に建設することで[SCOPE.GetRootScope.GetState.GetName]の[concept_tax_capacity]を引き上げることができます。"
  alert_insufficient_tax_capacity_alert_action:0 "[SCOPE.GetRootScope.GetState.GetName]の州パネル"
- alert_state_in_turmoil_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]は[concept_turmoil]状態です"
+ alert_state_in_turmoil_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]は[concept_turmoil]が高い状態です"
  alert_state_in_turmoil_alert_desc:0 "[SCOPE.GetRootScope.GetState.GetName]は$RADICALS$の存在により[concept_turmoil]状態にあります"
  alert_state_in_turmoil_alert_hint:0 "[Concept('concept_pop', '$concept_pops$')]の要求を満たすと$RADICALS$の数を減少できます。これを達成するには、$concept_pops$が仕事を持ち[concept_expected_sol]を賄えることを保証するのが主な手段です。ただし、[Concept('concept_discrimination','$concept_discriminated_against$')]がある、または[Concept('concept_political_movement','$concept_political_movements$')]が満たされていない$concept_pop$集団も[Concept('concept_political_movement_radicalism','$concept_political_movement_radicalize$')]になります。\n\n短期的にこれらの問題を和らげるには、長期的な問題解決に向け努力しながら[SCOPE.GetRootScope.GetState.GetName]に[GetDecreeType('decree_emergency_relief').GetName]または[GetDecreeType('decree_violent_suppression').GetName]などの[Concept('concept_decree', '$concept_decrees$')]の発布を考慮すると良いでしょう。"
  alert_state_in_turmoil_alert_action:0 "[SCOPE.GetRootScope.GetState.GetName]の州パネル"

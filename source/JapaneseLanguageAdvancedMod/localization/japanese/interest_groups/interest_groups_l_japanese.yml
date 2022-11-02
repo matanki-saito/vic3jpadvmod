@@ -17,7 +17,7 @@
  ig_petty_bourgeoisie:0 "小ブルジョワ"
  ig_petty_bourgeoisie_only_icon:0 "@petty_bourgeoisie!"
  ig_petty_bourgeoisie_desc:0 "小さな商店の所有者や入居者が半分程度の大家、わずかな年金しかもらえない倹約家の店員など、貧しくはないがお金持ちでもない人々を指します。"
- ig_armed_forces:0 "武装勢力"
+ ig_armed_forces:0 "軍部"
  ig_armed_forces_only_icon:0 "@armed_forces!"
  ig_armed_forces_desc:0 "国の軍事に強い関心や興味を示す職業軍人などのことです。"
  ig_trade_unions:0 "労働組合"
