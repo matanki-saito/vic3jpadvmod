@@ -131,7 +131,7 @@
  lawgroup_army_model_desc:0 "あなたの軍隊がいかに組織され、規制されているかを示します。"
  law_peasant_levies:0 "農民召集兵"
  law_peasant_levies_desc:0 "軍隊の主力は、全く基礎訓練を受けていない召集兵です。"
- law_national_militia:0 "国有軍"
+ law_national_militia:0 "国民民兵"
  law_national_militia_desc:0 "常備軍は小規模ですが、地元の民兵が故郷を守るために活動することができます。"
  law_mass_conscription:0 "大規模徴兵"
  law_mass_conscription_desc:0 "プロの軍隊を補うために、必要に応じて大量の歩兵の徴兵を行うことができます。"

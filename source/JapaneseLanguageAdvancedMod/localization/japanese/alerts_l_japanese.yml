@@ -123,7 +123,7 @@
  alert_has_no_war_goal_alert_action:0 "外交戦"
  alert_stockpiling_gold_alert_name:0 "[GetGoods('gold').GetTextIcon] [GetGoods('gold').GetName]の備蓄"
  alert_stockpiling_gold_alert_desc:0 "[concept_treasury]が備蓄している金が許容量を超えています。"
- alert_stockpiling_gold_alert_hint:0 "支出を増やしたり、収入を減らしたりして、より良い収支を目指しましょう。金の備蓄は経済と[concept_pop]から@money![concept_money]を奪い、収穫逓減を招くことで徐々に[concept_wealth] が減少していきます。"
+ alert_stockpiling_gold_alert_hint:0 "支出を増やしたり、収入を減らしたりして、より良い収支を目指しましょう。金の備蓄は経済と[concept_pop]から@money![Concept('concept_money','お金')]を奪い、収穫逓減を招くことで徐々に[concept_wealth] が減少していきます。"
  alert_stockpiling_gold_alert_action:0 "予算パネル"
  alert_is_losing_rank_alert_name:0 "戦力[concept_rank]を失っています"
  alert_is_losing_rank_alert_desc:0 "[GetPlayer.GetRank|v]ランクを維持するための[concept_prestige]が足りず、ランクが回復しない限り、[GetPlayer.GetDaysUntilRankLoss|v]日以内に[GetPlayer.GetTargetRank|v]になってしまいます。\n\nランクを維持するためには#P #b [GetPlayer.GetPrestigeToMaintainRank]#!#![concept_prestige]が必要であり、現在は#b #N [GetPlayer.GetPrestige]#!#!です。"

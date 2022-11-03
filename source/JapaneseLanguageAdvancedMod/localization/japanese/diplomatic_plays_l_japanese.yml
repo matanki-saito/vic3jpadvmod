@@ -358,7 +358,7 @@
  war_goal_make_dominion:0 "[WAR_GOAL.GetTarget.GetName]の従属"
  war_goal_make_dominion_desc:0 "[WAR_GOAL.GetHolder.GetName]が、[WAR_GOAL.GetTarget.GetName]に[concept_dominion]となることを強要する。"
  war_goal_make_dominion_sway_desc:0 "[WAR_GOAL.GetTarget.GetName]に[concept_dominion]となることを強要して、[WAR_GOAL.GetHolder.GetName]がこちら側の勢力に加わるよう説得しましょう。"
- war_goal_make_vassal_type_name:0 "家臣化"
+ war_goal_make_vassal_type_name:0 "属国化"
  war_goal_make_vassal_type_desc:0 "[concept_dominion]となることを他国に強要する。"
  war_goal_make_vassal:0 "[Concept('concept_vassal', '$concept_vassalize$')] [WAR_GOAL.GetTarget.GetName]"
  war_goal_make_vassal_desc:0 "[WAR_GOAL.GetHolder.GetName]が、[WAR_GOAL.GetTarget.GetName]に[concept_vassal]となることを強要する。"
