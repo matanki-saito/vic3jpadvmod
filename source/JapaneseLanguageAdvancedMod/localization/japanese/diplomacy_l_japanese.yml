@@ -246,7 +246,7 @@
  rivalry_action_notification_third_party_desc:0 "[INITIATOR_COUNTRY.GetName]は[TARGET_COUNTRY.GetName]が彼らの[Concept('concept_rivalry', '$concept_rival$')]であることを宣言しました。"
  rivalry_action_notification_break_name:0 "[INITIATOR_COUNTRY.GetName]は[concept_rivalry]関係を終了しました"
  rivalry_action_notification_break_desc:0 "[INITIATOR_COUNTRY.GetName]はもはや私たちを[Concept('concept_rivalry', '$concept_rival$')]とはみなしていません。"
- rivalry_action_notification_third_party_break_name:0 "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]-[TARGET_COUNTRY.GetAdjectiveNoFormatting] [concept_rivalry]関係が終了しました"
+ rivalry_action_notification_third_party_break_name:0 "[INITIATOR_COUNTRY.GetAdjectiveNoFormatting]・[TARGET_COUNTRY.GetAdjectiveNoFormatting]間の[concept_rivalry]関係が終了"
  rivalry_action_notification_third_party_break_desc:0 "[INITIATOR_COUNTRY.GetName]は、[TARGET_COUNTRY.GetName]との[concept_rivalry]関係を終了しました。"
  rivalry_effect_desc_global:0 "[concept_rivalry]関係を宣言"
  rivalry_effect_desc_first:0 "[COUNTRY.GetAdjectiveNoFlag]は[TARGET_COUNTRY.GetName]との[concept_rivalry]関係を宣言しました"

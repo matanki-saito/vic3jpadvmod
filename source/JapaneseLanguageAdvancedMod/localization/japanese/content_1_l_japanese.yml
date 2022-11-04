@@ -704,7 +704,7 @@
  manifest_destiny.2.f:0 "「私たちには、世界をもう一度やり直す力があるのだ。今と同じような状況は、ノアの時代から今まで一度も起こっていない。新しい世界の誕生は目前だ」"
  manifest_destiny.2.a:0 "自由のフロンティアを推し進めよ！"
  labor_rights.1.t:0 "農奴の不当な扱い"
- labor_rights.1.d:0 "[SCOPE.sState('serf_state').GetName]の[SCOPE.gsInterestGroup('serf_mistreaters').GetName]が農奴を残忍に扱うという悪名が広まっています。小作農は厳しい罰、困難な仕事量、時には拷問や殺人にまで及ぶと訴えています。"
+ labor_rights.1.d:0 "[SCOPE.sState('serf_state').GetName]の[SCOPE.gsInterestGroup('serf_mistreaters').GetName]が農奴を残忍に扱うという悪名が広まっています。百姓は厳しい罰、困難な仕事量、時には拷問や殺人にまで及ぶと訴えています。"
  labor_rights.1.f:0 "「彼女はお茶を落として30回の鞭打ちを受けた」\n「丘の上の屋敷で人が行方不明になった」\n「地下室の下に地下牢がある、私のいとこが誓ってそう言っていた！彼らは私たちを拷問し、私たちの血を飲んでるんだ！」"
  labor_rights.1.a:0 "このような侮辱はやめなければならない。"
  labor_rights.1.b:0 "この貴族たちを法の力をもって罰しよう。"

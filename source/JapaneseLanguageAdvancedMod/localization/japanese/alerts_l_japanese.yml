@@ -2,7 +2,7 @@
  ALERT_TOOLTIP_FORMAT:0 "#header [Alert.GetName]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(Alert.GetDescription, '\n\n')]@information! [Alert.GetHint]\n\n#instruction クリックで[Alert.GetAction]を開く#!"
  EXPANDABLE_IMPORTANT_ACTION_ITEM:0 "[Alert.GetToolTip]$notification_tooltip_footer$"
  alert_country_default_name:0 "[concept_default]中"
- alert_country_default_desc:0 "[GetPlayer.GetName]は債務を返済できないため、[concept_default]になっています。残高がプラスになるまで、時間が経つほど厳しくなるペナルティを受けることになります。\n\n#title 現在の効果：#!\n[GetPlayer.GetInDefaultEffectsDesc]"
+ alert_country_default_desc:0 "[GetPlayer.GetName]は債務を返済できないため、[concept_default]になっています。収支がプラスになるまで、時間が経つほど厳しくなるペナルティを受けることになります。\n\n#title 現在の効果：#!\n[GetPlayer.GetInDefaultEffectsDesc]"
  alert_country_default_hint:0 "収入を増やす（例えば税金を増やす（あるいは新たに加える））か、支出を減らす（例えば公務員の給金を減らす、あるいは政府施設で使われる高価な商品の価格を上げる）ことで、財政状況を改善することができます。どちらも不十分な場合は、[concept_bankruptcy]を宣言することもできます。"
  alert_country_default_action:0 "予算パネル"
  alert_country_approaching_bureaucracy_shortage_name:0 "官僚の不足"
