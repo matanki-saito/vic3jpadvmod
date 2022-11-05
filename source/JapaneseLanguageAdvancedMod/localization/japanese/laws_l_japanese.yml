@@ -30,7 +30,7 @@
  ideology_vanguardist:0 "前衛主義者"
  ideology_vanguardist_desc:0 "#lore このリーダーは、急進的な前衛政党によって社会主義社会を実現することを信じています。 #!"
  ideology_fascist:0 "ファシスト"
- ideology_fascist_desc:0 "#lore このリーダーは超国家主義者で、現代的な文脈で認識された伝統的な権威主義的価値観を復活させることを支持しています。 #!"
+ ideology_fascist_desc:0 "#lore このリーダーは超民族主義者で、現代的な文脈で認識された伝統的な権威主義的価値観を復活させることを支持しています。 #!"
  ideology_anarchist:0 "無政府主義者"
  ideology_anarchist_desc:0 "#lore このリーダーは、ヒエラルキーや権力、国家を廃止し、人々が自分自身を統治することを求めています。 #!"
  ideology_ethno_nationalist:0 "民族主義者"

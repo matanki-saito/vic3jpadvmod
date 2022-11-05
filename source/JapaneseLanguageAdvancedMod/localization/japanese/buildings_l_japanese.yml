@@ -158,7 +158,7 @@
  building_link_merge_markets_lens_option:0 "市場を統合する"
  building_university:0 "大学"
  building_university_lens_option:0 "$building_university$を拡張"
- building_arts_academy:0 "美術学校"
+ building_arts_academy:0 "芸術院"
  building_arts_academy_lens_option:0 "$building_arts_academy$を拡張"
  building_colony_military:0 "軍事コロニー"
  building_colony_military_lens_option:0 "$building_colony_military$を設立"

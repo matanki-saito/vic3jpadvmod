@@ -127,7 +127,7 @@
  alert_stockpiling_gold_alert_action:0 "予算パネル"
  alert_is_losing_rank_alert_name:0 "戦力[concept_rank]を失っています"
  alert_is_losing_rank_alert_desc:0 "[GetPlayer.GetRank|v]ランクを維持するための[concept_prestige]が足りず、ランクが回復しない限り、[GetPlayer.GetDaysUntilRankLoss|v]日以内に[GetPlayer.GetTargetRank|v]になってしまいます。\n\nランクを維持するためには#P #b [GetPlayer.GetPrestigeToMaintainRank]#!#![concept_prestige]が必要であり、現在は#b #N [GetPlayer.GetPrestige]#!#!です。"
- alert_is_losing_rank_alert_hint:0 "自国の[concept_gdp]を増やしたり、陸軍と海軍の[concept_power_projection]を増やしたり（規模を拡大するか、より強力な装備を与える事で可能）、[concept_good]の主要生産者になる事で、より多くの[concept_prestige]を得る事ができます。この方法で[Concept('concept_subject', '$concept_subject_possessive$')] $concept_prestige$の一部も得る事ができます。"
+ alert_is_losing_rank_alert_hint:0 "自国の[concept_gdp]を増やしたり、陸軍と海軍の[concept_power_projection]を増やしたり（規模を拡大するか、より強力な装備を与える事で可能）、[concept_good]の主要生産者になる事で、より多くの[concept_prestige]を得る事ができます。この方法で[Concept('concept_subject', '$concept_subject_possessive$')]の$concept_prestige$の一部も得る事ができます。"
  alert_is_losing_rank_alert_action:0 "外交パネル"
  alert_has_decreasing_interests_alert_name:0 "消滅しつつある[Concept('concept_interest', '$concept_interests$')]"
  alert_has_decreasing_interests_alert_desc:0 "間もなく消滅する[Concept('concept_interest', '$concept_interests$')]があります: \n[GetPlayer.GetDecreasingInterestsDesc]"
