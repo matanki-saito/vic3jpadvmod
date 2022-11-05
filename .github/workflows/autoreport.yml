@@ -1,14 +1,13 @@
-name: createXL
+name: auto-report
 
 on:
-  repository_dispatch:
-    types: [create_excel]
-  workflow_dispatch:
-    inputs:
-      name:
-        description: 'Description'
-        required: false
-        
+  push:
+    branches:
+      - feature/auto-report
+  pull_request:
+    branches:
+      - feature/auto-report
+
 jobs:
   build:
     runs-on: windows-2019
@@ -48,7 +47,7 @@ jobs:
           git config --global url."https://${{ secrets.GITHUB_TOKEN }}:x-oauth-basic@github.com/".insteadOf "https://github.com/"        
           git add -A
           git commit -m "new issues added"
-          git push origin HEAD:main
+          git push origin HEAD
         shell: cmd        
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
