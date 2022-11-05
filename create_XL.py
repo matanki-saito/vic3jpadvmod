@@ -2,6 +2,7 @@
 import os
 import datetime
 import openpyxl
+from openpyxl.styles import Alignment
 import re
 import requests
 from github import Github
@@ -29,7 +30,6 @@ def create_xl():
 		headers = re.findall('##.*?\n|##.*?\r\n',issue.body)
 		lines = re.split('##.*?\n|##.*?\r\n',issue.body)
 
-		est_sheetnames = book.get_sheet_names()
 		#issueに(タグ)がついていて、タグ名のシートがなければシートを作成
 		if(issue.labels != []):
 			if(issue.labels[0].name in book.sheetnames):
@@ -47,8 +47,10 @@ def create_xl():
 		if(sheet.max_row == 1):
 			sheet.cell(row=1, column=1).value = 'Issue number'
 			sheet.cell(row=1, column=2).value = 'Issue title'
+			col = 0
 			for h in headers:
 				sheet.cell(row=1, column=sheet.max_column+1).value = h
+				col = col + 1
 
 		#issueの番号とタイトルを挿入する
 		sheet.cell(row=sheet.max_row+1, column=1).value = issue.number
@@ -59,12 +61,22 @@ def create_xl():
 
 		#issueの内容を挿入する
 		for l in lines:
-			l2 = re.sub('\n|\r\n', '', l)
-			if(l2 != ''):
+			l2 = re.sub('\n|\r\n|`', '', l)
+			if(l2 == '' or l2 == '※「｀｀｀」は消さないでください'):
+				pass
+			else:
 				sheet.cell(row=j, column=i).value = l2
 				i=i+1
+		#列の幅を設定
 		i=ITR_FIRST_COL
-	
+
+	#最後に全シートに対してスタイルを設定する
+	for s in book:
+		for c in range(2,s.max_column):
+			s.column_dimensions[s.cell(row=1,column=c).column_letter].width = 40
+			for r in range(2,s.max_row):
+				s.cell(row=r,column=c).alignment = Alignment(horizontal='general',wrapText= True)
+
 	#.xlsxファイルの保存先(例)：./issues/2022-10-30.xlsx
 	xlname = './issues/'+str(datetime.date.today())+'.xlsx'
 	book.save(xlname)
