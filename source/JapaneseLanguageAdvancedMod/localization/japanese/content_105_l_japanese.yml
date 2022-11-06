@@ -124,7 +124,7 @@
  ig_secured_desired_imports:0 "希望輸入品を確保"
  ig_refused_desired_imports:0 "希望輸入品の拒否"
  modifier_researching_imported_weapons:0 "輸入武器の研究"
- manifest_destiny:0 "宿命の宣言"
+ manifest_destiny:0 "マニフェスト・デスティニー"
  manifest_destiny_desc:0 "我々の偉大な国家は、大陸に広がる運命にある。"
  manifest_destiny_tooptip:0 "条件："
  ig_manifest_destiny:0 "$manifest_destiny$"
