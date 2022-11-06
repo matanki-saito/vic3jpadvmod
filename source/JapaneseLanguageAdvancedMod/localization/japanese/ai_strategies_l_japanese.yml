@@ -49,7 +49,7 @@
  ai_goal_set_tax_levels:0 "税金のレベルを設定する"
  ai_goal_handle_institutions:0 "制度への投資を行う"
  ai_goal_handle_ruling_igs:0 "政府を形成する"
- ai_goal_handle_interest_groups:0 "利益団体を管理する"
+ ai_goal_handle_interest_groups:0 "利益集団を管理する"
  ai_goal_handle_decree:0 "[concept_decree]を管理する"
  ai_goal_subsidize_buildings:0 "施設を助成する"
  ai_goal_handle_trade_routes:0 "貿易ルートを管理する"

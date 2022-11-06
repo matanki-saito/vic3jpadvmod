@@ -15,7 +15,7 @@
  alert_free_government_reform_action:0 "行政パネル"
  alert_insurrectionary_alert_name:0 "[concept_revolution]の兆し"
  alert_insurrectionary_alert_desc:0 "我が国に、[concept_revolution]を目論む、反乱利益集団が存在します：\n\n#title 反乱利益集団：#!\n[GetPlayer.GetInsurrectionaryIGsDesc]"
- alert_insurrectionary_alert_hint:0 "彼らの承認を向上させることで、急進化を抑制することができます。これは、彼らが認める[Concept('concept_law', '$concept_laws$')]を制定する（または彼らが反対する法律を制定しない）ことで実現可能です。"
+ alert_insurrectionary_alert_hint:0 "彼らの支持を向上させることで、急進化を抑制することができます。これは、彼らが認める[Concept('concept_law', '$concept_laws$')]を制定する（または彼らが反対する法律を制定しない）ことで実現可能です。"
  alert_insurrectionary_alert_action:0 "政策パネル"
  alert_unused_interests_alert_name:0 "[Concept('concept_declared_interest','$concept_declared_interests$')]をもっと保持できます"
  alert_unused_interests_alert_desc:0 "我々が保持できる[Concept('concept_declared_interest','$concept_declared_interests$')]の[GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!しか使用していません"

@@ -105,7 +105,7 @@
  market_capital_state:0 "[concept_market_capital]"
  moved_capital_recently:0 "最近移動した[concept_capital_state]"
  moved_market_capital_recently:0 "最近移動した[concept_market_capital]"
- ruler_left_interest_group:0 "支配者は利益団体を見限っています"
+ ruler_left_interest_group:0 "支配者は利益集団を見限っています"
  country_literacy_rate:0 "[concept_literacy]"
  country_gdp:0 "[concept_gdp]"
  excess_innovation:0 "未使用の@innovation![concept_innovation]"

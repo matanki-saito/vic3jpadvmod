@@ -11,7 +11,7 @@
  ig_landowners:0 "地主"
  ig_landowners_only_icon:0 "@landowners!"
  ig_landowners_desc:0 "邸宅や大農園の所有者である地主は、伝統や世襲財産の擁護者です。"
- ig_intelligentsia:0 "インテリゲンチャ"
+ ig_intelligentsia:0 "知識人"
  ig_intelligentsia_only_icon:0 "@intelligentsia!"
  ig_intelligentsia_desc:0 "文学、芸術、音楽、演劇で国家のトレンドを牽引する知識階級です。"
  ig_petty_bourgeoisie:0 "小ブルジョワ"
