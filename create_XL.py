@@ -27,8 +27,32 @@ def create_xl():
 	#各issueに対して処理
 	for _issue in repo.get_issues():
 		issue = _issue
-		headers = re.findall('##.*?\n|##.*?\r\n',issue.body)
-		lines = re.split('##.*?\n|##.*?\r\n',issue.body)
+
+		#issueの本文を整形する
+		#issueの本文を改行ごとに分ける
+		lines = re.split('\r\n|\n', issue.body)
+		body_continue = False
+		headers = []
+		bodies = []
+		
+		for l in lines:
+			lfix = l.replace('```', '')
+			#Excelに不要な行は削除
+			if '※「｀｀｀」は消さないでください' in l or l == '':
+				pass
+			#見出しを格納
+			elif '##' in l:
+				headers.append(lfix)
+				body_continue = False
+			#本文を格納
+			else:
+				if len(bodies) == 0 or body_continue == False:
+					bodies.append(lfix)
+					bodies[-1]=bodies[-1]+'\n'
+					body_continue = True
+				elif body_continue == True: 
+					bodies[-1]=bodies[-1]+lfix+'\n'
+					body_continue = True
 
 		#issueに(タグ)がついていて、タグ名のシートがなければシートを作成
 		if(issue.labels != []):
@@ -43,14 +67,13 @@ def create_xl():
 		else:
 			sheet = book['その他']
 
+
 		#出来立てのシートには一行目に見出しを付ける
 		if(sheet.max_row == 1):
 			sheet.cell(row=1, column=1).value = 'Issue number'
 			sheet.cell(row=1, column=2).value = 'Issue title'
-			col = 0
 			for h in headers:
 				sheet.cell(row=1, column=sheet.max_column+1).value = h
-				col = col + 1
 
 		#issueの番号とタイトルを挿入する
 		sheet.cell(row=sheet.max_row+1, column=1).value = issue.number
@@ -60,22 +83,24 @@ def create_xl():
 		j = sheet.max_row
 
 		#issueの内容を挿入する
-		for l in lines:
-			l2 = re.sub('\n|\r\n|`', '', l)
-			if(l2 == '' or l2 == '※「｀｀｀」は消さないでください'):
-				pass
-			else:
-				sheet.cell(row=j, column=i).value = l2
-				i=i+1
-		#列の幅を設定
+		height_max = 1
+		for b in bodies:
+			sheet.cell(row=j, column=i).value = b
+			#行の高さを出すため本文の長さから行数を計算
+			height = int(len(b) * 2 / 40)
+			if height > height_max:
+				height_max = height
+			i=i+1
+		sheet.row_dimensions[sheet.cell(row=j, column=i).row].height = height_max * 15
 		i=ITR_FIRST_COL
+		
 
 	#最後に全シートに対してスタイルを設定する
 	for s in book:
 		for c in range(2,s.max_column):
 			s.column_dimensions[s.cell(row=1,column=c).column_letter].width = 40
 			for r in range(2,s.max_row):
-				s.cell(row=r,column=c).alignment = Alignment(horizontal='general',wrapText= True)
+				s.cell(row=r,column=c).alignment = Alignment(horizontal='general', vertical = 'center', wrapText= True)
 
 	#.xlsxファイルの保存先(例)：./issues/2022-10-30.xlsx
 	xlname = './issues/'+str(datetime.date.today())+'.xlsx'
