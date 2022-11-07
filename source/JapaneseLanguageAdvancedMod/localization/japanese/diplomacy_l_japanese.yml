@@ -124,7 +124,7 @@
  PLAYER_MIGHT_ACCEPT_DESC:0 "彼らはプレイヤーであり、受諾するかどうかは各自で決定します"
  AI_WILL_ACCEPT_ENTRY_FORMAT:0 "$SCRIPT_VALUE_KEY_AFTER_FORMAT$"
  DIPLOMATIC_ACCEPTANCE_BASE:0 "基礎難色"
- DIPLOMATIC_ACCEPTANCE_SENIOR_PART:0 "[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]が[concept_customs_union]における上位パートナーとなる予定です"
+ DIPLOMATIC_ACCEPTANCE_SENIOR_PART:0 "[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]が[concept_customs_union]における盟主国となる予定です"
  DIPLOMATIC_ACCEPTANCE_ATTITUDE:0 "我が国に対する[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [concept_attitude]は[SCOPE.GetRootScope.GetCountry.GetAttitudeTowards(SCOPE.sCountry('actor')).GetName]です"
  DIPLOMATIC_ACCEPTANCE_INFAMY:0 "我が国の[concept_infamy]レベルは[SCOPE.sCountry('actor').GetInfamyLabel]です"
  DIPLOMATIC_ACCEPTANCE_RELATIONS:0 "[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]-[SCOPE.sCountry('actor').GetAdjectiveNoFormatting]間の[concept_relations]は[SCOPE.GetRootScope.GetCountry.GetRelationsWithDesc(SCOPE.sCountry('actor'))]です"
