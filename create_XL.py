@@ -25,7 +25,7 @@ def create_xl():
 	i=ITR_FIRST_COL
 	j=ITR_FIRST_ROW
 	#各issueに対して処理
-	for _issue in repo.get_issues():
+	for _issue in repo.get_issues(state='all'):
 		issue = _issue
 
 		#issueの本文を整形する
