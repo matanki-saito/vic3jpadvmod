@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - feature/auto-report
-  pull_request:
-    branches:
-      - feature/auto-report
 
 jobs:
   build:
