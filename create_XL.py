@@ -38,7 +38,7 @@ def create_xl():
 		for l in lines:
 			lfix = l.replace('```', '')
 			#Excelに不要な行は削除
-			if '※「｀｀｀」は消さないでください' in l or l == '':
+			if '※「｀｀｀」は消さないでください' in l or '＜ゲームシステム用語＞' in l or l == '':
 				pass
 			#見出しを格納
 			elif '##' in l:
