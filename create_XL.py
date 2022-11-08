@@ -54,8 +54,8 @@ def create_xl():
 					body_continue = True
 
 		#issueに(タグ)がついていて、タグ名のシートがなければシートを作成
-		if(issue.labels != []):
-			if(issue.labels[0].name in book.sheetnames):
+		if issue.labels != []:
+			if issue.labels[0].name in book.sheetnames:
 				pass
 			else:
 				book.create_sheet(title=issue.labels[0].name)
@@ -68,7 +68,7 @@ def create_xl():
 
 
 		#出来立てのシートには一行目に見出しを付ける
-		if(sheet.max_row == 1):
+		if sheet.max_row == 1:
 			sheet.cell(row=1, column=1).value = 'number'
 			sheet.cell(row=1, column=2).value = 'title'
 			for h in headers:
