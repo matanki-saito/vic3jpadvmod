@@ -14,16 +14,14 @@ def create_xl():
 
 	# リポジトリにアクセス
 	repo = g.get_repo('matanki-saito/vic3jpadvmod')
-			
+
 	# excelブックの準備
 	book = openpyxl.Workbook()
 	book.create_sheet(title='その他')
 
 	# 反復用の変数の準備/2行目と3列目
-	ITR_FIRST_ROW = 2
 	ITR_FIRST_COL = 3
-	i=ITR_FIRST_COL
-	j=ITR_FIRST_ROW
+	i = ITR_FIRST_COL
 	# 各issueに対して処理
 	for _issue in repo.get_issues(state='all'):
 		issue = _issue
@@ -34,14 +32,14 @@ def create_xl():
 		body_continue = False
 		headers = []
 		bodies = []
-		
-		for l in lines:
-			lfix = l.replace('```', '')
+
+		for line in lines:
+			lfix = line.replace('```', '')
 			# Excelに不要な行は削除
-			if '※「｀｀｀」は消さないでください' in l or '＜ゲームシステム用語＞' in l or l == '':
+			if '※「｀｀｀」は消さないでください' in line or '＜ゲームシステム用語＞' in line or line == '':
 				pass
 			# 見出しを格納
-			elif '##' in l:
+			elif '##' in line:
 				headers.append(lfix)
 				body_continue = False
 			# 本文を格納
@@ -50,12 +48,12 @@ def create_xl():
 					bodies.append(lfix)
 					bodies[-1] = bodies[-1]+'\n'
 					body_continue = True
-				elif body_continue == True:
+				elif body_continue:
 					bodies[-1] = bodies[-1]+lfix+'\n'
 					body_continue = True
 
 		# issueに(タグ)がついていて、タグ名のシートがなければシートを作成
-		if issue.labels != []:
+		if issue.labels:
 			if issue.labels[0].name in book.sheetnames:
 				pass
 			else:
@@ -92,16 +90,15 @@ def create_xl():
 			i = i+1
 		sheet.row_dimensions[sheet.cell(row=j, column=i).row].height = height_max * 15
 		i = ITR_FIRST_COL
-		
 
-	#最後に全シートに対してスタイルを設定する
+	# 最後に全シートに対してスタイルを設定する
 	for s in book:
 		for c in range(2, s.max_column):
 			s.column_dimensions[s.cell(row=1, column=c).column_letter].width = 40
 			for r in range(2, s.max_row):
 				s.cell(row=r, column=c).alignment = Alignment(horizontal='general', vertical='center', wrapText=True)
 
-	#.xlsxファイルの保存先(例)：./issues/2022-10-30.xlsx
+	# .xlsxファイルの保存先(例)：./issues/2022-10-30.xlsx
 	xlname = './issues/'+str(datetime.date.today())+'.xlsx'
 	book.save(xlname)
 
