@@ -5,13 +5,12 @@ import os
 import pathlib
 import shutil
 import textwrap
-import time
 import urllib.request
 import zipfile
 import json
 from os.path import join
-
 import regex
+import re
 
 _ = join
 
@@ -48,14 +47,11 @@ def download_trans_zip_from_paratranz(project_id,
     return out_file_path
 
 
-def assembly_mod(resource_dir_path,
-                 resource_paratranz_main_zip_file_path,
+def assembly_mod(resource_paratranz_main_zip_file_path,
                  out_dir_path):
     """
     Appモッドを作成
-    :param mod_file_name: Modファイル名
     :param resource_paratranz_main_zip_file_path: ParatranzからダウンロードできるMain Mod zipファイルのパス
-    :param resource_dir_path: リソースディレクトリパス
     :param out_dir_path: 出力フォルダ
     :return:
     """
@@ -91,9 +87,162 @@ def convert_json_to_yml(target_path):
             fw.write("l_japanese:\n")
             with open(file_path, 'r', encoding='utf-8') as fr:
                 for entry in json.load(fr):
+                    translation = entry["translation"]
+                    translation = issue_242(translation)
+                    translation = issue_241(translation)
+
                     # textのversionはParatranzに読み込めないので0とする
-                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], 0, entry["translation"].replace("\"", "\\\"")))
+                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], 0, translation.replace("\"", "\\\"")))
         os.remove(file_path)
+
+
+# マスク
+mask_k = {":": "▲",
+        "|": "△",
+        "-": "■",
+        "+": "□",
+        ";": "▼",
+        "\"": "◆",
+        "'": "▣",
+        ",": "▓",
+        "[": "★",
+        "]": "☆",
+        "(": "✦",
+        ")": "✧",
+        ".": "✡"}
+
+mask_r = dict(zip(mask_k.values(), mask_k.keys()))
+
+mask_k_p = "|".join(map(re.escape, mask_k.keys()))
+mask_r_p = "|".join(map(re.escape, mask_r.keys()))
+
+
+def k(x):
+    return re.sub(mask_k_p, lambda y: mask_k.get(y.group()), x.group())
+
+
+def r(x):
+    return re.sub(mask_r_p, lambda y: mask_r.get(y.group()), x.group())
+
+
+# 記号の問題
+def issue_241(text):
+    """
+    ・幅調整
+     全角：は半角:と前後にスペース１つを入れる
+     ビュレット•は前後にスペース１つを入れる
+     ()は半角に合わせてスペース１つを入れる
+
+    ・レンジの統一
+     数字-数字は数字 ～ 数字にする
+     日付-日付は日付 ～ 日付にする
+     [最大]-[最小]は[最大] ～ [最小]にする
+
+    ・符号統一
+     値の前にある-はそのままにする
+
+    ・約物統一
+     文章の最後の.は。にする
+     文章中の,は、にする
+
+    :param text:
+    :return:
+    """
+
+    # \wが壊れている？ので使用禁止 [a-zA-Z0-9_]
+
+    # mask
+    text = re.sub(r'(#[a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)+)?)\s', k, text)
+    text = re.sub(r'\[[^]]+]', k, text)  # 実行処理
+    text = re.sub(r'[a-zA-Z0-9_]+\([^\)]+\)', k, text)  # 関数
+    text = re.sub(r'\$[a-zA-Z0-9_|+=\-%]+\$', k, text)  # 変数
+    text = re.sub(r'\'[^\']*\'', k, text)  # 文字列
+
+    # 値の符号は保持する
+    text = re.sub(r'-\$(AMOUNT|VAL|MAINTENANCE)', k, text)
+    text = re.sub(r'-[0-9]+', k, text)
+    text = re.sub(r'-★WarParticipant✡GetNumDead', k, text)
+    text = re.sub(r'#N -', k, text)
+    text = re.sub(r'#[N|P]\s*#bold-', k, text)
+    text = re.sub(r'@money!-', k, text)
+
+    # 幅調整
+    text = re.sub(r'：',  r' : ', text)
+    text = re.sub(r'[  ]*:[  ]*',  r' : ', text)
+    text = re.sub(r'[  ]*•[  ]*', r'• ', text)
+    text = re.sub(r'[  ]*[（(][  ]*',  r' (', text)
+    text = re.sub(r'[  ]*[）)][  ]*',  r') ', text)
+
+    # レンジ
+    text = re.sub(r'([０-９\d]+)[\s ]*[-～][\s ]*([０-９\d]+)', r'\1 ～ \2', text)
+    text = re.sub(r'(\$MIN([^$]*)\$)([^$]+)(\$MAX\2)',
+                  lambda x: x.group(1) + x.group(3).replace("-", " ～ ") + x.group(4),
+                  text)
+    text = re.sub(r'(\$DAYS_MIN([^$]*)\$)([^$]+)(\$DAYS_MAX\2)',
+                  lambda x: x.group(1) + x.group(3).replace("-", " ～ ") + x.group(4),
+                  text)
+    text = re.sub(r'(\$DURATION_MIN([^$]*)\$)([^$]+)(\$DURATION_MAX\2)',
+                  lambda x: x.group(1) + x.group(3).replace("-", " ～ ") + x.group(4),
+                  text)
+    text = re.sub(r'\$★DATE_MIN✡GetStringShort△V☆\$\s*-\s*\$★DATE_MAX✡GetStringShort△V☆\$',
+                  r'$★DATE_MIN✡GetStringShort△V☆$ ～ $★DATE_MAX✡GetStringShort△V☆$',
+                  text)
+
+    #text = re.sub(r'(?<!\||\d|v|=|%|K)-(?!(\$VAL|\$AMOUNT))', r' xxxx ', text)
+
+    text = text.replace(".", "。")
+    text = text.replace(",", "、")
+    text = text.replace(";", "つまり")
+    text = text.replace("-", "―")
+    #text = text.replace(":", " : ")
+
+    text = re.sub(mask_r_p, r, text)
+
+    return text
+
+
+# 半角スペースの問題
+def issue_242(text):
+    """
+    ・特殊アイコンには後ろにnbspを入れる。指定アイコンは下記の通り。
+     - simple_box : 空のチェックボックス
+     - red_cross : 赤Xのチェックボックス
+     - green_checkmark_box : 緑✔のチェックボックス
+     - warning : 赤い！
+     - information : 青い！
+    ・指定アイコン以外の後ろにある[Nbsp]及びスペースは削除する
+    ・国旗の後ろにはnbspを入れる
+    ・開始タグの後ろにスペースは必要。
+    ・終了タグの後ろのスペースは削除する
+    ・x / yのスラッシュ前後のスペースは削除する（要確認）
+    ・引用'xxx xxxxx'のスペースはnbspに置き換える（要確認）
+    ・関数の引数カンマの後ろにあるスペースは削除する
+    ・上記以外のすべてのスペースは削除する
+
+    ymlからGrepする際は(?<!^|:[0-9]) で検索するとスペースが残っているか確認できる
+
+    :param text:
+    :return:
+    """
+
+    text = re.sub(r'(@[^!]+!)\[Nbsp]',  r'\1', text)
+    text = re.sub(r'(@[^!]+!)(\s*)', r'\1', text)
+    #text = re.sub(r'(!\$EXPENSE_ICON\$)(\s*)', r'\1', text)  # アイコン自体を呼び出ししている変数
+    text = re.sub(r'@warning!', r'@warning! ', text)
+    text = re.sub(r'@information!', r'@information! ', text)
+    text = re.sub(r'@simple_box!', r'@simple_box! ', text)
+    text = re.sub(r'@red_cross!', r'@red_cross! ', text)
+    text = re.sub(r'@green_checkmark_box!', r'@green_checkmark_box! ', text)
+    text = re.sub(r'\$FLAG_ICON\$(\[Nbsp]| | )*', '$FLAG_ICON$ ', text)
+    text = re.sub(r'#! +', r'#!', text)
+    text = re.sub(r'\s*/\s*', r'/', text)
+    text = re.sub(r'(#[a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z|\[\].$_\'()#]+,?)+)?)\s?', r'\1▲', text)
+    text = re.sub(r'(\'[^\']*\')', lambda x: re.sub(r' +', ' ', x.group()), text)
+    text = re.sub(r'[a-zA-Z0-9_]+\([^)]+\)', lambda x: re.sub(r' +', '', x.group()), text)
+    text = text.replace(' ', '')
+    text = text.replace('▲', ' ')
+
+    return text
 
 
 def generate_metadata_json_file(target_path, mod_version, game_version):
@@ -141,7 +290,6 @@ def main():
     # Modを構築する（フォルダのまま）
     mod_folder_path = assembly_mod(
         resource_paratranz_main_zip_file_path=p_file_main_path,
-        resource_dir_path=_(".", "resource"),
         out_dir_path=out_dir_path)
     print("mod_dir_path:{}".format(out_dir_path))
 
@@ -151,3 +299,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+    shutil.copytree(src="./out/localization",
+                    dst="C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\529340\\2881605374\\localization",
+                    dirs_exist_ok=True)
+
