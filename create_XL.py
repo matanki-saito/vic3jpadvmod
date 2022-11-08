@@ -4,7 +4,6 @@ import datetime
 import openpyxl
 from openpyxl.styles import Alignment
 import re
-import requests
 from github import Github
 
 def create_xl():
@@ -70,8 +69,8 @@ def create_xl():
 
 		#出来立てのシートには一行目に見出しを付ける
 		if(sheet.max_row == 1):
-			sheet.cell(row=1, column=1).value = 'Issue number'
-			sheet.cell(row=1, column=2).value = 'Issue title'
+			sheet.cell(row=1, column=1).value = 'number'
+			sheet.cell(row=1, column=2).value = 'title'
 			for h in headers:
 				sheet.cell(row=1, column=sheet.max_column+1).value = h
 
@@ -97,10 +96,10 @@ def create_xl():
 
 	#最後に全シートに対してスタイルを設定する
 	for s in book:
-		for c in range(2,s.max_column):
-			s.column_dimensions[s.cell(row=1,column=c).column_letter].width = 40
-			for r in range(2,s.max_row):
-				s.cell(row=r,column=c).alignment = Alignment(horizontal='general', vertical = 'center', wrapText= True)
+		for c in range(2, s.max_column):
+			s.column_dimensions[s.cell(row=1, column=c).column_letter].width = 40
+			for r in range(2, s.max_row):
+				s.cell(row=r, column=c).alignment = Alignment(horizontal='general', vertical='center', wrapText=True)
 
 	#.xlsxファイルの保存先(例)：./issues/2022-10-30.xlsx
 	xlname = './issues/'+str(datetime.date.today())+'.xlsx'
