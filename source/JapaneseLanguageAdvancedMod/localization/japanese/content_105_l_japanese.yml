@@ -575,7 +575,7 @@
  slave_owner_paranoia_events.3.d:0 "昨今、[SCOPE.gsInterestGroup('visiting_abolitionist_ig').GetName]の[SCOPE.gsInterestGroup('visiting_abolitionist_ig').GetLeader.GetFullName]が[SCOPE.sState('visiting_abolitionist_state').GetName]各地を巡っています。どうやら[SCOPE.gsInterestGroup('visiting_abolitionist_ig').GetLeader.GetHerHim]は奴隷制廃止論者で、旅の目的は自説の宣伝とそのための証言集めのようです。ところが、各地の奴隷所有者たちは、この演説行の真の目的が反乱扇動にあると考えており、[SCOPE.gsInterestGroup('visiting_abolitionist_ig').GetLeader.GetLastName]が州から追放されることを望んでいます。"
  slave_owner_paranoia_events.3.f:0 "「[SCOPE.gsInterestGroup('visiting_abolitionist_ig').GetLeader.GetHerHim]が『穏健派』ですって？とんでもない。確かに大っぴらに『蜂起しろ』と言っているわけではありませんがね……ですが、あれだけ散々に奴隷制を批判して、農園主を非難しているんですよ。あんな演説を聞いて、取り巻きどもが思うことと言ったら、一つしかないでしょう。まあ、奴隷どもに聞かせるようなことは決してさせませんが。もし聞かれて、あいつらに変な気を起こされても困りますからね。次はうちの農場に来るかもしれませんし。貴方も気を付けた方が良いですよ」"
  slave_owner_paranoia_events.3.a:0 "[SCOPE.gsInterestGroup('visiting_abolitionist_ig').GetLeader.GetLastName]は疫病神だ。もっともな懸念だろう。"
- slave_owner_paranoia_events.3.b:0 "自由と正義について語ることは、常に許されるべきことだ。"
+ slave_owner_paranoia_events.3.b:0 "自由と正義を語る権利は、常に認められなくてはならない。"
  refused_slave_reprisals:0 "奴隷の陰謀への反撃の拒否"
  refused_attacking_hidden_communities:0 "隠れたコミュニティへの攻撃の拒否"
  abolitionist_influence:0 "廃止論者の影響"

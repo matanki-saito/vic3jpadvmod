@@ -44,7 +44,7 @@
  mm_incorporate_state_interaction:0 "州の編入"
  mm_move_capital_interaction:0 "首都の移転"
  mm_move_market_capital_interaction:0 "中心市場の移転"
- mm_activate_conscripts_interaction:0 "徴兵センターの始動"
+ mm_activate_conscripts_interaction:0 "徴兵事務所の始動"
  mm_diplomatic_play_country_interaction:0 "国における外交戦"
  mm_diplomatic_play_state_interaction:0 "州における外交戦"
  mm_diplomatic_action_interaction:0 "外交アクション"
