@@ -6,6 +6,15 @@ from openpyxl.styles import Alignment
 import re
 from github import Github
 
+label_en_map = {
+	"イベント等テキスト": "event",
+	"ゲームシステム用語": "term",
+	"バグ": "term",
+	"インターフェイス": "interface",
+	"固有名詞": "proper noun",
+	"ツールチップ": "tooltip",
+	"提案": "suggestion"
+}
 
 def create_xl():
 
@@ -17,7 +26,8 @@ def create_xl():
 
 	# excelブックの準備
 	book = openpyxl.Workbook()
-	book.create_sheet(title='その他')
+	book.remove(book.worksheets[-1])
+	book.create_sheet(title='other')
 
 	# 反復用の変数の準備/2行目と3列目
 	ITR_FIRST_COL = 3
@@ -54,16 +64,24 @@ def create_xl():
 
 		# issueに(タグ)がついていて、タグ名のシートがなければシートを作成
 		if issue.labels:
-			if issue.labels[0].name in book.sheetnames:
+			name = issue.labels[0].name
+
+			# 重複タグは起票済みをCloseしたものなので含まないようにする
+			if name in ['重複'] or name not in label_en_map.keys():
+				continue
+
+			e_name = label_en_map.get(name)
+
+			if e_name in book.sheetnames:
 				pass
 			else:
-				book.create_sheet(title=issue.labels[0].name)
+				book.create_sheet(title=e_name)
 			# タグ名のシートを選択
-			sheet = book[issue.labels[0].name]
+			sheet = book[e_name]
 
 		# タグが付いていない場合'その他'のシートを選択
 		else:
-			sheet = book['その他']
+			sheet = book['other']
 
 		# 出来立てのシートには一行目に見出しを付ける
 		if sheet.max_row == 1:
