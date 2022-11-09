@@ -789,7 +789,7 @@
  lesson_interest_group_8:0 "$lesson_interest_group_1$"
  lesson_interest_group_8_desc:0 "[concept_interest_group]を支持する[Concept('concept_pop', '$concept_pops$')]はすべてパネルから確認できます。$concept_pop$の各個人が好きな[concept_interest_group]を個別に支持できることをお忘れなく。そのため$concept_pop$全体で見た利益集団支持率の割合は、2～4の$concept_interest_groups$で分散することになります。"
  lesson_interest_group_9:0 "$lesson_interest_group_1$"
- lesson_interest_group_9_desc:0 "[concept_interest_group]が支持する[Concept('concept_law', '$concept_laws$')]も一覧を希望順に並べ替えることで確認できます。$enact$ボタンにカーソルを合わせると、この利益集団や国内のその他の$concept_interest_groups$による[concept_approval]の効力を明確化することができます。"
+ lesson_interest_group_9_desc:0 "この[concept_interest_group]が支持する[Concept('concept_law', '$concept_laws$')]を希望順に並べた一覧も用意されています。$concept_enactment_of_laws_enact$ボタンにカーソルを合わせると、この$concept_law$が国内の$concept_interest_groups$の[concept_approval]に対して及ぼす効力を確認することができます。"
  JOURNAL_ENTRY_IN_PROGRESS:0 "@green_checkmark! #bold 完了に向けて進行中#!"
  je_tutorial_expand_basic_building:0 "基本$concept_building$の拡張"
  je_tutorial_expand_basic_building_status:0 "[JournalEntry.GetTarget.GetBuilding.GetState.GetName]にある[JournalEntry.GetTarget.GetBuilding.GetName]を拡張する"

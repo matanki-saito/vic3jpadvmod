@@ -342,7 +342,7 @@
  modifier_institution_cost_mult_desc:0 "制度の $BUREAUCRACY$ 維持コストに対する増減補正です"
  modifier_state_birth_rate_mult:0 "出生率"
  modifier_state_birth_rate_mult_desc:0 "毎年どのぐらいの子供が生まれるかを示しています"
- modifier_state_accepted_birth_rate_mult:0 "容認されたPOPの出生率"
+ modifier_state_accepted_birth_rate_mult:0 "受容されたPOPの出生率"
  modifier_state_accepted_birth_rate_mult_desc:0 "差別されていないPOPの子どもが毎年生まれる数"
  modifier_state_mortality_mult:0 "$concept_pop_growth_mortality$"
  modifier_state_mortality_mult_desc:0 "全[Concept('concept_pop', '$concept_pops$')]の[Concept('concept_pop_growth','$concept_pop_growth_mortality$')]に対する増減補正です"

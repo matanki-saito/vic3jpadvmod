@@ -149,7 +149,7 @@
  WAR_PEACE_BOTH_SIDES_CLAIM_STATE:0 "双方が[STATE.GetStateRegion.GetName]における[Concept('concept_state', '$concept_states$')]を主張しているため、[concept_peace_deal]が失効しました"
  WAR_PEACE_INVALID_WARGOAL:0 "[WAR_GOAL.GetName|v]が無効となったため、[concept_peace_deal]が失効しました"
  WAR_PEACE_ALREADY_ACTIVE_PEACE_DEAL:0 "既に有効な[concept_peace_deal]を提案中です"
- WAR_PEACE_ALREADY_WHITE_PEACE:0 "我が国が提案した[concept_peace_deal]は既に表面上の和平となっています"
+ WAR_PEACE_ALREADY_WHITE_PEACE:0 "我が国の提案した[concept_peace_deal]の条件は既に白紙化されています"
  WAR_PEACE_PROPOSAL_COOLDOWN:0 "別の[concept_peace_deal]を提案するまで#v $DATE$#!待機する必要があります"
  WAR_PEACE_MUST_PRESS_INDEPENDENCE:0 "$COUNTRY_NAME$ は自国の独立を阻害する[concept_peace_deal]には#bold 同意しません#!。"
  WAR_NAME_FORMAT_DEFAULT:0 "$INITIATOR$ 対 $TARGET$"
