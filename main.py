@@ -118,11 +118,11 @@ mask_r_p = "|".join(map(re.escape, mask_r.keys()))
 
 
 def k(x):
-    return re.sub(mask_k_p, lambda y: mask_k.get(y.group()), x.group())
+    return re.sub(mask_k_p, lambda y: mask_k.get(y.group()), x)
 
 
 def r(x):
-    return re.sub(mask_r_p, lambda y: mask_r.get(y.group()), x.group())
+    return re.sub(mask_r_p, lambda y: mask_r.get(y.group()), x)
 
 
 # 記号の問題
@@ -152,19 +152,20 @@ def issue_241(text):
     # \wが壊れている？ので使用禁止 [a-zA-Z0-9_]
 
     # mask
-    text = re.sub(r'(#[a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)+)?)\s', k, text)
-    text = re.sub(r'\[[^]]+]', k, text)  # 実行処理
-    text = re.sub(r'[a-zA-Z0-9_]+\([^\)]+\)', k, text)  # 関数
-    text = re.sub(r'\$[a-zA-Z0-9_|+=\-%]+\$', k, text)  # 変数
-    text = re.sub(r'\'[^\']*\'', k, text)  # 文字列
+    text = re.sub(r'(#[a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)+)?)\s',
+                  lambda x: k(x.group(1)) + "♉", text)
+    text = re.sub(r'\[[^]]+]', lambda x: k(x.group()), text)  # 実行処理
+    text = re.sub(r'[a-zA-Z0-9_]+\([^)]+\)', lambda x: k(x.group()), text)  # 関数
+    text = re.sub(r'\$[a-zA-Z0-9_|+=\-%]+\$', lambda x: k(x.group()), text)  # 変数
+    text = re.sub(r'\'[^\']*\'', lambda x: k(x.group()), text)  # 文字列
 
     # 値の符号は保持する
-    text = re.sub(r'-\$(AMOUNT|VAL|MAINTENANCE)', k, text)
-    text = re.sub(r'-[0-9]+', k, text)
-    text = re.sub(r'-★WarParticipant✡GetNumDead', k, text)
-    text = re.sub(r'#N -', k, text)
-    text = re.sub(r'#[N|P]\s*#bold-', k, text)
-    text = re.sub(r'@money!-', k, text)
+    text = re.sub(r'-\$(AMOUNT|VAL|MAINTENANCE)', lambda x: k(x.group()), text)
+    text = re.sub(r'-[0-9]+', lambda x: k(x.group()), text)
+    text = re.sub(r'-★WarParticipant✡GetNumDead', lambda x: k(x.group()), text)
+    text = re.sub(r'#N♉-', lambda x: k(x.group()), text)
+    text = re.sub(r'#[N|P]♉*#(bold|BOLD)♉*-', lambda x: k(x.group()), text)
+    text = re.sub(r'@money!-', lambda x: k(x.group()), text)
 
     # 幅調整
     text = re.sub(r'：',  r' : ', text)
@@ -190,13 +191,13 @@ def issue_241(text):
 
     #text = re.sub(r'(?<!\||\d|v|=|%|K)-(?!(\$VAL|\$AMOUNT))', r' xxxx ', text)
 
-    text = text.replace(".", "。")
-    text = text.replace(",", "、")
-    text = text.replace(";", "つまり")
+    #text = text.replace(".", "。")
+    #text = text.replace(",", "、")
+    #text = text.replace(";", "つまり")
     text = text.replace("-", "―")
-    #text = text.replace(":", " : ")
 
-    text = re.sub(mask_r_p, r, text)
+    text = re.sub(mask_r_p, lambda x: r(x.group()), text)
+    text = text.replace("♉", " ")
 
     return text
 
@@ -240,6 +241,8 @@ def issue_242(text):
     text = re.sub(r'(\'[^\']*\')', lambda x: re.sub(r' +', ' ', x.group()), text)
     text = re.sub(r'[a-zA-Z0-9_]+\([^)]+\)', lambda x: re.sub(r' +', '', x.group()), text)
     text = text.replace(' ', '')
+    text = re.sub(r'(\[Goods\.GetTextIcon])(\[Nbsp]| | )*', r'\1', text)
+    text = re.sub(r'(\$GOODS_ICON\$ )(\[Nbsp]| | )*', r'\1', text)
     text = text.replace('▲', ' ')
 
     return text
