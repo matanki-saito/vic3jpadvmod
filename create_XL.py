@@ -4,110 +4,126 @@ import datetime
 import openpyxl
 from openpyxl.styles import Alignment
 import re
-import requests
 from github import Github
+
+label_en_map = {
+	"イベント等テキスト": "event",
+	"ゲームシステム用語": "term",
+	"バグ": "term",
+	"インターフェイス": "interface",
+	"固有名詞": "proper noun",
+	"ツールチップ": "tooltip",
+	"提案": "suggestion"
+}
 
 def create_xl():
 
-	#トークンでgithubにアクセス
+	# トークンでgithubにアクセス
 	g = Github(os.environ.get('GITHUB_TOKEN'))
 
-	#リポジトリにアクセス
+	# リポジトリにアクセス
 	repo = g.get_repo('matanki-saito/vic3jpadvmod')
-			
-	#excelブックの準備
-	book = openpyxl.Workbook()
-	book.create_sheet(title='その他')
 
-	#反復用の変数の準備/2行目と3列目
-	ITR_FIRST_ROW = 2
+	# excelブックの準備
+	book = openpyxl.Workbook()
+	book.remove(book.worksheets[-1])
+	book.create_sheet(title='other')
+
+	# 反復用の変数の準備/2行目と3列目
 	ITR_FIRST_COL = 3
-	i=ITR_FIRST_COL
-	j=ITR_FIRST_ROW
-	#各issueに対して処理
+	i = ITR_FIRST_COL
+	# 各issueに対して処理
 	for _issue in repo.get_issues(state='all'):
 		issue = _issue
 
-		#issueの本文を整形する
-		#issueの本文を改行ごとに分ける
+		# issueの本文を整形する
+		# issueの本文を改行ごとに分ける
 		lines = re.split('\r\n|\n', issue.body)
 		body_continue = False
 		headers = []
 		bodies = []
-		
-		for l in lines:
-			lfix = l.replace('```', '')
-			#Excelに不要な行は削除
-			if '※「｀｀｀」は消さないでください' in l or '＜ゲームシステム用語＞' in l or l == '':
+
+		for line in lines:
+			lfix = line.replace('```', '')
+			# Excelに不要な行は削除
+			if '※「｀｀｀」は消さないでください' in line or '＜ゲームシステム用語＞' in line or line == '':
 				pass
-			#見出しを格納
-			elif '##' in l:
+			# 見出しを格納
+			elif '##' in line:
 				headers.append(lfix)
 				body_continue = False
-			#本文を格納
+			# 本文を格納
 			else:
 				if len(bodies) == 0 or body_continue == False:
 					bodies.append(lfix)
-					bodies[-1]=bodies[-1]+'\n'
+					bodies[-1] = bodies[-1]+'\n'
 					body_continue = True
-				elif body_continue == True: 
-					bodies[-1]=bodies[-1]+lfix+'\n'
+				elif body_continue:
+					bodies[-1] = bodies[-1]+lfix+'\n'
 					body_continue = True
 
-		#issueに(タグ)がついていて、タグ名のシートがなければシートを作成
-		if(issue.labels != []):
-			if(issue.labels[0].name in book.sheetnames):
+		# issueに(タグ)がついていて、タグ名のシートがなければシートを作成
+		if issue.labels:
+			name = issue.labels[0].name
+
+			# 重複タグは起票済みをCloseしたものなので含まないようにする
+			if name in ['重複'] or name not in label_en_map.keys():
+				continue
+
+			e_name = label_en_map.get(name)
+
+			if e_name in book.sheetnames:
 				pass
 			else:
-				book.create_sheet(title=issue.labels[0].name)
-			#タグ名のシートを選択
-			sheet = book[issue.labels[0].name]
+				book.create_sheet(title=e_name)
+			# タグ名のシートを選択
+			sheet = book[e_name]
 
-		#タグが付いていない場合'その他'のシートを選択
+		# タグが付いていない場合'その他'のシートを選択
 		else:
-			sheet = book['その他']
+			sheet = book['other']
 
-
-		#出来立てのシートには一行目に見出しを付ける
-		if(sheet.max_row == 1):
-			sheet.cell(row=1, column=1).value = 'Issue number'
-			sheet.cell(row=1, column=2).value = 'Issue title'
+		# 出来立てのシートには一行目に見出しを付ける
+		if sheet.max_row == 1:
+			sheet.cell(row=1, column=1).value = 'number'
+			sheet.cell(row=1, column=2).value = 'title'
 			for h in headers:
 				sheet.cell(row=1, column=sheet.max_column+1).value = h
 
-		#issueの番号とタイトルを挿入する
+		# issueの番号とタイトルを挿入する
 		sheet.cell(row=sheet.max_row+1, column=1).value = issue.number
 		sheet.cell(row=sheet.max_row, column=2).value = issue.title
 
-		#issueの内容を挿入するのは選択したシートの最大行
+		# issueの内容を挿入するのは選択したシートの最大行
 		j = sheet.max_row
 
-		#issueの内容を挿入する
+		# issueの内容を挿入する
 		height_max = 1
 		for b in bodies:
 			sheet.cell(row=j, column=i).value = b
-			#行の高さを出すため本文の長さから行数を計算
+			# 行の高さを出すため本文の長さから行数を計算
 			height = int(len(b) * 2 / 40)
 			if height > height_max:
 				height_max = height
-			i=i+1
+			i = i+1
 		sheet.row_dimensions[sheet.cell(row=j, column=i).row].height = height_max * 15
-		i=ITR_FIRST_COL
-		
+		i = ITR_FIRST_COL
 
-	#最後に全シートに対してスタイルを設定する
+	# 最後に全シートに対してスタイルを設定する
 	for s in book:
-		for c in range(2,s.max_column):
-			s.column_dimensions[s.cell(row=1,column=c).column_letter].width = 40
-			for r in range(2,s.max_row):
-				s.cell(row=r,column=c).alignment = Alignment(horizontal='general', vertical = 'center', wrapText= True)
+		for c in range(2, s.max_column):
+			s.column_dimensions[s.cell(row=1, column=c).column_letter].width = 40
+			for r in range(2, s.max_row):
+				s.cell(row=r, column=c).alignment = Alignment(horizontal='general', vertical='center', wrapText=True)
 
-	#.xlsxファイルの保存先(例)：./issues/2022-10-30.xlsx
+	# .xlsxファイルの保存先(例)：./issues/2022-10-30.xlsx
 	xlname = './issues/'+str(datetime.date.today())+'.xlsx'
 	book.save(xlname)
 
+
 def main():
 	create_xl()
+
 
 if __name__ == "__main__":
 	main()
