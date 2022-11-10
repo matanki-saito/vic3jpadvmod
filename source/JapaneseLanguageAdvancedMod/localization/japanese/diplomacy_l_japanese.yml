@@ -266,7 +266,7 @@
  embargo_action_notification_name:0 "[concept_embargo]"
  embargo_action_notification_desc:0 "[INITIATOR_COUNTRY.GetName]が我が国に対する[Concept('concept_embargo', '$concept_embargoing$')]措置を開始しました。これまで彼らの[concept_market]に構築してきた[Concept('concept_trade_route','$concept_trade_routes$')]は機能しなくなります。"
  embargo_action_notification_third_party_name:0 "[concept_embargo]"
- embargo_action_notification_third_party_desc:0 "[INITIATOR_COUNTRY.GetName]が[Concept('concept_embargo', '$concept_embargoing$')]に対して[TARGET_COUNTRY.GetName]を開始しました。"
+ embargo_action_notification_third_party_desc:0 "[INITIATOR_COUNTRY.GetName]が[TARGET_COUNTRY.GetName]に対して[Concept('concept_embargo', '$concept_embargoing$')]を開始しました。"
  embargo_action_notification_break_name:0 "[concept_embargo]が終了しました"
  embargo_action_notification_break_desc:0 "[INITIATOR_COUNTRY.GetName]が我が国に対する[Concept('concept_embargo', '$concept_embargoing$')]措置を終わらせました。"
  embargo_action_notification_third_party_break_name:0 "[concept_embargo]が終了しました"
