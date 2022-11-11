@@ -34,7 +34,7 @@ def create_xl():
 	ITR_FIRST_COL = 3
 	i = ITR_FIRST_COL
 	# 各issueに対して処理
-	for _issue in repo.get_issues(state='all'):
+	for _issue in repo.get_issues(state='closed'):
 		issue = _issue
 
 		# issueの本文を整形する
