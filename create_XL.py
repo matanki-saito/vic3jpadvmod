@@ -44,9 +44,11 @@ def create_xl():
 		bodies = []
 
 		for line in lines:
-			lfix = line.replace('```', '')
+			lfix = line.replace('```', '').replace("##", "").replace("（必須）", "").replace("（任意）", "")
+			lfix = re.sub(r"!\[[^]]*]\(([^)]+)\)", r'=HYPERLINK("\1","screenshot")', lfix)
 			# Excelに不要な行は削除
-			if '※「｀｀｀」は消さないでください' in line or '＜ゲームシステム用語＞' in line or line == '':
+			if line in ['※「｀｀｀」は消さないでください', '※「```」は消さないでください', '＜ゲームシステム用語＞', '', '※画像はドラッグ＆ドロップで貼り付けられます。',
+						'※できるだけ問題箇所の前後を含めて貼ってください。']:
 				pass
 			# 見出しを格納
 			elif '##' in line:
@@ -67,7 +69,7 @@ def create_xl():
 			name = issue.labels[0].name
 
 			# 重複タグは起票済みをCloseしたものなので含まないようにする
-			if name in ['重複'] or name not in label_en_map.keys():
+			if name in ['重複', 'プログラム', '提案'] or name not in label_en_map.keys():
 				continue
 
 			e_name = label_en_map.get(name)
@@ -91,7 +93,8 @@ def create_xl():
 				sheet.cell(row=1, column=sheet.max_column+1).value = h
 
 		# issueの番号とタイトルを挿入する
-		sheet.cell(row=sheet.max_row+1, column=1).value = issue.number
+		sheet.cell(row=sheet.max_row+1, column=1).value = \
+			'=HYPERLINK("https://github.com/matanki-saito/vic3jpadvmod/issues/%d",%d)' % (issue.number, issue.number)
 		sheet.cell(row=sheet.max_row, column=2).value = issue.title
 
 		# issueの内容を挿入するのは選択したシートの最大行
