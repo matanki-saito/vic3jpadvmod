@@ -1,0 +1,50 @@
+name: auto-report
+
+on:
+  push:
+    branches:
+      - feature/auto-report
+
+jobs:
+  build:
+    runs-on: windows-2019
+    strategy:
+      matrix:
+        python-version: [ 3.8 ]
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Update pip
+        run: |
+          python -m pip install --upgrade pip
+      - name: Install PyGithub
+        run: |
+          pip install pygithub
+      - name: Install OpenPyXL
+        run: |
+          pip install openpyxl
+          
+      - name: Create XL
+        run: |
+          python create_XL.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token          
+
+      - name: push XL
+        run: |
+          dir
+          git config --global user.email "flowlanss@jcom.home.ne.jp"
+          git config --global user.name "flowlanss"
+          git config --global url."https://${{ secrets.GITHUB_TOKEN }}:x-oauth-basic@github.com/".insteadOf "https://github.com/"        
+          git add -A
+          git commit -m "new issues added"
+          git push origin HEAD
+        shell: cmd        
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
