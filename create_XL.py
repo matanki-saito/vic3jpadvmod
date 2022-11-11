@@ -12,6 +12,7 @@ label_en_map = {
 	"バグ": "term",
 	"インターフェイス": "interface",
 	"固有名詞": "proper noun",
+	"固有名詞（バルク）": "proper nown (bulk)",
 	"ツールチップ": "tooltip",
 	"提案": "suggestion"
 }
@@ -63,10 +64,14 @@ def create_xl():
 				elif body_continue:
 					bodies[-1] = bodies[-1]+lfix+'\n'
 					body_continue = True
-
+			
 		# issueに(タグ)がついていて、タグ名のシートがなければシートを作成
 		if issue.labels:
 			name = issue.labels[0].name
+			if len(issue.labels) > 1:
+				sub_label = issue.labels[1].name
+				if sub_label == '提案':
+					continue
 
 			# 重複タグは起票済みをCloseしたものなので含まないようにする
 			if name in ['重複', 'プログラム', '提案'] or name not in label_en_map.keys():
