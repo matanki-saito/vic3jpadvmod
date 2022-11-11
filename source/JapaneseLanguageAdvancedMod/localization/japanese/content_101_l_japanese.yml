@@ -169,7 +169,7 @@
  custom_crocodile:0 "人ではない何か巨大な生物によって患部が食いちぎられている。足跡を発見したため哺乳動物ではないことが分かっている。"
  custom_strangled:0 "殺人犯はそれぞれの被害者が眠っているところを絞殺しており、翌朝になって死体が発見されている。"
  custom_stabbed:0 "身元確認ができなくなるほど何百回も刺した跡がある。"
- ACTIVE_LAWS_DESC:0 "現在自国で発効中の法律。"
+ ACTIVE_LAWS_DESC:0 "現在自国で施行中の法律。"
  decentralized_power:0 "[Concept('concept_decentralized_nation', '分権型国家')]"
  natural_disaster_events.1.t:0 "[SCOPE.sState('earthquake_state').GetName]の地震"
  natural_disaster_events.1.d:0 "[SCOPE.sState('earthquake_state').GetName]州を襲った地震では、施設が破壊され、負傷者が出ており、さらには死者まで報告されている。"

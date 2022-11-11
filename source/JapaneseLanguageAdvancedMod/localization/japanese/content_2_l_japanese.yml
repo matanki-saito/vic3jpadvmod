@@ -293,7 +293,7 @@
  africa_colonial_events.41.t:0 "非合法的帝国主義者"
  africa_colonial_events.41.d:0 "愛国主義者であり、[SCOPE.gsInterestGroup('rogue_imperialist_ig').GetName]のパルチザンでもある探検家が、[SCOPE.sState('rogue_imperialist_state').GetName]の調査へ赴き、我が国代表として現地リーダーたちと条約を締結している。だがこのエリアは既に[SCOPE.sCountry('rogue_imperialist_target').GetName]の影響下にあり、探検家による領有権の主張が露見した場合、[SCOPE.sCountry('rogue_imperialist_target').GetName]は我が国に激怒することだろう。"
  africa_colonial_events.41.f:0 "「この男は狂人だ！我が国は彼の地で細心の注意を払いながら駒を進めようとしているのに、あの男はテーブルをひっくり返して我々の頭痛の種になっている。それが国家のため？勘弁して欲しいものだ！奴は自分がどれほどの被害を及ぼしているか自覚していないのか？」"
- africa_colonial_events.41.a:0 "[SCOPE.sState('rogue_imperialist_state').GetName]の領有権主張を承認して[SCOPE.sCountry('rogue_imperialist_target').GetName]を怒らせる。"
+ africa_colonial_events.41.a:0 "[SCOPE.sState('rogue_imperialist_state').GetName]の請求権を承認して[SCOPE.sCountry('rogue_imperialist_target').GetName]を怒らせる。"
  africa_colonial_events.41.b:0 "探検家の主張を却下して我が国のジンゴイストを怒らせる。"
  africa_colonial_events.41.c:0 "まるでお手本のような男じゃないか！[SCOPE.gsInterestGroup('rogue_imperialist_ig').GetName]の代表となるべき人物だ。"
  government_insults_military_honor:0 "政府が軍隊の名誉を傷つける"

@@ -174,7 +174,7 @@
  DATA_GOODS_STATE_CONTEXT_PRICE_LABEL:0 "[State.GetName] 価格"
  COUNTRY_RANK_BREAKDOWN:0 "[Country.GetRankTooltip]"
  IG_CLOUT_BREAKDOWN:0 "#BOLD #V [concept_clout]#!#!\n$POL_STR_RATIO$\n$TOOLTIP_DELIMITER$\n$RAW_POL_STR$\n\n人口: #variable [InterestGroup.GetPopulation|D*]#!"
- IG_APPROVAL_BREAKDOWN:0 "#header [concept_approval]#!\n[InterestGroup.GetName]の[concept_approval]は[InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]です"
+ IG_APPROVAL_BREAKDOWN:0 "#header [concept_approval]#!\n[InterestGroup.GetName]の[concept_approval]は[InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]"
  IG_POL_STR_BREAKDOWN:0 "[InterestGroup.GetPoliticalStrengthDesc]"
  MARKET_BALANCE_BREAKDOWN:0 "[Market.GetBalanceDesc]"
  COUNTRY_MOBILIZATION_BREAKDOWN:0 "#header 動員見込み#!\n[Country.GetMobilizationBreakdownByState]"
