@@ -190,7 +190,7 @@
  notification_country_shared_plastics_tech_desc:0 "[SCOPE.sCountry('plastic_neighbor').GetCapital.GetCityHubName]に到着した[SCOPE.sCountry('plastic_origin').GetNameNoFormatting]の科学使節団が、プラスチック生産の設計図や概要図を我が国へと持ち込んだ。"
  notification_country_shared_plastics_tech_tooltip:0 "#header $notification_country_shared_plastics_tech_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_shared_plastics_tech_desc$"
  notification_country_shared_radio_tech_name:0 "[SCOPE.sCountry('radio_production_origin').GetName]が無線の知識を我が国と共有"
- notification_country_shared_radio_tech_desc:0 "[SCOPE.sCountry('radio_production_neighbor').GetCapital.GetCityHubName]に到着した[SCOPE.sCountry('radio_production_origin').GetNameNoFormatting]の科学使節団が、無線生産の設計図や回路図を我が国へと持ち込んだ。"
+ notification_country_shared_radio_tech_desc:0 "[SCOPE.sCountry('radio_production_neighbor').GetCapital.GetCityHubName]に到着した[SCOPE.sCountry('radio_production_origin').GetNameNoFormatting]の科学使節団が、無線機生産の設計図や回路図を我が国へと持ち込んだ。"
  notification_country_shared_radio_tech_tooltip:0 "#header $notification_country_shared_radio_tech_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_shared_radio_tech_desc$"
  notification_warlord_china_explosion_point_add_name:0 "[SCOPE.GetRootScope.GetCountry.GetName]が不安定化する。"
  notification_warlord_china_explosion_point_add_desc:0 "我が国が[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]問題への対応を誤ったため、我が国の規制が非合法化され、国家が完全崩壊へと近づいた。"

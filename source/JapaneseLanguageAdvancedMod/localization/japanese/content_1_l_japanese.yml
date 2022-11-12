@@ -10,7 +10,7 @@
  victoria.2.f:0 "「私は姪のために、最後の血の一滴まで流すぞ」"
  victoria.2.a:0 "国王陛下万歳！"
  victoria.2.tt:0 "[SCOPE.sCountry('hannover_victoria_scope').GetAdjective][concept_customs_union]のメンバーは私たちの経済圏に残る。"
- grand_exhibition_decision_custom_tooltip_2:0 "過去に大展覧会は開催されていません"
+ grand_exhibition_decision_custom_tooltip_2:0 "過去に万国博覧会は開催されていません"
  european_heritage:0 "ヨーロッパ系統"
  african_heritage:0 "アフリカ系統"
  east_asian_heritage:0 "東アジア系統"
