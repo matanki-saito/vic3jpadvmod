@@ -88,6 +88,9 @@ def convert_json_to_yml(target_path):
             with open(file_path, 'r', encoding='utf-8') as fr:
                 for entry in json.load(fr):
                     translation = entry["translation"]
+
+                    # [Nbsp]の表記ゆれを直して実態にする。
+                    translation = re.sub(r'\[[Nn][Bb][Ss][Pp]]', " ", translation)
                     translation = issue_242(translation)
                     translation = issue_241(translation)
 
@@ -205,19 +208,31 @@ def issue_241(text):
 # 半角スペースの問題
 def issue_242(text):
     """
-    ・特殊アイコンには後ろにnbspを入れる。指定アイコンは下記の通り。
+    ・以下のアイコンには後ろにスペースを１つ入れる。指定アイコンは下記の通り。
      - simple_box : 空のチェックボックス
      - red_cross : 赤Xのチェックボックス
      - green_checkmark_box : 緑✔のチェックボックス
      - warning : 赤い！
      - information : 青い！
-    ・指定アイコン以外の後ろにある[Nbsp]及びスペースは削除する
-    ・国旗の後ろにはnbspを入れる
-    ・開始タグの後ろにスペースは必要。
-    ・終了タグの後ろのスペースは削除する
-    ・x / yのスラッシュ前後のスペースは削除する（要確認）
-    ・引用'xxx xxxxx'のスペースはnbspに置き換える（要確認）
-    ・関数の引数カンマの後ろにあるスペースは削除する
+     - $FLAG_ICON$ : 国旗
+
+    ・以下のアイコンの後ろのスペースは削除
+     - スペースを入れなかった@xxx!のアイコン
+     - [Goods.GetTextIcon] : 交易品
+     - $GOODS_ICON$ : 交易品
+
+    ・開始タグの後ろにスペースを1つ入れる。
+
+    ・アイコンの前にあるスペースは削除
+
+    ・/の前後にあるスペースは削除
+
+    ・引用文 'xxxx' 中にあるスペースはnbspにする（word-wrapで改行させないため）
+    ・関数中にあるスペースは削除する
+
+    ・日本語 記号　ー＞ スペース削除
+    ・記号 日本語 ー＞ スペース削除
+
     ・上記以外のすべてのスペースは削除する
 
     ymlからGrepする際は(?<!^|:[0-9]) で検索するとスペースが残っているか確認できる
@@ -226,23 +241,29 @@ def issue_242(text):
     :return:
     """
 
-    text = re.sub(r'(@[^!]+!)\[Nbsp]',  r'\1', text)
-    text = re.sub(r'(@[^!]+!)(\s*)', r'\1', text)
-    #text = re.sub(r'(!\$EXPENSE_ICON\$)(\s*)', r'\1', text)  # アイコン自体を呼び出ししている変数
-    text = re.sub(r'@warning!', r'@warning! ', text)
-    text = re.sub(r'@information!', r'@information! ', text)
-    text = re.sub(r'@simple_box!', r'@simple_box! ', text)
-    text = re.sub(r'@red_cross!', r'@red_cross! ', text)
-    text = re.sub(r'@green_checkmark_box!', r'@green_checkmark_box! ', text)
-    text = re.sub(r'\$FLAG_ICON\$(\[Nbsp]| | )*', '$FLAG_ICON$ ', text)
-    text = re.sub(r'#! +', r'#!', text)
-    text = re.sub(r'\s*/\s*', r'/', text)
-    text = re.sub(r'(#[a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z|\[\].$_\'()#]+,?)+)?)\s?', r'\1▲', text)
-    text = re.sub(r'(\'[^\']*\')', lambda x: re.sub(r' +', ' ', x.group()), text)
-    text = re.sub(r'[a-zA-Z0-9_]+\([^)]+\)', lambda x: re.sub(r' +', '', x.group()), text)
-    text = text.replace(' ', '')
-    text = re.sub(r'(\[Goods\.GetTextIcon])(\[Nbsp]| | )*', r'\1', text)
-    text = re.sub(r'(\$GOODS_ICON\$ )(\[Nbsp]| | )*', r'\1', text)
+    text = re.sub(r'[ 　 ]*(@[^!]+!)[ 　 ]*',  r'\1', text)
+
+    text = re.sub(r'@(warning|information|simple_box|red_cross|green_checkmark_box)![  ]*', r'@\1! ', text)
+    text = re.sub(r'(\$FLAG_ICON\$|\$GOODS_ICON\$)[  ]*', r'\1 ', text)
+    text = re.sub(r'(\[Goods\.GetTextIcon]|\$GOODS_ICON\$)[  ]*', r'\1', text)
+
+    text = re.sub(r'(#[$a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)*)?)[  ]?', r'\1▲', text)
+
+    # text = re.sub(r'#![  ]', r'#!', text)
+
+    text = re.sub(r'[  ]*/[  ]*', r'/', text)
+
+    text = re.sub(r'(\'[^\']*\')', lambda x: re.sub(r' ', ' ', x.group()), text)  # 引用文
+    text = re.sub(r'\[[^]]+]', lambda x: re.sub(r' ', '', x.group()), text)  # 実行処理
+
+    text = re.sub(r'([\[.\-+)($\]#])[  ]+([ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠])', r'\1\2', text)
+    text = re.sub(r'([ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠])[  ]+([\[.\-+)($\]#])', r'\1\2', text)
+
+    text = re.sub(r'\][  ]+\[', r'][', text)
+    text = re.sub(r'#![  ]+\'', '#!\'', text)
+
+    text = text.replace(' ', ' ')
+
     text = text.replace('▲', ' ')
 
     return text
