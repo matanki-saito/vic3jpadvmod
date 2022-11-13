@@ -175,7 +175,7 @@
  law_child_labor_allowed_desc:0 "子供が働く場所について、法的な制限はありません。"
  law_restricted_child_labor:0 "児童労働の制限"
  law_restricted_child_labor_desc:0 "工場での子供の労働は許可されていません。"
- law_compulsory_primary_school:0 "小学校義務教育"
+ law_compulsory_primary_school:0 "義務初等教育"
  law_compulsory_primary_school_desc:0 "すべての子どもたちは、小学校に数年間通わなければならず、その間は働くことができません。"
  lawgroup_slavery:0 "奴隷制"
  lawgroup_slavery_desc:0 "財産としての人間"

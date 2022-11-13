@@ -925,7 +925,7 @@
  exhibition_events.7.d:0 "万国博覧会のホールで特別商品に追加料金を請求している怪しい紳士たちがいるという報告がありました。"
  exhibition_events.7.f:0 "背の高い帽子をかぶった男だ。それはそれは背の高い帽子だ。彼が望遠鏡を指差した。なんとも貴重そうな品物だ。「どうでしょう。お試しになりませんか？たった1ペニーで夜空の奇跡を目撃することができるのですよ！」\n\nはた、と動きを止める。光り輝く機械。確かに金属製の下に脈動が見える。入場費用は1シリング。ポケットはからっぽだ。今、男は険しい笑顔を見せている。それはとてもとても険しい笑顔だ。"
  exhibition_events.7.a:0 "このような連中に万国博覧会の名を汚させるわけにはいかない。"
- exhibition_events.7.b:0 "1ペニーや2ペニー程度ならどってことない..."
+ exhibition_events.7.b:0 "1ペニーや2ペニー程度ならどうってことない..."
  titanic.1.t:0 "タイタニック号"
  titanic.1.t2:0 "[SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_titanic')]号"
  titanic.1.d:0 "[SCOPE.gsInterestGroup('titanic_ig').GetName]の[SCOPE.sCharacter('titanic_leader').GetFullName]は、[SCOPE.sState('titanic_state').GetName]の造船所で建造される豪華遠洋定期船の出資者になることを決断しました。今までに見たことがないような船になることでしょう。"
