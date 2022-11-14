@@ -2608,7 +2608,7 @@
  MODIFIER_DEFINITION_NAME:0 "#tooltippable_name #tooltip:$DESCRIPTION_TAG$ $NAME$#!#!"
  BALANCE_ITEM:0 "[TradeOverviewEntry.GetGoods.GetCompareIconAgainstBasePriceNoFormatting(TradeOverviewEntry.GetGoods.GetMarketPrice)] "
  RELATIONS_TOOLTIP:0 "#header [concept_relations]#!\n[COUNTRY.GetName]と[TARGET_COUNTRY.GetName]間の[concept_relations]:#BOLD $LABEL$#! (#variable $VAL|+=$#!)$PROGRESS$"
- INFAMY_TOOLTIP:0 "#header [COUNTRY.GetAdjective] [concept_infamy]: #BOLD $INFAMY_LABEL$#! （#variable $INFAMY|-1$#!）#!\n$TOOLTIP_DELIMITER$\n$INFAMY_DECAY$[ConcatIfNeitherEmpty('\n\nEffects:\n','$INFAMY_EFFECTS$')]"
+ INFAMY_TOOLTIP:0 "#header [COUNTRY.GetAdjective] [concept_infamy]: #BOLD $INFAMY_LABEL$#! （#variable $INFAMY|-1$#!）#!\n$TOOLTIP_DELIMITER$\n$INFAMY_DECAY$[ConcatIfNeitherEmpty('\n\n効果:\n','$INFAMY_EFFECTS$')]"
  INFAMY_DECAY_RATE:0 "[concept_infamy] 減衰: #P #bold -$VAL|3$#!#! / 週\n$TAB$基本減衰量: #P #bold -$YEARLYBASE|3$#!#!  / 年$MITIGATION$"
  TENSION_TOOLTIP:0 "私たちと[COUNTRY.GetName]の間の[concept_tension]レベル:#BOLD $LABEL$#! (#variable $VAL|-$#!)$DECAY$"
  TENSION_DECAY_RATE:0 "[concept_tension] 減衰: #P #bold -$VAL|3$#!#! / 週\n$TAB$基本減衰量: #P #bold -$YEARLYBASE|3$#!#!  / 年$MITIGATION$"
