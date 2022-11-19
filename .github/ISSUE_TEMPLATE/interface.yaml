@@ -1,0 +1,61 @@
+name: [WIP]インターフェイス
+description: インターフェイスに関する起票
+title: "XXX"
+labels: [インターフェイス]
+body:
+- type: textarea
+  attributes:
+    label: スクリーンショット
+    description: |
+      ※画像はドラッグ＆ドロップで貼り付けられます。
+      ※できるだけ問題箇所の前後を含めて貼ってください。
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: 問題のあるインターフェイス
+    placeholder: 政策ウィンドウ
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 問題のテキスト
+    description: |
+      ※記号が存在する場合は```で全体を囲んでください
+    placeholder: 政府体制支...
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 希望する変更
+    description: |
+      ※記号が存在する場合は```で全体を囲んでください
+    placeholder: 体制派
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: 変更の理由（概要）
+    placeholder: テキストが見切れて読めないため。
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 変更の理由（詳細）
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: ゲームバージョン
+    options:
+      - 1.0.X
+      - 1.1.X
+      - 1.2.X
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: MOD有無
+    placeholder: Visual Methods, State transfer tool
+  validations:
+    required: false
