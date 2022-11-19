@@ -25,7 +25,7 @@ body:
   attributes:
     label: 問題のイベントタイトル
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: イルハン朝の誕生
   validations:
     required: false
@@ -33,7 +33,7 @@ body:
   attributes:
     label: 問題のイベント本文（抜粋可）
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: イルハン朝が建国されれました。
   validations:
     required: false
@@ -41,14 +41,14 @@ body:
   attributes:
     label: 問題のイベント選択肢
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
   validations:
     required: false
 - type: textarea
   attributes:
     label: 希望する変更（修正部分のみ）
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: イルハン朝が建国されました
   validations:
     required: true

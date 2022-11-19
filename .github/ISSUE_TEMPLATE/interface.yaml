@@ -21,7 +21,7 @@ body:
   attributes:
     label: 問題のテキスト
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: 政府体制支...
   validations:
     required: true
@@ -29,7 +29,7 @@ body:
   attributes:
     label: 希望する変更
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: 体制派
   validations:
     required: true

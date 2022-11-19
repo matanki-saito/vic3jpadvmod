@@ -21,7 +21,7 @@ body:
   attributes:
     label: 問題の表現
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: 輸入　を鉛フランスの市場からメキシコの市場へ
   validations:
     required: true
@@ -29,7 +29,7 @@ body:
   attributes:
     label: 問題箇所の英文
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: Import ＜アイコン＞ Lead to Mexican Market from French Market
   validations:
     required: false
@@ -37,7 +37,7 @@ body:
   attributes:
     label: 希望する変更
     description: |
-      ※記号が存在する場合は```で全体を囲んでください
+      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
     placeholder: 鉛のフランス市場からメキシコ市場への輸入
   validations:
     required: true
