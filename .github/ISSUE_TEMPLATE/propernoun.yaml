@@ -1,0 +1,50 @@
+name: 固有名詞
+description: 固有名詞に関する起票
+title: "XXX"
+labels: [固有名詞]
+body:
+- type: textarea
+  attributes:
+    label: スクリーンショット
+    description: |
+      ※画像はドラッグ＆ドロップで貼り付けられます。
+      ※できるだけ問題箇所の前後を含めて貼ってください。
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: 問題の固有名詞：希望する変更
+    placeholder: |
+      アシレ：アシル
+      アドルフェ：アドルフ
+      アドリエン：アドリアン
+      アイマブル：エマブル
+      アマデー：アメデ
+  validations:
+    required: true
+- type: input
+  attributes:
+    label: 変更の理由（概要）
+    placeholder: 日本語では一般的ではない表記であるため
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: 変更の理由（詳細）
+  validations:
+    required: false
+- type: dropdown
+  attributes:
+    label: ゲームバージョン
+    options:
+      - 1.0.X
+      - 1.1.X
+      - 1.2.X
+  validations:
+    required: false
+- type: input
+  attributes:
+    label: MOD有無
+    placeholder: Visual Methods, State transfer tool
+  validations:
+    required: false
