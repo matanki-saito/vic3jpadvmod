@@ -95,7 +95,8 @@ def convert_json_to_yml(target_path):
                     translation = issue_241(translation)
 
                     # textのversionはParatranzに読み込めないので0とする
-                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], 0, translation.replace("\"", "\\\"")))
+                    # "はエスケープしなくて良い
+                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], 0, translation))
         os.remove(file_path)
 
 
