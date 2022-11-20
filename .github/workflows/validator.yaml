@@ -13,6 +13,6 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           level: warning
-          ROOT_DIR: ./source/JapaneseLanguageAdvancedMod/localization/
+          ROOT_DIR: "./"
           TYPE: vic3loca
           
