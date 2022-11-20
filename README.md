@@ -41,8 +41,6 @@ https://paratranz.cn/projects/5456
 
 ## フローについて
 
-![Flow No.1](/.github/images/flow1.jpg)
-![Flow No.2](/.github/images/flow2.jpg)
-![Flow No.3](/.github/images/flow3.jpg)
-![Flow No.4](/.github/images/flow4.jpg)
-![Flow No.5](/.github/images/flow5.png)
+共有ホワイトボードを御覧ください
+
+[miro](https://miro.com/app/board/uXjVPa6CLjo=/?moveToWidget=3458764533160936180&cot=14)
