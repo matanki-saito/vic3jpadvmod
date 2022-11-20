@@ -1,3 +1,3 @@
 ﻿l_japanese:
  JOMINI_LOAD_GAME_FAILED_TITLE:0 "セーブデータの読み込みに失敗しました"
- JOMINI_LOAD_GAME_FAILED_DESC:0 "セーブデータを読み込めませんでした。これは以下の原因が考えられます：\n#indent_newline:2 • セーブデータが互換性のないバージョンで作成されている\n• セーブデータが異なるDLCセットを使用している\n• セーブファイルが破損している#!"
+ JOMINI_LOAD_GAME_FAILED_DESC:0 "セーブデータを読み込めませんでした。これは以下の原因が考えられます : \n#indent_newline:2 • セーブデータが互換性のないバージョンで作成されている\n• セーブデータが異なるDLCセットを使用している\n• セーブファイルが破損している#!"
