@@ -8,7 +8,7 @@ jobs:
     name: valid localization text format
     steps:
       - uses: actions/checkout@v3
-      - uses: matanki-saito/pdx-txt-java@con-0.0.19
+      - uses: matanki-saito/pdx-txt-java@con-0.0.20
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
