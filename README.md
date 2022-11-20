@@ -24,7 +24,7 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2881605374
 
 https://paratranz.cn/projects/5456
 
-## 問題の報告方法 （#ISSUE整理のため11/14より受付を一時中断）
+## 問題の報告方法
 
 ゲームの翻訳に問題を発見した場合は次に示す通り起票をお願いいたします。
 
