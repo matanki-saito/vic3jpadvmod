@@ -317,7 +317,7 @@
  lawgroup_internal_security_desc:0 "自国内を整えること"
  law_no_home_affairs:0 "治安維持なし"
  law_no_home_affairs_desc:0 "国は不安や反乱を止めるために特別な努力をしません。"
- law_national_guard:0 "国家警備"
+ law_national_guard:0 "国民衛兵"
  law_national_guard_desc:0 "国は国内の不安を抑えるために軍事力を行使することがあります。"
  law_secret_police:0 "秘密警察"
  law_secret_police_desc:0 "秘密警察が急進派や反体制派を厳しく監視しています。"
