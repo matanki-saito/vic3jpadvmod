@@ -173,7 +173,7 @@ def issue_241(text):
     # 幅調整
     text = re.sub(r'：',  r' : ', text)
     text = re.sub(r'[  ]*:[  ]*',  r' : ', text)
-    text = re.sub(r'[  ]*•[  ]*', r'• ', text)
+    text = re.sub(r'[  ]*•[  ]*', r' • ', text)
     text = re.sub(r'[  ]*[（(][  ]*',  r' (', text)
     text = re.sub(r'[  ]*[）)][  ]*',  r') ', text)
 
