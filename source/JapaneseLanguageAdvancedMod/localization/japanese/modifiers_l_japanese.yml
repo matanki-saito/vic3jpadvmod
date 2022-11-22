@@ -388,7 +388,7 @@
  retired_commander_interest_group_impact:0 "[concept_commander]退役"
  modifier_building_throughput_mult:0 "[concept_throughput]"
  modifier_building_throughput_mult_desc:0 "施設の処理量に対するボーナスあるいはペナルティです。"
- modifier_building_cash_reserves_mult:0 "最大予備現金"
+ modifier_building_cash_reserves_mult:0 "最大手元資金"
  modifier_building_cash_reserves_mult_desc:0 "[Concept('concept_building','$concept_buildings$')]が保持できる最大[concept_cash_reserves]に対するボーナスあるいはペナルティです。"
  economy_of_scale:0 "[concept_economy_of_scale]"
  economy_of_scale_desc:0 "[concept_economy_of_scale_desc]"

@@ -98,7 +98,7 @@
  RANDOM_EFFECT:0 "#variable $CHANCE|%0$#! の確率 : "
  RANDOM_LIST_EFFECT:0 "#variable $SIZE$#!オプションのどれかが発現 : "
  NONE:0 "なし"
- INSIGNIFICANT:0 "小国"
+ INSIGNIFICANT:0 "ごく僅か"
  accept:0 "了承"
  low_pop_state:0 "まばらな人口"
  capital_state:0 "[concept_capital_state]"
