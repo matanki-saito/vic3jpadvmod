@@ -9,8 +9,8 @@ import urllib.request
 import zipfile
 import json
 from os.path import join
-import regex
 import re
+import time
 
 _ = join
 
@@ -28,14 +28,14 @@ def download_trans_zip_from_paratranz(project_id,
     :return:
     """
 
-    # regenerate_request_url = "{}/api/projects/{}/artifacts".format(base_url, project_id)
-    # req = urllib.request.Request(regenerate_request_url, method="POST")
-    # req.add_header("Authorization", secret)
-    # with urllib.request.urlopen(req) as response:
-    #     print(response.read().decode("utf-8"))
-    #
-    # # wait for regenerate
-    # time.sleep(90)
+    regenerate_request_url = "{}/api/projects/{}/artifacts".format(base_url, project_id)
+    req = urllib.request.Request(regenerate_request_url, method="POST")
+    req.add_header("Authorization", secret)
+    with urllib.request.urlopen(req) as response:
+        print(response.read().decode("utf-8"))
+
+    # wait for regenerate
+    time.sleep(90)
 
     download_request_url = "{}/api/projects/{}/artifacts/download".format(base_url, project_id)
     req = urllib.request.Request(download_request_url)
@@ -95,7 +95,8 @@ def convert_json_to_yml(target_path):
                     translation = issue_241(translation)
 
                     # textのversionはParatranzに読み込めないので0とする
-                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], 0, translation.replace("\"", "\\\"")))
+                    # "はエスケープしなくて良い
+                    fw.write(" %s:%s \"%s\"\n" % (entry["key"], 0, translation))
         os.remove(file_path)
 
 
@@ -194,9 +195,6 @@ def issue_241(text):
 
     #text = re.sub(r'(?<!\||\d|v|=|%|K)-(?!(\$VAL|\$AMOUNT))', r' xxxx ', text)
 
-    #text = text.replace(".", "。")
-    #text = text.replace(",", "、")
-    #text = text.replace(";", "つまり")
     text = text.replace("-", "―")
 
     text = re.sub(mask_r_p, lambda x: r(x.group()), text)
@@ -232,6 +230,8 @@ def issue_242(text):
 
     ・日本語 記号　ー＞ スペース削除
     ・記号 日本語 ー＞ スペース削除
+
+    ・上記以外のすべてのスペースはNBSPにする（改行対策）
 
     ・伸ばし棒の調整
         ‐：ハイフン。約物として使うが1つも存在しない（改行のないハイフンに揃える）

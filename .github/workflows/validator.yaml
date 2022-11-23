@@ -8,11 +8,11 @@ jobs:
     name: valid localization text format
     steps:
       - uses: actions/checkout@v3
-      - uses: matanki-saito/pdx-txt-java@con-0.0.20
+      - uses: matanki-saito/pdx-txt-java@con-0.0.21
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           level: warning
-          ROOT_DIR: "./"
+          ROOT_DIR: ./source/JapaneseLanguageAdvancedMod/localization/
           TYPE: vic3loca
           
