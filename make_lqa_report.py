@@ -148,7 +148,7 @@ def fetch_history_from_paratranz(project_id,
                 print("first id: %s" % data['results'][0]['id'])
 
             for record in data['results']:
-                if record["id"] <= last_id:
+                if last_id is not None and record["id"] <= last_id:
                     return result
 
                 related = record['related']
