@@ -1,6 +1,6 @@
 ﻿l_japanese:
- journal_entry_goal_progress_integer:0 "[JournalEntry.GetGoalProgressValue|0] / [JournalEntry.GetGoalAddValue|0]"
- journal_entry_goal_progress_money:0 "@money![JournalEntry.GetGoalProgressValue|D] / @money![JournalEntry.GetGoalAddValue|D]"
+ journal_entry_goal_progress_integer:0 "[JournalEntry.GetGoalProgressValue|0]/[JournalEntry.GetGoalAddValue|0]"
+ journal_entry_goal_progress_money:0 "@money![JournalEntry.GetGoalProgressValue|D]/@money![JournalEntry.GetGoalAddValue|D]"
  je_secret_police_research_identification:0 "秘密警察のために$identification_documents$を研究"
  je_secret_police_research_identification_reason:0 "秘密警察は$identification_documents$の研究を希望しています。"
  notification_je_secret_police_research_identification_complete_name:0 "秘密警察のための$identification_documents$"
