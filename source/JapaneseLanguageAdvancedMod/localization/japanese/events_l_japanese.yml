@@ -357,7 +357,7 @@
  expedition_events.3.a:0 "少額。"
  expedition_events.3.b:0 "それなりの額。"
  expedition_events.3.c:0 "多額。　"
- expedition_events.4.t:0 "遠征出発。"
+ expedition_events.4.t:0 "遠征出発"
  expedition_events.4.d:0 "数週間の準備と旅の後、[SCOPE.sCharacter('expedition_leader').GetFullName]が率いるニジェール川の流れを調べる探検隊は出発地点に到着しました。"
  expedition_events.4.f:0 "「潮が引いている。かなりの早朝だ。建築物が立ち並ぶ港湾の狭間で上品なエメラルドのように輝く植生を見つけた我々の蒸気船はやや速度を落とした。塩分の充満した空気は、楽園の穀物やアニスの種子、クローブなどによって穏やかに浄化されている。屋根の上で少女が洗濯物を干している」"
  expedition_events.4.a:0 "進め！"

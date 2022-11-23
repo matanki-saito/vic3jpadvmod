@@ -48,5 +48,5 @@
  objective_egalitarian_society_name_MEX:0 "#v $MEX$#!"
  objective_egalitarian_society_desc_MEX:0 "#lore $MEX_FLAVOR_TEXT$#!"
  OBJECTIVE_TYPE_RECOMMENDED_GAME_RULE_DESC:0 "推奨されるゲームルールは次の通りです : "
- OBJECTIVE_TYPE_RECOMMENDED_GAME_RULE_ITEM_TEXT:0 "― [GameRuleSetting.GetGameRule.GetName] : #variable [GameRuleSetting.GetName]#!"
+ OBJECTIVE_TYPE_RECOMMENDED_GAME_RULE_ITEM_TEXT:0 "‑ [GameRuleSetting.GetGameRule.GetName] : #variable [GameRuleSetting.GetName]#!"
  SELECTED_OBJECTIVE_RECOMMENDED_GAME_RULE_DESC:0 "[GameRuleSetting.GetDescription]。目標「$NAME$」では次の設定が推奨されます : #variable $RULE$#!。"

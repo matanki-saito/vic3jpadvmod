@@ -393,7 +393,7 @@
  economy_of_scale:0 "[concept_economy_of_scale]"
  economy_of_scale_desc:0 "[concept_economy_of_scale_desc]"
  pm_retooling:0 "方式の刷新"
- pm_retooling_loc:0 "$PM$の刷新―期限 : $EXPIRY$"
+ pm_retooling_loc:0 "$PM$の刷新‑期限 : $EXPIRY$"
  pm_retooling_desc:0 "最近変更した方式によって生じる、施設の処理量に対するペナルティです。"
  pm_offense_defense_readjustment:0 "設備適合"
  pm_offense_defense_readjustment_desc:0 "最近変更した[Concept('concept_production_method','$concept_production_methods$')]によって生じる、施設の[concept_offense]や[concept_defense]に対するペナルティです。"

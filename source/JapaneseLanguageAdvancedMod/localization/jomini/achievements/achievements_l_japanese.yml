@@ -7,7 +7,7 @@
  ACHIEVEMENT_FILTER_NOT_POSSIBLE:0 "不可を表示"
  ACHIEVEMENT_FILTER_UNLOCKED:0 "解除された実績を表示"
  ACHIEVEMENT_FILTER_LOCKED:0 "残りの実績を表示"
- ACHIEVEMENT_GROUP_TITLE:0 "[Group.GetName] ― [Group.CalcNumberOfUnlockedVisibleAchievements]/[Group.GetNumberOfVisibleAchievements]"
+ ACHIEVEMENT_GROUP_TITLE:0 "[Group.GetName] ‑ [Group.CalcNumberOfUnlockedVisibleAchievements]/[Group.GetNumberOfVisibleAchievements]"
  ACHIEVEMENT_GROUP_TOOLTIP:0 "[Group.GetName]グループで#V [Group.GetNumberOfVisibleAchievements]#!中#V [Group.CalcNumberOfUnlockedVisibleAchievements]#!の実績が解除されました"
  ACHIEVEMENT_FILTER_ALL:0 "すべての実績を表示"
  ACHIEVEMENT_UNAVAILABLE_TT:0 "実績をロードできません : インターネット接続をご確認ください"
