@@ -89,10 +89,14 @@ def convert_json_to_yml(target_path):
                 for entry in json.load(fr):
                     translation = entry["translation"]
 
-                    # [Nbsp]の表記ゆれを直して実態にする。
-                    translation = re.sub(r'\[[Nn][Bb][Ss][Pp]]', " ", translation)
-                    translation = issue_242(translation)
-                    translation = issue_241(translation)
+                    # ISSUE-493のWA
+                    if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
+                        # [Nbsp]の表記ゆれを直して実態にする。
+                        translation = re.sub(r'\[[Nn][Bb][Ss][Pp]]', " ", translation)
+                        translation = issue_242(translation)
+                        translation = issue_241(translation)
+                    else:
+                        print("skip:%s" % entry["key"])
 
                     # textのversionはParatranzに読み込めないので0とする
                     # "はエスケープしなくて良い
