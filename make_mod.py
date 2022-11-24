@@ -200,6 +200,9 @@ def issue_241(text):
     #text = re.sub(r'(?<!\||\d|v|=|%|K)-(?!(\$VAL|\$AMOUNT))', r' xxxx ', text)
 
     text = text.replace("-", "―")
+    text = re.sub(r'[‐−–]', '‑', text)
+    text = re.sub(r'－ｰ', 'ー', text)
+    text = re.sub(r'—', '―', text)
 
     text = re.sub(mask_r_p, lambda x: r(x.group()), text)
     text = text.replace("♉", " ")
@@ -279,9 +282,6 @@ def issue_242(text):
     text = re.sub(r'#![  ]+\'', '#!\'', text)
 
     text = text.replace(' ', ' ')
-    text = re.sub(r'[‐−–-]', '‑', text)
-    text = re.sub(r'－ｰ', 'ー', text)
-    text = re.sub(r'—', '―', text)
 
     text = text.replace('▲', ' ')
 
