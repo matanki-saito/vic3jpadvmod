@@ -39,7 +39,7 @@
  mm_recruit_generals_interaction:0 "司令部で将軍を雇用"
  mm_recruit_admirals_interaction:0 "司令部で提督を雇用"
  mm_construction_interaction:0 "建設行動"
- mm_declare_interest_interaction:0 "関心の宣言"
+ mm_declare_interest_interaction:0 "関心の表明"
  mm_issue_decree_interaction:0 "法令の発布"
  mm_incorporate_state_interaction:0 "州の編入"
  mm_move_capital_interaction:0 "首都の移転"

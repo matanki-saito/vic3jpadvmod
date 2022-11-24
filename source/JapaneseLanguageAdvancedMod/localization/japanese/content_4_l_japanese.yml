@@ -258,7 +258,7 @@
  ideology_oriental_orthodox_patriarch_desc:0 "#lore 東洋教会家父長主義では、子どもの教育が国の最優先事項であると信じられています。#!"
  effect_qa_test_events.1.t:0 "効果テストですか？"
  effect_qa_test_events.1.d:0 "あなたは真の英雄です"
- effect_qa_test_events.1.f:0 ""EXAMPLE TEXT" ‑CD"
+ effect_qa_test_events.1.f:0 ""EXAMPLE TEXT" ―CD"
  effect_qa_test_events.1.a:0 "効果"
  healthcare_laws.1.t:0 "負傷した農民"
  healthcare_laws.1.d:0 "[SCOPE.sState('farming_accidents_state').GetName]の農民が、使用している機器類の危険性を政府に訴え、困窮を軽減するための福利厚生を希望しています。"

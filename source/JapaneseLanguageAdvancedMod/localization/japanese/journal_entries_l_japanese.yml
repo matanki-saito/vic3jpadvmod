@@ -13,6 +13,6 @@
  notification_je_make_schools_secular_complete_name:0 "非宗教的教育"
  notification_je_make_schools_secular_complete_desc:0 "教育法を非宗教的なものに変更することができました。"
  notification_je_make_schools_secular_complete_tooltip:0 "教育法を非宗教的なものに変更することができました。これにより$modifier_religious_schools_abolished_intelligentsia$および$modifier_religious_schools_abolished_devout$補正を獲得します。"
- notification_je_make_schools_secular_fail_name:0 "非宗教的教育の導入に失敗しました。"
+ notification_je_make_schools_secular_fail_name:0 "非宗教的教育の導入に失敗"
  notification_je_make_schools_secular_fail_desc:0 "非宗教的な教育法への切り替えに失敗しました。"
  notification_je_make_schools_secular_fail_tooltip:0 "非宗教的な教育法への切り替えに失敗しました。"

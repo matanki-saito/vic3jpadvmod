@@ -313,7 +313,7 @@
  pmg_specialist_companies:0 "特殊部隊"
  pm_no_specialists:0 "標準的な歩兵"
  pm_machine_gunners:0 "機関銃手"
- pm_infiltrators:0 "潜入者"
+ pm_infiltrators:0 "工作部隊"
  pm_flamethrower_company:0 "火炎放射部隊"
  pm_chemical_weapons_specialists:0 "化学兵器専門部隊"
  pmg_organization_conscription:0 "$pmg_organization$"

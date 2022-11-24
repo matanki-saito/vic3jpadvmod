@@ -55,7 +55,7 @@
  LOADSCREEN_INITIALIZING_GAME:0 "ゲーム初期化中…"
  SERVER_NAME:0 "$NAME$のゲーム"
  PLAYERS_ON_SERVER:0 "サーバーのプレイヤー : 名前 ― 称号 ― PING"
- PLAYER_ON_SERVER:0 "$NAME$ ‑ $TITLE$ ‑ $PING$"
+ PLAYER_ON_SERVER:0 "$NAME$ ― $TITLE$ ― $PING$"
  NAME_NOT_FOUND:0 "名前が見つかりません。"
  KICK_NAME:0 "$NAME$がゲームからキックされました。"
  MODIFIED:0 "修正済 : $DATE$"
