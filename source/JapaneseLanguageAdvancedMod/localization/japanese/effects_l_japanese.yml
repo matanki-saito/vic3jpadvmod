@@ -332,7 +332,7 @@
  MAKE_INDEPENDENT:0 "[COUNTRY.GetName]が[TARGET_COUNTRY.GetName]から独立します"
  MAKE_INDEPENDENT_NEG:0 "[COUNTRY.GetName]が[TARGET_COUNTRY.GetName]から独立しません"
  OBJECTIVE_SUBGOAL_EFFECT:0 "目標サブゴール効果 (プレイヤーには非表示) "
- REMOVE_DIPLOMATIC_PACT:0 "[COUNTRY.GetName]と[TARGET_COUNTRY.GetName]との間で行われている[DIPLOMATIC_ACTION_TYPE.GetName] ([concept_diplomatic_action]) に乱れが生じます"
+ REMOVE_DIPLOMATIC_PACT:0 "[COUNTRY.GetName]と[TARGET_COUNTRY.GetName]の間の[DIPLOMATIC_ACTION_TYPE.GetName] ([concept_diplomatic_action]) を破棄します"
  SET_SUBSIDIZED:0 "[Building.GetName]への[Concept('concept_subsidies','$concept_subsidizing$')]を開始します"
  SET_SUBSIDIZED_NEGATIVE:0 "[Building.GetName]への[Concept('concept_subsidies','$concept_subsidizing$')]を停止します"
  ADD_MOMENTUM:0 "#v $VALUE|%+=0$#! [concept_momentum]が[Party.GetName]に追加されます"
