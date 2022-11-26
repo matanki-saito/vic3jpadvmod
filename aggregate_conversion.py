@@ -22,7 +22,7 @@ def fetch_user_from_paratranz(project_id,
 
 def fetch_conversion_from_paratranz(project_id,
                                     secret,
-                                    last_id,
+                                    start_id,
                                     base_url="https://paratranz.cn"):
 
     result = {}
@@ -39,7 +39,7 @@ def fetch_conversion_from_paratranz(project_id,
                 print("first id: %s" % data['results'][0]['id'])
 
             for record in data['results']:
-                if last_id is not None and record["id"] <= last_id:
+                if start_id is not None and record["id"] <= start_id:
                     return result
 
                 if not record["uid"] in result:
@@ -58,17 +58,22 @@ def fetch_conversion_from_paratranz(project_id,
 
 
 def main():
-    # 21813810 - 21230899 まで
-    base_amount = 109000
+    base_amount = int(os.environ.get("BASE_AMOUNT"))
+    start_id = int(os.environ.get("START_ID"))
     paratranz_secret = os.environ.get("PARATRANZ_SECRET")
+    adjustments = json.loads(os.environ.get("ADJUSTMENTS"))
     paratranz_project_id = 5456
 
     conversions = fetch_conversion_from_paratranz(project_id=paratranz_project_id,
                                                   secret=paratranz_secret,
-                                                  last_id=None)
+                                                  start_id=start_id)
 
     id_name_map = fetch_user_from_paratranz(project_id=paratranz_project_id,
                                             secret=paratranz_secret)
+
+    for uid, score in conversions.items():
+        if id_name_map.get(uid) in adjustments:
+            conversions[uid] += adjustments[id_name_map.get(uid)]
 
     total_score = 0
     for uid, score in conversions.items():

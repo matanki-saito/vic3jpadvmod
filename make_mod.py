@@ -73,6 +73,11 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
                     dst=_(out_dir_path, "localization"))
     convert_json_to_yml(_(out_dir_path, "localization"))
 
+    # jominiのフォルダをreplaceに移動する
+    os.makedirs(_(out_dir_path, "localization", "replace"), exist_ok=True)
+    shutil.move(src=_(out_dir_path, "localization", "jomini"),
+                dst=_(out_dir_path, "localization", "replace"))
+
     # .metadata/metadata.jsonを入れる
     os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
     generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.0.*")
