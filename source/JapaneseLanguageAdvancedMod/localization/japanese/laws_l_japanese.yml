@@ -191,7 +191,7 @@
  lawgroup_church_and_state_desc:0 "物理的な統治者と精神的な統治者の関係"
  law_state_religion:0 "国教"
  law_state_religion_desc:0 "教会は国家の公式機関です。少数派のあらゆる宗教は差別されています。"
- law_freedom_of_conscience:0 "良心の自由"
+ law_freedom_of_conscience:0 "信条の自由"
  law_freedom_of_conscience_desc:0 "国は公式の国教を持っていますが、国民は何を信じるかを選ぶことができます。特に物珍しい宗教だけが差別されます。"
  law_total_separation:0 "完全分離"
  law_total_separation_desc:0 "いかなる教会や信仰も、政府の機能を妨げてはなりません。いかなる宗教も差別してはなりません。"
