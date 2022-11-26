@@ -5,7 +5,7 @@ name: publish_mod
 
 on:
   repository_dispatch:
-    types: [publish]
+    types: [publish_mod]
   workflow_dispatch:
     inputs:
       name:
