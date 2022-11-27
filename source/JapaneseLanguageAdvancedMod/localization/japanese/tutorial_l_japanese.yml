@@ -375,7 +375,7 @@
  lesson_budget_balance_complete_1:0 "予算の均衡が安定しました！"
  lesson_budget_balance_complete_1_desc:0 "ありとあらゆる手段を講じてどうにか[concept_treasury]の収支をプラスに転じさせることに成功しました。今後この国が19世紀から先も未来永劫末永く存続するためには、継続的な予算の微調整が求められることになるでしょう。世界に後れをとることがないよう、あるいは莫大な経費を投じた事象から回復するために安定した発展を続ける必要があるのです。#b 予算#!パネルには常に収支の流れが表示されますので、歳入および歳出の最適化に役立てるようにしましょう。"
  lesson_budget_balance_fail_1:0 "資金が底をつきました！"
- lesson_budget_balance_fail_1_desc:0 "最悪の事態になりました―我が国の[concept_treasury]が空になり、現在[concept_default]状態となっています。しかしご心配なく。こんな状態でも復活を遂げることは可能です。収支バランスの改善に努め負のスパイラルから抜け出せるように尽力しましょう。もし[concept_budget_interest]の支払いが手に余るようであれば、 #b 予算#!パネルの#b 資産#!タブから[concept_bankruptcy]を宣言し、[Concept('concept_pop','$concept_pops_possessive$')]資産を差し押さえて経済を一から再建しましょう。"
+ lesson_budget_balance_fail_1_desc:0 "最悪の事態になりました―我が国の[concept_treasury]が空になり、現在[concept_default]状態となっています。しかしご心配なく。こんな状態でも復活を遂げることは可能です。収支バランスの改善に努め負のスパイラルから抜け出せるように尽力しましょう。もし[concept_budget_interest]の支払いが手に余るようであれば、 #b 予算#!パネルの#b 資産#!タブから[concept_bankruptcy]を宣言し、[Concept('concept_pop','$concept_pops_possessive$')]の資産を差し押さえて経済を一から再建しましょう。"
  lesson_trade_routes_1:0 "貿易ルート"
  lesson_trade_routes_1_desc:0 "[concept_trade_route]は、2箇所の[Concept('concept_market','$concept_markets$')]を繋ぎ、商品の往来を可能にするリンクです。輸出を行う市場に対して[concept_good]の価格上昇の原因となる[concept_buy_orders]がなされ、輸入側の市場に[concept_good]の価格低下の原因となる[concept_sell_orders]が入ります。\n\n[Concept('concept_building','$concept_buildings$')]の収益性を高め、[Concept('concept_government_good','$concept_government_goods$')]の経費を抑えるために、大抵の場合は[concept_trade_route]を使うことになるでしょう。例えば$furniture$の価格が下落して厳しい状況にある$building_furniture_manufacturies$ [concept_building]があったとします。$furniture$の価格を上げるために輸出用の貿易ルートを構築して、この$building_furniture_manufacturies$から得る収入を増やすことが可能です。"
  lesson_trade_routes_1_continue:0 "交易レンズを開く"

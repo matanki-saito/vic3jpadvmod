@@ -2727,7 +2727,7 @@
  DECLARE_BANKRUPTCY_DESC:0 "#header [concept_bankruptcy]宣告#!\n$TOOLTIP_DELIMITER$\n[concept_bankruptcy]宣告すると、[concept_loans]が帳消しになり、[GetPlayer.GetName]を[concept_default]から救済できますが、我が[concept_country]の国内経済に深刻な影響を及ぼすことになります : \n$EFFECTS$[ConcatIfNeitherEmpty('\n\n不可能な理由:\n','$ERRORS$')]"
  DECLARE_BANKRUPTCY_CONSTRUCTION_QUEUE_EFFECTS:0 "[concept_construction_queue]計画はすべてキャンセルされます"
  DECLARE_BANKRUPTCY_BUILDING_EFFECTS:0 "#v $AMOUNT$ [Concept('concept_building','$concept_buildings$')]#!は、すべての[concept_cash_reserves]を失います"
- DECLARE_BANKRUPTCY_POP_EFFECTS:0 "#v $AMOUNT|*$#![Concept('concept_building','$concept_buildings$')]に影響する株式を所有していることから[Concept('concept_pop','$concept_pops$')]はより[concept_radical]になります"
+ DECLARE_BANKRUPTCY_POP_EFFECTS:0 "影響を受ける[Concept('concept_building','$concept_buildings$')]の株式を所有していることから、#v $AMOUNT|*$#!の[Concept('concept_pop','$concept_pops$')]が[concept_radical]になります"
  DECLARE_BANKRUPTCY_MODIFIER_EFFECTS:0 "以下のペナルティが[GetPlayer.GetName]に対して追加適用されます。これは#v [GetDefine('NEconomy','DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS')]#!年かけて減衰していきます : \n$EFFECTS$"
  CREDIT_PROGRESS:0 "#header 信用枠#!\n現在[concept_principal] : #variable @money![GetPlayer.GetPrincipal|K]#! ([AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint]) \n$TOOLTIP_DELIMITER$\n信用枠上限 : #variable @money![GetPlayer.GetMaxCredit|K]#!\n"
  GOLD_PROGRESS:0 "#header [concept_gold_reserves]#!\n現在の備蓄 : #variable @money![GetPlayer.GetGoldReserves|K]#! ([AccessPlayer.PredictWeeklyBalanceWithEconomyHealthHint]) \n$TOOLTIP_DELIMITER$\n[GetPlayer.GetGoldReserveLimitDesc]"
