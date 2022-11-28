@@ -24,7 +24,7 @@
  modifier_country_tax_income_add_desc:0 "徴収した税金に対する定量のボーナスあるいはペナルティです"
  modifier_country_expenses_add:0 "政府歳出"
  modifier_country_expenses_add_desc:0 "政府歳出の増減にかかる定量補正です"
- modifier_state_tax_waste_add:0 "浪費税額"
+ modifier_state_tax_waste_add:0 "税の浪費率"
  modifier_state_tax_waste_add_desc:0 "[Concept('concept_state','$concept_states$')]の[concept_tax_waste]に対する増減補正です"
  modifier_state_tax_capacity_add:0 "課税キャパシティ"
  modifier_state_tax_capacity_add_desc:0 "[Concept('concept_state','$concept_states$')]の[concept_tax_capacity]に対する増減補正です"
