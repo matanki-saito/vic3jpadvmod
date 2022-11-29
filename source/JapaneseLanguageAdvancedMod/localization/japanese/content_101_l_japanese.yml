@@ -376,7 +376,7 @@
  abolish_tangena_ordeal_desc:0 "タンジーナの試練では自身の無実を証明するために毒を服用する行程が存在する。風習程度の信憑性にもかかわらず、毎年かなりの人が命を落としており、廃止されるべきである。"
  ranavalona_tt:0 "あなたの支配者はラナヴァロナ#bold ではありません#!"
  modifier_french_independence_payments:0 "独立に関するフランスへの支払い"
- modifier_haitian_independence_payments:0 "独立に関するハイチへの支払い"
+ modifier_haitian_independence_payments:0 "ハイチの独立賠償金"
  stop_paying_france:0 "フランスへの支払いを停止する"
  stop_paying_france_desc:0 "我が国の独立のために支払いを行うという契約を数年前にフランスと交わしたが、我が国が支払いと止めた場合、彼らはどうするのだろうか？"
  character_events.2.t:0 "知識の寄付"
