@@ -1577,7 +1577,7 @@
  notification_ig_leader_memento_mori_desc:0 "[SCOPE.gsInterestGroup('memento_mori_ig').GetName]のリーダーである[SCOPE.sCharacter('memento_mori_leader').GetFullName]が政界から引退しました。"
  notification_ig_leader_memento_mori_tooltip:0 "#header $notification_ig_leader_memento_mori_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_memento_mori_desc$"
  iron_horse_raids:0 "鉄騎襲来"
- csa_releasable_tt:0 "アメリカ南北戦争が勃発しました"
+ csa_releasable_tt:0 "南北戦争が勃発しました"
  generic_revolt_peasant:0 "[COUNTRY.GetDefinition.GetAdjective]農民一揆"
  generic_revolt_peasant_adj:0 "[COUNTRY.GetDefinition.GetAdjective]農民一揆"
  generic_revolt_landowner:0 "[COUNTRY.GetDefinition.GetAdjective]地主反乱軍"
