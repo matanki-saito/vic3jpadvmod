@@ -104,7 +104,7 @@
  GOODS_LEADERBOARD_HEADER:0 "\n\n[Goods.GetMarket.GetOwner.GetFlagTextIcon][SelectLocalization(GreaterThan_int32(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]"
  GOODS_LEADERBOARD_HEADER_TOP_PRODUCER:0 "世界#v ##[Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner)]#!位の生産者[Goods.GetPrestigeAwardForSpotDesc(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner.Self))]"
  GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER:0 " [Goods.GetName]の主要生産者ではありません"
- GOODS_PRESTIGE_AWARD:0 "[Goods.GetTextIcon][Goods.GetName]の生産者よりの#v $VAL|=+$#! [concept_prestige]#v ##$SPOT |v$#!"
+ GOODS_PRESTIGE_AWARD:0 "[Goods.GetTextIcon][Goods.GetName]の生産者よりの#v $VAL|=+$#! [concept_prestige]#v ##$SPOT|v$#!"
  GOODS_PRESTIGE_SUFFIX:0 " (#v $VAL|=+$#! [concept_prestige]) "
  NON_TRADEABLE_DESC:0 "\n\n[Goods.GetName]は[Concept('concept_trade_route','$concept_trade_routes$')]による購入/売却はできません"
  CONTEXTUAL_GOODS_GENERATION_INFO_STATE:0 "[Goods.GetState.GetName]価格 : [Goods.GetStatePriceWithTooltip] (#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetStatePrice)|%1=-]#![concept_base_price]) \n[Goods.GetStateProductionLabel]との比較 : [Goods.GetStateProduction|Dv]\n[Goods.GetStateConsumptionLabel] : [Goods.GetStateConsumption|Dv]\n[Goods.GetStateBalanceLabel] : #variable [Goods.GetStateProductionConsumptionDiff|=D+]#!"

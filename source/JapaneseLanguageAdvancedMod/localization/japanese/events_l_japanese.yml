@@ -298,7 +298,7 @@
  commander_events.4.t:0 "将軍の抗議"
  commander_events.4.d:0 "[SCOPE.sCharacter('arguing_commander_one').GetFullName]は[SCOPE.sCharacter('arguing_commander_two').GetFullName]が関わっているいくつかの不審な習慣を明るみに出し、彼らを解雇するように求めています。"
  commander_events.4.f:0 "「あの悪党と同じ組織に属するなどと、私には考えられない。彼らは我々が共有する制服の汚点となる存在だ。彼らのような立場の人間によるこのような行為を許容するなど断固として拒否する。私はもう、1日たりとも共に働きたくないのだ」"
- commander_events.4.a:0 "[SCOPE.sCharacter('arguing_commander_two').GetFullName]解雇することはできない。"
+ commander_events.4.a:0 "[SCOPE.sCharacter('arguing_commander_two').GetFullName]を解雇することはできない。"
  commander_events.4.b:0 "[SCOPE.sCharacter('arguing_commander_two').GetFullName]を解雇しよう！"
  commander_events.4.b.tt:0 "[SCOPE.sCharacter('arguing_commander_two').GetFullName]が解雇されました。"
  commander_fired:0 "司令官解雇"

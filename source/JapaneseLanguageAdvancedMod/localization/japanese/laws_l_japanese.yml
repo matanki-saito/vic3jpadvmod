@@ -179,7 +179,7 @@
  law_compulsory_primary_school_desc:0 "すべての子どもたちは、小学校に数年間通わなければならず、その間は働くことができません。"
  lawgroup_slavery:0 "奴隷制"
  lawgroup_slavery_desc:0 "財産としての人間"
- law_slavery_banned:0 "奴隷禁止"
+ law_slavery_banned:0 "奴隷制禁止"
  law_slavery_banned_desc:0 "いかなる人間も他人に所有されてはなりません。"
  law_debt_slavery:0 "債務奴隷"
  law_debt_slavery_desc:0 "借金を返せない人は、債権者の財産として自分の身柄を差し出すことになります。"
