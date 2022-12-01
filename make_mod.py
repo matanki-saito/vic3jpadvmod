@@ -98,8 +98,10 @@ def convert_json_to_yml(target_path):
                     if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
                         # [Nbsp]の表記ゆれを直して実態にする。
                         translation = re.sub(r'\[[Nn][Bb][Ss][Pp]]', " ", translation)
+                        translation = translation.replace("##", "〒")
                         translation = issue_242(translation)
                         translation = issue_241(translation)
+                        translation = translation.replace("〒", "##")
                     else:
                         print("skip:%s" % entry["key"])
 
