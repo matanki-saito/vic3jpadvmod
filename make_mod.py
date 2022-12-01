@@ -271,7 +271,7 @@ def issue_242(text):
     text = re.sub(r'(\$FLAG_ICON\$|\$GOODS_ICON\$)[  ]*', r'\1 ', text)
     text = re.sub(r'(\[Goods\.GetTextIcon]|\$GOODS_ICON\$)[  ]*', r'\1', text)
 
-    text = re.sub(r'(#[$a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)*)?)[  ]?', r'\1▲', text)
+    text = re.sub(r'(#[$|a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)*)?)[  ]?', r'\1▲', text)
 
     # text = re.sub(r'#![  ]', r'#!', text)
 
