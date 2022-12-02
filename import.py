@@ -81,7 +81,7 @@ def update_file(base_path, source_path, project_id, secret, base_url="https://pa
 	file_data_binary = open(source_path, 'rb').read()
 	files = {
 		'file': (file_name, file_data_binary,  'application/json; charset=utf-8'),
-		'path': str(Path(source_path).relative_to(Path(base_path)).parent)
+		'path': "/" + str(Path(source_path).relative_to(Path(base_path)).parent)
 	}
 
 	url = "{}/api/projects/{}/files".format(base_url, project_id)
@@ -132,11 +132,11 @@ def main():
 	# Output Json Files
 	output(japanese_dict, english_root_path=english_root_path, converted_root_path=converted_root_path, path='')
 
-	# update_file(
-	# 	base_path=converted_root_path,
-	# 	source_path=_(converted_root_path, "clausewitz", "cw_tools_l_english.json"),
-	# 	secret=os.environ.get("PARATRANZ_SECRET"),
-	# 	project_id=5456)
+	update_file(
+		base_path=converted_root_path,
+		source_path=_(converted_root_path, "clausewitz", "cw_tools_l_english.json"),
+		secret=os.environ.get("PARATRANZ_SECRET"),
+		project_id=5456)
 
 
 if __name__ == "__main__":
