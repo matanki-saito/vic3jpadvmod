@@ -1,0 +1,5 @@
+﻿l_english:
+ JOMINI_MSGRDK_SIGNIN_FAILED_TITLE:0 "There was a problem"
+ JOMINI_MSGRDK_SIGNIN_FAILED_TEXT:0 "We couldn't sign you in with your Microsoft account. Some game features may be unavailable."
+ JOMINI_MSGRDK_NO_PERMISSION_TITLE:0 "Account permission"
+ JOMINI_MSGRDK_NO_UGC_TEXT:0 "You have no permission to access user generated content. Mods will be disabled."

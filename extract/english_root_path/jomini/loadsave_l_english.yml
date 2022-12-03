@@ -1,0 +1,3 @@
+﻿l_english:
+ JOMINI_LOAD_GAME_FAILED_TITLE:0 "Failed to Load Savegame"
+ JOMINI_LOAD_GAME_FAILED_DESC:0 "The savegame could not be loaded, this could be due to:\n#indent_newline:2 • Savegame was made with an incompatible version of the game\n• Savegame uses a different set of DLCs\n• Save file is corrupted#!"

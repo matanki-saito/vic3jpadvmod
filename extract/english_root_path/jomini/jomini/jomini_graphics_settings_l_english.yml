@@ -1,0 +1,6 @@
+﻿l_english:
+ SETTING_REFRACTION:0 "Refraction"
+ SETTING_REFRACTION_QUALITY:0 "Refraction Quality"
+ SETTING_MAPOBJECT_QUALITY:0 "Map Objects"
+ SETTING_MAP_SSAO:0 "Map SSAO"
+ SETTING_DOF:0 "Depth of field"

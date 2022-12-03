@@ -1,0 +1,3 @@
+﻿l_english:
+ COAT_OF_ARMS_IN_COLOR_LIST_TRIGGER:0 "Color is in list $NAME$"
+ COAT_OF_ARMS_IN_COLOR_LIST_TRIGGER_NOT:0 "Color is NOT in list $NAME$"

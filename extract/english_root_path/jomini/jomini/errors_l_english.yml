@@ -1,0 +1,3 @@
+﻿l_english:
+ FILE_WRITE_ERROR:1 "Failed to create savegame"
+ FILE_WRITE_ERROR_DESC:1 "The game failed to create a savegame. This may be due to:\n- Not enough space on disk\n- File permission issues\n- Antivirus or ransomware protection software\n- Game file corruption\n- Issues caused by installed Mods"

@@ -1,0 +1,6 @@
+﻿l_english:
+ SETTING_ANIMATED_PORTRAITS:0 "Animated Characters"
+ SETTING_ANIMATED_PORTRAITS_TOOLTIP:0 "#T $SETTING_ANIMATED_PORTRAITS$\n#!Determines whether the prominent Characters should be animated.\n\nTurning it off may increase performance."
+ SETTING_PORTRAITS_SSAO:0 "Characters SSAO"
+ SETTING_PORTRAITS_SSAO_TOOLTIP:0 "#T $SETTING_PORTRAITS_SSAO$\n#!Determines whether screen space ambient occlusion should be applied to portraits.\n\nTurning it off may increase performance."
+ 

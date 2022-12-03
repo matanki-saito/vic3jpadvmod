@@ -1,0 +1,5 @@
+﻿l_english:
+ SETTING_VALUE_WARNING:0 "$VALUE|0X$"
+ SETTING_VALUE_PERCENTAGE_WARNING:0 "$VALUE|%0X$"
+ RECOMMENDED_GUI_SCALE_TOO_HIGH:1 "#X Scaling above $VALUE|%0$ will cause interfaces to appear outside the screen#!"
+ RECOMMENDED_GUI_SCALE:1 "Scaling above $VALUE|%0$ will cause interfaces to appear outside the screen"
