@@ -65,7 +65,7 @@
  alert_market_goods_shortage_affected_buildings_breakdown:0 "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
  alert_market_goods_shortage_affected_buildings_breakdown_data_version:0 "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
  alert_market_goods_shortage_affected_building_entry:0 "[Building.GetState.GetName]の[Building.GetName]"
- alert_isolated_state_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]は[Concept('concept_isolated_state','$concept_isolated_state_short$')]です"
+ alert_isolated_state_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]は[Concept('concept_isolated_state','$concept_isolated_state_short$')]状態です"
  alert_isolated_state_alert_hint:0 "[SCOPE.GetRootScope.GetState.GetName]と[SCOPE.GetRootScope.GetState.GetMarket.GetName]は、[concept_infrastructure]を増やすことで接続できます。これは港や鉄道などの[concept_infrastructure]を提供する施設を建設するか、[concept_decree]で#v $decree_road_maintenance$#!を使用することにより行えます。"
  alert_isolated_state_alert_action:0 "[SCOPE.GetRootScope.GetState.GetName]のための州パネル"
  alert_low_market_access_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]の[concept_market_access]は、[SCOPE.GetRootScope.GetState.GetMarketAccess|%0v]です"
