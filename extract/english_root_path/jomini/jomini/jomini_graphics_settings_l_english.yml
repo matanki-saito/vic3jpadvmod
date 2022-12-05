@@ -4,3 +4,4 @@
  SETTING_MAPOBJECT_QUALITY:0 "Map Objects"
  SETTING_MAP_SSAO:0 "Map SSAO"
  SETTING_DOF:0 "Depth of field"
+ SETTING_LENS_FLARE: "Lens flare"

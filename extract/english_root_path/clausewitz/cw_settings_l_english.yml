@@ -60,6 +60,7 @@
  SETTING_QUALITY_TOOLTIP:3 "#T $SETTING_QUALITY$\n#!Select a preset of the advanced graphics options below.\n\nA low preset will increase performance."
  SETTING_BLOOM_TOOLTIP:3 "#T $SETTING_BLOOM$\n#!Enables a "bloom" effect, where extremely bright lights will spill over to other parts of the image.\n\nTurning it off may increase performance."
  SETTING_DOF_TOOLTIP:0 "#T $SETTING_DOF$\n#!Enables depth of field to simulate a camera lens, blurs out-of-focus points of the image.\n\nTurning it off may increase performance."
+ SETTING_LENS_FLARE_TOOLTIP: "#T $SETTING_LENS_FLARE$\n#!Enables a lens flare effect which appears in highly blooming areas. Bloom must be enabled for the effect to appear. \n\nTurning it off may increase performance."
  SETTING_MAP_SSAO_TOOLTIP:0 "#T $SETTING_MAP_SSAO$\n#!Determines whether screen space ambient occlusion should be applied to the map.\n\nTurning it off may increase performance."
  SETTING_REFRACTION_TOOLTIP:0 "Determines whether refractions appear on water or not."
  SETTING_REFRACTION_QUALITY_TOOLTIP:3 "#T $SETTING_REFRACTION_QUALITY$#!\nControls the quality of water refractions if they are enabled.\n\nLower settings may increase performance."
