@@ -85,7 +85,7 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
 
     # .metadata/metadata.jsonを入れる
     os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
-    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.0.*")
+    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.1.*")
 
     return out_dir_path
 
