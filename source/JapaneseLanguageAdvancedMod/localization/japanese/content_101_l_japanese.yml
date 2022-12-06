@@ -401,7 +401,7 @@
  beetle_ear_insult_custom:0 "お前は虫好きのクズ野郎だ。"
  banned_duels_tt:0 "国内での決闘は禁止されるだろう。"
  character_events.4.t:0 "敬虔な信者の醜聞"
- character_events.4.d:0 "[SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName]の[SCOPE.sCharacter('devout_scandal').GetFullName]が、聖職者の一人と秘密裏に関係を持っていることが明らかとなった。[SCOPE.sCharacter('devout_scandal').GetHerHis]の辞任が求められている。"
+ character_events.4.d:0 "[SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetName]の[SCOPE.sCharacter('devout_scandal').GetFullName]が、聖職者の一人と秘密裏に関係を持っていることが明らかとなった。[SCOPE.sCharacter('devout_scandal').GetHerHis|U]の辞任が求められている。"
  character_events.4.f:0 "「この卑劣漢たる[SCOPE.sCharacter('devout_scandal').GetSheHe]が、[SCOPE.sCharacter('devout_scandal').GetHerHis]の職権をこのようなことに濫用しながら逃げ切れると考えていた事実そのものが、[SCOPE.sCharacter('devout_scandal').GetInterestGroup.GetNameNoFormatting]によるリーダーシップのすべてを否定しているのだ」"
  character_events.4.a:0 "[SCOPE.sCharacter('devout_scandal').GetHerHim]に辞任を強要する。"
  character_events.4.b:0 "無視しろ。"

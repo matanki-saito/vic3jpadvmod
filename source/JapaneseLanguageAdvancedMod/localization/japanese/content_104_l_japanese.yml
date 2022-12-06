@@ -382,7 +382,6 @@
  fascism_events.1.c:0 "奴らが牢獄で朽ち果てんことを。"
  night_of_the_long_knives.tt:0 "[SCOPE.gsInterestGroup('fascist_ig').GetName]が得るリーダーはファシストのみです。"
  fascism_to_jail_tt:0 "政権の裏切り者たちは牢獄へ送られます。"
- traitors_executed:0 "処刑された裏切り者と思しき容疑者"
  traitors_executed_propaganda:0 "処刑された裏切り者と思しき容疑者"
  traitors_executed_approves:0 "処刑の承認"
  traitors_executed_disapproves:0 "処刑の不承認"
@@ -1230,3 +1229,5 @@
  vampire_panic.1.b:0 "数人の教授がこの件に興味を示しています。"
  vampire_panic.1.c:0 "[SCOPE.gsInterestGroup('devout_ig').GetName]が死体を調査したいそうです。"
  vampire_research_modifier:0 "迷信の調査"
+ traitors_jailed:0 "投獄された裏切り者と思しき容疑者"
+ traitors_disappeared:0 "不審な失踪"

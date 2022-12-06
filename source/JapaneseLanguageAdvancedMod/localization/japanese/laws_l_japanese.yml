@@ -304,7 +304,7 @@
  law_meritocratic_bureaucracy:0 "実力制の官僚"
  law_meritocratic_bureaucracy_desc:0 "官僚は実力で権力の座を争います。その結果、巨大なビザンツ行政が生み出されることになります。"
  law_elected_bureaucrats:0 "選挙制の官僚"
- law_elected_bureaucrats_desc:0 "地方の知事は現地の選挙区民によって選出されます。権力を分散させると同時に、市民を管理しやすくなります。"
+ law_elected_bureaucrats_desc:0 "地方の統治者は構成員によって選出されます。権力を分散させると同時に、市民を管理しやすくなります。"
  lawgroup_colonization:0 "植民地化"
  lawgroup_colonization_desc:0 "[concept_decentralized_nation]を奪い、征服するための植民地設立に対するあなたのスタンス。"
  law_no_colonial_affairs:0 "植民地なし"
