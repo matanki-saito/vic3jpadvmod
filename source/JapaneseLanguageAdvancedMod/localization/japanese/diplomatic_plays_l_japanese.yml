@@ -346,7 +346,7 @@
  war_goal_transfer_subject_type_name:0 "従属国の移譲"
  war_goal_transfer_subject_type_desc:0 "従属国の宗主権を奪う。"
  war_goal_transfer_subject:0 "[WAR_GOAL.GetTarget.GetName]の移譲"
- war_goal_transfer_subject_desc:0 "[WAR_GOAL.GetTarget.GetName]から[WAR_GOAL.GetHolder.GetName]へ宗主国としての権限を委譲する。"
+ war_goal_transfer_subject_desc:0 "[WAR_GOAL.GetTarget.GetName]の宗主権を[WAR_GOAL.GetHolder.GetName]へ移譲する。"
  war_goal_transfer_subject_sway_desc:0 "[WAR_GOAL.GetWarGoalStakeholder.GetName]に[WAR_GOAL.GetTarget.GetName]の宗主国としての権限を委譲するよう強要して、[WAR_GOAL.GetHolder.GetName]がこちら側の勢力に加わるよう説得しましょう。"
  war_goal_make_puppet_type_name:0 "傀儡政権樹立"
  war_goal_make_puppet_type_desc:0 "[concept_puppet]となることを他国に強要する。"

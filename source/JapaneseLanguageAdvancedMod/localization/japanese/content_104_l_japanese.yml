@@ -233,7 +233,7 @@
  je_ig_suppression_status_2:0 "不道徳な行動に関する噂を受け、[SCOPE.gsInterestGroup('target').GetName]のリーダーは辞任を決断しました。"
  je_ig_suppression_status_3:0 "[SCOPE.gsInterestGroup('target').GetName]のリーダーは、穏便な辞任要求を拒絶したため投獄されました。"
  ig_suppression_events.1.t:0 "あのような友人に囲まれて..."
- ig_suppression_events.1.d:0 "[SCOPE.gsInterestGroup('suppressed_ig').GetName]の保持する強大な影響力が我が国の政府を脅かしています。味方の工作員から...やや奇抜な解決策を提案されました。"
+ ig_suppression_events.1.d:0 "強大な勢力を誇る[SCOPE.gsInterestGroup('suppressed_ig').GetName]が我が国の政府を脅かしています。味方の工作員から...やや奇抜な解決策を提案されました。"
  ig_suppression_events.1.f:0 "「木の机に置かれていた書類が風で散らばるまで、扉が開いていることに誰も気が付いていなかった。\n\n「失礼します」　穏やかな声が響き、注意深く書類を拾い上げる。「私の訪問によって重要な事案に遅延が発生しないといいのですが。ただ、[SCOPE.gsInterestGroup('suppressed_ig').GetNameNoFormatting]が正しい方向性に関する助言を求めて苦心しているようでして、彼らと我々双方に得られるものがあるのではないかということをお伝えしに参った次第です」"
  ig_suppression_events.1.a:0 "彼らには我々の助言が必要だとも。"
  ig_suppression_events.1.b:0 "それは完全に道徳に反する！"
