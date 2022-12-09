@@ -236,7 +236,7 @@
  concept_incorporate:0 "編入"
  concept_incorporated:0 "編入済"
  concept_incorporating:0 "編入中"
- concept_incorporation:0 "併合化"
+ concept_incorporation:0 "編入"
  concept_incorporated_state_desc:0 "[Concept('concept_state','$concept_states$')]は、完全に[concept_country]に統合された状態です。$concept_incorporated_states$の[Concept('concept_pop','$concept_pop$')]は税金を払い、 [Concept('concept_institution','$concept_institutions$')]による恩恵を受け、国の政治システムに完全に参加することができます。[Concept('concept_unincorporated_state','$concept_unincorporated_states$')]は、時に長いプロセスを経て$concept_incorporated$となることがあります。"
  concept_capacity:0 "キャパシティ"
  concept_capacities:0 "キャパシティ"
