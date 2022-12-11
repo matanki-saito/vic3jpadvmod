@@ -4542,7 +4542,7 @@
  notification_diplo_play_start_notification_desc:0 "[SCOPE.sC('actor').GetName]が我が国に対し[SCOPE.GetRootScope.GetDiplomaticPlay.GetDiplomaticPlayType.GetName|b][concept_diplomatic_play]を開始しました。"
  notification_diplo_play_start_third_party_notification_tooltip:0 "#header $notification_diplo_play_start_third_party_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_start_third_party_notification_desc$"
  notification_diplo_play_start_third_party_notification_name:0 "[concept_diplomatic_play]開始"
- notification_diplo_play_start_third_party_notification_desc:0 "[SCOPE.sC('actor').GetName]が[SCOPE.sC('target').GetName]に対し[concept_diplomatic_play] ([SCOPE.GetRootScope.GetDiplomaticPlay.GetDiplomaticPlayType.GetName|b]) を開始"
+ notification_diplo_play_start_third_party_notification_desc:0 "[SCOPE.sC('actor').GetName]が[SCOPE.sC('target').GetName]に対し[concept_diplomatic_play] ([SCOPE.GetRootScope.GetDiplomaticPlay.GetDiplomaticPlayType.GetName|b]) を開始しました"
  notification_diplo_play_back_down_notification_tooltip:0 "#header $notification_diplo_play_back_down_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplo_play_back_down_notification_desc$"
  notification_diplo_play_back_down_notification_name:0 "[SCOPE.sC('actor').GetName]が屈服"
  notification_diplo_play_back_down_notification_desc:0 "[SCOPE.sC('actor').GetName]は[concept_diplomatic_play]での敗北を認め、我が国が最初の戦争目標を達成することに同意しました。"
