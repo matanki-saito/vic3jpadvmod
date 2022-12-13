@@ -338,7 +338,7 @@
  war_goal_liberate_country:0 "[WAR_GOAL.GetCountryCreation.GetName]の解放"
  war_goal_liberate_country_desc:0 "[WAR_GOAL.GetHolder.GetName]が、[WAR_GOAL.GetTarget.GetName]に[WAR_GOAL.GetCountryCreation.GetName]の国を解放するよう強要する。"
  war_goal_liberate_country_sway_desc:0 "[WAR_GOAL.GetWarGoalStakeholder.GetName]に[WAR_GOAL.GetCountryCreation.GetName]の国を解放するよう強要して、[WAR_GOAL.GetHolder.GetName]がこちら側の勢力に加わるよう説得しましょう。"
- war_goal_force_recognition_type_name:0 "認識の強要"
+ war_goal_force_recognition_type_name:0 "承認の強要"
  war_goal_force_recognition_type_desc:0 "ある国の未承認ステータスを取り除くよう列強に強要する。"
  war_goal_force_recognition:0 "[WAR_GOAL.GetHolder.GetName]の承認"
  war_goal_force_recognition_desc:0 "[WAR_GOAL.GetHolder.GetName]が、[WAR_GOAL.GetTarget.GetName]に[WAR_GOAL.GetHolder.GetName]の未承認ステータスを取り除くよう強要する。"

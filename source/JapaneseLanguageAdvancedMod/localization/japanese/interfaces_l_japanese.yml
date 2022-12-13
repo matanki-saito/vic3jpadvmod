@@ -5085,7 +5085,7 @@
  notification_obligation_owed_by_us_expired_desc:0 "我が国が[SCOPE.sCountry('target_country').GetName]に負っていた[concept_obligation]は失効しています"
  notification_obligation_owed_by_us_expired_tooltip:0 "#header $notification_obligation_owed_by_us_expired_name$#!\n$notification_obligation_owed_by_us_expired_desc$"
  notification_country_owes_obligation_tooltip:0 "#header $notification_country_owes_obligation_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_owes_obligation_desc$"
- notification_country_owes_obligation_name:0 "[SCOPE.sCountry('actor').GetName]からの[Concept('concept_obligation',借り')]"
+ notification_country_owes_obligation_name:0 "[SCOPE.sCountry('actor').GetName]からの[Concept('concept_obligation','借り')]"
  notification_country_owes_obligation_desc:0 "[SCOPE.sCountry('actor').GetName]に[Concept('concept_obligation','借り')]ができました。"
  notification_country_owed_obligation_tooltip:0 "#header $notification_country_owed_obligation_name$#!\n$TOOLTIP_DELIMITER$\n$notification_country_owed_obligation_desc$"
  notification_country_owed_obligation_name:0 "[SCOPE.sCountry('recipient').GetName]への[Concept('concept_obligation','貸し')]"
