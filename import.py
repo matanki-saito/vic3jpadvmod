@@ -56,12 +56,12 @@ class Context3:
         self.context = context
 
 
-def get_file_infos(project_id: int, secret: str, base_url="https://paratranz.cn"):
+def get_file_infos(context: Context):
     # https://paratranz.cn/api/projects/5456/files
     # GET
 
-    url = "{}/api/projects/{}/files".format(base_url, project_id)
-    headers = {'Authorization': secret}
+    url = "{}/api/projects/{}/files".format(context.base_url, context.project_id)
+    headers = {'Authorization': context.secret}
     response = json.loads(requests.get(url, headers=headers).text)
 
     result = {}
@@ -80,7 +80,7 @@ def get_current_paratranz_zip_file(ctx: Context):
 
     url = "{}/api/projects/{}/artifacts".format(ctx.base_url, ctx.project_id)
     headers = {'Authorization': ctx.secret}
-    response = json.loads(requests.post(url, headers=headers).text)
+    response = requests.post(url, headers=headers)
 
     print("[LOG] status code {}".format(response.status_code))
 
@@ -97,7 +97,7 @@ def get_current_paratranz_zip_file(ctx: Context):
         my_file.write(response.content)
 
 
-def update_current_file(file_id: int, source_path: Path, project_id: int, secret: str, base_url="https://paratranz.cn"):
+def update_current_file(file_id: int, source_path: Path, context: Context):
     file_name = source_path.name
     file_data_binary = open(source_path, 'rb').read()
     files = {
@@ -106,31 +106,34 @@ def update_current_file(file_id: int, source_path: Path, project_id: int, secret
 
     print("[LOG] Update file, id={}, path={}".format(file_id, str(source_path)))
 
-    url = "{}/api/projects/{}/files/{}".format(base_url, project_id, file_id)
-    headers = {'Authorization': secret}
+    url = "{}/api/projects/{}/files/{}".format(context.base_url, context.project_id, file_id)
+    headers = {'Authorization': context.secret}
     response = requests.post(url, files=files, headers=headers)
 
     print("[LOG] status code {}".format(response.status_code))
 
 
-def get_tid_from_key(key: str, project_id: int, secret: str, base_url="https://paratranz.cn"):
-    url = "{}/api/projects/{}/strings?manage=1&key={}".format(base_url, project_id, key)
-    headers = {'Authorization': secret}
+def get_tid_from_key(key: str, context: Context):
+    # 完全一致検索をするにはkeyではなくてkey@。 At markが必要
+    url = "{}/api/projects/{}/strings?manage=1&key@={}&advanced=1".format(context.base_url, context.project_id, key)
+    headers = {'Authorization': context.secret}
 
     print("[LOG] Get text id from key, key={}".format(key))
 
-    response = requests.get(url, headers=headers).json()
+    response = requests.get(url, headers=headers)
     print("[LOG] status code {}".format(response.status_code))
 
-    if len(response["results"]) != 1:
+    content = response.json()
+
+    if len(content["results"]) != 1:
         return None
 
-    return response["results"][0]["id"]
+    return content["results"][0]["id"]
 
 
-def update_entry_by_tid(tid: int, payload: dict, project_id: int, secret: str, base_url="https://paratranz.cn"):
-    url = "{}/api/projects/{}/strings/{}".format(base_url, project_id, tid)
-    headers = {'Authorization': secret}
+def update_entry_by_tid(tid: int, payload: dict, context: Context):
+    url = "{}/api/projects/{}/strings/{}".format(context.base_url, context.project_id, tid)
+    headers = {'Authorization': context.secret}
 
     print("[LOG] Update text from text id, text id={}".format(tid))
 
@@ -139,7 +142,7 @@ def update_entry_by_tid(tid: int, payload: dict, project_id: int, secret: str, b
     print("[LOG] status code {}".format(response.status_code))
 
 
-def add_new_file(base_path: Path, source_path: Path, project_id, secret, base_url="https://paratranz.cn"):
+def add_new_file(base_path: Path, source_path: Path, context: Context):
     file_name = source_path.name
     file_data_binary = open(source_path, 'rb').read()
     data = {'path': str(Path("/").joinpath(source_path.relative_to(base_path).parent)).replace("\\", "/")}
@@ -149,8 +152,8 @@ def add_new_file(base_path: Path, source_path: Path, project_id, secret, base_ur
 
     print("[LOG] Add new file, file_name={}".format(file_name))
 
-    url = "{}/api/projects/{}/files".format(base_url, project_id)
-    headers = {'Authorization': secret}
+    url = "{}/api/projects/{}/files".format(context.base_url, context.project_id)
+    headers = {'Authorization': context.secret}
     response = requests.post(url, files=files, data=data, headers=headers)
 
     print("[LOG] status code {}".format(response.status_code))
@@ -254,11 +257,11 @@ def output(ctx: Context2):
 
             data.append(entry)
 
-        if not json_path.parent.exists():
-            os.makedirs(json_path.parent, exist_ok=True)
-
-        with open(json_path, 'wt', encoding='utf_8_sig') as fw:
-            fw.write(json.dumps(data, indent=2))
+        if len(data) > 0:
+            if not json_path.parent.exists():
+                os.makedirs(json_path.parent, exist_ok=True)
+            with open(json_path, 'wt', encoding='utf_8_sig') as fw:
+                fw.write(json.dumps(data, indent=2))
 
     result.deleted_files = file_str_paths_cache
     result.actions = actions
@@ -338,8 +341,8 @@ def aggregation_stats_from_english_files(ctx: Context):
     return result
 
 
-def update_paratranz(ctx: Context3):
-    name2id = get_file_infos(secret=ctx.context.context.secret, project_id=ctx.context.context.project_id)
+def update_files(ctx: Context3):
+    name2id = get_file_infos(context=ctx.context.context)
     for f in ctx.context.converted_root_path.glob("**/*.json"):
         pure = str(f.relative_to(ctx.context.converted_root_path)).replace("\\", "/")
 
@@ -347,14 +350,23 @@ def update_paratranz(ctx: Context3):
             add_new_file(
                 base_path=ctx.context.converted_root_path,
                 source_path=f,
-                secret=ctx.context.context.secret,
-                project_id=ctx.context.context.project_id)
+                context=ctx.context.context)
         else:
             update_current_file(
                 file_id=name2id[pure],
                 source_path=f,
-                secret=ctx.context.context.secret,
-                project_id=ctx.context.context.project_id)
+                context=ctx.context.context)
+
+    # TODO: delete files
+
+
+def update_entry(ctx: Context3):
+    for key, value in ctx.actions.items():
+        tid = get_tid_from_key(key=key, context=ctx.context.context)
+        if tid is None:
+            print("[ERROR] Failed to get tid from key, key={}".format(key))
+        else:
+            update_entry_by_tid(tid=tid, payload=value, context=ctx.context.context)
 
 
 def main():
@@ -373,7 +385,9 @@ def main():
 
     context3: Context3 = output(context2)
 
-    # update_paratranz(context3)
+    update_files(context3)
+
+    update_entry(context3)
 
 
 if __name__ == "__main__":
