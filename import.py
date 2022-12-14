@@ -47,6 +47,15 @@ class Context2:
         os.makedirs(self.converted_root_path)
 
 
+class Context3:
+    actions: dict = {}
+    deleted_files: list = []
+    context: Context2 = None
+
+    def __init__(self, context: Context2):
+        self.context = context
+
+
 def get_file_infos(project_id: int, secret: str, base_url="https://paratranz.cn"):
     # https://paratranz.cn/api/projects/5456/files
     # GET
@@ -147,25 +156,21 @@ def add_new_file(base_path: Path, source_path: Path, project_id, secret, base_ur
     print("[LOG] status code {}".format(response.status_code))
 
 
-class Context3:
-    actions: dict = {}
-    deleted_files: list = []
-
-
 def output(ctx: Context2):
     file_str_paths_cache = ctx.file_str_paths.copy()
 
-    result: Context3 = Context3()
+    result: Context3 = Context3(ctx)
     actions: dict = {}
 
     for str_path, keys in ctx.english_stats.items():
         path = Path(str_path.replace("english\\", "japanese\\")).with_suffix(".json")
         json_path = ctx.converted_root_path.joinpath(path)
+        new_file_flag = False
 
         # 新規ファイル
         if str(path) not in file_str_paths_cache:
             print("[LOG] New file : {}".format(json_path.name))
-            continue
+            new_file_flag = True
         else:
             file_str_paths_cache.remove(str(path))
 
@@ -176,20 +181,24 @@ def output(ctx: Context2):
                 "original": record["value"]
             }
 
-            if key in ctx.current_stats:
+            if new_file_flag:
+                entry["context"] = ctx.japanese_stats[key]["value"]
+                entry["translation"] = ctx.japanese_stats[key]["value"]
+
+            elif key in ctx.current_stats:
                 if key in ctx.japanese_stats:
                     entry["context"] = ctx.japanese_stats[key]["value"]
                     if record["value"] != ctx.current_stats[key]["original"]:
                         if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
                                 # No.1
-                                print("[Log] No.1 | {}".format(key))
+                                # print("[Log] No.1 | {}".format(key))
                                 actions[key] = {
                                     "stage": 2,  # disputed
                                 }
                             else:
                                 # No.2
-                                print("[Log] No.2 | {}".format(key))
+                                # print("[Log] No.2 | {}".format(key))
                                 actions[key] = {
                                     "stage": 1,  # translated
                                     "translation": ctx.japanese_stats[key]["value"]
@@ -197,13 +206,13 @@ def output(ctx: Context2):
                         else:
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
                                 # No.3
-                                print("[Log] No.3 | {}".format(key))
+                                # print("[Log] No.3 | {}".format(key))
                                 actions[key] = {
                                     "stage": 2,  # disputed
                                 }
                             else:
                                 # No.4
-                                print("[Log] No.4 | {}".format(key))
+                                # print("[Log] No.4 | {}".format(key))
                                 actions[key] = {
                                     "stage": 1,  # translated
                                 }
@@ -211,13 +220,14 @@ def output(ctx: Context2):
                         if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
                                 # No.5
-                                print("[Log] No.5 | {}".format(key))
+                                # print("[Log] No.5 | {}".format(key))
                                 actions[key] = {
                                     "stage": 2,  # disputed
                                 }
                             else:
                                 # No.6
-                                print("[Log] No.6 | {}".format(key))
+                                # print("[Log] No.6 | {}".format(key))
+                                pass
 
                         else:
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
@@ -233,7 +243,7 @@ def output(ctx: Context2):
 
             else:
                 if key in ctx.japanese_stats:
-                    print("[Log] No.10 | {}".format(key))
+                    # print("[Log] No.10 | {}".format(key))
                     entry["context"] = ctx.japanese_stats[key]["value"]
                     actions[key] = {
                         "stage": 1,  # translated,
@@ -328,26 +338,23 @@ def aggregation_stats_from_english_files(ctx: Context):
     return result
 
 
-def update_parantranz():
-    # update paratranz files
-    # name2id = get_file_infos(secret=secret, project_id=project_id)
-    # for f in converted_root_path.glob("**/*.json"):
-    #     print(f)
-    #     pure = str(f.relative_to(converted_root_path)).replace("\\", "/")
-    #
-    #     if pure not in name2id:
-    #         update_new_file(
-    #             base_path=converted_root_path,
-    #             source_path=f,
-    #             secret=secret,
-    #             project_id=project_id)
-    #     else:
-    #         update_old_file(
-    #             file_id=name2id[pure],
-    #             source_path=f,
-    #             secret=secret,
-    #             project_id=project_id)
-    pass
+def update_paratranz(ctx: Context3):
+    name2id = get_file_infos(secret=ctx.context.context.secret, project_id=ctx.context.context.project_id)
+    for f in ctx.context.converted_root_path.glob("**/*.json"):
+        pure = str(f.relative_to(ctx.context.converted_root_path)).replace("\\", "/")
+
+        if pure not in name2id:
+            add_new_file(
+                base_path=ctx.context.converted_root_path,
+                source_path=f,
+                secret=ctx.context.context.secret,
+                project_id=ctx.context.context.project_id)
+        else:
+            update_current_file(
+                file_id=name2id[pure],
+                source_path=f,
+                secret=ctx.context.context.secret,
+                project_id=ctx.context.context.project_id)
 
 
 def main():
@@ -366,7 +373,7 @@ def main():
 
     context3: Context3 = output(context2)
 
-    print(context3)
+    # update_paratranz(context3)
 
 
 if __name__ == "__main__":
