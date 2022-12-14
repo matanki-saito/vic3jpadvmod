@@ -1,144 +1,373 @@
+import json
 import os
+import pathlib
 import re
 import shutil
-import sys
-import json
-import pathlib
-import urllib
+import tempfile
+import time
+import zipfile
 from os.path import join
-import requests
 from pathlib import Path
+
+import requests
 
 _ = join
 
 
-def output(japanese_dict, converted_root_path, english_root_path, path):
+class Context:
+    secret: str = os.environ.get("PARATRANZ_SECRET")
+    project_id: int = 5456
+    extract_path: Path = Path("extract")
+    japanese_root_path: Path = Path("extract/japanese_root_path")
+    english_root_path: Path = Path("extract/english_root_path")
+    paratranz_zip_file: Path = Path("tmp/p.zip")
+    base_url: str = "https://paratranz.cn"
 
-	original_path = os.path.join(english_root_path, path)
-	files = os.listdir(original_path)
 
-	for file in files:
-		original_file = str(os.path.join(original_path, file))
-		converted_path = os.path.join(converted_root_path, path)
-		converted_file = str(os.path.join(converted_path, file))
+class Context2:
+    context: Context = None
+    current_stats = None
+    japanese_stats = None
+    english_stats = None
+    file_str_paths: set = None
+    converted_root_path: Path = Path("tmp/converted")
 
-		# In case of directory
+    def __init__(self, context: Context,
+                 current_stats: dict,
+                 japanese_stats: dict,
+                 english_stats: dict,
+                 file_str_paths: set):
+        self.context = context
+        self.current_stats = current_stats
+        self.japanese_stats = japanese_stats
+        self.english_stats = english_stats
+        self.file_str_paths = file_str_paths
 
-		if os.path.isdir(original_file):
-			if not os.path.exists(converted_file):
-				pathlib.Path(converted_file).mkdir()
-			output(japanese_dict, converted_root_path, english_root_path, os.path.join(path, file))
+        shutil.rmtree(self.converted_root_path, ignore_errors=True)
+        os.makedirs(self.converted_root_path)
 
-		# In case of file
 
-		else:
-			json_list = []
-			print('Processing ' + original_file + '...')
-			with open(original_file, 'r', encoding='utf_8_sig') as f:
-				for line in f:
-					res = re.search(r'^\s+([^:]+):\d+\s+\"(.*)\"[^\"]*$', line)
-					if res:
-						key = res.group(1)
-						value = res.group(2)
-						if key in japanese_dict:
-							english = value
-							japanese = japanese_dict.get(key)
-							entry = {
-								'key': key,
-								'original': english,
-								'translation': japanese,
-								'context': japanese
-							}
-							json_list.append(json.dumps(entry, indent='\t'))
-						else:
-							print('Error: Unknown Key ' + key)
-							sys.exit()
-			with open(converted_file.replace('.yml', '.json'), 'w', encoding='utf-8') as f:
-				f.write('[\n')
-				f.write(',\n'.join(json_list))
-				f.write('\n]\n')
+def get_file_infos(project_id: int, secret: str, base_url="https://paratranz.cn"):
+    # https://paratranz.cn/api/projects/5456/files
+    # GET
+
+    url = "{}/api/projects/{}/files".format(base_url, project_id)
+    headers = {'Authorization': secret}
+    response = json.loads(requests.get(url, headers=headers).text)
+
+    result = {}
+    for record in response:
+        result[record["name"]] = record["id"]
+
+    return result
+
+
+def get_current_paratranz_zip_file(ctx: Context):
+    if ctx.paratranz_zip_file.exists():
+        print("[Skip] already exists current paratranz zip file")
+        return
+
+    print("[LOG] Regenerate zip file")
+
+    url = "{}/api/projects/{}/artifacts".format(ctx.base_url, ctx.project_id)
+    headers = {'Authorization': ctx.secret}
+    response = json.loads(requests.post(url, headers=headers).text)
+
+    print("[LOG] status code {}".format(response.status_code))
+
+    # wait for regenerate
+    print("[LOG] wait 20sec")
+    time.sleep(20)
+
+    print("[LOG] Try to download current paratranz zip file")
+    url = "{}/api/projects/{}/artifacts/download".format(ctx.base_url, ctx.project_id)
+    response = requests.get(url, headers=headers)
+    print("[LOG] status code {}".format(response.status_code))
+
+    with open(ctx.paratranz_zip_file, "wb") as my_file:
+        my_file.write(response.content)
+
+
+def update_current_file(file_id: int, source_path: Path, project_id: int, secret: str, base_url="https://paratranz.cn"):
+    file_name = source_path.name
+    file_data_binary = open(source_path, 'rb').read()
+    files = {
+        'file': (file_name, file_data_binary, 'application/json; charset=utf-8')
+    }
+
+    print("[LOG] Update file, id={}, path={}".format(file_id, str(source_path)))
+
+    url = "{}/api/projects/{}/files/{}".format(base_url, project_id, file_id)
+    headers = {'Authorization': secret}
+    response = requests.post(url, files=files, headers=headers)
+
+    print("[LOG] status code {}".format(response.status_code))
+
+
+def get_tid_from_key(key: str, project_id: int, secret: str, base_url="https://paratranz.cn"):
+    url = "{}/api/projects/{}/strings?manage=1&key={}".format(base_url, project_id, key)
+    headers = {'Authorization': secret}
+
+    print("[LOG] Get text id from key, key={}".format(key))
+
+    response = requests.get(url, headers=headers).json()
+    print("[LOG] status code {}".format(response.status_code))
+
+    if len(response["results"]) != 1:
+        return None
+
+    return response["results"][0]["id"]
+
+
+def update_entry_by_tid(tid: int, payload: dict, project_id: int, secret: str, base_url="https://paratranz.cn"):
+    url = "{}/api/projects/{}/strings/{}".format(base_url, project_id, tid)
+    headers = {'Authorization': secret}
+
+    print("[LOG] Update text from text id, text id={}".format(tid))
+
+    response = requests.put(url, data=payload, headers=headers)
+
+    print("[LOG] status code {}".format(response.status_code))
+
+
+def add_new_file(base_path: Path, source_path: Path, project_id, secret, base_url="https://paratranz.cn"):
+    file_name = source_path.name
+    file_data_binary = open(source_path, 'rb').read()
+    data = {'path': str(Path("/").joinpath(source_path.relative_to(base_path).parent)).replace("\\", "/")}
+    files = {
+        'file': (file_name, file_data_binary, 'application/yaml; charset=utf-8')
+    }
+
+    print("[LOG] Add new file, file_name={}".format(file_name))
+
+    url = "{}/api/projects/{}/files".format(base_url, project_id)
+    headers = {'Authorization': secret}
+    response = requests.post(url, files=files, data=data, headers=headers)
+
+    print("[LOG] status code {}".format(response.status_code))
+
+
+class Context3:
+    actions: dict = {}
+    deleted_files: list = []
+
+
+def output(ctx: Context2):
+    file_str_paths_cache = ctx.file_str_paths.copy()
+
+    result: Context3 = Context3()
+    actions: dict = {}
+
+    for str_path, keys in ctx.english_stats.items():
+        path = Path(str_path.replace("english\\", "japanese\\")).with_suffix(".json")
+        json_path = ctx.converted_root_path.joinpath(path)
+
+        # 新規ファイル
+        if str(path) not in file_str_paths_cache:
+            print("[LOG] New file : {}".format(json_path.name))
+            continue
+        else:
+            file_str_paths_cache.remove(str(path))
+
+        data = []
+        for key, record in keys.items():
+            entry = {
+                "key": key,
+                "original": record["value"]
+            }
+
+            if key in ctx.current_stats:
+                if key in ctx.japanese_stats:
+                    entry["context"] = ctx.japanese_stats[key]["value"]
+                    if record["value"] != ctx.current_stats[key]["original"]:
+                        if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
+                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                                # No.1
+                                print("[Log] No.1 | {}".format(key))
+                                actions[key] = {
+                                    "stage": 2,  # disputed
+                                }
+                            else:
+                                # No.2
+                                print("[Log] No.2 | {}".format(key))
+                                actions[key] = {
+                                    "stage": 1,  # translated
+                                    "translation": ctx.japanese_stats[key]["value"]
+                                }
+                        else:
+                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                                # No.3
+                                print("[Log] No.3 | {}".format(key))
+                                actions[key] = {
+                                    "stage": 2,  # disputed
+                                }
+                            else:
+                                # No.4
+                                print("[Log] No.4 | {}".format(key))
+                                actions[key] = {
+                                    "stage": 1,  # translated
+                                }
+                    else:
+                        if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
+                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                                # No.5
+                                print("[Log] No.5 | {}".format(key))
+                                actions[key] = {
+                                    "stage": 2,  # disputed
+                                }
+                            else:
+                                # No.6
+                                print("[Log] No.6 | {}".format(key))
+
+                        else:
+                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                                # No.7
+                                # print("[Log] No.7 | {}".format(efc))
+                                pass
+                            else:
+                                # No.8
+                                # print("[Log] No.8 | {}".format(key))
+                                pass
+                else:
+                    print("[Log] Japanese has been removed | {}".format(key))
+
+            else:
+                if key in ctx.japanese_stats:
+                    print("[Log] No.10 | {}".format(key))
+                    entry["context"] = ctx.japanese_stats[key]["value"]
+                    actions[key] = {
+                        "stage": 1,  # translated,
+                        "translation": ctx.japanese_stats[key]["value"]
+                    }
+                else:
+                    print("[Log] No.11 | {}".format(key))
+
+            data.append(entry)
+
+        if not json_path.parent.exists():
+            os.makedirs(json_path.parent, exist_ok=True)
+
+        with open(json_path, 'wt', encoding='utf_8_sig') as fw:
+            fw.write(json.dumps(data, indent=2))
+
+    result.deleted_files = file_str_paths_cache
+    result.actions = actions
+
+    return result
 
 
 def jp_filter(src, dst):
-	if re.search(r"l_japanese.yml$", src):
-		shutil.copy2(src, dst)
+    if re.search(r"l_japanese.yml$", src):
+        shutil.copy2(src, dst)
 
 
 def en_filter(src, dst):
-	if re.search(r"l_english.yml$", src):
-		shutil.copy2(src, dst)
+    if re.search(r"l_english.yml$", src):
+        shutil.copy2(src, dst)
 
 
-def update_file(base_path, source_path, project_id, secret, base_url="https://paratranz.cn"):
-	# https://paratranz.cn/api/projects/5456/files
-	# POST
-	# arg1 : file : binary
-	# arg2 : path: /clausewitz/text_utils
-	# Content-Type: multipart/form-data;
-	# Content-Length: 751
+def aggregation_stats_from_current_files(ctx: Context):
+    result = {}
+    result2 = set()
 
-	file_name = os.path.basename(source_path)
-	file_data_binary = open(source_path, 'rb').read()
-	files = {
-		'file': (file_name, file_data_binary,  'application/json; charset=utf-8'),
-		'path': "/" + str(Path(source_path).relative_to(Path(base_path)).parent)
-	}
+    tmpdir_path = Path(tempfile.TemporaryDirectory().name)
+    with zipfile.ZipFile(ctx.paratranz_zip_file) as existing_zip:
+        existing_zip.extractall(tmpdir_path)
 
-	url = "{}/api/projects/{}/files".format(base_url, project_id)
-	headers = {'Authorization': secret}
-	response = requests.post(url, files=files, headers=headers)
+    utf8_path = tmpdir_path.joinpath("utf8")
 
-	print(response)
+    for file_path in pathlib.Path(utf8_path).glob('**/*.json'):
+        with open(file_path, 'r', encoding='utf_8_sig') as fr:
+            for entry in json.load(fr):
+                result[entry["key"]] = {
+                    "translation": entry["translation"].replace("\\n", "\n") if "translation" in entry else None,
+                    "original": entry["original"].replace("\\n", "\n"),
+                    "stage": entry["stage"],
+                    "context": entry["context"].replace("\\n", "\n") if "context" in entry else
+                    entry["original"].replace("\\n", "\n")
+                }
+                result2.add(str(file_path.relative_to(utf8_path)))
+
+    return result, result2
+
+
+def aggregation_stats_from_japanese_files(ctx: Context):
+    result = {}
+
+    for file_path in pathlib.Path(ctx.japanese_root_path).glob('**/*.yml'):
+        with open(file_path, 'r', encoding='utf_8_sig') as f:
+            for line in f:
+                match = re.search(r'^\s+([^:#]+):\d+\s+\"(.*)\"[^\"]*$', line)
+                if match:
+                    key = match.group(1)
+                    value = match.group(2)
+                    result[key] = {
+                        "value": value.replace("\\n", "\n")
+                    }
+
+    return result
+
+
+def aggregation_stats_from_english_files(ctx: Context):
+    result = {}
+
+    for file_path in pathlib.Path(ctx.english_root_path).glob('**/*.yml'):
+        relative_path = file_path.relative_to(ctx.english_root_path)
+        str_path = str(relative_path)
+        result[str_path] = {}
+        with open(file_path, 'r', encoding='utf_8_sig') as f:
+            for line in f:
+                match = re.search(r'^\s+([^:#]+):\d+\s+\"(.*)\"[^\"]*$', line)
+                if match:
+                    key = match.group(1)
+                    value = match.group(2)
+                    result[str_path][key] = {
+                        "value": value.replace("\\n", "\n")
+                    }
+
+    return result
+
+
+def update_parantranz():
+    # update paratranz files
+    # name2id = get_file_infos(secret=secret, project_id=project_id)
+    # for f in converted_root_path.glob("**/*.json"):
+    #     print(f)
+    #     pure = str(f.relative_to(converted_root_path)).replace("\\", "/")
+    #
+    #     if pure not in name2id:
+    #         update_new_file(
+    #             base_path=converted_root_path,
+    #             source_path=f,
+    #             secret=secret,
+    #             project_id=project_id)
+    #     else:
+    #         update_old_file(
+    #             file_id=name2id[pure],
+    #             source_path=f,
+    #             secret=secret,
+    #             project_id=project_id)
+    pass
 
 
 def main():
-	root_path = "./tmp/import"
-	shutil.rmtree(root_path, ignore_errors=True)
-	os.makedirs(root_path, exist_ok=True)
+    context: Context = Context()
 
-	converted_root_path = _(root_path, "converted")
-	os.makedirs(converted_root_path, exist_ok=True)
+    get_current_paratranz_zip_file(ctx=context)
+    current_stats, file_str_paths = aggregation_stats_from_current_files(ctx=context)
+    japanese_stats = aggregation_stats_from_japanese_files(ctx=context)
+    english_stats = aggregation_stats_from_english_files(ctx=context)
 
-	base_path = "C:\Program Files (x86)\Steam\steamapps\common\Victoria 3"
+    context2: Context2 = Context2(context=context,
+                                  japanese_stats=japanese_stats,
+                                  current_stats=current_stats,
+                                  english_stats=english_stats,
+                                  file_str_paths=file_str_paths)
 
-	japanese_root_path = _(root_path, "japanese_root_path")
-	os.makedirs(japanese_root_path, exist_ok=True)
-	shutil.copytree(_(base_path, "game", "localization", "japanese"), _(japanese_root_path, "japanese"))
-	shutil.copytree(_(base_path, "jomini", "localization"), _(japanese_root_path, "jomini"), copy_function=jp_filter)
-	shutil.copytree(_(base_path, "clausewitz", "localization"), _(japanese_root_path, "clausewitz"), copy_function=jp_filter)
+    context3: Context3 = output(context2)
 
-	english_root_path = _(root_path, "english_root_path")
-	os.makedirs(english_root_path, exist_ok=True)
-	shutil.copytree(_(base_path, "game", "localization", "english"), _(english_root_path, "english"))
-	shutil.copytree(_(base_path, "jomini", "localization"), _(english_root_path, "jomini"), copy_function=en_filter)
-	shutil.copytree(_(base_path, "clausewitz", "localization"), _(english_root_path, "clausewitz"), copy_function=en_filter)
-
-	# Create Japanese Dictionary
-
-	japanese_dict = {}
-
-	for root, dirs, files in os.walk(japanese_root_path):
-		for filename in files:
-			path = os.path.join(root, filename)
-			print('Processing ' + path + '...')
-			with open(path, 'r', encoding='utf_8_sig') as f:
-				for line in f:
-					res = re.search(r'^\s+([^:]+):\d+\s+\"(.*)\"[^\"]*$', line)
-					if res:
-						key = res.group(1)
-						value = res.group(2)
-						japanese_dict[key] = value
-
-	# Output Json Files
-	output(japanese_dict, english_root_path=english_root_path, converted_root_path=converted_root_path, path='')
-
-	update_file(
-		base_path=converted_root_path,
-		source_path=_(converted_root_path, "clausewitz", "cw_tools_l_english.json"),
-		secret=os.environ.get("PARATRANZ_SECRET"),
-		project_id=5456)
+    print(context3)
 
 
 if __name__ == "__main__":
-	# execute only if run as a script
-	main()
+    main()
