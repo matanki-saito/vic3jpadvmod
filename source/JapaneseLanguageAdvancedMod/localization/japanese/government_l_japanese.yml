@@ -286,6 +286,6 @@
  RULER_PONTIFEX_POPULI:0 "人民神祇官"
  gov_free_city:0 "自由都市"
  gov_free_city_desc:0 "民主的に[Concept('concept_election','$concept_elected$')]された町議会によって選ばれた[Concept('concept_ruler','$RULER_TITLE_BURGOMASTER$')]が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
- TRANSFER_OF_POWER_NAME_DESC:0 "この$concept_government_type$は、#tooltippable #tooltip:[GovernmentType.GetTooltipTag],TRANSFER_OF_POWER_TOOLTIP_DESC [GovernmentType.GetTransferOfPowerName]#!#!を採用します。[concept_transfer_of_power]"
+ TRANSFER_OF_POWER_NAME_DESC:0 "この$concept_government_type$は#tooltippable #tooltip:[GovernmentType.GetTooltipTag],TRANSFER_OF_POWER_TOOLTIP_DESC [GovernmentType.GetTransferOfPowerName]#!#!による[concept_transfer_of_power]を行います"
  TRANSFER_OF_POWER_TOOLTIP_DESC:0 "[GovernmentType.GetTransferOfPowerDesc]"
  RULER_TITLE_BURGOMASTER:0 "バーゴマスター"

@@ -215,7 +215,7 @@
  ADD_POP_WEALTH_NEG:0 "[POP.GetState.GetName]の[Pop.GetName]が$VALUE|+$の財力を失います"
  SET_POP_WEALTH:0 "[POP.GetState.GetName]の[Pop.GetName]が持つ財力が$VALUE|+$に設定されます"
  SET_POP_LITERACY:0 "[POP.GetState.GetName]の[Pop.GetName]の識字率が$VALUE|+0%$に設定されます"
- SET_POP_QUALIFICATIONS:0 "[POP.GetState.GetName]にいる[Pop.GetName]の[POP_TYPE.GetName][concept_pop_qualifications]が$VALUE|+0%$に設定されます"
+ SET_POP_QUALIFICATIONS:0 "[POP.GetState.GetName]にいる[Pop.GetName]の[POP_TYPE.GetName]の[concept_pop_qualifications]が$VALUE|+0%$に設定されます"
  SET_POP_HAPPINESS:0 "[POP.GetState.GetName]にいる[Pop.GetName]の幸福度が$VALUE|+$に設定されます"
  CHANGE_POPTYPE:0 "[Pop.GetState.GetName]の[Pop.GetName]が#variable [POP_TYPE.GetName]#!になります"
  CHANGE_POP_RELIGION:0 "[Pop.GetState.GetName]にいる[Pop.GetName]の$VALUE|0v%$が[Religion.GetName]を信仰します"
