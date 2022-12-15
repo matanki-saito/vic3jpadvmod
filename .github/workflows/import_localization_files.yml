@@ -27,9 +27,6 @@ jobs:
       - name: Update pip
         run: python -m pip install --upgrade pip
 
-      - name: Install boto3
-        run: pip install boto3
-
       - name: Install requests
         run: pip install requests
 
