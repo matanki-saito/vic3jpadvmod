@@ -195,13 +195,13 @@ def output(ctx: Context2):
                         if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
                                 # No.1
-                                # print("[Log] No.1 | {}".format(key))
+                                print("[Log] No.1 | {}".format(key))
                                 actions[key] = {
                                     "stage": 2,  # disputed
                                 }
                             else:
                                 # No.2
-                                # print("[Log] No.2 | {}".format(key))
+                                print("[Log] No.2 | {}".format(key))
                                 actions[key] = {
                                     "stage": 1,  # translated
                                     "translation": ctx.japanese_stats[key]["value"]
@@ -209,13 +209,13 @@ def output(ctx: Context2):
                         else:
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
                                 # No.3
-                                # print("[Log] No.3 | {}".format(key))
+                                print("[Log] No.3 | {}".format(key))
                                 actions[key] = {
                                     "stage": 2,  # disputed
                                 }
                             else:
                                 # No.4
-                                # print("[Log] No.4 | {}".format(key))
+                                print("[Log] No.4 | {}".format(key))
                                 actions[key] = {
                                     "stage": 1,  # translated
                                 }
@@ -223,13 +223,13 @@ def output(ctx: Context2):
                         if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
                                 # No.5
-                                # print("[Log] No.5 | {}".format(key))
+                                print("[Log] No.5 | {}".format(key))
                                 actions[key] = {
                                     "stage": 2,  # disputed
                                 }
                             else:
                                 # No.6
-                                # print("[Log] No.6 | {}".format(key))
+                                print("[Log] No.6 | {}".format(key))
                                 pass
 
                         else:
@@ -246,7 +246,7 @@ def output(ctx: Context2):
 
             else:
                 if key in ctx.japanese_stats:
-                    # print("[Log] No.10 | {}".format(key))
+                    print("[Log] No.10 | {}".format(key))
                     entry["context"] = ctx.japanese_stats[key]["value"]
                     actions[key] = {
                         "stage": 1,  # translated,
@@ -385,9 +385,9 @@ def main():
 
     context3: Context3 = output(context2)
 
-    update_files(context3)
+    # update_files(context3)
 
-    update_entry(context3)
+    # update_entry(context3)
 
 
 if __name__ == "__main__":
