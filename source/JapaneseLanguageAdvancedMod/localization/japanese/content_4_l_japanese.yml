@@ -364,7 +364,7 @@
  pmg_base_building_vatican_city:0 "基礎"
  pmg_base_building_white_house:0 "基礎"
  pm_mechanized_infantry:0 "機械化歩兵"
- pm_motorized_recon:0 "自動偵察"
+ pm_motorized_recon:0 "自動車偵察"
  pm_mechanized_infantry_conscription:0 "$pm_mechanized_infantry$"
  pm_motorized_recon_conscription:0 "$pm_motorized_recon$"
  pmg_escorts:0 "随伴艦"
