@@ -77,7 +77,7 @@
  COUNTRY_RELATIONS_TOOLTIP:0 "[Country.GetRelationsTooltip(GetPlayer)]"
  COUNTRY_INFAMY_TOOLTIP:0 "[Country.GetInfamyDesc]"
  COUNTRY_TENSION_TOOLTIP:0 "[Country.GetTensionTooltip(GetPlayer)]"
- POPULARITY_BREAKDOWN:0 "#header [Character.GetFullName]#!は#v [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#! ([Character.GetPopularity|0+=]) [concept_popularity][ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n',Character.GetPopularityDesc)]を持っています"
+ POPULARITY_BREAKDOWN:0 "#header [Character.GetFullName]#!の[concept_popularity] : #v [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#! ([Character.GetPopularity|0+=]) [ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n',Character.GetPopularityDesc)]"
  INTEREST_GROUP_SUPPORTED_BY_TITLE:0 "[InterestGroup.GetNameNoFormatting]の支持者 : "
  INTEREST_GROUP_SUPPORTED_BY_SINGLE:0 "[PopType.GetName] : $SUPPORT_PERCENTAGE|%1v$"
  INTEREST_GROUP_SUPPORTED_BY_SINGLE_FORMAT:0 "$TAB$$INTEREST_GROUP_SUPPORTED_BY_SINGLE$"

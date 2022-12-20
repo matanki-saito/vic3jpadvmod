@@ -150,7 +150,7 @@
  DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_THEM:0 "彼らには強力な保護国があります"
  DIPLOMATIC_ACCEPTANCE_POWERFUL_PROTECTORS_US:0 "自国には強力な保護国があります"
  DIPLOMATIC_ACCEPTANCE_TRUCE:0 "停戦協定があります"
- DIPLOMATIC_ACCEPTANCE_DEBT:0 "[SCOPE.GetRootScope.GetCountry.GetAdjective][concept_loans]の大きさ"
+ DIPLOMATIC_ACCEPTANCE_DEBT:0 "[SCOPE.GetRootScope.GetCountry.GetAdjective]の[concept_loans]の大きさ"
  DIPLOMATIC_ACCEPTANCE_NO_MUTUAL_TRADE_ROUTES:0 "私たちの[Concept('concept_market','$concept_markets$')]の間に[Concept('concept_trade_route','$concept_trade_routes$')]がありません"
  DIPLOMATIC_ACCEPTANCE_MUTUAL_TRADE_ROUTES:0 "私たちの[Concept('concept_market','$concept_markets$')]の間の[Concept('concept_trade_route','$concept_trade_routes$')]の量から"
  DIPLOMATIC_INCIDENT_WARGOAL_DESC:0 "これを要求すると、 $STRATEGIC_REGION$で[concept_diplomatic_incident]が発生し、[COUNTRY.GetName]に#N #B #tooltippable #tooltip:$INFAMY_BREAKDOWN_TAG$ $INFAMY_AMOUNT|1$#!#!#!#! [concept_infamy]を与え、 #tooltippable #tooltip:$RELATIONS_BREAKDOWN_TAG$ $NUM_COUNTRIES_IMPACTED|v$国との$RELATIONS$を減らすことになります。#!#!"
