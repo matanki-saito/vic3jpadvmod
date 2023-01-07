@@ -892,7 +892,7 @@
  je_tutorial_send_general_to_front_status:0 "[JournalEntry.GetTarget.GetCharacter.GetHerHim]と彼の部隊を$concept_front$に派遣"
  je_tutorial_convoy_raiding:0 "輸送船団襲撃"
  je_tutorial_convoy_raiding_reason:0 "我々の船隊のひとつは現在、自国の海岸線を哨戒して敵の侵攻から守っているだけです。[JournalEntry.GetTarget.GetCharacter.GetFullName]に敵の輸送船団を襲撃するよう伝えるべきです。"
- je_tutorial_convoy_raiding_status:0 "[JournalEntry.GetTarget.GetCharacter.GetFullName]に輸送船団を襲撃するよう命令"
+ je_tutorial_convoy_raiding_status:0 "[JournalEntry.GetTarget.GetCharacter.GetFullName]に船団襲撃を命令"
  je_tutorial_recover_from_default:0 "債務不履行から回復"
  je_tutorial_recover_from_default_reason:0 "[concept_default]に陥ったようです。債務不履行中はどの施設も拡張できません。債務不履行状態が長引くほど、国の経済に不利な効果が現れてきます。"
  je_tutorial_recover_from_default_status:0 "$concept_default$からの回復に成功"

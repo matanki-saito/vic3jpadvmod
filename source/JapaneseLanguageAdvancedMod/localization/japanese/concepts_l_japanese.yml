@@ -1007,7 +1007,7 @@
  concept_shipping_lane:0 "航路"
  concept_shipping_lanes:0 "航路"
  concept_shipping_lane_desc:0 "$concept_shipping_lane$とは、沿岸の2つの[Concept('concept_state','$concept_states$')]間で、[Concept('concept_good','$concept_goods$')]と[Concept('concept_pop','$concept_pops$')]を移動させるための[concept_convoys]による海上接続を指します。$concept_shipping_lane$は[concept_trade_route]、[concept_supply_route]、[concept_port_connection]のいずれかにすることができます。"
- concept_raid_convoys:0 "輸送船団の襲撃"
+ concept_raid_convoys:0 "船団襲撃"
  concept_convoy_raiding:0 "輸送船団襲撃"
  concept_raid_convoys_desc:0 "[concept_admiral]に与えられた、海域を通過する敵の[concept_convoys]を撃沈するための[concept_order]です。哨戒中の艦隊は同じ海域を通過する襲撃船を迎撃し無力化しようとします。"
  concept_convoy_cost:0 "$concept_convoy$コスト"
