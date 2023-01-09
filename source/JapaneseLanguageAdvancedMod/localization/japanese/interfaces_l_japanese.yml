@@ -4515,7 +4515,7 @@
  MAP_INTERACTION_INTERCEPTION_NO_HQ_TOOLTIP:0 "#N [COMMANDER_ORDER_TYPE.GetName]命令を下すための沿岸部がありません#!"
  MAP_INTERACTION_CONVOY_RAIDING_DESC:0 "[Character.GetFullName]が船団襲撃を行う海上ノードを選択"
  MAP_INTERACTION_CONVOY_RAIDING_PERFORMED:0 "輸送船団襲撃開始"
- MAP_INTERACTION_CONVOY_RAIDING_TOOLTIP:0 "[STRATEGIC_REGION.GetName]にいる[Character.GetFullName]に#header [COMMANDER_ORDER_TYPE.GetName]#!命令を下す"
+ MAP_INTERACTION_CONVOY_RAIDING_TOOLTIP:0 "[Character.GetFullName]に[STRATEGIC_REGION.GetName]での#header [COMMANDER_ORDER_TYPE.GetName]#!命令を下す"
  MAP_INTERACTION_PATROL_DESC:0 "[Character.GetFullName]が哨戒拠点とする司令部を選択"
  MAP_INTERACTION_PATROL_PERFORMED:0 "#variable [COMMANDER_ORDER_TYPE.GetName]#!命令が[Character.GetFullName]に下りました"
  MAP_INTERACTION_PATROL_TOOLTIP:0 "[Character.GetFullName]は、[Character.GetLocationHQ.GetName]と[Hq.GetName][ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n','$ERRORS$')]との間にある航路を防護します"
