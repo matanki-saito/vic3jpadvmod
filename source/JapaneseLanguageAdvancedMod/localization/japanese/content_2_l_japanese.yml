@@ -459,7 +459,7 @@
  naval_tech_events.4.b:0 "こういった船から身を守る方法を学びましょう。"
  naval_tech_events.4.c:0 "[SCOPE.sCharacter('submarine_commander').GetLastName]のスキルを司令官に昇進させる。"
  naval_tech_events.4.e:0 "[SCOPE.sCharacter('submarine_commander').GetLastName]を新世代の風雲児として昇進させる。"
- unrestricted_submarine_warfare:0 "制限なき潜水艦戦"
+ unrestricted_submarine_warfare:0 "無制限潜水艦作戦"
  je_carriers:0 "波を切る空港"
  je_carriers_reason:0 "船舶技術や航空技術の飛躍的な進歩により、新たな船舶「空母」が誕生しました。この船は魚雷や大砲の代わりに飛行機を搭載することができます。戦闘におけるポテンシャルはまだまだ未知数ですが、その設計思想は極めて有望です。"
  naval_tech_events.5.t:0 "爆撃の実演"
