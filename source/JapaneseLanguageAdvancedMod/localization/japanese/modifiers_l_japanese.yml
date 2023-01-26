@@ -1855,7 +1855,7 @@
  modifier_unit_devastation_mult_desc:0 "戦闘が起こった[concept_state_region]において[Concept('concept_unit','$concept_units$')]が与える[concept_devastation]の度合です"
  modifier_unit_advancement_speed_mult:0 "[concept_advancement_speed]"
  modifier_unit_advancement_speed_mult_desc:0 "[Concept('concept_front','$concept_front_possessive$')][concept_advancement_speed]を変更する"
- modifier_unit_convoy_requirements_mult:0 "[Concept('concept_convoy','$concept_convoys$')]条件 : "
+ modifier_unit_convoy_requirements_mult:0 "[Concept('concept_convoys','輸送船')]必要数"
  modifier_unit_convoy_requirements_mult_desc:0 "海外に展開する[Concept('concept_unit','$concept_units$')]の[concept_supply]を維持するために必要となる[Concept('concept_convoys','$concept_convoys$')]の数です"
  modifier_unit_convoy_raiding_mult:0 "輸送船団襲撃効率"
  modifier_unit_convoy_raiding_mult_desc:0 "[concept_raid_convoys]のために自国の[Concept('concept_flotilla','$concept_flotillas$')]の効率を上げます。"
