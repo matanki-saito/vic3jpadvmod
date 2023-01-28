@@ -1896,7 +1896,7 @@
  TRIGGER_IS_IN_GOVERNMENT_THIRD:0 "[INTEREST_GROUP.GetName]が政府の一員である"
  TRIGGER_IS_IN_GOVERNMENT_THIRD_NOT:0 "[INTEREST_GROUP.GetName]が政府の一員#bold ではない#!"
  TRIGGER_IS_MARGINAL_THIRD:0 "[INTEREST_GROUP.GetName]が[concept_marginalized]である"
- TRIGGER_IS_MARGINAL_THIRD_NOT:0 "[INTEREST_GROUP.GetName]が[concept_marginalized]である#bold ではない#!"
+ TRIGGER_IS_MARGINAL_THIRD_NOT:0 "[INTEREST_GROUP.GetName]が[concept_marginalized]#bold ではない#!"
  TRIGGER_TRADE_GOODS_EQUAL:0 "[Concept('concept_good','$concept_goods$')]が[TARGET_GOODS.GetName]である"
  TRIGGER_TRADE_GOODS_EQUAL_NOT:0 "[Concept('concept_good','$concept_goods$')]が[TARGET_GOODS.GetName]#bold ではない#!"
  TRIGGER_YEAR_EQUAL:0 "西暦が$NUM$である"
