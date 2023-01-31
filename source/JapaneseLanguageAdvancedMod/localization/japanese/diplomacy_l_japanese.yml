@@ -153,7 +153,7 @@
  DIPLOMATIC_ACCEPTANCE_DEBT:0 "[SCOPE.GetRootScope.GetCountry.GetAdjective]の[concept_loans]の大きさ"
  DIPLOMATIC_ACCEPTANCE_NO_MUTUAL_TRADE_ROUTES:0 "私たちの[Concept('concept_market','$concept_markets$')]の間に[Concept('concept_trade_route','$concept_trade_routes$')]がありません"
  DIPLOMATIC_ACCEPTANCE_MUTUAL_TRADE_ROUTES:0 "私たちの[Concept('concept_market','$concept_markets$')]の間の[Concept('concept_trade_route','$concept_trade_routes$')]の量から"
- DIPLOMATIC_INCIDENT_WARGOAL_DESC:0 "これを要求すると、 $STRATEGIC_REGION$で[concept_diplomatic_incident]が発生し、[COUNTRY.GetName]に#N #B #tooltippable #tooltip:$INFAMY_BREAKDOWN_TAG$ $INFAMY_AMOUNT|1$#!#!#!#! [concept_infamy]を与え、 #tooltippable #tooltip:$RELATIONS_BREAKDOWN_TAG$ $NUM_COUNTRIES_IMPACTED|v$国との$RELATIONS$を減らすことになります。#!#!"
+ DIPLOMATIC_INCIDENT_WARGOAL_DESC:0 "これを要求すると、$STRATEGIC_REGION$で[concept_diplomatic_incident]が発生し、[COUNTRY.GetName]は[concept_infamy]が#N #B #tooltippable #tooltip:$INFAMY_BREAKDOWN_TAG$ $INFAMY_AMOUNT|1$#!#!#!#!増加し、 #tooltippable #tooltip:$RELATIONS_BREAKDOWN_TAG$ $NUM_COUNTRIES_IMPACTED|v$カ国#!#!との$RELATIONS$を減らすことになります。"
  DIPLOMATIC_INCIDENT_NON_WARGOAL_DESC:0 "$STRATEGIC_REGION$で[concept_diplomatic_incident]が発生し、[COUNTRY.GetName]に#N #B #tooltippable #tooltip:$INFAMY_BREAKDOWN_TAG$ $INFAMY_AMOUNT|1$#!#!#!#! [concept_infamy]を与え、 #tooltippable #tooltip:$RELATIONS_BREAKDOWN_TAG$ $NUM_COUNTRIES_IMPACTED|v$国との$RELATIONS$を減らすことになります。#!#!"
  DIPLOMATIC_INCIDENT_RELATIONS_IMPACT:0 "[COUNTRY.GetAdjectiveNoFormatting]の[concept_relations] (対[COUNTRY_THIRD_PARTY.GetName]) : $AMOUNT|=+$"
  WARGOAL_BASE_TYPE_VALUE:0 "$TYPE$の基本値 : #BOLD $VAL|Dv$#!"

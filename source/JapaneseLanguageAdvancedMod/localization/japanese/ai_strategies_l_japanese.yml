@@ -35,7 +35,7 @@
  ai_goal_release_country:0 "従属国を解放する"
  ai_goal_research_technology:0 "技術を研究する"
  ai_goal_recruit_generals:0 "将軍を雇用する"
- ai_goal_recruit_admirals:0 "提督を雇用する"
+ ai_goal_recruit_admirals:0 "提督の雇用"
  ai_goal_assign_generals:0 "将軍を割り当てる"
  ai_goal_assign_admirals:0 "提督を割り当てる"
  ai_goal_promote_generals:0 "将軍を昇進させる"

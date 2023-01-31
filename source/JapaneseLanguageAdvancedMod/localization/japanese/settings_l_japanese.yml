@@ -1,7 +1,7 @@
 ﻿l_japanese:
  SETTING_AUTOSAVE_TO_CLOUD:0 "クラウドにオートセーブ"
  SETTING_SAVE_FILE_FORMAT:0 "デフォルトセーブ形式"
- SETTING_SAVE_FILE_FORMAT_TOOLTIP:0 "このオプションはアイアンマン、クラウド、デバッグモードで上書きされます"
+ SETTING_SAVE_FILE_FORMAT_TOOLTIP:0 "このオプションは鉄人、クラウド、デバッグモードで上書きされます"
  OPTION_SAVE_FILE_TEXT:0 "テキスト"
  OPTION_SAVE_FILE_ZIP_TEXT_ALL:0 "ZIPテキスト"
  OPTION_SAVE_FILE_ZIP_BINARY_ALL:0 "ZIPバイナリ"
