@@ -297,7 +297,7 @@
  pmg_organization:0 "基本編成"
  pm_irregular_infantry:0 "非正規歩兵"
  pm_line_infantry:0 "戦列歩兵"
- pm_skirmish_infantry:0 "散兵"
+ pm_skirmish_infantry:0 "散開歩兵"
  pm_trench_infantry:0 "塹壕歩兵"
  pm_squad_infantry:0 "分隊歩兵"
  pmg_artillery:0 "支援火砲"
