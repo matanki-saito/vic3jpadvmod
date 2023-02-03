@@ -4671,7 +4671,7 @@
  AUTO_EXPAND_ALL_YES:0 "#header 自動拡張#!\nこのグループの全施設は自動的に拡張します。\n\n#instruction クリックですべての自動拡張を削除します。#!"
  AUTO_EXPAND_ALL_NO:0 "#header 自動拡張なし#!\nこのグループの全施設は自動的に拡張しません。\n\n#instruction クリックですべての施設を自動拡張します。#!"
  AUTO_EXPAND_ALL_MIXED:0 "#header 一部自動拡張#!\nこのグループの一部の施設は自動的に拡張します。\n\n#instruction クリックですべての施設を自動拡張します。#!"
- SUBSIDIES_TOOLTIP:0 "賃金[concept_subsidies]が必要です : #v @money!$VAL|-0$#!\n完全雇用を維持するために$TAB$[Concept('concept_building_wage','$concept_building_wages$')]が必要です : #v @money!$SUB_VAL|0$#!\n$TAB$$NAME$支払い能力 : #v @money!$REG_VAL|0+$#!\n\n原料の補助金が必要です#v @money!$BALANCE_VAL|-0$#!"
+ SUBSIDIES_TOOLTIP:0 "賃金[concept_subsidies]必要額 : #v @money!$VAL|-0$#!\n$TAB$完全雇用の維持に必要な[Concept('concept_building_wage','$concept_building_wages$')] : #v @money!$SUB_VAL|0$#!\n$TAB$$NAME$の支払い能力 : #v @money!$REG_VAL|0+$#!\n\n原料に#v @money!$BALANCE_VAL|-0$#!の助成が必要です"
  BUILDING_RIGHT_CLICK_MENU_TITLE:0 "[Building.GetName]"
  BUILDING_RIGHT_CLICK_MENU_SUBTITLE:0 "所在地[State.GetName]"
  BUILDING_RIGHT_CLICK_MENU_EXPAND:0 "[State.GetName]で拡張"
