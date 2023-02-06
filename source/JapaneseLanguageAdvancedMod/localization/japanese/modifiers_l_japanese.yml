@@ -1716,7 +1716,7 @@
  modifier_country_military_tech_cost_mult_desc:0 "軍事カテゴリにある[concept_technology]研究に対するボーナスあるいはペナルティです"
  modifier_country_society_tech_cost_mult:0 "社会[concept_technology]コスト"
  modifier_country_society_tech_cost_mult_desc:0 "社会カテゴリにある[concept_technology]研究に対するボーナスあるいはペナルティです"
- modifier_country_radicals_from_conquest_mult:0 "征服による急進者"
+ modifier_country_radicals_from_conquest_mult:0 "征服による急進派"
  modifier_country_radicals_from_conquest_mult_desc:0 "我が国が[Concept('concept_state','$concept_states$')]を軍事的に支配した際に[concept_radical]となる[Concept('concept_pop','$concept_pops$')]数に対するボーナスまたはペナルティです"
  modifier_state_radicals_from_discrimination_mult:0 "[concept_discrimination]による[Concept('concept_radical','$concept_radicals$')]"
  modifier_state_radicals_from_discrimination_mult_desc:0 "[concept_discrimination]の対象となった[Concept('concept_pop','$concept_pops$')]が経時的に[concept_radical]へと傾倒する割合に対するボーナスあるいはペナルティです"
