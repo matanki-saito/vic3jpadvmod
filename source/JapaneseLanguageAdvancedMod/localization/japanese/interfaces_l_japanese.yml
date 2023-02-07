@@ -643,7 +643,7 @@
  SEA_REGION_PANEL_ADMIRAL_DELAY:0 "基本迎撃遅延は[GetDefine('NMilitary','INTERCEPTION_DELAY_BASE_DAYS')|v]日で最大[GetDefine('NMilitary','INTERCEPTION_DELAY_MAX_RANDOM_DAYS_FACTOR')|v]日間変動"
  SEA_REGION_PANEL_INTERCEPTION_CHANCE:0 "各試行が海戦のきっかけとなる確率は[GetDefine('NMilitary','INTERCEPTION_BASE_CHANCE')|v%0]です"
  SEA_REGION_PANEL_CONVOY_RAIDERS:0 "輸送船団襲撃担当の$concept_admirals$"
- SEA_REGION_PANEL_INTERCEPTING_ADMIRALS:0 "この相手方の沿岸部は$concept_admirals$が哨戒しています"
+ SEA_REGION_PANEL_INTERCEPTING_ADMIRALS:0 "この沿岸部を哨戒中の$concept_admirals$"
  SEA_REGION_PANEL_ENTRY_HEADER:0 "[SeaRegionSupplyNetworkEntry.AccessCountry.GetName]はこの海上ノードでの補給網を持っています"
  SEA_REGION_PANEL_ENTRY_IS_RAIDED:0 "[SeaRegionSupplyNetworkEntry.AccessCountry.GetName]#N はここで敵の[Concept('concept_flotilla','$concept_flotillas$')]により、[concept_convoys]を失いました！#!"
  SEA_REGION_PANEL_ENTRY_TRADE_ROUTE:0 "[SelectLocalization(TradeRoute.IsExport,TradeRoute.GetActingMarket.GetName,TradeRoute.GetRemoteMarket.GetName)]から[SelectLocalization(TradeRoute.IsExport,TradeRoute.GetRemoteMarket.GetName,TradeRoute.GetActingMarket.GetName)]への[TradeRoute.GetDirectionName][TradeRoute.GetGoods.GetTextIcon][TradeRoute.GetGoods.GetName]"

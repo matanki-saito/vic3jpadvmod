@@ -69,7 +69,7 @@
  central_africa_expedition:0 "ナイル川の水源を探す遠征隊"
  central_africa_expedition_desc:0 "アフリカ大陸の中央部にはナイル川の水源にまつわる秘密が隠されている。"
  central_africa_expedition_tooltip:0 "条件 : "
- modifier_central_africa_expedition_complete:0 "ナイル川の水源を見つけること"
+ modifier_central_africa_expedition_complete:0 "ナイル川の水源の発見"
  expedition_events.520.t:0 "現地税"
  expedition_events.520.d:0 "地元の支配者は、通行料として「ホンゴ」と呼ばれる税金の一種を要求してきた。"
  expedition_events.520.f:0 "「我々が通ることになる領土の各地で別途税金を支払わなければならない。一人の支配者に余分な税金を払えば、すべての支配者に支払うことになるだろう。もし支払わなければ・・・厄介なことになるかもしれない」"
