@@ -263,7 +263,7 @@
  neighbor_events.2.a:0 "形式ばかりの礼儀正しさは捨てよう。彼らは敵だ。"
  neighbor_events.2.b:0 "お互いに嫌いな相手とはいえ、これ以上エスカレートさせる必要はないだろう。"
  if_you_want_peace_bad_modifier:0 "受動的スタンス"
- neighbor_events.3.t:0 "世界の労働者"
+ neighbor_events.3.t:0 "万国の労働者"
  neighbor_events.3.d:0 "[SCOPE.gsInterestGroup('trade_unions_ig').GetName]内の国際主義的感情は、[SCOPE.sC('neighbor_country').GetName]の労働者に働きかけるという提案を生み出しました。"
  neighbor_events.3.f:0 "「どうして、あんな奴をウチに入れたんだ？俺たちは今、世界の至るところから来た人々を受け入れなきゃいけないのか？」\n「この男は毎日鉱山で私の命を預かっている。私はもう彼に命を預けているんだ。それよりも、私たちをこんなところに送り込む[ROOT.GetCountry.GetAdjectiveNoFormatting]の野郎どもよりも、彼をここに迎え入れたいんだ。"
  neighbor_events.3.a:0 "階級は国に優る！"
