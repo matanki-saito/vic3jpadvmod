@@ -529,7 +529,7 @@
  opium_health_focus:0 "依存症の回復"
  opium_loyalty_focus:0 "国への愛"
  opium_wars.8.t:0 "アヘン中毒"
- opium_wars.8.d:0 "[SCOPE.sCulture('opium_addiction_pop').GetName]は、アヘン中毒の深刻な影響を経験しています。この物質の使用と乱用は[SCOPE.sState('opium_addiction_state').GetName]全体に広がっているのです。"
+ opium_wars.8.d:0 "[SCOPE.sState('opium_addiction_state').GetName]ではアヘンが広く普及していますが、乱用も増加しており、[SCOPE.sCulture('opium_addiction_pop').GetName]文化の人々は中毒の深刻な脅威に直面しています。"
  opium_wars.8.f:0 "アヘン常用者は、インキュバスと悪夢の重圧のもとに寝たきりになっている。彼は気怠い疫病の死のような倦怠感によって、ベッドに無理やり寝かしつけられている。そして、最も優しい愛の対象に加えられた傷害や暴挙を目撃せざるを得ないように、彼は自分が実行したいことをみせつけられているのだ。彼は立ち上がって歩けるなら命を投げ出すだろうが、幼児のように無力で、立ち上がることもできないのだ。"
  opium_wars.8.a:0 "痛ましい！"
  opium_wars.8.b:0 "これは医学的な問題として扱うことができるかもしれない。"

@@ -123,7 +123,7 @@
  gov_oriental_orthodox_theocracy:0 "東方諸教会神権制"
  gov_oriental_orthodox_theocracy_desc:0 "東方諸教会によって統治される[concept_government_type]。[Concept('concept_ruler','$RULER_PATRIARCH$')]によって統治され、教会は国家のあらゆる側面を支配しています。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_sunni_theocracy:0 "イマーム国"
- gov_sunni_theocracy_desc:0 "イスラム教スンニ派のリーダーが統治する神政主義の[concept_government_type]。上級[Concept('concept_ruler','$RULER_IMAM$')]が[concept_head_of_state]の役割を担います。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_sunni_theocracy_desc:0 "イスラム教スンナ派のリーダーが統治する神政主義の[concept_government_type]。上級[Concept('concept_ruler','$RULER_IMAM$')]が[concept_head_of_state]の役割を担います。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_papacy:0 "教皇国"
  gov_papacy_desc:0 "[Concept('concept_ruler','$RULER_POPE$')]、最高法王、ローマのビショップ、およびカトリック教会の長が治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_jewish_theocracy:0 "ラビ国家"
