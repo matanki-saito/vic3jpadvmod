@@ -386,9 +386,9 @@ def main():
 
     context3: Context3 = output(context2)
 
-    # update_files(context3)
+    update_files(context3)
 
-    # update_entry(context3)
+    update_entry(context3)
 
 
 if __name__ == "__main__":
