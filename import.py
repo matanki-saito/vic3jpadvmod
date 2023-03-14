@@ -370,6 +370,7 @@ def update_entry(ctx: Context3):
 
 
 def main():
+    os.makedirs("tmp", exist_ok=True)
     context: Context = Context()
 
     get_current_paratranz_zip_file(ctx=context)
