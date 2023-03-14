@@ -144,7 +144,9 @@
  SETTING_AUDIO_OPTION_TV_TOOLTIP:0 "#T $SETTING_AUDIO_OPTION_TV$\n#!$SETTING_AUDIO_OPTION_TV$とモニタースピーカーのためのミックスです。"
  SETTING_AUDIO_OPTION_NIGHTMODE:0 "ナイトモード"
  SETTING_AUDIO_OPTION_NIGHTMODE_TOOLTIP:0 "#T $SETTING_AUDIO_OPTION_NIGHTMODE$\n#!夜間のプレイのために音を柔らかくし、高ピッチを弱くしてダイナミックレンジを圧縮します。"
- # Game
+ SETTING_MUSIC_DENSITY:0 "音楽密度"
+ SETTING_MUSIC_DENSITY_TOOLTIP:0 "静寂、ムード音楽といったセグメント間のバランスをコントロールします\n\n強烈 -`ラジオ放送局'のように大半の楽曲を順次演奏します \n調和 - 楽曲、静寂、ムード音楽の設定のバランスが完璧に調整されています\nリラックス - 大半がリラックスできる音楽セグメントで構成され、よりムードのある視聴体験となります。数時間連続視聴しても周回していることがそれほど気になりません」"
+  # Game
  SETTING_AUTOSAVE:0 "オートセーブの間隔"
  SETTING_AUTOSAVE_TOOLTIP:3 "#T $SETTING_AUTOSAVE$\n#!ゲームが自動セーブを行う頻度を設定します。"
  SETTING_AUTOSAVE_TO_CLOUD_TOOLTIP:0 "オートセーブをクラウドに保存するかどうかを決定します。"
