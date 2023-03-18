@@ -48,3 +48,8 @@
  setting_no_monument_effects_desc:0 "[Concept('concept_monument','$concept_monuments$')]は装飾品としてのみ機能します。建設に伴う報酬は視覚的なものに限定されます。"
  DELETE_SELECTED_PRESET_BUTTON_TOOLTIP:0 "このプリセットを削除"
  SAVE_PRESET_BUTTON_TOOLTIP:0 "このプリセットを保存"
+ rule_investment_pool:0 "投資プール"
+ setting_autonomous_investment_pool:0 "自律的投資プール"
+ setting_autonomous_investment_pool_desc:0 "[concept_investment_pool]は、[Concept('concept_country','$concept_country_possessive$')]の[Concept('concept_law','$concept_laws$')]に応じ適切な[Concept('concept_building','$concept_buildings$')]の[Concept('concept_private_construction','$concept_private_constructions$')]に対して自律的な資金提供を行うために使用されます。"
+ setting_directly_controlled_investment_pool:0 "直接管理投資プール"
+ setting_directly_controlled_investment_pool_desc:0 "[concept_investment_pool]は各[concept_country]によって直接引き出され、[Concept('concept_country','$concept_country_possessive$')]の[Concept('concept_law','$concept_laws$')]に応じ適切な[Concept('concept_building','$concept_buildings$')]の[Concept('concept_government_construction','$concept_government_constructions$')]に対して資金提供するために使用することができます。"

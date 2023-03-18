@@ -1,6 +1,6 @@
 ﻿l_japanese:
- mm_default:0 "国"
- mm_ongoing_diplo_play:0 "紛争中"
+ mm_default:0 "国―平和"
+ mm_ongoing_diplo_play:0 "国―紛争中"
  mm_strategic_region:0 "戦略的重要地域"
  mm_state:0 "州"
  mm_theater:0 "戦区"
@@ -53,3 +53,8 @@
  mm_political:0 "政治"
  mm_diplomatic:0 "外交"
  mm_production:0 "州の生産量"
+ mm_population_nationally:0 "国内人口"
+ mm_literacy:0 "識字率"
+ mm_infamy:0 "悪名"
+ mm_reset_production_methods_interaction:0 "製法をリセットする"
+ mm_designate_strategic_objective:0 "戦略的目標の指定"

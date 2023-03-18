@@ -188,3 +188,5 @@
  building_machu_picchu:0 "$building_dummy$"
  building_petra:0 "$building_dummy$"
  building_skyscraper:0 "摩天楼"
+ building_subsistence_fishing_villages:0 "自給漁村"
+ building_subsistence_rice_paddies:0 "自給水田"

@@ -197,7 +197,7 @@
  goldrush.4.f:0 "「[SCOPE.gsInterestGroup('industrialists_ig').GetNameNoFormatting]の一人が窓の水晶を軽く指で弾いた。空っぽの保管庫にその音が木霊している。「彼らに金も与えれば良いのかな？私の家の一部もどうだろう？」扉に背を向けながら彼は気前よく尋ねる。「私のものは私のもの。あなたのものはあなたのもの。そして鉱山はと言えば前者だ」"
  goldrush.4.a:0 "[SCOPE.gsInterestGroup('trade_unions_ig').GetName]を支援しよう。"
  goldrush.4.b:0 "[SCOPE.gsInterestGroup('industrialists_ig').GetName]を支援しよう。"
- goldrush.5.t:0 "[ROOT.GetCountry.GetAdjectiveNoFlag]の夢"
+ goldrush.5.t:0 "[ROOT.GetCountry.GetAdjective]の夢"
  goldrush.5.d:0 "ある鉱山労働者が一攫千金を果たし、町一番の大金持ちになったという話が巷で話題になっています。[SCOPE.sState('gold_rush_state').GetName]の人々は皆、近いうちに金持ちになれると確信して、身の丈以上の生活を始めています。"
  goldrush.5.f:0 "「彼の新居を見たかい？ダイニングは板張りから枠まで松で、仕上げにエナメルホワイトが塗ってある。家具はチーク材だ。輸入品のシャンデリア仕上げられている。二度と同じように発音できない名前のどこの誰だかわからない芸術家が手掛けたものさ。それもこれも鉱山からの実入りによるものだと！何から何までな！」"
  goldrush.5.a:0 "大した実害はないだろう。"

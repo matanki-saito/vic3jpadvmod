@@ -62,3 +62,4 @@
  LOBBY_START_TOOLTIP:0 "[LobbyView.GetControlToolTip][ConcatIfNeitherEmpty('\n\n',SelectLocalization(And(And(HasGameStartedForTheFirstTime,CanGetAchievements),Not(LobbyView.GetSelectedPlayable.GetCountry.IsPlayer)),'ACHIEVEMENTS_WILL_BE_DISABLED_START_WITH_NEW_COUNTRY',''))]"
  LOBBY_MULTIPLAYER_TOOLTIP:0 "[LobbyView.GetOpenMultiplayerToolTip][ConcatIfNeitherEmpty('\n\n',SelectLocalization(CanGetAchievements,'ACHIEVEMENTS_WILL_BE_DISABLED_MULTIPLAYER',''))]"
  INGAME_MENU_SWITCH_COUNTRY:0 "[SelectLocalization(CanGetAchievements,'ACHIEVEMENTS_WILL_BE_DISABLED_SWITCH_COUNTRY','')]"
+ SHOW_ALL_MESSAGE_SETTINGS:0 "全設定を表示する"

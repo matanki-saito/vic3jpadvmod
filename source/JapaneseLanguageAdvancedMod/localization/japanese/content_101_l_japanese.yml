@@ -378,7 +378,7 @@
  modifier_french_independence_payments:0 "独立に関するフランスへの支払い"
  modifier_haitian_independence_payments:0 "ハイチの独立賠償金"
  stop_paying_france:0 "フランスへの支払いを停止する"
- stop_paying_france_desc:0 "我が国の独立のために支払いを行うという契約を数年前にフランスと交わしたが、我が国が支払いと止めた場合、彼らはどうするのだろうか？"
+ stop_paying_france_desc:0 "1825年のフランス軍によるハイチ遠征の後、元老院はフランスとの間で、独立を認めさせる代わりに賠償金を支払うという取り決めをした。しかし、仮に我々が支払うのをやめたとして、彼らに一体何ができるというのだろうか？"
  character_events.2.t:0 "知識の寄付"
  character_events.2.d:0 "[SCOPE.sCharacter('university_benefactor').GetFullName]は、 [SCOPE.sState('university_state').GetName]での大学設立資金として、私財の一部を提供すると申し出ている。ただし、これによって[SCOPE.sCharacter('university_benefactor').GetInterestGroup.GetName]の影響力が増すことになる。"
  character_events.2.f:0 "「[SCOPE.sCharacter('university_benefactor').GetFullNameNoFormatting]大学は、知識が真の力となるこの激動の時代において、誇り高き学問の砦となることだろう」"
