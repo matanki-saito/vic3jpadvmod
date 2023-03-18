@@ -224,9 +224,14 @@ def output(ctx: Context2):
                             if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
                                 # No.5
                                 print("[Log] No.5 | {}".format(key))
-                                actions[key] = {
-                                    "stage": 2,  # disputed
-                                }
+
+                                # 更新予定の日本語翻訳＝Paratranzの翻訳ならば翻訳が受け入れられたと判断して状態変更はしない
+                                if ctx.japanese_stats[key]["value"] == ctx.current_stats[key]["translation"]:
+                                    pass
+                                else:
+                                    actions[key] = {
+                                        "stage": 2,  # disputed
+                                    }
                             else:
                                 # No.6
                                 print("[Log] No.6 | {}".format(key))

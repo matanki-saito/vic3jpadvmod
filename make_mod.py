@@ -1,16 +1,16 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import json
 import os
 import pathlib
+import re
 import shutil
 import textwrap
+import time
 import urllib.request
 import zipfile
-import json
 from os.path import join
-import re
-import time
 
 _ = join
 
@@ -85,7 +85,7 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
 
     # .metadata/metadata.jsonを入れる
     os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
-    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.1.*")
+    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.2.*")
 
     return out_dir_path
 
@@ -97,7 +97,7 @@ def convert_json_to_yml(target_path):
             fw.write("l_japanese:\n")
             with open(file_path, 'r', encoding='utf-8') as fr:
                 for entry in json.load(fr):
-                    translation = entry["translation"]
+                    translation = entry["context"] if entry["stage"] == 2 else entry["translation"]
 
                     # ISSUE-493のWA
                     if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
@@ -118,18 +118,18 @@ def convert_json_to_yml(target_path):
 
 # マスク
 mask_k = {":": "▲",
-        "|": "△",
-        "-": "■",
-        "+": "□",
-        ";": "▼",
-        "\"": "◆",
-        "'": "▣",
-        ",": "▓",
-        "[": "★",
-        "]": "☆",
-        "(": "✦",
-        ")": "✧",
-        ".": "✡"}
+          "|": "△",
+          "-": "■",
+          "+": "□",
+          ";": "▼",
+          "\"": "◆",
+          "'": "▣",
+          ",": "▓",
+          "[": "★",
+          "]": "☆",
+          "(": "✦",
+          ")": "✧",
+          ".": "✡"}
 
 mask_r = dict(zip(mask_k.values(), mask_k.keys()))
 
@@ -188,11 +188,11 @@ def issue_241(text):
     text = re.sub(r'@money!-', lambda x: k(x.group()), text)
 
     # 幅調整
-    text = re.sub(r'：',  r' : ', text)
-    text = re.sub(r'[  ]*:[  ]*',  r' : ', text)
+    text = re.sub(r'：', r' : ', text)
+    text = re.sub(r'[  ]*:[  ]*', r' : ', text)
     text = re.sub(r'[  ]*•[  ]*', r' • ', text)
-    text = re.sub(r'[  ]*[（(][  ]*',  r' (', text)
-    text = re.sub(r'[  ]*[）)][  ]*',  r') ', text)
+    text = re.sub(r'[  ]*[（(][  ]*', r' (', text)
+    text = re.sub(r'[  ]*[）)][  ]*', r') ', text)
 
     # レンジ
     text = re.sub(r'([０-９\d]+)[\s ]*[-～][\s ]*([０-９\d]+)', r'\1 ～ \2', text)
@@ -209,7 +209,7 @@ def issue_241(text):
                   r'$★DATE_MIN✡GetStringShort△V☆$ ～ $★DATE_MAX✡GetStringShort△V☆$',
                   text)
 
-    #text = re.sub(r'(?<!\||\d|v|=|%|K)-(?!(\$VAL|\$AMOUNT))', r' xxxx ', text)
+    # text = re.sub(r'(?<!\||\d|v|=|%|K)-(?!(\$VAL|\$AMOUNT))', r' xxxx ', text)
 
     text = text.replace("-", "―")
     text = re.sub(r'[‐−–]', '‑', text)
@@ -272,7 +272,7 @@ def issue_242(text):
     :return:
     """
 
-    text = re.sub(r'[ 　 ]*(@[^!]+!)[ 　 ]*',  r'\1', text)
+    text = re.sub(r'[ 　 ]*(@[^!]+!)[ 　 ]*', r'\1', text)
 
     text = re.sub(r'@(warning|information|simple_box|red_cross|green_checkmark_box)![  ]*', r'@\1! ', text)
     text = re.sub(r'(\$FLAG_ICON\$|\$GOODS_ICON\$)[  ]*', r'\1 ', text)
@@ -357,4 +357,3 @@ if __name__ == "__main__":
     shutil.copytree(src="./out/localization",
                     dst="C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\529340\\2881605374\\localization",
                     dirs_exist_ok=True)
-
