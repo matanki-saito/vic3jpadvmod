@@ -1426,12 +1426,7 @@
  CONSTRUCTION_QUEUE_ITEM_INVALID:0 "#header [State.GetName]の[Building.GetName]#!\n$TOOLTIP_DELIMITER$\n$INVALID_DESC$"
  CONSTRUCTION_SPEED_BASE_TOOLTIP:0 "#tooltip_header @construction![concept_construction]#!合計 : #v [Country.CalcBaseConstructionSpeed|2]#!\n使用中 : #v [Country.CalcUsedConstruction|0]/[Country.CalcBaseConstructionSpeed|0]#!\n$TOOLTIP_DELIMITER$\n[Country.GetBaseConstructionSpeedDesc]"
  CONSTRUCTION_QUEUE_TOOLTIP:0 "[Country.GetConstructionQueueDesc]"
- CONSTRUCTION_QUEUE_DESC:0 "#header [Country.GetName][AddLocalizationIf(Country.IsConstructionPaused,'$CONSTRUCTION_IS_PAUSED$')]の[concept_construction]#!
-$TOOLTIP_DELIMITER$
-[Country.GetName]は、毎週合計@construction!#v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_BASE_TOOLTIP [Country.CalcBaseConstructionSpeed|1]#!#!#!の$concept_construction$を生産します。
-[SelectLocalization(Country.ShouldShowPrivateConstructionQueue,'CONSTRUCTION_PRIVATE_ALLOCATION_DESC','')]
-$CONSTRUCTION_GOVERNMENT_PROJECTS_DESC$
-[SelectLocalization(Country.ShouldShowPrivateConstructionQueue,'CONSTRUCTION_PRIVATE_PROJECTS_DESC','')]"
+ CONSTRUCTION_QUEUE_DESC:0 "#header [Country.GetName][AddLocalizationIf(Country.IsConstructionPaused,'$CONSTRUCTION_IS_PAUSED$')]の[concept_construction]#!\n$TOOLTIP_DELIMITER$\n[Country.GetName]は、毎週合計@construction!#v #tooltippable #tooltip:[Country.GetTooltipTag],CONSTRUCTION_SPEED_BASE_TOOLTIP [Country.CalcBaseConstructionSpeed|1]#!#!#!の$concept_construction$を生産します。\n[SelectLocalization(Country.ShouldShowPrivateConstructionQueue,'CONSTRUCTION_PRIVATE_ALLOCATION_DESC','')]\n$CONSTRUCTION_GOVERNMENT_PROJECTS_DESC$\n[SelectLocalization(Country.ShouldShowPrivateConstructionQueue,'CONSTRUCTION_PRIVATE_PROJECTS_DESC','')]"
  CONSTRUCTION_IS_PAUSED:0 "\nすべての[Concept('concept_construction','建設')]は現在#b 一時停止中#!です"
  CONSTRUCTION_QUEUE_ACTIVE_PROJECTS:0 "[Country.GetActiveConstructionProjectsDesc]"
  CONSTRUCTION_QUEUE_INACTIVE_PROJECTS:0 "[Country.GetInactiveConstructionProjectsDesc]"
@@ -2000,8 +1995,7 @@ $CONSTRUCTION_GOVERNMENT_PROJECTS_DESC$
  MAP_INTERACTION_MERGE_MARKET_STATE_DESC:0 "#V [MARKET.GetName]#!にリンクする#V 州/地域#!を選んでください"
  MAP_INTERACTION_DIPLOMATIC_ACTION_DESC:0 "[DIPLOMATIC_ACTION_TYPE.GetName|v]を送る#V 国#!を選んでください"
  MAP_INTERACTION_DIPLOMATIC_ACTION_PERFORMED:0 "[DiplomaticActionType.GetName|v]が始まりました"
- MAP_INTERACTION_DIPLOMATIC_ACTION_TOOLTIP:0 "[TARGET_COUNTRY.GetName][AddTextIf(GreaterThan_CFixedPoint('(CFixedPoint)$MAINTENANCE_COST$','(CFixedPoint)0'),Concatenate('
-Maintenance Cost:@inf!$MAINTENANCE_COST|v0$ ',concept_influence))]への[DIPLOMATIC_ACTION.GetProposeName|v]"
+ MAP_INTERACTION_DIPLOMATIC_ACTION_TOOLTIP:0 "[TARGET_COUNTRY.GetName]に[DIPLOMATIC_ACTION.GetProposeName|v]を送る[AddTextIf(GreaterThan_CFixedPoint('(CFixedPoint)$MAINTENANCE_COST$','(CFixedPoint)0'),Concatenate('\n維持コスト:@inf!$MAINTENANCE_COST|v0$ ',concept_influence))]"
  MAP_INTERACTION_DIPLOMATIC_ACTION_REDUNDANT:0 "$ACTION_NAME|v$はすでに[COUNTRY.GetName]で効果を発揮しています"
  MAP_INTERACTION_NAVAL_INVASION_DESC:0 "#V 上陸作戦#!の#variable 司令部#!を選んでください"
  MAP_INTERACTION_NAVAL_INVASION_PERFORMED:0 "#variable 上陸作戦#!が始まりました"
@@ -4410,10 +4404,7 @@ Maintenance Cost:@inf!$MAINTENANCE_COST|v0$ ',concept_influence))]への[DIPLO
  EDUCATION_ACCESS_DETAILS_TOOLTIP:0 "[Pop.GetEducationAccessDetailsDesc]"
  EDUCATION_ACCESS_FROM_WEALTH:0 "レベル$WEALTH|v$の[concept_wealth]によるもの : #b $TOTAL|=+2%$#!\n[concept_wealth]レベルあたり#P #b $PER_LEVEL|%|2$#!#! : "
  EDUCATION_ACCESS_POP_TYPE:0 "[POP.GetPopType.GetName][concept_profession]によるもの : #b $VALUE|=+%2$#!"
- STATE_POTENTIAL_QUALIFICATIONS:0 "#header [State.GetName]で見込まれる[concept_pop_qualifications]#!
-[SelectLocalization(State.HasInsufficientQualificationsForAvailablePositions,'$INSUFFICENT_QUALIFICATIONS$','@green_checkmark!Has Qualifications to fill all current Vacancies')]
-$TOOLTIP_DELIMITER$
-$BREAKDOWN$"
+ STATE_POTENTIAL_QUALIFICATIONS:0 "#header [State.GetName]の潜在[concept_pop_qualifications]#!\n[SelectLocalization(State.HasInsufficientQualificationsForAvailablePositions,'$INSUFFICENT_QUALIFICATIONS$','@green_checkmark!Has Qualifications to fill all current Vacancies')]\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  INSUFFICIENT_QUALIFICATIONS_TO_FILL_POSITIONS:0 "@red_cross! $POSITIONS|vD$ [POP_TYPE.GetName]が正規雇用に必要です。$QUALIFICATIONS|vD$のみ利用可能"
  STATE_POTENTIAL_QUALIFICATIONS_ENTRY:0 "#tooltippable #tooltip:[State.GetTooltipTag]|[PopType.GetTooltipTag],STATE_POTENTIAL_POPTYPE_QUALIFICATIONS $POTENTIAL_QUALIFICATIONS|vD$#!#! [PopType.GetName] ($POTENTIAL_QUALIFICATIONS_CHANGE|=vD$/月) "
  STATE_POTENTIAL_POPTYPE_QUALIFICATIONS:0 "[State.GetPotentialQualificationsBreakdown(PopType.Self)]"
@@ -4571,7 +4562,7 @@ $BREAKDOWN$"
  notification_interest_activated_third_party_name:0 "[SCOPE.sCountry('actor').GetName]との外交関係"
  notification_interest_activated_third_party_desc:0 "[SCOPE.sCountry('actor').GetName]が[SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]に[concept_interest]を持ったため、彼らと外交ができるようになりました。"
  notification_interest_deactivated_third_party_tooltip:0 "#header $notification_interest_deactivated_third_party_name$#!\n$TOOLTIP_DELIMITER$\n$notification_interest_deactivated_third_party_desc$"
- notification_interest_deactivated_third_party_name:0 "[SCOPE.sCountry('actor').GetName]との外交関係が失われました"
+ notification_interest_deactivated_third_party_name:0 "[SCOPE.sCountry('actor').GetName]との外交関係が消失"
  notification_interest_deactivated_third_party_desc:0 "[SCOPE.sCountry('actor').GetName]が[SCOPE.GetRootScope.GetInterest.GetStrategicRegion.GetName]への[concept_interest]を失ったため、彼らと外交ができなくなりました。"
  notification_colony_created_tooltip:0 "#header $notification_colony_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colony_created_desc$"
  notification_colony_created_name:0 "[SCOPE.sCountry('actor').GetName]が[SCOPE.GetRootScope.GetState.GetStateRegion.GetName]を植民地化"
