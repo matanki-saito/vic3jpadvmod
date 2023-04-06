@@ -1,8 +1,10 @@
+import json
 import os
 import re
-import urllib.request
-import json
 import time
+import urllib.request
+from datetime import datetime
+
 import openpyxl
 from github import Github
 
@@ -35,38 +37,41 @@ def fetch_issues_from_github(lqa_version,
         reason = ""
         lines = re.split(r'### (.*)\n\n', issue.body)
         for i in range(0, len(lines)):
-            if lines[i] == "変更の理由（概要）" and i+1 < len(lines):
-                reason = lines[i+1].replace("\n", "")
+            if lines[i] == "変更の理由（概要）" and i + 1 < len(lines):
+                reason = lines[i + 1].replace("\n", "")
                 break
 
         # 古issue形式では変更の理由があるのでそれを使う
         if reason == "":
             lines = re.split(r'## (.*)', issue.body)
             for i in range(0, len(lines)):
-                if re.search(r'変更の理由', lines[i]) and i+1 < len(lines):
-                    reason = lines[i+1].replace("\n\n", "")
+                if re.search(r'変更の理由', lines[i]) and i + 1 < len(lines):
+                    reason = lines[i + 1].replace("\n\n", "")
                     break
 
-        result[issue.number] = {
-            "assigner": issue.assignee.name,
-            "closed_by": issue.closed_by,
-            "reason": reason
-        }
+        try:
+            result[issue.number] = {
+                "assigner": issue.assignee.name,
+                "closed_by": issue.closed_by,
+                "reason": reason
+            }
+        except Exception as e:
+            print("issue number: %s, labels: %s" % (issue.number, issue.labels))
 
     return result
 
 
-comment_m = re.compile(r'ISSUES?-?(\d+)', re.IGNORECASE)
+# スペルミスを許容, 数値だけも許容
+comment_m = re.compile(r'^(ISSUES?|isuue)?-?(\d+)$', re.IGNORECASE)
 
 
 def fetch_note_from_paratranz(project_id,
                               secret,
                               last_id,
                               base_url="https://paratranz.cn"):
-
     result = {}
 
-    for page in range(1, 999):
+    for page in range(0, 999):
         regenerate_request_url = "{}/api/comments?project={}&page={}".format(base_url, project_id, page)
         req = urllib.request.Request(regenerate_request_url, method="GET")
 
@@ -75,7 +80,7 @@ def fetch_note_from_paratranz(project_id,
             data = json.loads(response.read().decode("utf-8"))
 
             if page == 1:
-                print("first id: %s" % data['results'][0]['id'])
+                print("note first id: %s" % data['results'][0]['id'])
 
             for record in data['results']:
                 if last_id is not None and record["id"] <= last_id:
@@ -83,16 +88,26 @@ def fetch_note_from_paratranz(project_id,
 
                 m = comment_m.match(record['content'])
                 if m:
-                    result[record["tid"]] = {
-                        "issue_number": int(m.group(1))
-                    }
+                    t = record["tid"]
+                    if t not in result:
+                        result[t] = {
+                            "issue_numbers": []
+                        }
+                    else:
+                        print("already exist: %s" % t)
+
+                    result[t]["issue_numbers"].append({
+                        "number": int(m.group(2)),
+                        # 2023-03-18T07:46:09.121Z
+                        "date": datetime.strptime(record["createdAt"], "%Y-%m-%dT%H:%M:%S.%f%z")
+                    })
 
             print("load page: %s" % page)
 
             if page >= data['pageCount']:
                 break
 
-            time.sleep(1)
+            time.sleep(0.1)
 
     return result
 
@@ -100,7 +115,6 @@ def fetch_note_from_paratranz(project_id,
 def fetch_fileid_from_paratranz(project_id,
                                 secret,
                                 base_url="https://paratranz.cn"):
-
     request_url = "{}/api/projects/{}/files".format(base_url, project_id)
     req = urllib.request.Request(request_url, method="GET")
 
@@ -116,7 +130,6 @@ def fetch_fileid_from_paratranz(project_id,
 def fetch_user_from_paratranz(project_id,
                               secret,
                               base_url="https://paratranz.cn"):
-
     regenerate_request_url = "{}/api/projects/{}/members".format(base_url, project_id)
     req = urllib.request.Request(regenerate_request_url, method="GET")
 
@@ -133,11 +146,11 @@ def fetch_history_from_paratranz(project_id,
                                  secret,
                                  last_id,
                                  base_url="https://paratranz.cn"):
-
     result = {}
+    overwrite_keys = set()
 
-    for page in range(1, 999):
-        regenerate_request_url = "{}/api/history?project={}&page={}".format(base_url, project_id, page)
+    for page in range(0, 999):
+        regenerate_request_url = "{}/api/history?type=edit&project={}&page={}".format(base_url, project_id, page)
         req = urllib.request.Request(regenerate_request_url, method="GET")
 
         req.add_header("Authorization", secret)
@@ -145,34 +158,41 @@ def fetch_history_from_paratranz(project_id,
             data = json.loads(response.read().decode("utf-8"))
 
             if page == 1:
-                print("first id: %s" % data['results'][0]['id'])
+                print("history record first id: %s" % data['results'][0]['id'])
 
             for record in data['results']:
                 if last_id is not None and record["id"] <= last_id:
+                    print("overwrite_keys; %s" % overwrite_keys)
                     return result
 
                 related = record['related']
-                result[related['key']] = {
-                    "fileId": related['fileId'],
-                    "from": related['context'],
-                    "to": related['translation'],
-                    "uid": related['uid'],
-                    "tid": related['id'],
-                    "timestamp": related['updatedAt']
-                }
+
+                if len(related) > 0:
+                    if related['key'] in result:
+                        overwrite_keys.add(related['key'])
+
+                    result[related['key']] = {
+                        "fileId": related['fileId'],
+                        "from": related['context'],
+                        "to": related['translation'],
+                        "uid": related['uid'],
+                        "tid": related['id'],
+                        "timestamp": datetime.strptime(record['createdAt'], "%Y-%m-%dT%H:%M:%S.%f%z")
+                    }
+                else:
+                    print("empty : %s" % record)
 
             print("load page: %s" % page)
 
             if page >= data['pageCount']:
                 break
 
-            time.sleep(1)
+            time.sleep(0.1)
 
     return result
 
 
 def main():
-
     # ex) "1.1"
     target_lqa_version = os.environ.get("TARGET_LQA_VERSION")
     paratranz_secret = os.environ.get("PARATRANZ_SECRET")
@@ -208,27 +228,43 @@ def main():
 
     sheet.append(["file", "key", "from", "to", "author", "updatedAt", "reason", "issue"])
     for (key, value) in history.items():
-        if value["from"] != value["to"]:
+        from_str = (value["from"] if value["from"] is not None else "").replace("\n", "\\n")
+        to_str = value["to"] if value["to"] is not None else ""
+        if from_str != to_str:
             reason = ""
             issue_number = ""
 
             if value["tid"] in note:
-                issue_number = note.get(value["tid"])["issue_number"]
+                issue_numbers = note.get(value["tid"])["issue_numbers"]
+
+                issue_number = -2
+
+                for item in issue_numbers:
+                    tds = (item["date"] - value["timestamp"]).total_seconds()
+                    if 0 < tds < (3600 * 24 * 180):
+                        issue_number = item["number"]
+                    if -3600 < tds <= 0:
+                        print("minus: %s" % key)
+                        issue_number = item["number"]
 
                 if issue_number == 0:
                     reason = "構文の補正"
-
+                elif issue_number == -2:
+                    reason = "ISSUEなし"
+                    print("unknown key :  %s" % key)
                 elif issue_number in issues:
                     reason = issues.get(issue_number)["reason"]
+            else:
+                print("noteなし: %s, key: %s" % (value["tid"], key))
 
             sheet.append([id_file_map.get(value['fileId']).replace(".json", ""),
-                         key,
-                         value["from"],
-                         value["to"],
-                         id_name_map.get(value["uid"]),
-                         value["timestamp"],
-                         reason,
-                         issue_number])
+                          key,
+                          from_str,
+                          to_str,
+                          id_name_map.get(value["uid"]),
+                          value["timestamp"].strftime('%Y-%m-%dT%H:%M:%S.%f%z'),
+                          reason,
+                          issue_number])
 
     xlname = './issues/%s.xlsx' % target_lqa_version
     if os.path.exists(xlname):
