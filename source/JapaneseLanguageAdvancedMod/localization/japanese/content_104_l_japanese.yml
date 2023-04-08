@@ -250,7 +250,7 @@
  undermined_ig_modifier:0 "弱体化した利益集団"
  suppression_discovered:0 "弱体化計画の露見"
  ig_suppression_events.3.t:0 "説得"
- ig_suppression_events.3.d:0 "[SCOPE.sCharacter('suppressed_leader').GetHerHis]生活に関する噂がすべての階級に到達し、[SCOPE.sCharacter('suppressed_leader').GetHerHis]の評判はがた落ちです。[SCOPE.gsInterestGroup('target').GetName]リーダーとしての[SCOPE.sCharacter('suppressed_leader').GetHerHis]役職から辞任するよう[SCOPE.sCharacter('suppressed_leader').GetFullName]を説得することができるはずです。"
+ ig_suppression_events.3.d:0 "[SCOPE.sCharacter('suppressed_leader').GetFullName]の生活に関する噂がすべての階級に広まり、[SCOPE.sCharacter('suppressed_leader').GetHerHis]の評判はがた落ちです。そのため[SCOPE.gsInterestGroup('target').GetName]リーダーとしての役職から辞任するよう[SCOPE.sCharacter('suppressed_leader').GetHerHis]を説得することができるはずです。"
  ig_suppression_events.3.f:0 "「それは工場から漏れる明かりが小さな目のように窓越しに煌めいていた時代。街全体の目が[SCOPE.sCharacter('suppressed_leader').GetHerHim]に注がれ、非難と要求が浴びせられていると[SCOPE.sCharacter('suppressed_leader').GetFullName]が感じていた時代。ただ、それは[SCOPE.sCharacter('suppressed_leader').GetHerHis]の責任ではない！[SCOPE.sCharacter('suppressed_leader').GetSheHe]は知っていた。[SCOPE.sCharacter('suppressed_leader').GetSheHe]は何も悪いことをしていないと...それは政府だ。明らかに政府が嘘を垂れ流している。連中が[SCOPE.sCharacter('suppressed_leader').GetHerHim]に好意を寄せたことがあったろうか？そんなことは決してなかった。\n\n「何を見てるんだ！？」"
  ig_suppression_events.3.a:0 "ちょっとした脅迫で死人が出るわけでもあるまい。"
  ig_suppression_events.3.a.tt:0 "[SCOPE.sCharacter('suppressed_leader').GetFullName]は辞任するでしょう。"
