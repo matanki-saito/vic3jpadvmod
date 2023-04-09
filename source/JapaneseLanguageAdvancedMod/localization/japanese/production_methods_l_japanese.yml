@@ -68,7 +68,7 @@
  pm_public_trams:0 "公共トラム"
  pm_public_motor_carriages:0 "公共動力車"
  pmg_urban_clergy:0 "都市教会"
- pm_state_urban_clergy:0 "州立教会"
+ pm_state_urban_clergy:0 "国教会"
  pm_free_urban_clergy:0 "自由教会"
  pm_steam_power:0 "蒸気機関"
  pm_disabled_steam_power:0 "蒸気機関なし"
