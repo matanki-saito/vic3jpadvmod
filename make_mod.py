@@ -70,7 +70,8 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
 
     # jsonをymlにする
     shutil.copytree(src=_(ext_paratranz_main_dir_path, "utf8"),
-                    dst=_(out_dir_path, "localization"))
+                    dst=_(out_dir_path, "localization"),
+                    ignore=shutil.ignore_patterns("trigger_system_l_english.json"))
     convert_json_to_yml(_(out_dir_path, "localization"))
 
     # jominiのフォルダをreplaceに移動する
@@ -354,6 +355,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-    shutil.copytree(src="./out/localization",
-                    dst="C:\\Program Files (x86)\\Steam\\steamapps\\workshop\\content\\529340\\2881605374\\localization",
-                    dirs_exist_ok=True)
+
