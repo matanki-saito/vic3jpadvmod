@@ -5644,7 +5644,7 @@
  COMPACT_PM_DESC_OUTPUT_MODIFIERS:0 "$NUM|v$補正"
  COMPACT_PM_DESC_MORE_EMPLOYEES:0 " #v $ICON$ $VAL|D$#! "
  COMPACT_PM_DESC_LESS_EMPLOYEES:0 " #v $ICON$ $VAL|=D$#! "
- COMPACT_PM_GOODS_DESC_FORMAT:0 "[AddTextIf(StringIsEmpty('$INPUT_GOODS$'),'#title No Goods #!')]$INPUT_GOODS$[ConcatIfNeitherEmpty('@turns_into!','$OUTPUT_GOODS$')]"
+ COMPACT_PM_GOODS_DESC_FORMAT:0 "[AddTextIf(StringIsEmpty('$INPUT_GOODS$'),'#title 商品なし#!')]$INPUT_GOODS$[ConcatIfNeitherEmpty('@turns_into!','$OUTPUT_GOODS$')]"
  COMPACT_PM_EMPLOYMENT_DESC_FORMAT:0 "$MORE_EMPLOYEES$[ConcatIfNeitherEmpty(' ','$LESS_EMPLOYEES$')]#!"
  FLOTILLAS:0 "[Concept('concept_flotilla','$concept_flotillas$')]"
  GOODS_PRICE_DESC_IN_ISOLATED_MARKET:0 "#header [Goods.GetState.GetName]の[Goods.GetTextIcon][Goods.GetName]#!\n現地価格 : @money![Goods.GetStatePrice|1v] ([Goods.GetCompareIconAgainstBasePrice(Goods.GetStatePrice)]) \n$TOOLTIP_DELIMITER$\n[Goods.GetStateProductionWithTooltip][concept_sell_orders]\n[Goods.GetStateConsumptionWithTooltip][concept_buy_orders]\n\n[concept_base_price] : @money![Goods.GetBasePrice|1v]\n\n$GOOD_PRICE_BASED_ON_LAST_TICK_WARNING$"
