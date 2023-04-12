@@ -234,6 +234,7 @@ def issue_242(text):
      - warning : 赤い！
      - information : 青い！
      - $FLAG_ICON$ : 国旗
+     - aristocratsなど : POP typeアイコン
 
     ・以下のアイコンの後ろのスペースは削除
      - スペースを入れなかった@xxx!のアイコン
@@ -265,7 +266,7 @@ def issue_242(text):
         ｰ：半角長音符。上の半角バージョン。ムハンマド・アリムデｨｰンのような形で3つの人名で使われている。（全角長音符に揃える）
         —：全角ダッシュ。和文の組版で使われる。1箇所だけ使われている。（水平バーに揃える）
         －：全角ハイフン。一箇所（ディトサーン）だけ使われている。（全角長音符に揃える）
-                ↓
+                ↓@capitalists! $capitalists_no_icon$
         ‑：改行のないハイフン
         ー：全角長音符
         ―：水平バー
@@ -276,7 +277,13 @@ def issue_242(text):
 
     text = re.sub(r'[ 　 ]*(@[^!]+!)[ 　 ]*', r'\1', text)
 
-    text = re.sub(r'@(warning|information|simple_box|red_cross|green_checkmark_box)![  ]*', r'@\1! ', text)
+    text = re.sub(
+        r'@(warning|information|simple_box|red_cross|green_checkmark_box)![  ]*',
+        r'@\1! ', text)
+    text = re.sub(
+        r'@(aristocrats|bureaucrats|capitalists|clergymen|clerks|engineers|farmers|peasants|laborers|officers|academics|shopkeepers|slaves|soldiers|machinists)!(.)',
+        r'@\1! \2', text)
+
     text = re.sub(r'(\$FLAG_ICON\$|\$GOODS_ICON\$)[  ]*', r'\1 ', text)
     text = re.sub(r'(\[Goods\.GetTextIcon]|\$GOODS_ICON\$)[  ]*', r'\1', text)
 
