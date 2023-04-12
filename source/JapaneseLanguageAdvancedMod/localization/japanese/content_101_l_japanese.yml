@@ -152,7 +152,7 @@
  crime_events.11.b:0 "この秘密は墓場まで持って行かねば。"
  crime_events.12.t:0 "切り裂き魔 : 暗号文書"
  crime_events.12.d:0 "[SCOPE.sState('serial_killer_state_scope').GetName]の警察に[SCOPE.sState('serial_killer_state_scope').GetCityHubName]の切り裂き魔が書いたと思われる文書が届いた。この暗号文が彼の素性を明らかにする鍵を握っているかもしれない。"
- crime_events.12.f:0 "「それは正午に歌う。冬に。@devout!決して秋ではない。鏡を通して覗き込めば、@capitalists!それは近づいてくる。雪をかき分けて@clergymen!探したなら、その下に見るだろう。\n\n私は暗闇の@censored!@censored!@censored!@censored!訪れ@officers!と共にある。そうしたいなら来てみるがいい。ただ@red_cross! 努々忘れるなかれ、私はいつもこんなに優しくない。@starving!」"
+ crime_events.12.f:0 "「それは正午に歌う。冬に。@devout!決して秋ではない。鏡を通して覗き込めば、@capitalists! それは近づいてくる。雪をかき分けて@clergymen! 探したなら、その下に見るだろう。\n\n私は暗闇の@censored!@censored!@censored!@censored!訪れ@officers! と共にある。そうしたいなら来てみるがいい。ただ@red_cross! 努々忘れるなかれ、私はいつもこんなに優しくない。@starving!」"
  crime_events.12.a:0 "大学が協力してくれるかもしれない。"
  crime_events.12.b:0 "警察の捜索人員を倍増せよ。"
  crime_events.12.c:0 "難解なシンボルは解読不可だ。"
