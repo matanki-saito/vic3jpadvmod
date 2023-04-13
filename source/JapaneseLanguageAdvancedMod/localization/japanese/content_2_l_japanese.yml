@@ -282,7 +282,7 @@
  economy_laws.6.d:0 "国外からの競合商品流入が、[SCOPE.sState('industrial_protectionist_state').GetName]産製品の需要低迷に繋がっており、これによってこの州では、我々の改革計画に対する懸念が高まりつつある。"
  economy_laws.6.f:0 "「国外との自由貿易が我々の金を吸い取り、我が国の市場は他者が牛耳っている。このことに我々の労働力、産業、人民が傷ついている。我々が恩恵を受けない政策にどんな意味があるのか？」"
  economy_laws.6.a:0 "[SCOPE.sState('industrial_protectionist_state').GetName]における懸念を緩和する必要がある。"
- economy_laws.6.b:0 "我々改革計画による恩恵を[SCOPE.sState('industrial_protectionist_state').GetName]に納得してもらわねば。"
+ economy_laws.6.b:0 "我々の改革計画による恩恵を[SCOPE.sState('industrial_protectionist_state').GetName]に納得してもらわねば。"
  economy_laws.6.c:0 "いずれにせよ計画を前に進めなければならない。"
  africa_colonial_events.40.t:0 "不服従のジンゴイスト"
  africa_colonial_events.40.d:0 "我が国がアフリカに持つ植民地の将校が、平和維持という指示にもかかわらず、意図的に[SCOPE.sCountry('jingoist_officer_victim').GetName]との対立関係を勃発させた。将校の企てに乗って彼の面目を保つか。それとも彼を解任して状況が統制できていなかったことを認め、ジンゴイストたちを立腹させるか。選択肢は二つに一つだ。"

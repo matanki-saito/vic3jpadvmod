@@ -5589,7 +5589,7 @@
  BUREAUCRACY_EXPENSE_FROM_COMMANDERS:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $NUM_GENERALS|v$人の[Concept('concept_general','$concept_generals$')]と$NUM_ADMIRALS|v$人の[Concept('concept_admiral','$concept_admirals$')]から$COST|+=0$#!#!"
  BUREAUCRACY_EXPENSE_PER_INSTITUTION:0 "[INSTITUTION.GetName] ([INSTITUTION.GetInvestmentLevel|v]) から$COST|+=0$"
  BUREAUCRACY_EXPENSE_FROM_INSTITUTIONS_TOOLTIP:0 "#header @bur![Concept('concept_institution','$concept_institutions$')]の[concept_bureaucracy]コスト : $COST|+=0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
- TOTAL_INSTITUTION_INVESTMENT_LEVELS:0 "全施設の[Concept('concept_investment_level','$concept_investment_levels$')] : #v $LEVELS|0$#!"
+ TOTAL_INSTITUTION_INVESTMENT_LEVELS:0 "全制度の[Concept('concept_investment_level','$concept_investment_levels$')] : #v $LEVELS|0$#!"
  BUREAUCRACY_EXPENSE_INSTITUTIONS:0 "$INCORPORATEDCOST$\n$INSTITUTION_LEVELS$\n$BREAKDOWN$"
  BUREAUCRACY_EXPENSE_PER_STATE:0 "[State.GetName]から$TOTAL_COST|+=0$ (基礎$STATE_COST|+=0$、$POPULATION|Kv$人から$POPULATION_COST|+=0$) "
  BUREAUCRACY_EXPENSE_FROM_STATES_AND_POPULATION_TOOLTIP:0 "#header @bur![Concept('concept_incorporated_state','$concept_incorporated_states$')]内の[Concept('concept_pop','$concept_pops$')]における[concept_bureaucracy]コスト : $COST|+=0$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
