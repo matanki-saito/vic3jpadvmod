@@ -1606,7 +1606,7 @@
  coop_loyalty_modifier:0 "生産的な協同組合"
  coop_migration_modifier:0 "魅力的な協同組合"
  the_navy_of_tomorrow:0 "未来の海軍"
- notification_law_notification_advance_name:0 "法の進歩"
+ notification_law_notification_advance_name:0 "法律制定の進捗"
  notification_law_notification_advance_desc:0 "[SCOPE.sLaw('current_law_scope').GetName]が新たな支援者を引き寄せ、[concept_enactment_success]が15%上昇しました。"
  notification_law_notification_advance_tooltip:0 "#header $notification_law_notification_advance_name$#!\n$TOOLTIP_DELIMITER$\n$notification_law_notification_advance_desc$"
  notification_law_notification_debate_success_name:0 "法律論争が成功しました"
