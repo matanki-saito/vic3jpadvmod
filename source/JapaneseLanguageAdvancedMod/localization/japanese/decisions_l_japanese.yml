@@ -23,7 +23,7 @@
  notification_lowlands_land_reclamation_notification_desc:0 "低地の干拓が完了"
  notification_lowlands_land_reclamation_notification_tooltip:0 "耕作地を獲得しました。"
  notification_lowlands_land_reclamation_notification_name:0 "低地の干拓"
- lowlands_land_reclamation_requirement_tooltip:0 "ホランド、ヘルレ、フリースラントを所有"
+ lowlands_land_reclamation_requirement_tooltip:0 "ホラント、ヘルレ、フリースラントを所有"
  niger_river_expedition:0 "ニジェール川遠征"
  niger_river_expedition_desc:0 "ニジェール川での開発構想のために遠征隊を派遣します。"
  west_america_expedition:0 "アメリカ西部のフロンティアを測量"
