@@ -953,7 +953,7 @@
  tewodros_modifier:0 "無法者の王子"
  italian_unification.1.t:0 "イタリア統一運動"
  italian_unification.1.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFullName]の英雄的リーダーシップのもと、イタリア国家は世界に誕生しました。共通の旗のもとに団結したイタリアは、必ずやヨーロッパと世界の未来を切り開くでしょう。"
- italian_unification.1.f:0 "「そうだ、若者たちよ、イタリアは諸君らのおかげで世界の喝采を浴びることができた。そう、征服したのも、これから整復するのも諸君らなのだ。戦いの運命を左右する戦術を用意しているのは、諸君らなのだから。我が国の歴史におけるこの素晴らしい1ページに、さらに輝かしいものが加わるだろう。そして奴隷はついに、自由な兄弟たちに、足枷の輪によって鍛え上げられた研ぎ澄まされた剣を見せることになるのだ」"
+ italian_unification.1.f:0 "「そうだ、若者たちよ、イタリアは諸君らのおかげで世界の喝采を浴びることができた。そう、征服したのも、これから征服するのも諸君らなのだ。戦いの運命を左右する戦術を用意しているのは、諸君らなのだから。我が国の歴史におけるこの素晴らしい1ページに、さらに輝かしいものが加わるだろう。そして奴隷はついに、自由な兄弟たちに、足枷の輪によって鍛え上げられた研ぎ澄まされた剣を見せることになるのだ」"
  italian_unification.1.a:0 "イタリア万歳！"
  italian_unification.1.b:0 "[SCOPE.gsInterestGroup('ruler_ig_scope').GetName]のおかげだ。"
  italian_unification.2.t:0 "[SCOPE.sCountry('italian_annex_country').GetName]との統一"
