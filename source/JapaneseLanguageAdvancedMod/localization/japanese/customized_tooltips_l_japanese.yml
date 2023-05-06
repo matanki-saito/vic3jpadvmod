@@ -118,7 +118,7 @@
  DATA_PARTY_NAME_TOOLTIP:0 "[SelectLocalization(Party.GetLeader.IsValid,'DATA_PARTY_NAME_LEADER_TOOLTIP','concept_party_desc')]"
  DATA_MARKET_NAME_TOOLTIP:0 "[concept_market_owner] : [Market.GetOwner.GetName]\n[concept_market_capital] : [Market.GetMarketCapital.GetName]\n収支 : #tooltippable #tooltip:MARKET_BALANCE_BREAKDOWN #bold @money![Market.GetBalance|+=D]#!#!#!\n[concept_gdp]貢献 : #tooltippable #tooltip:MARKET_GDP_PERCENTAGE_TOOLTIP [Market.GetGDPContributionPercentage(GetPlayer)|%1]#!#! \n[concept_gdp]値 : @money!#variable [Market.GetMarketGDPValue|D]#!"
  DATA_DECREE_TYPE_NAME_TOOLTIP:0 "[DecreeType.GetTooltip(GetPlayer.Self)]"
- DATA_LAW_GROUP_NAME_TOOLTIP:0 "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty('\n',AddLocalizationIf(LawGroup.GetCurrentlyEnacting.IsValid,'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW'))]\n私たちには、このグループ内での代替に利用可能な[LawGroup.GetNumEnactable|v]があります。"
+ DATA_LAW_GROUP_NAME_TOOLTIP:0 "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty('\n',AddLocalizationIf(LawGroup.GetCurrentlyEnacting.IsValid,'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW'))]\n我が国にはこのグループにおける代替候補が[LawGroup.GetNumEnactable|v]あります。"
  DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW:0 "現在施行されている[concept_law] : [LawGroup.GetCurrentlyActive.GetName]"
  DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW:0 "制定中の[concept_law] : [LawGroup.GetCurrentlyEnacting.GetName]"
  DATA_LAW_TYPE_NAME_TOOLTIP:0 "[LawType.GetTooltip(GetPlayer.Self)]$TOOLTIP_DELIMITER$\n#lore [LawType.GetDesc]"
