@@ -1566,7 +1566,7 @@
  treatment_expenses_modifier:0 "心理療法"
  tarred_by_mulligan_letters:0 "スキャンダラスな手紙による汚名"
  je_sick_man_advance:0 "ジャーナル記事「ヨーロッパの病人」が進展します"
- luxurious_parties:0 "豪奢なる政党"
+ luxurious_parties:0 "豪勢なパーティー"
  notification_ig_leader_memento_mori_name:0 "[SCOPE.sCharacter('memento_mori_leader').GetFullName] ([SCOPE.gsInterestGroup('memento_mori_ig').GetTextIcon]) が引退"
  notification_ig_leader_memento_mori_desc:0 "[SCOPE.gsInterestGroup('memento_mori_ig').GetName]のリーダーである[SCOPE.sCharacter('memento_mori_leader').GetFullName]が政界から引退しました。"
  notification_ig_leader_memento_mori_tooltip:0 "#header $notification_ig_leader_memento_mori_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_memento_mori_desc$"

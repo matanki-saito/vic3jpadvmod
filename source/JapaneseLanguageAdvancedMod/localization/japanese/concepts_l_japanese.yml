@@ -464,7 +464,7 @@
  concept_consumption_taxes:0 "消費税"
  concept_consumption_tax_desc:0 "[Concept('concept_pop','$concept_pop$')]によって、彼らの[concept_pop_needs]を満たすために購入される特定の[Concept('concept_good','$concept_goods$')]に対して徴収する[Concept('concept_taxes','$concept_tax$')]です。$concept_consumption_taxes$の対象となる$concept_good$は、それぞれ一定量の[concept_authority]を要します。$concept_good$に適用されると、その[concept_market_price]は$concept_pops$の販売のみ$concept_consumption_tax$率分上昇し、このように発生したすべての[concept_buy_orders]は[concept_treasury]によって課徴金が徴収されることになります。課徴金は[concept_market]レベルに適用されるため、[concept_market_access]が低い[Concept('concept_state','$concept_states$')]では$concept_tax$は有効ではありません。"
  concept_loyalist:0 "体制派"
- concept_loyal:0 "政府体制支持"
+ concept_loyal:0 "体制派"
  concept_loyalty:0 "忠実性"
  concept_loyalists:0 "体制派"
  concept_loyalist_desc:0 "[concept_pop]内の$concept_loyalist$ [Concept('concept_individual','$concept_individuals$')]は自分たちの[concept_country]の状態に満足しており、反体制派から口先でも、必要なら暴力を用いてでもその状態を守ろうと思っています。$concept_loyalist$の$concept_pop$が支持する[Concept('concept_interest_group','$concept_interest_groups$')]の[concept_approval]は向上します。\n\n$concept_loyalists$は$concept_pop$の[concept_sol]が増加したり特殊イベント中のディシジョンにより発生することがあります。\n\n$concept_loyalist$の反対は[concept_radical]です。すでに$concept_loyalists$を持つ$concept_pop$に$concept_radical$が作られそうな場合、代わりに$concept_loyalist$が1つ取り除かれます。"
