@@ -434,7 +434,7 @@
  electric_telegraph:0 "電信"
  electric_telegraph_desc:0 "単純な電気パルスを使うことにより、電線を介した長距離間での迅速な通信が可能となります。すし詰め状態になったオフィスの将校たちが、地球の反対側に展開する軍隊に即座に命令を伝えることができるのです。神よ、あなたは何を創造されたのですか？"
  enlistment_offices:0 "募兵事務局"
- enlistment_offices_desc:0 "新兵を関心を引きつけるために建てられた事務所は、国家に属する軍人の強化にとても役立ちます。"
+ enlistment_offices_desc:0 "新兵の関心を引きつけるために建てられた事務所は、国家に属する軍人の強化にとても役立ちます。"
  military_statistics:0 "軍事統計"
  military_statistics_desc:0 "優秀な将軍は、全弾丸の使いどころだけでなく、それらの弾丸がどこから支給され、どれほど残っているかを認識しています。"
  self_propelled_torpedoes:0 "自走式魚雷"
