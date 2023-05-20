@@ -1888,7 +1888,7 @@
  modifier_country_cannot_enact_laws_desc:0 "国が[Concept('concept_law','$concept_laws$')]を制定できないようにするペナルティです"
  battle_casualties_disadvantage:0 "戦闘での死傷者の劣位性"
  battle_casualties_disadvantage_desc:0 "敵よりも死傷者が多くなります"
- modifier_state_expected_sol_mult:0 "[concept_sol]の最低予想値です"
+ modifier_state_expected_sol_mult:0 "許容[concept_sol]"
  modifier_state_expected_sol_mult_desc:0 "[Concept('concept_pop','$concept_pops$')]が享受する[concept_sol]の最低値に対する増減補正です"
  modifier_country_legitimacy_ideological_incoherence_mult:0 "$IDEOLOGICAL_INCOHERENCE_ALIAS$"
  modifier_country_legitimacy_ideological_incoherence_mult_desc:0 "$modifier_country_legitimacy_ideological_incoherence_mult$"

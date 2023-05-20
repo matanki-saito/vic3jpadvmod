@@ -41,7 +41,7 @@
  DATA_OBJECTIVE_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_OBJECTIVE_TOOLTIP,ObjectiveTooltip $NAME$#!#!"
  COMMANDER_LOCATION_UNKNOWN:0 "#v 不明#!"
  COMMANDER_CURRENT_ORDERS:0 "現在地 : [Character.GetLocationFormatted]"
- DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP:0 "\n\n本拠地の司令本部 : [Character.GetHomeHQ.GetNameNoFlag|v][AddTextIf(And(Character.GetHomeHQ.IsValid,Not(Character.IsOffer)),'\n現在地:')][AddTextIf(And(Character.GetHomeHQ.IsValid,Not(Character.IsOffer)),Character.GetLocationFormatted)]]"
+ DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP:0 "\n\n本拠地の司令本部 : [Character.GetHomeHQ.GetNameNoFlag|v][AddTextIf(And(Character.GetHomeHQ.IsValid,Not(Character.IsOffer)),'\n現在地:')][AddTextIf(And(Character.GetHomeHQ.IsValid,Not(Character.IsOffer)),Character.GetLocationFormatted)]"
  DATA_BUILDING_NAME_TOOLTIP:0 "[Building.GetTooltip]\n\n[Building.GetBuildingType.GetTooltipForBuilding(Building.Self)][Building.GetDebugTooltip]"
  DATA_BUILDING_TYPE_NAME_TOOLTIP:0 "[BuildingType.GetTooltip]"
  DATA_BUILDING_TYPE_NAME_TOOLTIP_NO_STATES:0 "[BuildingType.GetTooltip]\n #warning 施設のために利用できる州がありません#!"

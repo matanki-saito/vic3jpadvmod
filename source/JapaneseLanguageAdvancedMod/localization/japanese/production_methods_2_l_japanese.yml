@@ -30,7 +30,7 @@
  pm_mechanized_looms:0 "機械式織機"
  pm_automatic_power_looms:0 "自動力織機"
  pm_leaded_glass:0 "有鉛ガラス"
- pm_manual_glassblowing:0 "手動吹きガラス"
+ pm_manual_glassblowing:0 "手吹きガラス"
  pm_leblanc_process:0 "ルブラン法"
  pm_no_explosives_production:0 "肥料生産を優先"
  pm_ammonia-soda_process:0 "アンモニアソーダ法"

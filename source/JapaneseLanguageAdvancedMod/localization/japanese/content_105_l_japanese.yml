@@ -929,7 +929,7 @@
  je_warlord_china:0 "脆い団結"
  je_warlord_china_reason:0 "[SCOPE.GetRootScope.GetCountry.GetName]内の様々な軍事勢力が、機会を与えれば国をバラバラに引き裂いてしまうかもしれません。"
  je_warlord_china_goal:0 "危険因子が多いほど、[SCOPE.GetRootScope.GetCountry.GetName]は脆くなります"
- warlord_china_criteria:0 "以下の要素はそれぞれ[SCOPE.GetRootScope.GetCountry.GetName]の脆弱性に#red 20%#!寄与することになります : \n― #BOLD アヘン戦争#!の敗北\n― #BOLD 太平天国#!の出現の阻止の失敗\n― #BOLD 太平天国#!の奪還の失敗\n― #BOLD 義和団の乱#!の失敗\n―借金を抱え、[concept_loans]を負う\n― [concept_civil_war]状態になる\n―他の国の[concept_subject]となる\n― [SCOPE.sLaw('monarchy_scope').GetName]を廃止する\n\n以下の要素はそれぞれ[SCOPE.GetRootScope.GetCountry.GetName]の脆弱性から#green -20%#!を減算します : \n― #BOLD アヘン戦争#!に勝利\n― [concept_unrecognized_power]でなくなる\n― #BOLD 根絶君主制#![concept_journal_entry]を終える"
+ warlord_china_criteria:0 "以下の要素はそれぞれ[SCOPE.GetRootScope.GetCountry.GetName]の脆弱性に#red 20%#!寄与することになります : \n― #BOLD アヘン戦争#!の敗北\n― #BOLD 太平天国#!の出現の阻止の失敗\n― #BOLD 太平天国#!の奪還の失敗\n― #BOLD 義和団の乱#!の失敗\n―借金を抱え、[concept_loans]を負う\n― [concept_civil_war]状態になる\n―他の国の[concept_subject]となる\n― [SCOPE.sLaw('monarchy_scope').GetName]を廃止する\n\n以下の要素はそれぞれ[SCOPE.GetRootScope.GetCountry.GetName]の脆弱性から#green -20%#!を減算します : \n― #BOLD アヘン戦争#!に勝利\n― [concept_unrecognized_power]でなくなる\n― #BOLD 君主主義の廃絶#![concept_journal_entry]を終える"
  warlord_china_explosion_point_add_name:0 "脆弱性の増加"
  warlord_china_explosion_point_add_desc:0 "[SCOPE.GetRootScope.GetCountry.GetName]の#BOLD 脆い団結#!がさらに弱体化しました"
  warlord_china_explosion_point_add_tooltip:0 "#header $warlord_china_explosion_point_name$#!\n$TOOLTIP_DELIMITER$\n$warlord_china_explosion_point_desc$"
