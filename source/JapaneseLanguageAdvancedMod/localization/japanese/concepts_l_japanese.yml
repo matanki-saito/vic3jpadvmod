@@ -1053,7 +1053,7 @@
  concept_dead:0 "死者数"
  concept_dead_desc:0 "[concept_battle]や[concept_attrition]による[concept_casualties]のうち$concept_dead$の合計です。"
  concept_wounded:0 "負傷者数"
- concept_wounded_desc:0 "[concept_battle]または[concept_attrition]によって単に$concept_wounded$の[concept_casualties]です。$concept_wounded$ $concept_casualties$の中には、しばらくすると回復して現役に戻るものもあれば、あなたの[concept_country]にある他の[Concept('concept_pop','$concept_pop$')]の[concept_dependents]として終わってしまうものもあります。"
+ concept_wounded_desc:0 "[concept_battle]または[concept_attrition]に遭ったものの、死を免れた[Concept('concept_casualties','負傷者')]の数です。負傷者の一部はしばらくすると回復して現役に復帰しますが、自[concept_country]の[Concept('concept_pop','$concept_pop$')]の[concept_dependents]として終わってしまう者もいます。"
  concept_attrition:0 "損耗"
  concept_attrition_desc:0 "[concept_battle]の外で[concept_manpower]に発生する[concept_casualties]は$concept_attrition$と呼ばれます。これは[Concept('concept_battalion','$concept_battalions$')]が[Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')]されたときにしばしば発生し、病気、事故、被爆、あるいは脱走などの結果として生じることがあります。$concept_attrition$は軍の$pmg_medical_aid$ [Concept('concept_production_method','$concept_production_methods$')]を使うことで対策できます。"
  concept_ruler:0 "支配者"
