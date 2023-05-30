@@ -315,7 +315,7 @@ def aggregation_stats_from_japanese_files(ctx: Context):
     for file_path in pathlib.Path(ctx.japanese_root_path).glob('**/*.yml'):
         with open(file_path, 'r', encoding='utf_8_sig') as f:
             for line in f:
-                match = re.search(r'^\s+([^:#]+):\d+\s+\"(.*)\"[^\"]*$', line)
+                match = re.search(r'^\s+([^:#]+):\d*\s+\"(.*)\"[^\"]*$', line)
                 if match:
                     key = match.group(1)
                     value = match.group(2)
