@@ -1,0 +1,18 @@
+﻿l_japanese:
+ je_the_krakow_uprising: "クラクフの蜂起"
+ je_the_krakow_uprising_reason: "自由都市である[SCOPE.sCountry('krakow_scope').GetName]を引き裂く[concept_revolution]は、ガリシアにポーランド民族主義の扇動を再び解き放つ脅威となっています。この都市を制圧し、[ROOT.GetCountry.GetName]の一部として完全に取り込まなければなりません。"
+ krakow_uprising_happened_tt: "つい最近、クラクフでは[concept_revolution]が起きました"
+ krakow.1.t: "ポーランド国家への声明"
+ krakow.1.d: "自由都市[SCOPE.sCountry('krakow_scope').GetName]で革命が勃発する中、ポーランドの急進的国家主義者たちが普通選挙権、農奴制の廃止、ポーランドの再統一を求める声明を発表しました。"
+ krakow.1.f: "ポーランドの人々よ！\n\n蜂起の時が来た。ポーランド各地が反旗を翻し、その数は増えていっている。ポズナン大公国、ポーランド立憲王国、リトアニア、ルテニアの兄弟たちは既に立ち上がり、敵と戦っている。\n\nこれからは、我々の間にいかなる違いもない。我々は兄弟、一つの祖国の息子たちであり、一人の父と天上の神を持つのだ！神に助けを求めよ。さすれば神は我々の武器を祝福し、我らに勝利を与えてくださるだろう！"
+ krakow.1.a: "直ちにクラクフの支配権を取り戻さなければならない。"
+ krakow.1.b: "我々にはウィーン条約を守る義務がある。"
+ krakow.2.t: "クラクフ大公国"
+ krakow.2.d: "クラクフでの革命が鎮圧され、かつての自由都市はクラクフ大公国としてガリシア・ロドメリア王国に統合されました。この行為はウィーン条約に違反するとして、ヨーロッパで論争を巻き起こしました。"
+ krakow.2.f: "「中庸な考えで立てられた計画は、状況が極端なものになると必ず失敗する」" #- Klemens von Metternich
+ krakow.2.a: "外交的な影響を軽減することに注力しよう。"
+ krakow.2.b: "彼らの急進的イデオロギーを抑圧し続けるのだ。"
+ je_the_krakow_uprising_annex_button: "クラクフの占領"
+ je_the_krakow_uprising_annex_button_desc: "自由都市クラクフを占領し、我々の国家に欠かせぬ構成要素として生まれ変わらせる。"
+ modifier_repressing_polish_nationalism: "ポーランドの国家主義を抑圧"
+ modifier_mitigating_diplomatic_consequences: "条約違反の緩和"

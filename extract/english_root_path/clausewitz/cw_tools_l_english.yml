@@ -79,3 +79,5 @@
  gui_animation_tool_dataflow_tooltip:0 "Data flow direction for the property.\n^ - The first keyframe is ignored, and data from the widget is used instead (default).\nv - The first keyframe is not ignored, so its data will be used for the start of the animation."
  TOOLS_ANSWER_YES:0 "Yes#!"
  TOOLS_ANSWER_NO:0 "No#!"
+ pdxns_math_AbsF_desc: "Get the positive representation of any valid float value"
+ pdxns_math_AddF_desc: "Add two float values together"

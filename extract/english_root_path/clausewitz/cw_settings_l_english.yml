@@ -7,6 +7,7 @@
  SETTING_VALUE_MINUTES:0 "$VALUE$ minutes"
  # Graphics
  SETTING_RENDERER:0 "Renderer"
+ SETTING_RENDERER_TOOLTIP:0 "Determines which renderer is being used."
  SETTING_VSYNC:0 "VSync"
  SETTING_VSYNC_TOOLTIP:3 "#T $SETTING_VSYNC$\n#!Makes the game and your monitor have the same frame rate, reducing screen tearing.\n\nTurning it off may increase performance."
  SETTING_PORTRAIT_MULTI_SAMPLING:0 "Portrait MultiSampling"
@@ -91,6 +92,7 @@
  OPTION_CAP_144:0 "144"
  OPTION_CAP_165:0 "165"
  SETTING_TEXTURE_STREAMING:0 "Texture Streaming"
+ SETTING_TEXTURE_STREAMING_TOOLTIP: "#T $SETTING_TEXTURE_STREAMING$#!\nTextures are loaded in as needed.\n\nLowers GPU memory usage at the cost of some CPU time overhead. May increase performance for GPU's with a small amount of memory."
  SETTING_TEXTURE_STREAMING_CACHE:0 "Texture Streaming Cache Size"
  SETTING_VALUE_MB:0 "$VALUE$ MB"
  # GUI
