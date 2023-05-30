@@ -1,5 +1,5 @@
 ﻿l_japanese:
- BATTLE_CONDITION_TOOLTIP:0 "#header [BattleCondition.GetName] ([concept_battle_condition]) #!\n$TOOLTIP_DELIMITER$\n[BattleCondition.GetModifierDesc]\n#lore [BattleCondition.GetDesc]#!"
+ BATTLE_CONDITION_TOOLTIP:0 "[BattleCondition.GetModifierDesc]\n\n#lore [BattleCondition.GetDesc]#!"
  battle_condition_dug_in:0 "塹壕"
  battle_condition_dug_in_desc:0 "この司令官は、信頼できる野戦用要塞の建設を監督してきた。"
  battle_condition_charted_terrain:0 "地形の知悉"

@@ -6,7 +6,7 @@
  OPTION_SAVE_FILE_ZIP_TEXT_ALL:0 "ZIPテキスト"
  OPTION_SAVE_FILE_ZIP_BINARY_ALL:0 "ZIPバイナリ"
  SETTING_TOOLTIP_MODE:0 "ツールチップモード"
- SETTING_TOOLTIP_MODE_TOOLTIP:0 "#T $SETTING_TOOLTIP_MODE$#!\nツールチップのロック方法を選択します : \n   #b マウス挙動#!ツールチップにカーソルを移動させるとロックします。\n   #b タイマーロック#!一定時間が経過するとロックします。\n   #b アクションロック#!マウスの中ボタンでロックします。"
+ SETTING_TOOLTIP_MODE_TOOLTIP:0 "#T $SETTING_TOOLTIP_MODE$#!\nツールチップのロック方法を選択します : \n   #b マウス挙動#!ツールチップにカーソルを移動させるとロックします。\n   #b タイマーロック#!一定時間が経過するとロックします。\n   #b アクションロック#!マウスの中ボタンでロックします。\n   #b タイマーかアクションロック#! ―タイマーロックまたはアクションロックを使用できます。"
  SETTING_TOOLTIP_MODE_NO_LOCK:0 "ロックなし"
  SETTING_TOOLTIP_MODE_MOUSE_TENDENCY:0 "マウス性質"
  SETTING_TOOLTIP_MODE_LOCK_ON_ACTION_MOUSE_ANCHOR:0 "アクションロック (マウスアンカー) "

@@ -10,7 +10,6 @@
  TITLE_PROJECT_LEAD_ART_LEAD:0 "#credits_subheader アートリーダー#!"
  TITLE_PROJECT_LEAD_QA_LEAD:0 "#credits_subheader 品質管理リーダー#!"
  HEADER_PRODUCTION:0 "#credits_header 製作#!"
- TITLE_GAME_PRODUCER:0 "#credits_subheader プロデューサー#!"
  TITLE_ADDITIONAL_PRODUCER:0 "#credits_subheader 追加プロデューサー#!"
  HEADER_DESIGN:0 "#credits_header デザイン#!"
  TITLE_GAME_DESIGN:0 "#credits_subheader ゲームデザイン#!"
@@ -201,3 +200,4 @@
  TITLE_BETA_TESTERS:0 "#credits_subheader ベータテスター#!"
  TITLE_SPECIAL_THANKS:0 "#credits_subheader Special Thanks#!"
  HEADER_LICENSES:0 "#credits_header ライセンス#!"
+ TITLE_PRODUCER:0 "#credits_subheader プロデューサー#!"

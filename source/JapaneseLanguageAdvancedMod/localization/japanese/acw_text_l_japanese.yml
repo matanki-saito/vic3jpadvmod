@@ -46,7 +46,7 @@
  acw_events_high_tt:0 "内戦緊張度がかなり高まるだろう。"
  acw_followup_events.1.t:0 "[SCOPE.sCharacter('lincoln_proxy').GetLastName]暗殺計画"
  acw_followup_events.1.d:0 "最近の反乱に同調した人物が[SCOPE.sCharacter('lincoln_proxy').GetFullName]の命を奪った。犯行後その人物は逮捕され、共謀者も明らかになったが、 [SCOPE.sCharacter('lincoln_proxy').GetLastName]の死は、アメリカ史における悲劇の時代が迎えた陰鬱な結末となっている。"
- acw_followup_events.1.f:0 "「[SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting]は危険な持ち場での任務を遂行し、凶弾に倒れたものの、[SCOPE.sCharacter('lincoln_proxy').GetHerHis]の人生が失われたわけではない。[SCOPE.sCharacter('lincoln_proxy').GetHerHis]の示した勇気と不屈の精神によって、我が国の汚点、国民性の汚濁、人々による諍いの火種は完全に取り除かれ、一掃されたのだ。[SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting]の名は歴史に刻まれるだろう」"
+ acw_followup_events.1.f:0 "\"[SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting]は危険な持ち場での任務を遂行し、凶弾に倒れたものの、[SCOPE.sCharacter('lincoln_proxy').GetHerHis]の人生が失われたわけではない。[SCOPE.sCharacter('lincoln_proxy').GetHerHis]の示した勇気と不屈の精神によって、我が国の汚点、国民性の汚濁、人々による諍いの火種は完全に取り除かれ、一掃されたのだ。[SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting]の名は歴史に刻まれるだろう」"
  acw_followup_events.1.a:0 "この日は国家として喪に服そう。"
  acw_followup_events.2.t:0 "[SCOPE.sCharacter('lincoln_proxy').GetLastName]暗殺計画"
  acw_followup_events.2.d:0 "最近の反乱に同調した人物が[SCOPE.sCharacter('lincoln_proxy').GetFullName]の暗殺を試みた。侵入しようとしているところを捕らえられ、共謀者も明らかになった。[SCOPE.sCharacter('lincoln_proxy').GetLastName]は、今一度[SCOPE.sCharacter('lincoln_proxy').GetHerHis]が掲げる大義への支持を集めるためにこの機会を利用した。"

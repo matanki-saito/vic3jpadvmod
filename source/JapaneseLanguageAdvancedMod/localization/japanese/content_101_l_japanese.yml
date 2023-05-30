@@ -221,8 +221,12 @@
  warlord_china_events.100.f:0 "「帝国は夢と同様、実体のない素材でできている。それはとても脆いもので、いつなんの前触れもなく終わりを迎えるかわからない。しかし、同時にとてつもない魅力がある。それらを繋げる縫い目の糸が目に見えなくとも、そしてすべての縫い目に傷が隠されているとしても。\n\n何千年も続いた帝国支配も終焉は一瞬だった」"
  warlord_china_events.100.a:0 "あーあ。"
  warlord_china_events.110.t:0 "メロン割り"
- warlord_china_events.110.d:0 "[SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle]である[SCOPE.sCharacter('prisoner_killing_warlord').GetFullName]は、[SCOPE.sCharacter('prisoner_killing_warlord').GetHimselfHerself]自身の愉悦のために、刀剣で囚人の頭蓋骨を粉砕していることが公になってしまう危険性がある。"
- warlord_china_events.110.f:0 "「どうして余人が私をオールド・エイティシックスと呼ぶか知っているかね？それは私が持つある物の大きさが...」\n\n [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle]の言葉は絶叫と骨のきしむ音でかき消された。[SCOPE.sCharacter('prisoner_killing_warlord').GetSheHe]によって[SCOPE.sCharacter('prisoner_killing_warlord').GetHerHis]の刀が囚人の頭部目掛けて振り下ろされたからだ。\n\n 「...メキシコ銀貨でピッタリ86ドルだ」 "
+ warlord_china_events.110.d:0 "[SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle]である[SCOPE.sCharacter('prisoner_killing_warlord').GetFullName]は、[SCOPE.sCharacter('prisoner_killing_warlord')GetHerselfHimself]自身の愉悦のために、刀剣で囚人の頭蓋骨を粉砕していることが公になってしまう危険性がある。"
+ warlord_china_events.110.f:0 "「どうして余人が私をオールド・エイティシックスと呼ぶか知っているかね？それは私が持つある物の大きさが...」
+
+ [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle]の言葉は絶叫と骨のきしむ音でかき消された。[SCOPE.sCharacter('prisoner_killing_warlord').GetSheHe]によって[SCOPE.sCharacter('prisoner_killing_warlord').GetHerHis]の刀が囚人の頭部目掛けて振り下ろされたからだ。
+
+ \"...メキシコ銀貨でピッタリ86ドルだ」 "
  warlord_china_events.110.a:0 "皆に知る権利がある。"
  warlord_china_events.110.b:0 "隠蔽が最善策だ。"
  notification_ig_leader_steps_down_name:0 "[SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName]のリーダーが辞任"
@@ -318,7 +322,7 @@
  south_america.3.a:0 "殲滅して終わりにしよう。"
  south_america.3.b:0 "いずれ連中も疲労するだろう。"
  dp_annex_war:0 "国の併合"
- dp_annex_war_tooltip:0 "$dp_annex_war$ [concept_diplomatic_play]を開始する"
+ dp_annex_war_tooltip:0 "$dp_annex_war$の[concept_diplomatic_play]を開始する"
  modifier_destroy_guerillas:0 "ゲリラ兵の殲滅"
  dyn_c_confederate_state_of_america:0 "アメリカ連合国"
  dyn_c_united_state:0 "アメリカ合衆国"
@@ -357,7 +361,7 @@
  congo_free_state_events.5.d:0 "君主制が廃止された後、[SCOPE.sCountry('free_state').GetNameNoFlag]は過去の遺物であることが明確になりました。[SCOPE.sCountry('free_state').GetNameNoFlag]の下で新しい方向に進んでいるこの州を再建するべきでしょう。"
  congo_free_state_events.5.d2:0 "この地で実行されている残虐行為が白日の下にさらされた後、[SCOPE.sCountry('free_state').GetNameNoFlag]に対する国際社会の見方は、非常に厳しいものとなっている。今であれば、[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]からの反発をほぼ受けずに州を再統合できるかもしれない。"
  congo_free_state_events.5.f:0 "「このようなことが起きるなど考えただけでもおぞましい。死と殺戮、そして飢饉。それもこれもすべては利益、そして愉悦のためだ。高官たちは、誰が最も凶暴であるかを競っている。現地民が負った傷跡をあたかも戦利品であるかのように見せびらかしているのだ。\n\n彼らは人類が定めたあらゆる法を犯している。地獄の最深部からやってきた侵略者は、あろうことか人類と手を組んで我々の前に立ちふさがるのだ」"
- congo_free_state_events.5.f2:0 "すべてのことが[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]の承認の下に発生するなど明らかに馬鹿げている。まるで[SCOPE.sCharacter('free_state_monarch').GetSheHe]が郊外に家でも所有するかのように、[SCOPE.sCharacter('free_state_monarch').GetManWoman]が国家を意のままに操れるという事実は、我々が犯した最も深刻で滑稽な過ちだ。\n\n死と殺戮、そして飢饉。それもこれもすべては利益、そして病的な愉悦のためだ。"
+ congo_free_state_events.5.f2:0 "すべてのことが[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]の承認の下に発生するなど、明らかに馬鹿げている。まるで[SCOPE.sCharacter('free_state_monarch').GetSheHe]が郊外に家でも所有するかのように、[SCOPE.sCharacter('free_state_monarch').GetWomanMan]が国家を意のままに操れるという事実は、我々が犯した最も深刻で滑稽な過ちだ。\n\n死と殺戮、そして飢饉。それもこれもすべては利益、そして病的な愉悦のためだ。"
  congo_free_state_events.5.a:0 "州を統合することにしよう。"
  congo_free_state_events.5.b:0 "ひょっとすると本当の意味で「自由」州になる時がきたのかもしれない。"
  free_state_monarch_modifier:0 "自由州君主制"
@@ -740,3 +744,6 @@
  ig_placated_bureaucracy_cost:0 "利益集団沈静化の官僚コスト"
  ig_demand_not_met:0 "利益集団の要求は呑まれなかった"
  ig_placated_completion:0 "利益集団は鎮静化された"
+ rights_of_women_laws.3.c:0 "時間をかけて、広範にわたる反論を発表しよう。"
+ council_republic_law_events.2.c:0 "これは真の革命の始まりだ！"
+ council_republic_law_events.3.c:0 "これは、反動勢力に対し開戦する理由となり得る。"

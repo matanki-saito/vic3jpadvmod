@@ -30,7 +30,7 @@
  peasants:0 "@peasants! $peasants_no_icon$"
  peasants_only_icon:0 "@peasants!"
  peasants_no_icon:0 "百姓"
- peasants_desc:0 "百姓は[Concept('concept_subsistence_building','$concept_subsistence_buildings$')]にのみ就業します。彼らはここで農作物の生産や簡単な商品の製造を行いますが、それらは主に彼ら自身の利用が目的です。彼らの生存は[concept_subsistence_output]に左右され、[concept_market]経済において限定的な役割しか果たしません。[Concept('concept_politically_inactive_involved','$concept_politically_inactive$')]になる傾向があります。"
+ peasants_desc:0 "自給農家は[Concept('concept_subsistence_building','$concept_subsistence_buildings$')]でのみ就業します。彼らはここで農作物の生産や簡単な商品の製造を行いますが、それらは主に彼ら自身の利用が目的です。彼らの生存は[concept_subsistence_output]に左右され、[concept_market]経済において限定的な役割しか果たしません。[Concept('concept_politically_unaligned_aligned','$concept_politically_unaligned$')]状態になる傾向があります。"
  laborers:0 "@laborers! $laborers_no_icon$"
  laborers_only_icon:0 "@laborers!"
  laborers_no_icon:0 "労働者"

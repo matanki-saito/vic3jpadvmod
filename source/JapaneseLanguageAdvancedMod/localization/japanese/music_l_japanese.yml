@@ -1,5 +1,4 @@
 ﻿l_japanese:
- Victoria_3_Soundtrack:0 "Victoria 3 サウンドトラック"
  01_A_Prospering_Country:0 "繁栄する国家"
  02_Rule_The_World:0 "世界を統べる"
  03_Adagio_For_Four_Strings:0 "四弦のためのアダージョ"
@@ -20,7 +19,6 @@
  18_British_Soil:0 "イギリスの地"
  19_Death_March:0 "死の行進"
  20_Glory_To_The_Queen:0 "女王に栄光を"
- Victoria_3_Preorder:0 "Victoria 2 サウンドトラック"
  01_For_God_and_Queen:0 "王と女王のため"
  02_Coronation:0 "戴冠"
  03_Buckingham_Palace:0 "バッキンガム宮殿"
@@ -38,3 +36,5 @@
  15_Countryside:0 "田園"
  16_Russia_1917:0 "ロシア 1917年"
  17_Winter:0 "冬"
+ victoria_3_soundtrack:0 "Victoria 3 サウンドトラック"
+ victoria_3_preorder:0 "Victoria 2 サウンドトラック"
