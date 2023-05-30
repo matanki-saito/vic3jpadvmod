@@ -388,8 +388,11 @@ def main():
                                   current_stats=current_stats,
                                   english_stats=english_stats,
                                   file_str_paths=file_str_paths)
-
-    context3: Context3 = output(context2)
+    try:
+        context3: Context3 = output(context2)
+    except Exception as e:
+        print(e)
+        exit(1)
 
     update_files(context3)
 
