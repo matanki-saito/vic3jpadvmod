@@ -335,7 +335,7 @@ def aggregation_stats_from_english_files(ctx: Context):
         result[str_path] = {}
         with open(file_path, 'r', encoding='utf_8_sig') as f:
             for line in f:
-                match = re.search(r'^\s+([^:#]+):\d+\s+\"(.*)\"[^\"]*$', line)
+                match = re.search(r'^\s+([^:#]+):\d*\s+\"(.*)\"[^\"]*$', line)
                 if match:
                     key = match.group(1)
                     value = match.group(2)
