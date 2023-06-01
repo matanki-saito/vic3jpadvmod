@@ -150,3 +150,4 @@
  character_base_values:0 "$base_values$"
  FRONT_ADVANTAGE_SAME_COMBAT_POWER:0 "#header $NAME$#!\nこの[concept_front]では双方の調和が保たれています。理由 : "
  FRONT_ADVANTAGE_NO_ONE:0 "#header $NAME$#!\n誰も優位な[concept_front]を保持していません。理由 : "
+ AGITATOR_TRAIT:0 "扇動者特性― $TRAIT_NAME$"

@@ -729,3 +729,5 @@
  STATE_GUYENNE:0 "ギュイエンヌ"
  STATE_AUVERGNE_LIMOUSIN:0 "オーベルジュ＝リムーザン"
  STATE_LORRAINE:0 "ロレーヌ"
+ STATE_RUHR:0 "ルール"
+ STATE_MAINE_ANJOU:0 "メーヌ＝アンジュー"

@@ -79,3 +79,5 @@
  gui_animation_tool_dataflow_tooltip:0 "プロパティのデータフローの方向です。\n^ ―最初のキーフレームは無視され、代わりにウィジェットからのデータが使用されます (デフォルト) 。\n^ ―最初のキーフレームは無視されないため、そのデータはアニメーションの冒頭に使用されます。"
  TOOLS_ANSWER_YES:0 "はい#!"
  TOOLS_ANSWER_NO:0 "いいえ#!"
+ pdxns_math_AbsF_desc:0 ""
+ pdxns_math_AddF_desc:0 ""

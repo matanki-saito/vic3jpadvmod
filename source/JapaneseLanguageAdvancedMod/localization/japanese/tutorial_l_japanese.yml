@@ -1013,3 +1013,4 @@
  lesson_establish_trade_route_why_5_back:0 "#b 外交アクション#!タブ内の[GetDiplomaticActionType('trade_agreement').GetName]が選択されていません"
  lesson_establish_trade_route_why_6_back:0 "[GetDiplomaticActionType('trade_agreement').GetName]のマップインタラクションを閉じてください"
  lesson_establish_trade_route_why_7_back:0 "#b 貿易ルート#!タブを閉じてください"
+ je_tutorial_improve_market_access_with_railways_tooltip:0 "[JournalEntry.GetTarget.GetState.GetName]の$concept_infrastructure$のバランスはプラスの値でなければなりません。現在のバランス : [JournalEntry.GetTarget.GetState.GetInfrastructureBalance|0+=]"

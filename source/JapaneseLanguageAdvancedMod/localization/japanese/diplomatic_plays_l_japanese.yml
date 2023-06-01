@@ -389,3 +389,8 @@
  war_goal_colonization_rights_type_desc:0 "[concept_decentralized_nation]の植民地化を早めます。"
  war_goal_colonization_rights:0 "[WAR_GOAL.GetHolder.GetAdjectiveNoFormatting][concept_colonization_rights]"
  war_goal_colonization_rights_desc:0 "[WAR_GOAL.GetHolder.GetName]に[WAR_GOAL.GetTarget.GetName]の[concept_colonization_rights]が与えられる。"
+ MUST_SUPPORT_UNIFICATION:0 "[TARGET_COUNTRY.GetName]は当初、[COUNTRY.GetName]を[concept_unification_candidate]として支持していました"
+ DIPLO_PLAY_OBLIGATION_TO_EXPIRATION:0 "#header $COUNTRY_NAME$\nに対する[concept_obligation]を負っています#!#v $EXPIRATION_DATE$#!まで有効 (残り$TIME_LEFT_FORMATTED$) "
+ DIPLO_PLAY_OBLIGATION_FROM_EXPIRATION:0 "#header $COUNTRY_NAME$\nからの[concept_obligation]を負っています#!#v $EXPIRATION_DATE$#!まで有効 (残り$TIME_LEFT_FORMATTED$) "
+ DIPLO_PLAY_TRUCE_EXPIRATION:0 "#header $COUNTRY_NAME$との停戦協定が有効#!\n#v $EXPIRATION_DATE$#!まで有効 (残り$TIME_LEFT_FORMATTED$) "
+ WARGOAL_REGIME_CHANGE_COULD_NOT_INSTALL_ANY_IG:0 "[TARGET_COUNTRY.GetName]において、我々の[Concept('concept_government','$concept_governments$')][Concept('concept_interest_group','$concept_interest_groups$')]のうち少なくとも1つが[concept_marginalized]であってはなりません"

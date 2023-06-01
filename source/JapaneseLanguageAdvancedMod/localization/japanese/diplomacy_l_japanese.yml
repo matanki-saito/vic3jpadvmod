@@ -813,3 +813,5 @@
  become_protectorate_action_propose_name:0 "[concept_protectorate]化の打診"
  become_tributary_action_propose_name:0 "[concept_tributary]化の打診"
  violate_sovereignty_action_propose_name:0 "主権侵害"
+ AI_WILL_ACCEPT_GENERIC:0 "@green_checkmark![Country.GetName]は受け入れるでしょう"
+ AI_WILL_NOT_ACCEPT_GENERIC:0 "@red_cross! [Country.GetName]は受け入れ#bold #n ない#!#!でしょう"
