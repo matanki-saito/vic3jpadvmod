@@ -1053,9 +1053,7 @@
  STATE_TAX_CAPACITY_TOOLTIP:0 "#header [concept_tax_capacity]#!\n[State.GetName]は[State.CalcTaxCapacity|+0]の[concept_tax_capacity]を持っています\n$TOOLTIP_DELIMITER$\n[State.GetTaxCapacityDesc]"
  STATE_TAX_CAPACITY_INSUFFICIENT:0 "\n[State.GetTaxCapacityEffectsDesc]"
  STATE_TAX_CAPACITY_INSUFFICIENT_LONG:0 "\n\n@warning! 利用率がキャパシティを上回っているため、[concept_state]に次の効果が適用されます : \n[State.GetTaxCapacityEffectsDesc]"
- EVENT_OPTION_TOOLTIP:0 "#header \"[EventOption.GetText]\"#!
-$TOOLTIP_DELIMITER$
-[EventOption.GetDesc]"
+ EVENT_OPTION_TOOLTIP:0 "#header 「[EventOption.GetText]」#!\n$TOOLTIP_DELIMITER$\n[EventOption.GetDesc]"
  POP_VOTING_POWER_WEALTH_TOO_LOW:0 "@warning! [concept_wealth] $WEALTH|v0$が$THRESHOLD|v0$を下回っているため、投票資格がありません\n$TAB$$BREAKDOWN$"
  POP_VOTING_POWER_WEALTH_SUFFICIENT:0 "[concept_wealth] $WEALTH|v0$が投票条件である$THRESHOLD|v0$を満たしています\n$TAB$$BREAKDOWN$"
  POP_VOTING_POWER_POPULATION:0 "x$NUM|v0$の潜在有権者"
@@ -1406,10 +1404,7 @@ $TOOLTIP_DELIMITER$
  STATE_PANEL_INFRASTRUCTURE_USAGE_DESC:0 "#header [concept_infrastructure_usage]#!\n[State.GetName]での[concept_infrastructure_usage] : #v [Multiply_CFixedPoint(State.GetInfrastructureUsage,'(CFixedPoint)-1')|0+]#!\n$TOOLTIP_DELIMITER$\n[State.GetInfrastructureUsageDesc]"
  STATE_TRAIT_STATE_MODIFIER:0 "州補正"
  STATE_TRAIT_STATE_REGION_MODIFIER:0 "州地域補正"
- BUILDING_PROGRESS_TOOLTIP:0 "#header [Building.GetName]#!
-建設進行度 : #VARIABLE [Building.GetConstructionProgressPercentage|%]#!
-週間[concept_construction]割り当て : @construction!#v #tooltippable #tooltip:[Building.GetTooltipTag],CONSTRUCTION_SPEED_TOOLTIP [Building.GetConstructionSpeedPerWeek|2]#!#!#!
-残り時間 : #VARIABLE [Building.GetConstructionRemainingWeeksDesc]#!"
+ BUILDING_PROGRESS_TOOLTIP:0 "#header [Building.GetName]#!\n建設進行度 : #VARIABLE [Building.GetConstructionProgressPercentage|%]#!\n週間[concept_construction]割り当て : @construction!#v #tooltippable #tooltip:[Building.GetTooltipTag],CONSTRUCTION_SPEED_TOOLTIP [Building.GetConstructionSpeedPerWeek|2]#!#!#!\n残り時間 : #VARIABLE [Building.GetConstructionRemainingWeeksDesc]#!"
  BUILDING_PROGRESS_TOOLTIP_QUEUED:0 "#header [Building.GetName]#!\n[Country.GetName]の建設キュー待ち"
  INFRASTRUCTURE_FROM_POPS:0 "$VALUE|+=1$ ([Concept('concept_pop','$concept_pops$')]) \n$BREAKDOWN$[ConcatIfNeitherEmpty('\n','$CAP_BREAKDOWN$')]"
  INFRASTRUCTURE_FROM_POPS_CAPPED:0 "$VALUE|+=1$ (最大値$CAP|1v$を上限とする) "
@@ -1753,22 +1748,7 @@ $TOOLTIP_DELIMITER$
  TOOLTIP_BUILDING_HIRING:0 "#BOLD #V [Building.GetName]は現在雇用中です#!#!\n雇用者数 : #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#!/#maximum [Building.GetEmployeeCap|1*]従業員#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!) [Building.GetAllEmployeesTransferDesc][Building.GetAllFailedHiresDesc]"
  TOOLTIP_BUILDING_HEALTH_WORLD:0 "#BOLD #V [Building.GetName]#!#!\n世界で#variable [Building.GetProfitabilityRank]#!番目に生産的な施設です\n平均的な建造物と比べた[concept_productivity]は#variable [Building.GetProfitability]#! ([Building.GetProfitabilityCompareIcon]) です\n\n収入 : #tooltip:[Building.GetTooltipTag],EARNINGS_BREAKDOWN @money!#bold [Building.GetEarnings|D=+]#!#!\n賃金 : #BOLD #N @money!-[Building.GetLastWagesExpenses|D-]#!#!\n"
  TOOLTIP_BUILDING_HEALTH_BUILDING_TYPE:0 "#BOLD #V [Building.GetName]#!#!\n世界で#variable [Building.GetProfitabilityRankInType]#!番目に生産的な[Building.GetName]です\n平均的な[Building.GetBuildingType.GetName]と比べた[concept_productivity]は#variable [Building.GetProfitabilityInType]#! ([Building.GetProfitabilityCompareIconInType]) です\n\n収入 : #tooltippable #tooltip:[Building.GetTooltipTag],EARNINGS_BREAKDOWN @money!#bold [Building.GetEarnings|D=+]#!#!#!\n賃金 : #BOLD #N @money!-[Building.GetLastWagesExpenses|D-]#!#!\n"
- TOOLTIP_BUILDING_PRODUCTIVITY:0 "#header [concept_productivity]#!
-値 : @money![Building.GetAverageAnnualEarningsPerEmployeeFormatted]/年 (#tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_BUILDING_TYPE,GraphTooltipTypeProfitability [Building.GetProfitabilityCompareIconInType]#!#!/#tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_WORLD,GraphTooltipWorldProfitability [Building.GetProfitabilityCompareIcon]#!#!) 
-$TOOLTIP_DELIMITER$
-世界で#variable ##[Building.GetProfitabilityRankInType]#!番目に生産的な[Building.GetBuildingType.GetName]です
-平均的な[Building.GetBuildingType.GetName]と比べた[concept_productivity]は[Building.GetProfitabilityInType]です
-
-世界で#variable ##[Building.GetProfitabilityRank]#!番目に生産的な施設です
-平均的な建造物と比べた[concept_productivity]は[Building.GetProfitability]です
-" #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_BUILDING_TYPE,GraphTooltipTypeProfitability [Building.GetProfitabilityCompareIconInType]#!#!/#tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_WORLD,GraphTooltipWorldProfitability [Building.GetProfitabilityCompareIcon]#!#!) 
-$TOOLTIP_DELIMITER$
-#variable ##[Building.GetProfitabilityRankInType]#! most productive [Building.GetBuildingType.GetName] in the world 
-[Building.GetProfitabilityInType][concept_productivity] compared to the average [Building.GetBuildingType.GetName]
-
-#variable ##[Building.GetProfitabilityRank]#! most productive Building in the world 
-[Building.GetProfitability][concept_productivity] compared to the average Building
-"
+ TOOLTIP_BUILDING_PRODUCTIVITY:0 "#header [concept_productivity]#!\n値 : @money![Building.GetAverageAnnualEarningsPerEmployeeFormatted]/年 (#tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_BUILDING_TYPE,GraphTooltipTypeProfitability [Building.GetProfitabilityCompareIconInType]#!#!/#tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_WORLD,GraphTooltipWorldProfitability [Building.GetProfitabilityCompareIcon]#!#!) \n$TOOLTIP_DELIMITER$\n世界で#variable ##[Building.GetProfitabilityRankInType]#!番目に生産的な[Building.GetBuildingType.GetName]です\n平均的な[Building.GetBuildingType.GetName]と比べた[concept_productivity]は[Building.GetProfitabilityInType]です\n\n世界で#variable ##[Building.GetProfitabilityRank]#!番目に生産的な施設です\n平均的な建造物と比べた[concept_productivity]は[Building.GetProfitability]です\n" #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_BUILDING_TYPE,GraphTooltipTypeProfitability [Building.GetProfitabilityCompareIconInType]#!#!/#tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_HEALTH_WORLD,GraphTooltipWorldProfitability [Building.GetProfitabilityCompareIcon]#!#!) \n$TOOLTIP_DELIMITER$\n#variable ##[Building.GetProfitabilityRankInType]#! most productive [Building.GetBuildingType.GetName] in the world \n[Building.GetProfitabilityInType][concept_productivity] compared to the average [Building.GetBuildingType.GetName]\n\n#variable ##[Building.GetProfitabilityRank]#! most productive Building in the world \n[Building.GetProfitability][concept_productivity] compared to the average Building\n"
  TOOLTIP_BUILDINGS_MATERIAL_EXPENSES:0 "\n素材支出 : #BOLD #N @money!-$VAL|D-$#!#!"
  TOOLTIP_BUILDINGS_SLAVE_UPKEEP:0 "\n奴隷維持費 : #tooltip:$TAG$,TOOLTIP_BUILDINGS_SLAVE_UPKEEP_DETAILS #tooltippable #N @money!-$VAL|D-$#!#!#!"
  TOOLTIP_BUILDINGS_SLAVE_UPKEEP_DETAILS:0 "#header 奴隷維持費#!\n総支出 : #BOLD #V @money![Building.GetLastSlaveUpkeep|K1]#!#!\n$TOOLTIP_DELIMITER$\n[Building.GetLastSlaveBasketDesc]"
@@ -1996,8 +1976,7 @@ $TOOLTIP_DELIMITER$
  MAP_INTERACTION_CREATE_MARKET_DESC:0 "#V 市場#!を建設する#V 州#!を選んでください"
  MAP_INTERACTION_ESTABLISH_COLONY_DESC:0 "#V 植民地#!を作る#V 州地域#!を選んでください"
  MAP_INTERACTION_ESTABLISH_COLONY_PERFORMED:0 "#V 植民地#! [concept_colony]が作成されました"
- MAP_INTERACTION_DECLARE_INTEREST_DESC:0 "どの[concept_strategic_region]に[concept_interest]を宣言するかを選択してください
-[GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!使用済"
+ MAP_INTERACTION_DECLARE_INTEREST_DESC:0 "どの[concept_strategic_region]に[concept_interest]を宣言するかを選択してください\n[GetPlayer.GetNumDeclaredInterests|v]/#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!使用済"
  MAP_INTERACTION_DECLARE_INTEREST_PERFORMED:0 "[concept_interest]が表明されました"
  MAP_INTERACTION_MERGE_MARKET_MARKET_DESC:0 "#V 州/地域#!にリンクする#V 市場#!を選んでください"
  MAP_INTERACTION_MERGE_MARKET_STATE_DESC:0 "#V [MARKET.GetName]#!にリンクする#V 州/地域#!を選んでください"
@@ -2327,32 +2306,10 @@ $TOOLTIP_DELIMITER$
  INACTIVE_TRADE_ROUTES:0 "あなたの無効な[Concept('concept_trade_route','$concept_trade_routes$')]"
  UNPRODUCTIVE_TRADE_ROUTES:0 "あなたの非生産的な[Concept('concept_trade_route','$concept_trade_routes$')]"
  CONSTRUCTION_SECTOR_INPUT_FACTOR:0 "未消費の[concept_construction]力により、#v x$MULT$#!倍になります"
- CONSTRUCTION_BREAKDOWN:0 "#header [concept_construction] : $CONSTRUCTION_SPEED$#!/週
-$TOOLTIP_DELIMITER$
-#v #tooltippable #tooltip:$BREAKDOWN_TAG$ $BASE_CONSTRUCTION$#!#!#![Country.GetName][ConcatIfNeitherEmpty('
-
-','$CAPPEDDESC$')][ConcatIfNeitherEmpty('
-
-','$MODIFIERDESC$')]によって[concept_construction]が提供されました" #tooltippable #tooltip:$BREAKDOWN_TAG$ $BASE_CONSTRUCTION$#!#!#! [concept_construction] provided by [Country.GetName][ConcatIfNeitherEmpty('
-
-','$CAPPEDDESC$')][ConcatIfNeitherEmpty('
-
-','$MODIFIERDESC$')]"
+ CONSTRUCTION_BREAKDOWN:0 "#header [concept_construction] : $CONSTRUCTION_SPEED$#!/週\n$TOOLTIP_DELIMITER$\n#v #tooltippable #tooltip:$BREAKDOWN_TAG$ $BASE_CONSTRUCTION$#!#!#![Country.GetName][ConcatIfNeitherEmpty('\n\n','$CAPPEDDESC$')][ConcatIfNeitherEmpty('\n\n','$MODIFIERDESC$')]によって[concept_construction]が提供されました" #tooltippable #tooltip:$BREAKDOWN_TAG$ $BASE_CONSTRUCTION$#!#!#! [concept_construction] provided by [Country.GetName][ConcatIfNeitherEmpty('\n\n','$CAPPEDDESC$')][ConcatIfNeitherEmpty('\n\n','$MODIFIERDESC$')]"
  CONSTRUCTION_MODIFIER_HEADER:0 "[State.GetName]における一週間の[concept_construction]効率は次により修正されます : \n$MODIFIER_BREAKDOWN$"
  CONSTRUCTION_CAPPED_DESC:0 "[BuildingType.GetName]の進捗上限は#v $MAXPOINTS$#! [concept_construction]力/週です"
- CAN_EXPAND_BUILDING_TOOLTIP:0 "#header $BUILD_OR_EXPAND$[STATE.GetName]の[BUILDING_TYPE.GetName]#! (規模 : [BUILDING.GetExpansionLevelBreakdownDesc]) 
-#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! 予測[SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]/週
-[ConcatIfNeitherEmpty('$QUALIFICATIONS$','
-')][SelectLocalization(LessThan_CFixedPoint(State.GetConstructionEfficiency,'(CFixedPoint)0'),'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING','')]$TOOLTIP_DELIMITER$
-@construction!$REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$) 
-[ConcatIfNeitherEmpty('$INVESTMENT_FUND$','
-')]
-[STATE.GetMarketAccessStatus]
-使用可能な労働者 : [State.GetNumSubsistenceWorkingAdults|Dv]の[GetPopType('peasants').GetName][SelectLocalization(GreaterThan_int64(State.GetNumUnemployedWorkingAdults,'(int64)0'),'AND_UNEMPLOYED','')][ConcatIfNeitherEmpty('$MILITARY_INFO$','
-')][ConcatIfNeitherEmpty('$PORT_INFO$','
-')]
-
-$KEY_MODIFIER_INSTRUCTIONS$"
+ CAN_EXPAND_BUILDING_TOOLTIP:0 "#header $BUILD_OR_EXPAND$[STATE.GetName]の[BUILDING_TYPE.GetName]#! (規模 : [BUILDING.GetExpansionLevelBreakdownDesc]) \n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! 予測[SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]/週\n[ConcatIfNeitherEmpty('$QUALIFICATIONS$','\n')][SelectLocalization(LessThan_CFixedPoint(State.GetConstructionEfficiency,'(CFixedPoint)0'),'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING','')]$TOOLTIP_DELIMITER$\n@construction!$REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$) \n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$','\n')]\n[STATE.GetMarketAccessStatus]\n使用可能な労働者 : [State.GetNumSubsistenceWorkingAdults|Dv]の[GetPopType('peasants').GetName][SelectLocalization(GreaterThan_int64(State.GetNumUnemployedWorkingAdults,'(int64)0'),'AND_UNEMPLOYED','')][ConcatIfNeitherEmpty('$MILITARY_INFO$','\n')][ConcatIfNeitherEmpty('$PORT_INFO$','\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
  AND_UNEMPLOYED:0 "および[State.GetNumUnemployedWorkingAdults|Dv][concept_unemployed]"
  CONSTRUCTION_CAN_BE_FUNDED_BY_INVESTMENT_POOL:0 "[concept_budget_construction_goods] #P は[concept_investment_pool]から捻出#bold 可能#!#!です (現在#v @money![GetPlayer.GetInvestmentPool|D+]#!) "
  CONSTRUCTION_TOTAL_COST_IMPACT:0 "[concept_budget_construction_goods]コスト予測 : #v @money!$COST|K-$#!"
@@ -2362,11 +2319,7 @@ $KEY_MODIFIER_INSTRUCTIONS$"
  EXPAND_TOOLTIP_EXPAND:0 "#header $BUILD_OR_EXPAND$[STATE.GetName]の[BUILDING_TYPE.GetName]#!\n規模 : [BUILDING.GetExpansionLevelBreakdownDesc]\n[STATE.GetMarketAccessStatus]\n使用可能な労働者 : [State.GetNumSubsistenceWorkingAdults|Dv]の[GetPopType('peasants').GetName]および[State.GetNumUnemployedWorkingAdults|Dv]の[concept_unemployed]"
  EXPAND_BUILDING_MODIFIERS_INSTRUCTIONS:0 "#instruction クリックで1レベル分をキューに入れる\n$SHORTCUT_KEY_MOD_shift$クリックで$SHIFT_NUM_LEVELS$レベル分をキューに入れる\n$SHORTCUT_KEY_MOD_ctrl$クリックで$CTRL_NUM_LEVELS$レベル分をキューに入れる#!\n#instruction $SHORTCUT_KEY_MOD_alt$クリックで建設キューの一番上にキューを入れる"
  DOWNSIZE_BUILDING_MODIFIERS_INSTRUCTIONS:0 "#instruction クリックで1レベル分を縮小#!\n#instruction $SHORTCUT_KEY_MOD_shift$クリックで$SHIFT_NUM_LEVELS$レベル分を縮小#!\n#instruction $SHORTCUT_KEY_MOD_ctrl$クリックで$CTRL_NUM_LEVELS$レベル分を縮小#!"
- EXPANSION_PROFIT_IMPACT:0 "#header 予測される新レベルの[SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]#!
-#v @money!$VAL|K+=$#! 予測[SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]/週
- (Excluding [Concept('concept_building_wage','$concept_building_wages$')]) 
-$TOOLTIP_DELIMITER$
-$IMPACT_DETAILS$"
+ EXPANSION_PROFIT_IMPACT:0 "#header 予測される新レベルの[SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]#!\n#v @money!$VAL|K+=$#! 予測[SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(BUILDING.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]/週\n(Excluding [Concept('concept_building_wage','$concept_building_wages$')])\n$TOOLTIP_DELIMITER$\n$IMPACT_DETAILS$"
  EXPANSION_WAGES_IMPACT:0 "週間賃金は#v @money!$IMPACT|K+=$#!"
  GOODS_PROFIT_CONSUMPTION:0 "#v @money![Negate_CFixedPoint('(CFixedPoint)$IMPACT$')|K+=]#! が#v $NUM_UNITS|0-$#!の[Goods.GetTextIcon]#v [Goods.GetName]#! ($PRICE_CUR_ICON$@arrow_right!$PRICE_NEW_ICON$) に必要です"
  GOODS_PROFIT_CONSUMPTION_AFTER_SUBSTITUTION:0 "#v @money![Negate_CFixedPoint('(CFixedPoint)$IMPACT$')|K+=]#! が#v $NUM_UNITS|0-$#!の[Goods.GetTextIcon]#v [Goods.GetName]#! ([concept_goods_substitution]後の$PRICE_CUR_ICON$@arrow_right!$PRICE_NEW_ICON$) に必要です"
@@ -4697,27 +4650,11 @@ $IMPACT_DETAILS$"
  MAP_MODE_ATTITUDE_COUNTRY:0 "マップに[CountryPanel.GetCountry.GetName]への[concept_attitude]を表示"
  MAP_MODE_RELATIONS_COUNTRY:0 "マップに[CountryPanel.GetCountry.GetName]との[concept_relations]を表示"
  DEFAULT_MAP_LIST_PANEL_STATUS_HEADER:0 "状態"
- DEFAULT_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!
-$TOOLTIP_DELIMITER$
-#concept 各エントリでのこのインタラクションの利用可否。
-
-@map_list_plus! : これを選択することができます。
-@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。
-@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。
-@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。
-@map_list_cross! : あなたはこれを選択することはできません。#!"
+ DEFAULT_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!\n$TOOLTIP_DELIMITER$\n#concept 各エントリでのこのインタラクションの利用可否。\n\n@map_list_plus! : これを選択することができます。\n@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。\n@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。\n@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。\n@map_list_cross! : あなたはこれを選択することはできません。#!"
  DEFAULT_MAP_LIST_PANEL_TITLE_HEADER:0 "タイトル"
  DEFAULT_MAP_LIST_PANEL_TITLE_HEADER_TOOLTIP:0 "#header タイトル#!\n$TOOLTIP_DELIMITER$\n#concept この選択肢のタイトルです。#!"
  BUILDING_MAP_LIST_PANEL_STATUS_HEADER:0 "状態"
- BUILDING_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!
-$TOOLTIP_DELIMITER$
-#concept 各[concept_state]でのこの[concept_building]の利用可否。
-
-@map_list_plus! : これを選択することができます。
-@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。
-@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。
-@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。
-@map_list_cross! : あなたはこれを選択することはできません。#!"
+ BUILDING_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!\n$TOOLTIP_DELIMITER$\n#concept 各[concept_state]でのこの[concept_building]の利用可否。\n\n@map_list_plus! : これを選択することができます。\n@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。\n@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。\n@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。\n@map_list_cross! : あなたはこれを選択することはできません。#!"
  BUILDING_MAP_LIST_PANEL_STATE_HEADER:0 "州"
  BUILDING_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP:0 "#header [concept_state]#!\n$TOOLTIP_DELIMITER$\n#concept [concept_building]が建てられる$concept_state$#!"
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_HEADER:0 "効率"
@@ -4730,46 +4667,19 @@ $TOOLTIP_DELIMITER$
  BUILDING_MAP_LIST_PANEL_STATUS_EXPAND:0 "拡張"
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_TOOLTIP:0 "#header $NAME$の[concept_construction]効率 : $VAL|v%1$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_HEADER:0 "[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]"
- BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_TOOLTIP:0 "#header 拡張後の予想[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]#!
- ([Concept('concept_building_wage','$concept_building_wages$')]を除く) 
-$TOOLTIP_DELIMITER$
-この施設を拡張することで、その週間[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]にどれだけの影響があるかを予測するものです。"
+ BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_TOOLTIP:0 "#header 拡張後の予想[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]#!\n([Concept('concept_building_wage','$concept_building_wages$')]を除く)\n$TOOLTIP_DELIMITER$\nこの施設を拡張することで、その週間[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_government_administration').Self),ObjectsEqual(MapListBuildingPanel.GetBuildingType,GetBuildingType('building_construction_sector').Self)),'BUILDING_UPKEEP_HEADER','BUILDING_EARNINGS_HEADER')]にどれだけの影響があるかを予測するものです。"
  COLONY_MAP_LIST_PANEL_STATUS_HEADER:0 "状態"
- COLONY_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!
-$TOOLTIP_DELIMITER$
-#concept 各[concept_state_region]での植民地化の可否。
-
-@map_list_plus! : これを選択することができます。
-@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。
-@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。
-@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。
-@map_list_cross! : あなたはこれを選択することはできません。#!"
+ COLONY_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!\n$TOOLTIP_DELIMITER$\n#concept 各[concept_state_region]での植民地化の可否。\n\n@map_list_plus! : これを選択することができます。\n@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。\n@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。\n@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。\n@map_list_cross! : あなたはこれを選択することはできません。#!"
  COLONY_MAP_LIST_PANEL_REGION_HEADER:0 "戦略的重要地域"
  COLONY_MAP_LIST_PANEL_REGION_HEADER_TOOLTIP:0 "#header [concept_strategic_region]#!\n$TOOLTIP_DELIMITER$\n#concept 対象の$concept_strategic_region$です。#!"
  COLONY_MAP_LIST_PANEL_STATE_HEADER:0 "州地域"
  COLONY_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP:0 "#header [concept_state_region]#!\n$TOOLTIP_DELIMITER$\n#concept 対象の$concept_state_region$です。#!"
- DIPLO_ACTION_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!
-$TOOLTIP_DELIMITER$
-#concept 各[concept_country]での[concept_diplomatic_action]の可否。
-
-@map_list_plus! : これを選択することができます。
-@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。
-@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。
-@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。
-@map_list_cross! : あなたはこれを選択することはできません。#!"
+ DIPLO_ACTION_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!\n$TOOLTIP_DELIMITER$\n#concept 各[concept_country]での[concept_diplomatic_action]の可否。\n\n@map_list_plus! : これを選択することができます。\n@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。\n@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。\n@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。\n@map_list_cross! : あなたはこれを選択することはできません。#!"
  DIPLO_ACTION_LIST_PANEL_STATUS_HEADER:0 "国"
  DIPLO_ACTION_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header [concept_country]#!"
  DIPLO_ACTION_LIST_PANEL_STATUS_SEND:0 "派遣"
  DIPLO_ACTION_LIST_PANEL_STATUS_NOT_POSSIBLE:0 "使用できません"
- TRADE_ROUTE_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!
-$TOOLTIP_DELIMITER$
-#concept 各[concept_market]での[concept_trade_route]の可否。
-
-@map_list_plus! : これを選択することができます。
-@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。
-@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。
-@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。
-@map_list_cross! : あなたはこれを選択することはできません。#!"
+ TRADE_ROUTE_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!\n$TOOLTIP_DELIMITER$\n#concept 各[concept_market]での[concept_trade_route]の可否。\n\n@map_list_plus! : これを選択することができます。\n@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。\n@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。\n@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。\n@map_list_cross! : あなたはこれを選択することはできません。#!"
  TRADE_ROUTE_LIST_PANEL_MARKET_HEADER:0 "市場"
  TRADE_ROUTE_LIST_PANEL_MARKET_HEADER_TOOLTIP:0 "#header アルファベット順に[Concept('concept_market','$concept_markets$')]をソート#!"
  TRADE_ROUTE_LIST_PANEL_VALUE_HEADER:0 "生産性"
@@ -4791,15 +4701,7 @@ $TOOLTIP_DELIMITER$
  GOODS_NUMBER_WITH_TRADE_LEVEL:0 "[TradeRoute.GetTradeQuantity|Dv] (レベル[TradeRoute.GetLevel|v]) "
  NOT_PLAYER_MARKET_CONSUMPTION_TAXES:0 "あなたはこの[concept_market]に参加していないため、@red_cross! は[Goods.GetMarket.GetName]の[Goods.GetName]に[Concept('concept_consumption_tax','$concept_consumption_taxes$')]を課すことは#b できません#!"
  NOT_PLAYER_MARKET_PRIORITY:0 "@red_cross! あなたはこの[concept_market]を主導する立場ではないため、[Goods.GetMarket.GetName]で[Goods.GetName]の関税を設定#b できません#!"
- ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!
-$TOOLTIP_DELIMITER$
-#concept 各[concept_state]での[concept_conscription_center]の有効化の可否。
-
-@map_list_plus! : これを選択することができます。
-@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。
-@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。
-@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。
-@map_list_cross! : あなたはこれを選択することはできません。#!"
+ ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!\n$TOOLTIP_DELIMITER$\n#concept 各[concept_state]での[concept_conscription_center]の有効化の可否。\n\n@map_list_plus! : これを選択することができます。\n@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。\n@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。\n@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。\n@map_list_cross! : あなたはこれを選択することはできません。#!"
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER:0 "州"
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_HEADER_TOOLTIP:0 "#header 州#!\n$TOOLTIP_DELIMITER$\n[concept_conscription_center]が始動する[concept_state]です。"
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_SIZE_TOOLTIP:0 "#header 規模#!\n$TOOLTIP_DELIMITER$\n[concept_conscription_center]の規模です。"
@@ -4808,15 +4710,7 @@ $TOOLTIP_DELIMITER$
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_UNITS_TEXT:0 "@battalions![MapListOption.GetActivateConscriptionCenterData.GetBuilding.GetCombatUnitCapacity|v]"
  FRONT_MAP_LIST_PANEL_UNITS:0 "ユニット"
  FRONT_MAP_LIST_PANEL_UNITS_TOOLTIP:0 "[concept_front]に展開しているユニットの数です。"
- RECRUIT_COMMANDERS_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!
-$TOOLTIP_DELIMITER$
-#concept 各[concept_hq]での[concept_general]の雇用の可否。
-
-@map_list_plus! : これを選択することができます。
-@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。
-@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。
-@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。
-@map_list_cross! : あなたはこれを選択することはできません。#!"
+ RECRUIT_COMMANDERS_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:0 "#header ステータス#!\n$TOOLTIP_DELIMITER$\n#concept 各[concept_hq]での[concept_general]の雇用の可否。\n\n@map_list_plus! : これを選択することができます。\n@map_list_plus_and_checkmark! : あなたはこれを選択することができ、すでにここでこれを行っています。\n@map_list_checkmark! : すでにここで行っていますが、選択を解除することができます。\n@map_list_lock! : あなたはすでにここでこれを行っていますが、これを解除することはできません。\n@map_list_cross! : あなたはこれを選択することはできません。#!"
  RECRUIT_COMMANDERS_MAP_LIST_PANEL_CURRENT_NUM:0 "現在"
  RECRUIT_COMMANDERS_MAP_LIST_PANEL_CURRENT_GENERALS_TOOLTIP:0 "#header 現在の[Concept('concept_general','$concept_generals$')]数#!"
  RECRUIT_COMMANDERS_MAP_LIST_PANEL_CURRENT_ADMIRALS_TOOLTIP:0 "#header 現在の[Concept('concept_admiral','$concept_admirals$')]数#!"
@@ -6160,7 +6054,7 @@ $TOOLTIP_DELIMITER$
  ON_RESEARCHED:0 "#title 研究した場合 : #!"
  ONE_OR_MANY_CULTURES:0 "文化"
  ONE_OR_MANY_RELIGIONS:0 "宗教"
- CHARACTER_PANEL_SUBTITLE_NOT_EXILE:0 "[SelectLocalization(Character.IsRuler,Concept('concept_ruler',Character.GetPrimaryRoleTitle),Character.GetPrimaryRoleName)][SelectLocalization(Character.IsRuler,'of','in')][Character.GetCountry.GetName]"
+ CHARACTER_PANEL_SUBTITLE_NOT_EXILE:0 "[Character.GetCountry.GetName][SelectLocalization(Character.IsRuler,'の','の')][SelectLocalization(Character.IsRuler,Concept('concept_ruler',Character.GetPrimaryRoleTitle),Character.GetPrimaryRoleName)]"
  CHARACTER_PANEL_SUBTITLE_EXILE:0 "[Concept('concept_exile','$concept_exiled$')][Character.GetPrimaryRoleName]"
  AGITATORS_IN_QUEUE_DESC_ENTRY:0 "[CHARACTER.GetFullName] ― [LabelingHelper.GetLabelForSupport(PoliticalMovement.GetCharacterSupport(CHARACTER.Self))] (#tooltippable #tooltip:[GetRawTextTooltipTag(PoliticalMovement.GetCharacterSupportDesc(CHARACTER.Self))] [PoliticalMovement.GetCharacterSupport(CHARACTER.Self)|v0]#!) #!"
  outliner_title_agitators:0 "#outliner_header 扇動者#!"
@@ -6192,7 +6086,7 @@ $TOOLTIP_DELIMITER$
  CANNOT_SUPPORT_AGITATORS:0 "いかなる[Concept('concept_agitator','$concept_agitators$')]も支援できません"
  CANNOT_SUPPORT_AGITATORS_TOOLTIP:0 "$concept_agitators$を持てない[Concept('concept_revolution','$concept_revolutionary$')]国は、#r いかなる[Concept('concept_agitator','$concept_agitators$')]も支援できません#!\n@red_cross! "
  EXILED_AGITATORS:0 "追放された扇動者"
- LOYALISTS_AND_RADICALS:0 "政府体制支持者と急進主義者"
+ LOYALISTS_AND_RADICALS:0 "体制派と急進派"
  LOYALISTS_AND_RADICALS_IN_COUNTRY:0 "[Country.GetName]の[Concept('concept_loyalist','$concept_loyalists$')]と[Concept('concept_radical','$concept_radicals$')]"
  LOYALISTS_AND_RADICALS_IN_INTEREST_GROUP:0 "[InterestGroup.GetName]内の[Concept('concept_loyalist','$concept_loyalists$')]と[Concept('concept_radical','$concept_radicals$')]"
  AGITATORS:0 "扇動者"
