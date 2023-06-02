@@ -107,7 +107,9 @@ def convert_json_to_yml(target_path):
             fw.write("l_japanese:\n")
             with open(file_path, 'r', encoding='utf-8') as fr:
                 for entry in json.load(fr):
-                    translation = entry["context"] if entry["stage"] == 2 else entry["translation"]
+                    # paratranzから出てくるcontextだと改行がエスケープされていない
+                    translation = re.sub(r'\n', '\\\\n', entry["context"]) \
+                        if entry["stage"] == 2 else entry["translation"]
 
                     # ISSUE-493のWA
                     if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
