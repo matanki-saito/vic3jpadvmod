@@ -147,7 +147,7 @@
  agitator_legal_events.18.b:0 "[SCOPE.sCharacter('supporting_agitator').GetFullName]を後押ししろ。"
  agitator_legal_events.18.c:0 "[SCOPE.gsInterestGroup('opposing_ig').GetName]を支持しろ。"
  agitator_legal_events.19.t:0 "条項なし"
- agitator_legal_events.19.d:0 "[SCOPE.sInterestGroup('opposing_ig').GetName]と[SCOPE.gsInterestGroup('anger_ig').GetName]は[SCOPE.sLaw('current_law_scop').GetName]に関する条項の意味論で分断されている。[SCOPE.sCharacter('supporting_agitator').GetFullName]はこの口論が続くことを喜んでいるようだ。"
+ agitator_legal_events.19.d:0 "[SCOPE.gsInterestGroup('opposing_ig').GetName]と[SCOPE.gsInterestGroup('angry_ig').GetName]は[SCOPE.sLaw('current_law_scope').GetName]に関する条項の意味論で分断されている。[SCOPE.sCharacter('supporting_agitator').GetFullName]はこの口論が続くことを喜んでいるようだ。"
  agitator_legal_events.19.f:0 "「この強大な施設内での鎧の着用を禁じた法令について論じたい」\n\n「今回は何が問題だというのだ？」\n\n「この文言には、鎧を身につけるだけなのか、それとも施設内で所持しているのかが記されていない。単に装飾品を携帯しているだけで、法律違反になる可能性があるのだ！」"
  agitator_legal_events.19.a:0 "[SCOPE.gsInterestGroup('opposing_ig').GetName]の解釈を支持する。"
  agitator_legal_events.19.b:0 "[SCOPE.gsInterestGroup('angry_ig').GetName]のスタンスを促進する。"

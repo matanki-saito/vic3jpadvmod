@@ -1766,7 +1766,7 @@
  land_ownership_law_events.16.b:0 "労働者にはさらなる保護が必要になるだろう。"
  land_ownership_law_events.16.c:0 "面白い提案だ。受けよう。"
  land_ownership_law_events.17.t:0 "家族が常に最優先"
- land_ownership_law_events.17.d:0 "いくつかの家族の間で、[SCOPE.sLaw('current_law_scope').GetName]を巡る法廷での衝突が発生しました。早期入植者はそれぞれ、[SCOPE.sState('claimed_state').GetName]にある同じ土地の所有権を主張しています。この争いにより、この法に対する疑念が生じています。"
+ land_ownership_law_events.17.d:0 "いくつかの家族の間で、[SCOPE.sLaw('current_law_scope').GetName]を巡る法廷での衝突が発生しました。早期に土地を手にした者はそれぞれ、[SCOPE.sState('claimed_state').GetName]にある同じ土地の所有権を主張しています。この争いにより、この法に対する疑念が生じています。"
  land_ownership_law_events.17.f:0 "同じ事務所から発行された3つの申し立てが、判事の机を横切った。その詳細に間違いはなかった。3つすべてに、同じ土地の所有権を認める書類があった。だが、それぞれの署名は異なっていた。判事は、その書記官の筆跡を良く知っていた。何か間違いがあったのだろう。だがそんな単純な説明では、荒々しい目をした家長たちは納得しないだろう。"
  land_ownership_law_events.17.a:0 "書類を無効にし、賠償金を用意しよう。"
  land_ownership_law_events.17.b:0 "署名が最も古かった者に土地を与えよう。"

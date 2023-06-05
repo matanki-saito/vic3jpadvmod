@@ -53,7 +53,7 @@
  backed_by_court:0 "王の勅令"
  ruler_restrained:0 "支配者が拘束された"
  generic_laws.7.t:0 "法案支持の草の根運動"
- generic_laws.7.d:0 "政策の意向と低層階級の要望は、どんなご時世であっても不明瞭なものだ。いかなる理由によるものなのか、カリスマ的な話し手と三流社交クラブにおける活発な議論によって、　[SCOPE.sLaw('current_law_scope').GetName]を支持する声がまるで野火のように[ROOT.GetCountry.GetNameNoFormatting]全域へと広がっていったのだ。"
+ generic_laws.7.d:0 "政策の意向と低層階級の要望は、どんなご時世であっても不明瞭なものだ。いかなる理由によるものなのか、カリスマ的な話し手と三流社交クラブにおける活発な議論によって、[SCOPE.sLaw('current_law_scope').GetName]を支持する声がまるで野火のように[ROOT.GetCountry.GetNameNoFormatting]全域へと広がっていったのだ。"
  generic_laws.7.f:0 "「今回彼らは何を支持すると？まあ、我々は不平を漏らす立場にない。彼らの支持が成功の前提条件であったことは一度もないし、仮に支持があったとしても害をなすものではないからだ」"
  generic_laws.7.a:0 "人民の熱意が改革を後押しするのだ！"
  generic_laws.7.b:0 "共通点を利用して大衆を鎮めよう。"
