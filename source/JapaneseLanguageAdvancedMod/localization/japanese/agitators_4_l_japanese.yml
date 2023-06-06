@@ -1677,7 +1677,7 @@
  revolution_pulse_events.39.a:0 "勝手にしろ。"
  revolution_pulse_events.39.b:0 "なだめてみよう。"
  revolution_pulse_events.40.t:0 "高圧的な姿勢"
- revolution_pulse_events.40.d:0 "[SCOPE.sCharacter('gover_person').GetFullName]が[SCOPE.gsInterestGroup('defecting_ig').GetName]の敵を見間違えた。冤罪で非難した後、[SCOPE.gsInterestGroup('defecting_ig').GetName]の穏健派が[SCOPE.gsInterestGroup('revolting_ig').GetName]の理念に反発している。"
+ revolution_pulse_events.40.d:0 "[SCOPE.sCharacter('governor_person').GetFullName]が[SCOPE.gsInterestGroup('defecting_ig').GetName]の敵を見誤った。冤罪で非難した後、[SCOPE.gsInterestGroup('defecting_ig').GetName]の穏健派が[SCOPE.gsInterestGroup('revolting_ig').GetName]の理念に反発している。"
  revolution_pulse_events.40.f:0 "一瞬の怒りが、友好的な顔を敵に回すこともある。どんなに固い絆で結ばれている仲間でも、誤解から仲たがいしてしまうこともある。そして、一度そうなったら、もう元には戻れない。"
  revolution_pulse_events.40.a:0 "彼らの仲間は、それほど協力的ではないかもしれないな。"
  revolution_pulse_events.40.b:0 "[SCOPE.sCharacter('governor_person').GetFullName]は身を引くべきだ。"

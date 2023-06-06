@@ -47,7 +47,7 @@
  ideology_republican_desc:0 "#lore このグループは、最良のリーダーは国民の投票によって選出されると考えており、共和制の政府形態を支持しています。#!"
  ideology_populist:0 "大衆主義"
  ideology_populist_desc:0 "#lore このグループは、民衆による統治を信じ、すべての社会階級に参政権を拡大しようとしています。#!"
- ideology_stratocratic:0 "権威主義"
+ ideology_stratocratic:0 "階級主義"
  ideology_stratocratic_desc:0 "#lore このグループは、伝統的な税制や労使関係によって社会のヒエラルキーを維持することを好みます。#!"
  ideology_laissez_faire:0 "自由放任主義"
  ideology_laissez_faire_desc:0 "#lore このグループは、貿易と労働力の自由な流れを信じ、政府の判断よりも市場の判断を重視しています。#!"
