@@ -318,7 +318,7 @@
  republic_laws.2.d:0 "[SCOPE.gsInterestGroup('rulers_fate').GetName]の[SCOPE.sCharacter('monarchist_supporter').GetFullName]が、政府が[SCOPE.sLaw('current_law_scope').GetName]になった場合の[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の処遇について返答を求めている。"
  republic_laws.2.f:0 "「君主制はこの国を支えている重要な柱の一つだ。まさか本気で破棄するなどと考えているわけではないでしょうな」\n\n「一人の人間を他の人よりも高い位置につければ、公平で平等な国など実現できるわけがありません。彼が貴族としての地位を保持したいのであれば、どこか遠くへ行ってもらうことになるでしょう。我が国の社会にもはや[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は必要ありません」"
  republic_laws.2.a:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]を退位させる。"
- republic_laws.2.b:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]と追放する。"
+ republic_laws.2.b:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]を追放する。"
  republic_laws.3.t:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の演説"
  republic_laws.3.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の[ROOT.GetCountry.GetRuler.GetFullName]が、[SCOPE.sLaw('current_law_scope').GetName]へと向かう[ROOT.GetCountry.GetName]の進歩を妨げるために、咆哮のような演説を行いました。"
  republic_laws.3.f:0 "「[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]政府関係者の皆さん。この決定の原因が本当に我々にあるのか、あなた方の心に自問することを切にお願いします。このような決断を下す権利が我々にあるのでしょうか？長年続いた伝統を本当に終わらせてしまうおつもりなのですか？[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]としての役割はここにいらっしゃる皆さんと同じぐらいこの国と深い関係にあるのですよ」"
