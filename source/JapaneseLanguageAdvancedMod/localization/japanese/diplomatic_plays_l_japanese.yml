@@ -301,7 +301,7 @@
  war_goal_humiliation_sway_desc:0 "今後5年間[WAR_GOAL.GetTarget.GetName]の威信を下げ、[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]における[WAR_GOAL.GetHolder.GetName]との対立を防止することで、[WAR_GOAL.GetHolder.GetName]がこちら側の勢力に加わるよう説得しましょう。"
  war_goal_open_market_type_name:0 "市場開放"
  war_goal_open_market_type_desc:0 "他国に[concept_open_market]を強要する。"
- war_goal_open_market:0 "[Concept('concept_open_market','$concept_open_market_short$')][WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]市場"
+ war_goal_open_market:0 "[WAR_GOAL.GetTarget.GetAdjectiveNoFormatting]市場の[Concept('concept_open_market','$concept_open_market_short$')]"
  war_goal_open_market_desc:0 "[WAR_GOAL.GetHolder.GetName]が[WAR_GOAL.GetTarget.GetName]に対し、自由貿易法の制定と国外交易への市場[Concept('concept_open_market','$concept_open_market_short$')]を強要する。"
  war_goal_open_market_sway_desc:0 "[WAR_GOAL.GetHolder.GetName]が[WAR_GOAL.GetTarget.GetName]に自由貿易法の制定と国外交易への市場開放を強要することで、[WAR_GOAL.GetHolder.GetName]がこちら側の勢力に加わるよう説得しましょう。"
  war_goal_regime_change_type_name:0 "体制変更"
