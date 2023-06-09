@@ -42,6 +42,10 @@ def fetch_conversion_from_paratranz(project_id,
                 if start_id is not None and record["id"] <= start_id:
                     return result
 
+                # 更新を除外するためmatankiはカウントから除外する
+                if record['uid'] == 713:
+                    continue
+
                 if not record["uid"] in result:
                     result[record["uid"]] = 0
 
