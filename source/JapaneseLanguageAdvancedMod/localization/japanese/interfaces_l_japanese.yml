@@ -5500,7 +5500,7 @@
  LAND_TEXT_NUM_INACTIVE_QUEUED_ARABLE_LAND:0 "― $VALUE|v$の[concept_arable_land]がキュー待ちの施設用に確保されています"
  MAP_LIST_DECREE_COST:0 "@aut!#v [MapListOption.GetDecreeData.GetCost]#!"
  NUMBER_OF_PLAYER_OBJECTIVE_JOURNAL_ENTRIES_SHORT:0 "#v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActivePlayerObjectiveJournalEntries),GetDataModelSize(AccessPlayer.AccessActivePinnedPlayerObjectiveJournalEntries))]#!をピン止め解除"
- NUMBER_OF_NON_PLAYER_OBJECTIVE_JOURNAL_ENTRIES_SHORT:0 "#v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActiveNonPlayerObjectiveJournalEntries),GetDataModelSize(AccessPlayer.AccessActivePinnedNonPlayerObjectiveJournalEntries))]#!個がピン止め解除"
+ NUMBER_OF_NON_PLAYER_OBJECTIVE_JOURNAL_ENTRIES_SHORT:0 "他#v [Subtract_int32(GetDataModelSize(AccessPlayer.AccessActiveNonPlayerObjectiveJournalEntries),GetDataModelSize(AccessPlayer.AccessActivePinnedNonPlayerObjectiveJournalEntries))]#!個"
  COUNTRY_INFAMY_MAP_TOOLTIP:0 "[SelectLocalization(State.GetCountry.IsColonizable,GetPlayer.GetTensionTooltip(State.GetCountry),State.GetCountry.GetInfamyDesc)]"
  BUREAUCRACY_EXPENSE_FROM_STATES_AND_POPULATION:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $COST|+=0$#!#! ([Concept('concept_incorporated_state','$concept_incorporated_states$')]$NUM_INCORPORATED_STATES|v$州の人口$POPULATION|Kv$) "
  BUREAUCRACY_EXPENSE_FROM_INSTITUTIONS:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $COST|+=0$#!#! ([Concept('concept_incorporated_state','$concept_incorporated_states$')]$NUM_INCORPORATED_STATES|v$州に対する[Concept('concept_institution','$concept_institutions$')]) "
