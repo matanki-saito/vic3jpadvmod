@@ -29,7 +29,7 @@
  closeted_skeletons:0 "穢れた秘密"
  agitator_legal_events.1.t:0 "老人への暴言"
  agitator_legal_events.1.d:0 "[SCOPE.sCharacter('opposing_agitator').GetFullName]が吐き気を催すほど長く喋り続けたため、議論は一転して悪化に転じた。[SCOPE.sLaw('current_law_scope').GetName]の法律は停滞し、ほとんどの人はその日のうちに退場していった。"
- agitator_legal_events.1.f:0 "「さらに、「脳卒中」の法的定義に関連する第4節の文脈において、現在の法文書上ではは、どの脳卒中を定義するかについて明記されてはいない。多くの人は、筆やハンマーによる脳卒中を、高齢者や不幸な人が発症する脳卒中と混同するかもしれないのだ」"
+ agitator_legal_events.1.f:0 "「さらに、「脳卒中」の法的定義に関連する第4節の文脈において、現在の法文書上では、どの脳卒中を定義するかについて明記されてはいない。多くの人は、筆やハンマーによる脳卒中を、高齢者や不幸な人が発症する脳卒中と混同するかもしれないのだ」"
  agitator_legal_events.1.a:0 "言論抑圧法を認証するときが来たのかもしれない。"
  agitator_legal_events.1.b:0 "お喋りな愚か者を公然と批判する。"
  agitator_legal_events.2.t:0 "話者の言論抑圧"
