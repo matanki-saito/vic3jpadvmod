@@ -1674,7 +1674,7 @@
  heavenly.6.c:0 "[SCOPE.sCulture('manchu_culture').GetName]の悪魔との新たな戦いに備えなければならない。"
  heavenly.6.e:0 "今こそ西欧列強との関係を構築すべき時だ。"
  china_destroyed:0 "[SCOPE.sCountry('china_scope').GetName]は消滅しました"
- taiping_god_worshippers:0 "神を崇める者の福音伝道"
+ taiping_god_worshippers:0 "拝上帝会の福音伝道"
  taiping_taiping_revolution:0 "革命の兄弟姉妹"
  taiping_land_socialization:0 "太平の地の社会化"
  taiping_army_modifier:0 "太平の徴兵"
