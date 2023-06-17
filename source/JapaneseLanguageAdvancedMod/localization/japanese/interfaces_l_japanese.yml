@@ -501,7 +501,7 @@
  PANEL_MILITARY_ARMY_CURRENT_TOTAL_BATTALIONS_DESC:0 "$COUNTRY$は現在@battalions!$BATTALIONS|v$ [Country.GetBattalionsRanking]があります\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$\n\n合計$POTENTIAL|v$ [concept_potential_battalions]を配備できます"
  PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS_DESC:0 "$COUNTRY$において@battalions!$CONSCRIPTS|v$の徴兵 (潜在的最大兵力は$POTENTIAL|v$ [Concept('concept_potential_battalions','$concept_potential_conscripts$')]) が行われました。"
  PANEL_MILITARY_ARMY_CURRENT_REGULARS_DESC:0 "$COUNTRY$には現在@battalions!$REGULAR_BATTALIONS|v$ (潜在的最大兵力は$POTENTIAL|v$ [Concept('concept_potential_battalions','$concept_potential_regulars$')]) が存在します。"
- PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_MOBILIZED_DESC:0 "$COUNTRY$は現在、@battalions!$REGULAR_BATTALIONS|v$個のレギュラーの大隊と@battalions!$CONSCRIPT_BATTALIONS|v$個の徴兵大隊を所持しています"
+ PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_MOBILIZED_DESC:0 "$COUNTRY$は現在、@battalions!$REGULAR_BATTALIONS|v$個の常設大隊と@battalions!$CONSCRIPT_BATTALIONS|v$個の徴兵大隊を所持しています"
  PANEL_MILITARY_ARMY_FIELDED_BATALLIONS:0 "[Country.GetBattalionsFielded|0v]"
  PANEL_MILITARY_ARMY_FIELDED_BATALLIONS_TOOLTIP:0 "#header 配属および展開済みの[Concept('concept_battalion','$concept_battalions$')]#!\n$TOOLTIP_DELIMITER$\n[Country.GetBattalionsFieldedBreakdown]"
  PANEL_MILITARY_ARMY_IN_RESERVE:0 "[Country.GetBattalionsInReserve|0v]"
