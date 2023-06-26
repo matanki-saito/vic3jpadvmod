@@ -11,11 +11,16 @@
  CHARACTER_INTERACTION_TOOLTIP: "$CHARACTER_INTERACTION_HEADER$$CHARACTER_INTERACTION_ERRORS$$CHARACTER_INTERACTION_REQUIREMENTS$$CHARACTER_INTERACTION_INFO$$CHARACTER_INTERACTION_EFFECTS$$CHARACTER_INTERACTION_DESC$"
  CHARACTER_INTERACTION_CONFIRMATION: "$CHARACTER_INTERACTION_TOOLTIP$\n\nよろしいですか？"
  CHARACTER_INTERACTION_ON_COOLDOWN: "[CharacterInteraction.GetName|v]はクールダウンのため[Date.GetString|v]まで利用できません"
+ CHARACTER_INTERACTION_NAME: "[CharacterInteraction.GetName][AddLocalizationIf(CharacterInteraction.IsOnCooldown(Character.Self), 'INTERACTION_COOLDOWN')]"
+ INTERACTION_COOLDOWN: " ([CharacterInteraction.GetCooldown(Character.Self)])"
+ demobilize_general: "将軍の復員"
+ demobilize_general_info: "早期の[Concept('concept_mobilize_general','$concept_mobilize_general_demobilization$')]を命じられると、[Character.GetFullName]と[Character.GetHerHis]の部隊は即座に攻撃を停止し、[Character.GetHomeHQ.GetName]に帰還しますが、[Character.MakeScope.ScriptValue('num_months_mobilization_cost_after_early_demobilization')|v0]か月の間は動員コストの一部が発生します。"
+ demobilize_general_tt: "少なくとも[Character.MakeScope.ScriptValue('num_months_before_permit_demobilization')|v0]か月間[Concept('concept_mobilize_general','$concept_mobilize_general_mobilize$')]されている (現在: [Character.MakeScope.Var('num_months_mobilized').GetValue|v0] )"
  grant_command_to_ruler: "指揮権を授与"
  remove_command_from_ruler: "司令官を退く"
  retire_commander: "司令官から退かせる"
  retire_commander_info: "指揮の人を解かれた場合、[Character.GetFullName]は[concept_general]としての役割を失い、[concept_commander_rank]を通じて[Character.GetInterestGroup.GetName]の[concept_clout]に影響を与えることができなくなります"
-#Exile Interactions
+ #Exile Interactions
  exile_character: "反対派の追放"
  exile_character_info: "国外追放になった[Character.GetFullName]は[Character.GetCountry.GetName]を離れ、[concept_agitator]として他の[Concept('concept_country', '$concept_countries$')]から雇われることが可能となります"
  exile_dissident_tt: "[Character.GetFullName]が$concept_exile$になります"
@@ -31,16 +36,15 @@
  notification_exile_notification_name: "[SCOPE.sCharacter('exile_scope').GetFullName]が[SCOPE.sCountry('exiling_country_scope').GetName]から追放されました。"
  notification_exile_notification_desc: "[SCOPE.sCharacter('exile_scope').GetFullName]が[SCOPE.sCountry('exiling_country_scope').GetName]によって[concept_exile]とされました。"
  notification_exile_notification_tooltip: "#header $notification_exile_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_exile_notification_desc$"
-#Agitator Interactions
+ #Agitator Interactions
  grant_leadership_to_agitator: "主導権を付与"
  grant_leadership_to_agitator_info: "[concept_ideology]: [Character.GetIdeology.GetName]\n[concept_popularity]: #v #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!#!)\n\n主導権が与えられると、[Character.GetFullName]の$concept_ideology$が[Character.GetInterestGroup.GetName]に追加され、[Character.GetHerHis]の$concept_popularity$がその[concept_interest_group_attraction]に影響を及ぼすようになります"
  make_agitator_ig_leader_tt: "[Character.GetInterestGroup.GetName]の[concept_leader]になります"
  grant_command_to_agitator: "指揮権を授与"
  grant_command_to_agitator_info: "指揮権を与えられた[Character.GetFullName]は、変わらず[concept_agitator]でありながら、[concept_general]として軍を率いることが可能となり、そのキャラクターの[concept_commander_rank]が[Character.GetInterestGroup.GetName]の[concept_clout]に影響を及ぼすようになります"
-#Monarch interactions
+ #Monarch interactions
  marry_ruler_or_heir: "王室との婚姻"
  marry_ruler_or_heir_info: "王室との婚姻は[Character.GetCountry.GetName]と、[Character.GetFullName][Character.GetPrimaryRoleTitle]の新たな配偶者の母[concept_country]との間の[concept_relations]を増加させます。また、[Character.GetHerHis]の[concept_popularity]が上がる可能性もあります"
  marry_ruler_or_heir_desc: "#lore [Character.GetFullName]が友好国の貴族の家から配偶者を求めます。#!"
  abdicate_monarch: "退位"
  abdicate_monarch_info: "[concept_ruler]が[Character.GetCountry.GetName]の王位を退き、[Character.GetPrimaryRoleTitle]の役割を[Character.GetHerHis]の[concept_heir]に譲ります"
-

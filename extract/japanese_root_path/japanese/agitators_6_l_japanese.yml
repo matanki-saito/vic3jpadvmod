@@ -1,6 +1,6 @@
 ﻿l_japanese:
-#Preemptively named 6 ahead of a merge-conflict with a Surprise 5.
-#For the Stall Events
+ #Preemptively named 6 ahead of a merge-conflict with a Surprise 5.
+ #For the Stall Events
  gagging_the_opposition: "統制弁護士"
  reasonable_exercise_of_authority: "封じられた統制の抜け道"
  bridle_gagged: "屈辱"
@@ -29,7 +29,7 @@
  forgot_bread_prices: "音信不通"
  book_yeeter: "礼節の王者"
  closeted_skeletons: "穢れた秘密"
-#agitator_stall. events; will later expand to include agitator_debate. and agitator_advance. decades.
+ #agitator_stall. events; will later expand to include agitator_debate. and agitator_advance. decades.
  agitator_legal_events.1.t: "老人への暴言"
  agitator_legal_events.1.d: "[SCOPE.sCharacter('opposing_agitator').GetFullName]が吐き気を催すほど長く喋り続けたため、議論は一転して悪化に転じた。[SCOPE.sLaw('current_law_scope').GetName]の法律は停滞し、ほとんどの人はその日のうちに退場していった。"
  agitator_legal_events.1.f: "「さらに、「脳卒中」の法的定義に関連する第4節の文脈において、現在の法文書上ではは、どの脳卒中を定義するかについて明記されてはいない。多くの人は、筆やハンマーによる脳卒中を、高齢者や不幸な人が発症する脳卒中と混同するかもしれないのだ」"
@@ -84,7 +84,7 @@
  agitator_legal_events.10.f: "「この嘆かわしい状態は、我らが団体の品位を超えている。この名誉に刻まれた壊疽のような傷に問責を加えなければならない。さもなければ我々は皆、その結果に苦しむことになるだろう」"
  agitator_legal_events.10.a: "問責決議案に参加し、速やかに可決すること。"
  agitator_legal_events.10.b: "[SCOPE.sCharacter('opposing_agitator').GetInterestGroup.GetName]のクローゼットから秘密を暴け。"
-## Debate Modifiers
+ ## Debate Modifiers
  middle_meeter: "妥協の余地なし"
  rumours_going_around: "嫌な噂"
  duplicitous: "裏表"
@@ -105,7 +105,7 @@
  opposition_law_collapse: "無駄撃ち"
  pot_stirrer: "立法府の病"
  successful_redraft: "重要法案のコース修正"
-## Debate Events
+ ## Debate Events
  agitator_legal_events.11.t: "いいね、実は…"
  agitator_legal_events.11.d: "[SCOPE.sLaw('current_law_scope').GetName]法をめぐる議論が続く中、[SCOPE.sCharacter('opposing_agitator').GetFullName]は単純かつ致命的な欠陥を指摘した。これにより、改正草案が議論中だ。"
  agitator_legal_events.11.f: "「本当に？公共の場で凧を揚げて、他人に迷惑をかけるようなことは一切してはいけないという法律だったのか。どうりで引きずり降ろされるわけだ」\n\n「そう言われると、血の気が引くようなかわいそうな話だ」"
@@ -163,7 +163,7 @@
  agitator_legal_events.20.a: "最後までやり遂げ、すべてのエラーを排除しろ。"
  agitator_legal_events.20.b: "[SCOPE.sCharacter('supporting_agitator').GetFullName]の派閥の話を最後まで聞こう。"
  agitator_legal_events.20.c: "[SCOPE.gsInterestGroup('opposing_ig').GetName]の提案をいくつか受け入れてみよう。"
-## Advance Modifiers
+ ## Advance Modifiers
  random_kindness: "良心的な役者"
  convenient_ally: "利便性の味方"
  overgenerousity_dividends: "過分なチップ"
@@ -180,7 +180,7 @@
  successful_law_slide: "下院の支援"
  destructive_bender: "迷惑行為"
  humanised_people: "人間のみ"
-## Advance Events
+ ## Advance Events
  agitator_legal_events.21.t: "何もしないという技術"
  agitator_legal_events.21.d: "[SCOPE.sLaw('current_law_scope').GetName]の法律に以前は反対していた[SCOPE.sCharacter('supporting_agitator').GetFullName]が、[SCOPE.gsInterestGroup('govnas').GetName]の政治的立場を考慮し、代わりに支援を申し出た。"
  agitator_legal_events.21.f: "「有権者と法律の問題について話をする時は、まずは何もしていないと見せかける技術を習熟する必要がある」\n\n「たとえ、仮面の男たちに囲まれ、ささやきをききながら、あらゆることをこなしていたとしても？」\n\n「もちろん」"

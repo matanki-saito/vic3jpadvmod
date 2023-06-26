@@ -1,6 +1,6 @@
 ﻿l_japanese:
-#This used to be the nihilism file but is now just the Victoria file.
-#Nihilism
+ #This used to be the nihilism file but is now just the Victoria file.
+ #Nihilism
  je_nihilist_movement: "ニヒリズム運動"
  je_nihilist_movement_goal: "以下のいずれかに該当:\n[SCOPE.GetRootScope.GetCountry.GetName]が、[GetLawType('law_censorship').GetName]もしくは[GetLawType('law_outlawed_dissent').GetName]を制定し、ニヒリストから成る利益団体すべてが5年以上抑圧されている\n[SCOPE.GetRootScope.GetCountry.GetName]が、 [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]に対する#bold 肯定的な#!支持または、それらが周縁集団となっている状況を5年以上維持している"
  je_nihilist_movement_trigger_tt_1: "[SCOPE.GetRootScope.GetCountry.GetName]が[GetLawType('law_censorship').GetName]または[GetLawType('law_outlawed_dissent').GetName]を制定し、すべてのニヒリズム利益集団が5年以上抑圧されている。"
@@ -41,7 +41,7 @@
  modifier_defeated_in_forum: "フォーラムでの敗北"
  modifier_triumphant_in_forum: "フォーラムでの勝利"
  modifier_dashing_character: "美化されたニヒリスト"
-#nihilism.1 and all attached things are in content_1.
+ #nihilism.1 and all attached things are in content_1.
  nihilism.2.t: "何も終わらず"
  nihilism.2.d: "ニヒリズム運動への徹底的な弾圧が実を結び、「ニヒリズム」という言葉は再び猥褻なものを示すものでしかなくなった。"
  nihilism.2.f: "「あなたの一番の罪は、無意味に自分を破壊し、裏切ったことだ」" #-Dostoevsky
@@ -103,7 +103,7 @@
  nihilism.13.f: "「砕けるものは砕かなければならない。打撃に耐えるものは生き残るにふさわしいものであり、粉々に飛び散るものはゴミである。いずれにせよ、叩きまくればよいのだ。害はない」" #-Pisarev
  nihilism.13.a: "[SCOPE.gsInterestGroup('devout_ig').GetName]は滅びるだろう、現実そのものに立ち向かうのだから！"
  nihilism.13.b: "この道は失敗する運命にある！"
-#Coup
+ #Coup
  modifier_persecuted_general: "迫害された将軍"
  modifier_uncertain_loyalties_country: "不確かな軍事的忠誠心"
  modifier_conflicted_about_coup: "相反する忠誠心"
@@ -153,7 +153,7 @@
  coup_advance_50_tt: "#bold クーデター#!の#!進行度が#bold 50%#bold 増加します#!"
  coup_retreat_50_tt: "#bold クーデター#!の#!進行度が#bold 50%#bold 減少します#!"
  coup_sponsor_tt: "#bold クーデター#!の成功により、#bold 義務#!が [SCOPE.sCountry('coup_sponsor_country').GetName]に負わされます。"
-#Coup Pulse Events
+ #Coup Pulse Events
  coup_pulse_events.1.t: "謀略による将軍の弾劾"
  coup_pulse_events.1.d: "[SCOPE.sCharacter('accanged_general').GetFullName]、[SCOPE.gsInterestGroup('accanged_general_ig').GetName]に属する将軍が重大な不誠実さを非難されている。[SCOPE.sCharacter('accoded_general').GetFullName]は、これは自分たちの支配の障壁を取り除くための破壊分子による陰謀に過ぎないと主張している。"
  coup_pulse_events.1.f: "「紳士諸君、断言しよう。私の手紙に書かれているようなことは、私は全く知らない。もし、私の容疑を晴らすために、私物を調べなければならないのであれば、私は喜んで協力しよう」"
@@ -246,7 +246,7 @@
  coup_pulse_events.18.f: "「奴らを見てみろ！ブクブクと太った首都の豚どもは、まるで我々が奴らの奴隷であるかのように命令を下してくる！」\n\nやつれた老人は通り過ぎる馬車に向かって、目に燃えるような軽蔑を浮かべながら言い放つ。\n\n「気に食わないのなら選挙で他の者に投票すればいいと奴らは言うが、揃いも揃って我々を飢えさせようとしている奴らから選ぶ意味がどこにある？」"
  coup_pulse_events.18.a: "暴民支配はまっとうな社会の代わりにはならない。"
  coup_pulse_events.18.b: "我々を養ってくれる者たちは、好きなように通りを歩けばよいのだ。"
-#Coup Aftermath Events
+ #Coup Aftermath Events
  coup_aftermath_events.1.t: "民主主義の遺産"
  coup_aftermath_events.1.d: "[SCOPE.sState('legacy_of_democracy_state').GetStateRegion.GetName]で[SCOPE.gsInterestGroup('legacy_of_democracy_ig').GetName]によって計画されたと疑われる暴力的な抗議行動が勃発し、[SCOPE.sCharacter('coup_leader').GetFullName]による独裁的な支配を終わらせ、[ROOT.GetCountry.GetName]の民主主義を復活させるよう求めています。"
  coup_aftermath_events.1.f: "希望と怒りに満ちた、生き生きとした目の男女が広場に少しずつ集まってくるのを見て、彼女は胸がつかえる思いを感じずにはいられなかった。\n\n週が終わるころには、この中の何人が生き残るのだろうか？何人が自由の身でいられるのだろうか？"
@@ -267,7 +267,7 @@
  coup_aftermath_events.4.f: "「自由は、民衆の一般知識なしには保てない。民衆には、知る権利と欲求がある。だがそれだけではない。彼らは、最も恐れられ最もうらやまれる知識、つまりは統治者の人格と行動について知る、議論の余地なく、決して奪うことのできない神聖な権利を持っているのだ」"
  coup_aftermath_events.4.a: "犯人が名乗り出るまで、[SCOPE.sState('university_state').GetStateRegion.GetName]の[SCOPE.sBuilding('university_state_building').GetName]を封鎖しろ。"
  coup_aftermath_events.4.b: "冊子を見つけたら没収しろ。"
-#Agitators Law Events
+ #Agitators Law Events
  modifier_appearance_of_cooperation: "説得された連合のパートナー"
  modifier_strongarmed_us: "協力の強制"
  modifier_coalition_loyalty: "政策をめぐる連合"
@@ -515,7 +515,7 @@
  agitators_law_events.30.f: "落ち着いて眠れず、かすんだ目で事務所に入った監督者は、すぐに職員たちの苦痛に満ちた表情に気が付いた。何故そんな表情をしているのかは、ピンボードを見るとすぐにわかった。新聞には、太字でこう書かれていた。\n\n「ご検討を: 表現の自由への賛同」"
  agitators_law_events.30.a: "我々の中にも、彼らの言うことに一理あると思う者はいるだろう。"
  agitators_law_events.30.b: "ここで見て見ぬふりをすれば、状況はますます悪くなるだけだ。"
-#Silkworm Diseases
+ #Silkworm Diseases
  je_silkworm_diseases: "微粒子病の大流行"
  je_silkworm_diseases_goal: "[ROOT.GetCountry.GetName]が、#BOLD 微粒子病#!の影響を受けた州のうち少なくとも75%の州において、解決策を発見してから1年にわたって[GetDecreeType('decree_encourage_agricultural_industry').GetName]の法令を有効にする。\n\nこの大流行の解決策は、#BOLD 低温殺菌#!の研究を行うことで得られます。あるいは、解決法を発見した他の国から教わることもできます。"
  je_silkworm_diseases_reason: "[ROOT.GetCountry.GetAdjective]の絹産業は#BOLD 微粒子病#!の大流行に悩まされており、このまま放置すると養蚕業が壊滅する恐れがあります。"
@@ -583,7 +583,7 @@
  silkworm_diseases.9.f: "ついに、まぶしが再び繭でいっぱいになった。繭で眠るカイコは、じきに煮え立つ湯の中に放り込まれるとは知らず、中で変態している。木のまぶしの間を通る労働者の表情はずいぶんと和らいでいた。\n\n当然ながら、やるべき作業は増えた。給料はほんの少ししか上がらなかったが、仕事を失うよりかは間違いなくマシだった。"
  silkworm_diseases.9.a: "我が国の科学者たちに乾杯だ！"
  silkworm_diseases.9.b: "我が国の絹産業を再興させなければ。ぐずくずはしていられない。"
-#Exiles Events
+ #Exiles Events
  modifier_agitator_left: "旅立った友"
  modifier_agitator_hopeless: "希望の死"
  modifier_exile_ig_empowered: "聡明な新参者"
@@ -656,7 +656,7 @@
  exiles_events.10.a: "[SCOPE.sCharacter('exile_scope').GetSheHe|U]は自らの行動の結果に向き合うべきだ。"
  exiles_events.10.b: "病人に慈悲を見せても構わないだろう。"
  exiles_events.10.c: "[SCOPE.sCharacter('exile_scope').GetSheHe]の治療が終わった後も、ここにいたければいるといい。"
-#Agitators Law Events
+ #Agitators Law Events
  modifier_pro_democracy_ig: "参政権の支持"
  modifier_preferred_in_party: "党内での優遇"
  modifier_fair_dealer: "実直なブローカー"
@@ -970,7 +970,7 @@
  agitators_election_events.44.a: "単純だがその通りだ。素晴らしい！"
  agitators_election_events.44.b: "法の制定はそんなに単純な話ではない。"
  agitators_election_events.44.c: "女性の手が見えないが？"
-#The below is a fake tooltip
+ #The below is a fake tooltip
  agitators_election_events.44.c.tt: "[SCOPE.sCountry('self_referential_reference').GetName]は#tooltippable 女性に差し伸べる手#!\n#P +10.00%#!#tooltippable_name 女性参政権#! #tooltippable_concept POP#! #tooltippable_name 支持#!を得ます"
  agitators_election_events.45.t: "蛇の首を落とすには"
  agitators_election_events.45.d: "[SCOPE.sCharacter('agitator_scope').GetFullName]は[SCOPE.sState('capital_scope').GetCityHubName]で王家の者を待ち伏せ、[SCOPE.sParty('agitator_party_scope').GetName]は共和国確立のため全力を尽くしていると、手短に通達しました。"
@@ -1063,7 +1063,7 @@
  single_party_state.7.f: "第1項:\n憲法に定められた手続きに加え、[ROOT.GetCountry.GetNameNoFormatting]政府も[ROOT.GetCountry.GetNameNoFormatting]の法律を制定できるものとする。\n\n第2項:\n[ROOT.GetCountry.GetNameNoFormatting]政府が制定した法律は議会の精度に影響を与えない範囲で、憲法から逸脱してもよいものとする。[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の権利は影響を受けない。"
  single_party_state.7.a: "[ROOT.GetCountry.GetName]を救えるのは[SCOPE.sParty('fascist_party_scope').GetName]だけだ！"
  single_party_state.7.b: "自分がどうなろうが知ったことか！こんなものは民主主義ではない！"
-#Historical Agitators
+ #Historical Agitators
  modifier_lenin_in_exile: "レーニン亡命中"
  modifier_lenin_harassed_by_spies: "警察の密偵による嫌がらせ"
  modifier_lenin_popularity: "レナ川から来た男"
@@ -1142,7 +1142,7 @@
  historical_agitators.8.t: "第三のボナパルト"
  historical_agitators.8.d: "海外への旅とクーデターの失敗で懲りた[SCOPE.sCharacter('historic_agitator_scope').GetFullName]が、[ROOT.GetCountry.GetAdjective]の国境に戻ってきました。"
  historical_agitators.8.f: "「パパ、パパ！ナポレオンが帰ってきたよ！」\n\n「どのナポレオンのことを言ってるんだ、ジャック？小伍長か？皇帝か？それともスイス人のか？」\n\n「スイスの将校だよ、パパ！」"
- historical_agitators.8.a: "やつの煩わしいクーデターはもうたくさんだ。やつを遥か遠くの場所に送れ。"
+ historical_agitators.8.a: "やつには特別扱いを受ける資格などない。"
  historical_agitators.8.b: "もしかしたら、失敗から学んだのかもな。"
  historical_agitators.8.c: "こうして黒幕が姿を現した。"
  notification_napoleon_iii_leaves_country_name: "ナポレオン3世が[ROOT.GetCountry.GetName]を離れる"
@@ -1228,7 +1228,7 @@
  historical_agitators.22.b: "奴をイギリスから追放しろ。"
  historical_agitators.22.c: "ヴァン・ディーメンズ・ランドであれば十分遠いだろう。"
  jaroslaw_in_prison_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName]がもっと厳しい刑務所に戻されます"
-#The Paris Commune
+ #The Paris Commune
  paris_commune.1.t: "パリ・コミューン"
  paris_commune.1.d: "[SCOPE.sState('paris_scope').GetStateRegion.GetCityHubName]の[SCOPE.gsInterestGroup('national_guard_scope').GetName]に向けた政府の要求に対し長い間募っていた不満が、市内での公然たる反乱に発展しました。革命派が軍隊の将校を数人処刑し、[SCOPE.sCountry('paris_commune_scope').GetName]のもとで対抗政府の樹立を宣言しました。"
  paris_commune.1.f: "「パリのプロレタリアンは、支配階級の失敗と裏切りの中で、政務を自分たちの手で行うことで、事態を収拾すべき時が来たと理解したのだ。彼らは政府権力を掌握することで、自らを自身の運命の主とすることが、自分たちの喫緊の務めであり、絶対的な権利であることを理解したのだ」" #- Karl Marx
@@ -1267,10 +1267,10 @@
  je_the_paris_commune_france_spawned: "#bold パリ#!の街が我々の支配に反旗を翻しました"
  je_the_paris_commune_france: "パリ・コミューン"
  je_the_paris_commune_france_reason: "社会主義、無政府主義、急進的共和主義の革命派たちが、パリの街を占拠し、[SCOPE.sCountry('france_scope').GetName]に対抗する政府を立ち上げました。\n\n[SCOPE.sCountry('commune_scope').GetName]が存在する限り、我々の政府の存続が脅かされ続けます。コミューンの進捗が#bold 0#!に達すると、我が軍はコミューンを制圧することができますが、進捗が#bold 100#!に到達すると、革命家たちはベルサイユへと進軍し、我々の政府に終止符を打つでしょう。この対抗政府が存在している時に[concept_revolution]が発生した場合、[SCOPE.sCountry('commune_scope').GetName]に忠誠を誓うだろう。\n\n#bold パリ・コミューン#!の進捗は現在[SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_paris_commune_drift')]です。"
-#je_the_paris_commune_france_status: "The progress of the #bold Paris Commune#! is [ROOT.GetCustom('dynamic_paris_commune_drift')]."
+ #je_the_paris_commune_france_status: "The progress of the #bold Paris Commune#! is [ROOT.GetCustom('dynamic_paris_commune_drift')]."
  je_the_paris_commune_communards: "パリ・コミューン"
  je_the_paris_commune_communards_reason: "パリのプロレタリアートが蜂起して首都を占領し、[SCOPE.sCountry('france_scope').GetName]に対抗する政府を立ち上げました。\n\n我々の[SCOPE.sCountry('commune_scope').GetName]が存在する限り、ヴェルサイユのブルジョア政府の存続が脅かされ続けます。コミューンの進捗が#bold 100#!に到達すると、我々の軍がヴェルサイユに進軍し、我々と対立する政府に終止符を打ちますが、進捗が#bold 0#!に到達すると、ヴェルサイユ政府がパリに侵攻し、我々の政府を完全に崩壊させます。\n\n#bold パリ・コミューン#!の進捗は現在[SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_paris_commune_drift')]です。"
-#je_the_paris_commune_communards_status: "The progress of the #bold Paris Commune#! is [ROOT.GetCustom('dynamic_paris_commune_drift')]."
+ #je_the_paris_commune_communards_status: "The progress of the #bold Paris Commune#! is [ROOT.GetCustom('dynamic_paris_commune_drift')]."
  je_the_paris_commune_france_complete: "#bold パリ・コミューン#!の進捗が#bold 0#!になり、蜂起が鎮圧されました"
  je_the_paris_commune_communard_complete: "#bold パリ・コミューン#!の進捗が#bold 100#!に達し、[SCOPE.sCountry('commune_scope').GetAdjective]による#bold ヴェルサイユ#!への進軍が成功しました"
  je_the_paris_commune_display: "パリ・コミューン"
@@ -1363,7 +1363,7 @@
  luddite_law_events.6.c: "金さえあれば皆満足するさ。"
  belle_epoque_fail_tt: "敵の[concept_front]が[SCOPE.sState('belle_epoque_state').GetName]に到達しました"
  belle_epoque_invalid_tt: "[SCOPE.sState('belle_epoque_state').GetName]はこの国の支配下にありません"
-#REVOLUTION EVENTS
+ #REVOLUTION EVENTS
  modifier_minority_self_defense_tolerated: "民族自衛の許容"
  modifier_subversion_of_monopoly_on_violence: "民族的自衛権の正当化"
  modifier_tarred_with_terrorist_brush: "テロリズムに対する非難"
@@ -1474,7 +1474,7 @@
  modifier_new_bedfellows: "ポジティブなパートナーシップ"
  modifier_backfired_defection: "逃亡の反発"
  modifier_embarrassed_by_judgement_failure: "判断の失敗"
-#Events
+ #Events
  revolution_pulse_events.1.t: "国家自衛"
  revolution_pulse_events.1.d: "[ROOT.GetCountry.GetAdjective] [SCOPE.gsInterestGroup('self_defense_threat_ig').GetName]の間で暴力的感情が高まり、いくつかの[SCOPE.sCulture('self_defense_threat_culture').GetName]コミュニティは、その民の安全を保つために武装民兵を結成し始めている。"
  revolution_pulse_events.1.f: "「混沌の世界をさまよう古の[SCOPE.sCulture('self_defense_threat_culture').GetNameNoFormatting]の英雄たちの魂は、ついにその居場所を見つけたのだ」" #- Anonymous Jewish Bundist, 1906
@@ -1707,7 +1707,7 @@
  provisional_government_events.1.e: "我々は前政権の敵なのであって、[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]の敵ではない。"
  provisional_government_events.1.g: "労働者の裏切り者だったのは、前政権だけだ。"
  retain_presidents_power_tt: "この国家は[GetLawType('law_presidential_republic').GetName]を維持する。"
-#LAND OWNERSHIP LAW EVENTS
+ #LAND OWNERSHIP LAW EVENTS
  modifier_collectivisation_protests: "集団農場化の抗議"
  modifier_destruction_of_grain: "穀物の破壊"
  modifier_collectivisation_protests_capitulated: "集団農場化の抗議に屈した"
@@ -1795,7 +1795,7 @@
  land_ownership_law_events.18.a: "もしかすると、改訂が必要なのかもしれん。"
  land_ownership_law_events.18.b: "人は自分の価値に見合った働き方をする。"
  land_ownership_law_events.18.c: "譲歩して革命を台無しにしてはならない。"
-### Government Petitions
+ ### Government Petitions
  je_government_petition: "政府への請願"
  je_government_petition_status: "[SCOPE.gsInterestGroup('government_petition_ig').GetName]が[SCOPE.sLaw('government_petition_law').GetName]を可決するよう請願しています。"
  je_government_petition_reason: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の政府の忠実な一員である[SCOPE.gsInterestGroup('government_petition_ig').GetName]が、[SCOPE.sLaw('government_petition_law').GetName]を可決するよう請願しています。\n\n[SCOPE.sLaw('government_petition_law').GetName]が無事可決されれば[SCOPE.gsInterestGroup('government_petition_ig').GetName]は大いに喜ぶでしょう。ですが、この請願を無視すれば、国は報いを受けることになるでしょう。最悪の場合、[SCOPE.gsInterestGroup('government_petition_ig').GetName]が政府から離脱します。"
@@ -1812,7 +1812,7 @@
  government_petition_events.1.d: "[SCOPE.gsInterestGroup('government_petition_ig').GetName]の有権者を代表し、[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName]が[ROOT.GetCountry.GetAdjective]政府に対し[SCOPE.sLaw('government_petition_law').GetName]を可決するよう、正式な請願を行いました。"
  government_petition_events.1.f: "「えー、本日最後の案件なのですが、今朝あなたの選挙区の有権者が訪ねてきまして、その… かなり大声でしつこく、新しい法律についての件で会ってくれないかと頼み込んでいるのです」\n\n「それだけか？やれやれ、まるで幽霊でも見たような顔をしているぞ。帰る間際の少しの間ぐらい、時間を割いてやっても問題はないだろう」\n\n「え、ええ。そうですね。無理だと言っても聞き入れてくれませんでしたし」"
  government_petition_events.1.a: "我々に何ができるか考えてみよう。"
-### New Modifiers
+ ### New Modifiers
  modifier_benefiting_from_corruption: "汚職の恩恵"
  modifier_rewritten_law: "新たに改良された姿"
  modifier_shrewd_opportunist: "抜け目のない日和見主義者"
@@ -1820,3 +1820,84 @@
  modifier_short_term_benefit: "長期的な犠牲"
  modifier_training_bureaucrat_replacements: "新たな官僚の訓練"
  modifier_corruption_is_very_good: "汚職の安売り"
+ ### Divided Monarchist Rework
+ modifier_reasonable_monarchist_partisan: "尊敬に値する党派心"
+ modifier_monarchist_partisan_popularity: "君主制推進派の扇動"
+ modifier_popular_french_monarch: "人気の君主"
+ modifier_bonapartist_armed_forces_modifier: "武装勢力を支援"
+ modifier_orleanist_industrialist_modifier: "実業家を支援"
+ modifier_legitimist_devout_modifier: "カトリック教会を支援"
+ modifier_political_smears_monarchism: "無節操な競合"
+ france_retour_des_cendres: "灰の帰還"
+ france_retour_des_cendres_desc: "ナポレオンの亡骸をセントヘレナから引き取り、皇帝の遺体をセーヌ河畔に改めて埋葬する。"
+ retour_des_cendres_tt: "この行動は#bold ボナパルティスト#!に力を与え、機嫌を取る機会が得られます"
+ modifier_return_of_napoleons_body: "灰の帰還"
+ modifier_return_of_napoleons_body_ig: "灰の帰還"
+ french_pretenders_pulse.10.t: "大陸軍の継承者たち"
+ french_pretenders_pulse.10.d: "現在の紛争における[ROOT.GetCountry.GetAdjective]の兵の堂々たる姿は、数々の勝利を収めたナポレオン1世の軍の記憶を呼び起こしており、前線において[SCOPE.sCharacter('bonapartist_character').GetIdeology.GetName]の理念が人気を得ている。"
+ french_pretenders_pulse.10.f: "民衆や兵の興奮が街角を駆け巡る。じめじめとした宿の隅から、踏み固められた野原まで、ナポレオンが最初に収めた決定的な勝利の記憶が、全ての人を奮い立たせた。新たなボナパルトの命により、フランスの大連隊が再び[SCOPE.sState('capital_scope').GetCityHubName]を行進するかもしれないのだ。"
+ french_pretenders_pulse.10.a: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]はより多くの勝利に導いてくれるだろう。"
+ french_pretenders_pulse.10.b: "兵の活躍を称え支援する。"
+ french_pretenders_pulse.10.c: "[SCOPE.sCharacter('bonapartist_character').GetIdeology.GetName]の目的にとっては良い流れだ。"
+ french_pretenders_pulse.11.t: "産業の果実"
+ french_pretenders_pulse.11.d: "[ROOT.GetCountry.GetAdjective]の貿易の隆盛は、[SCOPE.sCharacter('orleanist_character').GetIdeology.GetName]の理念を支援する裕福な後援者たちに大きな利益をもたらしている。彼らはその資金を候補者の支援の後押しに再投資した。"
+ french_pretenders_pulse.11.f: "物事がいくら変わろうとも、変わらないことはある。かつての男爵は鍛冶場と畑を持っていた。今では機械と、商人の倉庫を持っている。鍵が正しい手に握られている限り、男爵がどの鍵を持っていようが、賢明な王にとってはそこに何の違いもないのだ。"
+ french_pretenders_pulse.11.a: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は[ROOT.GetCountry.GetAdjectiveNoFormatting]の繁栄の庇護者だ。"
+ french_pretenders_pulse.11.b: "有力者たちの努力は称賛されるべきだろう。"
+ french_pretenders_pulse.11.c: "[SCOPE.sCharacter('orleanist_character').GetIdeology.GetName]の目的にとっては良い流れだ。"
+ french_pretenders_pulse.12.t: "教会の言葉"
+ french_pretenders_pulse.12.d: "[SCOPE.gsInterestGroup('devout_ig').GetName]の名声と影響力の急成長に合わせ、[SCOPE.sCharacter('legitimist_character').GetIdeology.GetName]に対する支援も増しており、過去を懐かしむ聖職者がかつての王を讃美している。"
+ french_pretenders_pulse.12.f: "その朝、ランスの真ちゅうの鐘は鏡のように輝くほど磨き上げられていた。ここで最後に戴冠式が行われたのは、随分と前のことだった。この鐘はかつて王の時代の到来を告げ、神は自らの冠の輝く宝石だと呼んだものだが、今では亡霊と蜘蛛の巣だけが寄り添うのみである。しかし神の王国は不滅であり、鐘が新たな王のためにその音を鳴らすのは時間の問題だ。"
+ french_pretenders_pulse.12.a: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は彼らの支援を忘れないだろう。"
+ french_pretenders_pulse.12.b: "教会は我らの拠り所となる根幹なのだ。"
+ french_pretenders_pulse.12.c: "[SCOPE.sCharacter('legitimist_character').GetIdeology.GetName]の目的にとっては良い流れだ。"
+ french_pretenders_pulse.13.t: "[SCOPE.sCharacter('partisan_character').GetFullName]が[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の理念を支持"
+ french_pretenders_pulse.13.d: "[SCOPE.sCharacter('partisan_character').GetFullName]が[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の理念のため、[SCOPE.sCharacter('partisan_character').GetInterestGroup.GetName]に全面的に参加することを誓った。野心的ではあるが、[SCOPE.sCharacter('partisan_character').GetHerHis]発言は[SCOPE.sCharacter('partisan_character').GetInterestGroup.GetNameNoFormatting]の内外で物議をかもしている。"
+ french_pretenders_pulse.13.f: "#bold [SCOPE.sCharacter('partisan_character').GetFullNameNoFormatting]: 「[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]に我が心臓を！」#!\n\n [SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]家に吉日が訪れた。著名な王政主義者であり、歯に衣を着せない[SCOPE.sCharacter('partisan_character').GetInterestGroup.GetNameNoFormatting]の論客である [SCOPE.sCharacter('partisan_character').GetFullNameNoFormatting]が、シャルルマーニュの王座にこの家の者が就くことを支持すると表明したのだ。すると[SCOPE.sState('capital_scope').GetCityHubName]の人は今朝の[SCOPE.sCharacter('partisan_character').GetLastNameNoFormatting]の意見の表明に対し、すぐさま支持と中傷の声を投げかけた。 (ページ2に続く)"
+ french_pretenders_pulse.13.a: "[SCOPE.sCharacter('partisan_character').GetSheHe|U]は礼儀を守るべきだな。"
+ french_pretenders_pulse.13.b: "使って何かを得られるというわけでもないのに、評判が何の役に立つというのだ？"
+ french_pretenders_pulse.14.t: "[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の軍？"
+ french_pretenders_pulse.14.d: "[SCOPE.sCharacter('partisan_character').GetFullName][SCOPE.sCharacter('partisan_character').GetPrimaryRoleTitle]は [SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の主張を支持する発言を何度も行っており、[SCOPE.sCharacter('partisan_character').GetHerHis]思想を広めるため、軍における自らの立場を利用している。"
+ french_pretenders_pulse.14.f: "「私の家族は、ナポレオンと、フランスが支配するヨーロッパという彼の壮大な夢のために血を流した。そして今、新たな僭称者が同じ夢のために血を流すよう求めてきた」\n\n「ただの僭称者ではありません、将軍。ただの夢でもありません。王座が復活し、これまでの、そしてこれからのどの共和国よりも偉大なものが生まれるのです。そしてその頂点にあなたが立つ。それこそが我々の望みです」"
+ french_pretenders_pulse.14.a: "我らの兵が[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の理念を称賛している。"
+ french_pretenders_pulse.14.b: "一貫した支持者がいれば、[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]によって有益だろう。"
+ french_pretenders_pulse.14.c: "[SCOPE.sCharacter('partisan_character').GetHerHis|U]言葉はクーデターをほのめかしている。直ちに解任するんだ。"
+ french_pretenders_pulse.15.t: "[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の人々"
+ french_pretenders_pulse.15.d: "経験豊富で、大衆主義的な政治を熱烈に支持する[SCOPE.sCharacter('partisan_character').GetFullName]が、庶民の間で自らの[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の主張をさらに広める活動を開始した。"
+ french_pretenders_pulse.15.f: "#bold ランスの鐘が[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]家のために鳴る！#!\n\n新たな王、新たなシャルルマーニュだ！フランス万歳！[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]万歳！\n\n#italic [SCOPE.sCharacter('partisan_character').GetFullNameNoFormatting]に率いられ、[SCOPE.sState('capital_scope').GetCityHubName]で市民が行進。参加者は[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]の色を着用することが推奨されている。#"
+ french_pretenders_pulse.15.a: "[SCOPE.sCharacter('partisan_character').GetHerHis]主張にとってはかなりの恩恵があるだろう。"
+ french_pretenders_pulse.15.b: "[SCOPE.sCharacter('partisan_character').GetHerHis|U]働きにより、[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]のリーダーたちに新たな光を当てることになるだろう。"
+ french_pretenders_pulse.16.t: "家々の小競り合い"
+ french_pretenders_pulse.16.d: "熱烈な[SCOPE.gsInterestGroup('monarchist_opposition').GetLeader.GetIdeology.GetName]である[SCOPE.gsInterestGroup('monarchist_opposition').GetLeader.GetFullName]が、有力な[SCOPE.sCharacter('monarchist_leader').GetIdeology.GetName]の主張に対し口撃を繰り広げ、日和見主義であるとの批判を行った。"
+ french_pretenders_pulse.16.f: "「君は本日の召喚の意味はわかっているのだろう。これ以上の遅延行為はやめたまえ」\n\n「無論、陛下のご意志は、細心の注意と迅速さをもって実行されるだろう。だが輝かしき我らが国の歴史を考えれば、陛下の命令が万人に受け入れられることは、陛下の望みなのではないだろうか？」\n\n「君のお遊びにはもううんざりなのだよ、[SCOPE.gsInterestGroup('monarchist_opposition').GetLeader.GetLastNameNoFormatting]」"
+ french_pretenders_pulse.16.a: "[SCOPE.gsInterestGroup('monarchist_opposition').GetLeader.GetSheHe]がやり過ぎないよう、口を閉じるように促すんだ。"
+ french_pretenders_pulse.16.b: "熱烈で実に楽しい見世物だ。"
+ french_pretenders_pulse.17.t: "渦巻く不満"
+ french_pretenders_pulse.17.d: "[ROOT.GetCountry.GetName]を悩ます急進主義者の急増により、国家が直面する不安の責任が、[SCOPE.sCharacter('monarch_scope').GetFullName][SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]と[SCOPE.sCharacter('monarch_scope').GetIdeology.GetName]の理念にのしかかっている。"
+ french_pretenders_pulse.17.d1: "諸国民の春による革命の流れの中、[ROOT.GetCountry.GetName]が直面する不安の責任が、[SCOPE.sCharacter('monarch_scope').GetFullName][SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]と[SCOPE.sCharacter('monarch_scope').GetIdeology.GetName]の理念にのしかかっている。"
+ french_pretenders_pulse.17.f: "フランスでは王殺しが度々起こっていた。その革命は炎と銃撃によって行われ、煮えたぎるような怒りの潮流が一度に解き放たれた。同じように、その支配者たちは危険の前兆をよく理解していた。憎しみのこもった顔に、殺気立った視線。それはまるで、相応しい火種を待っているかのようだった。"
+ french_pretenders_pulse.17.a: "民意というものは、ひいき目に見ても気まぐれだ。"
+ french_pretenders_pulse.17.b: "[SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]の治世が実現するのなら、骨が何本か折れようが構いはしない。"
+ french_pretenders_pulse.17.a1: "覚悟を決めて、嵐を乗り切らねばならない。"
+ french_pretenders_pulse.17.b1: "この潮流を、今ここで断ち切らなければならない。"
+ french_pretenders_pulse.18.t: "シャルル10世の死"
+ french_pretenders_pulse.18.d: "七月革命以前に[ROOT.GetCountry.GetName]を統治していたシャルル10世が、亡命先の[SCOPE.sCountry('slovenia_owner_scope').GetName]で亡くなった。レジティミストの支持者は、彼の遺体を[ROOT.GetCountry.GetNameNoFormatting]に帰して埋葬するよう請願している。"
+ french_pretenders_pulse.18.f: "王は死んだが、古くからの言葉を口にしようという者はほとんどいなかった。何千という人々が、亡命した王の遺体をフランスに帰し、埋葬するように求めた。「それが伝統なのだから」彼らはそう言った。その一方で、何千もの人々が死体を燃やすのだと固く決意していた。「コレラだ」そう彼らは言った。"
+ french_pretenders_pulse.18.a: "彼は1830年に自らの権利を放棄したのだ。"
+ french_pretenders_pulse.18.b: "七月がもたらした分断が癒えるよう努力しよう。"
+ french_pretenders_pulse.19.t: "亡骸の帰還"
+ french_pretenders_pulse.19.d: "ナポレオン・ボナパルトの遺体が[SCOPE.sCountry('saint_helena_owner_scope').GetName]から返還され、セントヘレナから[ROOT.GetCountry.GetAdjective]の地へと移送された。皇帝の遺体を埋葬することは、かつての帝国を復興させる機会でもある。"
+ french_pretenders_pulse.19.f: "「我らの栄華に大いに貢献した彼の遺体をフランスの地に帰し、彼が勝ち取った栄誉でその棺を取り囲むことで、共通の祖国が負う恩義を返すという役目が私のために残されているということを、私は幸せに思う」"
+ french_pretenders_pulse.19.a: "ようやく皇帝を安らかな眠りにつかせることができた。"
+ french_pretenders_pulse.19.b: "この機会を活かし、ボナパルティストの機嫌を取るのだ。"
+ french_pretenders.7.t: "新たな君主"
+ french_pretenders.7.d: "[ROOT.GetCountry.GetAdjective]の王政が新たに復活し、摂生が一時的に王位についた今、復活したフランスの王冠をどの王朝に託すかを決める時が来た。"
+ french_pretenders.7.f: "ランスでは金が鳴り響くが、王座には王がいない。三名家はお互いから距離を置いており、王位の継承者たちは継承者は王位を手にしようとはしていない。1つの家が性急に動けば、2つの家と戦争になるのだ。フランスの人々は「正しい」王が王位につくことを急ぐ様子もなく、ただ王が王座につくことだけを望んでいた。"
+ french_pretenders.7.a: "ボナパルト家が我々を栄光に導くだろう。"
+ french_pretenders.7.b: "オルレアン家が繁栄をもたらしてくれるだろう。"
+ french_pretenders.7.c: "ブルボン家が革命の罪を償わせるだろう。"
+ french_pretenders.7.d1: "古き王朝たちは、自分たちが当てにならないことを自ら証明してみせた。"
+ pretenders_7_legitimists_tt: "[SCOPE.sCountry('reflexive_reference_france').GetName]の王位が[SCOPE.sCharacter('legitimist_character').GetIdeology.GetName]の王位請求者に託されます"
+ pretenders_7_orleanist_tt: "[SCOPE.sCountry('reflexive_reference_france').GetName]の王位が[SCOPE.sCharacter('orleanist_character').GetIdeology.GetName]の王位請求者に託されます"
+ pretenders_7_bonapartist_tt: "[SCOPE.sCountry('reflexive_reference_france').GetName]の王位が[SCOPE.sCharacter('bonapartist_character').GetIdeology.GetName]の王位請求者に託されます"
+ pretenders_7_fourth_way_tt: "古き王朝を捨て去り、[SCOPE.sCountry('reflexive_reference_france').GetName]の王位を[SCOPE.sCharacter('prospective_monarch_scope').GetFullName][SCOPE.sCharacter('prospective_monarch_scope').GetPrimaryRoleTitle]に託します"

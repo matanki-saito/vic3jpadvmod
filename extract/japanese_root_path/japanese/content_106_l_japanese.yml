@@ -1,5 +1,5 @@
 ﻿l_japanese:
-#Aigun and Beijing
+ #Aigun and Beijing
  je_the_eastern_border: "東方の支配者"
  je_the_eastern_border_reason: "太平洋の海軍大国になるという我々の野心と、中央アジアにおける我々の植民地政策には、長期にわたる[SCOPE.sCountry('china_scope').GetName]との国境紛争を[ROOT.GetCountry.GetName]にとって好ましい形で解決することが必要です。"
  russia_treaty_of_beijing: "北京条約"

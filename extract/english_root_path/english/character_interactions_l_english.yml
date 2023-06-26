@@ -11,6 +11,12 @@
  CHARACTER_INTERACTION_TOOLTIP: "$CHARACTER_INTERACTION_HEADER$$CHARACTER_INTERACTION_ERRORS$$CHARACTER_INTERACTION_REQUIREMENTS$$CHARACTER_INTERACTION_INFO$$CHARACTER_INTERACTION_EFFECTS$$CHARACTER_INTERACTION_DESC$"
  CHARACTER_INTERACTION_CONFIRMATION: "$CHARACTER_INTERACTION_TOOLTIP$\n\nAre you sure?"
  CHARACTER_INTERACTION_ON_COOLDOWN: "[CharacterInteraction.GetName|v] is on cooldown until [Date.GetString|v]"
+ CHARACTER_INTERACTION_NAME: "[CharacterInteraction.GetName][AddLocalizationIf(CharacterInteraction.IsOnCooldown(Character.Self), 'INTERACTION_COOLDOWN')]"
+ INTERACTION_COOLDOWN: " ([CharacterInteraction.GetCooldown(Character.Self)])"
+
+ demobilize_general: "Demobilize General"
+ demobilize_general_info: "If ordered to perform an early [Concept('concept_mobilize_general','$concept_mobilize_general_demobilization$')], [Character.GetFullName] and [Character.GetHerHis] troops would immediately stand down and return to [Character.GetHomeHQ.GetName], but a portion of their mobilization cost would still be incurred for [Character.MakeScope.ScriptValue('num_months_mobilization_cost_after_early_demobilization')|v0] months."
+ demobilize_general_tt: "Has been [Concept('concept_mobilize_general','$concept_mobilize_general_mobilized$')] for at least [Character.MakeScope.ScriptValue('num_months_before_permit_demobilization')|v0] months (currently: [Character.MakeScope.Var('num_months_mobilized').GetValue|v0] )"
 
  grant_command_to_ruler: "Grant Command"
  remove_command_from_ruler: "Retire from Command"
