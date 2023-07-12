@@ -1697,7 +1697,7 @@
  bic_breakup.1.t:0 "イギリスによる支配の終焉？"
  bic_breakup.1.d:0 "指導者がおらず、植民地の統治者からの支援もないため、[ROOT.GetCountry.GetName]は崩壊寸前です。どうやら、[SCOPE.sCulture('british_culture').GetName]の支配は終焉を迎えているようです。"
  bic_breakup.1.f:0 "「持ち場を放棄だって？もう持ち場も軍も関係ない。数時間後には、ここはヒンズー教徒であふれかえっているか、火事になっているか、あるいはその両方かだ。さあ、文句を言うのはやめてその袋を持て。取り付けられていないもので価値があるものは全部持っていくんだ。こっちはロンドンに安全にたどり着けるよう手配する」"
- bic_breakup.1.a:0 "インドは王子たちの間で分割される。"
+ bic_breakup.1.a:0 "インドは藩王たちの間で分割される。"
  bic_breakup.1.b:0 "これはインド国家の誕生だ。"
  bic_breakup.1.c:0 "イギリスの統治は何としてでも維持しなければならない。"
  india_princes_independent_tt:0 "全ての[concept_subject]の国が独立し、私たちの[Concept('concept_state','$concept_states$')]はその国々の間で分割されることになります。"
