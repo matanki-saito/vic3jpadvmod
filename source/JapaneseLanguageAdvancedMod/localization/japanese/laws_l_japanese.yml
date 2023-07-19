@@ -363,7 +363,7 @@
  pm_homesteading:0 "自営農"
  pm_homesteading_building_subsistence:0 "自営農"
  pm_privately_owned_plantation:0 "個人所有"
- pm_publicly_traded_plantation:0 "公開企業"
+ pm_publicly_traded_plantation:0 "公開取引"
  pm_government_run_plantation:0 "国営"
  ideology_jacksonian_democrat:0 "ジャクソン流民主主義"
  ideology_jacksonian_democrat_desc:0 "このキャラクターは、政府における市民参加の拡大を提唱しています。なお、「市民」にはすべての国民が含まれるわけではありません。"

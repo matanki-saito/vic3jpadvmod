@@ -347,7 +347,7 @@
  dyn_c_funj_state:0 "フンジ"
  dyn_c_funj_state_adj:0 "フンジ"
  has_activated_dynamite:0 "ダイナマイトの稼働を開始しました"
- has_activated_public_trading:0 "公開企業を開始しました"
+ has_activated_public_trading:0 "公開取引を開始しました"
  expand_dei_cooldown_tt:0 "2年の間、東インド諸島の政権を拡張していません"
  generic_laws.2.c:0 "私たち自身が参加すれば、何らかの利益を得られるだろう。"
  generic_laws.3.c:0 "行き詰った法律を先に進める絶好の機会だ。　"
