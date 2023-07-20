@@ -636,7 +636,7 @@
  pm_publicly_traded_building_power_plant:0 "$pm_publicly_traded$"
  pm_publicly_traded_building_railway:0 "$pm_publicly_traded$"
  pm_trade_center_government_run:0 "$pm_government_run$"
- pm_government_run:0 "国営"
+ pm_government_run:0 "官営"
  pm_government_run_building_food_industry:0 "$pm_government_run$"
  pm_government_run_building_textile_mills:0 "$pm_government_run$"
  pm_government_run_building_furniture_manufacturies:0 "$pm_government_run$"
