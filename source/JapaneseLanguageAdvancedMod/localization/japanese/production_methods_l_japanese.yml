@@ -585,7 +585,7 @@
  pm_merchant_guilds_building_sulfur_mine:0 "$pm_merchant_guilds$"
  pm_merchant_guilds_building_gold_mine:0 "$pm_merchant_guilds$"
  pm_trade_center_merchant_guilds:0 "$pm_merchant_guilds$"
- pm_privately_owned:0 "個人所有"
+ pm_privately_owned:0 "私的所有"
  pm_privately_owned_building_coal_mine:0 "$pm_privately_owned$"
  pm_privately_owned_building_iron_mine:0 "$pm_privately_owned$"
  pm_privately_owned_building_lead_mine:0 "$pm_privately_owned$"

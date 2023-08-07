@@ -1982,7 +1982,7 @@
  modifier_state_soldiers_investment_pool_efficiency_mult:0 "$soldiers$ [concept_investment_pool]貢献効率"
  modifier_state_soldiers_investment_pool_efficiency_mult_desc:0 "$soldiers$から投資された利益がどの程度[concept_investment_pool]へと貢献するのかに対する増減補正です"
  modifier_country_private_buildings_protected:0 "非政府施設の縮小を禁止"
- modifier_country_private_buildings_protected_desc:0 "個人所有の[Concept('concept_building','$concept_buildings$')]の縮小が法的に認められているかどうか"
+ modifier_country_private_buildings_protected_desc:0 "私的所有の[Concept('concept_building','$concept_buildings$')]の縮小が法的に認められているかどうか"
  modifier_country_disable_investment_pool:0 "投資プールを無効化"
  modifier_country_disable_investment_pool_desc:0 "[concept_investment_pool]への再投資と利用を一切禁止します"
  modifier_interest_group_in_government_attraction_mult:0 "$concept_in_government$の[Concept('concept_interest_group','$concept_interest_groups$')]の[Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')]"

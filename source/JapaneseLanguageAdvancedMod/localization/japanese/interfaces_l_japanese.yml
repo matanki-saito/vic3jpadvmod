@@ -5663,7 +5663,7 @@
  BUILDING_TYPE_ECONOMY_OF_SCALE_CAP_TOOLTIP:0 "[STATE.GetName]の[BUILDING_TYPE.GetName]は、レベル[MODIFIER.GetValueWithBreakdownFor('building_economy_of_scale_level_cap_add')]になるまで[concept_economy_of_scale]効果の対象になります"
  DESIGNATE_STRATEGIC_OBJECTIVE_REACHED_MAX:0 "[Country.GetNameNoFormatting]が、この[concept_theater]における[Concept('concept_strategic_objective','$concept_strategic_objectives$')]の上限に達しました"
  DESIGNATE_STRATEGIC_OBJECTIVE_IMPOSSIBLE_STATE:0 "[State.GetNameNoFormatting]は、[Country.GetAdjectiveNoFormatting]敵の[concept_front]内になく、[Country.GetNameNoFormatting]の所有でもありません"
- CANNOT_DOWNSIZE_BLOCKING_ECONOMIC_LAW:0 "我々の[SelectLocalization(GetPlayer.IsValid,'ECONOMIC_SYSTEM_LAW_GROUP','Economic System')][concept_law]では、個人所有の[Concept('concept_building','$concept_buildings$')]を縮小することが認められていません"
+ CANNOT_DOWNSIZE_BLOCKING_ECONOMIC_LAW:0 "我々の[SelectLocalization(GetPlayer.IsValid,'ECONOMIC_SYSTEM_LAW_GROUP','Economic System')][concept_law]では、私的所有の[Concept('concept_building','$concept_buildings$')]を縮小することが認められていません"
  INCORPORATE_STATE_HAS_DIPLOMATIC_PLAY_IN_REGION:0 "[concept_decentralized_nation]が、この[concept_state_region]で[concept_diplomatic_play]を進行中です"
  INCORPORATE_STATE_HAS_TRUCE_IN_REGION:0 "休戦中であり、この[concept_state_region]の[concept_decentralized_nation]に対する[concept_colonization_rights]を持たないので[concept_colony]を併合することができません"
  ESTABLISH_COLONY_REVOLUTIONARY:0 "革命中の州は、内戦が終結するまで州を[Concept('concept_colony','$concept_colonize$')]することができません。"
