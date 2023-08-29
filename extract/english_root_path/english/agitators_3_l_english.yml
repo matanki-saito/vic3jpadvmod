@@ -215,7 +215,7 @@
  natural_borders.4.b: "Perhaps appeasement is the best approach."
  notification_fra_natural_borders_notification_name: "French Ambitions"
  notification_fra_natural_borders_notification_desc: "[SCOPE.sCountry('france_scope').GetName] has announced its intentions to expand towards its 'natural borders', spanning from the Atlantic to the Rhine."
- notification_fra_natural_borders_notification_tooltip: "#header $fra_natural_borders_notification_name$#!\n$TOOLTIP_DELIMITER$\n$fra_natural_borders_notification_desc$"
+ notification_fra_natural_borders_notification_tooltip: "#header $notification_fra_natural_borders_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_fra_natural_borders_notification_desc$"
  france_annex_luxembourg: "Purchase Luxembourg"
  france_annex_luxembourg_desc: "Luxembourg lies within our natural borders, and should be part of France. Perhaps a generous offer would persuade their overlord to accept a sale."
  natural_borders.5.t: "The Purchase of Luxembourg"

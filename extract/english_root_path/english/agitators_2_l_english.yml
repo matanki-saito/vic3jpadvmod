@@ -515,7 +515,7 @@ garibaldi_popularity_modifier_tier_4: "The General"
 garibaldi_popularity_modifier_tier_5: "Hero of the Two Worlds"
 
 garibaldi_events.1.t: "Garibaldi Offers His Services"
-garibaldi_events.1.d: "Judging our struggle against [SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName] just, the Italian revolutionary and nationalist [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to allign with our cause, offering up his services as a general."
+garibaldi_events.1.d: "Judging our struggle against [SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName] just, the Italian revolutionary and nationalist [SCOPE.sCharacter('garibaldi_scope').GetFullName] has decided to align with our cause, offering up his services as a general."
 garibaldi_events.1.f: ""I offer neither pay, nor quarters, nor food;\nI offer only hunger, thirst, forced marches, battles and death.\nLet him who loves his country with his heart, and not merely with his lips, follow me."" # Garibaldi
 garibaldi_events.1.a: "Have [SCOPE.sCharacter('garibaldi_scope').GetFullName] lead our armies."
 garibaldi_events.1.b: "We have no use for this rabble-rousing wildcard."

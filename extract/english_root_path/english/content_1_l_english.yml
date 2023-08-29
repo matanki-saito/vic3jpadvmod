@@ -1639,7 +1639,7 @@
  je_sick_man_advance:0 "Advances the Journal Entry 'The Sick Man of Europe'"
  luxurious_parties:0 "Luxurious Parties"
  notification_ig_leader_memento_mori_name:1 "[SCOPE.sCharacter('memento_mori_leader').GetFullName] ([SCOPE.gsInterestGroup('memento_mori_ig').GetTextIcon]) Retires"
- notification_ig_leader_memento_mori_desc:0 "[SCOPE.sCharacter('memento_mori_leader').GetFullName], the leader of the [SCOPE.gsInterestGroup('memento_mori_ig').GetName], has retired from political life."
+ notification_ig_leader_memento_mori_desc:1 "[SCOPE.sCharacter('memento_mori_leader').GetFullName], the leader of the [SCOPE.gsInterestGroup('memento_mori_ig').GetName], has retired from political life. [SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetFullName], a known [SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetIdeology.GetName], now leads the interest group."
  notification_ig_leader_memento_mori_tooltip:0 "#header $notification_ig_leader_memento_mori_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_memento_mori_desc$"
  iron_horse_raids:0 "Iron Horse Raids"
  csa_releasable_tt:0 "The American Civil War has happened"

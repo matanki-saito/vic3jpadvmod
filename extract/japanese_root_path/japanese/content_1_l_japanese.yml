@@ -1634,7 +1634,7 @@
  je_sick_man_advance: "ジャーナル記事「ヨーロッパの病人」が進展します"
  luxurious_parties: "豪奢なる政党"
  notification_ig_leader_memento_mori_name: "[SCOPE.sCharacter('memento_mori_leader').GetFullName] ([SCOPE.gsInterestGroup('memento_mori_ig').GetTextIcon])が引退"
- notification_ig_leader_memento_mori_desc: "[SCOPE.gsInterestGroup('memento_mori_ig').GetName]のリーダーである[SCOPE.sCharacter('memento_mori_leader').GetFullName]が政界から引退しました。"
+ notification_ig_leader_memento_mori_desc: "[SCOPE.gsInterestGroup('memento_mori_ig').GetName]のリーダーである[SCOPE.sCharacter('memento_mori_leader').GetFullName]が政界から引退しました。[SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetIdeology.GetName]として知られる[SCOPE.gsInterestGroup('memento_mori_ig').GetLeader.GetFullName]が、利益集団のリーダーになりました。"
  notification_ig_leader_memento_mori_tooltip: "#header $notification_ig_leader_memento_mori_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ig_leader_memento_mori_desc$"
  iron_horse_raids: "鉄騎襲来"
  csa_releasable_tt: "アメリカ南北戦争が勃発しました"

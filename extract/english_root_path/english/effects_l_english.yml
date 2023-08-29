@@ -294,7 +294,7 @@
   
  ADD_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] becomes part of the [concept_government]"
  REMOVE_RULING_INTEREST_GROUP:0 "[INTEREST_GROUP.GetName] is removed from the [concept_government]"
- SET_RULING_PARTY: "[PARTY.GetName] is added to the [concept_government] while everyone else are removed"
+ SET_RULING_PARTY: "[PARTY.GetName] [Party.GetMembersSummary] is added to the [concept_government] while everyone else are removed"
  SET_RULING_INTEREST_GROUPS:0 "The specified set of Interest Groups are added to the [concept_government] while everyone else are removed"
  
  ADD_MODIFIER:1 "$SUBJECT_NAME$ gets #tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
@@ -422,7 +422,11 @@
  KILL_POPULATION_PERCENT_THIRD: "$VALUE|1%v$ of $FILTER_DESC$ in [COUNTRY.GetName] lose their lives"
  KILL_POPULATION_PERCENT_IN_STATE_THIRD: "$VALUE|1%v$ of $FILTER_DESC$ in [STATE.GetName] lose their lives"
 
- ADD_CIVIL_WAR_PROGRESS:0 "Change progress of civil war by $VALUE|%$"
+ KILL_POPULATION: "$VALUE|0v$ $FILTER_DESC$ lose their lives"
+ KILL_POPULATION_THIRD: "$VALUE|0v$ $FILTER_DESC$ in [COUNTRY.GetName] lose their lives"
+ KILL_POPULATION_IN_STATE_THIRD: "$VALUE|0v$ $FILTER_DESC$ in [STATE.GetName] lose their lives"
+
+ ADD_CIVIL_WAR_PROGRESS:1 "Change progress of [concept_civil_war] by $VALUE|%0-$"
  ADD_LAW_PROGRESS:0 "Change progress of law [Law.GetName] by $VALUE|0%$"
 
  MAKE_INDEPENDENT:0 "[COUNTRY.GetName] becomes independent from [TARGET_COUNTRY.GetName]"
@@ -435,9 +439,9 @@
  SET_SUBSIDIZED:1 "Start [Concept('concept_subsidies', '$concept_subsidizing$')] [Building.GetName]"
  SET_SUBSIDIZED_NEGATIVE:1 "Stop [Concept('concept_subsidies', '$concept_subsidizing$')] [Building.GetName]"
   
- ADD_MOMENTUM:1 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName]"
- ADD_MOMENTUM_FIRST:1 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName]"
- ADD_MOMENTUM_THIRD:1 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName]"
+ ADD_MOMENTUM:2 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName] [Party.GetMembersSummary]"
+ ADD_MOMENTUM_FIRST:2 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName] [Party.GetMembersSummary]"
+ ADD_MOMENTUM_THIRD:2 "#v $VALUE|%+=0$#! [concept_momentum] will be added to [Party.GetName] [Party.GetMembersSummary]"
  RESOLVE_PLAY_FOR:0 "[Country.GetName] enforces their war goals and leaves [TARGET_DIPLOMATIC_PLAY.GetName]"
 
  CHANGE_CHARACTER_RELIGION:0 "[Character.GetFullName] becomes [TARGET_RELIGION.GetName]"

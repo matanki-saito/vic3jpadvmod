@@ -236,10 +236,10 @@
   coup_pulse_events.10.b: "This is clearly evidence of some sort of plot."
 
   coup_pulse_events.11.t: "For the Defense of [SCOPE.sState('military_exercises_state').GetName]"
-  coup_pulse_events.11.d: "The [SCOPE.gsInterestGroup('coup_ig').GetName], in light of recent unrest, have requested to carry out a series of unscheduled military exercises in [SCOPE.sState('military_exercises_state').GetStateRegion.GetName]."
-  coup_pulse_events.11.f: "The column of soldiers wound up and down the road, four shoulders wide and so long that the traveler could not see the end of it. An officer on a horse passed by, extending a baton with clear intent.\n\n"This route has been closed for passage to [SCOPE.sState('military_exercises_state').GetStateRegion.GetNameNoFormatting]!""
+  coup_pulse_events.11.d: "The [SCOPE.gsInterestGroup('coup_ig').GetName], in light of recent unrest, have requested to carry out a series of unscheduled military exercises in [SCOPE.sState('military_exercises_state').GetName]."
+  coup_pulse_events.11.f: "The column of soldiers wound up and down the road, four shoulders wide and so long that the traveler could not see the end of it. An officer on a horse passed by, extending a baton with clear intent.\n\n"This route has been closed for passage to [SCOPE.sState('military_exercises_state').GetNameNoFormatting]!""
   coup_pulse_events.11.a: "They have no legitimate reason to be doing this."
-  coup_pulse_events.11.b: "The security of [SCOPE.sState('military_exercises_state').GetStateRegion.GetName] is paramount, even if this is irregular."
+  coup_pulse_events.11.b: "The security of [SCOPE.sState('military_exercises_state').GetName] is paramount, even if this is irregular."
 
   coup_pulse_events.12.t: "State Figures Invited to Religious Service"
   coup_pulse_events.12.d: "Numerous prominent state figures have been invited to a special religious service administered by the [SCOPE.gsInterestGroup('coup_ig').GetName]. This invitation has come suddenly, and disrupted several figures' schedules."
@@ -466,7 +466,7 @@
 
   agitators_law_events.11.t: "The [SCOPE.sState('capital_scope').GetStateRegion.GetCityHubName] Citizens' Assocation"
   agitators_law_events.11.d: "A social club popular with the educated class has held a salon in [SCOPE.sState('capital_scope').GetStateRegion.GetCityHubName], with [SCOPE.sCharacter('supporting_agitator').GetFullName] speaking in favor of [SCOPE.sLaw('current_law_scope').GetName] as an honored guest."
-  agitators_law_events.11.f: ""That is, indubitably, the case. But have you considered what the reception of such a thing would be?"\n\n[SCOPE.sCharacter('supporting_agitator').GetLastNameNoFormatting] nodded towards the speaker, then back around the wood-paneled room. [SCOPE.sCharacter('supporting_agitator').GetSheHe|U] put down [SCOPE.sCharacter('supporting_agitator').GetHerHis] cup.\n\n"I have spend some time thinking of it—we must, in all things, consider the thoughts of those who behold a thing for the first time. A first viewing is carried out with the eyes of an innocent, with mind open for new possibilities...""
+  agitators_law_events.11.f: ""That is, indubitably, the case. But have you considered what the reception of such a thing would be?"\n\n[SCOPE.sCharacter('supporting_agitator').GetLastNameNoFormatting] nodded towards the speaker, then back around the wood-paneled room. [SCOPE.sCharacter('supporting_agitator').GetSheHe|U] put down [SCOPE.sCharacter('supporting_agitator').GetHerHis] cup.\n\n"I have spent some time thinking of it—we must, in all things, consider the thoughts of those who behold a thing for the first time. A first viewing is carried out with the eyes of an innocent, with mind open for new possibilities...""
   agitators_law_events.11.a: "They seem like the sort to know what is best."
   agitators_law_events.11.b: "Encourage the further development of these salons."
 
@@ -797,6 +797,7 @@
   modifier_conservative_fearmongering: "Accused of Revolutionary Sympathies"
   modifier_conservative_fearmongering_failed: "Campaign of Fear Rejected"
   modifier_agitator_out_of_touch: "Out of Touch"
+  modifier_farmers_voting_conservative: "Conservative Agrarianism"
   modifier_excessively_radical_prescription: "An Excess of Progress"
   modifier_radical_prescription_devout: "Radical Prescription"
   modifier_radical_prescriptions: "Brilliant Satirist"
@@ -1896,11 +1897,11 @@
   revolution_pulse_events.31.c: "Shoot every tenth man."
 
   revolution_pulse_events.32.t: "Vox Diaboli"
-  revolution_pulse_events.32.d: "In [SCOPE.sState('vox_diaboli_state').GetName], [SCOPE.sPop('majority_religion').GetReligion.GetName] devotees under [SCOPE.sCharacter('devout_ig_leader').GetFullName] have called for a violent revolt, with [SCOPE.sPop('minority_religion').GetReligion.GetName] people scapegoated for their current woes."
+  revolution_pulse_events.32.d: "In [SCOPE.sState('vox_diaboli_state').GetName], [SCOPE.sReligion('majority_religion').GetName] devotees under [SCOPE.sCharacter('devout_ig_leader').GetFullName] have called for a violent revolt, with [SCOPE.sReligion('minority_religion').GetName] people scapegoated for their current woes."
   revolution_pulse_events.32.f: "To be sure one cannot misinterpret the voice of the people for the voice of God, one should mind that the Arch Enemy knows scripture better than they do. Indeed, it is these sweet, silver-tongued sermons that stoke strife. The cost is, invariably, a tidal wave of blood."
   revolution_pulse_events.32.a: "Gag the ringleaders."
-  revolution_pulse_events.32.b: "Post soldiers outside of [SCOPE.sPop('minority_religion').GetReligion.GetName] congregations."
-  revolution_pulse_events.32.c: "Address some of the [SCOPE.sPop('majority_religion').GetReligion.GetNameNoFormatting]'s concerns."
+  revolution_pulse_events.32.b: "Post soldiers outside of [SCOPE.sReligion('minority_religion').GetName] congregations."
+  revolution_pulse_events.32.c: "Address some of the [SCOPE.sReligion('majority_religion').GetNameNoFormatting] concerns."
 
   revolution_pulse_events.33.t: "Greed is Good"
   revolution_pulse_events.33.d: "[SCOPE.sCharacter('industrialists_ig_leader').GetFullName], and the [SCOPE.gsInterestGroup('industrialists_ig').GetName] of [SCOPE.sState('greed_is_good_state').GetName] have delivered a declaration of intent: all industry production to cease until an amenable government is installed."

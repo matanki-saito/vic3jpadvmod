@@ -215,7 +215,7 @@
  natural_borders.4.b: "宥和こそが最善の選択なのかもしれない。"
  notification_fra_natural_borders_notification_name: "フランスの野望"
  notification_fra_natural_borders_notification_desc: "[SCOPE.sCountry('france_scope').GetName]が、大西洋からライン川まで伸びる自らの「自然の国境」へと向かって拡大する意図を明らかにした。"
- notification_fra_natural_borders_notification_tooltip: "#header $fra_natural_borders_notification_name$#!\n$TOOLTIP_DELIMITER$\n$fra_natural_borders_notification_desc$"
+ notification_fra_natural_borders_notification_tooltip: "#header $notification_fra_natural_borders_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_fra_natural_borders_notification_desc$"
  france_annex_luxembourg: "ルクセンブルクの購入"
  france_annex_luxembourg_desc: "ルクセンブルクは我々の自然国境の内にあり、よってフランスの一部であるべきです。寛大な申し出をすれば、ルクセンブルクの統治者を説得し、売却に応じさせることができるかもしれません。"
  natural_borders.5.t: "ルクセンブルクの購入"

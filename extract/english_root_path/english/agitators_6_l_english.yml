@@ -18,6 +18,8 @@
   unopposed_whistleblower: "Only Honest Face"
   successful_law_ram: "Double Up"
   successful_law_focus: "Double Stake"
+  partisan_favoritism: "Partisan Favoritism"
+  compromised_law_ram: "Compromised Effort"
   failed_law_ram: "Split"
   failed_law_abandoned: "Folded Hand"
   just_like_lenin: "Adamant Opposition"
@@ -117,6 +119,9 @@
   opposition_law_collapse: "Wasted Shot"
   pot_stirrer: "Legislative Chamber Pest"
   successful_redraft: "Course Corrected Key Law"
+  ignored_provisions: "Ignored Suggested Provisions"
+  disadvantageous_favoritism: "Disadvantageous Favoritism"
+  architect_of_change: "Architect of Change"
   
   ## Debate Events
   agitator_legal_events.11.t: "Good Point, Actually..."

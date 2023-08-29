@@ -7,6 +7,7 @@
  obligation_for_outer_manchuria_tt: "我々の恩義を外満洲と交換する。"
  transfer_of_outer_manchuria_tt: "外満洲をロシアによる支配へと移行することを要求する。"
  china_explosion_point_2_tt: "#BOLD アヘン戦争#!と#BOLD 反乱#!により、中国が十分に#BOLD 不安定#!になりました"
+ war_with_china_not_russia_tt: "中国と戦争中ではなく、中国が他の国と[concept_war]中である"
  russo_chinese.1.t: "北京条約"
  russo_chinese.1.d: "[SCOPE.sCountry('china_scope').GetAdjective]政府に対する我々の現在の影響力を利用し、満州に正式な国境線を引き、[SCOPE.sState('outer_manchuria_scope').GetName]を正式に[ROOT.GetCountry.GetName]へと移管する条約を提案しました。"
  russo_chinese.1.f: "この条約の条項は、双方の国の代表者により交換された日から効力を生じ、永久に神聖かつ不可侵に履行されなければなりません。"

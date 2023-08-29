@@ -9,6 +9,7 @@
  obligation_for_outer_manchuria_tt:0 "We will trade in our Obligation for Outer Manchuria."
  transfer_of_outer_manchuria_tt:0 "We will demand the transfer of Outer Manchuria to Russian rule."
  china_explosion_point_2_tt:0 "China has been sufficiently #BOLD destabilized#! by the #BOLD Opium Wars#! and #BOLD rebellions#!"
+ war_with_china_not_russia_tt: "Is not at war with China, and China is at [concept_war] with another country"
 
  russo_chinese.1.t:0 "The Beijing Treaty"
  russo_chinese.1.d:0 "With our present leverage over the [SCOPE.sCountry('china_scope').GetAdjective] government, we have proposed a treaty to draw a formal border in Manchuria, formally transfering [SCOPE.sState('outer_manchuria_scope').GetName] to [ROOT.GetCountry.GetName]."

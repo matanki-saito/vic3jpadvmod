@@ -167,7 +167,7 @@
  custom_ship_gangut: "ガングート"
  #Dreyfus Affair
  je_dreyfus_affair: "ドレフュス事件"
- je_dreyfus_affair_reason: "「私は弾劾する」の出版以来、フランスの社会的、政治的構造を引き裂こうとする不和が拡大している。一人の男の無実をめぐる議論から始まったこの論争は、今やはるかに大きな次元に達している。\n\n君主主義者と共和主義者、自由主義者と保守主義者、敬虔なカトリック教徒と世俗主義者が対立している。そしてそのすべてが、1つの#bold 問い#!への答えを見出そうとしているのだ。すなわち、この国はセントルイスのフランスなのか、それともヴォルテールのフランスなのか。" #bold the question#! once and for all: Is our country the France of St. Louis, or the France of Voltaire?"
+ je_dreyfus_affair_reason: "「私は弾劾する」の出版以来、フランスの社会的、政治的構造を引き裂こうとする不和が拡大している。一人の男の無実をめぐる議論から始まったこの論争は、今やはるかに大きな次元に達している。\n\n君主主義者と共和主義者、自由主義者と保守主義者、敬虔なカトリック教徒と世俗主義者が対立している。そしてそのすべてが、1つの#bold 問い#!への答えを見出そうとしているのだ。すなわち、この国はセントルイスのフランスなのか、それともヴォルテールのフランスなのか。"
  je_dreyfus_status: "現在の事件の強度は、[SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_dreyfus_case_strength')]です。"
  je_dreyfus_affair_tt.1: "ドレフュスの運命は、彼を支援するために構築された事件の強度に依存します。\n\n - 事件の強度が#bold 10#!以上のであれば、完全な無罪となります。\n- 事件の強度が#bold 5#!から#bold 9#!の間であれば、軽微な刑となります。\n - 事件の強度が#bold 4#!以下の場合は、再び収監されることとなります。\n"
  je_dreyfus_affair_tt.3: "[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]では、再審への期待が着実に高まっており、他の事象に影響されない限り、#bold 5年#!後に再審が行われる可能性が高い。\n"

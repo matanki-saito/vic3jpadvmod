@@ -480,7 +480,6 @@
  je_unrecognized_power_reason: "いわゆる\"文明的な\"列強から忌避されている我々は、労苦と闘争を通じて自らの価値を彼らに証明し、国家の仲間として尊敬される地位を確保しなければなりません。 "
  je_the_hegemon: "覇権国"
  je_the_hegemon_reason: "我が国は世界に国力を示しましたし、大きな進歩も遂げました。しかし今後は、我が国の世界的な地位の裏付けとなる人口の確保に目を向ける必要があります。"
- je_the_hegemon_final_tt: "世界の$concept_population$.の半分を支配。"
  colonization_law_passed_complete_1: "植民地国家"
  colonization_law_passed_complete_1_desc: "おめでとうございます！これで最初の目標が完了しました。これからはあなた独自の覇権を確立する道を模索してみましょう。"
  hegemon_welcome: "覇権国家"

@@ -38,9 +38,9 @@
  INTEREST_GROUP_STATE_TOOLTIP:1 "#variable The [INTEREST_GROUP.GetName]#! in #variable [STATE.GetName]#!\n[concept_political_strength]: #variable [INTEREST_GROUP.GetPoliticalStrengthInState(STATE.Self)|D]#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_pop','$concept_population$')]: #variable [INTEREST_GROUP.GetPopulationInState(STATE.Self)|D]#!"
  INTEREST_GROUP_WILL_JOIN_PARTY:1 "Will join [PARTY.GetNameNoFormatting] on the next government reform"
  INTEREST_GROUP_WILL_JOIN_PARTY_TOOLTIP:1 "[InterestGroup.GetName] decided they will join [PARTY.GetName] on the next [concept_government_reform]"
- INTEREST_GROUP_AFFILIATION_TOOLTIP:0 "#HEADER Current Party affiliation: [PARTY.GetName]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
+ INTEREST_GROUP_AFFILIATION_TOOLTIP:1 "#HEADER Current Party affiliation#!\n[PARTY.GetName] [Party.GetMembersSummary]\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
  INTEREST_GROUP_AFFILIATION_TOOLTIP_NONE:0 "#HEADER Is not affiliated with any [Concept('concept_party','$concept_party$')]#!\n$TOOLTIP_DELIMITER$\n$AFFILIATION_DETAILS$"
- INTEREST_GROUP_AFFILIATION_TOOLTIP_LIST:0 "Affiliation with [Party.GetName]: #tooltippable #tooltip:[Party.GetTooltipTag]|[InterestGroup.GetTooltipTag],INTEREST_GROUP_AFFILIATION_BREAKDOWN $AFFILIATION_VALUE|+=0$#!#!"
+ INTEREST_GROUP_AFFILIATION_TOOLTIP_LIST:1 "#tooltippable #tooltip:[Party.GetTooltipTag]|[InterestGroup.GetTooltipTag],INTEREST_GROUP_AFFILIATION_BREAKDOWN $AFFILIATION_VALUE|+=0$#!#! with [Party.GetName] [Party.GetMembersSummary]"
  INTEREST_GROUP_AFFILIATION_BREAKDOWN:0 "[InterestGroup.GetAffiliationBreakdownForParty(Party.Self)]"
  
  CULTURE_STATE_TOOLTIP:0 "The [CULTURE.GetName] people in #variable [STATE.GetName]#!\nPopulation: #variable [STATE.GetPopulationForCulture(CULTURE.Self)|*1]#!"

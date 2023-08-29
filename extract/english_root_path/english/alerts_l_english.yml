@@ -95,9 +95,9 @@
  alert_has_decreasing_interests_alert_hint:2 "You can prevent this by using the [Concept('concept_declared_interest','$concept_declare_interests$')] action in the [concept_diplomatic_lens] if you have not yet reached your maximum declared interests, or you can reprioritize your declared interests to meet your current diplomatic ambitions."
  alert_has_decreasing_interests_alert_action:0 "Diplomacy Panel"
 
- alert_obligation_expiring_name:2 "[SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetAdjectiveNoFormatting] [concept_obligation] expiring"
- alert_obligation_expiring_desc:2 "The [concept_obligation] owed to us by [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName] will expire in #v [SCOPE.GetRootScope.GetDiplomaticRelations.CalcOwedObligationDaysLeft(GetPlayer.Self)]#! day(s)."
- alert_obligation_expiring_hint:3 "You should make use of the [concept_obligation] before it expires by either using it to improve relations with [SCOPE.GetRootScope.GetDiplomaticRelations.GetSecondCountry.GetName] or tie them into a Diplomatic Agreement or Play."
+ alert_obligation_expiring_name:3 "[SCOPE.GetRootScope.GetDiplomaticRelations.GetCountryWhichOwesObligation.GetAdjectiveNoFormatting] [concept_obligation] expiring"
+ alert_obligation_expiring_desc:3 "The [concept_obligation] owed to us by [SCOPE.GetRootScope.GetDiplomaticRelations.GetCountryWhichOwesObligation.GetName] will expire in #v [SCOPE.GetRootScope.GetDiplomaticRelations.CalcOwedObligationDaysLeft(GetPlayer.Self)]#! day(s)."
+ alert_obligation_expiring_hint:4 "You should make use of the [concept_obligation] before it expires by either using it to improve relations with [SCOPE.GetRootScope.GetDiplomaticRelations.GetCountryWhichOwesObligation.GetName] or tie them into a Diplomatic Agreement or Play."
  alert_obligation_expiring_action:0 "Diplomacy Panel"
 
  alert_has_convoys_being_sunk_name:1 "[concept_convoys] Raided"

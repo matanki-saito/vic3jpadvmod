@@ -152,6 +152,19 @@
  bg_military:0 "Military Buildings"
  bg_special:0 "Special Buildings"
  bg_conscription:0 "Conscription Buildings"
+ bg_shipyards: "Shipyards"
+ bg_subsistence_agriculture: "Subsistence Agriculture"
+ bg_subsistence_ranching: "Subsistence Ranching"
+ bg_gold_fields: "Gold Fields"
+ bg_arts: "Arts Buildings"
+ bg_power: "Power Plants"
+ bg_technology: "University Buildings"
+ bg_canals: "Canals"
+ bg_monuments: "Monuments"
+ bg_army: "Army Buildings"
+ bg_navy: "Naval Buildings"
+ bg_skyscraper: "Skyscrapers"
+ bg_monuments_hidden: "Monuments"
 
 #Factories
 
@@ -211,6 +224,11 @@
  building_khaju_bridge:0 "$building_dummy$"
  building_machu_picchu:0 "$building_dummy$"
  building_petra:0 "$building_dummy$"
+  # AP1
+ building_martandsuntemple:0 "$building_dummy$"
+ building_observatorygreenwich:0 "$building_dummy$"
+ building_temple_of_poseidon:0 "$building_dummy$"
+ building_wat_arun:0 "$building_dummy$"
 
   # Skyscraper
  building_skyscraper:0 "Skyscraper"

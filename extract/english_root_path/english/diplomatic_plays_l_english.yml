@@ -71,7 +71,7 @@
  DIPLO_PLAY_SWAY_OFFER_WAR_GOAL_DESC:0 "[WAR_GOAL.GetSwayDesc][ConcatIfNeitherEmpty( '\n$TOOLTIP_DELIMITER$\n', '$ERRORS$' )]"
  
  DIPLO_PLAY_OBLIGATION_TO_EXPIRATION: "#header Owes [concept_obligation] to $COUNTRY_NAME$#!\nLasts until #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ left)" 
- DIPLO_PLAY_OBLIGATION_FROM_EXPIRATION: "#header Owes [concept_obligation] from $COUNTRY_NAME$#!\nLasts until #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ left)" 
+ DIPLO_PLAY_OBLIGATION_FROM_EXPIRATION: "#header Owed [concept_obligation] from $COUNTRY_NAME$#!\nLasts until #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ left)" 
  DIPLO_PLAY_TRUCE_EXPIRATION: "#header Active Truce with $COUNTRY_NAME$#!\nLasts until #v $EXPIRATION_DATE$#! ($TIME_LEFT_FORMATTED$ left)"
 
  texan_war_of_independence:0 "Texan War of Independence"
@@ -114,6 +114,7 @@
  WARGOAL_COUNTRY_IDEOLOGICAL_DIFFERENCE_TOO_SMALL:0 "The [Concept('concept_government','$concept_governments$')] of [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are too ideologically similar"
  WARGOAL_COUNTRY_IS_NOT_COLONIZABLE:0 "[COUNTRY.GetName] is not a [concept_decentralized_nation]"
  WARGOAL_TARGET_IS_COLONIZABLE:0 "[COUNTRY.GetName] is a [concept_decentralized_nation]"
+ WARGOAL_SUBJECT_TRANSFER_NOT_ALLOWED: "[COUNTRY.GetName] is a #v $SUBJECT_TYPE$#! and cannot be targeted with $war_goal_transfer_subject_type_name$"
  
  YESMEN_ALWAYS_ACCEPT:0 "Will accept due to Yesmen"
  JOIN_DIPLO_PLAY_DESC:0 "#header Attempt to [concept_sway]#!\n$WILL_ACCEPT$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
@@ -138,7 +139,9 @@
  JOIN_DIPLO_PLAY_FACTOR_IDEOLOGICAL_OPINION:0 "$DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION$: #bold $VALUE|+=$#!"
  JOIN_DIPLO_PLAY_FACTOR_IDEOLOGICAL_OPINION_NEGATIVE:0 "$DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION_NEGATIVE$: #bold $VALUE|+=$#!"
  JOIN_DIPLO_PLAY_FACTOR_OWN_SECESSION_RISK:0 "Risk of [COUNTRY.GetAdjective] [concept_secession] spreading to [COUNTRY_THIRD_PARTY.GetName]: #bold $VALUE|+=$#!"
- JOIN_DIPLO_PLAY_FACTOR_NO_INTEREST_IN_RECOGNITION:0 "Sees no benefit to recognizing non-ally [COUNTRY.GetName]: #bold $VALUE|+=$#!"
+ JOIN_DIPLO_PLAY_FACTOR_RELUCTANT_TO_SUPPORT_UNRECOGNIZED:1 "Reluctant to support non-allied [concept_unrecognized_power] against a [concept_recognized_power]: #bold $VALUE|+=$#!"
+ JOIN_DIPLO_PLAY_FACTOR_RELUCTANT_TO_SUPPORT_UNRECOGNIZED_ENEMY_INSIGNIFICANT_DEMANDS: "Reluctant to support non-allied [concept_unrecognized_power] against a [concept_recognized_power] with insignificant demands: #bold $VALUE|+=$#!"
+ JOIN_DIPLO_PLAY_FACTOR_RELUCTANT_TO_SUPPORT_UNRECOGNIZED_SIGNIFICANT_DEMANDS: "Reluctant to support non-allied [concept_unrecognized_power] with significant demands against a [concept_recognized_power]: #bold $VALUE|+=$#!"
  
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_BASE_VALUE:0 "Base Value: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRATEGY:0 "$NAME|v$ [concept_ai_strategy]: #bold $VALUE|+=$#!"
@@ -155,11 +158,12 @@
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_STRONG_ARMY:0 "Strength of [Country.Adjective] army: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_PARTICIPANT_RANKS:0 "Low [concept_rank] of participants: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_CANNOT_BE_BELOW_VALUE:0 "[concept_neutrality] can never be less than $VALUE|v$"
- DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_FORCE_BALANCE:0 "Relative military strength and level of mobilization: #bold $VALUE|+=$#!"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_FORCE_BALANCE:1 "Relative military strength and level of [Concept('concept_mobilize_general', '$concept_mobilize_general_mobilization$')]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_LOYALISTS:0 "Number of [Concept('concept_loyalist','$concept_loyalists$')] in [Country.GetName]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_CIVIL_WAR_OR_UPRISING:0 "[concept_civil_war] or [concept_native_uprising]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_SHORT_WAR:1 "Short duration of [concept_war]: #bold $VALUE|+=$#!"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_EXISTENTIAL_PLAY:0 "Would be annexed if they back down: #bold $VALUE|+=$#!"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WILL_BE_ANNEXED: "$TAB$Would be annexed if they accept: #bold $VALUE|+=%$#!"
 
  DIPLO_PLAY_CONFIDENCE_PLAYER:0 "#v Player#!"
  DIPLO_PLAY_CONFIDENCE_PLAYER_DESC:0 "[Country.GetName] is player-controlled, and their level of [concept_confidence] is known only to them."

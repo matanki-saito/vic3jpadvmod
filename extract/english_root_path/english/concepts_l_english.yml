@@ -11,7 +11,7 @@
  concept_economy_health_healthy_short:0 "Healthy"
  concept_economy_health_unhealthy:0 "Unhealthy Economy"
  concept_economy_health_unhealthy_short:0 "Unhealthy"
- concept_economy_health_desc:0 "A [Concept('concept_country','$concept_country_possessive$')] economy is considered $concept_economy_health_healthy_short$ if #italic either#!:\n$TAB$@green_checkmark_box! its fixed incomes exceed its fixed expenses\n$TAB$@green_checkmark_box! its [concept_principal] is less than half their total [concept_credit]"
+ concept_economy_health_desc:1 "A [Concept('concept_country','$concept_country_possessive$')] economy is considered $concept_economy_health_healthy_short$ if #italic either#!:\n#indent_newline:3 • its fixed incomes exceed its fixed expenses#!\n#indent_newline:3 • its [concept_principal] is less than half their total [concept_credit]"
 
  concept_bankroll:0 "$bankroll$"
  concept_bankrolling:0 "Bankrolling"
@@ -351,7 +351,7 @@
  concept_enactment_setbacks: "Enactment Setbacks"
  concept_enactment_setback_short: "Setback"
  concept_enactment_setbacks_short: "Setbacks"
- concept_enactment_setback_desc: "While [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacting$')] a [concept_law] you may suffer $concept_enactment_setbacks_short$. This could be due to a [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] result at the $concept_enactment_of_laws_enactment$ checkpoint, a consequence of a [Concept('concept_enactment_debate','$concept_enactment_debate_short$')], or that [concept_enactment_success] chance fell below #v 0#!. If you accumulate #r [GetDefine('NPolitics', 'LAW_ENACTMENT_MAX_SETBACKS')]#! $concept_enactment_setbacks_short$, the $concept_enactment_of_laws_enactment$ #r fails#!."
+ concept_enactment_setback_desc:1 "While [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacting$')] a [concept_law] you may suffer $concept_enactment_setbacks_short$. This could be due to a [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] result at the $concept_enactment_of_laws_enactment$ checkpoint, a consequence of a [Concept('concept_enactment_debate','$concept_enactment_debate_short$')], or that [concept_enactment_success] chance fell below #v 0#!. If you accumulate #r [GetDefine('NPolitics', 'LAW_ENACTMENT_MAX_SETBACKS')]#! $concept_enactment_setbacks_short$, the $concept_enactment_of_laws_enactment$ #r fails#!.\n\n@warning! If the enactment #r fails#!, you will not be able to attempt to enact that $concept_law$ again for #v [GetDefine('NPolitics','LAW_ENACTMENT_COOLDOWN_DAYS')|0] days#!."
 
  concept_enactment_phase: "Enactment Phase"
  concept_enactment_phase_short: "Phase"
@@ -359,12 +359,6 @@
  concept_enactment_phases: "Enactment Phases"
  concept_enactment_phase_desc: "To [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] a [concept_law] you must successfully guide it through [GetDefine('NPolitics', 'LAW_ENACTMENT_MAX_PHASES')|v] $concept_enactment_phases_short$ [AddLocalizationIf(GetPlayer.IsValid,'concept_enactment_phase_ingame_added')]by achieving [Concept('concept_enactment_success','$concept_enactment_successes$')]. During this process there is a risk of getting [Concept('concept_enactment_setback','$concept_enactment_setbacks$')] that may cause the $concept_enactment_of_laws_enactment$ to #r fail#!."
  concept_enactment_phase_ingame_added: "- [GetPlayer.GetCustom('enactment_phase_0')|v], [GetPlayer.GetCustom('enactment_phase_1')|v], and [GetPlayer.GetCustom('enactment_phase_2')|v] - "
-
- concept_setback: "Enactment Setback"
- concept_setbacks: "Enactment Setbacks"
- concept_setback_short: "Setback"
- concept_setbacks_short: "Setbacks"
- concept_setback_desc: "During [concept_enactment_of_laws], you may have a Setback. This means that your [Concept('concept_politician','$concept_politicians$')] either [concept_enactment_stall], [Concept('concept_enactment_debate','$concept_enactment_debate_short_debated$')], or the [concept_enactment_success] went below #v 0#!. If the $concept_law$ being $concept_enactment_of_laws_enacted$ recieves #r [GetDefine('NPolitics', 'LAW_ENACTMENT_MAX_SETBACKS')]#! Setbacks, the $concept_enactment_of_laws_enactment$ #r fails#!."
 
  concept_money:1 "Money"
  concept_money_desc:5 "$concept_money$ makes the world go 'round. It is used to pay for [Concept('concept_government_wage','$concept_government_wages$')] and [concept_bureaucracy] production, [concept_construction] materials, industry [concept_subsidies], [concept_convoys] for your [Concept('concept_trade_route','$concept_trade_routes$')], and last but probably not least, your military. You gain $concept_money$ by [Concept('concept_taxes','$concept_taxing$')] your [Concept('concept_pop', '$concept_pops$')] and enforcing [concept_tariffs]. Excess $concept_money$ in your [concept_treasury] balance is used to pay off your [concept_loans] or stockpile gold in your [concept_gold_reserves]. Insufficient $concept_money$ increases your $concept_loans$ towards your [Concept('concept_credit','$concept_credit_limit$')], which is determined by how much $concept_money$ is in your $concept_buildings$' [concept_cash_reserves]."
@@ -1273,10 +1267,10 @@
  concept_unrealized_taxes_desc:0 "Unrealized Taxes is the amount of [concept_taxes] that the [concept_country] is failing to collect due to various reasons, including but not limited to insufficient [concept_tax_capacity] and [concept_tax_waste]."
 
  concept_budget_additional_income:0 "Additional Income"
- concept_budget_additional_income_desc:1 "Income that doesn't fit into another category, often gained from the outcome of special events."
+ concept_budget_additional_income_desc:2 "Income that don't fit into another category, often gained from the outcome of special events."
 
  concept_budget_additional_expenses:0 "Additional Expenses"
- concept_budget_additional_expenses_desc:1 "Expenses that doesn't fit into another category, often incurred due to the outcome of special events."
+ concept_budget_additional_expenses_desc:2 "Expenses that don't fit into another category, often incurred due to the outcome of special events."
 
  concept_budget_diplomatic_pacts:0 "Diplomatic Pacts"
  concept_budget_diplomatic_pacts_desc:1 "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
@@ -1670,7 +1664,7 @@
  concept_agitators: "Agitators"
  concept_agitate: "Agitate"
  concept_agitator_possessive: "Agitator\\'s"
- concept_agitator_desc: "A [concept_character_role] for [Concept('concept_character','$concept_characters$')] who support a [concept_political_movement] independently of their [concept_interest_group]. The [concept_political_movement] they support is determined by their [concept_ideology] and that of their [concept_interest_group]. Their impact on their [concept_political_movement] is determined by the Agitator's [concept_popularity] and [Concept('concept_character_trait', '$concept_character_traits$')]."
+ concept_agitator_desc: "A [concept_character_role] for [Concept('concept_character','$concept_characters$')] who support a [concept_political_movement] independently of their [concept_interest_group]. Agitators may be invited with the #b Invite [concept_exile]#! character action or will appear randomly in your country, with their chance of appearance dependent upon your $concept_country$'s [concept_literacy].\n\nThe [concept_political_movement] they support is determined by their [concept_ideology] and that of their [concept_interest_group]. Their impact on their [concept_political_movement] is determined by the Agitator's [concept_popularity] and [Concept('concept_character_trait', '$concept_character_traits$')]."
  AGITATORS_TITLE: "[Concept('concept_agitator','$concept_agitators$')]"
  
  concept_exile: "Exile"
@@ -1700,3 +1694,5 @@
  concept_naval_invasion_support: "Naval Invasion Support"
  concept_naval_invasion_support_desc: "$concept_naval_invasion_support$ is a comparison of the amount of the [Concept('concept_flotilla','$concept_flotillas$')] you have assigned to naval invasion to the amount of [Concept('concept_battalion','$concept_battalions$')] taking part in that invasion. Each invading $concept_battalion$ requires a $concept_flotilla$ to avoid any negative penalties upon landing."
 
+ concept_capitulation_desire: "Capitulation Desire"
+ concept_capitulation_desire_desc: "An AI-controlled [concept_country] will try to capitulate if this value reaches 0 or higher."

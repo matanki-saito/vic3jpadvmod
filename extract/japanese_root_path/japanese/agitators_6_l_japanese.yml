@@ -17,6 +17,8 @@
  unopposed_whistleblower: "誠実な顔のみ"
  successful_law_ram: "ダブルアップ"
  successful_law_focus: "ダブルステーク"
+ partisan_favoritism: "パルチザンの優遇"
+ compromised_law_ram: "譲歩努力"
  failed_law_ram: "分割"
  failed_law_abandoned: "合掌"
  just_like_lenin: "断固とした対立"
@@ -105,6 +107,9 @@
  opposition_law_collapse: "無駄撃ち"
  pot_stirrer: "立法府の病"
  successful_redraft: "重要法案のコース修正"
+ ignored_provisions: "提案条項を無視"
+ disadvantageous_favoritism: "不利な優遇"
+ architect_of_change: "変動の立役者"
  ## Debate Events
  agitator_legal_events.11.t: "いいね、実は…"
  agitator_legal_events.11.d: "[SCOPE.sLaw('current_law_scope').GetName]法をめぐる議論が続く中、[SCOPE.sCharacter('opposing_agitator').GetFullName]は単純かつ致命的な欠陥を指摘した。これにより、改正草案が議論中だ。"

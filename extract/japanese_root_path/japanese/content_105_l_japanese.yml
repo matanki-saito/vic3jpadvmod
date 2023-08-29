@@ -507,7 +507,7 @@
  notification_colonial_conflict_region_demands_met_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName]が[SCOPE.sState('african_colony_state_recipient').GetName]における拡張から手を引き、彼らの植民地において[concept_claim]を与えました。"
  notification_colonial_conflict_region_demands_met_tooltip: "#header $notification_colonial_conflict_region_demands_met_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_region_demands_met_desc$"
  notification_colonial_conflict_region_demands_refused_name: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName]が我々の要求を拒みました！"
- notification_colonial_conflict_region_demands_refused_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName]は、我々が正当に[SCOPE.sState('african_colony_claim_state').GetName]の植民地を所有することを認めませんでした。"
+ notification_colonial_conflict_region_demands_refused_desc: "[SCOPE.sCountry('african_colony_conflict_recipient').GetName]は、我々が正当に[SCOPE.sState('african_colony_state_recipient').GetName]の植民地を所有することを認めませんでした。"
  notification_colonial_conflict_region_demands_refused_tooltip: "#header $notification_colonial_conflict_region_demands_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_region_demands_refused_desc$"
  notification_colonial_conflict_claim_demands_refused_name: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName]が我々の要求を拒みました！"
  notification_colonial_conflict_claim_demands_refused_desc: "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName]は我々の請求権を認めず、[SCOPE.sState('african_colony_claim_state').GetName]に植民地を維持する権利を主張しています。"

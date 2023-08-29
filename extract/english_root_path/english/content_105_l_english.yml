@@ -519,7 +519,7 @@
  notification_colonial_conflict_region_demands_met_tooltip:0 "#header $notification_colonial_conflict_region_demands_met_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_region_demands_met_desc$"
 
  notification_colonial_conflict_region_demands_refused_name:0 "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] Refused Our Demands!"
- notification_colonial_conflict_region_demands_refused_desc:0 "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] has failed to acknowledge our rightful claim to the colony in [SCOPE.sState('african_colony_claim_state').GetName]."
+ notification_colonial_conflict_region_demands_refused_desc:0 "[SCOPE.sCountry('african_colony_conflict_recipient').GetName] has failed to acknowledge our rightful claim to the colony in [SCOPE.sState('african_colony_state_recipient').GetName]."
  notification_colonial_conflict_region_demands_refused_tooltip:0 "#header $notification_colonial_conflict_region_demands_refused_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_conflict_region_demands_refused_desc$"
 
  notification_colonial_conflict_claim_demands_refused_name:0 "[SCOPE.sCountry('african_colony_claim_conflict_recipient').GetName] Refused Our Demands!"

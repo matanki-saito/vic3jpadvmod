@@ -1030,12 +1030,8 @@
  lesson_declare_interest_how_1_continue:0 "Find and click #b Declare Interest#! in the #b Diplomatic#! Lens"
 
  lesson_declare_interest_how_2:0 "$lesson_declare_interest_how_1$"
- lesson_declare_interest_how_2_desc:0 "Now select a [concept_strategic_region] in which to declare your [concept_interest]. Consider which other [Concept('concept_country','$concept_countries$')] are present or have $concept_interests$ in the $concept_strategic_regions_short$, as your declaration might cause you to come into conflict with them in the future."
- lesson_declare_interest_how_2_continue:0 "Declare an Interest in any $concept_country$"
+ lesson_declare_interest_how_2_desc:1 "Now select the target [concept_strategic_region] and declare an [concept_interest] in it. \nTake note of the other [Concept('concept_country','$concept_countries$')] that are present or have $concept_interests$ in the $concept_strategic_region$, as they have the same influence in this region as you when declaring your interest.\n\nYour new [concept_interest] starts out inactive. It takes #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] days#! for a new $concept_interest$ to activate. During this time it conveys no benefits to you."
  lesson_declare_interest_how_2_back:0 "Close Lens to backtrack"
-
- lesson_declare_interest_how_3:0 "$lesson_declare_interest_how_1$"
- lesson_declare_interest_how_3_desc:0 "Your new [concept_interest] starts out inactive. It takes #v [GetDefine('NDiplomacy','INTEREST_NUM_DAYS_CHANGE')|0] days#! for a new $concept_interest$ to activate. During this time it conveys no benefits to you."
 
  ### WHY
  lesson_declare_interest_why_1:0 "Why Declare an Interest"
@@ -1220,8 +1216,9 @@
  je_tutorial_increase_relations_reason:1 "Your ability to make it through the tumultuous 19th Century will increase greatly if you get along with countries around you, and maybe make one or two strong allies. [GetDiplomaticActionType('increase_relations').GetName] with [JournalEntry.GetTarget.GetCountry.GetName] to form a closer bond between your countries, increase the likelihood of them agreeing to future [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] and supporting your side in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]."
 
 
- je_tutorial_improve_rank:0 "Improve Rank"
- je_tutorial_improve_rank_reason:0 "In order to gain recognition on the international stage we should to increase our [concept_rank]."
+ je_tutorial_improve_rank:1 "Solidifying our Position"
+ je_tutorial_improve_rank_reason:1 "In order to gain recognition on the international stage we should look to increasing our [Concept('concept_country','$concept_country_possessive$')] standing on the world stage. We can accomplish this by either raising our national [concept_prestige] or by elevating our nation to a higher $concept_country$ [concept_rank]."
+ je_tutorial_improve_rank_goal: "Raise our national $concept_prestige$ up to #v [JournalEntry.GetTotalGoalValue]#! (Currently: #v [JournalEntry.CalcCurrentGoalValue]#!)"
 
  je_tutorial_prevent_revolution:0 "Stop the Revolution" #works, but displayed incorrectly
  je_tutorial_prevent_revolution_reason:1 "We have a [concept_revolution] brewing in our country. We should take the appropriate steps needed to quell this before it breaks out into a [concept_civil_war]."
@@ -1275,9 +1272,9 @@
  je_tutorial_capacity_deficit_goal:0 "Maintain a positive [concept_capacity] balance for [JournalEntry.CalcCurrentGoalValue|v0]/[JournalEntry.GetTotalGoalValue|v0] weeks"
 
  je_tutorial_declare_an_interest:0 "Declare an Interest"
- je_tutorial_declare_an_interest_reason:0 "To expand your influence beyond your borders, you need to declare [Concept('concept_interest','$concept_interests$')] in those [Concept('concept_strategic_region','$concept_strategic_regions$')] you have aspirations for. Declare an $concept_interest$ in a $concept_strategic_regions$ where you do not yet have a presence and wait until it activates."
- je_tutorial_declare_an_interest_status:1 "Declare and maintain more [Concept('concept_active_interest','$concept_active_interests$')] (#v [JournalEntry.CalcCurrentGoalValue] / [JournalEntry.GetTotalGoalValue]#!)"
- je_tutorial_declare_an_interest_goal:0 "Have #v [JournalEntry.GetTotalGoalValue]#! total [Concept('concept_active_interest','$concept_active_interests$')]."
+ je_tutorial_declare_an_interest_reason:0 "To expand your influence beyond your borders, you should look to declare an [concept_interest] in the [concept_strategic_region] in which the capital of another nation is. \nDeclare an $concept_interest$ in the $concept_strategic_region$ that contains [SCOPE.sC('target').GetCapital.GetName] the capital of [SCOPE.sC('target').GetName] and wait until it activates."
+ je_tutorial_declare_an_interest_status:3 "Maintain an [concept_active_interest] for [JournalEntry.CalcCurrentGoalValue|v0]/[JournalEntry.GetTotalGoalValue|v0] weeks"
+ je_tutorial_declare_an_interest_goal:1 "Declare and maintain an [Concept('concept_active_interest','$concept_active_interests$')] in [SCOPE.sC('target').GetCapital.GetStateRegion.GetStrategicRegion.GetName] for [JournalEntry.GetTotalGoalValue]#! weeks"
 
  je_tutorial_incorporate_state:0 "Incorporate State"
  je_tutorial_incorporate_state_reason:2 "There [SelectLocalization(GreaterThan_int32(GetPlayer.GetNumStatesThatCanBeIncorporated,'(int32)1'),'are','is')] currently [GetPlayer.GetNumStatesThatCanBeIncorporated] [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] that can be [Concept('concept_incorporated_state', '$concept_incorporated$')] in [GetPlayer.GetNameNoFlag]. [Concept('concept_incorporated_state','$concept_incorporating$')] a [concept_state] will increase your [Concept('concept_taxes','$concept_tax$')] revenue and make it easier to manage."
@@ -1399,6 +1396,5 @@
  
  suppress_localization_errors:0 "#debug custom_tooltip used on non-player-facing trigger to suppress errors, should never be visible to the player#!"
 
-
- je_tutorial_reach_end_date:0 "Reach the End Date"
- je_tutorial_reach_end_date_reason:0 ""
+ ### MISC
+ tut_customs_union_block_txt:0 "Unable to form/join Customs Unions before completing #b Improve Access to Consumer Goods#!."

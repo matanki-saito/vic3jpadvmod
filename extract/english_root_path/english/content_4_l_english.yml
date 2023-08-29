@@ -538,7 +538,6 @@
 
  je_the_hegemon:0 "The Hegemon"
  je_the_hegemon_reason:1 "We have shown the world what we are capable of. We have made great strides. Now however we should make sure we have the population to back our global standing."
- je_the_hegemon_final_tt:0 "Control half of the global $concept_population$."
 
  colonization_law_passed_complete_1:0 "Colonial Power"
  colonization_law_passed_complete_1_desc:2 "Well done! You have just completed your first objective and are now well on your way to establishing your own hegemony."

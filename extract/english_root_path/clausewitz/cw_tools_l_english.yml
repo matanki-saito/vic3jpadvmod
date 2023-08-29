@@ -81,3 +81,5 @@
  TOOLS_ANSWER_NO:0 "No#!"
  pdxns_math_AbsF_desc: "Get the positive representation of any valid float value"
  pdxns_math_AddF_desc: "Add two float values together"
+ pdxns_particle_CalcLodFactor_desc: "Calculate a level-of-detail factor for the particle. Takes an arbitrary \"size\" as input and outputs an approximate size-on-screen as a percentage (0.0 - 1.0)"
+ pdxns_ecs_AudioEventNode_desc: "Selects an Audio event instance\nThe output can be connected to e.g. a Create Component node of type 'Audio Emitter'.\nFor Wwise events with External Sources, append ':<source path>' to the 'audio_event_name' value in the .schematic file to point to a source .wem file"
