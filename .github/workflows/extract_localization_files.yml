@@ -49,7 +49,7 @@ jobs:
           mkdir game
           cd ..
           cd steamcmd
-          steamcmd.exe -dev -textmode -ignoredxsupportcfg +force_install_dir "../tmp/game" +login %STEAM_LOGIN_NAME% %STEAM_LOGIN_PASSWORD% +app_update 529340 validate +quit
+          steamcmd.exe -dev -textmode -ignoredxsupportcfg +force_install_dir "../tmp/game" +login %STEAM_LOGIN_NAME% +app_update 529340 validate +quit
         env:
           STEAM_LOGIN_NAME: ${{ secrets.STEAM_LOGIN_NAME }}
           STEAM_LOGIN_PASSWORD: ${{ secrets.STEAM_LOGIN_PASSWORD }}
