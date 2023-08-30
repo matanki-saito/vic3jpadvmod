@@ -185,8 +185,8 @@ def output(ctx: Context2):
             }
 
             if new_file_flag:
-                entry["context"] = ctx.japanese_stats[key]["value"]
-                entry["translation"] = ctx.japanese_stats[key]["value"]
+                entry["context"] = ctx.japanese_stats[key]["value"] if key in ctx.japanese_stats else ""
+                entry["translation"] = ctx.japanese_stats[key]["value"] if key in ctx.japanese_stats else ""
 
             elif key in ctx.current_stats:
                 if key in ctx.japanese_stats:
@@ -391,7 +391,9 @@ def main():
     try:
         context3: Context3 = output(context2)
     except Exception as e:
+        import traceback
         print(e)
+        print(traceback.format_exc())
         exit(1)
 
     update_files(context3)
