@@ -428,7 +428,7 @@
  garibaldi_popularity_modifier_tier_4:0 "将軍"
  garibaldi_popularity_modifier_tier_5:0 "二つの世界の英雄"
  garibaldi_events.1.t:0 "ガリバルディの尽力"
- garibaldi_events.1.d:0 "[SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName]に対する我々の戦いが正当なるものであると考えた、イタリアの革命家で民族主義者の[SCOPE.sCharacter('garibaldi_scope').GetFullName]は、我々の大義に賛同し、将軍として手助けしようと申し出ています。"
+ garibaldi_events.1.d:0 "[SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName]に対する我々の戦いが正当なるものであると考えた、イタリアの革命家で国家主義者の[SCOPE.sCharacter('garibaldi_scope').GetFullName]は、我々の大義に賛同し、将軍として手助けしようと申し出ています。"
  garibaldi_events.1.f:0 "「私が提供するのは、賃金や営舎、食料ではない。\n私が提供するのは、飢え、渇き、強行軍、戦闘、そして死だ。\n口先だけでなく、心の底から国を愛する者は、私に従え」"
  garibaldi_events.1.a:0 "[SCOPE.sCharacter('garibaldi_scope').GetFullName]に我々の軍を率いてもらおう。"
  garibaldi_events.1.b:0 "兵を煽って何をするかわからんやつに用などない。"

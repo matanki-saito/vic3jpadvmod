@@ -81,3 +81,5 @@
  TOOLS_ANSWER_NO:0 "いいえ#!"
  pdxns_math_AbsF_desc:0 ""
  pdxns_math_AddF_desc:0 ""
+ pdxns_particle_CalcLodFactor_desc:0 ""
+ pdxns_ecs_AudioEventNode_desc:0 ""

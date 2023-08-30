@@ -225,3 +225,8 @@
  agitator_legal_events.30.f:0 "賢明な弁護士は、民衆の声と神の声を混同しないよう忠告するだろう。より賢明な弁護士は、民衆の声を狂気と呼ぶ。最も賢明な弁護士は、天才と狂気は同じコインの表裏であることを理解している。それは、いつ耳を傾けるべきかを知るということなのだ。"
  agitator_legal_events.30.a:0 "この心変わりを歓迎しよう。"
  agitator_legal_events.30.b:0 "[SCOPE.sCharacter('supporting_agitator').GetInterestGroup.GetName]の反応から[SCOPE.sCharacter('supporting_agitator').GetFullName]を守ろう。"
+ partisan_favoritism:0 "パルチザンの優遇"
+ compromised_law_ram:0 "譲歩努力"
+ ignored_provisions:0 "提案条項を無視"
+ disadvantageous_favoritism:0 "不利な優遇"
+ architect_of_change:0 "変動の立役者"

@@ -32,3 +32,4 @@
  modifier_vladivostok_navy:0 "東方の支配者"
  modifier_vladivostok_navy_country:0 "太平洋の戦力投射"
  modifier_vladivostok_civilian:0 "東方の支配者"
+ war_with_china_not_russia_tt:0 "中国と戦争中ではなく、中国が他の国と[concept_war]中である"
