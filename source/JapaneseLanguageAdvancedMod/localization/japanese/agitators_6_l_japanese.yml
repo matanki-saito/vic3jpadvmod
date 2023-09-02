@@ -210,7 +210,7 @@
  agitator_legal_events.27.a:0 "よくやったと褒めてやろう。"
  agitator_legal_events.27.b:0 "統治に関する事柄は政府のものであり、罪の巣窟ではない。"
  agitator_legal_events.28.t:0 "条項がやってくる"
- agitator_legal_events.28.d:0 "[SCOPE.sInterestGroup('opposing_ig').GetName]と[SCOPE.gsInterestGroup('angry_ig').GetName]は[SCOPE.sLaw('current_law_scop').GetName]に関して少しでも有利な譲歩を引き出そうと競り合っている。[SCOPE.sCharacter('supporting_agitator').GetFullName]などは、譲歩せずに解決することを求めている。"
+ agitator_legal_events.28.d:0 "[SCOPE.gsInterestGroup('opposing_ig').GetName]と[SCOPE.gsInterestGroup('angry_ig').GetName]は[SCOPE.sLaw('current_law_scope').GetName]に関して少しでも有利な譲歩を引き出そうと競り合っている。[SCOPE.sCharacter('supporting_agitator').GetFullName]などは、譲歩せずに解決することを求めている。"
  agitator_legal_events.28.f:0 "古来より、迅速かつ堅実な意思決定の妨げとなるのが、「喧嘩っ早い子供たち」だ。年齢や学歴に関係なく、いつも喧々諤々としているものだ。2つのグループが何かを欲しがり、それを手に入れるまで他の人を埒外に置いてしまうのだ。問題は、どちらの赤子に哺乳瓶を渡すかである。"
  agitator_legal_events.28.a:0 "口論はほうっておけ。"
  agitator_legal_events.28.b:0 "黙らせることができるのであれば、どちらかにエサをやってもいい。"

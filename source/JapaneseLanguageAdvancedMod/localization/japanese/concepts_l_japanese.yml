@@ -353,7 +353,7 @@
  concept_state_regions:0 "州地域"
  concept_state_region_desc:0 "特定の[Concept('concept_province','$concept_provinces$')]のセットで固定された、世界の一部分。$concept_state_region$は通常、[concept_state]に相当します。特定の場合に$concept_state_region$は、2つ以上の[Concept('concept_country','$concept_countries$')]がそれぞれ同じ$concept_state_region$の中にある$concept_state$を保持する[concept_split_state]になることもあります。"
  concept_occupancy:0 "稼働率"
- concept_occupancy_desc:0 "定員に対し、ある[concept_building]がどれだけの雇用を達成しているかを示します。また、その稼働率はその施設の最大[Concept('concept_good_production','Productive')]効率をどれだけ活用できるかを決定します。もし$concept_building$にもっと多くの[concept_workforce]を雇用する余地があれば、常にそうしようとします。提供できる[concept_building_wage]によって雇用が制限されている場合、[concept_building_balance]がプラスのままである限り、$concept_building_wages$を増加させます。"
+ concept_occupancy_desc:0 "定員に対し、ある[concept_building]がどれだけの雇用を達成しているかを示します。また、その稼働率はその施設の最大[Concept('concept_good_production','生産')]効率をどれだけ活用できるかを決定します。もし$concept_building$にもっと多くの[concept_workforce]を雇用する余地があれば、常にそうしようとします。提供できる[concept_building_wage]によって雇用が制限されている場合、[concept_building_balance]がプラスのままである限り、$concept_building_wages$を増加させます。"
  concept_votes:0 "投票"
  concept_vote:0 "投票"
  concept_voting_rights:0 "投票権"

@@ -322,7 +322,7 @@
  hatmakersfeud_martyrs_for_the_cause:0 "傑出した殉教者"
  revolution_pulse2_events.9.t:0 "国家の手の内に"
  revolution_pulse2_events.9.d:0 "彼は監房の壁に頭をぶつけたのか？拷問されて死んだのか？[SCOPE.gsInterestGroup('jailtime_blues_ig').GetName]と関連がある革命家は、表向きにはコレラで死亡したということになっているものの、これを信じているのは騙されやすい者と、あえて真実から目を背けようとしている者だけでしょう。唯一確かなのは、彼の支持者は怒り狂っており、血を求めているということです。"
- revolution_pulse2_events.9.f:0 "「あれはフリーメイソンの仕業なんだよ。この道の先にある肉屋から聞いたんだが、刑務所長はあの忌々しい陰謀集団の一員なんだそうだ。やつらか、[SCOPE.sCulture('jailtime_blues_pop').GetNameNoFormatting]のどっちかだ。両方かもしれない。[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]もそうなんだ。だからあいつを消したのさ」\n\n「[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]が[SCOPE.sCulture('jailtime_blues_pop').GetNameNoFormatting]だって？」\n\n「いいか、小僧」薄暗い部屋に向かって煙の雲を吹きながら彼はこう言った。「世の中には学校では教えてくれないことがたくさんあるんだ」"
+ revolution_pulse2_events.9.f:0 "「あれはフリーメイソンの仕業なんだよ。この道の先にある肉屋から聞いたんだが、刑務所長はあの忌々しい陰謀集団の一員なんだそうだ。やつらか、[SCOPE.sCulture('jailtime_blues_pop').GetNameNoFormatting]人のどっちかだ。両方かもしれない。[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]もそうなんだ。だからあいつを消したのさ」\n\n「[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]が[SCOPE.sCulture('jailtime_blues_pop').GetNameNoFormatting]人だって？」\n\n「いいか、小僧」薄暗い部屋に向かって煙の雲を吹きながら彼はこう言った。「世の中には学校では教えてくれないことがたくさんあるんだ」"
  revolution_pulse2_events.9.a:0 "「人殺しどもめ」と群衆が叫ぶ。"
  revolution_pulse2_events.9.b:0 "確かなことは[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]と刑務所長にしかわからない。後者に#italic 丁重に#!聞いてみよう。"
  jailtime_blues_jail_stormed:0 "群衆に襲撃された刑務所"
