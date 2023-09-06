@@ -2809,7 +2809,7 @@
  INSTITUTION_INVESTMENT_LIST_ITEM:0 "#title [Institution.GetName]:#! #variable [Institution.GetInvestmentLevel]#!"
 
  CLOCK_TEXT:0 "#BOLD [TimeKeeper.GetCurrentDate.GetString]#!"
- CLOCK_DEBUG_TEXT:0 "[TimeKeeper.GetDayOfWeek] [TimeKeeper.GetTimeOfDay]"
+ CLOCK_DEBUG_TEXT:0 "[TimeKeeper.GetDayOfWeek]"
  CLOCK_PAUSED:0 "(Paused)"
  CLOCK_PLAYING:0 "Playing"
 
@@ -6862,10 +6862,10 @@
  CONVOY_DAMAGE_REDUCTION_NONE: "There were no escorting navies that could reduce the loss of [concept_convoys]."
  CONVOY_DAMAGE_REDUCTION_DESC: "Escorting navies were able to prevent the further loss of $AMOUNT|v$ [concept_convoys]."
  
- HOUR_NIGHT:1 "(4)"
- HOUR_MORNING:1 "(1)"
- HOUR_AFTERNOON:1 "(2)"
- HOUR_EVENING:1 "(3)"
+ HOUR_NIGHT: "Night"
+ HOUR_MORNING: "Morning"
+ HOUR_AFTERNOON: "Afternoon"
+ HOUR_EVENING: "Evening"
 
  DAY_MONDAY:0 "Monday"
  DAY_TUESDAY:0 "Tuesday"

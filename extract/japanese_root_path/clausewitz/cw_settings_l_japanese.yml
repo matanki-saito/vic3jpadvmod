@@ -79,6 +79,7 @@
  OPTION_CAP_144:0 "144"
  OPTION_CAP_165:0 "165"
  SETTING_TEXTURE_STREAMING:0 "テクスチャストリーミング"
+ SETTING_TEXTURE_STREAMING_TOOLTIP: "#T $SETTING_TEXTURE_STREAMING$#!\nテクスチャが必要に応じて読み込まれます。\n\nCPUのオーバーヘッド時間のいくらかを代償にGPUメモリの使用量を低下させます。少量のメモリによりGPUのパフォーマンスが向上する可能性があります。"
  SETTING_TEXTURE_STREAMING_CACHE:0 "テクスチャストリーミングキャッシュサイズ"
  SETTING_VALUE_MB:0 "$VALUE$MB"
  # GUI
