@@ -1,8 +1,8 @@
 ﻿l_english:
- SETTING_REFRACTION:0 "Refraction"
- SETTING_REFRACTION_QUALITY:0 "Refraction Quality"
- SETTING_MAPOBJECT_QUALITY:0 "Map Objects"
- SETTING_MAP_SSAO:0 "Map SSAO"
- SETTING_DOF:0 "Depth of field"
+ SETTING_REFRACTION: "Refraction"
+ SETTING_REFRACTION_QUALITY: "Refraction Quality"
+ SETTING_MAPOBJECT_QUALITY: "Map Objects"
+ SETTING_MAP_SSAO: "Map SSAO"
+ SETTING_DOF: "Depth of field"
  SETTING_LENS_FLARE: "Lens flare"
  SETTING_SECONDARY_LENS_FLARE: "Secondary lens flare"

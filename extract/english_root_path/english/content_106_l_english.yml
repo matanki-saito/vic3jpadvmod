@@ -4,8 +4,8 @@
  je_the_eastern_border:0 "The Ruler of the East"
  je_the_eastern_border_reason:0 "Our ambitions of becoming a Pacific naval power, and our colonial agenda in Central Asia, require that we resolve our long-standing border disputes with [SCOPE.sCountry('china_scope').GetName] in a manner favorable to [ROOT.GetCountry.GetName]."
 
- russia_treaty_of_beijing:0 "The Beijing Treaty"
- russia_treaty_of_beijing_desc:0 "The territory of Outer Manchuria is effectively isolated from the rest of China, and ripe for settlement. We could arrange a treaty to secure the territory by capitalizing on China's weakness."
+ je_the_eastern_border_treaty_of_beijing:0 "Present the Beijing Treaty"
+ je_the_eastern_border_treaty_of_beijing_desc:0 "The territory of Outer Manchuria is effectively isolated from the rest of China, and ripe for settlement. We could arrange a treaty to secure the territory by capitalizing on China's weakness."
  obligation_for_outer_manchuria_tt:0 "We will trade in our Obligation for Outer Manchuria."
  transfer_of_outer_manchuria_tt:0 "We will demand the transfer of Outer Manchuria to Russian rule."
  china_explosion_point_2_tt:0 "China has been sufficiently #BOLD destabilized#! by the #BOLD Opium Wars#! and #BOLD rebellions#!"
@@ -20,8 +20,8 @@
  modifier_ruler_of_the_east:0 "The Settlement of Manchuria"
  modifier_ruler_of_the_east_navy:0 "The Settlement of Manchuria"
 
- russia_chuguchak_protocol:0 "The Chuguchak Protocol"
- russia_chuguchak_protocol_desc:0 "The acquisition of additional territories in Central Asia is a priority of the Russian government. With China in turmoil, an opportunity exists to expand into contested regions."
+ je_the_eastern_border_russia_chuguchak_protocol:0 "Issue the Chuguchak Protocol"
+ je_the_eastern_border_russia_chuguchak_protocol_desc:0 "The acquisition of additional territories in Central Asia is a priority of the Russian government. With China in turmoil, an opportunity exists to expand into contested regions."
  obligation_for_central_asia_tt:0 "We will trade in our Obligation for territories in Central Asia."
  russia_chuguchak_protocol_req_tt:0 "The states of #BOLD Semireche#! and #BOLD Akmolinsk#! are controlled by Russia or a subject of Russia"
  transfer_of_central_asia_tt:0 "We will demand the transfer of the contested #BOLD Kazakh and Kyrgyz#! territories to Russian rule."

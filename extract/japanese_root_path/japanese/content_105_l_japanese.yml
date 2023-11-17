@@ -493,8 +493,8 @@
  slavery_double_standard: "奴隷労働に対するダブルスタンダード"
  expelled_visitors_from_colonies: "植民地からの来訪者の追放"
  #Scramble for Africa Journal Entry
- scramble_for_africa: "アフリカ分割"
- scramble_for_africa_reason: "私たちは、アフリカ大陸の支配権を争う植民地競争に加わり、自らの植民地帝国を切り開くことを決意しました。"
+ je_scramble_for_africa: "アフリカ分割"
+ je_scramble_for_africa_reason: "私たちは、アフリカ大陸の支配権を争う植民地競争に加わり、自らの植民地帝国を切り開くことを決意しました。"
  scramble_for_africa_0_states: "アフリカの植民地では形勢不利になっていますが、かつての栄光を維持する希望はあります。"
  scramble_for_africa_3_states: "アフリカにおける我が国の植民地帝国はまだ初期段階にありますが、この地域の重要な存在と見なされるに十分な将来性を示しています。"
  scramble_for_africa_4_states: "アフリカにおける我が国の植民地帝国は、その慎ましやかな起源を越えて成長し、確固たる野心を示しています。"

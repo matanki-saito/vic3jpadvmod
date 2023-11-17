@@ -82,6 +82,13 @@
  SETTING_OCCUPATION_STRIPES: "Striped Occupation Visuals"
  SETTING_OCCUPATION_STRIPES_TOOLTIP: "#T $SETTING_OCCUPATION_STRIPES$#!\nEnable colored stripes as occupation visuals on the map instead of country flag textures"
 
+ SETTING_PORTRAIT_RENDER_SCALE: "Portrait Render Scaling"
+ SETTING_PORTRAIT_RENDER_SCALE_TOOLTIP: "#T SETTING_PORTRAIT_RENDER_SCALE#!\nImprove character portrait detail level by upscaling render results, at the cost of some more rendering performance."
+
+ OPTION_PORTRAIT_RENDER_SCALE_NONE: "×1.0 - None"
+ OPTION_PORTRAIT_RENDER_SCALE_MEDIUM: "×1.5 - Medium"
+ OPTION_PORTRAIT_RENDER_SCALE_HIGH: "×2.0 - High"
+
  ui_skin_theme: "User Interface"
  ui_skin_theme_desc: "The buttons, frames, windows, headers, etc. in the game."
  papermap_theme: "Paper Map"

@@ -92,6 +92,8 @@
  ideology_humanitarian_desc: "#lore このキャラクターは、人類の擁護者です。すべての男、女、子どもは、国家によって一連の不可侵で譲れない権利を保証されるべきであると考えています。"
  ideology_protectionist: "保護主義者"
  ideology_protectionist_desc: "#lore このキャラクターは、国内産業と国際貿易を国家が厳しく監視し、規制すべきであると考えています。"
+ ideology_humanitarian_royalist: "啓蒙専制君主"
+ ideology_humanitarian_royalist_desc: "#lore この人物は、社会の理想的な形とは、啓蒙的で人間主義者的な君主が統治する、根本的に平等主義的な国家であると考えています。#!"
  #Royal Marriage
  wedding.2.t: "配偶者を捜索"
  wedding.2.d: "[SCOPE.sCharacter('royal_marriage_character').GetPrimaryRoleTitle][SCOPE.sCharacter('royal_marriage_character').GetFullName]はそれなりに優れた出自のパートナーとの出会いを求めています。"
@@ -220,7 +222,7 @@
  france_annex_luxembourg_desc: "ルクセンブルクは我々の自然国境の内にあり、よってフランスの一部であるべきです。寛大な申し出をすれば、ルクセンブルクの統治者を説得し、売却に応じさせることができるかもしれません。"
  natural_borders.5.t: "ルクセンブルクの購入"
  natural_borders.5.d: "[SCOPE.sCountry('lux_overlord').GetName]は賢明にも、[SCOPE.sCountry('lux_scope').GetName]の購入に関する我々の条件に同意した。この領土は[ROOT.GetCountry.GetAdjective]国家の一部として、本来あるべき所に戻った。"
- natural_borders.5.f: "土地を買う、批判の声を黙らせる、労働力を雇う… 正しい物の見方をすれば、金でできることに限りなどない。十分な資金があれば、一国を買うことすらできる。"
+ natural_borders.5.f: "土地を買う、批判の声を黙らせる、労働力を雇う…正しい物の見方をすれば、金でできることに限りなどない。十分な資金があれば、一国を買うことすらできる。"
  natural_borders.5.a: "ここまで国境を伸ばすのは自然なことだ。"
  luxembourg_payment: "ルクセンブルクの支払い"
  luxembourg_payment_received: "ルクセンブルクの支払い"

@@ -191,6 +191,8 @@
  region_gulf_of_alaska:0 "Gulf of Alaska"
  region_coral_sea:0 "Coral Sea"
  region_arafura_sea:0 "Arafura Sea"
+ region_north_philippines_sea: "North Philippines Sea"
+ region_south_philippines_sea: "South Philippines Sea"
  region_bering_sea:0 "Bering Sea"
  region_north_pacific_ocean_01:0 "North Pacific Ocean"
  region_north_pacific_ocean_02:0 "North Pacific Ocean"

@@ -1,5 +1,5 @@
 ﻿l_japanese:
- SETTING_VALUE_WARNING:0 "$VALUE|0X$"
- SETTING_VALUE_PERCENTAGE_WARNING:0 "$VALUE|%0X$"
- RECOMMENDED_GUI_SCALE_TOO_HIGH:1 "#X $VALUE|%0$より上に設定するとインターフェイスがスクリーンの外にはみ出ます。#!"
- RECOMMENDED_GUI_SCALE:1 "$VALUE|%0$より上に設定するとインターフェイスがスクリーンの外にはみ出ます。"
+ SETTING_VALUE_WARNING: "$VALUE|0X$"
+ SETTING_VALUE_PERCENTAGE_WARNING: "$VALUE|%0X$"
+ RECOMMENDED_GUI_SCALE_TOO_HIGH: "#X $VALUE|%0$より上に設定するとインターフェイスがスクリーンの外にはみ出ます。#!"
+ RECOMMENDED_GUI_SCALE: "$VALUE|%0$より上に設定するとインターフェイスがスクリーンの外にはみ出ます。"
