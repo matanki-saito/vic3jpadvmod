@@ -38,4 +38,5 @@
  SETTINGS_INPUT_RESET_INPUT_PROFILE:0 "デフォルトにリセット"
  SETTINGS_INPUT_BINDING_TEXT:0 "'$INPUT_ACTION$' アクションの入力バインディングを選択してください : \n\n$INPUT_NAME$"
  SETTINGS_INPUT_BINDING_WARNING_TEXT:0 "警告 : この入力バインディングは '$INPUT_ACTION$' にすでに存在しています！\n'$SETTINGS_INPUT_CONFIRM$' を押すと古いバインディングを消去します"
- APPLY:0 ""
+ APPLY:0 "適用"
+ SETTINGS_INPUT_BINDING_MODIFIERS_WARNING_TEXT:0 "警告 : 入力バインディングはモディファイアキーのみでは構成できません"

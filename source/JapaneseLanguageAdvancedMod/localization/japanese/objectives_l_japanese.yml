@@ -50,3 +50,5 @@
  SELECTED_OBJECTIVE_RECOMMENDED_GAME_RULE_DESC:0 "[GameRuleSetting.GetDescription]。目標「$NAME$」では次の設定が推奨されます : #variable $RULE$#!。"
  objective_tutorial_name_PER:0 "#v $PER$#!"
  objective_tutorial_desc_PER:0 "#lore $PER_FLAVOR_TEXT$#!"
+ objective_tutorial_name_CLM:0 "#v $CLM$#!"
+ objective_tutorial_desc_CLM:0 "#lore $CLM_FLAVOR_TEXT$#!"

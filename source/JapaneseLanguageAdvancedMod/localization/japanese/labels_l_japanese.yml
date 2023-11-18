@@ -11,3 +11,5 @@
  label_water_desc:0 "$label_water$ [concept_terrain]"
  label_forested:0 "森林"
  label_forested_desc:0 "$label_forested$ [concept_terrain]"
+ label_travel_harsh_environment:0 "過酷な移動環境"
+ label_travel_harsh_environment_desc:0 "$label_travel_harsh_environment$"

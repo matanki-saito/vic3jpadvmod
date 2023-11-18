@@ -89,3 +89,8 @@
  table_asset_4_theme:0 "机のオブジェクト (右下) "
  table_asset_4_theme_desc:0 "ズームアウト時にマップ横の机の右下に表示されるオブジェクト。"
  building_sets_themes:0 "建物のセット"
+ SETTING_PORTRAIT_RENDER_SCALE:0 "肖像の描画スケーリング"
+ SETTING_PORTRAIT_RENDER_SCALE_TOOLTIP:0 "#T SETTING_PORTRAIT_RENDER_SCALE#!\n描画結果をアップサンプリングすることで、キャラクターの肖像画の詳細度を高めますが、描画パフォーマンスが少し低下します。"
+ OPTION_PORTRAIT_RENDER_SCALE_NONE:0 "×1.0 ―なし"
+ OPTION_PORTRAIT_RENDER_SCALE_MEDIUM:0 "×1.5 ―中"
+ OPTION_PORTRAIT_RENDER_SCALE_HIGH:0 "×2.0 ―高"

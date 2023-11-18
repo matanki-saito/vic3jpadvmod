@@ -31,3 +31,4 @@
  OBSERVER_PLAYER_NAME:0 "プレイヤー : [GetPlayer.PlayerName]"
  OBSERVER_AI:0 "AI"
  SORT_BY:0 "ソート : "
+ OPEN_BETA_VERSION:0 "#header [GetGameVersionInfo]#!\nMPチェックサム : [GetMPChecksum|V] $MODIFIED_CHECKSUM$ [GetRandomLogInfo]"
