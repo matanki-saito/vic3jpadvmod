@@ -64,7 +64,7 @@
  formation.16.f:0 "「使節を派遣する用意しろ。私はツァーリと話をしたい。よく聞け。我々の要求は単純だ。我々の独立はもう売りに出していない。ロシアは我が国民に対するあらゆる課税措置をやめ、自分たちの要塞を取り壊す。我々は、シャイターンの総力を挙げて、後方から戦闘に参加する準備をしている。」"
  formation.17.t:0 "[SCOPE.sCountry('formation_country').GetAdjective]統一"
  formation.17.d:0 "[SCOPE.sCountry('formation_country').GetName]は、[SCOPE.sStrategicRegion('capital_region_scope').GetName]の新興勢力として浮上しました。"
- formation.17.f:0 "新たな夜が明け、新たな国が世界の舞台に立ちます。[ROOT.GetCountry.GetAdjectiveNoFormatting]栄光は必然の未来です。"
+ formation.17.f:0 "新たな夜が明け、新たな国が世界の舞台に立ちます。[ROOT.GetCountry.GetAdjectiveNoFormatting]の栄光は必然の未来です。"
  formation.18.t:0 "ヨーロッパの中心"
  formation.18.d_1:0 "国は[ROOT.GetCountry.GetName]の復活を宣言し、中央ヨーロッパの復古覇権国家としての地位を確立しました。"
  formation.18.d_2:0 "ドイツ全土の統一と[ROOT.GetCountry.GetName]の宣言によって、ヨーロッパの支配者として、そしてゆくゆくは全世界の支配者としての地位を確立しました。"
