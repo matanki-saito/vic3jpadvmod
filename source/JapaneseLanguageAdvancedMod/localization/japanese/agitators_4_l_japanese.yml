@@ -1587,7 +1587,7 @@
  revolution_pulse_events.27.b:0 "交渉担当者を派遣し、占拠者との調整を行おう。"
  revolution_pulse_events.28.t:0 "[SCOPE.sState('feminine_brigades_state').GetName]のフェミニン・オーダー"
  revolution_pulse_events.28.d:0 "[SCOPE.sState('feminine_brigades_state').GetName]の[SCOPE.gsInterestGroup('devout_ig').GetName]に所属する女性グループが、反政府革命家への医療・物資支援を目的とする組織を設立した。"
- revolution_pulse_events.28.f:0 "「憎むべき暴君である[ROOT.GetCountry.GetRuler.GetLastName]には、我らの神殿に口出しする権利などなく、我らが神に受け入れられることもない！」ベールを被り講壇に立つ女性はそう言った。\n\n「我々は人間の法を認めない。なぜなら、法はそれを作った者と同じく不完全な存在だからだ！」"
+ revolution_pulse_events.28.f:0 "「憎むべき暴君である[ROOT.GetCountry.GetRuler.GetLastNameNoFormatting]には、我らの神殿に口出しする権利などなく、我らが神に受け入れられることもない！」ベールを被り講壇に立つ女性はそう言った。\n\n「我々は人間の法を認めない。なぜなら、法はそれを作った者と同じく不完全な存在だからだ！」"
  revolution_pulse_events.28.a:0 "女性を殉教者にするわけにはいかない。"
  revolution_pulse_events.28.b:0 "女性宗教団体を取り締まれ。"
  revolution_pulse_events.29.t:0 "犯罪と神格"

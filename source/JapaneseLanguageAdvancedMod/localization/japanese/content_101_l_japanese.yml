@@ -222,7 +222,7 @@
  warlord_china_events.100.a:0 "あーあ。"
  warlord_china_events.110.t:0 "メロン割り"
  warlord_china_events.110.d:0 "[SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle]である[SCOPE.sCharacter('prisoner_killing_warlord').GetFullName]は、[SCOPE.sCharacter('prisoner_killing_warlord')GetHerselfHimself]自身の愉悦のために、刀剣で囚人の頭蓋骨を粉砕していることが公になってしまう危険性がある。"
- warlord_china_events.110.f:0 "「どうして余人が私をオールド・エイティシックスと呼ぶか知っているかね？それは私が持つある物の大きさが...」\n\n [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle]の言葉は絶叫と骨のきしむ音でかき消された。[SCOPE.sCharacter('prisoner_killing_warlord').GetSheHe]によって[SCOPE.sCharacter('prisoner_killing_warlord').GetHerHis]の刀が囚人の頭部目掛けて振り下ろされたからだ。\n\n \"...メキシコ銀貨でピッタリ86ドルだ」 "
+ warlord_china_events.110.f:0 "「どうして余人が私をオールド・エイティシックスと呼ぶか知っているかね？それは私が持つある物の大きさが...」\n\n [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle]の言葉は絶叫と骨のきしむ音でかき消された。[SCOPE.sCharacter('prisoner_killing_warlord').GetSheHe]によって[SCOPE.sCharacter('prisoner_killing_warlord').GetHerHis]の刀が囚人の頭部目掛けて振り下ろされたからだ。\n\n「...メキシコ銀貨でピッタリ86ドルだ」 "
  warlord_china_events.110.a:0 "皆に知る権利がある。"
  warlord_china_events.110.b:0 "隠蔽が最善策だ。"
  notification_ig_leader_steps_down_name:0 "[SCOPE.gsInterestGroup('stepping_down_leader_ig').GetName]のリーダーが辞任"

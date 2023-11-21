@@ -82,4 +82,4 @@
  pdxns_math_AbsF_desc:0 "有効な浮動小数点値の正の値を取得します"
  pdxns_math_AddF_desc:0 "2つの浮動小数点値を足し合わせます"
  pdxns_particle_CalcLodFactor_desc:0 "パーティクルのLOD係数を計算します。任意の「サイズ」を入力情報として取得し、スクリーン上のおおよそのサイズを割合 (0.0 ～ 1.0) で出力します。"
- pdxns_ecs_AudioEventNode_desc:0 "音響のイベントインスタンスを選択します\n出力は、例えば「オーディオエミッター」タイプの「コンポーネント作成」ノードに接続できます。\n外部ソースを持つWwiseイベントの場合、.schematicファイルの「audio_event_name」値に ':&lt;source path&gt;' を追加して、ソースの.wemファイルを指定するようにします。"
+ pdxns_ecs_AudioEventNode_desc:0 "音響のイベントインスタンスを選択します\n出力は、例えば「オーディオエミッター」タイプの「コンポーネント作成」ノードに接続できます。\n外部ソースを持つWwiseイベントの場合、.schematicファイルの「audio_event_name」値に ':<source path>' を追加して、ソースの.wemファイルを指定するようにします。"

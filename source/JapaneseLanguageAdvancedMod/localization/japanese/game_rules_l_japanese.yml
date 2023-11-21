@@ -3,7 +3,7 @@
  rule_ai_behavior:0 "プレイヤーへのAIの態度"
  setting_lenient_ai_behavior:0 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_lenient_ai_behavior_desc #high 寛大#!#!#!"
  setting_lenient_ai_behavior_desc:0 "プレイヤー国に対するAI国の態度はより友好的で、[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]における対応もより寛容なものになります"
- setting_standard_ai_behavior:0 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_standard_ai_behavior_desc 標準#!#!"
+ setting_standard_ai_behavior:0 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_standard_ai_behavior_desc 公平#!#!"
  setting_standard_ai_behavior_desc:0 "AI国はプレイヤーの国とAIの国を同等と見なし、プレイヤーに特別な温情をかけることはありません"
  setting_harsh_ai_behavior:0 "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_harsh_ai_behavior_desc #high 無情#!#!#!"
  setting_harsh_ai_behavior_desc:0 "プレイヤー国の意図に対するAI国の態度はより懐疑的で、[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]における対応もより苛烈なものになります"

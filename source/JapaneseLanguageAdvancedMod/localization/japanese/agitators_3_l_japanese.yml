@@ -133,7 +133,7 @@
  bonapartist_button:0 "ボナパルティストを推奨 : #variable [ROOT.GetCountry.MakeScope.Var('bonapartist_progress').GetValue|0]#! (#tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],je_divided_monarchists_bonapartist_var_tooltip [ROOT.GetCountry.MakeScope.Var('bonapartist_progress_next').GetValue|1+=]#!) "
  bonapartist_button_desc:0 "フランスは皇帝ナポレオンのもとで栄光の絶頂に達した。ボナパルト家の復古は、我が国にとって明らかに正しい事である。"
  swayed_to_french_monarchist:0 "あからさまな君主主義の影響力"
- orleanist_button:0 "オルレアン主義者を推奨 : #variable [ROOT.GetCountry.MakeScope.Var('orleanist_progress').GetValue|0]#! (#tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],je_divided_monarchists_orleanist_var_tooltip [ROOT.GetCountry.MakeScope.Var('orleanist_progress_next').GetValue|1+=]#!) "
+ orleanist_button:0 "オルレアニストを支持する : #variable [ROOT.GetCountry.MakeScope.Var('orleanist_progress').GetValue|0]#! (#tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],je_divided_monarchists_orleanist_var_tooltip [ROOT.GetCountry.MakeScope.Var('orleanist_progress_next').GetValue|1+=]#!) "
  orleanist_button_desc:0 "フランスの未来を支えるのは、貿易と商取引だ。我々には最も裕福な国民の懸念に耳を傾けてくれる君主が必要なのだ。"
  legitimist_button:0 "レジティミストを推奨 : #variable [ROOT.GetCountry.MakeScope.Var('legitimist_progress').GetValue|0]#! (#tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],je_divided_monarchists_legitimist_var_tooltip [ROOT.GetCountry.MakeScope.Var('legitimist_progress_next').GetValue|1+=]#!) "
  legitimist_button_desc:0 "フランスは革命の退廃によって台無しにされてしまった。我々は皆が自分の身の程をわきまえていた、かつての統治方法に立ち戻らなければならない。"
