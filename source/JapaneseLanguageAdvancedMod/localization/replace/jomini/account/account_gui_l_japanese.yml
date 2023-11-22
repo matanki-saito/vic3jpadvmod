@@ -20,7 +20,7 @@
  COUNTRY:0 "国"
  ADDRESS:0 "住所"
  CITY:0 "市町村"
- STATE:0 "都道府県"
+ STATE:0 "州"
  ZIP_CODE:0 "郵便番号"
  PHONE:0 "電話番号"
  CREATE_ACCOUNT:0 "アカウントを作成"

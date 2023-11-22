@@ -563,7 +563,7 @@
  south_america_formables_tt:0 "[SCOPE.sCountry('south_america_nation_scope').GetName]はこの国家構想を拒否し、#bold より壮大な野心を抱くようになる#!\n#bold 新たな国民性#![concept_journal_entry]が却下される"
  rejected_south_american_national_culture_tt:0 "#bold [ROOT.GetCountry.GetAdjective]国家#![concept_journal_entry]を完了していない。"
  not_rejected_south_american_national_culture_tt:0 "#bold [ROOT.GetCountry.GetAdjective]国家#![concept_journal_entry]を完了している。"
- peru_bolivia_events.1.t:0 "[SCOPE.sState('arequipa_state').GetCityHubName]の盟約。"
+ peru_bolivia_events.1.t:0 "[SCOPE.sState('arequipa_state').GetCityHubName]の盟約"
  peru_bolivia_events.1.d:0 "敵国の陰謀にもかかわらず、ペルー・ボリビア連合は10年もの間継続している。我らの単一の合理的な政府の下、国家を真に統一させられる可能性がいよいよ高まってきた。"
  peru_bolivia_events.1.f:0 "ここからだと、山々は夜の空を突き破るナイフがただ遠方にあるだけのように見える。そのギザギザの刃が雲の合間からうっすらと見える。\n\n「インカ帝国の継承者として、我々はかつての領土を併合し、海岸沿いを進み続けなければならない」"
  peru_bolivia_events.1.a:0 "連合の署名を！"

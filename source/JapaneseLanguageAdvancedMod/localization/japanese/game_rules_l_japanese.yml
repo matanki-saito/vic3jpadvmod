@@ -61,4 +61,4 @@
  setting_moderate_consolidation:0 "中程度"
  setting_moderate_consolidation_desc:0 "[Concept('concept_pop','$concept_pops$')]がかなり小規模かつ、ゲームプレイへの影響が限定的な場合に統合します。"
  setting_aggressive_consolidation:0 "積極的"
- setting_aggressive_consolidation_desc:0 "それなりの規模の[Concept('concept_pop','$concept_pops$')]であっても、条件が満たされると統合するようになります。\n@warning! パフォーマンスが向上する可能性がありますが、ゲームのバランスに影響します"
+ setting_aggressive_consolidation_desc:0 "それなりの規模の[Concept('concept_pop','$concept_pops$')]であっても、条件が満たされると統合するようになります\n@warning! パフォーマンスが向上する可能性がありますが、ゲームのバランスに影響します"
