@@ -1242,7 +1242,7 @@
  modifier_market_disallow_trade_routes:0 "貿易ルートを無効化"
  modifier_market_disallow_trade_routes_desc:0 "市場において取引される全商品の輸出入を禁じる"
  modifier_country_ignores_landing_craft_penalty:0 "上陸ペナルティを無視"
- modifier_country_ignores_landing_craft_penalty_desc:0 "海軍侵略中の陸戦に勝利した際の攻撃ペナルティを無視"
+ modifier_country_ignores_landing_craft_penalty_desc:0 "上陸作戦中の陸戦の攻撃ペナルティを無視"
  modifier_cultural_minority_blamed:0 "文化的軋轢"
  modifier_cultural_work:0 "文化的軋轢下での作業"
  modifier_negative_article_released:0 "否定的な記事が発行されました"
