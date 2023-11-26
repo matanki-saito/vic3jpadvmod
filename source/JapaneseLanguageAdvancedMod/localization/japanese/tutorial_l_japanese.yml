@@ -657,7 +657,7 @@
  lesson_expand_military_how_1_desc:0 "自国の軍隊は[Concept('concept_military_building','$concept_military_buildings$')]によって編成と維持が行われます。軍事を拡大するということはすなわちこれらの施設を拡張することです。\n\nしかし他の施設と異なり、これらは特定の編制タブから建設されます。"
  lesson_expand_military_how_1_continue:0 "#b 軍事#!パネルを開く"
  lesson_expand_military_how_2:0 "$lesson_expand_military_how_1$"
- lesson_expand_military_how_2_desc:0 "[concept_army]を構成している[Concept('concept_battalion','$concept_battalions$')]の編成と維持を行うのが兵舎です。大隊は[Concept('concept_general','$concept_generals$')]によって指揮され、[Concept('concept_front','$concept_fronts$')]において進軍または防衛し、前線に駐屯することで国境を維持するために使用されます。\n\n雇用する大隊に関係なく、必ず兵舎を建設します。\n\n歩兵、大砲、騎兵の各種ユニットのための新しい兵舎を建設するボタンが[concept_military_formation]パネルにあります。"
+ lesson_expand_military_how_2_desc:0 "[concept_army]を構成している[Concept('concept_battalion','$concept_battalions$')]の編成と維持を行うのが兵舎です。大隊は[Concept('concept_general','$concept_generals$')]によって指揮され、[Concept('concept_front','$concept_fronts$')]において進軍または防衛し、前線に駐留することで国境を維持するために使用されます。\n\n雇用する大隊に関係なく、必ず兵舎を建設します。\n\n歩兵、大砲、騎兵の各種ユニットのための新しい兵舎を建設するボタンが[concept_military_formation]パネルにあります。"
  lesson_expand_military_how_2_continue:0 "[Concept('concept_unit','$concept_units$')]を雇用する編制を選択"
  lesson_expand_military_how_2_back:0 "撤回するには#b 軍事#!パネルを閉じてください"
  lesson_expand_military_how_3:0 "$lesson_expand_military_how_1$"
