@@ -76,7 +76,7 @@
  culture_south_america.2.f:0 "「このような公正な人々が住まう、この雄大な土地は何だ？最愛の国、最愛の土地、私はあなたのものだ！」\n\n群衆は詩人の装飾過剰な散文に失礼のないよう拍手を送った。彼の言い回しは…飾り立てられたものだったが、それでも文自体は評価はされていた。"
  culture_south_america.2.a:0 "[SCOPE.sCulture('new_national_culture').GetName]の国へようこそ！"
  culture_south_america.3.t:0 "[SCOPE.sCulture('new_national_culture').GetName]の国"
- culture_south_america.3.d:0 "いたるところで人々は自分たちの[SCOPE.sCulture('new_national_culture').GetName]の故郷のことを口にｓる。[SCOPE.sCulture('old_national_culture').GetName]のアイデンティティはもうない。"
+ culture_south_america.3.d:0 "いたるところで人々は自分たちの[SCOPE.sCulture('new_national_culture').GetName]の故郷のことを口にする。[SCOPE.sCulture('old_national_culture').GetName]のアイデンティティはもうない。"
  culture_south_america.3.f:0 "国旗が中央広場にはためき、トランペットが鳴り響き、ドラムが一斉に打ち鳴らされるなか、行列が行進した。「我々が故郷に誓った厳粛な誓いを破る前に、太陽がその光を捨てさらんことを！」群衆はかつてないほど心の底から叫んだ。"
  culture_south_america.3.a:0 "[SCOPE.sCulture('new_national_culture').GetName]の人々に栄光を！"
  every_pop_converts_tt:0 "この国のすべての[SCOPE.sCulture('old_national_culture').GetName][concept_pop]は[SCOPE.sCulture('new_national_culture').GetName]を取り入れる"
