@@ -22,7 +22,7 @@
  concept_major_power:0 "大国"
  concept_major_power_short:0 "大国"
  concept_major_powers:0 "大国"
- concept_major_power_desc:0 "$concept_major_powers$ [concept_rank]の[Concept('concept_country','$concept_countries$')]は、それらの地域的な影響力によって自らを確立しています。この国はまだ真の世界帝国を築けるほど強くはないが、地域的な力としては無視できない存在であり、彼らの中で最も強い国は[concept_great_power]の地位を獲得することを臨んでいるかもしれません。[AddLocalizationIf(GetPlayer.IsValid,'concept_major_power_desc_added')]"
+ concept_major_power_desc:0 "$concept_major_powers$ [concept_rank]の[Concept('concept_country','$concept_countries$')]は、それらの地域的な影響力によって自らを確立しています。この国はまだ真の世界帝国を築けるほど強くはないが、地域的な力としては無視できない存在であり、彼らの中で最も強い国は[concept_great_power]の地位を獲得することを望んでいるかもしれません。[AddLocalizationIf(GetPlayer.IsValid,'concept_major_power_desc_added')]"
  concept_major_power_desc_added:0 "\n\n$concept_major_powers$には以下の利益があります : \n[GetRankModifier('major_power').GetDesc]"
  concept_minor_power:0 "非主要国"
  concept_minor_powers:0 "非主要国"

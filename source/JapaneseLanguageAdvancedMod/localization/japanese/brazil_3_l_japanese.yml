@@ -79,6 +79,6 @@
  culture_south_america.3.d:0 "いたるところで人々は自分たちの[SCOPE.sCulture('new_national_culture').GetName]の故郷のことを口にする。[SCOPE.sCulture('old_national_culture').GetName]のアイデンティティはもうない。"
  culture_south_america.3.f:0 "国旗が中央広場にはためき、トランペットが鳴り響き、ドラムが一斉に打ち鳴らされるなか、行列が行進した。「我々が故郷に誓った厳粛な誓いを破る前に、太陽がその光を捨てさらんことを！」群衆はかつてないほど心の底から叫んだ。"
  culture_south_america.3.a:0 "[SCOPE.sCulture('new_national_culture').GetName]の人々に栄光を！"
- every_pop_converts_tt:0 "この国のすべての[SCOPE.sCulture('old_national_culture').GetName][concept_pop]は[SCOPE.sCulture('new_national_culture').GetName]を取り入れる"
+ every_pop_converts_tt:0 "この国のすべての[SCOPE.sCulture('old_national_culture').GetName][concept_pop]は[SCOPE.sCulture('new_national_culture').GetName]に[Concept('concept_assimilation','$concept_assimilate$')]する"
  south_america_culture_convert_cooldown_tt:0 "過去#bold 5年#!でディシジョン「#bold 国民性の促進#!」を使用していない"
  modifier_assimilation_nnc:0 "開花する国民性"
