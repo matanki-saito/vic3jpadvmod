@@ -79,6 +79,8 @@
  SWI_FLAVOR_TEXT:0 "The Congress of Vienna has recognized Switzerland as a neutral power, affording some degree of safety in the theatre of European politics. Will Switzerland preserve its neutrality, or strike a different path?"
  HAN_FLAVOR_TEXT:0 "Though Hanover is currently ruled by the British monarch, differences in inheritance laws mean that the end of the union is likely approaching. What new path will Hanover walk?"
  GERMAN_FLAVOR_TEXT:0 "The Congress of Vienna established the German Confederation, a loose assortment of German states intended to keep the peace in Central Europe. The Confederation in practice is dominated by the rivalry between Austria and Prussia. Can the smaller nations survive the coming conflict?"
+
+ # Members of the German Federation
  LUB_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
  HAM_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
  BRE_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
@@ -101,6 +103,9 @@
  MEI_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
  WEI_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
  HEK_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ COB_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ LUX_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ HOL_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
  
  # Poland
  KRA_FLAVOR_TEXT:1 "The legacy of the Polish people rests heavily on the shoulders of the Free State of Krakow, distrusted by its constituting powers and occupied by Austria. Can a new Polish state rise from the ashes once again?"
@@ -176,6 +181,12 @@
  NEJ_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
  YEM_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
  ABU_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ JAB_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ BHN_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ KAT_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ ZAI_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ LAH_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ MAH_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
  OMA_FLAVOR_TEXT:0 "Ruling over both Oman and Zanzibar, the Sultanate is establishing an intercontinental empire. Can Oman remain united?"
 
  KOR_FLAVOR_TEXT:0 "Korea under the Joseon dynasty looks inward, consumed by its factional politics. Will changing times force Korea to consider the outside world?"

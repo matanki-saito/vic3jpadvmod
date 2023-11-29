@@ -112,6 +112,8 @@
  ai_strategy_world_revolution_desc: "[COUNTRY.GetName]は、世界中に社会主義革命を広め、他の国々を自国の大義に改宗させようとしています。"
  ai_strategy_anti_imperialism: "反帝国主義"
  ai_strategy_anti_imperialism_desc: "[COUNTRY.GetName]は、未承認国家を支援し、帝国権力の拡大を封じ込めようとしています。"
+ ai_strategy_restore_natural_borders: "自然の国境線を取り戻す"
+ ai_strategy_restore_natural_borders_desc: "[COUNTRY.GetName]は、主要領地の拡大とライン川に沿った「自然の国境」を獲得することを目指している。"
  ATTITUDE_DETAILS: "[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetReasonsDesc]\n\n[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetStrategicDesireDesc]"
  ai_attitude_human: "#V 人間#!"
  ai_attitude_human_desc: "[COUNTRY.GetName]は人間のプレイヤーが操作しており、[GetPlayer.GetName]に対する彼らの態度はすべてプレイヤー次第です。"

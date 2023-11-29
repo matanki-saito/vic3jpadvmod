@@ -48,6 +48,11 @@
  DIPLO_PLAY_GREAT_POWER_TRIGGER:0 "We must be a [concept_great_power] to launch this [concept_diplomatic_play]"
  DIPLO_PLAY_OUTRAGED_TRIGGER:0 "Their [concept_infamy] level must be at $infamy_pariah$"
  
+ DIPLOMATIC_PACT_BREAK_DURATION_EXPIRED: "Duration of the enforced [concept_diplomatic_pact] has expired"
+ DIPLOMATIC_PACT_BREAK_DECENTRALIZED: "One of the two [Concept('concept_country', '$concept_countries$')] is a [concept_decentralized_nation]"
+ DIPLOMATIC_PACT_BREAK_NON_AUTONOMOUS_SUBJECT: "One of the two [Concept('concept_country', '$concept_countries$')] is a [concept_subject] without diplomatic autonomy"
+ DIPLOMATIC_PACT_BREAK_NOT_VALID_RIVALS: "[concept_rank] difference of the two [Concept('concept_country', '$concept_countries$')] does not allow for a [concept_rivalry]"
+ 
  DIPLO_ACTION_RELATIONS:2 "[concept_relations] between [SCOPE.GetRootScope.GetCountry.GetName] and [SCOPE.sC('target_country').GetName]"
  DIPLO_ACTION_RELATIONS_CORDIAL:1 "$DIPLO_ACTION_RELATIONS$ are $relations_cordial$"
  DIPLO_ACTION_RELATIONS_CORDIAL_NOT:1 "$DIPLO_ACTION_RELATIONS$ are NOT $relations_cordial$"
@@ -215,6 +220,7 @@
  DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION_NEGATIVE:0 "Ideological Differences of our [Concept('concept_government','$concept_governments$')]"
  DIPLOMATIC_ACCEPTANCE_ALLIED_TO_RIVALS:1 "We have [Concept('concept_alliance','$concept_alliances$')] or [Concept('concept_defensive_pact','$concept_defensive_pacts$')] with [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [Concept('concept_rivalry','$concept_rivals$')]"
  DIPLOMATIC_ACCEPTANCE_ALLIED_TO_ALLIES:1 "We have [Concept('concept_alliance','$concept_alliances$')] or [Concept('concept_defensive_pact','$concept_defensive_pacts$')] with [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] allies"
+ DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS: "We have shared [Concept('concept_rivalry','$concept_rivals$')]"
  DIPLOMATIC_ACCEPTANCE_NUM_ALLIES:1 "Number of [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [Concept('concept_alliance','$concept_alliances$')]"
  DIPLOMATIC_ACCEPTANCE_NUM_DEFENSIVE_PACTS:1 "Number of [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [Concept('concept_defensive_pact','$concept_defensive_pacts$')]"
  DIPLOMATIC_ACCEPTANCE_DEFENSIVE_PACT:1 "We have a [concept_defensive_pact]"

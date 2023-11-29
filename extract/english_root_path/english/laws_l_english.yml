@@ -182,6 +182,14 @@
  ideology_papal_moralist:0 "Pontifical"
  ideology_papal_moralist_desc:0 "#lore This group has a strong devotion to maintaining both the temporal and ecclesiastical powers of the Catholic Church.#!"
 
+ ideology_liberal_modern: "Liberal"
+ ideology_liberal_modern_desc: "#lore This group views liberty and legal equality as important values to be safeguarded.#!"
+
+ ideology_egalitarian_modern: "Egalitarian"
+ ideology_egalitarian_modern_desc: "#lore This group believes that equal and humane treatment of people should be a cornerstone of political policy.#!"
+
+ liberal_and_egalitarian_amended_tt: "The [GetIdeology('ideology_liberal').GetName] and [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','$concept_ideologies$')]' stances on the $lawgroup_rights_of_women$ will change"
+
   # Government Principles group
  lawgroup_governance_principles:0 "Governance Principles"
  lawgroup_governance_principles_desc:0 "The foundational principles and authority by which your country is governed. Determines who the Head of State is."
@@ -217,7 +225,6 @@
  lawgroup_army_model_desc:0 "How your army is organized and regulated."
   
  law_peasant_levies:0 "Peasant Levies"
- law_peasant_levies_additional_effects: "Restricts recruitment of Infantry units to [GetCombatUnitType('combat_unit_type_irregular_infantry').GetName] and [GetCombatUnitType('combat_unit_type_line_infantry').GetName]\nRestricts recruitment of Artillery units to [GetCombatUnitType('combat_unit_type_cannon_artillery').GetName] and [GetCombatUnitType('combat_unit_type_mobile_artillery').GetName]\nRestricts recruitment of Cavalry units to [GetCombatUnitType('combat_unit_type_hussars').GetName]"
  law_peasant_levies_desc:0 "The army's main force comes from conscripted infantry with zero to basic training."
  law_national_militia:0 "National Militia"
  law_national_militia_desc:0 "The standing army is small, but local militias can be activated to defend their homes."

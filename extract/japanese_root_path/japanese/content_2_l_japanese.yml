@@ -478,7 +478,7 @@
  je_unite_the_principalities_friend_with_all_great_powers_tt: "[SCOPE.GetRootScope.GetCountry.GetName]が、この地域に[concept_active_interest]を持つすべての[concept_great_power]と#bold 肯定的#!な関係を持っている。"
  je_unite_the_principalities_no_other_romanians_tt: "統一できる#bold ルーマニア#!の国が他に存在しない。"
  je_unite_the_principalities_romania_is_real_tt: "#bold ルーマニア#!が既に形成されている。"
- je_unite_the_principalities_amicable_or_better_relations_tt: "[SCOPE.GetRootScope.GetCountry.GetName]が他の#bold ルーマニア#!の国と#bold 友好#!、もしくはそれ以上の関係を持っていて、両国ともに独立しているか、同じ宗主国の属国である。"
+ je_unite_the_principalities_amicable_or_better_relations_tt: "[SCOPE.GetRootScope.GetCountry.GetName]が他の#bold ルーマニア#!の国と#bold 友好#!、もしくはそれ以上の関係を持っていて、両国ともに独立しているか、あるいは同じ宗主国の属国であり、自らも従属国を有することができる。"
  je_all_for_one: "皆が一つのために"
  je_all_for_one_reason: "力を合わせれば、我々はもっと強くなれます。今の暫定的な連合を維持し、そこから単一の偉大なるルーマニアを築き上げなければなりません。"
  je_all_for_one_goal: "諸公国の連合を10年間維持する"

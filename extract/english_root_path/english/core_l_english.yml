@@ -167,7 +167,6 @@
 
  DEPLOY_MILITARY_FORMATION_TO_FRONT_REDUNDANT: "#N $FORMATION_NAME$ is already being deployed to $FRONT_NAME$#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NAVAL_INVADING: "#N $FORMATION_NAME$ cannot be deployed to $FRONT_NAME$ because it is involved in an ongoing naval invasion#!"
- DEPLOY_MILITARY_FORMATION_TO_FRONT_BATTLING: "#N $FORMATION_NAME$ cannot be deployed to $FRONT_NAME$ because it is involved in an active battle#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_FAIL_UNREACHABLE: "#N $FORMATION_NAME$ cannot reach $FRONT_NAME$#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NOT_A_PARTICIPANT: "Cannot deploy $FORMATION_NAME$ to $FRONT_NAME$: $COUNTRY_NAME$ is not a participant on $FRONT_NAME$"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NO_BATTALIONS: "#N $FORMATION_NAME$ cannot deploy as it has no @battalions![Nbsp][Concept('concept_battalion','$concept_battalions$')]"
@@ -178,11 +177,12 @@
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NOT_A_SEA_NODE: "Cannot deploy $FORMATION_NAME$ to the selected [concept_province]: the selected [concept_province] is not a [concept_sea_node]"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NO_ADMIRALS: "#N $FORMATION_NAME$ cannot be deployed because it has no commanding [Concept('concept_admiral','$concept_admirals$')]#!"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NO_FLOTILLAS: "#N $FORMATION_NAME$ cannot deploy as it has no @flotillas![Nbsp][Concept('concept_flotilla','$concept_flotillas$')]"
+ SPLIT_MILITARY_FORMATION_NAVAL_INVADING: "#N Cannot split the [concept_military_formation] because it is involved in an ongoing [concept_naval_invasion]#!"
  SPLIT_MILITARY_FORMATION_FLEET_NO_REMAINING_ADMIRALS: "#N You cannot transfer all [Concept('concept_admiral','$concept_admirals$')] out of $FORMATION_NAME$ without also transfering all its [Concept('concept_flotilla','$concept_flotillas$')]#!"
+ MERGE_MILITARY_FORMATIONS_SOURCE_IS_DEMOBILIZING: "#N Cannot transfer [Concept('concept_battalion', '$concept_battalions$')] during demobilization cooldown to a mobilized [concept_army]#!"
 
  STATION_MILITARY_FORMATION_IN_HQ_REDUNDANT: "#N $FORMATION_NAME$ is already being stationed in $HQ_NAME$#!"
  STATION_MILITARY_FORMATION_IN_HQ_NAVAL_INVADING: "#N $FORMATION_NAME$ cannot be stationed in $HQ_NAME$ because it is involved in an ongoing naval invasion#!"
- STATION_MILITARY_FORMATION_IN_HQ_BATTLING: "#N $FORMATION_NAME$ cannot be stationed in $HQ_NAME$ because it is involved in an active battle#!"
  STATION_MILITARY_FORMATION_COUNTRY_DOES_NOT_OWN_HQ: "Cannot station $FORMATION_NAME$ in $HQ_NAME$: $FORMATION_COUNTRY_NAME$ does not own $HQ_NAME$, which is owned by $HQ_OWNER_COUNTRY_NAME$"
  STATION_MILITARY_FORMATION_NO_UNITS: "[MilitaryFormation.GetName] has no [MilitaryFormation.GetUnitIcon][Nbsp][Concept('concept_unit','$concept_units$')] to re-station"
 
@@ -190,8 +190,9 @@
  COMMAND_CONFIRMATION_DEPLOY_MILITARY_FORMATION_TO_SEA_NODE: "Deploy $FORMATION_NAME$ to the selected [concept_sea_node]"
  COMMAND_CONFIRMATION_STATION_MILITARY_FORMATION: "Station $FORMATION_NAME$ in $HQ_NAME$"
 
- REHOME_MILITARY_FORMATION_ALREADY_HOMED_IN_HQ: "$FORMATION_NAME$ is already homed in $HQ_NAME$"
- COMMAND_CONFIRMATION_REHOME_MILITARY_FORMATION: "Home $FORMATION_NAME$ in $HQ_NAME$"
+ REHOME_MILITARY_FORMATION_CANNOT_REHOME_MOBILIZED_ARMY: "Cannot home [MILITARY_FORMATION.GetName] in [HQ.GetName]: [MILITARY_FORMATION.GetName] must be [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilized$')]"
+ REHOME_MILITARY_FORMATION_ALREADY_HOMED_IN_HQ: "[MILITARY_FORMATION.GetName] is already homed in [HQ.GetName]"
+ COMMAND_CONFIRMATION_REHOME_MILITARY_FORMATION: "Home [MILITARY_FORMATION.GetName] in [HQ.GetName]"
  
  RENAME_STRING_TOO_LONG: "@warning! Name is too long"
  RENAME_STRING_EMPTY: "@warning! Name is empty"

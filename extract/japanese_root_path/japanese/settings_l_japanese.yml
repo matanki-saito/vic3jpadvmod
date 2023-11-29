@@ -75,7 +75,7 @@
  SETTING_OCCUPATION_STRIPES: "縞模様の占領ビジュアル"
  SETTING_OCCUPATION_STRIPES_TOOLTIP: "#T $SETTING_OCCUPATION_STRIPES$#!\n地図上の占領ビジュアルとして、国旗テクスチャの代わりに色付きの縞模様を使用するようにします。"
  SETTING_PORTRAIT_RENDER_SCALE: "肖像の描画スケーリング"
- SETTING_PORTRAIT_RENDER_SCALE_TOOLTIP: "#T SETTING_PORTRAIT_RENDER_SCALE#!\n描画結果をアップサンプリングすることで、キャラクターの肖像画の詳細度を高めますが、描画パフォーマンスが少し低下します。"
+ SETTING_PORTRAIT_RENDER_SCALE_TOOLTIP: "#T $SETTING_PORTRAIT_RENDER_SCALE$#!\n描画結果をアップサンプリングすることで、キャラクターの肖像画の詳細度は高まりますが、描画パフォーマンスが少し低下します。"
  OPTION_PORTRAIT_RENDER_SCALE_NONE: "×1.0 - なし"
  OPTION_PORTRAIT_RENDER_SCALE_MEDIUM: "×1.5 - 中"
  OPTION_PORTRAIT_RENDER_SCALE_HIGH: "×2.0 - 高"

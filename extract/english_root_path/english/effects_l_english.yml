@@ -418,6 +418,8 @@
  REMOVE_COMPANY: "[COUNTRY.GetName] disbands the [TARGET_COMPANY_TYPE.GetName] [concept_company]"
  REMOVE_COMPANY_FIRST: "[COUNTRY.GetNameNoFlag] disbands the [TARGET_COMPANY_TYPE.GetName] [concept_company]"
  REMOVE_COMPANY_THIRD: "[COUNTRY.GetName] disbands the [TARGET_COMPANY_TYPE.GetName] [concept_company]"
+ SET_COMPANY_ESTABLISHMENT_DATE_GLOBAL: "The establishment date of [concept_company] is set to a new date"
+ SET_COMPANY_ESTABLISHMENT_DATE_THIRD: "The establishment date of [COMPANY.GetName] is set to [DATE.GetString|v]"
 
  SET_TARIFFS:0 "[COUNTRY.GetName] starts to collect #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"
  SET_TARIFFS_FIRST:0 "[COUNTRY.GetNameNoFlag] starts to collect #v Unprioritized#! [concept_tariffs] on [TARGET_GOODS.GetName]"

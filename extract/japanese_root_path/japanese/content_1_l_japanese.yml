@@ -349,7 +349,7 @@
  je_strike: "ストライキ！"
  je_strike_reason: "労働条件に不満を持つ労働者がストライキを起こしました。彼らが仕事をしないため、産業は事実上停止しています。"
  je_fulfill_striker_promise_tt: "労使交渉のディシジョンにより、ストライキ参加者との約束を果たす"
- je_is_on_strike_tt: "職場でのストライキ"
+ je_is_not_on_strike_tt: "職場でストライキは#bold 起こっていない#!"
  strike_conflict_resolved: "ストライキの原因だった争いは解決されました"
  je_end_strike_tt: "ストライキの終了"
  je_strike_promise_fulfilled_tt: "ストライキ参加者との約束は果たされ、労働者は落ち着きました。"

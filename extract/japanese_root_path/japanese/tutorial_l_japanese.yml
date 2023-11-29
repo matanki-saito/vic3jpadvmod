@@ -920,7 +920,7 @@
  je_tutorial_improve_supply_network_status: "[concept_convoys]を健全な数まで増やす"
  je_tutorial_improve_supply_network_goal: "[concept_convoys]の数を増加: #v [JournalEntry.CalcCurrentGoalValue|0] / [JournalEntry.GetTotalGoalValue|0]#!"
  je_tutorial_improve_consumer_goods_access: "消費財へのアクセスを改善する" #Doesn't display information fully
- je_tutorial_improve_consumer_goods_access_reason: "多数の[Concept('concept_pop', '$concept_pops$')]が、[JournalEntry.GetTarget.GetMarketGoods.GetGoods.GetName]の入手が困難であることを報告しています。こういった懸念に対処し、$concept_pops$の苦痛を和らげることで[concept_sol]を上昇させ、[Concept('concept_loyalist','$concept_loyalty$')]の増加に繋がります。"
+ je_tutorial_improve_consumer_goods_access_reason: "[JournalEntry.GetTarget.GetStateGoods.GetState.GetName]内の多数の[Concept('concept_pop', '$concept_pops$')]が、[JournalEntry.GetTarget.GetStateGoods.GetGoods.GetName]の入手が困難であることを報告しています。こういった懸念に対処し、$concept_pops$の苦痛を和らげることで[concept_sol]を上昇させ、[Concept('concept_loyalist','$concept_loyalty$')]の増加に繋がります。"
  je_tutorial_make_interest_group_happy: "利益集団を持ち上げる"
  je_tutorial_make_interest_group_happy_reason: "[JournalEntry.GetTarget.GetInterestGroup.GetName]は我が国の[concept_government]に対する[concept_approval]が低いようです。彼らが[Concept('concept_radical','$concept_radicalized$')]になり我々に反旗を翻すのを回避するために、彼らの幸福度を維持しなければなりません。"
  je_tutorial_enact_institution_law: "制度法の可決"

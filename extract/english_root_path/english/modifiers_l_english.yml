@@ -2261,7 +2261,13 @@
  modifier_unit_combat_unit_type_mobile_artillery_mult: "$combat_unit_type_mobile_artillery$ $modifier_unit_offense_mult$"
  modifier_unit_combat_unit_type_mobile_artillery_mult_desc: "$combat_unit_type_mobile_artillery$ $modifier_unit_offense_mult$"
 
- 
+ modifier_unit_combat_unit_type_trench_infantry_offense_add: "$combat_unit_type_trench_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_trench_infantry_offense_add_desc: "$combat_unit_type_trench_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_squad_infantry_offense_add: "$combat_unit_type_squad_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_squad_infantry_offense_add_desc: "$combat_unit_type_squad_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_mechanized_infantry_offense_add: "$combat_unit_type_mechanized_infantry$ $modifier_unit_offense_add$"
+ modifier_unit_combat_unit_type_mechanized_infantry_offense_add_desc: "$combat_unit_type_mechanized_infantry$ $modifier_unit_offense_add$"
+
  modifier_unit_morale_loss_add:0 "[concept_morale] Loss"
  modifier_unit_morale_loss_add_desc:0 "The amount of [concept_morale] a [concept_unit] loses during battle"
  modifier_unit_morale_loss_mult:0 "$modifier_unit_morale_loss_add$"
@@ -2314,12 +2320,18 @@
  
  modifier_unit_mobilization_speed_mult: "[Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] Speed"
  modifier_unit_mobilization_speed_mult_desc: "How rapidly [Concept('concept_battalion','$concept_battalions$')] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilize$')]"
+ 
+ modifier_military_formation_movement_speed_add: "[concept_military_formation] Speed"
+ modifier_military_formation_movement_speed_add_desc: "How quickly a [concept_military_formation] can travel to reach a new destination"
 
- modifier_unit_mobilization_speed_from_railways_mult: "[GetBuildingType('building_railway').GetName] [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] Speed"
- modifier_unit_mobilization_speed_from_railways_mult_desc: "The impact a [GetBuildingType('building_railway').GetName] in the same state as the [concept_battalion] has on its [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilization$')] Speed"
+ modifier_military_formation_movement_speed_mult: "$modifier_military_formation_movement_speed_add$"
+ modifier_military_formation_movement_speed_mult_desc: "$modifier_military_formation_movement_speed_add_desc$"
+ 
+ modifier_military_formation_mobilization_speed_add: "[concept_military_formation] [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilization$')] Speed"
+ modifier_military_formation_mobilization_speed_add_desc: "How quickly a [concept_military_formation] can [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilize$')] its units"
 
- modifier_military_formation_travel_speed_mult: "[concept_military_formation] Travel Speed"
- modifier_military_formation_travel_speed_mult_desc: "How quickly a [concept_military_formation] can travel to reach a new destination"
+ modifier_military_formation_mobilization_speed_mult: "$modifier_military_formation_mobilization_speed_add$"
+ modifier_military_formation_mobilization_speed_mult_desc: "$modifier_military_formation_mobilization_speed_add_desc$"
  
  modifier_military_formation_organization_gain_add: "Daily $concept_organization$ Gain"
  modifier_military_formation_organization_gain_add_desc: "How much [concept_organization] the [concept_military_formation] gains each day.\n\n$concept_organization_desc$"
@@ -2907,14 +2919,14 @@
  modifier_character_advancement_speed_add: "[concept_general] [concept_advancement_speed]"
  modifier_character_advancement_speed_add_desc: "A bonus or penalty to how quickly a [concept_general] accumulates [concept_advancement_progress]"
 
- modifier_character_convoy_protection_add: "[concept_admiral] [concept_convoys] Protection#!"
- modifier_character_convoy_protection_add_desc: "A bonus or penalty to how effectively a [concept_admiral] protects [concept_convoys]"
+ modifier_character_convoy_protection_mult: "[concept_admiral] [concept_convoys] Protection#!"
+ modifier_character_convoy_protection_mult_desc: "A bonus or penalty to how effectively a [concept_admiral] protects [concept_convoys]"
 
- modifier_character_interception_add: "[concept_admiral] Interception"
- modifier_character_interception_add_desc: "A bonus or penalty to how effectively a [concept_admiral] intercepts navies"
+ modifier_character_interception_add: "$concept_admiral$ Interception Chance"
+ modifier_character_interception_add_desc: "The chance the [Concept('concept_admiral','$concept_admiral_possessive$')] [concept_fleet] has at intercepting [Concept('concept_fleet', '$concept_fleets$')] every quarter of a day"
 
- modifier_character_convoy_raiding_add: "[concept_admiral] [concept_convoys] Raiding Chance"
- modifier_character_convoy_raiding_add_desc: "A bonus or penalty to a [concept_admiral] chance of raiding [concept_convoys]"
+ modifier_character_convoy_raiding_mult: "[concept_admiral] [concept_convoys] Raiding Efficiency"
+ modifier_character_convoy_raiding_mult_desc: "A bonus or penalty to a [concept_admiral] efficiency of raiding [concept_convoys]"
 
  modifier_dummy_modifier_type: "@warning! This modifier type should never be used"
  modifier_dummy_modifier_type_desc: "$modifier_dummy_modifier_type$"

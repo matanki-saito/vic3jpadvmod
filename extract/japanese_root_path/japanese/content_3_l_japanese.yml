@@ -210,6 +210,7 @@
  ##################### Boxer Rebellion
  je_boxer_rebellion: "義和団の乱"
  je_boxer_rebellion_reason: "国外の野蛮人に中国の土地を奪われた屈辱から、外国の影響を国内から一掃することを目的とした武道家による自衛団が数多く誕生することとなった。\n\n自衛団の大望を見通すことができなければ、[ROOT.GetCountry.GetName]に劇的な結末がもたらされる可能性がある。"
+ qing_owns_all_han_states_tt: "すべての[GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')]を所有しており、[concept_split_state]となっている[GetCulture('han').GetName] [concept_homeland]はありません"
  dyn_c_empire_of_china: "中華帝国"
  dyn_c_empire_of_china_adj: "中国"
  boxer_rebellion_events.1.t: "義和団事変"

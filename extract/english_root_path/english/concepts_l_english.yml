@@ -147,7 +147,7 @@
  concept_jobseeker:0 "Jobseeker"
  concept_jobseekers:0 "Jobseekers"
  concept_jobseeking: "Jobseeking"
- concept_jobseeker_desc:1 "A Jobseeker is a [Concept('concept_working_adults', '$concept_working_adult$')] with negative [concept_job_satisfaction]"
+ concept_jobseeker_desc:1 "A Jobseeker is a [Concept('concept_working_adults', '$concept_working_adult$')] with negative [concept_job_satisfaction] who is not working in a [concept_government_building] or in a [concept_building] being [Concept('concept_subsidies', '$concept_subsidized$')]."
  
  concept_building:0 "Building"
  concept_buildings:0 "Buildings"
@@ -230,15 +230,6 @@
  concept_mobilize_army_demobilization: "Demobilization"
  concept_mobilize_army_desc: "$concept_mobilize_army_mobilizing$ an [concept_army] will immediately begin the process of $concept_mobilize_army_mobilization$ for all [Concept('concept_battalion', '$concept_battalions$')] assigned to it. A $concept_mobilize_army_mobilized$ $concept_army$ will automatically stand down once the [concept_country] is no longer at [concept_war]. Early $concept_mobilize_army_demobilization$ while in active warfare is possible, but takes time and a substantial cost."
 
- concept_mobilize_general:0 "Mobilize General"
- concept_mobilize_general_mobilize:0 "Mobilize"
- concept_mobilize_general_mobilizing:0 "Mobilizing"
- concept_mobilize_general_mobilized:0 "Mobilized"
- concept_mobilize_general_mobilization:0 "Mobilization"
- concept_mobilize_general_demobilized: "Demobilized"
- concept_mobilize_general_demobilization: "Demobilization"
- concept_mobilize_general_desc: "$concept_mobilize_general_mobilizing$ a [concept_general] will immediately begin the process of $concept_mobilize_general_mobilization$ for all [Concept('concept_battalion', '$concept_battalions$')] assigned to them. A $concept_mobilize_general_mobilized$ $concept_general$ will automatically stand down once the [concept_country] is no longer at [concept_war]. Early $concept_mobilize_general_demobilization$ while in active warfare is possible, but only after an extended time in the field and at a substantial cost."
-
  concept_mobilize_battalion:0 "Mobilize Battalion"
  concept_mobilize_battalion_demobilized:0 "Demobilized"
  concept_mobilize_battalion_mobilize:0 "Mobilize"
@@ -316,7 +307,7 @@
  concept_fleets: "Fleets"
  concept_fleet_possessive: "Fleet\\'s"
  concept_fleet_long: "Fleet Formation"
- concept_fleet_desc: "A $concept_fleet$ is a part of your naval forces which is composed of $combat_unit_group_light_ship$, $combat_unit_group_capital_ship$ and $combat_unit_group_support_ship$. A $concept_fleet$ can be given orders like $patrol_coast$, $raid_convoys$ or $escort_convoys$."
+ concept_fleet_desc: "A $concept_fleet$ is a part of your naval forces which is composed of $combat_unit_group_light_ship$, $combat_unit_group_capital_ship$ and $combat_unit_group_support_ship$. A $concept_fleet$ can be given orders like $patrol_coast$, $raid_convoys$ or $escort_convoys$. Fleets tend to take a long time to build up, and many ship types become obsolete over time as they cannot always be upgraded. Think carefully before investing too heavily into large fleets."
 
  concept_battle:0 "Battle"
  concept_battles:0 "Battles"
@@ -626,6 +617,7 @@
 
  concept_combat_unit_group: "Military Unit Group"
  concept_combat_unit_groups: "Military Unit Groups"
+ concept_combat_unit_group_short: "Unit Group"
  concept_combat_unit_group_desc: "$concept_units$ are categorized into different types which possess different strengths and weaknesses. Infantry is better suited for defending your territory, while Cavalry is better at [concept_occupation] for example."
 
  concept_combat_unit_type: "Military Unit Type"
@@ -638,10 +630,16 @@
  concept_units:0 "Military Units"
  concept_unit_short:0 "Unit"
  concept_units_short:0 "Units"
- concept_units_default: "Default Units"
- concept_units_special: "Special Units"
  concept_unit_possessive:0 "Military Unit\\'s"
  concept_unit_desc:0 "$concept_units$ are assigned to a [concept_military_formation] and perform military operations under the guidance of [Concept('concept_general','$concept_generals$')] and [Concept('concept_admiral','$concept_admirals$')]. They can be either land-based [Concept('concept_battalion','$concept_battalions$')] or naval [Concept('concept_flotilla','$concept_flotillas$')]. $concept_battalions$ are further sub-divided into distinct groups: [GetBattalionGroupsList], while $concept_flotillas$ are sub-divided into [GetFlotillaGroupsList]. Units in the #b Default#! group are unlimited, while having more #b Special#! units than Default ones may incur an [concept_organization] penalty."
+
+ concept_special_unit: "Special Unit"
+ concept_special_units: "Special Units"
+ concept_special_unit_desc: "These are [Concept('concept_unit','$concept_units$')] that are not #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#! or #b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName]#! which are considered [Concept('concept_default_unit','$concept_default_units$')].\n\n$concept_special_units$ for [Concept('concept_army','$concept_armies$')]:\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n$concept_special_units$ for [Concept('concept_fleet','$concept_fleets$')]:\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_capital_ship').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName]#!"
+
+ concept_default_unit: "Default Unit"
+ concept_default_units: "Default Units"
+ concept_default_unit_desc: "These are [Concept('concept_unit','$concept_units$')] that are either #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#! for [Concept('concept_army','$concept_armies$')] or #b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName]#! for [Concept('concept_fleet','$concept_fleets$')]."
 
  concept_kill_rate:0 "Kill Rate"
  concept_kill_rate_desc:0 "How effective a [concept_unit] is at ensuring their opponent's [concept_casualties] end up unable to come back to fight another day. Increases the ratio of [concept_casualties] that end up killed (instead of [concept_wounded]). $concept_kill_rate$ is countered by the enemy $concept_unit$'s [concept_recovery_rate]."
@@ -660,7 +658,7 @@
 
  concept_organization: "Organization"
  concept_organization_organized: "Organized"
- concept_organization_desc: "A [concept_military_formation] with low $concept_organization$ will be less effective in [concept_battle] in a variety of ways. $concept_organization$ starts out low when a $concept_military_formation$ is first created, but will increase over time while the $concept_military_formation$ is not traveling. $concept_organization$ is limited if you have too low [concept_command_limit] for all your [Concept('concept_unit','$concept_units$')] or if your $concept_military_formation$ has more $concept_units_special$ than $concept_units_default$.\n\n$concept_organization$ can also be impacted temporarily when switching [Concept('concept_mobilization_option','$concept_mobilization_options$')] on or off, and when transferring [Concept('concept_unit','$concept_units$')] between [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] $concept_armies$ with different sets of $concept_mobilization_options$.\n\n#indent_newline:3 A $concept_military_formation$ with low $concept_organization$ will suffer penalties the lower the value is, up to the following effects:\n[GetStaticModifier('low_organization').GetDesc]#!"
+ concept_organization_desc: "A [concept_military_formation] with low $concept_organization$ will be less effective in [concept_battle] in a variety of ways. $concept_organization$ starts out low when a $concept_military_formation$ is first created, but will increase over time while the $concept_military_formation$ is not traveling. $concept_organization$ is limited if you have too low [concept_command_limit] for all your [Concept('concept_unit','$concept_units$')] or if your $concept_military_formation$ has more [Concept('concept_special_unit','$concept_special_units$')] than [Concept('concept_default_unit','$concept_default_units$')].\n\n$concept_organization$ can also be impacted temporarily when switching [Concept('concept_mobilization_option','$concept_mobilization_options$')] on or off, and when transferring [Concept('concept_unit','$concept_units$')] between [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] $concept_armies$ with different sets of $concept_mobilization_options$.\n\n#indent_newline:3 A $concept_military_formation$ with low $concept_organization$ will suffer penalties the lower the value is, up to the following effects:\n[GetStaticModifier('low_organization').GetDesc]#!"
  
  concept_unit_experience: "Unit Experience"
  concept_unit_experience_desc: "A Unit gains experience over time, more when mobilized and during battles, once it gains enough it increases in [concept_veterancy_level] giving it various bonuses"
@@ -989,7 +987,7 @@
  concept_commander:0 "Commander"
  concept_commanders:1 "Commanders"
  concept_commander_possessive:0 "Commander\\'s"
- concept_commander_desc:1 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. Their [concept_commander_rank] determines how many forces they are allotted from the $concept_country$'s available reserves."
+ concept_commander_desc:2 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. A $concept_commander$ can be either a [concept_general] or an [concept_admiral] depending on the type of [concept_military_formation] they are leading. Their [concept_commander_rank] contributes to the [concept_command_limit] of the $concept_military_formation$ they are in, and also impacts the amount of troops that they are able to bring with them into battle."
 
  concept_general:0 "General"
  concept_generals:1 "Generals"
@@ -1003,7 +1001,7 @@
  concept_admiral_desc:2 "A naval [concept_commander] [concept_character] who leads a [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_flotilla','$concept_flotillas$')]. Effects from an $concept_admiral$'s [Concept('concept_character_trait','$concept_character_traits$')] are conferred onto $concept_flotillas$ under their command."
 
  concept_admiral_defeated: "Defeated"
- concept_admiral_defeated_desc: "An [concept_admiral] is $concept_admiral_defeated$ when he loses a [concept_battle] at sea. A [concept_fleet] is $concept_admiral_defeated$ when all its [Concept('concept_admiral','$concept_admirals$')] are $concept_admiral_defeated$. $concept_admirals$ and $concept_fleets$ will only repair and regroup once they are back at their home [concept_hq]."
+ concept_admiral_defeated_desc: "An [concept_admiral] is $concept_admiral_defeated$ when he loses a [concept_battle] at sea. A [concept_fleet] is $concept_admiral_defeated$ when all its [Concept('concept_admiral','$concept_admirals$')] are $concept_admiral_defeated$. $concept_admirals$ and $concept_fleets$ will only repair and regroup once they are back at their home [concept_hq] and their [Concept('concept_flotilla','$concept_flotillas$')] have regained at least [GetDefine('NMilitary','MANPOWER_RATIO_REQUIRED_TO_CLEAR_DEFEATED_ADMIRALS')|v0%] of their total [concept_manpower]."
 
  concept_military_formation: "Formation"
  concept_military_formations: "Formations"
@@ -1013,6 +1011,7 @@
  concept_political_strength_desc:3 "The degree of power a [concept_pop], and consequently the [Concept('concept_interest_group','$concept_interest_groups$')] it supports, have over the [Concept('concept_country','$concept_country_possessive$')] politics. It is derived from its supporting $concept_pops$' [concept_wealth]. $concept_pops$ who live in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] have much less $concept_political_strength$, while $concept_pops$ in the [concept_capital_state] have more.\n\n$concept_pops$ distribute their $concept_political_strength$ to the $concept_interest_groups$ it supports proportionate to how many of its members support it. If an $concept_interest_group$ is a member of a [concept_party], they also gain $concept_political_strength$ from the [concept_votes] that $concept_party$ received in the last [concept_election]. An $concept_interest_group$'s [concept_clout] is equal to their share of the $concept_country$'s total $concept_political_strength$."
 
  concept_naval_invasion: "Naval Invasion"
+ concept_naval_invasions: "Naval Invasions"
  concept_naval_invaded: "Naval Invaded"
  concept_naval_invasion_desc: "A maritime invasion of a coastal [concept_state], coordinated between a [concept_fleet] and an [concept_army]. The $concept_fleet$ keeps the waters off the coast clear to ensure the $concept_army$ can land safely, while the $concept_army$ executes a series of land [Concept('concept_battle','$concept_battles$')] to win [concept_occupation] in the targeted $concept_state$.\n\nThe controller of the targeted $concept_state$ can defend against the $concept_naval_invasion$ by positioning their own [Concept('concept_fleet','$concept_fleets$')] in the affected [concept_sea_node] or stationing a [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] [concept_army] in the land [concept_hq] encompassing the invaded $concept_state$."
 
@@ -1656,7 +1655,7 @@
  concept_order:0 "Order"
  concept_orders:0 "Orders"
  concept_ordered:0 "Ordered"
- concept_order_desc:2 "[Concept('concept_commander','$concept_commanders$')] can be given $concept_orders$ that cause them to pursue different military objectives. Some $concept_orders$ have targets (such as [Concept('concept_front','$concept_fronts$')] or [Concept('concept_hq','$concept_hqs$')]) while others do not. If an $concept_order$ requires a $concept_commander$ to travel they will do so automatically upon having been given it."
+ concept_order_desc: "[Concept('concept_commander','$concept_commanders$')] can be given $concept_orders$ that cause them to pursue different military objectives depending on their current location. All $concept_commanders$ have a few basic $concept_orders$, but their [Concept('concept_character_trait','$concept_character_traits$')] may add special $concept_orders$ for that $concept_commander$ to use.\n\nBasic [concept_general] orders are:\n[GetBasicGeneralOrdersBreakdown]\n\nBasic [concept_admiral] $concept_orders$ are:\n[GetBasicAdmiralOrdersBreakdown]"
 
  concept_party:0 "Party"
  concept_parties:1 "Parties"
@@ -1750,6 +1749,10 @@
  concept_upper_strata:0 "Upper Strata"
  concept_upper_strata_desc:3 "The $concept_upper_strata$ consist of [Concept('concept_pop','$concept_pops$')] with [Concept('concept_profession','$concept_professions$')] they [Concept('concept_pop_qualifications','$concept_qualify$')] for mostly on the basis of [concept_wealth]. These $concept_professions$ are typically not available to $concept_pops$ subject to [concept_discrimination] either. They tend to hold [Concept('concept_ownership_share','$concept_ownership_shares$')] in their [Concept('concept_building','$concept_buildings$')] and draw [concept_dividends] and collect [concept_budget_interest] in addition to [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid, 'concept_upper_strata_ingame_added')]"
  concept_upper_strata_ingame_added:1 "\n\nConsists of the following $concept_professions$:\n[GetPopTypesInUpperStrataDesc]"
+
+ concept_incoming_units:0 "Units under Recruitment"
+ concept_incoming_units_short:0 "Under Recruitment"
+ concept_incoming_units_desc:1 "Each Unit under recruitment either has a level of a [concept_military_building] in the [concept_construction_queue] or have a $concept_military_building$ that are trying to hire [Concept('concept_pop','$concept_pops$')] in order to be able to create the [concept_unit]."
 
 ### NEW ITEMS
 

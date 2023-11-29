@@ -354,7 +354,7 @@
  je_strike:0 "Strike!"
  je_strike_reason:0 "Workers dissatisfied with their conditions have gone on strike. As they refuse to work, their industry has effectively come to a standstill."
  je_fulfill_striker_promise_tt:0 "Fulfill a promise to the strikers using the Labor Negotiations decision"
- je_is_on_strike_tt:0 "Has workplaces on strike"
+ je_is_not_on_strike_tt:0 "Do #bold not#! have workplaces on strike"
  strike_conflict_resolved:0 "The conflict behind the strike has been resolved"
  je_end_strike_tt:0 "The strike ends"
  je_strike_promise_fulfilled_tt:0 "Your promise to the strikers is fulfilled, appeasing the workers."

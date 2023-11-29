@@ -551,7 +551,7 @@
  je_unite_the_principalities_friend_with_all_great_powers_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has #bold positive#! relations with every [concept_great_power] that has an [concept_active_interest] in the region."
  je_unite_the_principalities_no_other_romanians_tt: "There are no other #bold Romanian#! countries to unite with."
  je_unite_the_principalities_romania_is_real_tt: "#bold Romania#! has already formed."
- je_unite_the_principalities_amicable_or_better_relations_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has #bold amicable#! or better relations with another #bold Romanian#! country, and either both countries are independent or are subjects of the same overlord."
+ je_unite_the_principalities_amicable_or_better_relations_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has #bold amicable#! or better relations with another #bold Romanian#! country, and either both countries are independent or are subjects of the same overlord that can themselves have subjects."
 
  je_all_for_one: "All for One"
  je_all_for_one_reason: "Together, we are stronger. We must preserve the tentative union we have, that from it we may forge a single, great Romania."

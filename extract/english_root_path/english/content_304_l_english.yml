@@ -234,3 +234,69 @@
   KOR_korean_empire_tooltip: "This country will be known as the #bold Empire of Korea#!"
 
   modifier_korean_empire: "Heralds of the Gwangmu Era"
+
+  modifier_egalitarian_workers_movement: "Egalitarian Trade Unions"
+
+  je_chinese_missions: "The Chinese Missions"
+  je_chinese_missions_reason: "The opening of certain [ROOT.GetCountry.GetAdjective] cities to Westerners has permitted [GetReligion('protestant').GetName] missionaries to penetrate further into our country. Elements throughout [ROOT.GetCountry.GetAdjectiveNoFormatting] society have come to regard these missionaries as the vanguard of Western interference in the established order."
+  missionary_ban_tt: "Has expelled missionaries from China"
+  CHI_deport_missionaries_button: "Expel Christian Missionaries"
+  CHI_deport_missionaries_button_desc: "With our treaty responsibilities to the Western powers abrogated, we may now deport the foreign missionaries in our country without fear of intervention."
+  modifier_chi_deporting_missionaries: "Expelling Christian Missionaries"
+  modifier_china_state_evangelisation: "Christian Evangelization Efforts"
+  open_to_missionaries_tt: "[SCOPE.sState('forbidden_state').GetName] will be opened to missionary efforts"
+  missionaries_forbidden_10_years_tt: "Foreign missionaries will not attempt to access [SCOPE.sState('forbidden_state').GetName] for the next #variable 10#! years"
+  modifier_chi_missionary_hospitals: "Missionary Hospitals"
+  modifier_chi_missionary_schools: "Missionary Schools"
+  modifier_chi_rebuked_christian_missionaries: "Rebuked Foreign Missionaries"
+  missionaries_enough_time_tt: "[GetReligion('protestant').GetName] missionaries have been active in our country for at least #bold several years#!"
+
+  modifier_taiping_hiring_bonus: "Rebelling Armies"
+
+  CHI_missionaries.1.t: "Missionary Activity in [SCOPE.sState('evangelisation_state').GetName]"
+  CHI_missionaries.1.d: "[GetReligion('protestant').GetName] missionary activity in [SCOPE.sState('evangelisation_state').GetName] has begun to find new ears, as foreigners exercise their rights to access the region."
+  CHI_missionaries.1.f: "A deacon by any measure, given how ill-carved his rosary sat around his neck. Still, it was one made by his own hand and his pride and joy on many adventures. He gripped it tightly as he stepped onto the paths of [SCOPE.sState('evangelisation_state').GetNameNoFormatting]. God willing, he thought, even one receptive ear would be a welcome addition to Jesus' flock."
+  CHI_missionaries.1.a: "Voices from a distant world."
+  CHI_missionaries.1.b: "They should leave their preaching with their opium."
+
+  CHI_missionaries.2.t: "Border Violation in [SCOPE.sState('forbidden_state').GetName]"
+  CHI_missionaries.2.d: "A group of [GetReligion('protestant').GetName] missionaries hailing from [SCOPE.sCountry('missionary_country').GetName] have been caught several miles past the border of [SCOPE.sState('forbidden_state').GetName] province, which foreigners are forbidden to access."
+  CHI_missionaries.2.f: ""That's the thirteenth one we've caught in as many weeks. This one is the first [SCOPE.sCountry('missionary_country').GetAdjectiveNoFormatting] that's come for a while."\n\n"Wait… look at these papers. This one's protected. What can we do?"\n\n"Does it matter? Just a lost Christian who cannot read. Our law applies; his does not.""
+  CHI_missionaries.2.a: "Bring them to the border, and have them executed."
+  CHI_missionaries.2.b: "Enforce the Sixth Clause of our law against superstition."
+  CHI_missionaries.2.c: "Open the province to limited travel."
+
+  deport_to_central_asia_tt: "The missionaries will deported to [SCOPE.sState('deport_to_central_asia_tt').GetName] to serve as slaves"
+
+  CHI_missionaries.3.t: "The [SCOPE.sState('missionary_schools_state').GetName] Missionary School"
+  CHI_missionaries.3.d: "[GetReligion('protestant').GetName] missionaries have opened several charity schools in [SCOPE.sState('missionary_schools_state').GetName], offering education in Western religious and scientific practice."
+  CHI_missionaries.3.f: ""St. Jude's, I'll call it. If no other shall answer prayers in the Orient, then let it reach the one who will search this far for prayers."\n\n"And this Saint Jude? Who is he? I thought he was the one who betrayed your Jesus."\n\n"No, the other Jude. But he is known to aid desperate causes. And this school, against all odds, stands all the same.""
+  CHI_missionaries.3.a: "They are welcome to operate in the region."
+  CHI_missionaries.3.b: "Forbid our citizens from attending."
+
+  CHI_missionaries.4.t: "Missionary Hospital Opens in [SCOPE.sState('missionary_hospitals_state').GetCityHubName]"
+  CHI_missionaries.4.d: "[GetReligion('protestant').GetName] missionaries have opened a charity hospital in [SCOPE.sState('missionary_hospitals_state').GetCityHubName], spreading their gospel whilst offering free treatment to the sick and wounded."
+  CHI_missionaries.4.f: "#bold God Welcomes All to His House of Healing! #!\n\nNew hospital in [SCOPE.sState('missionary_hospitals_state').GetNameNoFormatting] for those most in need. Jesus welcomes all.\n\n#italic And he called to him his twelve disciples and gave them authority over unclean spirits, to cast them out, and to heal every disease and every affliction. (Matthew 10:1) #!"
+  CHI_missionaries.4.a: "They are welcome to operate in the region."
+  CHI_missionaries.4.b: "Halt this unauthorized construction."
+
+  CHI_missionaries.5.t: "Missionaries Arrested in [SCOPE.sState('missionary_strife_state').GetName]"
+  CHI_missionaries.5.d: "Local authorities in [SCOPE.sState('missionary_strife_state').GetName] have arrested several [SCOPE.sCountry('missionary_country').GetAdjective] [GetReligion('protestant').GetName] missionaries for inducing conflicts with the locals. They have requested guidance on how the foreigners are to be treated."
+  CHI_missionaries.5.f: "The green-clad constables brought forth a perfumed trunk and placed it in front of the manacled missionaries. One prised the lid open, and waved his hand around the documents inside. All except one of the missionaries furrowed their brows and shook their heads. The one in the middle winced: the neat, Latin handwriting was unmistakably his. Among the letters requesting cardinals for aid were reports detailing the habits of the local magistrate."
+  CHI_missionaries.5.a: "Return them to the nearest concession area."
+  CHI_missionaries.5.b: "They will be treated like any other criminals."
+
+  warlord_china_events.200.t: "A Century of Triumph"
+  warlord_china_events.200.d: "A period of diligent modernization and centralization efforts has finally put an end to the risk of petty warlordism shattering the state. Despite the efforts of enemies internal and external, [ROOT.GetCountry.GetName] stands unbowed and unified."
+  warlord_china_events.200.f: "There at the edge of the horizon, lit by a setting sun, were the last of the foreign ships. Their colors flew at half-mast, a sure sign that they fled with their tails between their legs. Against them at sea was a Chinese flag flying high on Chinese soil. The message for the world was clear: China's mandate remains in its own hands. Its people alone will drive its future."
+  warlord_china_events.200.a: "A state to endure until the end of time."
+  warlord_china_events.200.b: "The ingenuity of our people will lead us ever further."
+  modifier_century_of_triumph_politics: "A Century of Triumph"
+  modifier_century_of_triumph_technology: "A Century of Triumph"
+
+  chi_add_1_fragile_unity_tt: "The progress bar of the #Bold Fragile Unity#! [concept_journal_entry] is depleted by #Bold 1#!"
+  chi_remove_1_fragile_unity_tt: "The progress bar of the #Bold Fragile Unity#! [concept_journal_entry] is increased by #Bold 1#!"
+
+  missionary_activities_begin_tt: "[GetReligion('protestant').GetName] #bold missionary activities#! will begin in states neighbouring foreign [Concept('concept_treaty_port','$concept_treaty_ports$')] in our nation"
+
+  owner_is_christian_tt: "Owner has a [concept_religion] with the #variable Christian#! trait"

@@ -248,6 +248,7 @@
 
  je_boxer_rebellion:0 "The Boxer Rebellion"
  je_boxer_rebellion_reason:1 "The humiliating loss of Chinese lands to foreign "barbarians" have resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence.\n\nFailure to see the militias vision through could have dramatic consequences for [ROOT.GetCountry.GetName]."
+ qing_owns_all_han_states_tt: "Owns all [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')], and no [GetCulture('han').GetName] [concept_homeland] is a [concept_split_state]"
 
  dyn_c_empire_of_china:0 "Empire of China"
  dyn_c_empire_of_china_adj:0 "Chinese"

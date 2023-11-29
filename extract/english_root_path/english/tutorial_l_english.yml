@@ -1194,7 +1194,7 @@ lesson_recruit_promote_commander_how_2:0 "$lesson_recruit_promote_commander_how_
  je_tutorial_improve_supply_network_goal:0 "Increase number of [concept_convoys]: #v [JournalEntry.CalcCurrentGoalValue|0] / [JournalEntry.GetTotalGoalValue|0]#!"
 
  je_tutorial_improve_consumer_goods_access:0 "Improve Access to Consumer Goods" #Doesn't display information fully
- je_tutorial_improve_consumer_goods_access_reason:1 "Many of your [Concept('concept_pop', '$concept_pops$')] are reporting that they are having a hard time getting access to [JournalEntry.GetTarget.GetMarketGoods.GetGoods.GetName]. Alleviating these pains for your $concept_pops$ will increase [concept_sol] and help build [Concept('concept_loyalist','$concept_loyalty$')]."
+ je_tutorial_improve_consumer_goods_access_reason:1 "Many of your [Concept('concept_pop', '$concept_pops$')] in [JournalEntry.GetTarget.GetStateGoods.GetState.GetName] are reporting that they are having a hard time getting access to [JournalEntry.GetTarget.GetStateGoods.GetGoods.GetName]. Alleviating these pains for your $concept_pops$ will increase [concept_sol] and help build [Concept('concept_loyalist','$concept_loyalty$')]."
 
  je_tutorial_make_interest_group_happy:0 "Make Interest Group Happy"
  je_tutorial_make_interest_group_happy_reason:1 "The [JournalEntry.GetTarget.GetInterestGroup.GetName] seem to have a low [concept_approval] of our [concept_government]. We should keep them happy to avoid any potential of them becoming [Concept('concept_radical','$concept_radicalized$')] and turning against us."

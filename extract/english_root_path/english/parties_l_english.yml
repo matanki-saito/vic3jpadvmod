@@ -351,6 +351,7 @@
  from_no_or_religious_schools:0 "No Schools or Religious Schools Laws"
  from_anti_free_trade:0 "Free Trade Law"
  from_anti_laissez_faire:0 "Laissez-Faire Law"
+ from_free_trade: "Free Trade Law"
  from_no_police:0 "No Police Law"
  from_peasant_levies:0 "Peasant Levies Law"
  from_no_graduated_taxation:0 "Support for Graduated Taxation Law"

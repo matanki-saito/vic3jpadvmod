@@ -658,7 +658,7 @@ paris_commune_pulse_events.5.d: "The government in Versailles has allowed the [S
 paris_commune_pulse_events.5.f: ""Thus we citizens of Paris are placed between two terrible laws; the law of suspects brought back by the Commune and the law on rapid executions which will certainly be approved by the Assembly.\n\nThey are not fighting with cannon shots, they are slaughtering each other with decrees."" # Emile Zola
 paris_commune_pulse_events.5.a: "Shoot to kill. They are enemy combatants."
 paris_commune_pulse_events.5.b: "They are traitors. Execute any who arise suspicion."
-paris_commune_pulse_events.5.c: "This is barely sedition. Arrest anyone without a weapon."
+paris_commune_pulse_events.5.c: "This is barely sedition. Imprison unarmed suspects."
 unacceptable_losses_modifier: "Unacceptable Losses"
 moral_high_ground_modifier: "Moral High Ground"
 divisive_instigation_modifier: "Divisive Instigation"

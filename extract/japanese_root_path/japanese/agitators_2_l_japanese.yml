@@ -571,7 +571,7 @@
  paris_commune_pulse_events.5.f: "「こうして我々パリ市民は、非道なる2つの法の狭間に置かれることとなった。コミューンによって復活した容疑者の法律と、議会によって確実に承認されるであろう、迅速な処刑に関する法律だ。\n\nやつらは大砲で戦うのではなく、法令でお互いを殺し合っているのだ」" #Emile Zola
  paris_commune_pulse_events.5.a: "撃ち殺せ。やつらは敵の戦闘員だ。"
  paris_commune_pulse_events.5.b: "やつらは裏切り者だ。疑わしい者は処刑せよ。"
- paris_commune_pulse_events.5.c: "これはあからさまな反乱の扇動だ。武器を持たない者は逮捕しろ。"
+ paris_commune_pulse_events.5.c: "これはあからさまな反乱の扇動だ。武器を持たない容疑者は投獄しろ。"
  unacceptable_losses_modifier: "受け入れられない損失"
  moral_high_ground_modifier: "道徳的優位"
  divisive_instigation_modifier: "対立の扇動"
