@@ -487,3 +487,4 @@
  acw_victory_modifier:0 "キング・コットン"
  acw_victory_landowners_modifier:0 "南部騎士団"
  acw_slave_trade_rural_folk:0 "人はみな奴隷の所有者"
+ qing_owns_all_han_states_tt:0 "すべての[GetCulture('han').GetName][Concept('concept_homeland','$concept_homelands$')]を所有しており、[concept_split_state]となっている[GetCulture('han').GetName][concept_homeland]はありません"

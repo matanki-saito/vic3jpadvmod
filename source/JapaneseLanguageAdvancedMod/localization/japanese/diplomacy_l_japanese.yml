@@ -874,3 +874,8 @@
  personal_union_effect_desc_third:0 "[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]が[concept_personal_union]における[COUNTRY.GetName]の小国側のパートナーになります"
  tributary_action_notification_name:0 "$tributary_proposal_notification_name$"
  tributary_action_notification_desc:0 "$tributary_proposal_notification_desc$"
+ DIPLOMATIC_PACT_BREAK_DURATION_EXPIRED:0 "[concept_diplomatic_pact]の施行期間が終わりました"
+ DIPLOMATIC_PACT_BREAK_DECENTRALIZED:0 "2つの[Concept('concept_country','$concept_countries$')]のうち1つは[concept_decentralized_nation]です"
+ DIPLOMATIC_PACT_BREAK_NON_AUTONOMOUS_SUBJECT:0 "2つの[Concept('concept_country','$concept_countries$')]のうち1つは外交自治体を持たない[concept_subject]です"
+ DIPLOMATIC_PACT_BREAK_NOT_VALID_RIVALS:0 "2つの[Concept('concept_country','$concept_countries$')]の[concept_rank]の違いにより、[concept_rivalry]になれません"
+ DIPLOMATIC_ACCEPTANCE_SHARED_RIVALS:0 "共通の[Concept('concept_rivalry','$concept_rivals$')]を有しています"

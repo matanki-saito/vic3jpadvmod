@@ -643,7 +643,7 @@
  modifier_defeated_initial_socialist_movement_worries:0 "来たるべき戦争"
  culture_south_america.4.t:0 "我々独自の国家"
  culture_south_america.4.d:0 "スペインからの独立という遺産が先進的な国民性の誕生に拍車をかけた。唯一無二の独立国[ROOT.GetCountry.GetName]の構想と、不可分なラテンアメリカの夢の間で対立が始まっている。"
- culture_south_america.4.f:0 "何世紀もの間、銃弾はまず支配に抵抗する者たちに向かって放たれ、次に国をかつての支配者と繋ごうとする者たちに向かって放たれた。スペイン軍の逃亡によって非公式ながらも平和が訪れたが、奴らが完全に歩みを止まることはない。奴らは依然銃を抱えたまま、内側と外側に銃口を向け、この一時の混乱の終わりと追い求めるべき一つの標的を待っていた。"
+ culture_south_america.4.f:0 "何世紀もの間、銃弾はまず支配に抵抗する者たちに向かって放たれ、次に国をかつての支配者と繋ごうとする者たちに向かって放たれた。スペイン軍の逃亡によって非公式ながらも平和が訪れたが、奴らが完全に歩みを止めることはない。奴らは依然銃を抱えたまま、内側と外側に銃口を向け、この一時の混乱の終わりと追い求めるべき一つの標的を待っていた。"
  culture_south_america.4.a:0 "祖国は自由への新たな一歩を踏み出す。"
  culture_south_america.4.b:0 "我々は多くの国の中の一つの国にすぎない。"
  slow_cultural_development_progress_tt:0 "唯一無二の[SCOPE.sCulture('new_national_culture').GetName]文化の発展が#bold 遅く#!なるが、回避されることはない"
