@@ -1990,7 +1990,7 @@
  modifier_country_society_tech_research_speed_mult_desc:0 "[concept_innovation]を消費して社会カテゴリにある[concept_technology]の研究をする際の研究速度に対するボーナスあるいはペナルティです"
  modifier_unit_convoy_defense_mult:0 "輸送船団の護衛による防御"
  modifier_unit_convoy_defense_mult_desc:0 "[Concept('concept_raid_convoys','$concept_convoy_raiding$')]に対する護衛の[Concept('concept_flotilla','$concept_flotillas$')]による保護に適用される増減補正です。"
- modifier_unit_convoy_raiding_interception_mult:0 "輸送船団レイダーの迎撃"
+ modifier_unit_convoy_raiding_interception_mult:0 "船団襲撃の迎撃"
  modifier_unit_convoy_raiding_interception_mult_desc:0 "[Concept('concept_raid_convoys','$concept_convoy_raiding$')]に参加する敵対的な[Concept('concept_flotilla','$concept_flotillas$')]を迎撃し、交戦する確率に対する増減補正です。"
  modifier_country_must_have_movement_to_enact_laws:0 "法律の制定に政治運動が必須"
  modifier_country_must_have_movement_to_enact_laws_desc:0 "[concept_political_movement]の支援がない国が[Concept('concept_law','$concept_laws$')]を制定できないようにするペナルティです"

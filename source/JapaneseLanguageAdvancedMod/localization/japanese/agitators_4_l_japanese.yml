@@ -2,7 +2,7 @@
  je_nihilist_movement:0 "ニヒリズム運動"
  je_nihilist_movement_goal:0 "以下のいずれかに該当 : \n[SCOPE.GetRootScope.GetCountry.GetName]が、[GetLawType('law_censorship').GetName]もしくは[GetLawType('law_outlawed_dissent').GetName]を制定し、ニヒリストから成る利益団体すべてが5年以上抑圧されている\n[SCOPE.GetRootScope.GetCountry.GetName]が、 [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]に対する#bold 肯定的な#!支持または、それらが周縁集団となっている状況を5年以上維持している"
  je_nihilist_movement_trigger_tt_1:0 "[SCOPE.GetRootScope.GetCountry.GetName]が[GetLawType('law_censorship').GetName]または[GetLawType('law_outlawed_dissent').GetName]を制定し、すべてのニヒリズム利益集団が5年以上抑圧されている。"
- je_nihilist_movement_trigger_tt_2:0 "[ROOT.GetCountry.GetName]が、[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant]の#bold 肯定的な#!支持または、それらが周縁集団である状況を5年以上維持している。"
+ je_nihilist_movement_trigger_tt_2:0 "[SCOPE.GetRootScope.GetCountry.GetName]が、[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]の#bold 肯定的な#!支持または、それらが非主流派である状況を5年以上維持している。"
  je_nihilist_movement_reason:0 "神聖であると宣言されたすべてのものの廃止を望むと主張する、急進的な[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]運動が、神によって任命された支配を非難する小冊子を広め始めている。この運動は、その批判によって、私たちの政府の根幹を脅かしている。"
  modifier_fathers_and_sons:0 "反ニヒリズム文学の支持"
  modifier_fathers_and_sons_ignored:0 "間違った教訓"
