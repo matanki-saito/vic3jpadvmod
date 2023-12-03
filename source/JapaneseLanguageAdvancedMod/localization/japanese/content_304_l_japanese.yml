@@ -135,7 +135,7 @@
  risorgimento_unifying_stance_set_tt:0 "イタリア統一運動を#bold 支援#!するために追加の行動を取れるようになります"
  risorgimento_opposing_stance_tt:0 "イタリア統一運動を#bold 支持#! しないことにしました"
  notification_ita_italian_unification_intent_name:0 "[SCOPE.sCountry('italian_unifier_candidate').GetName]がイタリア統一を支持"
- notification_ita_italian_unification_intent_desc:0 "[SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetFullName][SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetPrimaryRoleTitle]の政府が、イタリア半島を一つの国家に統一することへの指示を表明しました。"
+ notification_ita_italian_unification_intent_desc:0 "[SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetFullName][SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetPrimaryRoleTitle]の政府が、イタリア半島を一つの国家に統一することへの支持を表明しました。"
  notification_ita_italian_unification_intent_tooltip:0 "#header $notification_ita_italian_unification_intent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ita_italian_unification_intent_desc$"
  notification_nationalism_unlock_national_agitation_name:0 "国の扇動が利用可能"
  notification_nationalism_unlock_national_agitation_desc:0 "我が国の国家主義の発展に伴い、[Concept('concept_agitator','$concept_agitators$')]のキャラクターインタラクション「国の扇動をかき立てる」が利用可能になりました。"
