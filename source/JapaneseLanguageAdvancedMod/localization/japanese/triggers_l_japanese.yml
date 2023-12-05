@@ -2477,7 +2477,7 @@
  TRIGGER_ANY_MILITARY_FORMATION_PERCENT:0 "$FILTER$[Concept('concept_military_formation','$concept_military_formations$')]の$PARAMETERS$ : "
  TRIGGER_ANY_SCOPE_STATE_ALL_IN_STRATEGIC_REGION_FIRST:0 "すべての[StateRegion.GetName][Concept('concept_state','$concept_states$')]"
  TRIGGER_ANY_SCOPE_STATE_ALL_IN_STRATEGIC_REGION_FIRST_NOT:0 "[StateRegion.GetName][Concept('concept_state','$concept_states$')]以外"
- TRIGGER_ANY_SCOPE_STATE_ALL_IN_STRATEGIC_REGION_THIRD:0 "[Country.GetName]にあるすべての[Concept('concept_state','$concept_states$')]"
+ TRIGGER_ANY_SCOPE_STATE_ALL_IN_STRATEGIC_REGION_THIRD:0 "[StrategicRegion.GetName]にあるすべての[Concept('concept_state','$concept_states$')]"
  TRIGGER_ANY_SCOPE_STATE_ALL_IN_STRATEGIC_REGION_THIRD_NOT:0 "[StrategicRegion.GetName]にある[Concept('concept_state','$concept_states$')]以外"
  TRIGGER_COUNTRY_ARMY_UNIT_TYPE_FRACTION:0 "@battalions![Concept('concept_battalion','$concept_battalions$')]は$COMPARATOR$ $NUM|v%$ [COMBAT_UNIT_TYPE.GetName][Concept('concept_combat_unit_type','$concept_combat_unit_types$')]で構成されています (現在 : $CURRENT_VALUE|%v$) "
  TRIGGER_COUNTRY_ARMY_UNIT_TYPE_FRACTION_NOT:0 "@battalions![Concept('concept_battalion','$concept_battalions$')]は$COMPARATOR$ $NUM|v%$ [COMBAT_UNIT_TYPE.GetName][Concept('concept_combat_unit_type','$concept_combat_unit_types$')]で構成されて#bold いません#! (現在 : $CURRENT_VALUE|%v$) "
