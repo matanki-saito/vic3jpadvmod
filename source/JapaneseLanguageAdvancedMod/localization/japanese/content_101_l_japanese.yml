@@ -527,7 +527,7 @@
  nursing_events.4.d:0 "経験豊富な看護師の集団が[SCOPE.sWar('complete_nursing_war').GetName]戦線における慣行を改革し、結果的に死者が著しく減少した。"
  nursing_events.4.f:0 "「ランプの婦人と呼ばれていたな。夜になると彼女が傷痍軍人たちの様子を見に来てくれるんだ。なんとも優しい心の持ち主だ」"
  nursing_events.4.a:0 "医療という専門職に起きた革命だ。"
- war_wounded_civilian_assistance:0 "戦傷者に対する民間の支援。"
+ war_wounded_civilian_assistance:0 "戦傷者に対する民間の支援"
  free_speech_laws.1.t:0 "言論の自由パンフレット"
  free_speech_laws.1.d:0 "[SCOPE.sLaw('current_law_scope').GetName]を贔屓するパンフレットが、ほぼすべての主要都市で違法に配布されている。"
  free_speech_laws.1.f:0 "「奴らの印刷速度はこちらの没収速度を上回っています。我々は半ば封じ込めを諦めています。出回っている以上意味がありません」"

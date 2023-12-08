@@ -489,7 +489,7 @@
  cultural_homeland_events.30.f:0 "「倉庫の仕事に応募しに行ったんだ。そしたら彼らは私を一目見て、その仕事は「私の人種」には向かないと言ったんだよ」"
  cultural_homeland_events.30.a:0 "仕事は万人のためにある。"
  cultural_homeland_events.30.b:0 "誰を雇うかはボス次第だ。"
- cultural_homeland_events.40.t:0 "[SCOPE.sCulture('state_minority_culture').GetName]の人々への迫害。"
+ cultural_homeland_events.40.t:0 "[SCOPE.sCulture('state_minority_culture').GetName]の人々への迫害"
  cultural_homeland_events.40.d:0 "[SCOPE.sCulture('state_minority_culture').GetName]のグループによって[SCOPE.sState('culture_state').GetName]全域で[SCOPE.sCulture('state_majority_culture').GetName]の企業や家が攻撃されています。"
  cultural_homeland_events.40.f:0 "「レンガを投げてきて、店の窓を割ったんです！帰れ、と書かれた紙が貼られていたが、ここが唯一の家なんだ」"
  cultural_homeland_events.40.a:0 "この破壊行為は止めさせるべきだ。"
