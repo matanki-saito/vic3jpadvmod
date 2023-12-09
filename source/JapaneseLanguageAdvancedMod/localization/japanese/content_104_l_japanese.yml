@@ -753,7 +753,7 @@
  found_explorer_modifier:0 "発見された行方不明の探検家"
  found_old_explorer:0 "発見された行方不明の探検家"
  expedition_events.130.t:0 "予期せぬ訪問客"
- expedition_events.130.d:0 "遠征隊は怪しい交易商人の集団に出くわしました。その中の一人が、自分は「傭兵たち」に誘拐された[SCOPE.sC('ambassador_country').GetAdjectiveNoFlag]大使だと主張しています。"
+ expedition_events.130.d:0 "遠征隊は怪しい交易商人の集団に出くわしました。その中の一人が、自分は「傭兵たち」に誘拐された[SCOPE.sC('ambassador_country').GetAdjectiveNoFlag]の大使だと主張しています。"
  expedition_events.130.f:0 "「彼らの手は、土と草と乾いた血の色をしていた。我々の姿を見て笑みを浮かべた彼らを、私は険しい表情で見やった。このような密林の奥地で笑う男などいるはずがない。\n\n連中の一人がこちらに近づいて、外国語で話しかけてきた。若い隊員にその言語を話す者がいる。「彼らは商人です。何か売りたい物はないかと言っています」「探検家だって？」荒々しい声で必死に叫ぶ。「数か月前、こいつらにに誘拐されたんだ！こいつらは泥棒で、傭兵であり、犯罪者なんだ！私は[SCOPE.sC('ambassador_country').GetAdjectiveNoFormatting]大使だ！この危機から私を救ってくれ！」"
  expedition_events.130.a:0 "この男の安全な場所まで連れて行く必要がある。"
  expedition_events.130.b:0 "どうやって真偽を確認するんだ？"
