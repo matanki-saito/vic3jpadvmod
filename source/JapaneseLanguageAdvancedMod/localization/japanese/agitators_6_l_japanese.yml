@@ -205,7 +205,7 @@
  agitator_legal_events.26.a:0 "この無駄な法律を叩き潰せ。"
  agitator_legal_events.26.b:0 "[SCOPE.sLaw('current_law_scope').GetName]と並行して近代化しよう。"
  agitator_legal_events.27.t:0 "お酒を飲みながら"
- agitator_legal_events.27.d:0 "まとまりのない討論のなか、[SCOPE.sCharacter('supporting_agitator').GetFullName]と[SCOPE.gsInterestGroup('cavalry_ig').GetName]の代理人は[SCOPE.sLaw('current_law_scop').GetName]の利点について長々と話し合った。一方は議事録を取る程度の意識はあったようだ。"
+ agitator_legal_events.27.d:0 "まとまりのない討論のなか、[SCOPE.sCharacter('supporting_agitator').GetFullName]と[SCOPE.gsInterestGroup('cavalry_ig').GetName]の代理人は[SCOPE.sLaw('current_law_scope').GetName]の利点について長々と話し合った。一方は議事録を取る程度の意識はあったようだ。"
  agitator_legal_events.27.f:0 "「まあ、それが新法の問題なのだ。他の支援法を削除しなければ、誰かがそれらの抜け穴を突いてその範囲から逃れることができる」\n\n「もっともらしい疑念を回避することに関する、2つの法律を見なければな。これらは、そういう不正行為者を捕まえる狡猾な封鎖法なのだよ」"
  agitator_legal_events.27.a:0 "よくやったと褒めてやろう。"
  agitator_legal_events.27.b:0 "統治に関する事柄は政府のものであり、罪の巣窟ではない。"

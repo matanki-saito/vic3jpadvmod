@@ -1438,7 +1438,7 @@
  modifier_backfired_defection:0 "逃亡の反発"
  modifier_embarrassed_by_judgement_failure:0 "判断の失敗"
  revolution_pulse_events.1.t:0 "国家自衛"
- revolution_pulse_events.1.d:0 "[ROOT.GetCountry.GetAdjective][SCOPE.gsInterestGroup('self_defense_threat_ig').GetName]の間で暴力的感情が高まり、いくつかの[SCOPE.sCulture('self_defense_threat_culture').GetName]コミュニティは、その民の安全を保つために武装民兵を結成し始めている。"
+ revolution_pulse_events.1.d:0 "[ROOT.GetCountry.GetAdjective]の[SCOPE.gsInterestGroup('self_defense_threat_ig').GetName]の間で暴力的感情が高まり、いくつかの[SCOPE.sCulture('self_defense_threat_culture').GetName]コミュニティは、その民の安全を保つために武装民兵を結成し始めている。"
  revolution_pulse_events.1.f:0 "「混沌の世界をさまよう古の[SCOPE.sCulture('self_defense_threat_culture').GetNameNoFormatting]の英雄たちの魂は、ついにその居場所を見つけたのだ」"
  revolution_pulse_events.1.a:0 "当局はもっと重要なことを懸念しているのだ。"
  revolution_pulse_events.1.b:0 "[SCOPE.sCulture('self_defense_threat_culture').GetName]は度を越している。罰を与えねばならない。"
