@@ -70,7 +70,7 @@
  modifier_george_i:0 "星の瞳の君主"
  modifier_michael_ii:0 "悩める愛国者"
  modifier_alexei_ii:0 "戦士のツァーリ"
- alexander_ii_enthroned_tt:0 "市場リベラルのキャラクターが[SCOPE.sCharacter('tsar_scope').GetFullName]が統治している間、[SCOPE.sCountry('russia_scope').GetName]に出現しやすくなる。"
+ alexander_ii_enthroned_tt:0 "[SCOPE.sCharacter('tsar_scope').GetFullName]の統治期間中、[SCOPE.sCountry('russia_scope').GetName]に市場自由主義者のキャラクターが登場しやすくなります。"
  alexander_iii_enthroned_tt:0 "伝統主義者のキャラクターが[SCOPE.sCharacter('tsar_scope').GetFullName]が統治している間、[SCOPE.sCountry('russia_scope').GetName]に出現しやすくなる。"
  alexei_ii_enthroned_tt:0 "ジンゴイストのキャラクターが[SCOPE.sCharacter('tsar_scope').GetFullName]が統治している間、[SCOPE.sCountry('russia_scope').GetName]に出現しやすくなる。"
  unfriendly_nation_with_interest_in_alaska_tt:0 "我々より高い[concept_rank]を持つ敵対的な[concept_country]が、#bold 太平洋沿岸#![concept_strategic_region]に[concept_interest]を持っている"
