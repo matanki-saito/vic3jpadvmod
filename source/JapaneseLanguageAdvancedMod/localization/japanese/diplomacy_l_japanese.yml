@@ -762,7 +762,7 @@
  vassal_trigger_false_desc_global:0 "[concept_vassal]#b ではない#!"
  vassal_trigger_desc_first:0 "[TARGET_COUNTRY.GetName]が[COUNTRY.GetAdjectiveNoFlag]の[concept_vassal]である"
  vassal_trigger_false_desc_first:0 "[TARGET_COUNTRY.GetName]が[COUNTRY.GetAdjectiveNoFlag]の[concept_vassal]#b ではない#!"
- vassal_trigger_desc_third:0 "[COUNTRY.GetNameNoFlag]が[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self),TARGET_COUNTRY.GetName)][AddTextIf(Not(vassalqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]の[concept_vassal]である"
+ vassal_trigger_desc_third:0 "[COUNTRY.GetNameNoFlag]が[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self),TARGET_COUNTRY.GetName)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]の[concept_vassal]である"
  vassal_trigger_false_desc_third:0 "[COUNTRY.GetNameNoFlag]が[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self),TARGET_COUNTRY.GetName)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self,TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]の[concept_vassal]#b ではない#!"
  DIPLO_ACTION_OVERLORD_RELATIONS:0 "[SCOPE.GetRootScope.GetCountry.GetName]と[SCOPE.sC('target_country').GetOverlord.GetName]との[concept_relations]"
  DIPLO_ACTION_OVERLORD_RELATIONS_CORDIAL:0 "$DIPLO_ACTION_OVERLORD_RELATIONS$は$relations_cordial$です"

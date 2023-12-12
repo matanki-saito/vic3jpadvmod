@@ -207,7 +207,7 @@
  heavenly.2.d:0 "[SCOPE.sState('cult_state').GetName]に奇妙なカルト教団が出現しています。キリスト教だけでなく、地元の信仰の要素を取り入れ、彼らのリーダーは自分がイエス・キリストの弟だと信じています。"
  heavenly.2.f:0 "「私の目は西を越え、北を越え、川を越え、山を越え、\n私の声は東を越え、南を越え、太陽を越え、月を越える」"
  heavenly.2.a:0 "気がかりだな。"
- heavenly.3.t:0 "[SCOPE.sState('cult_growth_state').GetName]での神の崇拝者"
+ heavenly.3.t:0 "[SCOPE.sState('cult_growth_state').GetName]での拝上帝会"
  heavenly.3.d:0 "狂信的な福音主義者の結社である拝上帝会は、[SCOPE.sState('cult_growth_state').GetName]にかなりの数の信者を集めているようです。"
  heavenly.3.f:0 "「彼らは貧しい人々や社会的弱者、国家に無視されたり失敗したりした人々の中に熱心な改宗者を見出している」"
  heavenly.3.a:0 "これは良いこととはいえない。"

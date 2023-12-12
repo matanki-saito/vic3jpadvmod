@@ -252,7 +252,7 @@
  ideology_sikh_moralist_desc:0 "#lore シク教は、強力な国軍を持つことを支持する軍事活動を実施します。#!"
  ideology_hindu_moralist:0 "ヒンドゥー道徳主義"
  ideology_hindu_moralist_desc:0 "#lore ヒンドゥー教の司祭は、官僚はカースト制度に従うべきだと信じています..#!"
- ideology_oriental_orthodox_patriarch:0 "東洋正教会家父長主義"
+ ideology_oriental_orthodox_patriarch:0 "東方諸教会家父長主義"
  ideology_oriental_orthodox_patriarch_desc:0 "#lore 東洋教会家父長主義では、子どもの教育が国の最優先事項であると信じられています。#!"
  effect_qa_test_events.1.t:0 "効果テストですか？"
  effect_qa_test_events.1.d:0 "あなたは真の英雄です"
