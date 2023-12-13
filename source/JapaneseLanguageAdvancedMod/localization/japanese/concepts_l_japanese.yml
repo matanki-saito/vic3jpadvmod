@@ -308,7 +308,7 @@
  concept_under_construction:0 "建設中"
  concept_under_construction_desc:0 "[concept_building]が[concept_construction]力を使用している場合、$concept_under_construction$であるとみなされます。"
  concept_urbanization:0 "都市化"
- concept_urbanization_desc:0 "$concept_urbanization$は、[concept_state]に建設されたほとんどの[Concept('concept_building','$concept_buildings$')]によって程度は異なりますが、発生します。$concept_state$が十分に$concept_urbanization$すると、[SelectLocalization(GetPlayer.IsValid,'concept_urbanization_desc_added','Urban Center')]が自動的に拡張されます。"
+ concept_urbanization_desc:0 "$concept_urbanization$は、[concept_state]に建設されたほとんどの[Concept('concept_building','$concept_buildings$')]によって程度は異なりますが、発生します。$concept_state$が十分に$concept_urbanization$すると、[SelectLocalization(GetPlayer.IsValid,'concept_urbanization_desc_added','市街地')]が自動的に拡張されます。"
  concept_urbanization_desc_added:0 "[GetBuildingType('building_urban_center').GetName]"
  concept_endorse_oppose:0 "$concept_laws$の$concept_endorsement$と$concept_opposition$"
  concept_endorse:0 "賛成"

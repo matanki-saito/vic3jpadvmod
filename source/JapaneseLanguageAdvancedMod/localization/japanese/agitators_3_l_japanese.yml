@@ -64,7 +64,7 @@
  coup.3.c:0 "[SCOPE.gsInterestGroup('coup_ig').GetName]をさらに敵対させないようしよう。"
  coup.4.t:0 "クーデターのたち消え"
  coup.4.d:0 "[ROOT.GetCountry.GetAdjective]民主主義に対する勢いは、[SCOPE.gsInterestGroup('coup_ig').GetName]の間で完全に失速している。[SCOPE.sLaw('coup_desired_law').GetName]を制定する計画は放棄された。"
- coup.4.f:0 "「[SCOPE.sCharacter('coup_leader').GetLastNameNoFormatting]、お前の困ったところは、一握りの半端者を誘導して、黒い短パンをはいて[SCOPE.sState('capital_scop').GetCityHubName]を目立たなくさせたからと言って、自分がをひとかどの何者かだと思っているところだ。お前は、「万歳、[SCOPE.sCharacter('coup_leader').GetLastNameNoFormatting]！」と叫ぶのを聞いて、それが「民衆の声」だと想像しているだけだ。それがお前の間違いなんだ。民衆の声が言っているのは「[SCOPE.sCharacter('coup_leader').GetLastNameNoFormatting]のヤツがふわふわと浮ついてるのを見ろよ！あれほど完璧に嫌なやつをみたことがあるか？」だ」"
+ coup.4.f:0 "「[SCOPE.sCharacter('coup_leader').GetLastNameNoFormatting]、お前の困ったところは、一握りの半端者を誘導して、黒い短パンをはいて[SCOPE.sState('capital_scope').GetCityHubName]を目立たなくさせたからと言って、自分がをひとかどの何者かだと思っているところだ。お前は、「万歳、[SCOPE.sCharacter('coup_leader').GetLastNameNoFormatting]！」と叫ぶのを聞いて、それが「民衆の声」だと想像しているだけだ。それがお前の間違いなんだ。民衆の声が言っているのは「[SCOPE.sCharacter('coup_leader').GetLastNameNoFormatting]のヤツがふわふわと浮ついてるのを見ろよ！あれほど完璧に嫌なやつをみたことがあるか？」だ」"
  coup.4.a:0 "[SCOPE.sCharacter('coup_leader').GetFullName]の屈辱的な失態だ。"
  coup.4.b:0 "民主主義は守られた！"
  coup.5.t:0 "[SCOPE.gsInterestGroup('coup_ig').GetName]政府の放棄"
