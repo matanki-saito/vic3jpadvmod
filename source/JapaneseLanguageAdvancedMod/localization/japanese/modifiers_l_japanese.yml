@@ -2602,3 +2602,5 @@
  modifier_character_convoy_protection_mult_desc:0 "[concept_admiral]がどれだけ効果的に[concept_convoys]を守れるのかに対するボーナスあるいはペナルティです"
  modifier_character_convoy_raiding_mult:0 "[concept_admiral]の[concept_convoys]の襲撃効率"
  modifier_character_convoy_raiding_mult_desc:0 "[concept_admiral]が[concept_convoys]を襲撃する効率に対するボーナスあるいはペナルティです"
+ modifier_country_subsidies_bg_power:0 "$bg_power$の助成を許可"
+ modifier_country_subsidies_bg_power_desc:0 "$bg_power$を政府所有物として制定する法的な許可です"
