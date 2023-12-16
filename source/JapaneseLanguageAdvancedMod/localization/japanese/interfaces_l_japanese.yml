@@ -2488,7 +2488,7 @@
  TAX_INCOME_DIPLOMATIC:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],DIPLOMATIC_PACTS_INCOME_BREAKDOWN,DiplomaticPactsIncomeTooltip @money![GetPlayer.PredictDiplomaticPactsIncome|D+=]#!#! [concept_budget_diplomatic_pacts]"
  TAX_INCOME_TARIFFS:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TARIFFS_BREAKDOWN,TariffsTooltip @money![GetPlayer.PredictTariffs|D+=]#!#! [concept_tariffs]"
  INVESTMENT_POOL:0 "[concept_investment_pool] : #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_BREAKDOWN,InvestmentPoolTooltip #v @money![GetPlayer.GetInvestmentPool|D+]#!#!#! (変化 : #v @money![GetPlayer.GetInvestmentPoolChange|D+=]#!) "
- INVESTMENT_POOL_BREAKDOWN:0 "#header [concept_investment_pool]#!\n現在 : #v @money![GetPlayer.GetInvestmentPool|D+]#!\n週間変化 : #v @money![GetPlayer.GetInvestmentPoolChange|D+=]#!\n$TOOLTIP_DELIMITER$\n$INVESTMENT_POOL_CHANGE$\n\n[GetPlayer.GetAllowedBuildingGroupsFromInvestmentPoolDesc]"
+ INVESTMENT_POOL_BREAKDOWN:0 "#header [concept_investment_pool]#!\n現在 : #v @money![GetPlayer.GetInvestmentPool|D+]#!\n週間変化 : #v @money![GetPlayer.GetInvestmentPoolChange|D+=]#!\n$TOOLTIP_DELIMITER$\n$INVESTMENT_POOL_CHANGE$[SelectLocalization(GetPlayer.ShouldShowPrivateConstructionQueue,'','INVESTMENT_POOL_ALLOWED_BUILDINGS')]"
  INVESTMENT_POOL_CHANGE:0 "[GetPlayer.GetInvestmentPoolChangeFromConstructionDesc]\n[GetPlayer.GetInvestmentPoolChangeFromInvestmentDesc]"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION:0 "#bold 新規[concept_construction]力 : #! #v @money!$CHANGE|D+$#!"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION_EMPTY:0 "$concept_investment_pool$を使用している新しい[concept_construction]力はありません : #v @money!$CHANGE|D+=$#!"
