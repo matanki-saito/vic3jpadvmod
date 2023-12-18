@@ -1346,7 +1346,7 @@
  concept_military_formations:0 "編制"
  concept_military_formation_desc:0 "$concept_military_formation$は[concept_army]または[concept_fleet]であり、[concept('concept_war','$concept_war$')]において軍事目的を達成するために使用されます。[Concept('concept_unit','$concept_units$')]と[Concept('concept_commander','$concept_commanders$')]を配備し、[Concept('concept_front','$concept_fronts$')]に出撃して敵軍と戦うことが可能です。"
  concept_naval_invasion:0 "上陸作戦"
- concept_naval_invaded:0 "上陸作戦が実施された"
+ concept_naval_invaded:0 "上陸作戦"
  concept_naval_invasion_desc:0 "[concept_fleet]と[concept_army]が協力して沿岸部の[concept_state]に海上侵略します。$concept_fleet$は$concept_army$が安全に上陸できるように沿岸の海域を確保し、$concept_army$は一連の陸上[Concept('concept_battle','$concept_battles$')]を実行し、目標とする$concept_state$で[concept_occupation]を獲得します。\n\n対象となる$concept_state$の支配者は、自軍の[Concept('concept_fleet'、'$concept_fleets$')]を影響下にある[concept_sea_node]に配備するか、侵略した$concept_state$を包囲しながら、地上の[concept_hq]に[Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')][concept_army]を駐留させて、$concept_naval_invasion$から防衛できます。"
  concept_good_consumes:0 "消費"
  concept_pollution_impact:0 "汚染の影響"

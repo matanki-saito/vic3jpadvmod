@@ -221,7 +221,7 @@
  alert_can_establish_company_hint:0 "企業パネルで新たな[concept_company]を設立することができます"
  alert_can_establish_company_action:0 "企業パネル"
  alert_naval_invasion_name:0 "[SCOPE.GetRootScope.GetNavalInvasion.GetName]"
- alert_naval_invasion_desc:0 "現在、[SCOPE.GetRootScope.GetNavalInvasion.GetEnemyState.GetName]の[SCOPE.GetRootScope.GetNavalInvasion.GetInvaderCountry.GetName]によって[Concept('concept_naval_invasion','$concept_naval_invaded$')]されています。"
+ alert_naval_invasion_desc:0 "現在、[SCOPE.GetRootScope.GetNavalInvasion.GetEnemyState.GetName]において[SCOPE.GetRootScope.GetNavalInvasion.GetInvaderCountry.GetName]による[Concept('concept_naval_invasion','$concept_naval_invaded$')]が行われています。"
  alert_naval_invasion_hint:0 "追加の[Concept('concept_fleet','$concept_fleets$')]を#v [SCOPE.GetRootScope.GetNavalInvasion.GetSeaNodeName]#! に派遣し、敵の$concept_fleets$を沈めたり、[Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')][Concept('concept_army','$concept_armies$')]を派遣し、[SCOPE.GetRootScope.GetNavalInvasion.GetDefenderHQ.GetName]を防衛したりすることができます。"
  alert_naval_invasion_action:0 "上陸作戦パネル"
  alert_low_organization_name:0 "[concept_organization]が不足 : [SCOPE.GetRootScope.GetMilitaryFormation.GetName]"
