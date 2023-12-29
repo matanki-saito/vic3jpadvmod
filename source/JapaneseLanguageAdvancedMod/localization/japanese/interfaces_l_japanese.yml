@@ -3822,7 +3822,7 @@
  establish_presence:0 "存在感を確立"
  project_power:0 "戦力の投射"
  project_great_power:0 "大戦力の投射"
- presence:0 "存在感"
+ presence:0 "展開度"
  power:0 "パワー"
  no_power:0 "戦力無し"
  RANK_HEADER:0 "#header 戦力ランク#!"

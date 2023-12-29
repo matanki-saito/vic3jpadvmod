@@ -1267,7 +1267,7 @@
  AGITATORS_TITLE:0 "[Concept('concept_agitator','$concept_agitators$')]"
  concept_capitulation_desire:0 "降伏願望"
  concept_capitulation_desire_desc:0 "AIに支配された[concept_country]は、この値が0以上になると降伏しようとする。"
- concept_presence:0 "存在感"
+ concept_presence:0 "展開度"
  concept_presence_desc:0 "[concept_fleet]の$concept_presence$は、[Concept('concept_admiral','$concept_admirals$')]がどれだけ効果的に[Concept('concept_order','$concept_orders$')]をこなすことができるかを影響します。$concept_presence$は時間と共に大きくなり、$concept_fleet$は[concept_sea_node]から動きません。"
  concept_overlords:0 "宗主国"
  concept_jobseeker:0 "求職者"
