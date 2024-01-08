@@ -195,7 +195,7 @@
  bg_subsistence_ranching:0 "自給牧場"
  bg_gold_fields:0 "金鉱山"
  bg_arts:0 "芸術施設"
- bg_power:0 "電力プラント"
+ bg_power:0 "発電所"
  bg_technology:0 "大学施設"
  bg_canals:0 "運河"
  bg_monuments:0 "記念碑"
