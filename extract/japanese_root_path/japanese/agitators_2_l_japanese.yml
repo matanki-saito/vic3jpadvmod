@@ -345,7 +345,7 @@
  jailtime_blues_martyr: "殉教者の死"
  revolution_pulse2_events.10.t: "革命派が武器庫を襲撃"
  revolution_pulse2_events.10.d: "[SCOPE.gsInterestGroup('arms_depot_raided_ig').GetName]に属すると噂される革命派の一団が、[SCOPE.sState('arms_depot_raided_state').GetName]内の小規模な駐屯地を制圧。24名の兵士が死亡し、ライフルと弾薬が詰まった木箱に加え、さらには小口径の大砲を持って逃走しました。"
- revolution_pulse2_events.10.f: "#bold 指名手配: 武器庫強盗# \n\n[randomState]における大砲や兵器の盗難に関与していると思われる30人超の男。捕獲または殺害した者1人につき200ポンド。犯人の捕縛または死亡につながった情報には50ポンド。\n\n武装しており危険だと思われる。協力者も同罪とみなされる。"
+ revolution_pulse2_events.10.f: "#bold 指名手配: 武器庫強盗#!\n\n[randomState]における大砲や兵器の盗難に関与していると思われる30人超の男。捕獲または殺害した者1人につき200ポンド。犯人の捕縛または死亡につながった情報には50ポンド。\n\n武装しており危険だと思われる。協力者も同罪とみなされる。"
  revolution_pulse2_events.10.a: "田園地方を徹底的に捜索するんだ。"
  revolution_pulse2_events.10.b: "田園地方ではなく、都市部を捜索しろ。"
  modifier_scouring_countryside: "田園地方での捜索"

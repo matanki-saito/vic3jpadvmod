@@ -42,7 +42,8 @@
  DISBAND_COMMAND_UNIT_ENTRY_END: " to [MILITARY_FORMATION.GetName]"
  DISBAND_COMMAND_DISBANDED_UNITS_END: " will be disbanded"
  DISBAND_COMMAND_COMMANDER_ENTRY: "Transfers [CHARACTER.GetFullName] to [MILITARY_FORMATION.GetName]"
- DISBAND_COMMAND_DISBAND_COMMANDER_ENTRY: "[CHARACTER.GetFullName] will be retired"
+ DISBAND_COMMAND_TOO_MANY_COMMANDERS: "You cannot disband this [SelectLocalization(MilitaryFormation.IsArmy,'concept_army','concept_fleet')] since you have too many [SelectLocalization(MilitaryFormation.IsArmy,'concept_generals','concept_admirals')] and insufficient room in other [SelectLocalization(MilitaryFormation.IsArmy,'concept_armies','concept_fleets')].\n\n#indent_newline:3 Consider retiring these [SelectLocalization(MilitaryFormation.IsArmy,'concept_generals','concept_admirals')] first:\n$BREAKDOWN$#!"
+ DISBAND_COMMAND_DISBAND_COMMANDER_ENTRY: "[Character.GetFullName] ([Character.GetRankName])"
  DISBAND_COMMAND_MENTION_THAT_TRACKING_FORMATIONS_WILL_GO_SOMEWHERE_ELSE: "Formations that are traveling to merge into [MILITARY_FORMATION.GetName] will instead try to find a different formation to merge into and, if one is not found, will instead be stationed in the closest available HQ."
  DISBAND_COMMAND_CONFIRM: "Do you want to continue?"
 
@@ -100,10 +101,6 @@
 
  COMMANDER_RECRUIT_BUTTON_TOOLTIP_EFFECTS:2 "#header Recruit [Character.GetFullName]\n#![ConcatIfNeitherEmpty(GetDesc(Character.GetRecruitCommand( PopupManager.GetRecruitFormation )),'\n')]$TOOLTIP_DELIMITER$[ConcatIfNeitherEmpty('\n', Character.GetCommanderRank.GetModifiers( Character.Self ))]"
  COMMANDER_RECRUIT_BUTTON_TOOLTIP:2 "$COMMANDER_RECRUIT_BUTTON_TOOLTIP_EFFECTS$"
- NO_ASSIGNED_BATTALIONS:0 "There are no [Concept('concept_battalion', '$concept_battalions$')] available in [PopupManager.GetRecruitHQ.GetName] for [Character.GetFullNameWithTitle]"
- NO_ASSIGNED_FLOTILLAS:0 "There are no [Concept('concept_flotilla','$concept_flotillas$')] available in [PopupManager.GetRecruitHQ.GetName] for [Character.GetFullNameWithTitle]"
- NO_ASSIGNED_BATTALIONS_TO_CHARACTER:0 "No [Concept('concept_battalion', '$concept_battalions$')] available in [Character.GetHomeHQ.GetName] for [Character.GetFullNameWithTitle]"
- NO_ASSIGNED_FLOTILLAS_TO_CHARACTER:0 "No [Concept('concept_flotilla','$concept_flotillas$')] available in [Character.GetHomeHQ.GetName] for [Character.GetFullNameWithTitle]"
 
  YES_CHECK:1 "@green_checkmark_box!"
  NO_CHECK:1 "@simple_box!"
@@ -113,6 +110,20 @@
 
  UNLOCK_TOPBAR:1 "Click to #bold Unlock#!"
  LOCK_TOPBAR:1 "Click to #bold Lock#!"
+
+ OUTLINER_PINNED: "Pin"
+ OUTLINER_ECONOMY: "Eco"
+ OUTLINER_POLITICS: "Pol"
+ OUTLINER_DIPLOMACY: "Dip"
+ OUTLINER_MILITARY: "Mil"
+ OUTLINER_ALL: "All"
+
+ OUTLINER_TOGGLE_PINNED_TOOLTIP: "#header Show Pinned in Outliner#!"
+ OUTLINER_TOGGLE_ECONOMY_TOOLTIP: "#header Show Economy in Outliner#!"
+ OUTLINER_TOGGLE_POLITICS_TOOLTIP: "#header Show Politics in Outliner#!"
+ OUTLINER_TOGGLE_DIPLOMACY_TOOLTIP: "#header Show Diplomacy in Outliner#!"
+ OUTLINER_TOGGLE_MILITARY_TOOLTIP: "#header Show Military in Outliner#!"
+ OUTLINER_TOGGLE_ALL_TOOLTIP: "#header Show All in Outliner#!"
 
  BASE_SCRIPT_VALUE_FORMAT:0 "$KEY$: $VALUE|+=0$"
  DECIMAL_SCRIPT_VALUE_FORMAT:0 "$KEY$: $VALUE|+=$"
@@ -371,7 +382,7 @@
  BUILDING_USES_INFRASTRUCTURE_TOTAL:0 "#variable #N +$USAGE|0$#!#! [concept_infrastructure_usage] Total"
  BUILDING_ARABLE_CAPACITY_PER_LEVEL:0 "#variable #N -$ARABLE_CAPACITY$#!#! [concept_arable_land] per Level"
  BUILDING_ARABLE_CAPACITY_TOTAL:0 "#variable #N -$ARABLE_CAPACITY$#!#! [concept_arable_land] Total"
- GDP_TOOLTIP:1 "#header [concept_gdp]#!\n[Country.GetAdjective] $GDP_SHORT$: #N @money![Country.GetGDP|Dv]#! [Country.GetGDPRanking]\n$TOOLTIP_DELIMITER$\nGDP per Capita: #variable @money![Country.GetGDPPerCapita|2*]#! [Country.GetGDPPerCapitaRanking]\n\n"
+ GDP_TOOLTIP:1 "#header [concept_gdp]#!\n[Country.GetAdjective] $GDP_SHORT$: #N @money![Country.GetGDP|Dv]#! ([Country.GetGDPRanking])\n$TOOLTIP_DELIMITER$\nGDP per Capita: #variable @money![Country.GetGDPPerCapita|2*]#! ([Country.GetGDPPerCapitaRanking])\n\n"
  MARKET_GDP_PERCENTAGE:1 "#title [GetPlayer.GetAdjectiveNoFormatting] $GDP_SHORT$ Contribution#!\n[Market.GetMarketSharePercentageFor( GetPlayer )|%1v]"
  MARKET_GDP_PERCENTAGE_TOOLTIP:0 "#header Contribution to GDP#!\n[Market.GetName] contributes [Market.GetGDPContributionPercentage( GetPlayer )|%1v] of the GDP in [GetPlayer.GetName]"
  ACTIVE_PRODUCTION_METHOD_HEAD:0 "#header $NAME$#!"
@@ -501,8 +512,8 @@
 
  COUNTRY_LITERACY:0 "#title [concept_literacy]:#!\n#variable [Country.GetIncorporatedLiteracyRate|%1]#!"
  COUNTRY_LITERACY_ONE_LINE:0 "#title [concept_literacy]#!"
- LITERACY_TOOLTIP:5 "#header [concept_literacy]#!\n#variable [Country.GetNumIncorporatedLiteratePops|*]#! out of #variable [Country.GetIncorporatedPopulation|*]#! living in the [Concept('concept_incorporated_state','$concept_incorporated_states$')] of #variable [Country.GetName]#! are literate, resulting in a Literacy Rate of [Country.GetIncorporatedLiteracyRate|%v] [Country.GetIncorporatedLiteracyRanking]\n$TOOLTIP_DELIMITER$\nThis results in an [concept_innovation] cap of #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INNOVATION_POINTS_MAX_BREAKDOWN @innovation![Country.GetWeeklyMaxInnovation|1]#!#!\nWe are currently generating #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INNOVATION_POINTS_CURRENT_BREAKDOWN #v @innovation![Country.GetWeeklyInnovation|+=1]#!#!#! each week (@innovation![Country.GetWeeklyRawInnovation|+=1] uncapped)\n\nAdditionally, our current [concept_literacy] rate provides us with a [concept_technology_spread] rate of #P #tooltippable #tooltip:[GetPlayer.GetTooltipTag],TECHNOLOGY_SPREAD_RATE_BREAKDOWN [Country.GetMinWeeklyTechnologySpread|1] to [Country.GetMaxWeeklyTechnologySpread|1]#!#!#! worth of @innovation![concept_innovation] each week[SelectLocalization(EqualTo_int64(GetPlayer.GetTotalPopulation,GetPlayer.GetIncorporatedPopulation),'','LITERACY_UNINCORPORATED_TOOLTIP')]"
- LITERACY_UNINCORPORATED_TOOLTIP:2 "\n$TOOLTIP_DELIMITER$\nWhen also factoring in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')], #variable [Country.GetNumTotalLiteratePops|*]#! out of #variable [Country.GetTotalPopulation|*]#! ([Country.GetTotalLiteracyRate|%v]) [Concept('concept_pop','$concept_pops$')] in #variable [Country.GetName]#! are literate [Country.GetTotalLiteracyRanking]"
+ LITERACY_TOOLTIP:5 "#header [concept_literacy]#!\n#variable [Country.GetNumIncorporatedLiteratePops|*]#! out of #variable [Country.GetIncorporatedPopulation|*]#! living in the [Concept('concept_incorporated_state','$concept_incorporated_states$')] of #variable [Country.GetName]#! are literate, resulting in a Literacy Rate of [Country.GetIncorporatedLiteracyRate|%v] ([Country.GetIncorporatedLiteracyRanking])\n$TOOLTIP_DELIMITER$\nThis results in an [concept_innovation] cap of #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INNOVATION_POINTS_MAX_BREAKDOWN @innovation![Country.GetWeeklyMaxInnovation|1]#!#!\nWe are currently generating #tooltippable #tooltip:[GetPlayer.GetTooltipTag],INNOVATION_POINTS_CURRENT_BREAKDOWN #v @innovation![Country.GetWeeklyInnovation|+=1]#!#!#! each week (@innovation![Country.GetWeeklyRawInnovation|+=1] uncapped)\n\nAdditionally, our current [concept_literacy] rate provides us with a [concept_technology_spread] rate of #P #tooltippable #tooltip:[GetPlayer.GetTooltipTag],TECHNOLOGY_SPREAD_RATE_BREAKDOWN [Country.GetMinWeeklyTechnologySpread|1] to [Country.GetMaxWeeklyTechnologySpread|1]#!#!#! worth of @innovation![concept_innovation] each week[SelectLocalization(EqualTo_int64(GetPlayer.GetTotalPopulation,GetPlayer.GetIncorporatedPopulation),'','LITERACY_UNINCORPORATED_TOOLTIP')]"
+ LITERACY_UNINCORPORATED_TOOLTIP:2 "\n$TOOLTIP_DELIMITER$\nWhen also factoring in [Concept('concept_unincorporated_state','$concept_unincorporated_states$')], #variable [Country.GetNumTotalLiteratePops|*]#! out of #variable [Country.GetTotalPopulation|*]#! ([Country.GetTotalLiteracyRate|%v]) [Concept('concept_pop','$concept_pops$')] in #variable [Country.GetName]#! are literate ([Country.GetTotalLiteracyRanking])"
 
  INNOVATION_POINTS_CURRENT_BREAKDOWN:1 "#header @innovation![concept_innovation] generation#!\nWe generate #v @innovation![Country.GetWeeklyInnovation|+2]#!, due to:\n[Country.GetWeeklyInnovationDesc]"
  INNOVATION_POINTS_MAX_BREAKDOWN:1 "#header @innovation![concept_innovation] cap#!\nOur cap of @innovation![Country.GetWeeklyMaxInnovation|v2] is due to:\n[Country.GetWeeklyMaxInnovationDesc]"
@@ -538,7 +549,7 @@
  CULTURAL_POSSIBLE_SECESSION_ICON_TOOLTIP:0 "Has a [Culture.GetChanceForSecessionMovement( GetPlayer.Self )|%1v] chance every week to start a #variable [concept_secession] movement#! due to being a non-[concept_primary_cultures] with high [concept_turmoil]!\n$TOOLTIP_DELIMITER$\n[concept_secession_desc]"
  CULTURAL_GROWING_SECESSION_ICON_TOOLTIP:0 "The [Culture.GetName] has started a #variable [concept_secession] movement#! against us!\n$TOOLTIP_DELIMITER$\n[concept_secession_desc]"
 
- CULTURAL_TURMOIL_TOOLTIP:1 "#header Cultural [concept_turmoil]#!\n$TOOLTIP_DELIMITER$\nGlobal [Culture.GetName] [concept_turmoil]: [Culture.GetTurmoil|-0%]\n[Culture.GetName] [concept_turmoil] in [GetPlayer.GetName]: [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-%]"
+ CULTURAL_TURMOIL_TOOLTIP:1 "#header Cultural [concept_turmoil]#!\n$TOOLTIP_DELIMITER$\nGlobal [Culture.GetName] [concept_turmoil]: [Culture.GetTurmoil|-0%]\n[Culture.GetName] [concept_turmoil] in [GetPlayer.GetName]: [GetPlayer.CalcCulturalTurmoil( Culture.Self )|-0%]"
 
  POP_LIST_TITLE_LABEL: "#bold [PopListItem.GetPopType.GetNameNoIcon]#! [AddLocalizationIf(PopList.HasBuildingContext, 'POP_LIST_POP_TYPE_REPLACED_BY_SLAVES')]"
  POP_LIST_POP_TYPE_REPLACED_BY_SLAVES: "[AddLocalizationIf(Not(StringIsEmpty(PopList.GetBuildingContext.GetPopTypeReplacementDesc(PopListItem.GetPopType))), 'POP_LIST_POP_TYPE_CAN_BE_REPLACED')]"
@@ -697,7 +708,7 @@
  PRODUCTION_AMOUNT_MARKER:0 "#BOLD [GoodsProductionInfo.GetAmount|D]#!"
  PRODUCTION_PRICE:0 "@money![GoodsProductionInfo.GetPrice|1]"
  PRODUCTION_SOLD_FOR:0 "@money![GoodsProductionInfo.GetSoldFor|D]"
- PRODUCTION_PANEL_HEADER:0 "#BOLD Production in [State.GetName]#!"
+ PRODUCTION_PANEL_HEADER:0 "#BOLD [concept_good_production] in [State.GetName]#!"
  PRODUCTION_AMOUNT_TITLE:0 "#title Amount#!"
  PRODUCTION_SOLD_FOR_TITLE:0 "#title Sold For#!"
  PRODUCTION_GOOD_TITLE:0 "#title Good#!"
@@ -707,9 +718,9 @@
  TRADE_OVERVIEW_TITLE:0 "#bold Markets#!"
  POPS_OVERVIEW_TITLE:0 "#bold Population#!"
  TRADE_OVERVIEW_MOST_IMPORTED:0 "#title Most Imported#!"
- TRADE_OVERVIEW_MOST_CONSUMPTION_INEFFICIENT:0 "#title Consumption inefficiencies#!"
+ TRADE_OVERVIEW_MOST_CONSUMPTION_INEFFICIENT:0 "#title [concept_good_consumption] inefficiencies#!"
  TRADE_OVERVIEW_MOST_EXPORTED:0 "#title Most Exported#!"
- TRADE_OVERVIEW_MOST_PRODUCTION_INEFFICIENT:0 "#title Production inefficiencies#!"
+ TRADE_OVERVIEW_MOST_PRODUCTION_INEFFICIENT:0 "#title [concept_good_production] inefficiencies#!"
 
  POPS_OVERVIEW_STATISTICS_TAB:0 "Overview"
  POPS_OVERVIEW_POP_LIST_TAB:0 "Detailed List"
@@ -736,6 +747,7 @@
 
  REGULARS_AND_CONSCRIPTS: "Regulars & Conscripts"
 
+ MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_WITH_ICON: "[MilitaryFormation.GetUnitIcon]$MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS$"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS: "#v [MilitaryFormation.GetNumCombatUnits]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_NO_LIMIT: "#v [MilitaryFormation.GetNumCombatUnits]#!"
  INSUFFICIENT_COMMAND_LIMIT: "#r [MilitaryFormation.GetCommandLimitRaw]#!"
@@ -774,6 +786,7 @@
 
  UNIT_LABEL_ARMY: "[Concept('concept_battalion', '$concept_battalions$')]"
  UNIT_LABEL_NAVY: "[Concept('concept_flotilla', '$concept_flotillas$')]"
+ UNIT_LABEL_CONSCRIPTS: "[Concept('concept_conscript_battalion','$concept_conscript_battalions_short$')]"
 
  UNIT_GROUP_FLOTILLAS_TOOLTIP_FOR_GUI: "#header [CombatUnitGroup.GetName] in [MilitaryFormation.GetName]#!\n@flotillas![MilitaryFormation.GetNumTotalCombatUnitsInGroup(CombatUnitGroup.Self)|v] [MilitaryFormation.GetUnitLabel] in total\n$TOOLTIP_DELIMITER$\n[Concept('concept_combat_unit_type', '$concept_combat_unit_types$')]:\n[MilitaryFormation.GetUnitTypesByFlotillaGroupBreakdown( CombatUnitGroup.Self )]"
 
@@ -789,7 +802,7 @@
  UNIT_TYPE_CONSCRIPT_BATTALIONS_TOOLTIP_FOR_GUI: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')] [MilitaryFormationUnitEntry.GetUnitType.GetName] in [MilitaryFormation.GetName]#!\n@conscripts!#v [MilitaryFormationUnitEntry.GetCurrentNumConscriptUnits]#![AddLocalizationIf(GreaterThan_int32(Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumConscriptUnits, MilitaryFormationUnitEntry.GetCurrentNumConscriptUnits), '(int32)0'), 'MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_CONSCRIPTS')] [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] in total\n$TOOLTIP_DELIMITER$\n[Concept('concept_unit', '$concept_units$')]:\n[MilitaryFormation.GetConscriptUnitsByTypeBreakdown( MilitaryFormationUnitEntry.GetUnitType.Self )][AddLocalizationIf(StringIsEmpty(MilitaryFormation.GetConscriptUnitsByTypeBreakdown( MilitaryFormationUnitEntry.GetUnitType.Self)), 'NO_CONSCRIPT_UNITS_OF_UNIT_TYPE')]"
  UNIT_TYPE_CONSCRIPT_BATTALIONS_TOOLTIP_FOR_GUI_NOT_RAISED: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')] [CombatUnitType.GetName] in [MilitaryFormation.GetName]#!\n@conscripts!#v [MilitaryFormationUnitEntry.GetExpectedNumConscriptUnits]#! [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] in total[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasRaisedConscripts), 'NOT_RAISED_CONSCRIPTS'))]"
  UNIT_TYPE_CONSCRIPT_TOOLTIP_FOR_GUI_RAISED: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')] [CombatUnitType.GetName] in [MilitaryFormation.GetName]#!\n@conscripts!#v [MilitaryFormation.GetNumConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )]#! [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] in total[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasRaisedConscripts), 'NOT_RAISED_CONSCRIPTS'))]\n$TOOLTIP_DELIMITER$\n[Concept('concept_unit', '$concept_units$')]:\n[MilitaryFormation.GetConscriptUnitsByTypeBreakdown( CombatUnitType.Self )][AddLocalizationIf(StringIsEmpty(MilitaryFormation.GetConscriptUnitsByTypeBreakdown( CombatUnitType.Self )), 'NO_CONSCRIPT_UNITS_OF_UNIT_TYPE_FORMATION_CONTEXT')]"
- UNIT_TYPE_CONSCRIPT_TOOLTIP_FOR_GUI_NOT_RAISED: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')] [CombatUnitType.GetName] in [MilitaryFormation.GetName]#!\n@conscripts!#v [MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self) )]#! [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] in total[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasRaisedConscripts), 'NOT_RAISED_CONSCRIPTS'))]"
+ UNIT_TYPE_CONSCRIPT_TOOLTIP_FOR_GUI_NOT_RAISED: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')] [CombatUnitType.GetName] in [MilitaryFormation.GetName]#!\n@conscripts!#v [MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )]#! [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] in total[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasRaisedConscripts), 'NOT_RAISED_CONSCRIPTS'))]"
  UNIT_GROUP_CONSCRIPT_TOOLTIP_FOR_GUI_NOT_RAISED: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalion_short$')] [CombatUnitGroup.GetName] in [MilitaryFormation.GetName]#!\n@conscripts!#v [MilitaryFormation.GetNumExpectedConscriptsUnitsInGroup( CombatUnitGroup.Self )]#! [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] in total[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasRaisedConscripts), 'NOT_RAISED_CONSCRIPTS'))]"
  NOT_RAISED_CONSCRIPTS: "#r Not yet raised#!"
  NO_CONSCRIPT_UNITS_OF_UNIT_TYPE: "$TAB$No [MilitaryFormationUnitEntry.GetUnitType.GetName] in [MilitaryFormation.GetName]"
@@ -814,7 +827,8 @@
  BATTLE_MILITARY_FORMATION_MORALE_TOOLTIP: "#header [concept_morale]#!\nAverage $concept_morale$ of [Concept('concept_unit','$concept_units$')] in [MilitaryFormation.GetName] is #BOLD #[GetMoraleColorString( BattleMilitaryFormation.GetCurrentMorale )] [BattleMilitaryFormation.GetCurrentMorale|0%]#!#!\nCurrent [concept_supply] of [MilitaryFormation.GetName] is [MilitaryFormation.GetSupply]"
 
  PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS: "@flotillas! [Country.GetWarships|0v]"
- PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP: "#header [Country.GetAdjective] [Concept('concept_flotilla','$concept_flotillas$')]#!\nCurrent: @flotillas! [Country.GetWarships|v] [Country.GetFlotillasRanking]\n$TOOLTIP_DELIMITER$\n$PANEL_MILITARY_NAVY_POWER_PROJECTION$\n\n[Concept('concept_fleet','$concept_fleets$')]:\n[SelectLocalization(IsDataModelEmpty(Country.GetMilitaryFormationsFleet), 'NO_FLEETS_IN_COUNTRY', 'FLEETS_IN_COUNTRY_TOOLTIP_BREAKDOWN')]"
+
+ PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP: "#header [Country.GetAdjective] [Concept('concept_flotilla','$concept_flotillas$')]#!\nCurrent: @flotillas! [Country.GetWarships|v] ([Country.GetFlotillasRanking])\n$TOOLTIP_DELIMITER$\n$PANEL_MILITARY_NAVY_POWER_PROJECTION$\n\n[Concept('concept_fleet','$concept_fleets$')]:\n[SelectLocalization(IsDataModelEmpty(Country.GetMilitaryFormationsFleet), 'NO_FLEETS_IN_COUNTRY', 'FLEETS_IN_COUNTRY_TOOLTIP_BREAKDOWN')]"
  PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP_LEFT: "#header Total amount of [Concept('concept_flotilla','$concept_flotillas$')]#!\n[WarPanel.GetLeftLeader.GetName] currently has @flotillas! [WarPanel.GetLeftLeader.GetWarships|v] Flotillas\n\n[WarPanel.GetLeftLeader.GetWarshipsBreakdown]"
  PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP_RIGHT: "#header Total amount of [Concept('concept_flotilla','$concept_flotillas$')]#!\n[WarPanel.GetRightLeader.GetName] currently has @flotillas! [WarPanel.GetRightLeader.GetWarships|v] Flotillas\n\n[WarPanel.GetRightLeader.GetWarshipsBreakdown]"
 
@@ -831,10 +845,8 @@
 
  UNIT_MANPOWER_TOOLTIP: "#header $UNIT_NAME$ [concept_manpower]#!\nCurrent: @manpower! $UNIT_MANPOWER|v$\n$TOOLTIP_DELIMITER$\n$UNIT_MORALE|v%$ [concept_morale]\n@manpower! $UNIT_DEMORALIZED|v$ [concept_morale_demoralized]\n@unit_offense! $UNIT_OFFENSE|v$ [concept_offense]\n@unit_defense! $UNIT_DEFENSE|v$ [concept_defense]"
 
- PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP:4 "#header [Country.GetAdjective] [Concept('concept_battalion', '$concept_battalions$')]#!\nCurrent: @battalions!#v [Country.GetBattalions]#!\n$TOOLTIP_DELIMITER$\n[Country.GetBattalionsDesc]\n[Country.GetBattalionsBreakdown]"
- PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS_TOOLTIP:2 "#header [Country.GetAdjective] [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]#!\nCurrent: @battalions![Country.CalcConscriptableBattalions|v]\n$TOOLTIP_DELIMITER$\n[Country.GetConscriptsDesc]\n\n[Country.GetConscriptsBreakdown]"
- PANEL_MILITARY_ARMY_CURRENT_REGULARS_TOOLTIP:1 "#header Total amount of Regular [Concept('concept_battalion','$concept_battalions$')]#!\n$TOOLTIP_DELIMITER$\n[Country.GetRegularsDesc]\n\n[Country.GetRegularsBreakdown]"
- PANEL_MILITARY_ARMY_CURRENT_TOTAL_BATTALIONS_DESC:3 "$COUNTRY$ currently has @battalions!$BATTALIONS|v$ [Country.GetBattalionsRanking]\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$"
+ PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP:4 "#header [Country.GetAdjective] [Concept('concept_battalion', '$concept_battalions$')]#!\nCurrent: @battalions!#v [Country.GetBattalions]#!\n$TOOLTIP_DELIMITER$\n[Country.GetBattalionsDesc]\n\n[Concept('concept_army','$concept_armies$')]:\n[SelectLocalization(IsDataModelEmpty(Country.GetMilitaryFormationsArmy), 'NO_ARMIES_IN_COUNTRY', 'ARMIES_IN_COUNTRY_TOOLTIP_BREAKDOWN')]"
+ PANEL_MILITARY_ARMY_CURRENT_TOTAL_BATTALIONS_DESC:3 "$COUNTRY$ currently has @battalions!$BATTALIONS|v$ ([Country.GetBattalionsRanking])\n$PANEL_MILITARY_ARMY_POWER_PROJECTION$"
  PANEL_MILITARY_ARMY_CURRENT_CONSCRIPTS_DESC:1 "$COUNTRY$ has raised @battalions!$CONSCRIPTS|v$ Conscripts out of their maximum of $POTENTIAL|v$ [Concept('concept_potential_battalions','$concept_potential_conscripts$')]."
  PANEL_MILITARY_ARMY_CURRENT_REGULARS_DESC:1 "$COUNTRY$ currently has @battalions!$REGULAR_BATTALIONS|v$ out of their maximum of $POTENTIAL|v$ [Concept('concept_potential_battalions','$concept_potential_regulars$')]."
  PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_MOBILIZED_DESC:0 "$COUNTRY$ currently has @battalions!$REGULAR_BATTALIONS|v$ Regular Battalions and @battalions!$CONSCRIPT_BATTALIONS|v$ Conscript Battalions."
@@ -861,13 +873,16 @@
  FLEETS: "$concept_fleets$"
  NAVAL_INVASION_NAME: "[concept_naval_invasion][AddLocalizationIf(State.IsValid, 'NAVAL_INVASION_IN')]"
  NAVAL_INVASION_IN: " in [State.GetName]"
- NAVAL_INVASION_PLANNER_TRAVEL_TIME_LABEL: "Travel time: #v [LabelingHelper.GetDaysLocWithoutTooltip(NavalInvasionPlannerPopup.GetTotalDaysRaw)]#!"
+ NAVAL_INVASION_PLANNER_ARMY_WILL_MOBILIZE: "[MilitaryFormation.GetName] will [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilize$')]"
+ NAVAL_INVASION_PLANNER_ARMY_NOT_MOBILIZED: "#r Not yet#! [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilized$')]"
+ NAVAL_INVASION_PLANNER_ARMY_IS_MOBILIZED: "[MilitaryFormation.GetName] is [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilized$')]"
+ NAVAL_INVASION_PLANNER_TRAVEL_TIME_LABEL: "Travel time: #v $TIME$#!"
  NAVAL_INVASION_PLANNER_EFFICIENCY_LABEL: "Estimated to have [NavalInvasionPlannerPopup.GetEfficiencyRaw|%1v] Naval Invasion efficiency."
  NAVAL_INVASION_PLANNER_PENALTIES_LABEL: "@warning! You have too few @flotillas! [Concept('concept_flotilla','$concept_flotillas$')] for this [concept_army]!\nThis results in a penalty of #r -[NavalInvasionPlannerPopup.GetLandingPenaltyModifierMultiplier|%1]#! invasion efficiency."
- NAVAL_INVASION_PLANNER_CONFIRM_TOOLTIP: "#header Confirm this Naval Invasion#!\n[ConcatIfNeitherEmpty(NavalInvasionPlannerPopup.GetCommandValidityDesc,'\n')][AddLocalizationIf(LessThan_CFixedPoint(NavalInvasionPlannerPopup.GetEfficiencyRaw,'(CFixedPoint)1'),'NAVAL_INVASION_PLANNER_PENALTIES_LABEL')]\n$NAVAL_INVASION_PLANNER_EFFICIENCY_LABEL$\n$TOOLTIP_DELIMITER$\n[AddLocalizationIf(NavalInvasionPlannerPopup.HasSelectedNecessaryFormations,'NAVAL_INVASION_PLANNER_TRAVEL_DAYS_DESC')]"
- NAVAL_INVASION_PLANNER_TRAVEL_DAYS_DESC: "#v [LabelingHelper.GetDaysLocWithoutTooltip(NavalInvasionPlannerPopup.GetTotalDaysRaw)]#! travel time to [NavalInvasionPlannerPopup.GetTargetState.GetCountry.GetFlagTextIcon] [NavalInvasionPlannerPopup.GetTargetState.GetName]\n\n[AddLocalizationIf(NavalInvasionPlannerPopup.HasSelectedNecessaryFormations,'NAVAL_INVASION_PLANNER_FLEET_DAYS_DESC')]\n[AddLocalizationIf(NavalInvasionPlannerPopup.HasSelectedNecessaryFormations,'NAVAL_INVASION_PLANNER_ARMY_DAYS_DESC')]"
- NAVAL_INVASION_PLANNER_FLEET_DAYS_DESC: "Fleet:\n$TAB$[LabelingHelper.GetDaysLocWithoutTooltip(NavalInvasionPlannerPopup.GetFleetDaysRaw)] - [NavalInvasionPlannerPopup.GetSlowestFleet.GetName]: @flotillas! [NavalInvasionPlannerPopup.GetSlowestFleet.GetNumCombatUnits|v]"
- NAVAL_INVASION_PLANNER_ARMY_DAYS_DESC: "Army:\n$TAB$[LabelingHelper.GetDaysLocWithoutTooltip(NavalInvasionPlannerPopup.GetArmyDaysRaw)] - [NavalInvasionPlannerPopup.GetSlowestArmy.GetName]: @battalions! [NavalInvasionPlannerPopup.GetSlowestArmy.GetNumCombatUnits|v]"
+ NAVAL_INVASION_PLANNER_CONFIRM_TOOLTIP: "#header Confirm this Naval Invasion#!\n[ConcatIfNeitherEmpty(NavalInvasionPlannerPopup.GetCommandValidityDesc,'\n')][AddLocalizationIf(LessThan_CFixedPoint(NavalInvasionPlannerPopup.GetEfficiencyRaw,'(CFixedPoint)1'),'NAVAL_INVASION_PLANNER_PENALTIES_LABEL')]\n$NAVAL_INVASION_PLANNER_EFFICIENCY_LABEL$\n$TOOLTIP_DELIMITER$\n[AddLocalizationIf(NavalInvasionPlannerPopup.HasSelectedNecessaryFormations,NavalInvasionPlannerPopup.GetTravelDaysDesc)]"
+ NAVAL_INVASION_PLANNER_TRAVEL_DAYS_DESC: "#v $TIME$#! travel time to [NavalInvasionPlannerPopup.GetTargetState.GetCountry.GetFlagTextIcon] [NavalInvasionPlannerPopup.GetTargetState.GetName]\n\n[AddLocalizationIf(NavalInvasionPlannerPopup.HasSelectedNecessaryFormations,NavalInvasionPlannerPopup.GetFleetDaysDesc)]\n[AddLocalizationIf(NavalInvasionPlannerPopup.HasSelectedNecessaryFormations,NavalInvasionPlannerPopup.GetArmyDaysDesc)]"
+ NAVAL_INVASION_PLANNER_FLEET_DAYS_DESC: "Fleet:\n$TAB$$TIME$ - [NavalInvasionPlannerPopup.GetSlowestFleet.GetName]: @flotillas! [NavalInvasionPlannerPopup.GetSlowestFleet.GetNumCombatUnits|v]"
+ NAVAL_INVASION_PLANNER_ARMY_DAYS_DESC: "Army:\n$TAB$$TIME$ - [NavalInvasionPlannerPopup.GetSlowestArmy.GetName]: @battalions! [NavalInvasionPlannerPopup.GetSlowestArmy.GetNumCombatUnits|v]"
  ADD_MILITARY_FORMATION_ARMY: "Add an [concept_army] to this #b Naval Invasion#!"
  ADD_MILITARY_FORMATION_FLEET: "Add a [concept_fleet] to this #b Naval Invasion#!"
 
@@ -905,9 +920,10 @@
  TRANSFER_RESULT_NO_UNITS: "@warning! No [Concept('concept_unit','$concept_units$')]"
  TRANSFER_RESULT_NOTHING: "This [concept_military_formation] will be #r disbanded#!"
  TRANSFER_RESULT_COMMANDER: "$CHARACTER_FULL_NAME$ will be transferred here"
- TRANSFER_RESULT_UNIT_TYPE: "$UNIT_ICON$ $RESULTING_UNIT_NUMBER$ $UNIT_TYPE_NAME$"
+ TRANSFER_RESULT_UNIT_TYPE: "$UNIT_ICON$ #v $RESULTING_UNIT_NUMBER$#! $UNIT_TYPE_NAME$"
 
- MOVE_AT_LEAST_ONE_UNIT: "@simple_box! Move at least [SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v 1#! [concept_unit] or a [concept_commander] to the other [concept_military_formation]"
+ COMMANDER_TRANSFER_LIMIT_REACHED: "@red_cross! The other side has reached the max of [GetDefine('NMilitary','MAX_NUM_COMMANDERS_PER_FORMATION')|0v] [Concept('concept_commander','$concept_commanders$')]"
+ MOVE_AT_LEAST_ONE_UNIT: "@simple_box! Move at least [SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v 1#! [concept_unit] or a [concept_commander] to the other side"
  TRANSFER_FORMATION_CONFIRMATION_SOURCE_WILL_BE_GONE: "Are you sure you want to transfer the entirety of $SOURCE_NAME|v$ into $TARGET_NAME|v$?"
  SELECT_UNIT_TYPE_TO_TRANSFER: "Select this [concept_combat_unit_type] for transfer"
  SELECT_UNIT_TO_TRANSFER: "Select this [concept_unit] for transfer"
@@ -920,23 +936,23 @@
  NO_COMMANDERS_IN_MILITARY_FORMATION: "No [Concept('concept_commander','$concept_commanders$')] in this [concept_military_formation]"
  NO_UNITS_IN_MILITARY_FORMATION: "No [Concept('concept_unit','$concept_units$')] in this [concept_military_formation]"
  NO_UNITS_IN_UNIT_GROUP: "No #b [CombatUnitGroup.GetName]#! [Concept('concept_unit','$concept_units$')]"
- TRANSFER_FORMATION_MOVE_UNITS_TOOLTIP: "#header Move [SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v [StagedUnitTypeTransfer.GetNumSelectedRegulars]#! [SelectLocalization(TransferFormationPopup.HasArmyContext, 'CONCEPT_REGULAR_BATTALIONS', 'CONCEPT_FLOTILLAS')] to the other [concept_military_formation]#![ConcatIfNeitherEmpty( '\n\n', StagedUnitTypeTransfer.GetInvalidTransferDesc )]"
+ TRANSFER_FORMATION_MOVE_UNITS_TOOLTIP: "#header Move [SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v [StagedUnitsWithType.GetNumSelectedRegulars]#! [SelectLocalization(TransferFormationPopup.HasArmyContext, 'CONCEPT_REGULAR_BATTALIONS', 'CONCEPT_FLOTILLAS')] to the other [concept_military_formation]#![ConcatIfNeitherEmpty( '\n\n', StagedUnitsWithType.GetInvalidRegularTransferDesc )]"
  TRANSFER_FORMATION_NO_UNITS_SELECTED: "@simple_box! Select at least [SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v 1#! [SelectLocalization(TransferFormationPopup.HasArmyContext, 'CONCEPT_REGULAR_BATTALION', 'CONCEPT_FLOTILLA')] in this [Concept('concept_combat_unit_type','$concept_combat_unit_type_short$')] to be moved"
  CONCEPT_REGULAR_BATTALION: "Regular [concept_battalion]"
  CONCEPT_REGULAR_BATTALIONS: "Regular [Concept('concept_battalion','$concept_battalions$')]"
  CONCEPT_FLOTILLA: "[concept_flotilla]"
  CONCEPT_FLOTILLAS: "[Concept('concept_flotilla','$concept_flotillas$')]"
- REMOVE_SOURCE_FORMATION: "Deselect [TransferFormationPopup.GetSourceFormation.GetName]"
- REMOVE_TARGET_FORMATION: "Deselect [TransferFormationPopup.GetTargetFormation.GetName]"
- TRANSFER_FORMATION_MOVE_CONSCRIPT_BATTALIONS_TOOLTIP: "#header Move @conscripts! #v [StagedUnitTypeTransfer.GetNumSelectedConscripts]#! to the other [concept_military_formation]#![ConcatIfNeitherEmpty( '\n\n', StagedUnitTypeTransfer.GetInvalidConscriptTransferDesc )]"
+ REMOVE_SOURCE_FORMATION: "Deselect [TransferFormationPopup.GetLeftFormation.GetName]"
+ REMOVE_TARGET_FORMATION: "Deselect [TransferFormationPopup.GetRightFormation.GetName]"
+ TRANSFER_FORMATION_MOVE_CONSCRIPT_BATTALIONS_TOOLTIP: "#header Move @conscripts! #v [StagedUnitsWithType.GetNumSelectedConscripts]#! to the other [concept_military_formation]#![ConcatIfNeitherEmpty( '\n\n', StagedUnitsWithType.GetInvalidConscriptTransferDesc )]"
  TRANSFER_FORMATION_NO_CONSCRIPTS_SELECTED: "@simple_box! Select at least @conscripts! #v 1#! [concept_conscript_battalion] in this [Concept('concept_combat_unit_type','$concept_combat_unit_type_short$')] to be moved"
- TRANSFER_FORMATION_MOVE_COMMANDER_TOOLTIP: "#header Move [StagedCommanderTransfer.GetCommander.GetFirstName] to the other [concept_military_formation]#![ConcatIfNeitherEmpty( '\n\n', StagedCommanderTransfer.GetInvalidTransferDesc )]"
+ TRANSFER_FORMATION_MOVE_COMMANDER_TOOLTIP: "#header Move [StagedCommanderTransfer.GetCommander.GetFirstName] to the other [concept_military_formation]#![ConcatIfNeitherEmpty( '\n\n', TransferFormationPopup.GetInvalidCommanderTransferDesc(StagedCommanderTransfer.AccessSelf))]"
  MOVE: "Move"
  BY_NAME: "Name"
  BY_ALL_STATES: "All [Concept('concept_state','$concept_states$')]"
  BY_SPECIFIC_STATE: "By one [concept_state]"
- BY_SPECIFIC_STATE_SELECTED: "By #todo State.GetName#!"
- TRANSFER_UNIT_TYPE_NAME: "[StagedUnitTypeTransfer.GetUnitType.GetName] [AddTextIf(StagedUnitTypeTransfer.HasMoved, '#i Moved#!')]"
+ BY_SPECIFIC_STATE_SELECTED: "By [StagedUnitsWithType.GetStateFilter.GetName]"
+ TRANSFER_UNIT_TYPE_NAME: "#tooltippable_name [CombatUnitType.GetNameNoFormatting]#![AddTextIf(StagedUnitsWithType.HasMoved, ' #i Moved#!')]"
  CREATE_NEW_ARMY: "New [concept_army]"
  CREATE_NEW_FLEET: "New [concept_fleet]"
  SELECT_NEW_FORMATION: "Create a new [concept_military_formation] to transfer to"
@@ -946,24 +962,37 @@
  SELECT_NEW_FLEET: "Create a new [concept_fleet] to transfer to"
  SELECT_NEW_FLEET_SELECTED: "Create a new [concept_fleet] to transfer to\n#i Currently selected#!"
  CURRENTLY_SELECTED: "#i Currently Selected#!"
- UNIT_TYPE_UNITS_IN_STATE: "[MilitaryFormation.GetUnitIcon] #v #todo 999#!#![AddLocalizationIf(MilitaryFormation.IsArmy, 'UNIT_TYPE_CONSCRIPT_UNITS_IN_STATE')]"
- UNIT_TYPE_CONSCRIPT_UNITS_IN_STATE: " | @conscripts! #v #todo 999#!#!"
+ UNIT_TYPE_UNITS_IN_STATE: "[MilitaryFormation.GetUnitIcon] #v [StagedUnitsWithType.GetNumRegularsInState( State.AccessSelf )]#![AddLocalizationIf(MilitaryFormation.IsArmy, 'UNIT_TYPE_CONSCRIPT_UNITS_IN_STATE')]"
+ UNIT_TYPE_CONSCRIPT_UNITS_IN_STATE: " | @conscripts! #v [StagedUnitsWithType.GetNumConscriptsInState( State.AccessSelf )]#!"
  SELECT_STATE_TO_FILTER_ON: "Select [concept_state] to filter on"
- FILTER_UNITS_IN_STATE_TOOLTIP: "#header Show [MilitaryFormationUnitEntry.GetUnitType.GetName] [Concept('concept_unit','$concept_units$')] in [State.GetName]#!\n[SelectLocalization(MilitaryFormation.IsArmy, 'FILTER_ARMY_UNITS_TOOLTIP', 'FILTER_FLEET_UNITS_TOOLTIP')]"
- FILTER_ARMY_UNITS_TOOLTIP: "@battalions! #v #todo 999#!#! Regular [Concept('concept_battalion','$concept_battalions$')]\n@conscripts! #v #todo 999#!#! [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]"
- FILTER_FLEET_UNITS_TOOLTIP: "@flotillas! #v #todo 999#!#! [Concept('concept_flotilla','$concept_flotillas$')]"
+ FILTER_UNITS_IN_STATE_TOOLTIP: "#header Show [StagedUnitsWithType.GetUnitType.GetName] [Concept('concept_unit','$concept_units$')] in [State.GetName]#!\n$FILTER_UNITS_IN_STATE_TOOLTIP_BREAKDOWN$"
+ FILTER_UNITS_IN_STATE_TOOLTIP_BREAKDOWN: "[MilitaryFormation.GetUnitIcon] #v [StagedUnitsWithType.GetNumRegularsInState( State.AccessSelf )]#! [SelectLocalization(MilitaryFormation.IsArmy, 'CONCEPT_REGULAR_BATTALIONS', 'CONCEPT_FLOTILLAS')] [AddLocalizationIf(MilitaryFormation.IsArmy, 'FILTER_ARMY_UNITS_TOOLTIP')]"
+ FILTER_ARMY_UNITS_TOOLTIP: "\n@conscripts! #v [StagedUnitsWithType.GetNumConscriptsInState( State.AccessSelf )]#! [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]"
  TRANSFER_RESET_BUTTON_TOOLTIP: "Reset all changes made"
  TRANSFER_CANNOT_RESET_BUTTON_TOOLTIP: "No changes made"
  TRANSFER_FORMATION_CHANGES_TO_TOTAL_NUMBER_OF_UNITS: "#v [StagedFormation.GetNumCombatUnitsIfTransferred]#!/[SelectLocalization(LessThan_int32(StagedFormation.GetCommandLimitRawIfTransferred, StagedFormation.GetNumCombatUnitsIfTransferred), 'TRANSFER_INSUFFICIENT_COMMAND_LIMIT', 'TRANSFER_SUFFICIENT_COMMAND_LIMIT')]"
+ TRANSFER_FORMATION_CHANGES_TO_TOTAL_NUMBER_OF_UNITS_TOOLTIP: "This [SelectLocalization(TransferFormationPopup.HasArmyContext, 'MILITARY_FORMATION_ARMY_CONCEPT', 'MILITARY_FORMATION_FLEET_CONCEPT')] will end up with:\n[SelectLocalization(TransferFormationPopup.HasArmyContext, '@battalions!', '@flotillas!')] #v [StagedFormation.GetNumCombatUnitsIfTransferred]#! [SelectLocalization(TransferFormationPopup.HasArmyContext, 'BATTALIONS_CONCEPT', 'FLOTILLAS_CONCEPT')]\n[AddLocalizationIf(LessThan_int32(StagedFormation.GetCommandLimitRawIfTransferred, StagedFormation.GetNumCombatUnitsIfTransferred), '@warning!')]@organization! [SelectLocalization(LessThan_int32(StagedFormation.GetCommandLimitRawIfTransferred, StagedFormation.GetNumCombatUnitsIfTransferred), 'TRANSFER_INSUFFICIENT_COMMAND_LIMIT', 'TRANSFER_SUFFICIENT_COMMAND_LIMIT')] [concept_command_limit]"
+ TRANSFER_FORMATION_NO_UNITS_AVAILABLE: "No [CombatUnitType.GetName] from [StagedUnitsWithType.GetStateFilter.GetName]"
+ BATTALIONS_CONCEPT: "[Concept('concept_battalion','$concept_battalions$')]"
+ FLOTILLAS_CONCEPT: "[Concept('concept_flotilla','$concept_flotillas$')]"
  TRANSFER_FORMATION_WILL_DISBAND: "Will disband!"
 
+ LEFT_SIDE_MOVE_ALL: "All @transfer_all_right!"
+ LEFT_SIDE_MOVE_HALF: "Half @transfer_half_right!"
+ RIGHT_SIDE_MOVE_ALL: "@transfer_all_left! All"
+ RIGHT_SIDE_MOVE_HALF: "@transfer_half_left! Half"
+ LEFT_SIDE_MOVE_ALL_TOOLTIP: "Move all [Concept('concept_unit','$concept_units_short$')] and [Concept('concept_commander','$concept_commanders$')] to the right side"
+ LEFT_SIDE_MOVE_HALF_TOOLTIP: "Move half of the [Concept('concept_unit','$concept_units_short$')] and [Concept('concept_commander','$concept_commanders$')] to the right side, rounded down"
+ RIGHT_SIDE_MOVE_ALL_TOOLTIP: "Move all [Concept('concept_unit','$concept_units_short$')] and [Concept('concept_commander','$concept_commanders$')] to the left side"
+ RIGHT_SIDE_MOVE_HALF_TOOLTIP: "Move half of the [Concept('concept_unit','$concept_units_short$')] and [Concept('concept_commander','$concept_commanders$')] to the left side, rounded down"
+
  TRANSFER_INSUFFICIENT_COMMAND_LIMIT: "#r [StagedFormation.GetCommandLimitRawIfTransferred]#!"
- TRANSFER_SUFFICIENT_COMMAND_LIMIT: "[StagedFormation.GetCommandLimitRawIfTransferred]"
+ TRANSFER_SUFFICIENT_COMMAND_LIMIT: "#g [StagedFormation.GetCommandLimitRawIfTransferred]#!"
 
  DEFAULT_UNIT_TYPE_BUTTON_LABEL: "[SelectLocalization(MilitaryFormation.HasSelectedUnitTypeForGroup( CombatUnitGroup.AccessSelf ), 'COMBAT_UNIT_GROUP_DEFAULT_TYPE_NAME', 'NO_DEFAULT_UNIT_TYPE_AVAILABLE')]"
  COMBAT_UNIT_GROUP_DEFAULT_TYPE_NAME: "Default: [CombatUnitGroup.GetDefaultUnitType.GetName]"
  NO_DEFAULT_UNIT_TYPE_AVAILABLE: "No Default Unit Type"
- MILITARY_FORMATION_UNIT_GROUP_DEFAULT_UNIT_TOOLTIP: "#header Default [concept_combat_unit_type]#!\nCurrent: #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetName]#!\n$TOOLTIP_DELIMITER$\nThis is the #b Default#! $concept_combat_unit_type$ for [CombatUnitGroup.GetName] that will be built if more units are added to this [concept_combat_unit_group]."
+ MILITARY_FORMATION_UNIT_GROUP_DEFAULT_UNIT_TOOLTIP: "#header Default [concept_combat_unit_type]#!\nCurrent: #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#!\n$TOOLTIP_DELIMITER$\nThis is the #b Default#! $concept_combat_unit_type$ for [CombatUnitGroup.GetName] that will be built if more units are added to this [concept_combat_unit_group]."
 
  MILITARY_FORMATION_SUPPLY_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ [SelectLocalization(LessThan_CFixedPoint('(CFixedPoint)$VALUE$', '(CFixedPoint)1'),'#negative_value $VALUE|%0$#!','#variable $VALUE|%0$#!')]#!#!"
  MILITARY_FORMATION_SUPPLY_TOOLTIP: "#header [concept_supply]#!\nCurrent $concept_supply$ of [MilitaryFormation.GetName] is [SelectLocalization(LessThan_CFixedPoint('(CFixedPoint)$VALUE$', '(CFixedPoint)1'),'#negative_value $VALUE|%0$#!','#variable $VALUE|%0$#!')]#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty('$BREAKDOWN$','\n\n')][concept_supply_desc]"
@@ -1080,7 +1109,6 @@
  MILITARY_FORMATION_MORALE_VALUE_TOOLTIPPABLE: "#[GetMoraleColorString( MilitaryFormation.GetMorale )] #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_MORALE_TOOLTIP [MilitaryFormation.GetMorale|0%]#!#!#!"
  MILITARY_FORMATION_ORGANIZATION_VALUE_TOOLTIPPABLE: "#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_ORGANIZATION_TOOLTIP, [MilitaryFormation.GetOrganizationPercentage|%v0]#!#!"
  MILITARY_FORMATION_TROOP_ATTRITION_LEVEL: "$MILITARY_FORMATION_ATTRITION_RISK_ICON_WITH_LABEL$"
- MILITARY_FORMATION_TROOP_MORALE_TOOLTIP: "#[GetMoraleColorString(MilitaryFormation.GetMoraleForBuildingUnits(Building.Self))] [MilitaryFormation.GetMoraleForBuildingUnits(Building.Self)|0%v]#! [concept_morale]"
  
  PIN_MILITARY_FORMATION: "Pin [MilitaryFormation.GetName] to outliner"
  UNPIN_MILITARY_FORMATION: "Unpin [MilitaryFormation.GetName] from outliner"
@@ -1106,6 +1134,11 @@
  MILITARY_FORMATION_EXPENSE_BY_BUILDING: "#v @money!$VAL|0-K$#! from [Building.GetName] in [Building.GetState.GetName]"
  MILITARY_FORMATION_BUILDABLE_UNITS: "Buildable Units"
  MILITARY_FORMATION_UNITS_RECRUITMENT: "Unit Default Types & Recruitment"
+ MILITARY_FORMATION_UNITS_UPGRADE_ALL: "Upgrade All Units"
+ MILITARY_FORMATION_UNITS_UPGRADE_ALL_DESC: "[SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_UNITS_UPGRADE_ALL_DESC_ARMY', 'MILITARY_FORMATION_UNITS_UPGRADE_ALL_DESC_NAVY')]"
+ MILITARY_FORMATION_UNITS_UPGRADE_ALL_DESC_ARMY: "This will upgrade all units that can into:\n[MilitaryFormation.GetSelectedUnitTypeForGroup(GetCombatUnitGroup('combat_unit_group_infantry').Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(GetCombatUnitGroup('combat_unit_group_infantry').Self).Self)] for Infantry\n[MilitaryFormation.GetSelectedUnitTypeForGroup(GetCombatUnitGroup('combat_unit_group_artillery').Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(GetCombatUnitGroup('combat_unit_group_artillery').Self).Self)] for Artillery\n[MilitaryFormation.GetSelectedUnitTypeForGroup(GetCombatUnitGroup('combat_unit_group_cavalry').Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(GetCombatUnitGroup('combat_unit_group_cavalry').Self).Self)] for Cavalry"
+ MILITARY_FORMATION_UNITS_UPGRADE_ALL_DESC_NAVY: "This will upgrade all units that can into:\n[MilitaryFormation.GetSelectedUnitTypeForGroup(GetCombatUnitGroup('combat_unit_group_light_ship').Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(GetCombatUnitGroup('combat_unit_group_light_ship').Self).Self)] for Light Ships\n[MilitaryFormation.GetSelectedUnitTypeForGroup(GetCombatUnitGroup('combat_unit_group_capital_ship').Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(GetCombatUnitGroup('combat_unit_group_capital_ship').Self).Self)] for Capital Ships"
+ MILITARY_FORMATION_UNITS_UPGRADE_ALL_ALL: "Upgrade All units in all military formations that are able to do so"
  MILITARY_FORMATION_UNITS: "Unit Details"
  MILITARY_FORMATION_CURRENT_UNITS: "Current Units"
  CHANGE_COMMANDER_ORDER_TOOLTIP: "#header [Character.GetOrderType.GetAltName( 'gerund' )]#!\nCurrent [concept_order] of [Character.GetFullName] is #b [Character.GetOrderType.GetName]#!\n#i Click to change $concept_order$#!"
@@ -1118,18 +1151,27 @@
  MILITARY_FORMATION_NAVAL_BUILDINGS: "Naval Bases"
  MILITARY_FORMATION_REMOVE_UNIT_TOOLTIP: "#header Disband #b [CombatUnitType.GetName]#!#!\n[ConcatIfNeitherEmpty(GetDesc( MilitaryFormation.GetDisbandUnitTypeRegularCommand( CombatUnitType.AccessSelf ) ),'\n')]$TOOLTIP_DELIMITER$\nThis will disband the least experienced [CombatUnitType.GetName] [Concept('concept_unit','$concept_unit_short$')] in [MilitaryFormation.GetName] from which ever [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_ARMY_BUILDING', 'MILITARY_FORMATION_NAVAL_BUILDING')] it was created from. [AddLocalizationIf(MilitaryFormation.FindLeastExperiencedRegularUnit( CombatUnitType.Self ).IsValid, 'MILITARY_FORMATION_REMOVE_UNIT_DESC' )]\n\n@information! Disbanding more than [CombatUnitType.GetIconString] #v 1#! $concept_unit_short$ may disband $concept_units_short$ from other [SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_ARMY_BUILDINGS', 'MILITARY_FORMATION_NAVAL_BUILDINGS')].\n\n#instruction Click to disband 1 $concept_unit_short$\n#instruction $SHORTCUT_KEY_MOD_shift$Click to disband 5 $concept_units_short$\n#instruction $SHORTCUT_KEY_MOD_ctrl$Click to disband 10 $concept_units_short$#!"
  MILITARY_FORMATION_REMOVE_UNIT_DESC: "The currently least experienced [CombatUnitType.GetName] comes from the [MilitaryFormation.FindLeastExperiencedRegularUnit( CombatUnitType.Self ).GetBuilding.GetName] in [MilitaryFormation.FindLeastExperiencedRegularUnit( CombatUnitType.Self ).GetBuilding.GetState.GetName]."
- MILITARY_FORMATION_RECRUIT_UNIT_TOOLTIP: "Recruit #b [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitRegularUnitTooltip( CombatUnitType.AccessSelf ) ) ]"
+ MILITARY_FORMATION_RECRUIT_UNIT_TOOLTIP: "Recruit #b [CombatUnitType.GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForType(CombatUnitType.Self).Self)]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitRegularUnitTooltip( CombatUnitType.AccessSelf ) ) ]"
  UPGRADING_UNIT_TYPE: "Upgrading  #b [MilitaryFormationUnitEntry.GetUnitType.GetName]#! to #b [MilitaryFormation.GetSelectedUnitTypeForGroup( MilitaryFormationUnitEntry.GetUnitType.GetGroup.Self ).GetName] #!"
  UPGRADE_UNIT_TYPE: "Upgrade #b [MilitaryFormationUnitEntry.GetUnitType.GetName]#! to #b [MilitaryFormation.GetSelectedUnitTypeForGroup( MilitaryFormationUnitEntry.GetUnitType.GetGroup.Self ).GetName]#!\n\nThis will [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$')] the units while upgrading them."
  MILITARY_FORMATION_UPGRADE_UNIT_TOOLTIP: "[SelectLocalization( MilitaryFormation.IsRegularUnitTypeUpgrading( MilitaryFormationUnitEntry.GetUnitType ), 'UPGRADING_UNIT_TYPE', 'UPGRADE_UNIT_TYPE' )] [ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.GetUpgradeRegularUnitTypeCommand( MilitaryFormationUnitEntry.GetUnitType ) ))]"
  CANNOT_UPGRADE_UNIT_TO_TYPE: "[COMBAT_UNIT_TYPE.GetName] cannot be upgraded to [TARGET_COMBAT_UNIT_TYPE.GetName] as the unit types are too different."
  
+ MILITARY_FORMATION_UPGRADE_GROUP_TOOLTIP: "[SelectLocalization(MilitaryFormation.GetSelectedUnitTypeForGroup( CombatUnitGroup.Self ).IsValid, 'UPGRADE_GROUP_VALID_HEADER','UPGRADE_GROUP_INVALID_HEADER')][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( Not( IsValid( MilitaryFormation.GetUpgradeUnitGroupCommand( CombatUnitGroup.AccessSelf ) ) ), GetDesc(  MilitaryFormation.GetUpgradeUnitGroupCommand( CombatUnitGroup.AccessSelf )     ) ) )]"
+ UPGRADE_GROUP_VALID_HEADER: "#header Upgrade all [CombatUnitGroup.GetName] [Concept('concept_unit', '$concept_units_short$')] to [MilitaryFormation.GetSelectedUnitTypeForGroup( CombatUnitGroup.Self ).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#!\n\nThis will also [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$')] the $concept_units_short$."
+ UPGRADE_GROUP_INVALID_HEADER: "#header Upgrade all [CombatUnitGroup.GetName] [Concept('concept_unit', '$concept_units_short$')]#!"
+
+ UPGRADE_UNIT_GROUP: "Upgrade all #b [CombatUnitGroup.GetName]#! units to #b [MilitaryFormation.GetSelectedUnitTypeForGroup( CombatUnitGroup.Self ).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#!\n\nThis will [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$')] the units while upgrading them."
+ CANNOT_UPGRADE_UNITS_IN_GROUP: "There are no #b [COMBAT_UNIT_GROUP.GetName]#! units that can be upgraded to [TARGET_COMBAT_UNIT_TYPE.GetName]."
+ CANNOT_UPGRADE_UNITS_IN_GROUP_ALL_UPGRADING: "All possible #b [COMBAT_UNIT_GROUP.GetName]#! units are already being upgraded."
+ UPGRADE_ALL_UNIT_GROUP: "Upgrade all [CombatUnitGroup.GetName]"
+
  MILITARY_FORMATION_REMOVE_CONSCRIPT_UNIT_TOOLTIP: "#header Disband one #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#!#!\n[ConcatIfNeitherEmpty(GetDesc( MilitaryFormation.GetDisbandUnitTypeConscriptCommand( CombatUnitType.AccessSelf ) ),'\n')]$TOOLTIP_DELIMITER$\n#instruction Click to disband 1 [Concept('concept_unit','$concept_unit_short$')]\n#instruction $SHORTCUT_KEY_MOD_shift$Click to disband 5 $concept_units_short$\n#instruction $SHORTCUT_KEY_MOD_ctrl$Click to disband 10 $concept_units_short$#!"
  MILITARY_FORMATION_RECRUIT_CONSCRIPT_UNIT_TOOLTIP: "Recruit #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitConscriptUnitTooltip( CombatUnitType.AccessSelf ) ) ]"
  MILITARY_FORMATION_UPGRADE_CONSCRIPT_UNIT_TOOLTIP: "Upgrade #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#!"
 
- MILITARY_FORMATION_RECRUIT_DEFAULT_UNIT_TYPE_TOOLTIP: "Recruit #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitRegularUnitTooltip( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).AccessSelf ) ) ]"
- MILITARY_FORMATION_DISBAND_DEFAULT_UNIT_TYPE_TOOLTIP: "Disband #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetName]#!"
+ MILITARY_FORMATION_RECRUIT_DEFAULT_UNIT_TYPE_TOOLTIP: "Recruit #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitRegularUnitTooltip( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).AccessSelf ) ) ]"
+ MILITARY_FORMATION_DISBAND_DEFAULT_UNIT_TYPE_TOOLTIP: "Disband #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#!"
  MILITARY_FORMATION_RECRUIT_DEFAULT_UNIT_TYPE_CONSCRIPTS_TOOLTIP: "Recruit #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitConscriptUnitTooltip( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).AccessSelf ) ) ]"
  MILITARY_FORMATION_DISBAND_DEFAULT_UNIT_TYPE_CONSCRIPTS_TOOLTIP: "Disband #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetName]#!"
  MILITARY_FORMATION_NO_DEFAULT_UNIT_TYPE_TO_RECRUIT: "@red_cross! No #b default#! [concept_combat_unit_type] selected for this [CombatUnitGroup.GetName]"
@@ -1141,12 +1183,12 @@
  RAISE_ALL_CONSCRIPTS_TOOLTIP: "Raise a total of @conscripts! [MilitaryFormation.GetMaxConscripts|v] [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')]. Conscripts will remain active until army is [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilized$')].[ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.RaiseConscripts ) )]"
  MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS: " + [Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumRegularUnits, MilitaryFormationUnitEntry.GetCurrentNumRegularUnits)]"
  MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_CONSCRIPTS: " + [Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumConscriptUnits, MilitaryFormationUnitEntry.GetCurrentNumConscriptUnits)]"
- MILITARY_FORMATION_NUMBER_OF_UNITS_IN_DEFAULT_TYPE: "[MilitaryFormation.GetCombatUnitsTypeIcon] #v [MilitaryFormation.GetNumRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )]#![AddLocalizationIf(GreaterThan_int32(Subtract_int32(MilitaryFormation.GetNumExpectedRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self) ), MilitaryFormation.GetNumRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )), '(int32)0'), 'MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE')]"
- MILITARY_FORMATION_NUMBER_OF_CONSCRIPTS_DEFAULT_TYPE_RAISED: "@conscripts! #v [MilitaryFormation.GetNumConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )]#![AddLocalizationIf(GreaterThan_int32(Subtract_int32(MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self) ), MilitaryFormation.GetNumConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )), '(int32)0'), 'MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE_CONSCRIPTS')]"
- MILITARY_FORMATION_NUMBER_OF_CONSCRIPTS_DEFAULT_TYPE_NOT_RAISED: "@conscripts! #v [MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self) )]#!"
- MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE: " + [Subtract_int32(MilitaryFormation.GetNumExpectedRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self) ), MilitaryFormation.GetNumRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ))]"
+ MILITARY_FORMATION_NUMBER_OF_UNITS_IN_DEFAULT_TYPE: "[MilitaryFormation.GetCombatUnitsTypeIcon] #v [MilitaryFormation.GetNumRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )]#![AddLocalizationIf(GreaterThan_int32(Subtract_int32(MilitaryFormation.GetNumExpectedRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ), MilitaryFormation.GetNumRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )), '(int32)0'), 'MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE')]"
+ MILITARY_FORMATION_NUMBER_OF_CONSCRIPTS_DEFAULT_TYPE_RAISED: "@conscripts! #v [MilitaryFormation.GetNumConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )]#![AddLocalizationIf(GreaterThan_int32(Subtract_int32(MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ), MilitaryFormation.GetNumConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )), '(int32)0'), 'MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE_CONSCRIPTS')]"
+ MILITARY_FORMATION_NUMBER_OF_CONSCRIPTS_DEFAULT_TYPE_NOT_RAISED: "@conscripts! #v [MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self )]#!"
+ MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE: " + [Subtract_int32(MilitaryFormation.GetNumExpectedRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ), MilitaryFormation.GetNumRegularCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ))]"
  MILITARY_FORMATION_NUMBER_OF_CONSCRIPTS_NOT_RAISED: "@conscripts! #v [MilitaryFormationUnitEntry.GetExpectedNumConscriptUnits]#!"
- MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE_CONSCRIPTS: " + [Subtract_int32(MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self) ), MilitaryFormation.GetNumConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ))]"
+ MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_DEFAULT_TYPE_CONSCRIPTS: " + [Subtract_int32(MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ), MilitaryFormation.GetNumConscriptsCombatUnitsOfType( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ))]"
  MILITARY_FORMATION_NUMBER_OF_FLOTILLAS: "@flotillas! #v [MilitaryFormationUnitEntry.GetCurrentNumTotalUnits]#! [AddLocalizationIf(GreaterThan_int32(Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumRegularUnits, MilitaryFormationUnitEntry.GetCurrentNumTotalUnits), '(int32)0'), 'MILITARY_FORMATION_NUMBER_OF_EXPECTED_FLOTILLAS')]"
  MILITARY_FORMATION_NUMBER_OF_EXPECTED_FLOTILLAS: "+ [Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumRegularUnits, MilitaryFormationUnitEntry.GetCurrentNumTotalUnits)]"
  MILITARY_FORMATION_UNIT_GROUP_NUMBER_OF_EXPECTED_BATTALIONS: "+ [Subtract_int32(CombatUnitGroup.GetExpectedNumUnits, CombatUnitGroup.GetCurrentNumUnits)]"
@@ -1170,7 +1212,7 @@
  FORMATION_STATUS_CONTROLLING_SEA_NODE: "Has control of [NAVAL_INVASION.GetSeaNodeName] for the [NAVAL_INVASION.GetName]"
  FORMATION_STATUS_CONTROLLING_SEA_NODE_SHORT: "Has control of [NAVAL_INVASION.GetSeaNodeName] for the [concept_naval_invasion]"
  FORMATION_STATUS_DEFENDING_INVASION: "At $LOCATION_NAME$ currently defending the [COUNTRY.GetAdjective] [NAVAL_INVASION.GetName]"
- FORMATION_STATUS_DEFENDING_INVASION_SHORT: "Defending the [NAVAL_INVASION.GetName]"
+ FORMATION_STATUS_DEFENDING_INVASION_SHORT: "Defending against the [NAVAL_INVASION.GetName]"
  FORMATION_STATUS_LANDING: "Navally Invading [NAVAL_INVASION.GetEnemyState.GetName] ([NAVAL_INVASION.GetLandingProgress|v%0])"
  FORMATION_STATUS_LANDING_SHORT: "Navally Invading [NAVAL_INVASION.GetEnemyState.GetName], currently has [NAVAL_INVASION.GetLandingProgress|v%0] [concept_landing_progress]"
  FORMATION_STATUS_TRAVELING_TO_FRONT: "Traveling to [Front.GetName] ([MilitaryFormation.GetTravelDaysLeft|v] days left, currently in [MilitaryFormation.GetLocationString])"
@@ -1221,16 +1263,8 @@
  MILITARY_PANEL_HQ_STATE_NAME_FORMAT:0 "[State.GetName]"
  MILITARY_PANEL_NO_BATTALIONS:0 "No [Concept('concept_battalion', '$concept_battalions$')] available in this [concept_hq]"
  MILITARY_PANEL_COMMANDER_NAME_FORMAT:0 "[Character.GetFullName]"
- MILITARY_PANEL_COMMANDER_STATUS_FORMAT:1 "[Character.GetLocationFormatted]"
  MILITARY_PANEL_BUILDING_TROOP_NAME:0 "[Building.GetCustom('troop_name')] in [Building.GetState.GetName]"
- MILITARY_PANEL_UNITS_FROM_BUILDING_FORMAT:0 "#variable [Character.GetNumCombatUnitsFromBuilding(Building.Self)]#!/[Building.GetCombatUnitCapacity] [Building.GetCombatUnitsIcon]"
- MILITARY_PANEL_UNITS_FROM_BUILDING_FORMAT_UNMOBILIZED:0 "#variable [Character.GetNumCombatUnitsFromBuilding(Building.Self)]#! [Building.GetCombatUnitsIcon]"
- MILITARY_PANEL_UNITS_FROM_BUILDING_TOOLTIP:0 "There are currently #variable [Character.GetNumCombatUnitsFromBuilding(Building.Self)]#! [Building.GetCombatUnitsIcon] in this unit"
- MILITARY_PANEL_COMMANDER_UNITS:0 "[Character.GetNumCombatUnits|0v]/[Character.GetMaxNumCombatUnits] [Character.GetCombatUnitsTypeIcon]"
- MILITARY_PANEL_COMMANDER_UNITS_UNMOBILIZED:0 "[Character.GetNumCombatUnits|0v] [Character.GetCombatUnitsTypeIcon]"
  MILITARY_PANEL_MOBILIZED:1 "[Concept('concept_mobilize_army', '$concept_mobilize_army_mobilized$')]"
-
- BUILDING_PANEL_COMMANDER_UNITS:0 "[Character.GetNumCombatUnitsFromBuilding(Building.Self)|0v] [Building.GetCombatUnitsIcon]"
 
  SUPPLY_NETWORK_MAPMARKER_HEADER:2 "[GetPlayer.GetAdjectiveNoFormatting] [concept_supply_network] details:"
  SEA_NODE_DAMAGE_DESC:2 "@warning! [Concept('concept_raid_convoys', '$concept_convoy_raiding$')] have recently sunk #v $NUM_SUNK_CONVOYS|-$#! of the [concept_convoys] passing through this node, reducing [concept_shipping_lane] efficiency by an average of #v $DAMAGE|-%$#!. We currently estimate it will take us #v $DAYS_TO_RECOVER$#! day(s) to fully replace the lost [concept_convoys]."
@@ -1276,6 +1310,7 @@
  NOT_PART_OF_ANY_MILITARY_FORMATION: "Not part of any [concept_military_formation]"
  
  NEEDS_OVERLORD: "This is only allowed for Overlords of [Country.GetName]"
+ MUST_BE_SUBSERVIENT: "[Country.GetName] must be a subservient subject"
 
  CONVOYS_FROM_SUBJECT_DESC:1 "$AMOUNT|+=$ from [Country.GetName] ($SUBJECT_TYPE$, #v $CONTRIBUTION|%0$#! contribution)"
  CONVOYS_TO_OVERLORD_DESC:1 "$AMOUNT|+=$ to [Country.GetName] ($SUBJECT_TYPE$, #v $CONTRIBUTION|%0$#! contribution)"
@@ -1419,8 +1454,6 @@
  GENERAL_LOCATION_TITLE:1 "#title General Location (Debug)#!"
  GENERAL_LOCATION_PRESENT_DESC:3 "[Character.GetOrderType.GetAltName( 'gerund' )|v] at $LOCATION|v$$ADDITIONAL_LOCATION_INFO$"
  GENERAL_LOCATION_PRESENT_DESC_WITHOUT_EXTRA_INFO:1 "[Character.GetOrderType.GetAltName( 'gerund' )|v] at $LOCATION|v$"
- GENERAL_LOCATION_TRAVELING_DESC:1 "Traveling to #variable $DESTINATION$#! [SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)0' ), 'GENERAL_LOCATION_TRAVELING_DAYS', '' )]"
- GENERAL_LOCATION_TRAVELING_DAYS:1 "(+[Character.GetDaysToCompleteTravelFormatted|v])"
  GENERAL_TRAVELING_DAYS_BREAKDOWN:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL$#!#! "
  GENERAL_TRAVELING_ARRIVAL:1 "#header Arrival at Front#!\nWill arrive at $DATE$"
  GENERAL_NAVAL_INVASION_TOOLTIP:1 "#header $naval_invasion$#!\nAccompanying #variable $naval_invasion$#! order on [Character.GetNavalInvasion.GetEnemyState.GetName|v]\n\n[Character.GetNavalInvasion.GetStatus]"
@@ -1443,12 +1476,34 @@
 
  COMBAT_UNITS_TYPE_AND_NUM: "#v [MilitaryFormation.GetNumCombatUnits]#!"
  COMBAT_UNITS_TYPE_AND_NUM_WITH_ICON: "[MilitaryFormation.GetCombatUnitsTypeIcon]#v [MilitaryFormation.GetNumCombatUnits]#!"
+ MARKER_COMBAT_UNITS_TYPE_AND_NUM: "#v [FormationMarker.CalcTotalNumCombatUnits]#!"
+ MARKER_COMBAT_UNITS_TYPE_AND_NUM_WITH_ICON: "[FormationMarker.GetCombatUnitsTypeIcon]#v [FormationMarker.CalcTotalNumCombatUnits]#!"
  FRONT_STATUS:0 "[SelectLocalization(MilitaryFormation.IsAdvancing,'FRONT_STATUS_ADVANCING','FRONT_STATUS_DEFENDING')]"
  FRONT_STATUS_ADVANCING: "Advancing the [concept_front]"
  FRONT_STATUS_DEFENDING: "Defending the [concept_front]"
  FRONT_FORMATION_ORDER_NAME: "#TODO[MilitaryFormation.GetFormationOrder.GetType.GetAltName( 'gerund' )] the [concept_front]#!"
  CURRENT_ORDER_STATUS: " #i #b (Current Order)#!#!"
  NEXT_ORDER_STATUS: " #i #b (Next Order)#!#!"
+ 
+ MILITARY_FORMATION_MARKER_FORMATION_SUMMARY: "#header $FORMATIONS_HEADER$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ MILITARY_FORMATION_MARKER_FORMATION_MANPOWER: "#header [concept_manpower] of $FORMATIONS_HEADER$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ MILITARY_FORMATION_MARKER_FORMATION_OFFENSE: "#header [concept_offense] of $FORMATIONS_HEADER$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ MILITARY_FORMATION_MARKER_FORMATION_DEFENSE: "#header [concept_defense] of $FORMATIONS_HEADER$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ MILITARY_FORMATION_MARKER_FORMATION_ORGANIZATION: "#header [concept_organization] of $FORMATIONS_HEADER$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ MILITARY_FORMATION_MARKER_FORMATION_ENTRY_SUMMARY: "[COUNTRY.GetFlagTextIcon] [MILITARY_FORMATION.GetUnitIcon] [MILITARY_FORMATION.GetNumCombatUnits|v] ([MILITARY_FORMATION.GetName])"
+ MILITARY_FORMATION_MARKER_FORMATION_ENTRY_MANPOWER: "[COUNTRY.GetFlagTextIcon] @manpower![MILITARY_FORMATION.GetCurrentManpower|vK] / #maximum [MILITARY_FORMATION.GetMaxManpower|vK]#! ([MILITARY_FORMATION.GetName])"
+ MILITARY_FORMATION_MARKER_FORMATION_ENTRY_OFFENSE: "[COUNTRY.GetFlagTextIcon] @unit_offense! [MILITARY_FORMATION.GetAverageOffense|1v] ([MILITARY_FORMATION.GetName])"
+ MILITARY_FORMATION_MARKER_FORMATION_ENTRY_DEFENSE: "[COUNTRY.GetFlagTextIcon] @unit_defense! [MILITARY_FORMATION.GetAverageDefense|1v] ([MILITARY_FORMATION.GetName])""
+ MILITARY_FORMATION_MARKER_FORMATION_ENTRY_ORGANIZATION: "[COUNTRY.GetFlagTextIcon] @organization! [MILITARY_FORMATION.GetOrganizationRaw|1v] / #maximum [MILITARY_FORMATION.GetMaxOrganization|1v]#! ([MILITARY_FORMATION.GetName])"
+ MILITARY_FORMATION_MARKER_ALLY_FORMATIONS: "Allied [Concept( 'concept_military_formation', '$concept_military_formations$' )] $POSITION_DESC$"
+ MILITARY_FORMATION_MARKER_ENEMY_FORMATIONS: "Enemy [Concept( 'concept_military_formation', '$concept_military_formations$' )] $POSITION_DESC$"
+ MILITARY_FORMATION_MARKER_POSITION_HQ: "in [HQ.GetName]"
+ MILITARY_FORMATION_MARKER_POSITION_FRONT: "at [FRONT.GetName]"
+ MILITARY_FORMATION_MARKER_POSITION_LOCATION: "in $LOCATION$"
+ MILITARY_FORMATION_MARKER_SELECT_FORMATION: "Select [SelectLocalization(FormationMarker.IsEnemies,'MILITARY_FORMATION_MARKER_ENEMY_LABEL','MILITARY_FORMATION_MARKER_ALLIED_LABEL')] [concept_military_formation]"
+ MILITARY_FORMATION_MARKER_ENEMY_LABEL: "Enemy"
+ MILITARY_FORMATION_MARKER_ALLIED_LABEL: "Allied"
+ MILITARY_FORMATION_MARKER_RIGHT_CLICK_ITEM_DESC: "[MilitaryFormation.GetCountry.GetFlagTextIcon] [MilitaryFormation.GetName] [MilitaryFormation.GetUnitIcon] [MilitaryFormation.GetNumCombatUnits|v]"
 
  NAVAL_INVASION_PANEL_SUBTITLE: "[NavalInvasion.GetInvaderCountry.GetName] invading [NavalInvasion.GetInvadedCountry.GetName]"
 
@@ -1513,25 +1568,25 @@
  defend_guerilla_warfare_desc: "Order this Commander to defend a [concept_front], trying to delay the enemy and slow their advance at the expense of your own territory."
  defend_guerilla_warfare_tooltip: "#header $defend_guerilla_warfare$#!"
 
- patrol_coast:0 "Interception"
- patrol_coast_gerund:0 "Intercepting"
- patrol_coast_desc: "Seek out and destroy any enemy vessels."
- patrol_coast_tooltip:0 "#header $patrol_coast$#!"
+ interception_coast:0 "Interception"
+ interception_coast_gerund:0 "Intercepting"
+ interception_coast_desc: "Seek out and destroy any enemy vessels."
+ interception_coast_tooltip:0 "#header $patrol_coast$#!"
 
- patrol_coast_agressive: "Aggressive Interception"
- patrol_coast_agressive_gerund: "Intercepting Aggressively"
- patrol_coast_agressive_desc: "Aggressively seek out and destroy any enemy vessels at the expense of readiness."
- patrol_coast_agressive_tooltip: "#header $patrol_coast_agressive$#!"
+ interception_coast_agressive: "Aggressive Interception"
+ interception_coast_agressive_gerund: "Intercepting Aggressively"
+ interception_coast_agressive_desc: "Aggressively seek out and destroy any enemy vessels at the expense of readiness."
+ interception_coast_agressive_tooltip: "#header $patrol_coast_agressive$#!"
 
- patrol_carrier_assualt: "Carrier Sorties"
- patrol_carrier_assualt_gerund: "Sortieing with Carriers"
- patrol_carrier_assualt_desc: "Seek out and destroy any enemy vessels with a concentrated carrier attacks."
- patrol_carrier_assualt_tooltip: "#header $patrol_carrier_assualt$#!"
+ interception_carrier_assualt: "Carrier Sorties"
+ interception_carrier_assualt_gerund: "Sortieing with Carriers"
+ interception_carrier_assualt_desc: "Seek out and destroy any enemy vessels with a concentrated carrier attacks."
+ interception_carrier_assualt_tooltip: "#header $patrol_carrier_assualt$#!"
 
- patrol_coordinated_attack: "Coordinated Interception"
- patrol_coordinated_attack_gerund: "Launching a Coordinated Attack"
- patrol_coordinated_attack_desc: "Patiently seek out enemy vessels and atttack in a coordinated, well prepared battle."
- patrol_coordinated_attack_tooltip: "#header $patrol_coordinated_attack$#!"
+ interception_coordinated_attack: "Coordinated Interception"
+ interception_coordinated_attack_gerund: "Launching a Coordinated Attack"
+ interception_coordinated_attack_desc: "Patiently seek out enemy vessels and atttack in a coordinated, well prepared battle."
+ interception_coordinated_attack_tooltip: "#header $patrol_coordinated_attack$#!"
 
  raid_convoys:0 "Raid Convoys"
  raid_convoys_gerund:0 "Raiding Convoys"
@@ -1563,12 +1618,6 @@
  anchor_fleet_desc: "#todo TODO#!"
  anchor_fleet_tooltip: "#todo TODO#!"
 
- commander_status_traveling_time_days:0 "[Character.GetDaysToCompleteTravelRaw|v] [SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)1' ), 'GENERAL_TRAVEL_DAYS', 'GENERAL_TRAVEL_DAY' )]"
- commander_status_traveling_time_less_than_day:0 "less than #variable 1#! day"
- commander_status_traveling_time:0 "[SelectLocalization( GreaterThan_int32( Character.GetDaysToCompleteTravelRaw, '(int32)0' ), 'commander_status_traveling_time_days', 'commander_status_traveling_time_less_than_day' )]"
-
- commander_status_idle:1 "Idle in [Character.GetCurrentHQ.GetName]"
- commander_status_traveling_hq:0 "Traveling to [Character.GetCurrentHQ.GetName] ($commander_status_traveling_time$)"
  commander_status_traveling_front:0 "Traveling"
  commander_status_order_in_hq:0 "[Character.GetOrderType.GetName]"
  commander_status_order_on_front:0 "[Character.GetOrderType.GetName]"
@@ -1714,9 +1763,6 @@
  MANPOWER_FORMAT: "@manpower! $VAL$"
 
  COMBAT_UNITS_BUILDING_HEADER:1 "#title [SelectLocalization(Building.IsBuildingType('building_naval_base'), '@flotillas!', '@battalions!')] #v #tooltippable #tooltip:MILITARY_UNITS_PRODUCTION [Building.GetNumberOfCombatUnits]#!#!#! [SelectLocalization(Building.IsBuildingType('building_naval_base'), '$concept_flotillas$', '$concept_battalions$')]#!"
- COMBAT_UNITS_CHARACTER_HEADER:3 "#title [SelectLocalization(Character.IsGeneral, 'COMBAT_UNITS_CHARACTER_BATTALIONS_HEADER', 'COMBAT_UNITS_CHARACTER_FLOTILLAS_HEADER')]#! from the [Character.GetHomeHQ.GetNameNoFlag|v]"
- COMBAT_UNITS_CHARACTER_BATTALIONS_HEADER:1 "@battalions! #v #tooltippable #tooltip:MILITARY_PANEL_COMMAND_LIMIT_BREAKDOWN_TOOLTIP [Character.GetNumCombatUnits]#!#!#! $concept_battalions$"
- COMBAT_UNITS_CHARACTER_FLOTILLAS_HEADER:1 "@flotillas! #v #tooltippable #tooltip:MILITARY_PANEL_COMMAND_LIMIT_BREAKDOWN_TOOLTIP [Character.GetNumCombatUnits]#!#!#! $concept_flotillas$"
  COMBAT_UNIT_BATTLE_TOOLTIP:0 "In the Battle of #variable [CombatUnit.GetBattle.GetName]#!"
  COMBAT_UNIT_MORALE_ONE_DAY_TOOLTIP:0 "(#variable 1#! day remaining)"
  COMBAT_UNIT_MORALE_DAYS_TOOLTIP:0 "($DAYS|v$ days remaining)"
@@ -1756,8 +1802,6 @@
  HQ_HEADER_CHARACTER:0 "$HQ_HEADER$"
  HQ_HEADER_MILITARY_PANEL:0 "$HQ_HEADER$"
  HQ_HEADER_EMPTY_HQS:0 "Empty Headquarters"
- HOME_HQ:0 "[Concept('concept_hq', 'Home HQ')]: [Character.GetHomeHQ.GetName]"
- HOME_HQ_NAME:0 "([Concept('concept_hq', 'Home HQ')]: [Character.GetHomeHQ.GetName])"
 
  FRONT_PARTICIPANT_COMBATUNITS:2 "@battalions! $NUM_UNITS|v$"
  FRONT_PARTICIPANT_COMBATUNITS_TOOLTIP:2 "[Character.GetFirstName|v] has @battalions! $NUM_UNITS|v$ in [Front.GetName]"
@@ -1776,9 +1820,6 @@
  FRONT_PARTICIPANT_ARMIES_BEYOND_FIVE_ENTRY:0 "[Army.GetName] - @battalions! $MOB_STRING$ [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized_manpower$')]"
 
  FRONT_PLAYER_SIDE_COMBATUNITS_TOOLTIP: "#header [FRONT.GetName]#!\n$TOOLTIP_DELIMITER$\nOurs:[ConcatIfNeitherEmpty('\n', FRONT.GetPlayerSideCombatUnitsBreakdown)][ConcatIfNeitherEmpty('\n', FRONT.GetPlayerSideCombatUnitsTravelingBreakdown)]\n\nAllies:[ConcatIfNeitherEmpty('\n', FRONT.GetPlayerSideAlliesCombatUnitsBreakdown)][ConcatIfNeitherEmpty('\n', FRONT.GetPlayerSideAlliesCombatUnitsTravelingBreakdown)]"
-
- COMMANDER_NUM_UNITS_FORMAT:0 "[Character.GetCombatUnitsTypeIcon] #variable $NUM_UNITS$#!"
- FRONT_PARTICIPANT_COMMANDER_NUM_UNITS_TRAVELING_TOOLTIP:0 "[Character.GetFirstName|v] has #variable [Character.GetNumCombatUnits]#![Character.GetCombatUnitsTypeIcon] traveling to [FrontParticipant.GetFront.GetName]"
 
  ACTIVE_BATTLES:1 "Active [Concept('concept_battle', '$concept_battles$')]"
  ENDED_BATTLES:1 "Ended [Concept('concept_battle', '$concept_battles$')]"
@@ -1873,7 +1914,6 @@
  FRONT_SIDE_SECOND_NUM_UNITS:0 "[Front.GetNumSecondCombatUnits|0v] @battalions!"
  FRONT_SIDE_LEFT_NUM_UNITS:1 "@battalions! [Front.GetNumLeftCombatUnitsRaw|0v] from [Concept( 'concept_army', '$concept_armies$' )]"
  FRONT_SIDE_FORMATIONS_LEFT_NUM_UNITS: "@battalions! [Front.GetNumLeftCombatUnitsFromFormationsRaw|0v] From Formations"
- FRONT_SIDE_LEFT_ADDITIONAL_GENERALS:0 "[Front.GetPlayerAdvantageDesc]\n\n[Front.GetLeftNumBattalionsBeyondTopFiveGeneralsTooltip]"
  FRONT_SIDE_RIGHT_NUM_UNITS:1 "From [Concept( 'concept_army', '$concept_armies$' )] [Front.GetNumRightCombatUnitsRaw|0v] @battalions!"
  FRONT_SIDE_FORMATION_RIGHT_NUM_UNITS: "From Formations [Front.GetNumRightCombatUnitsFromFormationsRaw|0v] @battalions!"
 
@@ -1966,7 +2006,7 @@
  AVG_STANDARD_OF_LIVING_RICH:3 "$AVG_SOL_HEADER$ for the $rich$ in [State.GetName]\n$TOOLTIP_DELIMITER$\nNumber of Pops: #variable [State.GetNumberOfPopsRich|*]#!\nAverage Current: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetAverageStandardOfLivingRich)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_SOL_RICH [State.GetAverageStandardOfLivingRich|1v]#!#!)\nAverage $EXPECTED_SOL_SHORT$: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(State.GetExpectedStandardOfLivingRich)|v] (#tooltippable #tooltip:[State.GetTooltipTag],STATE_EXPECTED_SOL_RICH [State.GetExpectedStandardOfLivingRich|v1]#!#!)"
  SOL_BY_POPULATION_AVERAGE_SHORT:0 "#title Avg. SoL:#!"
  SOL_BY_POPULATION_AVERAGE:0 "#title [concept_sol]:#!\n[LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPopulation)|v] ([Country.GetAverageSoLByPopulation|v1])"
- AVG_STANDARD_OF_LIVING_COUNTRY:1 "$AVG_SOL_HEADER$ in [Country.GetName]\nAverage Current: [Country.GetFormattedStandardOfLivingLabelAll|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_ALL [Country.GetFormattedStandardOfLivingAll|v]#!#!) [Country.GetStandardOfLivingRanking]\nAverage $EXPECTED_SOL_SHORT$: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedSoLByPopulation)|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_ALL [Country.GetExpectedSoLByPopulation|v1]#!#!)\n$TOOLTIP_DELIMITER$\n$COUNTRY_STRATAS_AVG_SOL$"
+ AVG_STANDARD_OF_LIVING_COUNTRY:1 "$AVG_SOL_HEADER$ in [Country.GetName]\nAverage Current: [Country.GetFormattedStandardOfLivingLabelAll|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_ALL [Country.GetFormattedStandardOfLivingAll|v]#!#!) ([Country.GetStandardOfLivingRanking])\nAverage $EXPECTED_SOL_SHORT$: [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetExpectedSoLByPopulation)|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_ALL [Country.GetExpectedSoLByPopulation|v1]#!#!)\n$TOOLTIP_DELIMITER$\n$COUNTRY_STRATAS_AVG_SOL$"
 
  COUNTRY_STRATAS_AVG_SOL:1 "$poor$: [Country.GetFormattedStandardOfLivingLabelPoor|v] (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_LOW,CountryStandardOfLivingLower #v [Country.GetFormattedStandardOfLivingPoor]#!#!#!) - ([LabelingHelper.GetIconForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingPoor)|v] #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_LOW [Country.GetExpectedStandardOfLivingPoor|v1]#!#! $EXPECTED_SOL_SHORT$)\n$middle$: #v [Country.GetFormattedStandardOfLivingLabelMiddle]#! (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_MIDDLE,CountryStandardOfLivingMiddle #v [Country.GetFormattedStandardOfLivingMiddle]#!#!#!) - ([LabelingHelper.GetIconForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingMiddle)|v] #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_MIDDLE [Country.GetExpectedStandardOfLivingMiddle|v1]#!#! $EXPECTED_SOL_SHORT$)\n$rich$: #v [Country.GetFormattedStandardOfLivingLabelRich]#! (#tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_SOL_UPPER,CountryStandardOfLivingUpper [Country.GetFormattedStandardOfLivingRich|v]#!#!) - ([LabelingHelper.GetIconForStandardOfLivingCFixedPoint(Country.GetExpectedStandardOfLivingRich)|v] #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_EXPECTED_SOL_UPPER [Country.GetExpectedStandardOfLivingRich|v1]#!#! $EXPECTED_SOL_SHORT$)"
  COUNTRY_AVG_STANDARD_OF_LIVING_STRATA:0 "$STRATA$: #v $LABEL_FOR_SOL$#! (#tooltippable #tooltip:$TOOLTIP_TAG$ #v $SOL_VALUE|1$#!#!#!)"
@@ -2295,7 +2335,7 @@
  POWER_BASE_INCOME:0 "Base Income: #variable #P +$POWER_BASE_GENERATION|1$ #!#!\n"
  CAPITAL_TRUST:0 "#tooltip_header Trust#!\nCurrent: #HEADER [GetPlayer.GetTrust|2]#!\nMonthly decay: #BOLD #V [GetPlayer.GetMonthlyTrustChange|+=3]#!#!"
  CAPITAL_TRUST_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetTrustBreakdown]\nMax amount: #variable 100#!\n\n$TRUST_CONCEPT$"
- POP_TOOLTIP:2 "#tooltip_header [Concept('concept_pop','$concept_population$')]#!\nCurrent: [Country.GetTotalPopulation|*2v] [Country.GetPopulationRanking]\n[Country.GetPopGrowthDesc]$POP_TOOLTIP_DELAYED$"
+ POP_TOOLTIP:2 "#tooltip_header [Concept('concept_pop','$concept_population$')]#!\nCurrent: [Country.GetTotalPopulation|*2v] ([Country.GetPopulationRanking])\n[Country.GetPopGrowthDesc]$POP_TOOLTIP_DELAYED$"
  RADICALS_TOOLTIP:1 "#tooltip_header $RADICALS$#!\nThere are #v [Country.GetNumRadicals|D]#! $RADICALS$ in the total population of #v [Country.GetTotalPopulation|D]#! in [Country.GetName]\n$TOOLTIP_DELIMITER$\nThe number of $RADICALS$ changed by #v #tooltippable #tooltip:[Country.GetTooltipTag],RADICALS_CHANGE_TOOLTIP [Country.GetTotalNumRadicalsChange|D=-]#!#!#! since [Country.GetRadicalsLoyalistsChangeStartDate|v].\nThe most impactful factors are [Country.GetRadicalsChangeSummary]\n\n[Country.GetRadicalsSummaryDesc][ConcatIfNeitherEmpty('\n\n',SelectLocalization( GreaterThan_int32(Country.CalcNumStatesInTurmoil, '(int32)0'), 'STATES_IN_TURMOIL', '' ))][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromRadicals, 'RADICALS_IG_APPROVAL', '' ))]"
  LOYALISTS_TOOLTIP:1 "#tooltip_header $LOYALISTS$#!\nThere are #v [Country.GetNumLoyalists|D]#! $LOYALISTS$ in the total population of #v [Country.GetTotalPopulation|D]#! in [Country.GetName]\n$TOOLTIP_DELIMITER$\nThe number of $LOYALISTS$ changed by #v #tooltippable #tooltip:[Country.GetTooltipTag],LOYALISTS_CHANGE_TOOLTIP [Country.GetTotalNumLoyalistsChange|D=+]#!#!#! since [Country.GetRadicalsLoyalistsChangeStartDate|v]\nThe most impactful factors are [Country.GetLoyalistsChangeSummary]\n\n[Country.GetLoyalistsSummaryDesc][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromLoyalists, 'LOYALISTS_IG_APPROVAL', '' ))]"
 
@@ -2447,15 +2487,20 @@
  TOOLTIP_POP_GROWTH_COMMON:0 "Annual projected [concept_pop_growth]: #variable $NETGROWTHRATE|+=%$ #! (#variable $NETGROWTH|=*$#!)"
  TOOLTIP_COUNTRY_POP_GROWTH:1 "$TOOLTIP_POP_GROWTH_COMMON$"
  TOOLTIP_STATE_POP_GROWTH:1 "$TOOLTIP_POP_GROWTH_COMMON$"
- TOOLTIP_STATE_POP_MIGRATION:2 "Annual projected [concept_migration]: #variable $NETGROWTHRATE|+=%$#! (#variable $NETGROWTH|=*$#!)"
+ TOOLTIP_STATE_POP_MIGRATION:2 "Annual projected [concept_migration]: #variable $ANNUALNETGROWTHRATE|+=%$#! (#variable $ANNUALNETGROWTH|=*$#!)"
+ HEADER_CULTURAL_COMMUNITIES: "[Concept('concept_cultural_community','$concept_cultural_communities$')]"
 
  MIGRATION_PULL_DESC:0 "[State.GetMigrationPullDesc]"
  STATE_MIGRATION_PULL_BREAKDOWN:0 "[State.GetMigrationPullDesc]"
+ COUNTRY_MASS_MIGRATION_PULL_DESC: "[SelectLocalization(State.GetCountry.IsColonizable, State.GetMigrationPullDesc, State.GetCountry.GetMassMigrationAttractionDesc)]"
+ MASS_MIGRATION_DESC_TOOLTIP: "#header [concept_mass_migration_pull]#!\n$TOOLTIP_DELIMITER$\nThe [Country.GetAdjective] $concept_mass_migration_pull$ of #b $MASS_MIGRATION_ATTRACTION|1$#! is based on the average [concept_migration_pull] of the following [Concept('concept_migration_target', '$concept_mass_migration_eligible$')] $concept_states$:\n\n[COUNTRY.GetMassMigrationAttractionBreakdown]\n\n$concept_countries$ with less than #b $PENALTY_THRESHOLD$#! $concept_mass_migration_eligible$ $concept_states$ suffer an additional penalty to their $concept_mass_migration_pull$.\n\nYour $concept_mass_migration_pull$ can also be further affected by your current [GetLawGroup('lawgroup_migration').GetName] and [GetLawGroup('lawgroup_citizenship').GetName] [Concept('concept_law', '$concept_laws$')] if they hinder the $concept_culture$ in question of migrating to your $concept_country$."
+ MASS_MIGRATION_ZERO_PULL_DESC_TOOLTIP: "#header [concept_mass_migration_pull]#!\n$TOOLTIP_DELIMITER$\n[Country.GetName] has no attractive $concept_mass_migration_eligible$ $concept_states$ to be targeted by a [Concept('concept_migration_target', '$concept_mass_migration$')]."
+ STATE_MM_ENTRY_FORMAT: "[STATE.GetName]: [STATE.GetMigrationLabel]"
 
  MIGRATION_PULL_FROM_EMPTY_STATE:0 "$TAB$Depopulated State: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_SOL:1 "$TAB$[concept_sol]: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_UNEMPLOYMENT:1 "$TAB$[Concept('concept_unemployed','$concept_unemployment$')]: #v $VAL|+=1$#!"
- MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND:0 "$TAB$Unused [concept_arable_land]: #v $VAL|+=1$#!"
+ MIGRATION_PULL_FROM_AVAILABLE_ARABLE_LAND_EMPLOYMENT:0 "$TAB$Unused [concept_arable_land] employment: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_AVAILABLE_EMPLOYMENT:0 "$TAB$Available Employment: #v $VAL|+=1$#!"
  MIGRATION_PULL_FROM_COLONY:0 "$TAB$Is a Colony: #P #v ×$VAL|1$#!#!"
 
@@ -2467,14 +2512,16 @@
  LABEL_STATE_MIGRATION_PULL_LOW:0 "#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_MIGRATION_PULL_BREAKDOWN #N #b Low ($STATE_VALUE|1$)#!#!#!#!"
  
  TOOLTIP_STATE_MIGRATION_ISOLATED:1 "[STATE.GetName] is an [concept_isolated_state], and will not experience any migration"
- TOOLTIP_STATE_MIGRATION_PULL_HIGH:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_HIGH$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may receive immigrants from other states in the [State.GetMarket.GetName]\n\n$concept_migration$ can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
+ TOOLTIP_STATE_MIGRATION_PULL_HIGH:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_HIGH$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may receive immigrants from other states in the [State.GetMarket.GetName]\n\n[concept_migration] can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
  TOOLTIP_STATE_MIGRATION_PULL_MEDIUM:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_MEDIUM$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may send a limited number of emigrants to other states within the [State.GetMarket.GetName]\n\n$concept_migration$ can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
  TOOLTIP_STATE_MIGRATION_PULL_LOW:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_LOW$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may send emigrants to other states in the [State.GetMarket.GetName]\n\n$concept_migration$ can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
  
  TOOLTIP_STATE_IMMIGRATION_STATES:0 "[STATE.GetName] received a total of #variable $AMOUNT|D+$#! immigrants from $STATES_LIST$ last week"
- TOOLTIP_STATE_EMIGRATION_STATES:0 "[STATE.GetName] sent a total of #variable $AMOUNT|D+$#! emigrants to $STATES_LIST$ last week"
- TOOLTIP_STATE_CULTURAL_MIGRATION_TARGET:0 "[STATE.GetName] is the target of mass migration from the [CULTURE.GetName] culture and will receive vast numbers of migrants"
- TOOLTIP_STATE_CULTURAL_MIGRATION_TARGET_ADJACENCY:0 "[STATE.GetName] is adjacent to a target of mass migration from the [CULTURE.GetName] culture and will receive large numbers of migrants"
+ TOOLTIP_STATE_EMIGRATION_STATES:0 "[STATE.GetName] sent a total of #variable $AMOUNT|D-$#! emigrants to $STATES_LIST$ last week"
+ TOOLTIP_STATE_MASS_MIGRATION_TARGET:0 "[STATE.GetName] is a [Concept('concept_migration_target', '$concept_mass_migration_target$')] for the [CULTURE.GetName] culture and will receive vast numbers of migrants"
+ TOOLTIP_STATE_MASS_MIGRATION_TARGET_ADJACENCY:0 "[STATE.GetName] is adjacent to a $concept_mass_migration_target$ for the [CULTURE.GetName] culture and will receive large numbers of migrants"
+ TOOLTIP_STATE_ELIGIBLE_MASS_MIGRATION: "@green_checkmark! [STATE.GetName] is #b eligible#! as a [Concept('concept_migration_target', '$concept_mass_migration_target$')]."
+ TOOLTIP_STATE_NOT_ELIGIBLE_MASS_MIGRATION: "@red_cross! [STATE.GetName] is #b not eligible#! as a [Concept('concept_migration_target', '$concept_mass_migration_target$')]."
 
  CULTURE_OVERVIEW:1 "Cultures"
  COUNTRY_INFO:0 "Information"
@@ -2607,11 +2654,6 @@
  BUTTON_INTERACT:0 "Interact"
  NO_OF_UNREAD_PINS:0 "You have #BOLD #V [InformationPanelBar.GetNumberOfUnreadPins]#!#! unread pins"
 
- YOU_AND_ALLIES_FIRST:0 "You and Your Allies ([Front.GetFirstLeadingCommander.GetCountry.GetFlagTextIcon])"
- ENEMIES_FIRST:0 "Enemy ([Front.GetFirstLeadingCommander.GetCountry.GetFlagTextIcon])"
- YOU_AND_ALLIES_SECOND:0 "You and Your Allies ([Front.GetSecondLeadingCommander.GetCountry.GetFlagTextIcon])"
- ENEMIES_SECOND:0 "Enemy ([Front.GetSecondLeadingCommander.GetCountry.GetFlagTextIcon])"
-
  FRONT_COUNTRY_LEFT_SIDE: "[Front.AccessLeftTheater.GetOwner.GetAdjective] side"
  FRONT_COUNTRY_RIGHT_SIDE: "[Front.AccessRightTheater.GetOwner.GetAdjective] side"
 
@@ -2699,10 +2741,11 @@
  LAW_RIGHT_CLICK_MENU_TITLE: "[Law.GetGroup.GetName] [concept_law_group]"
  FORCE_SUBJECT_EFFECTS: "\n\n#title Effects:#!\n[Law.GetOnImposeDesc]"
  FORCE_SUBJECT_TRIGGERS: "#title Requirements:#!\n[GetDesc( Law.StartImposing )]\n\n"
- IMPOSE_LAW_GROUP_CONDITIONS: "[SelectLocalization( Not(Or(ObjectsEqual(Country.GetOverlord, GetPlayer.Self), ObjectsEqual(Country.GetTopOverlord, GetPlayer.Self))),  'IMPOSE_LAW_NOT_OVERLORD', SelectLocalization(Country.IsEnactingLaw, 'IMPOSE_LAW_SUBJECT_ALREADY_ENACTING', 'IMPOSE_LAW_NO_OPTIONS'))]"
+ IMPOSE_LAW_GROUP_CONDITIONS: "[SelectLocalization( Not(Or(ObjectsEqual(Country.GetOverlord, GetPlayer.Self), ObjectsEqual(Country.GetTopOverlord, GetPlayer.Self))),  'IMPOSE_LAW_NOT_OVERLORD', SelectLocalization(Not(Country.IsSubservientTo( GetPlayer.Self )), 'IMPOSE_LAW_NOT_SUB', SelectLocalization(Country.IsEnactingLaw, 'IMPOSE_LAW_SUBJECT_ALREADY_ENACTING', 'IMPOSE_LAW_NO_OPTIONS')))]"
  IMPOSE_LAW_NOT_OVERLORD: "@red_cross! [GetPlayer.GetName] needs to be [concept_overlord] of [Country.GetName] to impose a [concept_law] on them"
  IMPOSE_LAW_SUBJECT_ALREADY_ENACTING: "@red_cross! Cannot impose a [concept_law] on [Country.GetName] as [Country.GetName] is currently [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacting$')] [Country.GetLawBeingEnacted.GetName]"
  IMPOSE_LAW_NO_OPTIONS: "@red_cross! There are no other available [Law.GetGroup.GetName] [Concept('concept_law','$concept_laws$')] to impose on [Country.GetName]"
+ IMPOSE_LAW_NOT_SUB: "@red_cross! $MUST_BE_SUBSERVIENT$"
 
  UNDER_COLONIZATION:0 "Growing [concept_colony]"
  BEING_COLONIZED:0 "Being [Concept('concept_colony', '$concept_colonized$')] by\n[SelectLocalization(EqualTo_int32(State.GetNumColonizers,'(int32)1'),State.GetColonizers('STATE_REGION_COLONIZER_SINGLE_WIDGET'),State.GetColonizers('STATE_COLONIZER_WIDGET_ITEM'))]"
@@ -2731,7 +2774,8 @@
  INFRASTRUCTURE_FROM_STATE:0 "$VALUE|+=1$ from [concept_state]\n$BREAKDOWN$"
  INFRASTRUCTURE_FROM_POPS:3 "$VALUE|+=1$ from [Concept('concept_pop', '$concept_pops$')] $CAP_BREAKDOWN$\n$BREAKDOWN$"
  INFRASTRUCTURE_FROM_POPS_CAPPED:3 "($VALUE|+=1$ capped at maximum value of $CAP|1v$)"
-
+ INFRASTRUCTURE_FROM_GOODS: "$VALUE|+=1$ from [concept_pop] Consumption of [GOODS.GetName]\n$BREAKDOWN$"
+ 
  NEXT_PAGE:0 "Next page"
  PREVIOUS_PAGE:0 "Previous page"
  
@@ -2786,6 +2830,8 @@
  IN_CONSTRUCTION_QUEUE_TOOLTIP:1 "#header [GetPlayer.GetNumInactiveConstructionQueueElements|=] [Concept('concept_building', '$concept_buildings$')] in the [concept_construction_queue]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInactiveConstructionProjectsDesc]"
  QUEUED:0 "Queued"
  
+ BUILDING_PREDICTION_DISCLAIMER: "@information! Earnings, Upkeep and $concept_productivity$ predictions for new [Concept('concept_construction','$concept_constructions$')] take into account the estimated future price impact of queued $concept_constructions$ and understaffed [Concept('concept_building', '$concept_buildings$')]"
+ 
  SHOW_PRIVATE_CONSTRUCTIONS:0 "Show [Concept('concept_private_construction', '$concept_private_constructions$')] ([GetMetaPlayer.GetPlayedOrObservedCountry.GetNumPrivateConstructionsInQueue|v])"
  SHOW_GOVERNMENT_CONSTRUCTIONS:0 "Show [Concept('concept_government_construction', '$concept_government_constructions$')] ([GetMetaPlayer.GetPlayedOrObservedCountry.GetNumGovernmentConstructionsInQueue|v])"
 
@@ -2822,7 +2868,9 @@
  BUILDING_PRODUCTIVITY_HEADER:1 "Yearly Avg. $EARNINGS_PER_EMPLOYEE$"
  GOVERNMENTAL_EXPENSES:1 "Governmental Expenses: #tooltippable #tooltip:[Building.GetTooltipTag],BUILDING_GOVERNMENT_EXPENSES_DESC #N @money!-[Building.GetGovernmentExpenses|D-]#!#!#!"
  NOT_FULLY_EMPLOYED:2 "#header #red [Building.GetName] is unable to fully hire#!#!\n$TOOLTIP_DELIMITER$\nEmployment: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] Employees#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n[Building.GetAllFailedHiresDesc]"
- NOT_HIRING:0 "#header #red [Building.GetName] is unable to hire!#!#!\n$TOOLTIP_DELIMITER$\nEmployment: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] Employees#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n\nThis [concept_building] does not have the funds to hire anyone.\n\nCurrent Productivity: [Building.GetAverageAnnualEarningsPerEmployeeFormatted]"
+ NOT_HIRING:0 "#header #red [SelectLocalization(Building.ShouldShowAsUnableToHire,'NOT_HIRING_UNABLE','NOT_HIRING_UNWILLING')]#!#!\n$TOOLTIP_DELIMITER$\nEmployment: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_EMPLOYMENT #variable [Building.GetNoOfEmployed|1*]#!#!#! / #maximum [Building.GetEmployeeCap|1*] Employees#! (#BOLD #V [Building.GetEmploymentPercentage|0%]#!#!)\n\n[Building.GetNotHiringReasonDesc]\n\n[Building.GetAdjustHiringTargetDesc]"
+ NOT_HIRING_UNABLE: "[Building.GetName] in [Building.GetState.GetName] is unable to hire"
+ NOT_HIRING_UNWILLING: "[Building.GetName] in [Building.GetState.GetName] is unwilling to hire"
  EMPLOYMENT_HINT:1 "\n\n@information! The [Concept('concept_building_wage', '$concept_building_wages$')] in the [Building.GetName] are based on its economic situation. In order to afford to attract more [Concept('concept_pop', '$concept_pops$')] to the Workforce its Weekly [concept_building_balance] should be improved. You can influence this by either making the [Concept('concept_good', '$concept_goods$')] it consumes cheaper, or by making the Goods it produces more expensive. This is done by increasing or decreasing supply and demand on the [Building.GetState.GetMarket.GetName]. You can guarantee that the Workforce is paid a competitive [concept_building_wage] by [Concept('concept_subsidies', '$concept_subsidizing$')] the building. This will keep it afloat by using [concept_money] from the [GetPlayer.GetAdjectiveNoFormatting] [concept_treasury], if necessary."
  INCOME_TAXES:1 "Taxes paid: #tooltippable #tooltip:[Building.GetTooltipTag],TOOLTIP_BUILDING_TAXES_TOOLTIP #variable @money![Building.GetTaxationRevenue|D+=]#!#!#!"
  BUILDING_TOOLTIP_BASE_INFO:2 "[AddLocalizationIf(Not(Building.GetState.IsIncorporated), 'BUILDING_STATE_IS_UNINCORPORATED')]Size: [Building.GetExpansionLevelBreakdownDesc][AddLocalizationIf(Building.IsBuildingType('building_urban_center'), '\n')][AddLocalizationIf(Building.IsBuildingType('building_urban_center'), 'BUILDING_STATE_URBANIZATION')][ConcatIfNeitherEmpty('\n', SelectLocalization( GreaterThan_int64(Building.GetNoOfEmployed, '(int64)0'), 'EMPLOYMENT_INFO', '' ))]"
@@ -2860,6 +2908,10 @@
  NO_GOODS_TO_TAX:0 "There are no goods on which you can collect [Concept('concept_consumption_tax', '$concept_consumption_taxes$')]"
  UNTAX_GOODS:0 "Remove Consumption Tax"
  SUBSIDIZE_SHORT:0 "Subsi:"
+ 
+ BUILDING_NOT_HIRING_NO_PROFIT: "@red_cross! This $concept_building$ will not hire because its weekly [concept_building_balance] is at or below zero"
+ BUILDING_NOT_HIRING_LOW_PROFIT_LOW_CASH_RESERVES: "@red_cross! This $concept_building$ will not hire because its weekly [concept_building_balance] is not at least @money!$PROFIT_THRESHOLD|Kv$ (@money!$PROFIT|Kv$) and its [concept_cash_reserves] are below $CASH_RESERVES_THRESHOLD|%v$ ($CASH_RESERVES|%v$)"
+ BUILDING_NOT_HIRING_DECREASED_PRODUCTIVITY: "@red_cross! This $concept_building$ will not hire because it predicts that doing so would reduce its [concept_productivity] below what it considers the minimum viable threshold of @money!$PRODUCTIVITY_THRESHOLD|1v$ (@money![Building.GetAverageAnnualEarningsPerEmployee|v1] @arrow_right!@money!$PRODUCTIVITY|v1$)"
 
  TAX_WASTE:0 "[concept_tax_waste]: #v $VAL|-%$#!"
  RADICAL_IG_ITEM:0 "[InterestGroup.GetName]: #tooltippable #tooltip:[InterestGroup.GetTooltipTag],IG_APPROVAL_BREAKDOWN [InterestGroup.GetApprovalRating] #bold ([InterestGroup.GetApprovalValue|+=])#!#!#!\n"
@@ -2875,7 +2927,8 @@
 
  CHANGE_PRODUCTION_METHOD_TOOLTIP:0 "#header Change [ChangeProductionMethodMenuItem.GetProductionMethodGroup.GetName] [concept_production_method] to [ProductionMethod.GetName]#!\n[ChangeProductionMethodMenuItem.GetTooltip(GetPlayer.Self)]"
  CHANGE_FROM_CURRENT_PRODUCTION_METHOD_TOOLTIP:1 "#header [ProductionMethodGroup.GetName] [concept_production_method]#!\nCurrent: [ProductionMethod.GetName]\n[ProductionMethod.GetTooltipForBuilding(GetPlayer.Self, Building.Self)]\n\n#instruction #bold Left-click#! to see available options#!"
- CHANGE_PRODUCTION_METHOD_IMPACT_ON_BALANCE:0 "Predicted impact on Weekly Balance with full employment after [concept_goods_substitution]: #v @money!$VAL|D+=$#!"
+ CHANGE_PRODUCTION_METHOD_IMPACT_ON_BALANCE:0 "Predicted Weekly [concept_building_balance]: #v @money!$BALANCE|Dv$#! (#v @money!$BALANCE_DELTA|D+=$#! from current)\nPredicted [concept_productivity]: @money!$PRODUCTIVITY$ (@money!$PRODUCTIVITY_DELTA|=+1$ from current)"
+ CHANGE_PRODUCTION_METHOD_IMPACT_ON_BALANCE_MULTI: "Predicted Average Weekly [concept_building_balance]: #v @money!$BALANCE|D$#! (#v @money!$BALANCE_DELTA|D+=$#! from current)\nPredicted Average [concept_productivity]: @money!$PRODUCTIVITY|v1$ (@money!$PRODUCTIVITY_DELTA|=+1$ from current)"
  CHANGE_PRODUCTION_NO_EFFECT:0 "This Production Method currently has no effects"
  BULK_CHANGE:0 "#header Switch [ProductionMethodGroup.GetName] [concept_production_method] for all [BuildingType.GetName]#!"
  BULK_CHANGE_MIXED:1 "$BULK_CHANGE$\n[BuildingType.GetName] in [GetPlayer.GetNameNoFlag] vary in the [ProductionMethodGroup.GetName] [Concept('concept_production_method','$concept_production_methods$')] they use"
@@ -2978,20 +3031,20 @@
  RURAL_BUILDINGS:0 "Rural"
  DEVELOPMENT_BUILDINGS:0 "Development"
 
- GOODS_PRICE_MARKET_PRODUCTION_HEADER:0 "#header Production of [GOODS.GetName] in [MARKET.GetName]#!\n$TOOLTIP_DELIMITER$"
- GOODS_PRICE_MARKET_CONSUMPTION_HEADER:0 "#header Consumption of [GOODS.GetName] in [MARKET.GetName]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_MARKET_PRODUCTION_HEADER:0 "#header [concept_good_production] of [GOODS.GetName] in [MARKET.GetName]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_MARKET_CONSUMPTION_HEADER:0 "#header [concept_good_consumption] of [GOODS.GetName] in [MARKET.GetName]#!\n$TOOLTIP_DELIMITER$"
  GOODS_PRICE_MARKET_PRODUCTION_ITEM:1 "[State.GetName]: #tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_STATE_PRODUCTION_BREAKDOWN [Goods.GetStateProduction|D]#!#!"
  GOODS_PRICE_MARKET_CONSUMPTION_ITEM:1 "[State.GetName]: #tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_STATE_CONSUMPTION_BREAKDOWN [Goods.GetStateConsumption|D]#!#!"
 
  GOODS_PRICE_MARKET_SELL_ORDER_HEADER: "#header [concept_sell_orders] of [GOODS.GetName] in [MARKET.GetName]#!\nCurrent total: $ORDERS|vD$\n$TOOLTIP_DELIMITER$"
  GOODS_PRICE_MARKET_BUY_ORDER_HEADER: "#header [concept_buy_orders] of [GOODS.GetName] in [MARKET.GetName]#!\nCurrent total: $ORDERS|vD$\n$TOOLTIP_DELIMITER$"
 
- GOODS_PRICE_MARKET_SELL_ORDER_ITEM:1 "[Goods.GetAccessAdjustedStateSell|Dv] in [State.GetName] (#tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_STATE_PRODUCTION_BREAKDOWN [Goods.GetStateProduction|D]#!#! Production × [State.GetMarketAccess|v0%] [concept_market_access])"
+ GOODS_PRICE_MARKET_SELL_ORDER_ITEM:1 "[Goods.GetAccessAdjustedStateSell|Dv] in [State.GetName] (#tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_STATE_PRODUCTION_BREAKDOWN [Goods.GetStateProduction|D]#!#! [concept_good_production] × [State.GetMarketAccess|v0%] [concept_market_access])"
  GOODS_PRICE_MARKET_BUY_ORDER_ITEM:1 "[Goods.GetAccessAdjustedStateBuy|Dv] in [State.GetName] (#tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_STATE_CONSUMPTION_BREAKDOWN [Goods.GetStateConsumption|D]#!#! [concept_good_consumption] × [State.GetMarketAccess|v0%] [concept_market_access])"
  GOODS_PRICE_MARKET_IMPORT_EXPORT:0 "From Trade Routes: $VAL|=vD$"
  
- GOODS_PRICE_STATE_PRODUCTION_HEADER:0 "#header Production of [GOODS.GetName] in [STATE.GetName]#!\n$TOOLTIP_DELIMITER$"
- GOODS_PRICE_STATE_CONSUMPITON_HEADER:0 "#header Consumption of [GOODS.GetName] in [STATE.GetName]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_STATE_PRODUCTION_HEADER:0 "#header [concept_good_production] of [GOODS.GetName] in [STATE.GetName]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_STATE_CONSUMPITON_HEADER:0 "#header [concept_good_consumption] of [GOODS.GetName] in [STATE.GetName]#!\n$TOOLTIP_DELIMITER$"
  GOODS_PRICE_STATE_STATE_HEADER:0 "#bold In [STATE.GetName]#!"
  GOODS_PRICE_STATE_BUILDING_PRODUCTION_ITEM:0 "[Building.GetName]: [BUILDING.GetProduction(GOODS.Self)|0v]"
  GOODS_PRICE_STATE_BUILDING_CONSUMPTION_ITEM:0 "[BUILDING.GetName]: [BUILDING.GetConsumption(GOODS.Self)|0v]"
@@ -3000,15 +3053,15 @@
 
  GOODS_PRICE_STATE_POPTYPE_PRODUCTION_BREAKDOWN:0 "[Goods.GetStatePopTypeProductionBreakdown(State.Self)]"
  GOODS_PRICE_STATE_POPTYPE_CONSUMPTION_BREAKDOWN:0 "[Goods.GetStatePopTypeDemandBreakdown(State.Self)]"
- GOODS_PRICE_STATE_POPTYPE_PRODUCTION_HEADER:0 "#header Production of [GOODS.GetName] in [STATE.GetName] by [concept_profession]#!\n$TOOLTIP_DELIMITER$"
- GOODS_PRICE_STATE_POPTYPE_CONSUMPTION_HEADER:0 "#header Consumption of [GOODS.GetName] in [STATE.GetName] by [concept_profession]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_STATE_POPTYPE_PRODUCTION_HEADER:0 "#header [concept_good_production] of [GOODS.GetName] in [STATE.GetName] by [concept_profession]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_STATE_POPTYPE_CONSUMPTION_HEADER:0 "#header [concept_good_consumption] of [GOODS.GetName] in [STATE.GetName] by [concept_profession]#!\n$TOOLTIP_DELIMITER$"
  GOODS_PRICE_STATE_POPTYPE_PRODUCTION_POPTYPE_ITEM:0 "[POP_TYPE.GetName]: #tooltippable #tooltip:[GOODS.GetTooltipTag]|[STATE.GetTooltipTag]|[POP_TYPE.GetTooltipTag],GOODS_PRICE_STATE_POP_PRODUCTION_BREAKDOWN $VALUE|0$#!#!"
  GOODS_PRICE_STATE_POPTYPE_CONSUMPTION_POPTYPE_ITEM:0 "[POP_TYPE.GetName]: #tooltippable #tooltip:[GOODS.GetTooltipTag]|[STATE.GetTooltipTag]|[POP_TYPE.GetTooltipTag],GOODS_PRICE_STATE_POP_CONSUMPTION_BREAKDOWN $VALUE|0$#!#!"
 
  GOODS_PRICE_STATE_POP_PRODUCTION_BREAKDOWN:0 "[Goods.GetStatePopProductionBreakdown(State.Self, PopType.Self)]"
  GOODS_PRICE_STATE_POP_CONSUMPTION_BREAKDOWN:0 "[Goods.GetStatePopDemandBreakdown(State.Self, PopType.Self)]"
- GOODS_PRICE_STATE_POP_PRODUCTION_HEADER:0 "#header Production of [GOODS.GetName] in [STATE.GetName] by [POP_TYPE.GetName]#!\n$TOOLTIP_DELIMITER$"
- GOODS_PRICE_STATE_POP_CONSUMPTION_HEADER:0 "#header Consumption of [GOODS.GetName] in [STATE.GetName] by [POP_TYPE.GetName]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_STATE_POP_PRODUCTION_HEADER:0 "#header [concept_good_production] of [GOODS.GetName] in [STATE.GetName] by [POP_TYPE.GetName]#!\n$TOOLTIP_DELIMITER$"
+ GOODS_PRICE_STATE_POP_CONSUMPTION_HEADER:0 "#header [concept_good_consumption] of [GOODS.GetName] in [STATE.GetName] by [POP_TYPE.GetName]#!\n$TOOLTIP_DELIMITER$"
  GOODS_PRICE_STATE_POP_PRODUCTION_POPTYPE_ITEM:0 "[Pop.GetName] in [POP.GetWorksAt]: $VALUE|0v$"
  GOODS_PRICE_STATE_POP_CONSUMPTION_POPTYPE_ITEM:0 "[Pop.GetName] in [POP.GetWorksAt]: $VALUE|0v$"
 
@@ -3030,8 +3083,8 @@
  GOODS_SLAVE_CONSUMPTION_MARKET_ORDERS:0 "Purchased for $slaves$: $ORDERS|=vD$"
  GOODS_BUILDING_BUY_ORDERS:0 "[Building.GetName] in [Building.GetState.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $ORDERS|=vD$#!#!"
  GOODS_BUILDING_SELL_ORDERS:0 "[Building.GetName] in [Building.GetState.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $ORDERS|=vD$#!#!"
- GOODS_BUILDING_BUY_ORDERS_BREAKDOWN: "#header [concept_buy_orders] of $GOODS_NAME$ from [Building.GetName] in [Building.GetState.GetName]#!\nCurrent total: $ORDERS|=vD$\n$TOOLTIP_DELIMITER$\nConsumption of $BASE_AMOUNT|vD$ $GOODS_NAME$ modified by the [concept_market_access] of [Building.GetState.GetMarketAccess|%v]"
- GOODS_BUILDING_SELL_ORDERS_BREAKDOWN: "#header [concept_sell_orders] of $GOODS_NAME$ from [Building.GetName] in [Building.GetState.GetName]#!\nCurrent total: $ORDERS|=vD$\n$TOOLTIP_DELIMITER$\nProduction of $BASE_AMOUNT|vD$ $GOODS_NAME$ modified by the [concept_market_access] of [Building.GetState.GetMarketAccess|%v]"
+ GOODS_BUILDING_BUY_ORDERS_BREAKDOWN: "#header [concept_buy_orders] of $GOODS_NAME$ from [Building.GetName] in [Building.GetState.GetName]#!\nCurrent total: $ORDERS|=vD$\n$TOOLTIP_DELIMITER$\n[concept_good_consumption] of $BASE_AMOUNT|vD$ $GOODS_NAME$ modified by the [concept_market_access] of [Building.GetState.GetMarketAccess|%v]"
+ GOODS_BUILDING_SELL_ORDERS_BREAKDOWN: "#header [concept_sell_orders] of $GOODS_NAME$ from [Building.GetName] in [Building.GetState.GetName]#!\nCurrent total: $ORDERS|=vD$\n$TOOLTIP_DELIMITER$\n[concept_good_production] of $BASE_AMOUNT|vD$ $GOODS_NAME$ modified by the [concept_market_access] of [Building.GetState.GetMarketAccess|%v]"
  GOODS_POP_CONSUMPTION_MARKET_ORDERS:0 "[concept_pop] Consumption: #tooltippable #tooltip:$BREAKDOWN_TAG$ $ORDERS|=vD$#!#!"
  GOODS_POP_CONSUMPTION_MARKET_ORDERS_HEADER: "#header [concept_buy_orders] of $GOODS_NAME$ from [concept_pop] Consumption in [Market.GetName]#!\nCurrent total: $ORDERS|=vD$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  GOODS_POP_TYPE_CONSUMPTION_MARKET_ORDERS:0 "[PopType.GetName]: $ORDERS|=vD$"
@@ -3122,7 +3175,7 @@
  TOOLTIP_STATE_MODIFIER_ENTRY:0 "$NAME$:"
  TOOLTIP_STATE_MODIFIER_ENTRY_TIME:0 "($DATE_STR|v$)"
 
- TOOLTIP_OCCUPATION_EFFECT_PRODUCTION_PENALTY:0 "#variable -$FACTOR$#! Production output"
+ TOOLTIP_OCCUPATION_EFFECT_PRODUCTION_PENALTY:0 "#variable -$FACTOR$#! [concept_good_production] output"
  TOOLTIP_OCCUPATION_EFFECT_MARKET_TAKEOVER:0 "#variable [COUNTRY.GetName]#! May relink links and what not!"
  TOOLTIP_STATE_OCCUPATION_MINIMAL:0 "25% Occupied by #variable [State.GetOccupier.GetCountry.GetName]#!\n#variable @army_SP![State.GetOccupationStrengthPoints]#! are occupying #variable [State.GetName]#!\n\n[State.GetOccupationEffectsAsString]"
  TOOLTIP_STATE_OCCUPATION_PARTIAL:0 "50% Occupied by #variable [State.GetOccupier.GetCountry.GetName]#!\n#variable @army_SP![State.GetOccupationStrengthPoints]#! are occupying #variable [State.GetName]#!\n\n[State.GetOccupationEffectsAsString]"
@@ -3185,7 +3238,7 @@
 
  TOOLTIP_BUILDINGS_BUDGET:0 "#BOLD #V [Building.GetName]#!#!\n[Building.GetBuildingType.GetBuildingKindDesc(Building.GetOwner.Self)]\n[concept_government_expenses]: #variable @money! [Building.GetGovernmentExpenses|-K]#!\n\nThe wages (and eventual material expenses) will be payed from your treasury. The wages will be moving towards the average wages in the State."
 
- TOOLTIP_PRODUCTION_AMOUNT:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#! in [ProductionMarker.AccessState.GetName]\n$TOOLTIP_DELIMITER$\nProduced: #BOLD #V [GoodsProductionInfo.GetAmount|D]#!#! units\n#BOLD #V [GoodsProductionInfo.GetMP|1%]#!#! of the total production of #variable [GoodsProductionInfo.GetName]#! in the #variable [ProductionMarker.AccessState.GetMarket.GetName]#!"
+ TOOLTIP_PRODUCTION_AMOUNT:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#! in [ProductionMarker.AccessState.GetName]\n$TOOLTIP_DELIMITER$\nProduced: #BOLD #V [GoodsProductionInfo.GetAmount|D]#!#! units\n#BOLD #V [GoodsProductionInfo.GetMP|1%]#!#! of the total [concept_good_production] of #variable [GoodsProductionInfo.GetName]#! in the #variable [ProductionMarker.AccessState.GetMarket.GetName]#!"
  TOOLTIP_PRODUCTION_PRICE:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#!\n$TOOLTIP_DELIMITER$\nPrice: #BOLD #V @money![GoodsProductionInfo.GetPrice|1]#!#! / unit"
  TOOLTIP_PRODUCTION_SOLD_FOR:0 "#BOLD #V [GoodsProductionInfo.GetName]#!#!\n$TOOLTIP_DELIMITER$\nSold [GoodsProductionInfo.GetName] for #BOLD #V @money![GoodsProductionInfo.GetSoldFor|D]#!#! last week"
  START_DIPLO_PLAY:0 "Start [concept_diplomatic_play] (Declare War)"
@@ -3212,13 +3265,15 @@
  POPULATION_CHARTS:0 "Charts"
  POPULATION_LIST:0 "List"
  TOOLTIP_STATE_POPULATION:3 "#header [Concept('concept_pop', '$concept_population$')] in [State.GetName]: #v [State.GetPopulationSize|*]#!#!\n$TOOLTIP_DELIMITER$\n[State.GetPopGrowthDesc]\n[State.GetMigrationDesc]\n[Concept('concept_pop_growth', '$concept_pop_growth_birthrate$')]: #v [State.GetPopBirthrate|+%1]#! yearly\n[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]: #v [State.GetPopMortality|-%1]#! yearly\n\n$STATE_AVAILABLE_LABOR$"
- TOOLTIP_STATE_MIGRATION:1 "#header [concept_migration] in [State.GetName]: #v [State.GetPopNetMigration|K=+]#!#!\n$TOOLTIP_DELIMITER$\n[State.GetMigrationDesc]\n\n[State.GetMigrationAndSlaveTradeDetailsDesc]"
- STATE_MIGRATION_VALUE:1 "$concept_migration$ #v [State.GetPopNetMigration|K=+]#!"
+ TOOLTIP_STATE_MIGRATION:1 "#header [Concept('concept_migration', '$concept_weekly_migration$')] in [State.GetName]: #v [State.GetWeeklyPopNetMigration|D=+]#!#!\n$TOOLTIP_DELIMITER$\n[State.GetMigrationDesc]\n\n[State.GetMigrationAndSlaveTradeDetailsDesc]"
+ STATE_MIGRATION_VALUE:1 "$concept_weekly_migration$ #v [State.GetWeeklyPopNetMigration|D=+]#!"
  STATE_MIGRATION_ATTRACTION:1 "$concept_migration_pull_short$ [State.GetMigrationLabel]"
  TOOLTIP_OCCUPANCY:0 "#BOLD #V Capacity used#!#!\n$TOOLTIP_DELIMITER$\n[concept_occupancy_desc]"
  TOOLTIP_MORALE:0 "#BOLD #V [concept_morale]#!#!\n$TOOLTIP_DELIMITER$\nMorale is the percentage of the necessary supplies that Unit is getting."
- STATE_TAX_REVENUE:0 "Taxation Revenue: @money!#BOLD [State.GetTaxationRevenue|+=D]#!"
- STATE_TAX_REVENUE_TOOLTIP_HEADER:0 "#header Taxation Revenue in [State.GetName]#!\nTotal: @money!#BOLD $VALUE|+=0D$#!"
+ TAXATION_REVENUE: "[Concept('concept_taxes','$concept_tax_revenue$')]"
+ STATE_TAX_REVENUE:0 "$TAXATION_REVENUE$: @money!#BOLD [State.GetTaxationRevenue|+=D]#!"
+ STATE_TAX_REVENUE_TOOLTIP_HEADER:0 "#header $TAXATION_REVENUE$ in [State.GetName]#!\nTotal: @money!#BOLD $VALUE|+=0D$#!"
+ STATE_TAX_REVENUE_TOOLTIP: "[State.GetTaxationRevenueTooltip]\n$TOOLTIP_DELIMITER$"
  STATE_GOVERNMENT_EXPENSES:0 "[concept_government_expenses]: @money!#BOLD [State.GetGovernmentExpenses|+=D]#!"
  STATE_GOVERNMENT_EXPENSES_TOOLTIP_HEADER:0 "#header [concept_government_expenses] in [State.GetName]#!\nTotal: @money!#BOLD $VALUE|+=D0$#!"
  STATE_TAX_EXPENSE_TOOLTIP_LINE:0 "@money!#tooltippable #tooltip:[Building.GetTooltipTag],BUILDING_GOVERNMENT_EXPENSES_DESC #BOLD $VALUE|+=D$#!#!#! from [Building.GetName]"
@@ -3385,6 +3440,7 @@
  LITERACY_90_100:0 "Literacy above #variable 90%#!"
  LEADER_POPULARITY:0 "[concept_popularity] of [SCOPE.gsInterestGroup('interest_group').GetLeader.GetFullNameWithTitle]"
  IN_GOVERNMENT_ATTRACTION:0 "Impact of taxation on the attraction of the Interest Group"
+ MILITARY_INDUSTRIES: "Military-Industrial Employment"
  STATE_ATHEISM_LAW: "[GetLawType('law_state_atheism').GetName] [concept_law]"
  STATE_RELIGION_LAW: "[GetLawType('law_state_religion').GetName] [concept_law]"
  FREEDOM_OF_CONSCIENCE_LAW: "[GetLawType('law_freedom_of_conscience').GetName] [concept_law]"
@@ -3491,12 +3547,12 @@
  MAP_INTERACTION_MERGE_MARKET_MARKET_DESC:0 "Select #V Market#! to link a #V State/Market#! into"
  MAP_INTERACTION_MERGE_MARKET_STATE_DESC:0 "Select which #V State/Market#! to link into the #V [MARKET.GetName]#!"
  MAP_INTERACTION_DIPLOMATIC_ACTION_DESC:1 "Select which #V Country#! to send [DIPLOMATIC_ACTION_TYPE.GetName|v] to"
- MAP_INTERACTION_DIPLOMATIC_ACTION_PERFORMED:0 "[DiplomaticActionType.GetName|v] started"
- MAP_INTERACTION_DIPLOMATIC_ACTION_TOOLTIP:2 "[DIPLOMATIC_ACTION.GetProposeName|v] to [TARGET_COUNTRY.GetName][AddTextIf(GreaterThan_CFixedPoint('(CFixedPoint)$MAINTENANCE_COST$','(CFixedPoint)0'),Concatenate('\nMaintenance Cost: @inf!$MAINTENANCE_COST|v0$ ',concept_influence))]"
- MAP_INTERACTION_DIPLOMATIC_ACTION_REDUNDANT:0 "$ACTION_NAME|v$ already in effect with [COUNTRY.GetName]"
+ MAP_INTERACTION_DIPLOMATIC_ACTION_PERFORMED: "[DIPLOMATIC_ACTION.GetFullName|v]"
+ MAP_INTERACTION_DIPLOMATIC_ACTION_TYPE_PERFORMED: "[DIPLOMATIC_ACTION_TYPE.GetName|v]"
+ MAP_INTERACTION_DIPLOMATIC_ACTION_REDUNDANT: "[DiplomaticAction.GetName|v] already in effect with [Country.GetName]"
+ MAP_INTERACTION_DIPLOMATIC_ACTION_TOOLTIP: "[DIPLOMATIC_ACTION.GetFullName|v] to [COUNTRY.GetName][ConcatIfNeitherEmpty('\n', DIPLOMATIC_ACTION.GetMaintenanceCostDesc)][ConcatIfNeitherEmpty('\n', DIPLOMATIC_ACTION.GetActionAcceptEffectDesc)][ConcatIfNeitherEmpty('\n', SelectLocalization(DIPLOMATIC_ACTION.IsActivePact, 'MAP_INTERACTION_DIPLOMATIC_ACTION_REDUNDANT', DIPLOMATIC_ACTION.GetWillAcceptDesc))]"
  MAP_INTERACTION_NAVAL_INVASION_DESC:0 "Select #V State#! for #variable Naval Invasion#!"
  MAP_INTERACTION_NAVAL_INVASION_TOOLTIP:0 "$NAVAL_INVASION_ORDER_DESC$"
- MAP_INTERACTION_NAVAL_INVASION_WILL_BE_INTERCEPTED_HEADER:0 "Invasion fleet will be intercepted by [Character.GetCountry.GetFlagTextIcon] [Character.GetFullName] [Character.GetCombatUnitsTypeIcon] [Character.GetNumCombatUnits|v]"
  MAP_INTERACTION_WARGOAL_wg_take_state_STATE_DESC:0 "Select which #V State#! to take"
  MAP_INTERACTION_WARGOAL_wg_war_reparations_COUNTRY_DESC:0 "Select which #V Country#! to take #V War Reparations#! from"
  MAP_INTERACTION_WARGOAL_wg_remove_interest_marker_COUNTRY_DESC:0 "Select which #V Country's#! #V [concept_interest]#! to remove"
@@ -3530,8 +3586,8 @@
  MAP_INTERACTION_ACTIVATE_CONSCRIPTION_CENTER_PERFORMED:1 "Added [concept_conscript_battalion]"
  MAP_INTERACTION_DESIGNATE_STRATEGIC_OBJECTIVE_DESC:0 "Select [concept_state] to designate as [concept_strategic_objective]"
  MAP_INTERACTION_DESIGNATE_STRATEGIC_OBJECTIVE_PERFORMED:0 "[concept_strategic_objective] designated"
- STATE_STRATEGIC_OBJECTIVE:0 "[concept_strategic_objective]\n[State.GetTheater(State.GetOwner).GetName]"
- STATE_STRATEGIC_OBJECTIVE_TOOLTIP:0 "[State.GetName] is your Strategic Objective in the [State.GetTheater(State.GetOwner).GetName|v]"
+ STATE_STRATEGIC_OBJECTIVE:0 "[concept_strategic_objective]\n[State.GetTheater(State.GetController).GetName]"
+ STATE_STRATEGIC_OBJECTIVE_TOOLTIP:0 "[State.GetName] is your Strategic Objective in the [State.GetTheater(State.GetController).GetName|v]"
 
  MAP_INTERACTION_BUILD_ARMY_FORMATION_DESC: "Select #V [concept_hq]#! to build [concept_army]"
  MAP_INTERACTION_BUILD_FLEET_FORMATION_DESC: "Select #V [concept_hq]#! to build [concept_fleet]"
@@ -3551,7 +3607,6 @@
  POWER_PROJECTION_ORDER_DESC:0 "#header Project Power#! into [STRATEGIC_REGION.GetName]\nOrder [CHARACTER.GetFullName] to #variable Project Power#! into [STRATEGIC_REGION.GetName]"
  FRONT_ORDER_DESC:0 "[COMMANDER_ORDER_TYPE.GetName] on the [FRONT.GetName]"
  TRAVEL_TIME_DESC:1 "Traveling there will take #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|v$#!#! "
- TRAVEL_HOME_HQ_DESC:0 "Traveling to [Concept('concept_hq', 'Home HQ')] will take #tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|v$#!#! "
 
  DECREE_TOOLTIP:1 "#header Issue $NAME$[AddTextIf(State.IsValid,' in ')][AddTextIf(State.IsValid,State.GetName)]#![ConcatIfNeitherEmpty('\n','$ERRORS$')]\n$EFFECT$\n\n#title Cost:#! #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $COST|0$#!#!#! $AUTHORITY$\n\n#lore $DESC$#!" #
  DECREE_REMOVE:0 "#header Cancel#! [Decree.GetName] in [Decree.GetState.GetName]"
@@ -3729,7 +3784,7 @@
  TOOLTIP_BUILDING_USES:0 "#header [Goods.GetNameNoFormatting]#!"
  TOOLTIP_BUILDING_USES_UNITS_INFO:1 "#header [Goods.GetName]#!\nAmount used: #variable [Building.GetConsumption(Goods.Self)|0]#! / week\n[Building.GetConsumptionDesc(Goods.Self)]"
  TOOLTIP_BUILDING_PRODUCES:0 "#header [Goods.GetNameNoFormatting]#!\n"
- TOOLTIP_BUILDING_PRODUCES_UNITS_INFO:0 "#header [Goods.GetName]#!\nAmount produced: #variable [Building.GetProduction(Goods.Self)|0]#! / week\n$TOOLTIP_DELIMITER$\nOutput percentage: #variable [Building.GetOutputPercentage(Goods.Self)|%1]#! of production from [Building.GetName]\n[Building.GetProductionDesc(Goods.Self)]"
+ TOOLTIP_BUILDING_PRODUCES_UNITS_INFO:0 "#header [Goods.GetName]#!\nAmount produced: #variable [Building.GetProduction(Goods.Self)|0]#! / week\n$TOOLTIP_DELIMITER$\nOutput percentage: #variable [Building.GetOutputPercentage(Goods.Self)|%1]#! of [concept_good_production] from [Building.GetName]\n[Building.GetProductionDesc(Goods.Self)]"
 
 
  TOOLTIP_BUILDING_USES_VALUE_INFO:2 "#header [Goods.GetTextIcon][Nbsp][Goods.GetName]#!\nExpenses paid for [Goods.GetTextIcon][Nbsp][Goods.GetName] used: #variable @money![Building.GetConsumptionValue(Goods.Self)|D]#!\n$TOOLTIP_DELIMITER$\nState Region price: [Goods.GetStatePriceWithTooltip|1]"
@@ -3776,9 +3831,10 @@
  POP_IG_POPULATION_DEPENDENTS:0 "This Pop supports the #variable [PopListPopEntry.GetInterestGroupContext.GetName]#! with #variable [PopListPopEntry.GetIGDependents|1K]#! of their #variable [PopListPopEntry.GetPop.GetNumDependentPoliticalParticipants|1K]#! Enfranchised Dependents"
  POP_IG_WORKING_ADULTS_TOOLTIP:0 "#variable Working Adults#!\n$POP_IG_POPULATION_WORKING_ADULTS$"
  POP_IG_DEPENDENTS_TOOLTIP:0 "#variable Dependents#!\n$POP_IG_POPULATION_DEPENDENTS$"
+ POP_POL_STR_SLAVES_DESC: "[Concept('concept_slavery','$concept_slaves$')] do not have $concept_political_strength$"
  POP_IG_POL_STR:0 "Pol. Str: #variable [PopListPopEntry.GetIGPolStr|D]#!"
  POP_IG_POL_STR_TOOLTIP:0 "#header [concept_political_strength]#!\n$TOOLTIP_DELIMITER$\nThis Pop supports the #variable [PopListPopEntry.GetInterestGroupContext.GetName]#! with #variable [PopListPopEntry.GetIGPolStr|K]#! of their #variable [PopListPopEntry.GetPop.GetPoliticalStrength|D]#! [concept_political_strength]."
- POP_POL_STR:2 "#header [concept_political_strength]#!\nValue: #variable [Pop.GetPoliticalStrength|1*]#!\n$TOOLTIP_DELIMITER$\n[Pop.GetPoliticalStrengthDesc][AddTextIf(Not(StringIsEmpty(Pop.GetPoliticalStrengthDesc)), '\n\n')]"
+ POP_POL_STR:2 "#header [concept_political_strength]#!\nValue: #variable [Pop.GetPoliticalStrength|1*]#!\n$TOOLTIP_DELIMITER$\n[Pop.GetPoliticalStrengthDesc]"
  POP_SUPPORTERS_POL_STR: "#header [concept_political_strength]#!\nValue: #v [Pop.GetPoliticalMovementSupportersPoliticalStrength(PoliticalMovement.Self)|1*]#!\n$TOOLTIP_DELIMITER$\n[Pop.GetPoliticalStrengthDesc][AddTextIf(Not(StringIsEmpty(Pop.GetPoliticalStrengthDesc)), '\n\n')]"
  POP_POPULATION:1 "#header [Concept('concept_pop','$concept_population$')] of [Pop.GetName] in [Pop.GetState.GetName]#!\n$POP_SIZE_BREAKDOWN$\n$TOOLTIP_DELIMITER$\n[Pop.GetPopGrowthDesc]\n[ConcatIfNeitherEmpty('\n',Pop.GetPopAssimilationDesc)][ConcatIfNeitherEmpty('\n',Pop.GetPopConversionDesc)]   $TOOLTIP_DELIMITER$\n[Pop.GetWorkforceRatioDesc]"
  POP_SIZE_BREAKDOWN:0 "Total: #variable [Pop.GetTotalSize|Dv]#!\n$TAB$Workforce: #variable [Pop.GetNumWorkforce|Dv]#!\n$TAB$Dependents: #variable [Pop.GetDependentsSize|Dv]#!"
@@ -3897,9 +3953,9 @@
  JOB_SATISFACTION_PER_PERCENT_WAGE_RATE_ABOVE_NORMAL: "$VALUE|0+=$ from the relative difference of #variable $DIFF|1$%#! between [concept_building_wage] in [Pop.GetBuilding.GetName] (@money!$WORKPLACE_WAGE_RATE|v1$) and [Pop.GetCountry.GetName] (@money!$NORMAL_WAGE_RATE|v1$)"
  JOB_SATISFACTION_DIVIDENDS: "$VALUE|0+=$ from the ratio of #variable $DIVIDENDS_WAGES_RATIO|0$%#! between earned [concept_dividends] (@money!$POP_DIVIDENDS|v1$) and [concept_budget_wages] (@money!$POP_WAGES|v1$)"
  JOB_SATISFACTION_LOSSES: "$VALUE|0+=$ from the ratio of #variable $LOSSES_WAGES_RATIO|0$%#! between investment losses (@money!$POP_LOSSES|v1$) and [concept_budget_wages] (@money!$POP_WAGES|v1$)"
- JOB_SATISFACTION_FROM_CAN_AFFORD_EXPENSES: "$VALUE|0+=$ because the [concept_pop] can afford its [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )]"
+ JOB_SATISFACTION_FROM_CAN_AFFORD_EXPENSES: "$VALUE|0+=$ because the [concept_pop] can afford its [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )] (@money!$EXPENSES|v1$) with its current [Concept( 'concept_pop_income', '$concept_pop_income_short$')] (@money!$INCOME|v1$)"
  JOB_SATISFACTION_FROM_CAN_BARELY_AFFORD_EXPENSES: "$VALUE|0+=$ because the [concept_pop] can barely afford its [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )]"
- JOB_SATISFACTION_FROM_CANNOT_AFFORD_EXPENSES: "$VALUE|0+=$ because the [concept_pop] cannot afford its [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )]"
+ JOB_SATISFACTION_FROM_CANNOT_AFFORD_EXPENSES: "$VALUE|0+=$ because the [concept_pop] cannot afford its [Concept( 'concept_pop_income', '$concept_pop_income_expenses_short$' )] (@money!$EXPENSES|v1$) with its current [Concept( 'concept_pop_income', '$concept_pop_income_short$')] (@money!$INCOME|v1$)"
  JOB_SATISFACTION_PER_PERCENT_HIGHER_STRATA_QUALIFICATION: "$VALUE|0+=$ from being $RATIO|%v1$ [Concept('concept_pop_qualifications', '$concept_qualified$')] for a higher strata than [Pop.GetPopType.GetStrata]"
  JOB_SATISFACTION_FROM_EMPLOYMENT: "$VALUE|0+=$ from being [Concept('concept_employment' ,'$concept_employed$')]"
  GROWTH_RATE_BREAKDOWN:0 "#header Growth Rate#!\n[Pop.GetPopGrowthDesc]"
@@ -3958,10 +4014,10 @@
  CONSTRUCTION_BREAKDOWN:1 "#header [concept_construction]: $CONSTRUCTION_SPEED$#! / week\n$TOOLTIP_DELIMITER$\n#v #tooltippable #tooltip:$BREAKDOWN_TAG$ $BASE_CONSTRUCTION$#!#!#! [concept_construction] provided by [Country.GetName][ConcatIfNeitherEmpty('\n\n','$CAPPEDDESC$')][ConcatIfNeitherEmpty('\n\n','$MODIFIERDESC$')]"
  CONSTRUCTION_MODIFIER_HEADER:0 "Efficiency of weekly [concept_construction] in [State.GetName] is modified by:\n$MODIFIER_BREAKDOWN$"
  CONSTRUCTION_CAPPED_DESC:0 "Progress of [BuildingType.GetName] is capped at #v $MAXPOINTS$#! [concept_construction] / week"
-
-
  
- CAN_EXPAND_BUILDING_TOOLTIP:2 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Size: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Predicted [SelectLocalization(Or(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), BUILDING.GetBuildingType.IsMilitaryBuilding), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n[SelectLocalization(BUILDING.GetBuildingType.IsMilitaryBuilding, 'MILITARY_BUILDING_INFO', '')][ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n$PRODUCTION_BREAKDOWN$\n\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
+ CAN_EXPAND_BUILDING_PRODUCTIVITY_DELTA: " (@money!$PRODUCTIVITY_DELTA|=+1$ from current)"
+ CAN_EXPAND_BUILDING_PRODUCTIVITY_DESC: "#tooltippable #tooltip:[GetRawTextTooltipTag('$PRODUCTIVITY_IMPACT_DESC$')] #v @money!$PRODUCTIVITY_IMPACT$#!#!#! Predicted [concept_productivity]$PRODUCTIVITY_DELTA_DESC$"
+ CAN_EXPAND_BUILDING_TOOLTIP:2 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Size: [BUILDING.GetExpansionLevelBreakdownDesc])\n#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Predicted [SelectLocalization(Or(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), BUILDING.GetBuildingType.IsMilitaryBuilding), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n[ConcatIfNeitherEmpty('$PRODUCTIVITY$', '\n')][ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n[ConcatIfNeitherEmpty('$INVESTMENT_FUND$', '\n')]\n$PRODUCTION_BREAKDOWN$\n\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
 #  is currently not included, re-add to CAN_EXPAND_BUILDING_TOOLTIP if deeemed necessary 
 
  AND_UNEMPLOYED:0 "and [State.GetNumUnemployedWorkingAdults|Dv] [concept_unemployed]"
@@ -3974,10 +4030,10 @@
  EXPAND_TOOLTIP_EXPAND_BUILD:0 "Build"
  EXPAND_TOOLTIP_EXPAND_EXPAND:0 "Expand"
  EXPAND_TOOLTIP_EXPAND:1 "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#!\nSize: [BUILDING.GetExpansionLevelBreakdownDesc]\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] and [State.GetNumUnemployedWorkingAdults|Dv] [concept_unemployed]"
- EXPAND_BUILDING_MODIFIERS_INSTRUCTIONS:2 "#instruction Click to queue 1 level, $SHORTCUT_KEY_MOD_shift$Click for $SHIFT_NUM_LEVELS$, $SHORTCUT_KEY_MOD_ctrl$Click for $CTRL_NUM_LEVELS$#!\n#instruction $SHORTCUT_KEY_MOD_alt$Click to queue at the top of the Construction Queue"
+ EXPAND_BUILDING_MODIFIERS_INSTRUCTIONS:2 "#instruction Click#! to #v queue 1#! level, #i $SHORTCUT_KEY_MOD_shift$Click#! for #v $SHIFT_NUM_LEVELS$#!, #i $SHORTCUT_KEY_MOD_ctrl$Click#! for #v $CTRL_NUM_LEVELS$#!\n#instruction $SHORTCUT_KEY_MOD_alt$Click#! to #v queue at the top#! of the [concept_construction_queue]"
  DOWNSIZE_BUILDING_MODIFIERS_INSTRUCTIONS:0 "#instruction Click to downsize 1 level#!\n#instruction $SHORTCUT_KEY_MOD_shift$Click to downsize $SHIFT_NUM_LEVELS$ levels#!\n#instruction $SHORTCUT_KEY_MOD_ctrl$Click to downsize $CTRL_NUM_LEVELS$ levels#!"
- EXPANSION_PROFIT_IMPACT:4 "#header Predicted [SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] of new level#!\n#v @money!$VAL|K+=$#! Predicted [SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n(Excluding [Concept('concept_building_wage','$concept_building_wages$')])\n$TOOLTIP_DELIMITER$\n$IMPACT_DETAILS$"
- EXPANSION_PRODUCTIVITY_IMPACT:0 "#header Predicted $EARNINGS_PER_EMPLOYEE$ after Expansion#!: #v @money!$VAL|+$#!\n$TOOLTIP_DELIMITER$\n$IMPACT_DETAILS$"
+ EXPANSION_PROFIT_IMPACT:4 "#header Predicted [SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] of new level#!\n#v @money!$VAL|K+=$#! Predicted [SelectLocalization(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n(Excluding [Concept('concept_building_wage','$concept_building_wages$')])\n$TOOLTIP_DELIMITER$\n$IMPACT_DETAILS$\n\n$BUILDING_PREDICTION_DISCLAIMER$"
+ EXPANSION_PRODUCTIVITY_IMPACT:0 "#header Predicted $EARNINGS_PER_EMPLOYEE$ after Expansion#!: #v @money!$VAL|+$#!\n$TOOLTIP_DELIMITER$\n$IMPACT_DETAILS$\n\n$BUILDING_PREDICTION_DISCLAIMER$"
  EXPANSION_EMPLOYEES_VS_REVENUE:1 "#v @money!$REVENUE|K+$#! predicted Yearly Revenue\n#v $EMPLOYEES|vD$#! Total Employees"
  EXPANSION_WAGES_IMPACT:1 "#v @money!$IMPACT|K+=$#! for Weekly Wages"
  GOODS_PROFIT_CONSUMPTION:4 "#v @money![Negate_CFixedPoint('(CFixedPoint)$IMPACT$')|K+=]#! for #v $NUM_UNITS|0-$#! [Goods.GetTextIcon] #v [Goods.GetName]#! ($PRICE_CUR_ICON$@arrow_right!$PRICE_NEW_ICON$)"
@@ -4003,14 +4059,17 @@
  CANNOT_EXPAND_BUILDING_NOT_BUILDABLE:0 "[BuildingType.GetName] cannot be manually constructed"
  CANNOT_EXPAND_BUILDING_STATE_HAS_NO_ACCESS_TO_GOODS: "[State.GetName] has no [concept_supply] of [Goods.GetTextIcon][Nbsp][Goods.GetName] required for [CombatUnitType.GetName]"
   
- EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS:0 "@warning! #tooltippable #tooltip:[BUILDING.GetTooltipTag],EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN Not enough#!#! [concept_pop_qualifications] to fully staff this building"
- EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN:0 "#title Missing [concept_pop_qualifications]#!\n[Building.GetQueueConstructionPopQualificationsWarningBreakdown]"
- EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS_ENTRY:2 "Only $AVAILABLE|v$ employable [Concept('concept_pop_qualifications', '$concept_qualifying$')] [POP_TYPE.GetName] available out of $REQUIRED|v$ needed "
+ EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS:0 "@warning! #tooltippable #tooltip:[BUILDING.GetTooltipTag],EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN Not enough#!#! [concept_pop_qualifications] to fully staff this building (Missing $POP_TYPES$)"
+ EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN:0 "#header Missing [concept_pop_qualifications]#!\n$TOOLTIP_DELIMITER$\n[Building.GetQueueConstructionPopQualificationsWarningBreakdown]"
+ EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS_ENTRY:2 "Only $AVAILABLE|v$ out of $REQUIRED|v$ employable [POP_TYPE.GetName] available, missing $MONTHS|v$ month(s) of [concept_pop_qualifications] at the current growth rate of $MONTHLY|=v$/month"
+ EXPAND_BUILDING_WARNING_MISSING_QUALIFICATIONS_ENTRY_NO_GROWTH: "@warning! Only $AVAILABLE|v$ out of $REQUIRED|v$ employable [POP_TYPE.GetName] available with #n no current monthly growth#! of [concept_pop_qualifications]"
 
+ CHANGE_PRODUCTION_METHOD_WARNING_ADDITIONAL_PM_CHANGED: "@warning! Will change the active $GROUP|v$ method ($DISABLED_METHOD$ @arrow_right! $ENABLED_METHOD$)"
  CHANGE_PRODUCTION_METHOD_WARNING_GOODS_SHORTAGE:0 "@warning! [concept_input_goods_shortage] of $LIST$ will result in a penalty on all [concept_building] outputs"
- CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS:0 "@warning! #tooltippable #tooltip:[BUILDING.GetTooltipTag]|[PRODUCTION_METHOD.GetTooltipTag],CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN Not enough#!#! [concept_pop_qualifications] to fully staff [Building.GetName]"
- CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN:0 "#title Missing [concept_pop_qualifications]#!\n[Building.GetChangeProductionMethodPopQualificationsWarningBreakdown(ProductionMethod.Self)]"
- CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS_ENTRY:0 "Only $AVAILABLE|v$ [concept_pop_qualifications] [POP_TYPE.GetName] available out of $REQUIRED|v$ needed"
+ CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS:0 "@warning! #tooltippable #tooltip:[BUILDING.GetTooltipTag]|[PRODUCTION_METHOD.GetTooltipTag],CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN Not enough#!#! [concept_pop_qualifications] to fully staff [Building.GetName] (Missing $POP_TYPES$)"
+ CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS_BREAKDOWN:0 "#header Missing [concept_pop_qualifications]#!\n$TOOLTIP_DELIMITER$\n[Building.GetChangeProductionMethodPopQualificationsWarningBreakdown(ProductionMethod.Self)]"
+ CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS_ENTRY:0 "Only $AVAILABLE|v$ out of $REQUIRED|v$ employable [Concept('concept_pop_qualifications', '$concept_qualifying$')] [POP_TYPE.GetName] available, missing $MONTHS|v$ month(s) of $concept_pop_qualifications$ at the current growth rate of $MONTHLY|=v$/month"
+ CHANGE_PRODUCTION_METHOD_WARNING_MISSING_QUALIFICATIONS_ENTRY_NO_GROWTH: "@warning! Only $AVAILABLE|v$ out of $REQUIRED|v$ employable [POP_TYPE.GetName] available with #n no current monthly growth#! of [concept_pop_qualifications]"
 
  CANNOT_JOIN_FOREIGN_MARKET:0 "No Economic System Law or Customs Unions permit joining the foreign [MARKET.GetName]"
 
@@ -4304,7 +4363,7 @@
 
  BALANCE_ITEM:0 "[TradeOverviewEntry.GetGoods.GetCompareIconAgainstBasePriceNoFormatting(TradeOverviewEntry.GetGoods.GetMarketPrice)] "
 
- RELATIONS_TOOLTIP:2 "#header [concept_relations]#!\n[concept_relations] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are #BOLD $LABEL$#! (#variable $VAL|+=$#!)$PROGRESS$"
+ RELATIONS_TOOLTIP:2 "#header $LABEL$ [concept_relations]#!\n[concept_relations] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are #BOLD $LABEL$#! (#variable $VAL|+=$#!)$PROGRESS$"
  INFAMY_TOOLTIP:2 "#header [COUNTRY.GetAdjective] [concept_infamy]: #BOLD $INFAMY_LABEL$#! (#variable $INFAMY|-1$#!)#!\n$TOOLTIP_DELIMITER$\n$INFAMY_DECAY$[ConcatIfNeitherEmpty('\n\nEffects:\n','$INFAMY_EFFECTS$')]"
  INFAMY_DECAY_RATE:0 "[concept_infamy] decay: #P #bold -$VAL|3$#!#! / week\n$TAB$Base decay: #P #bold -$YEARLYBASE|3$#!#!  / year$MITIGATION$"
  TENSION_TOOLTIP:0 "The [concept_tension] level between us and [COUNTRY.GetName] is #BOLD $LABEL$#! (#variable $VAL|-$#!)$DECAY$"
@@ -4828,20 +4887,8 @@
 
  EVENT_DLC_TOOLTIP: "This event is part of the #v [Event.GetDLCName]#! DLC"
 
- MILITARY_PANEL_ATTRITION_FORMAT:1 "$MILITARY_FORMATION_ATTRITION_RISK_ICON$ [Character.GetAttritionFormatted]"
- MILITARY_PANEL_TROOP_ATTRITION_LEVEL:0 "$MILITARY_FORMATION_ATTRITION_RISK_ICON_WITH_LABEL$"
- MILITARY_PANEL_TROOP_MORALE_TOOLTIP:0 "#[GetMoraleColorString(Character.GetMoraleForBuildingUnits(Building.Self))] [Character.GetMoraleForBuildingUnits(Building.Self)|0%v]#! [concept_morale]"
-
+ FORMATION_PANEL_DEBUG_INFO: "#title Debug Information#!:\nID: #variable [MilitaryFormation.GetIDString]#!"
  FORMATION_PANEL_ARMY_MOBILIZATION_FORMATTED: "[Concept('concept_mobilize_army', '$concept_mobilize_army_mobilization$')]: $VALUE|v%0$"
-
- ATTRITION_FORMAT:1 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0%$#!#! $CASUALTIES_WEEKLY$"
- ATTRITION_FORMAT_SHORT:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|0%$#!#!"
- ATTRITION_CASUALTIES_WEEKLY:1 "(#bold -$CASUALTIES|D$#! / week)"
- ATTRITION_DESC:2 "#header $VAL|0%-$ [concept_attrition]#!\n$TOOLTIP_DELIMITER$\nUnit's attrition is $VAL|0%-$ per week due to:\n$BREAKDOWN$\n\nUnits which are affected by attrition lose from $MIN|0%v$ to $MAX|0%v$ of men to casualties\n$TOOLTIP_DELIMITER$\nCommander's units will take an average of $ATTRITION|1%-$ casualties per week, or lose an average of $CASUALTIES|Dv$ men to casualties"
- ATTRITION_DESC_NOT_ON_FRONT:2 "#header $VAL|0%-$ [concept_attrition]#!\n$TOOLTIP_DELIMITER$\nUnit's attrition is $VAL|0%-$ per week because the [concept_commander] is not on a [concept_front]\n\nUnits which are affected by attrition lose from $MIN|0%v$ to $MAX|0%v$ of men to casualties"
- ATTRITION_DESC_ZERO:2 "#header $VAL|0%-$ [concept_attrition]#!\n$TOOLTIP_DELIMITER$\nUnit's attrition is $VAL|0%-$ per week\n\nUnits which are affected by attrition lose from $MIN|0%v$ to $MAX|0%v$ of men to casualties"
- ATTRITION_DESC_BASE:1 "$TAB$Base Attrition Risk: $VAL|0%-$ (#tooltippable #tooltip:$BREAKDOWN_TAG$ $ADD|0%-$#!#! from [concept_commander] divided by [concept_supply] $SUPPLY|0%v$)"
- ATTRITION_DESC_OTHER:1 "$TAB$Other Factors: $VAL|0%-$ (#tooltippable #tooltip:$BREAKDOWN_TAG$ $MULT|0%-=$#!#! of Base Attrition risk)"
 
  WAR_PANEL_INITIATOR_HEADER:1 "Initiator"
  WAR_PANEL_INITIATOR_HEADER_TOOLTIP:1 "The Initiator's side in this [concept_war]"
@@ -4885,7 +4932,6 @@
  COMMANDER_ORDER_DEFEND_FRONT_FAIL_NOT_PARTICIPATING:0 "#N [Country.GetName] is not participating in [Front.GetName]#!"
  COMMANDER_ORDER_PATROL_SAME_HQ:0 "#N Need to target a remote HQ#!"
  COMMANDER_ORDER_PATROL_NOT_FRIENDLY_HQ:0 "#N Can only target friendly HQs#!"
- COMMANDER_ORDER_FRONT_FAIL_UNREACHABLE:0 "#N [Country.GetName] cannot reach [Front.GetName]#!"
 
  COMMANDER_PANEL_CURRENT_ORDER: "Current [concept_order]: #b [Character.GetOrderType.GetAltName( 'gerund' )]#! [AddLocalizationIf(Not(Or(Character.IsAdmiral, Character.GetOrderType.IsStandBy)), 'COMMANDER_PANEL_CURRENT_ORDER_LOCATION')]"
  COMMANDER_PANEL_CURRENT_ORDER_SHORT: "Current [concept_order]: #b [Character.GetOrderType.GetName]#!"
@@ -5075,15 +5121,19 @@
 
  WILL_RADICALIZE_WARNING:1 "@warning! This will [Concept('concept_political_movement_radicalism', '$concept_political_movement_radicalize$')] the [INTEREST_GROUP.GetName]"
 
- IG_NAME_WITH_LEADER:0 "[CHARACTER.GetFullName] of [INTEREST_GROUP.GetName]"
- IG_APPROVES_OF_LAW:3 "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold $concept_endorse$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
- IG_DISAPPROVES_OF_LAW:3 "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold $concept_oppose$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
- IG_STRONGLY_APPROVES_OF_LAW:2 "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold Strongly $concept_endorse$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
- IG_STRONGLY_DISAPPROVES_OF_LAW:2 "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold Strongly $concept_oppose$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
+ IG_APPROVAL_FROM_LEADER: "(from [CHARACTER.GetFullName] [INTEREST_GROUP.GetTextIcon])"
+ IG_APPROVES_OF_LAW:3 "@approves! [Law.GetName]: #BOLD $VAL|+=$#!\n"
+ IG_DISAPPROVES_OF_LAW:3 "@disapproves! [Law.GetName]: #BOLD $VAL|+=$#!\n"
  IG_APPROVES_OF_LAW_CHANGE:1 "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold $concept_endorse$#!#! this change: #tooltippable #tooltip:[INTEREST_GROUP.GetTooltipTag]|[LAW.GetTooltipTag],IG_LAW_APPROVAL_BREAKDOWN #BOLD $APPROVAL_DELTA|+=$#!#!#! (from #v $CURR_APPROVAL|+$#! to #v $PROJECTED_APPROVAL|+$#!)\n\n"
  IG_APPROVES_OF_PREVIOUS_LAW_CHANGE:1 "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold $concept_endorse$#!#! the recent change from [LAW_OTHER.GetName] to [LAW.GetName]: #BOLD $APPROVAL_DELTA|+=$#!#!#!\n\n"
  IG_DISAPPROVES_OF_LAW_CHANGE:1 "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold $concept_oppose$#!#! this change: #tooltippable #tooltip:[INTEREST_GROUP.GetTooltipTag]|[LAW.GetTooltipTag],IG_LAW_APPROVAL_BREAKDOWN #BOLD $APPROVAL_DELTA|+=$#!#!#! (from #v $CURR_APPROVAL|+$#! to #v $PROJECTED_APPROVAL|+$#!)\n\n"
  IG_DISAPPROVES_OF_PREVIOUS_LAW_CHANGE:1 "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold $concept_opposes$#!#! the recent change from [LAW_OTHER.GetName] to [LAW.GetName]: #BOLD $APPROVAL_DELTA|+=$#!#!#!\n\n"
+ 
+ IG_NAME_WITH_LEADER: "[CHARACTER.GetFullName] of [INTEREST_GROUP.GetName]"
+ IG_APPROVES_OF_LAW_LONG: "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold $concept_endorse$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
+ IG_DISAPPROVES_OF_LAW_LONG: "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold $concept_oppose$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
+ IG_STRONGLY_APPROVES_OF_LAW_LONG: "@approves! $NAME$ $CLOUT_OPTIONAL$#P #bold Strongly $concept_endorse$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
+ IG_STRONGLY_DISAPPROVES_OF_LAW_LONG: "@disapproves! $NAME$ $CLOUT_OPTIONAL$#N #bold Strongly $concept_oppose$#!#! [Law.GetName]: #BOLD $VAL|+=$#!\n"
 
  IG_APPROVES_OF_LAW_CHANGE_BREAKDOWN:1 "@approves! #variable [INTEREST_GROUP.GetName]#! #P #bold $concept_endorse$#!#! replacing #variable $OLD_LAW$#! ($OLD_APPROVAL$) with #variable $LAW$#! ($APPROVAL$)\n#BOLD $APPROVAL_DELTA|+=$#! (from $CURR_APPROVAL|=$ to $PROJECTED_APPROVAL|=$)"
  IG_DISAPPROVES_OF_LAW_CHANGE_BREAKDOWN:1 "@disapproves! #variable [INTEREST_GROUP.GetName]#! #N #bold $concept_oppose$#!#! replacing #variable $OLD_LAW$#! ($OLD_APPROVAL$) with #variable $LAW$#! ($APPROVAL$)\n#BOLD $APPROVAL_DELTA|+=$#! (from $CURR_APPROVAL|=$ to $PROJECTED_APPROVAL|=$)"
@@ -5125,7 +5175,7 @@
 
  LAW_NO_GOVERNMENT_OR_MOVEMENT_SUPPORT:0 "No [concept_interest_group] [concept_in_government] approves of [Law.GetName] and there is no [concept_political_movement] backing it"
  LAW_NO_CHANCE_TO_PASS:3 "The chance that [Law.GetName] can be enacted must be above #v 0%#! through support from either an [concept_interest_group] [concept_in_government], a [concept_political_movement] or the [Concept('concept_ruler','$concept_ruler_possessive$')] [concept_ideology]."
- NEVER:0 "#N Never#!"
+ NEVER:0 "#b Permanent#!"
 
  TOOLTIP_IDEOLOGY:0 "#HEADER [Ideology.GetName]#!\n$TOOLTIP_DELIMITER$\n[Ideology.GetLawStanceDesc]\n\n#lore [Ideology.GetDesc]#!"
  TOOLTIP_IG_TRAIT_FROM_PAIR:0 "#HEADER [InterestGroupAndTraitPair.GetInterestGroup.GetName] - [InterestGroupAndTraitPair.GetTrait.GetName]#! [InterestGroupAndTraitPair.GetTrait.GetInactiveString(InterestGroupAndTraitPair.GetInterestGroup)]\n[InterestGroupAndTraitPair.GetTrait.GetModifiersDesc(InterestGroupAndTraitPair.GetInterestGroup)]\n$TOOLTIP_DELIMITER$\n[InterestGroupAndTraitPair.GetTrait.GetTriggersDesc(InterestGroupAndTraitPair.GetInterestGroup)]\n\n#lore [InterestGroupAndTraitPair.GetTrait.GetDesc]#!"
@@ -5230,6 +5280,7 @@
  FORM_GOV_IG_WANTS_TO_JOIN_PARTY:0 "$IG_NAME$ wants to join $PARTY_NAME$"
  FORM_GOV_CIVIL_WAR_COUNTRY:0 "Countries born of a [concept_civil_war] cannot reform their [concept_government] while the [concept_civil_war] is ongoing"
 
+ MEMBERS: "Members"
  RULER_JOIN_IG_SHORT:0 "Join"
  RULER_JOIN_IG_LONG:0 "Have [concept_ruler] Join [concept_interest_group]"
  RULER_LEGITEMACY_NO_CHANGE_TOOLTIP:0 "This would not result in a [concept_legitimacy] change (Currently #variable [GetPlayer.GetGovernmentLegitimacy]#!)"
@@ -5339,8 +5390,10 @@
  CANNOT_DOWNSIZE_BUILDING_PROTECTED:0 "This [concept_building] is protected from being downsized due to:\n$DETAILS$"
  CANNOT_DOWNSIZE_UNDER_CONSTRUCTION:0 "#N Building cannot be downsized while it is being expanded#!"
  CANNOT_DOWNSIZE_INVALID_BUILDING:0 "#N Invalid building#!"
- CANNOT_DOWNSIZE_REVOLUTION:0 "#N Building cannot be downsized due to the ongoing [concept_revolution] Brewing#!"
- CANNOT_DOWNSIZE_SECESSION:0 "#N Building cannot be downsized due to the ongoing [concept_secession] Movements Growing#!"
+ CANNOT_DOWNSIZE_REVOLUTION: "#N Cannot be downsized due to the brewing [concept_revolution]#!"
+ CANNOT_DOWNSIZE_SECESSION: "#N Cannot be downsized due to the growing [concept_secession] movement#!"
+ CANNOT_DISBAND_REVOLUTION: "#N Cannot be disbanded due to the brewing [concept_revolution]#!"
+ CANNOT_DISBAND_SECESSION: "#N Cannot be disbanded due to the growing [concept_secession] movement#!"
  BUILDING_DOWNSIZE_TOOLTIP:1 "#header $BUILDING_PANEL_DOWNSIZE$#!\nReduce the building size to #v $NEW_LEVEL$#!"
  BUILDING_CHANGE_TOOLTIP:0 "#header Change Building#!\nChange the #variable [BUILDING.GetBuildingGroupName]#! building in this state"
  BUILDING_CHANGE_CAN_SWITCH_TO:0 "#bold Alternative Buildings:#!"
@@ -5428,8 +5481,8 @@
  DIPLOMATIC_ACTION_CUSTOMS_UNION_ACTIVE:0 "[TARGET_COUNTRY.GetName] is part of a [concept_customs_union] led by [COUNTRY.GetName]"
  DIPLOMATIC_ACTION_SUBJECT_RELATION:0 "Creates a $SUBJECT_TYPE$ [concept_subject] relation between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName], with [COUNTRY.GetName] as the suzerain"
  DIPLOMATIC_ACTION_SUBJECT_RELATION_ACTIVE:0 "Maintains a $SUBJECT_TYPE$ [concept_subject] relation between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
- DIPLOMATIC_ACTION_RELATIONS_CHANGE_POS_EFFECT:3 "Generates #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $PROGRESS_DAILY|%=2$#!#!#! progress each day towards increasing [concept_relations][ConcatIfNeitherEmpty(' ','$MAXDESC$')], resulting in a [concept_relations] increase every $DAYS|v$ days if no other [concept_relations] actions are at work"
- DIPLOMATIC_ACTION_RELATIONS_CHANGE_NEG_EFFECT:3 "Generates #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $PROGRESS_DAILY|%=2$#!#!#! progress each day towards decreasing [concept_relations][ConcatIfNeitherEmpty(' ','$MINDESC$')], resulting in a [concept_relations] decrease every $DAYS|v$ days if no other [concept_relations] actions are at work"
+ DIPLOMATIC_ACTION_RELATIONS_CHANGE_POS_EFFECT: "Improves [concept_relations] by #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $PROGRESS_DAILY|%=2$#!#!#! progress each day[ConcatIfNeitherEmpty(' ','$MAXDESC$')], resulting in a $concept_relations$ increase every $DAYS|v$ days if no other $concept_relations$ actions are at work"
+ DIPLOMATIC_ACTION_RELATIONS_CHANGE_NEG_EFFECT: "Damages [concept_relations] by #tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $PROGRESS_DAILY|%=2$#!#!#! progress each day[ConcatIfNeitherEmpty(' ','$MINDESC$')], resulting in a $concept_relations$ decrease every $DAYS|v$ days if no other $concept_relations$ actions are at work"
 
  THEY_OFFER_OBLIGATION:1 "They are offering to owe us an [concept_obligation] if we accept."
  THEY_CALL_IN_OBLIGATION_SHORT:0 "They are calling in our [concept_obligation], so rejecting their offer would have negative diplomatic consequences for us."
@@ -5540,11 +5593,11 @@
  notification_diplomatic_proposal_third_party_break_declined_tooltip:0 "#header $notification_diplomatic_proposal_third_party_break_declined_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_proposal_third_party_break_declined_desc$"
 
  notification_diplomatic_pact_auto_break_notification_name:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] broken"
- notification_diplomatic_pact_auto_break_notification_desc:2 "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] with [AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsFirstCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName)][AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsSecondCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName)] can no longer be maintained due to:\n[SCOPE.GetRootScope.GetDiplomaticPact.ShouldAutoBreakDesc]"
+ notification_diplomatic_pact_auto_break_notification_desc:2 "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] with [AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsFirstCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName)][AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsSecondCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName)] can no longer be maintained because the following conditions are no longer true:\n[SCOPE.GetRootScope.GetDiplomaticPact.GetAutoBreakReasonDesc]"
  notification_diplomatic_pact_auto_break_notification_tooltip:1 "#header $notification_diplomatic_pact_auto_break_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_pact_auto_break_notification_desc$"
 
  notification_diplomatic_pact_third_party_auto_break_notification_name:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] broken"
- notification_diplomatic_pact_third_party_auto_break_notification_desc:2 "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] between [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] and [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] can no longer be maintained due to:\n[SCOPE.GetRootScope.GetDiplomaticPact.ShouldAutoBreakDesc]"
+ notification_diplomatic_pact_third_party_auto_break_notification_desc:2 "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] between [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] and [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] can no longer be maintained because the following conditions are no longer true:\n[SCOPE.GetRootScope.GetDiplomaticPact.GetAutoBreakReasonDesc]"
  notification_diplomatic_pact_third_party_auto_break_notification_tooltip:1 "#header $notification_diplomatic_pact_third_party_auto_break_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_diplomatic_pact_third_party_auto_break_notification_desc$"
 
  notification_character_died_notification_name:2 "[SCOPE.GetRootScope.GetCharacter.GetFullName] ([SCOPE.GetRootScope.GetCharacter.GetPrimaryRoleName]) has died"
@@ -5787,6 +5840,8 @@
  ESTABLISH_COLONY_INTEREST_MARKER_INSUFFICIENT:0 "Our [concept_interest] is insufficient!"
  ESTABLISH_COLONY_BAD_RANK:1 "[Concept('concept_country','$concept_countries$')] of [COUNTRY.GetRank] [concept_rank] cannot establish [Concept('concept_colony','$concept_colonies$')]"
  ESTABLISH_COLONY_NO_COLONIAL_GROWTH:1 "We do not produce any [concept_colonial_growth]"
+ ESTABLISH_COLONY_TRUCE_BLOCKED: "[Concept('concept_colony','$concept_colonization$')] here is not allowed while we have a truce with the natives"
+ ESTABLISH_COLONY_DIPLO_PLAY_BLOCKED: "[Concept('concept_colony','$concept_colonization$')] here is not allowed while there is an ongoing [concept_native_uprising]"
  ESTABLISH_COLONY_MISSING_TECH:1 "We do not have the required #variable '$TECH$'#! [concept_technology]"
  ESTABLISH_COLONY_FOREIGN_CLAIMS:0 "We cannot colonize this [concept_state_region] because the following [Concept('concept_country', '$concept_countries$')] have [Concept('concept_claim', '$concept_claims$')] and maintain $INTERESTS$ there: $LIST$"
 
@@ -5796,6 +5851,8 @@
  CANCEL_COLONY_TARGET_COUNTRY_NOT_VALID:1 "#N There are no valid targets that could take over the [concept_colony] from us#!"
 
  COLONIZATION_PAUSED:1 "[Concept('concept_colony','$concept_colonization$')] Paused"
+ COLONIZATION_STOPPED_ACTIVE_DIPLOMATIC_PLAY: "[Concept('concept_colony','$concept_colonization$')] is on hold due to ongoing [concept_native_uprising]"
+ COLONIZATION_STOPPED_ACTIVE_TRUCE: "[Concept('concept_colony','$concept_colonization$')] is on hold while we have a truce with the natives"
 
  CANNOT_ESTABLISH_COLONY_HOVER:0 "#header #N Cannot Colonize [STATE_REGION.GetName]#!#!"
  ESTABLISH_COLONY_HOVER:0 "#header Colonize [STATE_REGION.GetName]#!"
@@ -5986,8 +6043,8 @@
  DECREASE:0 "decrease"
  NO_PREVIOUS_ELECTION: "No previous [concept_election]"
 
- ADMIRAL_REPAIRING_DATE:0 "[Character.GetFullName] has recently lost a naval battle and is unavailable until [Character.GetRepairDateEnd|v]"
- ADMIRAL_REPAIRING_DATE_TOOLTIP:0 "#header Repairing#!\n[Character.GetFullName] has recently lost a naval battle and is unavailable until [Character.GetRepairDateEnd|v]"
+ ADMIRAL_REPAIRING_DATE: "[Character.GetFullName] has recently lost a naval battle and is unavailable"
+ ADMIRAL_REPAIRING_DATE_TOOLTIP: "#header Repairing#!\n[Character.GetFullName] has recently lost a naval battle and is unavailable"
 
  NO_ORDERS:0 "No Orders"
  IN_RESERVE:0 "In Reserve"
@@ -6302,11 +6359,18 @@
  DIPLO_PLAY_STRONG_PREFERENCE_TARGET:0 "Preference for [DiplomaticPlay.GetTarget.GetName]"
  DIPLO_PLAY_PREFERENCE_INITIATOR:0 "Slight preference for [DiplomaticPlay.GetInitiator.GetName]"
  DIPLO_PLAY_PREFERENCE_TARGET:0 "Slight preference for [DiplomaticPlay.GetTarget.GetName]"
- DIPLO_PLAY_PREFERENCE_FOR_COUNTRY_DESC:0 "#header [Country.GetName] Preference for [COUNTRY_THIRD_PARTY.GetName]#!\nTotal: $TOTAL_VALUE|v=+$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- DIPLO_PLAY_PREFERENCE_TOOLTIP:1 "#header Support Preferences of [Country.GetName]#!\n$TOOLTIP_DELIMITER$\nTendency to support [INITIATOR_COUNTRY.GetName]: #tooltippable #tooltip:$INITIATOR_BREAKDOWN_TAG$ $INITIATOR_SCORE|v$#!#!\nTendency to support [TARGET_COUNTRY.GetName]: #tooltippable #tooltip:$TARGET_BREAKDOWN_TAG$ $TARGET_SCORE|v$#!#!"
- DIPLO_PLAY_PREFERENCE_DESC:1 "[COUNTRY.GetAdjective] Relative Preference for [ALLY_COUNTRY.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $SCORE|+=$#!#!"
- DIPLO_PLAY_PREFERENCE_BREAKDOWN:1 "#header [COUNTRY.GetAdjective] Relative Preference for [ALLY_COUNTRY.GetName]: $SCORE|+=$#!\n$TOOLTIP_DELIMITER$\nPreference to support [ALLY_COUNTRY.GetName]: #tooltippable #tooltip:$ALLY_BREAKDOWN_TAG$ $ALLY_SCORE|v$#!#!\nPreference to support [ENEMY_COUNTRY.GetName]: #tooltippable #tooltip:$ENEMY_BREAKDOWN_TAG$ $ENEMY_SCORE|v$#!#!\n[concept_neutrality]: #tooltippable #tooltip:$NEUTRALITY_BREAKDOWN_TAG$ $NEUTRALITY_SCORE|v$#!#!\n\n@information! Relative Preference is calculated from the [COUNTRY.GetAdjective] preference to support [ALLY_COUNTRY.GetName] minus either their preference to support [ENEMY_COUNTRY.GetName] or their [concept_neutrality] score, whichever result ends up lower"
+ DIPLO_PLAY_PREFERENCE_FOR_COUNTRY_DESC:0 "#header [COUNTRY.GetName] Preference for [COUNTRY_THIRD_PARTY.GetName]#!\n$DETAILS$"
+ DIPLO_PLAY_PREFERENCE_TOOLTIP:1 "#header Support Preferences of [COUNTRY.GetName]#!\n$TOOLTIP_DELIMITER$\nTendency to support [INITIATOR_COUNTRY.GetName]: #tooltippable #tooltip:$INITIATOR_BREAKDOWN_TAG$ $INITIATOR_SCORE|v$#!#!\nTendency to support [TARGET_COUNTRY.GetName]: #tooltippable #tooltip:$TARGET_BREAKDOWN_TAG$ $TARGET_SCORE|v$#!#!"
+ DIPLO_PLAY_PREFERENCE_DESC:1 "[COUNTRY.GetAdjective] Relative Preference for [ALLY_COUNTRY.GetName]: $SCORE|+=$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ DIPLO_PLAY_PREFERENCE_BREAKDOWN:1 "Preference to support [ALLY_COUNTRY.GetName]: #v $ALLY_SCORE|+=$#!#indent_newline:3 \n$ALLY_BREAKDOWN$\n#!\nPreference to support [ENEMY_COUNTRY.GetName]: #v $ENEMY_SCORE|+=$#!#indent_newline:3 \n$ENEMY_BREAKDOWN$#!\n\n[concept_neutrality]: #v $NEUTRALITY_SCORE$#! #indent_newline:3 \n$NEUTRALITY_BREAKDOWN$#!\n\n@information! Relative Preference is calculated from the [COUNTRY.GetAdjective] preference to support [ALLY_COUNTRY.GetName] #b minus#! either their preference to support [ENEMY_COUNTRY.GetName] or their [concept_neutrality] score, whichever result ends up lower"
+ DIPLO_PLAY_CANNOT_SUPPORT_COUNTRY: "#header [COUNTRY.GetName] Preference for [COUNTRY_THIRD_PARTY.GetName]#!\n$TOOLTIP_DELIMITER$\n[COUNTRY.GetName] is unable to support [COUNTRY_THIRD_PARTY.GetName] due to:\n$ERRORS$"
+ DIPLO_PLAY_NEUTRALITY_ALREADY_COMMITTED: "[concept_neutrality] is always #n 0#! when a [concept_country] has already committed to a side"
+ 
+ DIPLO_PLAY_PREFERENCE_DESC_NESTED_TOOLTIPS:1 "[COUNTRY.GetAdjective] Relative Preference for [ALLY_COUNTRY.GetName]: #tooltippable #tooltip:$BREAKDOWN_TAG$ $SCORE|+=$#!#!"
+ DIPLO_PLAY_PREFERENCE_BREAKDOWN_NESTED_TOOLTIPS:1 "#header [COUNTRY.GetAdjective] Relative Preference for [ALLY_COUNTRY.GetName]: $SCORE|+=$#!\n$TOOLTIP_DELIMITER$\nPreference to support [ALLY_COUNTRY.GetName]: #tooltippable #tooltip:$ALLY_BREAKDOWN_TAG$ $ALLY_SCORE|v$#!#!\nPreference to support [ENEMY_COUNTRY.GetName]: #tooltippable #tooltip:$ENEMY_BREAKDOWN_TAG$ $ENEMY_SCORE|v$#!#!\n[concept_neutrality]: #tooltippable #tooltip:$NEUTRALITY_BREAKDOWN_TAG$ $NEUTRALITY_SCORE|v$#!#!\n\n@information! Relative Preference is calculated from the [COUNTRY.GetAdjective] preference to support [ALLY_COUNTRY.GetName] minus either their preference to support [ENEMY_COUNTRY.GetName] or their [concept_neutrality] score, whichever result ends up lower"
 
+
+ 
  SWAY_OFFER_TITLE:1 "Sway Attempt"
  REVERSE_SWAY_OFFER_TITLE: "Offer of Support"
  SWAY_OFFER_TITLE_SELECTOR: "[SelectLocalization( Proposal.GetDiplomaticPlay.GetIncomingSway(Proposal.GetActor.Self, Proposal.GetRecipient.Self).IsReverseSway, 'REVERSE_SWAY_OFFER_TITLE', 'SWAY_OFFER_TITLE' )]"
@@ -6361,6 +6425,7 @@
  ALREADY_ACTIVE_PACT: "Already have an active [concept_diplomatic_pact] for [DIPLOMATIC_ACTION.GetName]"
  COUNTRY_MUST_BE_SUBJECT: "[COUNTRY_THIRD_PARTY.GetName] is not a [concept_subject] of [COUNTRY.GetName]"
  ALREADY_PROMISED_SWAY: "[COUNTRY.GetName] has already promised this [concept_sway] to another [concept_country]"
+ SWAY_OFFER_NOT_VALID_FOR_SUBJECT: "[COUNTRY.GetName] can only be [Concept('concept_sway','$concept_swayed$')] against their [concept_overlord] with an #v $war_goal_independence_type_name$#! or #v $war_goal_increase_autonomy_type_name$#! [concept_war_goal]"
 
  NUM_BUILDINGS_WITH_PROD_METHOD_ACTIVE:0 "[ProductionMethod.GetNumOfBuildingsUsingThis(GetPlayer.Self)|v] [Concept('concept_building', '$concept_buildings$')] currently have [ProductionMethod.GetName] active:\n[ProductionMethod.GetBuildingTypesUsingThisDesc(GetPlayer.Self)]"
  BUILDING_TYPE_USING_PM_ENTRY:0 "[BuildingType.GetName]: #variable $NUM$#!"
@@ -6674,7 +6739,7 @@
 
  GDP:0 "[concept_gdp]"
  GDP_SHORT:1 "[Concept('concept_gdp', '$concept_gdp_short$')]"
- TOOLTIP_GDP:0 "The [concept_gdp] of the country, is based on the production of goods and their market prices"
+ TOOLTIP_GDP:0 "The [concept_gdp] of the country, is based on the [concept_good_production] of goods and their market prices"
 
  GOV_EXP_SHORT:1 "[Concept('concept_government_expenses', '$concept_government_expenses_short$')]"
 
@@ -6752,8 +6817,10 @@
  outliner_title_commanders:0 "#outliner_header Commanders#!"
  outliner_title_formations:0 "#outliner_header Formations#!"
  outliner_title_politicians:0 "#outliner_header Politicians#!"
- outliner_title_generals:0 "#outliner_header Generals#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP #variable @battalions![GetPlayer.GetBattalions|0]#!#!)"
- outliner_title_admirals:0 "#outliner_header Admirals#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP #variable @navy_SP![GetPlayer.GetWarships|0]#!#!)"
+ outliner_title_countries:0 "#outliner_header Countries#!"
+ outliner_title_unrecognized_countries:0 "#outliner_header Unrecognized Countries#!"
+ outliner_title_generals:0 "#outliner_header Generals#!"
+ outliner_title_admirals:0 "#outliner_header Admirals#!"
  outliner_title_army: "#outliner_header Army#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP #variable @battalions![GetPlayer.GetBattalions|0]#!#!)"
  outliner_title_navy: "#outliner_header Navy#!  (#tooltip:[GetPlayer.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP #variable @navy_SP![GetPlayer.GetWarships|0]#!#!)"
  outliner_title_agitators: "#outliner_header Agitators#!"
@@ -6791,6 +6858,7 @@
 
  ENACT_NEW_LAW:0 "Enact New Law"
  ABOLISH:0 "Abolish"
+ NO_MARKET_SHORTAGES: "No Market Goods [Concept('concept_input_goods_shortage', '$concept_input_goods_shortage_short$')]"
 
  NARROW_VICTORY:0 "Narrow victory in the $BATTLE_NAME$"
  NARROW_LOSS:0 "Unforeseen defeat in the $BATTLE_NAME$"
@@ -6818,7 +6886,7 @@
  POP_CONVERSION_MIN:0 "Minimum conversion of $MIN|v$\n"
 
  EDUCATION_ACCESS_HEADER:0 "[concept_education_access]: #tooltippable #tooltip:$TAG$,EDUCATION_ACCESS_DETAILS_TOOLTIP $VAL|2%$#!#!"
- EDUCATION_ACCESS_DETAILS:0 "[concept_education_access]\nEducation Access: [POP.GetEducationAccess|2%v]\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ EDUCATION_ACCESS_DETAILS:0 "#header [concept_education_access]#!\nEducation Access: [POP.GetEducationAccess|2%v]\nWealth: [POP.GetCurrentWealth|v]\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  EDUCATION_ACCESS_UNIVERSAL:1 "From $institution_schools$ level of #b $INSTITUTE_LEVEL|v$#!: #b $VALUE|=+2%$#!"
  EDUCATION_ACCESS_DETAILS_TOOLTIP:0 "[Pop.GetEducationAccessDetailsDesc]"
  EDUCATION_ACCESS_FROM_WEALTH:1 "From [concept_wealth] level of $WEALTH|v$: #b $TOTAL|=+2%$#!\n#P #b $PER_LEVEL|%|2$#!#! for each level of [concept_wealth]:"
@@ -6826,16 +6894,16 @@
  INSTITUTION_FROM_EACH_LEVEL:0 "each level of $INSTITUTION_TYPE$ (#b $INSTITUTE_LEVEL|v$#!)"
  INSTITUTION_PER_LEVEL:0 "per level of $INSTITUTION_TYPE$ (#b $INSTITUTE_LEVEL|v$#!)"
 
- STATE_POTENTIAL_QUALIFICATIONS:1 "#header Potential [concept_pop_qualifications] in [State.GetName]#!\n$STATE_QUALIFICATIONS_SUMMARY$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ STATE_POTENTIAL_QUALIFICATIONS:1 "#header Potentially Employable [concept_pop_qualifications] in [State.GetName]#!\n$STATE_QUALIFICATIONS_SUMMARY$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  INSUFFICIENT_QUALIFICATIONS_TO_FILL_POSITIONS:0 "@red_cross! $POSITIONS|vD$ [POP_TYPE.GetName] needed for full employment, only $QUALIFICATIONS|vD$ available"
  #[State.GetPotentialQualificationsDesc]
  STATE_QUALIFICATIONS_SUMMARY: "[SelectLocalization(State.HasInsufficientQualificationsForAvailablePositions, '$INSUFFICIENT_QUALIFICATIONS$', '$SUFFICIENT_QUALIFICATIONS$')]"
- INSUFFICIENT_QUALIFICATIONS: "@red_cross! Does not have Qualifications to fill all current Vacancies"
- SUFFICIENT_QUALIFICATIONS: "@green_checkmark! Has Qualifications to fill all current Vacancies"
+ INSUFFICIENT_QUALIFICATIONS: "@red_cross! Does not have potentially employable Qualifications to fill all current Vacancies"
+ SUFFICIENT_QUALIFICATIONS: "@green_checkmark! Has potentially employable Qualifications to fill all current Vacancies"
 
  STATE_POTENTIAL_QUALIFICATIONS_ENTRY:0 "#tooltippable #tooltip:[State.GetTooltipTag]|[PopType.GetTooltipTag],STATE_POTENTIAL_POPTYPE_QUALIFICATIONS $POTENTIAL_QUALIFICATIONS|vD$#!#! [PopType.GetName] ($POTENTIAL_QUALIFICATIONS_CHANGE|=vD$ / month)"
  STATE_POTENTIAL_POPTYPE_QUALIFICATIONS:0 "[State.GetPotentialQualificationsBreakdown(PopType.Self)]"
- STATE_POTENTIAL_QUALIFICATIONS_BREAKDOWN:0 "#header Potential Qualified [PopType.GetName] in [State.GetName]: [State.GetPotentialQualifications(PopType.Self)|vD]#!\nMonthly change: $TOTAL_QUALIFICATIONS_CHANGE|=vD$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ STATE_POTENTIAL_QUALIFICATIONS_BREAKDOWN:0 "#header Potentially Employable [PopType.GetName] in [State.GetName]: [State.GetPotentialQualifications(PopType.Self)|vD]#!\nMonthly change: $TOTAL_QUALIFICATIONS_CHANGE|=vD$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  STATE_POTENTIAL_QUALIFICATIONS_BREAKDOWN_ENTRY:1 "$EMPLOYABLE_QUALIFICATIONS|vD$ [AddTextIf( Not(Pop.IsEmployed), '$concept_unemployed$')] [Pop.GetName] [AddTextIf( Pop.IsEmployed, Concatenate('in ', Pop.GetBuilding.GetName))] (#tooltippable #tooltip:[Pop.GetTooltipTag]|[PopType.GetTooltipTag],POP_POPTYPE_QUALIFICATIONS_CHANGE $QUALIFICATIONS_CHANGE|=vD$#!#! / month)"
  POP_POPTYPE_QUALIFICATIONS_CHANGE:0 "[Pop.GetQualificationsChangeDesc(PopType.Self)]"
  POP_QUALIFICATIONS_ENTRY:0 "[PopType.GetName]: $QUALIFICATIONS|v0$ (#tooltippable #tooltip:$TAG$|[PopType.GetTooltipTag],POP_POPTYPE_QUALIFICATIONS_CHANGE $CHANGEVAL|+=0$#!#! / month)"
@@ -6924,7 +6992,7 @@
  notification_peace_agreement_signed_war_participant_name:0 "Peace between [SCOPE.sC('actor').GetName] and [SCOPE.sC('target').GetName]"
  notification_peace_agreement_signed_war_participant_desc:0 "#variable [SCOPE.sC('actor').GetName]#! signed a peace agreement with #variable [SCOPE.sC('target').GetName]#!, ending our state of hostilities."
 
- notification_peace_agreement_signed_non_participant_tooltip:0 "#header $notification_peace_agreement_signed_non_participant_name$#!\n$TOOLTIP_DELIMITER$\n$ notification_peace_agreement_signed_non_participant_desc$"
+ notification_peace_agreement_signed_non_participant_tooltip:0 "#header $notification_peace_agreement_signed_non_participant_name$#!\n$TOOLTIP_DELIMITER$\n$notification_peace_agreement_signed_non_participant_desc$"
  notification_peace_agreement_signed_non_participant_name:0 "Peace between [SCOPE.sC('actor').GetName] and [SCOPE.sC('target').GetName]"
  notification_peace_agreement_signed_non_participant_desc:0 "#variable [SCOPE.sC('actor').GetName]#! signed a peace agreement with #variable [SCOPE.sC('target').GetName]#!, ending the state of hostilities between them."
 
@@ -6995,10 +7063,6 @@
  notification_commander_order_invalidated_tooltip:0 "#header $notification_commander_order_invalidated_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_order_invalidated_desc$"
  notification_commander_order_invalidated_name:0 "New Commander Order"
  notification_commander_order_invalidated_desc:0 "[SCOPE.GetRootScope.GetCharacter.GetFullName] now has [SCOPE.sCOT('target').GetName] Order (Previously [SCOPE.sCOT('actor').GetName])"
-
- notification_commander_moved_to_other_front_tooltip:0 "#header $notification_commander_moved_to_other_front_name$#!\n$TOOLTIP_DELIMITER$\n$notification_commander_moved_to_other_front_desc$"
- notification_commander_moved_to_other_front_name:1 "[SCOPE.sCha('actor').GetFullName] (@battalions!#variable [SCOPE.sCha('actor').GetNumCombatUnits]#!) Moved"
- notification_commander_moved_to_other_front_desc:1 "[SCOPE.sCha('actor').GetFullName] (@battalions!#variable [SCOPE.sCha('actor').GetNumCombatUnits]#!) moved to [SCOPE.GetRootScope.GetFront.GetName]"
 
  notification_migration_target_created_tooltip:0 "#header $notification_migration_target_created_name$#!\n$TOOLTIP_DELIMITER$\n$notification_migration_target_created_desc$"
  notification_migration_target_created_name:1 "[SCOPE.GetRootScope.GetState.GetMassMigrationCulture.GetName] Mass Immigration"
@@ -7159,13 +7223,20 @@
  IG_RIGHT_CLICK_MENU_RULER_JOIN_IG:0 "$RULER_JOIN_IG_LONG$"
 
  IG_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(InterestGroup.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
+ COUNTRY_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(Country.IsPinnedInOutliner, 'UNPIN_COUNTRY_IN_OUTLINER', 'PIN_COUNTRY_IN_OUTLINER')]"
+ POLITICAL_MOVEMENT_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(PoliticalMovement.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
+ DIPLOMATIC_PLAY_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(DiplomaticPlay.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
  CHARACTER_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(Character.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
- STATE_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(State.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
+ STATE_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(State.IsPinnedInOutliner, 'UNPIN_STATE_IN_OUTLINER', 'PIN_STATE_IN_OUTLINER')]"
  MARKET_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(Market.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
  GOODS_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(Goods.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
  MILITARY_FORMATION_RIGHT_CLICK_MENU_PIN_IN_OUTLINER:0 "[SelectLocalization(MilitaryFormation.IsPinnedInOutliner, 'UNPIN_IN_OUTLINER', 'PIN_IN_OUTLINER')]"
  PIN_IN_OUTLINER:0 "Pin in Outliner"
  UNPIN_IN_OUTLINER:0 "Unpin from Outliner"
+ PIN_COUNTRY_IN_OUTLINER: "Pin [Country.GetName] in Outliner"
+ UNPIN_COUNTRY_IN_OUTLINER: "Unpin [Country.GetName] from Outliner"
+ PIN_STATE_IN_OUTLINER: "Pin [State.GetName] in Outliner"
+ UNPIN_STATE_IN_OUTLINER: "Unpin [State.GetName] from Outliner"
 
  SELECT_ORDER_RIGHT_CLICK_MENU_TITLE: "Select [concept_order] for [Character.GetFullName]"
 
@@ -7186,9 +7257,6 @@
  STATE_RIGHT_CLICK_MENU_DECLARE_INTEREST_TOOLTIP:0 "Declare an Interest in [State.GetStateRegion.GetStrategicRegion.GetName]"
  
  DECREE_DUPLICATE_ROAD_MAINTENANCE:0 "No other countries have set $decree_road_maintenance$ in the [concept_state_region]"
-
- NAVAL_INVASION_RIGHT_CLICK_MENU_TITLE:1 "Select General for amphibious landing in [State.GetName]"
- NAVAL_INVASION_RIGHT_CLICK_MENU_TOOLTIP:1 "Send [Character.GetFullName] to perform amphibious landing[ConcatIfNeitherEmpty('\n$TOOLTIP_DELIMITER$\n', GetDesc( MapInteractions.AccessMapInteractionCharacter.GetNavalInvasionCommand( Character.Self, State.Self ) ) )]"
 
  MARKET_RIGHT_CLICK_MENU_TITLE:0 "[Market.GetName]"
  MARKET_RIGHT_CLICK_MENU_MANAGE_MARKET:0 "Manage Market"
@@ -7252,8 +7320,8 @@
  SORT_BY_AMOUNT_CONSUMED:0 "Sort by amount of [Concept('concept_good', '$concept_goods$')] [Concept('concept_good_consumption', '$concept_good_consumed$')]"
  SORT_BY_BUDGET_EXPENDITURE:0 "Sort by the percentage of the [Concept('concept_pop', '$concept_pop_possessive$')] budget spent on each [concept_good]"
 
- MAP_MODE_ATTITUDE_COUNTRY:0 "Show [concept_attitude] to [CountryPanel.GetCountry.GetName] on the map"
- MAP_MODE_RELATIONS_COUNTRY:0 "Show [concept_relations] to [CountryPanel.GetCountry.GetName] on the map"
+ MAP_MODE_ATTITUDE_COUNTRY:0 "Show [concept_attitude] towards [Country.GetYouOrCountryName] on the map"
+ MAP_MODE_RELATIONS_COUNTRY:0 "Show [concept_relations] with [Country.GetYouOrCountryName] on the map"
 
  DEFAULT_MAP_LIST_PANEL_STATUS_HEADER:0 "Status"
  DEFAULT_MAP_LIST_PANEL_STATUS_HEADER_TOOLTIP:1 "#header Status#!\n$TOOLTIP_DELIMITER$\n#concept The availability of this interaction on each entry.\n\n@map_list_plus!: You can select this.\n@map_list_plus_and_checkmark!: You can select this and you are already doing this here.\n@map_list_checkmark!: You are already doing this here and you can deselect this.\n@map_list_lock!: You are already doing this here, but you can NOT deselect this.\n@map_list_cross!: You can NOT select this.#!"
@@ -7283,6 +7351,35 @@
  BUILDING_MAP_LIST_PANEL_EFFICIENCY_TOOLTIP:1 "#header [concept_construction] Efficiency in $NAME$: $VAL|v%1$#!\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  
  CONSTRUCTION_EFFICIENCY_MINIMUM_DESC:0 "@information! [concept_construction] Efficiency cannot be lower than [GetDefine('NEconomy', 'MIN_CONSTRUCTION_EFFICIENCY')|v%0]"
+
+ COUNTRY_YOU: "you"
+ COUNTRY_OTHER: "[Country.GetName]"
+ COUNTRY_LABEL_YOU: "This is you"
+ COUNTRY_LABEL_YOUR: "Your "
+ COUNTRY_LABEL_RIVAL: "[Concept('concept_rivalry','$concept_rival$')]"
+ COUNTRY_LABEL_MUTUAL_RIVAL: "[Concept('concept_rivalry','$concept_rival$')] (mutual)"
+ COUNTRY_LABEL_RIVALING: "[Concept('concept_rivalry','$concept_rivaling$')] [Country.GetYouOrCountryName]"
+ COUNTRY_LABEL_OVERLORD: "[concept_overlord] ([COUNTRY.GetSubjectTypeName])"
+ COUNTRY_LABEL_SUBJECT: "[concept_subject] ([Country.GetSubjectTypeName])"
+ COUNTRY_LABEL_SUBJECT_OF_SUBJECT: "Indirect [concept_subject] ([Country.GetSubjectTypeName] of [Country.GetOverlord.GetName])"
+ COUNTRY_LABEL_DIPLO_PLAY_ALLY: "Ally in the [DiplomaticPlay.GetName]"
+ COUNTRY_LABEL_DIPLO_PLAY_ENEMY: "Enemy in the [DiplomaticPlay.GetName]"
+ COUNTRY_LABEL_WAR_ALLY: "Co-belligerent in [War.GetName]"
+ COUNTRY_LABEL_WAR_ENEMY: "Enemy in [War.GetName]"
+ COUNTRY_LABEL_TRUCE_WITH: "Has a Truce with [COUNTRY.GetYouOrCountryName] (until #v [COUNTRY.GetTruceDate(TARGET_COUNTRY.Self)]#!)"
+ COUNTRY_LABEL_OWES_OBLIGATION_TO: "Owes a [concept_obligation] to [COUNTRY.GetYouOrCountryName] (until #v [COUNTRY.GetObligationToExpirationDate(TARGET_COUNTRY.Self)]#!)"
+ COUNTRY_LABEL_IS_OWED_OBLIGATION: "Is owed an [concept_obligation] by [COUNTRY.GetYouOrCountryName] (until #v [COUNTRY.GetObligationFromExpirationDate(TARGET_COUNTRY.Self)]#!)"
+ COUNTRY_HAS_TRADE_AGREEMENT: "Has a [concept_trade_agreement] with [Country.GetYouOrCountryName]"
+ COUNTRY_HAS_DEFENSIVE_PACT: "Has a [concept_defensive_pact] with [Country.GetYouOrCountryName]"
+ COUNTRY_HAS_ALLIANCE: "Has an [concept_alliance] with [Country.GetYouOrCountryName]"
+ COUNTRY_LABEL_NEIGHBOUR_LAND: "Neighbour"
+ COUNTRY_LABEL_NEIGHBOUR_SEA: "Neighbour (via the sea)"
+ COUNTRY_LABEL_CUSTOM_UNION_SENIOR: "[concept_customs_union] Senior"
+ COUNTRY_LABEL_CUSTOM_UNION_JUNIOR: "[concept_customs_union] Junior"
+ COUNTRY_LABEL_CUSTOM_UNION_BOTH_JUNIOR: "Partner in [COUNTRY.GetName]'s [concept_customs_union]"
+
+ GOVERNMENT_IG_DESC_ITEM: "[InterestGroup.GetTextIcon]"
+
 
  BUILDING_MAP_LIST_PANEL_PROFIT_IMPACT_HEADER:3 "[SelectLocalization(Or(ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(MapListBuildingPanel.GetBuildingType, GetBuildingType('building_construction_sector').Self)), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')]"
  BUILDING_UPKEEP_HEADER: "Upkeep"
@@ -7365,6 +7462,61 @@
  CURRENT_GOODS_FILTERS:0 "[SelectLocalization(And(MarketPanel.IsSelected('staple'), MarketPanel.IsSelected('military')), 'ALL_GOODS', 'SELECTED_FILTER')]"
  SELECTED_FILTER:0 "[AddTextIf(MarketPanel.IsSelected('staple'), '$STAPLE_FILTER_NAME$')][AddTextIf(MarketPanel.IsSelected('industrial'), '$INDUSTRIAL_FILTER_NAME$')][AddTextIf(MarketPanel.IsSelected('military'), '$MILITARY_FILTER_NAME$')][AddTextIf(MarketPanel.IsSelected('luxury'), '$LUXURY_FILTER_NAME$')]"
 
+ ACCEPTED_CULTURALLY: "Accepted Culture"
+ DISCRIMINATED_CULTURALLY: "Discriminated Culture"
+ ACCEPTED_RELIGIOUSLY: "Accepted Religion"
+ DISCRIMINATED_RELIGIOUSLY: "Discriminated Religion"
+ IS_EMPLOYED: "Only Employed"
+ IS_UNEMPLOYED: "Only Unemployed"
+ LIVES_IN_INCORPORATED_STATE: "Lives in an Incorporated State"
+ DOES_NOT_LIVE_IN_INCORPORATED_STATE: "Lives in an Unincorporated State"
+ BUTTON_POP_BROWSER: "#header $POP_BROWSER$#!"
+ POP_BROWSER: "Census Data"
+ LOYALTY: "Loyalty" 
+ HAS_LOYALISTS: "Has Loyalists" 
+ HAS_RADICALS: "Has Radicals" 
+ POP_GROWTH: "Pop Growth" 
+ IS_GROWING: "Is Growing" 
+ IS_SHRINKING: "Is Shrinking"
+ CHARTS: "Charts"
+ LITERACY: "[concept_literacy]"
+ NEEDS: "Needs" 
+
+ RELIGION_PIECHART_HEADER: "[concept_religion]"
+ CULTURE_PIECHART_HEADER: "[concept_culture]"
+ POP_TYPE: "$concept_profession$"
+ DISCRIMINATION_CULTURAL: "Discrimination (Cultural)"
+ DISCRIMINATION_RELIGIOUS: "Discrimination (Religious)"
+ EMPLOYMENT: "Employment"
+ INCORPORATION: "Incorporation"
+ STATE_PIECHART_HEADER: "[concept_state]"
+ FILTERED_POP_TYPE_PIECHART: "#header [PopType.GetName]#!\n[PopBrowserPanel.GetFilteredTotalSizeForPopType(PopType.Self)|Dv] [PopType.GetName] [Concept('concept_pop', '$concept_pops$')] matches the current filters"
+ FILTERED_RELIGION_PIECHART: "#header [Religion.GetName]#!\n[PopBrowserPanel.GetFilteredTotalSizeForReligion(Religion.Self)|Dv] [Religion.GetName] [Concept('concept_pop', '$concept_pops$')] matches the current filters"
+ FILTERED_CULTURE_PIECHART: "#header [Culture.GetName]#!\n[PopBrowserPanel.GetFilteredTotalSizeForCulture(Culture.Self)|Dv] [Culture.GetName] [Concept('concept_pop', '$concept_pops$')] matches the current filters"
+ FILTERED_STATE_PIECHART: "#header [State.GetName]#!\n[PopBrowserPanel.GetFilteredTotalSizeForState(State.Self)|Dv] [Concept('concept_pop', '$concept_pops$')] in [State.GetName] matches the current filters"
+ POP_TYPE_POL_STR_PIECHART: "#header [PopType.GetName]#!\nThe [PopType.GetName] matching the current filters have a total of [PopBrowserPanel.GetFilteredPolStrForPopType(PopType.Self)|Dv] [concept_political_strength]"
+ NO_STATES: "No States"
+ NO_POPS_MATCHES_THE_CURRENT_FILTER: "No [Concept('concept_pop', '$concept_pops$')] matches the current filters"
+ POP_BROWSER_POP_SOL: "[Pop.GetFormattedStandardOfLivingLabel|v] ([Pop.GetFormattedStandardOfLiving|v]) $WEALTH_GROWING_OR_SHRINKING$"
+ WEALTH_GROWING_OR_SHRINKING: "[AddTextIf(GreaterThan_CFixedPoint(Pop.GetWealthProgression, '(CFixedPoint)0'), '@arrow_up!')][AddTextIf(LessThan_CFixedPoint(Pop.GetWealthProgression, '(CFixedPoint)0'), '@arrow_down!')]"
+ POP_BROWSER_LITERACY: "[Pop.GetLiteracyRate|%1v] $LITERACY_GROWING_OR_SHRINKING$"
+ LITERACY_GROWING_OR_SHRINKING: "[AddTextIf(GreaterThan_CFixedPoint(Pop.GetEducationAccess, Pop.GetLiteracyRate), '@arrow_up!')][AddTextIf(LessThan_CFixedPoint(Pop.GetEducationAccess, Pop.GetLiteracyRate), '@arrow_down!')]"
+ POP_BROWSER_JOB_SATISFACTION: "[Pop.GetCurrentJobSatisfaction|0+=] $JOB_SATISFACTION_GROWING_OR_SHRINKING$"
+ JOB_SATISFACTION_GROWING_OR_SHRINKING: "[AddTextIf(LessThan_CFixedPoint(Pop.GetCurrentJobSatisfaction, Pop.GetNextJobSatisfaction), '@arrow_up!')][AddTextIf(GreaterThan_CFixedPoint(Pop.GetCurrentJobSatisfaction, Pop.GetNextJobSatisfaction), '@arrow_down!')]"
+ WEALTH_PROGRESSION: "Wealth"
+ SOL_IS_GROWING: "Is Increasing"
+ SOL_IS_SHRINKING: "Is Decreasing"
+ STANDARD_OF_LIVING: "Standard of Living"
+ IS_ABOVE_EXPECTED_SOL: "Above Expected Standard of Living"
+ IS_BELOW_EXPECTED_SOL: "Below Expected Standard of Living"
+ POP_SIZE: "Size"
+ IS_TEN_OR_LARGER: "At least #b 10#! [Concept('concept_individual','$concept_individuals$')]"
+ IS_A_HUNDRED_OR_LARGER: "At least #b 100#! [Concept('concept_individual','$concept_individuals$')]"
+ IS_A_THOUSAND_OR_LARGER: "At least #b 1000#! [Concept('concept_individual','$concept_individuals$')]"
+ JOB_SATISFACTION: "Job Satisfaction"
+ IS_JOBSEEKER: "Is Jobseeker"
+ IS_NOT_JOBSEEKER: "Is Satisfied"
+
  ALL_GOODS:0 "All Goods"
  STAPLE_FILTER_NAME:0 "Staple Goods"
  INDUSTRIAL_FILTER_NAME:0 "Industrial Goods"
@@ -7401,6 +7553,8 @@
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_LIMIT_HEADER: "$concept_state$ Limit"
  ACTIVATE_CONSCRIPTION_CENTER_MAP_LIST_PANEL_STATE_LIMIT_HEADER_TOOLTIP: "#header [concept_conscription_limit]#!\n$TOOLTIP_DELIMITER$\nThe max number of [Concept('concept_conscript_battalion','$concept_conscript_battalions$')] this [concept_state] can currently recruit."
 
+ COUNTRY_MOBILIZATION_SWAY_PANEL: "[Concept('concept_mobilize_army','$concept_mobilize_army_mobilization$')]: #v [Country.GetFullyMobilizedBattalionsPercentageRaw|0%]#!"
+
  FRONT_MAP_LIST_PANEL_UNITS:0 "Units"
  FRONT_MAP_LIST_PANEL_UNITS_TOOLTIP:1 "The number of units present on the [concept_front]."
  FRONT_MAP_LIST_PANEL_ADVANTAGE:0 "Advantage"
@@ -7426,7 +7580,7 @@
  AGITATOR: "[concept_agitator]"
  NO_AGITATORS: "No [Concept( 'concept_agitator', '$concept_agitators$' )]"
  NO_AGITATOR_IN_MOVEMENT: "No supporting [Concept( 'concept_agitator', '$concept_agitators$' )]"
- AVAILABLE_AGITATOR_SLOTS: "Potential for [Country.GetEmptyAgitatorSlots|v] [SelectLocalization(EqualTo_int32(Country.GetEmptyAgitatorSlots, '(int32)1'), 'AGITATOR', 'IG_AGITATORS')]"
+ AVAILABLE_AGITATOR_SLOTS: "Potential for #tooltippable #tooltip:[GetRawTextTooltipTag(Country.GetModifier.GetTooltipFor('country_agitator_slots_add'))] [Country.GetEmptyAgitatorSlots|v]#!#! [SelectLocalization(EqualTo_int32(Country.GetEmptyAgitatorSlots, '(int32)1'), 'AGITATOR', 'IG_AGITATORS')]"
  NO_AVAILABLE_AGITATOR_SLOTS: "All [concept_agitator] slots filled"
  CANNOT_SUPPORT_AGITATORS: "Cannot support any [Concept( 'concept_agitator', '$concept_agitators$' )]"
  CANNOT_SUPPORT_AGITATORS_TOOLTIP: "#r Cannot support any [Concept( 'concept_agitator', '$concept_agitators$' )]#!\n@red_cross! [Concept('concept_revolution', '$concept_revolutionary$')] countries can not have $concept_agitators$"
@@ -7678,6 +7832,7 @@
  formation_travel_track_formation_cancelled_notification_group: "Formation Travel track Formation Cancelled"
  formation_could_not_find_other_formation_to_automatically_merge_into_notification_group: "Formation could not find another Formation to merge into"
  fleet_notification_group: "Fleet"
+ on_impose_law_notification_group: "Law Imposed"
 
  POP_TYPE_SUPPORT_TITLE:1 "#b [PopType.GetName] [concept_interest_group] support in [Country.GetName]:#!"
  POP_TYPE_SUPPORT_SINGLE:0 "[INTEREST_GROUP.GetName]: $SUPPORT_PERCENTAGE|%1v$"
@@ -7808,12 +7963,10 @@
  BUILDING_MOBILIZED_BATTALIONS_TOOLTIP:0 "#header #v [Building.GetNumberOfFullyMobilizedBattalions]#! / [Building.GetNumberOfCombatUnits] [concept_fully_mobilized_battalions] from [Building.GetState.GetName]#!\n$TOOLTIP_DELIMITER$\n#v [Building.GetNumberOfFullyMobilizedBattalions]#! [Concept('concept_battalion','$concept_battalions$')] are [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] out of a total of #v [Building.GetNumberOfCombatUnits]#! from the [Building.GetName] in [Building.GetState.GetName]"
 
  GENERAL_TRAVELING:0 "Traveling"
- GENERAL_TRAVELING_FRONT_PANEL:0 "$GENERAL_TRAVELING$ ([Character.GetDaysToCompleteTravelFormatted])"
- GENERAL_TRAVELING_TOOLTIP:0 "[Character.GetFirstName|v] will arrive in [Front.GetName] in [Character.GetDaysToCompleteTravelFormatted]."
- GENERAL_TRAVELING_TOOLTIP_LESS_THAN_ONE_DAY:0 "[Character.GetFirstName|v] will arrive in [Front.GetName] in less than #variable 1#! day."
  GENERAL_TRAVEL_DAY:0 "day"
  GENERAL_TRAVEL_DAYS:0 "days"
 
+ TRAVEL_TIME_LABEL: "#v $DAYS$d#!"
  FORMATION_TRAVELING: "Traveling"
  FORMATION_TRAVELING_FRONT_PANEL: "$FORMATION_TRAVELING$ (#v [MilitaryFormation.GetTravelDaysLeft] days#!)"
  FORMATION_TRAVELING_TOOLTIP_LESS_THAN_ONE_DAY: "[MilitaryFormation.GetName|v] will arrive in [Front.GetName] in less than #v 1 day#!."
@@ -7838,7 +7991,7 @@
 
  DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_ADD:0 "Designate as a [concept_strategic_objective]"
  DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_REMOVE:0 "Remove from [Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
- DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_ADD_TOOLTIP:1 "Designate [State.GetName] as the [concept_strategic_objective] in the [State.GetTheater(State.GetOwner).GetName|v]"
+ DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_ADD_TOOLTIP:1 "Designate [State.GetName] as the [concept_strategic_objective] in the [State.GetTheater(State.GetController).GetName|v]"
  DESIGNATE_STRATEGIC_OBJECTIVE_RIGHT_CLICK_REMOVE_TOOLTIP:0 "Remove [State.GetName] from [Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
  DESIGNATE_STRATEGIC_OBJECTIVE_TOOLTIP_ADD:0 "Designate $STATE$ as a [concept_strategic_objective]"
  DESIGNATE_STRATEGIC_OBJECTIVE_TOOLTIP_REMOVE:0 "Remove $STATE$ from [Concept('concept_strategic_objective', '$concept_strategic_objectives$')]"
@@ -8028,6 +8181,10 @@
  notification_formation_travel_track_formation_cancelled_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] could no longer track reach [SCOPE.sMilitaryFormation('formation').GetName]."
  notification_formation_travel_track_formation_cancelled_tooltip: "#header $notification_formation_travel_track_formation_cancelled_name$#!\n$notification_formation_travel_track_formation_cancelled_desc$"
 
+ notification_on_impose_law_name: "[SCOPE.sCountry('initiator').GetName] has imposed [SCOPE.sLaw('law').GetName]"
+ notification_on_impose_law_desc: "Our [concept_overlord] [SCOPE.sC('initiator').GetName] is imposing a [SCOPE.sLaw('law').GetName] on us"
+ notification_on_impose_law_tooltip: "#header $notification_on_impose_law_name$#!\n$notification_on_impose_law_desc$"
+
  CONVOY_DAMAGE_REDUCTION_NONE: "There were no escorting navies that could reduce the loss of [concept_convoys]."
  CONVOY_DAMAGE_REDUCTION_DESC: "Escorting fleets were able to avoid the loss of $AMOUNT|v$ additional [concept_convoys]. In total, enemy convoy raiding ships could have destroyed $MAX|v$ of our convoys in the sea node."
 
@@ -8111,7 +8268,7 @@
  DECISIONS:0 "Decisions"
  JOURNAL:0 "Journal"
 
- TOOLTIP_SLAVE_STATE:0 "#header Slave State#!\nBuildings in [State.GetName] either utilize $slaves$ or have the potential to utilize them."
+ TOOLTIP_SLAVE_STATE:0 "#header Slave State#!\nBuildings in [State.GetName] either utilize [GetPopType('slaves').GetName] or have the potential to utilize them."
  SLAVE_STATE:0 "Slave State"
  SLAVE_IMPORT:0 "Importing Slaves"
  SLAVE_EXPORT:0 "Exporting Slaves"
@@ -8200,8 +8357,8 @@
  DIPLO_PLAY_SUPPORTS_INITIATOR_TOOLTIP:0 "#header Supporting#! [DiplomaticPlay.GetInitiator.GetName]"
  DIPLO_PLAY_LEANING_TARGET_TOOLTIP:0 "#header Leaning towards#! [DiplomaticPlay.GetTarget.GetName]"
  DIPLO_PLAY_LEANING_INITIATOR_TOOLTIP:0 "#header Leaning towards#! [DiplomaticPlay.GetInitiator.GetName]"
- DIPLO_PLAY_LEANING_TARGET:0 "Leaning [DiplomaticPlay.GetTarget.GetName]"
- DIPLO_PLAY_LEANING_INITIATOR:0 "Leaning [DiplomaticPlay.GetInitiator.GetName]"
+ DIPLO_PLAY_LEANING_TARGET:0 "Leaning [DiplomaticPlay.GetTarget.GetFlagTextIcon]"
+ DIPLO_PLAY_LEANING_INITIATOR:0 "Leaning [DiplomaticPlay.GetInitiator.GetFlagTextIcon]"
  DIPLO_PLAY_INITIATOR:1 "[concept_initiator]"
  DIPLO_PLAY_TARGET:1 "[concept_target]"
  DIPLO_PLAY_YOU:0 "(You)"
@@ -8271,6 +8428,7 @@
  SINGLE_GOODS_FORMAT:2 "[Goods.GetTextIcon][Nbsp][Goods.GetName]: [SelectLocalization(StringIsEmpty('$DELTA$'), '$AMOUNT$', '$DELTA$')] $SINGLE_GOODS_PRICE_BREAKDOWN$"
  SINGLE_GOODS_FORMAT_WITH_SHORTAGE:2 "[Goods.GetTextIcon][Nbsp][Goods.GetName]: [SelectLocalization(StringIsEmpty('$DELTA$'), '$AMOUNT$', '$DELTA$')] $SINGLE_GOODS_PRICE_BREAKDOWN$ - @goods_shortage! [concept_input_goods_shortage]"
  SINGLE_GOODS_STATE_PRICE_TOOLTIP:0 "#header Price of [Goods.GetName]#!\n$GOODS_STATE_PRICE$[ConcatIfNeitherEmpty('\n', '$GOODS_MARKET_PRICE$')]"
+ STATE_HAS_INPUT_SHORTAGES: "#header [concept_input_goods_shortage]#!\n[State.GetName] has [State.GetNumBuildingsAffectedByGoodsShortage|v] [Concept('concept_building', '$concept_buildings$')] that are suffering from an [concept_input_goods_shortage]"
 
  SELECT_OBJECTIVE_MAIN_TITLE:0 "Select a Game Objective"
  SELECT_OBJECTIVE_TITLE:0 "Objectives"
@@ -8331,6 +8489,27 @@
  AVAILABLE_RURAL_BUILDINGS:0 "Potential Rural Buildings"
  AVAILABLE_DEVELOPMENT_BUILDINGS:0 "Potential Development Buildings"
 
+ PREFERENCE_PREDICTION: "Prediction"
+ PREFERENCE_LABEL: "[SelectLocalization(DiplomaticPlayConfirmation.PredictHasPreferenceForInitiator(Country.Self), 'PREFERENCE_INITIATOR', '')][SelectLocalization(DiplomaticPlayConfirmation.PredictHasPreferenceForTarget(Country.Self), 'PREFERENCE_TARGET', '')]"
+ PREFERENCE_INITIATOR: "[DiplomaticPlayConfirmation.GetInitiatorCountry.GetFlagTextIcon]" 
+ PREFERENCE_TARGET: "[DiplomaticPlayConfirmation.GetTargetCountry.GetFlagTextIcon]"
+ DIPLO_PLAY_SUPPORT_INITIATOR: "[DiplomaticPlayConfirmation.GetInitiatorCountry.GetFlagTextIcon]"
+ DIPLO_PLAY_SUPPORT_INITIATOR_LABEL: "[SelectLocalization(DiplomaticPlayConfirmation.CanJoinInitiator(Country.Self), 'CAN_SUPPORT_INITIATOR', 'CANNOT_SUPPORT')]"
+ CAN_SUPPORT_INITIATOR: "[DiplomaticPlayConfirmation.PredictInitiatorPreferenceScoreFormatted(Country.Self)]"
+
+ DIPLO_PLAY_SUPPORT_TARGET_LABEL: "[SelectLocalization(DiplomaticPlayConfirmation.CanJoinTarget(Country.Self), 'CAN_SUPPORT_TARGET', 'CANNOT_SUPPORT')]"
+ CAN_SUPPORT_TARGET: "[DiplomaticPlayConfirmation.PredictTargetPreferenceScoreFormatted(Country.Self)]"
+
+ PREDICT_PREFERENCE_SCORE_POSITIVE: "#positive_value $VALUE|+=$#!"
+ PREDICT_PREFERENCE_SCORE_NEGATIVE: "#negative_value $VALUE|+=$#!"
+ PREDICT_PREFERENCE_SCORE_NEUTRAL: "#v $VALUE|=$#!"
+
+ CANNOT_SUPPORT: "#title N/A#!"
+ OUR_SIDE: "Our Side"
+ ENEMY_SIDE: "Enemy Side"
+
+ DIPLO_PLAY_SUPPORT_TARGET: "[DiplomaticPlayConfirmation.GetTargetCountry.GetFlagTextIcon]"
+
  URBAN_BUILDINGS_IN_COUNTRY:0 "Urban Buildings in [GetPlayer.GetName]"
  RURAL_BUILDINGS_IN_COUNTRY:0 "Rural Buildings in [GetPlayer.GetName]"
  DEVELOPMENT_BUILDINGS_IN_COUNTRY:0 "Development Buildings in [GetPlayer.GetName]"
@@ -8381,6 +8560,10 @@
  LOAD_INGAME_BUTTON_DISABLED_NOSAVES:0 "You have no saved games"
  LOAD_INGAME_BUTTON_DISABLED:0 "Loading saved games disabled"
 
+ OUTDATED_MOD_ENTRY: "• $MOD_NAME$ (supports $MOD_VERSION$)"
+ OUTDATED_MODS_ALERT_EXIT_GAME: "$QUIT$"
+ OUTDATED_MODS_ALERT_IGNORE: "@warning! Ignore"
+
  BUILDING_GENERAL_INFO_HEADER:0 "#title General Info#!:"
  BUILDING_TYPE_PORT_GENERAL_INFO:2 "Building a [GetBuildingType('building_port').GetName] may connect the [concept_state] it's built in to a [concept_market]"
  BUILDING_PORT_GENERAL_INFO_BUILT_AND_CONNECTS:3 "This or other [GetBuildingType('building_port').GetName] $concept_buildings$ in [STATE.GetName] connect it to the [MARKET.GetName]"
@@ -8414,11 +8597,19 @@
  #COMBAT_UNIT_VETERANCY_TOOLTIP:0 "#header [concept_veterancy_level]#!\nCurrent: #v [CombatUnit.GetCurrentVeterancyLevelName]#!\n$TOOLTIP_DELIMITER$\n#v [CombatUnit.GetCurrentExperienceTowardsNextLevel]#!/[CombatUnit.GetNeededExperienceForNextLevel] [concept_unit_experience]\n[CombatUnit.GetExperienceGainDescription]"
  COMBAT_UNIT_AT_MAX_LEVEL:0 "Unit has reached their highest [concept_veterancy_level]"
 
- COMBAT_UNIT_TOOLTIP: "#header [CombatUnit.GetName]#!\nFrom [CombatUnit.GetBuilding.GetName] in [CombatUnit.GetBuilding.GetState.GetName]\n[SelectLocalization(Or(CombatUnit.IsMobilizing, CombatUnit.IsFullyMobilized), SelectLocalization(CombatUnit.IsFullyMobilized, 'COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZED', 'COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZING'), 'COMBAT_UNIT_MOBILIZATION_STATUS_DEMOBILIZED')]\n$TOOLTIP_DELIMITER$\n[CombatUnit.GetManpowerFormatted] [concept_manpower]\n[CombatUnit.GetMorale] [concept_morale]\n\n[CombatUnit.GetOffenseFormatted] [concept_offense]\n[CombatUnit.GetDefenseFormatted] [concept_defense]"
+ COMBAT_UNIT_TOOLTIP: "#header [CombatUnit.GetName]#!\nFrom [CombatUnit.GetBuilding.GetName] in [CombatUnit.GetBuilding.GetState.GetName][ConcatIfNeitherEmpty('\n', AddLocalizationIf(CombatUnit.IsArmyUnit, 'COMBAT_UNIT_TOOLTIP_MOBILIZED_STATUS'))]\n$TOOLTIP_DELIMITER$\n[CombatUnit.GetManpowerFormatted] [concept_manpower]\n[CombatUnit.GetMorale] [concept_morale]\n\n[CombatUnit.GetOffenseFormatted] [concept_offense]\n[CombatUnit.GetDefenseFormatted] [concept_defense]"
+
+ COMBAT_UNIT_TOOLTIP_MOBILIZED_STATUS: "[SelectLocalization(Or(CombatUnit.IsMobilizing, CombatUnit.IsFullyMobilized), SelectLocalization(CombatUnit.IsFullyMobilized, 'COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZED', 'COMBAT_UNIT_MOBILIZATION_STATUS_MOBILIZING'), 'COMBAT_UNIT_MOBILIZATION_STATUS_DEMOBILIZED')]"
 
  POP_SIZE_TITLE:0 "[Concept('concept_pop','$concept_population$')]"
  PIN_CHARACTER:0 "Pin [Character.GetFullName] to the Outliner"
  UNPIN_CHARACTER:0 "Unpin [Character.GetFullName] from the Outliner"
+ PIN_DIPLOMATIC_PLAY:0 "Pin [DiplomaticPlay.GetName] to the Outliner"
+ UNPIN_DIPLOMATIC_PLAY:0 "Unpin [DiplomaticPlay.GetName] from the Outliner"
+ PIN_POLITICAL_MOVEMENT:0 "Pin [PoliticalMovement.GetName] to the Outliner"
+ UNPIN_POLITICAL_MOVEMENT:0 "Unpin [PoliticalMovement.GetName] from the Outliner"
+ PIN_COUNTRY:0 "Pin [Country.GetName] to the Outliner"
+ UNPIN_COUNTRY:0 "Unpin [Country.GetName] from the Outliner"
  PIN_IG:0 "Pin [InterestGroup.GetName] to the Outliner"
  UNPIN_IG:0 "Unpin [InterestGroup.GetName] from the Outliner"
  PIN_JOURNAL_ENTRY:0 "Pin [JournalEntry.GetName] to the Outliner"
@@ -8456,7 +8647,9 @@
 
  JOURNAL_ENTRY_POSSIBLE_ACTIONS: "[JournalEntry.GetNumPossibleScriptedButtons|v] possible action[SelectLocalization(GreaterThan_int32(JournalEntry.GetNumPossibleScriptedButtons, '(int32)1'), 's', '')]"
 
- RANKING_FORMAT:0 "(#tooltippable #tooltip:$LEADERBOARD$ #v ##$RANKING$#!#!#! worldwide)"
+ BEHAVIOR: "Behavior"
+
+ RANKING_FORMAT:0 "#tooltippable #tooltip:$LEADERBOARD$ #v ##$RANKING$#!#!#!"
  GDP_LEADERBOARD_HEADER:0 "#header GDP#!"
  GDP_PER_CAPITA_LEADERBOARD_HEADER:0 "#header GDP per Capita#!"
  SOL_LEADERBOARD_HEADER:0 "#header Standard of Living#!"
@@ -8475,6 +8668,8 @@
  COMMANDER_RANK_LOC_KEY:0 "[Concept('concept_commander_rank','$concept_commander_rank_short$')] "
  
  EDIT: "Edit"
+ CUSTOMIZE_NAME_AND_EMBLEM: "Customize name and emblem"
+ CUSTOMIZE: "Customize"
  CHANGE_NAME: "Change name"
  CUSTOMISE_MILITARY_FORMATION: "Customize Formation"
  UNIT_NAMES: "Unit Names"
@@ -8489,7 +8684,13 @@
  COMPANY_INVALID: "Invalid company"
  COMPANY_NOT_YOURS: "Player does not own this company."
 
- 
+ SUPPORT_INITIATOR: "Support [DiplomaticPlay.GetInitiator.GetName]"
+ REVERSE_SWAY_INITIATOR: "Offer Support to [DiplomaticPlay.GetInitiator.GetName] ([SelectLocalization(DiplomaticPlay.WouldAcceptAnySway( GetPlayer.Self, DiplomaticPlay.GetInitiator ), 'CAN_SWAY_ICON', 'CAN_NOT_SWAY_ICON')])"
+ SUPPORT_TARGET: "Support [DiplomaticPlay.GetTarget.GetName]"
+ REVERSE_SWAY_TARGET: "Offer Support to [DiplomaticPlay.GetTarget.GetName] ([SelectLocalization(DiplomaticPlay.WouldAcceptAnySway( GetPlayer.Self, DiplomaticPlay.GetTarget ), 'CAN_SWAY_ICON', 'CAN_NOT_SWAY_ICON')])"
+ CAN_SWAY_ICON: "@approves!"
+ CAN_NOT_SWAY_ICON: "@disapproves!"
+
  SCRIPTED_ACTION_TOOLTIP:2 "#header [ScriptedButton.GetName]#! [AddLocalizationIf(ScriptedButton.IsSelected, 'SCRIPTED_ACTION_TOOLTIP_IS_SELECTED')][ConcatIfNeitherEmpty('\n', ScriptedButton.GetDesc)]\n$TOOLTIP_DELIMITER$\n[ScriptedButton.GetPossibleDesc]\n\n#title Effects:#!\n[ScriptedButton.GetEffectDesc]"
  SCRIPTED_ACTION_TOOLTIP_IS_SELECTED: "#i (Selected)#!"
 

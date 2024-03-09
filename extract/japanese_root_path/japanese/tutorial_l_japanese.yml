@@ -449,7 +449,7 @@
  ### HOW
  lesson_fix_unproductive_building_how_1: "$concept_unproductive$ $concept_building$の収益を改善する"
  lesson_fix_unproductive_building_how_1_desc: "[Concept('concept_building', '$concept_building_possessive$')]における低い[concept_productivity]をお手軽に修正する方法は存在しません！$concept_building$の作業工程を確認して、何が問題なのかを突き止めましょう。"
- lesson_fix_unproductive_building_how_1_continue: "[GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName]の[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName]にある$concept_building$詳細パネルを開く"
+ lesson_fix_unproductive_building_how_1_continue: "マップをクリックして$concept_state$ tab of [GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName]を開きます。$concept_state$ $concept_building$タブで[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] $concept_building$を選択します。"
  lesson_fix_unproductive_building_how_2_back: "撤回するには[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName]パネルを閉じる必要があります"
  lesson_fix_unproductive_building_how_2: "$lesson_fix_unproductive_building_how_1$"
  lesson_fix_unproductive_building_how_2_desc: "工程の搬入側にある[Concept('concept_good', '$concept_goods$')]があまりにも高額である場合、価格を抑制することに注力することができます。これは商品を生産する[Concept('concept_building', '$concept_buildings$')]を拡張したり、これらの$concept_goods$を自国の[concept_market]に輸入することで達成できます。"

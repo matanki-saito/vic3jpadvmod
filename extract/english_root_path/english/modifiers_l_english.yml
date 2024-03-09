@@ -1053,6 +1053,8 @@
  modifier_building_group_bg_mining_machinists_standard_of_living_add_desc:1 "An increase or decrease in the $modifier_building_group_bg_mining_machinists_standard_of_living_add$"
  modifier_building_group_bg_mining_laborers_mortality_mult:1 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $laborers$ employed in Mines"
  modifier_building_group_bg_mining_laborers_mortality_mult_desc:1 "An increase or decrease in the $modifier_building_group_bg_mining_laborers_mortality_mult$"
+ modifier_building_group_bg_mining_slaves_mortality_mult: "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $slaves$ employed in Mines"
+ modifier_building_group_bg_mining_slaves_mortality_mult_desc: "An increase or decrease in the $modifier_building_group_bg_mining_slaves_mortality_mult$"
  modifier_building_group_bg_mining_laborers_standard_of_living_add:0 "[concept_sol] of $laborers$ employed in Mines"
  modifier_building_group_bg_mining_laborers_standard_of_living_add_desc:1 "An increase or decrease in the $modifier_building_group_bg_mining_laborers_standard_of_living_add$"
  modifier_building_group_bg_agriculture_laborers_mortality_mult:1 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $laborers$ employed in Agriculture"
@@ -1089,6 +1091,8 @@
  modifier_building_group_bg_logging_machinists_mortality_mult_desc:1 "An increase or decrease in the $modifier_building_group_bg_logging_machinists_mortality_mult$"
  modifier_building_group_bg_logging_engineers_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $engineers$ employed in Logging"
  modifier_building_group_bg_logging_engineers_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_logging_engineers_mortality_mult$"
+ modifier_building_group_bg_logging_slaves_mortality_mult: "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $slaves$ employed in Logging"
+ modifier_building_group_bg_logging_slaves_mortality_mult_desc: "An increase or decrease in the $modifier_building_group_bg_logging_slaves_mortality_mult$"
  modifier_building_group_bg_oil_extraction_laborers_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $laborers$ employed in Oil Extraction"
  modifier_building_group_bg_oil_extraction_laborers_mortality_mult_desc:0 "An increase or decrease in the $modifier_building_group_bg_oil_extraction_laborers_mortality_mult$"
  modifier_building_group_bg_oil_extraction_machinists_mortality_mult:0 "[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')] of $machinists$ employed in Oil Extraction"
@@ -1792,7 +1796,9 @@
  modifier_state_infrastructure_mult_desc:1 "$modifier_state_infrastructure_add_desc$"
  modifier_state_region_sea_infrastructure_access_add:0 "State Region Sea Infrastructure Access"
  modifier_state_region_sea_infrastructure_access_add_desc:0 "Caps how much [concept_infrastructure] a state region can be influenced by through adjacent sea regions"
-
+ modifier_state_infrastructure_from_automobiles_consumption_add: "Infrastructure from Pop @automobiles! $automobiles$ Consumption"
+ modifier_state_infrastructure_from_automobiles_consumption_add_desc: "The amount of [concept_state] [concept_infrastructure] added for each unit of @automobiles! $automobiles$ consumed by the [Concept('concept_pop', '$concept_pops$')] that live there"
+ 
  modifier_country_construction_add:1 "@construction![Nbsp][concept_construction]"
  modifier_country_construction_add_desc:0 "The amount of @construction! Construction produced by a $building_construction_sector$"
  modifier_state_construction_mult:1 "State Construction Efficiency"
@@ -1952,6 +1958,8 @@
  modifier_country_disallow_migration_desc:1 "This country does not permit any of its [Concept('concept_pop', '$concept_pops$')] to [Concept('concept_migration', '$concept_migrate$')]"
  modifier_country_disallow_agitator_invites: "Disallowed from inviting [Concept('concept_exile', '$concept_exiles$')]"
  modifier_country_disallow_agitator_invites_desc: "This country does not permit the invitation of [Concept('concept_exile', '$concept_exiles$')]"
+ modifier_country_disallow_aggressive_plays: "Disallow Aggressive Diplomatic Plays"
+ modifier_country_disallow_aggressive_plays_desc: "Not allowed to start [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] against other [Concept('concept_country','$concept_countries$')]"
 
  modifier_country_embargo_all_goods:0 "Permission to Embargo all Goods"
  modifier_country_embargo_all_goods_desc:0 "Legal permission to embargo all categories of goods"

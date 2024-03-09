@@ -1120,8 +1120,6 @@
   agitators_election_events.44.a: "Simple and true. Remarkable!"
   agitators_election_events.44.b: "There's more to lawmaking than this."
   agitators_election_events.44.c: "And what about the women?"
-  # The below is a fake tooltip
-  agitators_election_events.44.c.tt: "[SCOPE.sCountry('self_referential_reference').GetName] gets #tooltippable A Hand to Women#!\n#P +10.00%#! #tooltippable_name Women's Suffrage#! #tooltippable_concept Pop#! #tooltippable_name Support#!"
 
   agitators_election_events.45.t: "To Decapitate a Serpent"
   agitators_election_events.45.d: "[SCOPE.sCharacter('agitator_scope').GetFullName] has ambushed a royal appearance in [SCOPE.sState('capital_scope').GetCityHubName] for a simple announcement: the [SCOPE.sParty('agitator_party_scope').GetName] are wholly committed to the establishment of a republic."
@@ -2066,11 +2064,21 @@
   notification_government_petition_start_desc: "The [SCOPE.gsInterestGroup('government_petition_ig').GetName] have petitioned the government to pass [SCOPE.sLaw('government_petition_law').GetName]."
   notification_government_petition_start_tooltip: "#header $notification_government_petition_start_name$#!\n$TOOLTIP_DELIMITER$\n$notification_government_petition_start_desc$"
   government_petition_tt: "The [SCOPE.gsInterestGroup('government_petition_ig').GetName] will expect the government to pass [SCOPE.sLaw('government_petition_law').GetName] within the next five years."
+  government_petition_2_tt: "The [SCOPE.gsInterestGroup('government_petition_ig').GetName] will expect the government to pass [SCOPE.sLaw('government_petition_law_2').GetName] within the next five years."
 
   government_petition_events.1.t: "[SCOPE.gsInterestGroup('government_petition_ig').GetName] Petition Government"
   government_petition_events.1.d: "Representing his constituents in the [SCOPE.gsInterestGroup('government_petition_ig').GetName], [SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName] has issued a formal petition to the [ROOT.GetCountry.GetAdjective] government to pass [SCOPE.sLaw('government_petition_law').GetName]."
   government_petition_events.1.f: ""Er, one last matter for the day, sir. Members of your constituency arrived this morning. They're... asking rather loudly and insistently... if you would meet with them about new legislation."\n\n"Is that it? Goodness, you seem as if you've seen a ghost. I'm sure I can spare the last hours of light for them, can't I?"\n\n"I-I believe so, sir. They weren't taking 'no' for an answer.""
   government_petition_events.1.a: "We will see what we can do."
+  government_petition_events.1.b: "Offer them [SCOPE.sLaw('government_petition_law_2').GetName] as a compromise."
+  government_petition_events.1.c1: "They must understand the present situation does not allow for this."
+  government_petition_events.1.c2: "They must understand the present situation does not allow for this."
+
+  government_petition_blown_off_tt: "The petition will be #bold rejected#!. Doing this multiple times for the same [concept_interest_group] will have worse consequences."
+  government_petition_blown_off_2_tt: "The petition will be #bold rejected#!, at significant political cost. Doing this multiple times for the same [concept_interest_group] will have worse consequences."
+
+  modifier_petition_rejected_legitimacy: "Unresponsive Governance"
+  modifier_petition_rejected_ig_opinion: "Rejected Petition"
 
   ### Divided Monarchist Rework
   modifier_reasonable_monarchist_partisan: "Respectable Partisanship"

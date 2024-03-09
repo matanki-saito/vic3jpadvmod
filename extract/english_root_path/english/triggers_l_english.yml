@@ -652,16 +652,7 @@
  TRIGGER_MAX_ORGANIZATION_NOT: "Maximum effective [concept_organization] is #bold not #!$COMPARATOR$ #variable $NUM|v^2$#! (currently: $CURRENT_VALUE|v^2$)"
  TRIGGER_MAX_ORGANIZATION_THIRD: "Maximum effective [concept_organization] of [MILITARYFORMATION.GetName] is $COMPARATOR$ #variable $NUM|v^2$#! (currently: $CURRENT_VALUE|v^2$)"
  TRIGGER_MAX_ORGANIZATION_THIRD_NOT: "Maximum effective [concept_organization] of [MILITARYFORMATION.GetName] is #bold not #!$COMPARATOR$ #variable $NUM|v^2$#! (currently: $CURRENT_VALUE|v^2$)"
- 
- TRIGGER_ARMY_RESERVES:0 "Army Reserves are $COMPARATOR$ $NUM|v$"
- TRIGGER_ARMY_RESERVES_NOT:1 "Army Reserves are #bold not #!$COMPARATOR$ $NUM|v$"
- TRIGGER_ARMY_RESERVES_FIRST:0 "[Country.GetAdjectiveNoFlag] Army Reserves are $COMPARATOR$ $NUM|v$"
- TRIGGER_ARMY_RESERVES_FIRST_NOT:1 "[Country.GetAdjectiveNoFlag] Army Reserves are #bold not #!$COMPARATOR$ $NUM|v$"
- TRIGGER_ARMY_RESERVES_THIRD:0 "Army Reserves in [Country.GetName] are $COMPARATOR$ $NUM|v$"
- TRIGGER_ARMY_RESERVES_THIRD_NOT:1 "Army Reserves in [Country.GetName] are #bold not #!$COMPARATOR$ $NUM|v$"
 
- TRIGGER_NAVY_RESERVES:0 "Navy Reserves are $COMPARATOR$ $NUM|v$"
- TRIGGER_NAVY_RESERVES_NOT:1 "Navy Reserves are #bold not #!$COMPARATOR$ $NUM|v$"
  
  TRIGGER_QUALITY_OF_LIFE:0 "Standard of living $COMPARATOR$ #variable $NUM$#!"
  TRIGGER_QUALITY_OF_LIFE_NOT:1 "Standard of living #bold not #!$COMPARATOR$ #variable $NUM$#!"
@@ -924,6 +915,38 @@
  TRIGGER_IS_MASS_MIGRATION_TARGET:3 "[concept_state] [STATE.GetName] is a [concept_migration_target]"
  TRIGGER_IS_MASS_MIGRATION_TARGET_NOT:3 "[concept_state] [STATE.GetName] is #bold not #!a [concept_migration_target]"
  
+ TRIGGER_STATE_MIGRATION_PULL_GREATER_THAN:           "[concept_migration_pull] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_GREATER_THAN_THIRD:     "[concept_migration_pull] of [STATE.GetName] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_GREATER_OR_EQUAL:       "[concept_migration_pull] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_GREATER_OR_EQUAL_THIRD: "[concept_migration_pull] of [STATE.GetName] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_LESS_THAN:              "[concept_migration_pull] is less than $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_LESS_THAN_THIRD:        "[concept_migration_pull] of [STATE.GetName] is less than $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_LESS_OR_EQUAL:          "[concept_migration_pull] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_LESS_OR_EQUAL_THIRD:    "[concept_migration_pull] of [STATE.GetName] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_EQUAL:                  "[concept_migration_pull] is $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_EQUAL_THIRD:            "[concept_migration_pull] of [STATE.GetName] is $TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_NOT_EQUAL:              "[concept_migration_pull] is #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_STATE_MIGRATION_PULL_NOT_EQUAL_THIRD:        "[concept_migration_pull] of [STATE.GetName] is #bold not #!$TARGET_VALUE|0v$"
+
+ TRIGGER_COUNTRY_MIGRATION_PULL_GREATER_THAN: "[concept_mass_migration_pull] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_GREATER_THAN_FIRST: "[concept_mass_migration_pull] of [COUNTRY.GetNameNoFlag] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_GREATER_THAN_THIRD: "[concept_mass_migration_pull] of [COUNTRY.GetName] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_GREATER_OR_EQUAL: "[concept_mass_migration_pull] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_GREATER_OR_EQUAL_FIRST: "[concept_mass_migration_pull] of [COUNTRY.GetNameNoFlag] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_GREATER_OR_EQUAL_THIRD: "[concept_mass_migration_pull] of [COUNTRY.GetName] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_LESS_THAN: "[concept_mass_migration_pull] is less than $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_LESS_THAN_FIRST: "[concept_mass_migration_pull] of [COUNTRY.GetNameNoFlag] is less than $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_LESS_THAN_THIRD: "[concept_mass_migration_pull] of [COUNTRY.GetName] is less than $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_LESS_OR_EQUAL: "[concept_mass_migration_pull] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_LESS_OR_EQUAL_FIRST: "[concept_mass_migration_pull] of [COUNTRY.GetNameNoFlag] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_LESS_OR_EQUAL_THIRD: "[concept_mass_migration_pull] of [COUNTRY.GetName] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_EQUAL: "[concept_mass_migration_pull] is $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_EQUAL_FIRST: "[concept_mass_migration_pull] of [COUNTRY.GetNameNoFlag] is $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_EQUAL_THIRD: "[concept_mass_migration_pull] of [COUNTRY.GetName] is $TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_NOT_EQUAL: "[concept_mass_migration_pull] is #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_NOT_EQUAL_FIRST: "[concept_mass_migration_pull] of [COUNTRY.GetNameNoFlag] is #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_COUNTRY_MIGRATION_PULL_NOT_EQUAL_THIRD: "[concept_mass_migration_pull] of [COUNTRY.GetName] is #bold not #!$TARGET_VALUE|0v$"
+
  TRIGGER_IS_SPLIT_STATE:1 "Is a [concept_split_state]"
  TRIGGER_IS_SPLIT_STATE_NOT:2 "Is #bold not #!a [concept_split_state]"
  TRIGGER_IS_SPLIT_STATE_FIRST:0 "$TRIGGER_IS_SPLIT_STATE_THIRD$"
@@ -1417,12 +1440,17 @@
  TRIGGER_COUNTRY_CAN_HAVE_MASS_MIGRATION_TO_THIRD: "[COUNTRY.GetName] can have migration to [TARGET_COUNTRY.GetName]"
  TRIGGER_COUNTRY_CAN_HAVE_MASS_MIGRATION_TO_THIRD_NOT: "[COUNTRY.GetName] can #bold not#! have migration to [TARGET_COUNTRY.GetName]"
 
- TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO: "Can migrate to [TARGET_COUNTRY.GetName]"
- TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_NOT: "Can #bold not#! migrate to [TARGET_COUNTRY.GetName]"
- TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_FIRST: "[CULTURE.GetName] pops can migrate to [TARGET_COUNTRY.GetName]"
- TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_FIRST_NOT: "[CULTURE.GetName] pops can #bold not#! migrate to [TARGET_COUNTRY.GetName]"
- TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_THIRD: "[CULTURE.GetName] pops can migrate to [TARGET_COUNTRY.GetName]"
- TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_THIRD_NOT: "[CULTURE.GetName] pops can #bold not#! migrate to [TARGET_COUNTRY.GetName]"
+ TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_COUNTRY: "Can migrate to [TARGET_COUNTRY.GetName]"
+ TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_COUNTRY_NOT: "Can #bold not#! migrate to [TARGET_COUNTRY.GetName]"
+ TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_COUNTRY_FIRST: "[CULTURE.GetName] pops can migrate to [TARGET_COUNTRY.GetName]"
+ TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_COUNTRY_FIRST_NOT: "[CULTURE.GetName] pops can #bold not#! migrate to [TARGET_COUNTRY.GetName]"
+ TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_COUNTRY_THIRD: "[CULTURE.GetName] pops can migrate to [TARGET_COUNTRY.GetName]"
+ TRIGGER_CULTURE_CAN_HAVE_MASS_MIGRATION_TO_COUNTRY_THIRD_NOT: "[CULTURE.GetName] pops can #bold not#! migrate to [TARGET_COUNTRY.GetName]"
+
+ TRIGGER_STATE_IS_ELIGIBLE_AS_MASS_MIGRATION_TARGET: "Is eligible as a [Concept('concept_migration_target', '$concept_mass_migration_target$')]."
+ TRIGGER_STATE_IS_ELIGIBLE_AS_MASS_MIGRATION_TARGET_NOT: "Is #b not#! eligible as a [Concept('concept_migration_target', '$concept_mass_migration_target$')]."
+ TRIGGER_STATE_IS_ELIGIBLE_AS_MASS_MIGRATION_TARGET_THIRD: "[STATE.GetName] is eligible as a [Concept('concept_migration_target', '$concept_mass_migration_target$')]."
+ TRIGGER_STATE_IS_ELIGIBLE_AS_MASS_MIGRATION_TARGET_THIRD_NOT: "[STATE.GetName] is #b not#! eligible as a [Concept('concept_migration_target', '$concept_mass_migration_target$')]."
 
  TRIGGER_NAVAL_POWER_PROJECTION: "Has a naval [concept_power_projection] $COMPARATOR$ $NUM|v$"
  TRIGGER_NAVAL_POWER_PROJECTION_NOT: "Does #bold not #!have a naval [concept_power_projection] $COMPARATOR$ $NUM|v$"
@@ -1678,9 +1706,6 @@
  TRIGGER_IS_SUBSIDIZED_NOT:3 "Is #bold not #![Concept('concept_subsidies', '$concept_subsidized$')]"
  TRIGGER_IS_SUBSIDIZED_THIRD:1 "[BUILDING.GetName] is [Concept('concept_subsidies', '$concept_subsidized$')]"
  TRIGGER_IS_SUBSIDIZED_THIRD_NOT:1 "[BUILDING.GetName] is #bold not #![Concept('concept_subsidies', '$concept_subsidized$')]"
- 
- TRIGGER_IS_REPAIRING:0 "[Character.GetFullName] is busy repairing after losing a naval battle"
- TRIGGER_IS_REPAIRING_NOT:1 "[Character.GetFullName] has #bold not #!lost a naval battle recently"
  
  TRIGGER_IS_ADVANCING_ON_FRONT:0 "[CHARACTER.GetFullName] is advancing on [TARGET_FRONT.GetName]"
  TRIGGER_IS_ADVANCING_ON_FRONT_NOT:1 "[CHARACTER.GetFullName] is #bold not #!advancing on [TARGET_FRONT.GetName]"
@@ -3007,7 +3032,7 @@
 
  TRIGGER_TRADE_GOODS_EQUAL:0 "[Concept('concept_good', '$concept_goods$')] are [TARGET_GOODS.GetName]"
  TRIGGER_TRADE_GOODS_EQUAL_NOT:0 "[Concept('concept_good', '$concept_goods$')] are #bold not #![TARGET_GOODS.GetName]"
-
+ 
  TRIGGER_YEAR_EQUAL:0 "Year is $NUM$"
  TRIGGER_YEAR_EQUAL_NOT:0 "Year is #bold not #!$NUM$"
  TRIGGER_YEAR_LESS_THAN:0 "Before $NUM$"
@@ -3021,6 +3046,13 @@
  TRIGGER_COUNTRY_DIRECT_LINK_EQUAL_FIRST_NOT:0 "Your country is #b not#! [COUNTRY.GetName]"
  TRIGGER_COUNTRY_DIRECT_LINK_THIRD_EQUAL:0 "They are [COUNTRY.GetName]"
  TRIGGER_COUNTRY_DIRECT_LINK_EQUAL_THIRD_NOT:0 "They are #b not#! [COUNTRY.GetName]"
+
+ TRIGGER_THIS_COUNTRY_DIRECT_LINK_EQUAL:0 "Is [TARGET_COUNTRY.GetName]"
+ TRIGGER_THIS_COUNTRY_DIRECT_LINK_EQUAL_NOT:0 "Is #b not#! [TARGET_COUNTRY.GetName]"
+ TRIGGER_THIS_COUNTRY_DIRECT_LINK_FIRST_EQUAL:0 "Your country is [TARGET_COUNTRY.GetName]"
+ TRIGGER_THIS_COUNTRY_DIRECT_LINK_EQUAL_FIRST_NOT:0 "Your country is #b not#! [TARGET_COUNTRY.GetName]"
+ TRIGGER_THIS_COUNTRY_DIRECT_LINK_THIRD_EQUAL:0 "They are [TARGET_COUNTRY.GetName]"
+ TRIGGER_THIS_COUNTRY_DIRECT_LINK_EQUAL_THIRD_NOT:0 "They are #b not#! [TARGET_COUNTRY.GetName]"
 	
  TRIGGER_TAX_CAPACITY_GREATER_THAN:0 "The amount of [concept_tax_capacity] is greater than $TARGET_VALUE|0v$"
  TRIGGER_TAX_CAPACITY_GREATER_THAN_NOT:0 "The amount of [concept_tax_capacity] is #bold not #!greater than $TARGET_VALUE|0v$"
@@ -3182,6 +3214,11 @@ TRIGGER_HAS_CULTURAL_COMMUNITY_THIRD: "#todo There is a [CULTURE.GetName] cultur
 TRIGGER_HAS_CULTURAL_COMMUNITY_THIRD_NOT: "#todo There is #b not#! a [CULTURE.GetName] cultural community in [STATE.GetName]#!"
 TRIGGER_CULTURE_HAS_COMMUNITY_IN_STATE: "#todo Has a cultural community in [STATE.GetName]#!"
 TRIGGER_CULTURE_HAS_COMMUNITY_IN_STATE_NOT: "#todo Does #b not#! have a cultural community in [STATE.GetName]#!"
+
+ TRIGGER_NUM_CULTURAL_COMMUNITIES: "Number of [Concept('concept_cultural_community','$concept_cultural_communities$')] is $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_NUM_CULTURAL_COMMUNITIES_NOT: "Number of [Concept('concept_cultural_community','$concept_cultural_communities$')] is #bold not #!$COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_NUM_CULTURAL_COMMUNITIES_THIRD: "Number of [Concept('concept_cultural_community','$concept_cultural_communities$')] in [STATE.GetName] is $COMPARATOR$ #variable $NUM$#!"
+ TRIGGER_NUM_CULTURAL_COMMUNITIES_THIRD_NOT: "Number of [Concept('concept_cultural_community','$concept_cultural_communities$')] in [STATE.GetName] is #bold not #!$COMPARATOR$ #variable $NUM$#!"
 
  TRIGGER_IS_NAVAL_INVASION_STALLED_DUE_TO_ORDERS: "[concept_naval_invasion] is stalled due to unsuitable [concept_admiral] [Concept('concept_order','$concept_orders$')]"
  TRIGGER_IS_NAVAL_INVASION_STALLED_DUE_TO_ORDERS_NOT: "[concept_naval_invasion] is #b not#! stalled due to unsuitable [concept_admiral] [Concept('concept_order','$concept_orders$')]"

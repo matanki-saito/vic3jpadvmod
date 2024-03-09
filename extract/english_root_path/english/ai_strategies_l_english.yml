@@ -122,7 +122,7 @@
  ATTITUDE_DETAILS:0 "[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetReasonsDesc]\n\n[COUNTRY.GetAttitudeTowards(TARGET_COUNTRY.Self).GetStrategicDesireDesc]"
   
  ai_attitude_human:0 "#V Human#!"
- ai_attitude_human_desc:0 "[COUNTRY.GetName] is controlled by a human player, and their attitude towards [GetPlayer.GetName] is entirely up to them."
+ ai_attitude_human_desc:0 "[Country.GetName] is controlled by a human player, and their attitude towards [GetPlayer.GetName] is entirely up to them."
  ai_attitude_human_tooltip:0 "#header $ai_attitude_human$#!\n$ai_attitude_human_desc$"
  
  ai_attitude_disinterested:0 "#V Disinterested#!"
@@ -175,7 +175,7 @@
   
  ATTITUDE_SCORE_NEUTRAL_FORMAT:0 "#v $SCORE|=0$#!"
  ATTITUDE_SCORE_FORMAT:0 "#v $SCORE|=0+$#!"
- AI_STRATEGIC_DESIRE:1 "[COUNTRY.GetAdjectiveNoFormatting] [concept_strategic_desire] towards [TARGET_COUNTRY.GetNameNoFormatting]: #v $STRATEGIC_DESIRE$#!"
+ AI_STRATEGIC_DESIRE:1 "[concept_strategic_desire] towards [TARGET_COUNTRY.GetYouOrCountryName]: #v $STRATEGIC_DESIRE$#!"
  AI_ATTITUDE_SCORE:0 "This is derived from [COUNTRY.GetName]'s [concept_attitude] score of  $ATTITUDE_SCORE$ towards [TARGET_COUNTRY.GetName]:"
   
  AI_REASON_FORMAT:0 "$DESC$: $SCORE|=0+$"

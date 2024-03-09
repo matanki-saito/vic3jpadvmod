@@ -851,7 +851,7 @@
  citizenship_laws.4.b: "[SCOPE.gsInterestGroup('supporting_ig').GetLeader.GetFullName] のリーダーシップは、この不確かな時代に必要とされている。"
  citizenship_laws.5.t: "泥棒と嘘つき"
  citizenship_laws.5.d: "[SCOPE.sPoliticalMovement('discrimination_movement').GetName]に対する運動は、宣伝攻勢を始め、[SCOPE.sCulture('future_accepted_pop').GetName]の人々を、新たな[SCOPE.sLaw('current_law_scope').GetName]法のもとで横行することを許された犯罪者として描いています。"
- citizenship_laws.5.f: "「はい、パンフレットは読みましたよ。目新しいことは何もありませんね。[SCOPE.sPop('future_accepted_pop').GetCulture.GetNameNoFormatting]は泥棒であり、[SCOPE.sCulture('future_accepted_pop').GetNameNoFormatting] は乱暴な暴漢であり、[SCOPE.sCulture('future_accepted_pop').GetNameNoFormatting]の文化は本質的に腐敗し、人種差別の廃止は[ROOT.GetCountry.GetNameNoFormatting]に行き着くらしいですね。[SCOPE.sCulture('future_accepted_pop').GetNameNoFormatting]の絵は、ボロボロの服を着て、どことなく私の父に似ていますね。私たちの多くが貧困にあえいでいるのは、現行法が私たちをそこへと追いやっているからだと考えたことはあるのでしょうか？」"
+ citizenship_laws.5.f: "「はい、パンフレットは読みましたよ。目新しいことは何もありませんね。[SCOPE.sCulture('future_accepted_pop').GetNameNoFormatting]は泥棒であり、[SCOPE.sCulture('future_accepted_pop').GetNameNoFormatting]は乱暴な暴漢であり、[SCOPE.sCulture('future_accepted_pop').GetNameNoFormatting]の文化は本質的に腐敗し、人種差別の廃止は[ROOT.GetCountry.GetNameNoFormatting]に行き着くらしいですね。[SCOPE.sCulture('future_accepted_pop').GetNameNoFormatting]の絵は、ボロボロの服を着て、どことなく私の父に似ていますね。私たちの多くが貧困にあえいでいるのは、現行法が私たちをそこへと追いやっているからだと考えたことはあるのでしょうか？」"
  citizenship_laws.5.a: "私たちは、このような卑劣な嘘に立ち向かう必要がある。"
  citizenship_laws.5.b: "泣き言は言わせておけ。"
  citizenship_laws.6.t: "[SCOPE.sCulture('future_accepted_pop').GetName]の顧客への反対"

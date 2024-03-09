@@ -556,7 +556,7 @@
  ### HOW
  lesson_fix_unproductive_building_how_1:0 "Improve an $concept_unproductive$ $concept_building$'s Earnings"
  lesson_fix_unproductive_building_how_1_desc:0 "There is no one-click fix for a [Concept('concept_building', '$concept_building_possessive$')] low [concept_productivity]! Let’s have a look at the $concept_building$'s Process breakdown to see what the issues might be."
- lesson_fix_unproductive_building_how_1_continue:0 "Open the $concept_building$ details panel for the [GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] in [GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName]"
+ lesson_fix_unproductive_building_how_1_continue:0 "Open the $concept_state$ tab of [GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName] by clicking on the map. In the $concept_state$ $concept_building$ Tab, select the [GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] $concept_building$"
  lesson_fix_unproductive_building_how_2_back:0 "[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] panel must be closed to backtrack"
 
  lesson_fix_unproductive_building_how_2:0 "$lesson_fix_unproductive_building_how_1$"

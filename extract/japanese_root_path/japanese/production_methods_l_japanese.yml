@@ -108,9 +108,10 @@
  #Food Industry
  pmg_canning: "缶詰"
  pm_disabled_canning: "瓶"
- pm_cannery: "缶詰工場"
+ pm_cannery: "肉の缶詰"
+ pm_cannery_fish: "魚の缶詰"
  pm_disabled_cannery: "缶詰工場なし"
- pm_vacuum_canning: "食肉包装"
+ pm_vacuum_canning: "真空包装"
  pmg_distillery: "蒸留酒"
  pm_disabled_distillery: "食糧生産優先"
  pm_pot_stills: "ポットスチル"

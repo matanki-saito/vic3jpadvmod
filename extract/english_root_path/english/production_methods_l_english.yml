@@ -116,9 +116,10 @@
   # Food Industry
  pmg_canning:0 "Canning"
  pm_disabled_canning:0 "Jars"
- pm_cannery:0 "Canneries"
+ pm_cannery:0 "Canned Meat"
+ pm_cannery_fish: "Canned Fish"
  pm_disabled_cannery:0 "No Canneries"
- pm_vacuum_canning:1 "Meat Packaging"
+ pm_vacuum_canning:1 "Vacuum Packaging"
   
  pmg_distillery:0 "Distilleries"
  pm_disabled_distillery:0 "Prioritize Grocery Production"

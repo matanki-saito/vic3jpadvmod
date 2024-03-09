@@ -2,3 +2,5 @@
  JOMINI_NOTIFICATION_TIMESTAMP_NOW: "Just now"
  JOMINI_NOTIFICATION_TIMESTAMP_MINUTES: "$MINUTES$ minutes ago"
  JOMINI_NOTIFICATION_TIMESTAMP: "$DATE$"
+ JOMINI_DLC_MANAGER_OUTDATED_MODS_ALERT_TITLE: "Unsupported Mods Detected"
+ JOMINI_DLC_MANAGER_OUTDATED_MODS_ALERT_DESC: "Some of your mods are for a different version of $GAME$. These mods may not work correctly and could cause problems with your game. For stability, we recommend disabling these mods until they are updated.\n\nThe following mods are out of date:\n$MODS_OUTDATED_LIST$"

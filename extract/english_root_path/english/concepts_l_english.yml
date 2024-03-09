@@ -62,7 +62,7 @@
  concept_unrecognized_power_desc_added:1 "\n\nAn $concept_unrecognized_power$ that wishes to remove these penalties must claim recognition from a [concept_great_power] through a $concept_diplomatic_play$."
 
  concept_protectorate:0 "Protectorate"
- concept_protectorate_desc:2 "A $concept_protectorate$ is an autonomous [concept_subject] type able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]. A [concept_country] may ask, or be asked, to become a $concept_protectorate$ under an [concept_overlord] without risk of [concept_war] if the offer is declined."
+ concept_protectorate_desc:2 "A $concept_protectorate$ is an autonomous [concept_subject] type able to start their own [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]."
  
  concept_puppet:0 "Puppet"
  concept_puppets:0 "Puppets"
@@ -754,6 +754,7 @@
  concept_rivals:1 "Rivals"
  concept_rival:1 "Rival"
  concept_rivalries:1 "Rivalries"
+ concept_rivaling: "Rivaling"
  concept_rivalry_desc:3 "A [concept_diplomatic_pact] established by one [concept_country] targeting another of similar [concept_rank], and which generates @inf! [concept_influence] for the [concept_country] declaring the rivalry. The two $concept_countries$ must have overlapping [Concept('concept_interest','$concept_interests$')] to be valid rivals. The $concept_diplomatic_pact_short$ will also limit the range of [concept_relations] that can be established between the two $concept_countries$ for as long as the $concept_diplomatic_pact_short$ is active."
 
  concept_colonial_growth:0 "Colonial Growth"
@@ -890,6 +891,7 @@
  concept_rank_ingame_added:1 "\n\nYour current $concept_rank$ is [GetPlayer.GetRank], which gives you the following benefits:\n[GetPlayer.GetRankModifier.GetDesc]"
 
  concept_migration:0 "Migration"
+ concept_weekly_migration: "Weekly Migration"
  concept_migrating:1 "Migrating"
  concept_migrate:0 "Migrate"
  concept_immigration:1 "Immigration"
@@ -897,12 +899,19 @@
  concept_emigrate:0 "Emigrate"
  concept_emigration:1 "Emigration"
  concept_emigrating:1 "Emigrating"
- concept_migration_desc:1 "The movement of [Concept('concept_pop','$concept_pops$')] between [Concept('concept_state','$concept_states$')] in the same [concept_market], or between [Concept('concept_country','$concept_countries$')] facilitated by [Concept('concept_migration_target','$concept_migration_targets$')]. $concept_migration$ generally flows from $concept_states$ with lower to higher [concept_migration_pull]. $concept_pops$ will only consider $concept_emigrating$ if their [concept_sol] is lower than the average in their [concept_market] or if they are [concept_unemployed]. $concept_migration$ rate is affected by [concept_infrastructure] in the $concept_states$."
+ concept_migration_desc:1 "The movement of [Concept('concept_pop','$concept_pops$')] between [Concept('concept_state','$concept_states$')] in the same [concept_market], or between [Concept('concept_country','$concept_countries$')] facilitated by [Concept('concept_migration_target','$concept_migration_targets$')]. $concept_migration$ generally flows from $concept_states$ with lower to higher [concept_migration_pull]. $concept_migration$ rate is affected by [concept_infrastructure] in the $concept_states$.\n\n$concept_pops$ will only consider $concept_emigrating$ if they are sufficiently [Concept('concept_job_satisfaction', '$concept_job_satisfaction_dissatisfied$')]. For instance if their [concept_sol] is lower than the average in their $concept_market$ or if they are [concept_unemployed]. Additionally, $concept_pops$ will only $concept_migrate$ to $concept_states$ where a [concept_cultural_community] for their [concept_culture] is present."
+ concept_mass_migration_pull: "Mass Migration Attraction"
+ concept_mass_migration_pull_desc: "A [concept_country]'s $concept_mass_migration_pull$ indicates how likely it is to receive a [Concept('concept_migration_target', '$concept_mass_migration$')] compared to other $concept_countries$. It is largely based on the average [concept_migration_pull] of [Concept('concept_migration_target', '$concept_mass_migration_eligible$')] [Concept('concept_state', '$concept_states$')] in the $concept_country$.\n\nIf a $concept_country$ has fewer than #b [GetDefine('NPops','MASS_MIGRATION_NUM_TARGET_STATES_FOR_NO_PENALTY')]#! $concept_mass_migration_eligible$ $concept_states$ it will receive an increasing penalty to its $concept_mass_migration_pull$ depending on how many $concept_mass_migration_eligible$ $concept_states$ it has."
 
  concept_migration_target:0 "Migration Target"
+ concept_mass_migration_target: "Mass Migration Target"
  concept_migration_targets:0 "Migration Targets"
- concept_migration_target_desc:1 "A [concept_state] selected as a suitable target for mass [concept_migration] by a [concept_culture] subject to considerable [concept_cultural_turmoil]. $concept_migration_target_explainer$ Surrounding $concept_states$ may also see some degree of $concept_immigration$ from a $concept_migration_target$."
- concept_migration_target_explainer:1 "A $concept_migration_target$ may appear when the [concept_turmoil] of a [concept_culture] in a [concept_country] is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0]."
+ concept_mass_migration_targets: "Mass Migration Targets"
+ concept_mass_migration: "Mass Migration"
+ concept_mass_migrations: "Mass Migrations"
+ concept_mass_migration_eligible: "Eligible"
+ concept_migration_target_desc:1 "A [concept_state] selected as a suitable target for mass [concept_migration] by a [concept_culture] subject to considerable [concept_cultural_turmoil]. $concept_migration_target_explainer$ Surrounding $concept_states$ may also see some degree of $concept_immigration$ from a $concept_migration_target$.\n\nTo be $concept_mass_migration_eligible$ for $concept_mass_migrations$ a state needs to be [Concept('concept_incorporated_state', '$concept_incorporated$')], have at least #b [GetDefine('NPops','MASS_MIGRATION_TARGET_MIN_ARABLE_LAND')]#! [concept_arable_land] and #b [GetDefine('NPops','MASS_MIGRATION_STATE_MIN_MARKET_ACCESS')|0%]#! [concept_market_access]. Additionally, the $concept_state$ cannot already be the target of a $concept_mass_migration$ and the $concept_country$'s [GetLawGroup('lawgroup_migration').GetName] and [GetLawGroup('lawgroup_citizenship').GetName] [Concept('concept_law', '$concept_laws$')] need to allow $concept_migration$ to happen.\n\nA $concept_country$ is more likely to have one of its $concept_states$ be selected as a $concept_migration_target$ if it has a high [concept_mass_migration_pull]."
+ concept_migration_target_explainer:1 "A $concept_migration_target$ may appear when the [concept_turmoil] of a $concept_culture$ in a [concept_country] is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0]."
 
  concept_base_price:0 "Base Price"
  concept_base_price_desc:1 "The price of a [concept_good] when its [Concept('concept_sell_orders','$concept_sell_orders_supply$')] exactly equal its [Concept('concept_buy_orders','$concept_buy_orders_demand$')]."
@@ -1146,6 +1155,7 @@
 
  concept_input_goods_shortage:0 "Input Goods Shortage"
  concept_input_goods_shortages:1 "Input Goods Shortages"
+ concept_input_goods_shortage_short: "Shortage"
  concept_input_goods_shortage_desc:0 "[Concept('concept_building', '$concept_buildings$')] that consume [Concept('concept_good', '$concept_goods$')] will suffer an output penalty if less than [GetDefine('NEconomy', 'GOODS_SHORTAGE_PENALTY_THRESHOLD')|v%0] of the [concept_buy_orders] for those $concept_goods$ are satisfied. This is usually caused by insufficient availability of the [concept_good] in the [Concept('concept_building', '$concept_building_possessive$')] [concept_market], but may also be a result of low [concept_market_access] in the $concept_building$'s [concept_state_region]."
 
  concept_market:0 "Market"
@@ -1360,6 +1370,7 @@
  concept_taxation:0 "Taxation"
  concept_tax_rate:0 "Tax Rate"
  concept_tax_level:0 "Taxation Level"
+ concept_tax_revenue: "Taxation Revenue"
  concept_taxes_desc:1 "[Concept('concept_country', '$concept_countries$')] can tap into their market economies in various ways. The most common is to tax its populace's private sector incomes, or charge duties on the sales, purchase, or trade of [Concept('concept_good', '$concept_goods$')]."
 
  concept_unrealized_taxes:0 "Unrealized Taxes"
@@ -1375,6 +1386,7 @@
  concept_budget_diplomatic_pacts_desc:1 "[concept_money] collected from or remitted to the other party in a [concept_diplomatic_pact]."
 
  concept_construction:2 "Construction"
+ concept_constructions: "Constructions"
  concept_construct:0 "Construct"
  concept_construction_desc:3 "@construction! $concept_construction$ is produced by the [SelectLocalization(GetPlayer.IsValid,'concept_construction_desc_added','Construction Sector')] and is used to construct [Concept('concept_building', '$concept_buildings$')]."
  concept_construction_desc_added:0 "[GetBuildingType('building_construction_sector').GetName]"
@@ -1575,7 +1587,7 @@
  concept_wounded_desc:2 "[concept_casualties] that are merely $concept_wounded$ in [concept_battle] or due to [concept_attrition]. Some $concept_wounded$ $concept_casualties$ recover and return to active service after some time, while others end up as [concept_dependents] of other [Concept('concept_pop','$concept_pops$')] in your [concept_country]."
 
  concept_attrition:0 "Attrition"
- concept_attrition_desc:2 "[concept_casualties] inflicted on [concept_manpower] outside of [concept_battle] is referred to as $concept_attrition$. It is frequently experienced when [Concept('concept_battalion','$concept_battalions$')] are [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] and can be the result of disease, accidents, exposure, or even desertion. $concept_attrition$ can be counteracted with using military $pmg_medical_aid$ [Concept('concept_production_method','$concept_production_methods$')]."
+ concept_attrition_desc:3 "[concept_casualties] inflicted on [concept_manpower] outside of [concept_battle] is referred to as $concept_attrition$. It is frequently experienced when [Concept('concept_battalion','$concept_battalions$')] are [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] and can be the result of disease, accidents, exposure, or even desertion. $concept_attrition$ can be counteracted by using $medic_support$ [Concept('concept_mobilization_option','$concept_mobilization_options$')]."
 
  concept_ruler:0 "Ruler"
  concept_rulers:0 "Rulers"
@@ -1736,7 +1748,10 @@
 
  concept_migration_pull:0 "Migration Attraction"
  concept_migration_pull_short:0 "Attraction"
- concept_migration_pull_desc:1 "$concept_migration_pull$ is a [concept_state]'s ability to attract migrants. It is based primarily on the average [concept_sol] among [Concept('concept_pop','$concept_pops$')] in the $concept_state$ but can be modified by a number of other factors. Any [Concept('concept_unemployed','$concept_unemployment$')] in the $concept_state$ will depress $concept_migration_pull$. The value is compared against other $concept_states$ between which migration may occur to determine in which direction migrants tend to flow."
+ concept_migration_pull_desc:1 "$concept_migration_pull$ is a [concept_state]'s ability to attract migrants. It is based primarily on the average [concept_sol] among [Concept('concept_pop','$concept_pops$')] in the $concept_state$ but can be modified by a number of other factors. Any [Concept('concept_unemployed','$concept_unemployment$')] in the $concept_state$ will depress $concept_migration_pull$. The value is compared against other $concept_states$ between which $concept_migration$ may occur to determine in which direction migrants tend to flow.\n\n$concept_migration_pull$ is also the primary factor used to determine a $concept_country$'s [concept_mass_migration_pull]."
+ concept_cultural_community: "Cultural Community"
+ concept_cultural_communities: "Cultural Communities"
+ concept_cultural_community_desc: "A $concept_cultural_community$ indicates a certain [concept_culture] is present in a [concept_state] and allows [Concept('concept_pop','$concept_pops$')] in your [concept_market] to migrate to this $concept_state$. $concept_cultural_communities$ will also be regularly created in $concept_states$ with good conditions for $concept_migration$ and removed if no $concept_pops$ of that $concept_culture$ live there."
 
  concept_lower_strata:0 "Lower Strata"
  concept_lower_strata_desc:3 "The $concept_lower_strata$ consist of [Concept('concept_pop','$concept_pops$')] in [Concept('concept_profession','$concept_professions$')] that work with their hands or do repetitive labor which require little to no [concept_pop_qualifications] and result in low [Concept('concept_building_wage','$concept_building_wages$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_lower_strata_ingame_added')]"
@@ -1821,6 +1836,7 @@
 
  concept_job_satisfaction: "Job Satisfaction"
  concept_job_satisfaction_satisfied: "Satisfied"
+ concept_job_satisfaction_dissatisfied: "Dissatisfied"
  concept_job_satisfaction_desc: "Pops can be satisfied or dissatisfied with their jobs based on a number of factors such as their [concept_sol] or [concept_building_wage]. This determines whether they are looking for new [concept_employment] or not."
 
  concept_employment: "Employment"

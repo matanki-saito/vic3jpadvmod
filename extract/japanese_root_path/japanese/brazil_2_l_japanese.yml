@@ -15,6 +15,7 @@
  brazilian_slavery.1.b: "イギリス人は決して、決して、決して奴隷にはならない。"
  the_west_african_squadron_modifier: "西アフリカ駐屯地"
  champions_of_abolition_modifier: "ウィルバーフォースの後継者"
+ anti_slavery_society_legacy: "イギリス・海外反奴隷制協会"
  brazilian_slavery.2.t: "[SCOPE.sState('slaver_coastal_state_scope').GetNameNoFormatting]沖で[SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting]の奴隷商人を確保"
  brazilian_slavery.2.d: "短時間の追跡の後、[SCOPE.GetRootScope.GetCountry.GetCustom('royal_navy_loc')]の軍艦[SCOPE.GetRootScope.GetCountry.GetCustom('royal_navy_ship_names')]が[SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting]の奴隷船[SCOPE.GetRootScope.GetCountry.GetCustom('slaver_ship_names')]を拿捕した。その船倉で発見されたのは、[SCOPE.sState('enslaved_destination_state_scope').GetCityHubName]の奴隷市場行きの、手錠をかけられた数百人のアフリカの人々だった。"
  brazilian_slavery.2.f: "「積み荷目録には家畜と書いてあった。牛、山羊、鶏、船倉には一頭も見当たらないぞ。君は、その…どう言えばいいだろうか？君は二本足の神を畏れる種類の家畜を持っているようだな」\n\n「家畜はまさにここにあるものです。多くのコーヒー農園がこれらの家畜に依存しています」\n\n「手かせを外してやれ。それから外の空気を吸わせてやるんだ、頼むよ。少なくとも、「コーヒー農家」であるお前の措置を考えつくまではな」"

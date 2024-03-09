@@ -156,7 +156,7 @@
  ai_attitude_rebellious_tooltip: "#header $ai_attitude_rebellious$ [concept_attitude]#!\n$ai_attitude_rebellious_desc$\n$TOOLTIP_DELIMITER$\n$ATTITUDE_DETAILS$"
  ATTITUDE_SCORE_NEUTRAL_FORMAT: "#v $SCORE|=0$#!"
  ATTITUDE_SCORE_FORMAT: "#v $SCORE|=0+$#!"
- AI_STRATEGIC_DESIRE: "[COUNTRY.GetAdjectiveNoFormatting]の[TARGET_COUNTRY.GetNameNoFormatting]への[concept_strategic_desire]: #v $STRATEGIC_DESIRE$#!"
+ AI_STRATEGIC_DESIRE: "[TARGET_COUNTRY.GetYouOrCountryName]への[concept_strategic_desire]: #v $STRATEGIC_DESIRE$#!"
  AI_ATTITUDE_SCORE: "[TARGET_COUNTRY.GetName]に対する$ATTITUDE_SCORE$の[COUNTRY.GetName]の[concept_attitude]スコアより算出："
  AI_REASON_FORMAT: "$DESC$: $SCORE|=0+$"
  AI_REASON_NEUTRALITY: "[TARGET_COUNTRY.GetName]は[COUNTRY.GetName]にとって外交的意義に欠けています"

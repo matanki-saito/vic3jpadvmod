@@ -17,8 +17,9 @@ brazilian_slavery.1.d: "With the [SCOPE.sCountry('brazil_scope').GetAdjectiveNoF
 brazilian_slavery.1.f: "Crew, at attention. Dispatches arrived earlier this morning.\nThe Aberdeen Act is no longer in force. Brazil has finally capitulated on the matter of the slave trade.\nAs of now, we may return our attention to real matters. To mark the occasion, you're all receiving a double ration of rum tonight."
 brazilian_slavery.1.a: "Rule, Britannia! Britannia rules the waves!"
 brazilian_slavery.1.b: "Britons never, never, never shall be slaves."
-the_west_african_squadron_modifier: "The West African Station"
+the_west_african_squadron_modifier: "West African Station"
 champions_of_abolition_modifier: "Heirs of Wilberforce"
+anti_slavery_society_legacy: "British and Foreign Anti-Slavery Society"
 
 brazilian_slavery.2.t: "[SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting] Slaver Seized off [SCOPE.sState('slaver_coastal_state_scope').GetNameNoFormatting]"
 brazilian_slavery.2.d: "Following a short pursuit, the [SCOPE.GetRootScope.GetCountry.GetCustom('royal_navy_loc')] warship [SCOPE.GetRootScope.GetCountry.GetCustom('royal_navy_ship_names')] has captured the [SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting] slaver [SCOPE.GetRootScope.GetCountry.GetCustom('slaver_ship_names')]. Discovered in her hold were hundreds of shackled African souls, destined for the slave markets of [SCOPE.sState('enslaved_destination_state_scope').GetCityHubName]."
