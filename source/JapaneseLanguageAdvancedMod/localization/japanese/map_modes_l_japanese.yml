@@ -61,3 +61,6 @@
  mm_goods_local_prices:0 "現地の商品価格"
  mm_pollution:0 "汚染の影響"
  mm_create_formation_interaction:0 "軍隊の編制を作成"
+ mm_migration_pull:0 "移住求心力"
+ mm_mass_migration_pull:0 "集団移住求心力"
+ mm_state_mass_migration_pull:0 "集団移住の潜在的な対象"

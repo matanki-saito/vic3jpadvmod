@@ -463,3 +463,6 @@
  FULLY_MOBILIZE_ARMY_GLOBAL:0 "[concept_military_formation]が直ちに完全に[Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]されました"
  SET_COMPANY_ESTABLISHMENT_DATE_GLOBAL:0 "[concept_company]の設立年月日が新たに設定されました"
  SET_COMPANY_ESTABLISHMENT_DATE_THIRD:0 "[COMPANY.GetName]の設立年月日が[DATE.GetString|v]に設定されました"
+ TRY_FORM_GOVERNMENT_WITH:0 "[concept_country]が最低$VALUE|v0$の[concept_legitimacy]を持つ[concept_government]の樹立を試みます"
+ TRY_FORM_GOVERNMENT_WITH_FIRST:0 "[COUNTRY.GetName]が最低$VALUE|v0$の[concept_legitimacy]を持つ[concept_government]の樹立を試みます"
+ ADD_CULTURAL_COMMUNITY:0 "#todo 文化的コミュニティ[CULTURE.GetName]が[STATE.GetName]に出現します#!"

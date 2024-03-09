@@ -429,7 +429,7 @@
  lesson_production_methods_why_5_desc:0 "より近代的な[concept_production_method]にアップグレードすることが望ましくないケースがあります。特に施設需要として必要な[Concept('concept_good','$concept_goods$')]の[concept_market_price]が非常に高額である場合や[concept_input_goods_shortage]となっている場合すらあるからです。近代化を急がないほうが良いもう一つの理由は、$concept_production_method$に要求される[Concept('concept_profession','$concept_professions$')]の[concept_pop_qualifications]を持つ[Concept('concept_pop','$concept_pops$')]の数が乏しいからです。新しい$concept_professions$があなたの好きではない政治信条に傾倒しやすいという理由で、アップグレードを先延ばしにすることすらあるかもしれません。"
  lesson_fix_unproductive_building_how_1:0 "$concept_unproductive$ $concept_building$の収益を改善する"
  lesson_fix_unproductive_building_how_1_desc:0 "[Concept('concept_building','$concept_building_possessive$')]における低い[concept_productivity]をお手軽に修正する方法は存在しません！$concept_building$の作業工程を確認して、何が問題なのかを突き止めましょう。"
- lesson_fix_unproductive_building_how_1_continue:0 "[GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName]の[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName]にある$concept_building$詳細パネルを開く"
+ lesson_fix_unproductive_building_how_1_continue:0 "マップをクリックして$concept_state$ tab of [GetTutorialJournalEntry.GetTarget.GetBuilding.GetState.GetName]を開きます。$concept_state$ $concept_building$タブで[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName] $concept_building$を選択します。"
  lesson_fix_unproductive_building_how_2_back:0 "撤回するには[GetTutorialJournalEntry.GetTarget.GetBuilding.GetName]パネルを閉じる必要があります"
  lesson_fix_unproductive_building_how_2:0 "$lesson_fix_unproductive_building_how_1$"
  lesson_fix_unproductive_building_how_2_desc:0 "工程の搬入側にある[Concept('concept_good','$concept_goods$')]があまりにも高額である場合、価格を抑制することに注力することができます。これは商品を生産する[Concept('concept_building','$concept_buildings$')]を拡張したり、これらの$concept_goods$を自国の[concept_market]に輸入することで達成できます。"
