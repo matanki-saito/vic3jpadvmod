@@ -294,3 +294,5 @@
  government_collapse.1.f:0 "「我々は彼らとの結びつきを強めてきたが、今や彼らの離脱が足かせとなっている。今すぐ行動に出なければならない！残っている僅かな党員を守らなければ、全てを失うだろう」\n\n[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、自分のデスクを覆っている絶望と離反の報告書を見て、決断を下した。"
  government_collapse.1.a:0 "緊急政府を発足させるべきだ。"
  government_collapse.1.b:0 "手遅れになる前に、オリーブの枝を差し出そう。"
+ is_in_other_market_tt:0 ""
+ is_not_in_other_market_tt:0 ""
