@@ -379,3 +379,6 @@
   government_collapse.1.f: ""We have tied ourselves at the hip to them, and now find ourselves hobbled by their departure. We must act! We will salvage these scant few things, or we will salvage nothing."\n\nThe [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] regarded the reports of despair and defection coating [ROOT.GetCountry.GetRuler.GetHerHis] desk, and made [ROOT.GetCountry.GetRuler.GetHerHis] decision."
   government_collapse.1.a: "We must install an emergency government."
   government_collapse.1.b: "Offer an olive branch before it is too late."
+
+  is_in_other_market_tt: "Is a [concept_junior_partner] in another country's [concept_customs_union]"
+  is_not_in_other_market_tt: "Is not a [concept_junior_partner] in another country's [concept_customs_union]"

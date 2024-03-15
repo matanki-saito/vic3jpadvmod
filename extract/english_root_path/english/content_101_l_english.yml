@@ -800,9 +800,9 @@
  rights_of_women_laws.5.a:0 "Scale back the rallies."
  rights_of_women_laws.5.b:0 "We will risk a little violence."
 
- womens_rights_rally:0 "Women's Suffrage Rally"
- womens_rights_peaceful_rally:0 "Extra Women's Suffrage Rallies"
- womens_rights_violent_rally:0 "Women's Suffrage Rally Violence"
+ womens_rights_rally:0 "Women’s Suffrage Rally"
+ womens_rights_peaceful_rally:0 "Extra Women’s Suffrage Rallies"
+ womens_rights_violent_rally:0 "Women’s Suffrage Rally Violence"
 
  violent_womens_rally_backlash:0 "Violent Suffrage Rally Backlash"
 
@@ -821,8 +821,8 @@
  rights_of_women_laws.7.a:0 "Ignore the workers."
  rights_of_women_laws.7.b:0 "We can move our protest."
 
- womens_rights_disrupt:0 "Disruptive Women's Rights Protest"
- womens_rights_disrupt_small:0 "Less Disruptive Women's Rights Protest"
+ womens_rights_disrupt:0 "Disruptive Women’s Rights Protest"
+ womens_rights_disrupt_small:0 "Less Disruptive Women’s Rights Protest"
 
  modifier_crop_failure_relief_effect:0 "Crop Failure Relief"
 

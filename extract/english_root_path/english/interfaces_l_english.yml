@@ -6220,6 +6220,7 @@
  NO_WARS:0 "No $WARS$"
  ACTIVE_DIPLOMATIC_PLAYS:0 "Active [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]"
  NO_ACTIVE_DIPLOMATIC_PLAYS:0 "No $ACTIVE_DIPLOMATIC_PLAYS$"
+ ONGOING_DIPLOMATIC_ACTIONS_CONCEPT: "[Concept('concept_ongoing_diplomatic_action', '$concept_ongoing_diplomatic_actions$')]"
  DIPLOMATIC_ACTION_NAME:0 "[DiplomaticAction.GetFullName]"
  DIPLO_ACTIONS:0 "[Concept('concept_diplomatic_action', '$concept_diplomatic_actions$')] targeting [Country.GetName]"
  NO_DIPLO_ACTIONS:0 "No Possible [concept_diplomatic_action]"

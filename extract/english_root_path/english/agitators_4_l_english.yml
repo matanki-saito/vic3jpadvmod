@@ -1286,7 +1286,7 @@
 
   historical_agitators.4.t: "Women Beyond Spinsters"
   historical_agitators.4.d: "The rising feminist factions in [ROOT.GetCountry.GetName] have suffered a schism. [SCOPE.sCharacter('historic_agitator_scope').GetFullName] has founded a new, militant organization in its wake."
-  historical_agitators.4.f: "Affiliations with the Independent Labour Party, three separate bills, twenty years of work, and all the support of a dedicated community were not enough — not nearly enough — to affect even the slightest forward step on women's suffrage. New measures would be needed. A woman's right to vote would belong not only to the spinsters and the widows.\n\nBy fire, fist, and famine, all women will have the power to vote."
+  historical_agitators.4.f: "Affiliations with the Independent Labour Party, three separate bills, twenty years of work, and all the support of a dedicated community were not enough — not nearly enough — to affect even the slightest forward step on women’s suffrage. New measures would be needed. A woman’s right to vote would belong not only to the spinsters and the widows.\n\nBy fire, fist, and famine, all women will have the power to vote."
   historical_agitators.4.a: "A few days in the country ought to soothe their woes."
   historical_agitators.4.b: "Meet with her followers early."
   historical_agitators.4.c: "Her charity in the workhouses does her credit."
