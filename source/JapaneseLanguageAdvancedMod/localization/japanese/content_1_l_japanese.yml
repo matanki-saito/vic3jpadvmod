@@ -1532,7 +1532,7 @@
  native_american_rights:0 "インディアンの強制移住の終焉"
  movement_investigation_isolation:0 "殺人捜査"
  notification_victoria_notification_tooltip:0 "#header $notification_victoria_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_victoria_notification_desc$"
- notification_victoria_notification_name:0 "[SCOPE.sCountry('britain_victoria_country_scope').GetName]の[SCOPE.sCountry('hannover_victoria_scope').GetName]との連合が終了しました"
+ notification_victoria_notification_name:0 "[SCOPE.sCountry('britain_victoria_country_scope').GetName]と[SCOPE.sCountry('hannover_victoria_scope').GetName]の連合が終了"
  notification_victoria_notification_desc:0 "ウィリアム4世の逝去に伴い、相続法の差異によってこれらの国家間における[concept_personal_union]が終結することになりました。"
  malaria_modifier:0 "マラリア"
  je_communism_2_goal:0 "最低5年間、以下が成立していること : "
