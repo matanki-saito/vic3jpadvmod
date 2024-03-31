@@ -40,7 +40,7 @@
  mobilization_option_opium_desc:0 "気持ちを抑圧する。"
  mobilization_option_narcotics_supplies:0 "麻薬物資"
  mobilization_option_narcotics_supplies_desc:0 "前線から戻る際に楽しみにするもの。"
- mobilization_option_forced_march:0 "強制行進"
+ mobilization_option_forced_march:0 "強行軍"
  mobilization_option_forced_march_desc:0 "部隊の準備がいくら整っていようと、戦闘に間に合うよう到着しなければ意味がない。"
  mobilization_option_truck_transport:0 "トラック輸送"
  mobilization_option_truck_transport_desc:0 "兵士を前線に運ぶようトラックに指示を出せ。"
