@@ -548,7 +548,7 @@
  concept_defensive_pact_desc:0 "[concept_diplomatic_pact]とは、2つの[Concept('concept_country','$concept_countries$')]の間で結ばれる限定的な[concept_alliance]であり、2つの国のうちいずれかが$concept_diplomatic_play_short$の[concept_target]である[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]でのみ効力が生じます。"
  concept_supply:0 "供給"
  concept_supply_desc:0 "[concept_military_formation]の$concept_supply$は、[Concept('concept_unit','$concept_units$')]が[concept_morale]をどれだけ早く回復するかを決定します。\n\n#indent_newline:3 $concept_supply$は通常#v 100%#!ですが、$concept_army$が次の場合は低くなる可能性があります。\n―海外にいて、侵害された[concept_shipping_lane]による供給を受けている\n― [concept_building]が[Concept('concept_input_goods_shortage','$concept_input_goods_shortages$')]の対象となる$concept_units$を含んでいる\n― $concept_army$が$concept_hq$から完全に切り離されている場合ゼロになる。#!\n\n[Concept('concept_modifier','$concept_modifiers$')]も場合によっては適用されます。"
- concept_escort_convoys:0 "護衛船団"
+ concept_escort_convoys:0 "船団護衛"
  concept_escort_convoys_desc:0 "$concept_escort_convoys$は[Concept('concept_shipping_lane','$concept_shipping_lanes$')]を安全に通過させ、必要に応じて敵艦と交戦します。"
  concept_manpower:0 "人員"
  concept_manpower_desc:0 "[concept_unit]内の[SelectLocalization(GetPlayer.IsValid,'concept_manpower_desc_added','兵士')]と[SelectLocalization(GetPlayer.IsValid,'concept_manpower_desc_added_2','将校')]の人数です。$concept_manpower$が大きいほど、$concept_unit$はより多くの[concept_casualties]を対処することができます。"
