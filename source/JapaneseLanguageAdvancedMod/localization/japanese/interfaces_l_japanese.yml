@@ -7039,7 +7039,7 @@
  NO_VALID_OPTIONS_FOR_DEPLOY_TO_FRONT:0 "@red_cross! [MilitaryFormation.GetName]には#b 「戦線に配備」#! 以外の有効な代替案がありません"
  NO_VALID_OPTIONS_FOR_DEPLOY_TO_SEA_NODE:0 "@red_cross! [MilitaryFormation.GetName]には#b 「海上ノードに配備」#! 以外の有効な代替案がありません"
  MILITARY_FORMATION_NAVAL_INVASION_LABEL:0 "上陸作戦"
- MILITARY_FORMATION_NAVAL_INVASION_TOOLTIP:0 "#header 敵である[concept_state]の上陸作戦を計画#![ConcatIfNeitherEmpty('\n',MilitaryFormation.GetNavalInvasionTooltip)]"
+ MILITARY_FORMATION_NAVAL_INVASION_TOOLTIP:0 "#header 敵国の[concept_state]に上陸作戦を計画する#![ConcatIfNeitherEmpty('\n',MilitaryFormation.GetNavalInvasionTooltip)]"
  BATTLE_PANEL_ADVANCING_TOOLTIP:0 "#header [Battle.GetAttackerCommander.GetFirstName]はこの[concept_battle]において進軍中です#!\n\n@information! [Battle.GetAttackerCommander.GetHerHim]を右クリックするか、[Battle.GetAttackerCommander.GetHerHis]の[concept_character]または[concept_military_formation]パネルに移動することで[Battle.GetAttackerCommander.GetFirstNamePossessive]の[concept_order]を変更することが可能です"
  BATTLE_PANEL_DEFENDING_TOOLTIP:0 "#header [Battle.GetDefenderCommander.GetFirstName]はこの[concept_battle]において防衛中です#!\n\n@information! [Battle.GetDefenderCommander.GetHerHim]を右クリックするか、[Battle.GetDefenderCommander.GetHerHis]の[concept_character]または[concept_military_formation]パネルに移動することで[Battle.GetDefenderCommander.GetFirstNamePossessive]の[concept_order]を変更することが可能です"
  FRONT_MARKER_TOOLTIP:0 "[FrontMarker.GetFront.GetPlayerAdvantageDesc]"
