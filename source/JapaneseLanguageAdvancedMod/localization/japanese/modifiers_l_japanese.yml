@@ -2532,7 +2532,7 @@
  modifier_state_slave_import_mult_desc:0 "[GetLawType('law_slave_trade').GetName]が制定されている場合に、毎週[concept_state]が輸入可能な[Concept('concept_slavery','$concept_slaves$')]の人数に対する増減補正です"
  modifier_country_max_companies_add:0 "企業の最大数"
  modifier_country_max_companies_add_desc:0 "1つの[concept_country]が設立できる$COMPANIES$の数"
- modifier_country_company_throughput_bonus_add:0 "企業の生産量ボーナス"
+ modifier_country_company_throughput_bonus_add:0 "企業の処理量ボーナス"
  modifier_country_company_throughput_bonus_add_desc:0 "$COMPANIES$によってその関連[Concept('concept_building','$concept_buildings$')]に追加される[concept_throughput]に対する増減補正です"
  modifier_country_company_construction_efficiency_bonus_add:0 "企業の建設ボーナス"
  modifier_country_company_construction_efficiency_bonus_add_desc:0 "$COMPANIES$によってその関連[Concept('concept_building','$concept_buildings$')]に追加される週ごとの建設の進捗量に対する増減補正です"

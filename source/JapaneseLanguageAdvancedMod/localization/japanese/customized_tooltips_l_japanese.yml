@@ -97,7 +97,7 @@
  GOODS_LEADERBOARD:0 "$GOODS_LEADERBOARD_HEADER$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  GOODS_LEADERBOARD_STATUS:0 "[Goods.GetMarket.GetOwner.GetFlagTextIcon] #tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_NAME_TOOLTIP_LEADERBOARD_RANKING_BREAKDOWN [SelectLocalization(GreaterThan_int32(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]#!#!"
  GOODS_LEADERBOARD_HEADER:0 "[Goods.GetMarket.GetOwner.GetFlagTextIcon][SelectLocalization(GreaterThan_int32(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]"
- GOODS_LEADERBOARD_HEADER_TOP_PRODUCER:0 "世界#v ##[Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner)]#!位の生産者[Goods.GetPrestigeAwardForSpotDesc(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner.Self))]"
+ GOODS_LEADERBOARD_HEADER_TOP_PRODUCER:0 "世界第#v [Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner)]#!位の生産者[Goods.GetPrestigeAwardForSpotDesc(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner.Self))]"
  GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER:0 " [Goods.GetName]の主要生産者ではありません"
  GOODS_PRESTIGE_AWARD:0 "[Goods.GetTextIcon][Goods.GetName]の生産者よりの#v $VAL|=+$#! [concept_prestige]#v 第$SPOT|v$位#!"
  GOODS_PRESTIGE_SUFFIX:0 " (#v $VAL|=+$#! [concept_prestige]) "

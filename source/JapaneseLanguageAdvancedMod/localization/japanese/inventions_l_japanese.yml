@@ -343,7 +343,7 @@
  intensive_agriculture:0 "集約農業"
  intensive_agriculture_desc:0 "食糧生産を業界のサプライチェーンに統合することにより、はるかに大量の収穫量を実現できるようになります。"
  steam_donkey:0 "スチームドンキー"
- steam_donkey_desc:0 "ウインチシステムの動力に蒸気を導入することで、依然と同程度の労力を必要とせずに同量に近いレベルの動力を達成することができます。"
+ steam_donkey_desc:0 "ウインチシステムの動力に蒸気を導入することで、以前と同程度の労力を必要とせずに同量に近いレベルの動力を達成することができます。"
  threshing_machine:0 "脱穀機"
  threshing_machine_desc:0 "蒸気式脱穀機は、穀物の脱穀に必要な肉体労働を取り除くことで農業の効率をはるかに高めてくれます。"
  steel_frame_buildings:0 "鉄骨建築物"
