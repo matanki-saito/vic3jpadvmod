@@ -88,7 +88,7 @@
  concept_concept_desc:0 "これは、他の[concept_concept]内のツールチップで表示可能なゲームコンセプトです。"
  concept_sol:0 "生活水準"
  concept_sol_desc:0 "$concept_sol$は、物質的な[concept_wealth]を基準として、 [Concept('concept_pop','$concept_pop_possessive$')]の生活状態を測るものです。これは[Concept('concept_pop_growth','$concept_pop_growth_birthrate_and_mortality$')]を支配し、それが変わるたびに$concept_pops$がより[concept_radical]になったり[Concept('concept_loyalist','$concept_loyal$')]になる可能性を持っています。[concept_state]の平均的な$concept_sol$は、その[concept_migration_pull]に影響を与えます。"
- concept_expected_sol:0 "生活水準の期待値 (最小) "
+ concept_expected_sol:0 "許容生活水準"
  concept_expected_sol_short:0 "期待値 (最小) "
  concept_expected_sol_desc:0 "$concept_expected_sol$は、[concept_pop]が許容する最低の[concept_sol]です。この数値は、$concept_pop$が[concept_lower_strata]、[concept_middle_strata]、[concept_upper_strata]のいずれであるかに基づき[concept_literacy]で調整され、特定の[Concept('concept_technology','$concept_technologies$')]で修正することが可能です。$concept_pop$が$concept_expected_sol_short$より低い$concept_sol$を持っている場合、彼らは徐々に[concept_radical]になっていきます。$concept_pop$が$concept_expected_sol_short$よりも高い$concept_sol$を持っていても、$concept_sol$が減少するたびに$concept_radical$になっていきます。"
  concept_pop_growth:0 "POP成長"

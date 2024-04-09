@@ -23,5 +23,5 @@
  move_capital_lens_option_tooltip:0 "#header $move_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept  [concept_capital_state]の変更が可能です。この州に一定の恩恵が提供されます。#!"
  move_market_capital_lens_option:0 "中心市場の移転"
  move_market_capital_lens_option_tooltip:0 "#header $move_market_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept 国有[concept_market]の[concept_market_capital]を変更することができます。#!"
- reset_production_methods_lens_option:0 "製法のリセット"
+ reset_production_methods_lens_option:0 "方式のリセット"
  reset_production_methods_lens_option_tooltip:0 "#header $reset_production_methods_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept [concept_state]にある[Concept('concept_building','$concept_buildings$')]の[Concept('concept_production_method','$concept_production_methods$')]をリセットして、国内で最も平均的な水準に合わせます。#!"
