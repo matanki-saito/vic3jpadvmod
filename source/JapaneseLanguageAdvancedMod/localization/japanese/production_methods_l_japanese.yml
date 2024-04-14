@@ -403,7 +403,7 @@
  pm_cannons:0 "カノン砲"
  pm_smoothbores:0 "滑腔砲"
  pm_breech_loaders:0 "後装砲"
- pm_automation_disabled:0 "ハンドアセンブリ"
+ pm_automation_disabled:0 "手作業"
  pm_automobiles_disabled:0 "エンジン生産を優先"
  pm_hydroelectric_plant:0 "水力発電所"
  pm_coal-fired_plant:0 "石炭火力発電所"
