@@ -760,7 +760,7 @@
  agitators_election_events.9.b:0 "党の全員がそう考えているわけではないかもしれない。"
  agitators_election_events.10.t:0 "波乱に満ちた選挙運動"
  agitators_election_events.10.d:0 "混乱の渦中にある[SCOPE.sState('tumultuous_state_scope').GetName]で[SCOPE.sParty('agitator_party_scope').GetName]の選挙運動を行っていた[SCOPE.sCharacter('agitator_scope').GetFullName]が、正体不明の集団に襲われ、激しい暴行を受けました。"
- agitators_election_events.10.f:0 "群衆が去り、叫び声が止んだ時、通りに残されていたのは、あざと切り傷だらけになって横たわる[SCOPE.sCharacter('agitator_scope').GetHerHis]体だけであった。5分前の堂々とした姿が嘘のように、痛ましい姿になっていた。"
+ agitators_election_events.10.f:0 "群衆が去り、叫び声が止んだ時、通りに残されていたのは、あざと切り傷だらけになって横たわる[SCOPE.sCharacter('agitator_scope').GetHerHis]の体だけであった。5分前の堂々とした姿が嘘のように、痛ましい姿になっていた。"
  agitators_election_events.10.a:0 "休んで回復するのが一番だろう。"
  agitators_election_events.10.b:0 "すぐに活動に戻るんだ。"
  agitators_election_events.10.c:0 "もちろん誰の仕業かはわかっている。我々さ。"
