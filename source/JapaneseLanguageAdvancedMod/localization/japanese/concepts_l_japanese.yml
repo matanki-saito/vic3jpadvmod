@@ -1331,7 +1331,7 @@
  concept_organization:0 "組織力"
  concept_organization_organized:0 "組織化"
  concept_organization_desc:0 "$concept_organization$の低い[concept_military_formation]は、さまざまな点で[concept_battle]力が低下します。$concept_military_formation$の結成当初は$concept_organization$が低い状態で始まりますが、$concept_military_formation$が移動していない間は時間経過とともに増加していきます。$concept_organization$は、[Concept('concept_unit','$concept_units$')]の[concept_command_limit]が低すぎる場合や、$concept_military_formation$の[Concept('concept_special_unit','$concept_special_units$')]が[Concept('concept_default_unit','$concept_default_units$')]より多い場合に制限がかかります。\n\n[Concept('concept_mobilization_option','$concept_mobilization_options$')]のオンオフを切り替えたり、異なる$concept_mobilization_options$を有する[Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]された$concept_armies$の間で[Concept('concept_unit','$concept_units$')]を移動させたりすると、$concept_organization$が一時的に変動する場合があります。\n\n#indent_newline:3 $concept_organization$の低い$concept_military_formation$はペナルティを受け、その値が低いほどペナルティは大きくなり、最大で以下の効果を受けます : \n[GetStaticModifier('low_organization').GetDesc]#!"
- concept_unit_experience:0 "ユニット経験"
+ concept_unit_experience:0 "ユニット経験値"
  concept_unit_experience_desc:0 "時間経過するとユニットは経験を積み、動員を増やしたり戦闘中だと、さらに経験を積むことができます。十分な経験を積むと[concept_veterancy_level]が増加し、様々なボーナスを獲得できます。"
  concept_veterancy_level:0 "ユニット熟練レベル"
  concept_veterancy_level_desc:0 "ユニットは[concept_unit_experience]を獲得することで熟練レベルを獲得し、レベルに応じて様々なボーナスを獲得できます。"
