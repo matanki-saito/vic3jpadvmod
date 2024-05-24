@@ -2608,7 +2608,7 @@
  modifier_building_group_bg_mining_slaves_mortality_mult_desc:0 "$modifier_building_group_bg_mining_slaves_mortality_mult$の増減補正です"
  modifier_building_group_bg_logging_slaves_mortality_mult:0 "木材産業に就業している$slaves$の[Concept('concept_pop_growth','$concept_pop_growth_mortality$')]"
  modifier_building_group_bg_logging_slaves_mortality_mult_desc:0 "$modifier_building_group_bg_logging_slaves_mortality_mult$の増減補正です"
- modifier_state_infrastructure_from_automobiles_consumption_add:0 "POPからのインフラ@automobiles!$automobiles$消費"
+ modifier_state_infrastructure_from_automobiles_consumption_add:0 "POPの@automobiles!$automobiles$消費によるインフラ"
  modifier_state_infrastructure_from_automobiles_consumption_add_desc:0 "居住[Concept('concept_pop','$concept_pops$')]が消費する@automobiles!$automobiles$1台につき追加される[concept_state][concept_infrastructure]"
  modifier_country_disallow_aggressive_plays:0 "攻撃的な外交戦の禁止"
  modifier_country_disallow_aggressive_plays_desc:0 "他の[Concept('concept_country','$concept_countries$')]に対して[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]を開始することはできません"
