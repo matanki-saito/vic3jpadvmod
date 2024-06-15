@@ -1161,6 +1161,6 @@
  welfare_laws.2.c:0 "時間をかけてより良い主張を周知しなければならない。"
  je_scramble_for_africa:0 "アフリカ分割"
  je_scramble_for_africa_reason:0 "私たちは、アフリカ大陸の支配権を争う植民地競争に加わり、自らの植民地帝国を切り開くことを決意しました。"
- je_warlord_china_special_tooltip_advance:0 "以下の条件が満たされると#bold 進捗ゲージ#!が#bold 進みます#! : \n ― #BOLD アヘン戦争#!に敗北する\n ― #BOLD 太平天国#!の出現阻止に失敗する\n ― #BOLD 太平天国#!の奪還に失敗する\n ― #BOLD 義和団の乱#!に敗北する\n借金をして[concept_loans]を負う\n[concept_civil_war]をする\n ―別の国の[concept_subject]になる\n ― [GetLawType('law_monarchy').GetName]を廃止する"
- je_warlord_china_special_tooltip_deplete:0 "以下の条件が満たされると#bold 進捗ゲージ#!が#bold 後退します#! : \n ― #BOLD アヘン戦争#!に勝利する\n ― [concept_unrecognized_power]でなくなる\n#BOLD 根絶君主制#![concept_journal_entry]を終える"
+ je_warlord_china_special_tooltip_advance:0 "以下の条件が満たされると#bold 進捗ゲージ#!が#bold 進みます#! : \n • #BOLD アヘン戦争#!に敗北する\n • #BOLD 太平天国#!の出現阻止に失敗する\n • #BOLD 太平天国#!の奪還に失敗する\n • #BOLD 義和団の乱#!に敗北する\n • [concept_loans]を負う\n • [concept_civil_war]をする\n • 別の国の[concept_subject]になる\n • [GetLawType('law_monarchy').GetName]を廃止する"
+ je_warlord_china_special_tooltip_deplete:0 "以下の条件が満たされると#bold 進捗ゲージ#!が#bold 後退します#! : \n • #BOLD アヘン戦争#!に勝利する\n • [concept_unrecognized_power]でなくなる\n • #BOLD 君主主義の廃絶#![concept_journal_entry]を終える"
  je_china_failure_tt:0 "#bold 進捗ゲージ#!が#variable 100%#!に到達しました"
