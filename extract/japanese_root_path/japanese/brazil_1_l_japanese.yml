@@ -257,7 +257,7 @@
  je_south_america_migration_reason: "南米の [Concept('concept_incorporated_state','$concept_incorporated$')][Concept('concept_pop','$concept_population$')]は#b [Country.MakeScope.Var('south_america_incorporated_population').GetValue|D]#!である\n我々の目標[Concept('concept_pop', '$concept_population$')]は#b [Country.MakeScope.Var('south_america_migration_goal').GetValue|D]#!である\n\n[ROOT.GetCountry.GetName]は恵まれた広大な土地だが、人口はまばらだ。我々は海の向こう、特に、問題の多いヨーロッパに目を向け、我々の畑や工場で働く潜在的な移住者を探さなければならない。"
  southamerica_migration_button: "欧州移民の促進"
  southamerica_migration_button_desc: "広大な土地と労働の保証を提供することで、我が国をヨーロッパの仲間が定住するのに最適な場所として宣伝することができる。"
- mass_migration_button_tt: "我が国を目的地とする[concept_migration_target]を生み出す"
+ mass_migration_button_tt: "我が国への[concept_mass_migration]を開始"
  migration_button_cooldown_tt: "過去#Bold 5#!年間で、このアクションを使用していない"
  sa_migration.1.t: "[ROOT.GetCountry.GetNameNoFormatting]へようこそ"
  sa_migration.1.d: "惜しみなく提供された土地と労働機会に誘惑され、[SCOPE.sCountry('migration_country').GetName]の[SCOPE.sCulture('migration_culture').GetName]の人々が[SCOPE.sState('migration_target_state').GetName]に移住し始めている。"

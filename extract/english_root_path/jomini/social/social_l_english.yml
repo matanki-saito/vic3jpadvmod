@@ -38,3 +38,7 @@
  JOMINI_SOCIAL_CONNECT_FAIL_DESC: "Could not connect to Paradox Social, this connection is required for using online features"
  JOMINI_SOCIAL_CONNECT_FAIL_RETRY: "Retry"
  JOMINI_SOCIAL_CONNECT_FAIL_CANCEL: "Cancel"
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET: "No Social Profile found"
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET_DESC: "Your account does not have a Paradox Social Profile, which is required for using online features. Please create a profile and try again."
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET_RETRY: "Retry"
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET_CANCEL: "Cancel"

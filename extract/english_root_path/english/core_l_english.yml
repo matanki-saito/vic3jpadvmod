@@ -64,8 +64,10 @@
  LAUNCHER_SAVE_DESCRIPTION:0 "Playing as $COUNTRY$"
  LAUNCHER_SAVE_DESCRIPTION_OBSERVER:1 "$concept_observing$ $COUNTRY$"
 
+ NAME_WITH_VALUE_FORMATTING: "#v $FORMATTED_NAME$#!"
  BASE_VALUE_YELLOW:0 "Base Value: #BOLD $VAL|Dv$#!"
  BASE_VALUE_YELLOW_PERC:0 "Base Value: $VAL|2%v$"
+ BASE_VALUE_FOR_CALCULATOR: "$VAL|D=v$ from Base Value"
  terrain:0 "Terrain"
  INFRASTRUCTURE_FROM_SUPPLY_NETWORK:0 "From #variable [COUNTRY.GetAdjectiveNoFormatting]#! [concept_supply_network]: #variable $VALUE|+=$#!"
  INFRASTRUCTURE_FROM_MARKET_CAPITAL:0 "From [concept_market_capital]: #variable $VALUE|+=$#!"
@@ -97,11 +99,12 @@
  DECLINE:0 "Decline"
  DECLINE_WARNING:0 "@warning! Decline"
  ACCEPT:0 "Accept"
+ REJECT: "Reject"
  base_values:0 "Base Value"
  character_base_values:0 "$base_values$"
  prestige_ranking: "[concept_prestige] ranking"
  top_prestige_ranking: "[concept_prestige] ranking in the #v Top-[GetDefine('NDiplomacy','TOP_PRESTIGE_RANK_BONUS_THRESHOLD')]#!"
- 
+
  discrimination:0 "[concept_discrimination]"
  coastal_state:1 "Coastal [concept_state]"
  insufficient_tax_capacity:0 "Insufficient [concept_tax_capacity]"
@@ -130,6 +133,7 @@
  state_turmoil:1 "Turmoil (Moderate)"
  state_turmoil_high:0 "Turmoil (High)"
  state_turmoil_extreme:0 "Turmoil (Extreme)"
+ government_owned_debt: "Government Owned Debt"
  country_rivalry:0 "Rivalry"
  country_specific_rivalry_desc:0 "Rivalry with $COUNTRY$"
  country_specific_ig_trait_desc:0 "$INTEREST_GROUP$ - $TRAIT$"
@@ -170,12 +174,14 @@
  DEPLOY_MILITARY_FORMATION_TO_FRONT_REDUNDANT: "#N $FORMATION_NAME$ is already being deployed to $FRONT_NAME$#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NAVAL_INVADING: "#N $FORMATION_NAME$ cannot be deployed to $FRONT_NAME$ because it is involved in an ongoing naval invasion#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_UNREACHABLE: "#N $FORMATION_NAME$ cannot reach $FRONT_NAME$#!"
+ DEPLOY_MILITARY_FORMATION_TO_FRONT_BUSY_COMMANDERS: "#N All commanders in [MilitaryFormation.GetName] are [concept_busy]#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NOT_A_PARTICIPANT: "Cannot deploy $FORMATION_NAME$ to $FRONT_NAME$: $COUNTRY_NAME$ is not a participant on $FRONT_NAME$"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NO_BATTALIONS: "#N $FORMATION_NAME$ cannot deploy as it has no @battalions![Nbsp][Concept('concept_battalion','$concept_battalions$')]"
 
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_REDUNDANT: "#N $FORMATION_NAME$ is already being deployed to $SEA_NODE_NAME$#!"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NAVAL_INVADING: "#N $FORMATION_NAME$ cannot be deployed to $SEA_NODE_NAME$ because it is involved in an ongoing naval invasion#!"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_UNREACHABLE: "#N $FORMATION_NAME$ cannot reach $SEA_NODE_NAME$#!"
+ DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_BUSY_COMMANDERS: "#N All commanders in [MilitaryFormation.GetName] are [concept_busy]#!"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_BATTLING: "#N $FORMATION_NAME$ cannot be deployed to $SEA_NODE_NAME$ because it is involved in an active battle#!"
 
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_NOT_A_SEA_NODE: "Cannot deploy $FORMATION_NAME$ to $STATE_REGION$: $STATE_REGION$ is not a [concept_sea_node]"
@@ -192,6 +198,7 @@
  STATION_MILITARY_FORMATION_COUNTRY_DOES_NOT_OWN_HQ: "Cannot station $FORMATION_NAME$ in $HQ_NAME$: $FORMATION_COUNTRY_NAME$ does not own $HQ_NAME$, which is owned by $HQ_OWNER_COUNTRY_NAME$"
  STATION_MILITARY_FORMATION_NO_UNITS: "[MilitaryFormation.GetName] has no [MilitaryFormation.GetUnitIcon][Nbsp][Concept('concept_unit','$concept_units$')] to re-station"
  STATION_MILITARY_FORMATION_IN_HQ_UNREACHABLE: "#N $FORMATION_NAME$ cannot reach [HQ.GetName]#!"
+ STATION_MILITARY_FORMATION_IN_HQ_BUSY_COMMANDERS: "#N All commanders in [MilitaryFormation.GetName] are [concept_busy]#!"
 
  COMMAND_CONFIRMATION_DEPLOY_MILITARY_FORMATION_TO_FRONT: "Deploy $FORMATION_NAME$ to $FRONT_NAME$"
  COMMAND_CONFIRMATION_DEPLOY_MILITARY_FORMATION_TO_SEA_NODE: "Deploy $FORMATION_NAME$ to $SEA_NODE_NAME$"
@@ -200,7 +207,7 @@
  REHOME_MILITARY_FORMATION_CANNOT_REHOME_MOBILIZED_ARMY: "Cannot home [MILITARY_FORMATION.GetName] in [HQ.GetName]: [MILITARY_FORMATION.GetName] must be [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilized$')]"
  REHOME_MILITARY_FORMATION_ALREADY_HOMED_IN_HQ: "[MILITARY_FORMATION.GetName] is already homed in [HQ.GetName]"
  COMMAND_CONFIRMATION_REHOME_MILITARY_FORMATION: "Home [MILITARY_FORMATION.GetName] in [HQ.GetName]"
- 
+
  RENAME_STRING_TOO_LONG: "@warning! Name is too long"
  RENAME_STRING_EMPTY: "@warning! Name is empty"
  RENAME_STRING_ILLEGAL: "@warning! Name contains illegal characters"

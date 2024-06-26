@@ -1,3 +1,11 @@
 ﻿l_english:
  JOMINI_LOAD_GAME_FAILED_TITLE: "Failed to Load Savegame"
  JOMINI_LOAD_GAME_FAILED_DESC: "The savegame could not be loaded, this could be due to:\n#indent_newline:2 • Savegame was made with an incompatible version of the game\n• Savegame uses a different set of DLCs\n• Save file is corrupted#!"
+ JOMINI_LOAD_INCOMPATIBLE_GAME_TITLE: "Savegame might be incompatible"
+ JOMINI_LOAD_INCOMPATIBLE_GAME_DESC: "The savegame might not be loaded due to:\n\n$REASON$\n\nDo you want to continue loading?"
+ JOMINI_DELETE_PLAYTHROUGH_CONFIRMATION_TITLE: "Deleting Playthrough"
+ JOMINI_DELETE_PLAYTHROUGH_CONFIRMATION_DESC: "($NAME$) playthrough and the savegames inside will be deleted.\n\n Are you sure?"
+ JOMINI_DELETE_SAVEGAME_CONFIRMATION_TITLE: "Deleting Savegame"
+ JOMINI_DELETE_SAVEGAME_CONFIRMATION_DESC: "($NAME$) will be deleted.\n\n Are you sure?"
+ JOMINI_OVERWRITE_SAVEGAME_CONFIRMATION_TITLE: "Overwrite Savegame"
+ JOMINI_OVERWRITE_SAVEGAME_CONFIRMATION_DESC: "($NAME$) will be overwritten.\n\n Are you sure?"

@@ -100,6 +100,8 @@
  expedition_events.550.b: "止まるわけにはいかない。[SCOPE.sCharacter('expedition_leader').GetHerHim]にナイフを渡せ。"
  sir_loc: "サー"
  madam_loc: "マダム"
+ mr_loc: "氏"
+ ms_loc: "氏"
  expedition_event_delayed_tt: "遠征がやや遅延した。"
  expedition_events.560.t: "[SCOPE.sCharacter('expedition_leader').GetCustom('drug_type')]が底をつきかけている"
  expedition_events.560.d: "[SCOPE.sCharacter('expedition_leader').GetFullName]は、遠征隊の進行を止めて[SCOPE.sCharacter('expedition_leader').GetCustom('drug_type')]の供給が得られるまで待機すべきだと主張している。 "

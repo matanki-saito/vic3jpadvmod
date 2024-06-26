@@ -124,6 +124,8 @@
  expedition_events.550.b:0 "We cannot stop, give [SCOPE.sCharacter('expedition_leader').GetHerHim] the knife."
  sir_loc:0 "Sir"
  madam_loc:0 "Ma'am"
+ mr_loc: "Mr."
+ ms_loc: "Ms."
 
  expedition_event_delayed_tt:0 "The expedition is slightly delayed."
 

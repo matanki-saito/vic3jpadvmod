@@ -2,5 +2,7 @@
  JOMINI_NOTIFICATION_TIMESTAMP_NOW: "Just now"
  JOMINI_NOTIFICATION_TIMESTAMP_MINUTES: "$MINUTES$ minutes ago"
  JOMINI_NOTIFICATION_TIMESTAMP: "$DATE$"
+ JOMINI_DLC_MANAGER_DISABLED_MODS_CRASH_TITLE: "Mods Disabled"
+ JOMINI_DLC_MANAGER_DISABLED_MODS_CRASH_DESC: "The game encountered a problem during the last startup, possibly due to an incompatible mod.\nTo ensure stability, all mods have been temporarily disabled.\nTo reactivate your mods, navigate to the \"$MESSAGE$\" Playset, remove any problematic mods, and apply the changes."
  JOMINI_DLC_MANAGER_OUTDATED_MODS_ALERT_TITLE: "Unsupported Mods Detected"
  JOMINI_DLC_MANAGER_OUTDATED_MODS_ALERT_DESC: "Some of your mods are for a different version of $GAME$. These mods may not work correctly and could cause problems with your game. For stability, we recommend disabling these mods until they are updated.\n\nThe following mods are out of date:\n$MODS_OUTDATED_LIST$"

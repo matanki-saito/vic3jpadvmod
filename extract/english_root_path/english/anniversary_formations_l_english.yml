@@ -125,6 +125,11 @@
   notification_unification_notification_ind_name: "[SCOPE.sCountry('formation_country').GetAdjective] Unification"
   notification_unification_notification_ind_desc: "[SCOPE.sCountry('formation_country').GetName] has achieved national unification, bringing together the people of the subcontinent to resist British rule."
   notification_unification_notification_ind_tooltip: "#header $notification_unification_notification_ind_name$#!\n$TOOLTIP_DELIMITER$\n$notification_unification_notification_ind_desc$"
+
+  notification_unification_notification_hre_culture_name: "[SCOPE.sCountry('formation_country').GetAdjective] Unification"
+  notification_unification_notification_hre_culture_desc: "[SCOPE.sCountry('formation_country').GetName] has achieved national unification, bringing the peoples of Central Europe under one banner."
+  notification_unification_notification_hre_culture_tooltip: "#header $notification_unification_notification_one_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_unification_notification_one_culture_desc$"
+  
   notification_unification_notification_generic_name: "[SCOPE.sCountry('formation_country').GetAdjective] Unification"
   notification_unification_notification_generic_desc: "[SCOPE.sCountry('formation_country').GetName] has emerged as a rising power in [SCOPE.sStrategicRegion('capital_region_scope').GetName]."
   notification_unification_notification_generic_tooltip: "#header $notification_unification_notification_generic_name$#!\n$TOOLTIP_DELIMITER$\n$notification_unification_notification_generic_desc$"

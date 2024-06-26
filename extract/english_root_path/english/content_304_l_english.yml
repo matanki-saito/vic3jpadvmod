@@ -160,6 +160,8 @@
  modifier_risorgimento_opponents: "Opposition to Risorgimento"
  modifier_risorgimento_opposition: "Opposition to Risorgimento"
 
+ risorgimento_support: "support for Risorgimento"
+
  unlock_national_agitation_tt: "Unlocks the 'Stir National Agitation' Character Interaction for [Concept('concept_agitator','$concept_agitators$')]"
  risorgimento_unifying_stance_tt: "Has chosen to #bold support#! Risorgimento"
  risorgimento_unifying_stance_set_tt: "We will be able to take extra actions to #bold support#! Risorgimento"

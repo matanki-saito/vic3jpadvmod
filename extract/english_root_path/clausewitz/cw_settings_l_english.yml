@@ -47,7 +47,7 @@
  SETTING_SHADOW_MAP_RESOLUTION_TOOLTIP: "#T $SETTING_SHADOW_MAP_RESOLUTION$\n#!Determines the resolution shadow maps are rendered with, if shadows are enabled.\n\nLower settings may increase performance."
  SETTING_DISPLAY_MODE: "Display Mode"
  SETTING_DISPLAY_MODE_TOOLTIP: "#T $SETTING_DISPLAY_MODE$\n#!Determines how to display the game on your screen"
- SETTING_BLOOM: "Bloom"
+ SETTING_BLOOM_QUALITY: "Bloom"
  SETTING_MESH_LOD_BIAS: "Mesh LOD Quality"
  SETTING_MESH_LOD_FADE: "Mesh LOD Fade"
  SETTING_TERRAIN_SMOOTHING: "Terrain Smoothing"
@@ -71,7 +71,7 @@
  SETTING_SFX: "SFX"
  SETTING_UI: "Interface"
  SETTING_QUALITY_TOOLTIP: "#T $SETTING_QUALITY$\n#!Select a preset of the advanced graphics options below.\n\nA low preset will increase performance."
- SETTING_BLOOM_TOOLTIP: "#T $SETTING_BLOOM$\n#!Enables a "bloom" effect, where extremely bright lights will spill over to other parts of the image.\n\nTurning it off may increase performance."
+ SETTING_BLOOM_QUALITY_TOOLTIP: "#T $SETTING_BLOOM_QUALITY$\n#!Enables a "bloom" effect, where extremely bright lights will spill over to other parts of the image.\n\nLower settings may increase performance."
  SETTING_DOF_TOOLTIP: "#T $SETTING_DOF$\n#!Enables depth of field to simulate a camera lens, blurs out-of-focus points of the image.\n\nTurning it off may increase performance."
  SETTING_LENS_FLARE_TOOLTIP: "#T $SETTING_LENS_FLARE$\n#!Enables a lens flare effect which appears in highly blooming areas. Bloom must be enabled for the effect to appear. \n\nTurning it off may increase performance."
  SETTING_SECONDARY_LENS_FLARE_TOOLTIP: "#T $SETTING_SECONDARY_LENS_FLARE$\n#!Enables a secondary lens flare effect which appears in highly blooming areas. Bloom must be enabled for the effect to appear. \n\nTurning it off may increase performance."
@@ -101,6 +101,9 @@
  SETTING_ANIMATION_SPEED: "Animation speed"
  SETTING_GUI_SCALING: "GUI Scaling"
  SETTING_GUI_SCALING_TOOLTIP: "#T $SETTING_GUI_SCALING$\n#!Sets the scale of the entire user interface. Useful for higher screen resolutions.\n\n#X Setting it too high will make interfaces not properly fit inside the screen!#!"
+ SETTING_TOOLS_GUI_SCALING: "Tools GUI Scaling"
+ SETTING_TOOLS_GUI_SCALING_TOOLTIP: "#T $SETTING_TOOLS_GUI_SCALING$\n#!Sets the scale of the tools user interface. Useful for higher screen resolutions.\n\n#X Setting it too high will make interfaces not properly fit inside the screen!#!"
+
  # System
  SETTING_SCREEN_EDGE_SCROLL_MODE: "Mouse Pan"
  SETTING_SCREEN_EDGE_SCROLL_MODE_FREE: "Free"

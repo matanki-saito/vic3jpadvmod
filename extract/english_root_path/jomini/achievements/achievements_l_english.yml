@@ -11,4 +11,4 @@
  ACHIEVEMENT_GROUP_TOOLTIP: "#V [Group.CalcNumberOfUnlockedVisibleAchievements]#! achievement(s) unlocked out of #V [Group.GetNumberOfVisibleAchievements]#! in group [Group.GetName]"
  ACHIEVEMENT_FILTER_ALL: "Show all Achievements"
  ACHIEVEMENT_UNAVAILABLE_TT: "Unable to load achievements: please check your internet connection"
- ACHIEVEMENT_UNAVAILABLE_PLAZA_TT: "Unable to load achievements: please sign in to Paradox Plaza"
+ ACHIEVEMENT_UNAVAILABLE_PLAZA_TT: "Unable to load achievements: please sign in to Paradox Account"
