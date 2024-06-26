@@ -73,3 +73,5 @@
  medic_support:0 "医療支援"
  medic_support_desc:0 "負傷兵を治療するために軍が用意している装備。"
  MOBILIZATION_OPTION_UPKEEP_SHORT:0 "[ConcatIfNeitherEmpty(MobilizationOption.GetUpkeepModifier.GetDesc,'\n')][MobilizationOption.GetUpkeepUnscaledModifier.GetDesc]"
+ mobilization_option_balloon_recon:0 "気球偵察"
+ mobilization_option_balloon_recon_desc:0 "戦場を俯瞰できる気球を使用しています。"

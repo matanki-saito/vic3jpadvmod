@@ -38,3 +38,7 @@
  JOMINI_SOCIAL_CONNECT_FAIL_DESC:0 "Paradoxソーシャルに接続できませんでした。オンライン機能を使用するには接続が必要です"
  JOMINI_SOCIAL_CONNECT_FAIL_RETRY:0 "再試行"
  JOMINI_SOCIAL_CONNECT_FAIL_CANCEL:0 "キャンセル"
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET:0 "ソーシャルプロフィールが見つかりません"
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET_DESC:0 "あなたのアカウントには、オンライン機能に必要なParadoxソーシャルプロフィールがありません。プロフィールを作成してからもう一度お試しください。"
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET_RETRY:0 "再試行"
+ JOMINI_SOCIAL_CONNECT_FAIL_NOT_SET_CANCEL:0 "キャンセル"

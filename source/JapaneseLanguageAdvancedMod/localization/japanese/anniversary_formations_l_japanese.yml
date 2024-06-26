@@ -129,3 +129,6 @@
  formation.21.f:0 "「見たか？ついに国境がなくなった。これでいつでも好きな時に、列車でチャールストンに行けるぞ。」\n\n\"それは南部の人たちにとってはどうなんだ？」\n\n「どうって？」\n\n「ファイエットビルで満足できるとは思えないが。」\n\nその言葉は、ひと際太った蚊のように宙を舞った。\n\n「…確かに。それはそうだな」"
  formation.21.a:0 "生きて、希望を持つことだ。"
  formation.21.b:0 "これまでもこれからも、テネシーは我々のものだ！"
+ notification_unification_notification_hre_culture_name:0 "[SCOPE.sCountry('formation_country').GetAdjective]統一"
+ notification_unification_notification_hre_culture_desc:0 "[SCOPE.sCountry('formation_country').GetName]は国家統一を成し遂げ、中欧の人々が一つの旗の下に集まりました。"
+ notification_unification_notification_hre_culture_tooltip:0 "#header $notification_unification_notification_one_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_unification_notification_one_culture_desc$"

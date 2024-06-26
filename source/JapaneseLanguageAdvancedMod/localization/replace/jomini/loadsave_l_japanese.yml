@@ -1,3 +1,11 @@
 ﻿l_japanese:
  JOMINI_LOAD_GAME_FAILED_TITLE:0 "セーブデータの読み込みに失敗しました"
  JOMINI_LOAD_GAME_FAILED_DESC:0 "セーブデータを読み込めませんでした。これは以下の原因が考えられます : \n#indent_newline:2  • セーブデータが互換性のないバージョンで作成されている\n • セーブデータが異なるDLCセットを使用している\n • セーブファイルが破損している#!"
+ JOMINI_LOAD_INCOMPATIBLE_GAME_TITLE:0 "セーブデータが不適合である可能性があります"
+ JOMINI_LOAD_INCOMPATIBLE_GAME_DESC:0 "以下の理由によりセーブデータが読み込まれない可能性があります : \n\n$REASON$\n\nロードを続行しますか？"
+ JOMINI_DELETE_PLAYTHROUGH_CONFIRMATION_TITLE:0 "クリアデータの削除"
+ JOMINI_DELETE_PLAYTHROUGH_CONFIRMATION_DESC:0 "クリアデータ「$NAME$」およびセーブデータが削除されます。\n\n 本当によろしいですか？"
+ JOMINI_DELETE_SAVEGAME_CONFIRMATION_TITLE:0 "セーブデータの削除"
+ JOMINI_DELETE_SAVEGAME_CONFIRMATION_DESC:0 "「$NAME$」を削除します。\n\n 本当によろしいですか？"
+ JOMINI_OVERWRITE_SAVEGAME_CONFIRMATION_TITLE:0 "セーブデータの上書き"
+ JOMINI_OVERWRITE_SAVEGAME_CONFIRMATION_DESC:0 "「$NAME$」が上書きされます。\n\n 本当によろしいですか？"
