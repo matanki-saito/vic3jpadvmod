@@ -7122,7 +7122,7 @@
  JOB_SATISFACTION_DIVIDENDS:0 "獲得した[concept_dividends] (@money!$POP_DIVIDENDS|v1$) と[concept_budget_wages] (@money!$POP_WAGES|v1$) の#variable $DIVIDENDS_WAGES_RATIO|0$%#!の比率からの$VALUE|0+=$"
  JOB_SATISFACTION_LOSSES:0 "投資損失 (@money!$POP_LOSSES|v1$) と[concept_budget_wages] (@money!$POP_WAGES|v1$) の#variable $LOSSES_WAGES_RATIO|0$%#!の比率からの$VALUE|0+=$"
  CANNOT_EXPAND_BUILDING_STATE_HAS_NO_ACCESS_TO_GOODS:0 "[State.GetName]には[CombatUnitType.GetName]に必要な[Goods.GetTextIcon][Goods.GetName]の[concept_supply]がありません"
- FORMATION_SETTINGS:0 "編隊設定"
+ FORMATION_SETTINGS:0 "編制設定"
  ALLOW_BORROWING_AND_LENDING:0 "部隊の貸し借りを許可する"
  NEXT_OR_CURRENT_ORDER:0 "[AddLocalizationIf(ObjectsEqual(Character.GetOrderType.Self,CommanderOrderType.Self),'CURRENT_ORDER_STATUS')][AddLocalizationIf(ObjectsEqual(Character.GetNextOrderType.Self,CommanderOrderType.Self),'NEXT_ORDER_STATUS')][AddTextIf(And(Not(StringIsEmpty(GetDesc(Character.SelectOrder(CommanderOrderType.Self)))),Or(ObjectsEqual(Character.GetOrderType.Self,CommanderOrderType.Self),ObjectsEqual(Character.GetNextOrderType.Self,CommanderOrderType.Self))),'\n')][GetDesc(Character.SelectOrder(CommanderOrderType.Self))]"
  DISBAND_UNIT_TYPE_EMPTY:0 "[MilitaryFormation.GetName]には[CombatUnitType.GetName]がいません"
