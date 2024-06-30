@@ -498,7 +498,7 @@
  dp_give_foreign_investment_rights_tooltip:0 "#header $dp_give_foreign_investment_rights$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_give_foreign_investment_rights_desc$を開始"
  dp_give_foreign_investment_rights_desc:0 "最初の[concept_war_goal]を、標的[concept_country]による我が国への[concept_foreign_investment_rights]付与に設定します。同国に[GetLawType('law_isolationism').GetName]の[concept_law]がある場合は、これに代わり[GetLawType('law_free_trade').GetName]を制定する必要があります。"
  war_goal_force_nationalization_type_name:0 "国有化の強制"
- war_goal_force_nationalization_type_desc:0 "我が国にある対象の[concept_country]の所有階をすべて国有化し、[concept_foreign_investment_rights]をはく奪する[concept_war_goal]。"
+ war_goal_force_nationalization_type_desc:0 "我が国にある対象の[concept_country]が所有する施設のレベルをすべて国有化し、[concept_foreign_investment_rights]をはく奪する[concept_war_goal]。"
  war_goal_force_nationalization:0 "[WAR_GOAL.GetHolder.GetAdjectiveNoFormatting]施設をすべて国有化する"
  war_goal_force_nationalization_desc:0 "[WAR_GOAL.GetHolder.GetName]が、[WAR_GOAL.GetTarget.GetName]のすべての[WAR_GOAL.GetHolder.GetAdjective][Concept('concept_state','$concept_states$')]の施設資産をすべて国有化し、[concept_foreign_investment_rights]が取り消されます。"
  war_goal_join_power_bloc_type_name:0 "勢力ブロックに参加"
