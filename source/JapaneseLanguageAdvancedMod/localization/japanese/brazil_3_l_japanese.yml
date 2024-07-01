@@ -67,7 +67,7 @@
  je_south_american_national_identity_integrate_a_state_desc:0 "我らの[SCOPE.sCulture('old_national_culture').GetName][Concept('concept_incorporated_state','$concept_incorporated_states$')]に新たな[SCOPE.sCulture('new_national_culture').GetName]の祖国を与える、新しい国民文化の統合を全国的に推進するキャンペーンを開始する。"
  new_culture_has_25_percent_tt:0 "この州の人口は少なくとも#variable 25%#!が[SCOPE.sCulture('new_national_culture').GetName]である"
  culture_south_america.1.t:0 "国家基盤"
- culture_south_america.1.d:0 "我が国における国民の覚醒により、主要な国家主義者たちの間で明確な[SCOPE.sCulture('new_national_culture').GetName]のアイデンティティが出現した。"
+ culture_south_america.1.d:0 "我が国における国民の覚醒により、主要な、民族主義者たちの間で明確な[SCOPE.sCulture('new_national_culture').GetName]のアイデンティティが出現した。"
  culture_south_america.1.f:0 "「我々の神聖な叫びは我々のものであり、我々だけのものだ！断ち切られた鎖の音を聞き、法と平和と統一のために掲げられた神聖なる神殿を見よ！空はなんと青く、祖国はなんと輝かしいことか！」"
  culture_south_america.1.a:0 "[SCOPE.sCulture('old_south_american_culture').GetName]はもういらない。我々は今、[SCOPE.sCulture('new_national_culture').GetName]の人々である！"
  culture_south_america.1.b:0 "我々はより偉大な理想の継承者なのだ！"
