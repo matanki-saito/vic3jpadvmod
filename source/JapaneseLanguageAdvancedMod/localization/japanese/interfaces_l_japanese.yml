@@ -2498,7 +2498,7 @@
  EXPENSES_WELFARE_PAYMENTS:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],WELFARE_PAYMENTS_BREAKDOWN,WelfarePaymentsTooltip @money![Negate_CFixedPoint(GetPlayer.GetWelfarePaymentsExpenses)|D+=]#!#! [concept_welfare_payments]"
  GOVERNMENT_BUILDINGS_EXPENSES_BREAKDOWN:0 "#tooltip_header 政府施設用商品#!\n合計 : #v #N @money!-[GetPlayer.GetGovernmentGoodsExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetGovernmentGoodsExpensesDesc]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetGovernmentGoodsExpensesByGoodsDesc]"
  GOVERNMENT_WAGES_EXPENSES_BREAKDOWN:0 "#tooltip_header 公務員の給金#!\n合計 : #v #N @money!-[GetPlayer.GetGovernmentWagesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetGovernmentWagesExpensesDesc]"
- GOVERNMENT_SLAVES_EXPENSES_BREAKDOWN:0 "#tooltip_header 公奴#!\n合計 : #v #N @money!-[GetPlayer.GetGovernmentSlavesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetGovernmentSlavesExpensesDesc]"
+ GOVERNMENT_SLAVES_EXPENSES_BREAKDOWN:0 "#tooltip_header 官有奴隷#!\n合計 : #v #N @money!-[GetPlayer.GetGovernmentSlavesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetGovernmentSlavesExpensesDesc]"
  MILITARY_BUILDINGS_EXPENSES_BREAKDOWN:0 "#tooltip_header 軍事施設用商品#!\n合計 : #v #N @money!-[GetPlayer.GetMilitaryGoodsExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryGoodsExpensesDesc]\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryGoodsExpensesByGoodsDesc]"
  MILITARY_WAGES_EXPENSES_BREAKDOWN:0 "#tooltip_header 軍隊の給与#!\n合計 : #v #N @money!-[GetPlayer.GetMilitaryWagesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryWagesExpensesDesc]"
  MILITARY_SLAVES_EXPENSES_BREAKDOWN:0 "#tooltip_header 軍隊の奴隷#!\n合計 : #v #N @money!-[GetPlayer.GetMilitarySlavesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitarySlavesExpensesDesc]"
