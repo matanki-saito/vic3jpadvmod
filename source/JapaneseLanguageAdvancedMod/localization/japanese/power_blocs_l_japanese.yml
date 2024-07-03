@@ -316,3 +316,6 @@
  imperial_circle:0 "帝国圏"
  democratic_ring:0 "民主主義リング"
  waterloo_pact:0 "ワーテルロー協定"
+ notification_power_bloc_member_left_name:0 "[SCOPE.sCountry('country').GetName]が[SCOPE.GetRootScope.GetPowerBloc.GetName]を離脱しました"
+ notification_power_bloc_member_left_desc:0 "[SCOPE.sCountry('country').GetName]はもう[SCOPE.GetRootScope.GetPowerBloc.GetName]の[Concept('concept_power_bloc_member','$concept_power_bloc_member_short$')]ではありません"
+ notification_power_bloc_member_left_tooltip:0 "#header $notification_power_bloc_member_left_name$#!\n$notification_power_bloc_member_left_desc$"

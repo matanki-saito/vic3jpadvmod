@@ -537,7 +537,7 @@
  je_sick_man_main_goal:0 "4度の「タンジマート」[Concept('concept_journal_entry','$concept_journal_entries$')]を完了する"
  je_sick_man_syria:0 "タンジマート : シリア奪還"
  je_sick_man_syria_reason:0 "シリアはエジプトの暴君により、我々の正当な手から支配権を奪われたのです。我々はそれを取り戻さなければならない！"
- je_sick_man_syria_status:0 "エジプトに対して外交戦を開始すると、ヨーロッパの[Concept('concept_great_power','$concept_great_powers$')]がこの地域に[concept_active_interest]を持つようになります。"
+ je_sick_man_syria_status:0 "エジプトに対して外交戦を開始すると、欧州の[Concept('concept_great_power','$concept_great_powers$')]が支援する可能性があります。"
  je_sick_man_egypt:0 "タンジマート : エジプト奪還"
  je_sick_man_egypt_reason:0 "シリアを奪還したのだから、エジプトに目を向けるべきでしょう。正しくはオスマン帝国の領土だが、簒奪者の手に落ちてしまったのですから。"
  je_sick_man_economy:0 "タンジマート : 都市化"
@@ -1746,3 +1746,4 @@
  communism_progress_from_interest_groups_tt:0 "[GetLawType('law_council_republic').GetName]を支持する[Concept('concept_interest_group','$concept_interest_groups$')]"
  communism_progress_from_laws_tt:0 "#bold 警察活動#!および#bold 治安維持#![Concept('concept_institution','$concept_institutions$')]"
  communism_progress_from_events_tt:0 "イベントなどの影響"
+ honorable_restoration_failed:0 "大政奉還に失敗"

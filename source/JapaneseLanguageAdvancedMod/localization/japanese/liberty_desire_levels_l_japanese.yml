@@ -49,3 +49,4 @@
  LIBERTY_DESIRE_WEEKLY_CHANGE_ANTI_LOBBY_INTEREST_GROUP_IN_OPPOSITION:0 "[concept_in_opposition]の[concept_political_lobby][Concept('concept_interest_group','$concept_interest_groups$')]の[concept_clout]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_SCALING_LOW:0 "低い[concept_liberty_desire]からの変化率スケーリング"
  LIBERTY_DESIRE_WEEKLY_CHANGE_SCALING_HIGH:0 "高い[concept_liberty_desire]からの変化率スケーリング"
+ LIBERTY_DESIRE_LEVEL_SWAY_WAR_GOAL_DESC:0 "#b $WAR_GOAL$#!を[concept_war_goal]として要求することを許可します"

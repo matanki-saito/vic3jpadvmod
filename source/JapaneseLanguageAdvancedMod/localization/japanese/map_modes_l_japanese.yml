@@ -68,3 +68,4 @@
  mm_gdp_ownership_ratio:0 "GDP所有権"
  mm_power_blocs:0 "勢力ブロック"
  mm_power_bloc_leverage:0 "勢力ブロックの影響力"
+ mm_building_relationship:0 "施設の関係"

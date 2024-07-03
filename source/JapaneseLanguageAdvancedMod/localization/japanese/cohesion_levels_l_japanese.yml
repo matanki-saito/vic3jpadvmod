@@ -34,3 +34,4 @@
  POWER_BLOC_COHESION_LEADING_GOODS_PRODUCER:0 "[concept_power_bloc] ($identity_trade_league$) における最大の[Concept('concept_good','$concept_goods$')]生産者"
  POWER_BLOC_COHESION_SHARE_GDP:0 "[Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]が総[concept_gdp] ($identity_trade_league$) に占める割合"
  POWER_BLOC_COHESION_WORST_ECONOMIC_DEPENDENCE:0 "#v [SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetParticipantWithLowestEconomicDependenceOnLeader.GetEconomicDependenceOn(SCOPE.GetRootScope.GetCountry.Self)]#! ($identity_trade_league$) を持つ[concept_power_bloc_leader][SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetParticipantWithLowestEconomicDependence.GetName]への[concept_economic_dependence]が最も低い[concept_power_bloc]メンバー"
+ PREDICTED_COHESTION_CHANGE:0 "[concept_power_bloc_cohesion]の予想変化"

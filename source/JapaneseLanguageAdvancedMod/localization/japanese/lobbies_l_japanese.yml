@@ -1,9 +1,9 @@
 ﻿l_japanese:
  lobby_pro_country:0 "国を支持する圧力団体"
- lobby_pro_country_name:0 "[COUNTRY.GetAdjectiveNoFormatting]―[TARGET_COUNTRY.GetAdjectiveNoFormatting] $CUSTOM_NAME$"
+ lobby_pro_country_name:0 "[COUNTRY.GetAdjectiveNoFormatting]・[TARGET_COUNTRY.GetAdjectiveNoFormatting]$CUSTOM_NAME$"
  lobby_pro_country_icon:0 "@lobby_pro_country!"
  lobby_anti_country:0 "国に反対する圧力団体"
- lobby_anti_country_name:0 "[TARGET_COUNTRY.GetAdjectiveNoFormatting]に反対する$CUSTOM_NAME$"
+ lobby_anti_country_name:0 "反[TARGET_COUNTRY.GetAdjectiveNoFormatting]$CUSTOM_NAME$"
  lobby_anti_country_icon:0 "@lobby_anti_country!"
  lobby_pro_overlord:0 "政府体制支持圧力団体"
  lobby_pro_overlord_name:0 "[TARGET_COUNTRY.GetAdjectiveNoFormatting] $CUSTOM_NAME$"

@@ -297,3 +297,6 @@
  is_in_other_market_tt:0 "別の国の[concept_customs_union]の[concept_junior_partner]です"
  is_not_in_other_market_tt:0 "別の国の[concept_customs_union]の[concept_junior_partner]ではありません"
  risorgimento_support:0 "イタリア統一運動の支援"
+ veiled_protectorate_ottomans_support:0 "オスマンのエジプト再征服の支援"
+ veiled_protectorate_egypt_support:0 "エジプト独立の支援"
+ german_leadership_neutrality:0 "#v $dp_leadership_germany$#!のプレイに関与する理由がありません"

@@ -219,7 +219,7 @@
  monarchy_law_events.1.a:0 "[SCOPE.sCharacter('monarchist_ig_leader_scope').GetFullName]は、[SCOPE.sCharacter('monarchist_ig_leader_scope').GetHerHis]を良く分かっている人物だ。"
  monarchy_law_events.1.b:0 "明らかに[SCOPE.gsInterestGroup('monarchist_ig_scope').GetName]こそが君主制推進派の拠り所であり、それゆえに国家が立ち返る所だ。"
  monarchy_law_events.2.t:0 "世俗のささやき"
- monarchy_law_events.2.d:0 "[ROOT.GetCountry.GetRuler.GetTitle]である[ROOT.GetCountry.GetRuler.GetFullName]は、様々な世俗的政府について肯定的な発言を繰り返している。中には[SCOPE.sCharacter('secularizing_spiritualist').GetSheHe]が神権主義者として[ROOT.GetCountry.GetName]の施政を行うことに疲れたのではないかと疑う人もいる。"
+ monarchy_law_events.2.d:0 "[ROOT.GetCountry.GetRuler.GetFullNameWithTitle]は、様々な世俗的政府について肯定的な発言を繰り返している。中には[SCOPE.sCharacter('secularizing_spiritualist').GetSheHe]が神権主義者として[ROOT.GetCountry.GetName]の施政を行うことに疲れたのではないかと疑う人もいる。"
  monarchy_law_events.2.f:0 "「ああ、もちろん私は信者の魂を気に掛けている。人類の救済、自己中心性の贖罪、信仰の勝利に勝るほど偉大な命題などあろうはずがない。だが...正直になって欲しい。王冠を称えることにどんな問題があるというのか？」"
  monarchy_law_events.2.a:0 "[SCOPE.sCharacter('secularizing_spiritualist').GetFullName]は、世の中の流れが良く分かっている。"
  monarchy_law_events.2.b:0 "[SCOPE.gsInterestGroup('monarchist_ig_scope').GetName]は、自分の考えが支持を集めていることに感謝している。"
