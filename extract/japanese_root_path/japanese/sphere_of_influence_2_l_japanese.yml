@@ -259,6 +259,9 @@
  not_leader_of_power_bloc_tt: "我が国は#bold 60#!ヶ月連続で[concept_power_bloc]のリーダーでは#bold ない#!。（現在、#variable [ROOT.GetCountry.MakeScope.Var('great_game_no_longer_power_bloc_leader_var').GetValue]#!）"
  je_secure_influence_over_persia_goal: "#v $PER$#!との[concept_subject]関係を確立し、#variable 10年間#!維持する"
  modifier_has_annexed_another_subject: "我が国の[concept_overlord]が別の[concept_subject]を併合しました"
+ puppeted_for_too_long_tt: "我が国は#bold 60#!か月連続で[concept_subject]です。(現在#variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#!)"
+ not_in_european_power_bloc_tt: "ヨーロッパの[Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]の[concept_power_bloc]に所属#b していません#!"
+ europeans_forced_to_end_great_game_tt: "すべてのヨーロッパ列強国が#bold グレート・ゲーム#![concept_journal_entry]を失います"
  #Old modifiers from the modifiers file
  modifier_conscientious_objection_denied: "非良心的兵役拒否を承認しません"
  modifier_conscientious_objection_rejected: "良心的兵役拒否を承認しません"

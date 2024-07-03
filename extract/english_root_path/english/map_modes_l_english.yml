@@ -64,6 +64,7 @@
  mm_diplomatic_play_state_interaction:1 "$concept_diplomatic_demand$ on a State"
  mm_diplomatic_action_interaction:0 "Diplomatic Action"
  mm_establish_colony_interaction:0 "Establish Colony"
+ mm_building_relationship: "Building Relationships"
 
  mm_budget:0 "Budget"
  mm_political:0 "Political"

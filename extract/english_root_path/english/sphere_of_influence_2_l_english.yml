@@ -313,6 +313,10 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  modifier_has_annexed_another_subject: "Our [concept_overlord] has annexed another [concept_subject]"
 
+ puppeted_for_too_long_tt: "We have been a [concept_subject] for #bold 60#! consecutive months. (Currently #variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#!)"
+ not_in_european_power_bloc_tt: "Is #b not#! in a [concept_power_bloc] with a European [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]"
+ europeans_forced_to_end_great_game_tt: "All European powers will lose the #bold Great Game#! [concept_journal_entry]"
+
  # Old modifiers from the modifiers file
  modifier_conscientious_objection_denied:1 "Disapproves of No Conscientious Objection"
  modifier_conscientious_objection_rejected:0 "Disapproves of Conscientious Objection"

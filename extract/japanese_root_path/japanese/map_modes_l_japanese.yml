@@ -62,6 +62,7 @@
  mm_diplomatic_play_state_interaction: "州に対する$concept_diplomatic_demand$"
  mm_diplomatic_action_interaction: "外交アクション"
  mm_establish_colony_interaction: "植民地の創設"
+ mm_building_relationship: "施設の関係"
  mm_budget: "予算"
  mm_political: "政治"
  mm_diplomatic: "外交"

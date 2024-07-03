@@ -254,7 +254,7 @@
  monarchy_law_events.1.a:0 "[SCOPE.sCharacter('monarchist_ig_leader_scope').GetFullName] is a figure who really knows [SCOPE.sCharacter('monarchist_ig_leader_scope').GetHerHis] stuff."
  monarchy_law_events.1.b:0 "[SCOPE.gsInterestGroup('monarchist_ig_scope').GetName] is clearly the home of monarchists, and therefore the nation."
  monarchy_law_events.2.t:0 "Worldly Whispers"
- monarchy_law_events.2.d:0 "[ROOT.GetCountry.GetRuler.GetTitle] [ROOT.GetCountry.GetRuler.GetFullName] has been heard casually making positive comments about various secular governments. Some suspect that [SCOPE.sCharacter('secularizing_spiritualist').GetSheHe] is tiring of ruling [ROOT.GetCountry.GetName] as a theocrat."
+ monarchy_law_events.2.d:0 "[ROOT.GetCountry.GetRuler.GetFullNameWithTitle] has been heard casually making positive comments about various secular governments. Some suspect that [SCOPE.sCharacter('secularizing_spiritualist').GetSheHe] is tiring of ruling [ROOT.GetCountry.GetName] as a theocrat."
  monarchy_law_events.2.f:0 ""Yes yes, of course I care for the souls of my flock. There is no greater calling than the salvation of man, the redemption of the wayward, the faith triumphant. But... be honest with me, is there anything wrong with a crown?""
  monarchy_law_events.2.a:0 "[SCOPE.sCharacter('secularizing_spiritualist').GetFullName] knows which way the winds are blowing."
  monarchy_law_events.2.b:0 "[SCOPE.gsInterestGroup('monarchist_ig_scope').GetName] appreciates its ideas being endorsed."

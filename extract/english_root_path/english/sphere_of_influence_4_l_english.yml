@@ -34,9 +34,18 @@
   gg_core.2.a: "Have our halcyon days passed?"
 
   gg_core.3.t: "Stalemate"
-  gg_core.3.d: "Despite enormous expeditures in the battle for international influence, neither [ROOT.GetCountry.GetName] nor [SCOPE.sCountry('opponent_scope').GetName] has achieved a decisive victory in the Great Game. Both sides have emerged from the conflict bruised and unable to best the other."
+  gg_core.3.d: "Despite enormous expenditures in the battle for international influence, neither [ROOT.GetCountry.GetName] nor [SCOPE.sCountry('opponent_scope').GetName] has achieved a decisive victory in the Great Game. Both sides have emerged from the conflict bruised and unable to best the other."
   gg_core.3.f: "Even before the Game was halfway through, there had been tell-alls published about it. Explorers' journals, musing about what they had seen in Bukhara or Kabul. No consensus had ever been reached, though there were periods where some ephemeral triumph had made it fashionable to proclaim a British or Russian advantage.\n\nOne was being reached now, however, and it was one that neither nation was proud of. The Great Game as a folly. From there, it would only be one short step towards a new game, one of finding a politician to blame."
   gg_core.3.a: "Far too little to gain."
+
+  gg_core.4.t: "No More Games"
+  gg_core.4.d: "The Great Game which once treated our homelands as a playing-field between foreign powers has been brought to an end. The last [SCOPE.sCountry('russia_scope').GetAdjective] and [SCOPE.sCountry('britain_scope').GetAdjective] forces have departed Central Asia, forced out not by the other's machinations, but by our own hands."
+  gg_core.4.f: "In this day, newspapers were easier to come by. The minister had accumulated quite a collection - the Times of [SCOPE.sCountry('britain_scope').GetCapital.GetCityHubName], the [SCOPE.sCountry('russia_scope').GetCapital.GetCityHubName] Record, the Correspondent from Paris. Last week, they had reported on the return of a military expedition. This week, on the resignation of his counterpart in the [SCOPE.sCountry('britain_scope').GetAdjectiveNoFormatting]. A dozen minor stories which hinted at their painful reality. They had failed, and were trying to save face. They, ever-haughty, may be unwilling to say it outright - but he knew nonetheless, and he expected their own people did as well."
+  gg_core.4.a: "They will address us as equals, now and forever."
+
+  notification_great_game_loss_to_natives_name: "Defeat in the Great Game"
+  notification_great_game_loss_to_natives_desc: "The efforts of [SCOPE.sCountry('gg_winner_scope').GetName] have led to the collapse of our influence in #b Persia#! and #b Central Asia#!. With this, the Great Game cannot continue."
+  notification_great_game_loss_to_natives_tooltip: "#header $notification_great_game_loss_to_natives_name$#!\n$TOOLTIP_DELIMITER$\n$notification_great_game_loss_to_natives_desc$"
 
   modifier_european_military_assistance: "European Military Assistance"
   modifier_afghan_military_training_costs: "Sponsoring Afghan Contender"
@@ -76,6 +85,7 @@
   je_unify_afghanistan: "Afghan Reunification"
   je_unify_afghanistan_reason: "The succession crisis sparked by the death of Timur Shah Durrani in 1793 has thrown the former Durrani Empire into a period of endless civil strife. With the threat of European powers enroaching from all sides, we must take it upon ourselves to end this period of warring principalities and reconstruct a unified Afghanistan.\n\nWhile appealing to a European [concept_great_power] to assist us in reunification may earn us their support, their #bold opponents#! will become more hostile towards our goals."
 
+  state_is_bordering_afghanistan_tt: "Our country, or one of our [Concept('concept_subject', '$concept_subjects$')] has a [concept_state] bordering #v $AFG$#!"
   is_bordering_afghanistan_tt: "Our country, or one of our [Concept('concept_subject', '$concept_subjects$')] is bordering #v $AFG$#!"
   another_gp_is_bordering_afghanistan_tt: "A foreign [concept_great_power], or one of its [Concept('concept_subject', '$concept_subjects$')] is bordering #v $AFG$#!"
 
@@ -304,8 +314,9 @@
 
   great_game_core_progress_bar_RUS_prestige: "#v Russian#! [concept_prestige]"
   great_game_core_progress_bar_GBR_prestige: "#v British#! [concept_prestige]"
-  great_game_core_progress_bar_economy_balance: "[concept_market] [concept_gdp] balance"
+  great_game_core_progress_bar_military_balance: "Army [concept_power_projection] balance"
   great_game_core_progress_bar_prestige_balance: "[concept_prestige] balance"
+  great_game_core_progress_passive_balance: "balance of directly controlled or [concept_subject]-controlled [concept_gdp] of the #v Persia#! or #v Central Asia#! [Concept('concept_strategic_region','$concept_strategic_regions$')]\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!, #v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#!)"
 
   great_game_complete_tt: "The #bold Great Game#! has concluded, with every country in the [SCOPE.sStrategicRegion('caucasus_region').GetName], [SCOPE.sStrategicRegion('central_asia_region').GetName], and [SCOPE.sStrategicRegion('persia_region').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')] as a [concept_subject] or [concept_power_bloc] member of either #v $RUS$#! or #v $GBR$#!"
 
@@ -363,6 +374,7 @@
 
   je_pacify_kazakh_steppes_success_tt:1 "The #bold Pacification of the Steppes#! [concept_journal_entry] has been #bold successfully completed#!, or the #bold Kazakh Revolt#! has been #bold defeated#!"
   je_pacify_kazakh_steppes_fail_tt: "The #bold Kazakh Revolt#! has successfully expelled #bold Russian#! influence from #variable one or more#! zhuzes"
+  pacify_the_steppe_modifier: "Russian counter-insurgency"
 
   je_the_eastern_border_treaty_of_aigun: "Present the Treaty of Aigun"
   je_the_eastern_border_treaty_of_aigun_desc: "The territory of #bold Amur#! is effectively isolated from the rest of China, and ripe for settlement. A military buildup in eastern Siberia should present enough of a threat for the Chinese government to surrender the territory without conflict."

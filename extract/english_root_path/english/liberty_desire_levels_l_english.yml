@@ -15,6 +15,8 @@
  COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_BOUNDS_DESC: "Applies between [Country.CalcLibertyDesireLevel.GetLowerBound|v0] and [Country.CalcLibertyDesireLevel.GetUpperBound|v0] [concept_liberty_desire]"
  COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_TOOLTIP: "#header [Country.GetName] is [Country.CalcLibertyDesireLevel.GetNameNoFormatting]#!\n$COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_BOUNDS_DESC$\n$LIBERTY_DESIRE_LEVEL_CURRENT_LIBERTY_DESIRE_DESC$\n$TOOLTIP_DELIMITER$\n[Country.GetWeeklyLibertyDesireChangeDesc]\n\n#title Effects on [Country.GetName]:#!#indent_newline:2 \n[Country.CalcLibertyDesireLevel.GetEffects]#!"
 
+ LIBERTY_DESIRE_LEVEL_SWAY_WAR_GOAL_DESC: "Allows demanding #b $WAR_GOAL$#! as a [concept_war_goal]"
+
  TOOLTIP_TYPE_LIBERTY_DESIRE_LEVEL: "Liberty Desire Level"
 
  LIBERTY_DESIRE_WEEKLY_CHANGE_BASE: "Base"

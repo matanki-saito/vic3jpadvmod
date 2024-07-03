@@ -15,6 +15,7 @@
  COHESION_CURRENT_VALUE_WITHOUT_TARGET: "[PowerBloc.GetCohesion|v0]"
  COHESION_TARGET_WEEKLY_CHANGE: "Weekly change towards target: #v [PowerBloc.GetCohesionWeeklyChange|+=1]#!"
  COHESION_CHANGE_TOOLTIP: "Predicted change in [concept_power_bloc_cohesion]: #v $VALUE|+=$#!"
+ PREDICTED_COHESTION_CHANGE: "Predicted change in [concept_power_bloc_cohesion]"
  TOOLTIP_TYPE_COHESION_LEVEL: "Cohesion Level"
  
  COHESION_LEVEL_BOUNDS_DESC: "Applies between [PowerBloc.GetCohesionLevel.GetLowerBound|v0] and [PowerBloc.GetCohesionLevel.GetUpperBound|v0] [concept_power_bloc_cohesion]"

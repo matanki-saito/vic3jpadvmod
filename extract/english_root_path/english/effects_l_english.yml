@@ -619,8 +619,8 @@
  CREATE_POWER_BLOC_THIRD: "[Country.GetName] creates a new [concept_power_bloc]"
  CREATE_POWER_BLOC: "A new [concept_power_bloc] is created"
 
- JOIN_POWER_BLOC: "Joins the [TARGET_COUNTRY.GetPowerBloc.GetName]"
- JOIN_POWER_BLOC_FIRST: "We join the [TARGET_COUNTRY.GetPowerBloc.GetName]"
+ JOIN_POWER_BLOC: "Joins the [TARGET_COUNTRY.GetPowerBloc.GetName] (predicted [concept_power_bloc_cohesion] impact: #v $COHESION_CHANGE|=+0$)"
+ JOIN_POWER_BLOC_FIRST: "We join the [TARGET_COUNTRY.GetPowerBloc.GetName] (predicted [concept_power_bloc_cohesion] impact: #v $COHESION_CHANGE|=+0$)"
 
  ADD_PRINCIPLE_POWER_BLOC_THIRD: "Adds $POWER_BLOC_PRINCIPLE$ to [POWER_BLOC.GetName]"
  ADD_PRINCIPLE_POWER_BLOC: "Adds $POWER_BLOC_PRINCIPLE$ to [concept_power_bloc]"

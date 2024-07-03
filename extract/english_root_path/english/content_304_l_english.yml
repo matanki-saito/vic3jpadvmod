@@ -161,6 +161,9 @@
  modifier_risorgimento_opposition: "Opposition to Risorgimento"
 
  risorgimento_support: "support for Risorgimento"
+ veiled_protectorate_ottomans_support: "support for Ottoman reconquest of Egypt"
+ veiled_protectorate_egypt_support: "support for Egyptian independence"
+ german_leadership_neutrality: "lacks reason to get involved in #v $dp_leadership_germany$#! play"
 
  unlock_national_agitation_tt: "Unlocks the 'Stir National Agitation' Character Interaction for [Concept('concept_agitator','$concept_agitators$')]"
  risorgimento_unifying_stance_tt: "Has chosen to #bold support#! Risorgimento"

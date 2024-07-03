@@ -171,6 +171,10 @@
  notification_power_bloc_leader_outranked_desc: "[SCOPE.sCountry('previous').GetName] is no longer a [concept_major_power] and is replaced by [SCOPE.sCountry('next').GetName] as the [concept_power_bloc_leader] of [SCOPE.GetRootScope.GetPowerBloc.GetName]"
  notification_power_bloc_leader_outranked_tooltip: "#header $notification_power_bloc_leader_outranked_name$#!\n$notification_power_bloc_leader_outranked_desc$"
 
+ notification_power_bloc_member_left_name: "[SCOPE.sCountry('country').GetName] left [SCOPE.GetRootScope.GetPowerBloc.GetName]"
+ notification_power_bloc_member_left_desc: "[SCOPE.sCountry('country').GetName] is no longer a [Concept('concept_power_bloc_member','$concept_power_bloc_member_short$')] of [SCOPE.GetRootScope.GetPowerBloc.GetName]"
+ notification_power_bloc_member_left_tooltip: "#header $notification_power_bloc_member_left_name$#!\n$notification_power_bloc_member_left_desc$"
+
  notification_power_bloc_member_kicked_name: "Expelled from [SCOPE.GetRootScope.GetPowerBloc.GetName]"
  notification_power_bloc_member_kicked_desc: "Our [SCOPE.GetRootScope.GetPowerBloc.GetName] membership has been revoked by the [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_short$')] [SCOPE.sCountry('actor').GetName]"
  notification_power_bloc_member_kicked_tooltip: "#header $notification_power_bloc_member_kicked_name$#!\n$notification_power_bloc_member_kicked_desc$"

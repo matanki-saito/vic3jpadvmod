@@ -233,7 +233,7 @@
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_CONTAINMENT_PLAY: "#bold $VALUE|+=$#! from $war_goal_contain_threat_type_name$ play"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_SHORT_WAR:1 "#bold $VALUE|+=$#! from Short duration of [concept_war]"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_EXISTENTIAL_PLAY:0 "#bold $VALUE|+=$#! from Would be annexed if they back down"
- DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_TRUCE: "#bold $VALUE|+=$#! from Has a $TRUCE$ with one of the primary participants"
+ DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_TRUCE: "#bold $VALUE|+=$#! from [concept_truce] with one of the primary participants"
  DIPLO_PLAY_CONFIDENCE_OR_NEUTRALITY_FACTOR_WILL_BE_ANNEXED: "$TAB$Would be annexed if they accept: #bold $VALUE|+=%$#!"
  
  DIPLO_PLAY_CONFIDENCE_PLAYER:0 "#v Player#!"
@@ -459,7 +459,7 @@
  war_goal_force_nationalization_type_name:0 "Force Nationalization"
  war_goal_force_nationalization_type_desc:0 "A [concept_war_goal] to nationalize all owned levels in our country from the target [concept_country] and revoke [concept_foreign_investment_rights]."
  war_goal_force_nationalization:0 "Nationalize all [WAR_GOAL.GetHolder.GetAdjectiveNoFormatting] buildings"
- war_goal_force_nationalization_desc:0 "[WAR_GOAL.GetHolder.GetName] nationalizes all building properties of [WAR_GOAL.GetTarget.GetName] in all [WAR_GOAL.GetHolder.GetAdjective] [Concept('concept_state', '$concept_states$')] and [concept_foreign_investment_rights] are revoked."
+ war_goal_force_nationalization_desc:0 "[WAR_GOAL.GetHolder.GetName] nationalizes all building properties of [WAR_GOAL.GetTarget.GetName] in all [WAR_GOAL.GetHolder.GetAdjective] [Concept('concept_state', '$concept_states$')] and [concept_foreign_investment_rights] are revoked. \n(A total of #variable [WAR_GOAL.GetHolder.GetInvestmentLevelsInCountry(WAR_GOAL.GetTarget)]#! [Concept('concept_building_level', '$concept_building_levels$')], #variable [WAR_GOAL.GetHolder.GetInvestmentGdpFractionInCountry(WAR_GOAL.GetTarget)|%2]#! of [WAR_GOAL.GetHolder.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')].)"
  
  war_goal_join_power_bloc_type_name: "Join Power Bloc"
  war_goal_join_power_bloc_type_desc: "A [concept_war_goal] to force the target [concept_country] to join the holder's [concept_power_bloc]."
