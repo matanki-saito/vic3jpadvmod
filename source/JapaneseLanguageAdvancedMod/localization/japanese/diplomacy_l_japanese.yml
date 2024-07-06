@@ -931,7 +931,7 @@
  DIPLOMATIC_ACCEPTANCE_TARGET_PRO_LOBBY_CLOUT:0 "[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]における[SCOPE.sCountry('actor').GetAdjectiveNoFormatting][Concept('concept_political_lobby','$concept_political_lobbies_short$')]賛成派の[concept_clout]"
  DIPLOMATIC_ACCEPTANCE_TARGET_ANTI_LOBBY_CLOUT:0 "[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]における[SCOPE.sCountry('actor').GetAdjectiveNoFormatting][Concept('concept_political_lobby','$concept_political_lobbies_short$')]反対派の[concept_clout]"
  DIPLOMATIC_ACCEPTANCE_ACTOR_PRO_LOBBY_CLOUT:0 "[SCOPE.sCountry('actor').GetNameNoFormatting]における[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting][Concept('concept_political_lobby','$concept_political_lobbies_short$')]賛成派の[concept_clout]"
- DIPLOMATIC_ACCEPTANCE_ACTOR_ANTI_LOBBY_CLOUT:0 "[SCOPE.sCountry('actor').GetNameNoFormatting]における[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting][Concept('concept_political_lobby','$concept_political_lobbies_short$')]反対派の影響力"
+ DIPLOMATIC_ACCEPTANCE_ACTOR_ANTI_LOBBY_CLOUT:0 "[SCOPE.sCountry('actor').GetNameNoFormatting]における[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting][Concept('concept_political_lobby','$concept_political_lobbies_short$')]反対派の[concept_clout]"
  DIPLOMATIC_ACCEPTANCE_CHANCE_TO_WIN_DIPLOMATIC_PLAY:0 "[concept_diplomatic_play]で[SCOPE.sCountry('actor').GetNameNoFormatting]を負かす可能性の想定値"
  DIPLOMATIC_ACCEPTANCE_ACTOR_ECONOMIC_DEPENDENCE:0 "[SCOPE.sCountry('actor').GetNameNoFormatting]の[concept_overlord]への[concept_economic_dependence]"
  DIPLOMATIC_ACCEPTANCE_TARGET_ECONOMIC_DEPENDENCE:0 "[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]の[concept_overlord]への[concept_economic_dependence]"

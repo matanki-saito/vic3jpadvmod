@@ -11,7 +11,7 @@
  LIBERTY_DESIRE_LEVEL_CURRENT_LIBERTY_DESIRE_DESC:0 "現在の[concept_liberty_desire]値 : [Country.GetLibertyDesireRaw|v0]"
  COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_BOUNDS_DESC:0 "[concept_liberty_desire]が[Country.CalcLibertyDesireLevel.GetLowerBound|v0]から[Country.CalcLibertyDesireLevel.GetUpperBound|v0]のときに適用されます"
  COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_TOOLTIP:0 "#header [Country.GetName]は[Country.CalcLibertyDesireLevel.GetNameNoFormatting]です#!\n$COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_BOUNDS_DESC$\n$LIBERTY_DESIRE_LEVEL_CURRENT_LIBERTY_DESIRE_DESC$\n$TOOLTIP_DELIMITER$\n[Country.GetWeeklyLibertyDesireChangeDesc]\n\n#title [Country.GetName]への影響 : #!#indent_newline:2 \n[Country.CalcLibertyDesireLevel.GetEffects]#!"
- TOOLTIP_TYPE_LIBERTY_DESIRE_LEVEL:0 "自由への願望レベル"
+ TOOLTIP_TYPE_LIBERTY_DESIRE_LEVEL:0 "独立欲求レベル"
  LIBERTY_DESIRE_WEEKLY_CHANGE_BASE:0 "基礎"
  LIBERTY_DESIRE_WEEKLY_CHANGE_VALUE_FORMAT:0 "$KEY$から[SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'$VALUE|bo=2$','$VALUE|bu=2$')]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_DESC:0 "[concept_liberty_desire]は、以下が原因で毎週[SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$VALUE$','(CFixedPoint)0'),'$VALUE|bo=2$','$VALUE|bu=2$')]変化すると予想されます : \n$BREAKDOWN$"

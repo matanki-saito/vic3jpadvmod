@@ -165,7 +165,7 @@
  AI_REASON_NATURAL_ALLY:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]を本質的に味方であると見なしています"
  AI_REASON_NATURAL_ENEMY:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]を本質的に敵であると見なしています"
  AI_REASON_WANTS_TO_PROTECT:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]を保護したいと考えています"
- ai_strategy_colonial_extraction:0 "植民地出の採取"
+ ai_strategy_colonial_extraction:0 "植民地の搾取"
  ai_strategy_colonial_extraction_desc:0 "植民地国家である[COUNTRY.GetName]は、植民地支配者の命令で、原料資源を採取し、輸出しようとしています。"
  ai_strategy_socialism_in_one_country:0 "一国の社会主義"
  ai_strategy_socialism_in_one_country_desc:0 "[COUNTRY.GetName]は、成熟した社会主義経済を発展させている間、資本主義国家を寄せ付けないことを望んでいます。"

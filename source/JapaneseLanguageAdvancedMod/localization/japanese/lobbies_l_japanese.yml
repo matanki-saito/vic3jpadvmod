@@ -22,7 +22,7 @@
  POLITICAL_LOBBY_HOME_COUNTRY:0 "[PoliticalLobby.GetCountry.GetName]から"
  POLITICAL_LOBBY_APPEASEMENT_IMPACT:0 "[concept_political_lobby_appeasement]に由来する[Concept('concept_interest_group','$concept_interest_groups$')]支持の[concept_approval] : [PoliticalLobby.GetAppeasement|=+v]"
  POLITICAL_LOBBY_APPEASEMENT_FACTORS:0 "[PoliticalLobby.GetTargetCountry.GetName]を対象としたアクション"
- POLITICAL_LOBBY_TOTAL_CLOUT:0 "圧力団体の影響力 : #tooltippable #tooltip:POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!"
+ POLITICAL_LOBBY_TOTAL_CLOUT:0 "圧力団体の勢力 : #tooltippable #tooltip:POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!"
  POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP:0 "#header 圧力団体の[concept_clout]#!\n合計 : [PoliticalLobby.GetTotalClout|%1v]\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]"
  POLITICAL_LOBBY_APPEASEMENT_INCREASE:0 "[concept_political_lobby_appeasement]が上昇します"
  POLITICAL_LOBBY_APPEASEMENT_DECREASE:0 "[concept_political_lobby_appeasement]が低下します"
