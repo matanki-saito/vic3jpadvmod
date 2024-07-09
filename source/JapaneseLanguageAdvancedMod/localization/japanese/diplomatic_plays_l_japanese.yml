@@ -501,7 +501,7 @@
  war_goal_force_nationalization_type_desc:0 "我が国にある対象の[concept_country]が所有する施設のレベルをすべて国有化し、[concept_foreign_investment_rights]をはく奪する[concept_war_goal]。"
  war_goal_force_nationalization:0 "[WAR_GOAL.GetHolder.GetAdjectiveNoFormatting]施設をすべて国有化する"
  war_goal_force_nationalization_desc:0 "[WAR_GOAL.GetHolder.GetName]が、[WAR_GOAL.GetTarget.GetName]のすべての[WAR_GOAL.GetHolder.GetAdjective][Concept('concept_state','$concept_states$')]の施設資産をすべて国有化し、[concept_foreign_investment_rights]が取り消されます。\n (合計#variable [WAR_GOAL.GetHolder.GetInvestmentLevelsInCountry(WAR_GOAL.GetTarget)]#! [Concept('concept_building_level','$concept_building_levels$')]、[WAR_GOAL.GetHolder.GetAdjective][Concept('concept_gdp','$concept_gdp_short$')]の#variable [WAR_GOAL.GetHolder.GetInvestmentGdpFractionInCountry(WAR_GOAL.GetTarget)|%2]#!。) "
- war_goal_join_power_bloc_type_name:0 "勢力ブロックに参加"
+ war_goal_join_power_bloc_type_name:0 "勢力圏に参加"
  war_goal_join_power_bloc_type_desc:0 "標的[concept_country]を所有者の[concept_power_bloc]に参加させるための[concept_war_goal]"
  war_goal_join_power_bloc:0 "[WAR_GOAL.GetHolder.GetPowerBloc.GetName]に参加"
  war_goal_join_power_bloc_desc:0 "[WAR_GOAL.GetTarget.GetName]は[WAR_GOAL.GetHolder.GetPowerBloc.GetName]に強制参加させられる。"

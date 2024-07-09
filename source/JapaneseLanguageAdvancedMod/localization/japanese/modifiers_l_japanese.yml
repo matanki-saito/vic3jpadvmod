@@ -2014,7 +2014,7 @@
  country_can_form_construction_company_bool_desc:0 "[concept_construction]タイプの[Concept('concept_company','$concept_companies$')]を結成できます"
  building_group_bg_construction_infrastructure_usage_mult:0 "$building_construction_sector$施設の[concept_infrastructure_usage]"
  building_group_bg_construction_infrastructure_usage_mult_desc:0 "$building_construction_sector$施設の[concept_infrastructure_usage]に対するボーナスまたはペナルティです"
- weak_power_bloc:0 "弱い勢力ブロック"
+ weak_power_bloc:0 "弱い勢力圏"
  power_bloc_no_primary_principles:0 "[concept_power_bloc_primary_principle_group]の対象がありません"
  power_bloc_primary_principles_bonus:0 "[concept_power_bloc_primary_principle_group]の対象"
  power_bloc_disallow_embargo_bool:0 "[concept_embargo]は別の[concept_power_bloc]メンバーに#negative_value 課せません#!"

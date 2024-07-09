@@ -459,7 +459,7 @@
  formation_reason_economy:0 "経済競争"
  formation_reason_economy_desc:0 "圧力団体は$formation_reason_economy$を優先します"
  lobby_core.1.a:0 "圧力団体を特定します。"
- lobby_core.1.b:0 "手動でカタリストを開始します。"
+ lobby_core.1.b:0 "手動で外交事件を開始します。"
  lobby_core.1.c:0 "手動で圧力団体を作成します。"
  lobby_core.1.d:0 "手動で宗主国圧力団体を作成します。"
  lobby_found_tt:0 "[SCOPE.sCountry('lobby_found_country').GetName]の[concept_political_lobby]"

@@ -114,7 +114,7 @@
  button_refuse_law_imposition:0 "強制を拒否"
  button_refuse_law_imposition_desc:0 "この法案を放棄し、[SCOPE.sC('foreign_imposition_country').GetNameNoFlag]に、金輪際彼らの要望には従わないことを伝える。"
  law_imposition_already_enacting_law:0 "我が国は提案された法律をまだ制定していません"
- notification_imposition_demand_sent_name:0 "強制拒否を送付"
+ notification_imposition_demand_sent_name:0 "強要の送付"
  notification_imposition_demand_sent_desc:0 "[SCOPE.sC('country_imposed_upon').GetName]は間もなく、我々の要求に応じて[SCOPE.sLaw('foreign_imposition_law').GetName]を制定するだろう。"
  notification_imposition_demand_sent_tooltip:0 "#header $notification_imposition_demand_sent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_imposition_demand_sent_desc$"
  notification_imposition_started_name:0 "[SCOPE.sC('country_imposed_upon').GetName]が[SCOPE.sLaw('foreign_imposition_law').GetName]を制定している。"
