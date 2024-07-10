@@ -1747,3 +1747,4 @@
  communism_progress_from_laws_tt:0 "#bold 警察活動#!および#bold 治安維持#![Concept('concept_institution','$concept_institutions$')]"
  communism_progress_from_events_tt:0 "イベントなどの影響"
  honorable_restoration_failed:0 "大政奉還に失敗"
+ strike.2.g:0 "彼らの要求は受け入れられません。"

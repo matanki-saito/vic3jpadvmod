@@ -809,3 +809,4 @@
  great_game_core_progress_bar_military_balance:0 "陸軍の[concept_power_projection]のバランス"
  great_game_core_progress_passive_balance:0 "#v ペルシャ#!または#v 中央アジア#![Concept('concept_strategic_region','$concept_strategic_regions$')]の直接管理または[concept_subject]が管理する[concept_gdp]のバランス\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!, #v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#!)"
  pacify_the_steppe_modifier:0 "ロシアの反乱対策"
+ circassia_dead_tt:0 "#v $CIR$#!は敗北しました"
