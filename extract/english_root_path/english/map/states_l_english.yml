@@ -510,7 +510,7 @@
  STATE_KIRGHIZIA:0 "Kirghizia"
  STATE_URALSK:0 "Uralsk"
  STATE_TURKMENIA:0 "Turkmenia"
- STATE_SEMIRECHE:0 "Semireche"
+ STATE_SEMIRECHE:1 "Semipalatinsk"
  STATE_AKMOLINSK:0 "Akmolinsk"
  STATE_KAMCHATKA:0 "Kamchatka"
  STATE_OKHOTSK:0 "Okhotsk"

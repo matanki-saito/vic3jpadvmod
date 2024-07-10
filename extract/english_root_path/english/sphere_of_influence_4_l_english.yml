@@ -245,6 +245,8 @@
   je_disrupt_russian_caucasus: "Disrupt the Russian Caucasus"
   je_disrupt_russian_caucasus_reason: "The fledgling state of Circassia, located on the Black Sea in the Caucasus region, presents an opportunity to arrest Russian consolidation in the region. Extending recognition to the Circassian state, and ensuring its continued existence, must be a priority of ours."
 
+  circassia_dead_tt: "#v $CIR$#! has been defeated"
+
   je_secure_persian_border: "Secure the Persian Border"
   je_secure_persian_border_reason: "The presence of insurgent states in the North Caucasus threatens our control of the region, and by extension our ability to project power in the Middle East. The long-running Caucasian War must come to an end that is favorable to our nation."
 

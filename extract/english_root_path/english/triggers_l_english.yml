@@ -201,7 +201,14 @@
  TRIGGER_HAS_JOURNAL_ENTRY_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD:0 "[COUNTRY.GetName] has an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
  TRIGGER_HAS_JOURNAL_ENTRY_THIRD_NOT:1 "[COUNTRY.GetName] does #bold not #!have an active [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
- 
+
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY: "Has an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_NOT: "Does #bold not #!have an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_FIRST: "[COUNTRY.GetNameNoFlag] has an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_FIRST_NOT: "[COUNTRY.GetNameNoFlag] does #bold not #!have an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_THIRD: "[COUNTRY.GetName] has an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+ TRIGGER_HAS_INACTIVE_JOURNAL_ENTRY_THIRD_NOT: "[COUNTRY.GetName] does #bold not #!have an inactive [JOURNAL_ENTRY_TYPE.GetName] [concept_journal_entry]"
+
  TRIGGER_HAS_VARIABLE:1 "#variable The Country#! has #variable the variable in question#!"
  TRIGGER_HAS_VARIABLE_NOT:2 "#variable The Country#! does #bold not #!have #variable the variable in question#!"
  TRIGGER_HAS_VARIABLE_FIRST:1 "#variable The Country#! has #variable the variable in question#!"

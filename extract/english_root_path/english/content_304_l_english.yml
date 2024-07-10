@@ -6,6 +6,7 @@
   is_italy_tt: "Has formed the nation of #bold Italy#!"
   italy_will_get_couped_custom: " and the instatement of a #bold democratic republic#!"
   italy_will_get_annexed_custom: " and #red annexation#! into the leading Italian state"
+  owns_italian_homelands_tt: "Owns [GetCulture('north_italian').GetName] or [GetCulture('south_italian').GetName] [concept_homeland] states"
 
   je_risorgimento_austrian_radicals_button: "Encourage Italian Nationalism"
   je_risorgimento_austrian_radicals_button_desc: "Ever since the end of the Napoleonic Wars, Italian territories have been held by foreign powers. Our journey to unify the peninsula may inspire them to raise arms against their own oppressors."
@@ -387,3 +388,22 @@
 
   is_in_other_market_tt: "Is a [concept_junior_partner] in another country's [concept_customs_union]"
   is_not_in_other_market_tt: "Is not a [concept_junior_partner] in another country's [concept_customs_union]"
+
+  je_reunify_china: "The Warlord Era"
+  je_reunify_china_reason: "The collapse of central government authority has led to the rise of various competing military powers across China. If we are to restore China from the ruins, we must establish ourselves as something more than just another #bold $gov_warlord_state$#!.\n\nWhilst this [concept_journal_entry] is active, less powerful Warlord States will be more likely to assist one another against more powerful states."
+
+  warlord_china_events.101.t: "Chinese Reunification"
+  warlord_china_events.101.d: "Through the diligence of our people and the bravery of our soldiers, the last warlord armies have been defeated or brought into compliance. [ROOT.GetCountry.GetName] has been reunited, stronger than ever before."
+  warlord_china_events.101.f: "She had never seen so much light in the sky. A sea of red, yellow, and pink sparks transformed night into day, interspersed with the detonations of yet more fireworks. In the streets beneath her home, her neighbors released lanterns in great glowing flocks that met the fireworks at their height.\n\nThe festival would end eventually, of course, for limited supplies and need for sleep, but the occasion it symbolized would not. China was one again - indivisible, sovereign, and eternal."
+  warlord_china_events.101.a: "Our nation must be forever indivisible."
+  warlord_china_events.101.b: "Let us dedicate all of our efforts into rebuilding."
+
+  modifier_chinese_warlord_era: "Warlord Era"
+  modifier_end_of_warlord_period: "Reunified China"
+  alignment_politics: "Alignment Politics"
+
+  china_shattered_tt: "#v $CHI$#! has failed the $je_warlord_china$ [concept_journal_entry]"
+  central_government_defeated_tt: "The #bold central government#! in [GetGlobalVariable('chinese_central_government').GetCountry.GetName|v] has been defeated"
+  has_formed_china_tt: "Has formed the nation of #v $CHI$#!"
+
+  no_independent_chinese_countries_tt: "Every [concept_country] with [GetCulture('han').GetName], [GetCulture('manchu').GetName], [GetCulture('yue').GetName], [GetCulture('yi').GetName], or [GetCulture('hakka').GetName] [concept_primary_cultures] has been annexed or made our [concept_subject]"

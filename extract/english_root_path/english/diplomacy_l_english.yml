@@ -245,7 +245,8 @@
  DIPLOMATIC_ACCEPTANCE_WORLD_REVOLUTION: "They are pursuing a [concept_ai_strategy] of #v $ai_strategy_world_revolution$#!"
  DIPLOMATIC_ACCEPTANCE_UNRECOGNIZED: "[SCOPE.sCountry('actor').GetName] is an [concept_unrecognized_power]"
  DIPLOMATIC_ACCEPTANCE_DECREASED_COHESION: "[concept_power_bloc_cohesion] reduction if [SCOPE.sCountry('actor').GetName] joined"
-
+ DIPLOMATIC_ACCEPTANCE_LEGITIMACY: "[concept_legitimacy] of [SCOPE.GetRootScope.GetCountry.GetName] ([SCOPE.GetRootScope.GetCountry.GetGovernmentLegitimacy|v])"
+ 
  DIPLOMATIC_ACCEPTANCE_NATIONAL_MILITIA: "They have enacted [GetLawType('law_national_militia').GetName]"
  DIPLOMATIC_ACCEPTANCE_DISALLOWED_TRADE_ROUTES: "They disallowed [Concept('concept_trade_route', '$concept_trade_routes$')]"
  DIPLOMATIC_ACCEPTANCE_DISALLOWED_TRADE_ROUTES_FIRST: "We disallowed [Concept('concept_trade_route', '$concept_trade_routes$')]"
@@ -367,7 +368,7 @@
  increase_relations_country_info: "Currently [TARGET_COUNTRY.GetRelationsWithDesc(GetPlayer.Self)] (#v #tooltippable #tooltip:[TARGET_COUNTRY.GetTooltipTag],[GetRawTextTooltipTag(TARGET_COUNTRY.GetRelationsTooltip(GetPlayer))] [TARGET_COUNTRY.GetRelationsWith(GetPlayer.Self)|+]#!#!#!) [concept_relations] with [TARGET_COUNTRY.GetName]"
  increase_relations_action_notification_name:2 "[INITIATOR_COUNTRY.GetName] improving [concept_relations]"
  increase_relations_pact_desc:2 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] is actively improving their [concept_relations] with [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]."
- increase_relations_action_notification_desc: "[INITIATOR_COUNTRY.GetName] have started to improve our mutual [concept_relations], which are currently #tooltippable #tooltip:[GetRawTextTooltipTag(TARGET_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWithDesc( GetPlayer )|+]#!#! (#BOLD #tooltippable #tooltip:[GetRawTextTooltipTag(TARGET_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWith( GetPlayer )|+]#!#!#!). Their [concept_attitude] towards [GetPlayer.GetName] is #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!."
+ increase_relations_action_notification_desc: "[INITIATOR_COUNTRY.GetName] have started to improve our mutual [concept_relations], which are currently #tooltippable #tooltip:[GetRawTextTooltipTag(INITIATOR_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWithDesc( GetPlayer )|+]#!#! (#BOLD #tooltippable #tooltip:[GetRawTextTooltipTag(INITIATOR_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWith( GetPlayer )|+]#!#!#!). Their [concept_attitude] towards [GetPlayer.GetName] is #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!."
  increase_relations_action_notification_break_name:2 "[INITIATOR_COUNTRY.GetName] stopped improving [concept_relations]"
  increase_relations_action_notification_break_desc:2 "[INITIATOR_COUNTRY.GetName] have stopped improving our mutual [concept_relations]."
  
@@ -390,7 +391,7 @@
  damage_relations_country_info: "Currently [TARGET_COUNTRY.GetRelationsWithDesc(GetPlayer.Self)] (#v #tooltippable #tooltip:[TARGET_COUNTRY.GetTooltipTag],[GetRawTextTooltipTag(TARGET_COUNTRY.GetRelationsTooltip(GetPlayer))] [TARGET_COUNTRY.GetRelationsWith(GetPlayer.Self)|+]#!#!#!) [concept_relations] with [TARGET_COUNTRY.GetName]"
  damage_relations_action_notification_name:2 "[INITIATOR_COUNTRY.GetName] damaging [concept_relations]"
  damage_relations_pact_desc:2 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] is actively damaging their [concept_relations] with [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]."
- damage_relations_action_notification_desc: "[INITIATOR_COUNTRY.GetName] have started to damage our mutual [concept_relations], which are currently #tooltippable #tooltip:[GetRawTextTooltipTag(TARGET_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWithDesc( GetPlayer )|+]#!#! (#BOLD #tooltippable #tooltip:[GetRawTextTooltipTag(TARGET_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWith( GetPlayer )|+]#!#!#!). Their [concept_attitude] towards [GetPlayer.GetName] is #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!."
+ damage_relations_action_notification_desc: "[INITIATOR_COUNTRY.GetName] have started to damage our mutual [concept_relations], which are currently #tooltippable #tooltip:[GetRawTextTooltipTag(INITIATOR_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWithDesc( GetPlayer )|+]#!#! (#BOLD #tooltippable #tooltip:[GetRawTextTooltipTag(INITIATOR_COUNTRY.GetRelationsTooltip(GetPlayer))] [INITIATOR_COUNTRY.GetRelationsWith( GetPlayer )|+]#!#!#!). Their [concept_attitude] towards [GetPlayer.GetName] is #tooltippable #tooltip:[INITIATOR_COUNTRY.GetTooltipTag],COUNTRY_ATTITUDE_TOOLTIP [INITIATOR_COUNTRY.GetAttitudeTowards(GetPlayer).GetName]#!#!."
  damage_relations_action_notification_break_name:2 "[INITIATOR_COUNTRY.GetName] stopped damaging [concept_relations]"
  damage_relations_action_notification_break_desc:2 "[INITIATOR_COUNTRY.GetName] have stopped damaging our mutual [concept_relations]."
 

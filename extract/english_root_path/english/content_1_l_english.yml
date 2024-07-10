@@ -312,6 +312,7 @@
  strike.2.d:0 "Promise to pass the Workers' Protections law."
  strike.2.e:0 "Promise to expand Workplace Safety."
  strike.2.f:1 "Promise to expand Social Security."
+ strike.2.g: "Their demands are unacceptable."
  strike.3.t:0 "General Strike!"
  strike.3.d1:0 "With their demands still unmet, the strike has escalated into a nationwide general strike. Mining has all but ceased throughout [SCOPE.sCountry('strike_country').GetName]."
  strike.3.d2:0 "With their demands still unmet, the strike has escalated into a nationwide general strike. Industrial factories have all but shut down throughout [SCOPE.sCountry('strike_country').GetName]."

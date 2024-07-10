@@ -283,7 +283,7 @@
  warlord_china_events.100.t:0 "China Shatters"
  warlord_china_events.100.d:0 "The fall of the Qing dynasty has ended China's long standing period of imperial rule and ushered in a new age of warlordism."
  warlord_china_events.100.f:1 ""Empires, like dreams, are made of an intangible material, so fragile they can end at any given time, no previous warning. They hold, however, the same insane appeal. Even if the thread that holds together their seams is invisible, and every suture hides a wound.\n\nThousands of years of imperial rule, ended in just a moment.""
- warlord_china_events.100.a:0 "Oh no."
+ warlord_china_events.100.a:1 "We must salvage this situation."
 
  warlord_china_events.110.t:0 "Melon Smashing"
  warlord_china_events.110.d:0 "It is at risk of becoming public knowledge that [SCOPE.sCharacter('prisoner_killing_warlord').GetPrimaryRoleTitle] [SCOPE.sCharacter('prisoner_killing_warlord').GetFullName] entertains [SCOPE.sCharacter('prisoner_killing_warlord')GetHerselfHimself] by smashing in the skulls of prisoners with a sword."

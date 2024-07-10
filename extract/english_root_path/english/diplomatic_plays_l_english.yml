@@ -103,6 +103,7 @@
   
  WARGOAL_NO_TREATY_PORT:1 " Target state has no valid [concept_treaty_port] province"
  WARGOAL_IS_TREATY_PORT:1 " Target state is a [concept_treaty_port]"
+ WARGOAL_NO_PORT: " Target $concept_state$ must have a #v $building_port$#! constructed"
  WARGOAL_CANNOT_HOLD_TREATY_PORT:0 " [COUNTRY.GetAdjective] [concept_rank] must be higher than [TARGET_COUNTRY.GetAdjective] [concept_rank] of [TARGET_COUNTRY.GetRank]"
  WARGOAL_NOT_SUBJECT_OF:2 " [COUNTRY.GetName] is not a subject of [TARGET_COUNTRY.GetName]"
  WARGOAL_IS_SUBJECT_OF:1 " [COUNTRY.GetName] is a subject of [TARGET_COUNTRY.GetName]"
@@ -459,7 +460,7 @@
  war_goal_force_nationalization_type_name:0 "Force Nationalization"
  war_goal_force_nationalization_type_desc:0 "A [concept_war_goal] to nationalize all owned levels in our country from the target [concept_country] and revoke [concept_foreign_investment_rights]."
  war_goal_force_nationalization:0 "Nationalize all [WAR_GOAL.GetHolder.GetAdjectiveNoFormatting] buildings"
- war_goal_force_nationalization_desc:0 "[WAR_GOAL.GetHolder.GetName] nationalizes all building properties of [WAR_GOAL.GetTarget.GetName] in all [WAR_GOAL.GetHolder.GetAdjective] [Concept('concept_state', '$concept_states$')] and [concept_foreign_investment_rights] are revoked. \n(A total of #variable [WAR_GOAL.GetHolder.GetInvestmentLevelsInCountry(WAR_GOAL.GetTarget)]#! [Concept('concept_building_level', '$concept_building_levels$')], #variable [WAR_GOAL.GetHolder.GetInvestmentGdpFractionInCountry(WAR_GOAL.GetTarget)|%2]#! of [WAR_GOAL.GetHolder.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')].)"
+ war_goal_force_nationalization_desc:0 "[WAR_GOAL.GetHolder.GetName] nationalizes all building properties of [WAR_GOAL.GetTarget.GetName] in all [WAR_GOAL.GetHolder.GetAdjective] [Concept('concept_state', '$concept_states$')]. \n(A total of #variable [WAR_GOAL.GetHolder.GetInvestmentLevelsInCountry(WAR_GOAL.GetTarget)]#! [Concept('concept_building_level', '$concept_building_levels$')], #variable [WAR_GOAL.GetHolder.GetInvestmentGdpFractionInCountry(WAR_GOAL.GetTarget)|%2]#! of [WAR_GOAL.GetHolder.GetAdjective] [Concept('concept_gdp', '$concept_gdp_short$')].)"
  
  war_goal_join_power_bloc_type_name: "Join Power Bloc"
  war_goal_join_power_bloc_type_desc: "A [concept_war_goal] to force the target [concept_country] to join the holder's [concept_power_bloc]."

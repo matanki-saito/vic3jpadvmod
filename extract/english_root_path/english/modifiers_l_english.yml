@@ -1982,10 +1982,10 @@ state_migration_quota_mult_desc: "A bonus or penalty to the amount of people tha
  state_soldiers_investment_pool_contribution_add_desc:0 "How much of their profits $soldiers$ will invest"
  state_soldiers_investment_pool_efficiency_mult_desc:1 "An increase or decrease to how much the invested profits from $soldiers$ will contribute to the [concept_investment_pool]"
 
- country_disallow_discriminated_migration_bool:1 "[Concept('concept_discrimination', '$concept_discriminated$')] [Concept('concept_pop', '$concept_pops$')] Disallowed from [Concept('concept_migration', '$concept_migrating$')]"
- country_disallow_discriminated_migration_bool_desc:1 "This country does not permit its [Concept('concept_discrimination', '$concept_discriminated$')] [Concept('concept_pop', '$concept_pops$')] to [Concept('concept_migration', '$concept_migrate$')]"
- country_disallow_migration_bool:1 "All [Concept('concept_pop', '$concept_pops$')] Disallowed from [Concept('concept_migration', '$concept_migrating$')]"
- country_disallow_migration_bool_desc:1 "This country does not permit any of its [Concept('concept_pop', '$concept_pops$')] to [Concept('concept_migration', '$concept_migrate$')]"
+ country_disallow_discriminated_migration_bool: "[Concept('concept_discrimination', '$concept_discriminated$')] [Concept('concept_pop', '$concept_pops$')] Disallowed from [Concept('concept_migration', '$concept_migrating$')] internationally"
+ country_disallow_discriminated_migration_bool_desc: "This country does not permit [Concept('concept_discrimination', '$concept_discriminated$')] [Concept('concept_pop', '$concept_pops$')] to [Concept('concept_migration', '$concept_migrate$')] in or out of it."
+ country_disallow_migration_bool: "All [Concept('concept_pop', '$concept_pops$')] Disallowed from [Concept('concept_migration', '$concept_migrating$')] internationally"
+ country_disallow_migration_bool_desc: "This country does not permit any [Concept('concept_pop', '$concept_pops$')] to [Concept('concept_migration', '$concept_migrate$')] in or out of it."
  country_disallow_agitator_invites_bool: "Disallowed from inviting [Concept('concept_exile', '$concept_exiles$')]"
  country_disallow_agitator_invites_bool_desc: "This country does not permit the invitation of [Concept('concept_exile', '$concept_exiles$')]"
  country_disallow_aggressive_plays_bool: "Disallow Aggressive Diplomatic Plays"
@@ -2003,6 +2003,8 @@ state_migration_quota_mult_desc: "A bonus or penalty to the amount of people tha
  country_can_impose_same_lawgroup_policing_in_power_bloc_bool_desc: "Allowed to #b Impose#! the same [concept_law] as their own in the [GetLawGroup('lawgroup_policing').GetName] group on other [Concept('concept_power_bloc_member','$concept_power_bloc_members_short$')]"
  country_can_impose_same_lawgroup_colonization_in_power_bloc_bool: "#b Impose#! same [GetLawGroup('lawgroup_colonization').GetName] [concept_law] on $concept_power_bloc_members_short$"
  country_can_impose_same_lawgroup_colonization_in_power_bloc_bool_desc: "Allowed to #b Impose#! the same [concept_law] as their own in the [GetLawGroup('lawgroup_colonization').GetName] group on other [Concept('concept_power_bloc_member','$concept_power_bloc_members_short$')]"
+ country_can_impose_same_lawgroup_army_model_in_power_bloc_bool: "#b Impose#! same [GetLawGroup('lawgroup_army_model').GetName] [concept_law] on $concept_power_bloc_members_short$"
+ country_can_impose_same_lawgroup_army_model_in_power_bloc_bool_desc: "Allowed to #b Impose#! the same [concept_law] as their own in the [GetLawGroup('lawgroup_army_model').GetName] group on other [Concept('concept_power_bloc_member','$concept_power_bloc_members_short$')]"
 
  country_disallow_law_no_schools_bool: "Disallow [GetLawType('law_no_schools').GetName]"
  country_disallow_law_no_schools_bool_desc: "Not allowed to start enacting [GetLawType('law_no_schools').GetName]"

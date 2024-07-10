@@ -150,6 +150,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  je_secure_influence_over_persia: "Secure Influence over Persia"
  je_secure_influence_over_persia_reason: "Rich in wealth and resources, Persia also serves as a springboard for armies bound for the Indian and Central Asian heartlands. Any great power with stakes in these regions would be wise to secure this land for themselves, and wiser still to deny it to their adversaries."
+ persia_puppeted_tt: "#v $PER$#! is our [concept_subject]"
 
  je_consolidate_persia: "Consolidate Persia"
  je_consolidate_persia_reason: "Governmental control of the Persian provinces have long been of a tenuous nature, with autonomous sheikhdoms and foreign powers holding more sway than the nominal governors appointed by [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName].\n\nIf we are to effectively modernize the state, the sovereignty of the central government must be enforced."

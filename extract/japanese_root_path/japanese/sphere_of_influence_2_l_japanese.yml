@@ -124,6 +124,7 @@
  herat_war: "ヘラート戦争"
  je_secure_influence_over_persia: "ペルシャに対する堅実な影響力"
  je_secure_influence_over_persia_reason: "富と資源があるペルシャは、インドと中央アジアの中心地に向かう軍隊の出発点としても機能する。この地域に利害関係のある大国であれば、この土地を確保し、敵対者にそれをさせないのが賢明である。"
+ persia_puppeted_tt: "#v $PER$#!は我が国の[concept_subject]です"
  je_consolidate_persia: "ペルシャを統合する"
  je_consolidate_persia_reason: "ペルシャの地方に対する政府の権限は長い間希薄であり、自治首長国や外国勢力が、[SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]によって任命された名目上の総督よりも大きな影響力を持っていた。\n\n国家を効果的に近代化するのであれば、中央政府の主権を強化し、維持しなければならない。"
  je_achieve_sovereignty: "主権を達成する"

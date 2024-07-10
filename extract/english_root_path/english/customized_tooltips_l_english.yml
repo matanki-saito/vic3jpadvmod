@@ -49,7 +49,8 @@
  DATA_DIPLOMATIC_ACTION_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_DIPLOMATIC_ACTION_NAME_TOOLTIP,DiplomaticActionTooltip $NAME$#!#!"
  DATA_DIPLOMATIC_ACTION_TYPE_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_DIPLOMATIC_ACTION_TYPE_NAME_TOOLTIP,DiplomaticActionTypeTooltip $NAME$#!#!"
  DATA_COMMANDER_ORDER_TYPE_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_COMMANDER_ORDER_TYPE_NAME_TOOLTIP,CommanderOrderTypeTooltip $NAME$#!#!"
- DATA_MODIFIER_BREAKDOWN_VALUE_FORMAT:0 "#tooltippable #tooltip:$TAG$,EMPTY_STRING,ModifierBreakdownTooltip $VALUE$#!#!"
+ DATA_DATABASE_MODIFIER_BREAKDOWN_VALUE_FORMAT: "#tooltippable #tooltip:$TAG$,EMPTY_STRING,ModifierBreakdownTooltip $VALUE$#!#!"
+ DATA_OBJECT_MODIFIER_BREAKDOWN_VALUE_FORMAT: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE$#!#!"
 
  DATA_GOODS_STATE_PRICE_WITH_TOOLTIP_FORMAT:0 "#tooltippable #tooltip:$TAG$,DATA_GOODS_STATE_PRICE_BREAKDOWN,GraphTooltipGoodsPrice @money![Goods.GetStatePrice|1]#!#! [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetStatePrice )]"
  DATA_GOODS_MARKET_PRICE_WITH_TOOLTIP_FORMAT:0 "#tooltippable #tooltip:$TAG$,DATA_GOODS_MARKET_PRICE_BREAKDOWN,GraphTooltipGoodsPrice @money![Goods.GetMarketPrice|1]#!#! [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetMarketPrice )]"
@@ -408,8 +409,9 @@
  DIPLOMATIC_ACTION_TYPE_PACT_OR_ONGOING_ACTION: "[SelectLocalization(DiplomaticActionType.IsOngoingDiplomaticPact, 'DIPLOMATIC_ACTION_PACT', 'DIPLOMATIC_ACTION_ONGOING')]"
  DIPLOMATIC_ACTION_TYPE_INFLUENCE_COST: "#v [DiplomaticActionType.GetMaintenanceCostFormatted(GetPlayer.Self, Country.Self)]#! maintenance cost"
 
- DATA_MODIFIER_BREAKDOWN_TOOLTIP: "The value [ModifierBreakdown.GetFormattedMultipliedValue] is due to:[AddLocalizationIf(Not(EqualTo_CFixedPoint(ModifierBreakdown.GetSourceMultiplier,'(CFixedPoint)1')),'DATA_MODIFIER_MULTIPLIER_NONZERO')]\n\n[ModifierBreakdown.GetBreakdown]"
- DATA_MODIFIER_MULTIPLIER_NONZERO: "\n\nA multiplier of [ModifierBreakdown.GetSourceMultiplier|v]"
+ DATA_OBJECT_MODIFIER_BREAKDOWN_TOOLTIP: "#v [ModifierBreakdown.GetName]#!\n[ModifierBreakdown.GetFormattedMultipliedValue] [ModifierBreakdown.GetTypeName]\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(AddLocalizationIf(Not(EqualTo_CFixedPoint(ModifierBreakdown.GetSourceMultiplier,'(CFixedPoint)1')),'DATA_MODIFIER_MULTIPLIER_NONZERO'), '\n\n')][ModifierBreakdown.GetBreakdown]\n\n[ModifierBreakdown.GetTypeDescription]"
+ DATA_MODIFIER_BREAKDOWN_TOOLTIP: "The value [ModifierBreakdown.GetFormattedMultipliedValue] is due to:[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(EqualTo_CFixedPoint(ModifierBreakdown.GetSourceMultiplier,'(CFixedPoint)1')),'DATA_MODIFIER_MULTIPLIER_NONZERO'))]\n\n[ModifierBreakdown.GetBreakdown]"
+ DATA_MODIFIER_MULTIPLIER_NONZERO: "A multiplier of [ModifierBreakdown.GetSourceMultiplier|v]"
 
  DATA_GOODS_MARKET_CONTEXT_BALANCE_LABEL:0 "[Market.GetName] Balance"
  DATA_GOODS_MARKET_CONTEXT_PRICE_LABEL:0 "[Market.GetName] Price"

@@ -81,6 +81,8 @@
  catalyst_unification_support_removed_desc: "[TARGET_COUNTRY.GetName] ceasing to be a [COUNTRY.GetAdjective] [concept_unification_supporter]"
  catalyst_autonomy_increase_requested: "[concept_autonomy] Requested"
  catalyst_autonomy_increase_requested_desc: "[TARGET_COUNTRY.GetName] requesting increasing autonomy"
+ catalyst_autonomy_decrease_requested: "Decrease in [concept_autonomy] Requested"
+ catalyst_autonomy_decrease_requested_desc: "[TARGET_COUNTRY.GetName] requesting decreasing autonomy"
  catalyst_autonomy_change_imposed: "[concept_autonomy] Changed"
  catalyst_autonomy_change_imposed_desc: "[TARGET_COUNTRY.GetName] changed the autonomy level of [COUNTRY.GetName]"
  catalyst_autonomy_increase_denied: "[concept_autonomy] Denied"
