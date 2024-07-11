@@ -1086,7 +1086,7 @@
  lesson_foreign_investmen_why_2_desc:0 "他の[Concept('concept_country','$concept_countries$')]に[Concept('concept_building','$concept_buildings$')]を拡張できれば、今後意見が合わなくなるおそれのある国への依存を減らすことができます。独自の[concept_trade_route]ネットワークを効果的に構築できれば、自国の産業を拡大できます。"
  lesson_foreign_investmen_why_3:0 "$lesson_foreign_investmen_why_1$"
  lesson_foreign_investmen_why_3_desc:0 "他に、他の$concept_country$が自力で急成長できない場合もその国に投資すべきかもしれません。この$concept_country$は、[GetBuildingType('building_construction_sector').GetName][Concept('concept_building','$concept_buildings$')]がないために自国の経済を発展させられずにいる可能性があります。投資すれば、彼らの資源を自国市場に組み入れることができる可能性があるだけでなく、同国の経済を発展させ、[Concept('concept_pop','$concept_pops$')]を利用することも可能になります。[concept_subject]の場合は、[concept_army]の強化、納付金の増加、自国の$concept_pops$による個人投資力の向上なども実現できます。"
- je_tutorial_lobbies:0 "圧力団体の$concept_political_lobby_appeasement$"
+ je_tutorial_lobbies:0 "ロビーの$concept_political_lobby_appeasement$"
  je_tutorial_lobbies_status:0 "[concept_political_lobby]の[concept_political_lobby_appeasement]が上昇します"
  je_tutorial_lobbies_reason:0 "我が国の[Concept('concept_interest_group','$concept_interest_groups$')]の一つが、[SCOPE.sPL('target').GetTargetCountry.GetName]を対象とした$concept_political_lobby$を発起しました。我が国の$concept_interest_groups$の機嫌を取ることで、新しい[Concept('concept_law','$concept_laws$')]の制定に使える[concept_approval]が増えます。さらに、より多くの[Concept('concept_interest_group_trait','$concept_interest_group_traits$')]がアンロックされる可能性があります。"
  je_tutorial_lobbies_goal:0 "[SCOPE.sPL('target').GetName]の$concept_political_lobby_appeasement$を[JournalEntry.GetTotalGoalValue|v0]に増やす (現在のレベル : [JournalEntry.CalcCurrentGoalValue|v0]) "

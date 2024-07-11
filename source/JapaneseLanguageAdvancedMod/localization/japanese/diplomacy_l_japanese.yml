@@ -1026,7 +1026,7 @@
  guarantee_independence_action_notification_desc:0 "[INITIATOR_COUNTRY.GetName]が我が国の[concept_country]の独立保証を開始した。もし、[concept_diplomatic_play]の標的になった場合、彼らに助けを求めることができるだろう。"
  guarantee_independence_action_notification_break_name:0 "[INITIATOR_COUNTRY.GetAdjective]は独立の保証を停止しました"
  guarantee_independence_action_notification_break_desc:0 "今後、[INITIATOR_COUNTRY.GetName]から独立の保証を受けることはできません。"
- fund_lobbies:0 "圧力団体への資金提供"
+ fund_lobbies:0 "ロビーへの資金提供"
  fund_lobbies_action_name:0 "$fund_lobbies$"
  fund_lobbies_action_propose_name:0 "$concept_funding_lobbies$を開始"
  fund_lobbies_action_break_name:0 "$concept_funding_lobbies$を停止"
