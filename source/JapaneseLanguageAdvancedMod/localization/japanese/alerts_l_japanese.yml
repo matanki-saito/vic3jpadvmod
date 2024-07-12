@@ -265,7 +265,7 @@
  market_goods_shortage_alert_setting_name:0 "深刻な市場商品不足"
  low_supply_setting_name:0 "物資不足"
  isolated_state_alert_setting_name:0 "孤立州"
- inactive_trade_route_alert_setting_name:0 "停止中の貿易ルート"
+ inactive_trade_route_alert_setting_name:0 "無効な貿易ルート"
  secession_growing_alert_setting_name:0 "分離が進行中"
  has_decreasing_interests_alert_setting_name:0 "関心が薄れています"
  obligation_expiring_setting_name:0 "期限切れを迎える義務"

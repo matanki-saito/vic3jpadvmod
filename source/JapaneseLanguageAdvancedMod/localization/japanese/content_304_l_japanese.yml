@@ -185,7 +185,7 @@
  KOR_korean_empire_tooltip:0 "この国は#bold 大韓帝国#!として知られるようになります"
  modifier_korean_empire:0 "光武時代の前兆"
  modifier_egalitarian_workers_movement:0 "平等主義労働組合"
- je_chinese_missions:0 "中国の使命"
+ je_chinese_missions:0 "中国への宣教"
  je_chinese_missions_reason:0 "ある[ROOT.GetCountry.GetAdjective]都市を開放すると[GetReligion('protestant').GetName]宣教師は我が国にさらに深く足を踏み入れます。[ROOT.GetCountry.GetAdjectiveNoFormatting]は社会全体として、この宣教師らを既成の秩序における西側干渉の先兵とするようになりました。"
  missionary_ban_tt:0 "中国から宣教師たちを追放した"
  CHI_deport_missionaries_button:0 "キリスト教宣教師を追放する"
