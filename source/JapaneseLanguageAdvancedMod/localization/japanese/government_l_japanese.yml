@@ -151,7 +151,7 @@
  gov_junta:0 "軍事政権"
  gov_junta_desc:0 "軍部が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_warlord_state:0 "軍閥国家"
- gov_warlord_state_desc:0 "直情的な[Concept('concept_ruler','Warlord')]が国を治める[concept_government_type]です。"
+ gov_warlord_state_desc:0 "直情的な[Concept('concept_ruler','軍閥指導者')]が国を治める[concept_government_type]です。"
  gov_crown_colony:0 "直轄植民地"
  gov_crown_colony_desc:0 "イギリス王室の植民地であり、植民地行政官によって統治され、自治権は限られています。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_fascist_state:0 "ファシズム国家"
