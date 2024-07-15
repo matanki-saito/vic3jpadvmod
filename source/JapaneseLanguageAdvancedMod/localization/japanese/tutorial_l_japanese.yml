@@ -182,7 +182,7 @@
  lesson_pops_summary_desc:0 "ここではこの国にどのようなPOPが存在し、どういった[concept_political_strength]を共有しているかといったPOPに関するより高度なサマリーが確認できます。ただ、もう少し詳しく知る必要がありますので、ハイライト表示された「詳細一覧」をクリックして[GetPlayer.GetName]にある各POPの一覧を見てみましょう。"
  lesson_pops_summary_continue:0 "詳細一覧を開く"
  lesson_pops_country_details:0 "自国のPOP"
- lesson_pops_country_details_desc:0 "この[Concept('concept_profession','$concept_professions$')]一覧には\n該当者の$TAB$総#v 数#!\n$TAB$合計[concept_political_strength]\n$TAB$主流派である[Concept('concept_interest_group','$concept_interest_groups$')]\n$TAB$平均[concept_sol]が表示されます。\n\n国家概要ビューパネルにある国家を選んで同様の情報を閲覧することができます。いずれかの国をクリックして概要ビューを確認してみてください。"
+ lesson_pops_country_details_desc:0 "この[Concept('concept_profession','$concept_professions$')]一覧には\n$TAB$該当者の総#v 数#!\n$TAB$合計[concept_political_strength]\n$TAB$主流派である[Concept('concept_interest_group','$concept_interest_groups$')]\n$TAB$平均[concept_sol]が表示されます。\n\n国家概要ビューパネルにある国家を選んで同様の情報を閲覧することができます。いずれかの国をクリックして概要ビューを確認してみてください。"
  lesson_pops_country_details_continue:0 "いずれかの国をクリックして概要ビュータブを開く"
  lesson_pops_state_population:0 "州POP"
  lesson_pops_state_population_desc:0 "国家概要ビューパネルは人口に関する基本的な統計データの一部しか確認することができません。ハイライトされたタブをクリックして、この国家の人口に関する詳細データを確認してみましょう。"

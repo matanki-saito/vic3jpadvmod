@@ -805,7 +805,7 @@
  concept_accepted_religion:0 "受容宗教"
  concept_accepted_religions:0 "受容宗教"
  concept_accepted_religion_short:0 "受容"
- concept_accepted_religion_desc:0 "[Concept('concept_country','$concept_country_possessive$')]の$concept_accepted_religions$は、その[concept_state_religion]と、$concept_country$の現在の[SelectLocalization(GetPlayer.IsValid,'concept_accepted_religion_desc_added','Church and State')][concept_law]から$concept_accepted_religion_short$されているとみなされるその他の[Concept('concept_religion','$concept_religions$')]です。"
+ concept_accepted_religion_desc:0 "[Concept('concept_country','$concept_country_possessive$')]の$concept_accepted_religions$は、その[concept_state_religion]と、$concept_country$の現在の[SelectLocalization(GetPlayer.IsValid,'concept_accepted_religion_desc_added','教会と国家')][concept_law]から$concept_accepted_religion_short$されているとみなされるその他の[Concept('concept_religion','$concept_religions$')]です。"
  concept_accepted_religion_desc_added:0 "[GetLawType('law_state_religion').GetGroup.GetName]"
  concept_state_religion:0 "国教"
  concept_state_religion_desc:0 "ある[concept_country]に最も関連する[concept_religion]です。通常、[Concept('concept_pop','$concept_pops$')]の大部分によって信奉されている支配的な[concept_religion]ですが、時には法的に宣言されていたり、単にその[concept_ruler]によって好まれる$concept_religion$であることもあります。これは通常変更されません。[AddLocalizationIf(GetPlayer.IsValid,'concept_state_religion_ingame_added')]"
