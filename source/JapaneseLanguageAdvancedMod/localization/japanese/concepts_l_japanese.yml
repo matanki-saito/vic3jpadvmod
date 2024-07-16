@@ -380,7 +380,7 @@
  concept_country_nation_state:0 "国民国家"
  concept_country_polity:0 "政治形態"
  concept_country_polities:0 "政治形態"
- concept_country_possessive:0 "国の"
+ concept_country_possessive:0 "国"
  concept_countries_possessive:0 "国の"
  concept_country_desc:0 "$concept_country$は、[Concept('concept_province','$concept_province_land$')]のいくつかが[Concept('concept_state','$concept_states$')]としてまとめられ、その中で[Concept('concept_pop','$concept_population$')]が、[concept_government]およびその[concept_head_of_state]の統治下で居住しているものです。Victoria 3では、人間とAIの両プレイヤーがそれぞれ$concept_country$を支配しています。\n\n$concept_country$は、$concept_pops$の性質、どの$concept_state$を所有しているか、どのように開発されたかに加えて、[concept_country_tier]、[concept_primary_cultures]、[concept_state_religion]およびそれら[Concept('concept_recognized_power','$concept_recognized_power_short$')]か[Concept('concept_unrecognized_power','$concept_unrecognized_power_short$')]であるかによって定義されます。$concept_countries$はまた、様々な[Concept('concept_law','$concept_laws$')]や[Concept('concept_technology','$concept_technologies$')]を利用することができます。"
  concept_decree:0 "布告"

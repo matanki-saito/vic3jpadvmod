@@ -131,7 +131,7 @@
  notification_afghanistan_assistance_request_rejected_tooltip:0 "#header $notification_afghanistan_assistance_request_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_afghanistan_assistance_request_rejected_desc$"
  AFG_GBR_support_request_rejected_tt:0 "過去#variable 10年間#!、#v $GBR$#!に支援要請をしたことはない"
  AFG_RUS_support_request_rejected_tt:0 "過去#variable 10年間#!、#v $RUS$#!に支援要請をしたことはない"
- AFG_appeal_accept_tt:0 "彼らが前向きな関係を求める可能性が高まります。彼らに対し【concept_obligation】を負うことになります。"
+ AFG_appeal_accept_tt:0 "彼らが前向きな関係を求める可能性が高まります。彼らに対し[concept_obligation]を負うことになります。"
  gg_afghanistan.1.t:0 "[SCOPE.sCountry('gp_scope').GetAdjectiveNoFormatting]―[SCOPE.sCountry('rival_gp_scope').GetAdjectiveNoFormatting]合意"
  gg_afghanistan.1.d:0 "[SCOPE.sCountry('gp_scope').GetName]と[SCOPE.sCountry('rival_gp_scope').GetName]の[Concept('concept_great_power','$concept_great_powers$')]は、「アフガニスタンで長期化している国境紛争を解決する」ことを目的とした計画に合意した。この条約案は我が国に対して譲歩を求めている。"
  gg_afghanistan.1.f:0 "文書の語調は世界を揺るがすものであり、今後何世紀にも渡ってこの地域に平和をもたらすものだった。[ROOT.GetCountry.GetNameNoFormatting]からの各譲歩事項は競合国のひとつからの恩恵として語られ、一方が領有権を主張する土地を、既にそこに住んでいる人々に譲渡することが記されていた。あまりのことに、大使は[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]が合意について知らされているのか疑問に思う程であった。"
