@@ -295,7 +295,7 @@
  unproductive_trade_route_alert:0 "生産性の低い貿易ルート"
  insufficient_tax_capacity_alert:0 "課税キャパシティが不足"
  alert_stalled_naval_invasion_name:0 "膠着状態の[concept_naval_invasion]"
- alert_stalled_naval_invasion_desc:0 "侵略中の[concept_admiral]が[concept_battle]を始めるための[Concept('concept_order','$concept_orders$')]を保持していないため、[SCOPE.GetRootScope.GetNavalInvasion.GetName]は陸軍に対して進軍することができません。"
+ alert_stalled_naval_invasion_desc:0 "侵略中の[concept_admiral]が[concept_battle]を始めるための[Concept('concept_order','$concept_orders$')]を受けていないため、[SCOPE.GetRootScope.GetNavalInvasion.GetName]は上陸を進めることができません。"
  alert_stalled_naval_invasion_hint:0 "$concept_admirals$の$concept_orders$を、戦闘開始を許可するもの、例えば#v $interception_coast$#!に変更することができます。"
  alert_stalled_naval_invasion_action:0 "上陸作戦パネル"
  alert_isolated_colony_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]は[Concept('concept_isolated_state','$concept_isolated_state_short$')][concept_colony]です"

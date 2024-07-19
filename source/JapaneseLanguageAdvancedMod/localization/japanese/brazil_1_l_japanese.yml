@@ -16,7 +16,7 @@
  brz_regency:0 "摂政時代"
  pedro.1.t:0 "皇帝の摂政"
  pedro.1.d:0 "[SCOPE.gsInterestGroup('landowners_scope').GetName]と[SCOPE.gsInterestGroup('armed_forces_scope').GetName]による三頭摂政は近頃打倒され、民主的に選ばれた[SCOPE.sCharacter('feijo_regent').GetLastName]摂政がその後釜となった。[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle][SCOPE.sCharacter('pedro_scope').GetFirstName]が成人するまで、ブラジルは政治的混乱に巻き込まれる可能性が高い。"
- pedro.1.f:0 "千年以上にわたって王のゲームと称賛されてきたチェスは、戦略的な洞察力を重視する。長期の戦略には犠牲とコスト計算、そして高い技能が必要だ。1人のプレイヤーがミスをすると、別のプレイヤーがボードをコントロールできることになります。\n\nしかしこのゲームのボードは、若き皇帝自身だった。こうした陰謀が少年にどんな傷を残すのか？それは誰にもわからない。"
+ pedro.1.f:0 "千年以上にわたって王のゲームと称賛されてきたチェスは、戦略的な洞察力を重視する。長期の戦略には犠牲とコスト計算、そして高い技能が必要だ。1人のプレイヤーがミスをすると、別のプレイヤーがボードをコントロールできることになる。\n\nしかしこのゲームのボードは、若き皇帝自身だった。こうした陰謀が少年にどんな傷を残すのか？それは誰にもわからない。"
  pedro.1.a:0 "奴らのいさかいが収まることはないのだろうか？"
  pedro_regency_party_tt:0 "[SCOPE.sCharacter('feijo_regent').GetLastName]配下の[SCOPE.sCharacter('feijo_regent').GetInterestGroup.GetName]は、摂政時代が終わるまで、政治的な[Concept('concept_party','$concept_parties$')]に参加する意思はありません。"
  pedro.2.t:0 "君主制に対する訴え"
