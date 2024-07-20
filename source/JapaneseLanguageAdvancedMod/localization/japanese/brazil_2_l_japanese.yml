@@ -208,7 +208,7 @@
  rubber_baron_palaces_modifier:0 "ゴム男爵宮殿"
  amazonas.5.t:0 "熱帯のパリ、マナウス"
  amazonas.5.d:0 "かつては人を寄せ付けなかったジャングルの中心にある[SCOPE.sState('amazonas_state_scope').GetCityHubName]の街は、大金持ちのゴム男爵であふれかえり、ヨーロッパの都市のように壮大で派手になった。週単位で高級品が生まれている。"
- amazonas.5.f:0 "[SCOPE.sState('amazon_state').GetCityHubName]にはあらゆる贅沢品が揃っている。ゴム男爵たちは競争心が強く、新たな流行は行き過ぎたほどの争いに発展する。街を歩くと、その暑さを除けば、まるでパリにいるような心地になれるだろう。"
+ amazonas.5.f:0 "[SCOPE.sState('amazonas_state_scope').GetCityHubName]にはあらゆる贅沢品が揃っている。ゴム男爵たちは競争心が強く、新たな流行は行き過ぎたほどの争いに発展する。街を歩くと、その暑さを除けば、まるでパリにいるような心地になれるだろう。"
  amazonas.5.a:0 "「私には夢がある。オペラだ。ジャングルの大オペラだ！」"
  amazonas.5.b:0 "明かりのない南国パリなんてありえない。"
  amazonic_city_of_lights_modifier:0 "光の南国都市"
