@@ -303,6 +303,9 @@ def issue_242(text):
 
     text = re.sub(r'(#[$|a-zA-Z0-9_]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)*)?)[  ]?', r'\1▲', text)
 
+    # ISSUE967対策
+    text = re.sub(r'(#\[[$a-zA-Z0-9_.() ]+(;[a-zA-Z0-9_]+)*(:([\da-zA-Z\[\].$_\'()#\-+=|%]+,?)*)?])[  ]?', r'\1▲', text)
+
     # text = re.sub(r'#![  ]', r'#!', text)
 
     text = re.sub(r'[  ]*/[  ]*', r'/', text)
