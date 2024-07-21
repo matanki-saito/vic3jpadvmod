@@ -214,7 +214,7 @@
  TRIGGER_EVENT_DELAY_NUM_DAYS:0 "#v $NUM_DAYS$#!日後"
  TRIGGER_EVENT_DELAY_RANGE_DAYS:0 "#v $DAYS_MIN$#!～#v $DAYS_MAX$#!日後"
  TRIGGER_EVENT:0 "イベント#variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ','$DELAY_DESCRIPTION$')]を発動させます"
- TRIGGER_EVENT_COUNTRY:0 "$COUNTRY_NAME$が、イベント#variable $EVENT_NAME$#![ConcatIfNeitherEmpty(' ','$DELAY_DESCRIPTION$')]を発動させます"
+ TRIGGER_EVENT_COUNTRY:0 "$COUNTRY_NAME$で、[ConcatIfNeitherEmpty(' ','$DELAY_DESCRIPTION$に')]イベント#variable $EVENT_NAME$#!を発生します"
  custom_trigger_event_unspecific:0 "イベントを発動させます"
  ANNEX_EFFECT:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]を併合します"
  ANNEX_EFFECT_FIRST:0 "[COUNTRY.GetNameNoFlag]は[TARGET_COUNTRY.GetName]を併合します"
