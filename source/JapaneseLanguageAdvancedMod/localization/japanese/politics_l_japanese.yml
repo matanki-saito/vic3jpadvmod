@@ -86,7 +86,7 @@
  je_law_imposition:0 "外国の法的強制"
  je_law_imposition_status_not_yet_enacting:0 "[SCOPE.sC('foreign_imposition_country').GetNameNoFlag]の命令により、[SCOPE.sLaw('foreign_imposition_law').GetName]を制定する準備をしている。"
  je_law_imposition_status_enacting:0 "[SCOPE.sC('foreign_imposition_country').GetNameNoFlag]の命令により、[SCOPE.sLaw('foreign_imposition_law').GetName]を制定している。"
- je_law_imposition_reason:0 "我々の[SCOPE.sC('foreign_imposition_country').GetSubjectOrPowerBlocHierarchyLabel(GetPlayer.Self)]は[SCOPE.sC('foreign_imposition_country').GetName]は、[SCOPE.sLaw('foreign_imposition_law').GetName]を制定することが必須であると宣言した。"
+ je_law_imposition_reason:0 "我々の[SCOPE.sC('foreign_imposition_country').GetSubjectOrPowerBlocHierarchyLabel(GetPlayer.Self)][SCOPE.sC('foreign_imposition_country').GetName]は、[SCOPE.sLaw('foreign_imposition_law').GetName]を制定することが必須であると宣言した。"
  foreign_legislative_interference:0 "外国による立法干渉"
  foreign_legislative_interference_enactment:0 "$foreign_legislative_interference$"
  successfully_met_foreign_imposition_legitimacy:0 "強いられた法律の制定"

@@ -2055,7 +2055,7 @@
  country_military_tech_research_speed_mult_desc:0 "[concept_innovation]を消費して軍事カテゴリにある[concept_technology]の研究をする際の研究速度に対するボーナスあるいはペナルティです"
  country_society_tech_research_speed_mult:0 "社会研究速度"
  country_society_tech_research_speed_mult_desc:0 "[concept_innovation]を消費して社会カテゴリにある[concept_technology]の研究をする際の研究速度に対するボーナスあるいはペナルティです"
- country_radicals_from_conquest_mult:0 "征服による急進者"
+ country_radicals_from_conquest_mult:0 "征服による急進派"
  country_radicals_from_conquest_mult_desc:0 "我が国が[Concept('concept_state','$concept_states$')]を軍事的に支配した際に[concept_radical]となる[Concept('concept_pop','$concept_pops$')]数に対するボーナスまたはペナルティです"
  state_slave_import_mult:0 "奴隷輸入"
  state_slave_import_mult_desc:0 "[GetLawType('law_slave_trade').GetName]が制定されている場合に、毎週[concept_state]が輸入可能な[Concept('concept_slavery','$concept_slaves$')]の人数に対する増減補正です"

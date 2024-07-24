@@ -297,7 +297,7 @@
  concept_interest_group_traits_short:0 "特性"
  concept_interest_group_trait_desc:0 "すべての[Concept('concept_interest_group','$concept_interest_groups$')]には、[concept_approval]の異なるレベルで効果を発揮する、[concept_country]全体に大きな影響を与える3つの$concept_interest_group_traits_short$があります。\n$concept_approval$が$ig_approval_unhappy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!) 以下になると、マイナスの$concept_interest_group_trait_short$が発動します。\n$concept_approval$が$ig_approval_happy$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY')|0=+]#!) を超えると、プラスの$concept_interest_group_trait_short$が発動します。\n$concept_approval$が$ig_approval_loyal$ (#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_LOYAL')|0=+]#!) を超えると、さらにプラスの$concept_interest_group_trait_short$が発動します。\n発動した$concept_interest_group_trait_short$は、$concept_approval$が閾値から[GetDefine('NPolitics','IG_TRAIT_STICKINESS')|v]ポイント以上に離れるまでは無効になりません。\n\n[concept_marginalized] $concept_interest_groups$の$concept_interest_group_traits_short$は決して発動しませんが、[concept_powerful] $concept_interest_groups$の$concept_interest_group_traits_short$は効果が増加します。"
  concept_decay:0 "減衰"
- concept_decaying:0 "減衰する"
+ concept_decaying:0 "減衰"
  concept_decay_desc:0 "$concept_decaying$効果は、初期値から徐々に減少し、指定された減衰期間中に#v 0#!まで直線的に減少します。"
  concept_character_trait:0 "キャラクター特性"
  concept_character_traits:0 "キャラクター特性"

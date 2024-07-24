@@ -20,7 +20,7 @@
  HOVER_STATE_REGION_ENTRY:0 "[StateRegion.GetName|v] ([StateRegion.GetID|v]) "
  HOVER_LAND_PROVINCE_TOOLTIP:0 "#HEADER [PROVINCE.GetStateRegion.GetName]#!"
  HOVER_COMMON_PROVINCE_TOOLTIP_DEBUG:0 "地方ID : #variable [PROVINCE.GetID]#!\n地方指標 : #variable [PROVINCE.GetIndex]#!\n地形 : #variable [PROVINCE.GetTerrainName]#!\nIsCoastal ・ #variable [SelectLocalization(PROVINCE.IsCoastal,'はい','いいえ')]#!\n地方エリア : #variable [PROVINCE.GetArea]#!\n州地域 : #variable [PROVINCE.GetStateRegion.GetName]#! (#variable [PROVINCE.GetStateRegion.GetID]) #!\n[PROVINCE.GetStateRegion.GetAdjacentLandStateRegionsDesc]\n[PROVINCE.GetStateRegion.GetAdjacentSeaStateRegionsDesc]\n[PROVINCE.GetStateRegion.GetNavalExitStateRegionDesc]\n汚染 : #v [PROVINCE.GetStateRegion.GetPollutionLevel]#!\n戦略的重要地域 : #variable [PROVINCE.GetStateRegion.GetStrategicRegion.GetName]#! (#variable [PROVINCE.GetStateRegion.GetStrategicRegion.GetIndex]#!) \nワールド座標 : #variable $WORLDX$#!, #variable $WORLDY$#!, #variable $WORLDZ$#!"
- HOVER_LAND_PROVINCE_TOOLTIP_DEBUG:0 "$HOVER_COMMON_PROVINCE_TOOLTIP_DEBUG$\n地方管理者 : #variable [PROVINCE.GetController.GetID]#! (#variable [PROVINCE.GetController.GetTagName]#!) \n急進者の数 : #variable [STATE.GetNumRadicals|D]#!\n体制派の数 : #variable [STATE.GetNumLoyalists|D]#!"
+ HOVER_LAND_PROVINCE_TOOLTIP_DEBUG:0 "$HOVER_COMMON_PROVINCE_TOOLTIP_DEBUG$\n地方管理者 : #variable [PROVINCE.GetController.GetID]#! (#variable [PROVINCE.GetController.GetTagName]#!) \n急進派の数 : #variable [STATE.GetNumRadicals|D]#!\n体制派の数 : #variable [STATE.GetNumLoyalists|D]#!"
  HOVER_SEA_PROVINCE_TOOLTIP:0 "$HOVER_LAND_PROVINCE_TOOLTIP$"
  HOVER_SEA_PROVINCE_TOOLTIP_DEBUG:0 "$HOVER_COMMON_PROVINCE_TOOLTIP_DEBUG$"
  HOVER_LAKE_PROVINCE_TOOLTIP:0 "#HEADER 湖沼#!"
