@@ -82,8 +82,7 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
     # jsonをymlにする
     shutil.copytree(src=_(ext_paratranz_main_dir_path, "utf8"),
                     dst=_(out_dir_path, "localization"),
-                    ignore=shutil.ignore_patterns("trigger_system_l_english.json",
-                                                  "ignore_modifiers_l_english.json",
+                    ignore=shutil.ignore_patterns("ignore_modifiers_l_english.json",
                                                   "ignore_modifiers_v2_l_english.json"))
     convert_json_to_yml(_(out_dir_path, "localization"))
 
