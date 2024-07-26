@@ -1,0 +1,9 @@
+﻿l_japanese:
+ TRIGGER_LINE_ACTIVE_PASSED:0 "#!#medium @green_checkmark_box! $TEXT$"
+ TRIGGER_LINE_ACTIVE_FAILED:0 "#!#medium @simple_box! $TEXT$"
+ TRIGGER_LINE_ACTIVE_UNDEFINED:0 "#!#medium  • $TEXT$"
+ TRIGGER_LINE_INACTIVE_PASSED:0 "#!#medium @green_checkmark_box! $TEXT$"
+ TRIGGER_LINE_INACTIVE_FAILED:0 "#!#medium @red_cross! $TEXT$"
+ TRIGGER_LINE_INACTIVE_UNDEFINED:0 "#!#medium  • $TEXT$"
+ TRIGGER_LINE_BLOCKER:0 "#!#medium @red_cross! #N #italic $TEXT$#!#!"
+ TRIGGER_LINE_UNEVALUATED:0 "#!#medium  • $TEXT$"

@@ -313,7 +313,7 @@
  armoured_doctrine:0 "装甲戦線"
  armoured_high_seas_fleet:0 "装甲外洋艦隊"
  military_tech_events.404.t:0 "浅喫水ソリューション"
- military_tech_events.404.d:0 "沿岸防衛作戦用に設計されており、外洋航行能力を持たない代わりに高いコストパフォーマンスを誇っている。[SCOPE.sCharacter('monitor_admiral').GetPrimaryRoleTitle][SCOPE.sCharacter('monitor_admiral').GetFullName]は、[SCOPE.sCharacter('monitor_admiral').GetHerHis]の艦隊が[ROOT.GetCountry.GetAdjectiveNoFormatting]の海域からいかなる敵をも排除すると[ROOT.GetCountry.GetCapital.GetCityHubName]の海軍本部に通達している。"
+ military_tech_events.404.d:0 "モニター艦は沿岸防衛作戦用に設計されており、外洋航行能力を持たない代わりに高いコストパフォーマンスを誇っている。[SCOPE.sCharacter('monitor_admiral').GetPrimaryRoleTitle][SCOPE.sCharacter('monitor_admiral').GetFullName]は、[SCOPE.sCharacter('monitor_admiral').GetHerHis]の艦隊が[ROOT.GetCountry.GetAdjectiveNoFormatting]の海域からいかなる敵をも排除すると[ROOT.GetCountry.GetCapital.GetCityHubName]の海軍本部に通達している。"
  military_tech_events.404.f:0 "「確かに筏にチーズの箱を乗せただけのように見えるかもしれません。ただ、そのチーズの箱に搭載された15インチ砲はヤバい代物であることを請け合いますよ」"
  military_tech_events.404.a:0 "沿岸の警備を固めることは、強固な商取引を意味する。"
  military_tech_events.404.b:0 "我が国の海軍にドクトリンを普及させよう。"
