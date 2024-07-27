@@ -30,5 +30,5 @@
  PLAYER_OBSERVER:0 "[GetPlayer.GetShortUINameNotMeNoTooltip] ([SelectLocalization(GetPlayer.IsPlayer,'OBSERVER_PLAYER_NAME','OBSERVER_AI')]) が[Concept('concept_observer_mode','$concept_observing$')]"
  OBSERVER_PLAYER_NAME:0 "プレイヤー : [GetPlayer.PlayerName]"
  OBSERVER_AI:0 "AI"
- SORT_BY:0 "ソート : "
+ SORT_BY:0 "並べ替え : "
  OPEN_BETA_VERSION:0 "#header [GetGameVersionInfo]#!\nMPチェックサム : [GetMPChecksum|V] $MODIFIED_CHECKSUM$ [GetRandomLogInfo]"
