@@ -217,7 +217,7 @@
  law_command_economy_desc:0 "政府が生産のほとんどの部分を直接管理する、内向きの介入型経済です。"
  law_laissez_faire:0 "レッセフェール"
  law_laissez_faire_desc:0 "比較優位の原則に基づき、政府の介入が少ないほど成長するという自由主義経済です。"
- law_interventionism:0 "干渉主義"
+ law_interventionism:0 "介入主義"
  law_interventionism_desc:0 "国家の安定を確かなものとするために、民間企業のあまりにも余剰な部分は政府によって修正される必要があります。"
  lawgroup_trade_policy:0 "交易方針"
  lawgroup_trade_policy_desc:0 "国境をまたぐ物品の交換や貿易を取り締まる法律です。"

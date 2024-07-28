@@ -487,7 +487,7 @@
  REMOVE_DIPLOMATIC_PACT_FIRST:0 "[COUNTRY.GetNameNoFlag]が[TARGET_COUNTRY.GetName]との[DIPLOMATIC_ACTION_TYPE.GetName|v] ([concept_diplomatic_pact]) を破棄します"
  REMOVE_DIPLOMATIC_PACT_THIRD:0 "[COUNTRY.GetName]が[TARGET_COUNTRY.GetName]との[DIPLOMATIC_ACTION_TYPE.GetName|v] ([concept_diplomatic_pact]) を破棄します"
  JOIN_WAR_GLOBAL:0 "[concept_country] jが[COUNTRY.GetName]の[Concept('concept_war','$concept_wars$')]に加盟"
- JOIN_WAR_FIRST:0 "[TARGET_COUNTRY.GetName]を我々の現在の[Concept('concept_war','$concept_wars$')]に加盟する"
+ JOIN_WAR_FIRST:0 "[TARGET_COUNTRY.GetName]を我々の現在の[Concept('concept_war','$concept_wars$')]に参加させる"
  JOIN_WAR_THIRD:0 "[TARGET_COUNTRY.GetNameNoFlag]が[COUNTRY.GetName]の[Concept('concept_war','$concept_wars$')]に加盟"
  CHANGE_APPEASEMENT_THIRD:0 "[POLITICAL_LOBBY.GetName]の[concept_political_lobby_appeasement]が$VALUE|=+$変化します"
  CHANGE_APPEASEMENT_GLOBAL:0 "[POLITICAL_LOBBY.GetName]の[concept_political_lobby_appeasement]が$VALUE|=+$変化します"
