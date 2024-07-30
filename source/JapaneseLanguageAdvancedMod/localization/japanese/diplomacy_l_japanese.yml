@@ -878,7 +878,7 @@
  DIPLOMATIC_PACT_REQUIREMENT_MORE_TECHS_RESEARCHED:0 "[SCOPE.sCountry('actor').GetName]はきっと[SCOPE.sCountry('target_country').GetName]よりも多くの[Concept('concept_technology','$concept_technologies$')]を解除済みです"
  DIPLOMATIC_PACT_REQUIREMENT_HIGH_LIBERTY_DESIRE:0 "[SCOPE.sCountry('actor').GetAdjective][concept_liberty_desire]が少なくとも[GetDefine('NDiplomacy','WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE')]である必要があります"
  DIPLOMATIC_PACT_REQUIREMENT_TARGET_HIGH_LIBERTY_DESIRE:0 "[SCOPE.sCountry('target_country').GetAdjective][concept_liberty_desire]が少なくとも[GetDefine('NDiplomacy','WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE')]である必要があります"
- DIPLOMATIC_PACT_REQUIREMENT_SUBJECT_WITH_INCOME_TRANSFER:0 "[concept_subject]は【concept_overlord】に敬意を払うタイプです"
+ DIPLOMATIC_PACT_REQUIREMENT_SUBJECT_WITH_INCOME_TRANSFER:0 "[concept_subject]が[concept_overlord]に貢納を払うタイプである"
  DIPLOMATIC_PACT_REQUIREMENT_NO_SUPPORT_FOR_INDEPENDENCE:0 "[concept_subject]の独立が支持されています"
  EQUAL_OR_BETTER_RANK_THAN_TARGET:0 "[SCOPE.sCountry('actor').GetName]の[concept_rank]は、[SCOPE.sCountry('target_country').GetName]の ([SCOPE.sCountry('target_country').GetRank]) と同じか、それ以上です"
  APPOINT_COLONIAL_GOVERNOR_ON_COOLDOWN:0 "彼らは、あなたが最後に行った総督指名が原因で今も不安定です。"
