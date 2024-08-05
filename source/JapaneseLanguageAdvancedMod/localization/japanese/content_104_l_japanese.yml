@@ -1367,7 +1367,7 @@
  belle_epoque_events.20.c:0 "[SCOPE.sCountry('france_scope').GetAdjective]国家の不朽の象徴である、力強い雄鶏。"
  belle_epoque_events.20.e:0 "[SCOPE.sCountry('britain_scope').GetAdjective]領インドの丘陵に棲む、高貴な虎。"
  belle_epoque_events.20.g:0 "[SCOPE.sCountry('russia_scope').GetName]のタイガに棲む、強靭なヒグマ。"
- belle_epoque_events.20.h:0 "[SCOPE.sCountry('usa_scope').GetName]の大平原に棲む、グレートプレーンズ。"
+ belle_epoque_events.20.h:0 "[SCOPE.sCountry('usa_scope').GetName]のグレートプレーンズに棲む、力強いバイソン。"
  belle_epoque_events.20.i:0 "[SCOPE.sCountry('china_scope').GetName]の山々に棲む、獰猛なマヌルネコ。"
  belle_epoque_events.20.j:0 "[SCOPE.sCountry('japan_scope').GetName]の森に棲む、優雅なカモシカ。"
  belle_epoque_events.20.k:0 "[SCOPE.sCountry('spain_scope').GetName]のピレネー山脈を飛び回るイヌワシ。"
