@@ -113,7 +113,7 @@
  DATA_DECREE_TYPE_NAME_TOOLTIP:0 "[DecreeType.GetTooltip(GetPlayer.Self)]"
  DATA_LAW_GROUP_NAME_TOOLTIP:0 "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty('\n',AddLocalizationIf(LawGroup.GetCurrentlyEnacting.IsValid,'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW'))]\n我が国にはこのグループにおける代替候補が[LawGroup.GetNumEnactable|v]あります。"
  DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW:0 "現在施行されている[concept_law] : [LawGroup.GetCurrentlyActive.GetName]"
- DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW:0 "制定中の[concept_law] : [LawGroup.GetCurrentlyEnacting.GetName]"
+ DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW:0 "制定中の$concept_law$ : [LawGroup.GetCurrentlyEnacting.GetName]"
  DATA_LAW_TYPE_NAME_TOOLTIP:0 "[LawType.GetTooltip(GetPlayer.Self)]$TOOLTIP_DELIMITER$\n#lore [LawType.GetDesc]"
  DATA_LAW_NAME_TOOLTIP:0 "[Law.GetTooltip]\n$DATA_LAW_TOOLTIP_IG_SUPPORT$\n#!$TOOLTIP_DELIMITER$\n#lore [Law.GetDesc]#!"
  DATA_LAW_TOOLTIP_IG_SUPPORT:0 "[SelectLocalization(GreaterThan_int32(Law.GetNumSupportingInterestGroups,'(int32)0'),'DATA_LAW_TOOLTIP_SUPPORTED','DATA_LAW_TOOLTIP_NOT_SUPPORTED')]"

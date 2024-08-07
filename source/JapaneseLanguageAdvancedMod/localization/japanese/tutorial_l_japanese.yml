@@ -738,7 +738,7 @@
  lesson_start_diplomatic_play_how_3_desc:0 "これで、あなたが[concept_initiator]となる[concept_diplomatic_play]が開始されました。今後数か月にわたり3つのフェーズで進行します。最初のフェーズは[concept_opening_moves]、次に[concept_diplomatic_maneuvers]、最後は[concept_countdown_to_war]です。$concept_countdown_to_war$が開始される前にどちら側も後退しなければ、[concept_war]は避けられません！"
  lesson_incorporate_state_how_1:0 "$concept_state$を$concept_incorporate$する方法"
  lesson_incorporate_state_how_1_desc:0 "[concept_unincorporated_state]の[Concept('concept_incorporated_state','$concept_incorporating$')]は[concept_political_lens]内の#b 州アクション#!タブから開始します。"
- lesson_incorporate_state_how_1_continue:0 "[concept_diplomatic_lens]内の#b 州アクション#!タブに進む"
+ lesson_incorporate_state_how_1_continue:0 "$concept_political_lens$内の#b 州アクション#!タブに進む"
  lesson_incorporate_state_how_2:0 "$lesson_incorporate_state_how_1$"
  lesson_incorporate_state_how_2_desc:0 "[concept_state]を[Concept('concept_incorporated_state','$concept_incorporate$')]するためには、$concept_state$が[Concept('concept_unincorporated_state','$concept_unincorporated_state_short$')]であり、[Concept('concept_colony','$concept_colonization$')]されて#b いない#!ことが必要です。現在あなたは[Concept('concept_incorporated_state','$concept_incorporated$')]可能な[SelectLocalization(GreaterThan_int32(GetPlayer.GetNumStatesThatCanBeIncorporated,'(int32)1'),'$concept_unincorporated_states$','$concept_unincorporated_state$')]を[GetPlayer.GetNumStatesThatCanBeIncorporated]保持しています。"
  lesson_incorporate_state_how_2_continue:0 "#b $concept_incorporate_state$#!オプションをクリックし、 あなたの$concept_unincorporated_states$のひとつの$concept_incorporate$を開始"

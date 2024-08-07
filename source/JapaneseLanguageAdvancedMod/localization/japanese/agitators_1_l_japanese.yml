@@ -446,7 +446,7 @@
  divided_monarchists_orleanist_progress_bar_desc:0 "進捗 : #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/360) "
  divided_monarchists_legitimist_progress_bar:0 "分裂した君主主義者―レジティミスト"
  divided_monarchists_legitimist_progress_bar_desc:0 "進捗 : #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/360) "
- bonapartist_progress_from_characters:0 "#bold ボナパルティスト#!キャラクターの総合人気"
+ bonapartist_progress_from_characters:0 "#bold ボナパルティスト#!キャラクターの総合[concept_popularity]"
  bonapartist_progress_from_igs:0 "#bold ボナパルティスト#![Concept('concept_interest_group','$concept_interest_groups$')]の[concept_clout]"
  bonapartist_progress_from_military:0 "軍の[Concept('concept_building_level','$concept_building_levels$')]"
  bonapartist_progress_from_legitimacy:0 "[concept_government]の[concept_legitimacy]"

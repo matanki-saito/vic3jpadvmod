@@ -244,7 +244,7 @@
  gg_korea_blank:0 ""
  gg_korea_russian:0 "#bold 朝鮮独立#! ― #variable ロシア#!の勝利\n"
  gg_korea_failure:0 "#bold 朝鮮独立#! ― #variable ロシア#!の敗北\n"
- gg_korea_inconclusive:0 "#bold 朝鮮独立#! ― \n未決着"
+ gg_korea_inconclusive:0 "#bold 朝鮮独立#! ―未決着\n"
  gg_chinese_border_blank:0 ""
  gg_chinese_border_russian:0 "#variable ロシア#! ―中国国境の成文化\n"
  gg_manchurian_railway_blank:0 ""
