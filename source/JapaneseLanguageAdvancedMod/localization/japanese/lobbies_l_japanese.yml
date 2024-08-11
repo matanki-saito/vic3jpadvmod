@@ -102,7 +102,7 @@
  appeasement_independence_supported:0 "独立が支援されています"
  appeasement_independence_supported_desc:0 "他の[Concept('concept_country','$concept_countries$')]からの独立支援"
  appeasement_imposed_law_enacted:0 "強要させられた法律の制定"
- appeasement_imposed_law_enacted_desc:0 "強要させられた[concept_law]を[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]中"
+ appeasement_imposed_law_enacted_desc:0 "強要させられた[concept_law]を[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]した"
  appeasement_imposed_law_rejected:0 "強要させられた法律の却下"
  appeasement_imposed_law_rejected_desc:0 "強要させられた[concept_law]が却下した"
  appeasement_special_events_positive:0 "イベントから"
