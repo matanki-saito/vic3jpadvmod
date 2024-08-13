@@ -7435,7 +7435,7 @@
  BUILDING_NATIONALIZE_DESC:0 "[NationalizeBuildingWindow.GetNumLevelsToNationalize|v][SelectLocalization(EqualTo_int32(NationalizeBuildingWindow.GetNumLevelsToNationalize,'(int32)1'),'BUILDING_NATIONALIZE_LEVEL_SINGULAR','BUILDING_NATIONALIZE_LEVEL_PLURAL')]を[concept_nationalize] : \n$OWNERS$\n\n$COMPENSATION$[ConcatIfNeitherEmpty('\n\n','$PENALTIES$')]"
  BUILDING_NATIONALIZE_LEVEL_SINGULAR:0 "[concept_building_level]"
  BUILDING_NATIONALIZE_LEVEL_PLURAL:0 "[Concept('concept_building_level','$concept_building_levels$')]"
- BUILDING_NATIONALIZE_WITH_COMPENSATION_DESC:0 "@money!$COST|vD$補償コスト (@money!$INVESTMENT|Dv$は[concept_investment_pool]に支払われます) "
+ BUILDING_NATIONALIZE_WITH_COMPENSATION_DESC:0 "@money!$COST|vD$の補償コスト (@money!$INVESTMENT|Dv$は[concept_investment_pool]に支払われます) "
  BUILDING_NATIONALIZE_NO_COMPENSATION_DESC:0 "これは#n 金銭的補償なし#!で行われ、#n [GetDefine('NEconomy','NATIONALIZE_BUILDING_NO_COMPENSATION_IMPACT_MULT')|%0]#!の$concept_radicals$および$concept_relations$に対する影響を増加させます"
  BUILDING_NATIONALIZE_COUNTRY_OWNERSHIP_TOOLTIP_DESC:0 "[COUNTRY.GetName]が所有する#variable $LEVEL$#! レベル"
  BUILDING_NATIONALIZE_BUILDING_OWNERSHIP_TOOLTIP_DESC:0 "[Building.GetState.GetName]の[BUILDING.GetName]が所有する#variable $LEVEL$#! レベル"
