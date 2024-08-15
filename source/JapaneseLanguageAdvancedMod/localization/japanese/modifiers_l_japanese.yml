@@ -5128,7 +5128,7 @@
  country_law_enactment_stall_mult_desc:0 "法制定が対立運動によって引き延ばされる可能性の乗数"
  country_law_enactment_max_setbacks_add:0 "法制定の最大後退"
  country_law_enactment_max_setbacks_add_desc:0 "[concept_law]制定が失敗する前に被る可能性のある[Concept('concept_enactment_setback','$concept_enactment_setbacks$')]に対するボーナスまたはペナルティ。"
- country_higher_diplomatic_acceptance_same_religion_bool:0 "同じ[concept_religion]で[Concept('concept_country','$concept_countries$')]より高い外交提案受諾率"
+ country_higher_diplomatic_acceptance_same_religion_bool:0 "同[concept_religion]の[Concept('concept_country','$concept_countries$')]に対するより高い外交提案受諾率"
  country_higher_diplomatic_acceptance_same_religion_bool_desc:0 "同じ[concept_religion]状態である[Concept('concept_country','$concept_countries$')]は、外交提案をより積極的に受け入れるだろう"
  country_reduced_liberty_desire_same_religion_bool:0 "同宗教に対する独立欲求低下"
  country_reduced_liberty_desire_same_religion_bool_desc:0 "同じ[concept_religion]状態である[Concept('concept_subject','$concept_subjects$')]は、時間の経過とともに[concept_liberty_desire]が減少する"
