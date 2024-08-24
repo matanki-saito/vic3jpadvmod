@@ -30,7 +30,7 @@
  country_humiliated:0 "ライバルから屈辱を受けました"
  forced_market_opening:0 "[concept_open_market]を強制されました"
  forced_slavery_ban:0 "[concept_slavery]禁止を強制されました"
- forced_regime_change:0 "強制体制変更"
+ forced_regime_change:0 "体制変更を強制されました"
  centralized:0 "集権型国家"
  colonial:0 "植民地国家"
  decentralized:0 "分権型国家"
