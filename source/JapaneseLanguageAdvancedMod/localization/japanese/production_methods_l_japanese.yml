@@ -456,7 +456,7 @@
  default_building_subsistence_farms:0 "$pm_default$"
  default_building_subsistence_orchards:0 "$pm_default$"
  default_building_subsistence_pastures:0 "$pm_default$"
- automatic_irrigation:0 "かんがい自動化"
+ automatic_irrigation:0 "灌漑自動化"
  automatic_irrigation_building_coffee_plantation:0 "$automatic_irrigation$"
  automatic_irrigation_building_cotton_plantation:0 "$automatic_irrigation$"
  automatic_irrigation_building_dye_plantation:0 "$automatic_irrigation$"

@@ -894,7 +894,7 @@
  AI_MIGHT_ACCEPT_WITH_CALL_IN_OBLIGATION:0 "@obligation!我々に対する[concept_obligation]に報いるよう#b 要求#!すれば、[COUNTRY.GetName]は受け入れる可能性があります ([DiplomaticAction.GetRandomAcceptanceChanceWithCallInObligation|%0v]の確率) "
  AI_MIGHT_ACCEPT_WITH_ACTION:0 "@indifferent![COUNTRY.GetName]は受け入れる可能性があります ([DiplomaticAction.GetRandomAcceptanceChanceNoObligation|%0v]の確率) "
  AI_WILL_ACCEPT_TOOLTIP:0 "[DiplomaticAction.GetWillAcceptDesc]\n$TOOLTIP_DELIMITER$\n[DiplomaticAction.GetWillAcceptBreakdown]"
- AI_DIPLOMATIC_PLAY_SUPPORT_FORMAT:0 "$KEY$による$VALUE|+=0$"
+ AI_DIPLOMATIC_PLAY_SUPPORT_FORMAT:0 "$VALUE|+=0$ ($KEY$) "
  DIPLOMATIC_ACCEPTANCE_FELLOW_SUBJECT:0 "同一の[concept_overlord]を持つ[concept_subject]"
  DIPLOMATIC_ACCEPTANCE_ATTITUDE_TOWARDS_OWN_OVERLORD:0 "[SCOPE.GetRootScope.GetCountry.GetOverlord.GetName]に対する[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]の[concept_attitude]は[SCOPE.GetRootScope.GetCountry.GetAttitudeTowards(SCOPE.GetRootScope.GetCountry.GetOverlord).GetName]です"
  DIPLOMATIC_ACCEPTANCE_ATTITUDE_TOWARDS_ACTOR_OVERLORD:0 "[SCOPE.sCountry('actor').GetOverlord.GetName]に対する[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]の[concept_attitude]は[SCOPE.GetRootScope.GetCountry.GetAttitudeTowards(SCOPE.sCountry('actor').GetOverlord).GetName]です"

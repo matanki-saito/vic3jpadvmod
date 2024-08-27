@@ -195,7 +195,7 @@
  STATION_MILITARY_FORMATION_IN_HQ_UNREACHABLE:0 "#N $FORMATION_NAME$は[HQ.GetName]に到達できません#!"
  CAPITAL_STATE:0 "[concept_capital_state]"
  NAME_WITH_VALUE_FORMATTING:0 "#v $FORMATTED_NAME$#!"
- BASE_VALUE_FOR_CALCULATOR:0 "基本値に由来$VAL|D=v$"
+ BASE_VALUE_FOR_CALCULATOR:0 "$VAL|D=v$ (基本値) "
  REJECT:0 "拒否"
  government_owned_debt:0 "政府の負債"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_BUSY_COMMANDERS:0 "#N [MilitaryFormation.GetName]の司令官は全員、[concept_busy]です#!"
