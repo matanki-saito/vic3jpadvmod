@@ -127,7 +127,7 @@
  TRIGGER_INITIATOR_IS:0 "[TARGET_COUNTRY.GetName]が先制国である"
  TRIGGER_INITIATOR_IS_NOT:0 "[TARGET_COUNTRY.GetName]が先制国#bold ではない#!"
  TRIGGER_IS_TARGET_OF_WARGOAL:0 "[TARGET_COUNTRY.GetName]が[STATE.GetName]に対する[concept_war_goal]を保有中"
- TRIGGER_IS_TARGET_OF_WARGOAL_NOT:0 "[TARGET_COUNTRY.GetName]が[STATE.GetName]に対する[concept_war_goal]を保有#b していない#!"
+ TRIGGER_IS_TARGET_OF_WARGOAL_NOT:0 "[TARGET_COUNTRY.GetName]が[STATE.GetName]に対する[concept_war_goal]を保有して#b いない#!"
  TRIGGER_TARGET_IS:0 "[TARGET_COUNTRY.GetName]が標的国である"
  TRIGGER_TARGET_IS_NOT:0 "[TARGET_COUNTRY.GetName]が標的国#bold ではない#!"
  TRIGGER_IS_DIPLOMATIC_PLAY_COMMITTED_PARTICIPANT:0 "いずれかの[concept_diplomatic_play]で傾倒している参加国である"
