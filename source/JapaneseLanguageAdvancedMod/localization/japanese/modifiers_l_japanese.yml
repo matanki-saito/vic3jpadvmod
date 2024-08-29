@@ -5124,7 +5124,7 @@
  power_bloc_allow_wider_migration_area_bool_desc:0 "[Concept('concept_country','$concept_country_possessive$')]の[concept_market]内だけではなく、[concept_market]を共有しない[concept_power_bloc]メンバー間でも[concept_migration]が起こることを許可します"
  power_bloc_income_transfer_to_leader_factor:0 "[concept_power_bloc_leader]への収入移転"
  power_bloc_income_transfer_to_leader_factor_desc:0 "[Concept('concept_power_bloc_member','$concept_power_bloc_memembers$')]から[concept_power_bloc_leader]へ移転される税収の基本割合"
- country_law_enactment_stall_mult:0 "制定引き延ばしの可能性"
+ country_law_enactment_stall_mult:0 "制定後退の可能性"
  country_law_enactment_stall_mult_desc:0 "法制定が対立運動によって引き延ばされる可能性の乗数"
  country_law_enactment_max_setbacks_add:0 "法制定の最大後退"
  country_law_enactment_max_setbacks_add_desc:0 "[concept_law]制定が失敗する前に被る可能性のある[Concept('concept_enactment_setback','$concept_enactment_setbacks$')]に対するボーナスまたはペナルティ。"

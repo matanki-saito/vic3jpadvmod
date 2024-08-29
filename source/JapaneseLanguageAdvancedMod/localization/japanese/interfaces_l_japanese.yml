@@ -8145,7 +8145,7 @@
  IMPOSITION_STALL_CHANCE_BREAKDOWN:0 "#header [Concept('concept_enactment_stall','$concept_enactment_stall_short$')]のチャンス#!\n現在 : [Law.GetCheckpointStallWithImpositionChance|v%1][AddLocalizationIf(Not(StringIsEmpty(Law.GetCheckpointStallWithImpositionBreakdown)),'IMPOSITION_STALL_CHANCE_BREAKDOWN_DUE_TO')]"
  IMPOSITION_STALL_CHANCE_BREAKDOWN_DUE_TO:0 "\n$TOOLTIP_DELIMITER$\n#title 要因 : #!\n[Law.GetCheckpointStallWithImpositionBreakdown]"
  LAW_ENACTMENT_MIN_TOTAL_DAYS:0 "最小日数 : [GetDefine('NPolitics','LAW_ENACTMENT_MIN_TOTAL_DAYS')|v^2]"
- ENACTMENT_STALL_MULT_BREAKDOWN:0 "引き延ばしの確率は$MULTIPLIER|=+$で修正済。要因 : \n$DETAILS$"
+ ENACTMENT_STALL_MULT_BREAKDOWN:0 "後退の確率は$MULTIPLIER|=+$で修正済。要因 : \n$DETAILS$"
  LAW_CANNOT_CANCEL_ENACTMENT:0 "[LAW.GetCountry.GetName]はあらゆる[Concept('concept_law','$concept_laws$')]の制定をキャンセルできません#indent_newline:4 \n[LAW.GetCountry.GetModifier.GetDescFor('country_cannot_cancel_law_enactment_bool')]#!"
  GDP_OWNED_BY_FORMATTED:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|%1v$#!#!"
  GDP_OWNED_BY_ENTRY:0 "[State.GetName]で$VALUE|%2v$ (@money!$PRODUCED|Dv$) "
