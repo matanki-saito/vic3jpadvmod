@@ -5708,7 +5708,7 @@
  MONEY_PREFIX:0 "@money!"
  POP_SUPPORTERS_POL_STR:0 "#header [concept_political_strength]#!\n値 : #v [Pop.GetPoliticalMovementSupportersPoliticalStrength(PoliticalMovement.Self)|1*]#!\n$TOOLTIP_DELIMITER$\n[Pop.GetPoliticalStrengthDesc][AddTextIf(Not(StringIsEmpty(Pop.GetPoliticalStrengthDesc)),'\n\n')]"
  IG_NO_POLITICAL_MOVEMENT:0 "支持している[Concept('concept_political_movement','$concept_political_movements$')]はありません"
- NO_NEXT_PRIVATE_CONSTRUCTION_NO_INFRASTRUCTURE:0 "[Concept('concept_private_construction','$concept_private_constructions$')]に必要な[concept_infrastructure]を有する[concept_state]がなく、我々には[GetBuildingType('building_railway').GetName]に必要な[concept_technology]や[concept_workforce]がありません"
+ NO_NEXT_PRIVATE_CONSTRUCTION_NO_INFRASTRUCTURE:0 "新しい[Concept('concept_private_construction','$concept_private_constructions$')]に十分な[concept_infrastructure]と利用可能な[concept_workforce]の両方がある[concept_state]がない"
  NO_NEXT_PRIVATE_CONSTRUCTION_NO_CONSTRUCTION_SECTOR:0 "[Concept('concept_private_construction','$concept_private_constructions$')]を支援するには[GetBuildingType('building_construction_sector').GetName]が必要です"
  ONLY_SHOW_AVAILABLE:0 "利用可能のみ表示"
  ONLY_SHOW_AVAILABLE_EXILED_AGITATORS_TOOLTIP:0 "招待可能な[Concept('concept_exile','$concept_exiled$')]の[Concept('concept_agitator','$concept_agitators$')]のみを表示します"
@@ -8394,3 +8394,4 @@
  AUTOEXPAND_BUILDING_TRIGGERS:0 "#title [Building.GetState.GetName]の[Building.GetName]は、次の条件を満たすたびに自動的に拡張されます : #! #indent_newline:3 \n$TRIGGER$"
  IS_AUTOEXPANDING:0 "#header 自動拡張#!"
  IS_NOT_AUTOEXPANDING:0 "#header 自動拡張なし#!"
+ CTRL_CLICK_TO_SET_TO_MAXIMUM_MINIMUM:0 "#i $SHORTCUT_KEY_MOD_ctrl$クリック#!するとレベル数を#v 最小#!/#v 最大#!に設定します"

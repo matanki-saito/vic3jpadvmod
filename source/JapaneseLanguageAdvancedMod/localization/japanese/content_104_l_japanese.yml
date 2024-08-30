@@ -1372,3 +1372,4 @@
  belle_epoque_events.20.j:0 "[SCOPE.sCountry('japan_scope').GetName]の森に棲む、優雅なカモシカ。"
  belle_epoque_events.20.k:0 "[SCOPE.sCountry('spain_scope').GetName]のピレネー山脈を飛び回るイヌワシ。"
  modifier_famous_botanical_garden:0 "名高い植物園"
+ exile_communist_agitator_tt:0 "[GetIdeology('ideology_communist').GetName][concept_agitator]が[concept_exile]に出現しました"
