@@ -157,7 +157,7 @@
  acw_je_events.1.b:0 "I would rather call our cause one of states' rights."
 
  acw_je_events.2.t:0 "Reconstructing the Nation"
- acw_je_events.2.d:0 "While the military fight has finished, the fight for the nation's soul has not. The [SCOPE.GetName] must rebuild itself after being split in two."
+ acw_je_events.2.d:0 "While the military fight has finished, the fight for the nation's soul has not. The [ROOT.GetCountry.GetName] must rebuild itself after being split in two."
  acw_je_events.2.f:0 ""I do not expect this nation to fall. Welcome or unwelcome, whether it becomes all one thing or all the other, this nation shall cease to be divided in body and soul.""
  unreconstructed_state:0 "Unreconstructed State"
 
