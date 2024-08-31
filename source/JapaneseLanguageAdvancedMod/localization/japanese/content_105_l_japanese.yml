@@ -932,7 +932,7 @@
  warlord_china_explosion_point_remove_name:0 "団結力の減少"
  warlord_china_explosion_point_remove_desc:0 "[SCOPE.GetRootScope.GetCountry.GetName]の#BOLD 脆い団結#!がさらに弱体化しました"
  warlord_china_explosion_point_remove_tooltip:0 "#header $warlord_china_explosion_point_name$#!\n$TOOLTIP_DELIMITER$\n$warlord_china_explosion_point_desc$"
- won_boxer_tt:0 "#BOLD 義和団事変#!の終結に成功しました"
+ won_boxer_tt:0 "#BOLD 義和団の乱#!の終結に成功した"
  china_recognized_tt:0 "もはや[concept_unrecognized_power]ではありません"
  china_abolished_monarchy_tt:0 "#BOLD 君主主義の廃絶#!ジャーナル記事の完結に成功しました"
  warlord_china_events.100.ab:0 "[SCOPE.sC('scope_random_warlord_one').GetRuler.GetPrimaryRoleTitle][SCOPE.sC('scope_random_warlord_one').GetRuler.GetLastName]が中国を改革します！"

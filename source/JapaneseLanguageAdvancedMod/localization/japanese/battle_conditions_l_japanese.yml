@@ -40,7 +40,7 @@
  battle_condition_ramming_maneuver_desc:0 "この司令官は、危険ではあるが戦いを決定づける可能性を秘めた、敵への突撃作戦を試みることにした。"
  BATTLE_CONDITION_ATTACKER_TOOLTIP:0 "$BATTLE_CONDITION_TOOLTIP$\n\n[Battle.GetAttackerConditionUpdateDesc]"
  BATTLE_CONDITION_DEFENDER_TOOLTIP:0 "$BATTLE_CONDITION_TOOLTIP$\n\n[Battle.GetDefenderConditionUpdateDesc]"
- BATTLE_CONDITION_EARLIEST_UPDATE:0 "[DATE.GetString]に、またはそれ以降に変更 (残り$REMAINING$) "
+ BATTLE_CONDITION_EARLIEST_UPDATE:0 "[DATE.GetString]以降に変更 (残り$REMAINING$) "
  BATTLE_CONDITION_IMMINENT_UPDATE:0 "間もなく変更、現在の確率 : $CHANCE|v0%$"
  battle_condition_pursuit:0 "追撃"
  battle_condition_pursuit_desc:0 "圧倒的な数的優位のため、指揮官は敵を包囲し、退却する敵を追撃するよう命じた。"

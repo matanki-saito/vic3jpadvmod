@@ -9,7 +9,7 @@
  TARGET_CIVIL_WAR_DIPLOMATIC_PLAY:0 "内戦国を[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]の標的にすることはできません"
  ACTOR_IS_TARGETED_BY_ENEMY_WARGOAL:0 "[COUNTRY.GetName]への支持を放棄することはできません。[WAR_GOAL.GetName]の[concept_war_goal]が我が国を標的にしているためです"
  TRUCE_WITH_TARGET:0 "[COUNTRY.GetName]は、[TARGET_COUNTRY.GetName]と[concept_truce] (有効期限#variable [COUNTRY.GetTruceDate(TARGET_COUNTRY.Self)]#!) を締結しています"
- HOSTILE_RELATIONS_WITH_TARGET:0 "[COUNTRY.GetName]が[TARGET_COUNTRY.GetName]を[concept_diplomatic_play]で支援するには、両国間の[concept_relations]が低すぎます ($relations_hostile$またはそれ以下) "
+ HOSTILE_RELATIONS_WITH_TARGET:0 "[COUNTRY.GetName]が[TARGET_COUNTRY.GetName]を[concept_diplomatic_play]で支援するには、両国間の[concept_relations]が低すぎます ($relations_hostile$以下) "
  CORDIAL_RELATIONS_WITH_TARGET:0 "[COUNTRY.GetName]・[TARGET_COUNTRY.GetName]間の[concept_relations]が$relations_cordial$以上のため、[concept_diplomatic_play]を開始できません"
  ALLIANCE_WITH_TARGET:0 "[COUNTRY.GetName]と[TARGET_COUNTRY.GetName|v]が[concept_alliance]関係になりました"
  DEFENSIVE_PACT_WITH_TARGET:0 "[COUNTRY.GetName]は、[TARGET_COUNTRY.GetName|v]と[concept_defensive_pact]関係にあります"
