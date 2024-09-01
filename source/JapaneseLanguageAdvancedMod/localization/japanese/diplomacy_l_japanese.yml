@@ -1023,7 +1023,7 @@
  guarantee_independence_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]は[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]の独立を保証しています。"
  guarantee_independence_desc:0 "[concept_guarantee_independence_desc]"
  guarantee_independence_action_notification_name:0 "[INITIATOR_COUNTRY.GetName]が我が国の独立を保証"
- guarantee_independence_action_notification_desc:0 "[INITIATOR_COUNTRY.GetName]が我が国の[concept_country]の独立保証を開始した。もし、[concept_diplomatic_play]の標的になった場合、彼らに助けを求めることができるだろう。"
+ guarantee_independence_action_notification_desc:0 "[INITIATOR_COUNTRY.GetName]が我が[concept_country]の独立保証を開始した。もし、[concept_diplomatic_play]の標的になった場合、彼らに助けを求めることができるだろう。"
  guarantee_independence_action_notification_break_name:0 "[INITIATOR_COUNTRY.GetAdjective]が独立の保証を停止"
  guarantee_independence_action_notification_break_desc:0 "今後、[INITIATOR_COUNTRY.GetName]から独立の保証を受けることはできません。"
  fund_lobbies:0 "ロビーへの資金提供"

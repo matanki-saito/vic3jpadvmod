@@ -173,7 +173,7 @@
  DATA_GOODS_MARKET_PRICE_BREAKDOWN:0 "[Goods.GetMarketPriceDesc]"
  PARTY_NAME:0 "#tooltippable_name #tooltip:$TAG$,DATA_PARTY_NAME_TOOLTIP,PartyTooltip $NAME$#!#!"
  DATA_LEGITIMACY_LEVEL_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_LEGITIMACY_LEVEL_TOOLTIP,LegitimacyLevelTooltip $NAME$#!#!"
- DATA_GOODS_POP_CONSUMPTION_NAME_TOOLTIP:0 "[ConcatIfNeitherEmpty(Goods.GetStateGoodsShortageDesc,'\n\n')]この[Concept('concept_pop','$concept_pop_possessive$')]予算の#v [PopConsumptionGoods.GetConsumptionRatio|1%v]#!が[Goods.GetName]に費やされています\n[PopConsumptionGoods.GetPopNeedsDesc][Concept('concept_pop_needs','$concept_pop_needs$')]の一部\n\n[Pop.GetName]による[Concept('concept_good_consumption','$concept_good_consumed$')] #v [PopConsumptionGoods.GetConsumptionAmount|D]#!"
+ DATA_GOODS_POP_CONSUMPTION_NAME_TOOLTIP:0 "[ConcatIfNeitherEmpty(Goods.GetStateGoodsShortageDesc,'\n\n')]この[Concept('concept_pop','$concept_pop_possessive$')]予算の#v [PopConsumptionGoods.GetConsumptionRatio|1%v]#!が[Goods.GetName]に費やされています\n[PopConsumptionGoods.GetPopNeedsDesc][Concept('concept_pop_needs','$concept_pop_needs$')]の一部\n\n#v [PopConsumptionGoods.GetConsumptionAmount|D]#! [Pop.GetName]による[Concept('concept_good_consumption','$concept_good_consumed$')] "
  INTEREST_GROUP_TOOLTIP_OTHER_COUNTRY_NAME:0 "[InterestGroup.GetCountry.GetAdjective][InterestGroup.GetNameNoFormatting]"
  INTEREST_GROUP_TOOLTIP_PLAYER_COUNTRY_NAME:0 "[InterestGroup.GetNameNoFormatting]"
  INTEREST_GROUP_TOOLTIP_NAME:0 "[SelectLocalization(InterestGroup.GetCountry.IsLocalPlayer,'INTEREST_GROUP_TOOLTIP_PLAYER_COUNTRY_NAME','INTEREST_GROUP_TOOLTIP_OTHER_COUNTRY_NAME')]"
