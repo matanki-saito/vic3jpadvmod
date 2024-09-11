@@ -150,7 +150,7 @@
  coup_retreat_50_tt:0 "#bold クーデター#!の#!進行度が#bold 50%#bold 減少します#!"
  coup_sponsor_tt:0 "#bold クーデター#!の成功により、#bold 義務#!が[SCOPE.sCountry('coup_sponsor_country').GetName]に負わされます。"
  coup_pulse_events.1.t:0 "謀略による将軍の弾劾"
- coup_pulse_events.1.d:0 "[SCOPE.sCharacter('accanged_general').GetFullName]、[SCOPE.gsInterestGroup('accanged_general_ig').GetName]に属する将軍が重大な不誠実さを非難されている。[SCOPE.sCharacter('accoded_general').GetFullName]は、これは自分たちの支配の障壁を取り除くための破壊分子による陰謀に過ぎないと主張している。"
+ coup_pulse_events.1.d:0 "[SCOPE.sCharacter('accused_general').GetFullName]、[SCOPE.gsInterestGroup('accused_general_ig').GetName]に属する将軍が重大な不誠実さを非難されている。[SCOPE.sCharacter('accused_general').GetFullName]は、これは自分たちの支配の障壁を取り除くための破壊分子による陰謀に過ぎないと主張している。"
  coup_pulse_events.1.f:0 "「紳士諸君、断言しよう。私の手紙に書かれているようなことは、私は全く知らない。もし、私の容疑を晴らすために、私物を調べなければならないのであれば、私は喜んで協力しよう」"
  coup_pulse_events.1.a:0 "将軍の忠誠心に賭けてはならない。"
  coup_pulse_events.1.a.tt:0 "[SCOPE.sCharacter('accoded_general').GetFullName]を引退させよう。"
