@@ -354,7 +354,7 @@
  generic_laws.6.c:0 "反意を唱えるよう[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]に助言しよう。百害あって一利なしだ。"
  generic_laws.8.c:0 "現在の草案を破棄して、書き直しを行おう。"
  generic_laws.11.c:0 "新しい草案の監修を彼らに提示しよう。"
- je_christ_of_nations:0 "国々のキリスト"
+ je_christ_of_nations:0 "諸国民のキリスト"
  je_christ_of_nations_reason:0 "#italic ローマの手によってキリストが殉教したように、ポーランドも敵の手によって殉教しました。そして、キリストが栄光のうちに再臨する運命にあるように、ポーランドもまた同じ運命にあります。#!\n\n[SCOPE.sCulture('polish_culture_scope').GetName]の最後の独立国家は地図からその姿を消しました。18世紀末の#bold ポーランド分割#! のせいだという者もいますが、その復活の夢はポズナンからルブフに至るポーランド人たちの心の中に生き続けています。\n\n#bold 共和国の遺産#!\n何らかの方法で完全に独立したポーランド国家が樹立された場合、[SCOPE.GetRootScope.GetCountry.GetName]自体が独立しているのであれば、その国家を我々の国家に加えることができるでしょう。"
  christ_of_nations_button:0 "海外でポーランド急進主義者を養成する"
  christ_of_nations_button_desc:0 "[SCOPE.sCulture('polish_culture_scope').GetName]人による統治の再確立に向けて活動している集団、組織、委員会は、旧ジェチュポスポリタの領土全体に数えきれないほど存在しています。ポーランドの愛国者たちの避難先として振る舞い、彼らの活動に資金を提供して支援することで、[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]は我々の支配が直接及ばない地を、将来の解放に向けて備えさせることができるのです。"
