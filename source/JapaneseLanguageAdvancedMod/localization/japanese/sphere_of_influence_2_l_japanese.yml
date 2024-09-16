@@ -189,7 +189,7 @@
  treaty_peace_and_friendship_loc:0 "平和友好条約"
  treaty_friendship_loc:0 "友好条約"
  je_earn_recognition_tt:0 "我が国は、妥当な[concept_great_power]との#bold [SCOPE.GetRootScope.GetCountry.GetCustom('treaty_names_custom_loc')]#!に署名することで、世界に認められる。"
- earn_recognition_events.1.t:0 "[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]―[SCOPE.sCountry('treaty_partner_country_scope').GetAdjectiveNoFormatting][SCOPE.GetRootScope.GetCountry.GetCustom('treaty_names_custom_loc')]"
+ earn_recognition_events.1.t:0 "[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]・[SCOPE.sCountry('treaty_partner_country_scope').GetAdjectiveNoFormatting][SCOPE.GetRootScope.GetCountry.GetCustom('treaty_names_custom_loc')]"
  earn_recognition_events.1.d:0 "本日午後、[SCOPE.sCountry('treaty_partner_country_scope').GetCapital.GetCityHubName]で締結されたこの画期的で新しい条約では、[SCOPE.sCountry('treaty_partner_country_scope').GetName]と[SCOPE.GetRootScope.GetCountry.GetName]の間にかつて存在した不平等な条約が正式に廃止され、新条約の条項が優先される。"
  earn_recognition_events.1.f:0 "「[ROOT.GetCountry.GetNameNoFormatting]の[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]と[SCOPE.sCountry('treaty_partner_country_scope').GetNameNoFormatting]の[SCOPE.sCountry('treaty_partner_country_scope').GetRuler.GetPrimaryRoleTitle]は、両国間に存在する良好な相互理解関係を維持し、両国間の協力と交流を拡大することを希望しており、既存の条約を改正することを決定した。公平性と相互利益の原則に基づいて条約を改正することで、共通の目標を効果的に達成できるようになるはずだ」"
  earn_recognition_events.1.a:0 "[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]の新たな夜明け。条約を批准する。"
