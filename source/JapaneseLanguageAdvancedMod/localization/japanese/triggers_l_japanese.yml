@@ -1115,7 +1115,7 @@
  TRIGGER_ANY_SCOPE_BUILDING_PERCENT:0 "$FILTER$[Concept('concept_building','$concept_buildings$')]が$PARAMETERS$ : "
  TRIGGER_ANY_SCOPE_BUILDING_PERCENT_FIRST:0 "$FILTER$[Concept('concept_building','$concept_buildings$')]が$PARAMETERS$ : "
  TRIGGER_ANY_SCOPE_BUILDING_PERCENT_THIRD:0 "$FILTER$[Concept('concept_building','$concept_buildings$')]が$PARAMETERS$ : "
- TRIGGER_ANY_SCOPE_BUILDING_COUNT:0 "$FILTER$[Concept('concept_building','$concept_buildings$')]が$PARAMETERS$ :  : "
+ TRIGGER_ANY_SCOPE_BUILDING_COUNT:0 "$FILTER$[Concept('concept_building','$concept_buildings$')]が$PARAMETERS$ : "
  TRIGGER_ANY_SCOPE_BUILDING_ALL:0 "すべての[Concept('concept_building','$concept_buildings$')] : "
  TRIGGER_ANY_SCOPE_BUILDING_ALL_FIRST:0 "[Country.GetAdjectiveNoFlag]のすべての[Concept('concept_building','$concept_buildings$')] : "
  TRIGGER_ANY_SCOPE_BUILDING_ALL_THIRD:0 "すべての[Concept('concept_building','$concept_buildings$')] : "
