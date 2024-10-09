@@ -3280,7 +3280,7 @@
  country_legitimacy_govt_size_add:0 "[concept_government]数の許容範囲"
  country_legitimacy_govt_size_add_desc:0 "[Concept('concept_party','$concept_parties$')]と[Concept('concept_interest_group','$concept_interest_groups$')]の数は[concept_legitimacy]のペナルティなしで一度に[concept_in_government]に含めることができる。"
  country_legitimacy_govt_size_mult_desc:0 "より多くの[Concept('concept_interest_group','$concept_interest_groups$')]を参画させることで増減する[concept_government]の[concept_legitimacy]の量です。"
- country_legitimacy_ideological_incoherence_mult:0 "[concept_ideological_incoherence]に由来する[concept_legitimacy]のペナルティです"
+ country_legitimacy_ideological_incoherence_mult:0 "[concept_ideological_incoherence]による[concept_legitimacy]ペナルティ"
  country_legitimacy_ideological_incoherence_mult_desc:0 "[concept_ideological_incoherence]によって失われる[concept_legitimacy]の量に対する乗数です"
  country_legitimacy_govt_leader_clout_add:0 "政府指導者の勢力に基づく[concept_legitimacy]"
  country_legitimacy_govt_leader_clout_add_desc:0 "政権を牽引する[concept_interest_group]の[concept_clout]に応じて増減する[concept_government]の[concept_legitimacy]の量です。"
