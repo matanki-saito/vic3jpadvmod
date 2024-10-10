@@ -1514,7 +1514,7 @@
  concept_power_bloc:0 "勢力圏"
  concept_power_blocs:0 "勢力圏"
  concept_power_bloc_possessive:0 "勢力圏の"
- concept_power_blocs_possessive:0 "勢力圏の"
+ concept_power_blocs_possessive:0 "勢力圏"
  concept_power_bloc_short:0 "勢力圏"
  concept_power_bloc_shorts:0 "勢力圏"
  concept_power_bloc_desc:0 "勢力圏は、[concept_great_power]、[concept_major_power]、または[Concept('concept_unrecognized_power','$concept_unrecognized_major_power$')]に率いられる多国籍連合であり、強力な効果を[Concept('concept_power_bloc_leader','$concept_power_bloc_leaders$')]と[Concept('concept_power_bloc_member','$concept_power_bloc_members$')]にもたらします。[Concept('concept_power_bloc_leader','$concept_power_bloc_leader_short$')]に仕え、[Concept('concept_country','$concept_countries$')]に[concept_power_bloc_leverage_advantage]を築いて影響の及ぶ範囲を広げ、これらの国を[concept_power_bloc]に参加させます。"

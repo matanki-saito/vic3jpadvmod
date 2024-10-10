@@ -349,7 +349,7 @@
  REMOVE_CHARACTER_ROLE_GLOBAL:0 "#v $ROLE$#!ではなくなります"
  REMOVE_CHARACTER_ROLE:0 "[CHARACTER.GetFullName]が#v $ROLE$#!ではなくなります"
  POP_EFFECT_FILTER:0 "[AddLocalizationIf(InterestGroup.IsValid,'POP_EFFECT_FILTER_INTEREST_GROUP')][AddLocalizationIf(Culture.IsValid,'POP_EFFECT_FILTER_CULTURE')][AddLocalizationIf(Religion.IsValid,'POP_EFFECT_FILTER_RELIGION')][AddLocalizationIf(PopType.IsValid,'POP_EFFECT_FILTER_POP_TYPE')][AddTextIf(Not(EqualTo_string('none','$STRATA$')),Concatenate(Localize('$STRATA$'),' '))][Concept('concept_pop','$concept_pops$')]"
- POP_EFFECT_FILTER_INTEREST_GROUP:0 "次のグループの[InterestGroup.GetName]のメンバー : "
+ POP_EFFECT_FILTER_INTEREST_GROUP:0 "[InterestGroup.GetName]のメンバー"
  POP_EFFECT_FILTER_CULTURE:0 "[Culture.GetName] "
  POP_EFFECT_FILTER_RELIGION:0 "[Religion.GetName] "
  POP_EFFECT_FILTER_POP_TYPE:0 "[PopType.GetName] "

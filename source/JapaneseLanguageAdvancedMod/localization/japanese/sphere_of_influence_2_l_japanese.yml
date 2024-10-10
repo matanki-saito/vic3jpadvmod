@@ -209,7 +209,7 @@
  lobby_events.23.d:0 "[SCOPE.gsInterestGroup('relevant_ig_scope').GetName]内の[SCOPE.sCountry('relevant_country_scope').GetName]は、絶対主義的支配が適切に行使された例として称賛が広まっており、[SCOPE.sCountry('relevant_country_scope').GetRuler.GetCustom('ageist_adjective')][SCOPE.sCountry('relevant_country_scope').GetRuler.GetPrimaryRoleTitle][SCOPE.sCountry('relevant_country_scope').GetRuler.GetFullName]に対してカルトじみた崇拝が行われている。"
  lobby_events.23.f:0 "クラブのメンバーで、現在の状況下において[SCOPE.sCountry('relevant_country_scope').GetAdjectiveNoFormatting][SCOPE.sCountry('relevant_country_scope').GetRuler.GetPrimaryRoleTitle][SCOPE.sCountry('relevant_country_scope').GetRuler.GetHerselfHimself]に[ROOT.GetCountry.GetCapital.GetCityHubName]による支配を望むものはほとんどいないだろう。彼らは[SCOPE.sCountry('relevant_country_scope').GetRuler.GetHerHim]にインスピレーションの源…すなわち、運命が違えば、[ROOT.GetCountry.GetNameNoFormatting]のようであり得たかもしれないというモデルを見出したのだ。"
  lobby_events.23.a:0 "これらの動きに細心の注意を払おう。"
- lobby_events.23.b:0 "[SCOPE.gsInterestGroup('relevant_ig_scope').GetName]は、はこの野蛮な[SCOPE.sCountry('related_country_scope').GetRuler.GetCulture.GetNameNoFormatting]から学ぶことはなにもない。"
+ lobby_events.23.b:0 "[SCOPE.gsInterestGroup('relevant_ig_scope').GetName]は、はこの野蛮な[SCOPE.sCountry('relevant_country_scope').GetRuler.GetCulture.GetNameNoFormatting]から学ぶことはなにもない。"
  racist_rhetorics_modifier:0 "人種差別的レトリック"
  lobby_events.24.t:0 "[SCOPE.sCountry('relevant_country_scope').GetAdjectiveNoFormatting]モデル"
  lobby_events.24.d:0 "[SCOPE.sCountry('relevant_country_scope').GetAdjective][SCOPE.sCountry('relevant_country_scope').GetCustom('army_or_navy_custom_loc')]の現在の状態に深く感銘を受けた、[ROOT.GetCountry.GetAdjective][SCOPE.gsInterestGroup('relevant_ig_scope').GetName]内の重要人物は、[SCOPE.sPoliticalLobby('relevant_lobby_scope').GetName]と協力することとした。"
