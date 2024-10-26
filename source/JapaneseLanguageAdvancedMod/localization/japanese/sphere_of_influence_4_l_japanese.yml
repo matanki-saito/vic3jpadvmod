@@ -464,7 +464,7 @@
  lobby_core.1.d:0 "手動で宗主国ロビーを作成します。"
  lobby_found_tt:0 "[concept_political_lobby]が[SCOPE.sCountry('lobby_found_country').GetName]にある"
  lobby_proposal.1.t:0 "[SCOPE.sPoliticalLobby('relevant_lobby').GetName]が行動を求めています"
- lobby_proposal.1.d:0 "[SCOPE.sPoliticalLobby('relevant_lobby').GetName]が、我が国が[SCOPE.sCountry('third_party_country').GetName]を[SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_demand_text_def')]することを要求している。[SCOPE.sCountry('third_party_country').GetNameNoFormatting]は[SCOPE.sCountry('relevant_country').GetAdjective]の利害対立国として知られている。"
+ lobby_proposal.1.d:0 "[SCOPE.sPoliticalLobby('relevant_lobby').GetName]が、我が国が[SCOPE.sCountry('third_party_country').GetName][SCOPE.GetRootScope.GetCountry.GetCustom('pro_lobby_demand_text_def')]することを要求している。[SCOPE.sCountry('third_party_country').GetNameNoFormatting]は[SCOPE.sCountry('relevant_country').GetAdjective]の利害対立国として知られている。"
  lobby_proposal.1.f:0 "「できるかぎり包括的な対応を取らねばならない。そうでなければ無責任だ。[SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting]侵略はあまりにも古くさい」\n\n「強国のために、自国を駒のように使っていると受け取られはしないだろうか。そう迫られたら、どう答えるのだ？」\n\n「事情があって協力したからといって従属することにはならない。今回は、偶然にも[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]の関心が[ROOT.GetCountry.GetAdjectiveNoFormatting]の関心と同じだったというだけのことだ」"
  lobby_proposal.1.a:0 "この件を検討する。"
  lobby_proposal.1.b:0 "この件は我が国のためにならない。"
