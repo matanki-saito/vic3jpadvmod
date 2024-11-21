@@ -173,3 +173,6 @@
  SETTING_BLOOM_QUALITY_TOOLTIP:0 "#T $SETTING_BLOOM_QUALITY$\n#!ブルーム効果を有効にします。これは画像にとても明るい光があふれ出ているように見える演出です。\n\n設定を下げるとパフォーマンスが向上します。"
  SETTING_TOOLS_GUI_SCALING:0 "工具GUIスケーリング"
  SETTING_TOOLS_GUI_SCALING_TOOLTIP:0 "#T $SETTING_TOOLS_GUI_SCALING$\n#!工具ユーザーインターフェースのスケールを設定します。画面解像度が高いほど効果が現れます。\n\n#X あまり高く設定し過ぎると、UIが画面におさまりきらなくなる場合があります！#!"
+ SETTING_CONSOLE_AUTOCOMPLETE_MODE:0 "Console auto―complete mode"
+ SETTING_CONSOLE_AUTOCOMPLETE_MODE_FULL_EXPAND:0 "Full expand, iterate with tab"
+ SETTING_CONSOLE_AUTOCOMPLETE_MODE_PARTIAL_EXPAND:0 "Partial expand until different"

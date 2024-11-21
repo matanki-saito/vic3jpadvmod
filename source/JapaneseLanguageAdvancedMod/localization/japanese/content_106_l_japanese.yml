@@ -3,7 +3,7 @@
  je_the_eastern_border_reason:0 "太平洋の海軍大国になるという我々の野心と、中央アジアにおける我々の植民地政策には、長期にわたる[SCOPE.sCountry('china_scope').GetName]との国境紛争を[ROOT.GetCountry.GetName]にとって好ましい形で解決することが必要です。"
  obligation_for_outer_manchuria_tt:0 "我々の恩義を#bold プリモーリエ#!と交換する。"
  transfer_of_outer_manchuria_tt:0 "#bold プリモーリエ#!をロシアの支配下に移すことを要求する。"
- china_explosion_point_2_tt:0 "#BOLD アヘン戦争#!と#BOLD 反乱#!により十分に#BOLD 不安定#!になっている"
+ china_explosion_point_2_tt:0 "#b $je_warlord_china$#! [concept_journal_entry]の進捗は#v 3#!以下です (現在#variable [SCOPE.sCountry('china_scope').MakeScope.Var('china_warlord_explosion').GetValue]#!) "
  russo_chinese.1.t:0 "北京条約"
  russo_chinese.1.d:0 "[SCOPE.sCountry('china_scope').GetAdjective]政府に対する我々の現在の影響力を利用し、満州に正式な国境線を引き、[SCOPE.sState('outer_manchuria_scope').GetName]を正式に[ROOT.GetCountry.GetName]へと移管する条約を提案しました。"
  russo_chinese.1.f:0 "この条約の条項は、双方の国の代表者により交換された日から効力を生じ、永久に神聖かつ不可侵に履行されなければなりません。"

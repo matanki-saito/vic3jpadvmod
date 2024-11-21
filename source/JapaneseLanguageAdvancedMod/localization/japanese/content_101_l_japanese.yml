@@ -722,3 +722,5 @@
  council_republic_law_events.3.c:0 "これは、反動勢力に対し開戦する理由となり得る。"
  mr_loc:0 "氏"
  ms_loc:0 "氏"
+ free_speech_pamphlet_risk_success_movement:0 "$free_speech_pamphlet_risk_success$"
+ free_speech_censorship_stall_success_ig:0 "$free_speech_censorship_stall_success$"

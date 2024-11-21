@@ -369,3 +369,5 @@
  slavery_progress_from_abolished_slave_trade_tt:0 "[GetLawType('law_slave_trade').GetName]の[concept_law]を廃止しました"
  slavery_progress_from_ended_regency_tt:0 "#bold 摂政#!時代が終了しました"
  slavery_progress_from_isabel_tt:0 "イザベル王女が正式に王位[concept_heir]に就きました"
+ slavery_progress_from_pro_slavery_movement_tt:0 "#b $movement_pro_slavery$#!の[Concept('concept_political_movement_support','$concept_political_movement_support_short$')]"
+ slavery_progress_from_abolitionist_movement_tt:0 "#b $movement_anti_slavery$#!の[Concept('concept_political_movement_support','$concept_political_movement_support_short$')]"

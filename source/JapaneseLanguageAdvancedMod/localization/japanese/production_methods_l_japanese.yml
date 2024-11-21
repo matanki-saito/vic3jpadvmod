@@ -734,3 +734,7 @@
  pm_manor_house_clergy_ownership:0 "聖職者の監視"
  pm_financial_district_privately_owned:0 "$pm_privately_owned$"
  pm_financial_district_publicly_traded:0 "$pm_publicly_traded$"
+ pmg_base_building_victoria_terminus:0 "$pm_base$"
+ pm_default_building_victoria_terminus:0 "初期生産量"
+ pmg_ownership_building_company_headquarter:0 "$pmg_ownership$"
+ pm_company_headquarter_privately_owned:0 "$pm_privately_owned$"
