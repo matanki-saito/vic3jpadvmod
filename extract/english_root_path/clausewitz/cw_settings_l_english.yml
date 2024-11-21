@@ -180,6 +180,9 @@
  SETTING_MAP_EDITOR_AUTOSAVE_INTERVAL_MINUTES: "Map Editor Auto-save (minutes)"
  SETTING_MAP_EDITOR_AUTOSAVE_INTERVAL_MINUTES_TOOLTIP: "Map Editor Auto-save interval (minutes)"
  SETTING_NODE_EDITOR_DRAG_PAN_MODE: "Node Editor Drag Pan Mode"
+ SETTING_CONSOLE_AUTOCOMPLETE_MODE: "Console auto-complete mode"
+ SETTING_CONSOLE_AUTOCOMPLETE_MODE_FULL_EXPAND: "Full expand, iterate with tab"
+ SETTING_CONSOLE_AUTOCOMPLETE_MODE_PARTIAL_EXPAND: "Partial expand until different"
  # Accessibility
  SETTINGS_CATEGORY_ACCESSIBILITY: "Accessibility"
  SETTING_COLOR_BLIND_MODE: "Color Blind Mode"

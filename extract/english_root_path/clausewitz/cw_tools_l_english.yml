@@ -74,7 +74,7 @@
  map_content_editor_sub_tool_error_grouping_no_selection: "Select something first in order to perform grouping operations."
  map_content_editor_sub_tool_error_grouping_mutual_exclusive: "Entries in this layer cannot overlap, so grouping operation with multiple entries is not supported. Please select only one entry."
  map_content_editor_sub_tool_error_erasing_unavailable: "There are no changes made to be erased."
- map_content_editor_content_desc_under_mouse: "-----------------\nContent at coordinates [#color:{0.9,0.9,0} $X$#!x#color:{0.9,0.9,0} $Y$#!]:"
+ map_content_editor_content_desc_under_mouse: "-----------------\nContent at coordinates (#color:{0.9,0.9,0} $X$#!x#color:{0.9,0.9,0} $Y$#!):"
  map_content_editor_cannot_switch_tool_while_interacting: "Cannot switch the tool while user is still interacting with current tool."
  gui_animation_tool_dataflow_tooltip: "Data flow direction for the property.\n^ - The first keyframe is ignored, and data from the widget is used instead (default).\nv - The first keyframe is not ignored, so its data will be used for the start of the animation."
  TOOLS_ANSWER_YES: "Yes#!"

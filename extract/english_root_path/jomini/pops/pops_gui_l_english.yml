@@ -1,3 +1,0 @@
-﻿l_english:
- CREATE_SOCIAL_PROFILE_ERROR: "Error: [CreateSocialProfile.GetErrorMessage]"
- POPS_LOGIN_RESET_PASSWORD_EMAIL_SENT: "Email sent to [POPSLoginView.GetEmail]. To reset password follow the instruction in the email"

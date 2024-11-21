@@ -125,3 +125,7 @@
  catalyst_event_positive_desc: "イベントやその他の理由から"
  catalyst_event_negative: "ネガティブなイベント"
  catalyst_event_negative_desc: "イベントやその他の理由から"
+ catalyst_declined_military_assistance: "$concept_military_assistance$の要求を拒否しました"
+ catalyst_declined_military_assistance_desc: "[TARGET_COUNTRY.GetName]は我が国に[concept_military_assistance]を行うことを拒否しています"
+ catalyst_granted_military_assistance: "$concept_military_assistance$が行われました"
+ catalyst_granted_military_assistance_desc: "[TARGET_COUNTRY.GetName]は我が国に[concept_military_assistance]を行っています"

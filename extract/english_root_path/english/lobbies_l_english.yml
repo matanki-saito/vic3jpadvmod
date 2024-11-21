@@ -18,6 +18,8 @@
  lobby_category_domestic: "Domestic Lobbies"
  
  POLITICAL_LOBBY_SUPPORTERS: "Supporters"
+ POLITICAL_LOBBY_APPEASEMENT_VALUE: "[concept_political_lobby_appeasement]: #v #tooltippable #tooltip:[PoliticalLobby.GetTooltipTag],POLITICAL_LOBBY_APPEASEMENT_TOOLTIP [PoliticalLobby.GetAppeasement|=+0]#!#!#!"
+
 
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION: "[SelectLocalization(EqualTo_string(PoliticalLobby.GetType.GetCategory,'foreign_pro_country'),'POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_PRO','POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_ANTI')]"
  POLITICAL_LOBBY_TARGET_COUNTRY_RELATION_ANTI: "Opposes [PoliticalLobby.GetTargetCountry.GetName]"
@@ -25,7 +27,7 @@
 
  POLITICAL_LOBBY_HOME_COUNTRY: "From [PoliticalLobby.GetCountry.GetName]"
 
- POLITICAL_LOBBY_APPEASEMENT_IMPACT: "[PoliticalLobby.GetAppeasement|=+v] [concept_approval] for supporting [Concept('concept_interest_group','$concept_interest_groups$')] from [concept_political_lobby_appeasement]"
+ POLITICAL_LOBBY_APPEASEMENT_IMPACT: "[PoliticalLobby.GetAppeasement|=+v] [concept_approval] from [concept_political_lobby_appeasement]"
  POLITICAL_LOBBY_APPEASEMENT_FACTORS: "Actions targeting [PoliticalLobby.GetTargetCountry.GetName]"
  POLITICAL_LOBBY_TOTAL_CLOUT: "Lobby Clout: #tooltippable #tooltip:POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!"
  POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP: "#header Lobby [concept_clout]#!\nTotal: [PoliticalLobby.GetTotalClout|%1v]\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]"
@@ -60,6 +62,10 @@
  appeasement_defensive_pact_formed_desc: "Forming a [concept_defensive_pact]"
  appeasement_defensive_pact_broken: "Broke [concept_defensive_pact]"
  appeasement_defensive_pact_broken_desc: "Breaking a [concept_defensive_pact]"
+ appeasement_military_assistance_started: "Began [concept_military_assistance]"
+ appeasement_military_assistance_started_desc: "Beginning [concept_military_assistance]"
+ appeasement_military_assistance_broken: "Halted [concept_military_assistance]"
+ appeasement_military_assistance_broken_desc: "Halting [concept_military_assistance]"
  appeasement_foreign_investment_agreement_formed: "Formed [concept_foreign_investment_rights] Pact"
  appeasement_foreign_investment_agreement_formed_desc: "Forming a mutual [concept_foreign_investment_rights] Pact"
  appeasement_foreign_investment_agreement_broken: "Broke [concept_foreign_investment_rights] Pact"
@@ -118,3 +124,9 @@
  appeasement_special_events_positive_desc: "From events or other reasons"
  appeasement_special_events_negative: "From Events"
  appeasement_special_events_negative_desc: "From events or other reasons"
+ appeasement_british_dictate_failed: "Failed Suzerain Dictate"
+ appeasement_british_dictate_failed_desc: "Failing a dictate from our suzerain"
+ appeasement_british_dictate_rejected: "Rejected Suzerain Dictate"
+ appeasement_british_dictate_rejected_desc: "Rejecting a dictate from our suzerain"
+ appeasement_british_dictate_succeeded: "Completed Suzerain Dictate"
+ appeasement_british_dictate_succeeded_desc: "Successfully completing a dictate from our suzerain"

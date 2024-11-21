@@ -126,3 +126,7 @@
  catalyst_event_positive_desc: "from events or other reasons"
  catalyst_event_negative: "Negative Event"
  catalyst_event_negative_desc: "from events or other reasons"
+ catalyst_declined_military_assistance: "Declined $concept_military_assistance$ Request"
+ catalyst_declined_military_assistance_desc: "[TARGET_COUNTRY.GetName] declining an offer to provide [concept_military_assistance] to our country"
+ catalyst_granted_military_assistance: "Granted $concept_military_assistance$"
+ catalyst_granted_military_assistance_desc: "[TARGET_COUNTRY.GetName] providing [concept_military_assistance] to our country"

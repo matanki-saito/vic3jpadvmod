@@ -1,0 +1,8 @@
+﻿l_english:
+  MODS_DEPENDENCY_NONE: "No dependencies"
+  MODS_DEPENDENCY_UNKNOWN: "Unknown dependency entry"
+  MODS_DEPENDENCY_ENTRY_ACTIVE: "$MOD_NAME$ version $MOD_VERSION$"
+  MODS_DEPENDENCY_ENTRY_INACTIVE: "$MOD_NAME$ version $MOD_VERSION$ (disabled)"
+  MODS_DEPENDENCY_ENTRY_INSTALLED: "$MOD_NAME$ version $MOD_VERSION$ (on disk)"
+  MODS_DEPENDENCY_ENTRY_MISSING: "$MOD_NAME$ version $MOD_VERSION$ (not found)"
+  MODS_DEPENDENCY_ENTRY_VERSION_MISMATCH: "$MOD_NAME$ version $MOD_VERSION$ (wrong version installed)"
