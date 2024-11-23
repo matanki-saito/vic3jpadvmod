@@ -58,7 +58,7 @@
  ig_variant_petty_bourgeoisie:0 "[GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_rural_folk:0 "[GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant]"
  ig_variant_trade_unions:0 "[GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetNameWithCountryVariant]"
- state_expected_sol_from_literacy:0 "[concept_literacy]による[concept_sol]の予想最低値"
+ state_expected_sol_from_literacy:0 "[concept_literacy]によるPOPの許容[concept_sol]"
  institution_cost_mult:0 "機関$BUREAUCRACY$コスト"
  institution_cost_mult_desc:0 "機関の$BUREAUCRACY$維持コストに対する増減補正です"
  state_non_homeland_mortality_mult:0 "非[concept_homeland][Concept('concept_state','$concept_states$')]における$concept_pop_growth_mortality$"

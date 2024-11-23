@@ -376,7 +376,7 @@
  je_anarchy_reason:0 "国家があれば、ある階級が別の階級に支配され、その結果、奴隷制が生じるに違いない。奴隷制のない国家は考えられない。そして、これが、われわれが国家の敵であるからだ。"
  je_vanguard:0 "国家と革命"
  je_vanguard_reason:0 "プロレタリアートは搾取者の抵抗を粉砕し、膨大な人口を社会主義経済組織へと導くべく、国家権力、集権化された力量組織、暴力組織を必要としている。"
- vanguard_custom_tooltip:0 "有力な利益集団はすべて、[GetIdeology('ideology_vanguardist').GetName]、[GetIdeology('ideology_communist').GetName]、または[GetIdeology('ideology_anarchist').GetName]のリーダーに率いられています。"
+ vanguard_custom_tooltip:0 "主流派の利益集団はいずれも、[GetIdeology('ideology_vanguardist').GetName]、[GetIdeology('ideology_communist').GetName]、または[GetIdeology('ideology_anarchist').GetName]のリーダーに率いられています。"
  vanguard_instruction_status:0 "知識人、農村民、労働組合、軍部は、非主流派の場合、前衛主義を採用します。"
  je_communist_welfare:0 "我らの革命"
  je_communist_welfare_reason:0 "共産主義は、すべての人の需要を満たすまでは達成できない。各人がその能力に応じて、各人がその必要に応じて。"
