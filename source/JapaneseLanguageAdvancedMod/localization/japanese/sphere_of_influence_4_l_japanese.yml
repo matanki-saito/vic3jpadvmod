@@ -327,7 +327,7 @@
  modifier_movement_student_protests_support:0 "影響力のある学生の抗議運動"
  movement_events.1.t:0 "政府の方針について"
  movement_events.1.d1:0 "[SCOPE.sCharacter('relevant_agitator').GetFullName]が、[SCOPE.sPoliticalMovement('relevant_movement').GetName]のためにパンフレットを発行し、問題に対する政府の現在の政策を激しく批判しました。[SCOPE.sCharacter('relevant_agitator').GetHerHis|U]のパンフレットは改革派の間で人気を博しています。"
- movement_events.1.d2:0 "[SCOPE.sPoliticalMovement('relevant_movement').GetName]の[SCOPE.gsInterestGroup('relevant_ig').GetName]の支持者がパンフレットを発行し、問題に対する政府の現在の政策を激しく批判しました。[SCOPE.sCharacter('relevant_agitator').GetHerHis|U]のパンフレットは改革派の間で人気を博しています。"
+ movement_events.1.d2:0 "[SCOPE.sPoliticalMovement('relevant_movement').GetName]の[SCOPE.gsInterestGroup('relevant_ig').GetName]の支持者がパンフレットを発行し、問題に対する政府の現在の政策を激しく批判しました。このパンフレットは改革派の間で人気を博しています。"
  movement_events.1.f:0 "#bold [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の政策について#!\n\n10月中旬、我らが[ROOT.GetCountry.GetCapital.GetCityHubName]改革協会の前で行われた素晴らしい演説。\n\n印刷時のミス―スピーチの1ページ目を読んだあとは、5ページ目、4ページ目、6ページ目の順にお読みください。"
  movement_events.1.a:0 "表現の自由の原則を尊重しなければならない。"
  movement_events.1.b:0 "パンフレットは見つけ次第没収する。"

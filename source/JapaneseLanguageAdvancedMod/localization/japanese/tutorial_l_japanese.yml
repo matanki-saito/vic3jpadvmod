@@ -1026,7 +1026,7 @@
  lesson_form_power_bloc_how_2_continue:0 "#bold $ADD_NEW_PRINCIPLE$#!をクリックして#b 「原則の選択」ウィンドウ#!を開きます"
  lesson_form_power_bloc_how_2_back:0 "撤回するには#b 「勢力圏の形成」パネル#!を閉じてください。"
  lesson_form_power_bloc_how_3:0 "$lesson_form_power_bloc_how_1$"
- lesson_form_power_bloc_how_3_desc:0 "$concept_power_bloc_principles$は、我が国の[concept_power_bloc]を独自の主体に仕立てる手段です。ただし、$concept_power_bloc$を始める際には、[concept_power_bloc_primary_principle_group]から[concept_power_bloc_principle]を選択する必要があります。$concept_power_bloc_primary_principle_group$は所属するブロックの[concept_power_bloc_identity]に左右されます。\n\nより多くの原則を得るには[Concept('concept_power_bloc_mandate','$concept_power_bloc_mandates$')]が必要となります。$concept_power_bloc_mandates$は時間の経過とともに蓄積されますが、通常、より多くのメンバーを勢力ブロックに招待することで早く獲得することができます。"
+ lesson_form_power_bloc_how_3_desc:0 "$concept_power_bloc_principles$は、我が国の[concept_power_bloc]を独自の主体に仕立てる手段です。ただし、$concept_power_bloc$を始める際には、[concept_power_bloc_primary_principle_group]から[concept_power_bloc_principle]を選択する必要があります。$concept_power_bloc_primary_principle_group$は所属する勢力圏の[concept_power_bloc_identity]に左右されます。\n\nより多くの原則を得るには[Concept('concept_power_bloc_mandate','$concept_power_bloc_mandates$')]が必要となります。$concept_power_bloc_mandates$は時間の経過とともに蓄積されますが、通常、より多くのメンバーを勢力圏に招待することで早く獲得することができます。"
  lesson_form_power_bloc_how_3_continue:0 "使用可能な$concept_power_bloc_principles$から好きなものを選び、次に#b $PRINCIPLE_SELECTION_SUBMIT_BUTTON_LABEL$#!を選択します"
  lesson_form_power_bloc_how_3_back:0 "撤回するには#b 「原則の選択」ウィンドウ#!を閉じてください。"
  lesson_form_power_bloc_how_4:0 "$lesson_form_power_bloc_how_1$"
