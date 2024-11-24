@@ -1,91 +1,94 @@
 name: Event
 description: イベントのテキストに関する起票
 title: "XXX"
-labels: [イベント等テキスト]
+labels: [ イベント等テキスト ]
 body:
-- type: textarea
-  attributes:
-    label: スクリーンショット
-    description: |
-      ※画像はドラッグ＆ドロップで貼り付けられます。
-      ※できるだけ問題箇所の前後を含めて貼ってください。
-  validations:
-    required: false
-- type: dropdown
-  attributes:
-    label: 問題部分
-    multiple: true
-    options:
-      - タイトル
-      - 本文
-      - 選択肢
-  validations:
-    required: true
-- type: input
-  attributes:
-    label: 問題のイベントタイトル
-    description: |
-      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
-    placeholder: イルハン朝の誕生
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: 問題のイベント本文（抜粋可）
-    description: |
-      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
-    placeholder: イルハン朝が建国されれました。
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: 問題のイベント選択肢
-    description: |
-      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
-  validations:
-    required: false
-- type: textarea
-  attributes:
-    label: 希望する変更（修正部分のみ）
-    description: |
-      ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
-    placeholder: イルハン朝が建国されました
-  validations:
-    required: true
-- type: input
-  attributes:
-    label: 変更の理由（概要）
-    placeholder: 単純なtypo
-  validations:
-    required: true
-- type: textarea
-  attributes:
-    label: 変更の理由（詳細）
-  validations:
-    required: false
-- type: input
-  attributes:
-    label: プレイ国家
-    placeholder: 日本
-  validations:
-    required: false
-- type: dropdown
-  attributes:
-    label: ゲームバージョン
-    options:
-      - 1.0.X
-      - 1.1.X
-      - 1.2.X
-      - 1.3.X
-      - 1.4.X
-      - 1.5.X
-      - 1.6.X
-      - 1.7.X
-  validations:
-    required: false
-- type: input
-  attributes:
-    label: MOD有無
-    placeholder: Visual Methods, State transfer tool
-  validations:
-    required: false
+  - type: textarea
+    attributes:
+      label: スクリーンショット
+      description: |
+        ※画像はドラッグ＆ドロップで貼り付けられます。
+        ※できるだけ問題箇所の前後を含めて貼ってください。
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: 問題部分
+      multiple: true
+      options:
+        - タイトル
+        - 本文
+        - 選択肢
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 問題のイベントタイトル
+      description: |
+        ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
+      placeholder: イルハン朝の誕生
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 問題のイベント本文（抜粋可）
+      description: |
+        ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
+      placeholder: イルハン朝が建国されれました。
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 問題のイベント選択肢
+      description: |
+        ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: 希望する変更（修正部分のみ）
+      description: |
+        ※#xxxや[xxx]や$xxx$のような記号が存在する場合は```で全体を囲んでください
+      placeholder: イルハン朝が建国されました
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: 変更の理由（概要）
+      placeholder: 単純なtypo
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 変更の理由（詳細）
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: プレイ国家
+      placeholder: 日本
+    validations:
+      required: false
+  - type: dropdown
+    attributes:
+      label: ゲームバージョン
+      options:
+        - 1.0.X
+        - 1.1.X
+        - 1.2.X
+        - 1.3.X
+        - 1.4.X
+        - 1.5.X
+        - 1.6.X
+        - 1.7.X
+        - 1.8.X
+        - 1.9.X
+        - 1.10.X
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: MOD有無
+      placeholder: Visual Methods, State transfer tool
+    validations:
+      required: false
