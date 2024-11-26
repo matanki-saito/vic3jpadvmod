@@ -43,7 +43,7 @@
  movement_communist_name:0 "$movement_communist$"
  movement_fascist:0 "ファシスト運動"
  movement_fascist_name:0 "$movement_fascist$"
- movement_corporatist:0 "協調組合主義運動"
+ movement_corporatist:0 "コーポラティスト運動"
  movement_corporatist_name:0 "$movement_corporatist$"
  movement_liberal:0 "自由主義運動"
  movement_liberal_name:0 "$movement_liberal$"

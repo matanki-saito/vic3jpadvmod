@@ -435,7 +435,7 @@
  ideology_pluralist_movement_3_desc:0 "$ideology_pluralist_movement_1_desc$"
  ideology_pluralist_movement_4:0 "$ideology_pluralist_movement_1$"
  ideology_pluralist_movement_4_desc:0 "$ideology_pluralist_movement_1_desc$"
- law_corporate_state:0 "企業国家"
+ law_corporate_state:0 "コーポラティズム国家"
  law_corporate_state_desc:0 "公式に認められた企業グループ間の、制度化された協力関係を軸とする政治システムのこと。企業国家は、異なる社会階層間の交渉の場として機能します。"
  lawgroup_caste_hegemony:0 "カーストに基づく覇権国家"
  lawgroup_caste_hegemony_desc:0 "イギリス領インドのカースト制度に基づいた社会メンバーの権利を抹消します。"
