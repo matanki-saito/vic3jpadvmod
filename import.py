@@ -159,6 +159,14 @@ def add_new_file(base_path: Path, source_path: Path, context: Context):
     print("[LOG] status code {}".format(response.status_code))
 
 
+def pick_tool(dic: dict):
+    if len(dic) > 1:
+        print("WARN: {}".format(dic))
+
+    for k, v in dic.items():
+        return v
+
+
 def output(ctx: Context2):
     file_str_paths_cache = ctx.file_str_paths.copy()
 
@@ -168,32 +176,35 @@ def output(ctx: Context2):
     for str_path, keys in ctx.english_stats.items():
         path = Path(str_path.replace("english\\", "japanese\\")).with_suffix(".json")
         json_path = ctx.converted_root_path.joinpath(path)
-        new_file_flag = False
 
         # 新規ファイル
         if str(path) not in file_str_paths_cache:
             print("[LOG] New file : {}".format(json_path.name))
-            new_file_flag = True
         else:
             file_str_paths_cache.remove(str(path))
 
         data = []
-        for key, record in keys.items():
+        for key, en in keys.items():
             entry = {
                 "key": key,
-                "original": record["value"]
+                "original": en["value"]
             }
 
-            if new_file_flag:
-                entry["context"] = ctx.japanese_stats[key]["value"] if key in ctx.japanese_stats else ""
-                entry["translation"] = ctx.japanese_stats[key]["value"] if key in ctx.japanese_stats else ""
+            if key in ctx.current_stats:
+                # keyの移動なし
+                if en["parent"] in ctx.current_stats[key]:
+                    cur = ctx.current_stats[key][en["parent"]]
+                else:
+                    # key移動あり。過去のデータを参照する
+                    print("[LOG] move key {}".format(key))
+                    cur = pick_tool(ctx.current_stats[key])
 
-            elif key in ctx.current_stats:
                 if key in ctx.japanese_stats:
-                    entry["context"] = ctx.japanese_stats[key]["value"]
-                    if record["value"] != ctx.current_stats[key]["original"]:
-                        if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
-                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                    jp = ctx.japanese_stats[key][en["parent"]]
+                    entry["context"] = jp["value"]
+                    if en["value"] != cur["original"]:
+                        if cur["context"] != jp["value"]:
+                            if cur["context"] != cur["translation"]:
                                 # No.1
                                 print("[Log] No.1 | {}".format(key))
                                 actions[key] = {
@@ -204,10 +215,10 @@ def output(ctx: Context2):
                                 print("[Log] No.2 | {}".format(key))
                                 actions[key] = {
                                     "stage": 1,  # translated
-                                    "translation": ctx.japanese_stats[key]["value"]
+                                    "translation": jp["value"]
                                 }
                         else:
-                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                            if cur["context"] != cur["translation"]:
                                 # No.3
                                 print("[Log] No.3 | {}".format(key))
                                 actions[key] = {
@@ -220,13 +231,13 @@ def output(ctx: Context2):
                                     "stage": 1,  # translated
                                 }
                     else:
-                        if ctx.current_stats[key]["context"] != ctx.japanese_stats[key]["value"]:
-                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                        if cur["context"] != jp["value"]:
+                            if cur["context"] != cur["translation"]:
                                 # No.5
                                 print("[Log] No.5 | {}".format(key))
 
                                 # 更新予定の日本語翻訳＝Paratranzの翻訳ならば翻訳が受け入れられたと判断して状態変更はしない
-                                if ctx.japanese_stats[key]["value"] == ctx.current_stats[key]["translation"]:
+                                if jp["value"] == cur["translation"]:
                                     pass
                                 else:
                                     actions[key] = {
@@ -236,9 +247,8 @@ def output(ctx: Context2):
                                 # No.6
                                 print("[Log] No.6 | {}".format(key))
                                 pass
-
                         else:
-                            if ctx.current_stats[key]["context"] != ctx.current_stats[key]["translation"]:
+                            if cur["context"] != cur["translation"]:
                                 # No.7
                                 # print("[Log] No.7 | {}".format(efc))
                                 pass
@@ -252,10 +262,10 @@ def output(ctx: Context2):
             else:
                 if key in ctx.japanese_stats:
                     print("[Log] No.10 | {}".format(key))
-                    entry["context"] = ctx.japanese_stats[key]["value"]
+                    entry["context"] = pick_tool(ctx.japanese_stats[key])["value"]
                     actions[key] = {
                         "stage": 1,  # translated,
-                        "translation": ctx.japanese_stats[key]["value"]
+                        "translation": pick_tool(ctx.japanese_stats[key])["value"]
                     }
                 else:
                     print("[Log] No.11 | {}".format(key))
@@ -295,14 +305,23 @@ def aggregation_stats_from_current_files(ctx: Context):
     utf8_path = tmpdir_path.joinpath("utf8")
 
     for file_path in pathlib.Path(utf8_path).glob('**/*.json'):
+        relative_path = file_path.relative_to(utf8_path)
+        str_path = str(relative_path)
         with open(file_path, 'r', encoding='utf_8_sig') as fr:
             for entry in json.load(fr):
-                result[entry["key"]] = {
+                key = entry["key"]
+
+                if key in result:
+                    print("DUP(CUR) KEY: {}".format(key))
+                else:
+                    result[key] = {}
+
+                result[key][str_path.replace("_l_english.json", "")] = {
                     "translation": entry["translation"].replace("\\n", "\n") if "translation" in entry else None,
                     "original": entry["original"].replace("\\n", "\n"),
                     "stage": entry["stage"],
                     "context": entry["context"].replace("\\n", "\n") if "context" in entry else
-                    entry["original"].replace("\\n", "\n")
+                    entry["original"].replace("\\n", "\n"),
                 }
                 result2.add(str(file_path.relative_to(utf8_path)))
 
@@ -313,14 +332,22 @@ def aggregation_stats_from_japanese_files(ctx: Context):
     result = {}
 
     for file_path in pathlib.Path(ctx.japanese_root_path).glob('**/*.yml'):
+        relative_path = file_path.relative_to(ctx.japanese_root_path)
+        str_path = str(relative_path)
         with open(file_path, 'r', encoding='utf_8_sig') as f:
             for line in f:
                 match = re.search(r'^\s*([^:#]+):\d*\s+\"(.*)\"[^\"]*$', line)
                 if match:
                     key = match.group(1)
                     value = match.group(2)
-                    result[key] = {
-                        "value": value.replace("\\n", "\n")
+
+                    if key in result:
+                        print("DUP(JP) KEY: {}".format(key))
+                    else:
+                        result[key] = {}
+
+                    result[key][str_path.replace("_l_japanese.yml", "")] = {
+                        "value": value.replace("\\n", "\n"),
                     }
 
     return result
@@ -340,7 +367,8 @@ def aggregation_stats_from_english_files(ctx: Context):
                     key = match.group(1)
                     value = match.group(2)
                     result[str_path][key] = {
-                        "value": value.replace("\\n", "\n")
+                        "value": value.replace("\\n", "\n"),
+                        "parent": str_path.replace("english\\", "japanese\\").replace("_l_english.yml", "")
                     }
 
     return result
@@ -396,9 +424,9 @@ def main():
         print(traceback.format_exc())
         exit(1)
 
-    update_files(context3)
+    # update_files(context3)
 
-    update_entry(context3)
+    # update_entry(context3)
 
 
 if __name__ == "__main__":
