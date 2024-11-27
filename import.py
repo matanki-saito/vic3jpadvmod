@@ -424,9 +424,9 @@ def main():
         print(traceback.format_exc())
         exit(1)
 
-    # update_files(context3)
+    update_files(context3)
 
-    # update_entry(context3)
+    update_entry(context3)
 
 
 if __name__ == "__main__":
