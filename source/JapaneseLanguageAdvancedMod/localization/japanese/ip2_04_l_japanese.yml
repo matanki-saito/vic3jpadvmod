@@ -64,7 +64,7 @@
  princely_state_creation.4.t:0 "アムリトサル条約"
  princely_state_creation.4.d:0 "我々が新たに獲得した[SCOPE.sState('kashmir_state').GetName]地域は、かつては独立した強力な王国だった。強力な藩王国を新たに設置し、この地域を統治してはどうかという提案が出ている。"
  princely_state_creation.4.f:0 "「ヒンドゥー教徒はイスラム教徒を良く思っていない。イスラム教徒はシーク教徒を良く思っていない。シーク教徒は誰のことも良く思っていない。いったいどの王子なら、彼らをまとめられるというのだ？」\n\n「それでは、どこかの自信家の王子に統治させる代わりに、我々が大変な目に遭うのか？ゆっくり眠ることもできなくなるぞ？」"
- princely_state_creation.4.a:0 "ジャムとカシミールを、21発の礼砲が認められる一つの藩王国として制定する。"
+ princely_state_creation.4.a:0 "ジャンムー・カシミールを、21発の礼砲が認められる一つの藩王国として制定する。"
  princely_state_creation.4.b:0 "そのような条約は不要だ。"
  princely_state_creation.5.t:0 "シャン州"
  princely_state_creation.5.d:0 "我々が新たに獲得した[SCOPE.sState('shan_state').GetName]は、複雑なパッチワークさながら、さまざまな王国によって構成されている。これらの王国を、現在の統治形態のまま、共通の総督代理を置いて王国連邦として組織してはどうかという提案が出ている。"
