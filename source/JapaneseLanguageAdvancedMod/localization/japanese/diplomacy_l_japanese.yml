@@ -1033,7 +1033,7 @@
  fund_lobbies_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]が、[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]で$concept_funding_lobbies$しています。"
  fund_lobbies_desc:0 "[concept_fund_lobbies_desc]"
  fund_lobbies_action_notification_name:0 "[INITIATOR_COUNTRY.GetName]が$concept_funding_lobbies$"
- fund_lobbies_action_notification_desc:0 "[INITIATOR_COUNTRY.GetName]が、$fund_lobbies$し始めました。いずれ、我々の[concept_country]に友好的な[Concept('concept_political_lobby','$concept_political_lobbies_short$')]が生まれ、拡大するかもしれません。"
+ fund_lobbies_action_notification_desc:0 "[INITIATOR_COUNTRY.GetName]が、$fund_lobbies$を開始しました。いずれ、我々の[concept_country]に友好的な[Concept('concept_political_lobby','$concept_political_lobbies_short$')]が生まれ、拡大するかもしれません。"
  fund_lobbies_action_notification_break_name:0 "[INITIATOR_COUNTRY.GetName]が$concept_funding_lobbies$を停止"
  fund_lobbies_action_notification_break_desc:0 "[INITIATOR_COUNTRY.GetName]が、我々の[concept_country]で$fund_lobbies$することをやめました。"
  fund_lobbies_weekly_create_lobby_effect:0 "我が国の支持に関心を持つ[Concept('concept_interest_group','$concept_interest_groups$')]がいる場合に#v 0.25%#!～#v 1%#!の確率 ([concept_rank]や地理的な近接性によって変動) で標的[concept_country]に友好的な[concept_political_lobby]を発足させます"

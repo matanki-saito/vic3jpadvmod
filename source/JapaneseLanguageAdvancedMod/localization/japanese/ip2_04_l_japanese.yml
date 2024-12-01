@@ -447,7 +447,7 @@
  to_jail_5_tt:0 "[SCOPE.sCharacter('prisoner_scope').GetFullName]は#v 5年#!間#bold 投獄#!されます。"
  to_jail_10_tt:0 "[SCOPE.sCharacter('prisoner_scope').GetFullName]は#v 10年#!間#bold 投獄#!されます。"
  to_jail_exonerated_tt:0 "[SCOPE.sCharacter('prisoner_scope').GetFullName]は告発が取り下げられます。"
- send_to_jail:0 "投獄の扇動者"
+ send_to_jail:0 "扇動者を投獄"
  send_to_jail_desc:0 "#lore [Character.GetFullName]が犯した可能性のある罪に対して裁判を行い、投獄せよ。#!"
  jail.1.t:0 "牢屋へ"
  jail.1.d:0 "[SCOPE.sCharacter('prisoner_scope').GetFullName]は、[SCOPE.sCharacter('prisoner_scope').GetHerHis]の政治的扇動に関連する罪で逮捕され、裁判にかけられている。[SCOPE.sCharacter('prisoner_scope').GetSheHe|U]は冷淡な裁判官の前に立たされ、有罪となれば長期の刑務所生活が待っている。"
