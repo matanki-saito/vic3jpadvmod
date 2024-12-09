@@ -525,3 +525,6 @@
  war_goal_make_dominion:0 "[WAR_GOAL.GetTarget.GetName]の[concept_dominion]"
  war_goal_make_dominion_desc:0 "[WAR_GOAL.GetHolder.GetName]が[WAR_GOAL.GetTarget.GetName]に[concept_dominion]になることを強要する。"
  war_goal_make_dominion_sway_desc:0 "[WAR_GOAL.GetTarget.GetName]に[concept_dominion]になることを強要して、[WAR_GOAL.GetHolder.GetName]がこちら側の勢力に加わるよう説得しましょう。"
+ dp_sepoy_mutiny:0 "セポイの反乱"
+ dp_sepoy_mutiny_tooltip:0 "#header $dp_sepoy_mutiny$の[concept_diplomatic_play]を開始#!\n$TOOLTIP_DELIMITER$\n$dp_sepoy_mutiny_desc$"
+ dp_sepoy_mutiny_desc:0 "最初の[concept_war_goal]を、対象の[concept_country]が完全に併合するように設定します。"
