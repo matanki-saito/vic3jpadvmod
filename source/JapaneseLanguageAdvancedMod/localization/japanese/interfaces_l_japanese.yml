@@ -5693,7 +5693,7 @@
  notification_agitator_spawned_desc:0 "[SCOPE.sCha('character').GetAgitatorSpawnedNotificationText]"
  notification_agitator_spawned_tooltip:0 "$notification_agitator_spawned_name$\n$notification_agitator_spawned_desc$"
  notification_claim_added_notification_name:0 "[SCOPE.sC('actor').GetName][Concept('concept_claim','$concept_claims$')][SCOPE.sStateRegion('region').GetName]"
- notification_claim_added_notification_desc:0 "[SCOPE.sC('actor').GetName]が現在[SCOPE.sStateRegion('region').GetName]の領有権を主張しています"
+ notification_claim_added_notification_desc:0 "[SCOPE.sC('actor').GetName]が現在[SCOPE.sStateRegion('region').GetName]の[Concept('concept_claim','$concept_claimed$')]を主張しています"
  notification_claim_added_notification_tooltip:0 "$notification_claim_added_notification_name$\n$notification_claim_added_notification_desc$"
  LAW_ENACTMENT_PROGRESS_PHASES:0 "#v #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_FACTORS_TOOLTIP [Law.GetCheckpointEndDate.GetString]#!#!#!に[Law.GetCountry.GetCustom(Law.GetNextEnactmentPhaseKey)|v]へと進む確率#tooltippable #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|+%0]#!#!"
  LAW_ENACTMENT_PROGRESS_LAST_PHASE:0 "#v #tooltip:[Law.GetTooltipTag],LAW_NEXT_CHECKPOINT_TIME_FACTORS_TOOLTIP [Law.GetCheckpointEndDate.GetString]#!#!#!に[concept_law]を成立させる確率#tooltippable #tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|+%0]#!#!"

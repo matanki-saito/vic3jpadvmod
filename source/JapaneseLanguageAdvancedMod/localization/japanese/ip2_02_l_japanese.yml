@@ -98,7 +98,7 @@
  sepoy_mutiny_events.3.g:0 "カールサー・ジ・ディ・サルカール！シク王国は再び立ち上がるのだ！"
  sepoy_mutiny_events.3.h:0 "前進し、デカンから刀剣の惨劇を一掃するのだ。"
  sepoy_mutiny_events.3.tt_1:0 "インド反乱軍が[ROOT.GetCountry.GetName]に[concept_war]を宣言します"
- sepoy_mutiny_events.3.tt_2:0 "[Concept('concept_presidency_stability','$concept_presidency_stability_short$')]に基づき、すべての[Concept('concept_presidency','$concept_presidencies$')]に以下が適用される : \n―インド反乱軍が関連する[Concept('concept_state','$concept_states$')]を制圧する\n―急進主義者とマイナスの[Concept('concept_modifier','$concept_modifiers$')]がすべての構成[Concept('concept_state','$concept_states$')]に追加される\n―非首都の$building_barracks$が無作為に破壊される"
+ sepoy_mutiny_events.3.tt_2:0 "[Concept('concept_presidency_stability','$concept_presidency_stability_short$')]に基づき、すべての[Concept('concept_presidency','$concept_presidencies$')]に以下が適用される : \n • インド反乱軍が関連する[Concept('concept_state','$concept_states$')]を制圧する\n • 急進主義者とマイナスの[Concept('concept_modifier','$concept_modifiers$')]がすべての構成[Concept('concept_state','$concept_states$')]に追加される\n • 非首都の$building_barracks$が無作為に破壊される"
  sepoy_mutiny_events.4.t:0 "炎上するインド"
  sepoy_mutiny_events.4.d:0 "[SCOPE.sCountry('eic_scope').GetName]に雇われたセポイがかつての主人に対して反乱を起こし、イギリス領インドを混乱に陥れました。[ROOT.GetCountry.GetAdjective]宮廷の強硬派のメンバーは、私たちも反乱軍に加わり、一緒にインドからイギリスを追い出すべきだと声高に主張しています。"
  sepoy_mutiny_events.4.f:0 "王位の重責を理解する者はほとんどいない。宮廷の全員が議論をしているが、王子は彼らが自分の決定を待っていることを知っている。彼らは戦争を要求したり、和平を訴えたりしたいのかもしれないが、失敗したらいつでも王子のせいにできるとわかっているので、自由に言いたいことを言えるのだ。しかし、王子自身は誰に責任を問えるのだろうか？自由を約束するために命を落とした兵士たちの叫び声を聞きながら眠れない彼を、誰が慰めてくれるのだろうか？"

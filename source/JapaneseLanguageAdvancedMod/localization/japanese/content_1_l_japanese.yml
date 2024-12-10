@@ -949,7 +949,7 @@
  path_to_vanguardism:0 "前衛主義への道"
  je_consolidate_colonial_rule:0 "植民地支配の強化"
  je_consolidate_colonial_rule_reason:0 "我が国のインド領土の辺境は、常に危険を孕んでいます。君主を勝手に名乗る者が支配する地域に囲まれ、領土をいつ侵略されるとも知れないからです。我が国の領土を守るには、我が国の支配をいまだ免れているこれらの君主を服従させ、民衆が少しでも抵抗を見せれば、暴動に発展する前に制圧しなければなりません。\n\nインド全土に統治を拡大する過程で、我が国の統治を支える新たな[Concept('concept_princely_state','$concept_princely_states$')]を設置できるでしょう。あまりにも広大な土地を直接統治すると、既存の従属国の[concept_liberty_desire]が高まります。"
- je_consolidate_colonial_rule_goal:0 "[Country.GetAdjectiveNoFlag][concept_secession]運動の最高進捗が#v 120#!ヶ月間#variable 30%#!を下回っている\n ― (現在、#variable [ROOT.GetCountry.MakeScope.Var('east_indies_revolt_var').GetValue]#!か月間これに該当している) "
+ je_consolidate_colonial_rule_goal:0 "[Country.GetAdjectiveNoFlag][concept_secession]運動の最高進捗が#v 120#!ヶ月間#variable 30%#!未満\n • (現在#variable [ROOT.GetCountry.MakeScope.Var('east_indies_revolt_var').GetValue]#!か月間該当) "
  je_reform_indies:0 "インドの改革"
  je_reform_indies_reason:0 "東インドにおいて、農奴制封建制と奴隷制のような時代遅れの仕組みを継続することで搾取を行うことは、うまくいかないことが会社にとって明らかになりました。私たちは、経済を徹底的に変革し、代わりに民間企業と投資によって搾取を実現しなければならないのです。"
  je_reform_indies_goal:0 "GDPを50%向上させる"
