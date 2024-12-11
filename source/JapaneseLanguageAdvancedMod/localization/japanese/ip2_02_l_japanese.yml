@@ -133,7 +133,7 @@
  sepoy_mutiny_loss_of_authority:0 "手に負えない連隊"
  sepoy_mutiny_events.10.t:0 "最初のドミノが倒れる"
  sepoy_mutiny_events.10.d:0 "部隊に重労働の罰が下ったことを聞くと、他の連隊のセポイたちが逆らい、仲間の兵士たちを解放しようと試みました。"
- sepoy_mutiny_events.10.f:0 "カーンプル駐屯地。\n[SCOPE.sCharacter('sepoy_general_scope').GetLastNameNoFormatting]将軍\n\n緊急です。\n\nセポイ50人が弾薬庫に立てこもり、近づく将校に発砲しています。問題が起こったのは奴らが夜中に酔ったときです。上官に向けて発砲したのです。残りの連隊からは武器を取り上げ、兵舎で待機するように伝えています。忠実な者によれば、反乱を起こしている者たちは、重労働の罰を下された部隊を解放しようとしているようです。\n\nどうか、ご助言を！"
+ sepoy_mutiny_events.10.f:0 "カウンプール駐屯地。\n[SCOPE.sCharacter('sepoy_general_scope').GetLastNameNoFormatting]将軍\n\n緊急です。\n\nセポイ50人が弾薬庫に立てこもり、近づく将校に発砲しています。問題が起こったのは奴らが夜中に酔ったときです。上官に向けて発砲したのです。残りの連隊からは武器を取り上げ、兵舎で待機するように伝えています。忠実な者によれば、反乱を起こしている者たちは、重労働の罰を下された部隊を解放しようとしているようです。\n\nどうか、ご助言を！"
  sepoy_mutiny_events.10.a:0 "参加者全員を処罰せよ。"
  sepoy_mutiny_events.10.b:0 "全部隊を処罰せよ。"
  sepoy_mutiny_progress_bar_bengal_name:0 "ベンガル管区の[Concept('concept_presidency_stability','$concept_presidency_stability_short$')]"

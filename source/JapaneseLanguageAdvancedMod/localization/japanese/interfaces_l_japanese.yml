@@ -3485,7 +3485,7 @@
  TECHNOLOGY_SPREAD_TOOLTIP:0 "#header [concept_technology_spread]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetWeeklyTechnologySpreadForTechDesc(Technology.Self)]"
  TECHNOLOGY_GAIN_BREAKDOWN:0 "#header 技術進捗#!\n[Technology.GetCategoryName]の研究速度から : #tooltippable #tooltip:[Technology.GetTooltipTag]|[GetPlayer.GetTooltipTag],RESEARCH_SPEED_TOOLTIP #v [GetPlayer.GetWeeklyResearchSpeed|=+1]#!#!#!\n[concept_technology_spread]から : #tooltippable #tooltip:[Technology.GetTooltipTag],TECHNOLOGY_SPREAD_TOOLTIP [GetPlayer.GetWeeklyTechnologySpreadForTechDesc(Technology.Self)]#!#!"
  BASE_WEEKLY_TECH_SPREAD:0 "週次基礎[concept_technology_spread] : #v $VALUE|+2$#!"
- RANDOMIZED_WEEKLY_TECH_SPREAD:0 "これにより、[concept_technology_spread]の@innovation![concept_innovation]は、我が国に伝播してくる[Concept('concept_technology','$concept_technologies$')]に対し、毎週#P $MIN|1$#!から#P $MAX|1$#!までの範囲内で投資されることになります。"
+ RANDOMIZED_WEEKLY_TECH_SPREAD:0 "これにより、[concept_technology_spread]の@innovation![concept_innovation]は、我が国に伝播してくる[Concept('concept_technology','$concept_technologies$')]に対し、毎週#P $MIN|1$#!〜#P $MAX|1$#!の範囲内で投資されることになります。"
  TECH_SPREAD_FROM_NEIGHBOR:0 "$COUNTRY|v$由来の[concept_technology_spread] : #v $VALUE|+=2$#! (近隣) "
  TECH_SPREAD_FROM_PACT:0 "$COUNTRY|v$由来の[concept_technology_spread] : #v $VALUE|+=2$#! ($PACT$) "
  TECH_SPREAD_MAX_CAP:0 "[concept_technology_spread]の上限は#v $VALUE|+2$#!/週です"
