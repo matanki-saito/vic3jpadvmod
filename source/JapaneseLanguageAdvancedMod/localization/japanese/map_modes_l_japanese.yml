@@ -70,5 +70,5 @@
  mm_power_bloc_leverage:0 "勢力圏の支配力"
  mm_building_relationship:0 "施設の関係"
  mm_military_formation:0 "軍の編隊"
- mm_harvest_conditions:0 "収獲状況"
+ mm_harvest_conditions:0 "作況変動"
  mm_global_starvation:0 "世界的飢餓"
