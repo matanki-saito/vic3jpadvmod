@@ -348,7 +348,7 @@
  four_deaths_in_a_row_tt:0 "#v 4#!人のシク教徒$RULER_TITLE_MAHARAJA$がジャーナル記事｢$je_sikh_sovereignty$｣の執筆期間中に亡くなった。"
  achievement_on_the_edge_tt:0 "ジャーナル記事「$je_sikh_sovereignty$」を完了"
  achievement_azadi_tt:0 "ジャーナル記事「$je_mughal_hindustan$」を完了"
- achievement_azadi_2_tt:0 "$GBR$が率いる勢力ブロックではありません"
+ achievement_azadi_2_tt:0 "$GBR$が率いる勢力圏ではありません"
  achievement_azadi_bengal_tt:0 "[GetStrategicRegion('region_bengal').GetName]の[concept_strategic_region]のすべての州は、この国またはその従属国が所有しています。"
  achievement_azadi_bombay_tt:0 "[GetStrategicRegion('region_bombay').GetName]の[concept_strategic_region]のすべての州は、この国またはその従属国が所有しています。"
  achievement_azadi_madras_tt:0 "[GetStrategicRegion('region_madras').GetName]の[concept_strategic_region]のすべての州は、この国またはその従属国が所有しています。"
