@@ -1635,7 +1635,7 @@
  concept_state_region_possessive:0 "州地域の"
  concept_acceptance:0 "受容"
  concept_accepted:0 "受容された"
- concept_acceptance_desc:0 "[Concept('concept_pop','$concept_pop_possessive$')]の$concept_acceptance$は[GetDefine('NPops','MIN_ACCEPTANCE_VALUE')|v]から[GetDefine('NPops','MAX_ACCEPTANCE_VALUE')|v]の値であり、$concept_pop$の持つ[concept_acceptance_status]を決定するものです。\n\n$concept_acceptance$は主に$concept_pop_possessive$の[concept_culture]と[concept_religion]、および対応する$CITIZENSHIP_GC_LINK$と$CHURCH_AND_STATE_GC_LINK$の$concept_pop$が住む[concept_country]の[Concept('concept_law_group','$concept_law_groups$')]により決定されます。\n\n$concept_acceptance$の変化はただちに起こるとは限りません。特定の[concept_cultural_community]の$concept_pops$は、[concept_law]の変化や[Concept('concept_migration','$concept_immigration$')]によって、異なる$concept_acceptance$がある可能性があります。"
+ concept_acceptance_desc:0 "[Concept('concept_pop','$concept_pop_possessive$')]の$concept_acceptance$は[GetDefine('NPops','MIN_ACCEPTANCE_VALUE')|v]〜[GetDefine('NPops','MAX_ACCEPTANCE_VALUE')|v]の値であり、$concept_pop$の持つ[concept_acceptance_status]を決定するものです。\n\n$concept_acceptance$は主に$concept_pop_possessive$の[concept_culture]と[concept_religion]、および対応する$CITIZENSHIP_GC_LINK$と$CHURCH_AND_STATE_GC_LINK$の$concept_pop$が住む[concept_country]の[Concept('concept_law_group','$concept_law_groups$')]により決定されます。\n\n$concept_acceptance$の変化はただちに起こるとは限りません。特定の[concept_cultural_community]の$concept_pops$は、[concept_law]の変化や[Concept('concept_migration','$concept_immigration$')]によって、異なる$concept_acceptance$がある可能性があります。"
  concept_acceptance_status:0 "受容ステータス"
  concept_acceptance_statuses:0 "受容ステータス"
  concept_acceptance_status_short:0 "ステータス"
