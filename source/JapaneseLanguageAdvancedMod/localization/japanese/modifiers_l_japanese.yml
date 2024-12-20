@@ -3141,7 +3141,7 @@
  state_loyalism_increases_second_rate_citizen_mult_desc:0 "$state_loyalism_increases_generic_desc$"
  state_loyalism_increases_full_acceptance_mult:0 "@acceptance_status_5!$full_acceptance$の[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]の[Concept('concept_loyalist','$concept_loyalism$')]が上昇します"
  state_loyalism_increases_full_acceptance_mult_desc:0 "$state_loyalism_increases_generic_desc$"
- country_political_strength_status_generic_desc:0 "ステータスがこの[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]における[Concept('concept_pop','$concept_pops$')]の[concept_political_strength]に対するボーナスあるいはペナルティです"
+ country_political_strength_status_generic_desc:0 "この[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]における[Concept('concept_pop','$concept_pops$')]の[concept_political_strength]に対するボーナスあるいはペナルティです"
  country_political_strength_violent_hostility_mult:0 "@acceptance_status_1!$violent_hostility$の[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]の[concept_political_strength]"
  country_political_strength_violent_hostility_mult_desc:0 "$country_political_strength_status_generic_desc$"
  country_political_strength_cultural_erasure_mult:0 "@acceptance_status_2!$cultural_erasure$の[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]の[concept_political_strength]"
