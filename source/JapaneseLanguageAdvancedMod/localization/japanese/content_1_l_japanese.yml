@@ -430,7 +430,7 @@
  je_academia_reason:0 "世界は急速に変化しており、最新の技術、社会、軍事の進歩についていけなければ、歴史の陰に隠れることとなってしまうでしょう。"
  new_academia:0 "哲学者の王"
  dt_society_events.3.t:0 "高度な学習"
- dt_society_events.3.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetHerselfHimself]が、[SCOPE.sState('university_state').GetName]の[SCOPE.sBuilding('university_building').GetName]を正式に開きました。[ROOT.GetCountry.GetName]で学界が盛んになり始めています。"
+ dt_society_events.3.d:0 "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]自らが、[SCOPE.sState('university_state').GetName]の[SCOPE.sBuilding('university_building').GetName]を正式に開きました。[ROOT.GetCountry.GetName]で学界が盛んになり始めています。"
  dt_society_events.3.f:0 "哲学は人類の最高の使命である。哲学を通じて、形而上学の根幹、神の本質、美徳の本質を理解することができるのだ。それゆえ、知恵を求める最も賢明な者だけが権力を握るにふさわしいと考えるのは当然のことだ。"
  dt_society_events.3.a:0 "社会は哲学者の王によって支配されるべきだ。"
  dt_society_events.3.b:0 "近代的な機関は、近代的な方法を採用すべきである。"
