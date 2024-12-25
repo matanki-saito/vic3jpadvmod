@@ -6542,7 +6542,7 @@
  OBLIGATION_MANEUVERS_DESC:0 "[concept_obligation]の提供は必ず@maneuvers![GetDefine('NDiplomacy','SWAY_OFFER_OWE_OBLIGATION_MANEUVERS_COST')|v]の[Concept('concept_maneuver','$concept_maneuvers$')]を消費します。"
  OBLIGATION_CALL_IN_MANEUVERS_DESC:0 "[concept_obligation]に報いることを求めると、必ず@maneuvers![GetDefine('NDiplomacy','SWAY_OFFER_OWE_OBLIGATION_MANEUVERS_COST')|v]の[Concept('concept_maneuver','$concept_maneuvers$')]を消費します"
  SWAY_OFFER_MANEUVERS_DESC:0 "$NAME|v$の提供は必ず@maneuvers!$COST|v$の[Concept('concept_maneuver','$concept_maneuvers$')]を消費します。"
- OFFER_SUPPORT:0 "交渉支援"
+ OFFER_SUPPORT:0 "支援提案"
  SWAY_OFFER_MANEUVERS_COST_DESC:0 "#header @maneuvers!$SWAY_OFFER|v$に$COST|v$の[Concept('concept_maneuver','$concept_maneuvers$')]#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
  ADD_WARGOAL_MANEUVERS_COST:0 "@maneuvers![WarGoal.CalcManeuversCostToAdd|v]"
  ADD_WARGOAL_MANEUVERS_COST_TOOLTIP:0 "#header [concept_war_goal]の[Concept('concept_maneuver','$concept_maneuvers$')]コスト : [WarGoal.CalcManeuversCostToAdd|v]#!\n$TOOLTIP_DELIMITER$\n[WarGoal.GetManeuversCostToAddDesc]\n残っている[Concept('concept_maneuver','$concept_maneuvers$')]は[WarGoal.GetDiplomaticPlay.GetNumManeuversRemaining(GetPlayer.Self)|v]です"
