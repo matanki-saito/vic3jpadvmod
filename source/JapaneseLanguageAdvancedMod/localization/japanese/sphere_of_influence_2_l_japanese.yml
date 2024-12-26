@@ -338,7 +338,7 @@
  favour_belgium_button_desc:0 "#v $BEL$#!にはリンブルフとルクセンブルク全域が与えられます。\n\n#v $NET$#!に2つの地方の損失を補填するためには、#v $BEL$#!は、旧#tooltippable #tooltip:london_treaty_public_debt_info #bold オランダ王国#!#!#!の公的[Concept('concept_credit','$concept_credit_debt$')]を全額引き受けなければなりません。"
  favour_netherlands_button:0 "オランダの要求を優先"
  favour_netherlands_button_desc:0 "#v $NET$#!にはリンブルフとルクセンブルク全域が与えられます。\n\n#v $BEL$#!に2つの地方の損失を補填するためには、#v $NET$#!は、旧#tooltippable #tooltip:london_treaty_public_debt_info #bold オランダ王国#!#!#!の公的[Concept('concept_credit','$concept_credit_debt$')]を全額引き受けなければなりません。"
- partition_compromise_button:0 "24点を支持"
+ partition_compromise_button:0 "24ヶ条を支持"
  partition_compromise_button_desc:0 "リンブルフ地方とルクセンブルク地方は、#v $BEL$#!と#v $NET$#!の間で分割されます。\n\nドイツ連邦に西ルクセンブルクの損失を補填するため、$LIM$が$NET_ADJ$[concept_subject]として設立され、ドイツ連邦の名目上の加盟国になります。"
  luxembourg_compromise_button:0 "他の分割案を優先"
  luxembourg_compromise_button_desc:0 "#v $BEL$#!はリンブルフ地方を保持し続け、その代わりに、#v $NET$#!はルクセンブルク地方を手に入れます。"
