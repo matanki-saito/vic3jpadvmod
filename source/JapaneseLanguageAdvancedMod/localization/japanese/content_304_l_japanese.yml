@@ -158,7 +158,7 @@
  je_confederation_of_the_rhine_expand_button_desc:0 "新しいドイツ領土を獲得したことで、地域内の従属国家の管轄を拡張することができます。"
  rhine_annexes_subjects_tt:0 "宗主権の下、 #bold ライン同盟#! はすべての[SCOPE.sCulture('north_german_scope').GetName]と[SCOPE.sCulture('south_german_scope').GetName]の従属国を併合します"
  rhine_annexes_states_tt:0 "#bold ライン同盟#! は編入されておらず、請求されていないすべての[SCOPE.sCulture('north_german_scope').GetName]と、この国が支配している[SCOPE.sCulture('south_german_scope').GetName]本土を併合します"
- rhine_confederation.1.t:0 "第2ライン同盟規約"
+ rhine_confederation.1.t:0 "第二次ライン同盟規約"
  rhine_confederation.1.d:0 "[ROOT.GetCountry.GetAdjective]監督の下、新たなライン同盟規約に署名すると、[SCOPE.sCountry('rhine_scope').GetName]は、バラバラになっていたドイツから再び併合しました。"
  rhine_confederation.1.f:0 "不確かな未来に直面した時、団結は我々に迫る無数の脅威に対する常備薬となります。新しい時代に向かう時、我々の生命であり、家であり、心臓そのものであるこの川が手本になるのです。我々は一つになって大きな目的のために前進します。その終わりがくるまで、我々は互いに高め合い、養い合いましょう。そして、万が一、矢面に立たされたとしても、この川の中に避難場所を見い出せるでしょう。"
  rhine_confederation.1.a:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]の権力が東部へますます拡大しています。"
