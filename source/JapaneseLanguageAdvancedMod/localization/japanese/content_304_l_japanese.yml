@@ -167,7 +167,7 @@
  no_confederation_of_the_rhine_tt:0 "#bold ライン同盟#! は存在しません"
  root_has_german_subjects_tt:0 "[SCOPE.sCulture('north_german_scope').GetName]または[SCOPE.sCulture('south_german_scope').GetName][concept_primary_cultures]がある[Concept('concept_subject','$concept_subjects$')]があります"
  root_has_german_states_tt:0 "編入されておらず、請求されていない[SCOPE.sCulture('north_german_scope').GetName]または[SCOPE.sCulture('south_german_scope').GetName][concept_homeland][Concept('concept_state','$concept_states$')]を支配します"
- no_german_great_powers_tt:0 "[concept_rank]が[concept_major_power]以上の[SCOPE.sCulture('north_german_scope').GetName]や[SCOPE.sCulture('south_german_scope').GetName]国家はありません"
+ no_german_great_powers_tt:0 "[concept_rank]が[concept_major_power]以上の[SCOPE.sCulture('north_german_scope').GetName]または[SCOPE.sCulture('south_german_scope').GetName]国家がない"
  rhine_expansion_cooldown_tt:0 "過去#bold 3#! 年間で、この決断を使用していません"
  confederation_of_rhine_cooldown_year_tt:0 "この決断は#bold 3年#!後に再び利用可能になります"
  modifier_jap_terakoya:0 "寺子屋"
