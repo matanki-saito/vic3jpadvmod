@@ -3057,7 +3057,7 @@
  country_acceptance_shared_religious_trait_add_desc:0 "[concept_religion]の[concept_religious_trait]が[Concept('concept_country','$concept_country_possessive$')][concept_state_religion]と同じだった場合に、[concept_pop]が影響する[concept_acceptance]の値です"
  country_acceptance_religion_base_add:0 "宗教からの受容"
  country_acceptance_religion_base_add_desc:0 "[concept_religion]が[concept_country]の[concept_state_religion]と特性が全く異なる場合に、[concept_pop]が受ける[concept_acceptance]の基準値です"
- country_voting_power_violent_hostility_mult:0 "[concept_political_strength]によって@acceptance_status_1!$violent_hostility$[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]の$concept_voting$力に影響を与える"
+ country_voting_power_violent_hostility_mult:0 "@acceptance_status_1!$violent_hostility$[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]の[concept_political_strength]に対する$concept_voting$の影響"
  country_voting_power_violent_hostility_mult_desc:0 "@acceptance_status_1!$violent_hostility$[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]に属する[Concept('concept_pop','$concept_pops$')]の$vote$由来の[concept_political_strength]へのボーナスあるいはペナルティです"
  country_voting_power_cultural_erasure_mult:0 "@acceptance_status_2!$cultural_erasure$[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]の[concept_political_strength]に対する$concept_voting$の影響"
  country_voting_power_cultural_erasure_mult_desc:0 "@acceptance_status_2!$cultural_erasure$[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]に属する[Concept('concept_pop','$concept_pops$')]の$vote$由来の[concept_political_strength]へのボーナスあるいはペナルティです"
