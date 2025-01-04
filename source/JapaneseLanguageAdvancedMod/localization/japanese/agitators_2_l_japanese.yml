@@ -357,7 +357,7 @@
  land_ownership_law_events.2.t:0 "枷をかけられた国家の魂"
  land_ownership_law_events.2.d:0 "少々驚いたことに、多数の保守的思想家が、[ROOT.GetCountry.GetAdjectiveNoFormatting]の[GetLawType('law_serfdom').GetName]は国の精神的支柱である[SCOPE.gsInterestGroup('rural_folks_scope').GetName]にくさびを打ち込んでいるとして主張し、[SCOPE.gsInterestGroup('landowners_scope').GetName]と[SCOPE.gsInterestGroup('devout_scope').GetName]内のより伝統志向の思想を持つ仲間たちに反対する姿勢を見せました。"
  land_ownership_law_events.2.f:0 "「現在、我が国は、ほとんど共通点の無い2つの社会集団によって構成されている。\n[SCOPE.gsInterestGroup('landowners_scope').GetNameNoFormatting]の我が同胞は、異国の服を着て、異国の流行りに乗っている。さらには、異国後で話す者までいるのだ。彼らは[ROOT.GetCountry.GetAdjectiveNoFormatting]の伝統からあまりにもかけ離れてしまった。彼らに残る[ROOT.GetCountry.GetAdjectiveNoFormatting]らしさは、もはや家族の名前と、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]に誓った忠誠だけに過ぎない。\n\n彼らは、自らが縛り付ける同胞が有する単純な兄弟愛や共同体の根幹をなす[ROOT.GetCountry.GetAdjectiveNoFormatting]の価値観から遠く離れてしまったのだ」"
- land_ownership_law_events.2.a:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]協会を再び団結させ、共通の精神に再び火を灯さなければ。"
+ land_ownership_law_events.2.a:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]社会を再び団結させ、共通の精神に火を灯さなければ。"
  land_ownership_law_events.2.b:0 "あのくたびれた老人どもには好きなだけ言い争わせておけばいい。"
  cultural_custodians_modifier:0 "美化された文化の管理者"
  dissenter_support_for_law:0 "保守派の反対者が法律を支持"
