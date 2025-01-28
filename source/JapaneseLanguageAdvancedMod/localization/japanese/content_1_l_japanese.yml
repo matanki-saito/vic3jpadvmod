@@ -360,7 +360,7 @@
  communism.1.b:0 "最後の奴隷商人どもをひと思いに楽にしてやる。"
  communism.1.c:0 "労働者により良い条件を保証する。"
  communism.1.d:0 "我々は降伏などしない！"
- communist_unions.tt:0 "[SCOPE.gsInterestGroup('unions').GetName]は、[concept_political_movement]から[[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')]]場合、前衛主義者、共産主義者、または無政府主義者のリーダーを選択する可能性がはるかに高いです。\n他の[Concept('concept_interest_group','$concept_interest_groups$')]は、[concept_political_movement]から[[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')]]場合、前衛主義者、共産主義者、または無政府主義者のリーダーを選択する可能性が高いです。"
+ communist_unions.tt:0 "[SCOPE.gsInterestGroup('unions').GetName]は、[concept_political_movement]から[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')]場合、前衛主義者、共産主義者、または無政府主義者のリーダーを選択する可能性がはるかに高いです。\n他の[Concept('concept_interest_group','$concept_interest_groups$')]は、[concept_political_movement]から[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')]場合、前衛主義者、共産主義者、または無政府主義者のリーダーを選択する可能性が高いです。"
  communist_government_modifier:0 "厳しい逆境"
  communism.2.t:0 "労働者共和国"
  communism.2.d:0 "[ROOT.GetCountry.GetName]の労働者は、ついにブルジョワ政府を打倒し、評議会共和制を確立しました。しかし、社会主義が真に達成されるまでには、まだはるかに多くの仕事が残っています。"
