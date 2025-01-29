@@ -202,7 +202,7 @@
  positivism_pulse.3.a:0 "奴らは軍事に専念すべきだった。"
  positivism_pulse.3.b:0 "奴らは[SCOPE.gsInterestGroup('armed_forces_ig').GetName]を改善することしかできなかった。"
  armed_forces_positivists_tt:0 "[SCOPE.gsInterestGroup('armed_forces_ig').GetName]が実証主義のリーダーを選択する可能性が高くなる。"
- armed_forces_positivists_large_tt:0 "[SCOPE.gsInterestGroup('armed_forces_ig').GetName]は、適用可能な[concept_political_movement]から[[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')]]場合、実証主義のリーダーを選択する可能性がはるかに高くなります。"
+ armed_forces_positivists_large_tt:0 "[SCOPE.gsInterestGroup('armed_forces_ig').GetName]は、適用可能な[concept_political_movement]から[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')]場合、実証主義のリーダーを選択する可能性がはるかに高くなります。"
  positivism_pulse.4.t:0 "理論と実践"
  positivism_pulse.4.d:0 "一部の著名な実証主義改革論者が、政治活動をめぐって実証主義教会との論争に巻き込まれている。教会の通常の考え方では、教会員は教会の外で政治活動を行うべきではないとされている。"
  positivism_pulse.4.f:0 "指導者の机の上に手紙が2枚。ひとつは実証主義教会の聖職者たちから、もうひとつは政府関係者の寄せ集まりからだった。どの文面にも小題が付けられている。仇敵の糾弾、同盟国の支持、支援要請、謀略に関わるなという警告。\n\nラム酒のデカンタに手を伸ばした。どんな教会にも政治はつきもののようだ。"

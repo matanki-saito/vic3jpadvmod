@@ -871,7 +871,7 @@
  DIPLOMATIC_PACT_REQUIREMENT_NO_SUBJECT_RELATION:0 "いずれの[concept_country]ももう一方の[concept_subject]ではありません"
  DIPLOMATIC_PACT_REQUIREMENT_DIPLOMATIC_AUTONOMY:0 "2つの[Concept('concept_country','$concept_countries$')]はどちらも外交自治体を持たない[concept_subject]ではありません"
  DIPLOMATIC_PACT_REQUIREMENT_VALID_RIVALS:0 "2つの[Concept('concept_country','$concept_countries$')]の[concept_rank]の違いにより、[concept_rivalry]になれます"
- DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE:0 "2つの[[Concept('concept_country','$concept_countries$')]') ]は、[[concept_war]]で対立できません"
+ DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE:0 "2つの[Concept('concept_country','$concept_countries$')]は、[concept_war]で対立できません"
  DIPLOMATIC_ACTION_MAINTENANCE_COST:0 "維持コスト : @inf!$COST|v0$ [concept_influence]"
  DIPLOMATIC_ACTION_MAINTENANCE_COST_FORMATTED:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ @inf!$COST|0v$#!#!"
  recognized:0 "承認国"
