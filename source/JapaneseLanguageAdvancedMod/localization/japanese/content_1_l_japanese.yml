@@ -1601,7 +1601,7 @@
  taiping_army_modifier:0 "太平の徴兵"
  taiping_state_defection:0 "[SCOPE.sState('tpg_defector_state').GetName]が[SCOPE.sCountry('heavenly_kingdom_scope').GetName]に寝返ります"
  taiping_taiping_rebellion:0 "太平天国の乱"
- rebellion_effects_remove:0 "モディファイア#bold 「革命の兄弟姉妹」#!と#bold 「太平天国の乱」#!の効果が取り除かれます"
+ rebellion_effects_remove:0 "補正#bold 「革命の兄弟姉妹」#!と#bold 「太平天国の乱」#!の効果が取り除かれます"
  je_taiping_revolution:0 "天の革命"
  je_taiping_revolution_status:0 "清王朝の悪魔を倒す"
  je_taiping_revolution_reason:0 "人々が[SCOPE.sCountry('china_scope').GetName]の悪行と腐敗に対し立ち上がりました。[SCOPE.sCountry('china_scope').GetAdjectiveNoFormatting]の支配を打倒し、中国に新しい天なる平和の時代をもたらさなければなりません。"

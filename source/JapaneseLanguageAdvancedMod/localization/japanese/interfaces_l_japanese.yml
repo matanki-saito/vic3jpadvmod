@@ -7007,7 +7007,7 @@
  ALLOW_BORROWING_AND_LENDING:0 "部隊の貸し借りを許可する"
  NEXT_OR_CURRENT_ORDER:0 "[AddLocalizationIf(ObjectsEqual(Character.GetOrderType.Self,CommanderOrderType.Self),'CURRENT_ORDER_STATUS')][AddLocalizationIf(ObjectsEqual(Character.GetNextOrderType.Self,CommanderOrderType.Self),'NEXT_ORDER_STATUS')][AddTextIf(And(Not(StringIsEmpty(GetDesc(Character.SelectOrder(CommanderOrderType.Self)))),Or(ObjectsEqual(Character.GetOrderType.Self,CommanderOrderType.Self),ObjectsEqual(Character.GetNextOrderType.Self,CommanderOrderType.Self))),'\n')][GetDesc(Character.SelectOrder(CommanderOrderType.Self))]"
  DISBAND_UNIT_TYPE_EMPTY:0 "[MilitaryFormation.GetName]には[CombatUnitType.GetName]がいません"
- BATTLE_VICTORY_UNIT_OCCUPATION_MULT:0 "ユニット州占領モディファイア"
+ BATTLE_VICTORY_UNIT_OCCUPATION_MULT:0 "ユニット州占領補正"
  CANNOT_DEMOBILIZE_ARMY_INVOLVED_IN_NAVAL_INVASION:0 "[MilitaryFormation.GetName]の[Concept('concept_mobilize_army','$concept_mobilize_army_demobilize$')]はできません : [concept_naval_invasion]に参加しています"
  PLAN_NAVAL_INVASION_RIGHT_CLICK_TOOLTIP:0 "#title #v [State.GetName]での[concept_naval_invasion]を計画#!#!\n$TOOLTIP_DELIMITER$\n$plan_naval_invasion_lens_option_tooltip$[ConcatIfNeitherEmpty('\n\n','$ERRORS$')]"
  notification_enemy_convoys_raided_tooltip:0 "#header $notification_enemy_convoys_raided_name$#!\n$notification_enemy_convoys_raided_desc$"

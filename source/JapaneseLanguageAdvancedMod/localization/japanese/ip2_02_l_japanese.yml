@@ -219,7 +219,7 @@
  relief_kitchens_costs_modifier:0 "炊き出し所の組織化"
  relief_kitchens_effect_modifier:0 "基本炊き出し所"
  improved_relief_kitchens_effect_modifier:0 "改良炊き出し所"
- every_state_suffers_following_modifier:0 "[concept_famine]に苦しむすべての[concept_state]には、以下のモディファイアが適用されます : \n ([GetBuildingType('building_railway').GetName]を得て改善) : "
+ every_state_suffers_following_modifier:0 "[concept_famine]に苦しむすべての[concept_state]には、以下の補正が適用されます : \n ([GetBuildingType('building_railway').GetName]を得て改善) : "
  je_indian_famines_button_work_camps:0 "労働キャンプを設立する"
  je_indian_famines_button_work_camps_desc:0 "我々は政府の援助物資を頼りにする人々を生み出すことはしません。見捨てられた貧困層が生活賃金を受け取れるよう労働キャンプを設立し、貧困層が自分の食べ物を自ら購入できるようにするのです。\n\n#bold 鉄道#!\n[concept_famine]に見舞われた[Concept('concept_state','$concept_states$')]にある[GetBuildingType('building_railway').GetName]の存在は、この対策の効果を倍増させる可能性があります。"
  work_camps_costs_modifier:0 "労働キャンプの組織化"
