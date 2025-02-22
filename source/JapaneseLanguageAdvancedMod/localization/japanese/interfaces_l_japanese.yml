@@ -6588,7 +6588,7 @@
  UPGRADE_UNIT_FORMATION_WRONG_COUNTRY:0 "$DISBAND_UNIT_FORMATION_WRONG_COUNTRY$"
  DISBAND_COMBAT_UNIT:0 "[CombatUnit.GetName|v]を解散[ConcatIfNeitherEmpty('\n\n',GetDesc(CombatUnit.GetMilitaryFormation.GetDisbandUnitCommand(CombatUnit.Self)))]\n\nこれにより、[CombatUnit.GetBuilding.GetState.GetName]における[CombatUnit.GetBuilding.GetName]が1レベル下がります"
  ENACTING:0 "制定中"
- CIVIL_WAR_PROGRESS_AT_CHECKPOINT_TOOLTIP:0 "#header [concept_revolution]の進捗#!\n次のチェックポイントでの$PROGRESS|=%-1$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
+ CIVIL_WAR_PROGRESS_AT_CHECKPOINT_TOOLTIP:0 "#header [concept_revolution]の進捗#!\n次のチェックポイントで$PROGRESS|=%-1$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  CIVIL_WAR_PROGRESS_AT_CHECKPOINT_NEAR_CAP:0 "\nこの[Concept('concept_political_movement','$concept_political_movement_short$')]は$MAX_PROGRESS|%0v$ (現在$PROGRESS|1%v$) を超えて進行することができないため、次のチェックポイントの進行状況は$MAX_DELTA|=%-1$に減少されます"
  COUNTRY_NAME:0 "[SelectLocalization(EqualTo_string('$PREFIX$',''),'$NAME$',Concatenate(SelectLocalization(EqualTo_string('$NAME$','$dyn_c_east_india_company$'),'$PREFIX$','$PREFIX$領'),'$NAME$'))]"
  COUNTRY_ADJECTIVE:0 "[SelectLocalization(EqualTo_string('$PREFIX$',''),'$ADJECTIVE$',Concatenate(SelectLocalization(EqualTo_string('$ADJECTIVE$','$dyn_c_east_india_company_adj$'),'$PREFIX$','$PREFIX$領'),'$ADJECTIVE$'))]"
