@@ -38,7 +38,7 @@
  concept_unrecognized_regional_power:0 "未承認地域大国"
  concept_unrecognized_major_power:0 "未承認大国"
  concept_unrecognized_power_desc:0 "$concept_unrecognized_powers$は支配的な[Concept('concept_great_power','$concept_great_powers$')]からは下等で未開の国であり、将来征服する対象であるとみなされている[Concept('concept_country','$concept_country_polities$')]です。その結果、[concept_prestige]にペナルティが与えられ、より厳しい[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]の対象となることがあります。また、いくら$concept_prestige$を獲得しても、到達できる[Concept('concept_rank','$concept_ranks$')]が制限されています。[AddLocalizationIf(GetPlayer.IsValid,'concept_unrecognized_power_desc_added')]"
- concept_unrecognized_power_desc_added:0 "\n\nこれらのペナルティを解除したいAn $concept_unrecognized_power$は、ジャーナル記事「$je_earn_recognition$」を完了することで承認を主張する必要があります。"
+ concept_unrecognized_power_desc_added:0 "\n\nこれらのペナルティを解除したい$concept_unrecognized_power$は、ジャーナル記事「$je_earn_recognition$」を完了することで承認を主張する必要があります。"
  concept_protectorate:0 "保護国"
  concept_protectorate_desc:0 "$concept_protectorate$ ([concept_subject]) とは、自分自身で[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]を始めることができる自律的な[concept_subject_type]です。"
  concept_puppet:0 "傀儡国"
