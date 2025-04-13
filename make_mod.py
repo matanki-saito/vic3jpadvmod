@@ -376,7 +376,7 @@ def main():
     print("mod_dir_path:{}".format(out_dir_path))
 
     # utf8ファイルを移動する（この後git pushする）
-    # update_source(mod_folder_path=mod_folder_path)
+    update_source(mod_folder_path=mod_folder_path)
 
 
 if __name__ == "__main__":
