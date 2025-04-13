@@ -110,8 +110,10 @@ def convert_json_to_yml(target_path):
             fw.write("l_japanese:\n")
             with open(file_path, 'r', encoding='utf-8') as fr:
                 for entry in json.load(fr):
+                    context = entry["context"] if "context" in entry else entry["original"]
+
                     # paratranzから出てくるcontextだと改行がエスケープされていない
-                    translation = re.sub(r'\n', '\\\\n', entry["context"]) \
+                    translation = re.sub(r'\n', '\\\\n', context) \
                         if (entry["stage"] == 2 or entry["stage"] == 0) else entry["translation"]
 
                     # ISSUE-493のWA
@@ -374,7 +376,7 @@ def main():
     print("mod_dir_path:{}".format(out_dir_path))
 
     # utf8ファイルを移動する（この後git pushする）
-    update_source(mod_folder_path=mod_folder_path)
+    # update_source(mod_folder_path=mod_folder_path)
 
 
 if __name__ == "__main__":
