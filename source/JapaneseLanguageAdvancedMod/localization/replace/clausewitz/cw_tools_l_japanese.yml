@@ -74,7 +74,7 @@
  map_content_editor_sub_tool_error_grouping_no_selection:0 "グルーピング操作を行うには、まず何かを選択してください。"
  map_content_editor_sub_tool_error_grouping_mutual_exclusive:0 "このレイヤーの入力は重複できないため、複数の入力のグルーピング操作には対応していません。入力を一つのみ選択してください。"
  map_content_editor_sub_tool_error_erasing_unavailable:0 "削除する変更がありません。"
- map_content_editor_content_desc_under_mouse:0 "―――――――――――――――――\n座標[#color: {0.9,0.9,0}$X$#!x#color: {0.9,0.9,0}$Y$#!]にあるコンテンツ : "
+ map_content_editor_content_desc_under_mouse:0 "―――――――――――――――――\n座標 (#color : {0.9,0.9,0} $X$#!x#color : {0.9,0.9,0} $Y$#!) にあるコンテンツ : "
  map_content_editor_cannot_switch_tool_while_interacting:0 "ユーザーが現在のツールを使用している間は変更できません。"
  gui_animation_tool_dataflow_tooltip:0 "プロパティのデータフローの方向です。\n^ ―最初のキーフレームは無視され、代わりにウィジェットからのデータが使用されます (デフォルト) 。\n^ ―最初のキーフレームは無視されないため、そのデータはアニメーションの冒頭に使用されます。"
  TOOLS_ANSWER_YES:0 "はい#!"

@@ -1,7 +1,7 @@
 ﻿l_japanese:
  REVIEW_LEGAL_DOCUMENT:0 "法的文書を確認"
- CREATE_SOCIAL_PROFILE_ERROR:0 ""
- POPS_LOGIN_RESET_PASSWORD_EMAIL_SENT:0 ""
+ CREATE_SOCIAL_PROFILE_ERROR:0 "エラー : [CreateSocialProfileWindow.GetErrorMessage]"
+ POPS_LOGIN_RESET_PASSWORD_EMAIL_SENT:0 "[LoginView.GetEmail]にメールを送信しました。パスワードをリセットするには、メールに記載する手順に従ってください"
  ACCOUNT_LINK_TITLE:0 "アカウントのリンク設定"
  ACCOUNT_LINK_PROMPT:0 "ゲーム開始時に自動的にParadoxアカウントにログインできるよう、Paradox Interactiveが[PdxAccount.GetThirdPartyProviderLocalizedName]のリンク設定を行います。この機能を使用しない場合は、アカウント画面に戻り、リンク設定を解除してください。"
  ACCOUNT_LINK_PROMPT_PDX_HAS_LINK:0 "このParadoxアカウントは既に別の[PdxAccount.GetThirdPartyProviderLocalizedName]とリンク設定されています。リンク設定を上書きしますか？"

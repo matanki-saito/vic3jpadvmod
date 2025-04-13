@@ -7438,7 +7438,7 @@
  FULL:0 "フル"
  CONDENSED:0 "簡略"
  LIST_ITEM:0 "リスト項目"
- CONSTRUCTION_CONDENSED_OR_FULL:0 ""
+ CONSTRUCTION_CONDENSED_OR_FULL:0 "[SelectLocalization(GetVariableSystem.Exists('construction_list_toggle_full_or_condensed'),'FULL','CONDENSED')]"
  DATAMODEL_INDEX:0 "[PdxGuiWidget.GetIndexInDataModel]"
  CONTROLLER_FILTER_PLAYER:0 "#header [GetPlayer.GetName]が管理#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetName]が管理する施設のみ表示"
  CONTROLLER_FILTER_OTHER:0 "#header その他が管理#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetName]が管理#b しない#!施設のみ表示"
