@@ -2872,7 +2872,7 @@
  building_group_bg_power_allowed_collectivization_add_desc:0 "労働者が所有する$bg_power$ [Concept('concept_building','$concept_buildings$')]の最小数。"
  building_group_bg_private_infrastructure_allowed_collectivization_add:0 "労働者所有の$bg_private_infrastructure$$concept_building$の最小レベル"
  building_group_bg_private_infrastructure_allowed_collectivization_add_desc:0 "労働者が所有する予定の$bg_private_infrastructure$[Concept('concept_building','$concept_buildings$')]の最小数。"
- building_group_bg_arts_allowed_collectivization_add:0 "労働者所有の$bg_arts$$conceptbuilding$の最小レベル"
+ building_group_bg_arts_allowed_collectivization_add:0 "労働者所有の$bg_arts$$concept_building$の最小レベル"
  building_group_bg_arts_allowed_collectivization_add_desc:0 "労働者が所有する予定の$bg_arts$[Concept('concept_building','$concept_buildings$')]の最小数。"
  country_migration_restrictiveness_add:0 "[concept_migration]の制限"
  country_migration_restrictiveness_add_desc:0 "[concept_migration]を可能とする[concept_acceptance]の閾値を定める値です。この閾値より[concept_acceptance]のスコアが低い[Concept('concept_pop','$concept_pops$')]は、国際的に[Concept('concept_migration','$concept_migrating$')]が制限されます。"
