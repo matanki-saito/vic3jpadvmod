@@ -14,7 +14,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: [self-hosted]
     strategy:
       matrix:
         python-version: [ 3.10.8 ]
@@ -41,14 +41,13 @@ jobs:
 
       - name: push translation
         run: |
-          dir
+          ls
           git config --global user.email "matanki.saito@gmail.com"
           git config --global user.name "matanki.saito"
           git config --global url."https://${{ secrets.GITHUB_TOKEN }}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
           git add -A
           git commit -m "Save/Update files [ci skip]"
           git push origin HEAD:main
-        shell: cmd
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
 
@@ -65,30 +64,11 @@ jobs:
           draft: false
           prerelease: false
 
-      - name: Get steamcmd
-        run: |
-          curl https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip --output steamcmd.zip
-          Expand-Archive -Path steamcmd.zip
-
-      - name: Set credentials
-        run: |
-          python download_credentials.py
-          dir
-          cd steamcmd
-          dir
-          cd config
-          dir
-        env:
-          AWS_S3_ACCESS_KEY: ${{ secrets.AWS_S3_ACCESS_KEY }}
-          AWS_S3_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
-
       - name: uploading steam workshop
         run: |
-          cd steamcmd
-          dir
-          steamcmd.exe -dev -textmode -ignoredxsupportcfg +login %STEAM_LOGIN_NAME% +workshop_build_item ..\resource\main.vdf +quit
+          ls
+          steamcmd -dev -textmode -ignoredxsupportcfg +login ${STEAM_LOGIN_NAME} ${STEAM_LOGIN_PASSWORD} +workshop_build_item `pwd`/resource/main.vdf +quit
         env:
           STEAM_LOGIN_NAME: ${{ secrets.STEAM_LOGIN_NAME }}
           STEAM_LOGIN_PASSWORD: ${{ secrets.STEAM_LOGIN_PASSWORD }}
-        shell: cmd
         continue-on-error: true
