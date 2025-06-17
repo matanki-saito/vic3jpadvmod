@@ -10,12 +10,15 @@
  MOBILIZATION_OPTION_TOOLTIP_WITH_TOGGLE_DESC_WARNING_HEADER:0 "#title @warning! 以下の影響が生じます : #!\n"
  MOBILIZATION_OPTIONS_HEADER:0 "動員オプション"
  MOBILIZATION_SUMMARY_HEADER:0 "動員の概要"
- MOBILZATION_SUMMARY_EFFECTS_HEADER:0 "[concept_army]への効果@battalions![Concept('concept_battalion','$concept_battalions$')]"
- MOBILIZATION_SUMMARY_CONSUMPTION_HEADER:0 "[Concept('concept_good','$concept_goods$')]の合計消費量"
+ MOBILZATION_SUMMARY_EFFECTS_HEADER:0 "@battalions![Concept('concept_battalion','$concept_battalions$')]への[Concept('concept_mobilize_army','$concept_mobilize_army_mobilization$')]効果"
+ MOBILIZATION_SUMMARY_CONSUMPTION_HEADER:0 "[Concept('concept_mobilize_army','$concept_mobilize_army_mobilization$')]の[Concept('concept_good','$concept_goods$')]消費量"
  MOBILIZATION_OPTION_GROUP_NAME:0 "[MobilizationOptionGroup.GetName]"
  MOBILIZATION_OPTION_GROUP_UPKEEP_SUMMARY_UPKEEP:0 "維持費 : "
  MOBILIZATION_OPTION_GROUP_UPKEEP_SUMMARY_ITEM:0 "$ICON$ $VALUE|-=1$"
- COMMAND_CONFIRMATION_TOGGLE_MOBILIZATION_OPTION:0 "[MilitaryFormation.GetName]の[MobilizationOption.GetName]を$TOGGLE_DIRECTION$にしてもよろしいですか？\n\n#indent_newline:3 以下の影響が生じます : \n$EFFECT_BREAKDOWN$#!"
+ COMMAND_CONFIRMATION_TOGGLE_MOBILIZATION_OPTION:0 "$AFFECTED_ARMIES$の[MobilizationOption.GetName]を$TOGGLE_DIRECTION$にしてもよろしいですか？
+
+#indent_newline:3 以下の影響が生じます : 
+$EFFECT_BREAKDOWN$#!"
  COMMAND_CONFIRMATION_TOGGLE_MOBILIZATION_OPTION_ON:0 "#positive_value オン#!"
  COMMAND_CONFIRMATION_TOGGLE_MOBILIZATION_OPTION_OFF:0 "#negative_value オフ#!"
  mobilization_option_basic_supplies:0 "基本物資"
@@ -75,3 +78,21 @@
  MOBILIZATION_OPTION_UPKEEP_SHORT:0 "[ConcatIfNeitherEmpty(MobilizationOption.GetUpkeepModifier.GetDesc,'\n')][MobilizationOption.GetUpkeepUnscaledModifier.GetDesc]"
  mobilization_option_balloon_recon:0 "気球偵察"
  mobilization_option_balloon_recon_desc:0 "戦場を俯瞰できる気球を使用しています。"
+ ACTIVATE_MOBILIZATION_OPTION_FOR_SELECTED_BUTTON_TOOLTIP:0 "#header [MobilizationOption.GetNumCouldBeActivatedForSelected|v]個の[Concept('concept_army','$concept_armies$')]に対して[MobilizationOption.GetName]を発動#![ConcatIfNeitherEmpty('
+',AddLocalizationIf(MobilizationOption.IsActiveForSomeButNotAllSelected,'MOBILIZATION_OPTION_IS_ACTIVE_FOR_X_SELECTED_FORMATIONS'))][ConcatIfNeitherEmpty('
+',AddLocalizationIf(MobilizationOption.IsBlockedForSomeSelected,''))]
+$TOOLTIP_DELIMITER$
+[MobilizationOption.GetTooltipWithActivateDescForSelected]"
+ DEACTIVATE_MOBILIZATION_OPTION_FOR_SELECTED_BUTTON_TOOLTIP:0 "#header [MobilizationOption.GetNumActiveForSelected|vu]個の[Concept('concept_army','$concept_armies$')]に対して[MobilizationOption.GetName]を停止#![ConcatIfNeitherEmpty('
+',AddLocalizationIf(MobilizationOption.IsActiveForSomeButNotAllSelected,'MOBILIZATION_OPTION_IS_ACTIVE_FOR_X_SELECTED_FORMATIONS'))][ConcatIfNeitherEmpty('
+',AddLocalizationIf(MobilizationOption.IsBlockedForSomeSelected,'MOBILIZATION_OPTION_IS_BLOCKED_FOR_X_SELECTED_FORMATIONS'))]
+$TOOLTIP_DELIMITER$
+[MobilizationOption.GetTooltipWithDeactivateDescForSelected]"
+ MOBILIZATION_OPTION_IS_ACTIVE_FOR_X_SELECTED_FORMATIONS:0 "[MobilizationOption.GetNumActiveForSelected|vu]個の選択された[Concept('concept_army','$concept_armies$')]に対して有効"
+ MOBILIZATION_OPTION_IS_BLOCKED_FOR_X_SELECTED_FORMATIONS:0 "[MobilizationOption.GetNumBlockedForSelected|v]が選択した[Concept('concept_army','$concept_armies$')]にて変更不可"
+ TOGGLE_MOBILIZATION_OPTION_FORMATION_ERRORS:0 " [MilitaryFormation.GetName]の条件 : 
+ #indent_newline:3 $ERRORS$#!"
+ COMMAND_CONFIRMATION_TOGGLE_MOBILIZATION_OPTION_FORMATION_NAME:0 "[MilitaryFormation.GetName]"
+ COMMAND_CONFIRMATION_TOGGLE_MOBILIZATION_OPTION_SELECTED_FORMATIONS:0 "選択した軍隊"
+ MOBILIZATION_OPTION_ALREADY_ACTIVATED_IN_FORMATION:0 "[MobilizationOption.GetName]は[MilitaryFormation.GetName]ですでに有効です"
+ MOBILIZATION_OPTION_ALREADY_DEACTIVATED_IN_FORMATION:0 "[MobilizationOption.GetName]は[MilitaryFormation.GetName]ですでに無効です"

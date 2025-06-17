@@ -52,7 +52,6 @@
  ai_goal_handle_interest_groups:0 "利益集団を管理する"
  ai_goal_handle_decree:0 "[concept_decree]を管理する"
  ai_goal_subsidize_buildings:0 "施設を助成する"
- ai_goal_handle_trade_routes:0 "貿易ルートを管理する"
  ai_goal_violate_sovereignty:0 "主権を侵害する"
  ai_budget_savings:0 "貯金"
  ai_budget_government_expenses:0 "政府"

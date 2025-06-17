@@ -653,7 +653,7 @@
  modifier_anti_electorialism_peaceful:0 "平和的な反選挙至上主義"
  modifier_anti_electorialism:0 "革命的な反選挙至上主義"
  modifier_prestigious_endorsement:0 "権威あるお墨付き"
- modifier_embarassed_by_comrade:0 "恥ずべき仲間"
+ modifier_embarassed_by_comrade:0 "恥ずべき関係"
  modifier_rising_of_women:0 "立ち上がる女性たち"
  modifier_communist_peasant_agitation:0 "農民の扇動"
  modifier_communist_anti_landlord_agitation:0 "反地主主義の扇動"
@@ -1048,7 +1048,7 @@
  single_party_state.6.b:0 "手遅れになる前にこのクーデターを阻止するのだ！"
  single_party_state.7.t:0 "全権委任法"
  single_party_state.7.d:0 "[SCOPE.sParty('ruling_party').GetName]が国会の扉を施錠し議員を閉じ込め、直ちに現政府の権限を大幅に拡大する動議を提出しました。廊下にいる反対派は、褐色の制服を着たファシストの私兵によって沈黙させられています。"
- single_party_state.7.f:0 "第1条 : \n憲法に定められた手続きに加え、憲法に規定されている手続き以外に、[ROOT.GetCountry.GetNameNoFormatting]政府によっても[ROOT.GetCountry.GetNameNoFormatting]の法律は制定されうる。\n\n第2条 : \n[ROOT.GetCountry.GetNameNoFormatting]政府によって制定された法律は、国会制度そのものに関わるものでない限り、憲法に違反することができる。[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の権限は影響を受けない。"
+ single_party_state.7.f:0 "第1項 : \n憲法に定められた手続きに加え、[ROOT.GetCountry.GetNameNoFormatting]政府も[ROOT.GetCountry.GetNameNoFormatting]の法律を制定できるものとする。\n\n第2項 : \n[ROOT.GetCountry.GetNameNoFormatting]政府が制定した法律は議会の精度に影響を与えない範囲で、憲法から逸脱してもよいものとする。[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の権利は影響を受けない。"
  single_party_state.7.a:0 "[ROOT.GetCountry.GetName]を救えるのは[SCOPE.sParty('fascist_party_scope').GetName]だけだ！"
  single_party_state.7.b:0 "自分がどうなろうが知ったことか！こんなものは民主主義ではない！"
  modifier_lenin_in_exile:0 "レーニン亡命中"
@@ -1104,7 +1104,7 @@
  historical_agitators.3.b:0 "他に対処すべき政治指導者がいる。"
  historical_agitators.4.t:0 "老嬢でない女性たち"
  historical_agitators.4.d:0 "力をつけつつある[ROOT.GetCountry.GetName]のフェミニストの派閥が分裂しました。これを受け、[SCOPE.sCharacter('historic_agitator_scope').GetFullName]が過激派組織を新たに立ち上げました。"
- historical_agitators.4.f:0 "独立労働党との連携、3つの法案、20年にわたる努力、献身的な共同体からの支援をもってしても、女性参政権をわずかにでも前進させることはできなかった。新たな方策が必要だ。女性の投票権は老嬢と、夫に先立たれた女性だけが持つべきものではない。\n\n火や拳、飢饉をもって、すべての女性に投票する力を与えるのだ。"
+ historical_agitators.4.f:0 "独立労働党との連携、3つの法案、20年にわたる努力、熱心ななコミュニティーの支援をもってしても、女性参政権をわずかにでも前進させることはできなかった。新たな方策が必要だ。女性の投票権は老嬢と、夫に先立たれた女性だけが持つべきものではない。\n\n火や拳、飢饉をもって、すべての女性に投票する力を与えるのだ。"
  historical_agitators.4.a:0 "数日の間田舎で過ごせば、彼らの悩みは解消されるはずだ。"
  historical_agitators.4.b:0 "彼女の支持者と早めに会おう。"
  historical_agitators.4.c:0 "救貧院での彼女の慈善活動は、彼女の評価を高めるだろう。"
@@ -1252,9 +1252,9 @@
  reactionary_revolution_ongoing_tt:0 "この国では現在、#bold 反動主義#![concept_revolution]が進行している"
  je_the_paris_commune_france_spawned:0 "#bold パリ#!の街が我々の支配に反旗を翻しました"
  je_the_paris_commune_france:0 "パリ・コミューン"
- je_the_paris_commune_france_reason:0 "社会主義、無政府主義、急進的共和主義の革命派たちが、パリの街を占拠し、[SCOPE.sCountry('france_scope').GetName]に対抗する政府を立ち上げました。\n\n[SCOPE.sCountry('commune_scope').GetName]が存在する限り、我々の政府の存続が脅かされ続けます。コミューンの進捗が#bold 0#!に達すると、我が軍はコミューンを制圧することができますが、進捗が#bold 100#!に到達すると、革命家たちはベルサイユへと進軍し、我々の政府に終止符を打つでしょう。この対抗政府が存在している時に[concept_revolution]が発生した場合、[SCOPE.sCountry('commune_scope').GetName]に忠誠を誓うだろう。\n\n#bold パリ・コミューン#!の進捗は毎月、#tooltippable;tooltip:[Country.GetTooltipTag],je_paris_commune_drift_special_tooltip [GetGlobalVariable('paris_commune_drift_final_var').GetValue]#!だけ変化する\n\nこのジャーナル記事の効果により、毎週、我が国の国庫から@money!#variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|-D]#!だけ支出がある。"
+ je_the_paris_commune_france_reason:0 "社会主義、無政府主義、急進的共和主義の革命派たちが、パリの街を占拠し、[SCOPE.sCountry('france_scope').GetName]に対抗する政府を立ち上げました。\n\n[SCOPE.sCountry('commune_scope').GetName]が存在する限り、我々の政府の存続が脅かされ続けます。コミューンの進捗が#bold 0#!に達すると、我が軍はコミューンを制圧することができますが、進捗が#bold 100#!に到達すると、革命家たちはベルサイユへと進軍し、我々の政府に終止符を打つでしょう。この対抗政府が存在している時に[concept_revolution]が発生した場合、[SCOPE.sCountry('commune_scope').GetName]に忠誠を誓うだろう。\n\n#bold パリ・コミューン#!の進捗は毎月、#tooltippable;tooltip:[Country.GetTooltipTag],je_paris_commune_drift_special_tooltip [GetGlobalVariable('paris_commune_drift_final_var').GetValue]#!だけ変化する\n\nこのジャーナル記事の効果により、毎週、我が国の国庫から@money!#variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|-D]#!だけ支出がある。#!"
  je_the_paris_commune_communards:0 "パリ・コミューン"
- je_the_paris_commune_communards_reason:0 "パリのプロレタリアートが蜂起して首都を占領し、[SCOPE.sCountry('france_scope').GetName]に対抗する政府を立ち上げました。\n\n我々の[SCOPE.sCountry('commune_scope').GetName]が存在する限り、ヴェルサイユのブルジョワ政府の存続が脅かされ続けます。コミューンの進捗が#bold 100#!に到達すると、我々の軍がヴェルサイユに進軍し、我々と対立する政府に終止符を打ちますが、進捗が#bold 0#!に到達すると、ヴェルサイユ政府がパリに侵攻し、我々の政府を完全に崩壊させます。\n\nこのジャーナル記事の効果により、毎週、我が国の国庫へ@money!#variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|+D]#!だけ収入がある。"
+ je_the_paris_commune_communards_reason:0 "パリのプロレタリアートが蜂起して首都を占領し、[SCOPE.sCountry('france_scope').GetName]に対抗する政府を立ち上げました。\n\n我々の[SCOPE.sCountry('commune_scope').GetName]が存在する限り、ヴェルサイユのブルジョア政府の存続が脅かされ続けます。コミューンの進捗が#bold 100#!に到達すると、我々の軍がヴェルサイユに進軍し、我々と対立する政府に終止符を打ちますが、進捗が#bold 0#!に到達すると、ヴェルサイユ政府がパリに侵攻し、我々の政府を完全に崩壊させます。\n\nこのジャーナル記事の効果により、毎週、我が国の国庫へ@money!#variable [Country.MakeScope.Var('PRC_money_transfer').GetValue|+D]#!だけ収入がある。"
  je_the_paris_commune_france_complete:0 "#bold パリ・コミューン#!の進捗が#bold 0#!になり、蜂起が鎮圧されました"
  je_the_paris_commune_communard_complete:0 "#bold パリ・コミューン#!の進捗が#bold 100#!に達し、[SCOPE.sCountry('commune_scope').GetAdjective]による#bold ヴェルサイユ#!への進軍が成功しました"
  je_the_paris_commune_display:0 "パリ・コミューン"
@@ -1586,7 +1586,7 @@
  revolution_pulse_events.27.b:0 "交渉担当者を派遣し、占拠者との調整を行おう。"
  revolution_pulse_events.28.t:0 "[SCOPE.sState('feminine_brigades_state').GetName]のフェミニン・オーダー"
  revolution_pulse_events.28.d:0 "[SCOPE.sState('feminine_brigades_state').GetName]の[SCOPE.gsInterestGroup('devout_ig').GetName]に所属する女性グループが、反政府革命家への医療・物資支援を目的とする組織を設立した。"
- revolution_pulse_events.28.f:0 "「憎むべき暴君である[ROOT.GetCountry.GetRuler.GetLastNameNoFormatting]には、我らの神殿に口出しする権利などなく、我らが神に受け入れられることもない！」ベールを被り講壇に立つ女性はそう言った。\n\n「我々は人間の法を認めない。なぜなら、法はそれを作った者と同じく不完全な存在だからだ！」"
+ revolution_pulse_events.28.f:0 "「憎むべき暴君である[ROOT.GetCountry.GetRuler.GetLastName]には、我らの神殿に口出しする権利などなく、我らが神に受け入れられることもない！」ベールを被り講壇に立つ女性はそう言った。\n\n「我々は人間の法を認めない。なぜなら、法はそれを作った者と同じく不完全な存在だからだ！」"
  revolution_pulse_events.28.a:0 "女性を殉教者にするわけにはいかない。"
  revolution_pulse_events.28.b:0 "女性宗教団体を取り締まれ。"
  revolution_pulse_events.29.t:0 "犯罪と神格"
@@ -1814,7 +1814,11 @@
  french_pretenders_pulse.14.c:0 "[SCOPE.sCharacter('partisan_character').GetHerHis|U]言葉はクーデターをほのめかしている。直ちに解任するんだ。"
  french_pretenders_pulse.15.t:0 "[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の人々"
  french_pretenders_pulse.15.d:0 "経験豊富で、大衆主義的な政治を熱烈に支持する[SCOPE.sCharacter('partisan_character').GetFullName]が、庶民の間で自らの[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の主張をさらに広める活動を開始した。"
- french_pretenders_pulse.15.f:0 "#bold ランスの鐘が[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]家のために鳴る！#!\n\n新たな王、新たなシャルルマーニュだ！フランス万歳！[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]万歳！\n\n#italic [SCOPE.sCharacter('partisan_character').GetFullNameNoFormatting]に率いられ、[SCOPE.sState('capital_scope').GetCityHubName]で市民が行進。参加者は[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]の色を着用することが推奨されている。#"
+ french_pretenders_pulse.15.f:0 "#bold フランスの鐘が[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]家のために鳴る！#!
+
+新たな王、新たなシャルルマーニュだ！フランス万歳！[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]万歳！
+
+#italic [SCOPE.sCharacter('partisan_character').GetFullNameNoFormatting]に率いられ、[SCOPE.sState('capital_scope').GetCityHubName]で市民が行進。参加者は[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]の色を着用することが推奨されている。#!"
  french_pretenders_pulse.15.a:0 "[SCOPE.sCharacter('partisan_character').GetHerHis]主張にとってはかなりの恩恵があるだろう。"
  french_pretenders_pulse.15.b:0 "[SCOPE.sCharacter('partisan_character').GetHerHis|U]働きにより、[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]のリーダーたちに新たな光を当てることになるだろう。"
  french_pretenders_pulse.16.t:0 "家々の小競り合い"
@@ -2034,3 +2038,38 @@
  modifier_petition_rejected_ig_opinion:0 "却下された請願"
  has_no_nihilist_movement_tt:0 "活動している#v $movement_nihilist$#!が#b いない#!"
  modifier_nihilist_movement_enhancement:0 "ニヒリストの陰謀"
+ modifier_napoleonic_return_ig:0 "$modifier_napoleonic_return$"
+ modifier_nightingale_popularity:0 "ナイチンゲールの誓詞"
+ modifier_nightingale_soldiers:0 "看護覚え書"
+ modifier_nightingale_movement:0 "探し求める者への思い"
+ historical_agitators.23.t:0 "ランプの貴婦人"
+ historical_agitators.23.d:0 "[ROOT.GetCountry.GetName]にやって来た[SCOPE.sCharacter('historic_agitator_scope').GetFullName]への反応は、まちまちでした。看護における先進的な活動をこの国に持ち込んだことで、女性の職場進出に関する法律を変えようとしていることについて、広く噂されるようになったのです。"
+ historical_agitators.23.f:0 "我々の病院において、彼女は掛け値なしに「救いの天使」だ。ほっそりとした彼女が廊下を静かに歩くと、その姿を見られた喜びで患者たちの顔がほころぶ。
+
+夜になり医官たちが全員就寝すると、数マイルにもわたって臥せる病人たちを静寂と暗闇が包む。すると彼女は小さなランプを手に持ち、たった1人で見回りをするのだ。"
+ historical_agitators.23.a:0 "ハンマーを持つ女だ！彼女は怪我人を治療する薬を取るため、鍵のかかった倉庫に押し入ったのだ。"
+ historical_agitators.23.b:0 "彼女の提案は[ROOT.GetCountry.GetName]で勢いを増している。"
+ government_petition_events.1.d2:0 "現在の統治における自らの役割が制限されていることに不満を抱いた[SCOPE.gsInterestGroup('government_petition_ig').GetName]は、政府に対し、[SCOPE.sLaw('government_petition_law').GetName]を直ちに制定するよう求める請願を提出しました。"
+ government_petition_events.1.d3:0 "[SCOPE.gsInterestGroup('government_petition_ig').GetName]の[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetCustom('petition_trait_descriptor')]な指導者である[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName]は、[SCOPE.sLaw('government_petition_law').GetName]の制定計画を政府に提示しました。この法律の制定が成功すれば、有能な政治家として[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の評判を確実に高めることとなるでしょう。"
+ government_petition_events.1.f2:0 "「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetCustom('getMsMr')][SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]から声明を受け取っています」秘書が口を開いた。「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe|U]は、これは最後通告ではないと強調したいようです」
+
+大臣は片眉を上げた。「つまり、どういうことだ？」
+
+「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe|U]は、政府が『この声明を裏付ける、意義のある差し迫った行動』を取らない場合、[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe]は、[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の支持者に、政府が彼らの声を反映させていると今後も説明し続けることはできない、と述べています」
+
+「それは、最後通告なのでは？」
+
+「そのようです」"
+ government_petition_events.1.f3:0 "「少しよろしいでしょうか？」
+
+ドアを出かけていた大臣が、その声に驚いて足を止めた。廊下には[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetWomanMan]が立っており、革製の綴じバインダーを手にしていた。[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]―大臣が[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の姿を見間違えるはずもなかった。
+
+「ええ、もちろん」と彼は言う。「何かご用で…」
+
+[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]はうなずき、バインダーを差し出した。重さからして、少なくとも100ページはあるだろう。「明日には第一稿を提出したいと思っています」と[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe]は言った。「お手伝いいただければ光栄です」"
+ political_operator_trait_tt:0 "常に有能"
+ charismatic_trait_tt:0 "カリスマ的"
+ ambitious_trait_tt:0 "野心的"
+ persistent_trait_tt:0 "頑固"
+ modifier_reasserted_position_petition:0 "確固たる信念"
+ modifier_served_constituents_petition:0 "信頼される代表"

@@ -50,3 +50,9 @@
  LIBERTY_DESIRE_WEEKLY_CHANGE_SCALING_LOW:0 "低い[concept_liberty_desire]からの変化率スケーリング"
  LIBERTY_DESIRE_WEEKLY_CHANGE_SCALING_HIGH:0 "高い[concept_liberty_desire]からの変化率スケーリング"
  LIBERTY_DESIRE_LEVEL_SWAY_WAR_GOAL_DESC:0 "#b $WAR_GOAL$#!を[concept_war_goal]として要求することを許可します"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE:0 "[GetArticleType('support_independence').GetName] (#tooltippable #tooltip:[Country.GetTooltipTag],LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_BREAKDOWN countries) #!#!"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_BREAKDOWN:0 "#header [GetArticleType('support_independence').GetName]から[Country.GetWeeklyLibertyDesireChangeFromSupportIndependence|v:=]#!
+$TOOLTIP_DELIMITER$
+[Country.GetWeeklyLibertyDesireChangeFromSupportIndependenceDesc]"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_MAX_LIMIT:0 "最大値は$AMOUNT_MAX|v$に限定されます"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_COUNTRY_SUPPORTING_INDEPENDENCE:0 "[Country.GetName]からの#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v : =$#!#!"

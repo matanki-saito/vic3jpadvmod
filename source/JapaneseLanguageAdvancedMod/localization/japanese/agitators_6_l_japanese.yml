@@ -248,3 +248,7 @@
  modifier_crippling_corruption:0 "汚職の弱体化"
  modifier_blamed_for_corruption:0 "引責"
  modifier_dissidents_splitting:0 "メンバーの対立"
+ semantics_for_the_people_movement:0 "$semantics_for_the_people$"
+ movement_law_breakthrough:0 "$agitator_law_breakthrough$"
+ movement_law_collapse:0 "$agitator_law_collapse$"
+ pot_stirrer_ig:0 "$pot_stirrer$"

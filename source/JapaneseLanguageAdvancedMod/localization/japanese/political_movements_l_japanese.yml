@@ -75,3 +75,5 @@
  initial_movement_enthusiasm:0 "運動への初期の熱意"
  movement_suppressed_after_civil_war:0 "内戦後に運動が抑圧される"
  civil_war_conscription:0 "内戦の徴兵"
+ movement_minority_rights:0 "少数派権利運動"
+ movement_minority_rights_name:0 "$movement_minority_rights$"

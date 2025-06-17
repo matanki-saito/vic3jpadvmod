@@ -425,3 +425,8 @@
  coalition_of_states:0 "国家大同盟"
  glorious_union:0 "栄光連合"
  workingmens_association:0 "労働者協会"
+ principle_group_companies:0 "企業"
+ principle_group_companies_desc:0 "[Concept('concept_company','$concept_companies$')]の利用を促進して[Concept('concept_company_charter','$concept_company_charters$')]を繁栄させます。"
+ principle_companies_1_desc:0 "$principle_group_companies_desc$"
+ principle_companies_2_desc:0 "$principle_group_companies_desc$"
+ principle_companies_3_desc:0 "$principle_group_companies_desc$"

@@ -40,3 +40,6 @@
  SETTINGS_INPUT_BINDING_WARNING_TEXT:0 "警告 : この入力バインディングは '$INPUT_ACTION$' にすでに存在しています！\n'$SETTINGS_INPUT_CONFIRM$' を押すと古いバインディングを消去します"
  APPLY:0 "適用"
  SETTINGS_INPUT_BINDING_MODIFIERS_WARNING_TEXT:0 "警告 : 入力バインディングはモディファイアキーのみでは構成できません"
+ SETTINGS_PAGE_ACCOUNT:0 "Account"
+ SETTING_TELEMETRY_CONSENT:0 "Send optional telemetry data"
+ SETTING_TELEMETRY_CONSENT_TOOLTIP:0 "#T Telemetry Consent\n#!Allow sending optional telemetry data to Paradox Interactive."

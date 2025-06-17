@@ -32,3 +32,5 @@
  OBSERVER_AI:0 "AI"
  SORT_BY:0 "並べ替え : "
  OPEN_BETA_VERSION:0 "#header [GetGameVersionInfo]#!\nMPチェックサム : [GetMPChecksum|V] $MODIFIED_CHECKSUM$ [GetRandomLogInfo]"
+ INGAME_RNG_SEED:0 "シード : [GetGlobalRandomSeed][AddLocalizationIf(Not(StringIsEmpty(GetGlobalRandomSeedString)),'CUSTOM_RNG_SEED_STRING')]"
+ CUSTOM_RNG_SEED_STRING:0 " ([GetGlobalRandomSeedString]) "

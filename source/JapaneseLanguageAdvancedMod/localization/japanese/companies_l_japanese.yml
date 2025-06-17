@@ -19,28 +19,30 @@
  COMPANY_THROUGHPUT_BONUS:0 "[Company.GetName]の#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|=+1%$#!#!"
  ALREADY_ESTABLISHED_COMPANY:0 "[COMPANY_TYPE.GetName|v]の[concept_company]がまだ設立されていません"
  HAS_NOT_ESTABLISHED_COMPANY:0 "まだ[COMPANY_TYPE.GetName|v]の[concept_company]を設立していません"
- CREATE_COMPANY_DESC:0 "#header [CompanyType.GetNameNoFormatting|v]の設立#!\n$TOOLTIP_DELIMITER$\n[concept_company]「[CompanyType.GetNameNoFormatting|v]」を設立します[ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(Not(IsValid(GetPlayer.CreateCompany(CompanyType.Self))),'CREATE_COMPANY_ERRORS'))]"
- REMOVE_COMPANY_DESC:0 "#header [CompanyType.GetNameNoFormatting|v]の解散#!\n$TOOLTIP_DELIMITER$\n[concept_company]「[CompanyType.GetNameNoFormatting|v]」を解散します[ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(Not(IsValid(GetPlayer.RemoveCompany(CompanyType.Self))),'REMOVE_COMPANY_ERRORS'))]"
- CREATE_COMPANY_ERRORS:0 "#n 次の要因により設立できません : #!\n[GetDesc(GetPlayer.CreateCompany(CompanyType.Self))]"
+ CREATE_COMPANY_DESC:0 "#header [COMPANY_TYPE.GetName|v]の設立#!\n$TOOLTIP_DELIMITER$\n[CompanyType.GetName|v]の[concept_company][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(Not(IsValid(GetPlayer.CreateCompany(CompanyType.Self))),'CREATE_COMPANY_ERRORS'))]を設立します"
+ REMOVE_COMPANY_DESC:0 "#header [CompanyType.GetName|v]の解散#!\n$TOOLTIP_DELIMITER$\n[CompanyType.GetName|v][concept_company][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(Not(IsValid(GetPlayer.RemoveCompany(CompanyType.Self))),'REMOVE_COMPANY_ERRORS'))]を解散します。"
+ CREATE_COMPANY_ERRORS:0 "[GetDesc(GetPlayer.CreateCompany(CompanyType.Self))]"
  COMPANY_PRODUCTIVITY:0 "[concept_productivity] : @money![Company.GetFormattedProductivity]"
- COMPANY_PROSPERITY_CHANGE:0 " ([Company.CalcProsperityChange|=+0]) "
- COMPANY_PROSPERITY:0 "[concept_prosperity] : [Company.GetProsperity|v0][SelectLocalization(NotEqualTo_CFixedPoint(Company.CalcProsperityChange,'(CFixedPoint)0'),'COMPANY_PROSPERITY_CHANGE','')]"
- COMPANY_PROSPERITY_MODIFIER_HEADER:0 "[concept_prosperity]が[GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_THRESHOLD')|v0]で発動 : "
+ COMPANY_PROSPERITY_CHANGE:0 " ([Company.GetProsperityChange|=+]) "
+ COMPANY_PROSPERITY:0 "@prosperity![Company.GetProsperity|v0][SelectLocalization(NotEqualTo_CFixedPoint(Company.GetProsperityChange,'(CFixedPoint)0'),'COMPANY_PROSPERITY_CHANGE','')][concept_prosperity]"
+ COMPANY_PROSPERITY_MODIFIER_HEADER:0 "[Concept('concept_prosperity','$concept_prosperous$')]時に発動 : "
  COMPANY_TYPE_PROSPERITY_MODIFIER:0 "[CompanyType.GetProsperityModifier.GetDesc]"
- COMPANY_PROSPERITY_TOOLTIP:0 "#header [concept_prosperity]#!\n額面 : [Company.GetProsperity|v0] $FORMATTED_PROSPERITY_CHANGE$\n$TOOLTIP_DELIMITER$\n[concept_productivity] : @money![Company.GetFormattedProductivity]\n生産性の世界平均 : @money![Company.GetCompanyType.GetAverageProductivity|v1]"
- FORMATTED_PROSPERITY_CHANGE:0 " (毎週[SelectLocalization(EqualTo_CFixedPoint(Company.CalcProsperityChange,'(CFixedPoint)0'),'PLUS_MINUS_ZERO','PROSPERITY_CHANGE')]) "
+ COMPANY_PROSPERITY_TOOLTIP:0 "#header [Company.GetName]の[concept_prosperity]#!
+$COMPANY_PROSPERITY_FORMATTED$
+$TOOLTIP_DELIMITER$
+[concept_prosperity]の目標は[Company.GetTargetProsperity|v1]であり、その理由は次の通りです : #indent_newline:2   
+[Company.GetTargetProsperityBreakdown]#!"
+ FORMATTED_PROSPERITY_CHANGE:0 " (毎週#tooltippable;tooltip:[Company.GetTooltipTag],COMPANY_PROSPERITY_CHANGE_TOOLTIP [SelectLocalization(IsZero_CFixedPoint(Company.GetProsperityChange),'PLUS_MINUS_ZERO','PROSPERITY_CHANGE')]#!) "
  PLUS_MINUS_ZERO:0 "#v +/-0#!"
- PROSPERITY_CHANGE:0 "[Company.CalcProsperityChange|=+0]"
+ PROSPERITY_CHANGE:0 "[Company.GetProsperityChange|=+]"
  COMPANY_TYPE_NUM_BUILDING_LEVELS:0 "[concept_building]レベル : [CompanyType.GetNumBuildingLevels|v]"
- COMPANY_TYPE_PRODUCTIVITY:0 "[SelectLocalization(CompanyType.WouldIncreaseInProsperity,'WOULD_INCREASE','WOULD_NOT_INCREASE')]@money![CompanyType.GetProductivity|1v][concept_productivity]"
- COMPANY_TYPE_PRODUCTIVITY_TOOLTIP:0 "#header [concept_productivity]#! : @money![CompanyType.GetProductivity|1v]\n[SelectLocalization(CompanyType.WouldIncreaseInProsperity,'WOULD_INCREASE_LONG','WOULD_NOT_INCREASE_LONG')]\n$TOOLTIP_DELIMITER$\n生産性の世界平均 : @money![CompanyType.GetAverageProductivity|v1]"
+ COMPANY_TYPE_PRODUCTIVITY:0 "@money![CompanyType.GetProductivity|1v][concept_productivity]"
+ COMPANY_TYPE_PRODUCTIVITY_TOOLTIP:0 "#header [concept_productivity]#! : @money![CompanyType.GetProductivity|1v]
+$TOOLTIP_DELIMITER$
+生産性の世界平均 : @money![CompanyType.GetAverageProductivity|v1]"
  COMPANY_PROSPERITY_MODIFIER:0 "[Company.GetCompanyType.GetProsperityModifier.GetDesc]"
  DISBAND_COMPANY:0 "解散"
  ESTABLISH_COMPANY:0 "設立"
- WOULD_INCREASE:0 "@green_checkmark!"
- WOULD_NOT_INCREASE:0 "@red_cross! "
- WOULD_INCREASE_LONG:0 "@green_checkmark!現在[concept_prosperity]が向上します"
- WOULD_NOT_INCREASE_LONG:0 "@red_cross! 現在[concept_prosperity]が向上しません"
  BONUS_FOR_ESTABLISHED_COMPANIES:0 "設立済み企業のボーナス"
  ESTABLISHED_COMPANIES:0 "設立済み企業"
  AVAILABLE_COMPANIES:0 "利用可能な企業"
@@ -246,14 +248,14 @@
  company_sudamericana_de_vapores:0 "南アメリカ汽船会社"
  company_electricidad_de_caracas:0 "C・A・ラ・エレクトリシダード・デ・カラカス"
  company_eea:0 "電力会社連盟"
- COMPANY_ESTABLISHED:0 "[Company.GetEstablishmentDate.GetString|v]に設立"
+ COMPANY_ESTABLISHED:0 "#b [Company.GetEstablishmentDate.GetString]#!に設立"
  CANNOT_ESTABLISH_ADDITIONAL_COMPANY:0 "追加の$COMPANIES$は設立不可能"
  COMPANY_CANNOT_ESTABLISH_ON_COOLDOWN:0 "この[concept_company]は最近解散したため、[Date.GetString|v]まで再設立することはできません。"
  COMPANY_CANNOT_DISBAND_ON_COOLDOWN:0 "この[concept_company]は最近設立したため、[Date.GetString|v]まで解散することはできません。"
  REMOVE_COMPANY_ERRORS:0 "#n 次の要因により解散できません : #!\n[GetDesc(GetPlayer.RemoveCompany(CompanyType.Self))]"
  COMPANY_MISSING_PRINCIPLE_FOR_BUILDINGS:0 "この[concept_company]が専門とする[Concept('concept_building','$concept_buildings$')]のうち、少なくとも1つを建設するための[concept_power_bloc_principle]を所有していなければなりません"
  company_construction_power_bloc:0 "建設複合企業体"
- COMPANY_CANNOT_ESTABLISH_NOT_ENOUGH_ASSETS:0 "企業に譲渡するために、$TOTAL|v$利用可能な[SelectLocalization(EqualTo_int32('(int32)$TOTAL$','(int32)1'),'BUILDING_NATIONALIZE_LEVEL_SINGULAR','BUILDING_NATIONALIZE_LEVEL_PLURAL')]が必要です (現在は$LEVEL|v$) "
+ COMPANY_CANNOT_ESTABLISH_NOT_ENOUGH_ASSETS:0 "[concept_privately_owned]または[COUNTRY.GetName]による[concept_nationally_owned]で、[concept_company] (現在$LEVEL|v$) に所有されていない単一の[concept_state]に、[SelectLocalization(EqualTo_int32('(int32)$COUNT$','(int32)1'),'','任意の組み合わせの')]$LIST$が$TOTAL|v$ [SelectLocalization(EqualTo_int32('(int32)$TOTAL$','(int32)1'),'BUILDING_NATIONALIZE_LEVEL_SINGULAR','BUILDING_NATIONALIZE_LEVEL_PLURAL')]必要です。"
  COMPANY_CANNOT_ESTABLISH_NO_STATE:0 "[GetBuildingType('building_company_headquarter').GetName]に利用可能な[concept_state]がありません"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#! $country_company_construction_efficiency_bonus_add$"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_FORMATTED:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#!"
@@ -264,4 +266,151 @@
  COMPANY_THROUGHPUT_BUILDING_BONUS_DESC:0 "#header [concept_company]生産量ボーナス : $VAL|=+1%$#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty('$BREAKDOWN$','\n')]\n$country_company_construction_efficiency_bonus_add_desc$"
  COMPANY_BONUS_PENALTY_MULT:0 "[COUNTRY.GetName]が設立可能企業数の制限を超過したことによるペナルティ$VAL|=+0%$ (現在[COUNTRY.GetMaxNumCompanies|v]のうち[COUNTRY.GetNumCompanies|v]の企業が設立されていることにより乗数が#n x[Negate('(CFixedPoint)$PENALTY$')]#!となっています) "
  COMPANY_HEADQUARTER_STATE:0 "本部の場所 : [Company.GetState.GetName]"
- COMPANY_TYPE_HEADQUARTER_STATE:0 "本部の候補地 : [CompanyType.GetPotentialState.GetName]"
+ COMPANY_TYPE_HEADQUARTER_STATE:0 "本部の候補地 : [CompanyType.GetPotentialState.GetCountry.GetFlagTextIcon][CompanyType.GetPotentialState.GetName]"
+ COMPANY_BUILDING_TYPE_LIST_ITEM:0 "[BUILDING_TYPE.GetName]"
+ COMPANY_CANNOT_ESTABLISH_BY_COMPANY:0 "[Country.GetName]のような[GetSubjectType('subject_type_chartered_company').GetName]を設立することは#b できません#!"
+ COMPANY_FASTPROSPERITY_IS_ACTIVE:0 "\"fastprosperity\"が有効です"
+ COMPANY_PRODUCING_PRESTIGE_GOODS_HEADER:0 "[SelectLocalization(Company.IsProducingPrestigeGoods,'COMPANY_PRESTIGE_GOODS_ENABLED','COMPANY_PRESTIGE_GOODS_DISABLED')]"
+ COMPANY_PRESTIGE_GOODS_DISABLED:0 "@red_cross! $PRESTIGE_GOODS_CONCEPT$ (#n 無効#!) "
+ COMPANY_PRESTIGE_GOODS_ENABLED:0 "@green_checkmark!$PRESTIGE_GOODS_CONCEPT$"
+ COMPANY_PRODUCING_PRESTIGE_GOODS_TOOLTIP:0 "[Company.GetIsProducingPrestigeGoodsDesc]"
+ COMPANY_IS_PRODUCING_PRESTIGE_GOODS_DESC:0 "#header [concept_prestige_good]生産#!
+@green_checkmark!$COMPANY_NAME$の$concept_prestige_good$生産が#p 有効#!
+$TOOLTIP_DELIMITER$
+$PRODUCED_GOODS$を生産
+
+@information! $concept_company$の$concept_prestige_good$生産が有効化されると、それ以降は永久に有効になります。"
+ COMPANY_NOT_PRODUCING_PRESTIGE_GOODS_DESC:0 "#header [concept_prestige_good]生産#!
+@red_cross! $COMPANY_NAME$の$concept_prestige_good$生産が#r 無効#!
+$TOOLTIP_DELIMITER$
+以下の条件を満たしていれば、$PRODUCED_GOODS$を生産 : 
+$DETAILS$"
+ COMPANY_IS_PROSPEROUS:0 "@green_checkmark_box! $COMPANY_NAME$は[Concept('concept_prosperity','$concept_prosperous$')]である"
+ COMPANY_IS_NOT_PROSPEROUS:0 "@simple_box! $COMPANY_NAME$は[Concept('concept_prosperity','$concept_prosperous$')]である"
+ COMPANY_PROSPERITY_SCRIPT_VALUE_FORMAT:0 "$KEY$により$VALUE|+=$"
+ COMPANY_EXECUTIVE_POPULARITY:0 "[Company.GetExecutive.GetFullName]の[concept_popularity] ([Company.GetExecutive.GetPopularity|v0]) "
+ COMPANY_EMPLOYED_LEVELS:0 "人員配置[concept_building]レベル[Company.GetNumEmployedBuildingLevels|v]"
+ COMPANY_CANNOT_DISBAND_COUNTRY_OWNER:0 "この[concept_company]は[concept_country] ([Country.GetName]) の所有者です"
+ COUNTRY_THROUGHPUT_BONUS:0 "[Country.GetName]による#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|=+1%$#!#!"
+ COMPANY_PRODUCTIVITY_WITH_COMPARISON:0 "@money![Company.GetFormattedProductivity][concept_productivity] (世界中の類似の[Concept('concept_building','$concept_buildings$')]に対する@money![Company.GetGlobalProductivityComparison|v]) "
+ COMPANY_PROFIT_TITLE:0 "企業利益"
+ COMPANY_PROFIT:0 "@money![Company.GetProfit|+k] $COMPANY_PROFIT_TITLE$"
+ COMPANY_PROSPERITY_FORMATTED:0 "@prosperity![Company.GetProsperity|v0][AddLocalizationIf(NotEqualTo_CFixedPoint(Company.GetProsperity,Company.GetTargetProsperity),'COMPANY_TARGET_PROSPERITY_LINE')]"
+ COMPANY_TARGET_PROSPERITY_LINE:0 "@arrow_right![Company.GetTargetProsperity|v0][concept_prosperity] $FORMATTED_PROSPERITY_CHANGE$"
+ COMPANY_TARGET_PROSPERITY_DESC:0 "#header [concept_prosperity]の目標#!
+目標 : @prosperity!$VALUE|v1$
+$TOOLTIP_DELIMITER$
+$DETAILS$"
+ COMPANY_PROSPERITY_CHANGE_DESC:0 "#header 週次[concept_prosperity]変動#!
+$COMPANY_NAME$が$VALUE|v1$
+$TOOLTIP_DELIMITER$
+$DETAILS$"
+ COMPANY_TARGET_PROSPERITY_TOOLTIP:0 "[Company.GetTargetProsperityDesc]"
+ COMPANY_PROSPERITY_CHANGE_TOOLTIP:0 "[Company.GetProsperityChangeDesc]"
+ company_united_fruit_possible_tt:0 "以下のいずれかを満たしている必要があります : 
+ • [concept_state]が[concept_georegion_central_america]に属している
+ • [concept_state]が[concept_georegion_south_america]に属している"
+ CANNOT_TOGGLE_COMPANY_GRANTED_CHARTER:0 "$DESC$"
+ COMPANY_CHARTER_INVESTMENT:0 "$NAME$"
+ COMPANY_CHARTER_MONOPOLY:0 "[BUILDING_TYPE.GetName]の$NAME$"
+ COMPANY_CHARTER_INDUSTRY:0 "[BUILDING_TYPE.GetName]の$NAME$"
+ COMPANY_CHARTER_TRADE:0 "$NAME$"
+ COMPANY_CHARTER_COLONIZATION:0 "[STATE_REGION.GetName]での$NAME$"
+ COMPANY_CHARTER_ON_COOLDOWN:0 "#b [DATE.GetString]#!まで#b 取り消せません#!"
+ BUILDING_OWNED_BY_COMPANY:0 "[Company.GetNameNoFormatting]が所有"
+ PRODUCTIVITY_TREND:0 "[concept_productivity]"
+ PROSPERITY_TREND:0 "[concept_prosperity]"
+ PROFIT_TREND:0 "$COMPANY_PROFIT_TITLE$"
+ SIZE_TREND:0 "サイズ ([Concept('concept_building_level','$concept_building_levels$')]所有) "
+ COMPANY_TREND_PROFIT_TOOLTIP:0 "#header [concept_company]の利益#!
+現在@money![Company.GetProfit|D+=]
+$TOOLTIP_DELIMITER$
+#title 要因 : [Concept('concept_company_hq','$concept_company_hqs$')]#! : 
+[Company.GetHQProfitDescription]"
+ COMPANY_HQ_PROFIT_ENTRY:0 " • [BUILDING.GetState.GetName]の[Concept('concept_company_hq','$concept_company_hq_short$')]から得られる@money!#tooltippable #tooltip:[BUILDING.GetTooltipTag],BALANCE_DESC #v [BUILDING.GetBalance|D+=]#!#!#! (#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip [BUILDING.GetExpansionLevel]#!#!#![Concept ('concept_building_level','$concept_building_levels_short$')]) "
+ REGIONAL_COMPANY_HQ_PROFIT_ENTRY:0 " • [BUILDING.GetState.GetName]の[Concept('concept_regional_company_hq','$concept_regional_company_hq_short$')]から得られる@money!#tooltippable #tooltip:[BUILDING.GetTooltipTag],BALANCE_DESC #v [BUILDING.GetBalance|D+=]#!#!#! (#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip [BUILDING.GetExpansionLevel]#!#!#! [Concept('concept_building_level','$concept_building_levels_short$')]) "
+ COMPANY_TREND_SIZE_TOOLTIP:0 "#header [concept_company]のサイズ#!
+所有総数[Company.GetNumOwnedBuildingLevels|v][Concept('concept_building_level','$concept_building_levels$')]
+$TOOLTIP_DELIMITER$
+[Company.GetBuildingTypesSizeDescription]"
+ COMPANY_BUILDING_TYPE_ENTRY:0 "[BUILDING_TYPE.GetName] : レベル$LEVELS|v$"
+ COMPANY_TREND_BUILDING_TYPE_TOOLTIP:0 "#header 企業が所有する[BuildingType.GetName]#!
+総数[Company.GetBuildingTypeLevels(BuildingType.Self)|v][Concept('concept_building_level','$concept_building_levels$')]
+$TOOLTIP_DELIMITER$
+[Company.GetBuildingTypeSizeDescription(BuildingType.Self)]"
+ COMPANY_BUILDING_COUNT_ENTRY:0 "[BUILDING.GetState.GetName]にて#v #tooltippable #tooltip:[BUILDING.GetTooltipTag],EMPTY_STRING,BuildingTooltip $LEVELS|v$#!#!#!"
+ COMMAND_CONFIRMATION_ENABLE_CHARTER:0 "[CompanyCharterType.GetName]を[Company.GetName]に与えますか？
+
+@aut!#v [CompanyCharterType.GetAuthorityCost(Company.Self)|-0]#!の維持コスト
+
+#title 効果 : #!#indent_newline:3 
+$EFFECTS$#!"
+ COMMAND_CONFIRMATION_ENABLE_MONOPOLY_CHARTER:0 "[CompanyCharterType.GetName]を[Company.GetName]に与えますか？
+
+@aut!維持コスト#v [CompanyCharterType.GetAuthorityCost(Company.Self)|-0]#!
+
+@warning! この決定は#v [GetDefine('NEconomy','COMPANY_MONOPOLY_COOLDOWN_MONTHS')]か月間取り消せません#!。
+
+#title 効果 : #!#indent_newline:3 
+$EFFECTS$#!"
+ COMMAND_CONFIRMATION_DISABLE_CHARTER:0 "[Company.GetName]の[CompanyCharterType.GetName]を取り消しますか？
+
+@aut!#v [CompanyCharterType.GetAuthorityCost(Company.Self)|+0]#!の維持コストを削除
+
+#title 以下の効果を削除します : #!#indent_newline:3 
+$EFFECTS$#!"
+ COMMAND_CONFIRMATION_DISABLE_CHARTER_WITH_REVOKE_EFFECTS:0 "$COMMAND_CONFIRMATION_DISABLE_CHARTER$
+
+$REVOKE_EFFECTS$"
+ investment_charter_desc:0 "[CompanyCharter.GetType.GetNameNoFormatting]を持つ[concept_company]は[Concept('concept_regional_company_hq','$concept_regional_company_hqs$')]の設立が許可され、影響力と事業を拡大することができます。"
+ investment_charter_type_desc:0 "[CompanyCharterType.GetNameNoFormatting]を持つ[concept_company]は[Concept('concept_regional_company_hq','$concept_regional_company_hqs$')]の設立が許可され、影響力と事業を拡大することができます。"
+ investment_charter_effects:0 "我々の[concept_investment_pool]に貢献する[Concept('concept_regional_company_hq','$concept_regional_company_hqs$')]の建設が可能になります。"
+ monopoly_charter_desc:0 "[CompanyCharter.GetType.GetNameNoFormatting]の付与は[concept_company]に対し、特定のタイプの[Concept('concept_building','$concept_building_industries$')]を独占的に[Concept('concept_construction','$concept_construct$')]する権利を与え、[concept_market]の支配を可能にします。"
+ monopoly_charter_type_desc:0 "[CompanyCharterType.GetNameNoFormatting]の付与は[concept_company]に対し、特定のタイプの[Concept('concept_building','$concept_building_industries$')]を独占的に[Concept('concept_construction','$concept_construct$')]する権利を与え、[concept_market]の支配を可能にします。"
+ monopoly_charter_effects:0 "[concept_company]に特定の[Concept('concept_building','$concept_building_industry$')]における[Concept('concept_company_monopoly','$concept_company_monopoly_short$')]を付与します。今後、その$concept_company$以外の$concept_private$団体は、[Concept('concept_building_level','$concept_building_levels$')]を建設することができなくなります。[concept_nationally_owned]の$concept_building_levels_short$がある場合は、自動的にその$concept_company$が[concept_privatize]できる状態になります。すでに存在している[concept_privately_owned]の$concept_building_levels$は影響を受けません。"
+ industry_charter_desc:0 "[CompanyCharter.GetType.GetNameNoFormatting]は、[concept_company]が建設できる[Concept('concept_building','$concept_building_industries$')]のタイプを増やし、産業の成長を促します。"
+ industry_charter_type_desc:0 "[CompanyCharterType.GetNameNoFormatting]は、[concept_company]が建設できる[Concept('concept_building','$concept_building_industries$')]のタイプを増やし、産業の成長を促します。"
+ industry_charter_effects:0 "[concept_company]による追加の[Concept('concept_building','$concept_building_industry$')]の[Concept('concept_building','$concept_buildings$')]の[Concept('concept_construction','$concept_construct$')]を可能とします"
+ trade_charter_desc:0 "[CompanyCharter.GetType.GetNameNoFormatting]を持つ[concept_company]は[GetBuildingType('building_trade_center').GetName]を建設し、商業や貿易を促進することができます。"
+ trade_charter_type_desc:0 "[CompanyCharterType.GetNameNoFormatting]を持つ[concept_company]は[GetBuildingType('building_trade_center').GetName]を建設し、商業や貿易を促進することができます。"
+ trade_charter_effects:0 "[concept_company]に[GetBuildingType('building_trade_center').GetName]の[Concept('concept_construction','$concept_construct$')]を許可します"
+ colonization_charter_desc:0 "[CompanyCharter.GetType.GetNameNoFormatting]は新たな領土の[Concept('concept_colony','$concept_colonization$')]を開始し、この権利を有する$concept_company_possessive$の力が及ぶ領域を広げます。"
+ colonization_charter_type_desc:0 "[CompanyCharterType.GetNameNoFormatting]は新たな領土の[Concept('concept_colony','$concept_colonization$')]を開始し、この権利を有する$concept_company_possessive$の力が及ぶ領域を広げます。"
+ colonization_charter_effects:0 "選択した[concept_state_region]で[Concept('concept_colony','$concept_colonization$')]のプロセスを開始します"
+ COMPANY_CHARTER_INVESTMENT_EFFECTS:0 "@green_checkmark!は[Company.GetNameNoIcon]が[Concept('concept_regional_company_hq','$concept_regional_company_hqs$')]を[Concept('concept_construction','$concept_construct$')]することを許可します。
+[Company.GetNameNoIcon]の@green_checkmark!$concept_regional_company_hqs$は我々の[concept_investment_pool]に貢献します"
+ COMPANY_CHARTER_TRADE_EFFECTS:0 "@green_checkmark![concept_company]による[BUILDING_TYPE.GetName]の[Concept('concept_construction','$concept_construct$')]が可能になります
+@green_checkmark!生産した[concept_good]において$concept_company_possessive$ [concept_country]に[concept_trade_advantage]が与えられます"
+ COMPANY_CHARTER_INDUSTRY_EFFECTS:0 "@green_checkmark![concept_company]による[BUILDING_TYPE.GetName]の[Concept('concept_construction','$concept_construct$')]が可能になります"
+ COMPANY_CHARTER_MONOPOLY_EFFECTS:0 "@green_checkmark![concept_company]にその$concept_company_possessive$[concept_country]における[BUILDING_TYPE.GetName]に対する[Concept('concept_company_monopoly','$concept_company_monopoly_short$')]を付与します。"
+ COMPANY_CHARTER_COLONIZATION_EFFECTS:0 "@green_checkmark![STATE_REGION.GetName]に[concept_colony]を設立し、[concept_company]が拡大を管理します
+@green_checkmark![STATE_REGION.GetName|v]の$concept_colonization$を$VALUE|v$倍加速させます
+@green_checkmark!完成時に[GetSubjectType('subject_type_chartered_company').GetName]を作成します"
+ investment_charter:0 "投資権"
+ monopoly_charter:0 "独占権"
+ industry_charter:0 "産業権"
+ trade_charter:0 "貿易権"
+ colonization_charter:0 "植民地化権"
+ PROSPERITY_INCREASE_FROM_PRODUCTIVITY:0 "高い[concept_productivity]から"
+ PROSPERITY_DECREASE_FROM_PRODUCTIVITY:0 "低い[concept_productivity]から"
+ company_ludwig_moser_and_sons:0 "ルートヴィヒ・モーザー＆サンズガラス工場"
+ company_compania_sansinena_de_carnes_congeladas:0 "サンシネナ冷凍肉会社"
+ company_konigliche_porzellan_manufaktur_meissen:0 "マイセン王立磁器製造所"
+ company_jiangnan_weaving_bureaus:0 "江南織物局"
+ company_russian_american_company:0 "ロシア・アメリカ合弁会社"
+ company_lee_wilson:0 "リー・ウィルソン社"
+ company_colt_firearms:0 "コルト特許銃器製造会社"
+ company_gebruder_thonet:0 "トネット兄弟社"
+ company_kinkozan_sobei:0 "錦光山宗兵衛"
+ company_maple_and_co:0 "メープル社"
+ company_maison_worth:0 "メゾン・ワース"
+ company_ong_lung_sheng_tea_company:0 "オン・ルン・シェン製茶会社"
+ company_anglo_sicilian_sulphur_company:0 "アングロ・シチリア硫黄会社"
+ company_mantero_seta:0 "マンテロ・セタ"
+ company_norsk_hydro:0 "ノルウェー水力発電協会"
+ company_massey_harris:0 "マッセイ・ハリス株式会社"
+ company_de_beers:0 "デビアス鉱山会社"
+ company_john_holt:0 "ジョン・ホルト社"
+ company_imperial_ethiopian_railways:0 "帝国エチオピア鉄道会社"
+ company_lanfang_kongsi:0 "蘭芳公社"
+ company_paradox:0 "ジョン・パラドックス社"

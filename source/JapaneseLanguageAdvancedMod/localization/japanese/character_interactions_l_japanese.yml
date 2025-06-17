@@ -20,7 +20,7 @@
  exile_dissident_tt:0 "[Character.GetFullName]が$concept_exile$になります"
  invite_exile:0 "追放者の招聘"
  invite_exile_start_join_movement_effect:0 "[SelectLocalization(Character.PredictMovementToJoin(GetPlayer.Self).IsValid,'invite_exile_join_movement','invite_exile_do_not_join_movement')]"
- invite_exile_start_movement:0 "#v [Character.PredictMovementTypeToStart(GetPlayer.Self).GetName]#!を開始します"
+ invite_exile_start_movement:0 "[Character.PredictMovementTypeToStart(GetPlayer.Self).GetName]が始まる"
  invite_exile_join_movement:0 "[Character.PredictMovementToJoin(GetPlayer.Self).GetName]に加わります"
  invite_exile_no_movement:0 "[concept_political_movement]を開始せず、参加も#b しません#!"
  invite_exile_info:0 "[Concept('concept_character_role','$concept_character_roles$')] : #v [Character.GetAllRoleNames]#!\n[concept_interest_group] : [Character.GetInterestGroup.GetName]\n[concept_ideology] : [Character.GetIdeology.GetName]\n[concept_popularity] : #v #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [LabelingHelper.GetLabelForPopularityCFixedPoint(Character.GetPopularity)]#!#! (#v #tooltippable #tooltip:[Character.GetTooltipTag],POPULARITY_BREAKDOWN [Character.GetPopularity|0]#!#!#!) \n\n[concept_agitator]の$concept_popularity$は、$concept_agitator$が始める、あるいは参加する$concept_political_movement$がどれだけの支持を得られるのかに影響します"
