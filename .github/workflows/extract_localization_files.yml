@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-2019
+    runs-on: [self-hosted]
     strategy:
       matrix:
         python-version: [ 3.10.8 ]
@@ -30,30 +30,16 @@ jobs:
       - name: Install boto3
         run: pip install boto3
 
-      - name: Get steamcmd
-        run: |
-          curl https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip --output steamcmd.zip
-          Expand-Archive -Path steamcmd.zip
-
-      - name: Set credentials
-        run: |
-          python download_credentials.py
-        env:
-          AWS_S3_ACCESS_KEY: ${{ secrets.AWS_S3_ACCESS_KEY }}
-          AWS_S3_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
-
       - name: uploading steam workshop
         run: |
           mkdir tmp
           cd tmp
           mkdir game
-          cd ..
-          cd steamcmd
-          steamcmd.exe -dev -textmode -ignoredxsupportcfg +force_install_dir "../tmp/game" +login %STEAM_LOGIN_NAME% +app_update 529340 validate +quit
+          cd ../
+          steamcmd -dev -textmode -ignoredxsupportcfg +force_install_dir `pwd`/tmp/game +login ${STEAM_LOGIN_NAME} ${STEAM_LOGIN_PASSWORD} +app_update 529340 validate +quit
         env:
           STEAM_LOGIN_NAME: ${{ secrets.STEAM_LOGIN_NAME }}
           STEAM_LOGIN_PASSWORD: ${{ secrets.STEAM_LOGIN_PASSWORD }}
-        shell: cmd
         continue-on-error: true
 
       - name: Extract files
@@ -69,6 +55,5 @@ jobs:
           git add extract
           git commit -m "Extract files from game [ci skip]"
           git push origin HEAD:main
-        shell: cmd
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
