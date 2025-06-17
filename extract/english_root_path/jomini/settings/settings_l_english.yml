@@ -40,3 +40,6 @@
  SETTINGS_INPUT_BINDING_TEXT: "Please choose an input binding for the action '$INPUT_ACTION$':\n\n$INPUT_NAME$"
  SETTINGS_INPUT_BINDING_WARNING_TEXT: "Warning: This input binding already exists for '$INPUT_ACTION$'!\nPressing '$SETTINGS_INPUT_CONFIRM$' will clear the old binding"
  SETTINGS_INPUT_BINDING_MODIFIERS_WARNING_TEXT: "Warning: input binding can not consist of only modifier keys"
+ SETTINGS_PAGE_ACCOUNT: "Account"
+ SETTING_TELEMETRY_CONSENT: "Send optional telemetry data"
+ SETTING_TELEMETRY_CONSENT_TOOLTIP:0 "#T Telemetry Consent\n#!Allow sending optional telemetry data to Paradox Interactive."
