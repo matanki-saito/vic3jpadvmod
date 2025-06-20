@@ -2276,7 +2276,7 @@ $TOOLTIP_DELIMITER$
  INVESTMENT_POOL_CHANGE:0 "[GetPlayer.GetInvestmentPoolChangeFromConstructionDesc]\n[GetPlayer.GetInvestmentPoolChangeFromInvestmentDesc]"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION:0 "#bold 新規[concept_construction]力 : #! #v @money!$CHANGE|D+$#!"
  INVESTMENT_POOL_CHANGE_FROM_CONSTRUCTION_EMPTY:0 "$concept_investment_pool$を使用している新しい[concept_construction]力はありません : #v @money!$CHANGE|D+=$#!"
- INVESTMENT_POOL_CHANGE_FROM_INVESTMENT:0 "[concept_reinvestment] : #v @money!#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_SOURCES_BREAKDOWN $CHANGE|D+=$#!#!#!\n[GetPlayer.GetAdjective]の[concept_gdp]が@money![GetPlayer.GetGDP|Dv]であることにより、すべての投資が#v $MULTIPLIER$倍#!になります"
+ INVESTMENT_POOL_CHANGE_FROM_INVESTMENT:0 "[concept_reinvestment] : #v @money!#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_POOL_SOURCES_BREAKDOWN $CHANGE|D+=$#!#!#!\n[GetPlayer.GetAdjective]の[concept_gdp]は@money![GetPlayer.GetGDP|Dv]です\nそのため全ての投資が#v $MULTIPLIER$倍#!になります"
  INVESTMENT_POOL_CHANGE_FROM_INVESTMENT_EMPTY:0 "投資源なし : #v @money!$CHANGE|D+=$#!"
  INVESTMENT_POOL_SOURCES_BREAKDOWN:0 "#header [Concept('concept_building','$concept_buildings$')]が[concept_investment_pool]に[concept_money]を追加しています#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetInvestmentPoolChangeFromInvestmentBreakdown]"
  INVESTMENT_FROM_BUILDING_DETAIL:0 "[BuildingType.GetName] : #N #variable @money!$VAL|D+$#!#!"
