@@ -511,7 +511,7 @@
  romania.4.f:0 "「海に出る手段がなければ、我々の国はどうなってしまうことやら。カグル、ボルグラード、イスマイルは我々の繁栄と、あなた方の今後の繁栄のため、大いに役立つだろう」"
  romania.4.a:0 "[SCOPE.sState('south_bessarabia_cession').GetName]を割譲する余裕はある。"
  romania.4.b:0 "[SCOPE.sState('south_bessarabia_cession').GetName]は我々の物であって、これからもそうだ！奴らの物などではない！"
- scramble_for_africa_complete_2_tt:0 "#header 95%#!の[concept_georegion_africa]の[Concept('concept_state_region','$concept_state_regions$')]が[Concept('concept_recognized_power','$concept_recognized_powers$')]、またはその[Concept('concept_subject','$concept_subjects$')]によって完全に所有されていなければならない"
+ scramble_for_africa_complete_2_tt:0 "[concept_georegion_africa]の[Concept('concept_state_region','$concept_state_regions$')]の#header 95%#!を、[Concept('concept_recognized_power','$concept_recognized_powers$')]もしくはその[Concept('concept_subject','$concept_subjects$')]が完全に領有していなければならない。"
  scramble_for_africa_fail_tt:0 "[ROOT.GetCountry.GetName]がアフリカ大陸に[Concept('concept_unincorporated_state','$concept_unincorporated_states$')]や[Concept('concept_subject','$concept_subjects$')]を一切有していない"
  je_unite_the_nations:0 "亀の島の国々"
  je_unite_the_nations_reason:0 "私たち自身と兄弟たちが生き残るためには、団結しなければなりません。団結してこそ、外交的にも武力的にも、植民地化する列強の進出に抵抗することができるのです。"

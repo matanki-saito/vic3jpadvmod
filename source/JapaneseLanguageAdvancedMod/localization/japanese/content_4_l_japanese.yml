@@ -457,7 +457,7 @@
  hegemon_complete_desc:0 "素晴らしい！覇権国家目標を完了しました。このままゲームを続けるか、別の目標に挑戦してください。"
  ideology_isolationist_expansionism:0 "フロンティアの拡張"
  ideology_isolationist_expansionism_desc:0 "#lore この集団は国内への移民の受け入れに猛烈に反対しています。しかし、彼らは新しく獲得した領土に定住することには熱心です。#!"
- egalitarian_objective_note_loc:0 "\n\n注意 : 以前のジャーナル記事で可決された法律のいずれかを後退させると、その法律が再度制定されるまで、このジャーナルは非表示になり、この目標での進捗を進めることができなくなります。"
+ egalitarian_objective_note_loc:0 "\n\n注意 : 以前のジャーナル記事で可決された法律のいずれかを後退させると、その法律が再度制定されるまでこのジャーナルは非表示になり、この目標での進捗を進めることができなくなります。"
  je_unrecognized_power:0 "認知度"
  je_unrecognized_power_reason:0 "いわゆる"文明的な"列強から忌避されている我々は、労苦と闘争を通じて自らの価値を彼らに証明し、国家の仲間として尊敬される地位を確保しなければなりません。 "
  modifier_industrial_barriers_nat_supremacy:0 "人種差別的反応"

@@ -228,7 +228,7 @@
  ADD_MODIFIER_FIRST:0 "$SUBJECT_NAME$は#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! (期間 : $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$) を得ます\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_THIRD:0 "$SUBJECT_NAME$は#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! (期間 : $MAYBE_DECAYING_WITH_SPACE_AFTER$$DURATION$) を得ます\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_MODIFIER_BREAKDOWN:0 "#header $MODIFIER_NAME$#!\n$MODIFIER_DESC$"
- ADD_ENACTMENT_MODIFIER:0 "[COUNTRY.GetName]は以下の法律の[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')]中に#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#! $MAYBE_DECAYING_WITH_SPACE_AFTER$を得ています\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
+ ADD_ENACTMENT_MODIFIER:0 "次の法律の[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enactment$')]中、[COUNTRY.GetName]は#tooltippable #tooltip:[GetRawTextTooltipTag('$ADD_MODIFIER_BREAKDOWN$')] $MODIFIER_NAME$#!#!$MAYBE_DECAYING_WITH_SPACE_AFTER$を得ます\n$TAB$#indent_newline:3 $MODIFIER_DESC$#!"
  ADD_ENACTMENT_MODIFIER_NEG:0 "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_FIRST:0 "$ADD_ENACTMENT_MODIFIER$"
  ADD_ENACTMENT_MODIFIER_FIRST_NEG:0 "$ADD_ENACTMENT_MODIFIER$"

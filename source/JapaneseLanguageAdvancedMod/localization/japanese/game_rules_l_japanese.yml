@@ -61,7 +61,7 @@
  setting_moderate_consolidation:0 "中程度"
  setting_moderate_consolidation_desc:0 "[Concept('concept_pop','$concept_pops$')]がかなり小規模かつ、ゲームプレイへの影響が限定的な場合に統合します。"
  setting_aggressive_consolidation:0 "積極的"
- setting_aggressive_consolidation_desc:0 "それなりの規模の[Concept('concept_pop','$concept_pops$')]であっても、条件が満たされると統合するようになります。\n@warning! パフォーマンスが向上する可能性がありますが、ゲームのバランスに影響します"
+ setting_aggressive_consolidation_desc:0 "それなりの規模の[Concept('concept_pop','$concept_pops$')]であっても、条件が満たされると統合するようになります\n@warning! パフォーマンスが向上する可能性がありますが、ゲームのバランスに影響します"
  rule_loyalties_grace_period:0 "忠誠心の猶予期間"
  setting_loyalties_grace_period_none:0 "なし"
  setting_loyalties_grace_period_none_desc:0 "最初から、[Concept('concept_radical','$concept_radicals$')]と[Concept('concept_loyalist','$concept_loyalists$')]の両方が完全に影響を受けます。"

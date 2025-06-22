@@ -66,7 +66,7 @@
  mm_state_mass_migration_pull:0 "集団移住の潜在的な対象"
  mm_religion_overview:0 "宗教の概要"
  mm_gdp_ownership_ratio:0 "GDP所有権"
- mm_power_blocs:0 "すべての勢力ブロック"
+ mm_power_blocs:0 "すべての勢力圏"
  mm_power_bloc_leverage:0 "勢力圏の支配力"
  mm_building_relationship:0 "施設の関係"
  mm_military_formation:0 "軍の編隊"
