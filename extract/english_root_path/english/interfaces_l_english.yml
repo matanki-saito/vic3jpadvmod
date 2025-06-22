@@ -6009,7 +6009,7 @@
  ADVANTAGE_FROM_TRADE_AGREEMENTS_ENTRY: "$VAL|D=+v$ from [COUNTRY.GetAdjectiveNoFlag]-[TARGET_COUNTRY.GetAdjectiveNoFlag] [concept_trade_privilege]"
  ADVANTAGE_FROM_TREATY_PORTS: "#tooltippable;tooltip:$BREAKDOWN_TAG$ $VAL|D=+v$#! from [Concept('concept_treaty_port','$concept_treaty_ports$')]"
  ADVANTAGE_FROM_TREATY_PORTS_BREAKDOWN: "#header [concept_trade_advantage] from [Concept('concept_treaty_port','$concept_treaty_ports$')]#!\n$VAL|D=+v$ in $STATE_NAME$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- ADVANTAGE_FROM_TREATY_PORT_ENTRY: "$VAL|D=+v$ from [COUNTRY.GetAdjectiveNoFlag] [concept_treaty_port] $DIRECTION$ in [TARGET_COUNTRY.GetMarket.GetName] [concept_trade_privilege]"
+ ADVANTAGE_FROM_TREATY_PORT_ENTRY: "$VAL|D=+v$ from [COUNTRY.GetAdjectiveNoFlag] [concept_treaty_port] $DIRECTION$ in [TARGET_COUNTRY.GetMarket.GetName]"
  ADVANTAGE_FROM_LACK_OF_INTERESTS: "#tooltippable;tooltip:$BREAKDOWN_TAG$ $VAL|D=+v$#! from lacking [Concept('concept_interest','$concept_interests$')] in relevant [Concept('concept_market','$concept_markets$')] ( $RELEVANT_MARKETS_FLAGS$)"
  ADVANTAGE_FROM_LACK_OF_INTEREST_FLAG: "[MARKET.GetOwner.GetFlagTextIcon] "
 
@@ -6120,7 +6120,7 @@
  WARGOAL_WILL_ENACT_LAWS: "The following $concept_laws$ will be imposed: $LAWS$"
 
  WAR_SUPPORT_CANNOT_BE_NEGATIVE: "This [concept_war_support] cannot be reduced below #v 0#! because the following [Concept('concept_war_goal','$concept_war_goals$')] are #b not#! [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')] by the opposing side:"
- WAR_SUPPORT_CANNOT_BE_NEGATIVE_WAR_GOAL_ENTRY:0 "$EFFECT_LIST_BULLET$ #tooltippable;tooltip:[WAR_GOAL.GetTooltipTag],WARGOAL_CONTESTED_OR_NOT_DESC [WAR_GOAL.GetName]#!"
+ WAR_SUPPORT_CANNOT_BE_NEGATIVE_WAR_GOAL_ENTRY:0 "$EFFECT_LIST_BULLET$ #tooltippable;tooltip:[WAR_GOAL.GetTooltipTag],WARGOAL_NOT_CONTESTED_DESC [WAR_GOAL.GetName]#!"
 
  DO_COUNTRY_ACCEPT_THIS_PEACE_DEAL: "Do you accept this [concept_peace_deal]?"
  DAYS_UNTIL_PEACE_DEAL_FAILS: "#v [War.GetDaysUntilPeaceDealFails] days#! left"

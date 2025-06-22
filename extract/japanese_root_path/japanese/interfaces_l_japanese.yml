@@ -5286,7 +5286,7 @@
  WARGOAL_INFAMY_WITH_LABEL: "@infamy! [WarGoal.GetInfamyAmount|-1] [concept_infamy]"
  WARGOAL_WILL_ENACT_LAWS: "次の$concept_laws$が課されます: $LAWS$"
  WAR_SUPPORT_CANNOT_BE_NEGATIVE: "この[concept_war_support]を#v 0#!未満にすることはできません。以下の[Concept('concept_war_goal','$concept_war_goals$')]が敵陣営による[Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')]が#b未実行です#!："
- WAR_SUPPORT_CANNOT_BE_NEGATIVE_WAR_GOAL_ENTRY: "$EFFECT_LIST_BULLET$ #tooltippable;tooltip:[WAR_GOAL.GetTooltipTag],WARGOAL_CONTESTED_OR_NOT_DESC [WAR_GOAL.GetName]#!"
+ WAR_SUPPORT_CANNOT_BE_NEGATIVE_WAR_GOAL_ENTRY: "$EFFECT_LIST_BULLET$ #tooltippable;tooltip:[WAR_GOAL.GetTooltipTag],WARGOAL_NOT_CONTESTED_DESC [WAR_GOAL.GetName]#!"
  DO_COUNTRY_ACCEPT_THIS_PEACE_DEAL: "[concept_peace_deal]を受け入れますか？"
  DAYS_UNTIL_PEACE_DEAL_FAILS: "残り#v [War.GetDaysUntilPeaceDealFails]日#!"
  CURRENTLY_REJECTING_PEACE_DEAL_TOOLTIP: "あなたは現在、[concept_peace_deal]を拒否しています。考えが変わらなければ、協定は#v [War.GetDaysUntilPeaceDealFails]日#!後に完全に拒否されます"

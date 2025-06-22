@@ -76,7 +76,7 @@
 
  alert_stalled_naval_invasion_name: "Stalled [concept_naval_invasion]"
  alert_stalled_naval_invasion_desc: "Your [SCOPE.GetRootScope.GetInvasion.GetName] will be unable to progress to landing troops because no invading [concept_admiral] has [Concept('concept_order','$concept_orders$')] that allows them to start a [concept_battle]."
- alert_stalled_naval_invasion_hint: "You can change the $concept_orders$ of your $concept_admirals$ to ones that allow them to start battles, such as [GetCommanderOrderType('intercept_coast').GetName]."
+ alert_stalled_naval_invasion_hint: "You can change the $concept_orders$ of your $concept_admirals$ to ones that allow them to start battles, such as [GetCommanderOrderType('interception_coast').GetName]."
  alert_stalled_naval_invasion_action: "Invasion panel"
 
  alert_low_organization_active_name: "Low [concept_organization]: [SCOPE.GetRootScope.GetMilitaryFormation.GetName] at [concept_front]"

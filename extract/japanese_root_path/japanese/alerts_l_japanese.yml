@@ -61,7 +61,7 @@
  alert_stalled_invasion_action: "侵略パネル"
  alert_stalled_naval_invasion_name: "膠着状態の[concept_naval_invasion]"
  alert_stalled_naval_invasion_desc: "侵略中の[concept_admiral]が[concept_battle]を始めるための[Concept('concept_order','$concept_orders$')]を保持していないため、[SCOPE.GetRootScope.GetInvasion.GetName]は陸軍に対して進軍することができません。"
- alert_stalled_naval_invasion_hint: "$concept_admirals$の$concept_orders$を、[GetCommanderOrderType('intercept_coast').GetName]などの戦闘開始を許可するものに変更できます。"
+ alert_stalled_naval_invasion_hint: "$concept_admirals$の$concept_orders$を、[GetCommanderOrderType('interception_coast').GetName]などの戦闘開始を許可するものに変更できます。"
  alert_stalled_naval_invasion_action: "侵略パネル"
  alert_low_organization_active_name: "[concept_organization]の低下: [concept_front]の[SCOPE.GetRootScope.GetMilitaryFormation.GetName]"
  alert_low_organization_active_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName]の[concept_organization]は[SCOPE.GetRootScope.GetMilitaryFormation.GetOrganization]であり、それによって重いペナルティが課されます。"
