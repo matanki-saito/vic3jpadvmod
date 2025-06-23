@@ -3659,8 +3659,7 @@ $BUILDING_BALANCE_BREAKDOWN$#!"
  tax_modifier_medium:0 "$tax_level_medium$の[concept_budget_income_taxes]"
  tax_modifier_high:0 "$tax_level_high$の[concept_budget_income_taxes]"
  tax_modifier_very_high:0 "$tax_level_very_high$の[concept_budget_income_taxes]"
- EFFECTS_FOR_TAX_LEVELS:0 "[Concept('concept_taxes','$concept_taxation$')]レベル : #indent_newline:3 
-$BREAKDOWN$#!"
+ EFFECTS_FOR_TAX_LEVELS:0 "[Concept('concept_taxes','$concept_taxation$')]レベル : #indent_newline:3 \n$BREAKDOWN$#!"
  EFFECTS_FOR_CURRENT_TAX_LEVEL:0 "#variable $LEVEL$#! $TAX_OR_EXPENSE_LEVEL_CURRENT$#indent_newline:3 
 $BREAKDOWN$#!"
  EFFECTS_FOR_OTHER_TAX_LEVEL_TITLE:0 "$LAW$[concept_law]の\n#variable $LEVEL$ [Concept('concept_taxes','$concept_taxation$')]レベル#!"
