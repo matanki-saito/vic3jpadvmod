@@ -30,19 +30,13 @@ jobs:
       - name: Install boto3
         run: pip install boto3
 
-      - name: Get steamcmd
-        run: |
-          curl https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip --output steamcmd.zip
-          Expand-Archive -Path steamcmd.zip
-
       - name: uploading steam workshop
         run: |
           mkdir tmp
           cd tmp
           mkdir game
-          cd ..
-          cd steamcmd
-          steamcmd.exe -dev -textmode -ignoredxsupportcfg +force_install_dir "../tmp/game" +login %STEAM_LOGIN_NAME% +app_update 529340 validate +quit
+          cd ../
+          steamcmd -dev -textmode -ignoredxsupportcfg +force_install_dir "tmp/game" +login %STEAM_LOGIN_NAME% %STEAM_LOGIN_PASSWORD% +app_update 529340 validate +quit
         env:
           STEAM_LOGIN_NAME: ${{ secrets.STEAM_LOGIN_NAME }}
           STEAM_LOGIN_PASSWORD: ${{ secrets.STEAM_LOGIN_PASSWORD }}
