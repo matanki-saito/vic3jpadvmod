@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    runs-on: [self-hosted]
+    runs-on: [self-hosted,Windows,X64]
     strategy:
       matrix:
         python-version: [ 3.10.8 ]
