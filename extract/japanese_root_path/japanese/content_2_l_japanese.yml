@@ -546,7 +546,7 @@
  subject_interactions.2.e: "[SCOPE.sCountry('target_country').GetName]が革命の先駆けとなる。"
  je_seminole_wars: "セミノール戦争"
  je_seminole_wars_reason: "アダムス・オニス条約によれば、フロリダは、私たちが適切だと判断すれば、自由に統治でき、ペインズ・ランディング条約によれば、[SCOPE.sCountry('seminoles').GetName]はさらに西の保留地に移住すべきである。だが頑固な指導者に率いられている彼らは、私たちの規則に従うことも、[SCOPE.sStateRegion('oklahoma_region').GetName]に移住することも拒否している。私たちは、フロリダを完全に統治下に置く方法を見つけなければならない。"
- je_seminole_wars_removal: "[SCOPE.sState('flarda').GetName]のすべての[SCOPE.sCulpture('seminole peoples').GetName] [concept_pop]は、[SCOPE.sStateRegion('oklahoma area').GetName]に移動する。"
+ je_seminole_wars_removal: "[SCOPE.sState('flarda').GetName]のすべての[SCOPE.sCulture('seminole_peoples').GetName] [concept_pop]は、[SCOPE.sStateRegion('oklahoma_region').GetName]に移動する。"
  native_resettlement.7.t: "セミノールの平和"
  native_resettlement.7.d: "フロリダで私たちが勝利したことで、[SCOPE.sCulture('seminole_people').GetName]の人々は、最後の隠れ家を政府に引き渡さざるを得なくなった。この広大な土地に新たな未来を築くときだ。"
  native_resettlement.7.f: "彼らは沼地の奥深く、泥灰土の草原と糸杉の林へと逃げ込んだ。警察は全員去ったと思っていたが、一部は隠れていた。いつか、このうだるような隠れ家の外で安全に暮らせることを願っていた。今は、ただ生きることを考えるのみだ。"

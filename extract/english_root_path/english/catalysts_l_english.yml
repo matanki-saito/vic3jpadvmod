@@ -132,7 +132,7 @@
  catalyst_granted_military_assistance_desc: "[TARGET_COUNTRY.GetName] providing [concept_military_assistance] to our country"
 
  # Treaties
- catalyst_treaty_broken_broken: "$concept_treaty$ Broken"
- catalyst_treaty_broken_broken_desc: "[COUNTRY.GetName] breaking off a [concept_treaty] with [TARGET_COUNTRY.GetName]"
+ catalyst_treaty_broken: "$concept_treaty$ Broken"
+ catalyst_treaty_broken_desc: "[COUNTRY.GetName] breaking off a [concept_treaty] with [TARGET_COUNTRY.GetName]"
  catalyst_treaty_enforced: "$concept_treaty$ Enforced"
  catalyst_treaty_enforced_desc: "[COUNTRY.GetName] enforcing a [concept_treaty] on [TARGET_COUNTRY.GetName]"

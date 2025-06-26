@@ -442,7 +442,7 @@
 
  DIPLOMACY_HOVER_ATTITUDE_COUNTRY:0 "#header Viewing [concept_attitude] from the perspective of [Country.GetName]#!"
  DIPLOMACY_HOVER_RELATIONS_COUNTRY:2 "#header Viewing [concept_relations] from the perspective of [Country.GetName]#!"
- 
+
  TREATY_CAN_WITHDRAW_ALL_ARTICLES: "This will remove the entire [concept_treaty]"
  TREATY_CAN_WITHDRAW_SOME_ARTICLES: "This will only remove the following [Concept('concept_article','$concept_articles$')]:#indent_newline:3 \n$CAN_WITHDRAW_LIST$#!\n\n[COUNTRY.GetName] is unable to remove:#indent_newline:3 \n$CANNOT_WITHDRAW_LIST$#!\n\nDue to:#indent_newline:3 \n$DETAILS$#!"
  TREATY_CANNOT_WITHDRAW_ANY_ARTICLES: "[COUNTRY.GetName] #b cannot#! remove the following [Concept('concept_article','$concept_articles$')]#indent_newline:3 \n$LIST$#!\n\nDue to:#indent_newline:3 \n$DETAILS$#!"
@@ -498,6 +498,7 @@
  TREATY_NO_BINDING_PERIOD_NO_CONCEPT: "No $concept_binding_period$"
  TREATY_DRAFT_BINDING_PERIOD: "$concept_binding_period_bound$ for [TreatyDraft.GetBindingPeriodFormatted]"
  TREATY_DRAFT_NO_BINDING_PERIOD: "Add a $concept_binding_period$"
+ TREATY_BINDING_PERIOD_WHEN_DRAFT: "Would be [Concept('concept_binding_period', '$concept_binding_period_binding$')] for [Treaty.GetBindingPeriodFormatted]"
 
  TREATY_IS_ENFORCED_ON: "Is [Concept('concept_enforced_treaty', '$concept_enforced_treaty_forced_short$')] upon [Treaty.GetEnforcedOnCountry.GetName]"
 
@@ -561,8 +562,14 @@
  ARTICLE_DRAFT_COUNTRY_NOT_SIGNED: "Not signed yet"
  ARTICLE_SELECTED_LAW_COMMITMENT: "[Country.GetName] will commit to passing [LawType.GetName]"
  DUPLICATE_ARTICLE_SAME_INPUTS: "Only one [concept_article] of a certain type with the same inputs can be included"
+ DUPLICATE_ARTICLE_SAME_INPUTS_TREATY: "Can only offer this [concept_article] once across all [Concept('concept_treaty', '$concept_treaties$')] with this [concept_country]"
+
+ ARTICLE_DRAFT_GOODS_QUANTITY_SLIDER_TOOLTIP_DISABLED: "#header Change the quantity#!\n@red_cross! [Country.GetName] #b cannot#! transfer more than [ArticleDraft.GetGoods.GetTextIcon] #v [ArticleDraft.GetQuantity]#! [ArticleDraft.GetGoods.GetName]\n[ArticleDraft.GetGoods.GetTextIcon] #v [ArticleDraft.GetQuantity]#! [ArticleDraft.GetGoods.GetName] per week selected\n$TOOLTIP_DELIMITER$\nMinimum is [ArticleDraft.GetGoods.GetTextIcon] #v [ArticleDraft.GetMinValidQuantity]#!\nMaximum is [ArticleDraft.GetGoods.GetTextIcon] #v [ArticleDraft.GetMaxValidQuantity]#!"
+ ARTICLE_DRAFT_GOODS_QUANTITY_SLIDER_TOOLTIP_ENABLED: "#header Change the quantity#!\n[ArticleDraft.GetGoods.GetTextIcon] #v [ArticleDraft.GetQuantity]#! [ArticleDraft.GetGoods.GetName] per week selected\n$TOOLTIP_DELIMITER$\n$ARTICLE_DRAFT_MINIMUM_MAXIMUM_QUANTITY$"
+ ARTICLE_DRAFT_MINIMUM_MAXIMUM_QUANTITY: "Minimum is [ArticleDraft.GetGoods.GetTextIcon] #v [ArticleDraft.GetMinValidQuantity]#!\nMaximum is [ArticleDraft.GetGoods.GetTextIcon] #v [ArticleDraft.GetMaxValidQuantity]#!"
 
  REMOVE_ARTICLE_DRAFT: "Remove [concept_article]"
+ ARTICLE_DRAFT_CANNOT_REMOVE_RENEGOTIATION: "@red_cross! Cannot remove [ArticleDraft.GetArticleType.GetName] [Concept('concept_article', '$concept_articles$')] during a renegotiation because they cannot be renegotiated"
  ARTICLE_SELECTED_STATUS: "#i Currently Selected#!"
 
  NO_ACTIVE_TREATIES: "No Active [Concept('concept_treaty', '$concept_treaties$')]"
@@ -576,7 +583,7 @@
  ARTICLE_DRAFT_CLICK_TO_CHANGE: "#i Click to change#!"
  ARTICLE_DRAFT_ADDED_STATUS: "Added as [concept_article] #v $ARTICLE_DRAFT_NUMBER$#! in this [concept_treaty]"
  ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_MUTUAL: "@inf!#v [ArticleDraft.GetArticleType.GetCost|0]#! maintenance cost for both [Concept('concept_country', '$concept_countries$')]"
- ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_DIRECTED: "@inf!#v [ArticleDraft.GetArticleType.GetCost|0]#! maintenance cost for [Country.GetName] [AddLocalizationIf(Country.IsLocalPlayer, 'YOU')]"
+ ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_DIRECTED: "@inf!#v [ArticleDraft.GetArticleType.GetCost|0]#! maintenance cost for [ArticleDraft.GetMaintenancePayer.GetName] [AddLocalizationIf(ArticleDraft.GetMaintenancePayer.IsLocalPlayer, 'YOU')]"
  ARTICLE_DRAFT_EFFECTS_TITLE: "#title Effects:#!"
  ARTICLE_DRAFT_EFFECTS: "[ArticleDraft.GetEffectsDesc]"
  ARTICLE_DRAFT_EFFECTS_RELATION: "[ArticleDraft.GetRelationsEffectDesc]"
@@ -592,7 +599,7 @@
  ARTICLE_DRAFT_ERRORS: "[TreatyDraft.GetCanIncludeArticleDraftDesc( ArticleDraft.Self )]"
 
  ARTICLE_INFLUENCE_COST_TOOLTIP_MUTUAL: "@inf!#v [Article.GetArticleType.GetCost|0]#! maintenance cost for both [Concept('concept_country', '$concept_countries$')]"
- ARTICLE_INFLUENCE_COST_TOOLTIP_DIRECTED: "@inf!#v [Article.GetArticleType.GetCost|0]#! maintenance cost for [Country.GetName] [AddLocalizationIf(Country.IsLocalPlayer, 'YOU')]"
+ ARTICLE_INFLUENCE_COST_TOOLTIP_DIRECTED: "@inf!#v [Article.GetArticleType.GetCost|0]#! maintenance cost for [Article.GetMaintenancePayer.GetName] [AddLocalizationIf(Article.GetMaintenancePayer.IsLocalPlayer, 'YOU')]"
  ARTICLE_EFFECTS_TITLE: "#title Effects:#!"
  ARTICLE_EFFECTS: "[Article.GetEffectsDesc]"
  ARTICLE_EFFECTS_RELATION: "[Article.GetRelationsEffectDesc]"
@@ -653,6 +660,14 @@
  TREATY_DRAFT_NEGATIVE_ACCEPTANCE_BREAKDOWN: "[TreatyDraft.GetNegativeAcceptanceBreakdown(TreatyDraft.GetRightCountry.Self)]"
  TREATY_DRAFT_NO_NEGATIVE_ACCEPTANCE: "No negative factors"
 
+ ARTICLE_DRAFT_ACCEPTANCE_WITH_LABEL: "#v #tooltippable [ArticleDraft.GetAcceptance(TreatyDraft.GetRightCountry.Self)|+=0]#!#! acceptance"
+ TREATY_DRAFT_ACCEPTANCE_WITH_LABEL: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptance(ArticleType.Self, Country.Self)|+=0]#!#! acceptance"
+ TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_COMPANY_BUILDING_TYPE: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithCompanyAndBuilding(ArticleType.Self, Country.Self, ArticleDraft.GetCompany.Self, BuildingType.Self)|+=0]#!#! acceptance"
+ TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_LAW_TYPE: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithLaw(ArticleType.Self, Country.Self, LawType.Self)|+=0]#!#! acceptance"
+ TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_GOODS: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithGood(ArticleType.Self, Country.Self, Goods.Self)|+=0]#!#! acceptance"
+ TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_STRATEGIC_REGION: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithRegion(ArticleType.Self, Country.Self, StrategicRegion.Self)|+=0]#!#! acceptance"
+ TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_STATE: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithState(ArticleType.Self, Country.Self, State.Self)|+=0]#!#! acceptance"
+ 
  STATIC_TREATY_ACCEPTANCE_VALUE_FORMAT: "$VALUE|+=0$ $KEY$"
  TREATY_STATIC_ACCEPTANCE: "#P #variable #tooltippable #tooltip:$BREAKDOWN$ $VALUE|D+$#!#!#!#! from diplomatic stance with [COUNTRY.GetName]"
  TREATY_PREVIOUS_REJECTION_ACCEPTANCE: "$VALUE|=+$ from not enough of an improvement on previously rejected $concept_treaty$ (minimum of $MIN_VALUE|v=+$)"
@@ -1603,17 +1618,17 @@
  MILITARY_FORMATION_COMMANDER_COMMAND_LIMIT_ENTRY: "[Character.GetFullName]: [SelectLocalization(Character.IsGeneral, '@battalions!', '@flotillas!')] [Character.GetCommandLimit]"
 
  MILITARY_FORMATION_ORGANIZATION: "[MilitaryFormation.GetOrganization][AddLocalizationIf(LessThan_CFixedPoint(MilitaryFormation.GetOrganizationRaw,GetDefine('NMilitary','MILITARY_FORMATION_ORGANIZATION_MAX')),'MILITARY_ORGANIZATION_SLASH_MAX')]"
- MILITARY_FORMATION_ORGANIZATION_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|vD$#!#!"
+ MILITARY_FORMATION_ORGANIZATION_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v%0$#!#!"
  MILITARY_ORGANIZATION_SLASH_MAX: "#maximum /[GetDefine('NMilitary','MILITARY_FORMATION_ORGANIZATION_MAX')|0]#!"
- MILITARY_ORGANIZATION_VALUE_WITH_TARGET: "[MilitaryFormation.GetOrganizationRaw|vD][Nbsp]@arrow_right![Nbsp][MilitaryFormation.GetOrganizationTargetRaw|vD]"
+ MILITARY_ORGANIZATION_VALUE_WITH_TARGET: "[MilitaryFormation.GetOrganizationPercentage|%v0][Nbsp]@arrow_right![Nbsp][MilitaryFormation.GetOrganizationTargetPercentage|%v0]"
  MILITARY_ORGANIZATION_VALUE_WITH_TARGET_AND_CHANGE: "$MILITARY_ORGANIZATION_VALUE_WITH_TARGET$ (Change: [MilitaryFormation.GetOrganizationDailyChange|+=D] per day)"
- MILITARY_ORGANIZATION_VALUE_WITH_TARGET_FORMATTED: "[MilitaryFormation.GetOrganizationRaw|vD][Nbsp]@arrow_right![Nbsp][MilitaryFormation.GetOrganizationTargetFormatted]"
- MILITARY_ORGANIZATION_VALUE_WITHOUT_TARGET: "[MilitaryFormation.GetOrganizationRaw|vD]"
+ MILITARY_ORGANIZATION_VALUE_WITH_TARGET_FORMATTED: "[MilitaryFormation.GetOrganizationRaw|v0][Nbsp]@arrow_right![Nbsp][MilitaryFormation.GetOrganizationTargetFormatted]"
+ MILITARY_ORGANIZATION_VALUE_WITHOUT_TARGET: "[MilitaryFormation.GetOrganizationPercentage|%v0]"
  MILITARY_ORGANIZATION_VALUE: "[SelectLocalization(EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationRaw, MilitaryFormation.GetOrganizationTargetRaw), 'MILITARY_ORGANIZATION_VALUE_WITHOUT_TARGET', 'MILITARY_ORGANIZATION_VALUE_WITH_TARGET')]"
  MILITARY_ORGANIZATION_VALUE_WITH_CHANGE: "[SelectLocalization(EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationRaw, MilitaryFormation.GetOrganizationTargetRaw), 'MILITARY_ORGANIZATION_VALUE_WITHOUT_TARGET', 'MILITARY_ORGANIZATION_VALUE_WITH_TARGET_AND_CHANGE')]"
  MILITARY_ORGANIZATION_VALUE_FORMATTED: "[SelectLocalization(EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationRaw, MilitaryFormation.GetOrganizationTargetRaw), MilitaryFormation.GetOrganizationTargetFormatted, 'MILITARY_ORGANIZATION_VALUE_WITH_TARGET_FORMATTED')]"
 
- MILITARY_FORMATION_ORGANIZATION_TARGET_DESC: "Target is [MilitaryFormation.GetOrganizationTargetRaw|vD] due to:#indent_newline:3 \n[MilitaryFormation.GetOrganizationTargetDesc]#!"
+ MILITARY_FORMATION_ORGANIZATION_TARGET_DESC: "Target is [MilitaryFormation.GetOrganizationTargetRaw|v0] due to:#indent_newline:3 \n[MilitaryFormation.GetOrganizationTargetDesc]#!"
  MILITARY_FORMATION_ORGANIZATION_FULL: "[MilitaryFormation.GetName] is at full $concept_organization$"
 
  MILITARY_FORMATION_ORGANIZATION_TOOLTIP: "#header @organization![Nbsp][concept_organization]#!\nCurrent: $MILITARY_ORGANIZATION_VALUE_WITH_CHANGE$\n$TOOLTIP_DELIMITER$\n[SelectLocalization(And(EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationPercentage,'(CFixedPoint)1'),EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationTargetRaw,GetDefine('NMilitary','MILITARY_FORMATION_ORGANIZATION_MAX'))),'MILITARY_FORMATION_ORGANIZATION_FULL','MILITARY_FORMATION_ORGANIZATION_TARGET_DESC')][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(NotEqualTo_CFixedPoint(MilitaryFormation.GetOrganizationDailyChange,'(CFixedPoint)0'),'MILITARY_FORMATION_ORGANIZATION_DAILY_CHANGE'))][ConcatIfNeitherEmpty('\n\n',MilitaryFormation.GetLowOrganizationDesc)]"
@@ -4227,6 +4242,8 @@
  RURAL_BUILDINGS:0 "Rural"
  DEVELOPMENT_BUILDINGS:0 "Development"
 
+ GOODS_AND_PRESTIGE_GOODS_DISTRIBUTION_HEADER: "Base $concept_goods$ & $concept_prestige_goods$ distribution"
+
  BASE_GOODS_MARKET_SELL_ORDERS: "[Goods.GetNonPrestigeGoodsMarketSellOrders|vD]\n~[Divide_CFixedPoint(Goods.GetNonPrestigeGoodsMarketSellOrders, Goods.GetMarketSellOrders)|0%]"
  BASE_GOODS_MARKET_BUY_ORDERS: "[Goods.GetNonPrestigeGoodsMarketBuyOrders|vD]\n~[Divide_CFixedPoint(Goods.GetNonPrestigeGoodsMarketBuyOrders, Goods.GetMarketBuyOrders)|0%]"
  BASE_GOODS_WORLD_MARKET_IMPORTS: "[Goods.GetNonPrestigeGoodsWorldMarketImports|vD]\n~[Divide_CFixedPoint(Goods.GetNonPrestigeGoodsWorldMarketImports, Goods.GetWorldMarketImports)|0%]"
@@ -4429,7 +4446,7 @@
  INCORPORATION_TIME_SAME_TRAIT:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of the [Culture.GetName] [concept_culture], which shares the [concept_cultural_trait] [DiscriminationTrait.GetName] with another $concept_culture$ in [State.GetOwner.GetName]."
  INCORPORATION_TIME_NO_MATCH:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since its [Concept('concept_homeland','$concept_homelands$')] have nothing in common with any $concept_cultures$ in [State.GetOwner.GetName]."
  INCORPORATION_TIME_MODIFIER_EFFECTS: "Incorporation Speed is changed by $YEARS|0-=$ years due to:\n$DETAILS$"
- 
+
  TOOLTIP_COLONY_STATE_NOT_VALID:0 "#BOLD #V $state_type_colony$#!#!\n$TOOLTIP_DELIMITER$\n[GetDesc( State.IncorporateState )]"
  TOOLTIP_COLONY_STATE_VALID:1 "#BOLD #V $state_type_colony$#!#!\n$TOOLTIP_DELIMITER$\nClick to incorporate this state ([State.PredictBureaucracyCost|1] @bur![Nbsp][concept_bureaucracy])"
  TOOLTIP_STATE_DECENTRALIZED:0 "#HEADER $decentralized_nation$#!\n$TOOLTIP_DELIMITER$\n[concept_decentralized_nation_desc]"
@@ -5167,7 +5184,7 @@
  WAR_SUPPORT_FROM_LOBBIES: "[concept_clout] of [Concept('concept_political_lobby', '$concept_political_lobbies_short$')] supporting the $concept_war$"
  WAR_OPPOSITION_FROM_LOBBIES: "[concept_clout] of [Concept('concept_political_lobby', '$concept_political_lobbies_short$')] opposing the $concept_war$"
  WAR_EXHAUSTION_FROM_EVENTS: "Events"
- 
+
  WARGOAL_CONTESTED_DESC: "#header [concept_war_goal] in [WarGoal.GetWar.GetName]#!\n[WarGoal.GetName] is [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')]\n$TOOLTIP_DELIMITER$\n[WarGoal.GetIsContestedDesc]"
  WARGOAL_NOT_CONTESTED_DESC: "#header [concept_war_goal] in [WarGoal.GetWar.GetName]#!\n[WarGoal.GetName] is #n not#! [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')]\n$TOOLTIP_DELIMITER$\n[WarGoal.GetIsContestedDesc]"
  WAR_GOAL_CONTESTED_DESC_SHORT: "[SelectLocalization(WarGoal.IsContested,'WAR_GOAL_CONTESTED_SHORT','WAR_GOAL_NOT_CONTESTED_SHORT')]"
@@ -5184,7 +5201,7 @@
  WARGOAL_CONTESTATION_CONTROL_ALL_OWN_STATES: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of all [COUNTRY.GetAdjective] [Concept('concept_state','$concept_states$')]"
  WARGOAL_CONTESTATION_CONTROL_ALL_CLAIMED_STATES: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of all [COUNTRY.GetAdjective] [Concept('concept_state','$concept_states$')] [Concept('concept_claim','$concept_claimed$')] by [TARGET_COUNTRY.GetName] ($LIST$)"
  WARGOAL_CONTESTATION_CONTROL_ANY_RELEASABLE_STATE: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ at least one [TARGET_COUNTRY.GetAdjective] [concept_state] that can be released as part of [COUNTRY_CREATION.GetName] ($LIST$)"
- 
+
  TOOLTIP_COUNTRY:0 "#BOLD #V [GetPlayer.GetName]#!#!"
  TOOLTIP_COUNTRY_DELAYED:0 "\n$TOOLTIP_DELIMITER$\nCultures: #VARIABLE [GetPlayer.GetPrimaryCulturesDesc]#!\nReligion: #VARIABLE [GetPlayer.GetStateReligion.GetName]#!\nCapital: #VARIABLE [GetPlayer.GetCapital.GetName]#!\n\n[concept_country_desc]"
  TOOLTIP_BUILDING_USES:0 "#header [Goods.GetNameNoFormatting]#!"
@@ -5698,6 +5715,7 @@
  MODIFIER_ENTRY_TEXT:0 "[ModifierEntry.GetFormattedValue] [ModifierEntry.GetName]"
  MODIFIER_ENTRY_TOOLTIP:2 "#header [ModifierEntry.GetName]#!: [ModifierEntry.GetFormattedValue]\n$TOOLTIP_DELIMITER$\n[ModifierEntry.GetBreakdown]\n[ModifierEntry.GetDesc]"
  MODIFIER_ENTRY_VALUE_WITH_BREAKDOWN:0 "#tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE$#!#!"
+ MODIFIER_ENTRY_VALUE_WITH_BREAKDOWN_AND_NO_DECIMALS: "#tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE|0$#!#!"
  MODIFIER_DEFINITION_NAME:0 "#tooltippable_name #tooltip:$DESCRIPTION_TAG$ $NAME$#!#!"
  FULL_MODIFIER_ENTRY_DESC:0 "$VALUE$ $NAME$"
 
@@ -6956,7 +6974,7 @@
  proposal_diplomatic_action_tooltip:0 "#header $proposal_diplomatic_action_name$#!\n$TOOLTIP_DELIMITER$\n$proposal_diplomatic_action_desc$"
 
  proposal_treaty_name: "[SCOPE.GetRootScope.GetTreaty.GetNameNoFormatting]"
- proposal_treaty_desc: "[SCOPE.GetRootScope.GetTreaty.GetBindingPeriodFormatted] [concept_binding_period]\n\n#title Effects:#!#indent_newline:3 [ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetEffectsDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetFirstCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetSecondCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetRelationsEffectDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetMutualModifierDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetSourceModifierDesc)]#![ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetTargetModifierDesc)]"
+ proposal_treaty_desc: "[SCOPE.GetRootScope.GetTreaty.GetBindingPeriodFormatted] [concept_binding_period]\n\n#title Effects:#!#indent_newline:3 [ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetEffectsDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetMutualEffectsDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetFirstCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetSecondCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetRelationsEffectDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetMutualModifierDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetSourceModifierDesc)]#![ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetTargetModifierDesc)]"
  proposal_treaty_tooltip: "#header $proposal_treaty_name$#!\n$TOOLTIP_DELIMITER$\n$proposal_treaty_desc$"
 
  proposal_diplomatic_action_owe_obligation_name:1 "[SCOPE.GetRootScope.GetDiplomaticAction.GetProposalNotificationName]"
@@ -7946,7 +7964,7 @@
  SWAY_OFFER_WARGOAL_DESC:7 "[COUNTRY.GetName] offers us the [concept_war_goal] of #variable [WarGoal.GetName]#! if we will back them in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName]."
  SWAY_OFFER_OBLIGATION_DESC:3 "[COUNTRY.GetName] offers to owe us a [concept_obligation] if we will back them in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName]."
  SWAY_OFFER_CALL_IN_OBLIGATION_DESC:2 "[COUNTRY.GetName] is requesting our support in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName].\n\n$THEY_CALL_IN_OBLIGATION$"
- SWAY_OFFER_CALL_ALLY_DESC:2 "[COUNTRY.GetName] is calling on our support as their [concept_ally] in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName]\n\nIf we accept, we will be able to add a [concept_war_goal] for ourselves as a [concept_secondary_demand][ConcatIfNeitherEmpty('\n\n',GetPlayer.GetPactsBrokenFromCallToArmsDeclinedDesc(COUNTRY.Self))]"
+ SWAY_OFFER_CALL_ALLY_DESC:2 "[COUNTRY.GetName] is calling on our support as their [concept_ally] in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName]\n\nIf we #g accept#!, we will be able to add a [concept_war_goal] for ourselves as a [concept_secondary_demand][ConcatIfNeitherEmpty('\n\n',GetPlayer.GetPactsBrokenFromCallToArmsDeclinedDesc(COUNTRY.Self))]\n\nIf we #r decline#!, any of our [Concept('concept_treaty','$concept_treaties$')] with [COUNTRY.GetName] containing an [GetArticleType('alliance').GetName], [GetArticleType('defensive_pact').GetName], or [GetArticleType('guarantee_independence').GetName] [concept_article], will be broken"
  SWAY_OFFER_BECOME_SUBJECT_DESC: "[COUNTRY.GetName] offers to become our $SUBJECT_TYPE|v$ if we will back them in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName]."
  SWAY_OFFER_TRANSFER_SUBJECT_DESC: "[COUNTRY.GetName] offers to transfer their [concept_subject] of [COUNTRY_THIRD_PARTY.GetName] to us if we will back them in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName]."
  SWAY_OFFER_TRANSFER_STATE_DESC: "[COUNTRY.GetName] offers to transfer their [concept_state] of [STATE.GetName] to us if we will back them in the ongoing [concept_diplomatic_play] against [ENEMY_COUNTRY.GetName]."
@@ -10128,13 +10146,17 @@
  notification_country_broke_treaty_desc: "[SCOPE.sCountry('withdrawing_country').GetName] has broke the [SCOPE.GetRootScope.GetTreaty.GetName] in violating of the standing binding period"
  notification_country_broke_treaty_tooltip: "#header $notification_country_broke_treaty_name$#!\n$notification_country_broke_treaty_desc$"
 
- notification_treaty_proposal_declined_name: "[SCOPE.GetRootScope.GetTreaty.GetName] Proposal Declined"
- notification_treaty_proposal_declined_desc: "Our [SCOPE.GetRootScope.GetTreaty.GetName] proposal has been declined"
+ notification_treaty_proposal_declined_name: "[SCOPE.GetRootScope.GetTreaty.GetName] Declined"
+ notification_treaty_proposal_declined_desc: "Our proposed treaty [SCOPE.GetRootScope.GetTreaty.GetName] has been declined by [SCOPE.GetRootScope.GetTreaty.GetSecondCountry.GetName]"
  notification_treaty_proposal_declined_tooltip: "#header $notification_treaty_proposal_declined_name$#!\n$notification_treaty_proposal_declined_desc$"
 
  notification_treaty_dissolved_name: "[SCOPE.GetRootScope.GetTreaty.GetName] Dissolved"
  notification_treaty_dissolved_desc: "[SCOPE.GetRootScope.GetTreaty.GetName] has been dissolved"
  notification_treaty_dissolved_tooltip: "#header $notification_treaty_dissolved_name$#!\n$notification_treaty_dissolved_desc$"
+ 
+ notification_treaty_article_removed_name: "[SCOPE.sTreatyArticle('article').GetName] in [SCOPE.GetRootScope.GetTreaty.GetName] Invalidated"
+ notification_treaty_article_removed_desc: "[SCOPE.sTreatyArticle('article').GetName] in [SCOPE.GetRootScope.GetTreaty.GetName] is no longer valid and has been removed from the [concept_treaty]:\n[SCOPE.sTreatyArticle('article').GetAutoBreakReasonDesc]"
+ notification_treaty_article_removed_tooltip: "#header $notification_treaty_article_removed_name$#!\n$notification_treaty_article_removed_desc$"
 
  notification_treaty_broken_name: "[SCOPE.GetRootScope.GetTreaty.GetName] Broken"
  notification_treaty_broken_desc: "[SCOPE.GetRootScope.GetTreaty.GetName] was broken before the binding period expired"

@@ -152,17 +152,20 @@
  DATA_CANAL_TYPE_NAME_FORMAT_TOOLTIP: "[CanalType.GetBuildingType.GetTooltip]"
  DATA_POLITICAL_MOVEMENT_TYPE_FORMAT_TOOLTIP: ""
 
- DATA_COMPANY_NAME_FORMAT_TOOLTIP: "Affects [Company.GetBuilding.GetNumOwnedLevels|v] [concept_building] levels in [Company.GetCountry.GetName]:"
+ DATA_COMPANY_NAME_FORMAT_TOOLTIP: "Affects [Company.GetBuilding.GetNumOwnedLevels|v] [Concept('concept_building_level','$concept_building_levels$')] in [Company.GetCountry.GetName]:"
  DATA_COMPANY_NAME_FORMAT_TOOLTIP_PT2: "$COMPANY_THROUGHPUT_BONUS_HEADER$\n$COMPANY_CONSTRUCTION_BONUS_HEADER$"
  DATA_COMPANY_NAME_FORMAT_TOOLTIP_PT3: "[concept_prosperity]: $COMPANY_PROSPERITY_FORMATTED$\n[concept_productivity]: @money![Company.GetFormattedProductivity]\nProfit: @money![Company.GetProfit|v+=D]"
  COMPANY_DOES_NOT_HAVE_BONUS: "\n$COMPANY_PROSPERITY_MODIFIER_HEADER$\n"
 
  DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS: "Can produce [CompanyType.GetProducedPrestigeGoodsDesc]"
- DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP: "Would affect [CompanyType.GetNumBuildingLevels|v] [concept_building] levels in [GetPlayer.GetName]:"
+ DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP: "Would affect [CompanyType.GetNumBuildingLevels|v] [Concept('concept_building_level','$concept_building_levels$')] in #v [GetDataModelSize(CompanyType.AccessBuildingTypes(GetPlayer.Self))|0]#! [SelectLocalization(EqualTo_int32(GetDataModelSize(CompanyType.AccessBuildingTypes(GetPlayer.Self)), '(int32)1'), 'INDUSTRY_CONCEPT', 'INDUSTRIES_CONCEPT')] in [GetPlayer.GetName]:"
+ INDUSTRIES_CONCEPT: "[Concept('concept_building','$concept_building_industries$')]"
+ INDUSTRY_CONCEPT: "[Concept('concept_building','$concept_building_industry$')]"
  DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP_PT2: "[ConcatIfNeitherEmpty( SelectLocalization(CompanyType.CanProducePrestigeGoods,'DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS',''), '\n\n')]$COMPANY_THROUGHPUT_BONUS_HEADER$\n$COMPANY_CONSTRUCTION_BONUS_HEADER$\n\n$COMPANY_PROSPERITY_MODIFIER_HEADER$\n$COMPANY_TYPE_PROSPERITY_MODIFIER$"
  DATA_COMPANY_TYPE_PREDICTED_PRODUCTIVITY: "@money![CompanyType.GetProductivity|1v] predicted [concept_productivity]"
+ DATA_COMPANY_TYPE_POTENTIAL_ADDITIONAL_INDUSTRIES_HEADER: "Potential [Concept('concept_building','$concept_building_industries$')] with [Concept('concept_company_charter','$concept_company_charters$')]:"
 
- USING_X_FREE_CHARTERS: "Using [Country.GetUsedFreeCharters|v] / [GetPlayer.GetModifier.GetValueWithBreakdownFor('country_free_charters_add')] free [Concept('concept_company_charter','$concept_company_charters$')]"
+ USING_X_FREE_CHARTERS: "Using [Country.GetUsedFreeCharters|v]/[Country.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')] free [Concept('concept_company_charter','$concept_company_charters$')]"
 
  EFFECTS_TITLE: "#title Effects:#!"
  DATA_COMPANY_CHARTER_EFFECTS: "[CompanyCharter.GetEffects]"

@@ -379,7 +379,7 @@
  achievement_azadi_madras_tt: "[GetStrategicRegion('region_madras').GetName]の[concept_strategic_region]のすべての州は、この国またはその従属国が所有しています。"
  achievement_azadi_central_india_tt: "[GetStrategicRegion('region_central_india').GetName]の[concept_strategic_region]のすべての州は、この国またはその従属国が所有しています。"
  achievement_azadi_punjab_tt: "[GetStrategicRegion('region_punjab').GetName]の[concept_strategic_region]のすべての州は、この国またはその従属国が所有しています。"
- achievement_prolecorp_tt: "[concept_prosperity]が#v 200#!を超える[concept_company]を所有している"
+ achievement_prolecorp_tt: "[concept_prosperity]が#v 100#!を超える[concept_company]を所有している"
  achievement_the_man_who_would_be_king_1_tt: "[concept_ruler]が$Josiah$・$Harlan$である"
  achievement_the_man_who_would_be_king_2_tt: "#v $KAF$#!から#v $AFG$#!を形成した"
  india_events.18.t: "ベラールの管理"

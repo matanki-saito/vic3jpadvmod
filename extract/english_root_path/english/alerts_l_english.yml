@@ -137,8 +137,13 @@
 
  alert_diplomatic_pact_in_danger_name:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetName] with [AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsFirstCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName)][AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsSecondCountry(GetPlayer), SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName)]"
  alert_diplomatic_pact_in_danger_desc:1 "Will break if the following conditions are no longer true:\n$TAB$[SCOPE.GetRootScope.GetDiplomaticPact.GetAboutToBreakReasonDesc]"
- alert_diplomatic_pact_in_danger_hint:1 "If this diplomatic pact is important to the functioning of your nation, consider improving relations with the other country or changing diplomatic course from whatever actions are currently upsetting them."
+ alert_diplomatic_pact_in_danger_hint:1 "If this diplomatic pact is important to the functioning of your nation, consider improving relations with the other country or changing diplomatic course from whatever actions are endangering it."
  alert_diplomatic_pact_in_danger_action:0 "Diplomacy Panel"
+ 
+ alert_treaty_article_in_danger_name: "[SCOPE.GetRootScope.GetTreatyArticle.GetName] in [SCOPE.GetRootScope.GetTreatyArticle.GetTreaty.GetName]"
+ alert_treaty_article_in_danger_desc: "Will break if the following conditions are no longer true:\n$TAB$[SCOPE.GetRootScope.GetTreatyArticle.GetAboutToBreakReasonDesc]"
+ alert_treaty_article_in_danger_hint: "If this article is important to the functioning of your nation, consider improving relations with the other country or changing diplomatic course from whatever actions are endangering it."
+ alert_treaty_article_in_danger_action: "Diplomacy Panel"
 
  alert_has_decreasing_interests_alert_name:1 "Disappearing [Concept('concept_interest', '$concept_interests$')]"
  alert_has_decreasing_interests_alert_desc:1 "We have [Concept('concept_interest', '$concept_interests$')] that are going to disappear soon:\n[GetPlayer.GetDecreasingInterestsDesc]"
@@ -336,8 +341,12 @@
  ag_insurrectionary_alerts_tooltip:0 "#header $ag_insurrectionary_alerts_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insurrectionary_alerts_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_diplomatic_pact_in_danger_name:1 "[concept_diplomatic_pact] at risk of breaking"
- ag_diplomatic_pact_in_danger_desc:1 "There are [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] which are at risk of breaking if [concept_relations] are further reduced"
+ ag_diplomatic_pact_in_danger_desc:1 "There are [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')] which are at risk of breaking"
  ag_diplomatic_pact_in_danger_tooltip:0 "#header $ag_diplomatic_pact_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_diplomatic_pact_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ 
+ ag_treaty_article_in_danger_name: "[concept_article] at risk of breaking"
+ ag_treaty_article_in_danger_desc: "There are [Concept('concept_article','$concept_articles$')] which are at risk of breaking"
+ ag_treaty_article_in_danger_tooltip: "#header $ag_treaty_article_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_treaty_article_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
  ag_can_decrease_subject_autonomy_name: "Can [GetDiplomaticActionType('da_decrease_autonomy').GetName]"
  ag_can_decrease_subject_autonomy_desc: "There are [concept_subject] [Concept('concept_country', '$concept_countries$')] which we can [GetDiplomaticActionType('da_decrease_autonomy').GetName]"
@@ -438,6 +447,7 @@ has_decreasing_interests_alert_setting_name: "Has Decreasing Interests"
 obligation_expiring_setting_name: "Obligation Expiring"
 insufficient_construction_for_investment_setting_name: "Insufficient Construction for Investment"
 diplomatic_pact_in_danger_setting_name: "Diplomatic Pact in Danger"
+treaty_article_in_danger_setting_name: "Treaty Article in Danger"
 overlord_can_decrease_subject_autonomy_setting_name: "Can Decrease Subject Autonomy"
 subject_likely_to_increase_autonomy_setting_name: "Subject Likely to Increase Autonomy"
 subject_can_increase_autonomy_setting_name: "Can Increase Own Autonomy"

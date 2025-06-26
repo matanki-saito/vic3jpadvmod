@@ -823,7 +823,7 @@ always_oil_rush_tt: "This event will be hidden in the future, and the above effe
  education_laws.1.b:0 "Their research work is more important."
  education_laws.1.c:0 "They could be of help in finalizing the bill."
  education_laws.2.t:0 "Discipline and Punish"
- education_laws.2.d:0 "The role of discipline in the new [SCOPE.sLaw('current_law_scope').GetName] has raised by the [SCOPE.gsInterestGroup('armed_forces_ig').GetName] as an area of improvement in the plans for this new education system."
+ education_laws.2.d:0 "The role of discipline in the new [SCOPE.sLaw('current_law_scope').GetName] has been raised by the [SCOPE.gsInterestGroup('armed_forces_ig').GetName] as an area of improvement in the plans for this new education system."
  education_laws.2.f:0 ""This is not merely about keeping an orderly classroom so that knowledge can be imparted; it is about imparting character. After all, we have been given an enormous responsibility by the parents of these children, who do all they can to raise them as upstanding citizens. Too often, we find boys joining the military service whose character has already been almost irrevocably ruined by an unruly youth and a lack of respect for authority. It needn't be so!""
  education_laws.2.a:0 "We should focus on the curriculum."
  education_laws.2.b:0 "Working this into the school system is paramount."

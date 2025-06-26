@@ -428,7 +428,7 @@ achievement_azadi_bombay_tt: "Every state in the [GetStrategicRegion('region_bom
 achievement_azadi_madras_tt: "Every state in the [GetStrategicRegion('region_madras').GetName] [concept_strategic_region] is owned by this country or its subjects"
 achievement_azadi_central_india_tt: "Every state in the [GetStrategicRegion('region_central_india').GetName] [concept_strategic_region] is owned by this country or its subjects"
 achievement_azadi_punjab_tt: "Every state in the [GetStrategicRegion('region_punjab').GetName] [concept_strategic_region] is owned by this country or its subjects"
-achievement_prolecorp_tt: "Has any [concept_company] with a [concept_prosperity] over #v 200#!"
+achievement_prolecorp_tt: "Has any [concept_company] with a [concept_prosperity] over #v 100#!"
 achievement_the_man_who_would_be_king_1_tt: "[concept_ruler] is $Josiah$ $Harlan$"
 achievement_the_man_who_would_be_king_2_tt: "Has formed #v $AFG$#! from #v $KAF$#!"
 

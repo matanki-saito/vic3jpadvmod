@@ -1239,6 +1239,13 @@
  TRIGGER_HAS_LAW_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have [TARGET_LAW_TYPE.GetName] enacted"
  TRIGGER_HAS_LAW_THIRD:1 "[TARGET_LAW_TYPE.GetName] has been enacted by [COUNTRY.GetName]"
  TRIGGER_HAS_LAW_THIRD_NOT:2 "[TARGET_LAW_TYPE.GetName] has #bold not #!been enacted by [COUNTRY.GetName]"
+ 
+ TRIGGER_HAS_LAW_OR_VARIANT: "Has enacted any variant of [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_NOT: "Has #bold not #!enacted any variant of [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_FIRST: "[COUNTRY.GetNameNoFlag] has enacted any variant of [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_FIRST_NOT: "[COUNTRY.GetNameNoFlag] does #bold not #!have any variant of [TARGET_LAW_TYPE.GetName] enacted"
+ TRIGGER_HAS_LAW_OR_VARIANT_THIRD: "Any variant of [TARGET_LAW_TYPE.GetName] has been enacted by [COUNTRY.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_THIRD_NOT: "Any variant of [TARGET_LAW_TYPE.GetName] has #bold not #!been enacted by [COUNTRY.GetName]"
 
  TRIGGER_HAS_LAW_COMMITMENT: "Has a [concept_treaty] commitment to enact [TARGET_LAW_TYPE.GetName]"
  TRIGGER_HAS_LAW_COMMITMENT_NOT: "Does #bold not#! have a [concept_treaty] commitment to enact [TARGET_LAW_TYPE.GetName]"
@@ -2950,14 +2957,14 @@
 
  TRIGGER_MARKET_ACCESS_GREATER_THAN:0 "[concept_market_access] is greater than $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_LESS_THAN:1 "[concept_market_access] is less than $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
- TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL:0 "[concept_market_access] is less than $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL:0 "[concept_market_access] is greater, or equal to $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL:0 "[concept_market_access] is less than, or equal to $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_EQUAL:0 "[concept_market_access] is $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_NOT_EQUAL:1 "[concept_market_access] is #bold not #!$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
 
  TRIGGER_MARKET_ACCESS_GREATER_THAN_THIRD: "[concept_market_access] in [State.GetName] is greater than $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_LESS_THAN_THIRD: "[concept_market_access] in [State.GetName] is less than $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
- TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL_THIRD: "[concept_market_access] in [State.GetName] is less than $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
+ TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL_THIRD: "[concept_market_access] in [State.GetName] is greater, or equal to $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL_THIRD: "[concept_market_access] in [State.GetName] is less than, or equal to $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_EQUAL_THIRD: "[concept_market_access] in [State.GetName] is $NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"
  TRIGGER_MARKET_ACCESS_NOT_EQUAL_THIRD: "[concept_market_access] in [State.GetName] is #bold not #!$NUM|%0v$ (currently: $CURRENT_VALUE|%0v$)"

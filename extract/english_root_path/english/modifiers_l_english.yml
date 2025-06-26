@@ -449,7 +449,7 @@
  state_food_security_add_desc: "A bonus or penalty to the food security of all pops in a state"
  state_pollution_generation_add: "Generated Pollution"
  state_pollution_generation_add_desc: "An increase or decrease to how much pollution is generated in a state"
- state_pollution_reduction_health_mult: "Pollution Effects Reduction"
+ state_pollution_reduction_health_mult: "Pollution Health Effects Reduction"
  state_pollution_reduction_health_mult_desc: "An increase of decrease to the effects of [concept_pollution_impact] on the health of your population"
  state_peasants_consumption_multiplier_add: "Goods consumption for [GetPopType('peasants').GetName]"
  state_peasants_consumption_multiplier_add_desc: "A bonus or penalty to goods consumption for [GetPopType('peasants').GetName]"
