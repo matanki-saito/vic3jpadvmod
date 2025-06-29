@@ -50,11 +50,7 @@
  notification_britain_hindustan_intervention_tooltip:0 "#header $notification_britain_hindustan_intervention_name$#!\n$TOOLTIP_DELIMITER$\n$notification_britain_hindustan_intervention_desc$"
  mughal.7.t:0 "孔雀の玉座が脱出に成功"
  mughal.7.d:0 "政治工作、陰謀、そして上からの介入により、[SCOPE.sCountry('mughal_scope').GetName]は[SCOPE.sCountry('bic_scope').GetName]から独立を勝ち取りました。[SCOPE.sCountry('mughal_scope').GetCapital.GetCityHubName]は[SCOPE.sCharacter('hindustan_ruler').GetPrimaryRoleTitle][SCOPE.sCharacter('hindustan_ruler').GetFirstName]の統治を祝うお祭り騒ぎです。"
- mughal.7.f:0 "「先生、ご覧ください！善良さと誠実さ、忠誠心と愛、この祝福された土地にすべてが戻ってきました！」と、詩人志望の若者は叫んだ。
-
-聴衆の中の老人は、若者が自分の作品を弾みながら歌っているのを見て弱々しく微笑んだ。[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]が自由になったのは良いことだが、国がまだ安全とは程遠いことがわかっていた。父と息子は互いにいがみ合い、兄弟はお互いと戦い、インド全土で団結が損なわれていた。
-
-それでも、詩人が単調に語り続ける中、クッションの上で身をよじりながら、彼は考え込んだ。この不吉な雰囲気にもかかわらず、終末の日はまだ来ておらず、最後のラッパは鳴っていない。結局のところ、誰が最後の大惨事の手綱を握っているのか、誰にもわからないのだ。そんな心配をするよりも、今ある喜びを祝うべきなのだろう。"
+ mughal.7.f:0 "「先生、ご覧ください！善良さと誠実さ、忠誠心と愛、この祝福された土地にすべてが戻ってきました！」と、詩人志望の若者は叫んだ。\n\n聴衆の中の老人は、若者が自分の作品を弾みながら歌っているのを見て弱々しく微笑んだ。[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]が自由になったのは良いことだが、国がまだ安全とは程遠いことがわかっていた。父と息子は互いにいがみ合い、兄弟はお互いと戦い、インド全土で団結が損なわれていた。\n\nそれでも、詩人が単調に語り続ける中、クッションの上で身をよじりながら、彼は考え込んだ。この不吉な雰囲気にもかかわらず、終末の日はまだ来ておらず、最後のラッパは鳴っていない。結局のところ、誰が最後の大惨事の手綱を握っているのか、誰にもわからないのだ。そんな心配をするよりも、今ある喜びを祝うべきなのだろう。"
  mughal.7.a:0 "新たな[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]ではインド全土が歓迎されるだろう。"
  mughal.7.b:0 "王の中の王よ、最強の君主よ。我々はあなたを忘れない！"
  mughal.7.c:0 "長らくくすぶっていた野望の炎が今燃え上がるのだ！"

@@ -11,7 +11,7 @@
  BOOKMARK_IRONMAN_ENABLED:0 "鉄人モード"
  BOOKMARK_IRONMAN_DISABLED:0 "鉄人モード"
  ACHIEVEMENTS_LABEL:0 "実績"
- ACHIEVEMENTS_EXPLANATION:0 "#indent_newline:2 実績は以下の条件を満たせばアンロック可能です : \n$EFFECT_LIST_BULLET$シングルプレイヤーとしてプレイ\n$EFFECT_LIST_BULLET$実績を阻まないゲームルールでプレイしている\n$EFFECT_LIST_BULLET$オブザーバーとしてプレイしていない#!"
+ ACHIEVEMENTS_EXPLANATION:0 "#indent_newline:2 実績は以下の条件を満たせばアンロック可能です : \n$EFFECT_LIST_BULLET$シングルプレイヤーとしてプレイ\n$EFFECT_LIST_BULLET$実績を阻まないゲームルールでプレイしている\n$EFFECT_LIST_BULLET$オブザーバーとしてプレイしていない"
  ACHIEVEMENTS_ENABLED:0 "#T 実績解除可能\n#!現在、ゲームプレイ中に実績が解除可能です。\n\n$ACHIEVEMENTS_EXPLANATION$"
  ACHIEVEMENTS_DISABLED:0 "#T 実績解除不可#!\n現在、ゲームプレイ中に実績が解除不可です。\n\n$ACHIEVEMENTS_EXPLANATION$"
  ACHIEVEMENTS_DISABLED_SAVEGAME:0 "@warning! #X 実績は使用できません#!\nこの保存データでは実績は無効になっています。"

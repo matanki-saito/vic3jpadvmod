@@ -249,9 +249,7 @@
  je_modernizing_paraguay.tt_3:0 "#bold パラグアイ軍#!の刷新"
  je_modernizing_paraguay.tt_4:0 "人口増加を刺激"
  je_paraguayan_war:0 "パラグアイ戦争"
- je_paraguayan_war_reason:0 "[SCOPE.sCountry('paraguay_scope').GetAdjective]の蛇がその醜い頭をもたげた。[SCOPE.sCountry('paraguay_scope').GetRuler.GetPrimaryRoleTitle][SCOPE.sCountry('paraguay_scope').GetRuler.GetLastName]は[SCOPE.sCountry('paraguay_scope').GetRuler.GetHerHis]の野望をはっきりと語った。南米の力の均衡を大きく崩す野望だ。
-
-皆の意見が一致するのは明白である。今、[SCOPE.sCountry('paraguay_scope').GetRuler.GetLastNameNoFormatting]を抑止できるのは武力だけだ。唯一の問題は、我々が力を貸すべきかどうかということだ。"
+ je_paraguayan_war_reason:0 "[SCOPE.sCountry('paraguay_scope').GetAdjective]の蛇がその醜い頭をもたげた。[SCOPE.sCountry('paraguay_scope').GetRuler.GetPrimaryRoleTitle][SCOPE.sCountry('paraguay_scope').GetRuler.GetLastName]は[SCOPE.sCountry('paraguay_scope').GetRuler.GetHerHis]の野望をはっきりと語った。南米の力の均衡を大きく崩す野望だ。\n\n皆の意見が一致するのは明白である。今、[SCOPE.sCountry('paraguay_scope').GetRuler.GetLastNameNoFormatting]を抑止できるのは武力だけだ。唯一の問題は、我々が力を貸すべきかどうかということだ。"
  je_paraguayan_war_tt_1:0 "我々は[SCOPE.sCountry('paraguay_scope').GetName]との[concept_war]に#bold 勝利#!した。"
  je_paraguayan_war_tt_2:0 "我々は[SCOPE.sCountry('paraguay_scope').GetName]との[concept_war]に#bold 敗北#!した。"
  humanita_fortress_button:0 "フマニタ要塞を建設"

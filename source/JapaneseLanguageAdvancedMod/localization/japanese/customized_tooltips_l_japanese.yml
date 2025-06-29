@@ -88,12 +88,7 @@
  DATA_COUNTRY_NAME_TOOLTIP_SUBJECT_ENTRY:0 "[COUNTRY.GetName] ([Country.GetSubjectTypeName]) "
  DATA_COUNTRY_NAME_TOOLTIP_MORE_SUBJECTS:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ ...および#v $NUM_SUBJECTS$#!の従属国#!#!"
  DATA_COUNTRY_NAME_TOOLTIP_ALL_SUBJECTS:0 "#header [Country.GetName]の[Concept('concept_subject','$concept_subjects$')]#!\n$TOOLTIP_DELIMITER$\n$FULL_DESC$"
- DATA_GOODS_NAME_TOOLTIP:0 "[ConcatIfNeitherEmpty(Goods.GetStateGoodsShortageDesc,'
-
-')][AddLocalizationIf(And(Goods.GetState.IsValid,Not(Goods.IsLocal)),'PRICE_SETTING_INFO')][SelectLocalization(And(Goods.HasMarketContext,Not(Goods.IsLocal)),'GOODS_LEADERBOARD_STATUS','')][ConcatIfNeitherEmpty('
-',Goods.GetPrestigeGoodTradeAdvantageEffectDesc)][ConcatIfNeitherEmpty('
-',Goods.GetPrestigeGoodThroughputEffectDesc)][ConcatIfNeitherEmpty('
-',Goods.GetPrestigeGoodCombatUnitEffectDesc)][SelectLocalization(Goods.IsTradeable,'','NON_TRADEABLE_DESC')]"
+ DATA_GOODS_NAME_TOOLTIP:0 "[ConcatIfNeitherEmpty(Goods.GetStateGoodsShortageDesc,'\n\n')][AddLocalizationIf(And(Goods.GetState.IsValid,Not(Goods.IsLocal)),'PRICE_SETTING_INFO')][SelectLocalization(And(Goods.HasMarketContext,Not(Goods.IsLocal)),'GOODS_LEADERBOARD_STATUS','')][ConcatIfNeitherEmpty('\n',Goods.GetPrestigeGoodTradeAdvantageEffectDesc)][ConcatIfNeitherEmpty('\n',Goods.GetPrestigeGoodThroughputEffectDesc)][ConcatIfNeitherEmpty('\n',Goods.GetPrestigeGoodCombatUnitEffectDesc)][SelectLocalization(Goods.IsTradeable,'','NON_TRADEABLE_DESC')]"
  GOODS_NAME_TOOLTIP_LEADERBOARD_RANKING_BREAKDOWN:0 "[Goods.GetLeaderboardSpotDesc(GetPlayer.Self)]"
  GOODS_LEADERBOARD_ENTRY:0 "$AMOUNT|vD$ : [Country.GetName] $PRESTIGE_AWARD$"
  GOODS_LEADERBOARD:0 "$GOODS_LEADERBOARD_HEADER$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
@@ -103,9 +98,7 @@
  GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER:0 " [Goods.GetNameNoFormatting]の主要生産者ではありません"
  GOODS_PRESTIGE_AWARD:0 "#v $VAL|=+$#! [concept_prestige][Goods.GetTextIcon][Goods.GetName]#v 第$SPOT|v$位#!の生産国"
  GOODS_PRESTIGE_SUFFIX:0 " (#v $VAL|=+$#! [concept_prestige]) "
- NON_TRADEABLE_DESC:0 "
-
-[Goods.GetName]は[concept_trade]で売買できません"
+ NON_TRADEABLE_DESC:0 "\n\n[Goods.GetName]は[concept_trade]で売買できません"
  CONTEXTUAL_GOODS_GENERATION_INFO_STATE:0 "[Goods.GetState.GetName] : @money![Goods.GetStatePrice|v1][Goods.GetCompareIconAgainstBasePriceNoFormatting(Goods.GetStatePrice)] ([concept_base_price]と比較して#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetStatePrice)|%0=-]#!) \n地方の残高 : #variable [Goods.GetStateProductionConsumptionDiff|=D+]#!\n$TAB$[Goods.GetStateProductionWithTooltip][concept_good_production]\n$TAB$[Goods.GetStateConsumptionWithTooltip][concept_good_consumption]"
  CONTEXTUAL_GOODS_GENERATION_INFO_MARKET:0 "[Goods.GetMarket.GetName] : @money![Goods.GetMarketPrice|v1][Goods.GetCompareIconAgainstBasePriceNoFormatting(Goods.GetMarketPrice)] ([concept_base_price]と比較して#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice)|%0=-]#!) \n市場の残高 : #variable [Goods.GetMarketBuyAndSellOrdersBalance|=D+]#!\n$TAB$[Goods.GetMarketSellOrdersWithTooltip][concept_sell_orders]\n$TAB$[Goods.GetMarketBuyOrdersWithTooltip][concept_buy_orders]"
  DATA_GOODS_USAGE_DESC:0 "[Goods.GetBuildingsProducingThisDesc][ConcatIfNeitherEmpty('\n',Goods.GetBuildingsUsingThisDesc)][ConcatIfNeitherEmpty('\n',Goods.GetBuyPackagesContainingThisDesc)]"
@@ -119,10 +112,7 @@
  DATA_LAW_GROUP_NAME_TOOLTIP:0 "[LawGroup.GetDesc]\n\n$DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW$[ConcatIfNeitherEmpty('\n',AddLocalizationIf(LawGroup.GetCurrentlyEnacting.IsValid,'DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW'))]\n我が国にはこのグループにおける代替候補が[LawGroup.GetNumEnactable|v]あります。"
  DATA_LAW_GROUP_NAME_TOOLTIP_ACTIVE_LAW:0 "現在施行されている[concept_law] : [LawGroup.GetCurrentlyActive.GetName]"
  DATA_LAW_GROUP_NAME_TOOLTIP_ENACTING_LAW:0 "制定中の$concept_law$ : [LawGroup.GetCurrentlyEnacting.GetName]"
- DATA_LAW_TYPE_NAME_TOOLTIP:0 "[SelectLocalization(ObjectsEqual(LawType.GetGroup.GetCurrentlyActive.GetLawType.Self,LawType.Self),'ACTIVE_LAW','INACTIVE_LAW')]
-
-[LawType.GetTooltip(GetPlayer.Self)]$TOOLTIP_DELIMITER$
-#lore [LawType.GetDesc]"
+ DATA_LAW_TYPE_NAME_TOOLTIP:0 "[SelectLocalization(ObjectsEqual(LawType.GetGroup.GetCurrentlyActive.GetLawType.Self,LawType.Self),'ACTIVE_LAW','INACTIVE_LAW')]\n\n[LawType.GetTooltip(GetPlayer.Self)]$TOOLTIP_DELIMITER$\n#lore [LawType.GetDesc]"
  DATA_LAW_NAME_TOOLTIP:0 "[Law.GetTooltip]\n$DATA_LAW_TOOLTIP_IG_SUPPORT$\n#!$TOOLTIP_DELIMITER$\n#lore [Law.GetDesc]#!"
  DATA_LAW_TOOLTIP_IG_SUPPORT:0 "[SelectLocalization(GreaterThan_int32(Law.GetNumSupportingInterestGroups,'(int32)0'),'DATA_LAW_TOOLTIP_SUPPORTED','DATA_LAW_TOOLTIP_NOT_SUPPORTED')]"
  DATA_LAW_TOOLTIP_SUPPORTED:0 "#tooltippable #tooltip:[Law.GetTooltipTag],DATA_LAW_NAME_BREAKDOWN [Law.GetNumSupportingInterestGroups|v]#!#!の[Concept('concept_interest_group','$concept_interest_groups$')][Law.GetSupportingInterestGroupsSummary]がこの[concept_law]を支持しています"
@@ -217,47 +207,30 @@
  CHARACTER_DEFENDING:0 "#b 防衛中#!"
  DATA_CHARACTER_COMMANDER_DETAILS_ORDER:0 "[concept_order] : #b [Character.GetOrderType.GetName]#![AddTextIf(Character.GetAssignedState.IsValid,Concatenate(' assigned to ',Character.GetAssignedState.GetName))]"
  DATA_CHARACTER_ADMIRAL_DEFEATED:0 "現在、[concept_admiral_defeated][AddLocalizationIf(Character.HasInvasionPlan,'DATA_CHARACTER_ADMIRAL_DEFEATED_IN_INVASION')]"
- DATA_COMPANY_NAME_FORMAT_TOOLTIP:0 "[Company.GetCountry.GetName]の[Company.GetBuilding.GetNumOwnedLevels|v][concept_building]レベルに影響 : "
+ DATA_COMPANY_NAME_FORMAT_TOOLTIP:0 "[Company.GetCountry.GetName]の[Concept('concept_building_level','$concept_building_levels$')][Company.GetBuilding.GetNumOwnedLevels|v]に影響 : "
  COMPANY_DOES_NOT_HAVE_BONUS:0 "\n$COMPANY_PROSPERITY_MODIFIER_HEADER$\n"
- DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP:0 "[GetPlayer.GetName]の[CompanyType.GetNumBuildingLevels|v][concept_building]レベルに影響する可能性大 : "
+ DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP:0 "[GetPlayer.GetName]の#v [GetDataModelSize(CompanyType.AccessBuildingTypes(GetPlayer.Self))|0]#![SelectLocalization(EqualTo_int32(GetDataModelSize(CompanyType.AccessBuildingTypes(GetPlayer.Self)),'(int32)1'),'INDUSTRY_CONCEPT','INDUSTRIES_CONCEPT')]において[CompanyType.GetNumBuildingLevels|v][Concept('concept_building_level','$concept_building_levels$')]に影響する可能性 : "
  STATE_HAS_OCCUPANT:0 "[State.GetOccupantsTooltip]"
  DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP:0 "[ConcatIfNeitherEmpty(CombatUnitType.GetRequirements,'\n\n')][ConcatIfNeitherEmpty(ConcatIfNeitherEmpty('$DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_BATTLE_MODIFIER_TITLE$',CombatUnitType.GetBattleModifier.GetDesc),'\n\n')][ConcatIfNeitherEmpty(ConcatIfNeitherEmpty('$DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_FORMATION_MODIFIER_TITLE$',CombatUnitType.GetFormationModifier.GetDesc),'\n\n')][ConcatIfNeitherEmpty(ConcatIfNeitherEmpty('$DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_UPKEEP_MODIFIER_TITLE$',CombatUnitType.GetUpkeepModifier.GetDesc),'\n\n')][CombatUnitType.GetDesc]"
  DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_BATTLE_MODIFIER_TITLE:0 "#title 基本値 : #!\n"
  DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP_UPKEEP_MODIFIER_TITLE:0 "#title $concept_unit_short$ごとの維持費 : #!\n"
  DATA_MOBILIZATION_OPTION_NAME_TOOLTIP:0 "[MobilizationOption.GetTooltip]"
- DATA_MILITARY_FORMATION:0 "[MilitaryFormation.GetFormationStatusDesc]\n@money!#v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_EXPENSE_TOOLTIP_TAG [MilitaryFormation.GetGoodsConsumptionCostRaw|0-K]#!#!#! 維持費\n\n[MilitaryFormation.GetUnitIcon] #v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP [MilitaryFormation.GetNumCombatUnits]#!#!#! [SelectLocalization(MilitaryFormation.IsArmy,'BATTALIONS_CONCEPT','FLOTILLAS_CONCEPT')] $INCOMING_NUMBER_OF_REGULARS_LABEL$\n[MilitaryFormation.GetBuildingsDesc]\n\n[MilitaryFormation.GetUnitIcon][MilitaryFormation.GetCommandLimit][AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw,MilitaryFormation.GetNumCombatUnits),'@warning! ')][concept_command_limit]\n$MILITARY_FORMATION_OFFENSE_DEFENSE$[AddLocalizationIf(MilitaryFormation.IsArmy,'DATA_MILITARY_FORMATION_ATTRITION')]"
+ DATA_MILITARY_FORMATION:0 ""
  DATA_MILITARY_FORMATION_TYPE:0 "[concept_military_formation]\n[MilitaryFormation.GetCountry.GetAdjective]の[SelectLocalization(MilitaryFormation.IsArmy,'MILITARY_FORMATION_ARMY_CONCEPT','MILITARY_FORMATION_FLEET_CONCEPT')]"
  MILITARY_FORMATION_OFFENSE_DEFENSE:0 "@unit_offense![MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|v0][concept_offense][SelectLocalization(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower,MilitaryFormation.GetAverageOffense),'OFFENSE_AT_FULL_MANPOWER','')]\n@unit_defense![MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower|v0][concept_defense][SelectLocalization(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower,MilitaryFormation.GetAverageDefense),'DEFENSE_AT_FULL_MANPOWER','')]"
  OFFENSE_AT_FULL_MANPOWER:0 " (最大限の@manpower!がある[MilitaryFormation.GetAverageOffense|v0]) "
  DEFENSE_AT_FULL_MANPOWER:0 " (最大限の@manpower!がある[MilitaryFormation.GetAverageDefense|v0]) "
  DATA_COMMANDER_ORDER_TYPE_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_COMMANDER_ORDER_TYPE_NAME_TOOLTIP,CommanderOrderTypeTooltip $NAME$#!#!"
- DATA_COMMANDER_ORDER_TYPE_NAME_TOOLTIP:0 "[CommanderOrderType.GetDesc][ConcatIfNeitherEmpty('
-
-',CommanderOrderType.GetModifier.GetDesc)][ConcatIfNeitherEmpty('
-
-',AddLocalizationIf(CommanderOrderType.CanEscapeFromBattle,'ESCAPE_ORDER'))][ConcatIfNeitherEmpty('
-
-',AddLocalizationIf(Not(CommanderOrderType.IsBasicOrderType),'SPECIAL_ORDER'))]"
+ DATA_COMMANDER_ORDER_TYPE_NAME_TOOLTIP:0 "[CommanderOrderType.GetDesc][ConcatIfNeitherEmpty('\n\n',CommanderOrderType.GetModifier.GetDesc)][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(CommanderOrderType.CanEscapeFromBattle,'ESCAPE_ORDER'))][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(Not(CommanderOrderType.IsBasicOrderType),'SPECIAL_ORDER'))]"
  DATA_COMBAT_UNIT_TYPE_NAME_FORMAT_WITH_CULTURE:0 "#tooltippable_name #tooltip:[CombatUnitType.GetTooltipTag]|[Culture.GetTooltipTag],DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP,CombatUnitTypeTooltipWithCulture $NAME$#!#!"
- COUNTRY_RANKING_INFO:0 "[concept_rank] : #variable [Country.GetRank]#! (#v #tooltippable #tooltip:COUNTRY_RANK_BREAKDOWN ##[Country.GetCountryScorePositionDesc]#!#!#!) [ConcatIfNeitherEmpty('
-',AddLocalizationIf(Country.IsInPowerBloc,'DATA_COUNTRY_POWER_BLOC'))][ConcatIfNeitherEmpty('
-',AddLocalizationIf(And(And(Not(Country.GetPowerBloc.IsLeader(Country.Self)),Not(Country.IsLocalPlayer)),GetPlayer.GetPowerBloc.IsValid),'DATA_POWER_BLOC_LEVERAGE_OVER_COUNTRY'))][Country.TryGetOverlordTooltipEntry][ConcatIfNeitherEmpty('
-',Country.GetLibertyDesireLevelLabel)][ConcatIfNeitherEmpty('
-',Country.TryGetSubjectsTooltipEntry)][ConcatIfNeitherEmpty('
-
-',AddLocalizationIf(GetPlayer.IsValid,'COUNTRY_TOOLTIP_HAS_TREATIES'))]
-
-[Concept('concept_gdp','$concept_gdp_short$')] : #v #tooltippable #tooltip:GDP_TOOLTIP @money![Country.GetGDP|1*]#!#!#! ([Country.GetGDPRanking]) 
-[Concept('concept_pop','$concept_population$')] : #v [Country.GetTotalPopulation|D]#! ([Country.GetPopulationRanking]) 
-[concept_sol] : [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPopulation)|v] ([Country.GetAverageSoLByPopulation|v1]) ([Country.GetStandardOfLivingRanking]) "
+ COUNTRY_RANKING_INFO:0 "[concept_rank] : #variable [Country.GetRank]#! (#v #tooltippable #tooltip:COUNTRY_RANK_BREAKDOWN ##[Country.GetCountryScorePositionDesc]#!#!#!) [ConcatIfNeitherEmpty('\n',AddLocalizationIf(Country.IsInPowerBloc,'DATA_COUNTRY_POWER_BLOC'))][ConcatIfNeitherEmpty('\n',AddLocalizationIf(And(And(Not(Country.GetPowerBloc.IsLeader(Country.Self)),Not(Country.IsLocalPlayer)),GetPlayer.GetPowerBloc.IsValid),'DATA_POWER_BLOC_LEVERAGE_OVER_COUNTRY'))][Country.TryGetOverlordTooltipEntry][ConcatIfNeitherEmpty('\n',Country.GetLibertyDesireLevelLabel)][ConcatIfNeitherEmpty('\n',Country.TryGetSubjectsTooltipEntry)][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(GetPlayer.IsValid,'COUNTRY_TOOLTIP_HAS_TREATIES'))]\n\n[Concept('concept_gdp','$concept_gdp_short$')] : #v #tooltippable #tooltip:GDP_TOOLTIP @money![Country.GetGDP|1*]#!#!#! ([Country.GetGDPRanking]) \n[Concept('concept_pop','$concept_population$')] : #v [Country.GetTotalPopulation|D]#! ([Country.GetPopulationRanking]) \n[concept_sol] : [LabelingHelper.GetLabelForStandardOfLivingCFixedPoint(Country.GetAverageSoLByPopulation)|v] ([Country.GetAverageSoLByPopulation|v1]) ([Country.GetStandardOfLivingRanking]) "
  COUNTRY_DIPLOMATIC_INFO:0 "[ConcatIfNeitherEmpty('\n\n',SelectLocalization(Or(ObjectsEqual(GetPlayer.Self,Country.Self),Not(GetPlayer.IsValid)),'','ATTITUDE_RELATIONS_INFAMY_OR_TENSION'))]"
  COUNTRY_MILITARY_INFO:0 "[Concept('concept_army','$concept_armies$')] : #v #tooltippable #tooltip:PANEL_MILITARY_ARMY_CURRENT_BATTALIONS_TOOLTIP @battalions![Country.GetBattalions|0]#!#!#! ([Country.GetBattalionsRanking]) [SelectLocalization(NotZero(Country.GetWarships),'COUNTRY_FLOTILLAS_INFO','')][ConcatIfNeitherEmpty('\n',Country.GetArmyReadinessStatusDesc)]"
  COUNTRY_POLITICAL_INFO:0 "[concept_government] : #tooltippable #tooltip:[Country.GetGovernment.GetTooltipTag],GOVERNMENT_TYPE_TOOLTIP_DESC [Country.GetGovernment.GetName]#!#! ([Country.GetGovernmentIGsDesc]) \n[concept_legitimacy] : #v #tooltippable #tooltip:[Country.GetTooltipTag],LEGITIMACY_LEVEL_ACTIVE_ANY_COUNTRY_TOOLTIP [Country.GetGovernmentLegitimacy]#!#!#!\n[Concept('concept_culture','$concept_cultures$')] : #VARIABLE [Country.GetPrimaryCulturesDesc]#!\n[concept_religion] : #VARIABLE [Country.GetStateReligion.GetName]#!\n[Concept('concept_capital_state','$concept_capital_state_short$')] : #VARIABLE [Country.GetCapital.GetName]#!"
  COUNTRY_FLOTILLAS_INFO:0 "\n[Concept('concept_fleet','$concept_fleets$')] : #v #tooltippable #tooltip:PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP @flotillas![Country.GetWarships|0]#!#!#! ([Country.GetFlotillasRanking]) "
  COUNTRY_INFAMY:0 "\n[concept_infamy] : #tooltippable #tooltip:COUNTRY_INFAMY_TOOLTIP [Country.GetInfamyLabel|-]#!#! (#BOLD #tooltippable #tooltip:COUNTRY_INFAMY_TOOLTIP [Country.GetInfamy|-1]#!#!#!) "
  DATA_COMBAT_UNIT_TYPE_WITH_FORMATION_CONTEXT:0 "#title [MilitaryFormation.GetName]の[CombatUnitType.GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForType(CombatUnitType.Self).Self)]#! : \n[SelectLocalization(MilitaryFormation.IsArmy,'DATA_COMBAT_UNIT_TYPE_ARMY_CONTEXT','DATA_COMBAT_UNIT_TYPE_FLEET_CONTEXT')]"
- DATA_COMBAT_UNIT_TYPE_ARMY_CONTEXT:0 "@battalions!#v [MilitaryFormation.GetNumRegularCombatUnitsOfType(CombatUnitType.Self)]#! 常設[MilitaryFormation.GetUnitLabel] $INCOMING_NUMBER_OF_REGULARS_OF_UNIT_TYPE_LABEL$
-@conscripts!#v [MilitaryFormation.GetNumConscriptsCombatUnitsOfType(CombatUnitType.Self)]#! + [Subtract_int32(MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType(CombatUnitType.Self),MilitaryFormation.GetNumConscriptsCombatUnitsOfType(CombatUnitType.Self))]#! [Concept('concept_conscript_battalion','$concept_conscript_battalions$')][ConcatIfNeitherEmpty(' - ',AddLocalizationIf(Not(MilitaryFormation.HasRaisedConscripts),'NOT_RAISED_CONSCRIPTS'))]"
+ DATA_COMBAT_UNIT_TYPE_ARMY_CONTEXT:0 "@battalions!#v [MilitaryFormation.GetNumRegularCombatUnitsOfType(CombatUnitType.Self)]#! 常設[MilitaryFormation.GetUnitLabel] $INCOMING_NUMBER_OF_REGULARS_OF_UNIT_TYPE_LABEL$\n@conscripts!#v [MilitaryFormation.GetNumConscriptsCombatUnitsOfType(CombatUnitType.Self)]#! + [Subtract_int32(MilitaryFormation.GetNumExpectedConscriptsCombatUnitsOfType(CombatUnitType.Self),MilitaryFormation.GetNumConscriptsCombatUnitsOfType(CombatUnitType.Self))]#! [Concept('concept_conscript_battalion','$concept_conscript_battalions$')][ConcatIfNeitherEmpty(' - ',AddLocalizationIf(Not(MilitaryFormation.HasRaisedConscripts),'NOT_RAISED_CONSCRIPTS'))]"
  DATA_COMBAT_UNIT_TYPE_FLEET_CONTEXT:0 "@flotillas!#v [MilitaryFormation.GetNumRegularCombatUnitsOfType(CombatUnitType.Self)]#! [MilitaryFormation.GetUnitLabel] $INCOMING_NUMBER_OF_REGULARS_OF_UNIT_TYPE_LABEL$"
  DATA_MILITARY_FORMATION_ATTRITION:0 "\n$MILITARY_FORMATION_ATTRITION_VALUE_TOOLTIPPABLE$ [concept_attrition]"
  DATA_MILITARY_FORMATION_MANPOWER:0 "@manpower![MilitaryFormation.GetCurrentManpower|kV]/#maximum [MilitaryFormation.GetMaxManpower|k]#! [concept_manpower]"
@@ -276,15 +249,8 @@
  DATA_SUBJECT_TYPE_NAME_FORMAT:0 "#tooltippable_name #tooltip:$TAG$,DATA_SUBJECT_TYPE_TOOLTIP,SubjectTypeTooltip $NAME$#!#!"
  DATA_SUBJECT_TYPE_TOOLTIP:0 "[SubjectType.GetDesc]"
  EMPTY_STRING:0 ""
- DATA_COMPANY_NAME_FORMAT_TOOLTIP_PT2:0 "$COMPANY_THROUGHPUT_BONUS_HEADER$
-$COMPANY_CONSTRUCTION_BONUS_HEADER$"
- DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP_PT2:0 "[ConcatIfNeitherEmpty(SelectLocalization(CompanyType.CanProducePrestigeGoods,'DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS',''),'
-
-')]$COMPANY_THROUGHPUT_BONUS_HEADER$
-$COMPANY_CONSTRUCTION_BONUS_HEADER$
-
-$COMPANY_PROSPERITY_MODIFIER_HEADER$
-$COMPANY_TYPE_PROSPERITY_MODIFIER$"
+ DATA_COMPANY_NAME_FORMAT_TOOLTIP_PT2:0 "$COMPANY_THROUGHPUT_BONUS_HEADER$\n$COMPANY_CONSTRUCTION_BONUS_HEADER$"
+ DATA_COMPANY_TYPE_NAME_FORMAT_TOOLTIP_PT2:0 "[ConcatIfNeitherEmpty(SelectLocalization(CompanyType.CanProducePrestigeGoods,'DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS',''),'\n\n')]$COMPANY_THROUGHPUT_BONUS_HEADER$\n$COMPANY_CONSTRUCTION_BONUS_HEADER$\n\n$COMPANY_PROSPERITY_MODIFIER_HEADER$\n$COMPANY_TYPE_PROSPERITY_MODIFIER$"
  DATA_COUNTRY_POWER_BLOC:0 "[concept_power_bloc] : [Country.GetPowerBloc.GetName] ($POWER_BLOC_RANK_FORMATTED$) [AddLocalizationIf(Country.GetPowerBloc.IsLeader(Country.Self),'DATA_COUNTRY_POWER_BLOC_LEADER_LABEL')]"
  DATA_COUNTRY_POWER_BLOC_LEADER_LABEL:0 " ([Concept('concept_power_bloc_leader','$concept_power_bloc_leader_short$')]) [ConcatIfNeitherEmpty('\n',AddLocalizationIf(Not(GetPlayer.GetPowerBloc.IsLeader(GetPlayer)),'DATA_POWER_BLOC_LEVERAGE_OVER_PLAYER'))]"
  DATA_COUNTRY_SUBJECT_LIBERTY_DESIRE_LABEL:0 "[concept_liberty_desire] : #v #tooltippable #tooltip:$COUNTRY_TOOLTIP_TAG$,COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_TOOLTIP [LIBERTY_DESIRE_LEVEL.GetNameNoFormatting]#!#!#! (#v #tooltippable #tooltip:$COUNTRY_TOOLTIP_TAG$,COUNTRY_LIBERTY_DESIRE_ACTIVE_LEVEL_TOOLTIP $LIBERTY_DESIRE_VALUE|0$#!#!#!) "
@@ -526,50 +492,32 @@ $COMPANY_TYPE_PROSPERITY_MODIFIER$"
  AGITATOR_WOULD_START_MOVEMENT:0 "[SelectLocalization(Character.PredictMovementTypeToStart.IsValid,)]"
  DATA_CHARACTER_ADMIRAL_DEFEATED_IN_INVASION:0 "[Character.GetInvasion.GetName]において"
  DATA_POLITICAL_MOVEMENT_TYPE_FORMAT_TOOLTIP:0 ""
- DATA_COMPANY_NAME_FORMAT_TOOLTIP_PT3:0 "[concept_prosperity] : $COMPANY_PROSPERITY_FORMATTED$
-[concept_productivity] : @money![Company.GetFormattedProductivity]
-利益 : @money![Company.GetProfit|v+=D]"
+ DATA_COMPANY_NAME_FORMAT_TOOLTIP_PT3:0 "[concept_prosperity] : $COMPANY_PROSPERITY_FORMATTED$\n[concept_productivity] : @money![Company.GetFormattedProductivity]\n利益 : @money![Company.GetProfit|v+=D]"
  DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS:0 "[CompanyType.GetProducedPrestigeGoodsDesc]を生産できます"
  DATA_COMPANY_TYPE_PREDICTED_PRODUCTIVITY:0 "@money![CompanyType.GetProductivity|1v]予想される[concept_productivity]"
- USING_X_FREE_CHARTERS:0 "[Country.GetUsedFreeCharters|v]/[GetPlayer.GetModifier.GetValueWithBreakdownFor('country_free_charters_add')]のフリーな[Concept('concept_company_charter','$concept_company_charters$')]を利用"
+ USING_X_FREE_CHARTERS:0 "[Country.GetUsedFreeCharters|v]／[Country.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')]個の無償の[Concept('concept_company_charter','$concept_company_charters$')]を利用"
  EFFECTS_TITLE:0 "#title 効果 : #!"
  DATA_COMPANY_CHARTER_EFFECTS:0 "[CompanyCharter.GetEffects]"
  DATA_COMPANY_CHARTER_LORE:0 "[CompanyCharter.GetDesc]"
  DATA_COMPANY_CHARTER_TYPE_LORE:0 "[CompanyCharterType.GetDesc]"
  DATA_COMPANY_CHARTER_TYPE_BUTTON_NAME:0 "[CompanyCharterType.GetNameNoFormatting]を表示"
  COUNTRY_TOOLTIP_HAS_TREATIES:0 "[AddLocalizationIf(And(Not(Country.IsLocalPlayer),Not(IsDataModelEmpty(Country.GetTreatiesWith(GetPlayer.Self)))),'COUNTRY_TOOLTIP_ACTIVE_TREATIES')]"
- COUNTRY_TOOLTIP_ACTIVE_TREATIES:0 "#title [Country.GetName]との[Concept('concept_treaty','$concept_treaties$')] : #!#indent_newline:3 
-[Country.GetTreatiesWithDesc(GetPlayer.Self)]#!"
- PRESTIGE_GOODS_LEADERBOARD:0 "$PRESTIGE_GOODS_LEADERBOARD_HEADER$
-$TOOLTIP_DELIMITER$
-$BREAKDOWN$"
+ COUNTRY_TOOLTIP_ACTIVE_TREATIES:0 "#title [Country.GetName]との[Concept('concept_treaty','$concept_treaties$')] : #!#indent_newline:3 \n[Country.GetTreatiesWithDesc(GetPlayer.Self)]#!"
+ PRESTIGE_GOODS_LEADERBOARD:0 "$PRESTIGE_GOODS_LEADERBOARD_HEADER$\n$TOOLTIP_DELIMITER$\n$BREAKDOWN$"
  GOODS_LEADERBOARD_STATUS_INFO:0 "[Goods.GetMarket.GetOwner.GetFlagTextIcon] #tooltippable #tooltip:[Goods.GetTooltipTag],GOODS_NAME_TOOLTIP_LEADERBOARD_RANKING_BREAKDOWN [SelectLocalization(GreaterThan_int32(Goods.GetLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]#!#!"
  PRESTIGE_GOODS_LEADERBOARD_HEADER:0 "#header [Goods.GetMarket.GetOwner.GetFlagTextIcon][SelectLocalization(GreaterThan_int32(Goods.GetPrestigeGoodLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'PRESTIGE_GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','PRESTIGE_GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]#!"
  GOODS_PRESTIGE_AWARD_FOR_PRESTIGE_GOOD:0 "$LIST$の生産者よりの#v $VAL|=+$#! [concept_prestige]#v ##$SPOT|v$#!"
  GOODS_PRESTIGE_AWARD_FOR_PRESTIGE_GOOD_ENTRY:0 "[Goods.GetTextIcon][Goods.GetName] ($VAL|D0v$) "
  PRESTIGE_GOODS_TRADE_ADVANTAGE_EFFECT_DESC:0 "この$concept_good$の[Concept('concept_trade','$concept_exports$')]に対する[concept_trade_advantage]を最大で[GetDefine('NEconomy','TRADE_CENTER_ADVANTAGE_MARKET_PRESTIGE_GOOD_FACTOR')|0=+]引き上げます。"
  PRESTIGE_GOODS_THROUGHPUT_EFFECT_DESC:0 "この$concept_good$を原材料として利用し、#tooltippable;tooltip:$BREAKDOWN_TAG$ $concept_buildings$#!のスループットを最大[GetDefine('NEconomy','PRESTIGE_GOODS_INPUT_THROUGHPUT_BONUS')|%0=+]引き上げます。"
- PRESTIGE_GOODS_THROUGHPUT_EFFECT_BREAKDOWN:0 "#header [Concept('concept_building','$concept_buildings$')]は$GOODS_ICON$$GOODS_NAME$#!
-$TOOLTIP_DELIMITER$
-$LIST$を消費する可能性があります"
+ PRESTIGE_GOODS_THROUGHPUT_EFFECT_BREAKDOWN:0 "#header [Concept('concept_building','$concept_buildings$')]は$GOODS_ICON$$GOODS_NAME$#!\n$TOOLTIP_DELIMITER$\n$LIST$を消費する可能性があります"
  PRESTIGE_GOODS_COMBAT_UNIT_EFFECT_DESC:0 "この$concept_good$を供給された[Concept('concept_unit','$concept_units$')]に対して#tooltippable;tooltip:$BREAKDOWN_TAG$ 戦闘ボーナス#!を付与します。"
- PRESTIGE_GOODS_COMBAT_UNIT_EFFECT_BREAKDOWN:0 "#header [concept_unit]の戦闘ボーナス#v 100%#! [concept_prestige_good]を供給#!
-$TOOLTIP_DELIMITER$
-[Concept('concept_army','$concept_armies$')]向け : 
-$ARMY_DETAILS$
-
-[Concept('concept_fleet','$concept_fleets$')]向け : 
-$NAVY_DETAILS$"
+ PRESTIGE_GOODS_COMBAT_UNIT_EFFECT_BREAKDOWN:0 "#header [concept_unit]の戦闘ボーナス#v 100%#! [concept_prestige_good]を供給#!\n$TOOLTIP_DELIMITER$\n[Concept('concept_army','$concept_armies$')]向け : \n$ARMY_DETAILS$\n\n[Concept('concept_fleet','$concept_fleets$')]向け : \n$NAVY_DETAILS$"
  PRESTIGE_GOODS_LEADERBOARD_STATUS_INFO:0 "[Goods.GetMarket.GetOwner.GetFlagTextIcon] #tooltippable #tooltip:[Goods.GetTooltipTag],PRESTIGE_GOODS_NAME_TOOLTIP_LEADERBOARD_RANKING_BREAKDOWN [SelectLocalization(GreaterThan_int32(Goods.GetPrestigeGoodLeaderboardSpot(Goods.GetMarket.GetOwner),'(int32)0'),'PRESTIGE_GOODS_LEADERBOARD_HEADER_TOP_PRODUCER','PRESTIGE_GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER')]#!#!"
  PRESTIGE_GOODS_NAME_TOOLTIP_LEADERBOARD_RANKING_BREAKDOWN:0 "[Goods.GetPrestigeGoodLeaderboardSpotDesc(GetPlayer.Self)]"
  PRESTIGE_GOODS_LEADERBOARD_HEADER_TOP_PRODUCER:0 "#v ##[Goods.GetPrestigeGoodLeaderboardSpot(Goods.GetMarket.GetOwner)]#! $concept_prestige_good_short$ [Goods.GetBaseGoods.GetNameNoFormatting]の世界的生産者[Goods.GetPrestigeAwardForPrestigeGoodSpotDesc(Goods.GetPrestigeGoodLeaderboardSpot(Goods.GetMarket.GetOwner.Self))]"
  PRESTIGE_GOODS_LEADERBOARD_HEADER_INSIGNIFICANT_PRODUCER:0 " $concept_prestige_good_short$[Goods.GetBaseGoods.GetNameNoFormatting]の主要生産者ではありません"
- CONTEXTUAL_GOODS_GENERATION_INFO_WORLD_MARKET:0 "[concept_world_market] : @money![Goods.GetWorldMarketBasePrice|0v][Goods.GetCompareIconAgainstBasePriceNoFormatting(Goods.GetWorldMarketBasePrice)] ([concept_base_price]の#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetWorldMarketBasePrice)|%0=-]#!) 
-残高 : #variable [Goods.GetWorldMarketExportsAndImportsBalance|=D+]#!
-$TAB$[Goods.GetWorldMarketExportsWithTooltip][Concept('concept_trade','$concept_exports$')]
-$TAB$[Goods.GetWorldMarketImportsWithTooltip][Concept('concept_trade','$concept_imports$')]
-
-"
+ CONTEXTUAL_GOODS_GENERATION_INFO_WORLD_MARKET:0 "[concept_world_market] : @money![Goods.GetWorldMarketBasePrice|0v][Goods.GetCompareIconAgainstBasePriceNoFormatting(Goods.GetWorldMarketBasePrice)] ([concept_base_price]の#v [Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetWorldMarketBasePrice)|%0=-]#!) \n残高 : #variable [Goods.GetWorldMarketExportsAndImportsBalance|=D+]#!\n$TAB$[Goods.GetWorldMarketExportsWithTooltip][Concept('concept_trade','$concept_exports$')]\n$TAB$[Goods.GetWorldMarketImportsWithTooltip][Concept('concept_trade','$concept_imports$')]\n\n"
  DATA_LAW_REQUIREMENTS_HEADER:0 "条件 : "
  DATA_LAW_EFFECTS_HEADER:0 "効果 : "
  DATA_LAW_CUSTOM_EFFECTS_HEADER:0 "施行時の即時効果 : "
@@ -577,3 +525,6 @@ $TAB$[Goods.GetWorldMarketImportsWithTooltip][Concept('concept_trade','$concept_
  DATA_MILITARY_FORMATION_UNITS:0 "[MilitaryFormation.GetUnitIcon] #v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP [AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw,MilitaryFormation.GetNumCombatUnits),'@warning! ')][MilitaryFormation.GetNumCombatUnits]#!#!#!/[MilitaryFormation.GetCommandLimit][SelectLocalization(MilitaryFormation.IsArmy,'BATTALIONS_CONCEPT','FLOTILLAS_CONCEPT')] $INCOMING_NUMBER_OF_REGULARS_LABEL$"
  DATA_MILITARY_FORMATION_UPKEEP:0 "@money!#v #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_EXPENSE_TOOLTIP_TAG [MilitaryFormation.GetGoodsConsumptionCostRaw|0-K]#!#!#!維持費"
  DATA_MILITARY_FORMATION_COLUMN_ONE:0 "$MILITARY_FORMATION_OFFENSE_DEFENSE$[AddLocalizationIf(MilitaryFormation.IsArmy,'DATA_MILITARY_FORMATION_ATTRITION')]"
+ INDUSTRIES_CONCEPT:0 "[Concept('concept_building','$concept_building_industries$')]"
+ INDUSTRY_CONCEPT:0 "[Concept('concept_building','$concept_building_industry$')]"
+ DATA_COMPANY_TYPE_POTENTIAL_ADDITIONAL_INDUSTRIES_HEADER:0 "[Concept('concept_company_charter','$concept_company_charters$')]で追加される可能性のある[Concept('concept_building','$concept_building_industries$')] : "

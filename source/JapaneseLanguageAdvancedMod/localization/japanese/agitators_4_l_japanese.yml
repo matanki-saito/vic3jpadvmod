@@ -1814,11 +1814,7 @@
  french_pretenders_pulse.14.c:0 "[SCOPE.sCharacter('partisan_character').GetHerHis|U]言葉はクーデターをほのめかしている。直ちに解任するんだ。"
  french_pretenders_pulse.15.t:0 "[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の人々"
  french_pretenders_pulse.15.d:0 "経験豊富で、大衆主義的な政治を熱烈に支持する[SCOPE.sCharacter('partisan_character').GetFullName]が、庶民の間で自らの[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]の主張をさらに広める活動を開始した。"
- french_pretenders_pulse.15.f:0 "#bold フランスの鐘が[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]家のために鳴る！#!
-
-新たな王、新たなシャルルマーニュだ！フランス万歳！[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]万歳！
-
-#italic [SCOPE.sCharacter('partisan_character').GetFullNameNoFormatting]に率いられ、[SCOPE.sState('capital_scope').GetCityHubName]で市民が行進。参加者は[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]の色を着用することが推奨されている。#!"
+ french_pretenders_pulse.15.f:0 "#bold フランスの鐘が[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]家のために鳴る！#!\n\n新たな王、新たなシャルルマーニュだ！フランス万歳！[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]万歳！\n\n#italic [SCOPE.sCharacter('partisan_character').GetFullNameNoFormatting]に率いられ、[SCOPE.sState('capital_scope').GetCityHubName]で市民が行進。参加者は[SCOPE.sCharacter('partisan_character').GetCustom('french_dynasty_name')]の色を着用することが推奨されている。#!"
  french_pretenders_pulse.15.a:0 "[SCOPE.sCharacter('partisan_character').GetHerHis]主張にとってはかなりの恩恵があるだろう。"
  french_pretenders_pulse.15.b:0 "[SCOPE.sCharacter('partisan_character').GetHerHis|U]働きにより、[SCOPE.sCharacter('partisan_character').GetIdeology.GetName]のリーダーたちに新たな光を当てることになるだろう。"
  french_pretenders_pulse.16.t:0 "家々の小競り合い"
@@ -1871,13 +1867,13 @@
  notification_paris_commune_automation_pulse_1_c_desc:0 "[SCOPE.sCountry('paris_commune_nation_scope').GetName]が多数のパリの旧教会を[SCOPE.gsInterestGroup('seize_church_ig').GetName]に移譲し、政治集会を開催している。\n\n#bold パリ・コミューン#!の進捗が#variable 5#!#bold 増加#!した。"
  notification_paris_commune_automation_pulse_1_c_tooltip:0 "#header $notification_paris_commune_automation_pulse_1_c_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_1_c_desc$"
  notification_paris_commune_automation_pulse_2_a_name:0 "パリ・コミューン支持者、[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を処刑"
- notification_paris_commune_automation_pulse_2_a_desc:0 "[SCOPE.sCountry('paris_commune_nation_scope').GetAdjective]国家警備隊がパリ郊外で[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を捕らえ、銃撃により処刑した。\n\n#bold パリ・コミューン#!の進捗が#variable 10#!#bold 増加#!した。"
+ notification_paris_commune_automation_pulse_2_a_desc:0 "[SCOPE.sCountry('paris_commune_nation_scope').GetAdjective]国家警備隊がパリ郊外で[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を捕らえ、銃殺した。\n\n#bold パリ・コミューン#!の進捗が#variable 10#!#bold 増加#!した。"
  notification_paris_commune_automation_pulse_2_a_tooltip:0 "#header $notification_paris_commune_automation_pulse_2_a_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_2_a_desc$"
  notification_paris_commune_automation_pulse_2_b_name:0 "パリ・コミューン支持者、[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を投獄"
  notification_paris_commune_automation_pulse_2_b_desc:0 "[SCOPE.sCountry('paris_commune_nation_scope').GetAdjective]国家警備隊がパリ郊外で[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を捕らえた。同氏は市内の牢獄に移送されている。\n\n#bold パリ・コミューン#!の進捗が#variable 5#!#bold 増加#!した。"
  notification_paris_commune_automation_pulse_2_b_tooltip:0 "#header $notification_paris_commune_automation_pulse_2_b_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_2_b_desc$"
  notification_paris_commune_automation_pulse_2_c_name:0 "パリ・コミューン支持者、[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を処刑"
- notification_paris_commune_automation_pulse_2_c_desc:0 "[SCOPE.sCountry('paris_commune_nation_scope').GetName]が正式に指揮を執っていた国家警備隊がパリ郊外で[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を捕らえ、銃撃により処刑した。\n\n#bold パリ・コミューン#!の進捗が#variable 5#!#bold 減少#!した。"
+ notification_paris_commune_automation_pulse_2_c_desc:0 "[SCOPE.sCountry('paris_commune_nation_scope').GetName]が正式に指揮を執っていた国家警備隊がパリ郊外で[SCOPE.sCharacter('execited_general_scope').GetRankName][SCOPE.sCharacter('execited_general_scope').GetFullName]を捕らえ、銃殺した。\n\n#bold パリ・コミューン#!の進捗が#variable 5#!#bold 減少#!した。"
  notification_paris_commune_automation_pulse_2_c_tooltip:0 "#header $notification_paris_commune_automation_pulse_2_c_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_2_c_desc$"
  notification_paris_commune_automation_pulse_3_a_name:0 "パリ・コミューン支持者、要塞化計画を委任"
  notification_paris_commune_automation_pulse_3_a_desc:0 "[SCOPE.sCountry('paris_commune_nation_scope').GetName]は、パリの防衛網の管理をそれぞれの地域の地元住民に委任した。このポピュリスト的取り組みにより、防衛側の士気が高まっている。\n\n#bold パリ・コミューン#!の進捗が#variable 10#!#bold 増加#!した。"
@@ -2044,29 +2040,13 @@
  modifier_nightingale_movement:0 "探し求める者への思い"
  historical_agitators.23.t:0 "ランプの貴婦人"
  historical_agitators.23.d:0 "[ROOT.GetCountry.GetName]にやって来た[SCOPE.sCharacter('historic_agitator_scope').GetFullName]への反応は、まちまちでした。看護における先進的な活動をこの国に持ち込んだことで、女性の職場進出に関する法律を変えようとしていることについて、広く噂されるようになったのです。"
- historical_agitators.23.f:0 "我々の病院において、彼女は掛け値なしに「救いの天使」だ。ほっそりとした彼女が廊下を静かに歩くと、その姿を見られた喜びで患者たちの顔がほころぶ。
-
-夜になり医官たちが全員就寝すると、数マイルにもわたって臥せる病人たちを静寂と暗闇が包む。すると彼女は小さなランプを手に持ち、たった1人で見回りをするのだ。"
+ historical_agitators.23.f:0 "我々の病院において、彼女は掛け値なしに「救いの天使」だ。ほっそりとした彼女が廊下を静かに歩くと、その姿を見られた喜びで患者たちの顔がほころぶ。\n\n夜になり医官たちが全員就寝すると、数マイルにもわたって臥せる病人たちを静寂と暗闇が包む。すると彼女は小さなランプを手に持ち、たった1人で見回りをするのだ。"
  historical_agitators.23.a:0 "ハンマーを持つ女だ！彼女は怪我人を治療する薬を取るため、鍵のかかった倉庫に押し入ったのだ。"
  historical_agitators.23.b:0 "彼女の提案は[ROOT.GetCountry.GetName]で勢いを増している。"
  government_petition_events.1.d2:0 "現在の統治における自らの役割が制限されていることに不満を抱いた[SCOPE.gsInterestGroup('government_petition_ig').GetName]は、政府に対し、[SCOPE.sLaw('government_petition_law').GetName]を直ちに制定するよう求める請願を提出しました。"
  government_petition_events.1.d3:0 "[SCOPE.gsInterestGroup('government_petition_ig').GetName]の[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetCustom('petition_trait_descriptor')]な指導者である[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetFullName]は、[SCOPE.sLaw('government_petition_law').GetName]の制定計画を政府に提示しました。この法律の制定が成功すれば、有能な政治家として[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の評判を確実に高めることとなるでしょう。"
- government_petition_events.1.f2:0 "「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetCustom('getMsMr')][SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]から声明を受け取っています」秘書が口を開いた。「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe|U]は、これは最後通告ではないと強調したいようです」
-
-大臣は片眉を上げた。「つまり、どういうことだ？」
-
-「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe|U]は、政府が『この声明を裏付ける、意義のある差し迫った行動』を取らない場合、[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe]は、[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の支持者に、政府が彼らの声を反映させていると今後も説明し続けることはできない、と述べています」
-
-「それは、最後通告なのでは？」
-
-「そのようです」"
- government_petition_events.1.f3:0 "「少しよろしいでしょうか？」
-
-ドアを出かけていた大臣が、その声に驚いて足を止めた。廊下には[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetWomanMan]が立っており、革製の綴じバインダーを手にしていた。[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]―大臣が[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の姿を見間違えるはずもなかった。
-
-「ええ、もちろん」と彼は言う。「何かご用で…」
-
-[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]はうなずき、バインダーを差し出した。重さからして、少なくとも100ページはあるだろう。「明日には第一稿を提出したいと思っています」と[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe]は言った。「お手伝いいただければ光栄です」"
+ government_petition_events.1.f2:0 "「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetCustom('getMsMr')][SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]から声明を受け取っています」秘書が口を開いた。「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe|U]は、これは最後通告ではないと強調したいようです」\n\n大臣は片眉を上げた。「つまり、どういうことだ？」\n\n「[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe|U]は、政府が『この声明を裏付ける、意義のある差し迫った行動』を取らない場合、[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe]は、[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の支持者に、政府が彼らの声を反映させていると今後も説明し続けることはできない、と述べています」\n\n「それは、最後通告なのでは？」\n\n「そのようです」"
+ government_petition_events.1.f3:0 "「少しよろしいでしょうか？」\n\nドアを出かけていた大臣が、その声に驚いて足を止めた。廊下には[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetWomanMan]が立っており、革製の綴じバインダーを手にしていた。[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]―大臣が[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetHerHis]の姿を見間違えるはずもなかった。\n\n「ええ、もちろん」と彼は言う。「何かご用で…」\n\n[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetLastNameNoFormatting]はうなずき、バインダーを差し出した。重さからして、少なくとも100ページはあるだろう。「明日には第一稿を提出したいと思っています」と[SCOPE.gsInterestGroup('government_petition_ig').GetLeader.GetSheHe]は言った。「お手伝いいただければ光栄です」"
  political_operator_trait_tt:0 "常に有能"
  charismatic_trait_tt:0 "カリスマ的"
  ambitious_trait_tt:0 "野心的"

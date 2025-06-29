@@ -118,11 +118,7 @@
  italian_states_choose_sides_danger_tt:0 "@warning! #bold イタリア#!各州との関係が急速に悪化する可能性があります"
  italian_unification.8.t:0 "イタリア独立戦争"
  italian_unification.8.d:0 "[SCOPE.sCountry('rsm_scope').GetCapital.GetCityHubName]の革命派が、[SCOPE.sCountry('rsm_revolted_scope').GetName]の支配から独立した[SCOPE.sCountry('rsm_scope').GetName]の樹立を宣言しました。彼らはイタリア全土に対し、この戦いへの援助を呼びかけています。"
- italian_unification.8.f:0 "「母上…私の心は決まっています。あなたの賛成があろうとなかろうと、私はヴェネツィアに行きます」
-
-「そう、なら行けばいい！私には、旗のような無意味なもののために命を捨てる息子などいないわ。こんなペンネの長さを測るような無駄な行為で、私はすでに兄弟やおじを失っているのよ。ここで安全に暮らしなさい！」
-
-「無駄などではありません、母上！ひとつのイタリアに戻れる可能性があるのです。好きな所に行き、好きなことをできるようになるのです。まっとうな#bold 人生#!を取り戻せるのですよ！」"
+ italian_unification.8.f:0 "「母上…私の心は決まっています。あなたの賛成があろうとなかろうと、私はヴェネツィアに行きます」\n\n「そう、なら行けばいい！私には、旗のような無意味なもののために命を捨てる息子などいないわ。こんなペンネの長さを測るような無駄な行為で、私はすでに兄弟やおじを失っているのよ。ここで安全に暮らしなさい！」\n\n「無駄などではありません、母上！ひとつのイタリアに戻れる可能性があるのです。好きな所に行き、好きなことをできるようになるのです。まっとうな#bold 人生#!を取り戻せるのですよ！」"
  italian_unification.8.a:0 "彼らが我々のために戦うなら、我々も彼らのために戦おう。"
  italian_unification.8.b:0 "[SCOPE.sCountry('rsm_scope').GetCapital.GetCityHubName]のために[ROOT.GetCountry.GetAdjectiveNoFormatting]の民の血を流すつもりはない。"
  italian_unification.10.t:0 "イタリア統一運動のささやき"
@@ -210,11 +206,7 @@
  CHI_missionaries.1.b:0 "彼らは説教をやめ、アヘンを持って立ち去るべきだ。"
  CHI_missionaries.2.t:0 "[SCOPE.sState('forbidden_state').GetName]にて国境の侵害"
  CHI_missionaries.2.d:0 "[SCOPE.sCountry('missionary_country').GetName]から訪れた[GetReligion('protestant').GetName]宣教師の一団が、[SCOPE.sState('forbidden_state').GetName]地方の国境を数マイル越えたところで見つかりました。外国人の立ち入りは禁止されている場所です。"
- CHI_missionaries.2.f:0 "「ここ数週間で13人目だ。久しぶりに[SCOPE.sCountry('missionary_country').GetAdjectiveNoFormatting]が来たな」
-
-「待て…この書面を見ろ。保護されている。どうする？」
-
-「それが問題か？字も読めない迷えるキリスト教徒だ。適応されるのは我々の法であり、こいつのじゃあない」"
+ CHI_missionaries.2.f:0 "「ここ数週間で13人目だ。久しぶりに[SCOPE.sCountry('missionary_country').GetAdjectiveNoFormatting]が来たな」\n\n「待て…この書面を見ろ。保護されている。どうする？」\n\n「それが問題か？字も読めない迷えるキリスト教徒だ。適応されるのは我々の法であり、こいつのじゃあない」"
  CHI_missionaries.2.a:0 "彼らを国境まで連れていき、処刑する。"
  CHI_missionaries.2.b:0 "迷信を否定する、我が国の法律第六条を施行する。"
  CHI_missionaries.2.c:0 "限定的に地域を開放する。"
@@ -458,19 +450,7 @@
  alk_breakup.1.e:0 "土地を先住民に返還する。"
  modifier_ryotwari_system:0 "ライーヤトワーリー制"
  je_risorgimento_italian_minors_tt:0 "我々が唯一の#b$ITA_ADJ$ #![concept_unification_candidate]になれれば、#b$ITA_ADJ$ #!の諸小国は我々と一体になってくれるだろう。"
- italian_nationalist_movements_list_tt:0 "#v$ITA_ADJ$ #![concept_unification]に対応する[Concept('concept_political_movement','$concept_political_movements$')]には以下が含まれます。
- • $movement_liberal$
- • $movement_radical$
- • $movement_anti_slavery$
- • $movement_positivist$
- • $movement_labor$
- • $movement_cultural_majority$
- • $movement_fascist$
- • $movement_modernizer$
- • $movement_socialist$
- • $movement_communist$
- • $movement_anarchist$
- • $movement_nihilist$"
+ italian_nationalist_movements_list_tt:0 "#v$ITA_ADJ$ #![concept_unification]に対応する[Concept('concept_political_movement','$concept_political_movements$')]には以下が含まれます。\n • $movement_liberal$\n • $movement_radical$\n • $movement_anti_slavery$\n • $movement_positivist$\n • $movement_labor$\n • $movement_cultural_majority$\n • $movement_fascist$\n • $movement_modernizer$\n • $movement_socialist$\n • $movement_communist$\n • $movement_anarchist$\n • $movement_nihilist$"
  modifier_italian_unificationist_sentiment:0 "イタリア国民主義的な感情"
  movement_compatible_with_italian_unification_tt:0 "運動は#v$ITA_ADJ$ #![concept_unification]に#tooltippable;tooltip:[GetPlayer.GetTooltipTag],italian_nationalist_movements_list_tt 対応する#!"
  ideology_utopian:0 "空想的社会主義"
@@ -479,9 +459,7 @@
  modifier_utopian_commune:0 "理想郷的集落"
  utopian.1.t:0 "理想郷への窓"
  utopian.1.d:0 "[SCOPE.sCharacter('utopian_leader_scope').GetFullName]の[GetIdeology('ideology_utopian').GetName]の理論に触発された集団が、[SCOPE.sState('utopian_community_state_scope').GetName]の農村部に実験的な集落を設立しました。この集落は、牧歌的な未来社会を垣間見られる窓のようなものとして作られています。"
- utopian.1.f:0 "「王に使える者が\"小姓\"と呼ばれるが、ファランステールに仕える者こそ、そう呼ばれるに相応しい。なぜなら、ファランステールは現世における神だからだ。ファランステールは神の精神だ。なぜなら、情熱的な魅力、実践的な真理、数学的な正義、行動の統一によって調和する、12の情熱によって構成されているからだ。
-
-よって、連帯してファランステールに仕えることは神に仕えることであり、それゆえに家事労働は調和の中にあると思い描かれるのだ。この根源的な産業の一分野が今日のように蔑ろにされれば、情熱の均衡は不可能になるだろう」"
+ utopian.1.f:0 "「王に使える者が\"小姓\"と呼ばれるが、ファランステールに仕える者こそ、そう呼ばれるに相応しい。なぜなら、ファランステールは現世における神だからだ。ファランステールは神の精神だ。なぜなら、情熱的な魅力、実践的な真理、数学的な正義、行動の統一によって調和する、12の情熱によって構成されているからだ。\n\nよって、連帯してファランステールに仕えることは神に仕えることであり、それゆえに家事労働は調和の中にあると思い描かれるのだ。この根源的な産業の一分野が今日のように蔑ろにされれば、情熱の均衡は不可能になるだろう」"
  utopian.1.a:0 "心が動かされたよ。"
  utopian.1.b:0 "何の成果も出はしないだろう。"
  utopian.1.c:0 "こういうところから反乱が起きるのだ。"
@@ -509,22 +487,14 @@
  modifier_restored_capital_to_rome:0 "ローマの復活"
  election_generic.1.t:0 "喫緊の課題"
  election_generic.1.d:0 "現在実施されている選挙では、さまざまな対立政党の政策に注目が集まっています。有権者たちは[ROOT.GetCountry.GetName]全土で次の政権を委ねるのにふさわしい政党がどこなのかを議論しています。"
- election_generic.1.f:0 "「私がもっとも重視するのは自分の投資の安定性です。混乱をもたらすような政党は、私は支持できません」
-
-株式仲買人は葉巻を灰皿のふちで叩きながら続けました。記者はその間、メモにペンを走らせました。
-
-「次期政権の関税政策は私が必要とする輸入品にどのような影響を与えるでしょうか？不確実性を強めるような税金を課そうとしているのでしょうか？軍事的な冒険に踏み込むつもりでしょうか？この冒険がもたらすのは利益でしょうか、それとも破滅でしょうか？考慮すべきことはたくさんあります」"
+ election_generic.1.f:0 "「私がもっとも重視するのは自分の投資の安定性です。混乱をもたらすような政党は、私は支持できません」\n\n株式仲買人は葉巻を灰皿のふちで叩きながら続けました。記者はその間、メモにペンを走らせました。\n\n「次期政権の関税政策は私が必要とする輸入品にどのような影響を与えるでしょうか？不確実性を強めるような税金を課そうとしているのでしょうか？軍事的な冒険に踏み込むつもりでしょうか？この冒険がもたらすのは利益でしょうか、それとも破滅でしょうか？考慮すべきことはたくさんあります」"
  election_generic.1.a:0 "[SCOPE.sParty('party_1_scope').GetName]は素晴らしい討論を行っています。"
  election_generic.1.b:0 "有権者たちは[SCOPE.sParty('party_2_scope').GetName]の政策を信頼しています。"
  election_generic.1.c:0 "[SCOPE.sParty('party_3_scope').GetName]の政策にはメリットがあります。"
  election_generic.1.e:0 "もっとも良い主張をしているのは[SCOPE.sParty('party_4_scope').GetName]です。"
  election_generic.2.t:0 "人気投票"
  election_generic.2.d:0 "有権者たちの目は政権のトップを目指す候補者たちに向いています。選挙が近づくにつれ、[ROOT.GetCountry.GetName]の指導者にもっともふさわしいのは誰なのかについて議論が行われています。"
- election_generic.2.f:0 "「私は[SCOPE.gsInterestGroup('party_1_ig_scope').GetLeader.GetLastNameNoFormatting]を支持します」とバーにいた1人がつぶやきました。「[SCOPE.gsInterestGroup('party_1_ig_scope').GetLeader.GetHerHim]の何に同意しているのかは言えませんが、[SCOPE.gsInterestGroup('party_1_ig_scope').GetLeader.GetSheHe]は優秀な人物だと思います」
-
-すると、隣に座っていた人物が口を開きました。「彼がどんな人物と付き合いがあるのか見た方がいいのでは？」
-
-「そんなことは関係ない。誰でも同じだと[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]は知っています。愚かな友人なら意のままに操れますからね。」"
+ election_generic.2.f:0 "「私は[SCOPE.gsInterestGroup('party_1_ig_scope').GetLeader.GetLastNameNoFormatting]を支持します」とバーにいた1人がつぶやきました。「[SCOPE.gsInterestGroup('party_1_ig_scope').GetLeader.GetHerHim]の何に同意しているのかは言えませんが、[SCOPE.gsInterestGroup('party_1_ig_scope').GetLeader.GetSheHe]は優秀な人物だと思います」\n\nすると、隣に座っていた人物が口を開きました。「彼がどんな人物と付き合いがあるのか見た方がいいのでは？」\n\n「そんなことは関係ない。誰でも同じだと[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]は知っています。愚かな友人なら意のままに操れますからね。」"
  election_generic.2.a:0 "[SCOPE.gsInterestGroup('party_1_ig_scope').GetLeader.GetFullName]は時の人です。"
  election_generic.2.b:0 "この国に必要なのは[SCOPE.gsInterestGroup('party_2_ig_scope').GetLeader.GetFullName]政権です。"
  election_generic.2.c:0 "[SCOPE.gsInterestGroup('party_3_ig_scope').GetLeader.GetFullName]はこの仕事にふさわしい人物です。"

@@ -1342,7 +1342,7 @@
  TRIGGER_ANY_CIVIL_WAR_COUNT:0 "$FILTER$[Concept('concept_civil_war','$concept_civil_wars$')]が$PARAMETERS$ : "
  TRIGGER_MARKET_ACCESS_GREATER_THAN:0 "[concept_market_access]が$NUM|%0v$超 (現在 : $CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_LESS_THAN:0 "[concept_market_access]が$NUM|%0v$未満 (現在 : $CURRENT_VALUE|%0v$) "
- TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL:0 "[concept_market_access]が$NUM|%0v$以上 (現在 : $CURRENT_VALUE|%0v$) "
+ TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL:0 "[concept_market_access]が$NUM|%0v$以上 (現在は$CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL:0 "[concept_market_access]が$NUM|%0v$以下 (現在 : $CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_EQUAL:0 "[concept_market_access]が$NUM|%0v$ (現在 : $CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_NOT_EQUAL:0 "[concept_market_access]が$NUM|%0v$#bold ではない#! (現在 : $CURRENT_VALUE|%0v$) "
@@ -3407,7 +3407,7 @@
  TRIGGER_ANY_SCOPE_STATE_PERCENT_IN_STRATEGIC_REGION_THIRD:0 "[StrategicRegion.GetName]にあるすべての$FILTER$[StrategicRegion.GetName][Concept('concept_state','$concept_states$')]の$PARAMETERS$ : "
  TRIGGER_MARKET_ACCESS_GREATER_THAN_THIRD:0 "[State.GetName]の[concept_market_access]が$NUM|%0v$超 (現在 : $CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_LESS_THAN_THIRD:0 "[State.GetName]の[concept_market_access]が$NUM|%0v$未満 (現在 : $CURRENT_VALUE|%0v$) "
- TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL_THIRD:0 "[State.GetName]の[concept_market_access]が$NUM|%0v$以上 (現在 : $CURRENT_VALUE|%0v$) "
+ TRIGGER_MARKET_ACCESS_GREATER_OR_EQUAL_THIRD:0 "[State.GetName]における[concept_market_access]が$NUM|%0v$以上 (現在は$CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_LESS_OR_EQUAL_THIRD:0 "[State.GetName]の[concept_market_access]が$NUM|%0v$以下 (現在 : $CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_EQUAL_THIRD:0 "[State.GetName]の[concept_market_access]が$NUM|%0v$ (現在 : $CURRENT_VALUE|%0v$) "
  TRIGGER_MARKET_ACCESS_NOT_EQUAL_THIRD:0 "[State.GetName]の[concept_market_access]が$NUM|%0v$#bold ではない#! (現在 : $CURRENT_VALUE|%0v$) "
@@ -3427,214 +3427,110 @@
  TRIGGER_EXPORT_TARIFF_LEVEL_NOT:0 "[STATE_GOODS.GetGoods.GetName]の$CONCEPT_EXPORT$[Concept('concept_tariffs','$concept_tariff$')]レベルが$LEVEL|v$#b でない#!"
  TRIGGER_IMPORT_TARIFF_LEVEL:0 "[STATE_GOODS.GetGoods.GetName]の$CONCEPT_IMPORT$[Concept('concept_tariffs','$concept_tariff$')]レベルが$LEVEL|v$である"
  TRIGGER_IMPORT_TARIFF_LEVEL_NOT:0 "[STATE_GOODS.GetGoods.GetName]の$CONCEPT_IMPORT$[Concept('concept_tariffs','$concept_tariff$')]レベルが$LEVEL|v$#b でない#!"
- TRIGGER_BLOCKADE_LEVEL_GREATER_THAN:0 "[concept_blockade]レベルが$NUM|0%v$超
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_LESS_THAN:0 "[concept_blockade]レベルが$NUM|0%v$以上
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_GREATER_OR_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$未満
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_LESS_OR_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$以下
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_NOT_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$#bold ではない#!
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_GREATER_THAN_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$超
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_GREATER_OR_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$以上
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_LESS_THAN_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$未満
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_LESS_OR_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$以下
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_BLOCKADE_LEVEL_NOT_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$#bold ではない#!
- (現在 : $CURRENT_VALUE|%0$) "
- TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$超
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以上
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$未満
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以下
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$超
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以上
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$未満
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以下
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$超
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以上
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$未満
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以下
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$超
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以上
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$未満
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以下
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!
- (現在 : $CURRENT_VALUE|0$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!
- (現在 : $CURRENT_VALUE|0+=%$) "
- TRIGGER_MARKET_TRADE:0 "$MARKET_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_TRADE_NOT:0 "$MARKET_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_TRADE_THIRD:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_TRADE_THIRD_NOT:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_EXPORTS:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_EXPORTS_NOT:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_EXPORTS_THIRD:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_EXPORTS_THIRD_NOT:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_IMPORTS:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_IMPORTS_NOT:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_IMPORTS_THIRD:0 "$MARKET_NAME$から[MARKET.GetName]へ輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_IMPORTS_THIRD_NOT:0 "$MARKET_NAME$から[MARKET.GetName]へ輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_MARKET_TRADE_RELIANCE:0 "$MARKET_NAME$と取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_TRADE_RELIANCE_NOT:0 "$MARKET_NAME$と取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$#b ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_TRADE_RELIANCE_THIRD:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_TRADE_RELIANCE_THIRD_NOT:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$#b ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_EXPORTS_RELIANCE:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|0v%$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_EXPORTS_RELIANCE_NOT:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|0%v$#b ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_EXPORTS_RELIANCE_THIRD:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|v%0$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_EXPORTS_RELIANCE_THIRD_NOT:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|v%0$#b ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_IMPORTS_RELIANCE:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_IMPORTS_RELIANCE_NOT:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$#b ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_IMPORTS_RELIANCE_THIRD:0 "[MARKET.GetName]に$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_IMPORTS_RELIANCE_THIRD_NOT:0 "[MARKET.GetName]に$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$#b ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_PRODUCTION_SHARE:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$生産している
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_PRODUCTION_SHARE_NOT:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 生産していない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_PRODUCTION_SHARE_THIRD:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$生産している
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_PRODUCTION_SHARE_THIRD_NOT:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 生産していない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_CONSUMPTION_SHARE:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$消費している
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_CONSUMPTION_SHARE_NOT:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 消費していない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_CONSUMPTION_SHARE_THIRD:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$消費している
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_MARKET_CONSUMPTION_SHARE_THIRD_NOT:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 消費していない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_STATE_TRADE:0 "$STATE_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_TRADE_NOT:0 "$STATE_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_TRADE_THIRD:0 "[STATE.GetName]と$STATE_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_TRADE_THIRD_NOT:0 "[STATE.GetName]と$STATE_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_EXPORTS:0 "$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_EXPORTS_NOT:0 "$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_EXPORTS_THIRD:0 "[STATE.GetName]から$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_EXPORTS_THIRD_NOT:0 "[STATE.GetName]から$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_IMPORTS:0 "$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_IMPORTS_NOT:0 "$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_IMPORTS_THIRD:0 "[STATE.GetName]に$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$
- (現在$CURRENT_VALUE|0$) "
- TRIGGER_STATE_IMPORTS_THIRD_NOT:0 "[STATE.GetName]に$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!
- (現在$CURRENT_VALUE|0$) "
+ TRIGGER_BLOCKADE_LEVEL_GREATER_THAN:0 "[concept_blockade]レベルが$NUM|0%v$超\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_LESS_THAN:0 "[concept_blockade]レベルが$NUM|0%v$以上\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_GREATER_OR_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$未満\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_LESS_OR_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$以下\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_NOT_EQUAL:0 "[concept_blockade]レベルが$NUM|0%v$#bold ではない#!\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_GREATER_THAN_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$超\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_GREATER_OR_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$以上\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_LESS_THAN_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$未満\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_LESS_OR_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$以下\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_BLOCKADE_LEVEL_NOT_EQUAL_THIRD:0 "[STATE.GetName]の[concept_blockade]レベルが$NUM|0%v$#bold ではない#!\n (現在 : $CURRENT_VALUE|%0$) "
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$超\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以上\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$未満\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以下\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$超\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以上\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$未満\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$以下\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$超\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以上\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$未満\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以下\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$超\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以上\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$未満\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$以下\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の[concept_trade_advantage]が$NUM|0v$#bold ではない#!\n (現在 : $CURRENT_VALUE|0$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_IMPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_imports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL:0 "[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$超\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_GREATER_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以上\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_THAN_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$未満\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_LESS_OR_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$以下\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_RELATIVE_EXPORT_ADVANTAGE_NOT_EQUAL_THIRD:0 "[STATE_GOODS.GetState.GetName]の[STATE_GOODS.GetGoods.GetName][Concept('concept_trade','$concept_exports$')]の相対的な[concept_trade_advantage]が$NUM|0+=%$#bold ではない#!\n (現在 : $CURRENT_VALUE|0+=%$) "
+ TRIGGER_MARKET_TRADE:0 "$MARKET_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_TRADE_NOT:0 "$MARKET_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_TRADE_THIRD:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_TRADE_THIRD_NOT:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_EXPORTS:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_EXPORTS_NOT:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_EXPORTS_THIRD:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_EXPORTS_THIRD_NOT:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_IMPORTS:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_IMPORTS_NOT:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_IMPORTS_THIRD:0 "$MARKET_NAME$から[MARKET.GetName]へ輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_IMPORTS_THIRD_NOT:0 "$MARKET_NAME$から[MARKET.GetName]へ輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_MARKET_TRADE_RELIANCE:0 "$MARKET_NAME$と取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_TRADE_RELIANCE_NOT:0 "$MARKET_NAME$と取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$#b ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_TRADE_RELIANCE_THIRD:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_TRADE_RELIANCE_THIRD_NOT:0 "[MARKET.GetName]と$MARKET_NAME$間で取引した$GOODS_NAME$は[concept_buy_orders]と[concept_sell_orders]の$COMPARATOR$ $NUM|0v%$#b ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_EXPORTS_RELIANCE:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|0v%$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_EXPORTS_RELIANCE_NOT:0 "$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|0%v$#b ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_EXPORTS_RELIANCE_THIRD:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|v%0$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_EXPORTS_RELIANCE_THIRD_NOT:0 "[MARKET.GetName]から$MARKET_NAME$に輸出した$GOODS_NAME$は[concept_buy_orders]の$COMPARATOR$ $NUM|v%0$#b ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_IMPORTS_RELIANCE:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_IMPORTS_RELIANCE_NOT:0 "$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$#b ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_IMPORTS_RELIANCE_THIRD:0 "[MARKET.GetName]に$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_IMPORTS_RELIANCE_THIRD_NOT:0 "[MARKET.GetName]に$MARKET_NAME$から輸入した$GOODS_NAME$は[concept_sell_orders]の$COMPARATOR$ $NUM|v%0$#b ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_PRODUCTION_SHARE:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$生産している\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_PRODUCTION_SHARE_NOT:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 生産していない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_PRODUCTION_SHARE_THIRD:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$生産している\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_PRODUCTION_SHARE_THIRD_NOT:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 生産していない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_CONSUMPTION_SHARE:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$消費している\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_CONSUMPTION_SHARE_NOT:0 "[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 消費していない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_CONSUMPTION_SHARE_THIRD:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$消費している\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_MARKET_CONSUMPTION_SHARE_THIRD_NOT:0 "[COUNTRY.GetName]は[MARKET.GetName]で$GOODS_NAME$を$COMPARATOR$ $NUM|v%0$#b 消費していない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_STATE_TRADE:0 "$STATE_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_TRADE_NOT:0 "$STATE_NAME$と取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_TRADE_THIRD:0 "[STATE.GetName]と$STATE_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_TRADE_THIRD_NOT:0 "[STATE.GetName]と$STATE_NAME$間で取引した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_EXPORTS:0 "$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_EXPORTS_NOT:0 "$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|0v$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_EXPORTS_THIRD:0 "[STATE.GetName]から$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_EXPORTS_THIRD_NOT:0 "[STATE.GetName]から$STATE_NAME$に輸出した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_IMPORTS:0 "$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_IMPORTS_NOT:0 "$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_IMPORTS_THIRD:0 "[STATE.GetName]に$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$\n (現在$CURRENT_VALUE|0$) "
+ TRIGGER_STATE_IMPORTS_THIRD_NOT:0 "[STATE.GetName]に$STATE_NAME$から輸入した$GOODS_NAME$は$COMPARATOR$ $NUM|v0$#b ではない#!\n (現在$CURRENT_VALUE|0$) "
  TRIGGER_IS_INVASION_STALLED:0 "[concept_naval_invasion]は[concept_admiral][Concept('concept_order','$concept_orders$')]が不適切なため膠着状態です"
  TRIGGER_IS_INVASION_STALLED_NOT:0 "[concept_naval_invasion]は[concept_admiral][Concept('concept_order','$concept_orders$')]が不適切なため#b 膠着していません#!"
  TRIGGER_IS_INVASION_STALLED_THIRD:0 "[Invasion.GetName]は[concept_admiral][Concept('concept_order','$concept_orders$')]が不適切なため膠着状態です"
@@ -3680,54 +3576,30 @@
  TRIGGER_COMPANY_PROSPERITY_FIRST_NOT:0 "[COMPANY.GetName]の繁栄度は$COMPARATOR$ $NUM|v$#bold ではない#!"
  TRIGGER_COMPANY_PROSPERITY_THIRD:0 "[COMPANY.GetName]の繁栄度は$COMPARATOR$ $NUM|v$"
  TRIGGER_COMPANY_PROSPERITY_THIRD_NOT:0 "[COMPANY.GetName]の繁栄度は$COMPARATOR$ $NUM|v$#bold ではない#!"
- TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_THAN:0 "所有している[concept_building]レベルが$NUM|0%v$超
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_THAN:0 "所有している[concept_building]レベルが$NUM|0%v$以上
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_OR_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$未満
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_OR_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$以下
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_NOT_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$#bold ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_THAN_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$超
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$以上
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_THAN_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$未満
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$以下
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_OWNED_BUILDINGS_NOT_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$#bold ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_THAN:0 "採用している[concept_building]レベルが$NUM|0%v$超
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_THAN:0 "採用している[concept_building]レベルが$NUM|0%v$以上
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_OR_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$未満
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_OR_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$以下
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_NOT_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$#bold ではない#!
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_THAN_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$超
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$以上
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_THAN_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$未満
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$以下
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$
- (現在$CURRENT_VALUE|%0$) "
- TRIGGER_COMPANY_EMPLOYED_BUILDINGS_NOT_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$#bold ではない#!
- (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_THAN:0 "所有している[concept_building]レベルが$NUM|0%v$超\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_THAN:0 "所有している[concept_building]レベルが$NUM|0%v$以上\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_OR_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$未満\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_OR_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$以下\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_NOT_EQUAL:0 "所有している[concept_building]レベルが$NUM|0%v$#bold ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_THAN_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$超\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_GREATER_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$以上\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_THAN_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$未満\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_LESS_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$以下\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_OWNED_BUILDINGS_NOT_EQUAL_THIRD:0 "[COMPANY.GetName]が所有している[concept_building]レベルが$NUM|0%v$#bold ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_THAN:0 "採用している[concept_building]レベルが$NUM|0%v$超\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_THAN:0 "採用している[concept_building]レベルが$NUM|0%v$以上\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_OR_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$未満\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_OR_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$以下\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_NOT_EQUAL:0 "採用している[concept_building]レベルが$NUM|0%v$#bold ではない#!\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_THAN_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$超\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_GREATER_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$以上\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_THAN_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$未満\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_LESS_OR_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$以下\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$\n (現在$CURRENT_VALUE|%0$) "
+ TRIGGER_COMPANY_EMPLOYED_BUILDINGS_NOT_EQUAL_THIRD:0 "[COMPANY.GetName]が採用している[concept_building]レベルが$NUM|0%v$#bold ではない#!\n (現在$CURRENT_VALUE|%0$) "
  TRIGGER_COMPANY_IS_PROSPEROUS:0 "[Concept('concept_prosperity','$concept_prosperous$')]である"
  TRIGGER_COMPANY_IS_PROSPEROUS_NOT:0 "[Concept('concept_prosperity','$concept_prosperous$')]#bold ではない#!"
  TRIGGER_COMPANY_IS_PROSPEROUS_THIRD:0 "[COMPANY.GetName]は[Concept('concept_prosperity','$concept_prosperous$')]である"
@@ -3782,3 +3654,9 @@
  TRIGGER_HAS_TREATY_ALLIANCE_WITH_NOT:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]と$alliance$関係#b ではない#!"
  TRIGGER_HAS_TREATY_DEFENSIVE_PACT_WITH:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]と$defensive_pact$関係にある"
  TRIGGER_HAS_TREATY_DEFENSIVE_PACT_WITH_NOT:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]と$defensive_pact$関係#b ではない#!"
+ TRIGGER_HAS_LAW_OR_VARIANT:0 "Has enacted any variant of [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_NOT:0 "Has #bold not #!enacted any variant of [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_FIRST:0 "[COUNTRY.GetNameNoFlag] has enacted any variant of [TARGET_LAW_TYPE.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_FIRST_NOT:0 "[COUNTRY.GetNameNoFlag] does #bold not #!have any variant of [TARGET_LAW_TYPE.GetName] enacted"
+ TRIGGER_HAS_LAW_OR_VARIANT_THIRD:0 "Any variant of [TARGET_LAW_TYPE.GetName] has been enacted by [COUNTRY.GetName]"
+ TRIGGER_HAS_LAW_OR_VARIANT_THIRD_NOT:0 "Any variant of [TARGET_LAW_TYPE.GetName] has #bold not #!been enacted by [COUNTRY.GetName]"

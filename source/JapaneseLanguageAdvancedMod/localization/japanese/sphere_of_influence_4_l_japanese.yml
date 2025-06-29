@@ -532,7 +532,7 @@
  lobby_events.2.t:0 "虐げられた同胞"
  lobby_events.2.d_join:0 "[SCOPE.sReligion('relevant_religion').GetName]の人々に対する差別が[SCOPE.sCountry('relevant_country').GetName]で公表され、その結果、[SCOPE.gsInterestGroup('relevant_ig').GetName]が[SCOPE.sPoliticalLobby('relevant_lobby').GetName]と手を組んだ。"
  lobby_events.2.d_form:0 "[SCOPE.sReligion('relevant_religion').GetName]の人々に対する差別が[SCOPE.sCountry('relevant_country').GetName]で公表され、その結果、[SCOPE.gsInterestGroup('relevant_ig').GetName]は[SCOPE.sCountry('relevant_country').GetName]への敵対姿勢を求めてロビー活動を開始した。"
- lobby_events.2.f:0 "「彼らを許してやらないこともないが、それには悔い改めてもらう必要がある。[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]政府は反省を知らない傲慢の塊だ」\n\n「なんと寛大なことで」\n\n「しかも私は彼らの[Scope.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle]よりもはるかに多くを提示している！」\n\n彼は敵意をむき出しにしていた。窮地に立たされたアタッシェには、それがはっきりわかった。そして彼が自分のやり方を押し通すなら、国家もすぐに同じようにするだろう。"
+ lobby_events.2.f:0 "「彼らを許してやらないこともないが、それには悔い改めてもらう必要がある。[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]政府は反省を知らない傲慢の塊だ」\n\n「なんと寛大なことで」\n\n「しかも私は彼らの[SCOPE.sCountry('relevant_country').GetRuler.GetPrimaryRoleTitle]よりもはるかに多くを提示している！」\n\n彼は敵意をむき出しにしていた。窮地に立たされたアタッシェには、それがはっきりわかった。そして彼が自分のやり方を押し通すなら、国家もすぐに同じようにするだろう。"
  lobby_events.2.a:0 "話が通じない相手には剣が必要だ。"
  lobby_events.2.b:0 "話が通じない相手には剣が必要だ。"
  lobby_events.2.c:0 "奴らは#italic こんなこと#!のために、国家間の揉め事を起したいのか？"

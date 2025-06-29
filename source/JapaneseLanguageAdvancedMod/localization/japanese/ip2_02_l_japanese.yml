@@ -354,7 +354,7 @@
  achievement_azadi_madras_tt:0 "[GetStrategicRegion('region_madras').GetName]の[concept_strategic_region]の州すべてがその国 (従属国を含む) に領有されている"
  achievement_azadi_central_india_tt:0 "[GetStrategicRegion('region_central_india').GetName]の[concept_strategic_region]の州すべてがその国 (従属国を含む) に領有されている"
  achievement_azadi_punjab_tt:0 "[GetStrategicRegion('region_punjab').GetName]の[concept_strategic_region]の州すべてがその国 (従属国を含む) に領有されている"
- achievement_prolecorp_tt:0 "[concept_prosperity]が#v 200#!を超える[concept_company]を所有している"
+ achievement_prolecorp_tt:0 "[concept_prosperity]が#v 100#!を超える[concept_company]を所有している"
  achievement_the_man_who_would_be_king_1_tt:0 "[concept_ruler]が$Josiah$・$Harlan$である"
  achievement_the_man_who_would_be_king_2_tt:0 "#v $KAF$#!から#v $AFG$#!を形成した"
  india_events.18.t:0 "ベラールの管理"
@@ -385,14 +385,10 @@
  bombay_progress_bar_moderating_factor_tt:0 "基準値が#b 高い#![Concept('concept_presidency_stability','$concept_presidency_stability_short$')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')]) に向かって変化します"
  bengal_progress_bar_moderating_factor_tt:0 "基準値が#b 高い#![Concept('concept_presidency_stability','$concept_presidency_stability_short$')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')]) に向かって変化します"
  madras_progress_bar_moderating_factor_tt:0 "基準値が#b 高い#![Concept('concept_presidency_stability','$concept_presidency_stability_short$')] ([GetPlayer.MakeScope.ScriptValue('indian_uprising_baseline_drift_target')]) に向かって変化します"
- je_uneasy_raj_fail_header:0 "#title 次の場合、#b インド大反乱#!が発生します : #!
-"
- je_uneasy_raj_on_fail_header:0 "#title #b インド大反乱#!が発生した場合 : #!
-$EFFECT$"
- je_uneasy_raj_complete_header:0 "#title 次の場合、#b 企業支配#!が盤石になります : #!
-"
- je_uneasy_raj_on_complete_header:0 "#title #b 企業支配#!が盤石になった場合 : #!
-$EFFECT$"
+ je_uneasy_raj_fail_header:0 "#title 次の場合、#b インド大反乱#!が発生します : #!\n"
+ je_uneasy_raj_on_fail_header:0 "#title #b インド大反乱#!が発生した場合 : #!\n$EFFECT$"
+ je_uneasy_raj_complete_header:0 "#title 次の場合、#b 企業支配#!が盤石になります : #!\n"
+ je_uneasy_raj_on_complete_header:0 "#title #b 企業支配#!が盤石になった場合 : #!\n$EFFECT$"
  british_raj_later_tt:0 "#b インド大反乱#!を生き延びると、[ROOT.GetCountry.GetName]が#b [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting]による統治#!に再編されます"
  home_rule_unavailable_tt:0 "#b 企業支配#!が続く限り、#v $je_india_home_rule$#!は達成できません"
  modifier_intercommunal_violence_2:0 "$modifier_intercommunal_violence$"

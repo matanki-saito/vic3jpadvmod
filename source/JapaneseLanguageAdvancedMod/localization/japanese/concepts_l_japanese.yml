@@ -101,7 +101,7 @@
  concept_diplomatic_plays:0 "外交戦"
  concept_diplomatic_plays_short:0 "外交戦"
  concept_diplomatic_play_negotiated:0 "交渉済み"
- concept_diplomatic_play_desc:0 "$concept_diplomatic_play$とは、ある$concept_country$が他の$concept_countries$に譲歩を要求した後、2つ以上の[Concept('concept_country','$concept_countries$')]で敵対的な外交交渉を行う期間です。$concept_diplomatic_play$を始めるには、該当する[concept_strategic_region]に[concept_active_interest]を持っていなければなりません。それは、その$concept_strategic_region$の$concept_diplomatic_plays_short$に第三者として参加する資格ともなります。\n\n$concept_diplomatic_play$は[concept_opening_moves]、[concept_diplomatic_maneuvers]、[concept_countdown_to_war]の3フェーズを経て[Concept('concept_escalation','$concept_escalate$')]していきます。これらのフェーズは、$concept_diplomatic_play$が$concept_escalate$して[concept_war]になった場合に、[concept_peace_deal]を可能にする条件を設定するものです。$concept_war$は、$concept_diplomatic_play_short$の[concept_initiator]または[concept_target]のどちらかが手を引いて、相手の[Concept('concept_primary_demand','$concept_primary_demands$')]を受け入れれば回避できます。"
+ concept_diplomatic_play_desc:0 "$concept_diplomatic_play$とは、ある$concept_country$が他国に譲歩を要求した後、2つ以上の[Concept('concept_country','$concept_countries$')]で敵対的な外交交渉を行う期間です。$concept_diplomatic_play$を始めるには、該当する[concept_strategic_region]に[concept_active_interest]を持っていなければなりません。それは、その$concept_strategic_region$の$concept_diplomatic_plays_short$に第三者として参加する資格ともなります。\n\n$concept_diplomatic_play$は[concept_opening_moves]、[concept_diplomatic_maneuvers]、[concept_countdown_to_war]の3フェーズを経て[Concept('concept_escalation','$concept_escalate$')]していきます。これらのフェーズは、$concept_diplomatic_play$が$concept_escalate$して[concept_war]になった場合に、[concept_peace_deal]を可能にする条件を設定するものです。$concept_war$は、$concept_diplomatic_play_short$の[concept_initiator]または[concept_target]のどちらかが手を引いて、相手の[Concept('concept_primary_demand','$concept_primary_demands$')]を受け入れれば回避できます。"
  concept_sympathy:0 "同情心"
  concept_sympathy_desc:0 "[concept_diplomatic_play]に参加しているすべてのAI制御[Concept('concept_country','$concept_countries$')]は、各自ある程度の$concept_sympathy$を持ってプレイを開始し、闘争時に味方側をサポートする程度に影響します。AI[Concept('concept_country','$concept_countries$')]は[concept_target]、[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]を結んでいる国、そして高い[concept_infamy]の[concept_country]に反対している国に対する$concept_sympathy$が高くなる傾向があります。また$concept_sympathy$は[concept_diplomatic_play]が進むとともに強力な支援を獲得すると上昇することがあります。[Concept('concept_war_goal','$concept_war_goals$')]を追加することで[concept_infamy]が発生すると、対戦相手の$concept_sympathy$が高まる傾向になります。"
  concept_neutrality:0 "中立性"
@@ -200,7 +200,7 @@
  concept_diplomatic_action_desc:0 "[Concept('concept_instant_diplomatic_action','$concept_instant_diplomatic_actions$')]、[Concept('concept_ongoing_diplomatic_action','$concept_ongoing_diplomatic_actions$')]、[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]を含む、2つの[Concept('concept_country','$concept_countries$')]の間の相互干渉の広義語です。[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]と異なるのは、第三国がその結果に口を出すことができず、その行為自体が[concept_war]に発展する危険性がないことです。"
  concept_government_building:0 "政府施設"
  concept_government_buildings:0 "政府施設"
- concept_government_building_desc:0 "[concept_government]が[concept_treasury]の資金を使って所有および運営する[concept_building]のこと。\n\n$concept_government_building$は[Concept('concept_good','$concept_goods$')][concept_good_production]を持たず、そのため[concept_revenue]もありません。しかし、 [concept_bureaucracy]、[concept_infrastructure]、[concept_convoys]、[Concept('concept_unit','$concept_units$')]など、国を運営するにあたって必要な多くの資源を生産します。\n\n非軍事的な$concept_government_buildings$の[concept_workforce]は[concept_government_wage]に従って賃金を受け取り、[Concept('concept_military_building','$concept_military_buildings$')]は[concept_military_wage]に従って賃金を受け取ります。\n\n$concept_government_buildings$は常に完全に[concept_nationally_owned]です。"
+ concept_government_building_desc:0 "[concept_government]が[concept_treasury]の資金を使って所有および運営する[concept_building]のこと。\n\n$concept_government_buildings$は[Concept('concept_good','$concept_goods$')][concept_good_production]を持たず、そのため[concept_revenue]もありません。しかし、 [concept_bureaucracy]、[concept_infrastructure]、[concept_convoys]、[Concept('concept_unit','$concept_units$')]など、[concept_country]を運営するにあたって必要な多くの資源を生産します。\n\n非軍事的な$concept_government_buildings$の[concept_workforce]は[concept_government_wage]に従って賃金を受け取り、[Concept('concept_military_building','$concept_military_buildings$')]は[concept_military_wage]に従って賃金を受け取ります。\n\n$concept_government_buildings$は常に完全に[concept_nationally_owned]です。"
  concept_military_building:0 "軍事施設"
  concept_military_buildings:0 "軍事施設"
  concept_military_building_army_and_navy:0 "陸海軍"
@@ -529,14 +529,7 @@
  concept_defensive_pacts:0 "防衛協定"
  concept_defensive_pact_desc:0 "2つの[Concept('concept_country','$concept_countries$')]の間で結ばれる限定的な[concept_alliance]を規定した[concept_treaty][concept_article]です。2つの国のうちいずれかが$concept_diplomatic_play_short$の[concept_target]である[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]でのみ効力が生じます。"
  concept_supply:0 "供給"
- concept_supply_desc:0 "[concept_military_formation]の$concept_supply$は、[Concept('concept_unit','$concept_units$')]が[concept_organization]をどれだけ早く回復するかを決定します。
-
-#indent_newline:3 $concept_supply$は通常#v 100%#!ですが、$concept_army$が次の状態にある場合は低くなる可能性があります。
-―海外にいて、侵害された[concept_shipping_lane]による供給を受けている
-― [concept_building]が[Concept('concept_shortage','$concept_input_goods_shortages$')]の対象となる$concept_units$を含んでいる
-― $concept_army$が$concept_hq$から完全に切り離されている場合ゼロになる#!
-
-場合によっては[Concept('concept_modifier','$concept_modifiers$')]も適用されます。"
+ concept_supply_desc:0 "[concept_military_formation]の$concept_supply$は、[Concept('concept_unit','$concept_units$')]が[concept_organization]をどれだけ早く回復するかを決定します。\n\n#indent_newline:3 $concept_supply$は通常#v 100%#!ですが、$concept_army$が次の状態にある場合は低くなる可能性があります。\n―海外にいて、侵害された[concept_shipping_lane]による供給を受けている\n― [concept_building]が[Concept('concept_shortage','$concept_input_goods_shortages$')]の対象となる$concept_units$を含んでいる\n― $concept_army$が$concept_hq$から完全に切り離されている場合ゼロになる#!\n\n場合によっては[Concept('concept_modifier','$concept_modifiers$')]も適用されます。"
  concept_escort_convoys:0 "船団護衛"
  concept_escort_convoys_desc:0 "$concept_escort_convoys$は[Concept('concept_shipping_lane','$concept_shipping_lanes$')]を安全に通過させ、必要に応じて敵艦と交戦します。"
  concept_manpower:0 "人員"
@@ -558,7 +551,7 @@
  concept_emigrate:0 "出国移民"
  concept_emigration:0 "出国移民"
  concept_emigrating:0 "出国移民"
- concept_migration_desc:0 "[Concept('concept_state','$concept_states$')]間の[Concept('concept_pop','$concept_pops$')]の移動。$concept_migration$は一般的に同じ[concept_market]の[Concept('concept_state','$concept_states$')]間で起こりますが、[Concept('concept_mass_migration','$concept_mass_migrations$')]の場合は異なる$concept_markets$の[Concept('concept_country','$concept_countries$')]間で起こる場合もあります。\n\n$concept_migration$は、[concept_migration_pull]が低い$concept_states$から高い$concept_states$へと流れ、その差が大きいほど、移動人数は増加します。$concept_migration$率は、$concept_states$の[concept_infrastructure]などの要因の影響も受けます。\n\n移民は、$concept_pops$が$concept_emigrate$となることができ、その意思がある場合にのみ起こります。$concept_pops$は、十分に[Concept('concept_job_satisfaction','$concept_job_satisfaction_dissatisfied$')]である場合にのみ、$concept_emigrate$を検討します。たとえば、[concept_sol]が$concept_market$の平均未満である場合、または[concept_unemployed]である場合などです。\n\n同じ[concept_culture]の$concept_pops$が他にいない$concept_state$に到着した$concept_pops$は、[concept_cultural_community]を形成し、[concept_acceptance]に一時的なペナルティが発生します。"
+ concept_migration_desc:0 "[Concept('concept_state','$concept_states$')]間の[Concept('concept_pop','$concept_pops$')]の移動。$concept_migration$は一般的に同じ[concept_market]の[Concept('concept_state','$concept_states$')]間で起こりますが、[Concept('concept_mass_migration','$concept_mass_migrations$')]の場合は異なる$concept_markets$の[Concept('concept_country','$concept_countries$')]間で起こる場合もあります。\n\n$concept_migration$は、[concept_migration_pull]が低い$concept_states$から高い方へと流れ、その差が大きいほど、移動人数は増加します。$concept_migration$率は、$concept_state$の[concept_infrastructure]などの要因の影響も受けます。\n\n移民は、$concept_pops$が$concept_emigrate$となることができ、その意思がある場合にのみ起こります。$concept_pops$は、十分に[Concept('concept_job_satisfaction','$concept_job_satisfaction_dissatisfied$')]である場合にのみ、$concept_emigrating$を検討します。たとえば、[concept_sol]が$concept_market$の平均未満である場合、または[concept_unemployed]である場合などです。\n\n同じ[concept_culture]の$concept_pops$が他にいない$concept_state$に到着した$concept_pops$は、[concept_cultural_community]を形成し、[concept_acceptance]に一時的なペナルティが発生します。"
  concept_migration_target:0 "移住ターゲット"
  concept_migration_targets:0 "移住ターゲット"
  concept_migration_target_desc:0 "最適な移住先として[concept_mass_migration]に選ばれた[concept_state]。その周囲の$concept_state$にも$concept_mass_migration$からある程度の$concept_immigration$が流入します。\n\n$concept_mass_migrations$の$concept_mass_migration_eligible$であるためには、州が[Concept('concept_incorporated_state','$concept_incorporated$')]であり、#b [GetDefine('NPops','MASS_MIGRATION_TARGET_MIN_ARABLE_LAND')]#!の[concept_arable_land]と#b [GetDefine('NPops','MASS_MIGRATION_STATE_MIN_MARKET_ACCESS')|0%]#!の[concept_market_access]以上を所有している必要があります。さらに、$concept_state$が、別の$concept_mass_migration$のターゲットになっていてはならず、$concept_country$の[GetLawGroup('lawgroup_migration').GetName]および[GetLawGroup('lawgroup_citizenship').GetName][Concept('concept_law','$concept_laws$')]が、$concept_migration$を許可している必要があります。"
@@ -574,9 +567,7 @@
  concept_capital_state_desc_added:0 "\n以下の効果が適用されます : \n[GetStaticModifier('market_capital_state').GetDesc]"
  concept_treaty_port:0 "条約港"
  concept_treaty_ports:0 "条約港"
- concept_treaty_port_desc:0 "他の[concept_country]との[concept_trade]を開始する目的で、[concept_treaty]に基づいて設置された沿岸部の[concept_split_state]です。$concept_treaty_port$は$concept_province$を割譲した$concept_country$の[concept_market]に属し、[concept_world_market]との[concept_trade]を自由に行うことができます。
-
-[concept_tariffs]、[concept_subventions]、[Concept('concept_embargo','$concept_embargoes$')]が$concept_treaty_ports$に影響を与えることはなく、所有者は$concept_treaty_port$から輸出される[Concept('concept_good','$concept_goods$')]を輸入する際に[concept_trade_advantage]を得ることができます (逆も同様です) 。$concept_treaty_port$を割譲する$concept_treaty$が破棄された場合、$concept_treaty_port$ではなくなり、通常の[concept_state]となります。"
+ concept_treaty_port_desc:0 "他の[concept_country]との[concept_trade]を開始する目的で、[concept_treaty]に基づいて設置された沿岸部の[concept_split_state]です。$concept_treaty_port$は$concept_province$を割譲した$concept_country$の[concept_market]に属し、[concept_world_market]との[concept_trade]を自由に行うことができます。\n\n[concept_tariffs]、[concept_subventions]、[Concept('concept_embargo','$concept_embargoes$')]が$concept_treaty_ports$に影響を与えることはなく、所有者は$concept_treaty_port$から輸出される[Concept('concept_good','$concept_goods$')]を輸入する際に[concept_trade_advantage]を得ることができます (逆も同様です) 。$concept_treaty_port$を割譲する$concept_treaty$が破棄された場合、$concept_treaty_port$ではなくなり、通常の[concept_state]となります。"
  concept_prestige:0 "威信"
  concept_prestige_desc:0 "[concept_rank]は、自国の$concept_prestige$を世界中の他の[Concept('concept_country','$concept_countries$')]と比較することで決定されます。$concept_prestige$は主に[concept_gdp]で測定される経済力、[concept_power_projection]で測定される軍事力、そして自国の[concept_country_tier]から生じます。また、[SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Arts Academy')]や[Concept('concept_monument','$concept_monuments$')]、特定の[concept_good]の生産において世界をリードしているかなど他の要因によっても影響を受けることがあります。"
  concept_prestige_desc_gamestate:0 "[GetBuildingType('building_arts_academy').GetName]"
@@ -658,7 +649,7 @@
  concept_revolution:0 "革命"
  concept_revolutions:0 "革命"
  concept_revolutionary:0 "革命"
- concept_revolution_desc:0 "[Concept('concept_secession','$concept_secessions$')]とは反対に、$concept_revolution$は[concept_country]全体を取り込み、[concept_core_movement_ideology]に従って再形成しようとします。$concept_revolution$は、[Concept('concept_political_movement_support','$concept_political_movement_support_short$')]および[concept_activism]のレベルが高く、[concept_radical]の傾向が強くなりすぎた[concept_political_movement]から起こります。$concept_political_movement_short$が反乱を起こした場合、$concept_political_movement_supporting$[Concept('concept_pop','$concept_pops$')]が比較的強い[Concept('concept_state','$concept_states$')]は$concept_country$から分離し、[Concept('concept_loyalist','$concept_loyalists$')]を取り込むべく[concept_diplomatic_play]を開始します。\n\n$concept_political_movement_possessive_short$[Concept('concept_activism','$concept_activism_short$')]は、$concept_political_movement_supporting$$concept_pops$内の[Concept('concept_radical','$concept_radicals$')]の数を減らし、[Concept('concept_interest_group','$concept_interest_groups$')]の[concept_approval]を増やすと鈍化します。また、[SelectLocalization(GetPlayer.IsValid,'concept_revolution_desc_added','Home Affairs')][concept_institution]を使って$concept_revolution$を弱めたり、遅らせたりすることができます。"
+ concept_revolution_desc:0 "[Concept('concept_secession','$concept_secessions$')]とは反対に、$concept_revolution$は[concept_country]全体を取り込み、[concept_core_movement_ideology]に従って再形成しようとします。$concept_revolution$は、[Concept('concept_political_movement_support','$concept_political_movement_support_short$')]および[Concept('concept_activism','$concept_activism_short$')]のレベルが高く、[concept_radical]の傾向が強くなりすぎた[concept_political_movement]から起こります。$concept_political_movement_short$が反乱を起こした場合、$concept_political_movement_supporting$[Concept('concept_pop','$concept_pops$')]が比較的強い[Concept('concept_state','$concept_states$')]は$concept_country$から分離し、[Concept('concept_loyalist','$concept_loyalists$')]を取り込むべく[concept_diplomatic_play]を開始します。\n\n$concept_political_movement_possessive_short$[Concept('concept_activism','$concept_activism_short$')]は、$concept_political_movement_supporting$$concept_pops$内の[Concept('concept_radical','$concept_radicals$')]の数を減らし、[Concept('concept_interest_group','$concept_interest_groups$')]の[concept_approval]を増やすと鈍化します。また、[SelectLocalization(GetPlayer.IsValid,'concept_revolution_desc_added','Home Affairs')][concept_institution]を使って$concept_revolution$を弱めたり、遅らせたりすることができます。"
  concept_revolution_desc_added:0 "[GetInstitutionType('institution_home_affairs').GetName]"
  concept_civil_war:0 "内戦"
  concept_civil_wars:0 "内戦"
@@ -671,9 +662,7 @@
  concept_war_desc:0 "[concept_diplomatic_play]の平和的解決に失敗した結果、双方の[Concept('concept_country','$concept_countries$')]の間で起こる活発な武力衝突のことを表します。$concept_war$では、陸海空の[Concept('concept_commander','$concept_commanders$')]が[Concept('concept_order','$concept_orders$')]に従って特定の目的を達成し、その過程でしばしば双方の間で[Concept('concept_battle','$concept_battles$')]となることがあります。"
  concept_war_goal:0 "戦争目標"
  concept_war_goals:0 "戦争目標"
- concept_war_goal_desc:0 "$concept_war_goals$とは、[concept_country]が[concept_war]を行う際の目標です。これは[concept_diplomatic_play]中に決定され、$concept_war$が始まった後に確定されます。$concept_war_goal$が[concept_peace_deal]で主張されるたびに、相手がそれを受け入れる可能性は減少し、相手が合意するまでに[concept_war_support]が[Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')]されるべき度合いも増加します。$concept_war_support$が#v 0#!を下回るのは、敵陣営がすべての$concept_war_goals$を[Concept('concept_controlled_war_goal','$concept_controls_war_goal_short$')]している場合のみです。
-
-$concept_diplomatic_play$の一部として最初に主張した$concept_war_goal$は自分の$concept_primary_demand$とみなされ、$concept_diplomatic_plays$によってはすべての$concept_peace_deals$に含めることが要求されます。"
+ concept_war_goal_desc:0 "$concept_war_goals$とは、[concept_country]が[concept_war]を行う際の目標です。これは[concept_diplomatic_play]中に決定され、$concept_war$が始まった後に確定されます。$concept_war_goal$が[concept_peace_deal]で主張されるたびに、相手がそれを受け入れる可能性は減少し、相手が合意するまでに[concept_war_support]が[Concept('concept_war_exhaustion','$concept_war_exhaustion_exhausted$')]されるべき度合いも増加します。$concept_war_support$が#v 0#!を下回るのは、敵陣営がすべての$concept_war_goals$を[Concept('concept_controlled_war_goal','$concept_controls_war_goal_short$')]している場合のみです。\n\n$concept_diplomatic_play$の一部として最初に主張した$concept_war_goal$は自分の$concept_primary_demand$とみなされ、$concept_diplomatic_plays$によってはすべての$concept_peace_deals$に含めることが要求されます。"
  concept_resource_potential:0 "潜在的資源"
  concept_resource_potentials:0 "潜在的資源"
  concept_resource_potentials_short:0 "見込み"
@@ -822,7 +811,7 @@ $concept_diplomatic_play$の一部として最初に主張した$concept_war_goa
  concept_technology_era_desc:0 "[concept_technology] $concept_technology_eras_short$は、あるアイデアがどの時代に最初に発見、開発されたかを大まかに分類したものです。\n\n$concept_technology_era_short$ Iの発明は、1836年以前には世界の多くの地域でよく知られていたものです。\n$concept_technology_era_short$ IIの発明は、第一次産業革命 (1836年〜19世紀半ば) に関連するものです。\n$concept_technology_era_short$ IIIは、19世紀後半までの進化、安定化、標準化の時代のものです。\n$concept_technology_era_short$ IVは、世紀の変わり目の第二次産業革命に相当するものです。\n$concept_technology_era_short$ Vの発明は、変革をもたらす、現代的なアイデアです。\n\n$concept_technologies$は、$concept_technology_era_short$の後半に登場するほど、その発見にはより多くの[concept_innovation]が必要となります。$concept_technology_era_ahead_of_time_penalty_desc$"
  concept_technology:0 "技術"
  concept_technologies:0 "技術"
- concept_technology_desc:0 "$concept_technology$は、$PRODUCTION_NO_CONCEPT$、$MILITARY$、$SOCIETY$の分野のすべての発明をカバーしています。$concept_technologies$は国全体に影響を及ぼし、[Concept('concept_modifier','$concept_modifiers$')]によって[Concept('concept_country','$concept_country_possessive$')]の運営パラメータを変更するものから、新たな[Concept('concept_production_method','$concept_production_methods$')]や[Concept('concept_building','$concept_buildings$')]、[Concept('concept_law','$concept_laws$')]、[Concept('concept_decree','$concept_decrees$')]、[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]をアンロックするものまで様々です。\n\n新しい$concept_technologies$への進捗は[concept_innovation]によって生み出され、それは主に[SelectLocalization(GetPlayer.IsValid,'concept_technology_desc_added','University')] $concept_buildings$から生成されます。また、$concept_innovation$による進展に加え、$concept_technologies$はそれをが既に持っている$concept_countries$から持っていない$concept_countries$へ、[concept_technology_spread]によって伝播する可能性があります。\n\n$concept_technology$を獲得するために必要な進捗量は、その[Concept('concept_technology_era','$concept_technology_era_short$')]に依存します。$concept_technology_era_ahead_of_time_penalty_desc$"
+ concept_technology_desc:0 "$concept_technology$は、$PRODUCTION_NO_CONCEPT$、$MILITARY$、$SOCIETY$の分野のすべての発明をカバーしています。$concept_technologies$は国全体に影響を及ぼし、[Concept('concept_modifier','$concept_modifiers$')]によって[Concept('concept_country','$concept_country_possessive$')]の運営パラメータを変更するものから、新たな[Concept('concept_production_method','$concept_production_methods$')]や[Concept('concept_building','$concept_buildings$')]、[Concept('concept_law','$concept_laws$')]、[Concept('concept_decree','$concept_decrees$')]、[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]をアンロックするものまで様々です。\n\n新しい$concept_technologies$への進捗は[concept_innovation]によって生み出され、それは主に[SelectLocalization(GetPlayer.IsValid,'concept_technology_desc_added','University')] $concept_buildings$から生成されます。また、$concept_innovation$による進展に加え、$concept_technologies$はそれをが既に持っている$concept_countries$から持っていない国へ、[concept_technology_spread]によって伝播する可能性があります。\n\n$concept_technology$を獲得するために必要な進捗量は、その[Concept('concept_technology_era','$concept_technology_era_short$')]に依存します。$concept_technology_era_ahead_of_time_penalty_desc$"
  concept_technology_desc_added:0 " [GetBuildingType('building_university').GetName]"
  concept_canal:0 "運河"
  concept_canals:0 "運河"
@@ -929,7 +918,7 @@ $concept_diplomatic_play$の一部として最初に主張した$concept_war_goa
  concept_budget_interest:0 "利子"
  concept_budget_interest_rate:0 "利子率"
  concept_budget_interest_rates:0 "利子率"
- concept_budget_interest_desc:0 "[concept_country]が[concept_loans]に対して支払った$concept_budget_interest$です。[concept_principal]に年間$concept_budget_interest_rate$を掛けて計算されます。\n\n$concept_budget_interest$は、$concept_loans$の基盤となっている[concept_privately_owned][concept_cash_reserves]を所有する[Concept('concept_pop','$concept_pops$')]に支払われます。\n\n支払われる$concept_budget_interest_rate$は主に[concept_technology]に影響されます。"
+ concept_budget_interest_desc:0 "[concept_country]が[concept_loans]に対して支払った$concept_budget_interest$です。[concept_principal]に年間$concept_budget_interest_rate$を掛けて計算されます。\n\n$concept_budget_interest$は、$concept_loans$の基盤となっている[concept_privately_owned][concept_cash_reserves]を所有する[Concept('concept_pop','$concept_pops$')]に支払われます。[concept_nationally_owned][Concept('concept_building','$concept_buildings$')]は、その代わりに少額の[concept_government_dividends]を提供します。\n\n支払われる$concept_budget_interest_rate$は主に[concept_technology]に影響されます。"
  concept_country_tier:0 "国のティア"
  concept_country_tier_short:0 "ティア"
  concept_country_tier_possessive:0 "$concept_country_possessive$ $concept_country_tier_short$"
@@ -970,15 +959,11 @@ $concept_diplomatic_play$の一部として最初に主張した$concept_war_goa
  concept_supply_network_desc:0 "海運業を営む[concept_country]はすべて、[Concept('concept_shipping_lane','$concept_shipping_lanes$')]の輸送ニーズを維持するために[concept_convoys]の$concept_supply_network$を維持しています。あなたの$concept_supply_network$の総合力は、$concept_shipping_lanes$全体で$concept_convoys$の生産量と総[concept_convoy_cost]を比較して決定されます。この強さは、すべての$concept_shipping_lanes$の基準ラインの[Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')]となります。"
  concept_convoys:0 "輸送船団"
  concept_convoy:0 "輸送船団"
- concept_convoys_desc:0 "$concept_convoys$は、[SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added','港')]$concept_buildings$によって結成され、[Concept('concept_country','$concept_countries_possessive$')][Concept('concept_shipping_lane','$concept_shipping_lanes$')]を運用するために必要となります。
-
-[concept_convoy_cost]は$concept_country$が負担します。この点は、[SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added_3','取引所')]の$concept_buildings$が[concept_world_market]で[concept_trade]を行う際に利用する[SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added_2','商船')]とは異なります。"
+ concept_convoys_desc:0 "$concept_convoys$は、[SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added','港')]$concept_buildings$によって結成され、[Concept('concept_country','$concept_countries_possessive$')][Concept('concept_shipping_lane','$concept_shipping_lanes$')]を運用するために必要となります。\n\n[concept_convoy_cost]は$concept_country$が負担します。この点は、[SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added_3','取引所')]の$concept_buildings$が[concept_world_market]で[concept_trade]を行う際に利用する[SelectLocalization(GetPlayer.IsValid,'concept_convoys_desc_added_2','商船')]とは異なります。"
  concept_convoys_desc_added:0 "[GetBuildingType('building_port').GetName]"
  concept_shipping_lane:0 "航路"
  concept_shipping_lanes:0 "航路"
- concept_shipping_lane_desc:0 "$concept_shipping_lane$とは、沿岸部の2つの[Concept('concept_state','$concept_states$')]間において、[concept_treaty]の一環として[Concept('concept_good','$concept_goods$')]を輸送する、または海外の[Concept('concept_military_formation','$concept_military_formations$')]に[concept_supply]を行うために確立された、[concept_convoys]による海上の連絡路を指します。
-
-$concept_shipping_lane$は、[concept_supply_route]、[concept_port_connection]、[GetArticleType('goods_transfer').GetNameNoIcon]の$concept_treaty$のいずれかにもとづき、十分な[concept_convoy_cost]が支払われていれば、その[concept_shipping_lane_effectiveness]に依存して機能します。"
+ concept_shipping_lane_desc:0 "$concept_shipping_lane$とは、沿岸部の2つの[Concept('concept_state','$concept_states$')]間において、[concept_treaty]の一環として[Concept('concept_good','$concept_goods$')]を輸送する、または海外の[Concept('concept_military_formation','$concept_military_formations$')]に[concept_supply]を行うために確立された、[concept_convoys]による海上の連絡路を指します。\n\n$concept_shipping_lane$は、[concept_supply_route]、[concept_port_connection]、[GetArticleType('goods_transfer').GetNameNoIcon]の$concept_treaty$のいずれかにもとづき、十分な[concept_convoy_cost]が支払われていれば、その[concept_shipping_lane_effectiveness]に依存して機能します。"
  concept_raid_convoys:0 "船団襲撃"
  concept_convoy_raiding:0 "輸送船団襲撃"
  concept_raid_convoys_desc:0 "[concept_admiral]に与えられた、海域を通過する敵の[concept_convoys]を撃沈するための[concept_order]です。哨戒中の艦隊は同じ海域を通過する襲撃船を迎撃し無力化しようとします。"
@@ -1035,16 +1020,7 @@ $concept_shipping_lane$は、[concept_supply_route]、[concept_port_connection]�
  concept_heir_desc:0 "[concept_country]の$concept_heir$は[concept_character]です。彼らは現在の$concept_ruler$の死後、[concept_character_role]の[concept_ruler]を引き継ぎます。"
  concept_character_role:0 "役割"
  concept_character_roles:0 "役割"
- concept_character_role_desc:0 "$concept_character_roles$は、特定の[concept_character]が[concept_country]のどの領域に影響力を持つかを決定します。$concept_character$は、1つまたは複数の$concept_character_roles$を持ちます。
-
-$concept_character_roles$の一覧 : 
-[concept_ruler] (通常は[concept_politician]でもある) 
-[concept_heir]
-[concept_politician]
-[concept_executive]
-[concept_agitator]
-[concept_general]
-[concept_admiral]"
+ concept_character_role_desc:0 "$concept_character_roles$は、特定の[concept_character]が[concept_country]のどの領域に影響力を持つかを決定します。$concept_character$は、1つまたは複数の$concept_character_roles$を持ちます。\n\n$concept_character_roles$の一覧 : \n[concept_ruler] (通常は[concept_politician]でもある) \n[concept_heir]\n[concept_politician]\n[concept_executive]\n[concept_agitator]\n[concept_general]\n[concept_admiral]"
  concept_treasury:0 "国庫"
  concept_treasury_possessive:0 "国庫"
  concept_treasury_desc:0 "$concept_treasury$はあなたの[Concept('concept_country','$concept_country_possessive$')]の資産を管理しています。毎週、あなたの予算収支によって、$concept_treasury$は[concept_money]の赤字を補うために[concept_loans]をさらに借りるか、$concept_money$を[concept_gold_reserves]に預けることになります。"
@@ -1092,7 +1068,7 @@ $concept_character_roles$の一覧 : 
  concept_order:0 "命令"
  concept_orders:0 "命令"
  concept_ordered:0 "命令"
- concept_order_desc:0 "[Concept('concept_commander','$concept_commanders$')]には$concept_orders$が与えられ、現在地に基づいて異なる軍事目標を追求することができます。すべての$concept_commanders$が基本的な$concept_orders$を複数持っていますが、[Concept('concept_character_trait','$concept_character_traits$')]はその$concept_commander$が使用できる特別な$concept_orders$を追加できます。\n\n基本の[concept_general]命令は次の通りです : \n[GetBasicAdmiralOrdersBreakdown]\n\n基本の[concept_admiral] $concept_orders$は次の通りです : \n[GetBasicAdmiralOrdersBreakdown]"
+ concept_order_desc:0 "[Concept('concept_commander','$concept_commanders$')]には$concept_orders$が与えられ、現在地に基づいて異なる軍事目標を追求することができます。すべての$concept_commanders$が基本的な$concept_orders$を複数持っていますが、[Concept('concept_character_trait','$concept_character_traits$')]はその$concept_commander$が使用できる特別な$concept_orders$を追加できます。\n\n基本の[concept_general]命令は次の通りです : \n[GetBasicGeneralOrdersBreakdown]\n\n基本の[concept_admiral] $concept_orders$は次の通りです : \n[GetBasicAdmiralOrdersBreakdown]"
  concept_party:0 "政党"
  concept_parties:0 "政党"
  concept_party_possessive:0 "政党"
@@ -1117,7 +1093,7 @@ $concept_character_roles$の一覧 : 
  concept_journal_entry_desc:0 "$concept_journal_entries$は、あなたの国で進行中のイベントを追跡します。それらはあなたに機会や課題を提示したり、約束したことを思い出させたり、起こりうる危機を警告したりします。\n\n$concept_journal_entries$は、通常、#bold 完了#!したとみなされると、$concept_journal$から削除されます。すべての$concept_journal_entries$が#bold 完了#!するわけではありません。#bold 失敗#!したり、#bold 期限切れ#!になったり、何らかの条件で削除されたりするものもあります。"
  concept_political_movement_support:0 "政治運動支援"
  concept_political_movement_support_short:0 "支持"
- concept_political_movement_support_desc:0 "[concept_political_movement]の$concept_political_movement_support_short$は、それを支える[Concept('concept_pop','$concept_pops$')]の[concept_political_strength]と、支持している[Concept('concept_agitator','$concept_agitators$')]の[concept_popularity]と[Concept('concept_character_trait','$concept_character_traits$')]に基づいています。$concept_political_movement_support_short$が高い$concept_political_movement$は、あなたが彼らが望む[concept_law]を追求すれば[concept_enactment_success]が上がり、反対すれば[concept_enactment_stall]が上がります。$concept_political_movement$が[concept_insurrection]を起こす場合、$concept_political_movement_support$によっていくつの[Concept('concept_state','$concept_states$')]がそれを開始するかが決定されます。\n\n#title $concept_political_movement_support_short$の閾値 : #! #indent_newline:3 \n[GetSupportLabelsDesc]"
+ concept_political_movement_support_desc:0 "[concept_political_movement]の$concept_political_movement_support_short$は、それを支える[Concept('concept_pop','$concept_pops$')]の[concept_political_strength]と、支持している[Concept('concept_agitator','$concept_agitators$')]の[concept_popularity]と[Concept('concept_character_trait','$concept_character_traits$')]に基づいています。[Concept('concept_activism','$concept_activism_short$')]が[LabelingHelper.GetLabelForRadicalism(GetDefine('NPolitics','MOVEMENT_MIN_RADICALISM_FOR_LAW_ENACTMENT_IMPACT'))] (#v [GetDefine('NPolitics','MOVEMENT_MIN_RADICALISM_FOR_LAW_ENACTMENT_IMPACT')|%0]#!) 以上の$concept_political_movement$は、あなたが彼らが望む[concept_law]を追求すれば[concept_enactment_success]が上がり、反対すれば[Concept('concept_enactment_stall','$concept_enactment_stall_short$')]が上がります。この確率は、$concept_political_movement_support_short$に直に基づきます。$concept_political_movement$が[concept_insurrection]を起こす場合、$concept_political_movement_support$によっていくつの[Concept('concept_state','$concept_states$')]がそれを開始するかが決定されます。\n\n#title $concept_political_movement_support_short$の閾値 : #! #indent_newline:3 \n[GetSupportLabelsDesc]"
  concept_political_movement:0 "政治運動"
  concept_political_movement_short:0 "活動"
  concept_political_movements_short:0 "活動"
@@ -1175,9 +1151,7 @@ $concept_character_roles$の一覧 : 
  concept_party_whip_desc:0 "$concept_party_whip$は、自らの[concept_party]の他のメンバーの[Concept('concept_ideology','$concept_ideologies$')]を管理します。自らの$concept_ideologies$が他者と対立した際に[Concept('concept_interest_group','$concept_interest_groups$')][concept_in_government]が[concept_legitimacy]へと与える影響は、$concept_party_whip$と協調していない場合、[GetDefine('NPolitics','INCOHERENCE_FROM_SECONDARY_PARTY_MEMBERS')|v0%]減少します。[concept_party_leader]は$concept_party_whip_short$としての役割を果たします。"
  concept_strategic_objective:0 "戦略的目標"
  concept_strategic_objectives:0 "戦略的目標"
- concept_strategic_objective_desc:0 "[concept_army]に$concept_strategic_objective$を割り当てることができます。敵[concept_state]または友好[concept_state]が$concept_army_possessive$$concept_strategic_objective$として割り当てられている場合は、すべての進軍中の$concept_army_possessive$[Concept('concept_general','$concept_generals$')]はこの$concept_state$に向かって[concept_front]の進軍を試みます。$concept_state$が友好国の支配下にある場合は、$concept_state$周辺の防衛線の拡大を優先します。防衛中の$concept_generals$は$concept_state$と周辺地域の防衛に集中し、$concept_strategic_objective$にもっとも近い[Concept('concept_battle','$concept_battles$')]を優先します。
-
-1つの$concept_army$には1つの$concept_strategic_objective$を割り当てることができますが、複数の$concept_armies$に$concept_strategic_objective_short$として同じ$concept_state$を割り当てることもできます。"
+ concept_strategic_objective_desc:0 "[concept_army]に$concept_strategic_objective$を割り当てることができます。敵[concept_state]または友好[concept_state]が$concept_army_possessive$$concept_strategic_objective$として割り当てられている場合は、すべての進軍中の$concept_army_possessive$[Concept('concept_general','$concept_generals$')]はこの$concept_state$に向かって[concept_front]の進軍を試みます。$concept_state$が友好国の支配下にある場合は、$concept_state$周辺の防衛線の拡大を優先します。防衛中の$concept_generals$は$concept_state$と周辺地域の防衛に集中し、$concept_strategic_objective$にもっとも近い[Concept('concept_battle','$concept_battles$')]を優先します。\n\n1つの$concept_army$には1つの$concept_strategic_objective$を割り当てることができますが、複数の$concept_armies$に$concept_strategic_objective_short$として同じ$concept_state$を割り当てることもできます。"
  concept_government_construction:0 "政府の建設"
  concept_government_constructions:0 "政府の建設"
  concept_government_construction_desc:0 "$concept_government_construction$は、[Concept('concept_country','$concept_country_possessive$')]の[concept_government]からの直接の指示で拡張されている[concept_building]を指します。\n\n州の公庫から直接資金を引き出すことができ、優先順位を変更したり、[concept_construction_queue]から削除したりすることが可能です。\n\n結果的に生じた[Concept('concept_building_level','$concept_building_levels$')]は[concept_nationally_owned]になります"
@@ -1239,12 +1213,12 @@ $concept_character_roles$の一覧 : 
  concept_agitators:0 "扇動者"
  concept_agitate:0 "扇動"
  concept_agitator_possessive:0 "扇動者"
- concept_agitator_desc:0 "[concept_political_movement]を支持し、自身の[concept_interest_group]に属する[Concept('concept_individual','$concept_individuals$')]をその[concept_political_movement]に惹きつける[Concept('concept_character','$concept_characters$')]の[concept_character_role]です。扇動者はキャラクターアクション「#b [concept_exile]を招聘#!」を使い招聘できるほか、あなたの国にランダムに出現する場合もあります。その際の出現確率は$concept_country$の[concept_literacy]に依存します。\n\n扇動者は、国内におけるその扇動者の[concept_acceptance_status]が$SECOND_RATE_CITIZEN_GC_LINK$または$FULL_ACCEPTANCE_GC_LINK$のいずれかである場合にのみ招聘できます。\n\n扇動者が支持する[concept_political_movement]は、扇動者の[concept_ideology]によって決まります。扇動者が自らの[concept_political_movement]に与える影響は、その扇動者の[concept_popularity]と[Concept('concept_character_trait','$concept_character_traits$')]によって決定されます。"
+ concept_agitator_desc:0 "属する[concept_interest_group]の[Concept('concept_individual','$concept_individuals$')]を、自身の支持する[concept_political_movement]に惹きつける[Concept('concept_character','$concept_characters$')]の[concept_character_role]です。扇動者はキャラクターアクション「#b [concept_exile]を招聘#!」を使い招聘できるほか、あなたの国にランダムに出現する場合もあります。その際の出現確率は$concept_country$の[concept_literacy]に依存します。\n\n扇動者は、[concept_country]におけるその扇動者の[concept_acceptance_status]が$SECOND_RATE_CITIZEN_GC_LINK$または$FULL_ACCEPTANCE_GC_LINK$のいずれかである場合にのみ招聘できます。\n\n扇動者が支持する[concept_political_movement]は、扇動者の[concept_ideology]によって決まります。扇動者が自らの[concept_political_movement]に与える影響は、その扇動者の[concept_popularity]と[Concept('concept_character_trait','$concept_character_traits$')]によって決定されます。"
  concept_exile:0 "国外追放者"
  concept_exiles:0 "国外追放者"
  concept_exiled:0 "国外追放中"
  concept_in_exile:0 "追放中"
- concept_exile_desc:0 "[concept_character]は、キャラクターアクション「#b 反対派の追放#!」を使うことで追放することができます。当該$concept_character$は[concept_agitator]となり、あなたの国から追放されます。\n\n$concept_exiled$の$concept_character$は、キャラクターアクション「#b 追放者の招聘#!」によって任意の[concept_country]に招き入れることができ、招かれたキャラクターは自らの[concept_ideology]に従い、直ちにその$concept_country$で[concept_political_movement]を始めるか、[concept_political_movement]に参加します。ただし、招かれた$concept_agitator$が[Concept('concept_endorse_oppose','$concept_endorsed$')]する[Concept('concept_law','$concept_laws$')]が、到着した時点で既にすべて制定されている場合、この$concept_agitator$は活動しません。\n\n$concept_exiled$の$concept_character$は、あなたの国における[concept_acceptance_status]が$SECOND_RATE_CITIZEN_GC_LINK$または$FULL_ACCEPTANCE_GC_LINK$のいずれかである場合にのみ招聘できます。"
+ concept_exile_desc:0 "[concept_character]は、キャラクターアクション「#b 反対派の追放#!」を使うことで$concept_exiled$の状態にすることができます。当該$concept_character$は[concept_agitator]となり、あなたの国から追放されます。\n\n$concept_exiled$の$concept_character$は、キャラクターアクション「#b 追放者の招聘#!」によって任意の[concept_country]に招き入れることができ、招かれたキャラクターは自らの[concept_ideology]に従い、直ちにその$concept_country$で[concept_political_movement]を始めるか参加します。ただし、[Concept('concept_endorse_oppose','$concept_endorsed$')]する[Concept('concept_law','$concept_laws$')]が、到着した時点で既にすべて制定されている場合、この$concept_agitator$は活動しません。\n\n$concept_exiled$の$concept_character$は、あなたの[concept_country]における[concept_acceptance_status]が$SECOND_RATE_CITIZEN_GC_LINK$または$FULL_ACCEPTANCE_GC_LINK$のいずれかである場合にのみ招聘できます。"
  concept_training_rate:0 "訓練率"
  concept_training_rate_desc:0 "$concept_training_rate$とは、[concept_military_building]で1週間に訓練できる[concept_manpower]の量です。"
  concept_naval_invasion_support:0 "上陸作戦支援"
@@ -1264,8 +1238,7 @@ $concept_character_roles$の一覧 : 
  concept_company_possessive:0 "企業"
  concept_company_desc:0 "$concept_companies$は、[concept_country]の中の1種類、または複数の種類の[Concept('concept_building','$concept_buildings$')]に関連しています。その$concept_country$で企業が設立されると、企業に関連する$concept_buildings$の[concept_throughput]と@construction![concept_construction]の効率が上昇します。$concept_company$がどの程度の利益を提供するかは、$concept_country$の相対的な[concept_prestige]のランクによって決まり、#v 上位[GetDefine('NDiplomacy','TOP_PRESTIGE_RANK_BONUS_THRESHOLD')]位#!に入っている$concept_countries$はより強力なボーナスを得ます。\n\n$concept_companies$には[concept_prosperity]スコアがあります。[concept_productivity]が高いとスコアが増加し、その企業が設立された国に対し追加のボーナスを提供することができます。"
  concept_prosperity:0 "繁栄度"
- concept_prosperity_desc:0 "$concept_companies$には$concept_prosperity$スコアがあり、[concept_productivity]と雇用している[concept_building]のレベルの数、その他の要因に依存します。$concept_company$が[GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_ACTIVATION_THRESHOLD')|v0]$concept_prosperity$に到達すると、$concept_prosperous$であるとみなされ、[concept_country]のためのボーナス[concept_modifier]が発動します。
-$concept_prosperous$企業の$concept_prosperity$が[GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_DEACTIVATION_THRESHOLD')|v0]以下になると、$concept_prosperous$ではないとみなされ、ボーナス$concept_modifier$は無効となります。"
+ concept_prosperity_desc:0 "$concept_companies$には$concept_prosperity$スコアがあり、[concept_productivity]と雇用している[concept_building]のレベルの数、その他の要因に依存します。$concept_company$が[GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_ACTIVATION_THRESHOLD')|v0]$concept_prosperity$に到達すると、$concept_prosperous$であるとみなされ、[concept_country]のためのボーナス[concept_modifier]が発動します。\n$concept_prosperous$企業の$concept_prosperity$が[GetDefine('NEconomy','COMPANY_PROSPERITY_BONUS_DEACTIVATION_THRESHOLD')|v0]以下になると、$concept_prosperous$ではないとみなされ、ボーナス$concept_modifier$は無効となります。"
  concept_mobilization_option:0 "動員オプション"
  concept_mobilization_option_short:0 "オプション"
  concept_mobilization_options:0 "動員オプション"
@@ -1363,7 +1336,7 @@ $concept_prosperous$企業の$concept_prosperity$が[GetDefine('NEconomy','COMPA
  concept_combat_unit_group_short:0 "ユニットグループ"
  concept_special_unit:0 "特殊ユニット"
  concept_special_units:0 "特殊ユニット"
- concept_special_unit_desc:0 "[Concept('concept_default_unit','$concept_default_units$')]とみなされる#b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!でも#b [GetCombatUnitGroup('combat_unit_group_support_ship').GetName]#!でもないユニットのことです。\n\n[Concept('concept_army','$concept_armies$')]の$concept_special_units$ : \n$TAB$#b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n[Concept('concept_fleet','$concept_fleets$')]の$concept_special_units$ : \n$TAB$#b [GetCombatUnitGroup('combat_unit_group_capital_ship').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_support_ship').GetName]#!"
+ concept_special_unit_desc:0 "[Concept('concept_default_unit','$concept_default_units$')]とみなされる#b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!でも#b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName]#!でもない[Concept('concept_unit','$concept_units$')]のことです。\n\n[Concept('concept_army','$concept_armies$')]の$concept_special_units$ : \n$TAB$#b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n[Concept('concept_fleet','$concept_fleets$')]の$concept_special_units$ : \n$TAB$#b [GetCombatUnitGroup('combat_unit_group_capital_ship').GetName]#!\n$TAB$#b [GetCombatUnitGroup('combat_unit_group_support_ship').GetName]#!"
  concept_default_unit:0 "デフォルトユニット"
  concept_default_units:0 "デフォルトユニット"
  concept_default_unit_desc:0 "[Concept('concept_army','$concept_armies$')]の#b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!、あるいは[Concept('concept_fleet','$concept_fleets$')]の#b [GetCombatUnitGroup('combat_unit_group_light_ship').GetName]#!のユニットのことです。"
@@ -1454,13 +1427,7 @@ $concept_prosperous$企業の$concept_prosperity$が[GetDefine('NEconomy','COMPA
  concept_truce_desc:0 "$concept_truce$は、ある[concept_country]が別の$concept_country$に対し[concept_diplomatic_demand]を行ったり、敵対的な[concept_diplomatic_play]に参加したりすることを妨げる外交ステータスです。$concept_truces$は一方的な場合も双方向的な場合もあり、[concept_peace_deal]の締結や[concept_alliance]の破棄など、さまざまな方法により作成されます。"
  concept_foreign_investment:0 "国外投資"
  concept_foreign_investments:0 "国外投資"
- concept_foreign_investment_desc:0 "別の$concept_country$に[Concept('concept_building_level','$concept_building_levels$')]を建築および所有している[concept_country]。
-
-$concept_foreign_investments$は、[concept_overlord]がその[Concept('concept_subject','$concept_subjects$')]に対し行うか、2つの主権$concept_countries$家間による[concept_foreign_investment_rights][concept_treaty]の締結によって行うことができます。
-
-[concept_government_construction]も[concept_private_construction]も、$concept_foreign_investment$によって許可されます。
-
-他国の所有者が$concept_building_levels$を建設し、[concept_dividends]を得る一方で、[concept_workforce]は地元の[concept_state]から雇用され、[concept_taxes]はその$concept_state$を統制する$concept_country$に支払われます。[concept_building]が使用した[Concept('concept_good','$concept_goods$')]は、地元の[concept_market]に留まります。"
+ concept_foreign_investment_desc:0 "別の$concept_country$に[Concept('concept_building_level','$concept_building_levels$')]を建築および所有している[concept_country]。\n\n$concept_foreign_investments$は、[concept_overlord]がその[Concept('concept_subject','$concept_subjects$')]に対し行うか、2つの主権$concept_countries$家間による[concept_foreign_investment_rights][concept_treaty]の締結によって行うことができます。\n\n[concept_government_construction]も[concept_private_construction]も、$concept_foreign_investment$によって許可されます。\n\n他国の所有者が$concept_building_levels$を建設し、[concept_dividends]を得る一方で、[concept_workforce]は地元の[concept_state]から雇用され、[concept_taxes]はその$concept_state$を統制する$concept_country$に支払われます。[concept_building]が使用した[Concept('concept_good','$concept_goods$')]は、地元の[concept_market]に留まります。"
  concept_foreign_investment_rights:0 "国外投資権"
  concept_foreign_investment_rights_short:0 "投資権"
  concept_foreign_investment_rights_desc:0 "ある[concept_country]が他の国において、[concept_treaty]の期間に[concept_foreign_investment]を行うことを許可します。さらに、$investment_charter$に関する[concept_company_charter]が付与されている[Concept('concept_company','$concept_companies$')]は、$concept_treaty$により[concept_regional_company_hq]を設置することが可能になります。"
@@ -1587,11 +1554,7 @@ $concept_foreign_investments$は、[concept_overlord]がその[Concept('concept_
  concept_autonomous:0 "自律的"
  concept_autonomy_desc:0 "各[concept_subject][concept_country]にはそれぞれ$concept_autonomy$レベルがあります。このレベルにより、彼らが自国の[concept_overlord]とどのような交流するかが決まります。\n\n$concept_autonomy$が高い$concept_subject$は、外交に関してより自立しています。また、$concept_overlord$へ払う敬意も低くなります。すると、$concept_autonomous$になりすぎた$concept_country$が#v $war_goal_independence_type_name$#! [concept_diplomatic_play]を宣言しようとするリスクが発生します。\n$concept_autonomy$の低い$concept_subjects$は$concept_overlords$への依存度が高く、$concept_overlord$に払う敬意も高くなります。最低レベルの$concept_autonomy$の$concept_subjects$は、#v $dp_annex_subject$#! [concept_diplomatic_play]とともに$concept_overlord$に統合することができます。"
  concept_economic_dependence:0 "経済的依存度"
- concept_economic_dependence_desc:0 "$concept_economic_dependence$とは、2つの[Concept('concept_country','$concept_countries$')]が互いに持つ経済的信頼度の高さです。その主な影響は、他の$concept_country$が保有する[Concept('concept_building','$concept_buildings$')]の数です。これは$concept_country$から直接所有することも、[concept_pop]の投資家が所有することもできます。
-
-共有市場である場合は、[concept_gdp]と、[Concept('concept_country','$concept_countries_possessive$')]生産する[Concept('concept_good','$concept_goods$')]、保有する$concept_buildings$が$concept_pops$に与える影響の違いも考慮することになります。
-
-2つの$concept_countries$が市場を共有していない場合、$concept_economic_dependence$は[concept_trade]の影響を受けます。この影響は、2つの$concept_countries$間の$concept_trade$量と、$concept_good$の市場バランスへの影響に左右されます。"
+ concept_economic_dependence_desc:0 "$concept_economic_dependence$とは、2つの[Concept('concept_country','$concept_countries$')]が互いに持つ経済的信頼度の高さです。その主な影響は、他の$concept_country$が保有する[Concept('concept_building','$concept_buildings$')]の数です。これは$concept_country$から直接所有することも、[concept_pop]の投資家が所有することもできます。\n\n共有市場である場合は、[concept_gdp]と、[Concept('concept_country','$concept_countries_possessive$')]生産する[Concept('concept_good','$concept_goods$')]、保有する$concept_buildings$が$concept_pops$に与える影響の違いも考慮することになります。\n\n2つの$concept_countries$が市場を共有していない場合、$concept_economic_dependence$は[concept_trade]の影響を受けます。この影響は、2つの$concept_countries$間の$concept_trade$量と、$concept_good$の市場バランスへの影響に左右されます。"
  CITIZENSHIP_GC_LINK:0 "[SelectLocalization(GetPlayer.IsValid,'CITIZENSHIP_LINK','lawgroup_citizenship')]"
  CITIZENSHIP_LINK:0 "[GetLawGroup('lawgroup_citizenship').GetName]"
  CHURCH_AND_STATE_GC_LINK:0 "[SelectLocalization(GetPlayer.IsValid,'CHURCH_AND_STATE_LINK','lawgroup_church_and_state')]"
@@ -1718,9 +1681,7 @@ $concept_foreign_investments$は、[concept_overlord]がその[Concept('concept_
  concept_trade_advantage_short:0 "優位性"
  concept_trade_advantage_desc:0 "$concept_trade_advantage$は特定の[GetBuildingType('building_trade_center').GetName]における[concept_import_price]と[concept_export_price]を決定する値であり、[Concept('concept_good','$concept_goods$')]の取引量にも直接影響を与えるものです。この値は[GetBuildingType('building_trade_center').GetName]のレベル、$concept_good$に関する[Concept('concept_market_area','$concept_market_area_possessive$')]の世界生産量に対するシェア、関連する[Concept('concept_strategic_region','$concept_strategic_regions$')]における[Concept('concept_interest','$concept_interests$')]、[Concept('concept_trade_privilege','$concept_trade_privileges$')]といった要因の影響を受けます。$concept_trade_advantage$は$concept_good$ごと、輸出入の方向ごとに算出されるので、たとえば石炭の$concept_importing$と生地の$concept_exporting$では$concept_trade_advantage$が異なります。"
  concept_trade_potential:0 "貿易見込み"
- concept_trade_potential_desc:0 "$concept_trade_potential$は、特定の[concept_state]において、ある[concept_good]を[Concept('concept_trade','$concept_import$')]または[Concept('concept_trade','$concept_export$')]する見込みを大まかに示します。この項目は、[concept_local_price]、[concept_world_market_price]、[concept_trade_advantage]、[concept_good_production]と[concept_good_consumption]の差、[concept_tariffs]および[concept_subventions]など、さまざまな要因を考慮して算出されます。
-
-@information! $concept_trade_potential$は、#b 実際の貿易量を正確に予測するものではありません#!。ですが、$concept_state$に余剰の$concept_trade_capacity$がある場合、どの$concept_goods$をより多く$concept_trade$しそうかを判断する指標として有用です。"
+ concept_trade_potential_desc:0 "$concept_trade_potential$は、特定の[concept_state]において、ある[concept_good]を[Concept('concept_trade','$concept_import$')]または[Concept('concept_trade','$concept_export$')]する見込みを大まかに示します。この項目は、[concept_local_price]、[concept_world_market_price]、[concept_trade_advantage]、[concept_good_production]と[concept_good_consumption]の差、[concept_tariffs]および[concept_subventions]など、さまざまな要因を考慮して算出されます。\n\n@information! $concept_trade_potential$は、#b 実際の貿易量を正確に予測するものではありません#!。ですが、$concept_state$に余剰の$concept_trade_capacity$がある場合、どの$concept_goods$をより多く$concept_trade$しそうかを判断する指標として有用です。"
  concept_trade_capacity:0 "貿易キャパシティ"
  concept_trade_capacity_usage:0 "貿易キャパシティの使用率"
  concept_trade_capacity_desc:0 "$concept_trade_capacity$は[GetBuildingType('building_trade_center').GetName]のレベルによって生成され、[concept_world_market]との[concept_trade]を行うために使用されます。$concept_trade_capacity$ごとに取引される[Concept('concept_good','$concept_goods$')]の量は、$concept_good$ごとに異なります。"
@@ -1803,48 +1764,30 @@ $concept_foreign_investments$は、[concept_overlord]がその[Concept('concept_
  concept_military_access_desc:0 "$concept_military_access$を利用すれば、他の中立の[Concept('concept_country','$concept_countries$')]の領土を通過して敵を攻撃することができます。これは、その中立の$concept_country$と[concept_ongoing_diplomatic_action]を確立することによって可能になります。"
  concept_treaty:0 "条約"
  concept_treaties:0 "条約"
- concept_treaty_desc:0 "$concept_treaty$とは、二[Concept('concept_country','$concept_countries$')]間協定の一種であり、各$concept_country$の権利、義務、および@inf![concept_influence]のコストを規定する個々の[Concept('concept_article','$concept_articles$')]で構成されます。$concept_treaties$は、どちらか一方が破棄するか、あるいは最初の[concept_binding_period]の経過後に離脱するまでは効力を発揮します。
-
-$concept_treaties$はまた[concept_diplomatic_play]の結果として、[concept_war_reparations]という形で$concept_country$に対して[Concept('concept_enforced_treaty','$concept_enforced_treaty_forced_short$')]される場合もあります。"
+ concept_treaty_desc:0 "$concept_treaty$とは、二[Concept('concept_country','$concept_countries$')]間協定の一種であり、各$concept_country$の権利、義務、および@inf![concept_influence]のコストを規定する個々の[Concept('concept_article','$concept_articles$')]で構成されます。$concept_treaties$は、どちらか一方が破棄するか、あるいは最初の[concept_binding_period]の経過後に離脱するまでは効力を発揮します。\n\n$concept_treaties$はまた[concept_diplomatic_play]の結果として、[concept_war_reparations]という形で$concept_country$に対して[Concept('concept_enforced_treaty','$concept_enforced_treaty_forced_short$')]される場合もあります。"
  concept_enforced_treaty:0 "強制条約"
  concept_enforced_treaties:0 "強制条約"
  concept_enforced_treaty_short:0 "強制"
  concept_enforced_treaty_forced_short:0 "強制"
  concept_enforced_treaty_enforce:0 "条約の強制"
  concept_enforced_treaty_enforce_short:0 "強制"
- concept_enforced_treaty_desc:0 "$concept_enforced_treaty$とは、[concept_diplomatic_play]で撤退したり、[concept_war]で降伏した[concept_country]に対して強制される[concept_treaty]です。一部の[Concept('concept_diplomatic_demand','$concept_diplomatic_demands$')]が$concept_enforced_treaty$に変わることもあります。
-
-降伏する$concept_country$の権利、義務、@inf![concept_influence]のコストを規定した個々の[Concept('concept_article','$concept_articles$')]を含む、[concept_war_reparations]または$concept_diplomatic_demands$で構成されます。$concept_enforced_treaties$は、どちらか一方が合意を破棄するか、あるいは最初の[concept_binding_period]の経過後に離脱するまでは効力を発揮します。"
+ concept_enforced_treaty_desc:0 "$concept_enforced_treaty$とは、[concept_diplomatic_play]で撤退したり、[concept_war]で降伏した[concept_country]に対して強制される[concept_treaty]です。一部の[Concept('concept_diplomatic_demand','$concept_diplomatic_demands$')]が$concept_enforced_treaty$に変わることもあります。\n\n降伏する$concept_country$の権利、義務、@inf![concept_influence]のコストを規定した個々の[Concept('concept_article','$concept_articles$')]を含む、[concept_war_reparations]または$concept_diplomatic_demands$で構成されます。$concept_enforced_treaties$は、どちらか一方が合意を破棄するか、あるいは最初の[concept_binding_period]の経過後に離脱するまでは効力を発揮します。"
  concept_article:0 "条項"
  concept_articles:0 "条項"
- concept_article_desc:0 "$concept_articles$は[concept_treaty]の構成要素であり、その形は様々です。
-
-$concept_article$は関係[Concept('concept_country','$concept_countries$')]の一方または双方に複数の効果を適用することができ、通常は$concept_treaty$が守られている間、@inf![concept_influence]コストが発生します。また、$concept_article$は当事者である$concept_country$に一度限りの効果を適用したり、特定の義務を課したりすることができます。これは、$concept_treaty$に悪影響を及ぼす可能性があり、[Concept('concept_contravention','$concept_contravened$')]すると、最終的には$concept_treaty$が[Concept('concept_non_fulfillment','$concept_non_fulfilled$')]となることがあります。
-
-各$concept_article$は、次の2つのカテゴリーのどちらかに分類されます。#indent_newline:3 
-$EFFECT_LIST_BULLET$#bold 相互#! : 相互$concept_articles$は、その効果と義務をすべて両$concept_countries$に等しく適用します。
-$EFFECT_LIST_BULLET$#bold 指向性#! : 指向性$concept_articles$は、提示側か受け入れ側の$concept_country$かによって効果と義務が異なります。#!"
+ concept_article_desc:0 "$concept_articles$は[concept_treaty]の構成要素であり、その形は様々です。\n\n$concept_article$は関係[Concept('concept_country','$concept_countries$')]の一方または双方に複数の効果を適用することができ、通常は$concept_treaty$が守られている間、@inf![concept_influence]コストが発生します。また、$concept_article$は当事者である$concept_country$に一度限りの効果を適用したり、特定の義務を課したりすることができます。これは、$concept_treaty$に悪影響を及ぼす可能性があり、[Concept('concept_contravention','$concept_contravened$')]すると、最終的には$concept_treaty$が[Concept('concept_non_fulfillment','$concept_non_fulfilled$')]となることがあります。\n\n各$concept_article$は、次の2つのカテゴリーのどちらかに分類されます。#indent_newline:3 \n$EFFECT_LIST_BULLET$#bold 相互#! : 相互$concept_articles$は、その効果と義務をすべて両$concept_countries$に等しく適用します。\n$EFFECT_LIST_BULLET$#bold 指向性#! : 指向性$concept_articles$は、提示側か受け入れ側の$concept_country$かによって効果と義務が異なります。#!"
  concept_contravention:0 "違反"
  concept_contraventions:0 "違反"
  concept_contravening:0 "違反している"
  concept_contravene:0 "違反する"
  concept_contravened:0 "違反した"
- concept_contravention_desc:0 "[concept_non_fulfillment]条件のある[Concept('concept_treaty','$concept_treaties$')]の[Concept('concept_article','$concept_articles$')]は$concept_contravened$となる可能性があります。$concept_article$に$concept_contravened$していると見なされるには、該当の[concept_country]が$concept_article$の要件を満たしていないことが条件となります。該当の$concept_country$が$concept_article$に$concept_contravening$していないかについては、$concept_article$に応じて週次、月次、年次、またはその組み合わせで点検されます。
-
-たとえば、[GetArticleType('law_commitment').GetName]の$concept_article$において、特定の[concept_law]が[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]されていない場合、または#v 3#!週間続けて有効に$concept_enactment_of_laws_enacting$されていない場合、この$concept_law$が再び$concept_enactment_of_laws_enacted$されるまで$concept_article$は$concept_non_fulfilled$と見なされます。
-
-$concept_non_fulfillment$と見なされるまでに許容される連続$concept_contraventions$回数は$concept_articles$によって異なる場合があります。"
+ concept_contravention_desc:0 "[concept_non_fulfillment]条件のある[Concept('concept_treaty','$concept_treaties$')]の[Concept('concept_article','$concept_articles$')]は$concept_contravened$となる可能性があります。$concept_article$に$concept_contravened$していると見なされるには、該当の[concept_country]が$concept_article$の要件を満たしていないことが条件となります。該当の$concept_country$が$concept_article$に$concept_contravening$していないかについては、$concept_article$に応じて週次、月次、年次、またはその組み合わせで点検されます。\n\nたとえば、[GetArticleType('law_commitment').GetName]の$concept_article$において、特定の[concept_law]が[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]されていない場合、または#v 3#!週間続けて有効に$concept_enactment_of_laws_enacting$されていない場合、この$concept_law$が再び$concept_enactment_of_laws_enacted$されるまで$concept_article$は$concept_non_fulfilled$と見なされます。\n\n$concept_non_fulfillment$と見なされるまでに許容される連続$concept_contraventions$回数は$concept_articles$によって異なる場合があります。"
  concept_binding_period:0 "拘束期間"
  concept_binding_period_binding:0 "拘束中"
  concept_binding_period_bound:0 "拘束済み"
  concept_binding_period_desc:0 "[concept_treaty]には通常、$concept_binding_period$が設けられており、この期間中にいずれかの[concept_country]が$concept_treaty$から離脱すると、離脱した[concept_country]に対してペナルティが課されます。$concept_binding_period$が終了すれば、離脱してもペナルティは発生しません。"
  concept_non_fulfillment:0 "不履行"
  concept_non_fulfilled:0 "不履行"
- concept_non_fulfillment_desc:0 "[Concept('concept_article','$concept_articles$')]の中には、[Concept('concept_contravention','$concept_contravened$')]の場合に[concept_treaty]に悪影響を及ぼす特定の義務が付随しているものがあります。$concept_article$は、その$concept_article$に対して許容された$concept_contraventions$回数を超えて、連続して$concept_contravened$されると$concept_non_fulfilled$と見なされます。
-
-$concept_non_fulfillment$の結果として、$concept_contravening$[concept_country]には#bold 補償金の支払い#!が課されたり、$concept_treaty$の#bold 凍結#!、または完全な#bold 破棄#!が行われることがあります。
-
-$concept_treaty$が#b 凍結#!された場合、$concept_contravening$$concept_country$は引き続き$concept_articles$が定めた支払いを行い、義務を履行しますが、代わりに受け取るものは#b 何もありません#!。"
+ concept_non_fulfillment_desc:0 "[Concept('concept_article','$concept_articles$')]の中には、[Concept('concept_contravention','$concept_contravened$')]の場合に[concept_treaty]に悪影響を及ぼす特定の義務が付随しているものがあります。$concept_article$は、その$concept_article$に対して許容された$concept_contraventions$回数を超えて、連続して$concept_contravened$されると$concept_non_fulfilled$と見なされます。\n\n$concept_non_fulfillment$の結果として、$concept_contravening$[concept_country]には#bold 補償金の支払い#!が課されたり、$concept_treaty$の#bold 凍結#!、または完全な#bold 破棄#!が行われることがあります。\n\n$concept_treaty$が#b 凍結#!された場合、$concept_contravening$$concept_country$は引き続き$concept_articles$が定めた支払いを行い、義務を履行しますが、代わりに受け取るものは#b 何もありません#!。"
  concept_occupy:0 "占領"
  concept_occupies:0 "占領"
  concept_invasion:0 "侵略"
@@ -1877,13 +1820,7 @@ $concept_treaty$が#b 凍結#!された場合、$concept_contravening$$concept_c
  concept_prestige_good:0 "高級品"
  concept_prestige_good_short:0 "名品"
  concept_prestige_goods:0 "高級品"
- concept_prestige_good_desc:0 "品質が非常に高く、名品と見なされる[concept_good]。$concept_prestige_goods$は、[concept_prosperity]が十分に高い一部の[Concept('concept_company','$concept_companies$')]によって生産されます。$concept_prestige_goods$の最大生産者となることで、[concept_prestige]が大幅に高まります。
-
-さらに、$concept_prestige_goods$には以下のようなメリットがあります : 
-$EFFECT_LIST_BULLET$他の$concept_goods$に比べて[Concept('concept_pop','$concept_pops$')]による[concept_good_consumption]が増加します
-$EFFECT_LIST_BULLET$[Concept('concept_trade','$concept_exports$')]における[concept_trade_advantage]が上昇します
-$EFFECT_LIST_BULLET$高級品を$concept_input_goods$として使用する[Concept('concept_building','$concept_building_industries$')]の[concept_throughput]が増加します
-$EFFECT_LIST_BULLET$高級品を物資として消費する[Concept('concept_unit','$concept_units$')]の[concept_offense]と[concept_defense]が上昇します"
+ concept_prestige_good_desc:0 "品質が非常に高く、名品と見なされる[concept_good]。$concept_prestige_goods$は、[concept_prosperity]が十分に高い一部の[Concept('concept_company','$concept_companies$')]によって生産されます。$concept_prestige_goods$の最大生産者となることで、[concept_prestige]が大幅に高まります。\n\nさらに、$concept_prestige_goods$には以下のようなメリットがあります : \n$EFFECT_LIST_BULLET$他の$concept_goods$に比べて[Concept('concept_pop','$concept_pops$')]による[concept_good_consumption]が増加します\n$EFFECT_LIST_BULLET$[Concept('concept_trade','$concept_exports$')]における[concept_trade_advantage]が上昇します\n$EFFECT_LIST_BULLET$高級品を$concept_input_goods$として使用する[Concept('concept_building','$concept_building_industries$')]の[concept_throughput]が増加します\n$EFFECT_LIST_BULLET$高級品を物資として消費する[Concept('concept_unit','$concept_units$')]の[concept_offense]と[concept_defense]が上昇します"
  concept_constructed:0 "建設"
  concept_convoys_desc_added_2:0 "[GetGoods('merchant_marine').GetName]"
  concept_convoys_desc_added_3:0 "[GetBuildingType('building_trade_center').GetName]"
@@ -1901,152 +1838,39 @@ $EFFECT_LIST_BULLET$高級品を物資として消費する[Concept('concept_uni
  concept_georegion_desc:0 "$concept_georegion$とは、[Concept('concept_strategic_region','$concept_strategic_regions$')]と[Concept('concept_state_region','$concept_state_regions$')]の集合に相当する地域です。$concept_georegions$が変わることはありませんが、重なり合う場合もあり、場合によっては、より大きな$concept_georegion$の一部であることもあります。"
  concept_georegion_europe:0 "ヨーロッパ"
  concept_georegion_european:0 "ヨーロッパ"
- concept_georegion_europe_desc:0 "ヨーロッパは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_germany').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_germany').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_england').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_iberia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_france').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_occitania').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_rhine').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_italy').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_danubia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_balkans').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_russia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dnieper').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_belarus').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_finland').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic_states').GetName]"
+ concept_georegion_europe_desc:0 "ヨーロッパは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_iberia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_france').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_occitania').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_rhine').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_italy').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_danubia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_balkans').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_russia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dnieper').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_belarus').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_finland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic_states').GetName]"
  concept_georegion_americas:0 "アメリカ大陸"
- concept_georegion_americas_desc:0 "アメリカ大陸は、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_canada').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_new_england').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_pacific_coast').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_great_plains').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_the_midwest').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dixie').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_mexico').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_america').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caribbean').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_brazil').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_la_plata').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_andes').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_gran_colombia').GetName]"
+ concept_georegion_americas_desc:0 "アメリカ大陸は、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_canada').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_new_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_pacific_coast').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_great_plains').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_the_midwest').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dixie').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_mexico').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_america').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caribbean').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_brazil').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_la_plata').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_andes').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_gran_colombia').GetName]"
  concept_georegion_north_america:0 "北アメリカ"
- concept_georegion_north_america_desc:0 "北アメリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_canada').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_new_england').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_pacific_coast').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_great_plains').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_the_midwest').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dixie').GetName]"
+ concept_georegion_north_america_desc:0 "北アメリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_canada').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_new_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_pacific_coast').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_great_plains').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_the_midwest').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dixie').GetName]"
  concept_georegion_central_america:0 "中央アメリカ"
- concept_georegion_central_america_desc:0 "中央アメリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_mexico').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_america').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caribbean').GetName]"
+ concept_georegion_central_america_desc:0 "中央アメリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_mexico').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_america').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caribbean').GetName]"
  concept_georegion_south_america:0 "南アメリカ"
- concept_georegion_south_america_desc:0 "南アメリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_brazil').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_la_plata').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_andes').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_gran_colombia').GetName]"
+ concept_georegion_south_america_desc:0 "南アメリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_brazil').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_la_plata').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_andes').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_gran_colombia').GetName]"
  concept_georegion_africa:0 "アフリカ"
- concept_georegion_africa_desc:0 "アフリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_nile_basin').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_ethiopia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_africa').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_senegal').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_niger').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_congo').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_southern_africa').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_zanj').GetName]"
+ concept_georegion_africa_desc:0 "アフリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_nile_basin').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_ethiopia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_africa').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_senegal').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_niger').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_congo').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_southern_africa').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_zanj').GetName]"
  concept_georegion_subsaharan_africa:0 "サハラ以南アフリカ"
- concept_georegion_subsaharan_africa_desc:0 "サハラ以南アフリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_ethiopia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_senegal').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_niger').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_congo').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_southern_africa').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_zanj').GetName]
-また、次の[Concept('concept_state_region','$concept_state_regions$')]も含まれています : [SelectLocalization(GetPlayer.IsValid,'GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS_INGAME_LINK','GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS')]"
- GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS_INGAME_LINK:0 "
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_EQUATORIA').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_DARFUR').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_KORDOFAN').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_BLUE_NILE').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_DONGOLA').GetName]"
- GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS:0 "
-$EFFECT_LIST_BULLET$$STATE_EQUATORIA$
-$EFFECT_LIST_BULLET$$STATE_DARFUR$
-$EFFECT_LIST_BULLET$$STATE_KORDOFAN$
-$EFFECT_LIST_BULLET$$STATE_BLUE_NILE$
-$EFFECT_LIST_BULLET$$STATE_DONGOLA$"
+ concept_georegion_subsaharan_africa_desc:0 "サハラ以南アフリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_ethiopia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_senegal').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_niger').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_congo').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_southern_africa').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_zanj').GetName]\nまた、次の[Concept('concept_state_region','$concept_state_regions$')]も含まれています : [SelectLocalization(GetPlayer.IsValid,'GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS_INGAME_LINK','GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS')]"
+ GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS_INGAME_LINK:0 "\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_EQUATORIA').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_DARFUR').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_KORDOFAN').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_BLUE_NILE').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_DONGOLA').GetName]"
+ GEOREGION_SUBSAHARAN_AFRICA_STATE_REGIONS:0 "\n$EFFECT_LIST_BULLET$$STATE_EQUATORIA$\n$EFFECT_LIST_BULLET$$STATE_DARFUR$\n$EFFECT_LIST_BULLET$$STATE_KORDOFAN$\n$EFFECT_LIST_BULLET$$STATE_BLUE_NILE$\n$EFFECT_LIST_BULLET$$STATE_DONGOLA$"
  concept_georegion_north_africa:0 "北アフリカ"
- concept_georegion_north_africa_desc:0 "北アフリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_africa').GetName]
-また、次の[Concept('concept_state_region','$concept_state_regions$')]も含まれています : [SelectLocalization(GetPlayer.IsValid,'GEOREGION_NORTH_AFRICA_STATE_REGIONS_INGAME_LINK','GEOREGION_NORTH_AFRICA_STATE_REGIONS')]"
- GEOREGION_NORTH_AFRICA_STATE_REGIONS_INGAME_LINK:0 "
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_MATRUH').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_EGYPTIAN_DESERT').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_LOWER_EGYPT').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_MIDDLE_EGYPT').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_UPPER_EGYPT').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_SINAI').GetName]"
- GEOREGION_NORTH_AFRICA_STATE_REGIONS:0 "
-$EFFECT_LIST_BULLET$$STATE_MATRUH$
-$EFFECT_LIST_BULLET$$STATE_EGYPTIAN_DESERT$
-$EFFECT_LIST_BULLET$$STATE_LOWER_EGYPT$
-$EFFECT_LIST_BULLET$$STATE_MIDDLE_EGYPT$
-$EFFECT_LIST_BULLET$$STATE_UPPER_EGYPT$
-$EFFECT_LIST_BULLET$$STATE_SINAI$"
+ concept_georegion_north_africa_desc:0 "北アフリカは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_africa').GetName]\nまた、次の[Concept('concept_state_region','$concept_state_regions$')]も含まれています : [SelectLocalization(GetPlayer.IsValid,'GEOREGION_NORTH_AFRICA_STATE_REGIONS_INGAME_LINK','GEOREGION_NORTH_AFRICA_STATE_REGIONS')]"
+ GEOREGION_NORTH_AFRICA_STATE_REGIONS_INGAME_LINK:0 "\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_MATRUH').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_EGYPTIAN_DESERT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_LOWER_EGYPT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_MIDDLE_EGYPT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_UPPER_EGYPT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_SINAI').GetName]"
+ GEOREGION_NORTH_AFRICA_STATE_REGIONS:0 "\n$EFFECT_LIST_BULLET$$STATE_MATRUH$\n$EFFECT_LIST_BULLET$$STATE_EGYPTIAN_DESERT$\n$EFFECT_LIST_BULLET$$STATE_LOWER_EGYPT$\n$EFFECT_LIST_BULLET$$STATE_MIDDLE_EGYPT$\n$EFFECT_LIST_BULLET$$STATE_UPPER_EGYPT$\n$EFFECT_LIST_BULLET$$STATE_SINAI$"
  concept_georegion_middle_east:0 "中東"
- concept_georegion_middle_east_desc:0 "中東は、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_anatolia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_arabic').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_persia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caucasus').GetName]"
+ concept_georegion_middle_east_desc:0 "中東は、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_anatolia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_arabic').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_persia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caucasus').GetName]"
  concept_georegion_central_asia:0 "中央アジア"
- concept_georegion_central_asia_desc:0 "中央アジアは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_asia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_himalayas').GetName]"
+ concept_georegion_central_asia_desc:0 "中央アジアは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_asia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_himalayas').GetName]"
  concept_georegion_india:0 "インド"
  concept_georegion_indian:0 "インド"
- concept_georegion_india_desc:0 "インドは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_punjab').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_bombay').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_india').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_madras').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_bengal').GetName]
-また、次の[Concept('concept_state_region','$concept_state_regions$')]も含まれています : [SelectLocalization(GetPlayer.IsValid,'GEOREGION_INDIA_STATE_REGIONS_INGAME_LINK','GEOREGION_INDIA_STATE_REGIONS')]"
- GEOREGION_INDIA_STATE_REGIONS_INGAME_LINK:0 "
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_QUETTA').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_PASHTUNISTAN').GetName]
-$EFFECT_LIST_BULLET$[GetStateRegion('STATE_KASHMIR').GetName]"
- GEOREGION_INDIA_STATE_REGIONS:0 "
-$EFFECT_LIST_BULLET$$STATE_QUETTA$
-$EFFECT_LIST_BULLET$$STATE_PASHTUNISTAN$
-$EFFECT_LIST_BULLET$$STATE_KASHMIR$"
+ concept_georegion_india_desc:0 "インドは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_punjab').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_bombay').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_india').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_madras').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_bengal').GetName]\nまた、次の[Concept('concept_state_region','$concept_state_regions$')]も含まれています : [SelectLocalization(GetPlayer.IsValid,'GEOREGION_INDIA_STATE_REGIONS_INGAME_LINK','GEOREGION_INDIA_STATE_REGIONS')]"
+ GEOREGION_INDIA_STATE_REGIONS_INGAME_LINK:0 "\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_QUETTA').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_PASHTUNISTAN').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_KASHMIR').GetName]"
+ GEOREGION_INDIA_STATE_REGIONS:0 "\n$EFFECT_LIST_BULLET$$STATE_QUETTA$\n$EFFECT_LIST_BULLET$$STATE_PASHTUNISTAN$\n$EFFECT_LIST_BULLET$$STATE_KASHMIR$"
  concept_georegion_east_asia:0 "東アジア"
- concept_georegion_east_asia_desc:0 "東アジアは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_china').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_china').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_manchuria').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_japan').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_west_siberia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_east_siberia').GetName]"
+ concept_georegion_east_asia_desc:0 "東アジアは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_china').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_china').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_manchuria').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_japan').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_west_siberia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_east_siberia').GetName]"
  concept_georegion_china:0 "中国"
- concept_georegion_china_desc:0 "中国は、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_china').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_china').GetName]"
+ concept_georegion_china_desc:0 "中国は、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_china').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_china').GetName]"
  concept_georegion_southeast_asia:0 "東南アジア"
- concept_georegion_southeast_asia_desc:0 "東南アジアは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : 
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indonesia').GetName]
-$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indochina').GetName]"
+ concept_georegion_southeast_asia_desc:0 "東南アジアは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indonesia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indochina').GetName]"
  concept_privy_purse:0 "御手元金"
- concept_privy_purse_desc:0 "御手元金は、[Concept('concept_ruler','Monarch')]の個人所得です。[concept_georegion_india]においては、#v インド連邦#!の[concept_journal_entry]を使って他[concept_country]に#b 併合#!された[concept_princely_state]の以前の支配者に支払われる恩給を表します。
-
-この$concept_journal_entry$で$concept_princely_state$を併合すると、$modifier_privy_purse_payments$の補正が追加され、その後は併合のたびに更新されます。#b 御手元金#!の支払いは[concept_gdp]の#v 0.01%#!に、この[concept_journal_entry]を使い併合した#b 藩王国#!の数を掛けた値の#b 国庫支出#!を追加します。"
+ concept_privy_purse_desc:0 "御手元金は、[Concept('concept_ruler','Monarch')]の個人所得です。[concept_georegion_india]においては、#v インド連邦#!の[concept_journal_entry]を使って他[concept_country]に#b 併合#!された[concept_princely_state]の以前の支配者に支払われる恩給を表します。\n\nこの$concept_journal_entry$で$concept_princely_state$を併合すると、$modifier_privy_purse_payments$の補正が追加され、その後は併合のたびに更新されます。#b 御手元金#!の支払いは[concept_gdp]の#v 0.01%#!に、この[concept_journal_entry]を使い併合した#b 藩王国#!の数を掛けた値の#b 国庫支出#!を追加します。"

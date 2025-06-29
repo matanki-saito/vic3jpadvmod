@@ -1749,10 +1749,7 @@
  transfers_treasury_to_eic_diplo_tt:0 "[SCOPE.sCountry('target_country').GetName]の[concept_treasury]の中身 (@money![SCOPE.sCountry('target_country').GetGoldReserves|K]) が[ROOT.GetCountry.GetName]に移送されました。"
  britain_monarchy.1.t:0 "国王ジョージ5世の戴冠式"
  britain_monarchy.1.d:0 "国王が死んだ。彼の息子、[SCOPE.sCharacter('george_v_relevant_ruler').GetFirstName]の即位により、王国は歓びに包まれた。彼が末永く統治することを願おう！"
- britain_monarchy.1.f:0 "「私は親友と、最高の父を失った…」
-「生涯で一度も、父のことを悪く思ったことはない」
-「心が痛み、悲しみに打ちひしがれているが、神は私が務めを果たす手助けをしてくださるだろう。そして愛しきメイは今までと変わらず、これからも私の心を癒してくれるはずだ」
-「神よ、課せられた重責を果たすための力と導きを、どうか私に与えてくださいますよう」"
+ britain_monarchy.1.f:0 "「私は親友と、最高の父を失った…」\n「生涯で一度も、父のことを悪く思ったことはない」\n「心が痛み、悲しみに打ちひしがれているが、神は私が務めを果たす手助けをしてくださるだろう。そして愛しきメイは今までと変わらず、これからも私の心を癒してくれるはずだ」\n「神よ、課せられた重責を果たすための力と導きを、どうか私に与えてくださいますよう」"
  britain_monarchy.1.a:0 "国王陛下万歳！"
  edward_vii_death_tt:0 "エドワード7世が死亡"
  JAP_emperor_ninko_loc:0 "仁孝天皇"

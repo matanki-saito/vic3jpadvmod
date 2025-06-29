@@ -29,9 +29,7 @@
  alert_market_goods_shortage_alert_name:0 "[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]における[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon][SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName]の[concept_shortage]"
  alert_market_goods_shortage_alert_desc:0 "この不足により影響を受ける施設が#tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#!あります。"
  alert_market_goods_shortage_alert_hint:0 "[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]での[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon][SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName]の[concept_sell_orders]を増やすことで、不足を解消することができます。これはより多くの[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon][SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName]を生産するか、それを生産している[Concept('concept_state','$concept_states$')]で[concept_infrastructure]を改善することで、低い[concept_market_access]を向上させるか、貿易キャパシティを増やして[concept_world_market]から入手することにより実現できます。"
- alert_market_goods_shortage_alert_hint_data_version:0 "この不足の影響を受けている施設が#tooltippable #tooltip:[Goods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown_data_version [Goods.GetNumBuildingsAffectedByShortageInMarket|v]個#!#!あります。
-
-@information! この不足を解消するには、[Goods.GetMarket.GetName]での[Goods.GetTextIcon][Goods.GetName]の[concept_sell_orders]を増加させればよいでしょう。これは、[Goods.GetTextIcon][Goods.GetName]の生産量を増やすか、それを生産している[Concept('concept_state','$concept_states$')]の[concept_infrastructure]を改善することで[concept_market_access]の低さを改善するか、貿易キャパシティを増やして[concept_world_market]から入手することにより実現できます。"
+ alert_market_goods_shortage_alert_hint_data_version:0 "この不足の影響を受けている施設が#tooltippable #tooltip:[Goods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown_data_version [Goods.GetNumBuildingsAffectedByShortageInMarket|v]個#!#!あります。\n\n@information! この不足を解消するには、[Goods.GetMarket.GetName]での[Goods.GetTextIcon][Goods.GetName]の[concept_sell_orders]を増加させればよいでしょう。これは、[Goods.GetTextIcon][Goods.GetName]の生産量を増やすか、それを生産している[Concept('concept_state','$concept_states$')]の[concept_infrastructure]を改善することで[concept_market_access]の低さを改善するか、貿易キャパシティを増やして[concept_world_market]から入手することにより実現できます。"
  alert_market_goods_shortage_alert_action:0 "[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]での[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName]の市場パネル"
  alert_market_goods_shortage_affected_buildings_breakdown:0 "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
  alert_market_goods_shortage_affected_buildings_breakdown_data_version:0 "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
@@ -106,7 +104,7 @@
  alert_high_tension_alert_action:0 "外交パネル"
  alert_diplomatic_pact_in_danger_name:0 "[AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsFirstCountry(GetPlayer),SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName)][AddTextIf(SCOPE.GetRootScope.GetDiplomaticPact.IsSecondCountry(GetPlayer),SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName)]との[SCOPE.GetRootScope.GetDiplomaticPact.GetName]"
  alert_diplomatic_pact_in_danger_desc:0 "以下の条件が真でなくなった場合に破棄されます : \n$TAB$[SCOPE.GetRootScope.GetDiplomaticPact.GetAboutToBreakReasonDesc]"
- alert_diplomatic_pact_in_danger_hint:0 "この外交協定があなたの国家の運営にとって重要なのであれば、他国との関係を改善したり、現在相手を怒らせているような行動から外交方針を変更することを検討してみましょう。"
+ alert_diplomatic_pact_in_danger_hint:0 "この外交協定があなたの国家の運営にとって重要なのであれば、他国との関係を改善したり、その協定を危うくしている行動から外交方針を変更することを検討してみましょう。"
  alert_diplomatic_pact_in_danger_action:0 "外交パネル"
  alert_obligation_expiring_name:0 "[SCOPE.GetRootScope.GetDiplomaticRelations.GetCountryWhichOwesObligation.GetAdjectiveNoFormatting][concept_obligation]の失効"
  alert_obligation_expiring_desc:0 "[SCOPE.GetRootScope.GetDiplomaticRelations.GetCountryWhichOwesObligation.GetName]が我が国に対して負っている[concept_obligation]の有効期限は#v [SCOPE.GetRootScope.GetDiplomaticRelations.CalcOwedObligationDaysLeft(GetPlayer.Self)]#! 日後です。"
@@ -132,7 +130,7 @@
  ag_high_tensions_desc:0 "我々と[Concept('concept_decentralized_nation','$concept_decentralized_nations$')]との[Concept('concept_tension','$concept_tensions$')]が高まっています。"
  ag_high_tensions_tooltip:0 "#header $ag_high_tensions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_high_tensions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_diplomatic_pact_in_danger_name:0 "[concept_diplomatic_pact]が崩壊しかけています"
- ag_diplomatic_pact_in_danger_desc:0 "[concept_relations]が今後さらに減少すると崩壊するリスクのある[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]があります。"
+ ag_diplomatic_pact_in_danger_desc:0 "破棄されるおそれのある[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts$')]があります"
  ag_diplomatic_pact_in_danger_tooltip:0 "#header $ag_diplomatic_pact_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_diplomatic_pact_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_expiring_obligations_name:0 "[Concept('concept_obligation','$concept_obligations$')]の失効"
  ag_expiring_obligations_desc:0 "我々が抱えている[Concept('concept_obligation','$concept_obligations$')]はまもなく失効します。"
@@ -173,9 +171,7 @@
  alert_market_goods_shortage_name:0 "[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName] ([SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetCompareIconAgainstBasePriceNoFormatting(SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetMarketPrice)]) での[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon][SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName][concept_shortage]"
  alert_market_goods_shortage_desc:0 "この不足により影響を受ける施設が#tooltippable #tooltip:[SCOPE.GetRootScope.GetMarketGoods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown [SCOPE.GetRootScope.GetMarketGoods.GetNumBuildingsAffectedByShortage|v]#!#!件あります"
  alert_market_goods_shortage_hint:0 "[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]での[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon][SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName]の[concept_sell_orders]を増やすことで、不足を解消することができます。これはより多くの[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetTextIcon][SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName]を生産するか、それを生産している[Concept('concept_state','$concept_states$')]で[concept_infrastructure]を改善することで、低い[concept_market_access]を向上させることによって実現できます[SelectLocalization(SCOPE.GetRootScope.GetMarketGoods.GetGoods.IsTradeable,'alert_market_goods_shortage_hint_tradable','.')]。"
- alert_market_goods_shortage_hint_data_version:0 "@information! この不足の影響を受けている施設が#tooltippable #tooltip:[Goods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown_data_version [Goods.GetNumBuildingsAffectedByShortageInMarket|v]個#!#!あります。
-
-この不足を解消するには、[Goods.GetMarket.GetName]での[Goods.GetTextIcon][Goods.GetName]の[concept_sell_orders]を増加させればよいでしょう。これは、[Goods.GetTextIcon][Goods.GetName]の生産量を増やすか、それを生産している[Concept('concept_state','$concept_states$')]の[concept_infrastructure]を改善することで[concept_market_access]の低さを改善するか、貿易キャパシティを増やして[concept_world_market]から入手することにより実現できます。"
+ alert_market_goods_shortage_hint_data_version:0 "@information! この不足の影響を受けている施設が#tooltippable #tooltip:[Goods.GetTooltipTag],alert_market_goods_shortage_affected_buildings_breakdown_data_version [Goods.GetNumBuildingsAffectedByShortageInMarket|v]個#!#!あります。\n\nこの不足を解消するには、[Goods.GetMarket.GetName]での[Goods.GetTextIcon][Goods.GetName]の[concept_sell_orders]を増加させればよいでしょう。これは、[Goods.GetTextIcon][Goods.GetName]の生産量を増やすか、それを生産している[Concept('concept_state','$concept_states$')]の[concept_infrastructure]を改善することで[concept_market_access]の低さを改善するか、貿易キャパシティを増やして[concept_world_market]から入手することにより実現できます。"
  alert_market_goods_shortage_action:0 "[SCOPE.GetRootScope.GetMarketGoods.GetMarket.GetName]での[SCOPE.GetRootScope.GetMarketGoods.GetGoods.GetName]の市場パネル"
  alert_market_goods_shortage_alert_affected_buildings_breakdown:0 "[MarketGoods.GetBreakdownOfBuildingsAffectedByShortage]"
  alert_market_goods_shortage_alert_affected_buildings_breakdown_data_version:0 "[Goods.GetBreakdownOfBuildingsAffectedByShortageInMarket]"
@@ -272,7 +268,7 @@
  insufficient_tax_capacity_alert:0 "課税キャパシティが不足"
  alert_stalled_naval_invasion_name:0 "膠着状態の[concept_naval_invasion]"
  alert_stalled_naval_invasion_desc:0 "侵略中の[concept_admiral]が[concept_battle]を始めるための[Concept('concept_order','$concept_orders$')]を受けていないため、[SCOPE.GetRootScope.GetInvasion.GetName]は上陸を進めることができません。"
- alert_stalled_naval_invasion_hint:0 "$concept_admirals$の$concept_orders$を、[GetCommanderOrderType('intercept_coast').GetName]などの戦闘開始を許可するものに変更できます。"
+ alert_stalled_naval_invasion_hint:0 "$concept_admirals$の$concept_orders$を、[GetCommanderOrderType('interception_coast').GetName]などの戦闘開始を許可するものに変更できます。"
  alert_stalled_naval_invasion_action:0 "侵略パネル"
  alert_isolated_colony_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]は[Concept('concept_isolated_state','$concept_isolated_state_short$')][concept_colony]です"
  alert_isolated_colony_alert_desc:0 "[Concept('concept_isolated_state','$concept_isolated_state_short$')]は大きな市場で商品を売買することができません。[Concept('concept_pop_needs','$concept_pops$')]は州内から必要な物資を調達せねばならず、その結果として起きる価格の変動がPOPの[concept_sol]に大きな影響を与える可能性があります。"
@@ -349,11 +345,7 @@
  alert_above_company_limit_hint:0 "企業パネルより$concept_company$を解散させることにより、制限内に戻すことができます。ペナルティを受けながら企業を存続させ、上限を増加させる技術を研究することも可能です。"
  alert_above_company_limit_action:0 "企業パネル"
  alert_famine_alert_name:0 "[GetPlayer.GetName]での[concept_famine]"
- alert_famine_alert_hint:0 "[GetPopNeed('popneed_basic_food').GetName][Concept('concept_good','$concept_goods$')]の供給を増やすことで、被害を受けている[Concept('concept_state','$concept_states$')]に住んでいる[Concept('concept_pop','$concept_pops$')]の[concept_food_security]を改善できます。供給を増やすには、[GetPopNeed('popneed_basic_food').GetName]の[Concept('concept_pop_needs','$concept_pop_need$')]を満たすいずれかの$concept_goods$を生産する[Concept('concept_building','$concept_buildings$')]を建設するか、それを[Concept('concept_trade','$concept_importing$')]します。
-
-[concept_market_access]が低い場合も[GetPopNeed('popneed_basic_food').GetName]$concept_goods$の入手に影響する場合があります。
-
-$concept_buildings$や$concept_imports$は、完全に効果が現れるまでにしばらく時間がかかる場合があります。一時的な解決策にしかなりませんが、[GetDecreeType('decree_emergency_relief').GetName][concept_decree]のほうが早く効果が出る可能性があります。"
+ alert_famine_alert_hint:0 "[GetPopNeed('popneed_basic_food').GetName][Concept('concept_good','$concept_goods$')]の供給を増やすことで、被害を受けている[Concept('concept_state','$concept_states$')]に住んでいる[Concept('concept_pop','$concept_pops$')]の[concept_food_security]を改善できます。供給を増やすには、[GetPopNeed('popneed_basic_food').GetName]の[Concept('concept_pop_needs','$concept_pop_need$')]を満たすいずれかの$concept_goods$を生産する[Concept('concept_building','$concept_buildings$')]を建設するか、それを[Concept('concept_trade','$concept_importing$')]します。\n\n[concept_market_access]が低い場合も[GetPopNeed('popneed_basic_food').GetName]$concept_goods$の入手に影響する場合があります。\n\n$concept_buildings$や$concept_imports$は、完全に効果が現れるまでにしばらく時間がかかる場合があります。一時的な解決策にしかなりませんが、[GetDecreeType('decree_emergency_relief').GetName][concept_decree]のほうが早く効果が出る可能性があります。"
  alert_famine_alert_action:0 "[SCOPE.GetRootScope.GetMarket.GetName]の[concept_food_security]タブ"
  above_company_limit_setting_name:0 "企業数の上限を超過"
  famine_alert_setting_name:0 "飢饉"
@@ -377,18 +369,10 @@ $concept_buildings$や$concept_imports$は、完全に効果が現れるまで�
  alert_blockaded_state_alert_action:0 "[SCOPE.GetRootScope.GetState.GetName]の州パネル"
  ag_blockaded_states_name:0 "[Concept('concept_blockade','$concept_blockaded$')]された[Concept('concept_state','$concept_states$')]"
  ag_blockaded_states_desc:0 "$concept_blockaded$されている$concept_states$があります。"
- ag_blockaded_states_tooltip:0 "#header $ag_blockaded_states_name$#!
-$TOOLTIP_DELIMITER$
-$ag_blockaded_states_desc$
-
-$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_blockaded_states_tooltip:0 "#header $ag_blockaded_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_blockaded_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  ag_blockaded_hubs_name:0 "[Concept('concept_blockade','$concept_blockaded$')]された[Concept('concept_world_market_hub','$concept_world_market_hubs_short$')]"
  ag_blockaded_hubs_desc:0 "$concept_blockaded$されている$concept_world_market_hubs$があります。"
- ag_blockaded_hubs_tooltip:0 "#header $ag_blockaded_hubs_name$#!
-$TOOLTIP_DELIMITER$
-$ag_blockaded_hubs_desc$
-
-$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_blockaded_hubs_tooltip:0 "#header $ag_blockaded_hubs_name$#!\n$TOOLTIP_DELIMITER$\n$ag_blockaded_hubs_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  alert_treaty_not_fulfilled_name:0 "[SCOPE.GetRootScope.GetTreaty.GetName]の[Concept('concept_non_fulfillment','$concept_non_fulfilled$')]"
  alert_treaty_not_fulfilled_desc:0 "[SCOPE.GetRootScope.GetTreaty.GetNonFulfillmentDescFor(SCOPE.sCountry('actor'))]"
  alert_treaty_not_fulfilled_hint:0 "現在我々が[Concept('concept_contravention','$concept_contravening$')]している[Concept('concept_article','$concept_articles$')]の要件を満たすことで、これを解決することができます。それが不可能であれば、[concept_treaty]からの脱退を検討してください。"
@@ -404,3 +388,11 @@ $ALERT_GROUP_TOOLTIP_FOOTER$"
  unused_interests_alert_setting_name:0 "未使用の関心"
  treaty_not_fulfilled_setting_name:0 "条約の不履行"
  article_contravened_setting_name:0 "条項違反"
+ alert_treaty_article_in_danger_name:0 "[SCOPE.GetRootScope.GetTreatyArticle.GetTreaty.GetName]の[SCOPE.GetRootScope.GetTreatyArticle.GetName]"
+ alert_treaty_article_in_danger_desc:0 "以下の条件が真でなくなった場合に破棄されます : \n$TAB$[SCOPE.GetRootScope.GetTreatyArticle.GetAboutToBreakReasonDesc]"
+ alert_treaty_article_in_danger_hint:0 "この条項があなたの国家の運営にとって重要なのであれば、他国との関係を改善したり、その条項を危うくしている行動から外交方針を変更することを検討してみましょう。"
+ alert_treaty_article_in_danger_action:0 "外交パネル"
+ ag_treaty_article_in_danger_name:0 "[concept_article]が破棄されるおそれがあります"
+ ag_treaty_article_in_danger_desc:0 "破棄されるおそれのある[Concept('concept_article','$concept_articles$')]があります"
+ ag_treaty_article_in_danger_tooltip:0 "#header $ag_treaty_article_in_danger_name$#!\n$TOOLTIP_DELIMITER$\n$ag_treaty_article_in_danger_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ treaty_article_in_danger_setting_name:0 "危機に瀕している条約条項"

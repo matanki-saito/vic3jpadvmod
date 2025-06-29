@@ -368,11 +368,7 @@
  CANNOT_JOIN_AGAINST_OVERLORD_BACKER:0 "[TARGET_COUNTRY.GetName|v]は、[COUNTRY_THIRD_PARTY.GetName]を支援している[COUNTRY.GetName]の[concept_subject]です"
  SWAY_COUNTRY_HEADER_SELECTOR:0 "[SelectLocalization(SwayCountryPanel.IsReverseSway,'SWAY_COUNTRY_HEADER_REVERSE','SWAY_COUNTRY_HEADER')]"
  SWAY_COUNTRY_HEADER_REVERSE:0 "#bold [SwayCountryPanel.GetCountry.GetName]への[concept_offer_support]#!"
- DIPLO_PLAY_COUNTRY_TOOLTIP:0 "#header [Country.GetName]#!
-[DiplomaticPlay.GetSupportStanceDesc(Country.Self)]
-$TOOLTIP_DELIMITER$
-@battalions!#v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP [Country.GetBattalions|0]#!#!#! [Concept('concept_battalion','$concept_battalions$')] (#v [Country.GetMobilizationRatio|0%]#!@mobilization![Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')]) 
-@flotillas!#v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP [Country.GetWarships]#!#!#! [Concept('concept_flotilla','$concept_flotillas$')]"
+ DIPLO_PLAY_COUNTRY_TOOLTIP:0 "#header [Country.GetName]#!\n[DiplomaticPlay.GetSupportStanceDesc(Country.Self)]\n$TOOLTIP_DELIMITER$\n@battalions!#v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_ARMY_OVERVIEW_TOOLTIP [Country.GetBattalions|0]#!#!#! [Concept('concept_battalion','$concept_battalions$')] (#v [Country.GetMobilizationRatio|0%]#!@mobilization![Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')]) \n@flotillas!#v #tooltippable #tooltip:[Country.GetTooltipTag],PANEL_MILITARY_NAVY_CURRENT_FLOTILLAS_TOOLTIP [Country.GetWarships]#!#!#! [Concept('concept_flotilla','$concept_flotillas$')]"
  DIPLOMATIC_DEMAND_ACCEPTANCE:0 "― [DiplomaticPlayConfirmation.GetDiplomaticDemandAcceptanceDesc]"
  DIPLO_PLAY_ADD_WARGOAL_DESC:0 "$ERRORS$"
  DIPLO_PLAY_SWAY_COUNTRY_DESC:0 "#header [COUNTRY.GetName]への揺さぶり#!\n現在#b [DiplomaticPlay.GetSupportStanceDesc(Country.Self)]#!\n$TOOLTIP_DELIMITER$\n[concept_diplomatic_play]において、[COUNTRY.GetName]をあなたの側に[concept_sway]しようとします[ConcatIfNeitherEmpty('\n\n','$ERRORS$')]"
@@ -542,9 +538,7 @@ $TOOLTIP_DELIMITER$
  CLICK_TO_SELECT_ARTICLE_INPUT_LAW:0 "クリックで[concept_law]を選択"
  WAR_PEACE_MUTUALLY_EXCLUSIVE_TREATY_ARTICLES:0 "和平協定には相互に排他的な[TREATY_ARTICLE_TYPE.GetName][Concept('concept_war_goal','$concept_war_goals$')]を含むことができません。"
  dp_default_treaty_article:0 "$war_goal_treaty_article_type_name$"
- dp_default_treaty_article_tooltip:0 "#header$dp_default_treaty_article$ の[concept_diplomatic_play]を開始#!
-$TOOLTIP_DELIMITER$
-$dp_default_treaty_article_desc$"
+ dp_default_treaty_article_tooltip:0 "#header$dp_default_treaty_article$ の[concept_diplomatic_play]を開始#!\n$TOOLTIP_DELIMITER$\n$dp_default_treaty_article_desc$"
  dp_default_treaty_article_desc:0 "発動する[concept_war_goal]を設定し、対象の[concept_country]に対する金銭支払い[concept_treaty]を強制します"
  indian_primary_culture_tt:0 "[SCOPE.sCountry('target_country').GetName]はインドの[concept_primary_cultures]を有しています"
  war_goal_enforce_treaty_article_type_name:0 "条約条項の施行"
