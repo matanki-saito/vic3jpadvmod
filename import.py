@@ -20,7 +20,7 @@ class Context:
     extract_path: Path = Path("extract")
     japanese_root_path: Path = Path("extract/japanese_root_path")
     english_root_path: Path = Path("extract/english_root_path")
-    paratranz_zip_file: Path = Path("tmp/p.zip")
+    paratranz_zip_file: Path = Path("tmp3/p.zip")
     base_url: str = "https://paratranz.cn"
     is_local: bool = "IS_LOCAL" in os.environ and os.environ.get(
         "IS_LOCAL") in ["True", "true", 1]
@@ -32,7 +32,7 @@ class Context2:
     japanese_stats = None
     english_stats = None
     file_str_paths: set = None
-    converted_root_path: Path = Path("tmp/converted")
+    converted_root_path: Path = Path("tmp3/converted")
 
     def __init__(self, context: Context,
                  current_stats: dict,
@@ -408,7 +408,7 @@ def update_entry(ctx: Context3):
 
 
 def main():
-    os.makedirs("tmp", exist_ok=True)
+    os.makedirs("tmp3", exist_ok=True)
     context: Context = Context()
 
     get_current_paratranz_zip_file(ctx=context)
@@ -434,7 +434,7 @@ def main():
     update_entry(context3)
 
     if not context.is_local:
-        shutil.rmtree("tmp")
+        shutil.rmtree("tmp3")
 
 
 if __name__ == "__main__":

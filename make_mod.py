@@ -56,7 +56,7 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
     :return:
     """
 
-    ext_paratranz_main_dir_path = _(".", "tmp", "paratranz_ext_main")
+    ext_paratranz_main_dir_path = _(".", "tmp2", "paratranz_ext_main")
 
     # 初期化（github-actionsでは必要ない）
     if os.path.exists(ext_paratranz_main_dir_path):
@@ -98,7 +98,7 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
 
     # .metadata/metadata.jsonを入れる
     os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
-    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.8.*")
+    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.9.*")
 
     return out_dir_path
 
@@ -353,11 +353,13 @@ def update_source(mod_folder_path):
 
 
 def main():
+    is_local = "IS_LOCAL" in os.environ and os.environ.get("IS_LOCAL") in ["True", "true", 1]
+
     # 一時フォルダ用意
-    os.makedirs(_(".", "tmp"), exist_ok=True)
+    os.makedirs(_(".", "tmp2"), exist_ok=True)
     os.makedirs(_(".", "out"), exist_ok=True)
     out_dir_path = _(".", "out")
-    zip_path = _(".", "tmp", "paratranz_main.zip")
+    zip_path = _(".", "tmp2", "paratranz_main.zip")
 
     # 翻訳の最新版をダウンロードする project_id=5456はVic3JPADMODのプロジェクトID
     if not os.path.exists(zip_path):
@@ -377,6 +379,9 @@ def main():
 
     # utf8ファイルを移動する（この後git pushする）
     update_source(mod_folder_path=mod_folder_path)
+
+    if not is_local:
+        shutil.rmtree("tmp2")
 
 
 if __name__ == "__main__":
