@@ -22,6 +22,8 @@ class Context:
     english_root_path: Path = Path("extract/english_root_path")
     paratranz_zip_file: Path = Path("tmp/p.zip")
     base_url: str = "https://paratranz.cn"
+    is_local: bool = "IS_LOCAL" in os.environ and os.environ.get(
+        "IS_LOCAL") in ["True", "true", 1]
 
 
 class Context2:
@@ -66,6 +68,9 @@ def get_file_infos(context: Context):
 
     result = {}
     for record in response:
+        if record["name"].startswith("/"):
+            record["name"] = record["name"][1:]
+
         result[record["name"]] = record["id"]
 
     return result
@@ -82,7 +87,7 @@ def get_current_paratranz_zip_file(ctx: Context):
     headers = {'Authorization': ctx.secret}
     response = requests.post(url, headers=headers)
 
-    print("[LOG] status code {}".format(response.status_code))
+    print("[LOG] status code {} {}".format(response.status_code, response.text))
 
     # wait for regenerate
     print("[LOG] wait 20sec")
@@ -91,7 +96,7 @@ def get_current_paratranz_zip_file(ctx: Context):
     print("[LOG] Try to download current paratranz zip file")
     url = "{}/api/projects/{}/artifacts/download".format(ctx.base_url, ctx.project_id)
     response = requests.get(url, headers=headers)
-    print("[LOG] status code {}".format(response.status_code))
+    print("[LOG] status code {} {}".format(response.status_code, response.text))
 
     with open(ctx.paratranz_zip_file, "wb") as my_file:
         my_file.write(response.content)
@@ -110,7 +115,7 @@ def update_current_file(file_id: int, source_path: Path, context: Context):
     headers = {'Authorization': context.secret}
     response = requests.post(url, files=files, headers=headers)
 
-    print("[LOG] status code {}".format(response.status_code))
+    print("[LOG] status code {} {}".format(response.status_code, response.text))
 
 
 def get_tid_from_key(key: str, context: Context):
@@ -121,7 +126,7 @@ def get_tid_from_key(key: str, context: Context):
     print("[LOG] Get text id from key, key={}".format(key))
 
     response = requests.get(url, headers=headers)
-    print("[LOG] status code {}".format(response.status_code))
+    print("[LOG] status code {} {}".format(response.status_code, response.text))
 
     content = response.json()
 
@@ -139,7 +144,7 @@ def update_entry_by_tid(tid: int, payload: dict, context: Context):
 
     response = requests.put(url, data=payload, headers=headers)
 
-    print("[LOG] status code {}".format(response.status_code))
+    print("[LOG] status code {} {}".format(response.status_code, response.text))
 
 
 def add_new_file(base_path: Path, source_path: Path, context: Context):
@@ -156,7 +161,7 @@ def add_new_file(base_path: Path, source_path: Path, context: Context):
     headers = {'Authorization': context.secret}
     response = requests.post(url, files=files, data=data, headers=headers)
 
-    print("[LOG] status code {}".format(response.status_code))
+    print("[LOG] status code {} {}".format(response.status_code, response.text))
 
 
 def pick_tool(dic: dict):
@@ -317,11 +322,11 @@ def aggregation_stats_from_current_files(ctx: Context):
                     result[key] = {}
 
                 result[key][str_path.replace("_l_english.json", "")] = {
-                    "translation": entry["translation"].replace("\\n", "\n") if "translation" in entry else None,
-                    "original": entry["original"].replace("\\n", "\n"),
+                    "translation": entry["translation"] if "translation" in entry else None,
+                    "original": entry["original"],
                     "stage": entry["stage"],
-                    "context": entry["context"].replace("\\n", "\n") if "context" in entry else
-                    entry["original"].replace("\\n", "\n"),
+                    "context": entry["context"] if "context" in entry else
+                    entry["original"],
                 }
                 result2.add(str(file_path.relative_to(utf8_path)))
 
@@ -347,7 +352,7 @@ def aggregation_stats_from_japanese_files(ctx: Context):
                         result[key] = {}
 
                     result[key][str_path.replace("_l_japanese.yml", "")] = {
-                        "value": value.replace("\\n", "\n"),
+                        "value": value,
                     }
 
     return result
@@ -367,7 +372,7 @@ def aggregation_stats_from_english_files(ctx: Context):
                     key = match.group(1)
                     value = match.group(2)
                     result[str_path][key] = {
-                        "value": value.replace("\\n", "\n"),
+                        "value": value,
                         "parent": str_path.replace("english\\", "japanese\\").replace("_l_english.yml", "")
                     }
 
@@ -427,6 +432,9 @@ def main():
     update_files(context3)
 
     update_entry(context3)
+
+    if not context.is_local:
+        shutil.rmtree("tmp")
 
 
 if __name__ == "__main__":
