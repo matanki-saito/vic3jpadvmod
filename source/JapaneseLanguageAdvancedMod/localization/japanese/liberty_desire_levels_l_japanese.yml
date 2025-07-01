@@ -53,4 +53,4 @@
  LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE:0 "[GetArticleType('support_independence').GetName] (#tooltippable #tooltip:[Country.GetTooltipTag],LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_BREAKDOWN countries) #!#!"
  LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_BREAKDOWN:0 "#header [GetArticleType('support_independence').GetName]から[Country.GetWeeklyLibertyDesireChangeFromSupportIndependence|v:=]#!\n$TOOLTIP_DELIMITER$\n[Country.GetWeeklyLibertyDesireChangeFromSupportIndependenceDesc]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_SUPPORTING_INDEPENDENCE_MAX_LIMIT:0 "最大値は$AMOUNT_MAX|v$に限定されます"
- LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_COUNTRY_SUPPORTING_INDEPENDENCE:0 "[Country.GetName]からの#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v : =$#!#!"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_FROM_COUNTRY_SUPPORTING_INDEPENDENCE:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|v : =$#!#! ([Country.GetName]) "

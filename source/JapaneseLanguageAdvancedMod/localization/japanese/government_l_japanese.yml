@@ -454,7 +454,7 @@
  gov_crown_colony_india:0 "直轄植民地"
  gov_crown_colony_india_desc:0 "イギリス王室の植民地であり、植民地行政官によって統治され、自治権は限られています。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_dominion_india_presidential:0 "自治領"
- gov_dominion_india_presidential_desc:0 "[Concept('concept_election','$concept_elected$')]された[Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')]が[concept_country]を治める[concept_government]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_dominion_india_presidential_desc:0 "[Concept('concept_election','$concept_elected$')]された[Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')]が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_fascist_corporate_state:0 "ファシズム国家"
  gov_fascist_corporate_state_desc:0 "ファシストの[concept_ideology]に固執している[concept_government_type]。残酷で独裁的な政権です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_corporate_state:0 "協同体国家"

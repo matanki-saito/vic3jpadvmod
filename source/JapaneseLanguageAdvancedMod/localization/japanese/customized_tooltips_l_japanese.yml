@@ -495,7 +495,7 @@
  DATA_COMPANY_NAME_FORMAT_TOOLTIP_PT3:0 "[concept_prosperity] : $COMPANY_PROSPERITY_FORMATTED$\n[concept_productivity] : @money![Company.GetFormattedProductivity]\n利益 : @money![Company.GetProfit|v+=D]"
  DATA_COMPANY_TYPE_NAME_PRESTIGE_GOODS:0 "[CompanyType.GetProducedPrestigeGoodsDesc]を生産できます"
  DATA_COMPANY_TYPE_PREDICTED_PRODUCTIVITY:0 "@money![CompanyType.GetProductivity|1v]予想される[concept_productivity]"
- USING_X_FREE_CHARTERS:0 "[Country.GetUsedFreeCharters|v]／[Country.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')]個の無償の[Concept('concept_company_charter','$concept_company_charters$')]を利用"
+ USING_X_FREE_CHARTERS:0 "[Country.GetUsedFreeCharters|v]/[Country.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('country_free_charters_add')]無償の[Concept('concept_company_charter','$concept_company_charters$')]を利用中"
  EFFECTS_TITLE:0 "#title 効果 : #!"
  DATA_COMPANY_CHARTER_EFFECTS:0 "[CompanyCharter.GetEffects]"
  DATA_COMPANY_CHARTER_LORE:0 "[CompanyCharter.GetDesc]"

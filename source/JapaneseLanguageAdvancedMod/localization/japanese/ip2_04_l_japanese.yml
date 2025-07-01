@@ -73,7 +73,7 @@
  princely_state_creation.5.b:0 "これらの地域をシャン地区として国に編入する。"
  upset_every_princely_state_tt:0 "各[concept_princely_state]の[concept_liberty_desire]は、#r [SCOPE.ScriptValue('annex_subject_intermediate_desire_change')]#!によって高まり、[concept_relations]は#r [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!によって悪化します"
  upset_every_princely_state_relations_tt:0 "すべての[concept_princely_state]との[concept_relations]は#negative_value [SCOPE.ScriptValue('basic_princely_state_relations_change')]#!によって低下しす。"
- upset_every_princely_state_variable_liberty_desire_tt:0 "各[concept_princely_state]の[concept_liberty_desire]は、#negative_value [SCOPE.ScriptValue('variable_princely_state_liberty_desire_change')]#!によって高まります。要因 : #indent_newline:3 \n[SCOPE.ScriptValue('basic_princely_state_relations_change')]#!"
+ upset_every_princely_state_variable_liberty_desire_tt:0 "各[concept_princely_state]の[concept_liberty_desire]は、#negative_value [SCOPE.ScriptValue('variable_princely_state_liberty_desire_change')]#!によって高まります。要因 : #indent_newline:3 \n[SCOPE.GetScriptValueDesc('variable_princely_state_liberty_desire_change')]#!"
  DOCTRINE_OF_LAPSE_PRESTIGE:0 "[SCOPE.sC('target_country').GetName]の[concept_prestige]"
  DOCTRINE_OF_LAPSE_NO_MALE_RULER:0 "[SCOPE.sC('target_country').GetName]には男性の[concept_ruler]がいません"
  DOCTRINE_OF_LAPSE_OLD_WITH_NO_MALE_HEIR:0 "[SCOPE.sC('target_country').GetRuler.GetFullName]は#v [GetDefine('NCharacters','OLD_AGE')]#!を超えており、男性の[concept_heir]がいません"
