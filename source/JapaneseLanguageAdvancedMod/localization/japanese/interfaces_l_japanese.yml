@@ -8943,7 +8943,7 @@
  ADD_WARGOAL_MANEUVERS_COST_WITH_LABEL:0 "@maneuvers![WarGoal.CalcManeuversCostToAdd|v][Concept('concept_maneuver','$concept_maneuvers$')]コスト"
  WARGOAL_INFAMY_WITH_LABEL:0 "@infamy![WarGoal.GetInfamyAmount|-1][concept_infamy]"
  character_role_executive:0 "[concept_executive]"
- character_role_executive_title:0 "幹部"
+ character_role_executive_title:0 "経営責任者"
  CHAR_TRAIT_MODIFIER_HEADER_EXECUTIVE:0 "#title [concept_executive]として : #!"
  CHAR_TRAIT_MODIFIER_HEADER_EXECUTIVE_INACTIVE:0 "#title [concept_executive]として (無効) : #!"
  MARKET_PANEL_WORLD_MARKET_TRADE:0 "貿易"

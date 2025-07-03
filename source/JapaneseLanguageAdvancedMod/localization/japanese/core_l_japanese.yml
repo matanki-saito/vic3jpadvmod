@@ -207,7 +207,7 @@
  SAVE_ERROR_NO_CLOUD:0 "クラウドへのセーブに失敗しました。クラウドストレージに接続されていません。"
  SAVE_ERROR_FILE_ERROR:0 "セーブに失敗しました"
  SORT_COST:0 "コスト"
- EXECUTIVE_TRAIT:0 "幹部特性― $TRAIT_NAME$"
+ EXECUTIVE_TRAIT:0 "経営責任者特性― $TRAIT_NAME$"
  FRONT_NAME_LANDING:0 "$REGION$上陸戦線"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_INVADING:0 "$FORMATION_NAME$は進行中の[concept_invasion]に参加しているため、$FRONT_NAME$に配備#b できません#!"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_INVADING:0 "$FORMATION_NAME$は進行中の[concept_invasion]に参加しているため、$SEA_NODE_NAME$に配備#b できません#!"
