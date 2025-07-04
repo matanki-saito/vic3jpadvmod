@@ -2778,7 +2778,7 @@
  disallow_law_no_schools_breakdown_tt:0 "[GetPlayer.GetModifier.GetFullEntryDescFor('country_disallow_law_no_schools_bool')]"
  disallow_law_no_police_tt:0 "[GetLawType('law_no_police').GetName]が#tooltippable #tooltip:disallow_law_no_police_breakdown_tt 許可#!#!された"
  disallow_law_no_police_breakdown_tt:0 "[GetPlayer.GetModifier.GetFullEntryDescFor('country_disallow_law_no_police_bool')]"
- disallow_law_no_colonial_affairs_tt:0 "[GetLawType('law_no_colonial_affairs').GetName]#tooltippable #tooltip:disallow_law_no_colonial_affairs_breakdown_tt を許可#!#!"
+ disallow_law_no_colonial_affairs_tt:0 "[GetLawType('law_no_colonial_affairs').GetName]が#tooltippable #tooltip:disallow_law_no_colonial_affairs_breakdown_tt を許可#!#!された"
  disallow_law_no_colonial_affairs_breakdown_tt:0 "[GetPlayer.GetModifier.GetFullEntryDescFor('country_disallow_law_no_colonial_affairs_bool')]"
  country_institution_size_change_speed_institution_schools_mult:0 "[GetInstitutionType('institution_schools').GetName]の制度の規模を変更するスピード"
  country_institution_size_change_speed_institution_schools_mult_desc:0 "[GetInstitutionType('institution_schools').GetName]の規模を変更するスピード"
