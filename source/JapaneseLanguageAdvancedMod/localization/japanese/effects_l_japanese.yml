@@ -328,7 +328,7 @@
  ADD_CULTURE_STANDARD_OF_LIVING_MODIFIER:0 "[State.GetName]に$MODIFIER_DESC$を追加します"
  SEIZE_INVESTMENT_POOL:0 "[concept_treasury]の[concept_investment_pool]にある全資金を差し押さえます。また、あらゆる[Concept('concept_private_construction','$concept_private_constructions$')]を[Concept('concept_government_construction','$concept_government_constructions$')]へ変換します"
  SEIZE_INVESTMENT_POOL_FIRST:0 "$SEIZE_INVESTMENT_POOL$"
- SEIZE_INVESTMENT_POOL_THIRD:0 "[COUNTRY.GetName]が[concept_treasury]の[concept_investment_pool]にある全資金を差し押さえます。また、あらゆる[Concept('concept_private_construction','$concept_private_constructions$')]を[Concept('concept_government_construction','$concept_government_constructions$')]へ変換します"
+ SEIZE_INVESTMENT_POOL_THIRD:0 "[Country.GetName]が[concept_treasury]の[concept_investment_pool]にある全資金を差し押さえます。また、あらゆる[Concept('concept_private_construction','$concept_private_constructions$')]を[Concept('concept_government_construction','$concept_government_constructions$')]へ変換します"
  END_TRUCE:0 "[TARGET_COUNTRY.GetName]との[concept_truce]が解除されます"
  START_PRIVATELY_FUNDED_BUILDING_CONSTRUCTION:0 "[State.GetName]で[concept_private_construction]として[BuildingType.GetName]の建設を開始"
  ADD_RELIGION_STANDARD_OF_LIVING_MODIFIER:0 " [State.GetName]の$DURATION$に$MODIFIER_DESC$ [Concept('concept_pop','$concept_pops$')]を追加"

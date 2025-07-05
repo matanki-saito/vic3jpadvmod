@@ -475,7 +475,7 @@
  sepoy_mutiny_events.11.f:0 "「はるかに恵まれた状況下であっても、臣民のためにこれほど多くのことを試み、これほど多くの試みを成功させ、有益な結果をもたらした政府はほとんどない。理解が困難を極め、改善はそれよりもさらに困難である国民を統治する外国人政府には、これほど多くを成し遂げたことに誇りを持つ権利がある。そして、現存するいかなる政府も、国民も、これ以上の成果を上げられなかったことを非難することはできない」\n\n― ジョン・スチュアート・ミル、『#italic 過去30年間におけるインド行政の改善に関する覚書#!』"
  sepoy_mutiny_events.11.a:0 "[ROOT.GetCountry.GetTopOverlord.GetRuler.GetPrimaryRoleTitle]と議会による統治があってのものだ。"
  sepoy_mutiny_events.11.b:0 "我々の支配が脅かされることは二度とあってはならない。"
- upgrade_company_rule_modifier_tt:0 "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_company_rule_tt $modifier_india_company_rule$#!のモディファイアの効果が#b 向上#!します : \n[GetStaticModifier('modifier_india_company_rule_upgraded').GetDesc]"
+ upgrade_company_rule_modifier_tt:0 "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_company_rule_tt $modifier_india_company_rule$#!の補正の効果が#b 向上#!します : \n[GetStaticModifier('modifier_india_company_rule_upgraded').GetDesc]"
  modifier_india_company_rule_upgraded_tt:0 "[GetStaticModifier('modifier_india_company_rule_upgraded').GetName|v]\n[GetStaticModifier('modifier_india_company_rule_upgraded').GetDesc]"
  modifier_east_india_company_triumphant:0 "勝ち誇る企業"
  modifier_india_company_rule_upgraded:0 "企業支配"
