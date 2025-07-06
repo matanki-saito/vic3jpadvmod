@@ -213,7 +213,7 @@
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_INVADING:0 "$FORMATION_NAME$は進行中の[concept_invasion]に参加しているため、$SEA_NODE_NAME$に配備#b できません#!"
  SPLIT_MILITARY_FORMATION_INVADING:0 "進行中の[concept_invasion]に参加しているため、[concept_military_formation]を去ることができません"
  MERGE_MILITARY_FORMATIONS_DESC:0 "[ConcatIfNeitherEmpty('$ERRORS$','\n\n')][Concept('concept_unit','$concept_units$')]と[Concept('concept_commander','$concept_commanders$')]は[MilitaryFormation.GetName]に転属となります"
- MERGE_MILITARY_FORMATIONS_FORMATION_ERRORS:0 "@red_cross! [MilitaryFormation.GetName]は統合できません[AddTextIf(Not(StringIsEmpty('$ERRORS$')),'\n #indent_newline:3 $ERRORS$#!')]"
+ MERGE_MILITARY_FORMATIONS_FORMATION_ERRORS:0 "@red_cross! [MilitaryFormation.GetName]が統合不可[AddTextIf(Not(StringIsEmpty('$ERRORS$')),'\n #indent_newline:3 $ERRORS$#!')]"
  SET_CHARACTER_ORDER_UNABLE_TO_ORDER_X_CHARACTERS:0 "$NUM_UNABLE|v$名の[Concept('concept_commander','$concept_commanders$')]に対する[concept_order]を変更できません"
  SET_CHARACTER_ORDER_CHARACTER_ERRORS:0 "[Character.GetFullName]はこの命令を使用できません[AddTextIf(Not(StringIsEmpty('$ERRORS$')),'\n #indent_newline:3 $ERRORS$#!')]"
  STATION_MILITARY_FORMATION_IN_HQ_INVADING:0 "$FORMATION_NAME$は進行中の[concept_invasion]に参加しているため、#b $HQ_NAME$#!に#b 駐在できません#!"
