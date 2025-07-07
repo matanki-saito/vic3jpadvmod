@@ -332,7 +332,7 @@
  king_of_sweden_key:0 "スウェーデンの"
  king_of_sweden_denmark_and_norway_key:0 "スウェーデン、デンマーク、ノルウェーの"
  oscar_i_death_tt:0 "オスカー1世が死亡しました。"
- charles_xv_death_tt:0 "チャールズ15世が死亡しました。"
+ charles_xv_death_tt:0 "カール15世が死亡しました。"
  ruler_disapproves_of_revolutionary_law:0 "[concept_ruler]またはその[concept_interest_group]は、[SCOPE.sLawType('revolutionary_law').GetFullName]の制定を不承認しなければなりません。"
  ruler_disapproves_of_revolutionary_law_contextless:0 "[concept_ruler]またはその[concept_interest_group]は、この$concept_political_movement_short$の[concept_law]制定目標を不承認とする必要があります。"
  modifier_ruler_abdicated:0 "支配者が退位した"
