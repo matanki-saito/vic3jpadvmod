@@ -1616,7 +1616,7 @@
  TREATY_PROPOSAL_DECLINED_TOO_SOON:0 "#variable [COUNTRY.GetName]#!に対して別の提案をするには、#variable$DATE$ #!まで待たなければなりません。"
  RELATIONS_CHANGE_MAX_CAP:0 " (最大 : $MAX_VALUE|=+$) "
  RELATIONS_CHANGE_MIN_CAP:0 " (最小 : $MIN_VALUE|=+$) "
- RELATIONS_CHANGE_EFFECT:0 "$NAME$$CAPDESC$からの#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')]#variable$PROGRESS_DAILY|%+=2$# !#!#!の進捗状況"
+ RELATIONS_CHANGE_EFFECT:0 "$NAME$$CAPDESC$からの#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] #variable $PROGRESS_DAILY|%+=2$#!#!#!の進捗状況"
  DIPLO_PACT_RELATIONS_EFFECT_BASE_VALUE:0 "基本値#v $VAL|%2=+$#!"
  DIPLO_PACT_RELATIONS_BREAKDOWN_FORMAT:0 "#header [concept_relations]の進捗#!\n#v あと$DAYS$#!日で[SelectLocalization(LessThan_CFixedPoint('(CFixedPoint)$PROGRESS_DAILY|5$','(CFixedPoint)0'),'#r -','#g ')]100%#!\n$TOOLTIP_DELIMITER$\n一日あたりの進捗#v $PROGRESS_DAILY|%2=+$#!。 要因 : \n$BREAKDOWN$"
  DIPLO_PACT_RELATIONS_CHANGE_TOTAL:0 "\n$DESC$、要因 : #indent_newline:3 \n$DESC_DETAILS$#!"

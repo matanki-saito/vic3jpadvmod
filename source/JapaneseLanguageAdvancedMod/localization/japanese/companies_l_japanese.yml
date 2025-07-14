@@ -272,7 +272,7 @@
  COMPANY_NOT_PRODUCING_PRESTIGE_GOODS_DESC:0 "#header [concept_prestige_good]生産#!\n@red_cross! $COMPANY_NAME$の$concept_prestige_good$生産が#r 無効#!\n$TOOLTIP_DELIMITER$\n以下の条件を満たしていれば、$PRODUCED_GOODS$を生産 : \n$DETAILS$"
  COMPANY_IS_PROSPEROUS:0 "@green_checkmark_box! $COMPANY_NAME$が[Concept('concept_prosperity','$concept_prosperous$')]である"
  COMPANY_IS_NOT_PROSPEROUS:0 "@simple_box! $COMPANY_NAME$が[Concept('concept_prosperity','$concept_prosperous$')]である"
- COMPANY_PROSPERITY_SCRIPT_VALUE_FORMAT:0 "$KEY$により$VALUE|+=$"
+ COMPANY_PROSPERITY_SCRIPT_VALUE_FORMAT:0 "$VALUE|+=$ ($KEY$) "
  COMPANY_EXECUTIVE_POPULARITY:0 "[Company.GetExecutive.GetFullName]の[concept_popularity] ([Company.GetExecutive.GetPopularity|v0]) "
  COMPANY_EMPLOYED_LEVELS:0 "人員配置[concept_building]レベル[Company.GetNumEmployedBuildingLevels|v]"
  COMPANY_CANNOT_DISBAND_COUNTRY_OWNER:0 "この[concept_company]は[concept_country] ([Country.GetName]) の所有者です"
