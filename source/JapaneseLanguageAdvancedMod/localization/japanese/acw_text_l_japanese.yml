@@ -101,7 +101,7 @@
  je_acw_countdown:0 "奴隷制論争"
  je_acw_countdown_reason:0 "奴隷制廃止論者と奴隷所有者による激しい議論は、国全土へと波及し始めている。遅かれ早かれこの言葉による議論は、銃弾による議論への変貌を遂げることになるだろう。"
  je_acw_countdown_complete:0 "南北戦争が始まった。"
- je_acw_reconstruction:0 "再建"
+ je_acw_reconstruction:0 "リコンストラクション"
  je_acw_reconstruction_status:0 "分裂を引き起こした南北戦争の後で国を再建する。"
  je_acw_reconstruction_reason:0 "南北戦争は過去のものになった。今こそ以前は分離独立州を連合へと再編入しよう。"
  je_acw_reconstruction_goal:0 "かつて反抗的であった州を再建する。"
