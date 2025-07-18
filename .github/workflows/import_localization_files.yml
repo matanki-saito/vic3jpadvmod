@@ -31,6 +31,8 @@ jobs:
         run: pip install requests
 
       - name: Import localization files to paratranz
-        run: python import.py
+        run: |
+          set PYTHONUTF8=1
+          python import.py
         env:
           PARATRANZ_SECRET: ${{ secrets.PARATRANZ_SECRET }}
