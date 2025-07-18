@@ -327,8 +327,9 @@
  DIPLOMATIC_ACCEPTANCE_FOREIGN_INVESTMENT_RIGHTS: "from them having [concept_foreign_investment_rights]"
  DIPLOMATIC_ACCEPTANCE_SAME_POWER_BLOC: "from being in the same [concept_power_bloc]"
  DIPLOMATIC_ACCEPTANCE_DIFFERENT_POWER_BLOC: "from being in a different [concept_power_bloc]"
- DIPLOMATIC_ACCEPTANCE_DEBT:0 "from size of [SCOPE.GetRootScope.GetCountry.GetAdjective] [concept_loans]"
- DIPLOMATIC_ACCEPTANCE_GOLD_RESERVES: "from size of [SCOPE.GetRootScope.GetCountry.GetAdjective] [concept_gold_reserves]"
+ DIPLOMATIC_ACCEPTANCE_DEBT: "from size of [SCOPE.sCountry('actor').GetAdjective] [concept_loans]"
+ DIPLOMATIC_ACCEPTANCE_DEBT_TARGET: "from size of [SCOPE.sCountry('target').GetAdjective] [concept_loans]"
+ DIPLOMATIC_ACCEPTANCE_GOLD_RESERVES: "from size of [SCOPE.sCountry('target').GetAdjective] [concept_gold_reserves]"
  DIPLOMATIC_ACCEPTANCE_INCOMPATIBLE_ECONOMIC_SYSTEMS:0 "from us having incompatible #b economic systems#!"
  DIPLOMATIC_ACCEPTANCE_IS_CHINA: "from Chinese internal politics"
  DIPLOMATIC_ACCEPTANCE_POWERFUL_ENEMY_IN_WAR: "from being at [concept_war] with a more powerful enemy"
@@ -346,15 +347,18 @@
 
  ### Diplomatic Acceptance Strings for Treaties
  DIPLOMATIC_ACCEPTANCE_UNTRUSTWORTHY_COUNTRY: "$modifier_untrustworthy_country$"
- DIPLOMATIC_ACCEPTANCE_GIFT: "from being happy to be gifted this [concept_article]"
+ DIPLOMATIC_ACCEPTANCE_GIFT: "from being happy to be gifted this [concept_treaty]"
  DIPLOMATIC_ACCEPTANCE_BINDING_PERIOD: "from [concept_binding_period]"
  DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL: "from base $concept_article$ #b reluctance#!"
+ DIPLOMATIC_ACCEPTANCE_COLONIAL_INTEREST: "from colonial interest in the [concept_strategic_region]" 
  DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY: "from input quantity"
+ DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS: "from Quantity of [SCOPE.sGoods('input').GetName]"
+ DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS_TOO_MUCH: "from too high Quantity of [SCOPE.sGoods('input').GetName]"
  DIPLOMATIC_ACCEPTANCE_DOES_NOT_WANT_ARTICLE: "from #b not#! interested in $concept_article$"
  DIPLOMATIC_ACCEPTANCE_NO_LONGER_WANTS_ARTICLE: "from no longer interested in $concept_article$"
  DIPLOMATIC_ACCEPTANCE_VALUE_OF_STATES_IN_REGION: "from value of [SCOPE.GetRootScope.GetCountry.GetAdjective] [Concept('concept_state', '$concept_states$')] in the [concept_strategic_region]"
- DIPLOMATIC_ACCEPTANCE_BUDGET_SURPLUS: "from [SCOPE.GetRootScope.GetCountry.GetAdjective] budget #b surplus#!"
- DIPLOMATIC_ACCEPTANCE_BUDGET_DEFICIT: "from [SCOPE.GetRootScope.GetCountry.GetAdjective] budget #b deficit#!"
+ DIPLOMATIC_ACCEPTANCE_BUDGET_SURPLUS: "from [SCOPE.sCountry('target').GetAdjective] budget #b surplus#!"
+ DIPLOMATIC_ACCEPTANCE_BUDGET_DEFICIT: "from [SCOPE.sCountry('target').GetAdjective] budget #b deficit#!"
  DIPLOMATIC_ACCEPTANCE_MONEY_TRANSFER_CAP: "from existing [SCOPE.GetRootScope.GetCountry.GetAdjective] $money_transfer$ expenses"
  DIPLOMATIC_ACCEPTANCE_TRANSIT_RIGHTS_VALUE: "from value of $transit_rights$"
  DIPLOMATIC_ACCEPTANCE_EQUAL_EXCHANGE: "from equal exchange"
@@ -363,9 +367,10 @@
  DIPLOMATIC_ACCEPTANCE_WANTS_TO_IMPORT: "from desired [Concept('concept_trade','$concept_import$')]"
  DIPLOMATIC_ACCEPTANCE_WANTS_TO_TRADE: "from wanting unimpeded [concept_trade] of this [concept_good]"
  DIPLOMATIC_ACCEPTANCE_DOMESTIC_PRODUCTION: "from affected #b domestic production#!"
- DIPLOMATIC_ACCEPTANCE_LIKES_LAW: "from their [concept_government] likes this Law"
+ DIPLOMATIC_ACCEPTANCE_LIKES_LAW: "from their [concept_government] likes [SCOPE.sLawType('input').GetName]"
  DIPLOMATIC_ACCEPTANCE_ANTI_SLAVERY: "from wanting [concept_slavery] abolished"
  DIPLOMATIC_ACCEPTANCE_RECENTLY_TRADED_STATES: "from having traded $concept_states$ recently"
+ DIPLOMATIC_ACCEPTANCE_NUM_POTENTIAL_RESOURCES: "from number of valuable resources"
 
  LOBBY_OPPORTUNITY_BONUS: "from an opportunity bonus from Pro-[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [Concept('concept_political_lobby', '$concept_political_lobbies_short$')]"
  AT_WAR_WITH_UNFRIENDLY_COUNTRY: "from us being at [concept_war] with a mutually hostile [concept_country]"
@@ -1168,8 +1173,8 @@
 
  request_market_control_trigger_desc_global: "Has requested their own market from overlord"
  request_market_control_trigger_false_desc_global: "Has #b not#! requested their own market from overlord"
- request_market_control_trigger_desc_first: "[COUNTRY.GetAdjectiveNoFlag] has requested their own market from their overlord [TARGET_COUNTRY.GetName]"
- request_market_control_trigger_false_desc_first: "[COUNTRY.GetAdjectiveNoFlag] has #b not#! requested their their own market from their overlord [TARGET_COUNTRY.GetName]"
+ request_market_control_trigger_desc_first: "[COUNTRY.GetName] has requested their own market from their overlord [TARGET_COUNTRY.GetName]"
+ request_market_control_trigger_false_desc_first: "[COUNTRY.GetName] has #b not#! requested their their own market from their overlord [TARGET_COUNTRY.GetName]"
  request_market_control_trigger_desc_third: "[COUNTRY.GetName] has requested their own market from their overlord [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)]"
  request_market_control_trigger_false_desc_third: "[COUNTRY.GetName] has #b not#! requested their own market from their overlord [AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)] "
 
@@ -1794,6 +1799,10 @@ request_power_bloc_embassy_proposal_notification_desc: "[INITIATOR_COUNTRY.GetPo
  BINDING_PERIOD_BUTTON_TEXT_25_YEARS: "#b 25 years#!"
  BINDING_PERIOD_BUTTON_TEXT_50_YEARS: "#b 50 years#!"
  BINDING_PERIOD_BUTTON_TEXT_99_YEARS: "#b 99 years#!"
+ 
+ alliance_multilateral_alliances_first_country_tt: "[SCOPE.sCountry('first_country').GetName] must have researched #v $multilateral_alliances$#! to form an additional [concept_alliance]" 
+ alliance_multilateral_alliances_second_country_tt: "[SCOPE.sCountry('second_country').GetName] must have researched #v $multilateral_alliances$#! to form an additional [concept_alliance]" 
+ military_assistance_limit_tt: "[SCOPE.sCountry('target_country').GetName] must not already be receiving $military_assistance$ from #v 2#! other [Concept('concept_country', '$concept_countries$')]"
 
  money_transfer: "Money Transfer"
  money_transfer_desc: ""
@@ -1988,6 +1997,7 @@ request_power_bloc_embassy_proposal_notification_desc: "[INITIATOR_COUNTRY.GetPo
 
  TREATY_DRAFT_OWE_OBLIGATION_TOOLTIP: "#header Owe [COUNTRY.GetName] an [concept_obligation]#!\n$TAB$$VAL|+=$ to [concept_treaty] acceptance"
  TREATY_DRAFT_CALL_IN_OBLIGATION_TOOLTIP: "#header Use the [concept_obligation] [COUNTRY.GetName] owes you#!\n$TAB$$VAL|+=$ to [concept_treaty] acceptance"
+ TREATY_DRAFT_ASK_FOR_OBLIGATION_TOOLTIP: "#header $REVERSE_SWAY_OFFER_OBLIGATION$#!\n$TAB$$VAL|+=$ to [concept_treaty] acceptance"
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_OWED: "@red_cross! [COUNTRY.GetNameNoFormatting] already owes [TARGET_COUNTRY.GetName] an [concept_obligation]"
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_PROMISED: "@red_cross! [COUNTRY.GetNameNoFormatting] has already promised [TARGET_COUNTRY.GetName] an [concept_obligation] as part of [TREATY.GetName]"
 
@@ -2007,7 +2017,27 @@ request_power_bloc_embassy_proposal_notification_desc: "[INITIATOR_COUNTRY.GetPo
  WAR_GOAL_ARTICLE_ONCE_PER_TREATY: "This is already added once in this [concept_treaty]"
  WAR_GOAL_ARTICLE_ALREADY_IN_TREATY: "An identical article already exists in the [concept_treaty]"
 
+ TREATY_ARTICLE_AND_X_MORE_OFFERS: "and #v [GetDataModelSize(DataModelSkipFirst(Treaty.GetOffers, '(int32)10'))]#! more..."
+ TREATY_ARTICLE_AND_X_MORE_DEMANDS: "and #v [GetDataModelSize(DataModelSkipFirst(Treaty.GetDemands, '(int32)10'))]#! more..."
+
  TREATY_DRAFT_ARTICLE_ONCE_PER_SIDE: "@green_checkmark_box! This is already added on the [Country.GetAdjective] side in this [concept_treaty]"
 
  can_create_treaty_MILITARY_ASSISTANCE: "Can sign a #bold $military_assistance$#! [concept_treaty] with them"
 
+ TREATY_ARTICLE_TYPE_INFAMY_HEADER: "For a total of $VALUE|-=1$ [concept_infamy] as a result of:\n"
+ TREATY_ARTICLE_TYPE_INFAMY_FORMAT: "$VALUE|-=1$: $KEY$"
+
+ TREATY_ARTICLE_TYPE_MANEUVERS_HEADER: "For a total of $VALUE|v$ [Concept('concept_maneuver', '$concept_maneuvers$')] as a result of:\n"
+ TREATY_ARTICLE_TYPE_MANEUVERS_FORMAT: "$VALUE|v1$: $KEY$"
+
+ INFAMY_BASE_VALUE: "Base Value"
+ INFAMY_TARGET_COUNTRY_POPULATION_FACTOR: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] total [Concept('concept_pop', '$concept_population$')] of [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"
+ INFAMY_STATE_POPULATION_FACTOR: "[SCOPE.sState('state').GetNameNoFormatting] [Concept('concept_pop', '$concept_population$')] of [SCOPE.sState('state').GetPopulationSize|Dv]"
+ INFAMY_STATE_GDP_FACTOR: "[SCOPE.sState('state').GetNameNoFormatting] [concept_gdp] of [SCOPE.sState('state').GetYearlyGDP|Dv]"
+ INFAMY_QUANTITY_FACTOR: "Input quantity"
+ INFAMY_MONEY_TRANSFER_QUANTITY_ROOT_HAS_ALREADY_ESTABLISHED_FACTOR: "Input quantity of Money Transfer [Concept('concept_article', '$concept_articles$')] [SCOPE.GetRootScope.GetCountry.GetName]"
+ INFAMY_TARGET_COUNTRY_DEDUCTION_FACTOR: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] targeting [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] enforcing Money Transfer [Concept('concept_article', '$concept_articles$')]"
+
+ MANEUVERS_BASE_VALUE: "Base Value"
+ MANEUVERS_TARGET_COUNTRY_POPULATION_FACTOR: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] total [Concept('concept_pop', '$concept_population$')] of [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"
+ MANEUVERS_QUANTITY_FACTOR: "Input quantity"

@@ -52,6 +52,8 @@
 
  COUNTRY_IS_IN_NORTH_AMERICA_DESC: "[COUNTRY.GetName] is in [concept_georegion_north_america]"
  COUNTRY_IS_IN_NORTH_AMERICA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_north_america]"
+ GLOBAL_IS_IN_NORTH_AMERICA_DESC: "Is in [concept_georegion_north_america]"
+ GLOBAL_IS_IN_NORTH_AMERICA_DESC_NOT: "Is not in [concept_georegion_north_america]"
 
  COUNTRY_IS_IN_CENTRAL_AMERICA_DESC: "[COUNTRY.GetName] is in [concept_georegion_central_america]"
  COUNTRY_IS_IN_CENTRAL_AMERICA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_central_america]"

@@ -123,6 +123,7 @@
  company_basic_wine_and_fruit: "Wine & Fruit Inc."
  company_basic_gold_mining: "Precious Metals Syndicate"
  company_basic_electrics: "Home Electrics Inc."
+ company_basic_weapons: "Armament Works"
  
  # Dynamic company names
  company_basic_agriculture_1_dynamic_name_tag_singular: "Grain"
@@ -173,6 +174,8 @@
  company_basic_gold_mining_dynamic_name_tag_plural: "Gold"
  company_basic_electrics_dynamic_name_tag_singular: "Electric"
  company_basic_electrics_dynamic_name_tag_plural: "Electrics"
+ company_basic_weapons_dynamic_name_tag_singular: "Armament"
+ company_basic_weapons_dynamic_name_tag_plural: "Armaments"
  
  dynamic_company_type_company: "Company"
  dynamic_company_type_consortium: "Consortium"

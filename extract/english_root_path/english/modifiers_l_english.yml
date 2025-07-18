@@ -168,7 +168,7 @@
  country_leverage_resistance_per_population_desc: "Leverage Resistance gained in proportion to a $concept_country$'s $concept_population$"
  PRESTIGE_GOOD_SUPPLY_EFFECT: "$VALUE|+=0$ from $prestige_goods_supply$"
  prestige_goods_supply: "Supplied with $concept_prestige_goods$"
- prestige_goods_supply_desc: "Advantages a [concept_combat_unit] gains from being supplied with $PRESTIGE_GOODS_CONCEPT$"
+ prestige_goods_supply_desc: "Advantages a [concept_unit] gains from being supplied with $PRESTIGE_GOODS_CONCEPT$"
  prestige_goods_supply_army: "$prestige_goods_supply$"
  prestige_goods_supply_army_desc: "$prestige_goods_supply_desc$"
  prestige_goods_supply_navy: "$prestige_goods_supply$"
@@ -3465,7 +3465,7 @@ state_migration_quota_mult_desc: "A bonus or penalty to the amount of people tha
  power_bloc_allow_wider_migration_area_bool_desc: "Allows [concept_migration] to potentially also happen between members of a [concept_power_bloc] that don't share a [concept_market], rather than only within a [Concept('concept_country', '$concept_country_possessive$')] [concept_market]"
 
  power_bloc_income_transfer_to_leader_factor: "Income Transfer to [concept_power_bloc_leader]"
- power_bloc_income_transfer_to_leader_factor_desc: "Base percentage of tax income transferred from [Concept('concept_power_bloc_member', '$concept_power_bloc_memembers$')] to the [concept_power_bloc_leader]"
+ power_bloc_income_transfer_to_leader_factor_desc: "Base percentage of tax income transferred from [Concept('concept_power_bloc_member', '$concept_power_bloc_members$')] to the [concept_power_bloc_leader]"
 
  country_law_enactment_stall_mult: "Enactment Stall Chance"
  country_law_enactment_stall_mult_desc: "A multiplier to the chance that a law enactment will stall due to opposition"

@@ -449,12 +449,12 @@
 
  TREATY_WITHDRAW_TOOLTIP: "#header Withdraw from [Treaty.GetName]#!\n$TOOLTIP_DELIMITER$\n[Treaty.GetCanWithdrawDesc(GetPlayer.Self)]$WITHDRAW_FROM_TREATY_ALL_EFFECTS$"
  WITHDRAW_FROM_TREATY: "Withdraw"
- WITHDRAW_FROM_TREATY_COMMAND_DESC: "Are you sure you wish to withdraw from [Treaty.GetName]?$WITHDRAW_FROM_TREATY_ALL_EFFECTS$"
+ WITHDRAW_FROM_TREATY_COMMAND_DESC: "Are you sure you wish to withdraw from [Treaty.GetName]?\n\n[Treaty.GetCanWithdrawDesc(GetPlayer.Self)]$WITHDRAW_FROM_TREATY_ALL_EFFECTS$"
  WITHDRAW_FROM_TREATY_ALL_EFFECTS: "$BREAK_TREATY_EFFECTS_IF_EXIST$$WITHDRAW_FROM_TREATY_EFFECTS_IF_EXIST$"
- WITHDRAW_FROM_TREATY_EFFECTS_IF_EXIST: "[ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( Not( StringIsEmpty( Treaty.GetWithdrawPenaltiesDesc( Treaty.GetFirstCountry.Self ) ) ), 'WITHDRAW_FROM_TREATY_EFFECTS' ) )]"
- WITHDRAW_FROM_TREATY_EFFECTS: "#title Generic effects:#! #indent_newline:3 \n[Treaty.GetWithdrawPenaltiesDesc( Treaty.GetFirstCountry.Self )]#!"
- BREAK_TREATY_EFFECTS_IF_EXIST: "[ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( Not( StringIsEmpty( Treaty.GetBreakPenaltiesDesc( Treaty.GetFirstCountry.Self ) ) ), 'BREAK_TREATY_EFFECTS' ) )]"
- BREAK_TREATY_EFFECTS: "#title Penalties from #v [Treaty.GetBindingPeriodRemainingFormatted]#! [concept_binding_period] left:#! #indent_newline:3 \n[Treaty.GetBreakPenaltiesDesc( Treaty.GetFirstCountry.Self )]#!"
+ WITHDRAW_FROM_TREATY_EFFECTS_IF_EXIST: "[ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( Not( StringIsEmpty( Treaty.GetWithdrawPenaltiesDesc( GetPlayer.Self ) ) ), 'WITHDRAW_FROM_TREATY_EFFECTS' ) )]"
+ WITHDRAW_FROM_TREATY_EFFECTS: "#title Generic effects:#! #indent_newline:3 \n[Treaty.GetWithdrawPenaltiesDesc( GetPlayer.Self )]#!"
+ BREAK_TREATY_EFFECTS_IF_EXIST: "[ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( Not( StringIsEmpty( Treaty.GetBreakPenaltiesDesc( GetPlayer.Self ) ) ), 'BREAK_TREATY_EFFECTS' ) )]"
+ BREAK_TREATY_EFFECTS: "#title Penalties from #v [Treaty.GetBindingPeriodRemainingFormatted]#! [concept_binding_period] left:#! #indent_newline:3 \n[Treaty.GetBreakPenaltiesDesc( GetPlayer.Self )]#!"
 
  TREATY_RENEGOTIATE_TOOLTIP: "Renegotiate this [concept_treaty][ConcatIfNeitherEmpty('\n', AddLocalizationIf(Treaty.IsEnforced, 'CANNOT_NEGOTIATE_TREATY_IS_ENFORCED'))]"
  RENEGOTIATE_TREATY: "Renegotiate $concept_treaty$"
@@ -576,14 +576,17 @@
 
  TREATY_START_DATE_HEADER: "Signed on [Treaty.GetStartDate]"
 
- ARTICLE_TYPE_INFLUENCE_COST_TOOLTIP: "@inf!#v [ArticleType.GetCost|0]#! maintenance cost"
+ ARTICLE_TYPE_INFLUENCE_COST_TOOLTIP: "@inf!#v [ArticleType.GetCost|0]#! base maintenance cost"
  ARTICLE_TYPE_EFFECTS_TITLE: "#title Effects:#!"
  ARTICLE_TYPE_EFFECTS: "[ArticleType.GetEffectsDesc][ConcatIfNeitherEmpty('\n', ArticleType.GetRelationsEffectDesc)]"
 
+ ARTICLE_INFLUENCE_COST_WITH_TOOLTIP: "@inf!#v #tooltippable;tooltip:$BREAKDOWN_TAG$ $VALUE|0$#!#!"
+ ARTICLE_INFLUENCE_COST_BREAKDOWN: "#header $NAME$ [concept_influence] maintenance cost#!\n@inf!$VALUE|v0$ for [COUNTRY.GetName]\n$TOOLTIP_DELIMITER$\n$DETAILS$"
+ 
  ARTICLE_DRAFT_CLICK_TO_CHANGE: "#i Click to change#!"
  ARTICLE_DRAFT_ADDED_STATUS: "Added as [concept_article] #v $ARTICLE_DRAFT_NUMBER$#! in this [concept_treaty]"
- ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_MUTUAL: "@inf!#v [ArticleDraft.GetArticleType.GetCost|0]#! maintenance cost for both [Concept('concept_country', '$concept_countries$')]"
- ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_DIRECTED: "@inf!#v [ArticleDraft.GetArticleType.GetCost|0]#! maintenance cost for [ArticleDraft.GetMaintenancePayer.GetName] [AddLocalizationIf(ArticleDraft.GetMaintenancePayer.IsLocalPlayer, 'YOU')]"
+ ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_MUTUAL: "[ArticleDraft.GetCostWithTooltipFor(ArticleDraft.GetFirstOrSource.Self)] maintenance cost for [ArticleDraft.GetFirstOrSource.GetName] [AddLocalizationIf(ArticleDraft.GetFirstOrSource.IsLocalPlayer, 'YOU')]\n[ArticleDraft.GetCostWithTooltipFor(ArticleDraft.GetSecondOrTarget.Self)] maintenance cost for [ArticleDraft.GetSecondOrTarget.GetName] [AddLocalizationIf(ArticleDraft.GetSecondOrTarget.IsLocalPlayer, 'YOU')]"
+ ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_DIRECTED: "[ArticleDraft.GetCostWithTooltipFor(ArticleDraft.GetMaintenancePayer.Self)] maintenance cost for [ArticleDraft.GetMaintenancePayer.GetName] [AddLocalizationIf(ArticleDraft.GetMaintenancePayer.IsLocalPlayer, 'YOU')]"
  ARTICLE_DRAFT_EFFECTS_TITLE: "#title Effects:#!"
  ARTICLE_DRAFT_EFFECTS: "[ArticleDraft.GetEffectsDesc]"
  ARTICLE_DRAFT_EFFECTS_RELATION: "[ArticleDraft.GetRelationsEffectDesc]"
@@ -598,8 +601,8 @@
  ARTICLE_DRAFT_TARGET_MODIFIERS: "[ArticleDraft.GetTargetModifierDesc]"
  ARTICLE_DRAFT_ERRORS: "[TreatyDraft.GetCanIncludeArticleDraftDesc( ArticleDraft.Self )]"
 
- ARTICLE_INFLUENCE_COST_TOOLTIP_MUTUAL: "@inf!#v [Article.GetArticleType.GetCost|0]#! maintenance cost for both [Concept('concept_country', '$concept_countries$')]"
- ARTICLE_INFLUENCE_COST_TOOLTIP_DIRECTED: "@inf!#v [Article.GetArticleType.GetCost|0]#! maintenance cost for [Article.GetMaintenancePayer.GetName] [AddLocalizationIf(Article.GetMaintenancePayer.IsLocalPlayer, 'YOU')]"
+ ARTICLE_INFLUENCE_COST_TOOLTIP_MUTUAL: "[Article.GetCostWithTooltipFor(Article.GetFirstOrSourceCountry.Self)] maintenance cost for [Article.GetFirstOrSourceCountry.GetName] [AddLocalizationIf(Article.GetFirstOrSourceCountry.IsLocalPlayer, 'YOU')]\n[Article.GetCostWithTooltipFor(Article.GetSecondOrTargetCountry.Self)] maintenance cost for [Article.GetSecondOrTargetCountry.GetName] [AddLocalizationIf(Article.GetSecondOrTargetCountry.IsLocalPlayer, 'YOU')]"
+ ARTICLE_INFLUENCE_COST_TOOLTIP_DIRECTED: "[Article.GetCostWithTooltipFor(Article.GetMaintenancePayer.Self)] maintenance cost for [Article.GetMaintenancePayer.GetName] [AddLocalizationIf(Article.GetMaintenancePayer.IsLocalPlayer, 'YOU')]"
  ARTICLE_EFFECTS_TITLE: "#title Effects:#!"
  ARTICLE_EFFECTS: "[Article.GetEffectsDesc]"
  ARTICLE_EFFECTS_RELATION: "[Article.GetRelationsEffectDesc]"
@@ -619,6 +622,8 @@
  TREATY_ARTICLES_FROZEN: "[Concept('concept_article', '$concept_articles$')] frozen"
  TREATY_NOT_FULFILLED_FROZEN_STATUS_NO_FORMATTING: "All [Country.GetAdjectiveNoFormatting] $concept_articles$ are frozen"
  TREATY_NOT_FULFILLED_FROZEN_STATUS_TOOLTIP: "[Treaty.GetOtherCountry(Country.Self).GetName] is #b not#! recieving the benefits from the [Country.GetAdjective] [Concept('concept_article', '$concept_articles$')] due to [Treaty.GetOtherCountry(Country.Self).GetName] #b not#! fulfilling #v [GetDataModelSize(Treaty.GetNonFulfilledArticlesFromSource(Treaty.GetOtherCountry(Country.Self)))]#! of their $concept_articles$.  The [concept_influence] maintenance costs for [Country.GetName] is also paused."
+
+ TREATY_FROZEN_DUE_TO_WAR: "[concept_treaty] is frozen due to the outbreak of [concept_war] between the signatories"
 
  TREATY_RESET_ALL: "Reset all"
  TREATY_RESET_LEFT_SIDE: "Reset [TreatyDraft.GetLeftCountry.GetAdjective] side"
@@ -667,9 +672,9 @@
  TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_GOODS: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithGood(ArticleType.Self, Country.Self, Goods.Self)|+=0]#!#! acceptance"
  TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_STRATEGIC_REGION: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithRegion(ArticleType.Self, Country.Self, StrategicRegion.Self)|+=0]#!#! acceptance"
  TREATY_DRAFT_ACCEPTANCE_WITH_LABEL_STATE: "#v #tooltippable [TreatyDraft.GetArticleTypeAcceptanceWithState(ArticleType.Self, Country.Self, State.Self)|+=0]#!#! acceptance"
- 
+
  STATIC_TREATY_ACCEPTANCE_VALUE_FORMAT: "$VALUE|+=0$ $KEY$"
- TREATY_STATIC_ACCEPTANCE: "#P #variable #tooltippable #tooltip:$BREAKDOWN$ $VALUE|D+$#!#!#!#! from diplomatic stance with [COUNTRY.GetName]"
+ TREATY_STATIC_ACCEPTANCE: "#P #variable #tooltippable #tooltip:$BREAKDOWN$ $VALUE|=+$#!#!#!#! from diplomatic stance with [COUNTRY.GetName]"
  TREATY_PREVIOUS_REJECTION_ACCEPTANCE: "$VALUE|=+$ from not enough of an improvement on previously rejected $concept_treaty$ (minimum of $MIN_VALUE|v=+$)"
  TREATY_ARTICLE_ACCEPTANCE_CAP_MAX: "$DELTA|+=0$ from exceeding the $CAP|+=0$ maximum acceptance for [TREATY_ARTICLE_TYPE.GetName] $concept_articles$"
  TREATY_ARTICLE_ACCEPTANCE_CAP_MIN: "$DELTA|+=0$ from subceeding the $CAP|+=0$ minimum acceptance for [TREATY_ARTICLE_TYPE.GetName] $concept_articles$"
@@ -1768,6 +1773,7 @@
  UPGRADE_UNIT_TYPE: "Upgrade #b [MilitaryFormationUnitEntry.GetUnitType.GetName]#! to #b [MilitaryFormation.GetSelectedUnitTypeForGroup( MilitaryFormationUnitEntry.GetUnitType.GetGroup.Self ).GetName]#!\n\nThis will [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$')] the units while upgrading them."
  MILITARY_FORMATION_UPGRADE_UNIT_TOOLTIP: "[SelectLocalization( MilitaryFormation.IsRegularUnitTypeUpgrading( MilitaryFormationUnitEntry.GetUnitType.Self ), 'UPGRADING_UNIT_TYPE', 'UPGRADE_UNIT_TYPE' )] [ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.GetUpgradeRegularUnitTypeCommand( MilitaryFormationUnitEntry.GetUnitType.Self ) ))]"
  CANNOT_UPGRADE_UNIT_TO_TYPE: "[COMBAT_UNIT_TYPE.GetName] cannot be upgraded to [TARGET_COMBAT_UNIT_TYPE.GetName] as the unit types are too different."
+ CANNOT_UPGRADE_UNIT_TYPE_NO_UNITS: "There are no units that can be upgraded."
 
  MILITARY_FORMATION_UPGRADE_GROUP_TOOLTIP: "[SelectLocalization(MilitaryFormation.GetSelectedUnitTypeForGroup( CombatUnitGroup.Self ).IsValid, 'UPGRADE_GROUP_VALID_HEADER','UPGRADE_GROUP_INVALID_HEADER')][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( Not( IsValid( MilitaryFormation.GetUpgradeUnitGroupCommand( CombatUnitGroup.Self ) ) ), GetDesc(  MilitaryFormation.GetUpgradeUnitGroupCommand( CombatUnitGroup.Self )     ) ) )]"
  UPGRADE_GROUP_VALID_HEADER: "#header Upgrade all [CombatUnitGroup.GetName] [Concept('concept_unit', '$concept_units_short$')] to [MilitaryFormation.GetSelectedUnitTypeForGroup( CombatUnitGroup.Self ).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#!\n\nThis will also [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilize$')] the $concept_units_short$."
@@ -1780,7 +1786,7 @@
 
  MILITARY_FORMATION_REMOVE_CONSCRIPT_UNIT_TOOLTIP: "#header Disband one #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#!#!\n[ConcatIfNeitherEmpty(GetDesc( MilitaryFormation.GetDisbandUnitTypeConscriptCommand( CombatUnitType.Self ) ),'\n')]$TOOLTIP_DELIMITER$\n#instruction Click to disband 1 [Concept('concept_unit','$concept_unit_short$')]\n#instruction $SHORTCUT_KEY_MOD_shift$Click to disband 5 $concept_units_short$\n#instruction $SHORTCUT_KEY_MOD_ctrl$Click to disband 10 $concept_units_short$#!"
  MILITARY_FORMATION_RECRUIT_CONSCRIPT_UNIT_TOOLTIP: "Recruit #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitConscriptUnitTooltip( CombatUnitType.Self ) ) ]"
- MILITARY_FORMATION_UPGRADE_CONSCRIPT_UNIT_TOOLTIP: "Upgrade #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#!"
+ MILITARY_FORMATION_UPGRADE_CONSCRIPT_UNIT_TOOLTIP: "Upgrade #b [Concept('concept_conscript_battalion','$concept_conscript_battalion_short$')] [CombatUnitType.GetName]#![ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.GetUpgradeConscriptUnitTypeCommand( MilitaryFormationUnitEntry.GetUnitType.Self ) ))]"
 
 
  MILITARY_FORMATION_RECRUIT_DEFAULT_UNIT_TYPE_TOOLTIP: "Recruit #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#![ConcatIfNeitherEmpty('\n\n', MilitaryFormation.CanRecruitRegularUnitTooltip( MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).Self ) ) ]"
@@ -1910,8 +1916,8 @@
  SEA_NODE_MOVEMENT_MARKER_TOOLTIP_SUPPLY_NETWORK: "#v $SUPPLY_NETWORK_STRENGTH|%$#! [concept_supply_network] strength"
  SEA_NODE_MOVEMENT_MARKER_RIGHT_CLICK_PROMPT: "@rightclick! #i Right-click to deploy selected [Concept('concept_fleet', '$concept_fleets$')] here#!\n\n#title Travel time:#!#indent_newline:3 \n[SeaNodeMovementMarker.GetTravelTimeBreakdown]#![ConcatIfNeitherEmpty('\n\n' , SeaNodeMovementMarker.GetPresentFormationsBreakdown)]"
  SEA_NODE_TRAVEL_TIME: "#title Travelling here, will arrive in:#!#indent_newline:3 \n[SeaNodeMovementMarker.GetTravelTimeBreakdown]#!"
- SEA_NODE_MOVEMENT_MARKER_TOOLTIP_RAIDING_FLEET: "[Concept('concept_raid_convoys', 'concept_convoy_raiding')] [MilitaryFormation.GetName]"
- SEA_NODE_MOVEMENT_MARKER_TOOLTIP_MULTIPLE_RAIDING_FLEETS: "#v #tooltippable #tooltip:$BREAKDOWN$ $COUNT$#!#!#! [Concept('concept_raid_convoys', 'concept_convoy_raiding')] [Concept('concept_fleet', '$concept_fleets$')]"
+ SEA_NODE_MOVEMENT_MARKER_TOOLTIP_RAIDING_FLEET: "[Concept('concept_raid_convoys', '$concept_convoy_raiding$')] [MilitaryFormation.GetName]"
+ SEA_NODE_MOVEMENT_MARKER_TOOLTIP_MULTIPLE_RAIDING_FLEETS: "#v #tooltippable #tooltip:$BREAKDOWN$ $COUNT$#!#!#! [Concept('concept_raid_convoys', '$concept_convoy_raiding$')] [Concept('concept_fleet', '$concept_fleets$')]"
  NO_ACTIVE_SUPPLY_NETWORK: "#title You have no active [concept_supply_network] here#!"
  SEA_NODE_MOVEMENT_MARKER_PRESENT_FORMATIONS: "#title Present [Concept('concept_military_formation', '$concept_military_formations$')]:#indent_newline:3 \n[SeaNodeMovementMarker.GetPresentFormationsBreakdown]#!"
 
@@ -2133,6 +2139,7 @@
 
  LAND_INVASION_HAS_FRONT: "#n [Front.GetName] already exists#!"
  LAND_INVASION_CANNOT_REACH: "#n Cannot reach [State.GetName] via land#!"
+ LAND_INVASION_TOO_LONG_TO_REACH: "#n Cannot invade [State.GetName] via land as it takes too long to reach#! (#v >#![LabelingHelper.GetDaysLocWithoutTooltip('(int32)$LIMIT$')])"
 
  COMBAT_UNITS_TYPE_AND_NUM: "#v [MilitaryFormation.GetNumCombatUnits]#!"
  COMBAT_UNITS_TYPE_AND_NUM_WITH_ICON: "[MilitaryFormation.GetCombatUnitsTypeIcon]#v [MilitaryFormation.GetNumCombatUnits]#!"
@@ -2996,12 +3003,12 @@
  AUTHORITY_FROM_RULER_POPULARITY:0 "#v $VAL|+=0$#! from [concept_popularity] of [Character.GetFullNameWithTitle]"
 
  CAPITAL_POLITICAL_EXPENSES_CHANGE_RELATIONS:0 "Changing our Peoples Opinion of $COUNTRY_NAME$: #N #BOLD -$POWER_COST|1$ #!#!\n"
- CAPITAL_MONEY:1 "#tooltip_header [concept_money]#!\nBalance: #variable @money![AccessPlayer.PredictWeeklyBalance|D=+]#![GetPlayer.GetPowerDeltaIcon('money')]\n[SelectLocalization(GreaterThan_CFixedPoint(GetPlayer.GetPrincipal, '(CFixedPoint)0'), 'CREDIT_DESC', 'GOLD_RESERVES_DESC')][SelectLocalization(GetMetaPlayer.GetPlayedOrObservedCountry.IsValid, 'CAPITAL_MONEY_DELAYED', 'OBSERVER_NO_COUNTRY_SELECTED') ]"
+ CAPITAL_MONEY: "#tooltip_header [concept_money]#!\nBalance: #variable @money![AccessPlayer.PredictWeeklyBalance|D=+]#![GetPlayer.GetPowerDeltaIcon('money')]\n[SelectLocalization(GreaterThan_CFixedPoint(GetPlayer.GetPrincipal, '(CFixedPoint)0'), 'CREDIT_DESC', 'GOLD_RESERVES_DESC')][SelectLocalization(GetMetaPlayer.GetPlayedOrObservedCountry.IsValid, 'CAPITAL_MONEY_DELAYED', 'OBSERVER_NO_COUNTRY_SELECTED') ]"
  GOLD_RESERVES_DESC:1 "[concept_gold_reserves]: #tooltippable #tooltip:GOLD_RESERVES_BREAKDOWN @money![GetPlayer.GetGoldReserves|Dv]#!#!"
  CREDIT_DESC:0 "[concept_credit]: #tooltippable #tooltip:CREDIT_PROGRESS #variable @money![GetPlayer.GetPrincipal|K]#!#!#! / #maximum [GetPlayer.GetMaxCredit|K]#!"
  CREDIT_LIMIT:1 "[concept_credit]: #variable [GetPlayer.GetMaxCredit|2*]#!"
 
- CAPITAL_MONEY_DELAYED:2 "\n$TOOLTIP_DELIMITER$\n$INVESTMENT_POOL$\n$TOOLTIP_DELIMITER$\n[SelectLocalization(GreaterThan_CFixedPoint(GetPlayer.GetUnrealizedTaxes, '(CFixedPoint)0'), 'UNREALIZED_TAXES', '')][GetPlayer.GetIncomeBreakdown]\n\n[GetPlayer.GetExpensesBreakdown]"
+ CAPITAL_MONEY_DELAYED: "\n$TOOLTIP_DELIMITER$\n$INVESTMENT_POOL$\n$TOOLTIP_DELIMITER$\n[SelectLocalization(GreaterThan_CFixedPoint(GetPlayer.GetUnrealizedTaxes, '(CFixedPoint)0'), 'UNREALIZED_TAXES', '')][GetPlayer.GetIncomeBreakdown]\n\n[GetPlayer.GetExpensesBreakdown]"
  UNREALIZED_TAXES:1 "[concept_unrealized_taxes]: #tooltippable #tooltip:UNREALIZED_TAXES_BREAKDOWN #v @money![GetPlayer.GetUnrealizedTaxes|D-]#!#!#!\n$TOOLTIP_DELIMITER$\n"
  UNREALIZED_TAXES_BREAKDOWN:1 "#header [concept_unrealized_taxes]#!\nTotal: #v @money![GetPlayer.GetUnrealizedTaxes|D-]#!\n$TOOLTIP_DELIMITER$\nAverage Uncollected Taxes: #tooltippable #tooltip:AVG_STATE_COLLECTION_MULT_BREAKDOWN #v [GetPlayer.GetAverageStateTaxCollectionMult|+%0]#!#!#!\nAverage [concept_tax_waste]: #tooltippable #tooltip:AVG_TAX_WASTE_BREAKDOWN #v [GetPlayer.GetAverageTaxWaste|-%0]#!#!#!"
  AVG_STATE_COLLECTION_MULT_BREAKDOWN:1 "#header Average Uncollected Taxes: #v [GetPlayer.GetAverageStateTaxCollectionMult|+%0]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetAverageStateTaxCollectionMultBreakdown]"
@@ -3098,6 +3105,8 @@
  MOVEMENT_AFFECTED_INTEREST_GROUPS_DESC: "New [Concept('concept_leader', '$concept_leaders$')] may appear in the [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] [Concept('concept_interest_group','$concept_interest_groups$')] with any of the above [concept_character] [Concept('concept_ideology','$concept_ideologies$')]"
  NO_PRESSURED_INTEREST_GROUPS: "No [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] [Concept('concept_interest_group','$concept_interest_groups$')]"
  NO_POSSIBLE_CHARACTER_IDEOLOGIES: "No Possible [concept_character] [Concept('concept_ideology','$concept_ideologies$')]"
+
+ PRESTIGE_GOOD_POP_SOL_MODIFIER_DESC: "$VALUE|=+$ ($MULTIPLIER|%0=+$) from $FRACTION|%v0$ [concept_prestige_good] consumption (maximum of [GetDefine('NPops','PRESTIGE_GOOD_SOL_MAX_BONUS')|%0=+])"
 
  STATES_IN_TURMOIL:1 "There are #tooltippable #tooltip:[Country.GetTooltipTag],STATES_IN_TURMOIL_TOOLTIP [Country.CalcNumStatesInTurmoil|v]#!#! [Concept('concept_state', '$concept_states$')] that are in [concept_turmoil] due to $RADICALS$"
  STATES_IN_TURMOIL_TOOLTIP:0 "#header [concept_turmoil]#!\n$TOOLTIP_DELIMITER$\n[Country.GetStatesInTurmoilBreakdown]"
@@ -3233,9 +3242,9 @@
  LABEL_STATE_MIGRATION_PULL_LOW:0 "#tooltippable #tooltip:[STATE.GetTooltipTag],STATE_MIGRATION_PULL_BREAKDOWN #N #b Low ($STATE_VALUE|1$)#!#!#!#!"
 
  TOOLTIP_STATE_MIGRATION_ISOLATED:1 "[STATE.GetName] is an [concept_isolated_state], and will not experience any migration"
- TOOLTIP_STATE_MIGRATION_PULL_HIGH:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_HIGH$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may receive immigrants from other states in the [State.GetMarket.GetName]\n\n[concept_migration] can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
- TOOLTIP_STATE_MIGRATION_PULL_MEDIUM:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_MEDIUM$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may send a limited number of emigrants to other states within the [State.GetMarket.GetName]\n\n$concept_migration$ can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
- TOOLTIP_STATE_MIGRATION_PULL_LOW:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_LOW$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetMarket.GetName], and may send emigrants to other states in the [State.GetMarket.GetName]\n\n$concept_migration$ can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
+ TOOLTIP_STATE_MIGRATION_PULL_HIGH:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_HIGH$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetOwner.GetMarket.GetName], and may receive immigrants from other states in the [State.GetOwner.GetMarket.GetName]\n\n[concept_migration] can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
+ TOOLTIP_STATE_MIGRATION_PULL_MEDIUM:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_MEDIUM$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetOwner.GetMarket.GetName], and may send a limited number of emigrants to other states within the [State.GetOwner.GetMarket.GetName]\n\n$concept_migration$ can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
+ TOOLTIP_STATE_MIGRATION_PULL_LOW:2 "[STATE.GetName] has a $LABEL_STATE_MIGRATION_PULL_LOW$ [concept_migration_pull] compared to the average ($MARKET_VALUE|1v$) in the [State.GetOwner.GetMarket.GetName], and may send emigrants to other states in the [State.GetOwner.GetMarket.GetName]\n\n$concept_migration$ can be affected by your current [GetLawGroup('lawgroup_migration').GetName] [concept_law]"
 
  TOOLTIP_STATE_IMMIGRATION_STATES:0 "[STATE.GetName] received a total of #variable $AMOUNT|D+$#! immigrants from $STATES_LIST$ last week"
  TOOLTIP_STATE_EMIGRATION_STATES:0 "[STATE.GetName] sent a total of #variable $AMOUNT|D-$#! emigrants to $STATES_LIST$ last week"
@@ -4287,6 +4296,9 @@
  GOODS_WORLD_MARKET_STATE_TO_STATE_EXPORTS_OVERFLOW: "Additional Exports: $TRADES|=vD$"
  GOODS_WORLD_MARKET_STATE_TO_STATE_IMPORTS_OVERFLOW: "Additional Imports: $TRADES|=vD$"
  GOODS_WORLD_MARKET_DEMAND_BUFFER: "Inherent demand: $TRADES|=vD$"
+ 
+ GOODS_ADDITIONAL_EXPORTS: "[Goods.GetWorldMarketAdditionalExportsFromMarket|v1] additional $concept_exports$"
+ GOODS_ADDITIONAL_IMPORTS: "[Goods.GetWorldMarketAdditionalImportsToMarket|v1] additional $concept_imports$"
 
  MARKET_TO_MARKET_TRADE_VALUE_EXPORTS_ENTRY: "[GOODS.GetTextIcon] [GOODS.GetName]: Exporting $AMOUNT|v1$ worth @money!$VALUE|vD$"
  MARKET_TO_MARKET_TRADE_VALUE_IMPORTS_ENTRY: "[GOODS.GetTextIcon] [GOODS.GetName]: Importing $AMOUNT|v1$ worth @money!$VALUE|vD$"
@@ -5196,6 +5208,7 @@
  WARGOAL_CONTESTATION_CONTROL_TARGET_STATE: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ [TARGET_STATE.GetCountry.GetFlagTextIcon] [TARGET_STATE.GetName]"
  WARGOAL_CONTESTATION_CONTROL_ENEMY_CAPITAL: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ the [TARGET_COUNTRY.GetAdjective] [Concept('concept_capital_state','$concept_capital_state_short$')] ([TARGET_COUNTRY.GetCapital.GetName])"
  WARGOAL_CONTESTATION_CONTROL_ANY_ENEMY_STATE: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ at least one [TARGET_COUNTRY.GetAdjective] [concept_state]"
+ WARGOAL_CONTESTATION_CONTROL_ANY_ENEMY_INCORPORATED_STATE: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ at least one [TARGET_COUNTRY.GetAdjective] [concept_incorporated_state]"
  WARGOAL_CONTESTATION_CONTROL_OWN_STATE: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of [TARGET_STATE.GetCountry.GetFlagTextIcon] [TARGET_STATE.GetName]"
  WARGOAL_CONTESTATION_CONTROL_OWN_CAPITAL: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of the [COUNTRY.GetAdjective] [Concept('concept_capital_state','$concept_capital_state_short$')] ([COUNTRY.GetCapital.GetName])"
  WARGOAL_CONTESTATION_CONTROL_ALL_OWN_STATES: "$TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of all [COUNTRY.GetAdjective] [Concept('concept_state','$concept_states$')]"
@@ -5762,7 +5775,8 @@
  TAX_INCOME_ADDITIONAL:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],ADDITIONAL_INCOME_BREAKDOWN,AdditionalIncomeTooltip @money![GetPlayer.GetModifier.GetValueFor('country_tax_income_add')|K+=]#!#! [concept_budget_additional_income]"
  TAX_INCOME_MINTING: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MINTING_BREAKDOWN,MintingTooltip @money![GetPlayer.PredictMinting|D+=]#!#! [concept_budget_minting]"
  TAX_INCOME_INVESTMENT:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INVESTMENT_INCOME_BREAKDOWN,InvestmentIncomeTooltip @money![GetPlayer.GetInvestmentIncome|D+=]#!#! [concept_budget_investment_income]"
- TAX_INCOME_DIPLOMATIC:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],DIPLOMATIC_PACTS_INCOME_BREAKDOWN,DiplomaticPactsIncomeTooltip @money![GetPlayer.PredictDiplomaticPactsIncome|D+=]#!#! [concept_budget_diplomatic_pacts]"
+ TAX_INCOME_DIPLOMATIC: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],DIPLOMATIC_PACTS_INCOME_BREAKDOWN,DiplomaticPactsIncomeTooltip @money![GetPlayer.PredictDiplomaticPactsIncome|D+=]#!#! [concept_budget_diplomatic_pacts]"
+ TAX_INCOME_TREATY: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_INCOME_BREAKDOWN,TreatyIncomeTooltip @money![GetPlayer.PredictTreatyIncome|D+=]#!#! [concept_budget_treaties]"
  TAX_INCOME_POWER_BLOC: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],POWER_BLOC_INCOME_BREAKDOWN,PowerBlocIncomeTooltip @money![GetPlayer.GetPowerBlocIncomeRaw|D+=]#!#! [concept_budget_power_bloc]"
  TAX_INCOME_TARIFFS:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TARIFFS_BREAKDOWN,TariffsTooltip @money![GetPlayer.PredictTariffs|D+=]#!#! [concept_tariffs]"
  TAX_INCOME_GOVERNMENT_SHARE_DIVIDENDS:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],GOVERNMENT_SHARE_DIVIDENDS_BREAKDOWN,GovernmentShareDividendsTooltip @money![GetPlayer.PredictGovernmentShareDividends|D+=]#!#! $DIVIDENDS_FROM_GOVERNMENT_SHARES$"
@@ -5868,7 +5882,8 @@
  ADDITIONAL_EXPENSES_BREAKDOWN:0 "#tooltip_header Additional Expenses#!\nTotal: #v @money![GetPlayer.GetModifier.GetInvertedValueFor('country_expenses_add')|K+=]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetModifier.GetDescFor('country_expenses_add')]"
  WELFARE_PAYMENTS_EXPENSES_BREAKDOWN:0 "#tooltip_header [concept_welfare_payments]#!\nTotal: #n @money!-[GetPlayer.GetWelfarePaymentsExpenses|D ]#!"
 
- DIPLOMATIC_PACTS_INCOME_BREAKDOWN:0 "#tooltip_header Diplomatic Pacts#!\nTotal: #v @money![GetPlayer.PredictDiplomaticPactsIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictDiplomaticPactsIncomeDesc]"
+ DIPLOMATIC_PACTS_INCOME_BREAKDOWN: "#tooltip_header Diplomatic Pacts#!\nTotal: #v @money![GetPlayer.PredictDiplomaticPactsIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictDiplomaticPactsIncomeDesc]"
+ TREATY_INCOME_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v @money![GetPlayer.PredictTreatyIncome|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyIncomeDesc]"
  POWER_BLOC_INCOME_BREAKDOWN: "#tooltip_header Power Bloc#!\nTotal: #v @money![GetPlayer.GetPowerBlocIncomeRaw|K+]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPowerBlocIncomeDesc]"
 
  ONLY_SHOW_AVAILABLE: "Only Show Available"
@@ -5884,7 +5899,8 @@
  MILITARY_WAGES_EXPENSES_BREAKDOWN:0 "#tooltip_header Military Wages#!\nTotal: #v #N @money!-[GetPlayer.GetMilitaryWagesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitaryWagesExpensesDesc]"
  MILITARY_TOTAL_EXPENSES_BREAKDOWN:0 "#tooltip_header Total Military Expenses#!\nTotal: @money!#v #n -[Country.PredictTotalMilitaryExpenses|D]#!#!\n$TOOLTIP_DELIMITER$\nWages: #v #N @money!-[GetPlayer.GetMilitaryWagesExpenses|D-]#!#!\n#indent_newline:2   [GetPlayer.GetMilitaryWagesExpensesDesc]#!\n\nGoods: #v #N @money!-[GetPlayer.GetMilitaryGoodsExpenses|D-]#!#!\n#indent_newline:2   [GetPlayer.GetMilitaryGoodsExpensesByGoodsDesc]#!\n\nGoods expenses grouped by Building Type:\n#indent_newline:2   [GetPlayer.GetMilitaryGoodsExpensesDesc]#!"
  MILITARY_SLAVES_EXPENSES_BREAKDOWN:0 "#tooltip_header Military Slaves#!\nTotal: #v #N @money!-[GetPlayer.GetMilitarySlavesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetMilitarySlavesExpensesDesc]"
- DIPLOMATIC_PACTS_EXPENSES_BREAKDOWN:0 "#tooltip_header Diplomatic Pacts#!\nTotal: #v #N @money!-[GetPlayer.PredictDiplomaticPactsExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictDiplomaticPactsExpensesDesc]"
+ DIPLOMATIC_PACTS_EXPENSES_BREAKDOWN: "#tooltip_header Diplomatic Pacts#!\nTotal: #v #N @money!-[GetPlayer.PredictDiplomaticPactsExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictDiplomaticPactsExpensesDesc]"
+ TREATY_EXPENSES_BREAKDOWN: "#tooltip_header Treaties#!\nTotal: #v #N @money!-[GetPlayer.PredictTreatyExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTreatyExpensesDesc]"
  POWER_BLOC_EXPENSE_BREAKDOWN: "#tooltip_header Power Bloc#!\nTotal: #v #N @money!-[GetPlayer.GetPowerBlocExpenseRaw|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPowerBlocExpenseDesc]"
  CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN:0 "#tooltip_header [Concept('concept_good', '$concept_goods$')] for [concept_government_construction]#!\nTotal: #v #N @money!-[GetPlayer.GetConstructionGoodsExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetConstructionGoodsExpensesByGoodsDesc]"
  GOODS_EXPENSES_DETAIL:0 "#v @money!$EXPENSE|D-$#! spent on [Goods.GetTextIcon] [Goods.GetName]"
@@ -5896,14 +5912,16 @@
  TRANSFER_GOODS_INCOME: "Treaty Goods Transfer Income: #P #variable @money!#tooltippable #tooltip:$BREAKDOWN$ $VAL|D+$#!#!#!#!"
  TRANSFER_GOODS_INCOME_BREAKDOWN_ENTRY: "@money!$VAL|D+$ from selling $QUANTITY|0v$ [Goods.GetName] in [Country.GetName]"
  TRANSFER_MONEY_EXPENSE: "Treaty Money Transfer Expense: #N #variable @money!#tooltippable #tooltip:$BREAKDOWN$ $VAL|D-$#!#!#!#!"
- TRANSFER_MONEY_EXPENSE_BREAKDOWN_ENTRY: "@money!$VAL|D-$ transferred to [Country.GetName]"
+ TRANSFER_MONEY_EXPENSE_BREAKDOWN_ENTRY: "@money!$VAL|D-$ provided via [Treaty.GetName]"
  TRANSFER_MONEY_INCOME: "Treaty Money Transfer Income: #P #variable @money!#tooltippable #tooltip:$BREAKDOWN$ $VAL|D+$#!#!#!#!"
- TRANSFER_MONEY_INCOME_BREAKDOWN_ENTRY: "@money!$VAL|D+$ transferred from [Country.GetName]"
+ TRANSFER_MONEY_INCOME_BREAKDOWN_ENTRY: "@money!$VAL|D+$ obtained via [Treaty.GetName]"
  INCOME_TRANSFER_FACTOR: "#v x$VAL$#! from [SubjectType.GetNameNoIcon]"
  INCOME_TRANSFER_TOOLTIP: "#header [SubjectType.GetName]#!\nTotal: @money!$VAL|K+$\n$TOOLTIP_DELIMITER$\n@money!$BASE|K+$ from [Country.GetAdjective] [concept_treasury] income[ConcatIfNeitherEmpty('\n', '$BREAKDOWN$')]"
  INCOME_TRANSFER_TOOLTIP_MAX_DESC: "Capped at @money!$MAX|K+$ ($MAX_FRACTION|v0%$ of [COUNTRY.GetAdjective] income)"
  INCOME_TRANSFER_FACTOR_NO_SUBJECT: "#v x$VAL$#! from [DIPLOMATIC_ACTION_TYPE.GetName]"
  INCOME_TRANSFER_TOOLTIP_NO_SUBJECT: "#header [DIPLOMATIC_ACTION_TYPE.GetName]#!\nTotal: @money!$VAL|K+$\n$TOOLTIP_DELIMITER$\n@money!$BASE|K+$ from [Country.GetAdjective] [concept_treasury] income[ConcatIfNeitherEmpty('\n', '$BREAKDOWN$')]"
+ TREATY_INCOME_FORMAT: "[JoinText('\n', '$MONEY_TRANSFER_DESC$', '$GOODS_TRANSFER_DESC$')]"
+ TREATY_EXPENSES_FORMAT: "[JoinText('\n', '$MONEY_TRANSFER_DESC$', '$GOODS_TRANSFER_DESC$')]"
  SUBSIDIES_EXPENSES_BREAKDOWN:0 "#tooltip_header Subsidies: #N @money![GetPlayer.GetSubsidiesExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetSubsidiesExpensesDesc]"
  SUBVENTIONS_EXPENSES_BREAKDOWN: "#tooltip_header Subventions: #N @money![GetPlayer.GetSubventionsExpenses|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetSubventionsExpensesDesc]"
  POWER_BLOC_EXPENSES_BREAKDOWN: "#tooltip_header Power Bloc: #N @money![GetPlayer.GetPowerBlocExpenseRaw|D-]#!#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetPowerBlocExpenseDesc]"
@@ -5932,7 +5950,8 @@
  EXPENSES_MILITARY_SLAVES:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],MILITARY_SLAVES_EXPENSES_BREAKDOWN,MilitarySlavesExpenseTooltip #N @money!-[GetPlayer.GetMilitarySlavesExpenses|D-]#!#!#! [concept_budget_military_slaves]"
  EXPENSES_SUBSIDIES:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],SUBSIDIES_EXPENSES_BREAKDOWN,SubsidiesExpenseTooltip #N @money!-[GetPlayer.GetSubsidiesExpenses|D-]#!#!#! [concept_subsidies]"
  EXPENSES_SUBVENTIONS: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],SUBVENTIONS_EXPENSES_BREAKDOWN,SubventionsExpenseTooltip #N @money!-[GetPlayer.GetSubventionsExpenses|D-]#!#!#! [concept_subventions]"
- EXPENSES_DIPLOMATIC_PACTS:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],DIPLOMATIC_PACTS_EXPENSES_BREAKDOWN,DiplomaticPactsExpenseTooltip #N @money!-[GetPlayer.PredictDiplomaticPactsExpenses|D-]#!#!#! [concept_budget_diplomatic_pacts]"
+ EXPENSES_DIPLOMATIC_PACTS: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],DIPLOMATIC_PACTS_EXPENSES_BREAKDOWN,DiplomaticPactsExpenseTooltip #N @money!-[GetPlayer.PredictDiplomaticPactsExpenses|D-]#!#!#! [concept_budget_diplomatic_pacts]"
+ EXPENSES_TREATIES: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TREATY_EXPENSES_BREAKDOWN,TreatyExpenseTooltip @money![GetPlayer.PredictTreatyExpenses|D-]#!#! [concept_budget_treaties]"
  EXPENSES_POWER_BLOC: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],POWER_BLOC_EXPENSES_BREAKDOWN,PowerBlocExpenseTooltip #N @money!-[GetPlayer.GetPowerBlocExpenseRaw|D-]#!#!#! [concept_budget_power_bloc]"
  EXPENSES_CONSTRUCTION_GOODS:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN,ConstructionGoodsExpenseTooltip #N @money!-[GetPlayer.GetConstructionGoodsExpenses|D-]#!#!#! [concept_budget_construction_goods]"
  EXPENSES_INTEREST:1 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INTEREST_EXPENSE_TOOLTIP,InterestExpenseTooltip #N @money!-[GetPlayer.GetInterestPayment|D-]#!#!#! [concept_budget_interest]"
@@ -6102,10 +6121,10 @@
  NO_VALID_WAR_GOALS:1 "No valid [Concept('concept_war_goal', '$concept_war_goals$')]"
 
  WARGOAL_SUBHEADER_HOLDER_AND_TARGET: "[WarGoal.GetHolder.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(WarGoal.GetHolder.IsLocalPlayer, 'YOU'))] targeting [WarGoal.GetTarget.GetName]"
- WARGOAL_INFAMY_DESC:1 "@infamy! #tooltippable #tooltip:$BREAKDOWN_TAG$ [WAR_GOAL.GetInfamyAmount|-1]#!#! [concept_infamy] for [WAR_GOAL.GetCreator.GetName]"
- WARGOAL_POTENTIAL_INFAMY_DESC:1 "@infamy! #tooltippable #tooltip:$BREAKDOWN_TAG$ [WAR_GOAL.GetInfamyAmount|-1]#!#! [concept_infamy] for [WAR_GOAL.GetCreator.GetName]"
+ WARGOAL_INFAMY_DESC: "@infamy! #tooltippable #tooltip:$BREAKDOWN_TAG$ [WAR_GOAL.GetInfamyAmount|-1]#!#! [concept_infamy] for [WAR_GOAL.GetCreator.GetName]"
+ WARGOAL_POTENTIAL_INFAMY_DESC: "@infamy! #tooltippable #tooltip:$BREAKDOWN_TAG$ [WAR_GOAL.GetInfamyAmount|-1]#!#! [concept_infamy] for [WAR_GOAL.GetCreator.GetName]"
  BASE_WARGOAL_MANEUVERS_COST_DESC:3 "@maneuver! #tooltippable #tooltip:$BREAKDOWN_TAG$ [WAR_GOAL.CalcBaseManeuversCost|v]#!#! [Concept('concept_maneuver', '$concept_maneuvers$')]"
- ADD_WARGOAL_MANEUVERS_COST_DESC:1 "@maneuver! #tooltippable #tooltip:$BREAKDOWN_TAG$ [WAR_GOAL.CalcManeuversCostToAdd|v]#!#! [Concept('concept_maneuver', '$concept_maneuvers$')]"
+ ADD_WARGOAL_MANEUVERS_COST_DESC: "@maneuvers! #tooltippable #tooltip:$BREAKDOWN_TAG$ [WAR_GOAL.CalcManeuversCostToAdd|v]#!#! [Concept('concept_maneuver', '$concept_maneuvers$')]"
  WARGOAL_IS_INVALID:0 "#N Invalid#! and cannot currently be pressed by [WarGoal.GetHolder.GetName]:#!#indent_newline:3 \n$ERRORS$#!"
  WARGOAL_IS_EXECUTED:1 "Has been #b enforced#! against [WAR_GOAL.GetWarGoalStakeholder.GetName]"
  WARGOAL_IS_PRESSED:1 "#P Being pressed#! by [WarGoal.GetHolder.GetName] in the [WAR_GOAL.GetWar.GetName] and will be enforced if the current [concept_peace_deal] is accepted by all involved Countries"
@@ -6120,10 +6139,6 @@
  OFFER_SUPPORT: "Negotiate Support"
 
  ARTICLE_WARGOAL_SELECT_INPUT_TOOLTIP: "#instruction Click to select inputs#!"
- ADD_ARTICLE_WARGOAL_MANEUVERS_COST_TOOLTIP: "#header [concept_war_goal] [Concept('concept_maneuver', '$concept_maneuvers$')] Cost#!\n@maneuvers![ArticleDraft.GetWarGoalManeuversCost(GetPlayer.Self, WarGoal.GetDiplomaticPlay.Self)|v] for [WarGoal.GetName|v]\n$TOOLTIP_DELIMITER$\n[ArticleDraft.GetWarGoalManeuversCostDesc(GetPlayer.Self, WarGoal.GetDiplomaticPlay.Self)]"
- ADD_ARTICLE_WARGOAL_MANEUVERS_COST: "@maneuvers![ArticleDraft.GetWarGoalManeuversCost(GetPlayer.Self, WarGoal.GetDiplomaticPlay.Self)|v] [Concept('concept_maneuver', '$concept_maneuvers$')]"
- ADD_ARTICLE_WARGOAL_INFAMY_VALUE_TOOLTIP:  "#header [concept_war_goal] [concept_infamy]#!\n[ArticleDraft.GetWarGoalInfamyValue(GetPlayer.Self)|-1] for [WarGoal.GetName|v]\n$TOOLTIP_DELIMITER$\n[ArticleDraft.GetWarGoalInfamyValueDesc(GetPlayer.Self)]"
- ADD_ARTICLE_WARGOAL_INFAMY_VALUE: "@infamy![ArticleDraft.GetWarGoalInfamyValue(GetPlayer.Self)|-1] [concept_infamy]"
  ADD_ARTICLE_WARGOAL_BINDING_PERIOD: "Would have a [concept_binding_period] of #v [GetDefine('NDiplomacy', 'TREATY_DEFAULT_BINDING_DURATION_YEARS')] years#!"
 
  SWAY_OFFER_MANEUVERS_COST_DESC:1 "#header @maneuvers! $COST|v$ [Concept('concept_maneuver', '$concept_maneuvers$')] to $SWAY_OFFER|v$#!\n$TOOLTIP_DELIMITER$\n$DETAILS$"
@@ -6132,9 +6147,7 @@
  ADD_WARGOAL_MANEUVERS_COST_TOOLTIP:1 "#header [concept_war_goal] [Concept('concept_maneuver', '$concept_maneuvers$')] Cost: [WarGoal.CalcManeuversCostToAdd|v]#!\n$TOOLTIP_DELIMITER$\n[WarGoal.GetManeuversCostToAddDesc]\nWe have [WarGoal.GetDiplomaticPlay.GetNumManeuversRemaining(GetPlayer.Self)|v] [Concept('concept_maneuver', '$concept_maneuvers$')] remaining"
  BASE_WARGOAL_MANEUVERS_COST: "@maneuvers![WarGoal.CalcBaseManeuversCost|v-]"
  BASE_WARGOAL_MANEUVERS_COST_TOOLTIP: "#header [concept_war_goal] [Concept('concept_maneuver', '$concept_maneuvers$')] Cost: [WarGoal.CalcBaseManeuversCost|v-]#!\n$TOOLTIP_DELIMITER$\n[WarGoal.GetBaseManeuversCostDesc]\nWe have [WarGoal.GetDiplomaticPlay.GetNumManeuversRemaining(GetPlayer.Self)|v] [Concept('concept_maneuver', '$concept_maneuvers$')] remaining"
- WARGOAL_INFAMY_TOOLTIP: "#header [concept_war_goal] [concept_infamy]: [WarGoal.GetInfamyAmount|-1]#!\n$TOOLTIP_DELIMITER$\n[WarGoal.GetInfamyDesc]"
  WARGOAL_INFAMY: "@infamy! [WarGoal.GetInfamyAmount|-1]"
- WARGOAL_INFAMY_WITH_LABEL: "@infamy! [WarGoal.GetInfamyAmount|-1] [concept_infamy]"
  WARGOAL_WILL_ENACT_LAWS: "The following $concept_laws$ will be imposed: $LAWS$"
 
  WAR_SUPPORT_CANNOT_BE_NEGATIVE: "This [concept_war_support] cannot be reduced below #v 0#! because the following [Concept('concept_war_goal','$concept_war_goals$')] are #b not#! [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')] by the opposing side:"
@@ -6600,8 +6613,8 @@
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_NO_TRADE_DESC: "$HEADER$\n$TOOLTIP_DELIMITER$\nNo [concept_trade] of this [concept_good] in $NAME|v$"
  TOTAL_TARIFFS_SUBVENTIONS_MONEY_BALANCE_FOR_GOODS_NONE_DESC: "$HEADER$\n$TOOLTIP_DELIMITER$\nNo $concept_tariffs$ or $concept_subventions$ for this [concept_good] in $NAME|v$"
 
- WORLD_MARKET_GOODS_EXPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] exports#!\nAmount: [Market.GetExportedAmount(Goods.Self)|v0]"
- WORLD_MARKET_GOODS_IMPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetName] imports#!\nAmount: [Market.GetImportedAmount(Goods.Self)|v0]"
+ WORLD_MARKET_GOODS_EXPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_exports$#!\nAmount: [Market.GetExportedAmount(Goods.Self)|v0]"
+ WORLD_MARKET_GOODS_IMPORT_TOOLTIP: "#header [Market.GetName] [Goods.GetTextIcon][Nbsp][Goods.GetName] $concept_imports$#!\nAmount: [Market.GetImportedAmount(Goods.Self)|v0]"
 
  revolution_name: "[concept_revolution]"
  secession_name: "[concept_secession]"
@@ -6904,12 +6917,6 @@
  DIPLOMATIC_ACTION_TECH_SPREAD: "• Would facilitate [concept_technology_spread] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
  DIPLOMATIC_ACTION_TECH_SPREAD_ACTIVE: "• Facilitates [concept_technology_spread] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
  DIPLOMATIC_ACTION_TECH_SPREAD_BREAK: "• Ends the facilitation of [concept_technology_spread] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
- DIPLOMATIC_ACTION_ALLIANCE: "• Creates an [concept_alliance] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
- DIPLOMATIC_ACTION_ALLIANCE_ACTIVE: "• Maintains an [concept_alliance] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
- DIPLOMATIC_ACTION_ALLIANCE_BREAK: "• Breaks off the [concept_alliance] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
- DIPLOMATIC_ACTION_DEFENSIVE_PACT: "• Creates a [concept_defensive_pact] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
- DIPLOMATIC_ACTION_DEFENSIVE_PACT_ACTIVE: "• Maintains a [concept_defensive_pact] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
- DIPLOMATIC_ACTION_DEFENSIVE_PACT_BREAK: "• Breaks off the [concept_defensive_pact] between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName]"
  DIPLOMATIC_ACTION_GUARANTEE_INDEPENDENCE: "• Establishes a [COUNTRY.GetAdjective] [Concept('concept_guarantee_independence','$concept_guarantee_of_independence$')] for [TARGET_COUNTRY.GetName]"
  DIPLOMATIC_ACTION_GUARANTEE_INDEPENDENCE_ACTIVE: "• Maintains a [COUNTRY.GetAdjective] [Concept('concept_guarantee_independence','$concept_guarantee_of_independence$')] for [TARGET_COUNTRY.GetName]"
  DIPLOMATIC_ACTION_GUARANTEE_INDEPENDENCE_BREAK: "• Removes the [COUNTRY.GetAdjective] [Concept('concept_guarantee_independence','$concept_guarantee_of_independence$')] for [TARGET_COUNTRY.GetName]"
@@ -6941,10 +6948,11 @@
 
  THEY_OFFER_OBLIGATION:1 "They are offering to owe us an [concept_obligation] if we accept."
  THEY_CALL_IN_OBLIGATION_SHORT:0 "They are calling in our [concept_obligation], so rejecting their offer would have negative diplomatic consequences for us."
- THEY_CALL_IN_OBLIGATION:1 "@warning! They are calling in our [concept_obligation]. Rejecting would repudiate the [concept_obligation] with the following consequences for us:\n$REPUDIATE_OBLIGATION_EFFECTS$"
+ THEY_CALL_IN_OBLIGATION:1 "@warning! They are calling in our [concept_obligation]. Rejecting would repudiate the [concept_obligation] with the following consequences for us:#indent_newline:3 \n$REPUDIATE_OBLIGATION_EFFECTS$#!"
+ THEY_ASK_US_TO_OFFER_OBLIGATION: "They are asking us to owe them an [concept_obligation] if we accept."
  WE_NOW_OWE_OBLIGATION:1 "We now owe them an [concept_obligation]"
  THEY_USED_OBLIGATION:1 "They used an [concept_obligation] to force us to accept."
- REPUDIATE_OBLIGATION_EFFECTS:1 "- Greatly reduced [concept_relations] with the [concept_country] whose [concept_obligation] we repudiated\n- Reduced [concept_relations] with all other countries we owe an [concept_obligation]\n- Reduced [concept_prestige], slower [concept_infamy] decay and widespread mistrust for new [Concept('concept_obligation', '$concept_obligations$')] from us for a period of #v 5#! years\n"
+ REPUDIATE_OBLIGATION_EFFECTS:1 "- Greatly reduced [concept_relations] with the [concept_country] whose [concept_obligation] we repudiated\n- Reduced [concept_relations] with all other countries we owe an [concept_obligation]\n- Reduced [concept_prestige], slower [concept_infamy] decay and widespread mistrust for new [Concept('concept_obligation', '$concept_obligations$')] from us for a period of #v 5#! years"
  repudiated_obligation:0 "Repudiated Obligation"
 
  TRADE_DEFICIT_SURPLUS: "Trade Deficit/Surplus"
@@ -6974,7 +6982,7 @@
  proposal_diplomatic_action_tooltip:0 "#header $proposal_diplomatic_action_name$#!\n$TOOLTIP_DELIMITER$\n$proposal_diplomatic_action_desc$"
 
  proposal_treaty_name: "[SCOPE.GetRootScope.GetTreaty.GetNameNoFormatting]"
- proposal_treaty_desc: "[SCOPE.GetRootScope.GetTreaty.GetBindingPeriodFormatted] [concept_binding_period]\n\n#title Effects:#!#indent_newline:3 [ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetEffectsDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetMutualEffectsDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetFirstCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetSecondCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetRelationsEffectDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetMutualModifierDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetSourceModifierDesc)]#![ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetTargetModifierDesc)]"
+ proposal_treaty_desc: "[SCOPE.GetRootScope.GetTreaty.GetBindingPeriodFormatted] [concept_binding_period][ConcatIfNeitherEmpty('\n', AddLocalizationIf(SCOPE.GetRootScope.GetTreaty.DoesOweObligation(SCOPE.GetRootScope.GetTreaty.GetRightCountry.Self), 'THEY_OFFER_OBLIGATION'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(SCOPE.GetRootScope.GetTreaty.DoesCallInObligation(SCOPE.GetRootScope.GetTreaty.GetRightCountry.Self), 'THEY_CALL_IN_OBLIGATION'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(SCOPE.GetRootScope.GetTreaty.DoesOweObligation(SCOPE.GetRootScope.GetTreaty.GetLeftCountry.Self), 'THEY_ASK_US_TO_OFFER_OBLIGATION'))]\n\n#title Effects:#!#indent_newline:3 [ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetEffectsDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetMutualEffectsDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetFirstCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetDirectedEffectsDesc(SCOPE.GetRootScope.GetTreaty.GetSecondCountry.Self))][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetRelationsEffectDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetMutualModifierDesc)][ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetSourceModifierDesc)]#![ConcatIfNeitherEmpty('\n', SCOPE.GetRootScope.GetTreaty.GetTargetModifierDesc)]"
  proposal_treaty_tooltip: "#header $proposal_treaty_name$#!\n$TOOLTIP_DELIMITER$\n$proposal_treaty_desc$"
 
  proposal_diplomatic_action_owe_obligation_name:1 "[SCOPE.GetRootScope.GetDiplomaticAction.GetProposalNotificationName]"
@@ -7682,6 +7690,7 @@
  MARKET_ACCESS_DESC_DISCONNECTED_OVERSEAS:1 "Unable to connect to [State.GetMarket.GetName] through either land route or ports"
  MARKET_ACCESS_DESC_NO_EXIT_PORT:0 "Unable to connect to [State.GetMarket.GetName] via land, and [State.GetName] has no port"
  MARKET_ACCESS_DESC_NO_ENTRY_PORT:0 "Unable to connect to [State.GetMarket.GetName] via land, and the port in [State.GetName] has no other port to connect to in [State.GetMarket.GetName]"
+ MARKET_ACCESS_DESC_OCCUPATION: "Market Access is multiplied by #n x$MULTIPLIER$#! due to hostile occupation"
 
  MARKET_PANEL_DETAILS_TAB_LABEL:1 "Goods"
  MARKET_PANEL_DETAILS_TAB_LABEL_BOLD:0 "#bold $MARKET_PANEL_DETAILS_TAB_LABEL$#!"
@@ -8359,7 +8368,7 @@
  ON_RESEARCHED: "#title When researched:#!"
  ON_ENACT:0 "#title When enacted:#!"
  ON_REVOKE:0 "#title When revoked:#!"
- ON_REVOKE_ACTIVE:0 "#title When the currently active $LAW$ is revoked#!"
+ ON_REVOKE_ACTIVE:0 "#title When the currently active $LAW$ is revoked:#!"
  THIS_IS_DUE_TO:0 "#title The total effect of this Law is due to:#!"
  LAW_EFFECT:0 "#bold Effect(s):#!"
  LAW_EFFECT_FOR_LEVEL:0 "#bold Effect(s) for [concept_investment_level] #variable $LEVEL$#!:#!"
@@ -10062,7 +10071,7 @@
  notification_formation_exiled_tooltip: "#header $notification_formation_exiled_name$#!\n$notification_formation_exiled_desc$"
 
  notification_formation_returned_name: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] has returned from [Concept('concept_exiled_army','$concept_exiled_army_exile$')]"
- notification_formation_returned_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] has arrived at [SCOPE.GetRootScope.GetMilitaryFormation.GetStateAtPosition.GetNameWithCountryFlag]."
+ notification_formation_returned_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] has arrived at [SCOPE.GetRootScope.GetMilitaryFormation.GetLocationString]."
  notification_formation_returned_tooltip: "#header $notification_formation_returned_name$#!\n$notification_formation_returned_desc$"
 
  notification_formation_travel_to_front_cancelled_name: "[concept_military_formation] cannot reach [concept_front]"
@@ -10143,17 +10152,17 @@
  notification_country_withdrawn_from_treaty_tooltip: "#header $notification_country_withdrawn_from_treaty_name$#!\n$notification_country_withdrawn_from_treaty_desc$"
 
  notification_country_broke_treaty_name: "[SCOPE.sCountry('withdrawing_country').GetName] Breaks [SCOPE.GetRootScope.GetTreaty.GetName]"
- notification_country_broke_treaty_desc: "[SCOPE.sCountry('withdrawing_country').GetName] has broke the [SCOPE.GetRootScope.GetTreaty.GetName] in violating of the standing binding period"
+ notification_country_broke_treaty_desc: "[SCOPE.sCountry('withdrawing_country').GetName] has broken the [SCOPE.GetRootScope.GetTreaty.GetName] in violation of the standing binding period"
  notification_country_broke_treaty_tooltip: "#header $notification_country_broke_treaty_name$#!\n$notification_country_broke_treaty_desc$"
 
  notification_treaty_proposal_declined_name: "[SCOPE.GetRootScope.GetTreaty.GetName] Declined"
- notification_treaty_proposal_declined_desc: "Our proposed treaty [SCOPE.GetRootScope.GetTreaty.GetName] has been declined by [SCOPE.GetRootScope.GetTreaty.GetSecondCountry.GetName]"
+ notification_treaty_proposal_declined_desc: "Our proposed treaty [SCOPE.GetRootScope.GetTreaty.GetName] has been declined by [SCOPE.sCountry('declining_country').GetName]"
  notification_treaty_proposal_declined_tooltip: "#header $notification_treaty_proposal_declined_name$#!\n$notification_treaty_proposal_declined_desc$"
 
  notification_treaty_dissolved_name: "[SCOPE.GetRootScope.GetTreaty.GetName] Dissolved"
  notification_treaty_dissolved_desc: "[SCOPE.GetRootScope.GetTreaty.GetName] has been dissolved"
  notification_treaty_dissolved_tooltip: "#header $notification_treaty_dissolved_name$#!\n$notification_treaty_dissolved_desc$"
- 
+
  notification_treaty_article_removed_name: "[SCOPE.sTreatyArticle('article').GetName] in [SCOPE.GetRootScope.GetTreaty.GetName] Invalidated"
  notification_treaty_article_removed_desc: "[SCOPE.sTreatyArticle('article').GetName] in [SCOPE.GetRootScope.GetTreaty.GetName] is no longer valid and has been removed from the [concept_treaty]:\n[SCOPE.sTreatyArticle('article').GetAutoBreakReasonDesc]"
  notification_treaty_article_removed_tooltip: "#header $notification_treaty_article_removed_name$#!\n$notification_treaty_article_removed_desc$"
@@ -10777,6 +10786,9 @@
  PRODUCTION_METHOD_CONFIRMATION_EXEMPT_TOOLTIP: "Only switch [Subtract_int32( ProductionMethodConfirmationPopup.GetTotalBuildingCount, ProductionMethodConfirmationPopup.GetExemptedBuildingCount )|v] [BuildingType.GetName] [Concept( 'concept_building', '$concept_buildings$' )] to [ProductionMethod.GetName]\n([ProductionMethodConfirmationPopup.GetExemptedBuildingCount|v] $concept_buildings$ listed above will remain unchanged)"
  PRODUCTION_METHOD_CONFIRMATION_CANCEL: "$CANCEL$"
 
+ INFAMY_DESC: "@infamy! #tooltippable #tooltip:$BREAKDOWN_TAG$ $INFAMY|-1$#!#! [concept_infamy]"
  TREATY_FALLBACK_NAME: "$ENTRY_INTO_FORCE_DATE$ [FIRST_COUNTRY.GetAdjectiveNoFormatting]-[SECOND_COUNTRY.GetAdjectiveNoFormatting] Accord of $SIGNING_LOCATION$"
  TREATY_DRAFT_FALLBACK_NAME: "[FIRST_COUNTRY.GetAdjectiveNoFormatting]-[SECOND_COUNTRY.GetAdjectiveNoFormatting] Deliberation"
  RANDOMIZE_TREATY_NAME: "Randomize [concept_treaty] name"
+
+ MANEUVERS_DESC: "@maneuvers! #tooltippable #tooltip:$BREAKDOWN_TAG$ $MANEUVERS|v0$#!#! [Concept('concept_maneuver', '$concept_maneuvers$')]"

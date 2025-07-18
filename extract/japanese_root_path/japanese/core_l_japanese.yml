@@ -176,6 +176,8 @@
  DEPLOY_MILITARY_FORMATION_TO_FRONT_INVADING: "$FORMATION_NAME$は進行中の[concept_invasion]に参加しているため、$FRONT_NAME$に配備#bできません#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_UNREACHABLE: "$FORMATION_NAME$は$FRONT_NAME$に到達#b できません#!"
  DEPLOY_MILITARY_FORMATION_TO_FRONT_NOT_A_PARTICIPANT: "$FRONT_NAME$に$FORMATION_NAME$を配備することができません: $COUNTRY_NAME$は$FRONT_NAME$に参加していません"
+ DEPLOY_MILITARY_FORMATION_TO_FRONT_INVASION_IS_NOT_PREPARED: "[Concept('concept_military_formation', '$concept_military_formations$')]を[Front.GetName]に配備できません: [concept_naval_invasion][concept_front]がまだ準備できていません"
+ DEPLOY_MILITARY_FORMATION_TO_FRONT_INVADER_ALLY: "同盟国の[concept_naval_invasion]に$concept_military_formations$を配備できません"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_REDUNDANT: "$FORMATION_NAME$ は既に $SEA_NODE_NAME$に配備されています"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_INVADING: "$FORMATION_NAME$は進行中の[concept_invasion]に参加しているため、$SEA_NODE_NAME$に配備#bできません#!"
  DEPLOY_MILITARY_FORMATION_TO_SEA_NODE_UNREACHABLE: "$FORMATION_NAME$は$SEA_NODE_NAME$に到達#b できません#!"

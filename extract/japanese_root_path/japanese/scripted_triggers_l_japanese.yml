@@ -36,6 +36,8 @@
  COUNTRY_IS_IN_AMERICAS_DESC_NOT: "[COUNTRY.GetName]は[concept_georegion_americas]に#b ありません#!"
  COUNTRY_IS_IN_NORTH_AMERICA_DESC: "[COUNTRY.GetName]は[concept_georegion_north_america]にあります"
  COUNTRY_IS_IN_NORTH_AMERICA_DESC_NOT: "[COUNTRY.GetName]は[concept_georegion_north_america]に#b ありません#!"
+ GLOBAL_IS_IN_NORTH_AMERICA_DESC: "は[concept_georegion_north_america]にあります"
+ GLOBAL_IS_IN_NORTH_AMERICA_DESC_NOT: "は[concept_georegion_north_america]にありません"
  COUNTRY_IS_IN_CENTRAL_AMERICA_DESC: "[COUNTRY.GetName]は[concept_georegion_central_america]にあります"
  COUNTRY_IS_IN_CENTRAL_AMERICA_DESC_NOT: "[COUNTRY.GetName]は[concept_georegion_central_america]に#b ありません#!"
  COUNTRY_IS_IN_SOUTH_AMERICA_DESC: "[COUNTRY.GetName]は[concept_georegion_south_america]にあります"

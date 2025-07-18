@@ -524,7 +524,12 @@
  TRIGGER_HAS_STRATEGIC_ADJACENCY_THIRD:0 "[COUNTRY.GetName] has a strategic adjacency to $TARGET$"
  TRIGGER_HAS_STRATEGIC_ADJACENCY_THIRD_NOT:0 "[COUNTRY.GetName] does #bold not#! have a strategic adjacency to $TARGET$"
 
- TRIGGER_IS_ADJACENT_TO_COUNTRY:1 "Is adjacent to [TARGET_COUNTRY.GetName]"
+ TRIGGER_IS_ADJACENT_TO_MARKET: "Is adjacent to [TARGET_MARKET.GetName]"
+ TRIGGER_IS_ADJACENT_TO_MARKET_NOT: "Is #bold not#! adjacent to  [TARGET_MARKET.GetName]"
+ TRIGGER_IS_ADJACENT_TO_MARKET_THIRD: "[MARKET.GetName] is adjacent to [TARGET_MARKET.GetName]"
+ TRIGGER_IS_ADJACENT_TO_MARKET_THIRD_NOT: "[MARKET.GetName] is #bold not#! adjacent to [TARGET_MARKET.GetName]"
+
+TRIGGER_IS_ADJACENT_TO_COUNTRY:1 "Is adjacent to [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_ADJACENT_TO_COUNTRY_NOT:1 "Is #bold not#! adjacent to [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_ADJACENT_TO_COUNTRY_FIRST:1 "[COUNTRY.GetNameNoFlag] is adjacent to [TARGET_COUNTRY.GetName]"
  TRIGGER_IS_ADJACENT_TO_COUNTRY_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] is #bold not#! adjacent to [TARGET_COUNTRY.GetName]"
@@ -1239,7 +1244,7 @@
  TRIGGER_HAS_LAW_FIRST_NOT:1 "[COUNTRY.GetNameNoFlag] does #bold not #!have [TARGET_LAW_TYPE.GetName] enacted"
  TRIGGER_HAS_LAW_THIRD:1 "[TARGET_LAW_TYPE.GetName] has been enacted by [COUNTRY.GetName]"
  TRIGGER_HAS_LAW_THIRD_NOT:2 "[TARGET_LAW_TYPE.GetName] has #bold not #!been enacted by [COUNTRY.GetName]"
- 
+
  TRIGGER_HAS_LAW_OR_VARIANT: "Has enacted any variant of [TARGET_LAW_TYPE.GetName]"
  TRIGGER_HAS_LAW_OR_VARIANT_NOT: "Has #bold not #!enacted any variant of [TARGET_LAW_TYPE.GetName]"
  TRIGGER_HAS_LAW_OR_VARIANT_FIRST: "[COUNTRY.GetNameNoFlag] has enacted any variant of [TARGET_LAW_TYPE.GetName]"
@@ -2196,7 +2201,7 @@
  TRIGGER_NATIONALIZATION_COST_THIRD: "Total cost to [concept_nationalize] all [Concept('concept_building', '$concept_buildings$')] in [COUNTRY.GetName] owned by [concept_government] or [Concept('concept_pop', '$concept_pops$')] of [TARGET_COUNTRY.GetName] is $COMPARATOR$ $NUM|%2v$ (currently: $CURRENT_VALUE|%2v$)"
  TRIGGER_NATIONALIZATION_COST_THIRD_NOT: "Total cost to [concept_nationalize] all [Concept('concept_building', '$concept_buildings$')] in [COUNTRY.GetName] owned by [concept_government] or [Concept('concept_pop', '$concept_pops$')] of [TARGET_COUNTRY.GetName] is #bold not#! $COMPARATOR$ $NUM|%2v$ (currently: $CURRENT_VALUE|%2v$)"
 
- GOODS_PRODUCTION_RANK_PRODUCER: "#v ##$NUM|0$#! producer of [Goods.GetTextIcon][Nbsp][Goods.GetName] (currently: [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0'),'#v ##$CURRENT_VALUE|0$#!','none')])"
+ GOODS_PRODUCTION_RANK_PRODUCER: "#v ##$NUM|0$#! producer of [Goods.GetTextIcon][Nbsp][Goods.GetName] (currently: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])"
  TRIGGER_GOODS_PRODUCTION_RANK_EQUAL: "Is $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_EQUAL_FIRST: "We are $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_EQUAL_THIRD: "[COUNTRY.GetName] is $GOODS_PRODUCTION_RANK_PRODUCER$"
@@ -2204,7 +2209,7 @@
  TRIGGER_GOODS_PRODUCTION_RANK_NOT_EQUAL_FIRST: "We are #b not#! $GOODS_PRODUCTION_RANK_PRODUCER$"
  TRIGGER_GOODS_PRODUCTION_RANK_NOT_EQUAL_THIRD: "[COUNTRY.GetName] is #b not#! $GOODS_PRODUCTION_RANK_PRODUCER$"
 
- GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS: "one of the #v top $NUM|0$#! producers of [Goods.GetTextIcon][Nbsp][Goods.GetName] (currently: [SelectLocalization(GreaterThan_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0'),'#v ##$CURRENT_VALUE|0$#!','none')])"
+ GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS: "one of the #v top $NUM|0$#! producers of [Goods.GetTextIcon][Nbsp][Goods.GetName] (currently: [SelectLocalization(BetweenInclusiveOfMax_CFixedPoint('(CFixedPoint)$CURRENT_VALUE$','(CFixedPoint)0', '(CFixedPoint)10'),'#v ##$CURRENT_VALUE|0$#!','none')])"
  TRIGGER_GOODS_PRODUCTION_RANK_GREATER_THAN: "Is #b not#! $GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS$"
  TRIGGER_GOODS_PRODUCTION_RANK_GREATER_THAN_FIRST: "We are #b not#! $GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS$"
  TRIGGER_GOODS_PRODUCTION_RANK_GREATER_THAN_THIRD: "[COUNTRY.GetName] is #b not#! $GOODS_PRODUCTION_RANK_ONE_OF_THE_TOP_PRODUCERS$"
@@ -2239,6 +2244,25 @@
  TRIGGER_GDP_OWNERSHIP_RATIO_FIRST_NOT: "Ratio of [COUNTRY.GetAdjectiveNoFlag] [concept_gdp] owned (directly or indirectly) by [TARGET_COUNTRY.GetName] is #bold not#! $COMPARATOR$ $NUM|%2v$ (currently: $CURRENT_VALUE|%2v$)"
  TRIGGER_GDP_OWNERSHIP_RATIO_THIRD: "Ratio of [COUNTRY.GetAdjective] [concept_gdp] owned (directly or indirectly) by [TARGET_COUNTRY.GetName] is $COMPARATOR$ $NUM|%2v$ (currently: $CURRENT_VALUE|%2v$)"
  TRIGGER_GDP_OWNERSHIP_RATIO_THIRD_NOT: "Ratio of [COUNTRY.GetAdjective] [concept_gdp] owned (directly or indirectly) by [TARGET_COUNTRY.GetName] is #bold not#! $COMPARATOR$ $NUM|%2v$ (currently: $CURRENT_VALUE|%2v$)"
+ 
+ TRIGGER_NUM_POTENTIAL_RESOURCES: "Number of potential $BUILDING_GROUP|v$ is $COMPARATOR$ $NUM|v$"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_NOT: "Number of potential $BUILDING_GROUP|v$ is #bold not#! $COMPARATOR$ $NUM|v$"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_THIRD: "Number of potential $BUILDING_GROUP|v$ in [STATE.GetName] is $COMPARATOR$ $NUM|%2v$ (currently: $CURRENT_VALUE|v$)"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_THIRD_NOT: "Number of potential $BUILDING_GROUP|v$ in [STATE.GetName] is #bold not#! $COMPARATOR$ $NUM|v$ (currently: $CURRENT_VALUE|$)"
+
+ TRIGGER_NUM_POTENTIAL_RESOURCES_GREATER_THAN: "Number of potential $BUILDING_GROUP|v$ is greater than $NUM|v$"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_LESS_THAN: "Number of potential $BUILDING_GROUP|v$ is less than $NUM|v$"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_GREATER_OR_EQUAL: "Number of potential $BUILDING_GROUP|v$ is is greater than, or equal to $NUM|v$"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_LESS_OR_EQUAL: "Number of potential $BUILDING_GROUP|v$ is less than, or equal to $NUM|v$"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_EQUAL: "Number of potential $BUILDING_GROUP|v$ is $NUM|v$"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_NOT_EQUAL: "Number of potential $BUILDING_GROUP|v$ is #bold not #!$NUM|v$"
+
+ TRIGGER_NUM_POTENTIAL_RESOURCES_GREATER_THAN_THIRD: "Number of potential $BUILDING_GROUP|v$ in [State.GetName] is greater than $NUM|v$ (currently: $CURRENT_VALUE|v$)"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_LESS_THAN_THIRD: "Number of potential $BUILDING_GROUP|v$ in [State.GetName] is less than $NUM|v$ (currently: $CURRENT_VALUE|v$)"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_GREATER_OR_EQUAL_THIRD: "Number of potential $BUILDING_GROUP|v$ in [State.GetName] is greater than, or equal to than $NUM|v$ (currently: $CURRENT_VALUE|v$)"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_LESS_OR_EQUAL_THIRD: "Number of potential $BUILDING_GROUP|v$ in [State.GetName] is less than, or equal to $NUM|v$ (currently: $CURRENT_VALUE|v$)"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_EQUAL_THIRD: "Number of potential $BUILDING_GROUP|v$ in [State.GetName] is $NUM|v$ (currently: $CURRENT_VALUE|v$)"
+ TRIGGER_NUM_POTENTIAL_RESOURCES_NOT_EQUAL_THIRD: "Number of potential $BUILDING_GROUP|v$ in [State.GetName] is #bold not #!$NUM|v$ (currently: $CURRENT_VALUE|v$)"
 
  TRIGGER_IS_SAME_LAW_GROUP_AS:0 "Is in the same category as [TARGET.GetName]"
  TRIGGER_IS_SAME_LAW_GROUP_AS_NOT:0 "Is #b not#! in the same category as [TARGET.GetName]"
@@ -3294,12 +3318,12 @@
  TRIGGER_NUM_QUEUED_CONSTRUCTIONS_EQUAL:0 "Number of projects in the [concept_construction_queue] is $TARGET_VALUE|0v$"
  TRIGGER_NUM_QUEUED_CONSTRUCTIONS_NOT_EQUAL:0 "Number of projects in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
 
- TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_THAN:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')] in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
- TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_THAN:0 "Number of [Concept('concept_private_construction', '$concept_private_constructions$')] in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_private_constructions$')]  in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
  TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_LESS_THAN:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is less than $TARGET_VALUE|0v$"
- TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_LESS_OR_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_private_constructions$')]  in the [concept_construction_queue] is less than, or equal to $TARGET_VALUE|0v$"
  TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is $TARGET_VALUE|0v$"
- TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_NOT_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_gprivate_constructions$')]  in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
+ TRIGGER_NUM_QUEUED_PRIVATE_CONSTRUCTIONS_NOT_EQUAL:0 "Number of [Concept('concept_private_construction', '$concept_private_constructions$')]  in the [concept_construction_queue] is #bold not #!$TARGET_VALUE|0v$"
 
  TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_GREATER_THAN:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is greater than $TARGET_VALUE|0v$"
  TRIGGER_NUM_QUEUED_GOVERNMENT_CONSTRUCTIONS_GREATER_OR_EQUAL:0 "Number of [Concept('concept_government_construction', '$concept_government_constructions$')] in the [concept_construction_queue] is greater than, or equal to $TARGET_VALUE|0v$"
@@ -4074,7 +4098,7 @@
  TRIGGER_STATE_TRADE: "Traded $GOODS_NAME$ with $STATE_NAME$ is $COMPARATOR$ $NUM|0v$\n($CURRENT_VALUE|0$ currently)"
  TRIGGER_STATE_TRADE_NOT: "Traded $GOODS_NAME$ with $STATE_NAME$ is #b not#! $COMPARATOR$ $NUM|0v$\n($CURRENT_VALUE|0$ currently)"
  TRIGGER_STATE_TRADE_THIRD: "Traded $GOODS_NAME$ between [STATE.GetName] and $STATE_NAME$ is $COMPARATOR$ $NUM|0v$\n($CURRENT_VALUE|0$ currently)"
- TRIGGER_STATE_TRADE_THIRD_NOT: "Traded  $GOODS_NAME$ between [STATE.GetName] and $STATE_NAME$ is #b not#! $COMPARATOR$ $NUM|0v$\n($CURRENT_VALUE|0$ currently)"
+ TRIGGER_STATE_TRADE_THIRD_NOT: "Traded $GOODS_NAME$ between [STATE.GetName] and $STATE_NAME$ is #b not#! $COMPARATOR$ $NUM|0v$\n($CURRENT_VALUE|0$ currently)"
 
  TRIGGER_STATE_EXPORTS: "Exported $GOODS_NAME$ to $STATE_NAME$ is $COMPARATOR$ $NUM|0v$\n($CURRENT_VALUE|0$ currently)"
  TRIGGER_STATE_EXPORTS_NOT: "Exported $GOODS_NAME$ to $STATE_NAME$ is #b not#! $COMPARATOR$ $NUM|0v$\n($CURRENT_VALUE|0$ currently)"
@@ -4534,7 +4558,11 @@
  TRIGGER_HAS_ANY_SUBVENTIONS_ON_THIRD: "[COUNTRY.GetName] has any level of [concept_subventions] on [TARGET_GOODS.GetName]"
  TRIGGER_HAS_ANY_SUBVENTIONS_ON_THIRD_NOT: "[COUNTRY.GetName] does #b not#! have any level of [concept_subventions] on [TARGET_GOODS.GetName]"
 
- TRIGGER_HAS_TREATY_ALLIANCE_WITH: "[COUNTRY.GetName] has an $alliance$ with [TARGET_COUNTRY.GetName]"
- TRIGGER_HAS_TREATY_ALLIANCE_WITH_NOT: "[COUNTRY.GetName] does #b not#! have an $alliance$ with [TARGET_COUNTRY.GetName]"
- TRIGGER_HAS_TREATY_DEFENSIVE_PACT_WITH: "[COUNTRY.GetName] has a $defensive_pact$ with [TARGET_COUNTRY.GetName]"
- TRIGGER_HAS_TREATY_DEFENSIVE_PACT_WITH_NOT: "[COUNTRY.GetName] does #b not#! have a $defensive_pact$ with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_ALLIANCE_WITH: "[COUNTRY.GetName] has an [GetArticleType('alliance').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_ALLIANCE_WITH_NOT: "[COUNTRY.GetName] does #b not#! have an [GetArticleType('alliance').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_DEFENSIVE_PACT_WITH: "[COUNTRY.GetName] has a [GetArticleType('defensive_pact').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_DEFENSIVE_PACT_WITH_NOT: "[COUNTRY.GetName] does #b not#! have a [GetArticleType('defensive_pact').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_FOREIGN_INVESTMENT_RIGHTS_WITH: "[COUNTRY.GetName] does have [GetArticleType('foreign_investment_rights').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_FOREIGN_INVESTMENT_RIGHTS_WITH_NOT: "[COUNTRY.GetName] does #b not#! have [GetArticleType('foreign_investment_rights').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_TRADE_PRIVILEGE_WITH: "[COUNTRY.GetName] does have [GetArticleType('trade_privilege').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"
+ TRIGGER_HAS_TREATY_TRADE_PRIVILEGE_WITH_NOT: "[COUNTRY.GetName] does #b not#! have [GetArticleType('trade_privilege').GetNameNoIcon] with [TARGET_COUNTRY.GetName]"

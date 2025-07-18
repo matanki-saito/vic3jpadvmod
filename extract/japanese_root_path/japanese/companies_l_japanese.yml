@@ -111,6 +111,7 @@
  company_basic_wine_and_fruit: "ワイン&フルーツ株式会社"
  company_basic_gold_mining: "貴金属企業連合"
  company_basic_electrics: "ホーム・エレクトリクス株式会社"
+ company_basic_weapons: "兵器工場"
  #Dynamic company names
  company_basic_agriculture_1_dynamic_name_tag_singular: "穀物"
  company_basic_agriculture_1_dynamic_name_tag_plural: "穀物"
@@ -160,6 +161,8 @@
  company_basic_gold_mining_dynamic_name_tag_plural: "金"
  company_basic_electrics_dynamic_name_tag_singular: "電気"
  company_basic_electrics_dynamic_name_tag_plural: "電気"
+ company_basic_weapons_dynamic_name_tag_singular: "兵器"
+ company_basic_weapons_dynamic_name_tag_plural: "兵器"
  dynamic_company_type_company: "企業"
  dynamic_company_type_consortium: "合弁企業"
  dynamic_company_type_corporation: "株式会社"
