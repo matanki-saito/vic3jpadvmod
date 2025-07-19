@@ -204,7 +204,7 @@
  je_indian_famines_tt:0 "飢饉が続く限り、該当する場合は以下のような影響が現れます : \n • #bold $je_uneasy_raj$#!の[concept_journal_entry]に悪影響を及ぼします\n • #bold $je_india_home_rule$#!の[concept_journal_entry]に悪影響を及ぼします"
  je_indian_famines_completion_tt:0 "もう[ROOT.GetCountry.GetName]が#tooltippable #tooltip:je_indian_famines_tt #bold 高い扇動率#!#!#!に苦しむことはなくなります"
  india_famine_radicals_modifier:0 "怠惰な政府への怒り"
- indian_famine_cooldown_tt:0 "最近は大飢饉に苦しんでいません。"
+ indian_famine_cooldown_tt:0 "最近、大飢饉に苦しんでいない。"
  je_indian_famines_tt_2:0 "脆弱な[Concept('concept_state','$concept_states$')]で、より高いレベルの[concept_infrastructure]がある場合は、[Concept('concept_harvest_condition','$concept_harvest_conditions$')]の悪影響を抑える効果があります。"
  default_famine_key:0 "インド飢饉"
  bengal_famine_key:0 "ベンガル飢饉"

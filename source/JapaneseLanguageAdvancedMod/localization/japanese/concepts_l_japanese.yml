@@ -1874,3 +1874,5 @@
  concept_georegion_southeast_asia_desc:0 "東南アジアは、次の[Concept('concept_strategic_region','$concept_strategic_regions$')]から構成される[concept_georegion]です : \n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indonesia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indochina').GetName]"
  concept_privy_purse:0 "御手元金"
  concept_privy_purse_desc:0 "御手元金は、[Concept('concept_ruler','Monarch')]の個人所得です。[concept_georegion_india]においては、#v インド連邦#!の[concept_journal_entry]を使って他[concept_country]に#b 併合#!された[concept_princely_state]の以前の支配者に支払われる恩給を表します。\n\nこの$concept_journal_entry$で$concept_princely_state$を併合すると、$modifier_privy_purse_payments$の補正が追加され、その後は併合のたびに更新されます。#b 御手元金#!の支払いは[concept_gdp]の#v 0.01%#!に、この[concept_journal_entry]を使い併合した#b 藩王国#!の数を掛けた値の#b 国庫支出#!を追加します。"
+ concept_budget_treaties:0 "条約"
+ concept_budget_treaties_desc:0 "[concept_treaty]で相手[concept_country]から徴収・送金された[concept_money]のことです。"

@@ -18,7 +18,7 @@
  modifier_mitigating_diplomatic_consequences:0 "条約違反の緩和"
  je_the_red_scare:0 "赤の恐怖"
  je_the_red_scare_reason:0 "国外で強力な共産主義政権が誕生したことで、[ROOT.GetCountry.GetName]が次に共産主義に転落するのは自分たちではないかという恐怖心が、国民の一部から沸き起こった。\n\n左翼的な意図を持つ国内の政治潮流は、血なまぐさい革命の前触れであり、外国勢力の手先であると非難され、反共勢力の監視下に置かれている。"
- red_scare_unlock_tt:0 "#variable 非主要国#!以上の[concept_rank]を持つ[concept_country]で、自国が[concept_interest]を持つ国は、[GetLawType('law_council_republic').GetName][concept_law]を制定している。"
+ red_scare_unlock_tt:0 "#variable 非主要国#!以上の[concept_rank]を持つ[concept_country]で、自国が[concept_interest]を持つ国が、[GetLawType('law_council_republic').GetName][concept_law]を制定済"
  red_scare.1.t:0 "赤の恐怖"
  red_scare.1.d:0 "[SCOPE.sCountry('red_scare_target_nation').GetName]における共産主義政権の台頭は、[ROOT.GetCountry.GetAdjective]社会全体に恐怖感と不信感を駆り立てた。次に共産主義に転落するのは[ROOT.GetCountry.GetNameNoFormatting]でないかと多くの人々が恐れている。"
  red_scare.1.f:0 "売店に並べられたどの新聞も、以前よりも過激な見出しを掲げていた。街角では少年たちが甲高い声で新聞を売りさばいていた。残虐さと恐怖を伝えるその声は互いに矛盾した内容だった。\n\n「暗殺者と狂人が[SCOPE.sCountry('red_scare_target_nation').GetNameNoFormatting]の権力を要求！」と一人が叫んだ。「復元された赤い聖書が世界の革命家の意図を明らかに！」別の者はそう叫ぶ。その間を抜けて歩いていく1万人の人々。彼らの大きく開かれた耳はその扇動的な言葉の一つ一つを吸収しながら、それぞれの持ち場へと急いだ。"
