@@ -87,7 +87,7 @@ def get_current_paratranz_zip_file(ctx: Context):
     headers = {'Authorization': ctx.secret}
     response = requests.post(url, headers=headers)
 
-    print("[LOG] status code {} {}".format(response.status_code, response.text))
+    print("[LOG] status code {} {}".format(response.status_code, response.text.encode("utf-8")))
 
     # wait for regenerate
     print("[LOG] wait 20sec")
@@ -96,7 +96,7 @@ def get_current_paratranz_zip_file(ctx: Context):
     print("[LOG] Try to download current paratranz zip file")
     url = "{}/api/projects/{}/artifacts/download".format(ctx.base_url, ctx.project_id)
     response = requests.get(url, headers=headers)
-    print("[LOG] status code {} {}".format(response.status_code, response.text))
+    print("[LOG] status code {} {}".format(response.status_code, response.text.encode("utf-8")))
 
     with open(ctx.paratranz_zip_file, "wb") as my_file:
         my_file.write(response.content)
@@ -115,7 +115,7 @@ def update_current_file(file_id: int, source_path: Path, context: Context):
     headers = {'Authorization': context.secret}
     response = requests.post(url, files=files, headers=headers)
 
-    print("[LOG] status code {} {}".format(response.status_code, response.text))
+    print("[LOG] status code {} {}".format(response.status_code, response.text.encode("utf-8")))
 
 
 def get_tid_from_key(key: str, context: Context):
@@ -126,7 +126,7 @@ def get_tid_from_key(key: str, context: Context):
     print("[LOG] Get text id from key, key={}".format(key))
 
     response = requests.get(url, headers=headers)
-    print("[LOG] status code {} {}".format(response.status_code, response.text))
+    print("[LOG] status code {} {}".format(response.status_code, response.text.encode("utf-8")))
 
     content = response.json()
 
@@ -144,7 +144,7 @@ def update_entry_by_tid(tid: int, payload: dict, context: Context):
 
     response = requests.put(url, data=payload, headers=headers)
 
-    print("[LOG] status code {} {}".format(response.status_code, response.text))
+    print("[LOG] status code {} {}".format(response.status_code, response.text.encode("utf-8")))
 
 
 def add_new_file(base_path: Path, source_path: Path, context: Context):
@@ -161,7 +161,7 @@ def add_new_file(base_path: Path, source_path: Path, context: Context):
     headers = {'Authorization': context.secret}
     response = requests.post(url, files=files, data=data, headers=headers)
 
-    print("[LOG] status code {} {}".format(response.status_code, response.text))
+    print("[LOG] status code {} {}".format(response.status_code, response.text.encode("utf-8")))
 
 
 def pick_tool(dic: dict):
