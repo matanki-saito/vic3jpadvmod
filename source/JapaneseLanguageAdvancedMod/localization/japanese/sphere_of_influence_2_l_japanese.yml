@@ -139,7 +139,7 @@
  request_recognition_proposal_accepted_desc:0 "[TARGET_COUNTRY.GetName]は、私たちの使節の要請を受け入れた"
  request_recognition_proposal_declined_name:0 "$request_recognition_action_name$を拒否"
  request_recognition_proposal_declined_desc:0 "[TARGET_COUNTRY.GetName]は、私たちの使節の要請を拒否した"
- request_recognition_proposal_notification_name:0 "外交使節団の派遣を要請する"
+ request_recognition_proposal_notification_name:0 "外交使節団の派遣を要請"
  request_recognition_proposal_notification_desc:0 "[INITIATOR_COUNTRY.GetName]は、私たちに使節を派遣するよう要請している"
  request_recognition_proposal_third_party_accepted_name:0 "$request_recognition_action_name$を受諾"
  request_recognition_proposal_third_party_accepted_desc:0 "[TARGET_COUNTRY.GetName]は、[INITIATOR_COUNTRY.GetName]の使節の要請を受け入れた : \n$STATES_DESC$"

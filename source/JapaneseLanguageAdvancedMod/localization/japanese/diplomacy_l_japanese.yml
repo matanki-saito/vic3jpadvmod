@@ -1383,7 +1383,7 @@
  military_assistance_proposal_accepted_desc:0 "[TARGET_COUNTRY.GetName]は、彼らに[concept_military_assistance]を行うという我が国の申し出を受け入れました。"
  military_assistance_proposal_declined_name:0 "[concept_military_assistance]を拒否"
  military_assistance_proposal_declined_desc:0 "[TARGET_COUNTRY.GetName]は、彼らに[concept_military_assistance]を行うという我が国の申し出を拒否しました。"
- military_assistance_proposal_notification_name:0 "[concept_military_assistance]を申し出る"
+ military_assistance_proposal_notification_name:0 "[concept_military_assistance]の提案"
  military_assistance_proposal_notification_desc:0 "[INITIATOR_COUNTRY.GetName]は我が[concept_country]に[concept_military_assistance]を行うことを申し出ています。"
  military_assistance_proposal_third_party_accepted_name:0 "[TARGET_COUNTRY.GetNameNoFormatting]に[concept_military_assistance]が行われました"
  military_assistance_proposal_third_party_accepted_desc:0 "[TARGET_COUNTRY.GetName]は[INITIATOR_COUNTRY.GetName]から[concept_military_assistance]を受けました。"

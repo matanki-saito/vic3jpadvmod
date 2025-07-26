@@ -1779,7 +1779,7 @@
  concept_contraventions:0 "違反"
  concept_contravening:0 "違反している"
  concept_contravene:0 "違反する"
- concept_contravened:0 "違反した"
+ concept_contravened:0 "違反"
  concept_contravention_desc:0 "[concept_non_fulfillment]条件のある[Concept('concept_treaty','$concept_treaties$')]の[Concept('concept_article','$concept_articles$')]は$concept_contravened$となる可能性があります。$concept_article$に$concept_contravened$していると見なされるには、該当の[concept_country]が$concept_article$の要件を満たしていないことが条件となります。該当の$concept_country$が$concept_article$に$concept_contravening$していないかについては、$concept_article$に応じて週次、月次、年次、またはその組み合わせで点検されます。\n\nたとえば、[GetArticleType('law_commitment').GetName]の$concept_article$において、特定の[concept_law]が[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]されていない場合、または#v 3#!週間続けて有効に$concept_enactment_of_laws_enacting$されていない場合、この$concept_law$が再び$concept_enactment_of_laws_enacted$されるまで$concept_article$は$concept_non_fulfilled$と見なされます。\n\n$concept_non_fulfillment$と見なされるまでに許容される連続$concept_contraventions$回数は$concept_articles$によって異なる場合があります。"
  concept_binding_period:0 "拘束期間"
  concept_binding_period_binding:0 "拘束中"

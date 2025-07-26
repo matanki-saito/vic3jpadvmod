@@ -315,7 +315,7 @@
  notification_circassians_deported_message_name:0 "チェルケス[Concept('concept_pop','$concept_pops$')]が追放された"
  notification_circassians_deported_message_desc:0 "[SCOPE.sCulture('circassian_culture_scope').GetName]難民でいっぱいの船が、[SCOPE.sState('expulsion_destination_state').GetName]に向けて出航した。すでに多くの人が黒海の海岸で病気で亡くなっている。"
  notification_circassians_deported_message_tooltip:0 "#header $notification_ottoman_circassian_refugees_arrived_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ottoman_circassian_refugees_arrived_desc$"
- notification_ottoman_protest_notification_name:0 "[SCOPE.sCountry('ottoman_scope').GetName]は追放に抗議する"
+ notification_ottoman_protest_notification_name:0 "[SCOPE.sCountry('ottoman_scope').GetName]が追放に抗議"
  notification_ottoman_protest_notification_desc:0 "[SCOPE.sCountry('ottoman_scope').GetName]は、追放された[SCOPE.sCulture('circassian_culture_scope').GetName]の扱いを非難し、追放の停止を求める、正式な外交抗議文を発行した。"
  notification_ottoman_protest_notification_tooltip:0 "#header $notification_ottoman_circassian_refugees_arrived_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ottoman_circassian_refugees_arrived_desc$"
  grain_more_than_35_percent_more_expensive_tt:0 "#variable 穀物#!は[concept_base_price]より#variable 70%#!高いです"
