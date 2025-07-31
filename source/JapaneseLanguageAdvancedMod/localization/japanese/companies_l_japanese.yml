@@ -249,7 +249,7 @@
  REMOVE_COMPANY_ERRORS:0 "#n 次の要因により解散できません : #!\n[GetDesc(GetPlayer.RemoveCompany(CompanyType.Self))]"
  COMPANY_MISSING_PRINCIPLE_FOR_BUILDINGS:0 "この[concept_company]が専門とする[Concept('concept_building','$concept_buildings$')]のうち、少なくとも1つを建設するための[concept_power_bloc_principle]を所有していなければなりません"
  company_construction_power_bloc:0 "建設複合企業体"
- COMPANY_CANNOT_ESTABLISH_NOT_ENOUGH_ASSETS:0 "[concept_privately_owned]または[COUNTRY.GetName]による[concept_nationally_owned]で、[concept_company] (現在$LEVEL|v$) に所有されていない単一の[concept_state]に、[SelectLocalization(EqualTo_int32('(int32)$COUNT$','(int32)1'),'','任意の組み合わせの')]$LIST$が$TOTAL|v$ [SelectLocalization(EqualTo_int32('(int32)$TOTAL$','(int32)1'),'BUILDING_NATIONALIZE_LEVEL_SINGULAR','BUILDING_NATIONALIZE_LEVEL_PLURAL')]必要です。"
+ COMPANY_CANNOT_ESTABLISH_NOT_ENOUGH_ASSETS:0 "単一の[concept_state]に、[concept_privately_owned]または[COUNTRY.GetName]による[concept_nationally_owned]で、[concept_company]に所有されていない[SelectLocalization(EqualTo_int32('(int32)$COUNT$','(int32)1'),'','任意の組み合わせの')]$LIST$が$TOTAL|v$ [SelectLocalization(EqualTo_int32('(int32)$TOTAL$','(int32)1'),'BUILDING_NATIONALIZE_LEVEL_SINGULAR','BUILDING_NATIONALIZE_LEVEL_PLURAL')]必要 (現在$LEVEL|v$) "
  COMPANY_CANNOT_ESTABLISH_NO_STATE:0 "[GetBuildingType('building_company_headquarter').GetName]に利用可能な[concept_state]がありません"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#! $country_company_construction_efficiency_bonus_add$"
  COMPANY_CONSTRUCTION_EFFICIENCY_BONUS_FORMATTED:0 "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|=+1%$#!#!"
