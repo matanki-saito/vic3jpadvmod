@@ -9,7 +9,7 @@
  victoria.2.d:0 "国王が死んだ。彼の若き姪、ヴィクトリアの即位により、ハノーファーの王冠はイギリスの支配から外れます。彼女の叔父、[SCOPE.sCharacter('ernest_augustus').GetFirstName]がこれからはハノーファーを支配します。"
  victoria.2.f:0 "「私は姪のために、最後の血の一滴まで流すぞ」"
  victoria.2.a:0 "国王陛下万歳！"
- grand_exhibition_decision_custom_tooltip_2:0 "過去に万国博覧会は開催されていません"
+ grand_exhibition_decision_custom_tooltip_2:0 "過去に万国博覧会が開催されていない"
  prostitution.1.t:0 "伝染病法"
  prostitution.1.d:0 "[SCOPE.sCharacter('cda_ig_leader').GetFullName]によって率いられている[SCOPE.sState('cda_state').GetName]の[SCOPE.gsInterestGroup('cda_ig').GetName]が、政府に売春への対応を要求しています。彼らは、売春婦と疑われる女性を、性感染症を広めるという理由で、病院に拘束することを警察に許可する法律の施行を要求しています。"
  prostitution.1.d2:0 "[SCOPE.sCharacter('cda_ig_leader').GetFullName]によって率いられている[SCOPE.sState('cda_state').GetName]の[SCOPE.gsInterestGroup('cda_ig').GetName]が、男性の間で性感染症の発症率が高まっていることへの解決策を要求しています。彼らは、売春婦と疑われる女性を、性感染症を広めるという理由で、病院に拘束することを警察に許可する法律の施行を要求しています。"
