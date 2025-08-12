@@ -280,7 +280,7 @@
  ACHIEVEMENT_achievement_swiss_bank_account:0 "スイスの銀行口座"
  ACHIEVEMENT_DESC_achievement_swiss_bank_account:0 "スイスとして、条約を通じた資金譲渡によって、GDPの10%以上の収入を得る"
  ACHIEVEMENT_achievement_franchising:0 "フランチャイズ"
- ACHIEVEMENT_DESC_achievement_franchising:0 "地域本部を設立し、それが20レベル以上の資産を所有する"
+ ACHIEVEMENT_DESC_achievement_franchising:0 "地域本社を設立し、それが20レベル以上の資産を所有する"
  ACHIEVEMENT_achievement_champagne_socialist:0 "シャンパン社会主義者"
  ACHIEVEMENT_DESC_achievement_champagne_socialist:0 "フランスとして評議会共和制を実施し、100単位を超えるシャンパンを世界市場に輸出する"
  has_company_cgv_tt:0 "ワイン生産者総連盟を法人として設立している"

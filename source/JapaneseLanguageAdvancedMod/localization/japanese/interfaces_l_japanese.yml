@@ -8778,7 +8778,7 @@
  GO_TO_BUTTON_WORLD_MARKET:0 "[concept_world_market]に移動"
  GO_TO_BUTTON_DIPLOMATIC_PLAY:0 "[DiplomaticPlay.GetName]に行く"
  GO_TO_TREATY:0 "[Treaty.GetName]に移動"
- GO_TO_BUTTON_COMPANY_HQ:0 "企業本部[concept_building]へ移動"
+ GO_TO_BUTTON_COMPANY_HQ:0 "[concept_building]本社へ移動"
  GO_TO_BUTTON_COMPANY:0 "[Company.GetName]に移動"
  TREATY_TRADE:0 "[Concept('concept_treaty','$concept_treaties$')]の$goods_transfer$"
  TREATY_TRADE_MARKET_ORDERS:0 "$TREATY_TRADE$ : $ORDERS|=vD$"
