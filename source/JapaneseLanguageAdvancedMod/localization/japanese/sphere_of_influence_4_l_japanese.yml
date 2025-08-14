@@ -578,7 +578,7 @@
  lobby_events.8.c:0 "これは政党の選挙活動にプラスになるかもしれない。"
  lobby_events.9.t:0 "武器の使用"
  lobby_events.9.d_join:0 "[SCOPE.sCountry('relevant_country').GetAdjective]軍が高度な[SCOPE.GetRootScope.GetCountry.GetCustom('impressive_miltech_text')]を使用することに感銘を受け、[SCOPE.gsInterestGroup('relevant_ig').GetName]が[SCOPE.sPoliticalLobby('relevant_lobby').GetName]と歩調を合わせ始めた。"
- lobby_events.9.d_form:0 "[SCOPE.sCountry('relevant_country').GetAdjective]軍が高度な#v [SCOPE.GetRootScope.GetCountry.GetCustom('impressive_miltech_text')]#!を使用することに感銘を受け、[SCOPE.gsInterestGroup('relevant_ig').GetName]が[SCOPE.sPoliticalLobby('relevant_lobby').GetName]との連携強化を支持するロビー活動に乗り出した。"
+ lobby_events.9.d_form:0 "[SCOPE.sCountry('relevant_country').GetAdjective]軍が高度な#v [SCOPE.GetRootScope.GetCountry.GetCustom('impressive_miltech_text')]#!を使用することに感銘を受け、[SCOPE.gsInterestGroup('relevant_ig').GetName]が[SCOPE.sCountry('relevant_country').GetNameNoFormatting]との連携強化を支持するロビー活動に乗り出した。"
  lobby_events.9.f:0 "[SCOPE.sCountry('relevant_country').GetNameNoFormatting]からの報告書は何度も参加者の間で回され、端がふやけ始めていた。恐れおののく者もいれば、冷静な意見を述べる者もいた。報告書の内容をそもそも信じない者もいた。\n\n「彼らにできるのなら我々にもできるはずだ。しかし、それまでは、あの銃が我々に向けられないよう対策を講じるべきだ」。テーブルの端にいた将校が言った。"
  lobby_events.9.a:0 "[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]のモデルは採り入れるに値する。"
  lobby_events.9.b:0 "[SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting]のモデルは採り入れるに値する。"
