@@ -5971,7 +5971,7 @@
  military_pops_af_ig_shift_effect_tt:0 "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]は[GetPopType('soldiers').GetName]を呼び寄せやすくなる"
  military_pops_af_ig_shift_effect_negative_tt:0 "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]は[GetPopType('soldiers').GetName]を呼び寄せにくくなる"
  FAILED_HIRE_NO_POP_TYPE:0 "以下の要因により雇用#b できません#! : \n$REASONS$\n\n"
- FAILED_HIRE_REASON_LOW_EARNINGS:0 "@red_cross! 従業員を追加雇用すると、[concept_productivity]が低下し、[BUILDING.GetState.GetName]の[BUILDING.GetName]の採算が取れなくなる (@money!$CUR_PRODUCTIVITY|1v$ ―>@money!$NEW_PRODUCTIVITY|1v$) "
+ FAILED_HIRE_REASON_LOW_EARNINGS:0 "@red_cross! [concept_productivity]の低下により、従業員を追加雇用すると[BUILDING.GetState.GetName]の[BUILDING.GetName]の採算が取れなくなります (@money!$CUR_PRODUCTIVITY|1v$ ―&gt;@money!$NEW_PRODUCTIVITY|1v$) "
  FAILED_HIRE_REASON_LOW_PRODUCTIVITY:0 "@red_cross! [BUILDING.GetState.GetName]の[BUILDING.GetName]が、[concept_state]の他[Concept('concept_building','$concept_buildings$')]との雇用競争に勝つためには、高い[concept_productivity]が必要。"
  FAILED_HIRE_REASON_COOLDOWN:0 "@red_cross! [BUILDING.GetState.GetName]にある[BUILDING.GetName]は最近、追加雇用に失敗し、 #v $DATE$#!まで再び雇用しない"
  FAILED_HIRE_REASON_JOB_SATISFACTION:0 "@red_cross! [BUILDING.GetState.GetName]における[BUILDING.GetName]の[POP_TYPE.GetName]は、現在の[concept_employment]に[Concept('concept_job_satisfaction','$concept_job_satisfaction_satisfied$')]している (対象となる[TARGET_POP_TYPE.GetName] $NUM_QUALIFIED_POPS|v1*$) "
