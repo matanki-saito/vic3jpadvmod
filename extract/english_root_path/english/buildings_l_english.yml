@@ -208,13 +208,13 @@
   #Colonies
  building_colony_military:0 "Military Colony"
  building_colony_military_lens_option:0 "Establish $building_colony_military$"
- building_colony_military_hover:0 "Establish #variable Military Colony#! in #variable [STATE.GetName]"
+ building_colony_military_hover:0 "Establish #variable Military Colony#! in #variable [STATE.GetName]#!"
  building_colony_missionary:0 "Missionary Colony"
  building_colony_missionary_lens_option:0 "Establish $building_colony_missionary$"
  building_colony_missionary_hover:0 "Establish #variable Missionary Colony#! in #variable [STATE.GetName]#!"
  building_colony_trade:0 "Trade Colony"
  building_colony_trade_lens_option:0 "Establish $building_colony_trade$"
- building_colony_trade_hover:0 "Establish #variable Trade Colony#! in #variable [STATE.GetName]"
+ building_colony_trade_hover:0 "Establish #variable Trade Colony#! in #variable [STATE.GetName]#!"
 
   #Barracks
  building_barracks:0 "Barracks"

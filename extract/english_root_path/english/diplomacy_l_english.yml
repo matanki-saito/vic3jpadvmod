@@ -350,7 +350,7 @@
  DIPLOMATIC_ACCEPTANCE_GIFT: "from being happy to be gifted this [concept_treaty]"
  DIPLOMATIC_ACCEPTANCE_BINDING_PERIOD: "from [concept_binding_period]"
  DIPLOMATIC_ACCEPTANCE_BASE_ADDITIONAL: "from base $concept_article$ #b reluctance#!"
- DIPLOMATIC_ACCEPTANCE_COLONIAL_INTEREST: "from colonial interest in the [concept_strategic_region]" 
+ DIPLOMATIC_ACCEPTANCE_COLONIAL_INTEREST: "from colonial interest in the [concept_strategic_region]"
  DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY: "from input quantity"
  DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS: "from Quantity of [SCOPE.sGoods('input').GetName]"
  DIPLOMATIC_ACCEPTANCE_INPUT_QUANTITY_GOODS_TOO_MUCH: "from too high Quantity of [SCOPE.sGoods('input').GetName]"
@@ -1799,9 +1799,9 @@ request_power_bloc_embassy_proposal_notification_desc: "[INITIATOR_COUNTRY.GetPo
  BINDING_PERIOD_BUTTON_TEXT_25_YEARS: "#b 25 years#!"
  BINDING_PERIOD_BUTTON_TEXT_50_YEARS: "#b 50 years#!"
  BINDING_PERIOD_BUTTON_TEXT_99_YEARS: "#b 99 years#!"
- 
- alliance_multilateral_alliances_first_country_tt: "[SCOPE.sCountry('first_country').GetName] must have researched #v $multilateral_alliances$#! to form an additional [concept_alliance]" 
- alliance_multilateral_alliances_second_country_tt: "[SCOPE.sCountry('second_country').GetName] must have researched #v $multilateral_alliances$#! to form an additional [concept_alliance]" 
+
+ alliance_multilateral_alliances_first_country_tt: "[SCOPE.sCountry('first_country').GetName] must have researched #v $multilateral_alliances$#! to form an additional [concept_alliance]"
+ alliance_multilateral_alliances_second_country_tt: "[SCOPE.sCountry('second_country').GetName] must have researched #v $multilateral_alliances$#! to form an additional [concept_alliance]"
  military_assistance_limit_tt: "[SCOPE.sCountry('target_country').GetName] must not already be receiving $military_assistance$ from #v 2#! other [Concept('concept_country', '$concept_countries$')]"
 
  money_transfer: "Money Transfer"
@@ -2000,6 +2000,8 @@ request_power_bloc_embassy_proposal_notification_desc: "[INITIATOR_COUNTRY.GetPo
  TREATY_DRAFT_ASK_FOR_OBLIGATION_TOOLTIP: "#header $REVERSE_SWAY_OFFER_OBLIGATION$#!\n$TAB$$VAL|+=$ to [concept_treaty] acceptance"
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_OWED: "@red_cross! [COUNTRY.GetNameNoFormatting] already owes [TARGET_COUNTRY.GetName] an [concept_obligation]"
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_PROMISED: "@red_cross! [COUNTRY.GetNameNoFormatting] has already promised [TARGET_COUNTRY.GetName] an [concept_obligation] as part of [TREATY.GetName]"
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_EFFECTUATED: "@red_cross! The [Concept('concept_obligation', '$concept_obligations$')] exchange sanctioned by this [concept_treaty] has already taken place, either because the original [concept_binding_period] has expired, or because $INTERVAL$ passed since it originally entered into force on $DATE|v$"
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_ASKING: "@red_cross! [COUNTRY.GetName] cannot promise an [concept_obligation] to [OTHER_COUNTRY.GetName] at the same time that [OTHER_COUNTRY.GetName] is promising an obligation to [COUNTRY.GetName]"
 
  TREATY_OPTIONS_VALIDATE_NO_ARTICLES_TO_CREATE: "Add at least one [concept_article]"
 
@@ -2012,7 +2014,7 @@ request_power_bloc_embassy_proposal_notification_desc: "[INITIATOR_COUNTRY.GetPo
  TREATY_DRAFT_ARTICLE_MUTUALLY_EXCLUSIVE: "@simple_box! Do #b not#! have [TREATY_ARTICLE_TYPE.GetName] already selected"
  TREATY_DRAFT_ARTICLE_ONCE_PER_TREATY: "@green_checkmark_box! This is already added once in this [concept_treaty]"
  TREATY_DRAFT_ARTICLE_ALREADY_IN_TREATY: "@green_checkmark_box! An identical article already exists in the [concept_treaty]"
- 
+
  WAR_GOAL_ARTICLE_MUTUALLY_EXCLUSIVE: "Do #b not#! have [TREATY_ARTICLE_TYPE.GetName] already selected"
  WAR_GOAL_ARTICLE_ONCE_PER_TREATY: "This is already added once in this [concept_treaty]"
  WAR_GOAL_ARTICLE_ALREADY_IN_TREATY: "An identical article already exists in the [concept_treaty]"

@@ -137,7 +137,7 @@
  je_buy_alaska_button_desc: "Alaska is currently held as a colonial territory by a friendly nation. We may be able to leverage our relations to purchase the territory."
 
  foster_national_agitation: "Stir National Agitation"
- foster_national_agitation_desc: "#lore Task [Character.GetFullName] with agitating amongst the [Character.GetCulture.GetName] population of a foreign power"
+ foster_national_agitation_desc: "#lore Task [Character.GetFullName] with agitating amongst the [Character.GetCulture.GetName] population of a foreign power#!"
  not_homeland_of_states_tt: "The owner of this state does not have [SCOPE.sCulture('agitator_culture').GetName] as a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
  is_rival_of_owner_tt: "The owner of this state has a [concept_rivalry] with us"
  

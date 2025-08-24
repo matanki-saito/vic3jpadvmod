@@ -200,13 +200,13 @@
  #Colonies
  building_colony_military: "軍事コロニー"
  building_colony_military_lens_option: "$building_colony_military$を設立"
- building_colony_military_hover: "#variable [STATE.GetName]に #variable 軍事コロニー #!を設立"
+ building_colony_military_hover: "#variable [STATE.GetName]#!に #variable 軍事コロニー #!を設立"
  building_colony_missionary: "宣教コロニー"
  building_colony_missionary_lens_option: "$building_colony_missionary$を設立"
  building_colony_missionary_hover: "#variable [STATE.GetName]#! に #variable 宣教コロニー#!を設立"
  building_colony_trade: "交易コロニー"
  building_colony_trade_lens_option: "$building_colony_trade$を設立"
- building_colony_trade_hover: "#variable [STATE.GetName]に #variable 交易コロニー #!を設立"
+ building_colony_trade_hover: "#variable [STATE.GetName]#!に #variable 交易コロニー #!を設立"
  #Barracks
  building_barracks: "兵舎"
  building_barracks_lens_option: "$building_barracks$を拡張"

@@ -85,13 +85,13 @@
  modifier_brewing_insurrection: "反乱の醸成"
  #New Ideologies
  ideology_authoritarian: "権威主義者"
- ideology_authoritarian_desc: "#lore このキャラクターは、大国には強いリーダーが必要であり、自分にはその資格があると信じています。"
+ ideology_authoritarian_desc: "#lore このキャラクターは、大国には強いリーダーが必要であり、自分にはその資格があると信じています。#!"
  ideology_socialist: "社会主義者"
- ideology_socialist_desc: "#lore このグループは、生産手段の所有権と資本主義の解体を主張し、社会主義イデオロギーに傾倒しています。"
+ ideology_socialist_desc: "#lore このグループは、生産手段の所有権と資本主義の解体を主張し、社会主義イデオロギーに傾倒しています。#!"
  ideology_humanitarian: "人道主義者"
- ideology_humanitarian_desc: "#lore このキャラクターは、人類の擁護者です。すべての男、女、子どもは、国家によって一連の不可侵で譲れない権利を保証されるべきであると考えています。"
+ ideology_humanitarian_desc: "#lore このキャラクターは、人類の擁護者です。すべての男、女、子どもは、国家によって一連の不可侵で譲れない権利を保証されるべきであると考えています。#!"
  ideology_protectionist: "保護主義者"
- ideology_protectionist_desc: "#lore このキャラクターは、国内産業と国際貿易を国家が厳しく監視し、規制すべきであると考えています。"
+ ideology_protectionist_desc: "#lore このキャラクターは、国内産業と国際貿易を国家が厳しく監視し、規制すべきであると考えています。#!"
  ideology_humanitarian_royalist: "啓蒙専制君主"
  ideology_humanitarian_royalist_desc: "#lore この人物は、社会の理想的な形とは、啓蒙的で人間主義者的な君主が統治する、根本的に平等主義的な国家であると考えています。#!"
  #Royal Marriage
@@ -167,7 +167,7 @@
  status_dynasty_cementing_fra: "優位に立つ[ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')]家がその支配を固めつつあります"
  #Repatriate Agitator interaction
  return_to_home_country: "扇動者の送還"
- return_to_home_country_desc: "#lore [Character.GetFullName]を我々の[Concept('concept_rivalry','$concept_rival$')]のもとに送還します"
+ return_to_home_country_desc: "#lore [Character.GetFullName]を我々の[Concept('concept_rivalry','$concept_rival$')]のもとに送還します#!"
  exiles_events.100.t: "送還"
  exiles_events.100.d: "亡命先である[SCOPE.sCountry('repatriator_country_scope').GetName]政府の支援を受け、[SCOPE.sCharacter('repatriated_scope').GetFullName]が舞い戻ってきました。どうやら、[SCOPE.sCountry('repatriator_country_scope').GetNameNoFormatting]には[ROOT.GetCountry.GetName]で[SCOPE.sCharacter('repatriated_scope').GetIdeology.GetName]のイデオロギーを広めたい理由があるようです。"
  exiles_events.100.f: "やり直しの機会はめったに訪れない。かつて[SCOPE.sCharacter('repatriated_scope').GetHerHim]を拒絶した故郷が、外国の支援を受けたことでその扉を開いた。独裁がいつまでもはびこる偽りの天国を好んだ彼らは、以前[SCOPE.sCharacter('repatriated_scope').GetHerHim]を追放した。だが、[SCOPE.sCharacter('repatriated_scope').GetHerHim]にとって、やり直しをする機会は、夢をもう一度追う機会でもあった。真の団結を目指す機会だ。もしかすると、[SCOPE.sCharacter('repatriated_scope').GetHerHis]の努力がやがて実を結ぶのかもしれない。"

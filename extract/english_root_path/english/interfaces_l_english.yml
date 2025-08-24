@@ -577,12 +577,14 @@
  TREATY_START_DATE_HEADER: "Signed on [Treaty.GetStartDate]"
 
  ARTICLE_TYPE_INFLUENCE_COST_TOOLTIP: "@inf!#v [ArticleType.GetCost|0]#! base maintenance cost"
+ ARTICLE_TYPE_INFLUENCE_COST_FOR_TOOLTIP: "@inf!#v [TREATY_ARTICLE_TYPE.GetCost|0]#! base maintenance cost for [COUNTRY.GetName]"
+ ARTICLE_TYPE_INFLUENCE_COST_FOR_BOTH_TOOLTIP: "@inf!#v [TREATY_ARTICLE_TYPE.GetCost|0]#! base maintenance cost for [COUNTRY.GetName] and [OTHER_COUNTRY.GetName]"
  ARTICLE_TYPE_EFFECTS_TITLE: "#title Effects:#!"
  ARTICLE_TYPE_EFFECTS: "[ArticleType.GetEffectsDesc][ConcatIfNeitherEmpty('\n', ArticleType.GetRelationsEffectDesc)]"
 
  ARTICLE_INFLUENCE_COST_WITH_TOOLTIP: "@inf!#v #tooltippable;tooltip:$BREAKDOWN_TAG$ $VALUE|0$#!#!"
  ARTICLE_INFLUENCE_COST_BREAKDOWN: "#header $NAME$ [concept_influence] maintenance cost#!\n@inf!$VALUE|v0$ for [COUNTRY.GetName]\n$TOOLTIP_DELIMITER$\n$DETAILS$"
- 
+
  ARTICLE_DRAFT_CLICK_TO_CHANGE: "#i Click to change#!"
  ARTICLE_DRAFT_ADDED_STATUS: "Added as [concept_article] #v $ARTICLE_DRAFT_NUMBER$#! in this [concept_treaty]"
  ARTICLE_DRAFT_INFLUENCE_COST_TOOLTIP_MUTUAL: "[ArticleDraft.GetCostWithTooltipFor(ArticleDraft.GetFirstOrSource.Self)] maintenance cost for [ArticleDraft.GetFirstOrSource.GetName] [AddLocalizationIf(ArticleDraft.GetFirstOrSource.IsLocalPlayer, 'YOU')]\n[ArticleDraft.GetCostWithTooltipFor(ArticleDraft.GetSecondOrTarget.Self)] maintenance cost for [ArticleDraft.GetSecondOrTarget.GetName] [AddLocalizationIf(ArticleDraft.GetSecondOrTarget.IsLocalPlayer, 'YOU')]"
@@ -1799,7 +1801,7 @@
  MILITARY_FORMATION_NUMBER_OF_CONSCRIPTS: "@conscripts!#v [MilitaryFormationUnitEntry.GetCurrentNumConscriptUnits]#![AddLocalizationIf(GreaterThan_int32(Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumConscriptUnits, MilitaryFormationUnitEntry.GetCurrentNumConscriptUnits), '(int32)0'), 'MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_CONSCRIPTS')]"
  CONSCRIPTS_CONCEPT: "[Concept('concept_conscript_battalion','$concept_conscript_battalions_short$')]"
  RAISE_ALL_CONSCRIPTS: "Raise @conscripts![MilitaryFormation.GetMaxConscripts|v] [Concept('concept_conscript_battalion','$concept_conscript_battalions_short$')]"
- RAISE_ALL_CONSCRIPTS_TOOLTIP: "Raise a total of @conscripts! [MilitaryFormation.GetMaxConscripts|v] [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')]. Conscripts will remain active until army is [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilized$')].[ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.RaiseConscripts ) )]"
+ RAISE_ALL_CONSCRIPTS_TOOLTIP: "Raise a total of @conscripts! [MilitaryFormation.GetMaxConscripts|v] [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')]. This will activate [Concept('concept_conscription_center', '$concept_conscription_centers$')] that provide $concept_battalions$ to all armies that have $concept_conscript_battalions_short$ in them. Conscripts will remain active until army is [Concept('concept_mobilize_army', '$concept_mobilize_army_demobilized$')].[ConcatIfNeitherEmpty('\n\n', GetDesc( MilitaryFormation.RaiseConscripts ) )]"
  CANNOT_ADD_CONSCRIPT: "Has enacted [GetLawType('law_peasant_levies').GetName]"
  MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS: " + [Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumRegularUnits, MilitaryFormationUnitEntry.GetCurrentNumRegularUnits)]"
  MILITARY_FORMATION_NUMBER_OF_EXPECTED_BATTALIONS_CONSCRIPTS: " + [Subtract_int32(MilitaryFormationUnitEntry.GetExpectedNumConscriptUnits, MilitaryFormationUnitEntry.GetCurrentNumConscriptUnits)]"
@@ -2895,7 +2897,7 @@
  TOOLTIP_VIEW_GRID:0 "#header View Grid#!"
  TOOLTIP_VIEW_LIST:0 "#header View List#!"
  TOOLTIP_PIE_CHART: "#header View Pie Chart#!"
- TOOLTIP_AREA_CHART: "#header View Area Chart"
+ TOOLTIP_AREA_CHART: "#header View Area Chart#!"
 
  REFORM_PREV:0 "#bold [ReformGroup.GetPrevious.GetName]#!\n(#variable @aut![GetPlayer.GetEnactmentCost(Reform.Self)|2]#!)"
  REFORM_NEXT:0 "#bold [ReformGroup.GetNext.GetName]#!\n(#variable @aut![GetPlayer.GetEnactmentCost(Reform.Self)|2]#!)"
@@ -3950,11 +3952,11 @@
 
  CONSTRUCTION_QUEUE_HEADER:0 "Construction Queue"
  CONSTRUCTION_QUEUE_BUILDING_IN_STATE:1 "[ConstructionQueueElement.GetBuilding.GetName] in [AddTextIf( Not(ConstructionQueueElement.GetState.GetOwner.IsLocalPlayer), ConstructionQueueElement.GetState.GetOwner.GetFlagTextIcon )][ConstructionQueueElement.GetBuilding.GetState.GetName]"
- CONSTRUCTION_QUEUE_ITEM_VALID:6 "#header Expanding [Building.GetName] in [State.GetName]#!\n[AddTextIf( ConstructionQueueElement.IsCurrentlyUnderConstruction, '$WEEKS|v$ week(s) until complete\n')]$TOOLTIP_DELIMITER$\n#v $PROGRESS|0$#!/#v $REQUIRED|0$#! [concept_construction] progress (#v $PERCENT_COMPLETE|%$#!)\n#v [ConstructionQueueElement.GetBaseConstructionSpeed|2]#! $concept_construction$ provided by [COUNTRY.GetName] results in a total of #v #tooltippable #tooltip:[ConstructionQueueElement.GetTooltipTag],CONSTRUCTION_QUEUE_SPEED_TOOLTIP $SPEED$#!#!#! progress each week[SelectLocalization( NotEqualTo_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_LINE_BREAK', '')][ConcatIfNeitherEmpty('\n',ConstructionQueueElement.GetCompanyConstructionBonusDesc)]"
- CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY:0 "#tooltippable #tooltip:[State.GetTooltipTag],STATE_CONSTRUCTION_EFFICIENCY_TOOLTIP #v [State.GetConstructionEfficiency|%1+=]#!#!#! Construction Efficiency in [State.GetName]"
+ CONSTRUCTION_QUEUE_ITEM_VALID:6 "#header Expanding [Building.GetName] in [State.GetName]#!\n[AddTextIf( ConstructionQueueElement.IsCurrentlyUnderConstruction, '$WEEKS|v$ week(s) until complete\n')]$TOOLTIP_DELIMITER$\n#v $PROGRESS|0$#!/#v $REQUIRED|0$#! [concept_construction] progress (#v $PERCENT_COMPLETE|%$#!)\n#v [ConstructionQueueElement.GetBaseConstructionSpeed|2]#! $concept_construction$ provided by [COUNTRY.GetName] results in a total of #v #tooltippable #tooltip:[ConstructionQueueElement.GetTooltipTag],CONSTRUCTION_QUEUE_SPEED_TOOLTIP $SPEED$#!#!#! progress each week[SelectLocalization( NotEqualTo_CFixedPoint(State.GetConstructionEfficiencyForBuildingType(Building.GetBuildingType), '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_LINE_BREAK', '')][ConcatIfNeitherEmpty('\n',ConstructionQueueElement.GetCompanyConstructionBonusDesc)]"
+ CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY:0 "#tooltippable #tooltip:[Building.GetTooltipTag],STATE_CONSTRUCTION_EFFICIENCY_TOOLTIP #v [State.GetConstructionEfficiencyForBuildingType(Building.GetBuildingType)|%1+=]#!#!#! Construction Efficiency in [State.GetName]"
  CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING:0 "@warning! $CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY$\n"
  CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_LINE_BREAK:0 "\n$CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY$"
- STATE_CONSTRUCTION_EFFICIENCY_TOOLTIP:0 "[State.GetConstructionEfficiencyTooltip]"
+ STATE_CONSTRUCTION_EFFICIENCY_TOOLTIP:0 "[Building.GetState.GetConstructionEfficiencyForBuildingTypeTooltip(Building.GetBuildingType)]"
  CONSTRUCTION_QUEUE_ITEM_INVALID:0 "#header [Building.GetName] in [State.GetName]#!\n$TOOLTIP_DELIMITER$\n$INVALID_DESC$"
  CONSTRUCTION_SPEED_BASE_TOOLTIP:4 "#tooltip_header @construction![Nbsp][concept_construction]#![AddLocalizationIf(Country.IsConstructionPaused, 'CONSTRUCTION_IS_PAUSED')]\nTotal: #v [Country.CalcBaseConstructionSpeed|0]#!\nBeing used: #v [Country.CalcUsedConstruction|0]#!/[Country.CalcBaseConstructionSpeed|0]\n$TOOLTIP_DELIMITER$\n[Country.GetBaseConstructionSpeedDesc]"
  CONSTRUCTION_QUEUE_TOOLTIP:0 "[Country.GetConstructionQueueDesc]"
@@ -4296,7 +4298,7 @@
  GOODS_WORLD_MARKET_STATE_TO_STATE_EXPORTS_OVERFLOW: "Additional Exports: $TRADES|=vD$"
  GOODS_WORLD_MARKET_STATE_TO_STATE_IMPORTS_OVERFLOW: "Additional Imports: $TRADES|=vD$"
  GOODS_WORLD_MARKET_DEMAND_BUFFER: "Inherent demand: $TRADES|=vD$"
- 
+
  GOODS_ADDITIONAL_EXPORTS: "[Goods.GetWorldMarketAdditionalExportsFromMarket|v1] additional $concept_exports$"
  GOODS_ADDITIONAL_IMPORTS: "[Goods.GetWorldMarketAdditionalImportsToMarket|v1] additional $concept_imports$"
 
@@ -5011,6 +5013,7 @@
  CHARTER_CANNOT_AFFORD: "Have at least @aut!$COST|vD$ [concept_authority] to spend on this [concept_company_charter]"
  COMPANY_CHARTER_COST: " #variable #N -$COST|0$#!#! from $COUNT$ [Concept('concept_company_charter','$concept_company_charters_short$')] above the free charters limit"
  COMPANY_ALREADY_HAS_INDUSTRY_CHARTER: "This [concept_company] already has other [GetCompanyCharterType('industry_charter').GetName]"
+ COMPANY_ALREADY_HAS_TRADE_CENTER_ACCESS: "This [concept_company] already has access to [GetBuildingType('building_trade_center').GetName]"
  COLONIAL_CHARTER_BREAKS_CONTINUITY: "Removing this colonial charter would break the connection between [STATE_REGION.GetName] and other colonial regions."
  COLONIAL_CHARTER_NOT_CONNECTED: "The target region [STATE_REGION.GetName] is not adjacent to any existing colonial charters."
 
@@ -5171,7 +5174,7 @@
  urban:0 "Urban"
 
  TOOLTIP_WAR_SUMMARY:0 "#HEADER [War.GetName]#!\n#BOLD Attackers#!:\n#V [War.GetAttackerListString]#!\n#BOLD Defenders#!:\n#V [War.GetDefenderListString]#!"
- TOOLTIP_REVOLUTION_SUMMARY:0 "#HEADER Revolution!"
+ TOOLTIP_REVOLUTION_SUMMARY:0 "#HEADER Revolution#!"
 
  CALC_WAR_EXHAUSTION: "#indent_newline:3 In #variable $TIMER$#! days this will change by #bold $LOSS|+$#!\n$BREAKDOWN$#!"
  WAR_EXHAUSTION_SCRIPT_VALUE_FORMAT: "#v [Negate_CFixedPoint('(CFixedPoint)$VALUE$')|=+2]#! from $KEY$"
@@ -5227,7 +5230,7 @@
 
  TOOLTIP_BUILDING_PRODUCES_VALUE_INFO:1 "#header [Goods.GetName]#!\nRevenue from #variable [Goods.GetName]#! sold: #variable @money![Building.GetProductionValue(Goods.Self)|D]#!\n$TOOLTIP_DELIMITER$\nState Region Price: [Goods.GetStatePriceWithTooltip]"
 
- TOOLTIP_RESET:0 "#BOLD #V Reset"
+ TOOLTIP_RESET:0 "#BOLD #V Reset#!#!"
 
  MARKET_BALANCE:0 "#title Balance:\n#variable @money![Market.GetBalance|D+=]#!#!"
  MARKET_BALANCE_TOOLTIP:0 "#header Market Balance#!\nAmount: #variable @money!$VAL|D+=$#!\n$TOOLTIP_DELIMITER$\nTotal Sales: #variable @money!$SALESVAL|D+=$#!\n$SALESBREAKDOWN$\n\nTotal Purchases: #variable @money!$PURCHASEVAL|D+=$#!\n$PURCHASEBREAKDOWN$"
@@ -5490,7 +5493,7 @@
 
  CAN_EXPAND_BUILDING_PRODUCTIVITY_DELTA: " (@money!$PRODUCTIVITY_DELTA|=+1$ from current)"
  CAN_EXPAND_BUILDING_PRODUCTIVITY_DESC: "#tooltippable #tooltip:[GetRawTextTooltipTag('$PRODUCTIVITY_IMPACT_DESC$')] #v @money!$PRODUCTIVITY_IMPACT$#!#!#! Predicted [concept_productivity]$PRODUCTIVITY_DELTA_DESC$"
- CAN_EXPAND_BUILDING_TOOLTIP: "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Size: [BUILDING.GetExpansionLevelBreakdownDesc])\n[AddLocalizationIf( Not(STATE.GetOwner.IsLocalPlayer), 'CAN_EXPAND_BUILDING_TOOLTIP_FOREIGN' )]#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Predicted [SelectLocalization(Or(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), BUILDING.GetBuildingType.IsMilitaryBuilding), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n[ConcatIfNeitherEmpty('$PRODUCTIVITY$', '\n')][ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiency, '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n$EXPAND_BUILDING_TT_NATIONAL_MAINTENANCE$\n\n$PRODUCTION_BREAKDOWN$\n\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
+ CAN_EXPAND_BUILDING_TOOLTIP: "#header $BUILD_OR_EXPAND$ [BUILDING_TYPE.GetName] in [STATE.GetName]#! (Size: [BUILDING.GetExpansionLevelBreakdownDesc])\n[AddLocalizationIf( Not(STATE.GetOwner.IsLocalPlayer), 'CAN_EXPAND_BUILDING_TOOLTIP_FOREIGN' )]#tooltippable #tooltip:[GetRawTextTooltipTag('$PROFIT_IMPACT_DESC$')] #v @money!$PROFIT_IMPACT|K+=$#!#!#! Predicted [SelectLocalization(Or(Or(ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_government_administration').Self), ObjectsEqual(BUILDING.GetBuildingType, GetBuildingType('building_construction_sector').Self)), BUILDING.GetBuildingType.IsMilitaryBuilding), 'BUILDING_UPKEEP_HEADER', 'BUILDING_EARNINGS_HEADER')] / week\n[ConcatIfNeitherEmpty('$PRODUCTIVITY$', '\n')][ConcatIfNeitherEmpty('$QUALIFICATIONS$', '\n')][SelectLocalization( LessThan_CFixedPoint(State.GetConstructionEfficiencyForBuildingType(BUILDING.GetBuildingType), '(CFixedPoint)0'), 'CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING', '')]$TOOLTIP_DELIMITER$\n@construction! $REQUIRED_CONSTRUCTION|v0$ [concept_construction] ($CONSTRUCTION_COST_CHANGE$)\n$EXPAND_BUILDING_TT_NATIONAL_MAINTENANCE$\n\n$PRODUCTION_BREAKDOWN$\n\n[STATE.GetMarketAccessStatus]\nAvailable Labor: [State.GetNumSubsistenceWorkingAdults|Dv] [GetPopType('peasants').GetName] [SelectLocalization( GreaterThan_int64(State.GetNumUnemployedWorkingAdults, '(int64)0'), 'AND_UNEMPLOYED', '' )][ConcatIfNeitherEmpty('$PORT_INFO$', '\n')]\n\n$KEY_MODIFIER_INSTRUCTIONS$"
 
  CAN_EXPAND_BUILDING_TOOLTIP_FOREIGN:  "@foreign_investment![concept_foreign_investment] in [State.GetOwner.GetName][AddLocalizationIf( Not( ObjectsEqual(State.GetMarket.Self, AccessPlayer.AccessFirstMarket.Self)), 'CAN_EXPAND_BUILDING_TOOLTIP_FOREIGN_IN_FOREIGN_MARKET' )]\n\n"
  CAN_EXPAND_BUILDING_TOOLTIP_FOREIGN_IN_FOREIGN_MARKET: " (Foreign Market: [State.GetMarket.GetName])"
@@ -7367,7 +7370,7 @@
  CANNOT_ESTABLISH_COLONY_HOVER:0 "#header #N Cannot Colonize [STATE_REGION.GetName]#!#!"
  CANNOT_ESTABLISH_COLONY_NOT_A_STATE_REGION: "#header #N You cannot Colonize this#!#!"
  ESTABLISH_COLONY_HOVER:0 "#header Colonize [STATE_REGION.GetName]#!"
- REMOVE_COLONY_TOOLTIP:0 "#header Remove colony from [StateRegion.GetName]"
+ REMOVE_COLONY_TOOLTIP:0 "#header Remove colony from [StateRegion.GetName]#!"
  REMOVE_COLONY_CONFIRM:0 "#header Do you want to cancel [Concept('concept_colony', '$concept_colonizing$')] in [STATE.GetName]?#!\n\nYou will lose all progress in this state including already [Concept('concept_colony', '$concept_colonized$')] provinces\n[STATE.GetColonyProvinceProgressDesc]\nProgress towards gaining an additional province: #tooltippable #tooltip:[STATE.GetTooltipTag],STATE_COLONY_TOOLTIP [STATE.GetColonyProgress|%]#!#!"
  STATE_PROVINCES_COLONIZED:0 "#variable $CURRENT$#!/#variable $TOTAL$#! provinces [Concept('concept_colony', '$concept_colonized$')]"
 
@@ -7375,7 +7378,7 @@
  HAS_INTEREST_MARKER:0 "#N This region already already contains an [concept_interest]#!"
  NO_STATE_ADJACENT_REGION:0 "#N Owns no State bordering this Region#!"
  LACKING_DIPLO_CAPITAL:0 "#N Requires @inf!$VALUE|0$#!"
- RIVAL_RULES_NOT_MET:0 "#N Rivalry conditions not met!"
+ RIVAL_RULES_NOT_MET:0 "#N Rivalry conditions not met#!"
  SET_INTEREST_MARKER:0 "#header Set Level $LEVEL$ [concept_interest]#!"
  IM_RANK_UNDER_MIN:0 "#N Can't Downgrade Level $LEVEL$ [concept_interest]#!"
  IM_RANK_OVER_MAX:0 "#N Can't Upgrade Level $LEVEL$ [concept_interest]#!"
@@ -10606,8 +10609,8 @@
  CASUALTY_DEBUG_ATTRITION_CASUALTY_BUILDING:0 "#variable $DATE$#!: $UNIT_NAME$ dead: $DEAD|v$, wounded: $WOUNDED|v$, total: $TOTAL|v$ (attrition)"
  CASUALTY_DEBUG_BATTLE_CASUALTY_BUILDING:0 "#variable $DATE$#!: $UNIT_NAME$ dead: $DEAD|v$, wounded: $WOUNDED|v$, total: $TOTAL|v$ (battle $BATTLE_NAME$)"
 
- COMBAT_UNIT_DEFENSE_BREAKDOWN:0 "#header [concept_defense]#!\n$concept_defense$ of @unit_defense! #v [CombatUnit.GetDefenseRaw]#! is due to:\n[CombatUnit.GetDefenseBreakdown]"
- COMBAT_UNIT_OFFENSE_BREAKDOWN:0 "#header [concept_offense]#!\n$concept_offense$ of @unit_offense! #v [CombatUnit.GetOffenseRaw]#! is due to:\n[CombatUnit.GetOffenseBreakdown]"
+ COMBAT_UNIT_DEFENSE_BREAKDOWN:0 "#header [concept_defense]#!\n$concept_defense$ of @unit_defense! #v [CombatUnit.GetDefenseRaw|1]#! is due to:\n[CombatUnit.GetDefenseBreakdown]"
+ COMBAT_UNIT_OFFENSE_BREAKDOWN:0 "#header [concept_offense]#!\n$concept_offense$ of @unit_offense! #v [CombatUnit.GetOffenseRaw|1]#! is due to:\n[CombatUnit.GetOffenseBreakdown]"
  COMBAT_UNIT_MANPOWER_BREAKDOWN:0 "#header [concept_manpower]#!\n[CombatUnit.GetManpowerTooltip]"
  COMBAT_UNIT_MANPOWER:0 "@manpower! #v [CombatUnit.GetManpowerRaw]#!"
  COMBAT_UNIT_VETERANCY_EFFECT: "#bold Effect(s):#!"
@@ -10792,3 +10795,5 @@
  RANDOMIZE_TREATY_NAME: "Randomize [concept_treaty] name"
 
  MANEUVERS_DESC: "@maneuvers! #tooltippable #tooltip:$BREAKDOWN_TAG$ $MANEUVERS|v0$#!#! [Concept('concept_maneuver', '$concept_maneuvers$')]"
+
+ LACK_OF_OFFICERS_FACTOR: "x$FACTOR|2-$ from lacking $MISSING_OFFICERS|v$ [GetPopType('officers').GetName] in [BUILDING.GetName]"

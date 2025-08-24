@@ -536,7 +536,7 @@
  no_federation_je_tt: "有効な#v インド連邦#!の[concept_journal_entry]が#b ありません#!"
  no_union_je_tt: "有効な#v インド統一#!の[concept_journal_entry]が#b ありません#!"
  all_princely_states_get_invitation_tt: "対象となるすべての[Concept('concept_princely_state','$concept_princely_states$')]が[ROOT.GetCountry.GetNameNoFlag]に加わるよう招請されます"
- eligible_states_include_tt: "対象となる[Concept('concept_princely_state','$concept_princely_states$')]には次のものが含まれています: #indent_newline: "
+ eligible_states_include_tt: "対象となる[Concept('concept_princely_state','$concept_princely_states$')]には次のものが含まれています: #indent_newline:3 "
  eligible_country_entry_tt: "[THIS.GetCountry.GetName]"
  eligible_country_entry_last_tt: "[THIS.GetCountry.GetName]#!\n• ならびに、その他[GetPlayer.MakeScope.ScriptValue('num_princely_state_subjects_eligible_for_federation_minus_three')|v0]国([concept_princely_state]の[Concept('concept_subject', '$concept_subjects$')]の合計数は[GetPlayer.MakeScope.ScriptValue('num_princely_state_subjects')|v0])"
  notification_joins_union_of_india_name: "[SCOPE.sCountry('princely_state_scope').GetName]が[SCOPE.sCountry('india_scope').GetNameNoFlag]に加入"

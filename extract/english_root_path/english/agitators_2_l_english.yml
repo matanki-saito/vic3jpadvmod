@@ -1,5 +1,5 @@
 ﻿l_english:
-  
+
 custom_orleanist: "Orléanist"
 custom_legitimist: "Bourbon"
 custom_bonapartist: "Bonapartist"
@@ -398,7 +398,7 @@ jailtime_blues_martyr: "The Death of a Martyr"
 
 revolution_pulse2_events.10.t: "Revolutionaries Raid Arms Depot"
 revolution_pulse2_events.10.d: "A band of revolutionaries rumored to affiliate with the [SCOPE.gsInterestGroup('arms_depot_raided_ig').GetName], have overwhelmed a minor garrison in [SCOPE.sState('arms_depot_raided_state').GetName], leaving two dozen soldiers dead, and running off with crates full of rifles and ammunition - even wheeling off a small caliber cannon."
-revolution_pulse2_events.10.f: "#bold Wanted: Armory Thieves# \n\nOver 30 men believed involved with theft of artillery and ordinance in [randomState]. £200 per man captured or killed; £50 for information leading to the capture or death of culprits.\n\nBelieved armed and dangerous. Collaborators will be considered equally guilty."
+revolution_pulse2_events.10.f: "#bold Wanted: Armory Thieves#! \n\nOver 30 men believed involved with theft of artillery and ordinance in [randomState]. £200 per man captured or killed; £50 for information leading to the capture or death of culprits.\n\nBelieved armed and dangerous. Collaborators will be considered equally guilty."
 revolution_pulse2_events.10.a: "Scour the countryside for them."
 revolution_pulse2_events.10.b: "Scour the cities instead."
 modifier_scouring_countryside: "Scouring the Countryside"
@@ -832,3 +832,5 @@ hispaniola_events.5.t: "France Refuses Indemnity Reduction"
 hispaniola_events.5.d: "In yet another display of colonial arrogance, [SCOPE.sCountry('france_scope').GetName] has refused any and all suggestions to reduce the indemnity — the [SCOPE.sCountry('france_scope').GetAdjectiveNoFormatting] representative instead launched into a tirade about financial obligations and the horrors of Saint Domingue."
 hispaniola_events.5.f: ""So what will we tell the people now? That we bleed them as badly as the French?"\n\n"No... no, we cannot. They've suffered enough."\n\n"We cannot default this payment, or we will invite the French back. Whoever we beg may put us in irons faster than them, too.""
 hispaniola_events.5.a: "#italic Bondye modi li!#!"
+
+crushed_algerian_resistance: "Crushed Algerian Resistance"

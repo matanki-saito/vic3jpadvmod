@@ -489,7 +489,7 @@
  war_goal_leave_power_bloc_type_name: "$concept_power_bloc$を離脱"
  war_goal_leave_power_bloc_type_desc: "メンバー$concept_country$の離脱を認めるよう$concept_power_bloc$のリーダーに強制します。"
  war_goal_leave_power_bloc: "$concept_power_bloc$を離脱"
- war_goal_leave_power_bloc_desc: "[WAR_GOAL.GetHolder.GetName]が[SelectLocalization(WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.IsValid,'WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.GetName','$concept_power_bloc$')]を離脱します。"
+ war_goal_leave_power_bloc_desc: "[WAR_GOAL.GetHolder.GetName]が[SelectLocalization(WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.IsValid,WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.GetName,'$concept_power_bloc$')]を離脱します。"
  war_goal_leave_power_bloc_sway_desc: "[WAR_GOAL.GetHolder.GetName]を[WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.GetName]から離脱させ、こちら側の勢力に加わるよう説得しましょう。"
  war_goal_liberate_subject_type_name: "従属国の解放"
  war_goal_liberate_subject_type_desc: "[Concept('concept_subject', '$concept_subjects$')]の独立を他国に強要する。"

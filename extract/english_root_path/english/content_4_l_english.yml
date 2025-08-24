@@ -24,12 +24,12 @@
  is_raw_industries_building:0 "Raw Goods Industry"
  
  #Journal Entry Production Events
- production_tech_events.102.t:0 "Industrial Boom"
- production_tech_events.102.d:0 "With the recent expansion in both the production and consumption of explosives in our country, there has been much debate on whether the Military or the Industrial Sector should have priority."
- production_tech_events.102.f:0 ""Why should we worry about how much dirt we can move when we should be thinking about how to defend our country?"\n\n"All you care about is starting more wars, we should put this to use for our workers instead. They are more important.""
- production_tech_events.102.a:0 "We should try and support both Industries"
- production_tech_events.102.b:0 "Give the Industrial Sector priority"
- production_tech_events.102.c:0 "Give the Military Sector priority"
+ production_tech_events.102.t:1 "Exploding Demand"
+ production_tech_events.102.d:1 "The development of more stable [SCOPE.sGoods('explosives_goods').GetName] has led to an uptick in demand for explosive materials. Our military and industrial sectors have entered a bidding war to secure shares of our production."
+ production_tech_events.102.f:1 "\"\"Civilian applications?\" Really? What does a civilian firm want with two thousand tonnes of dynamite?\" The Quartermaster-General paced back and forth, clutching the dossier to his chest. \"If I had two thousand tonnes of dynamite, I could equip an artillery corps for the year. I could fill warehouses with shells.\"\n\n\"It is... regrettable,\" said the clerk, cautiously testing each word. \"A bidding frenzy has erupted over the material. Our current budget would buy us a fraction of what it should.\"\n\nNot ideal, thought the Quartermaster-General, but survivable. \"Place the order, and tell me the figure. I will petition the Cabinet for twice as much.\""
+ production_tech_events.102.a:1 "Increasing supply will lift all boats."
+ production_tech_events.102.b:1 "The industrial sector will make best use of it."
+ production_tech_events.102.c:1 "The military must have their cut."
  production_tech_events.103.t:0 "Roaring Engines"
  production_tech_events.103.d:0 "With the invention and implementation of motor transportation the question arises. Shall we focus on public or private transportation?"
  production_tech_events.103.f:0 ""Why should I have to sit on a bus or a train with a stinky peasant, I should have my own mean of transportation"\n\n"The speed of the nation should not be left in the hand of the rich few, we need to keep the poor in mind.""

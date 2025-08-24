@@ -599,3 +599,4 @@
  ADD_COMPANY_MONOPOLY: "企業に[TARGET_BUILDING_TYPE.GetName]の[concept_company_monopoly]が与えられます"
  ADD_COMPANY_MONOPOLY_FIRST: "[COMPANY.GetName]が[TARGET_BUILDING_TYPE.GetName]の[concept_company_monopoly]を得ます"
  ADD_COMPANY_MONOPOLY_THIRD: "[COMPANY.GetName]が[TARGET_BUILDING_TYPE.GetName]の[concept_company_monopoly]を得ます"
+ TSUNAMI_EFFECT_GLOBAL: "[GetHarvestConditionType('津波').GetNameNoFormatting|b]は[STRATEGIC_REGION.GetName]のすべての#b 沿岸$concept_state$#!において、$VALUE|v-0$の[concept_devastation]を生じさせます"

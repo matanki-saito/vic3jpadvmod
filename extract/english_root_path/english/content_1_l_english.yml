@@ -1204,7 +1204,7 @@
  je_dual_monarchy_reason:0 "Hungarian nationalism is on the rise, and Hungarian elites are maneuvering for greater representation in government. If we allow these movements to become too powerful we may have to make an uncomfortable compromise."
  austria_hungary_tt:0 "Country will become known as Austria-Hungary"
  ideology_austrian_hegemony:0 "Austrian Hegemonists"
- ideology_austrian_hegemony_desc:0 "#lore This group believes that Austrians alone should form the social and political elite of the country."
+ ideology_austrian_hegemony_desc:0 "#lore This group believes that Austrians alone should form the social and political elite of the country.#!"
  dual_monarchy_compromise:0 "Austro-Hungarian Compromise"
  dual_monarchy_compromise_rejected:0 "Rejected Hungarian Compromise"
  austria_hunary_invalid:0 "Owns no Hungarian homeland states"

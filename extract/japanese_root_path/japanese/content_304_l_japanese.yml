@@ -109,7 +109,7 @@
  je_buy_alaska_button: "アラスカへの依頼"
  je_buy_alaska_button_desc: "アラスカは現在、友好国の植民地となっている。我々は友好国との関係を活用し、その領土を購入することができるかもしれない。"
  foster_national_agitation: "国の扇動をかき立てる"
- foster_national_agitation_desc: "#lore [Character.GetFullName]に対し、外国勢力の[Character.GetCulture.GetName]の人々を扇動する任務を課す。"
+ foster_national_agitation_desc: "#lore [Character.GetFullName]に対し、外国勢力の[Character.GetCulture.GetName]の人々を扇動する任務を課す。#!"
  not_homeland_of_states_tt: "この州の所有者は、[SCOPE.sCulture('agitator_culture').GetName]を[Concept('concept_primary_cultures','$concept_primary_culture$')]として有していません"
  is_rival_of_owner_tt: "この州の所有者は、我々と[concept_rivalry]関係にあります"
  italian_unification.4.t: "[SCOPE.sState('capital_scope').GetCityHubName]にはためく三色旗"

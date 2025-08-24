@@ -462,7 +462,7 @@
  concept_front_desc:2 "A collection of [Concept('concept_province', '$concept_provinces$')] on the border of [Concept('concept_theater','$concept_theaters$')] between two [Concept('concept_country', '$concept_countries$')] at [concept_war] with each other. [Concept('concept_general', '$concept_generals$')] can be [Concept('concept_order','$concept_ordered$')] to advance or defend $concept_fronts$, which can result in [Concept('concept_battle','$concept_battles$')] that change the size of the $concept_theaters$ and the location of the $concept_front$."
 
  concept_advancement_progress:0 "Advancement Progress"
- concept_advancement_progress_desc:1 "[Concept('concept_general','$concept_generals$')] [Concept('concept_order','$concept_ordered$')] to advance a [concept_front] accumulates $concept_advancement_progress$ daily depending on their [concept_advancement_speed]. Once the $concept_advancement_progress$ of the $concept_front$ has reached [GetDefine('NMilitary','BATTLE_PLAN_ADVANCE_PROGRESS_TO_LAUNCH')|v0] a [concept_battle] will start. While a $concept_battle$ is ongoing on the $concept_front$, $concept_advancement_progress$ on that $concept_front$ will be paused."
+ concept_advancement_progress_desc:1 "[Concept('concept_general','$concept_generals$')] [Concept('concept_order','$concept_ordered$')] to advance a [concept_front] accumulate $concept_advancement_progress$ daily depending on their [concept_advancement_speed]. Once the $concept_advancement_progress$ of the $concept_front$ has reached [GetDefine('NMilitary','BATTLE_PLAN_ADVANCE_PROGRESS_TO_LAUNCH')|v0] a [concept_battle] will start. While a $concept_battle$ is ongoing on the $concept_front$, $concept_advancement_progress$ on that $concept_front$ will be paused."
 
  concept_advancement_speed:0 "Advancement Speed"
  concept_advancement_speed_desc:1 "How rapidly a [concept_general] can advance their [concept_front] by accumulating [concept_advancement_progress].\nA $concept_general$ with no [Concept('concept_mobilize_battalion','$concept_mobilize_battalion_mobilized$')] [Concept('concept_battalion','$concept_battalions$')] has an effective $concept_advancement_speed$ of zero."
@@ -1777,7 +1777,7 @@
  concept_unrealized_taxes_desc:0 "Unrealized Taxes is the amount of [concept_taxes] that the [concept_country] is failing to collect due to various reasons, including but not limited to insufficient [concept_tax_capacity] and [concept_tax_waste]."
 
  concept_budget_additional_income:0 "Additional Income"
- concept_budget_additional_income_desc:2 "Income that don't fit into another category, often gained from the outcome of special events."
+ concept_budget_additional_income_desc:2 "Income that doesn't fit into another category, often gained from the outcome of special events."
 
  concept_budget_additional_expenses:0 "Additional Expenses"
  concept_budget_additional_expenses_desc:2 "Expenses that don't fit into another category, often incurred due to the outcome of special events."
@@ -1963,7 +1963,7 @@
  concept_busy_desc: "A [concept_character] can be considered $concept_busy$ when occupied with a certain assignment, such as being on an expedition. When $concept_busy$, the $concept_character$ is unavailable for their regular duties. For example, a [concept_commander] would be unable to participate in [Concept('concept_battle','$concept_battles$')]."
 
  concept_popularity:0 "Popularity"
- concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. $concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]."
+ concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. \n\n$concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]: #indent_newline:3 \n• [Concept('concept_agitator','$concept_agitators$')]: affects chance of [Concept('concept_pop', '$concept_pops$')] joining their [concept_political_movement] \n• [Concept('concept_ruler', '$concept_rulers$')]: adds or takes away [concept_authority] \n• [Concept('concept_admiral','$concept_admirals$')]/[Concept('concept_general', '$concept_generals$')]: affects chance of becoming an [concept_interest_group] [concept_leader] and chance of successful coups \n• [concept_interest_group] [Concept('concept_leader', '$concept_leaders$')]: affects [concept_interest_group_attraction] \n• [Concept('concept_party_leader', '$concept_party_leaders$')]: affects [concept_party] [concept_momentum] during [Concept('concept_election','$concept_elections$')] \n• [Concept('concept_executive','$concept_executives$')]: affects [concept_prosperity] and chance of becoming an [concept_interest_group] [concept_leader]"
 
  concept_momentum:0 "Momentum"
  concept_momentum_desc:1 "The success of a [Concept('concept_party','$concept_party_possessive$')] [concept_election] campaign. $concept_momentum$ increases the number of [concept_votes] a $concept_party$ gains on $concept_election$ day, and is nullified thereafter. $concept_momentum$ can be affected by random chance, special events, and the [concept_popularity] of its [concept_party_leader]."
@@ -2016,7 +2016,7 @@
 
  concept_character_role:0 "Role"
  concept_character_roles:0 "Roles"
- concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are:\n[concept_ruler] (usually also a [concept_politician])\n[concept_heir]\n[concept_politician]\n[concept_executive]\n[concept_agitator]\n[concept_general]\n[concept_admiral]"
+ concept_character_role_desc:2 "$concept_character_roles$ determine what areas of your [concept_country] a particular [concept_character] has influence over. A $concept_character$ can have one or several $concept_character_roles$.\n\nThe list of $concept_character_roles$ are: \n  #indent_newline:3  • [concept_ruler] (usually also a [concept_politician])\n• [concept_heir]\n• [concept_politician]\n• [concept_executive]\n• [concept_agitator]\n• [concept_general]\n• [concept_admiral]"
 
  concept_treasury:0 "Treasury"
  concept_treasury_possessive:0 "Treasury’s"
@@ -2093,6 +2093,7 @@
  concept_party_desc:1 "A $concept_party$ is a political entity that participates in [Concept('concept_election','$concept_election$')]. They consist of one or more [Concept('concept_interest_group','$concept_interest_groups$')] whose [Concept('concept_ideology','$concept_ideologies$')] are at least somewhat compatible. These $concept_interest_groups$ are empowered by the [concept_votes] the $concept_party$ has won proportional to their [concept_clout]. Individual $concept_interest_groups$ cannot be included in [concept_government] without the rest of their $concept_party$ members."
 
  concept_party_leader:0 "Party Leader"
+ concept_party_leaders: "Party Leaders"
  concept_party_leader_short:0 "Leader"
  concept_party_leader_desc:1 "The [concept_leader] of the [concept_interest_group] in the [concept_party] with the most [concept_clout] is considered the $concept_party_leader$. The $concept_party_leader_short$ acts as a [concept_party_whip]."
 

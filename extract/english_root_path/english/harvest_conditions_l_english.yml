@@ -6,7 +6,7 @@
 
  flood: "Flood"
  flood_desc: "A stark reminder of nature's might, rising waters animated by incessant rainfall lay waste to the land and settlements alike."
- 
+
  frost: "Frost"
  frost_desc: "A thin layer of ice that cloaks the lands in a delicate frozen blanket, as deceitfully beautiful from afar as it is devastating to the harvests underneath it."
 
@@ -31,13 +31,16 @@
  torrential_rains: "Torrential Rains"
  torrential_rains_desc: "A prolonged period of rainfall so heavy that even one's sturdiest umbrella cannot protect against the deluge."
 
- 
 #Positive Harvest Conditions
  pollinator_surge: "Pollinator Surge"
  pollinator_surge_desc: "A life-affirming frenzy of fragrances, nectar and vigor, set in motion by busy bees and other small insects dancing from flower to flower."
 
  optimal_sunlight: "Optimal Sunlight"
- optimal_sunlight_desc: "An occasion that is neither too warm nor cold, emanating with such delight the ideal amount of brightness that one cannot help but smile as a result." 
+ optimal_sunlight_desc: "An occasion that is neither too warm nor cold, emanating with such delight the ideal amount of brightness that one cannot help but smile as a result."
 
  moderate_rainfall: "Moderate Rainfall"
  moderate_rainfall_desc: "A joyous event that breathes life into land below, from which eager crops rise to greet the drops falling from above."
+
+#Natural Disasters
+ tsunami: "Tsunami"
+ tsunami_desc: "An unstoppable force of water flattening and subsuming anything where it meets the land"

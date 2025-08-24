@@ -85,13 +85,13 @@
  modifier_brewing_insurrection: "Brewing Insurrection"
  # New Ideologies
  ideology_authoritarian: "Authoritarian"
- ideology_authoritarian_desc: "#lore This character believes that great nations need strong leaders, and that they are uniquely qualified for the position."
+ ideology_authoritarian_desc: "#lore This character believes that great nations need strong leaders, and that they are uniquely qualified for the position.#!"
  ideology_socialist: "Socialist"
- ideology_socialist_desc: "#lore This group has committed itself to socialist ideology, advocating for ownership of the means of production and the dismantling of capitalism."
+ ideology_socialist_desc: "#lore This group has committed itself to socialist ideology, advocating for ownership of the means of production and the dismantling of capitalism.#!"
  ideology_humanitarian: "Humanitarian"
- ideology_humanitarian_desc: "#lore This character is an advocate for the human race. Every man, woman, and child should be guaranteed a set of inalienable and non-negotiable rights by the state."
+ ideology_humanitarian_desc: "#lore This character is an advocate for the human race. Every man, woman, and child should be guaranteed a set of inalienable and non-negotiable rights by the state.#!"
  ideology_protectionist: "Protectionist"
- ideology_protectionist_desc: "#lore This character believes that domestic industries and international trade should be closely monitored and regulated by the state."
+ ideology_protectionist_desc: "#lore This character believes that domestic industries and international trade should be closely monitored and regulated by the state.#!"
  ideology_humanitarian_royalist: "Enlightened Royalist"
  ideology_humanitarian_royalist_desc: "#lore This character believes that the ideal form of society is a radically egalitarian nation ruled by an enlightened and humanist monarch.#!"
  # Royal Marriage
@@ -167,7 +167,7 @@
  status_dynasty_cementing_fra: "The ruling House of [ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')] is cementing its control"
  # Repatriate Agitator interaction
  return_to_home_country: "Repatriate Agitator"
- return_to_home_country_desc: "#lore Return [Character.GetFullName] to our [Concept('concept_rivalry','$concept_rival$')]"
+ return_to_home_country_desc: "#lore Return [Character.GetFullName] to our [Concept('concept_rivalry','$concept_rival$')]#!"
  exiles_events.100.t: "Repatriation"
  exiles_events.100.d: "[SCOPE.sCharacter('repatriated_scope').GetFullName] has returned from exile in [SCOPE.sCountry('repatriator_country_scope').GetName] with the support of their hosts' government. It seems that the [SCOPE.sCountry('repatriator_country_scope').GetNameNoFormatting] have reason to spread [SCOPE.sCharacter('repatriated_scope').GetIdeology.GetName] ideology in [ROOT.GetCountry.GetName]."
  exiles_events.100.f: "Second chances come rarely. The home once denied to [SCOPE.sCharacter('repatriated_scope').GetHerHim] now opens its doors with a foreigner’s support. They cast [SCOPE.sCharacter('repatriated_scope').GetHerHim] away before, preferring a false heaven of evermore tyrannical choirs. But a second chance for [SCOPE.sCharacter('repatriated_scope').GetHerHim] meant a second chance for the dream. For true brotherhood. Perhaps [SCOPE.sCharacter('repatriated_scope').GetHerHis] great work might bear fruit yet."

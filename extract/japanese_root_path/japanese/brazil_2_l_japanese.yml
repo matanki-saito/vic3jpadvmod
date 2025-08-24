@@ -372,5 +372,5 @@
  gov_francocracia_presidential_desc: "[Concept('concept_ruler','$RULER_TITLE_PERPETUAL_DICTATOR$')]が治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  RULER_TITLE_PERPETUAL_DICTATOR: "永遠の独裁者"
  ideology_despotic_utopian: "独裁的夢想家"
- ideology_despotic_utopian_desc: "#lore このキャラクターは啓蒙主義の影響を受けつつも、独裁的な政府が国民の最善の利益のために行動する社会を信じています。"
+ ideology_despotic_utopian_desc: "#lore このキャラクターは啓蒙主義の影響を受けつつも、独裁的な政府が国民の最善の利益のために行動する社会を信じています。#!"
  RULER_TITLE_SECRETARY: "秘書・代書官"

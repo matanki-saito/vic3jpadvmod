@@ -1191,7 +1191,7 @@
  je_dual_monarchy_reason: "ハンガリーでの民族主義が高まり、ハンガリーのエリートたちは政府への代表権の拡大を求めて動き出しています。もし、これらの動きがさらに強力になるのを許せば、我々は望まぬ妥協をしなければならないかもしれません。"
  austria_hungary_tt: "国の名前がオーストリア・ハンガリーになります"
  ideology_austrian_hegemony: "オーストリアの覇権主義者"
- ideology_austrian_hegemony_desc: "#lore このグループは、オーストリア人だけが国の社会的・政治的エリートを形成すべきであると考えています。"
+ ideology_austrian_hegemony_desc: "#lore このグループは、オーストリア人だけが国の社会的・政治的エリートを形成すべきであると考えています。#!"
  dual_monarchy_compromise: "オーストリア・ハンガリーの妥協"
  dual_monarchy_compromise_rejected: "ハンガリーの妥協案の拒否"
  austria_hunary_invalid: "ハンガリーの祖国を所持していない"

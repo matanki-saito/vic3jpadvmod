@@ -120,10 +120,10 @@
 
  CLOUT:0 "$concept_clout$"
   
- POLITICAL_MOVEMENT_SUPPORT_FROM_POPS:1 "$VALUE|v=%$ from the $concept_political_movement_support_short$ of @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','$concept_individuals$')]\n$TAB$(representing $FRACTION|v%0$ of the enfranchised [Concept('concept_pop', '$concept_population$')])"
- POLITICAL_MOVEMENT_SUPPORT_FROM_MILITARY: "$VALUE|v=%1$ from the $concept_political_movement_support_short$ of $NUM_INDIVIDUALS|vD$ [GetPopType('soldiers').GetName] and [GetPopType('officers').GetName]\n$TAB$(representing $FRACTION|v%0$ of the military's total [concept_political_strength])"
- POLITICAL_MOVEMENT_SUPPORT_FROM_WEALTH: "$VALUE|v=%1$ from the $concept_political_movement_support_short$ of $WEALTH|Dv$ [concept_wealth]\n$TAB$(representing $FRACTION|v%0$ of the total $concept_wealth$ in the [concept_country])"
- POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_POP: "$VALUE|v=%1$ from the $concept_political_movement_support_short$ of @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','$concept_individuals$')]"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_POPS:1 "$VALUE|v=%$ from the $concept_political_movement_support_short$ of @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','$concept_individuals$')]\n$TAB$(representing $FRACTION|v%0$ of the politically active [Concept('concept_pop', '$concept_population$')])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_MILITARY: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of $NUM_INDIVIDUALS|vD$ [GetPopType('soldiers').GetName] and [GetPopType('officers').GetName]\n$TAB$(representing $FRACTION|v%0$ of the military's total [concept_political_strength])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_WEALTH: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of $WEALTH|Dv$ [concept_wealth]\n$TAB$(representing $FRACTION|v%0$ of the total $concept_wealth$ in the [concept_country])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_POP: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','$concept_individuals$')]"
  POLITICAL_MOVEMENT_SUPPORT_WITHIN_IDENTITY: "This $concept_political_movement_short$ has $SUPPORT|v%0$ $concept_political_movement_support_short$ within its associated [concept_culture] and/or [concept_religion]"
 
  POLITICAL_MOVEMENT_AGITATOR_SUPPORT: "#tooltippable [LabelingHelper.GetLabelForSupport(PoliticalMovement.GetCharacterSupport(Character.Self))]#! ([PoliticalMovement.GetCharacterSupport(Character.Self)|vD])"

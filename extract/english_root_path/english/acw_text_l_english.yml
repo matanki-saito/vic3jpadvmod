@@ -143,6 +143,9 @@
  je_acw_equality_reason:0 "This nation fought a war over deep issues that were papered over for generations until the problems became too big to ignore. We must avoid a repeat of this disaster, and tackle the problems head-on lest they are left to fester for another century."
  je_acw_wild_wild_west:0 "The Wild, Wild West"
  je_acw_wild_wild_west_reason:0 "The western frontier has been set alight by the unrest in the rest of the nation. We must find a way to calm it down."
+ ACW_DIXIE_STATES_HEADER: "All of these [Concept('concept_state', '$concept_states$')] are [Concept('concept_incorporated_state','$concept_incorporated$')] and have at least [GetPlayer.MakeScope.ScriptValue('acw_reincorporate_dixie_loyalist_min')|0v%] [GetCulture('dixie').GetName] [Concept('concept_loyalist', '$concept_loyalists$')]:"
+ ACW_DIXIE_STATES_LIST_ENTRY: "[THIS.GetState.GetName]: $concept_incorporated$: [SelectLocalization(THIS.GetState.IsIncorporated,'@green_checkmark_box!','@simple_box!')] $dixie$ $concept_loyalists$: [SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(THIS.ScriptValue('dixie_loyalist_fraction'), THIS.ScriptValue('acw_reincorporate_dixie_loyalist_min') ),'@green_checkmark_box!','@simple_box!')] ([THIS.ScriptValue('dixie_loyalist_fraction')|%+1])"
+ ACW_REINCORPORATE_TT: "$ACW_DIXIE_STATES_HEADER$\n[GetScriptedGui('je_acw_reincoprorate_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]"
 
  je_acw_war:0 "The American Civil War"
  je_acw_war_reason:0 "War between the states is upon us. Now is the time to preserve the Union, or die trying."

@@ -1819,6 +1819,8 @@
  TREATY_DRAFT_ASK_FOR_OBLIGATION_TOOLTIP: "#header $REVERSE_SWAY_OFFER_OBLIGATION$#!\n[concept_treaty]の承認に対して$TAB$$VAL|+=$"
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_OWED: "@red_cross! [COUNTRY.GetNameNoFormatting]は、すでに[TARGET_COUNTRY.GetName]に[concept_obligation]を負っています"
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_PROMISED: "@red_cross! [COUNTRY.GetNameNoFormatting]は、すでに[TREATY.GetName]の一環として、[TARGET_COUNTRY.GetName]に[concept_obligation]を約束しています"
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_EFFECTUATED: "@red_cross! 本[concept_treaty]が定めた相互の[Concept('concept_obligation', '$concept_obligations$')]は、どちらもすでに履行されています。理由は、当初の[concept_binding_period]の満了、または最初に発行した$DATE|v$以来、$INTERVAL$が経過したことによります"
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_ASKING: "@red_cross! [COUNTRY.GetName]は、[OTHER_COUNTRY.GetName]が[COUNTRY.GetName]に義務を約束している間は、同時に[OTHER_COUNTRY.GetName]に[concept_obligation]を約束することができません"
  TREATY_OPTIONS_VALIDATE_NO_ARTICLES_TO_CREATE: "少なくとも1つの[concept_article]を加えます"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_WEEKLY_TRIGGER: "毎週確認: \n$TRIGGER_DESC$"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_MONTHLY_TRIGGER: "毎月確認: \n$TRIGGER_DESC$"
