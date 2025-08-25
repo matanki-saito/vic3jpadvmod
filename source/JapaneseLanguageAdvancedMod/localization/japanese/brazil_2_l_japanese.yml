@@ -353,7 +353,7 @@
  gov_francocracia_presidential_desc:0 "[Concept('concept_ruler','$RULER_TITLE_PERPETUAL_DICTATOR$')]が治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  RULER_TITLE_PERPETUAL_DICTATOR:0 "終身独裁官"
  ideology_despotic_utopian:0 "独裁的夢想家"
- ideology_despotic_utopian_desc:0 "#lore このキャラクターは啓蒙主義の影響を受けつつも、独裁的な政府が国民の最善の利益のために行動する社会を信じています。"
+ ideology_despotic_utopian_desc:0 "#lore このキャラクターは啓蒙主義の影響を受けつつも、独裁的な政府が国民の最善の利益のために行動する社会を信じています。#!"
  RULER_TITLE_SECRETARY:0 "秘書にして書記"
  anti_slavery_society_legacy:0 "イギリス・海外反奴隷制協会"
  matter_of_slavery_progress_bar:0 "奴隷制の問題"

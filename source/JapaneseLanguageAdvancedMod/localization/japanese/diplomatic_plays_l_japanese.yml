@@ -512,7 +512,7 @@
  war_goal_leave_power_bloc_type_name:0 "$concept_power_bloc$を離脱"
  war_goal_leave_power_bloc_type_desc:0 "メンバー$concept_country$の離脱を認めるよう$concept_power_bloc$のリーダーに強制します。"
  war_goal_leave_power_bloc:0 "$concept_power_bloc$を離脱"
- war_goal_leave_power_bloc_desc:0 "[WAR_GOAL.GetHolder.GetName]が[SelectLocalization(WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.IsValid,'WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.GetName','$concept_power_bloc$')]を離脱します。"
+ war_goal_leave_power_bloc_desc:0 "[WAR_GOAL.GetHolder.GetName]が[SelectLocalization(WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.IsValid,WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.GetName,'$concept_power_bloc$')]を離脱します。"
  war_goal_leave_power_bloc_sway_desc:0 "[WAR_GOAL.GetHolder.GetName]を[WAR_GOAL.GetWarGoalStakeholder.GetPowerBloc.GetName]から離脱させ、こちら側の勢力に加わるよう説得しましょう。"
  WARGOAL_NO_PORT:0 "対象の$concept_state$に#v $building_port$#!が建設されている必要があります"
  WARGOAL_CANNOT_ADD_FOR_OTHER_COUNTRY:0 "当[concept_war_goal]は別の[concept_country]に代わって追加できません"

@@ -1824,3 +1824,5 @@
  MANEUVERS_BASE_VALUE:0 "基本値"
  MANEUVERS_TARGET_COUNTRY_POPULATION_FACTOR:0 "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting]の合計[Concept('concept_pop','$concept_population$')]が[SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"
  MANEUVERS_QUANTITY_FACTOR:0 "需要量"
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_EFFECTUATED:0 "@red_cross! 本[concept_treaty]が定めた相互の[Concept('concept_obligation','$concept_obligations$')]は、どちらもすでに履行されています。理由は、当初の[concept_binding_period]の満了、または最初に発行した$DATE|v$以来、$INTERVAL$が経過したことによります"
+ TREATY_DRAFT_OWE_OBLIGATION_ALREADY_ASKING:0 "@red_cross! [COUNTRY.GetName]は、[OTHER_COUNTRY.GetName]が[COUNTRY.GetName]に義務を約束している間は、同時に[OTHER_COUNTRY.GetName]に[concept_obligation]を約束することができません"

@@ -200,3 +200,6 @@
  fsa_reparation_reward:0 "賠償金"
  every_yankee_state_in_root:0 "[GetPlayer.GetName]のすべての[GetCulture('yankee').GetName][concept_homeland][concept_state]"
  acw_reincorporate_loyalist_tt:0 "[concept_state]における[GetCulture('dixie').GetName][Concept('concept_pop','$concept_pops$')]のうち、少なくとも#v [GetPlayer.MakeScope.ScriptValue('acw_reincorporate_dixie_loyalist_min')|0%]#!が[concept_loyalist]であること"
+ ACW_DIXIE_STATES_HEADER:0 "以下の[Concept('concept_state','$concept_states$')]はすべて[Concept('concept_incorporated_state','$concept_incorporated$')]であり、少なくとも[GetPlayer.MakeScope.ScriptValue('acw_reincorporate_dixie_loyalist_min')|0v%]の[GetCulture('ディキシー').GetName][Concept('concept_loyalist','$concept_loyalists$')]がいる : "
+ ACW_DIXIE_STATES_LIST_ENTRY:0 "[THIS.GetState.GetName] : $concept_incorporated$ : [SelectLocalization(THIS.GetState.IsIncorporated,'@green_checkmark_box! ','@simple_box! ')] $dixie$ $concept_loyalists$ : [SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(THIS.ScriptValue('dixie_loyalist_fraction'),THIS.ScriptValue('acw_reincorporate_dixie_loyalist_min')),'@green_checkmark_box! ','@simple_box! ')] ([THIS.ScriptValue('dixie_loyalist_fraction')|%+1]) "
+ ACW_REINCORPORATE_TT:0 "$ACW_DIXIE_STATES_HEADER$\n[GetScriptedGui('je_acw_reincoprorate_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]"
