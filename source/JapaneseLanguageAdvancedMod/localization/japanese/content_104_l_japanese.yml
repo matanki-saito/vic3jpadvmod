@@ -1436,7 +1436,7 @@
  TSUNAMI_LIST_HEADER:0 "$TOOLTIP_DELIMITER$\n現在、[GetHarvestConditionType('津波').GetName]の[concept_devastation]を受けている自身の[Concept('concept_state','$concept_states$')]は以下の通り : "
  TSUNAMI_LIST_CONTENT:0 "#indent_newline:3 \n[GetScriptedGui('je_krakatoa_tsunami_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
  TSUNAMI_LIST_ENTRY:0 "[THIS.GetState.GetName] : [THIS.GetState.GetStateRegion.GetDevastationLevel|-%0]"
- TSUNAMI_LIST_EMPTY_STATE:0 "現在、[GetHarvestConditionType('津波').GetNameNoFormatting|b]の影響を受けている[concept_state]はない"
+ TSUNAMI_LIST_EMPTY_STATE:0 "現在、[GetHarvestConditionType('tsunami').GetNameNoFormatting|b]の影響を受けている[concept_state]はない"
  TSUNAMI_LIST_AFTER:0 "@information! 影響を受けている$concept_states$に[GetDecreeType('decree_emergency_relief').GetName]の[concept_decree]を使用すると、毎月の$concept_devastation$を#v ;P [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_amount')|0]%#!減少させる可能性が#v [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_chance')|0]%#!追加される！"
  je_krakatoa_thermometer_progress_bar_name:0 "気温の回復"
  je_krakatoa_thermometer_progress_bar_desc:0 "気温の低下 : #v ;blue ―[GetGlobalVariable('krakatoa_temperature_drop').GetValue|2] °C#!"
