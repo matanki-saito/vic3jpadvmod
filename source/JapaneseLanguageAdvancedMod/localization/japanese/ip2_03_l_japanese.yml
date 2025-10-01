@@ -346,7 +346,7 @@
  notification_caste_hierarchy_disappears_desc:0 "最近の文化的および社会的な変化により、カースト制度は[SCOPE.sCountry('relevant_country_scope').GetName]においてもはや認められた[concept_social_hierarchy]ではありません。"
  notification_caste_hierarchy_disappears_tooltip:0 "#header $notification_caste_hierarchy_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_disappears_desc$"
  je_dravidian_movement:0 "ドラヴィダ運動"
- je_dravidian_movement_reason:0 "[ROOT.GetCountry.GetName]の非バラモン階級が、代表率や政治力がバラモン階級に偏っていることに反発し、立ち上がりました。非バラモン階級による会議を重ね、ドラヴィダ運動を結成して、バラモン支配に対抗するための新しい指針を定めたのです。彼らは、政府内に存在するカースト区分の弊害を正すことを目指しています。"
+ je_dravidian_movement_reason:0 "[ROOT.GetCountry.GetName]の民衆が、代表権や政治力がバラモン階級に偏っていることに反発し、立ち上がった。反バラモンの協議を重ね、ドラヴィダ運動を結成して、バラモン支配に対抗するための新しい指針を定めたのだ。彼らは、法律や行政に存在するカースト区分の排除を目指している。"
  dravidian_movement_fail_tt:0 "インド内政自治法が通過"
  caste_conflict.1.t:0 "不平等な機会"
  caste_conflict.1.d:0 "最近の国勢調査で、政府職におけるバラモンの不均衡な代表率が明らかになり、非バラモンの資格が限られていることが浮き彫りになって以来、カースト間の緊張が一層顕著になっています。"

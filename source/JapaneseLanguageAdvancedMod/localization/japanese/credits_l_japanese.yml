@@ -209,7 +209,7 @@
  TITLE_COMMUNITY_PROJECT_LEAD:0 "#credits_subheader コニュニティプロジェクトリーダー#!"
  TITLE_LEAD_CM:0 "#credits_subheader CMリーダー#!"
  TITLE_CM:0 "#credits_subheader CM#!"
- HEADER_V3_TITLE:0 "#credits_title Victoria 3 : Charters of Commerce#!"
+ HEADER_V3_TITLE:0 "#credits_title Victoria 3 : National Awakening#!"
  HEADER_ALSO_INCLUDES:0 "#credits_header 以下のクレジットも含まれます : #!"
  HEADER_DAWN_OF_WONDER:0 "#credits_header Dawn of Wonder#!"
  TITLE_DESIGN_CONSULTANTS:0 "#credits_subheader デザインコンサルタント#!"
@@ -241,3 +241,4 @@
  TITLE_MANAGER_OF_PARTNER_RELATIONS_TEAM:0 "#credits_subheader パートナーリレーションマネージャー#!"
  TITLE_CREATIVE_PRODUCTION_MANAGER:0 "#credits_subheader クリエイティブ制作マネージャー#!"
  TITLE_EDITOR:0 "#credits_subheader 編集#!"
+ HEADER_NATIONAL_AWAKENING:0 "#credits_header National Awakening#!"

@@ -44,7 +44,7 @@
  culture_brazil.2.b:0 "このブラジルはあなたのものだ！"
  culture_brazil.3.t:0 "パウリスタの統合"
  culture_brazil.3.d:0 "[SCOPE.sCulture('paulista_culture').GetName]の人々、サンパウロと内陸部のカイピラの住民は中央政府と和解し、高まる[SCOPE.sCulture('brazilian_culture').GetName]の国民運動の折り合いをつけた。"
- culture_brazil.3.f:0 "「イピランガの穏やかな岸辺が聞いた、\n英雄的民衆の響き渡る叫び声、\n眩い光線を放つ自由の太陽、\nその瞬間、祖国の空に輝いた。」"
+ culture_brazil.3.f:0 "「#italic イピランガの穏やかな岸辺が聞いた、\n英雄的民衆の響き渡る叫び声、\n眩い光線を放つ自由の太陽、\nその瞬間、祖国の空に輝いた#!」\n\n‑ブラジル国歌"
  culture_brazil.3.a:0 "崇拝されし愛すべき祖国よ！万歳、万歳！"
  culture_brazil.4.t:0 "スリスタの統合"
  culture_brazil.4.d:0 "[SCOPE.sCulture('sulista_culture').GetName]の人々、パラナとイグアスそして南部のカウボーイは中央政府と和解し、高まる[SCOPE.sCulture('brazilian_culture').GetName]の国民運動の折り合いをつけた。"

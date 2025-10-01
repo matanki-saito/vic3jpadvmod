@@ -203,3 +203,5 @@
  ai_strategy_meiji_restoration_desc:0 "[COUNTRY.GetName]は近代化を図り、西欧列強と同等の強国になることを目指します"
  ai_strategy_great_reforms:0 "大改革を実行"
  ai_strategy_great_reforms_desc:0 "[COUNTRY.GetName]は自国に対し、急進的ではあるが不可欠な改革の実行を目指します"
+ ai_strategy_montenegro_admin:0 "外国からの輸入の維持"
+ ai_strategy_montenegro_admin_desc:0 "[COUNTRY.GetName]は自国の小さな領土に必要不可欠な物資を供給し続けたいとしたいと考えています。"

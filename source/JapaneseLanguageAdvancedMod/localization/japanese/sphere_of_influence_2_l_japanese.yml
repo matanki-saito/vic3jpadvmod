@@ -285,7 +285,7 @@
  modifier_greatest_exhibition:0 "最高の万国博覧会"
  modifier_untrustworthy_coalition:0 "信頼できない連合"
  sick_man_of_europe_lose_power_bloc:0 "我が国は[ROOT.GetCountry.GetPowerBloc.GetName]のリーダーシップを失います"
- puppeted_for_too_long_tt:0 "我が国は#bold 60#!か月連続で[concept_subject]である。 (現在#variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#!) "
+ puppeted_for_too_long_tt:0 "我が国は#bold 60#!か月連続で[concept_subject]です。 (現在#variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#!) "
  not_in_european_power_bloc_tt:0 "ヨーロッパの[Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]の[concept_power_bloc]に属して#b いない#!"
  europeans_forced_to_end_great_game_tt:0 "すべてのヨーロッパ列強国が#bold グレート・ゲーム#![concept_journal_entry]を失います"
  persia_puppeted_tt:0 "#v $PER$#!が我が国の[concept_subject]である"

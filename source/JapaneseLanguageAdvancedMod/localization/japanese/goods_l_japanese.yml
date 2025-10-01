@@ -125,3 +125,8 @@
  prestige_good_generic_grain:0 "高級な穀物"
  prestige_good_generic_paper:0 "クラフト紙"
  prestige_good_generic_explosives:0 "高性能爆薬"
+ popneed_stimulants:0 "興奮剤"
+ prestige_good_basma_tobacco:0 "バスマタバコ"
+ prestige_good_acorn_fed_pork:0 "ベジョータ豚"
+ prestige_good_pannonian_patent_flour:0 "パンノニア産上級小麦粉"
+ prestige_good_brunn_type_engines:0 "ブルン式エンジン"

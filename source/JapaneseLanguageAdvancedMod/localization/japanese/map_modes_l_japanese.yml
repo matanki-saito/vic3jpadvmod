@@ -74,3 +74,5 @@
  mm_global_starvation:0 "世界的飢餓"
  mm_player_military_access:0 "$concept_military_access$"
  mm_market_areas:0 "市場エリア"
+ mm_players:0 "プレイヤー"
+ mm_obstinance:0 "固執"

@@ -12,7 +12,7 @@
  lower_class_desc:0 "最も特権、権力、富を持たない社会のメンバー。社会的ヒエラルキーの最下層に位置し、社会的移動の可能性は限られています。"
  british_indian_caste_system:0 "イギリス領インドのカースト制度"
  british_indian_caste_system_desc:0 "イギリスが簡易化し体系化した、古来から続くヒンドゥー教ヒエラルキー。当初はイギリス領インド帝国の中央政府に尽くし導くために作られました。このヒエラルキー内の地位およびそれに関連する権利や特権は子へ受け継がれ、変化することはありません。"
- british_indian_caste_system_trigger_desc:0 "#b $hindu$#!を[concept_religion]としており、#b $south_asian_heritage$#!の[concept_cultural_trait]の[concept_culture]に属している"
+ british_indian_caste_system_trigger_desc:0 "#b $hindu$#!を[concept_religion]としており、#b $heritage_group_south_asian$#!の[concept_heritage_trait]の[concept_culture]に属している"
  brahmins:0 "バラモン"
  brahmins_desc:0 "代々教師や聖職者の職に就くバラモンは、唯一ヒンドゥー教の経典を解釈する権利が与えられています。そのため、他のカーストに与えられた神聖な権利や特権を要求するのです。イギリス領インド帝国のバラモンは、政治的な代表者や仲介役としての役割を果たすこともあります。"
  kshatriyas:0 "クシャトリヤ"

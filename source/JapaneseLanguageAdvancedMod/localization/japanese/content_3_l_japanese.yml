@@ -488,3 +488,4 @@
  acw_slave_trade_rural_folk:0 "人はみな奴隷の所有者"
  qing_owns_all_han_states_tt:0 "すべての[GetCulture('han').GetName][Concept('concept_homeland','$concept_homelands$')]を所有しており、[concept_split_state]となっている[GetCulture('han').GetName][concept_homeland]はありません"
  colonial_administration:0 "$gov_colonial_administration$"
+ dead_man_of_europe:0 "ヨーロッパの死人"
