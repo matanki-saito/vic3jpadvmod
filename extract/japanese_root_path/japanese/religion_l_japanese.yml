@@ -18,3 +18,18 @@
  christian: "キリスト教"
  muslim: "イスラム教"
  confucian: "儒教"
+ ibadi: "イバード派"
+ #Religious Heritage Groups
+ heritage_group_abrahamic: "アブラハム宗教"
+ heritage_group_eastern: "東洋宗教"
+ heritage_group_naturalistic: "自然主義"
+ heritage_group_non_spiritual: "無宗教"
+ #Religious Heritages
+ heritage_christian: "キリスト教"
+ heritage_dharmic: "ダルマ"
+ heritage_humanist: "人本主義"
+ heritage_indigenous: "民族宗教"
+ heritage_islamic: "イスラム教"
+ heritage_jewish: "ユダヤ教"
+ heritage_materialist: "物質主義"
+ heritage_taoic: "道教"

@@ -12,7 +12,7 @@
 
   krakow.2.t: "The Grand Duchy of Kraków"
   krakow.2.d: "With the revolution in Kraków crushed, the former Free City has been integrated into the Kingdom of Galicia and Lodomeria as the Grand Duchy of Kraków. This act has spurred controversy in Europe for violating the Treaty of Vienna."
-  krakow.2.f: ""Any plan conceived in moderation must fail when the circumstances are set in extremes."" #- Klemens von Metternich
+  krakow.2.f: ""Any plan conceived in moderation must fail when the circumstances are set in extremes."\n\n— Klemens von Metternich"
   krakow.2.a: "Focus on mitigating the diplomatic consequences."
   krakow.2.b: "Continue to repress their radical ideology."
 
@@ -34,7 +34,7 @@
 
   red_scare.2.t: "The Nationalization of Women"
   red_scare.2.d: "Following government hearings into the activities of the communist regime in [SCOPE.sCountry('red_scare_target_nation').GetName], newspapers across [ROOT.GetCountry.GetName] have reported sensational stories about all adult women in [SCOPE.sCountry('red_scare_target_nation').GetName] being nationalized as common property."
-  red_scare.2.f: ""I saw it myself, before I fled. The Red authorities have mandated collective orgies, within which there is no respect for virtuous women. All women are forced to participate - the Ministry of Free Love registers every one of them, under threat of the bayonet."\n\n"And you claim that, and I quote, "a girl, having reached her eighteenth year, is to become state property at once"?"\n\n"Yes, yes. Their names are placed on a bulletin board in their towns, and all eligible men are permitted to marry them at will, as many as they wish...""
+  red_scare.2.f: ""I saw it myself, before I fled. The Red authorities have mandated collective orgies, within which there is no respect for virtuous women. The Ministry of Free Love forces them all to participate under threat of bayonet."\n\n"To be clear, you are saying that a girl in [SCOPE.sCountry('red_scare_target_nation').GetName], having reached her eighteenth year, at once becomes state property?"\n\n"Yes, yes. Their names are placed on a bulletin board in their towns, and all eligible men are permitted to marry them at will, as many as they wish..."\n\n"But, even married, they must still attend the orgies?""
   red_scare.2.a: "The Communists are coming for our women!"
   red_scare.2.b: "This testimony seems highly suspect."
 
@@ -120,7 +120,7 @@
 
   red_scare.20.t: "A Subtler Terror"
   red_scare.20.d: "After years of competing propaganda and social mistrust, the Red Scare has ebbed to a more manageable level. Whilst many remain watchful for communist activity, the days of unmatched fear in [ROOT.GetCountry.GetName] have come to a relative end."
-  red_scare.20.f: ""We have passed beyond the stage in political development when heresy-hunting is a permitted sport."" #- Charles Evans Hughes
+  red_scare.20.f: ""We have passed beyond the stage in political development when heresy-hunting is a permitted sport."\n\n— Charles Evans Hughes"
   red_scare.20.a: "Our nation will be made safe."
   red_scare.20.b: "We must repent for our own excesses."
 
@@ -469,7 +469,7 @@
   radicalise_haitian_caribenos_tt: "A wave of [SCOPE.sCulture('caribeno_scope').GetName] nationalist agitation will pass through #bold Haiti#!"
 
   je_andean_federation: "Bolívar's Ambition"
-  je_andean_federation_reason: "The greatest extent of the ambitions of Simón Bolívar was his proposed Federation of the Andes, a great confederation of all Latin America. Despite its initial failure at the Congress of Panama, the winds have changed, and the threat of European and American enroachment has created the environment for a possible revival of the idea."
+  je_andean_federation_reason: "The greatest extent of the ambitions of Simón Bolívar was his proposed Federation of the Andes, a great confederation of all Latin America. Despite its initial failure at the Congress of Panama, the winds have changed, and the threat of European and American encroachment has created the environment for a possible revival of the idea."
   has_rejected_andean_federation_tt: "We have rejected the establishment of the #bold Federation#!"
   formed_andean_federation_tt: "Has formed the #variable Federation of the Andes#!"
   andean_major_formation_available_tt: "The #variable Federation of the Andes#! Major [concept_nation_formation] will become available"
@@ -785,6 +785,7 @@
   usa_two_party_system: "American Two-Party System"
   from_southern_interests: "From Southern Interests"
   from_northern_interests: "From Northern Interests"
+  from_northern_democrats: "From Northern Democrats"
 
   communism.10.t: "Oppressor and Oppressed"
   communism.10.d: "As our industries have grown more and more crucial to the future of the [ROOT.GetCountry.GetAdjective] nation, so too has the working class. Disparate workers' movements have begun to unite under the cause for socialism."
@@ -799,8 +800,8 @@
   communism.11.a: "A triumph for all of [ROOT.GetCountry.GetNameNoFormatting]."
   communism.11.b: "Things will never be the same again."
 
-  communism_je_1_fail_tt: "[GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_anarchist').GetName], and [GetIdeology('ideology_vanguardist').GetName] characters will appear much more frequently in [SCOPE.sCountry('root_country').GetName]"
-  communism_je_1_complete_tt: "The [SCOPE.sCountry('root_country').GetAdjective] socialist movement will be weakened for the near future"
+  communism_je_1_fail_tt: "[GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_anarchist').GetName], and [GetIdeology('ideology_vanguardist').GetName] characters will appear much more frequently in [ROOT.GetCountry.GetNameNoFlag]"
+  communism_je_1_complete_tt: "The [ROOT.GetCountry.GetAdjectiveNoFlag] socialist movement will be weakened for the near future"
 
   modifier_defeated_initial_socialist_movement: "Victories Against Socialism"
   modifier_defeated_initial_socialist_movement_worries: "The War to Come"

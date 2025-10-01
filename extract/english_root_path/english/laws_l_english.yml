@@ -62,7 +62,7 @@
  ideology_theocrat_desc:0 "#lore This leader believes in a state run by the church in line with doctrinal values.#!"
 
  ideology_market_liberal:0 "Market Liberal"
- ideology_market_liberal_desc:0 "#lore This leader believes that the invisible hand of the free market should be the guiding force of the nation's economy."
+ ideology_market_liberal_desc:0 "#lore This leader believes that the invisible hand of the free market should be the guiding force of the nation's economy.#!"
  
  ideology_liberal_leader:0 "Democrat"
  ideology_liberal_leader_desc:0 "#lore This leader prioritizes the institution of democracy and opposes uncontested rule over the nation. #!"
@@ -84,8 +84,8 @@
  ideology_populist:0 "Populist"
  ideology_populist_desc:0 "#lore This group believes in governance by the people and seeks to expand the franchise to all social classes.#!"
   
- ideology_stratocratic:0 "Stratocratic"
- ideology_stratocratic_desc:0 "#lore This group favors maintaining a hierarchy in society through traditional forms of taxation and labor relations.#!"
+ ideology_hierarchic:0 "Hierarchic"
+ ideology_hierarchic_desc:0 "#lore This group favors maintaining a hierarchy in society through traditional forms of taxation and labor relations.#!"
   
  ideology_oligarchic:0 "Oligarchic"
  ideology_oligarchic_desc:0 "#lore This group favors monopolizing power in the hands of a secular state controlled by local oligarchies.#!"
@@ -120,6 +120,9 @@
  ideology_patriotic:0 "Patriotic"
  ideology_patriotic_desc:0 "#lore This group is fiercely devoted to its country and wants harsh measures against those who would spread dissent.#!"
   
+ ideology_military_absolutist: "Military Absolutist"
+ ideology_military_absolutist_desc: "#lore This group supports harsh measures against those who threaten the stability of the state, and denounces parliamentary rule as an impediment to this end.#!"
+
  ideology_liberal:0 "Liberal"
  ideology_liberal_desc:0 "#lore This group views liberty and legal equality as important values to be safeguarded.#!"
   
@@ -137,6 +140,9 @@
  
  ideology_pro_slavery:0 "Pro-Slavery"
  ideology_pro_slavery_desc:0 "#lore This group views slavery as a necessary part of a well-functioning society.#!"
+
+ ideology_pro_slavery_colonial: "$ideology_pro_slavery$"
+ ideology_pro_slavery_colonial_desc: "#lore This group views slavery as a necessary and profitable component of colonial economies.#!"
   
  ideology_reactionary:0 "Reactionary"
  ideology_reactionary_desc:0 "#lore This group is nostalgic for a past, real or imagined, where just kings ruled over a uniform society.#!"
@@ -200,6 +206,15 @@
  ideology_malthusian: "Malthusian"
  ideology_malthusian_desc: "#lore This group subscribes to the economic theories established by Thomas Malthus, believing any effort to alleviate poverty to be made self-defeating due to consequent population growth.#!"
 
+ ideology_ibadi_shura: "Shura"
+ ideology_ibadi_shura_desc: "#lore This group believes that good jurisprudence is based on the Islamic principle of #italic shura#!, consultation and collective decision-making, and that the foundation of any solid government relies on the support and deliberation of learned scholars and landowning notables.#!"
+
+ ideology_ibadi_imamate: "Imamic"
+ ideology_ibadi_imamate_desc: "#lore This group supports the leadership of an #italic Imam#!, and promotes the political supremacy of the Imamate and an ideal political-religious order.#!"
+
+ ideology_technocratic: "Technocratic"
+ ideology_technocratic_desc: "#lore This group supports the reordering of the social system along scientific lines, favoring technocratic governance and a rationalized economy.#!"
+
  liberal_and_egalitarian_amended_tt: "The [GetIdeology('ideology_liberal').GetName] and [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','$concept_ideologies$')]' stances on the $lawgroup_rights_of_women$ will change"
 
  # Movement Ideologies
@@ -208,6 +223,9 @@
 
  ideology_pro_slavery_movement: "$ideology_pro_slavery$"
  ideology_pro_slavery_movement_desc: "#lore This movement views slavery as a necessary part of a well-functioning society, and supports the institutions that uphold it.#!"
+
+ ideology_pro_slavery_colonial_movement: "$ideology_pro_slavery$"
+ ideology_pro_slavery_colonial_movement_desc: "#lore This group views slavery as a profitable component of colonial economies, and supports the institutions that uphold it.#!"
 
  ideology_absolutist_movement: "Absolutist"
  ideology_absolutist_movement_desc:1 "#lore This movement is loyal to the institution of the monarchy, and supports vesting it with absolute power.#!"
@@ -233,14 +251,20 @@
  ideology_fascist_movement: "$ideology_fascist$"
  ideology_fascist_movement_desc: "#lore This movement seeks the establishment of a totalitarian state founded upon corporatist principles, and the revival of perceived traditional, authoritarian values in a modern context.#!"
 
+ ideology_integralist_movement: "$ideology_integralist$"
+ ideology_integralist_movement_desc: "#lore This movement desires a return to traditionalist Catholic values in governance, and rejects conventional conservatism and parliamentarianism.#!"
+
  ideology_corporatist_movement: "$ideology_corporatist$"
  ideology_corporatist_movement_desc: "#lore This movement supports the resolution of class conflict through concessions from the upper class and collaboration between different social groups.#!"
 
  ideology_liberal_movement: "Liberal"
- ideology_liberal_movement_desc:1 "#lore This movement values the institution of democracy, and supports guaranteeing essential freedoms for citizens. #!"
+ ideology_liberal_movement_desc: "#lore This movement values the institution of democracy, and supports guaranteeing essential freedoms for citizens. #!"
  
+ ideology_liberal_republican_movement: "Republican"
+ ideology_liberal_republican_movement_desc: "#lore This movement holds democratic and republican ideals, and supports guaranteeing essential freedoms for citizens. #!"
+
  ideology_radical_movement: "Radical"
- ideology_radical_movement_desc:2 "#lore This movement strives for radical liberal reforms advancing democratic ideals. #!"
+ ideology_radical_movement_desc: "#lore This movement strives for radical liberal reforms advancing democratic ideals. #!"
 
  ideology_nihilist_movement: "$ideology_nihilist$"
  ideology_nihilist_movement_desc: "#lore This movement prioritizes the questioning and overturning of traditionalist social order and institutions at all costs, seeking to clear the ground for a comprehensively revolutionary society.#!"
@@ -296,6 +320,8 @@
  ideology_legitimist_movement: "$ideology_legitimist$"
  ideology_legitimist_movement_desc: "#lore This movement yearns for the time of the French kings of old, before the Reign of Terror sullied everything.#!"
 
+ ideology_national_liberal_movement: "National Liberal"
+ ideology_national_liberal_movement_desc: "#lore This movement wishes to unify its culture's homelands under a nation-state founded upon liberal values.#!"
 
   # Government Principles group
  lawgroup_governance_principles:0 "Governance Principles"
@@ -361,12 +387,16 @@
  law_elder_council:0 "Elder Council"
  law_elder_council_desc:0 "The most venerated men have a say in the nation's governance."
  law_anarchy:0 "Anarchy"
- law_anarchy_desc:1 "Local communities govern their own affairs and send representatives to serve limited terms on larger cooperative councils. With no formal hierarchies central authority is difficult to exercise."
+ law_anarchy_desc:2 "Local communities govern their own affairs and send representatives to serve limited terms on larger cooperative councils. With no formal hierarchies, central authority is difficult to exercise."
  law_single_party_state: "Single-Party State"
  law_single_party_state_desc: "The state is governed by a single legal political party, which has a monopoly on all political activity within the nation."
  ruler_in_party_tt: "The [concept_ruler] of this nation is a member of an [concept_interest_group] that has an active political [concept_party]"
  sps_no_party_tt: "This nation has no active [Concept('concept_party', 'Political Parties')]"
  sps_government_reshuffle_tt: "[concept_government] composition will be updated with members of the single legal [concept_party]"
+ law_organic_regulation: "Organic Regulation"
+ law_organic_regulation_desc: "This country's government is constituted through a set of "organic regulations" imposed by the Great Powers. Its Head of State is appointed by representatives of the boyar oligarchy."
+ law_neo_absolutism: "Neo-Absolutism"
+ law_neo_absolutism_desc: "The Head of State rules as an enlightened autocrat, with their rule facilitated by a modern, centralized state apparatus."
   
   # Voting System group
  law_first_past_the_post:0 "First Past The Post"
@@ -398,7 +428,7 @@
  law_compulsory_primary_school:0 "Compulsory Primary School"
  law_compulsory_primary_school_desc:0 "All children must attend several years of primary school during which they're prohibited from working."
   
-  # Slavery group
+ # Slavery group
  lawgroup_slavery:0 "Slavery"
  lawgroup_slavery_desc:0 "People as property."
   
@@ -410,6 +440,8 @@
  law_slave_trade_desc:0 "Demand for cheap labor is fulfilled through a dehumanizing trade in foreign bodies."
  law_legacy_slavery:0 "Legacy Slavery"
  law_legacy_slavery_desc:0 "As a compromise between abolitionists and slaveholders, the institution of slavery may continue as long as it does not expand."
+ law_colonial_slavery: "Colonial Slavery"
+ law_colonial_slavery_desc: "The institution of slavery is legal in this country's colonies. Any slave that sets foot upon the mainland is made free."
   
   # Church and State group
  lawgroup_church_and_state:0 "Church and State"
@@ -423,21 +455,27 @@
  law_total_separation_desc:0 "No church or faith may interfere in government functions. No religion may be discriminated against."
  law_atheist_state:0 "Atheist State"
  law_atheist_state_desc:0 "Preaching religious belief is prohibited, and practicing one is frowned upon. All religions are discriminated against."
+ law_millet_system: "Millet System"
+ law_millet_system_desc:1 "The state upholds Sunni Islam as the official religion. Adherents of other Abrahamic religions are grouped under confessional communities, exempting them from conscription and granting them legal autonomy in return for paying a religious tax."
+ law_people_of_the_book: "People of the Book"
+ law_people_of_the_book_desc: "The state adheres to the principles of Islamic law. Adherents of other Abrahamic religions are recognized as #italic Dhimmi#!, exempting them from conscription and granting them legal autonomy in return for paying a religious tax."
   
   # Citizenship group
  lawgroup_citizenship:0 "Citizenship"
  lawgroup_citizenship_desc:0 "Extending the rights of citizenship."
   
  law_ethnostate:0 "Ethnostate"
- law_ethnostate_desc:0 "All foreign cultures are discriminated against."
+ law_ethnostate_desc:1 "The state considers itself inextricably tied to a certain ethnicity, with other ethnicities barred from citizenship. All foreign cultures are discriminated against."
  law_national_supremacy:0 "National Supremacy"
- law_national_supremacy_desc:0 "Foreign cultures are discriminated against unless they share both heritage and language (or other customs)."
+ law_national_supremacy_desc:1 "The state defines its citizens by compliance with a certain national identity, which is held to be supreme over all others. Foreign cultures are discriminated against unless they share both heritage and language (or other customs)."
  law_racial_segregation:0 "Racial Segregation"
- law_racial_segregation_desc:0 "Foreign cultures of different heritage are discriminated against."
+ law_racial_segregation_desc:1 "The state considers citizenship rights to be tied to the concept of shared racial heritage. Foreign cultures of different heritage are discriminated against."
  law_cultural_exclusion:0 "Cultural Exclusion"
- law_cultural_exclusion_desc:0 "Foreign cultures with nothing in common with your primary cultures are discriminated against."
+ law_cultural_exclusion_desc:1 "The state offers citizenship rights to people of all cultural identities, whilst considering a certain official identity to be paramount. Foreign cultures with nothing in common with your primary cultures are discriminated against."
  law_multicultural:0 "Multiculturalism"
- law_multicultural_desc:0 "No cultures are discriminated against."
+ law_multicultural_desc:1 "The state upholds equal citizenship rights for people of all cultural identities, and makes no attempt to officially uphold a certain culture over others. No cultures are discriminated against."
+ law_subjecthood: "Subjecthood"
+ law_subjecthood_desc: "The state defines its people foremostly as subjects of a sovereign, making little effort to encourage any official nationality. Cultures are largely left to their own devices within their own communities."
 
   # Caste Hegemony, a Social Stratification law group
  lawgroup_caste_hegemony: "Caste Hegemony"
@@ -577,6 +615,8 @@
  law_meritocratic_bureaucracy_desc:0 "Bureaucrats vie for positions of power through merit. Over time this creates enormous, byzantine administrations."
  law_elected_bureaucrats:0 "Elected Bureaucrats"
  law_elected_bureaucrats_desc:0 "Local governors are elected by their constituents, decentralizing power while making citizens easier to manage."
+ law_crownland_diets: "Crownland Diets"
+ law_crownland_diets_desc: "Local governance is carried out by traditional assemblies elected from the ranks of the regional nobility."
   
   # Colonization
  lawgroup_colonization:0 "Colonization"
@@ -594,11 +634,11 @@
  lawgroup_internal_security_desc:0 "Keeping your own affairs in order."
   
  law_no_home_affairs:0 "No Home Affairs"
- law_no_home_affairs_desc:0 "The state makes no special attempts to put a stop to unrest and uprisings."
+ law_no_home_affairs_desc:1 "The state relies upon conventional military and police forces to suppress unrest and uprisings."
  law_national_guard:0 "National Guard"
- law_national_guard_desc:0 "The state may use military force to suppress domestic unrest."
+ law_national_guard_desc:1 "The state maintains an independent volunteer force of citizen-soldiers charged with upholding public order."
  law_secret_police:0 "Secret Police"
- law_secret_police_desc:0 "The secret police keep close track of radical elements and dissenters."
+ law_secret_police_desc:1 "The state possesses a secret police bureau tasked with monitoring dissidents and investigating political crimes."
  law_guaranteed_liberties:0 "Guaranteed Liberties"
  law_guaranteed_liberties_desc:1 "The state's home affairs bureau is solely focused on addressing the grievances of the citizens, and is forbidden from investigating or arresting them without due cause."
   
@@ -618,6 +658,21 @@
  
  enact_law_radical_leftist_government_warning_desc:0 "@warning! Enacting this [concept_law] may cause [Concept('concept_country', '$concept_countries$')] without a similar form of $lawgroup_governance_principles$ to become aggressive against us."
  enact_law_radical_leftist_economy_warning_desc:0 "@warning! Enacting this [concept_law] may cause [Concept('concept_country', '$concept_countries$')] without a similar form of $lawgroup_economic_system$ to become aggressive against us."
+
+ # Labour Associations
+ lawgroup_labour_associations: "Labor Associations"
+ lawgroup_labour_associations_desc: "Regulations placed upon worker's and craftsmen's associations."
+
+ law_guild_system: "Guild System"
+ law_guild_system_desc: "A system in which eligibility for employment within certain fields is dependent upon membership of a formalized craft or merchant guild."
+ law_combination_acts: "Combination Acts"
+ law_combination_acts_desc: "The formation of labor associations of any kind is prohibited by law."
+ law_anti_strike_laws: "Anti-Strike Laws"
+ law_anti_strike_laws_desc: "Whilst the formation of labor associations is permitted, strikes and certain forms of collective bargaining are prohibited."
+ law_right_to_associate: "Right to Associate"
+ law_right_to_associate_desc: "No especial restrictions are placed upon the formation and activity of labor associations."
+ law_corporatized_unions: "Corporatized Unions"
+ law_corporatized_unions_desc: "Labor associations are placed under the control of the state, through either mandatory amalgamation into a single national union or the incorporation of existing associations into state functions."
 
 # Luddites
  law_industry_banned: "Industry Banned"
@@ -642,6 +697,8 @@
  law_commercialized_agriculture_desc: "Agriculture is a business like any other, subject to market forces and owned by capital."
  law_collectivized_agriculture: "Collectivized Agriculture"
  law_collectivized_agriculture_desc:1 "Agricultural land is organized into plots worked by groups of farmers as a joint enterprise."
+ law_manorialism: "Manorialism"
+ law_manorialism_desc: "Agricultural land is owned by hereditary elites. Tenants are granted freedom of movement, but are obliged to perform unpaid labor for their landlords."
 
  pm_homesteading: "Homesteading"
  pm_homesteading_building_subsistence: "Homesteading"

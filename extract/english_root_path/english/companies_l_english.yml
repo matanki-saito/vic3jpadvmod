@@ -1,5 +1,10 @@
 ﻿l_english:
-
+ company_category_capitalist_owned: "Full Capitalist Ownership"
+ company_category_aristocrat_owned: "Partial Aristocratic Ownership"
+ company_category_shopkeeper_owned: "Partial Shopkeeper Ownership"
+ company_category_academic_owned: "Partial Academic Ownership"
+ company_category_bureaucrat_owned: "Partial Bureaucrat Ownership"
+ 
  COMPANY_ESTABLISHED: "Established on #b [Company.GetEstablishmentDate.GetString]#!"
  COMPANIES: "[Concept('concept_company','$concept_companies$')]"
  COMPANIES_HEADER: "[SelectLocalization(GetVariableSystem.Exists('hide_current_companies'), 'SELECT_COMPANY', 'COMPANIES')]"
@@ -21,6 +26,7 @@
  COMPANY_BUILDING_TYPE_LIST_ITEM: "[BUILDING_TYPE.GetName]"
  COMPANY_CANNOT_ESTABLISH_NO_STATE: "There is no available [concept_state] for [GetBuildingType('building_company_headquarter').GetName]"
  COMPANY_CANNOT_ESTABLISH_BY_COMPANY: "#b Not#! allowed for a [GetSubjectType('subject_type_chartered_company').GetName] like [Country.GetName]"
+ COMPANY_CANNOT_ESTABLISH_IS_INSURRECTIONARY: "[concept_insurrectionary] [Concept('concept_country', '$concept_countries$')] cannot establish [Concept('concept_company','$concept_companies$')]"
 
  COMPANY_FASTPROSPERITY_IS_ACTIVE: ""fastprosperity" is active"
  
@@ -54,6 +60,7 @@
  COUNTRY_THROUGHPUT_BONUS: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VALUE|=+1%$#!#! from [Country.GetName]"
  COMPANY_BONUS_PENALTY_MULT: "$VAL|=+0%$ penalty from [COUNTRY.GetName] exceeding the limit of companies that can be established (currently [COUNTRY.GetNumCompanies|v] out of [COUNTRY.GetMaxNumCompanies|v] resulting in multiplier of #n x[Negate('(CFixedPoint)$PENALTY$')]#!)"
  ALREADY_ESTABLISHED_COMPANY: "Has not already established the [COMPANY_TYPE.GetName|v] [concept_company]"
+ OTHER_COUNTRY_ALREADY_ESTABLISHED_COMPANY: "[COUNTRY.GetName] has not already established the [COMPANY_TYPE.GetName|v] [concept_company]"
  HAS_NOT_ESTABLISHED_COMPANY: "We have not established the [COMPANY_TYPE.GetName|v] [concept_company]"
  CREATE_COMPANY_DESC: "#header Establish [CompanyType.GetName|v]#!\n$TOOLTIP_DELIMITER$\nEstablish the [CompanyType.GetName|v] [concept_company][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(IsValid(GetPlayer.CreateCompany(CompanyType.Self))), 'CREATE_COMPANY_ERRORS'))]"
  REMOVE_COMPANY_DESC: "#header Disband [CompanyType.GetName|v]#!\n$TOOLTIP_DELIMITER$\nDisband the [CompanyType.GetName|v] [concept_company][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(IsValid(GetPlayer.RemoveCompany(CompanyType.Self))), 'REMOVE_COMPANY_ERRORS'))]"
@@ -73,7 +80,7 @@
  
 
  COMPANY_PROSPERITY_TOOLTIP: "#header [Company.GetName] [concept_prosperity]#!\n$COMPANY_PROSPERITY_FORMATTED$\n$TOOLTIP_DELIMITER$\nThe [concept_prosperity] Target is [Company.GetTargetProsperity|v1], due to:#indent_newline:2   \n[Company.GetTargetProsperityBreakdown]#!"
- 
+
  COMPANY_PROSPERITY_FORMATTED: "@prosperity! [Company.GetProsperity|v0] [AddLocalizationIf(NotEqualTo_CFixedPoint(Company.GetProsperity, Company.GetTargetProsperity), 'COMPANY_TARGET_PROSPERITY_LINE')]"
  COMPANY_TARGET_PROSPERITY_LINE: "@arrow_right! [Company.GetTargetProsperity|v0] [concept_prosperity] $FORMATTED_PROSPERITY_CHANGE$"
  FORMATTED_PROSPERITY_CHANGE: "(#tooltippable;tooltip:[Company.GetTooltipTag],COMPANY_PROSPERITY_CHANGE_TOOLTIP [SelectLocalization(IsZero_CFixedPoint(Company.GetProsperityChange), 'PLUS_MINUS_ZERO', 'PROSPERITY_CHANGE')]#! every week)"
@@ -82,7 +89,7 @@
 
   COMPANY_TARGET_PROSPERITY_TOOLTIP: "[Company.GetTargetProsperityDesc]"
  COMPANY_PROSPERITY_CHANGE_TOOLTIP: "[Company.GetProsperityChangeDesc]"
- 
+
  PLUS_MINUS_ZERO: "#v +/-0#!"
  PROSPERITY_CHANGE: "[Company.GetProsperityChange|=+]"
  COMPANY_TYPE_NUM_BUILDING_LEVELS: "[CompanyType.GetNumBuildingLevels|v] [concept_building] levels"
@@ -413,3 +420,15 @@
  company_imperial_ethiopian_railways: "Imperial Ethiopian Railway Company"
  company_lanfang_kongsi: "Lanfang Kongsi"
  company_paradox: "John Paradox & Company"
+
+ # National Awakening Companies
+ company_united_tobacco_factories: "Săedineni Tyutyunevi Fabriki AD"
+ company_mate_gavrilovic: "Mate Gavrilović i drug"
+ company_stabilimento_tecnico_di_fiume: "Stabilimento Tecnico di Fiume"
+ company_klanicko_drustvo: "Klaničko Društvo"
+ company_jakub_klein: "Jakub Klein a spol."
+ company_elso_budapesti_gozmalom: "Első Budapesti Gőzmalom Rt."
+ company_witkowitzer_bergbau_und_huttengewerkschaft: "Witkowitzer Bergbau- und Hüttengewerkschaft"
+ company_oesterreichisch_alpine_montangesellschaft: "Oesterreichisch-Alpine Montangesellschaft"
+ company_getzner_mutter: "Getzner, Mutter & Cie"
+ company_erste_brunner: "Erste Brünner Maschinenfabriks-Gesellschaft"

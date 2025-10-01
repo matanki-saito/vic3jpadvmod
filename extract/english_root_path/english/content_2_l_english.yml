@@ -75,7 +75,7 @@
  texan_war_of_independence.3.f:0 ""Santa Anna, alive, can be of incalculable benefit to Texas; Santa Anna, dead, would just be another casualty.""
  texan_war_of_independence.3.a:0 "Use Santa Anna to press for a deal."
  texan_war_of_independence.3.b:0 "Let him run back to Mexico, we fight on!"
- 
+
  notification_santa_anna_captured_notification_name:0 "Santa Anna Captured"
  notification_santa_anna_captured_notification_desc:0 "[SCOPE.sCountry('texas_scope').GetName] has captured the [SCOPE.sCountry('mexico_scope').GetAdjective] General Santa Anna, who has used his personal power to negotiate an end to the Texan Independence War"
  notification_santa_anna_captured_notification_tooltip:0 "#header $santa_anna_captured_notification_name$#!\n$TOOLTIP_DELIMITER$\n$santa_anna_captured_notification_desc$"
@@ -109,8 +109,8 @@
  native_resettlement.5.a:0 "Let us pray that this shall never happen again."
 
  je_indian_removal:1 "The Indian Removal"
- je_indian_removal_reason:2 "Settlers want the Cherokee nation to vacate coveted land. The President, in defiance of the Supreme Court, has ordered that the Cherokee nation should migrate to the Indian Territory in west."
-  
+ je_indian_removal_reason:2 "Settlers want the Cherokee nation to vacate coveted land. The President, in defiance of the Supreme Court, has ordered that the Cherokee nation should migrate to the Indian Territory."
+
  USA_paying_removal_costs:0 "Paying for Removal"
  USA_paying_for_provisions:0 "Paying for Provisions"
  USA_accepted_ross_petition:1 "Accepted the Petition of John Ross"
@@ -310,7 +310,7 @@
  economy_laws.3.b:0 "We have no failures, only successes!"
 
  economy_laws.4.t:0 "Indefensible Extortion"
- economy_laws.4.d:1 "An orator from the [SCOPE.gsInterestGroup('pro_free_trade_ig').GetName] has gone on a speaking tour across the nation, denouncing [SCOPE.sLawType('standing_law_scope').GetName] and praising the value of Free Trade."
+ economy_laws.4.d:1 "An orator from the [SCOPE.gsInterestGroup('pro_free_trade_ig').GetName] has gone on a speaking tour across the nation, denouncing [SCOPE.sLaw('standing_law_scope').GetName] and praising the value of Free Trade."
  economy_laws.4.f:0 ""When we consider that the theory of our great system guarantees to everyone the full enjoyment of all the fruits of their industry and enterprise, it is clear that anything other than the free flow of goods is an indefensible extortion and culpable betrayal of our values.""
  economy_laws.4.a:0 "We work towards a common goal!"
  economy_laws.4.b:0 "The [SCOPE.gsInterestGroup('pro_free_trade_ig').GetName] has a truly remarkable speaker among them."
@@ -518,7 +518,7 @@
  ace_dragon:0 "Dragon"
  ace_wind:0 "Wind"
  ace_cowboy:0 "Cowboy"
- 
+
  je_submarines:0 "The War Beneath the Waves"
  je_submarines_reason:0 "Advancements in submersible technology mean that naval warfare does not need to be waged solely on the surface of the sea any longer."
  naval_tech_events.4.t:0 "Supreme Submarines"
@@ -544,7 +544,7 @@
  naval_traditions_upheld:0 "Naval Traditions Upheld"
 
  je_unite_the_principalities: "Unite the Principalities"
- je_unite_the_principalities_reason: "The Danubian principalities rouse from their long lethargy. The rights and interests of the homeland cry out for liberation; the good and happiness of the Romanian nation demands action! We must pursue union, and help build a single country for our people. Caution must be exercised, however—we cannot upset any [Concept('concept_great_power', '$concept_great_powers$')] in the process."
+ je_unite_the_principalities_reason: "The Danubian principalities have roused from their long lethargy. The rights and interests of the homeland cry out for liberation; the good and happiness of the Romanian nation demands action! We must pursue union, and help build a single country for our people. Caution must be exercised, however—we cannot upset any [Concept('concept_great_power', '$concept_great_powers$')] in the process."
  je_unite_the_principalities_button: "Press for the union"
  je_unite_the_principalities_button_desc: "The first step in unifying the Romanian nation is establishing a single ruler among our people. Ensuring common leadership, even if our countries remain separate on paper, will do much for the cause of unification."
  je_unite_the_principalities_united_two_principalities_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has formed a [concept_personal_union] over another #bold Romanian#! country or made it a [concept_puppet] of [SCOPE.GetRootScope.GetCountry.GetName]."
@@ -580,7 +580,7 @@
  romania.2.a.ttb: "[SCOPE.sCountry('romania_lesser_partner').GetName] shall become our [concept_puppet]."
 
  romania.3.t: "Awaken Thee, Romanian!"
- romania.3.d: "Our union with [SCOPE.sCountry('romania_lesser_union_partner').GetName] is complete. Our bonds are solid, our will is unyielding—together, we are #bold Romania#!." 
+ romania.3.d: "Our union with [SCOPE.sCountry('romania_lesser_union_partner').GetName] is complete. Our bonds are solid, our will is unyielding—together, we are #bold Romania#!."
  romania.3.d2: "Our union with [SCOPE.sCountry('romania_lesser_union_partner').GetName] and [SCOPE.sCountry('transylvania_union_partner').GetName] is complete. Our bonds are solid, our will is unyielding—together, we are #bold Romania#!."
  romania.3.f: ""Wake up, Romanians, from your sleep of death," roared the crowd.\n\n"Into which you've been sunk by the barbaric tyrants.\nNow or never, sow a new fate for yourself\nTo which even your cruel enemies will bow!"\n\nTricolors flapped in the wind. Children were being hoisted into the air to etch the moment into their memories. Together, people were singing a song they had never heard before, but knew the words in their hearts already."
  romania.3.a: "Unity through life and brotherhood through death!"
@@ -626,7 +626,7 @@
  subject_interactions.2.c: "Democratize [SCOPE.sCountry('target_country').GetName]."
  subject_interactions.2.dd: "We need to reform the markets of [SCOPE.sCountry('target_country').GetName]."
  subject_interactions.2.e: "[SCOPE.sCountry('target_country').GetName] shall become the vanguard of the revolution!"
- 
+
  je_seminole_wars: "The Seminole Wars"
  je_seminole_wars_reason: "By the terms of the Adams-Onis Treaty, Florida is ours to govern as we see fit, and by the terms of the Treaty of Payne's Landing the [SCOPE.sCountry('seminoles').GetName] should be removed to reservations further west. Led by stubborn chiefs, however, they refuse to either submit to our rule or relocate themselves to [SCOPE.sStateRegion('oklahoma_region').GetName]. We must find a way to bring Florida fully under our control."
  je_seminole_wars_removal: "Every [SCOPE.sCulture('seminole_peoples').GetName] [concept_pop] in [SCOPE.sState('flarda').GetName] will move to [SCOPE.sStateRegion('oklahoma_region').GetName]"
@@ -637,3 +637,57 @@
 
  florida_resettlement: "Florida Resettlement"
  anti_expedition_war: "Anti-Expedition War"
+
+ je_lion_of_the_zanj: "Lords of the Zanj"
+ je_lion_of_the_zanj_reason: "Our control of East Africa is more notional than real, but few other nations realize that. Our first priority should be to solidify our hold on our mainland territories, either through diplomatic maneuvering and recognition, or direct conquest and expanding our real presence in the region. If we fail, all of [ROOT.GetCountry.GetNameNoFormatting] could unravel overnight."
+ je_lion_of_the_zanj_claims: "[ROOT.GetCountry.GetName] gains [Concept('concept_claim', '$concept_claims$')] on each following [concept_state_region], if that state region is not fully owned by [ROOT.GetCountry.GetName]:\n• [SCOPE.sStateRegion('kenya_region').GetName]\n• [SCOPE.sStateRegion('rift_valley_region').GetName]\n• [SCOPE.sStateRegion('zanzibar_region').GetName]\n• [SCOPE.sStateRegion('tanganyika_region').GetName]\n• [SCOPE.sStateRegion('lindi_region').GetName]"
+
+ #je_lion_of_the_zanj_homelands: "If all five [Concept('concept_state_region', '$concept_state_regions$')] are completely controlled by [ROOT.GetCountry.GetName], [SelectLocalization(SCOPE.sCulture('swahili_scope').IsPrimaryCultureIn(GetPlayer), 'je_lion_of_the_zanj_homelands_swahili','je_lion_of_the_zanj_homelands_bedouin')]"
+ je_lion_of_the_zanj_homelands_swahili: "If all five [Concept('concept_state_region', '$concept_state_regions$')] are completely controlled by [ROOT.GetCountry.GetName], [SCOPE.sStateRegion('rift_valley_region').GetName], [SCOPE.sStateRegion('tanganyika_region').GetName], and [SCOPE.sStateRegion('lindi_region').GetName] will become [SCOPE.sCulture('swahili_scope').GetName] [Concept('concept_homeland','$concept_homelands$')]"
+ je_lion_of_the_zanj_homelands_bedouin: "If all five [Concept('concept_state_region', '$concept_state_regions$')] are completely controlled by [ROOT.GetCountry.GetName], [SCOPE.sStateRegion('zanzibar_region').GetName] will become a [SCOPE.sCulture('omani_scope').GetName] [concept_homeland]"
+ je_lion_of_the_zanj_fail: "Any country with a capital outside of Africa controls any state or controls any subject with a state in:\n• [SCOPE.sStateRegion('kenya_region').GetName]\n• [SCOPE.sStateRegion('rift_valley_region').GetName]\n• [SCOPE.sStateRegion('zanzibar_region').GetName]\n• [SCOPE.sStateRegion('tanganyika_region').GetName]\n• [SCOPE.sStateRegion('lindi_region').GetName]"
+ je_lion_of_the_zanj_loss_of_territory: "Will cede control of every state that is not the capital to a neighboring colonizing power in the same [concept_state_region] if one is present, else it will become its own independent warlord state."
+
+ zanzibar.2.t: "The [SCOPE.sCountry('deag_scope').GetAdjective] East Africa Company"
+ zanzibar.2.d: "Some enterprising explorers and merchants aligned with colonial interests are claiming that it would be trivial to undercut [SCOPE.sCountry('zanzibar_scope').GetAdjectiveNoFormatting] authority in Africa by directly obtaining treaties with local chieftains in the region. By all accounts, [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting]'s authority is extremely weak — letting this happen will lead to us gaining [SCOPE.sStateRegion('zanzibar_tanganyika_scope').GetName] and the overnight collapse of [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] entirely."
+ zanzibar.2.f: ""I'm telling you, that man is half-crazy! That whole scheme of his will founder the moment we let go of his hand!"\n\nCigar smoke wafted in the dim light of the drawing room, as the two figures silently considered what to do. "Perhaps," pondered the other voice, "that just means we musn't let go of his hand." There was a slight pause, interrupted by a chuckle. "The Zanj is lovely in the spring, I've been told.""
+ zanzibar.2.a: "We can gain much from the end of [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting]."
+ zanzibar_2_notification: "[SelectLocalization(SCOPE.sCountry('zanzibar_scope').IsValid,'scoped_zanzibar_notification','dead_zanzibar_notification')]"
+ scoped_zanzibar_notification: "[SCOPE.sCountry('zanzibar_scope').GetName] has collapsed, losing the vast majority of its territory to local warlords and colonial powers."
+ dead_zanzibar_notification: "The East African state of #b Zanzibar#! has collapsed, the entirety of its territory falling to colonial powers and local warlords."
+ notification_zanzibar_2_player_notification_name: "Gains in East Africa"
+ notification_zanzibar_2_player_notification_desc: "[SelectLocalization(SCOPE.sCountry('zanzibar_scope').IsValid,'scoped_zanzibar_player_notification','dead_zanzibar_player_notification')]"
+ notification_zanzibar_2_player_notification_tooltip: "#header $notification_zanzibar_2_player_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_zanzibar_2_player_notification_desc$"
+ scoped_zanzibar_player_notification: "We have gained territory in [SCOPE.sStateRegion('ceded_state_region').GetName] due to the collapse of [SCOPE.sCountry('zanzibar_scope').GetName]."
+ dead_zanzibar_player_notification: "We have gained territory in [SCOPE.sStateRegion('ceded_state_region').GetName] due to the collapse of #b Zanzibar#!."
+ zanzibar.2.b: "We gain nothing from ruining [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting]."
+
+ ig_colonialists_pleased: "Colonialists Pleased"
+ ig_colonialists_displeased: "Colonialists Displeased"
+
+ zanzibar.3.t: "The Lion With No Pride"
+ zanzibar.3.d: "Colonial officials from [SCOPE.sCountry('deag_scope').GetName] have circumvented our outposts and obtained agreements with inland chiefs we have long claimed are under our rule. Our illusions of East African supremacy have collapsed overnight with this act, and local warlords and other colonial powers are rapidly dismantling what remains of our empire."
+ zanzibar.3.f: "The sharp beat of [SCOPE.sCountry('deag_scope').GetAdjectiveNoFormatting] boots marching through [ROOT.GetCountry.GetCapital.GetCityHubName] woke up the entire city. A growing crowd followed them as the soldiers proceeded to the main square, and gasped as they raised the flag of [SCOPE.sCountry('deag_scope').GetNameNoFormatting]. Who were these people? Where was the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]? #italic What was happening to [ROOT.GetCountry.GetNameNoFormatting]?#!"
+ zanzibar.3.a: "This is [ROOT.GetCountry.GetNameNoFormatting]'s darkest hour."
+ zanzibar.3.tt: "#r #b [SCOPE.sCountry('deag_scope').GetNameNoFormatting] has seized our empire and reduced us to little more than [ROOT.GetCountry.GetCapital.GetName]#!#!"
+
+ zanzibar.4.t: "Heirs of Queen Aziza"
+ zanzibar.4.d: "Through deft diplomacy and studious statecraft, we have secured control of the Zanj. Today, [ROOT.GetCountry.GetName] stands tall!"
+ zanzibar.4.f: "A new pamphlet was making the rounds among the coffeehouses and booksellers of [ROOT.GetCountry.GetCapital.GetCityHubName]: #italic The True Chronicles of Zanzibar#!. A folk history, it spoke of Unguja Island's glorious origins under the leadership of Queen Aziza, a mythical figure once almost completely forgotten. Like Aziza, Zanzibar itself had now climbed back from the shadows, reclaiming a place for itself in the spotlight, and that light could be seen on every beaming Zanzibari face as they read of their glorious past and dreamed of their glorious future."
+ zanzibar.4.a: "A glorious day for us all!"
+
+ zanzibar.5.t: "Tippu Tip"
+ zanzibar.5.d: "An ambitious slave and ivory merchant named Hamad ibn Muhammad al Murjabi asks for [ROOT.GetCountry.GetName]'s support in a colonial venture. He proposes establishing a new government in $STATE_CONGO_ORIENTALE$. If he is supported, his state will become our subject, but the great powers will disapprove and set our quest to become [Concept('concept_recognized_power','$concept_recognized_power_short$')] back considerably."
+ zanzibar.5.f: ""Why #italic do#! they call you 'Tippu Tip' anyways, Hamad?" asked the foreigner as the ivory caravan began to ford another river.\n\nThe trader smiled. "It is because of the sound of my guns, for you see — oh, blast, look!"\n\nHe bolted towards the water, calling for help from his caravan.\n\n"The boat full of slaves has sunk!" he cried. "What a pity! That was a fine canoe."" # TIPPU TIP ACTUALLY SAID THIS
+ zanzibar.5.a: "Tippu Tip cannot be supported, but we dare not condemn him."
+ zanzibar.5.b: "We welcome this foothold in the Congo."
+ zanzibar.5.c: "Restrain Tippu Tip and end this before it can begin!"
+ zanzibar.5.dd: "Convince Tippu Tip he can better further his interests here, with us."
+
+ zanzibar.6.t: "The End of Arab Rule?"
+ zanzibar.6.d: "The rise of [SCOPE.sCharacter('zan_ruler').GetFullName], a notable [SCOPE.sCulture('zan_ruler_culture').GetName] figure, marks the end of centuries of Arab rule. [SCOPE.sCulture('zan_swahili_culture').GetName] leaders are demanding that this monumental occasion be used to officially overturn [SCOPE.sCulture('zan_omani_culture').GetName] dominance within [ROOT.GetCountry.GetName]."
+ zanzibar.6.f: "The streets of Zanzibar's old Stone Town quarter were deserted. Everyone had shuttered themselves in their homes, waiting to see what tomorrow would bring.\n\nInitially, some had celebrated, and claimed that while a hundred tribes had lost their freedom centuries ago, a nation had regained theirs today. Others had looked out onto the island of white sands and blue waters and feared that if they did nothing today, they would lose everything tomorrow. They had all poured out into the streets, briefly, and soon ran into each other.\n\nToo many people had become abruptly aware that their neighbors were strangers to them, and so now they waited alone, side by side."
+ zanzibar.6.a: "[ROOT.GetCountry.GetName] belongs to the [SCOPE.sCulture('zan_swahili_culture').GetName] nation!"
+ zanzibar.6.b: "One [SCOPE.sCulture('zan_ruler_culture').GetName] [SCOPE.sCharacter('zan_ruler').GetPrimaryRoleTitle|l] is irrelevant — [ROOT.GetCountry.GetName] remains [SCOPE.sCulture('zan_omani_culture').GetName]."
+
+ can_reformer_movement_fury: "Reformer Movement Fury"

@@ -85,6 +85,8 @@
  ai_strategy_resource_expansion_desc: "[COUNTRY.GetName]は、天然資源の採掘に投資したいと考えています。"
  ai_strategy_industrial_expansion: "工業化"
  ai_strategy_industrial_expansion_desc: "[COUNTRY.GetName]は、都市部の産業基盤を構築したいと考えています。"
+ ai_strategy_montenegro_admin: "外国からの輸入の維持"
+ ai_strategy_montenegro_admin_desc: "[COUNTRY.GetName]は自国の小さな領土に必要不可欠な物資を供給し続けたいとしたいと考えています。"
  ai_strategy_infrastructure_expansion: "インフラの改善"
  ai_strategy_infrastructure_expansion_desc: "[COUNTRY.GetName]は国のインフラを改善したいと考えています。"
  ai_strategy_territorial_expansion: "主要領地の拡張"

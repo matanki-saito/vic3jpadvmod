@@ -35,7 +35,7 @@
 
  russo_chinese.3.t:0 "The Ruler of the East"
  russo_chinese.3.d:0 "By securing [SCOPE.sState('vladivostok_scope').GetName], the dream of [ROOT.GetCountry.GetAdjective] naval dominion over the Pacific has come closer to reality. The city of [SCOPE.sState('vladivostok_scope').GetPortHubName] will become our new primary port in the East."
- russo_chinese.3.f:0 "This port can be considered the best of all. It reminds many of Olga, but only smaller than it, warmer and more pleasant. However, there are the same oaks all around, and the same picturesque mountains. In the lowlands the rivers murmur; there are many springs on the banks. Our post set up the other day, with its white tents, looks good in a group of oak trees that have not yet been cut down and have only just been cleared." #- Sergei Maksimov 
+ russo_chinese.3.f:0 ""This port can be considered the best of all. It reminds many of Olga, but only smaller than it, warmer and more pleasant. However, there are the same oaks all around, and the same picturesque mountains. In the lowlands the rivers murmur; there are many springs on the banks. Our post set up the other day, with its white tents, looks good in a group of oak trees that have not yet been cut down and have only just been cleared."\n\n— Sergei Maksimov"
  russo_chinese.3.a:0 "Rebase the Siberian flotillas, with all due haste."
  russo_chinese.3.b:0 "The port of Vladivostok shall be the finest in our nation."
 
@@ -187,7 +187,7 @@
 
  caucasuswar.2.t:0 "Caucasian Supply Convoy Raided"
  caucasuswar.2.d:0 "A convoy dispatched to provide needed ammunition and supplies to our forces in [SCOPE.sState('invasion_base_state').GetName] has been ambushed by the forces of [SCOPE.sCountry('adversary_scope').GetName]. In the struggle, much of its cargo was lost."
- caucasuswar.2.f:0 "By the time the relief force had arrived, the bodies had already begun to rot, men and horses entangled where they had fallen, their belongings stripped and carried away by enterprising hands. As they lay there, the highway was not been a territory of Russia, nor of any man at all - for its subjects were maggots, and its sovereign the Lord of the Flies."
+ caucasuswar.2.f:1 "By the time the relief force had arrived, the bodies had already begun to rot. Men and horses were entangled where they had fallen, their belongings stripped and carried away by enterprising hands. As they lay there, the highway was no longer a territory of Russia, nor of any man at all - for its subjects were maggots, and its sovereign the Lord of the Flies."
  caucasuswar.2.a:0 "Seize resources from the locals to make up the deficit."
  caucasuswar.2.b:0 "Hold fast, and wait for a better-protected convoy."
  notification_caucasus_russian_supply_convoy_notification_name:0 "Successful raid on [SCOPE.sCountry('russia_scope').GetAdjective] convoy"
@@ -218,7 +218,7 @@
  
  caucasuswar.6.t:0 "Defections to the [SCOPE.sCountry('adversary_scope').GetName]" 
  caucasuswar.6.d:0 "The multi-national nature of [SCOPE.sCharacter('shamil_scope').GetFullName]'s imamate has proven irresistable to many of our subjects in [SCOPE.sState('invasion_base_state').GetName]. Officers and landowners alike have reported numerous defections to the Imamate."
- caucasuswar.6.f:0 "The mistreatment of our military deserters by the Chechens kept many unreliable soldiers, and especially the Poles, from running away; but if now they find out that Shamil gives freedom to deserters, then I'm afraid that the runs will increase. I would think to keep the soldiers from escaping the first captured deserters to be shot. I, together with this, ordered all private commanders to aggravate supervision of unreliable soldiers and report to me immediately about those who make an escape." #- Melenty Yakovlevich Olshevsky
+ caucasuswar.6.f:0 ""The mistreatment of our military deserters by the Chechens kept many unreliable soldiers, and especially the Poles, from running away; but if now they find out that Shamil gives freedom to deserters, then I'm afraid that the runs will increase. I would think to keep the soldiers from escaping the first captured deserters to be shot. I, together with this, ordered all private commanders to aggravate supervision of unreliable soldiers and report to me immediately about those who make an escape."\n\n— Melenty Yakovlevich Olshevsky"
  caucasuswar.6.a:0 "Tighten security in the region, to avert further defections."
  caucasuswar.6.b:0 "We will not build further bad will amongst the people."
  notification_caucasus_russian_soldiers_defection_notification_name:0 "[SCOPE.sCountry('russia_scope').GetAdjective] soldiers defect to our armies"
@@ -267,7 +267,7 @@
  
  caucasuswar_end.3.t:0 "The Imamate's End"
  caucasuswar_end.3.d:0 "With the occupation of [SCOPE.sState('dagestan_state').GetStateRegion.GetName] and the surrender or defection of many of the former Caucasian naibs, the leader of the Imamate has finally surrendered to the [ROOT.GetCountry.GetAdjective] army, upon the request of the wives and children of his last followers."
- caucasuswar_end.3.f:1 ""The whole world knows about your exploits, and their glory will not fade. If you, submitting to the power of fate, go out today to the commander-in-chief and surrender to the generosity of the sovereign [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], you will save a thousand people who are alive and loyal to you from death. Complete your glorious deeds with an act of prudence and generosity, and the sardar will petition the sovereign to ensure the future of you and your family."" #- Ivan Davidovich Lazarev
+ caucasuswar_end.3.f:1 ""The whole world knows about your exploits, and their glory will not fade. If you, submitting to the power of fate, go out today to the commander-in-chief and surrender to the generosity of the sovereign [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], you will save a thousand people who are alive and loyal to you from death. Complete your glorious deeds with an act of prudence and generosity, and the sardar will petition the sovereign to ensure the future of you and your family."\n\n— Ivan Davidovich Lazarev"
  caucasuswar_end.3.a:0 "Peace has been found in Chechnya at last."
  caucasuswar_end.3.b:0 "There will be no peace whilst Shamil is still revered." 
 

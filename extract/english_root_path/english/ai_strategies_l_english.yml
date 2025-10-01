@@ -89,6 +89,8 @@
  ai_strategy_resource_expansion_desc:0 "[COUNTRY.GetName] wants to invest into the extraction of natural resources."
  ai_strategy_industrial_expansion:0 "Industrialize"
  ai_strategy_industrial_expansion_desc:0 "[COUNTRY.GetName] wants to build up its urban industrial base."
+ ai_strategy_montenegro_admin: "Maintain Foreign Imports"
+ ai_strategy_montenegro_admin_desc: "[COUNTRY.GetName] wants to keep its small territory supplied with essential goods."
  ai_strategy_infrastructure_expansion:0 "Improve Infrastructure"
  ai_strategy_infrastructure_expansion_desc:0 "[COUNTRY.GetName] wants to improve its national infrastructure."
  ai_strategy_territorial_expansion:0 "Expand Core Territory"

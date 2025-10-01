@@ -340,14 +340,13 @@ army_git_good_button_desc: "We find outselves surrounded on all sides by potenti
 je_expanding_paraguay: "Si Vis Pacem, Fac Bellum" 
 je_expanding_paraguay_reason: ""If you want peace, make war."\n\nA contradiction to some perhaps, but to [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetLastName] it is a statement of fact. Around us, our neighbors maneuver and scheme, plotting to wrest control of our sacred lands from us.\nShould then, we meekly wait for the enemy to make the first move? Or pray to the Almighty they never do?\n\nNo. As our forefathers before us, we must make our own luck. If war must come to [SCOPE.GetRootScope.GetCountry.GetNameNoFlag], let it come on our terms."
 
-choose_one_of_tt: "Choose #bold one#! of the following rewards:"
+choose_one_of_tt: "Choose #bold one#! of the following:"
 
 paraguay.1.t: "A Meeting in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]"
 paraguay.1.d: "With the death of Doctor Francia, all of [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] is in motion, with civilian and military cliques maneuvering to secure for themselves the reins of power."
 paraguay.1.f: ""That's it? The paranoid wreck is finally dead?"\n\n"As dead as El Cid and my grandmother, both. God rest their souls."\n\n"About time. The underserving have had their day. Now, the right people can steer Paraguay back to glory.""
 paraguay.1.a: "The [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] garrison secures the city for [SCOPE.sCharacter('carlos_antonio_lopez_scope').GetFullName]."
 paraguay.1.b: "Sr. [SCOPE.sCharacter('go_policarp_go_scope').GetLastName], the unloved secretary of Francia, clings to power."
-el_excelentisimo_modifier: "El Excelentísimo"
 paraguay.1.tt_1: "By siding with the reformers, the [SCOPE.sCharacter('go_policarp_go_scope').GetIdeology.GetName] [concept_ideology] will forever fade from [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] politics."
 paraguay.1.tt_2: "By continuing Dr. Francia's legacy, you will be locked out of [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]'s powerful #bold modernization#! and #bold expansion#! [Concept('concept_journal_entry','$concept_journal_entries$')]."
 
@@ -359,7 +358,6 @@ paraguay.2.f_2: "#bold [SCOPE.sCharacter('francisco_solano_lopez_scope').GetFull
 paraguay.2.a: "One day, this 'Napoleon' shall lead Paraguay to greatness."
 paraguay.2.b: "A general should know his station, and his is the barracks alone."
 paraguay.2.c: "There's something #italic off#! about that man, have him dismissed."
-napoleon_of_the_americas_modifier: "Napoleon of the Americas"
 paraguay.2.tt_1: "The effects of this modifier will #bold double#! should [SCOPE.sCharacter('francisco_solano_lopez_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('francisco_solano_lopez_scope').GetLastName] become [concept_ruler] of [SCOPE.GetRootScope.GetCountry.GetNameNoFlag]."
 paraguay.2.tt_2: "[SCOPE.sCharacter('francisco_solano_lopez_scope').GetFullNameNoFormatting] is dismissed from the army."
 

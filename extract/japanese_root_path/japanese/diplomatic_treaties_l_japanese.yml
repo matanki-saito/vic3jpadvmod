@@ -17,13 +17,14 @@
  treaty_name_ham_pru_trade: "ハンブルク・プロイセン貿易協定"
  treaty_name_swe_pru_trade: "スウェーデン・プロイセン貿易協定"
  treaty_name_prussian_military_mission_to_turkey: "プロイセンのオスマン帝国派遣団"
+ treaty_name_treaty_of_adrianople: "アドリアノープル条約"
  ### Dynamic Treaties
  # Generic
  treaty_name_treaty_of_city: "$SIGNING_LOCATION$条約"
  treaty_name_city_protocol: "$SIGNING_LOCATION$議定書"
  treaty_name_city_convention: "$SIGNING_LOCATION$協定"
  treaty_name_convention_of_city: "$SIGNING_LOCATION$協定"
- treaty_name_september_convention: "9月協定"
+ treaty_name_september_convention: "$SIGNING_MONTH$協定"
  treaty_name_city_declaration: "$SIGNING_LOCATION$宣言"
  treaty_name_declaration_of_captial: "$SIGNING_LOCATION$宣言"
  treaty_name_country_adj_country_adj_treaty: "[FIRST_COUNTRY.GetAdjectiveNoFormatting]・[SECOND_COUNTRY.GetAdjectiveNoFormatting]条約"

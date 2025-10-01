@@ -257,8 +257,8 @@
   je_consolidate_central_asia: "Consolidate Central Asian Holdings"
   je_consolidate_central_asia_reason: "The region of Central Asia has long been out of our control, run by disparate khanates and emirates. In order to secure access to India, we must ensure that the Central Asian states are subjugated, whether as [Concept('concept_subject', '$concept_subjects$')] or through direct conquest."
 
-  owned_by_this_country_or_subjects_tt: "Is owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject', '$concept_subjects$')]"
-  completely_owned_by_this_country_or_subjects_tt: "Is completely owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject', '$concept_subjects$')]"
+  owned_by_this_country_or_subjects_tt:1 "Is owned by [ROOT.GetCountry.GetName] or her [Concept('concept_subject', '$concept_subjects$')]"
+  completely_owned_by_this_country_or_subjects_tt:1 "Is completely owned by [ROOT.GetCountry.GetName] or her [Concept('concept_subject', '$concept_subjects$')]"
 
   je_chinese_concessions: "Acquire Manchurian Concessions"
   je_chinese_concessions_reason: "The region of Manchuria contains several areas which may serve as valuable warm-water ports. Acquiring treaty concessions and constructing railways in the region will immensely benefit our power projection in the Pacific Ocean."
@@ -280,7 +280,7 @@
   je_consolidate_british_india_reason: "The existence of independent states on the fringes of the [SCOPE.sCountry('india_scope').GetName] represents opportunity to expand and enrich our colonies in the region, as well as remove possible avenues for our opponents to threaten the highly profitable lands of India."
 
   raj_expanded_westward_tt: "All [Concept('concept_country', '$concept_countries$')] in the [SCOPE.sStrategicRegion('north_india_region').GetName] and [SCOPE.sStrategicRegion('south_india_region').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')] are [Concept('concept_subject', '$concept_subjects$')] of [SCOPE.sCountry('britain_scope').GetName] or its Subjects"
-  raj_expanded_eastwards_tt: "All [Concept('concept_state', '$concept_states$')] in the [SCOPE.sStateRegion('burma_state_scope').GetName], [SCOPE.sStateRegion('kachin_state_scope').GetName], and [SCOPE.sStateRegion('pegu_state_scope').GetName] [Concept('concept_state_region', '$concept_state_regions$')] are controlled by [SCOPE.sCountry('britain_scope').GetName] or its [Concept('concept_subject', '$concept_subjects$')]"
+  raj_expanded_eastwards_tt:1 "All [Concept('concept_state', '$concept_states$')] in the [SCOPE.sStateRegion('burma_state_scope').GetName], [SCOPE.sStateRegion('kachin_state_scope').GetName], and [SCOPE.sStateRegion('pegu_state_scope').GetName] [Concept('concept_state_region', '$concept_state_regions$')] are controlled by [SCOPE.sCountry('britain_scope').GetName] or her [Concept('concept_subject', '$concept_subjects$')]"
 
   je_pamir_expedition_objective: "Contest the Russian Pamirs"
   je_pamir_expedition_objective_reason: "The recent Russian expansion into the Pamir mountains presents an intolerable threat to our interests in India. The creation of a buffer state in Tajikistan would humiliate Russia and grant our interests south of Pamir some breathing room, at the cost of a high risk of #bold direct war#! between #v $RUS$#! and #v $GBR$#!.\n\nThis option should be explored cautiously."
@@ -580,6 +580,7 @@
   rival_funding_lobbies: "A [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_rivalry','$concept_rival$')] is [Concept('concept_fund_lobbies','$concept_funding_lobbies$')] in [SCOPE.sCountry('country').GetNameNoFormatting]"
   from_liberty_desire: "From [concept_liberty_desire]"
   low_liberty_desire: "Low [concept_liberty_desire]"
+  relations_negative: "Negative [concept_relations]"
   is_power_bloc_leader: "[SCOPE.sCountry('target_country').GetNameNoFormatting] is the [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')] of the [concept_power_bloc] [SCOPE.sCountry('country').GetNameNoFormatting] is in"
   economic_dependence_for_upper_classes: "[concept_economic_dependence] impact on [concept_upper_strata] from increased access to [Concept('concept_good', '$concept_goods$')] from [SCOPE.sCountry('target_country').GetNameNoFormatting]"
   economic_dependence_for_middle_classes: "[concept_economic_dependence] impact on [concept_middle_strata] from increased access to [Concept('concept_good', '$concept_goods$')] from [SCOPE.sCountry('target_country').GetNameNoFormatting]"

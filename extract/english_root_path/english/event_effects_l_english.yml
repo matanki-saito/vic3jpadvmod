@@ -232,9 +232,9 @@ event_effects_russian_central_asia.2_tt: "$event_effect_choose_one$ #indent_newl
 modifier_suzerain_of_central_asia_tt: "[GetStaticModifier('modifier_suzerain_of_central_asia').GetName|v]\n[GetStaticModifier('modifier_suzerain_of_central_asia').GetDesc]"
 
 # je_great_reformer
-event_effects_great_reformer.1_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [SCOPE.sCharacter('alexander_ii_scope').GetFullName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_great_reformer_tt $modifier_great_reformer$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_great_reforms_complete_tt $modifier_great_reforms_complete$#!#!"
+event_effects_great_reformer.1_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [SCOPE.sCharacter('alexander_ii_scope').GetFullName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_great_reformer_tt $special_character_great_reformer$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_great_reforms_complete_tt $modifier_great_reforms_complete$#!#!"
 
-modifier_great_reformer_tt: "[GetStaticModifier('modifier_great_reformer').GetName|v]\n[GetStaticModifier('modifier_great_reformer').GetDesc]"
+modifier_great_reformer_tt: "[GetCharacterTrait('special_character_great_reformer').GetName|v]\n[GetCharacterTrait('special_character_great_reformer').GetDesc]"
 modifier_great_reforms_complete_tt: "[GetStaticModifier('modifier_great_reforms_complete').GetName|v]\n[GetStaticModifier('modifier_great_reforms_complete').GetDesc]"
 
 # je_eastern_frontier
@@ -270,3 +270,287 @@ event_effects_federation_of_india.2_tt: "• [ROOT.GetCountry.GetName] gets #too
 modifier_unification_of_india_tt: "[GetStaticModifier('modifier_unification_of_india').GetName|v]\n[GetStaticModifier('modifier_unification_of_india').GetDesc]"
 
 event_effects_federation_of_india.3_tt: "• $add_claims_on_india_tt$\n• $upset_every_princely_state_federation_tt$\n• Causes a [concept_diplomatic_incident] with the highest-[concept_prestige] country with a state in [concept_georegion_india]"
+
+# je_yugoslavia
+ unified_yugoslavia_tt: "[GetStaticModifier('unified_yugoslavia').GetName|v]\n[GetStaticModifier('unified_yugoslavia').GetDesc]"
+ the_unifier_yug_tt: "[GetStaticModifier('the_unifier_yug').GetName|v]\n[GetStaticModifier('the_unifier_yug').GetDesc]"
+ event_effects_yugoslavia.2_tt: "$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],unified_yugoslavia_tt $unified_yugoslavia$#!\n• [ROOT.GetCountry.GetRuler.GetFullName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],the_unifier_yug_tt $the_unifier_yug$#!\n• May gain [Concept('concept_claim', '$concept_claims$')] on $STATE_BOSNIA$ and $STATE_ALBANIA$ if the [Concept('concept_state_region','$concept_state_regions$')] are not entirely owned by [ROOT.GetCountry.GetNameNoFlag]"
+
+# je_national_awakening
+event_effects_national_awakening.1_tt: "• $claims_on_all_homelands_tt$\n$event_effect_choose_one$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [SCOPE.sCulture('primary_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetNameNoFormatting] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_fervour_military_bonus_tt $modifier_fervour_military_bonus$#!\n• [SCOPE.gsInterestGroup('armed_forces_ig').GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_fervour_military_bonus_ig_tt $modifier_fervour_military_bonus_ig$#!#!#!"
+
+modifier_fervour_military_bonus_tt: "[GetStaticModifier('modifier_fervour_military_bonus').GetName|v]\n[GetStaticModifier('modifier_fervour_military_bonus').GetDesc]"
+modifier_fervour_military_bonus_ig_tt: "[GetStaticModifier('modifier_fervour_military_bonus_ig').GetName|v]\n[GetStaticModifier('modifier_fervour_military_bonus_ig').GetDesc]"
+
+# je_springtime_of_the_peoples
+event_effects_peoples_springtime.10_tt: "• Adds #v $je_red_summer$#! to the Journal of [ROOT.GetCountry.GetName|v]\n$event_effect_choose_one$ #indent_newline:3 \n• Support the #b Revolution#!\n• Advance the #b Counter-Revolution#! by #v 1#! each month#!"
+
+red_summer_on_complete_tt: "#header $peoples_springtime.71.t$#!:\n$event_effects_peoples_springtime.71_tt$#!\n\n#header $peoples_springtime.7.t$#!:\n$event_effects_peoples_springtime.7_tt$"
+
+event_effects_peoples_springtime.7_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetNameNoFormatting] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],post_revolutionary_fervor_tt $post_revolutionary_fervor$#!\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!"
+
+event_effects_peoples_springtime.71_tt: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• All [Concept('concept_interest_group', '$concept_interest_groups$')] in favor of [GetLawType('law_universal_suffrage').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_age_of_liberty_tt $modifier_age_of_liberty$#!\n• #b The King-in-Parliament#! [concept_journal_entry] advances by #v 50#!#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [SCOPE.sCulture('primary_culture_scope').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]\n• #b The King-in-Parliament#! [concept_journal_entry] advances by #v 25#!#!"
+
+event_effects_peoples_springtime.8_tt: "• Any changes to $lawgroup_distribution_of_power$, $lawgroup_free_speech$, or $lawgroup_internal_security$ [Concept('concept_law','$concept_laws$')] made during the #b $je_springtime_of_the_peoples$#! will be reverted\n$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetNameNoFormatting] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],counter_revolutionary_fervor_tt $counter_revolutionary_fervor$#!\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]"
+
+counter_revolutionary_fervor_tt: "[GetStaticModifier('counter_revolutionary_fervor').GetName|v]\n[GetStaticModifier('counter_revolutionary_fervor').GetDesc]"
+post_revolutionary_fervor_tt: "[GetStaticModifier('post_revolutionary_fervor').GetName|v]\n[GetStaticModifier('post_revolutionary_fervor').GetDesc]"
+modifier_age_of_liberty_tt: "[GetStaticModifier('modifier_age_of_liberty').GetName|v]\n[GetStaticModifier('modifier_age_of_liberty').GetDesc]"
+
+# je_great_eastern_crisis
+event_effects_eastern_crisis.2_tt: "• [ROOT.GetCountry.GetNameNoFormatting] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_controlled_tt $eastern_crisis_controlled$ #!for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• [concept_fervor] of every [concept_balkan_culture] in [ROOT.GetCountry.GetNameNoFormatting] is changed by #v [GetPlayer.MakeScope.ScriptValue('eastern_crisis_fervor_loss')]#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• [ROOT.GetCountry.GetNameNoFormatting] gains [concept_power_bloc_leverage] in: each [concept_subject] and every [concept_country] with a [Concept('concept_capital_state','$concept_capital_state_short$')] or an [concept_interest] in the [GetStrategicRegion('region_balkans').GetName] [concept_strategic_region]"
+
+event_effects_eastern_crisis.3_tt: "• [ROOT.GetCountry.GetNameNoFormatting] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_not_controlled_tt $eastern_crisis_not_controlled$#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• [concept_fervor] of every [concept_balkan_culture] in [ROOT.GetCountry.GetNameNoFormatting] is changed by #v [GetPlayer.MakeScope.ScriptValue('eastern_crisis_fervor_gain')]#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• [ROOT.GetCountry.GetNameNoFormatting] loses [concept_power_bloc_leverage] in: each [concept_subject] and every [concept_country] with a [Concept('concept_capital_state','$concept_capital_state_short$')] or an [concept_interest] in the [GetStrategicRegion('region_balkans').GetName] [concept_strategic_region]\n• Cultural and Religious [Concept('concept_political_movement','$concept_political_movements$')] in [ROOT.GetCountry.GetNameNoFormatting] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_radicalism_tt $eastern_crisis_movement_attraction$ #!for #v [GetPlayer.MakeScope.ScriptValue('display_long_modifier_time')]#! years"
+
+eastern_crisis_controlled_tt: "[GetStaticModifier('eastern_crisis_controlled').GetName|v]\n[GetStaticModifier('eastern_crisis_controlled').GetDesc]"
+eastern_crisis_not_controlled_tt: "[GetStaticModifier('eastern_crisis_not_controlled').GetName|v]\n[GetStaticModifier('eastern_crisis_not_controlled').GetDesc]"
+eastern_crisis_movement_radicalism_tt: "[GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]\n[GetStaticModifier('eastern_crisis_movement_attraction').GetDesc]"
+
+event_effects_eastern_crisis_all_possible_tt: "If [concept_ottoman_integrity] in $dyn_c_ottoman_empire$ successfully reaches #v 100%#! in #v [GetPlayer.MakeScope.ScriptValue('display_normal_modifier_time')]#! years:\n• $dyn_c_ottoman_empire$ gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_controlled_tt $eastern_crisis_controlled$ #!for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• [concept_fervor] of every [concept_balkan_culture] in $dyn_c_ottoman_empire$ is changed by #v [GetPlayer.MakeScope.ScriptValue('eastern_crisis_fervor_loss')]#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• $dyn_c_ottoman_empire$ gains [concept_power_bloc_leverage] in: each [concept_subject] and every [concept_country] with a [Concept('concept_capital_state','$concept_capital_state_short$')] or an [concept_interest] in the [GetStrategicRegion('region_balkans').GetName] [concept_strategic_region]\n\nIf [concept_ottoman_integrity] in $dyn_c_ottoman_empire$ does #b not#! successfully reach #v 100%#! in #v [GetPlayer.MakeScope.ScriptValue('display_normal_modifier_time')]#! years:\n• $dyn_c_ottoman_empire$ gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_not_controlled_tt $eastern_crisis_not_controlled$#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• [concept_fervor] of every [concept_balkan_culture] in $dyn_c_ottoman_empire$ is changed by #v [GetPlayer.MakeScope.ScriptValue('eastern_crisis_fervor_gain')]#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years\n• $dyn_c_ottoman_empire$ loses [concept_power_bloc_leverage] in: each [concept_subject] and every [concept_country] with a [Concept('concept_capital_state','$concept_capital_state_short$')] or an [concept_interest] in the [GetStrategicRegion('region_balkans').GetName] [concept_strategic_region]\n• Cultural and Religious [Concept('concept_political_movement','$concept_political_movements$')] in $dyn_c_ottoman_empire$ get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_radicalism_tt $eastern_crisis_movement_radicalism$ #!for #v [GetPlayer.MakeScope.ScriptValue('display_long_modifier_time')]#! years"
+
+#je_greek_nationalism
+event_effects_greece.4_tt_1: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_success_1$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_1$\n$gets_greek_nationalism_clout_add_1$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_clout_add_2$\n$moves_greek_pops_and_removes_homeland$#!#!"
+event_effects_greece.4_tt_2: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_success_2$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_2$\n$gets_greek_nationalism_clout_add_2$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_clout_add_2$#!#!" #if pursing megali idea
+event_effects_greece.4_tt_3: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_success_3$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_3$\n$gets_greek_nationalism_clout_add_3$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_nationalism_clout_add_3$#!#!" #if pursing BYZ
+
+gets_greek_nationalism_success_1: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_success_1_tt $greek_nationalism_success_1$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_1: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_1_tt $greek_nationalism_1$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_clout_add_1: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_clout_add_1_tt $greek_nationalism_clout_add_1$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+moves_greek_pops_and_removes_homeland: "• If [ROOT.GetCountry.GetNameNoFlag] does #b not#! own the entire [Concept('concept_state_region','$concept_state_regions$')] of $STATE_AYDIN$, $STATE_EASTERN_THRACE$, $STATE_HUDAVENDIGAR$, or $STATE_TRABZON$, every [GetCulture('greek').GetName] [concept_pop] will be moved to [ROOT.GetCountry.GetCapital.GetCityHubName] and the unowned $concept_state_regions$ will no longer be a [GetCulture('greek').GetName] [concept_homeland]"
+
+greek_nationalism_success_1_tt: "[GetStaticModifier('greek_nationalism_success_1').GetName|v]\n[GetStaticModifier('greek_nationalism_success_1').GetDesc]"
+greek_nationalism_1_tt: "[GetStaticModifier('greek_nationalism_1').GetName|v]\n[GetStaticModifier('greek_nationalism_1').GetDesc]"
+greek_nationalism_clout_add_1_tt: "[GetStaticModifier('greek_nationalism_clout_add_1').GetName|v]\n[GetStaticModifier('greek_nationalism_clout_add_1').GetDesc]"
+
+gets_greek_nationalism_success_2: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_success_2_tt $greek_nationalism_success_2$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_2: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_2_tt $greek_nationalism_2$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_clout_add_2: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_clout_add_2_tt $greek_nationalism_clout_add_2$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+
+greek_nationalism_success_2_tt: "[GetStaticModifier('greek_nationalism_success_2').GetName|v]\n[GetStaticModifier('greek_nationalism_success_2').GetDesc]"
+greek_nationalism_2_tt: "[GetStaticModifier('greek_nationalism_2').GetName|v]\n[GetStaticModifier('greek_nationalism_2').GetDesc]"
+greek_nationalism_clout_add_2_tt: "[GetStaticModifier('greek_nationalism_clout_add_2').GetName|v]\n[GetStaticModifier('greek_nationalism_clout_add_2').GetDesc]"
+
+gets_greek_nationalism_success_3: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_success_3_tt $greek_nationalism_success_3$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_3: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_3_tt $greek_nationalism_3$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_clout_add_3: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_clout_add_3_tt $greek_nationalism_clout_add_3$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+
+greek_nationalism_success_3_tt: "[GetStaticModifier('greek_nationalism_success_3').GetName|v]\n[GetStaticModifier('greek_nationalism_success_3').GetDesc]"
+greek_nationalism_3_tt: "[GetStaticModifier('greek_nationalism_3').GetName|v]\n[GetStaticModifier('greek_nationalism_3').GetDesc]"
+greek_nationalism_clout_add_3_tt: "[GetStaticModifier('greek_nationalism_clout_add_3').GetName|v]\n[GetStaticModifier('greek_nationalism_clout_add_3').GetDesc]"
+
+event_effects_greece.5_tt_1: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_failed_je_greek_nationalism_1$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_ruler_negative_popularity_1$\n$gets_greek_nationalism_failure_1$#!#!\n$event_effect_all_of_the_following$#indent_newline:3 \n$gets_failed_greek_je_ig_attraction$\n$gets_failed_greek_je_opposition_ig_pol_str$#!"
+event_effects_greece.5_tt_2: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_failed_je_greek_nationalism_2$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_ruler_negative_popularity_2$\n$gets_greek_nationalism_failure_2$#!#!\n$event_effect_all_of_the_following$#indent_newline:3 \n$gets_failed_greek_je_ig_attraction$\n$gets_failed_greek_je_opposition_ig_pol_str$#!"
+event_effects_greece.5_tt_3: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_failed_je_greek_nationalism_3$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n$gets_greek_ruler_negative_popularity_3$\n$gets_greek_nationalism_failure_3$\n$moves_greek_pops_and_removes_homeland$#!#!\n$event_effect_all_of_the_following$#indent_newline:3 \n$gets_failed_greek_je_ig_attraction$\n$gets_failed_greek_je_opposition_ig_pol_str$#!"
+
+gets_failed_je_greek_nationalism_1: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],failed_je_greek_nationalism_1_tt $failed_je_greek_nationalism_1$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_ruler_negative_popularity_1: "• [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_ruler] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_ruler_negative_popularity_1_tt $greek_ruler_negative_popularity_1$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_failure_1: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_failure_1_tt $greek_nationalism_failure_1$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+
+failed_je_greek_nationalism_1_tt: "[GetStaticModifier('failed_je_greek_nationalism_1').GetName|v]\n[GetStaticModifier('failed_je_greek_nationalism_1').GetDesc]"
+greek_ruler_negative_popularity_1_tt: "[GetStaticModifier('greek_ruler_negative_popularity_1').GetName|v]\n[GetStaticModifier('greek_ruler_negative_popularity_1').GetDesc]"
+greek_nationalism_failure_1_tt: "[GetStaticModifier('greek_nationalism_failure_1').GetName|v]\n[GetStaticModifier('greek_nationalism_failure_1').GetDesc]"
+
+gets_failed_je_greek_nationalism_2: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],failed_je_greek_nationalism_2_tt $failed_je_greek_nationalism_2$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_ruler_negative_popularity_2: "• [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_ruler] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_ruler_negative_popularity_2_tt $greek_ruler_negative_popularity_2$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_failure_2: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_failure_2_tt $greek_nationalism_failure_2$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+
+failed_je_greek_nationalism_2_tt: "[GetStaticModifier('failed_je_greek_nationalism_2').GetName|v]\n[GetStaticModifier('failed_je_greek_nationalism_2').GetDesc]"
+greek_ruler_negative_popularity_2_tt: "[GetStaticModifier('greek_ruler_negative_popularity_2').GetName|v]\n[GetStaticModifier('greek_ruler_negative_popularity_2').GetDesc]"
+greek_nationalism_failure_2_tt: "[GetStaticModifier('greek_nationalism_failure_2').GetName|v]\n[GetStaticModifier('greek_nationalism_failure_2').GetDesc]"
+
+gets_failed_je_greek_nationalism_3: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],failed_je_greek_nationalism_3_tt $failed_je_greek_nationalism_3$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_ruler_negative_popularity_3: "• [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_ruler] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_ruler_negative_popularity_3_tt $greek_ruler_negative_popularity_3$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_greek_nationalism_failure_3: "• [ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],greek_nationalism_failure_3_tt $greek_nationalism_failure_3$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+
+failed_je_greek_nationalism_3_tt: "[GetStaticModifier('failed_je_greek_nationalism_3').GetName|v]\n[GetStaticModifier('failed_je_greek_nationalism_3').GetDesc]"
+greek_ruler_negative_popularity_3_tt: "[GetStaticModifier('greek_ruler_negative_popularity_3').GetName|v]\n[GetStaticModifier('greek_ruler_negative_popularity_3').GetDesc]"
+greek_nationalism_failure_3_tt: "[GetStaticModifier('greek_nationalism_failure_3').GetName|v]\n[GetStaticModifier('greek_nationalism_failure_3').GetDesc]"
+
+failed_greek_je_ig_attraction_tt: "[GetStaticModifier('failed_greek_je_ig_attraction').GetName|v]\n[GetStaticModifier('failed_greek_je_ig_attraction').GetDesc]"
+failed_greek_je_opposition_ig_pol_str_tt: "[GetStaticModifier('failed_greek_je_opposition_ig_pol_str').GetName|v]\n[GetStaticModifier('failed_greek_je_opposition_ig_pol_str').GetDesc]"
+
+gets_failed_greek_je_ig_attraction: "• Every [concept_interest_group] [concept_in_government] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],failed_greek_je_ig_attraction_tt $failed_greek_je_ig_attraction$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+gets_failed_greek_je_opposition_ig_pol_str: "• Every [concept_interest_group] [concept_in_opposition] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],failed_greek_je_opposition_ig_pol_str_tt $failed_greek_je_opposition_ig_pol_str$#! for #v [GetPlayer.MakeScope.ScriptValue('display_very_long_modifier_time')]#! years"
+
+# je_standestaat
+event_effects_austrian_fascism.2_tt: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_austria_corporate_state_tt $modifier_austria_corporate_state$#!\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [concept_middle_strata] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_austria_corporate_state_vigilance_tt $modifier_austria_corporate_state_vigilance$#!#!"
+event_effects_austrian_fascism.3_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('medium_radicals')|+=1%] of [concept_lower_strata] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_resurgent_labor_movement_tt $modifier_resurgent_labor_movement$#!#!"
+
+modifier_austria_corporate_state_tt: "[GetStaticModifier('modifier_austria_corporate_state').GetName|v]\n[GetStaticModifier('modifier_austria_corporate_state').GetDesc]"
+modifier_austria_corporate_state_vigilance_tt: "[GetStaticModifier('modifier_austria_corporate_state_vigilance').GetName|v]\n[GetStaticModifier('modifier_austria_corporate_state_vigilance').GetDesc]"
+modifier_resurgent_labor_movement_tt: "[GetStaticModifier('modifier_resurgent_labor_movement').GetName|v]\n[GetStaticModifier('modifier_resurgent_labor_movement').GetDesc]"
+
+# je_king_in_parliament
+event_effects_autocracy.4_tt: "• $je_king_in_parliament_complete_tt$\n$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('small_radicals')|+=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_constitutional_order_tt $modifier_constitutional_order$#!#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetRuler.GetFullName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_constitutional_monarch_tt $modifier_constitutional_monarch$#!\n• Any #v $movement_royalist_constitutional$#! gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_constitutional_monarch_movement_support_tt $modifier_constitutional_monarch_movement_support$#!#!"
+
+modifier_constitutional_order_tt: "[GetStaticModifier('modifier_constitutional_order').GetName|v]\n[GetStaticModifier('modifier_constitutional_order').GetDesc]"
+modifier_constitutional_monarch_tt: "[GetStaticModifier('modifier_constitutional_monarch').GetName|v]\n[GetStaticModifier('modifier_constitutional_monarch').GetDesc]"
+modifier_constitutional_monarch_movement_support_tt: "[GetStaticModifier('modifier_constitutional_monarch_movement_support').GetName|v]\n[GetStaticModifier('modifier_constitutional_monarch_movement_support').GetDesc]"
+
+# je_grunderzeit
+event_effects_grunderzeit.1_tt: "[SCOPE.GetRootScope.GetCountry.GetCustom('grunderzeit_1_commitment_effects')]"
+event_effects_grunderzeit.2_tt: "[SCOPE.GetRootScope.GetCountry.GetCustom('grunderzeit_2_commitment_effects')]"
+
+modifier_grunderyears_success_tt: "[GetStaticModifier('modifier_grunderyears_success').GetName|v]\n[GetStaticModifier('modifier_grunderyears_success').GetDesc]"
+modifier_grunderyears_success_2_tt: "[GetStaticModifier('modifier_grunderyears_success_2').GetName|v]\n[GetStaticModifier('modifier_grunderyears_success_2').GetDesc]"
+modifier_grunderkrach_tt: "[GetStaticModifier('modifier_grunderkrach').GetName|v]\n[GetStaticModifier('modifier_grunderkrach').GetDesc]"
+modifier_grunderkrach_blame_free_trade_tt: "[GetStaticModifier('modifier_grunderkrach_blame_free_trade').GetName|v]\n[GetStaticModifier('modifier_grunderkrach_blame_free_trade').GetDesc]"
+modifier_grunderkrach_blame_minorities_tt: "[GetStaticModifier('modifier_grunderkrach_blame_minorities').GetName|v]\n[GetStaticModifier('modifier_grunderkrach_blame_minorities').GetDesc]"
+modifier_grunderkrach_blame_minorities_ig_boost_tt: "[GetStaticModifier('modifier_grunderkrach_blame_minorities_ig_boost').GetName|v]\n[GetStaticModifier('modifier_grunderkrach_blame_minorities_ig_boost').GetDesc]"
+
+modifier_grunderyears_success_half_dummy_tt: "[GetStaticModifier('modifier_grunderyears_success_half_dummy').GetName|v]\n[GetStaticModifier('modifier_grunderyears_success_half_dummy').GetDesc]"
+modifier_grunderyears_success_2_half_dummy_tt: "[GetStaticModifier('modifier_grunderyears_success_2_half_dummy').GetName|v]\n[GetStaticModifier('modifier_grunderyears_success_2_half_dummy').GetDesc]"
+modifier_grunderkrach_half_dummy_tt: "[GetStaticModifier('modifier_grunderkrach_half_dummy').GetName|v]\n[GetStaticModifier('modifier_grunderkrach_half_dummy').GetDesc]"
+modifier_grunderkrach_blame_free_trade_half_dummy_tt: "[GetStaticModifier('modifier_grunderkrach_blame_free_trade_half_dummy').GetName|v]\n[GetStaticModifier('modifier_grunderkrach_blame_free_trade_half_dummy').GetDesc]"
+modifier_grunderkrach_blame_minorities_half_dummy_tt: "[GetStaticModifier('modifier_grunderkrach_blame_minorities_half_dummy').GetName|v]\n[GetStaticModifier('modifier_grunderkrach_blame_minorities_half_dummy').GetDesc]"
+modifier_grunderkrach_blame_minorities_ig_boost_half_dummy_tt: "[GetStaticModifier('modifier_grunderkrach_blame_minorities_ig_boost_half_dummy').GetName|v]\n[GetStaticModifier('modifier_grunderkrach_blame_minorities_ig_boost_half_dummy').GetDesc]"
+
+grunderzeit.1_high_commitment_effects_string: "• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_tt $modifier_grunderkrach$#!\n• [GetPlayer.MakeScope.ScriptValue('small_radicals')|-=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_radical]\n$event_effect_choose_one$ #indent_newline:3 \n• All [Concept('concept_interest_group', '$concept_interest_groups$')] in favor of [GetLawType('law_free_trade').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_blame_free_trade_tt $modifier_grunderkrach_blame_free_trade$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_blame_minorities_tt $modifier_grunderkrach_blame_minorities$#!\n• All [Concept('concept_interest_group', '$concept_interest_groups$')] in favor of [GetLawType('law_ethnostate').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_blame_minorities_ig_boost_tt $modifier_grunderkrach_blame_minorities_ig_boost$#!"
+grunderzeit.1_low_commitment_effects_string: "• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_half_dummy_tt $modifier_grunderkrach_half_dummy$#!\n$event_effect_choose_one$ #indent_newline:3 \n• All [Concept('concept_interest_group', '$concept_interest_groups$')] in favor of [GetLawType('law_free_trade').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_blame_free_trade_half_dummy_tt $modifier_grunderkrach_blame_free_trade_half_dummy$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_blame_minorities_half_dummy_tt $modifier_grunderkrach_blame_minorities_half_dummy$#!\n• All [Concept('concept_interest_group', '$concept_interest_groups$')] in favor of [GetLawType('law_ethnostate').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderkrach_blame_minorities_ig_boost_half_dummy_tt $modifier_grunderkrach_blame_minorities_ig_boost_half_dummy$#!"
+grunderzeit.2_high_commitment_effects_string: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderyears_success_tt $modifier_grunderyears_success$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderyears_success_2_tt $modifier_grunderyears_success_2$#!"
+grunderzeit.2_low_commitment_effects_string: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderyears_success_half_dummy_tt $modifier_grunderyears_success_half_dummy$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_grunderyears_success_2_half_dummy_tt $modifier_grunderyears_success_2_half_dummy$#!"
+
+# je_the_balkan_league
+event_effects_balkan_wars.2_tt: "• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],balkan_wars_victorious_balkan_league_mod_tt $balkan_wars_victorious_balkan_league_mod$#!\n• $balkan_wars.2.tt_1$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_balkan_wars_won_alone_tt $modifier_balkan_wars_won_alone$#!#!"
+
+balkan_wars_victorious_balkan_league_mod_tt: "[GetStaticModifier('balkan_wars_victorious_balkan_league_mod').GetName|v]\n[GetStaticModifier('balkan_wars_victorious_balkan_league_mod').GetDesc]"
+modifier_balkan_wars_won_alone_tt: "[GetStaticModifier('modifier_balkan_wars_won_alone').GetName|v]\n[GetStaticModifier('modifier_balkan_wars_won_alone').GetDesc]"
+
+event_effects_balkan_wars.5_tt: "• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],balkan_wars_traitor_mod_tt $balkan_wars_traitor_mod$#!\n$event_effect_choose_one$ #indent_newline:3 \n• $relations_with_ottomans_improve_tt$ #g 30#!\n• $relations_with_balkan_league_worsen_tt$ #r 15#!#!\n• [ROOT.GetCountry.GetNameNoFlag] becomes a [concept_protectorate] of the #v $dyn_c_ottoman_empire$#!\n• $relations_with_ottomans_improve_tt$ #g 50#!\n• $relations_with_balkan_league_worsen_tt$ #r 25#!"
+
+relations_with_ottomans_improve_tt: "[concept_relations] with the #v $dyn_c_ottoman_empire$#! will improve by"
+relations_with_balkan_league_worsen_tt: "[concept_relations] with all members of the #b Balkan League#! will worsen by"
+
+balkan_wars_traitor_mod_tt: "[GetStaticModifier('balkan_wars_traitor_mod').GetName|v]\n[GetStaticModifier('balkan_wars_traitor_mod').GetDesc]"
+
+ event_effects_balkan_wars.6_tt: "• [ROOT.GetCountry.GetRuler.GetFullName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],balkan_wars_failed_ambitions_mod_tt $balkan_wars_failed_ambitions_mod$#!"
+
+balkan_wars_failed_ambitions_mod_tt: "[GetStaticModifier('balkan_wars_failed_ambitions_mod').GetName|v]\n[GetStaticModifier('balkan_wars_failed_ambitions_mod').GetDesc]"
+
+event_effects_balkan_wars.3_tt: "• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],balkan_wars_vassalized_mod_tt $balkan_wars_vassalized_mod$#!\n• [concept_relations] with all members of the #b Balkan League#! will worsen by #r 10#!"
+
+balkan_wars_vassalized_mod_tt: "[GetStaticModifier('balkan_wars_vassalized_mod').GetName|v]\n[GetStaticModifier('balkan_wars_vassalized_mod').GetDesc]"
+
+# je_prussia_of_the_balkans
+event_effects_bulgaria_events.1_tt: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gains a [concept_claim] on [GetStateRegion('STATE_NORTHERN_THRACE').GetName]\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_bulgaria_attack_tt $modifier_bulgaria_attack$#!#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gains a [concept_claim] on [GetStateRegion('STATE_SKOPIA').GetName] and [GetStateRegion('STATE_MACEDONIA').GetName]\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_bulgaria_attack_tt $modifier_bulgaria_attack$#!#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_defend_bulgaria_tt $modifier_defend_bulgaria$#!#!"
+
+modifier_bulgaria_attack_tt: "[GetStaticModifier('modifier_bulgaria_attack').GetName|v]\n[GetStaticModifier('modifier_bulgaria_attack').GetDesc]"
+modifier_defend_bulgaria_tt: "[GetStaticModifier('modifier_defend_bulgaria').GetName|v]\n[GetStaticModifier('modifier_defend_bulgaria').GetDesc]"
+
+# je_danubian_federation
+event_effects_austria_federation.2_tt: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('medium_radicals')|+=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_greater_austria_tt $modifier_greater_austria$#!#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!\n• [ROOT.GetCountry.GetRuler.GetFullName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_greater_austria_character_tt $modifier_greater_austria_character$#!#!"
+
+modifier_greater_austria_tt: "[GetStaticModifier('modifier_greater_austria').GetName|v]\n[GetStaticModifier('modifier_greater_austria').GetDesc]"
+modifier_greater_austria_character_tt: "[GetStaticModifier('modifier_greater_austria_character').GetName|v]\n[GetStaticModifier('modifier_greater_austria_character').GetDesc]"
+
+# je_danubian_federation_observer
+event_effects_austria_federation.14_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_free_and_independent_subject_tt $modifier_free_and_independent_subject$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [concept_relations] with #v $AUS$#! will improve by #g 20#!\n• A Positive Event [concept_diplomatic_catalyst] is triggered between [ROOT.GetCountry.GetName] and #v $AUS$#!"
+
+modifier_free_and_independent_subject_tt: "[GetStaticModifier('modifier_free_and_independent_subject').GetName|v]\n[GetStaticModifier('modifier_free_and_independent_subject').GetDesc]"
+
+# je_eastern_question_russia
+event_effects_eastern_question_russia.1_tt: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [concept_power_bloc] gains significant leverage in #v $BUL$#!\n• [concept_relations] with #v $BUL$#! will improve by #g 25#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_protector_of_the_south_slavs_tt $modifier_protector_of_the_south_slavs$#!#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [concept_power_bloc] gains significant leverage in all [GetReligion('orthodox').GetName] #b South Slavic#! [Concept('concept_country','$concept_countries$')]\n• [concept_relations] with all [GetReligion('orthodox').GetName] #b South Slavic#! [Concept('concept_country','$concept_countries$')] will improve by #g 10#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_protector_of_the_south_slavs_twice_dummy_tt $modifier_protector_of_the_south_slavs_twice_dummy$#!#!"
+
+modifier_protector_of_the_south_slavs_tt: "[GetStaticModifier('modifier_protector_of_the_south_slavs').GetName|v]\n[GetStaticModifier('modifier_protector_of_the_south_slavs').GetDesc]"
+modifier_protector_of_the_south_slavs_twice_dummy_tt: "[GetStaticModifier('modifier_protector_of_the_south_slavs_twice_dummy').GetName|v]\n[GetStaticModifier('modifier_protector_of_the_south_slavs_twice_dummy').GetDesc]"
+
+# je_eastern_question_austria
+event_effects_eastern_question_austria.2_tt: "$event_effect_choose_one$ #indent_newline:3 \n• $bosnian_protectorate_tt$\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [GetStateRegion('STATE_BOSNIA').GetName] will be annexed into [ROOT.GetCountry.GetName]\n• $incident_with_bosnia_owner_tt$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• $bosnian_puppet_tt$\n• $incident_with_bosnia_owner_tt$#!\n If we have established the #b Triple Monarchy#!: #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [GetStateRegion('STATE_BOSNIA').GetName] will be annexed into an [ROOT.GetCountry.GetAdjective] #b South Slavic#! [concept_subject]\n• $incident_with_bosnia_owner_tt$\n• [concept_relations] with #v $HUN$#! will #r worsen#!, and #v $HUN_ADJ$#! [concept_liberty_desire] will #b increase#!#!"
+
+incident_with_bosnia_owner_tt: "Causes a [concept_diplomatic_incident] with the former owner of [GetStateRegion('STATE_BOSNIA').GetName]"
+
+# je_bavarocracy
+event_effects_bavarocracy_events.1_tt: "• [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] will lose #b $inexperienced$#! and #b $political_appointee$#!\n• If [ROOT.GetCountry.GetName] has [GetLawType('law_autocracy').GetName]: #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_bavarocracy_autocratic_tt $modifier_bavarocracy_autocratic$#!#!\n• If [ROOT.GetCountry.GetName] allows for [Concept('concept_votes','$concept_voting$')] in [Concept('concept_election','$concept_elections$')]: #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_bavarocracy_democratic_tt $modifier_bavarocracy_democratic$#!#!\n$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_ottonian_renaissance_tt $modifier_ottonian_renaissance$#!\n• [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] will gain #b $erudite$#! and #b $basic_political_operator$#!#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_ottonian_reforms_tt $modifier_ottonian_reforms$#!\n• [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] will gain #b $celebrity_commander$#! and #b $basic_offensive_planner$#!"
+
+modifier_ottonian_renaissance_tt: "[GetStaticModifier('modifier_ottonian_renaissance').GetName|v]\n[GetStaticModifier('modifier_ottonian_renaissance').GetDesc]"
+modifier_bavarocracy_autocratic_tt: "[GetStaticModifier('modifier_bavarocracy_autocratic').GetName|v]\n[GetStaticModifier('modifier_bavarocracy_autocratic').GetDesc]"
+modifier_bavarocracy_democratic_tt: "[GetStaticModifier('modifier_bavarocracy_democratic').GetName|v]\n[GetStaticModifier('modifier_bavarocracy_democratic').GetDesc]"
+modifier_ottonian_reforms_tt: "[GetStaticModifier('modifier_ottonian_reforms').GetName|v]\n[GetStaticModifier('modifier_ottonian_reforms').GetDesc]"
+
+# je_hungarian_revolution
+event_effects_hungary_events.12_tt: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• $increased_chance_of_liberal_leaders_tt$\n• All [Concept('concept_interest_group', '$concept_interest_groups$')] in favor of [GetLawType('law_census_voting').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_hungarian_radicalism_tt $modifier_hungarian_radicalism$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_a_liberal_century_tt $modifier_a_liberal_century$#!\n• [GetPlayer.MakeScope.ScriptValue('medium_radicals')|+=1%] of [GetCulture('hungarian').GetName] and [GetCulture('szekely').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_efficient_magyarization_tt $modifier_efficient_magyarization$#!\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [GetCulture('hungarian').GetName] and [GetCulture('szekely').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!"
+
+modifier_hungarian_radicalism_tt: "[GetStaticModifier('modifier_hungarian_radicalism').GetName|v]\n[GetStaticModifier('modifier_hungarian_radicalism').GetDesc]"
+modifier_a_liberal_century_tt: "[GetStaticModifier('modifier_a_liberal_century').GetName|v]\n[GetStaticModifier('modifier_a_liberal_century').GetDesc]"
+modifier_efficient_magyarization_tt: "[GetStaticModifier('modifier_efficient_magyarization').GetName|v]\n[GetStaticModifier('modifier_efficient_magyarization').GetDesc]"
+
+# je_the_hungry_forties
+event_effects_hungry_forties.2_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_hungry_forties_over_tt $modifier_hungry_forties_over$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_hungry_forties_continued_imports_tt $modifier_hungry_forties_continued_imports$#!"
+
+modifier_hungry_forties_over_tt: "[GetStaticModifier('modifier_hungry_forties_over').GetName|v]\n[GetStaticModifier('modifier_hungry_forties_over').GetDesc]"
+modifier_hungry_forties_continued_imports_tt: "[GetStaticModifier('modifier_hungry_forties_continued_imports').GetName|v]\n[GetStaticModifier('modifier_hungry_forties_continued_imports').GetDesc]"
+
+# je_metternich
+event_effects_metternich.1_tt: "• $metternich_retirement_tt$\n• [ROOT.GetCountry.GetName] gets [SCOPE.GetRootScope.GetCountry.GetCustom('possible_metternich_modifier')], multiplied by the number of #b agenda#! items completed (currently [GetPlayer.MakeScope.ScriptValue('metternich_agenda_value')|v0])"
+event_effects_metternich.2_tt: "• $metternich_resignation_and_flee_tt$\n• If any [concept_political_movement] is [Concept('concept_revolution', '$concept_revolutionary$')]: #indent_newline:3 \n• [SCOPE.sCharacter('metternich_scope').GetFullName] will flee into [concept_exile]\n• [SCOPE.sCharacter('metternich_scope').GetFullName] gets the [GetIdeology('ideology_modernizer_leader').GetName] [concept_ideology]"
+
+metternich_modifier_t4_display: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],metternich_modifier_t4_tt $metternich_modifier_t4$#!"
+metternich_modifier_t3_display: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],metternich_modifier_t3_tt $metternich_modifier_t3$#!"
+metternich_modifier_t2_display: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],metternich_modifier_t2_tt $metternich_modifier_t2$#!"
+metternich_modifier_t1_display: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],metternich_modifier_t1_tt $metternich_modifier_t1$#!"
+
+metternich_modifier_t4_tt: "[GetStaticModifier('metternich_modifier_t4').GetName|v]\n[GetStaticModifier('metternich_modifier_t4').GetDesc]"
+metternich_modifier_t3_tt: "[GetStaticModifier('metternich_modifier_t3').GetName|v]\n[GetStaticModifier('metternich_modifier_t3').GetDesc]"
+metternich_modifier_t2_tt: "[GetStaticModifier('metternich_modifier_t2').GetName|v]\n[GetStaticModifier('metternich_modifier_t2').GetDesc]"
+metternich_modifier_t1_tt: "[GetStaticModifier('metternich_modifier_t1').GetName|v]\n[GetStaticModifier('metternich_modifier_t1').GetDesc]"
+
+# je_montenegrin_raiding
+event_effects_mon_state_formation.17_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],mon_appeals_tt $mon_appeals$#!\n• [ROOT.GetCountry.GetName] becomes a [GetCulture('turkish').GetName] [GetReligion('sunni').GetName] [concept_subject] of the [SelectLocalization(SCOPE.sCountry('ottoman').IsValid, SCOPE.sCountry('ottoman').GetName, 'dyn_c_ottoman_empire')]\n• [GetPlayer.MakeScope.ScriptValue('huge_radicals')|-=1%] of [GetReligion('orthodox').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_radical]"
+
+mon_appeals_tt: "[GetStaticModifier('mon_appeals').GetName|v]\n[GetStaticModifier('mon_appeals').GetDesc]"
+
+# je_mon_austria_alliance
+event_effects_mon_state_formation.4_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_mon_trade_tt $modifier_mon_trade$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [concept_relations] with #v $AUS$#! will improve by #g 30#!\n• A Positive Event [concept_diplomatic_catalyst] is triggered between [ROOT.GetCountry.GetName] and #v $AUS$#!#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_mon_aus_military_tt $modifier_mon_aus_military$#!"
+
+modifier_mon_trade_tt: "[GetStaticModifier('modifier_mon_trade').GetName|v]\n[GetStaticModifier('modifier_mon_trade').GetDesc]"
+modifier_mon_aus_military_tt: "[GetStaticModifier('modifier_mon_aus_military').GetName|v]\n[GetStaticModifier('modifier_mon_aus_military').GetDesc]"
+
+# je_tur_raided
+event_effects_mon_state_formation.14_tt: "$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],put_down_rebels_savage_tt $put_down_rebels_savage$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #r -20#! [concept_acceptance] of [GetCulture('serb').GetName] [concept_culture]\n• [GetPlayer.MakeScope.ScriptValue('medium_radicals')|+=1%] of [GetCulture('turkish').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [GetCulture('serb').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]"
+put_down_rebels_savage_tt: "[GetStaticModifier('put_down_rebels_savage').GetName|v]\n[GetStaticModifier('put_down_rebels_savage').GetDesc]"
+
+# je_serbian_throne
+event_effects_serbian_throne.9_tt: "• $je_serbian_throne_dynasty_cement_tt$\n• $je_serbian_throne_cull_opponent_tt$\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],serbia_no_more_blood_feud_mod_tt $serbia_no_more_blood_feud_mod$#!"
+serbia_no_more_blood_feud_mod_tt: "[GetStaticModifier('serbia_no_more_blood_feud_mod').GetName|v]\n[GetStaticModifier('serbia_no_more_blood_feud_mod').GetDesc]"
+
+event_effects_serbian_throne.10_tt: "• $je_serbian_throne_dynasty_change_tt$\n• $je_serbian_throne_cull_ruler_tt$\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],serbia_karadordevic_changover_mod_tt $serbia_karadordevic_changover_mod$#!"
+serbia_karadordevic_changover_mod_tt: "[GetStaticModifier('serbia_karadordevic_changover_mod').GetName|v]\n[GetStaticModifier('serbia_karadordevic_changover_mod').GetDesc]"
+
+# je_the_grand_collapse
+event_effects_the_grand_collapse.4_tt: "• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],the_grand_collapse_complete_mod_tt $the_grand_collapse_complete_mod$#!\n$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_monarchy').GetName]\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|+=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_theocracy').GetName]\n• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_millet_system').GetName] ([GetLawType('law_state_religion').GetName])\n• [GetPlayer.MakeScope.ScriptValue('medium_radicals')|+=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_loyalist]#!"
+the_grand_collapse_complete_mod_tt: "[GetStaticModifier('the_grand_collapse_complete_mod').GetName|v]\n[GetStaticModifier('the_grand_collapse_complete_mod').GetDesc]"
+
+event_effects_the_grand_collapse.5_autocracy_tt: "• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_presidential_republic').GetName]\n$ottoman_collapse_tt$"
+event_effects_the_grand_collapse.5_tt: "• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_parliamentary_republic').GetName]\n$ottoman_collapse_tt$"
+
+ottoman_collapse_tt: "• All [ROOT.GetCountry.GetAdjective] [Concept('concept_subject','$concept_subjects$')] will become Independent\n• [ROOT.GetCountry.GetName] loses control of all [Concept('concept_state','$concept_states$')] outside of #b Central Anatolia#!"
+
+# je_matter_of_hungary
+event_effects_austria_events.3_tt: "• $hungary_seizes_homelands_tt$\n$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• All [ROOT.GetCountry.GetAdjective] [Concept('concept_subject','$concept_subjects$')] outside of the [GetStrategicRegion('region_north_germany').GetName] and [GetStrategicRegion('region_south_germany').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')] will become Independent\n• [ROOT.GetCountry.GetName] loses control of all [GetCulture('croat').GetName], [GetCulture('serb').GetName], [GetCulture('polish').GetName], [GetCulture('north_italian').GetName] [Concept('concept_homeland','$concept_homelands$')]\n• [GetPlayer.MakeScope.ScriptValue('medium_radicals')|-=1%] of [GetCulture('czech').GetName] and [GetCulture('slovene').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_radical]\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_broken_eagle_tt $modifier_broken_eagle$#!#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|-=1%] of [GetCulture('czech').GetName] and [GetCulture('slovene').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_radical]\n• [GetPlayer.MakeScope.ScriptValue('very_large_radicals')|-=1%] of [GetCulture('croat').GetName], [GetCulture('serb').GetName], [GetCulture('polish').GetName], and [GetCulture('north_italian').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_radical]\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_broken_eagle_tt $modifier_broken_eagle$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_overstretched_administration_tt $modifier_overstretched_administration$#!"
+
+hungary_seizes_homelands_tt: "• [SelectLocalization(SCOPE.sCountry('hungary_scope').IsValid, SCOPE.sCountry('hungary_scope').GetName, 'HUN')] will seize control of all [GetCulture('hungarian').GetName] [Concept('concept_homeland','$concept_homelands$')]"
+
+modifier_broken_eagle_tt: "[GetStaticModifier('modifier_broken_eagle').GetName|v]\n[GetStaticModifier('modifier_broken_eagle').GetDesc]"
+modifier_overstretched_administration_tt: "[GetStaticModifier('modifier_overstretched_administration').GetName|v]\n[GetStaticModifier('modifier_overstretched_administration').GetDesc]"
+
+# je_austrian_neo_absolutism
+event_effects_austria_events.1_tt: "• $je_austrian_neo_absolutism_completion_tt$\n• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_neo_absolutism').GetName] ([GetLawType('law_autocracy').GetName])\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_austrian_state_police_upgraded_tt $modifier_austrian_state_police_upgraded$#!\n$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_viribus_unitis_tt $modifier_viribus_unitis$#!\n• [ROOT.GetCountry.GetRuler.GetFullName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_everymans_emperor_tt $modifier_everymans_emperor$#!#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_volksbeamter_tt $modifier_volksbeamter$#!"
+
+modifier_austrian_state_police_upgraded_tt: "[GetStaticModifier('modifier_austrian_state_police_upgraded').GetName|v]\n[GetStaticModifier('modifier_austrian_state_police_upgraded').GetDesc]"
+modifier_everymans_emperor_tt: "[GetStaticModifier('modifier_everymans_emperor').GetName|v]\n[GetStaticModifier('modifier_everymans_emperor').GetDesc]"
+modifier_everymans_ruler_tt: "[GetStaticModifier('modifier_everymans_ruler').GetName|v]\n[GetStaticModifier('modifier_everymans_ruler').GetDesc]"
+modifier_viribus_unitis_tt: "[GetStaticModifier('modifier_viribus_unitis').GetName|v]\n[GetStaticModifier('modifier_viribus_unitis').GetDesc]"
+modifier_volksbeamter_tt: "[GetStaticModifier('modifier_volksbeamter').GetName|v]\n[GetStaticModifier('modifier_volksbeamter').GetDesc]"
+
+event_effects_austria_events.2_tt: "$event_effect_choose_one$ #indent_newline:3 \n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_wealth_voting').GetName]\n• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_no_home_affairs').GetName]\n• $all_autocratic_igs_get_autocracy_discredited_tt$#!\n$event_effect_all_of_the_following$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_unrest_in_the_ministry_of_finance_tt $modifier_unrest_in_the_ministry_of_finance$#!\n• [GetPlayer.MakeScope.ScriptValue('medium_radicals')|-=1%] of [Concept('concept_pop', '$concept_pops$')] become more [concept_radical]\n• All [Concept('concept_interest_group', '$concept_interest_groups$')] #b not#! in favor of [GetLawType('law_autocracy').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_disapproving_of_unqualified_autocracy_tt $modifier_disapproving_of_unqualified_autocracy$#!#!"
+
+all_autocratic_igs_get_autocracy_discredited_tt: "All [Concept('concept_interest_group', '$concept_interest_groups$')] in favor of [GetLawType('law_autocracy').GetName] get #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_autocracy_discredited_tt $modifier_autocracy_discredited$#!"
+
+modifier_unrest_in_the_ministry_of_finance_tt: "[GetStaticModifier('modifier_unrest_in_the_ministry_of_finance').GetName|v]\n[GetStaticModifier('modifier_unrest_in_the_ministry_of_finance').GetDesc]"
+modifier_disapproving_of_unqualified_autocracy_tt: "[GetStaticModifier('modifier_disapproving_of_unqualified_autocracy').GetName|v]\n[GetStaticModifier('modifier_disapproving_of_unqualified_autocracy').GetDesc]"
+modifier_autocracy_discredited_tt: "[GetStaticModifier('modifier_autocracy_discredited').GetName|v]\n[GetStaticModifier('modifier_autocracy_discredited').GetDesc]"
+modifier_austrian_state_police_remnant_1_tt: "[GetStaticModifier('modifier_austrian_state_police_remnant_1').GetName|v]\n[GetStaticModifier('modifier_austrian_state_police_remnant_1').GetDesc]"
+modifier_austrian_state_police_remnant_2_tt: "[GetStaticModifier('modifier_austrian_state_police_remnant_2').GetName|v]\n[GetStaticModifier('modifier_austrian_state_police_remnant_2').GetDesc]"
+modifier_opening_up_the_political_sphere_tt: "[GetStaticModifier('modifier_opening_up_the_political_sphere').GetName|v]\n[GetStaticModifier('modifier_opening_up_the_political_sphere').GetDesc]"
+
+event_effects_austria_events.5_tt: "• $all_autocratic_igs_get_autocracy_discredited_tt$\n• [ROOT.GetCountry.GetNameNoFlag] enables the [concept_law] [GetLawType('law_no_home_affairs').GetName]\n$event_effect_choose_one$ #indent_newline:3 \n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_austrian_state_police_remnant_1_tt $modifier_austrian_state_police_remnant_1$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_austrian_state_police_remnant_2_tt $modifier_austrian_state_police_remnant_2$#!\n• [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_opening_up_the_political_sphere_tt $modifier_opening_up_the_political_sphere$#!"

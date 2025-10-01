@@ -1,6 +1,6 @@
 ﻿l_english:
   je_risorgimento: "Risorgimento"
-  je_risorgimento_reason:1 "The winds of nationalism sweeping Europe have begun to pass through [ROOT.GetCountry.GetName], inspiring figures both within our government and without to look towards the restoration of a single, unified Italy.\n\nWhilst this journal entry is active, having any active [concept_revolution] caused by a #tooltippable;tooltip:[GetPlayer.GetTooltipTag],italian_nationalist_movements_list_tt compatible#! [concept_political_movement] will lead to the seizure of the [ROOT.GetCountry.GetAdjective] government by pan-Italian revolutionaries[ROOT.GetCountry.GetCustom('italy_fate_loc')]."
+  je_risorgimento_reason:2 "The winds of nationalism sweeping Europe have begun to pass through [ROOT.GetCountry.GetName], inspiring figures both within our government and without to look towards the restoration of a single, unified Italy.\n\nWhilst this journal entry is active, having any active [concept_revolution] caused by an [SelectLocalization(SCOPE.sPoliticalMovement('italian_national_movement').IsValid, SCOPE.sPoliticalMovement('italian_national_movement').GetName, 'movement_italian_national')] will lead to the seizure of the [ROOT.GetCountry.GetAdjective] government by pan-Italian revolutionaries[ROOT.GetCountry.GetCustom('italy_fate_loc')]."
   austrian_radicals_cooldown_tt: "Has not used the #bold Encourage Italian Nationalism#! decision in the past #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#!"
   italian_radicals_cooldown_tt: "Has not used the #bold Sponsor Pro-Unification Sentiment#! decision in the past #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#!"
   is_italy_tt: "Has formed the nation of #bold Italy#!"
@@ -201,10 +201,6 @@
  notification_ita_italian_unification_intent_desc: "The government of [SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetFullName] has signaled support for the unification of the Italian peninsula into a single nation."
  notification_ita_italian_unification_intent_tooltip: "#header $notification_ita_italian_unification_intent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ita_italian_unification_intent_desc$"
 
- notification_nationalism_unlock_national_agitation_name: "National Agitation Available"
- notification_nationalism_unlock_national_agitation_desc: "With our nation's development of Nationalism, the 'Stir National Agitation' Character Interaction for [Concept('concept_agitator','$concept_agitators$')] has become available."
- notification_nationalism_unlock_national_agitation_tooltip: "#header $notification_nationalism_unlock_national_agitation_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_unlock_national_agitation_desc$"
-
   notification_nationalism_national_agitation_occurred_name: "[SCOPE.sCulture('agitation_culture').GetName] Unrest in [SCOPE.sState('agitation_state').GetName]"
   notification_nationalism_national_agitation_occurred_desc: "[SCOPE.sCulture('agitation_culture').GetName] nationalist unrest has sharply increased in [SCOPE.sState('agitation_state').GetName]. Agents of [SCOPE.sCountry('agitation_sponsor').GetName] have been suspected of fostering the seditious behavior."
   notification_nationalism_national_agitation_occurred_tooltip: "#header $notification_nationalism_national_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_national_agitation_occurred_desc$"
@@ -347,7 +343,7 @@
   assassination_attempt_failed_tt: "Our #bold assassination attempt#! will fail, but remain undetected"
   assassination_attempt_failed_loud_tt: "Our #bold assassination attempt#! will fail, and cause a major scandal"
 
-  would_be_accepted_under_national_supremacy_tt: "This [concept_pop]'s culture shares both [Concept('concept_cultural_heritage_trait', '$concept_cultural_heritage_traits$')] and all other [Concept('concept_cultural_trait', '$concept_cultural_traits$')] with any of this country's [concept_primary_cultures]"
+  would_be_accepted_under_national_supremacy_tt: "This [concept_pop]'s culture shares both a [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] and [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] with any of this country's [concept_primary_cultures]"
 
   resign_from_office: "Resign from Office"
   resign_from_office_desc: "This character will resign from [Character.GetHerHis] position as [Character.GetPrimaryRoleTitle] of [Character.GetCountry.GetName]"
@@ -464,6 +460,7 @@
 
   corporate_state.1.t: "The National Unions"
   corporate_state.1.d: "Segments of the [SCOPE.gsInterestGroup('trade_unions_ig').GetName] have voiced their support for the official recognition of labor within the proposed [SCOPE.sLaw('current_law_scope').GetName]. They serve as a valuable counterbalance against the communist opposition."
+  corporate_state.1.d1: "Segments of the [SCOPE.gsInterestGroup('trade_unions_ig').GetName] have voiced their support for the official recognition of the role of labor within our state. They serve as a valuable counterbalance against the communist opposition."
   corporate_state.1.f: ""Today the bourgeoisie itself shows a sympathy and an inclination, which are by no means illogical, towards the unionisation of the working class. Indeed, the more intelligent sections of the bourgeoisie would readily accept a reform of the state and representative apparatus in order to give a larger place to the 'apolitical' unions and even to their claims to exercise control over the system of production. The bourgeoisie feels that, as long as the proletariat's action can be limited to the immediate economic demands that are raised trade by trade, it helps to safeguard the status-quo and to avoid the formation of the perilous 'political' consciousness..."" # - Amadeo Bordiga, Party and Class [1921]
   corporate_state.1.a: "Their support is welcomed."
   corporate_state.1.b: "Use them to recruit for our national labor organization."
@@ -567,7 +564,6 @@
   great_reformer.1.a: "The Tsar must be honored for his work."
   great_reformer.1.b: "After reform, revolution."
 
-  modifier_great_reformer: "Tsar-Liberator"
   modifier_great_reforms_complete: "Great Reforms Completed"
 
   most_european_pops_abandon_alaska_tt: "A large number of #bold European#! [Concept('concept_pop','$concept_pops$')] will evacuate [SCOPE.sState('capital_scope').GetName]"

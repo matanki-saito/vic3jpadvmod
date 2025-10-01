@@ -4,6 +4,8 @@
  party_communist:0 "Communist Party"
  party_liberal:0 "Liberal Party"
  party_nazis:0 "Nazi Party"
+ party_austrian_nazi_party: "Austrian Nazi Party"
+ party_greater_german_peoples_party: "Greater German People’s Party"
  party_german_social_party: "German Social Party"
  party_british_union_of_fascists:0 "British Union of Fascists"
  party_mouvement_franciste:1 "French Action"
@@ -17,6 +19,7 @@
  party_radicals:0 "Radical Party"
  party_us_democrats:0 "Democratic Party"
  party_republicans:0 "Republican Party"
+ party_movement_party: "Movement Party"
  party_social_democrats:0 "Social Democratic Party"
  party_free_trade:0 "Free Trade Party"
  party_orleanists:0 "Orleanist Party"
@@ -139,6 +142,7 @@
  party_progressive_league:0 "Progressive League"
  party_exalted_liberal: "Exalted Liberal Party"
  party_neoteristikon_komma: "New Party"
+ party_opposition_party: "Opposition Party"
 
 #military_party
  party_patriotic_union:0 "Patriotic Union"

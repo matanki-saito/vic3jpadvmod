@@ -40,6 +40,8 @@
  cancer:0 "Cancer"
  cancer_desc:0 "This character is afflicted by Cancer, and their health has suffered greatly as a result."
  senile:0 "Senile"
+ tuberculosis: "Tuberculosis"
+ tuberculosis_desc: "This character is afflicted by Tuberculosis, a serious illness of the lungs also known as "Consumption" or "TB", and their health has suffered greatly as a result."
  senile_desc:0 "This character's old age has impaired their mental abilities."
  wounded:0 "Wounded"
  wounded_desc:0 "This character has suffered a serious wound."
@@ -61,7 +63,7 @@
  honorable_desc: "This character is well-known for maintaining a high personal standard."
  trait_child: "Child"
  trait_child_desc: "This character is a child, not yet fully mature or suited for the demands of statecraft."
-  
+
  basic_diplomat:0 "Diplomat"
  basic_diplomat_desc:0 "This character is a skilled diplomat."
  experienced_diplomat:0 "Experienced Diplomat"
@@ -103,7 +105,7 @@
  explorer_desc:1 "This character has successfully completed an expedition."
  beetle_ear:0 "Beetle Eared"
  beetle_ear_desc:0 "This character had a beetle crawl in their ear during an expedition. Surely its dead... unless?"
-  
+
  bandit:0 "Bandit"
  bandit_desc:0 "This character is known for being a graduate of the 'University of the Green Forest'."
 
@@ -155,14 +157,14 @@
 
  pillager:0 "Pillager"
  pillager_desc:1 "This character maintains their armies by pillaging the countryside."
- 
+
  basic_offensive_planner:0 "Offensive Planner"
  basic_offensive_planner_desc:1 "This character is known for their clever military advances."
  experienced_offensive_planner:0 "Experienced Offensive Planner"
  experienced_offensive_planner_desc:1 "This character is renowned for their elaborate military advances."
  expert_offensive_planner:0 "Expert Offensive Planner"
  expert_offensive_planner_desc:1 "This character is famous around the world for their brilliant military advances."
- 
+
  basic_defensive_strategist:0 "Defensive Strategist"
  basic_defensive_strategist_desc:1 "This character is known for their clever defensive strategies."
  experienced_defensive_strategist:0 "Experienced Defensive Strategist"
@@ -189,6 +191,8 @@
  inept: "Inept"
  inept_desc: "The responsibilities of this character's position greatly outweigh their competence."
  inexperienced: "Inexperienced"
+ elder: "Elder"
+ elder_desc: "This character has experience and prestige as a local leader within a rustic community."
  inexperienced_desc: "This character is a neophyte in their position, and has yet to develop their skills to an advanced level."
 
  basic_entrepreneur: "Basic Entrepreneur"
@@ -197,3 +201,44 @@
  experienced_entrepreneur_desc: "This character is renowned for their brilliant business acumen."
  expert_entrepreneur: "Expert Entrepreneur"
  expert_entrepreneur_desc: "This character has truly mastered the art of business."
+
+# Specials
+
+special_character_pedro_legitimacy: "President Pedro"
+special_character_pedro_legitimacy_desc: "A sovereign who laid down his crown to serve the people, preserving unity through peaceful transformation."
+special_character_napoleon_of_the_americas: "Napoleon of the Americas"
+special_character_napoleon_of_the_americas_desc: "A bold and brilliant commander whose dreams of glory sought to reshape a continent."
+special_character_el_excelentisimo: "El Excelentísimo"
+special_character_el_excelentisimo_desc: "A statesman of iron will who brought stability at the price of unquestioned authority."
+special_character_great_reformer: "Tsar-Liberator"
+special_character_great_reformer_desc: "An autocrat who reformed from above, balancing power and mercy to reshape an empire."
+special_character_german_unifier_ruler: "German Unifier"
+special_character_german_unifier_ruler_desc: "The leader under whom his people were united, forging an empire from ambition and steel."
+special_character_restitutor_orbis: "Restitutor Orbis"
+special_character_restitutor_orbis_desc: "A sovereign who restored crown and country alike, reviving a dynasty to reclaim its rightful place in history."
+special_character_lenin_popularity: "The Man from the River Lena"
+special_character_lenin_popularity_desc: "Born of exile and forged in struggle, he became the voice of the masses and the architect of upheaval."
+special_character_john_brown_popularity: "This Glorious Endeavor"
+special_character_john_brown_popularity_desc: "A righteous zealot who gave his life to strike the chains of bondage from a broken nation."
+special_character_blanqui_is_free: "Professional Revolutionary"
+special_character_blanqui_is_free_desc: "An unshakable radical who knew no rest, no retreat, and no cause but the permanent struggle."
+special_character_maurras_popularity: "Reactionary Icon"
+special_character_maurras_popularity_desc: "A steadfast theorist who wove order, tradition, and monarchy into a vision for national rebirth."
+special_character_napoleonic_return: "Napoleonic Return"
+special_character_napoleonic_return_desc: "An astute exile who returned at the perfect moment, armed with a name that stirred the crowds."
+special_character_mazzini_popularity: "Popular Radical"
+special_character_mazzini_popularity_desc: "A determined exile who never compromised his beliefs, welcomed home by those still dreaming."
+special_character_emperor_norton_popularity: "The Spirit of San Francisco"
+special_character_emperor_norton_popularity_desc: "In a land of ambition, he asked for nothing – and was given everything by the people that made him legend."
+special_character_nightingale_popularity: "Nightingale Pledge"
+special_character_nightingale_popularity_desc: "With unwavering resolve and a hammer in hand, she defied orders to bring mercy where it was most needed."
+special_character_general_revanche: "Général Revanche"
+special_character_general_revanche_desc: "He marched not for glory, but for revanche."
+special_character_passionate_academic: "Passionate Theorist"
+special_character_passionate_academic_desc: "An uncompromising mind, preaching action over order and lit fires in ideologies across the political spectrum."
+special_character_agent_of_the_sovereign: "Agent of the Sovereign"
+special_character_agent_of_the_sovereign_desc: "An eloquent agitator whose loyalty to the people came wrapped in letters to their sovereign."
+special_character_curly_haired_orpheus: "The Curly-Haired Orpheuse"
+special_character_curly_haired_orpheus_desc: "A poet of the enslaved whose pen struck deeper than any sword, forging justice from rhyme and revolt."
+special_character_luxemburg_in_exile: "Untamed Revolutionary"
+special_character_luxemburg_in_exile_desc: "A revolutionary who bent to no party, no general, and no prison—driven by a freedom that would not be tamed."

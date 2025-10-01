@@ -453,7 +453,7 @@
  # Dravidian Movement
  
  je_dravidian_movement: "Dravidian Movement"
- je_dravidian_movement_reason: "The non-Brahmins of [ROOT.GetCountry.GetName] have responded to the disproportionate representation and political power of Brahmins. After a series of non-Brahmin conferences, the Dravidian Movement has formed and set a new agenda to oppose Brahmin dominance. They seek to right the harm of caste distinctions in government."
+ je_dravidian_movement_reason: "The common people of [ROOT.GetCountry.GetName] have responded to the disproportionate representation and political power of Brahmins. After a series of anti-Brahmin conferences, the Dravidian Movement has formed and set a new agenda to oppose Brahmin dominance. They seek to remove caste distinctions from law and government administration."
  dravidian_movement_fail_tt: "Has passed the Indian Home Rule Act"
 
  caste_conflict.1.t: "Unequal Opportunities"

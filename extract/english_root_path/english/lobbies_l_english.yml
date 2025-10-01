@@ -29,19 +29,19 @@
 
  POLITICAL_LOBBY_APPEASEMENT_IMPACT: "[PoliticalLobby.GetAppeasement|=+v] [concept_approval] from [concept_political_lobby_appeasement]"
  POLITICAL_LOBBY_APPEASEMENT_FACTORS: "Actions targeting [PoliticalLobby.GetTargetCountry.GetName]"
- POLITICAL_LOBBY_TOTAL_CLOUT: "Lobby Clout: #tooltippable #tooltip:POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!"
- POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP: "#header Lobby [concept_clout]#!\nTotal: [PoliticalLobby.GetTotalClout|%1v]\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]"
+ POLITICAL_LOBBY_TOTAL_CLOUT: "Lobby Clout: #tooltippable #tooltip:[PoliticalLobby.GetTooltipTag],POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP [PoliticalLobby.GetTotalClout|%1v]#!#!"
+ POLITICAL_LOBBY_TOTAL_CLOUT_BREAKDOWN_TOOLTIP: "#header Lobby [concept_clout]#!\n[PoliticalLobby.GetTotalClout|%1v] in total\n$TOOLTIP_DELIMITER$\n[PoliticalLobby.GetTotalCloutBreakdown]"
  POLITICAL_LOBBY_APPEASEMENT_INCREASE: "Increases [concept_political_lobby_appeasement]" 
  POLITICAL_LOBBY_APPEASEMENT_DECREASE: "Decreases [concept_political_lobby_appeasement]"
 
  POLITICAL_LOBBY_APPEASEMENT: "$concept_political_lobby_appeasement$ [PoliticalLobby.GetAppeasement|=+]"
- POLITICAL_LOBBY_APPEASEMENT_TOOLTIP: "#header [concept_political_lobby_appeasement]#!\nCurrently: [PoliticalLobby.GetAppeasement|=+]\n[PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Effects:#!\n[PoliticalLobby.GetAppeasementEffectsDesc]\n\n#title Recent Changes:#!\n[PoliticalLobby.GetAppeasementChangesDesc]"
+ POLITICAL_LOBBY_APPEASEMENT_TOOLTIP: "#header [concept_political_lobby_appeasement]#!\n[PoliticalLobby.GetAppeasement|=+] in the [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title Effects:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementEffectsDesc]#!\n\n#title Recent changes:#! #indent_newline:3 \n[PoliticalLobby.GetAppeasementChangesDesc]#!"
  POLITICAL_LOBBY_APPEASEMENT_CHANGE: "$AMOUNT|=+$ from [POLITICAL_LOBBY_APPEASEMENT_FACTOR.GetDesc|v] ($DATE|v$)"
- POLITICAL_LOBBY_APPEASEMENT_APPROVAL_IMPACT: "[concept_approval] of [concept_interest_group] members: $IMPACT|=+$"
+ POLITICAL_LOBBY_APPEASEMENT_APPROVAL_IMPACT: "$IMPACT|=+$ [concept_approval] of [concept_interest_group] members"
  POLITICAL_LOBBY_MEMBER_CLOUT: "$CLOUT|1%v$ from [INTEREST_GROUP.GetName]"
 
  POLITICAL_LOBBY_MEMBER_SUPPORT: "[SelectLocalization(GreaterThan_CFixedPoint(PoliticalLobby.CalcJoinWeight(InterestGroup.Self),'(CFixedPoint)10'), 'POLITICAL_LOBBY_MEMBER_SUPPORT_SOLID', 'POLITICAL_LOBBY_MEMBER_SUPPORT_FAILING')]"
- POLITICAL_LOBBY_MEMBER_SUPPORT_TT: "#T Lobby Support#!\n[PoliticalLobby.CalcJoinWeight(InterestGroup.Self)|v0] ($POLITICAL_LOBBY_MEMBER_SUPPORT$)\n\nIf support drops to #v 0#!, the [InterestGroup.GetName] are likely to leave the [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\nTotal Support is due to:\n[PoliticalLobby.CalcJoinWeightDesc(InterestGroup.Self)]"
+ POLITICAL_LOBBY_MEMBER_SUPPORT_TT: "#T Lobby Support#!\n[PoliticalLobby.CalcJoinWeight(InterestGroup.Self)|v0] ($POLITICAL_LOBBY_MEMBER_SUPPORT$)\n\nIf support drops to #v 0#!, the [InterestGroup.GetName] are likely to leave the [PoliticalLobby.GetName]\n$TOOLTIP_DELIMITER$\n#title This support is due to:#!#indent_newline:3 \n[PoliticalLobby.CalcJoinWeightDesc(InterestGroup.Self)]#!"
 
  POLITICAL_LOBBY_MEMBER_SUPPORT_SOLID: "Solid"
  POLITICAL_LOBBY_MEMBER_SUPPORT_FAILING: "#n Weak#!"

@@ -71,7 +71,7 @@
  coup.4.b: "民主主義は守られた！"
  coup.5.t: "[SCOPE.gsInterestGroup('coup_ig').GetName]政府の放棄"
  coup.5.d: "[SCOPE.gsInterestGroup('coup_ig').GetName]は完全に政府を離脱した。[SCOPE.sLaw('coup_desired_law').GetName]の制度は、政府の中枢ではなく、戦場で実行されそうだ。"
- coup.5.f: "「戦争とは一つの政治的行為にすぎないが、現実的な政治的道具である。戦争は他の手段をもってする政治の継続にすぎない。このほか、戦争に厳密に特有なものはすべて、戦争が用いる手段の特殊な性質に関係しているにすぎないのだ」" #- Carl von Clausewitz
+ coup.5.f: "「戦争とは一つの政治的行為にすぎないが、現実的な政治的道具である。戦争は他の手段をもってする政治の継続にすぎない。このほか、戦争に厳密に特有なものはすべて、戦争が用いる手段の特殊な性質に関係しているにすぎないのだ」\n\n— カール・フォン・クラウゼヴィッツ、 『#italic 戦争論#!』"
  coup.5.a: "光を当てるとネズミが散るものだな。"
  coup.5.b: "[SCOPE.sCharacter('coup_leader').GetFullName]は、敗北してもしなくても、永遠に裏切り者として知られよう。"
  coup_supported: "クーデターの支援"
@@ -160,7 +160,7 @@
  french_pretenders.5.d1: "君主制を打倒せよ！"
  changed_french_monarchist_support: "進捗ゲージがリセットされます"
  fra_republican_sentiment: "共和主義的思想"
- fra_republican_unrest: "共和主義者の動揺"
+ fra_republican_unrest: "$LEGACY_OF_FRENCH_REVOLUTION$"
  status_in_lead_and_on_throne_fra: "[ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')]家の支配は盤石です"
  status_throne_challenged_fra: "[ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')]家は[ROOT.GetCountry.GetCustom('french_leading_dynasty_name')]によって脅かされています"
  status_no_dynasty_fra: "どの王位継承者も優位に立っていません"

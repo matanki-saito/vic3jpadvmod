@@ -1,5 +1,5 @@
 ﻿l_english:
- PRESTIGE_FROM_COUNTRY_GDP:1 "#variable $VALUE|+=$#! from [concept_gdp]"
+ PRESTIGE_FROM_COUNTRY_GDP: "#variable $VALUE|+=$#! from [concept_gdp]"
  PRESTIGE_FROM_ARMY_POWER_PROJECTION:1 "#variable $VALUE|+=$#! from Army [concept_power_projection]"
  PRESTIGE_FROM_NAVY_POWER_PROJECTION:1 "#variable $VALUE|+=$#! from Navy [concept_power_projection]"
  PRESTIGE_FROM_COUNTRY_TIER:1 "#variable $VALUE|+=$#! from [concept_country_tier] of $TIER|v$"
@@ -56,8 +56,11 @@
 
  DIPLOMATIC_PACT_REDUCED_LIBERTY_DESIRE: "Will contribute to a decline in [SCOPE.sCountry('target_country').GetAdjective] [concept_liberty_desire]"
 
+ TRANSFER_STATE_TT: "Transfers a [concept_state] from one [concept_country] to another"
+
  DIPLOMATIC_PACT_REQUIREMENT_MORE_TECHS_RESEARCHED: "[SCOPE.sCountry('actor').GetName] must have unlocked more [Concept('concept_technology', '$concept_technologies$')] than [SCOPE.sCountry('target_country').GetName]"
- DIPLOMATIC_PACT_REQUIREMENT_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('actor').GetAdjective] [concept_liberty_desire] must be at least [GetDefine('NDiplomacy','WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE')]"
+ DIPLOMATIC_PACT_REQUIREMENT_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('source_country').GetName] [concept_liberty_desire] must be at least #v 25#!, or share the same [concept_overlord]"
+ DIPLOMATIC_PACT_REQUIREMENT_HIGHER_RANK_OR_SAME_OVERLORD: "[SCOPE.sCountry('source_country').GetName] must be a [SCOPE.sCountry('target_country').GetRank] or greater, or share the same overlord"
  DIPLOMATIC_PACT_REQUIREMENT_TARGET_HIGH_LIBERTY_DESIRE: "[SCOPE.sCountry('target_country').GetAdjective] [concept_liberty_desire] must be at least [GetDefine('NDiplomacy','WAR_GOAL_INCREASE_AUTONOMY_MIN_LIBERTY_DESIRE')]"
  DIPLOMATIC_PACT_REQUIREMENT_DURATION_NOT_EXPIRED: "Duration of the enforced [concept_diplomatic_pact] has not expired"
  DIPLOMATIC_PACT_REQUIREMENT_NOT_DECENTRALIZED: "Neither of the two [Concept('concept_country', '$concept_countries$')] is a [concept_decentralized_nation]"
@@ -176,6 +179,8 @@
  subject_type_chartered_company_no_icon: "$concept_chartered_company$"
  subject_type_colony: "@colony! $subject_type_colony_no_icon$"
  subject_type_colony_no_icon: "$concept_colony_subject$"
+ subject_type_crown_land: "@crown_land! $subject_type_crown_land_no_icon$"
+ subject_type_crown_land_no_icon: "$concept_crown_land_subject$"
 
  SUBJECT_CANNOT_HAVE_SUBJECTS:1 " [COUNTRY.GetName] cannot have subjects of their own due to being a $SUBJECT_TYPE|v$-type [concept_subject]!"
  SUBJECT_MUST_BE_HIGHER_COUNTRY_RANK:1 " $COUNTRY_NAME$ must be of a higher [concept_rank] than $COUNTRY_OTHER_NAME$ to make them into a $SUBJECT_TYPE|v$-type [concept_subject]"
@@ -414,9 +419,10 @@
  DIPLO_ACTION_PENDING:0 "Our proposal is pending approval"
  DIPLO_ACTION_PENDING_OTHER: "They are already considering a proposal from us"
  DIPLO_ACTION_REVERSE_PENDING:0 "Their proposal is pending approval"
- DIPLO_PACT_RELATIONS_CHANGE_POS:2 "Currently improving [concept_relations] by #g +1#! every $DAYS|v$ days from a total daily progress of #v $PROGRESS_DAILY|%+=2$#!"
- DIPLO_PACT_RELATIONS_CHANGE_NEG:2 "Currently damaging [concept_relations] by #r -1#! every $DAYS|v$ days from a total daily progress of #v $PROGRESS_DAILY|%+=2$#!"
- DIPLO_ACTION_FORCED_DURATION:0 "We cannot break this [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_short$')] for another $TIME_LEFT$ ($DATE$)"
+ DIPLO_PACT_RELATIONS_CHANGE_POS: "[concept_relations] will improve by #g +1#! in $DAYS|v$ days. Total progress is #v $PROGRESS_DAILY|%+=2$#! per day" #translation note: followed by: , due to  and some listed modifiers
+ DIPLO_PACT_RELATIONS_CHANGE_NEG: "[concept_relations] will worsen by #r -1#! in $DAYS|v$ days. Total progress is #v $PROGRESS_DAILY|%+=2$#! per day" #translation note: followed by: , due to  and some listed modifiers
+ DIPLO_PACT_RELATIONS_NO_CHANGE: "[concept_relations] will currently remain unchanged. Total progress is #v $PROGRESS_DAILY|%+=0$#! per day" #translation note: followed by: , due to  and some listed modifiers
+ DIPLO_ACTION_FORCED_DURATION:0 "We cannot break this [Concept('concept_diplomatic_pact','$concept_diplomatic_pact_short$')] for another $TIME_LEFT$ ($DATE$)" 
  DIPLOMATIC_PACT_HEADER:0 "#header [DiplomaticPact.GetName]#!"
  DIPLOMATIC_PACT_DESC:0 "[DiplomaticPact.GetDesc]"
  DIPLOMATIC_PACT_TOOLTIP:0 "$DIPLOMATIC_PACT_HEADER$\n$TOOLTIP_DELIMITER$\n$DIPLOMATIC_PACT_DESC$"
@@ -1619,6 +1625,33 @@
  become_chartered_company_proposal_third_party_declined_name: "Subjugation Refused"
  become_chartered_company_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] refused to become the $suzerain$ of [INITIATOR_COUNTRY.GetName]."
 
+ crown_land:0 "Crown Land"
+ crown_land_action_name:0 "[concept_crown_land_subject]"
+ crown_land_action_propose_name:0 "Make into [concept_crown_land_subject]"
+ crown_land_action_break_name:0 "Grant Independence"
+ crown_land_action_ask_to_break_name:0 "Demand Independence"
+ crown_land_desc: "Establishes a [concept_crown_land_subject] [concept_subject_type] relationship between two [Concept('concept_country', '$concept_countries$')]."
+ crown_land_pact_desc:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] is a [concept_crown_land_subject] of [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]."
+ crown_land_action_notification_name:0 "Demand to become [concept_crown_land_subject]"
+ crown_land_action_notification_desc:0 "[INITIATOR_COUNTRY.GetName] demands that we submit to them and become a [concept_crown_land_subject]."
+ crown_land_action_notification_break_name:0 "Independence Granted"
+ crown_land_action_notification_break_desc:0 "[INITIATOR_COUNTRY.GetName] have ended our [concept_crown_land_subject] status. We are independent once again."
+ crown_land_proposal_notification_break_name:0 "Demand for Independence"
+ crown_land_proposal_notification_break_desc:0 "[INITIATOR_COUNTRY.GetName] are demanding that we end our [concept_crown_land_subject] status with them."
+ crown_land_proposal_notification_break_effects_desc:0 "If we accept, they will become fully independent."
+ crown_land_proposal_break_accepted_name:0 "Independence Granted"
+ crown_land_proposal_break_accepted_desc:0 "[TARGET_COUNTRY.GetName] accepted the demand to end our [concept_crown_land_subject] status. We are independent once again."
+ crown_land_proposal_break_declined_name:0 "Independence Refused"
+ crown_land_proposal_break_declined_desc:0 "[TARGET_COUNTRY.GetName] refused the demand to end our [concept_crown_land_subject] status."
+ crown_land_proposal_third_party_break_accepted_name:0 "Independence Granted"
+ crown_land_proposal_third_party_break_accepted_desc:0 "[TARGET_COUNTRY.GetName] ended their [concept_crown_land_subject] status with [INITIATOR_COUNTRY.GetName], granting them full independence."
+ crown_land_proposal_third_party_break_declined_name:0 "Independence Refused"
+ crown_land_proposal_third_party_break_declined_desc:0 "[TARGET_COUNTRY.GetName] refused to end their [concept_crown_land_subject] status with [INITIATOR_COUNTRY.GetName]."
+
+ crown_land_effect_desc_global: "Becomes a [concept_crown_land_subject]"
+ crown_land_effect_desc_first: "[TARGET_COUNTRY.GetName] becomes a [COUNTRY.GetAdjectiveNoFlag] [concept_crown_land_subject]"
+ crown_land_effect_desc_third: "[AddTextIf(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self),TARGET_COUNTRY.GetNameNoFlag)][AddTextIf(Not(ObjectsEqual(GetMetaPlayer.GetPlayedOrObservedCountry.Self, TARGET_COUNTRY.Self)),TARGET_COUNTRY.GetName)] becomes a [concept_crown_land_subject] of [COUNTRY.GetName]"
+
  violate_sovereignty:0 "Violate Sovereignty"
  violate_sovereignty_action_name:0 "Violate Sovereignty"
  violate_sovereignty_action_propose_name:0 "Violate Sovereignty"
@@ -2005,6 +2038,18 @@ request_power_bloc_embassy_proposal_notification_desc: "[INITIATOR_COUNTRY.GetPo
 
  TREATY_OPTIONS_VALIDATE_NO_ARTICLES_TO_CREATE: "Add at least one [concept_article]"
 
+ support_separatism: "Support Separatism"
+ support_separatism_action_name: "$support_separatism$"
+ support_separatism_action_propose_name: "Start Supporting Separatism"
+ support_separatism_action_break_name: "Stop Supporting Separatism"
+ support_separatism_desc: "Supports Separatism in the target [concept_country] by increasing the [concept_pop] attraction and [concept_activism] for #bold $movement_cultural_minority$#! [Concept('concept_political_movement','$concept_political_movements$')] of our [concept_primary_cultures]."
+ support_separatism_action_notification_name: "[INITIATOR_COUNTRY.GetName] supporting Separatism"
+ support_separatism_pact_desc: "$EFFECT_LIST_BULLET$$support_separatism_action_effect_breakdown$"
+ support_separatism_action_notification_desc: "[INITIATOR_COUNTRY.GetName] began to support separatism amongst their people within our borders."
+ support_separatism_action_notification_break_name: "[INITIATOR_COUNTRY.GetName] stopped supporting separatism"
+ support_separatism_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] stopped supporting separatism within our borders."
+ support_separatism_action_effect_breakdown: "Increases the [concept_pop] attraction and [concept_activism] for #bold $movement_cultural_minority$#! [Concept('concept_political_movement','$concept_political_movements$')] of our [concept_primary_cultures]"
+ SUPPORT_SEPARATISM_SUFFICIENT_POPS: "[SCOPE.sCountry('target_country').GetName] has sufficient [Concept('concept_pop','$concept_pops$')] of one of our [concept_primary_cultures] in one of our [Concept('concept_homeland','$concept_homelands$')]"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_WEEKLY_TRIGGER: "Checked weekly:\n$TRIGGER_DESC$"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_MONTHLY_TRIGGER: "Checked monthly:\n$TRIGGER_DESC$"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_YEARLY_TRIGGER: "Checked yearly:\n$TRIGGER_DESC$"

@@ -16,7 +16,7 @@
  #hierarchy: british_indian_caste_system
  british_indian_caste_system: "イギリス領インドのカースト制度"
  british_indian_caste_system_desc: "イギリスが簡易化し体系化した、古来から続くヒンドゥー教ヒエラルキー。当初はイギリス領インド帝国の中央政府に尽くし導くために作られました。このヒエラルキー内の地位およびそれに関連する権利や特権は子へ受け継がれ、変化することはありません。"
- british_indian_caste_system_trigger_desc: "#b $hindu$#!を[concept_religion]としており、#b $south_asian_heritage$#!の[concept_cultural_trait]の[concept_culture]に属している"
+ british_indian_caste_system_trigger_desc: "#b $hindu$#!を[concept_religion]としており、#b $heritage_group_south_asian$#!の[concept_heritage_trait]の[concept_culture]に属している"
  #classes: british_indian_caste_system
  brahmins: "バラモン"
  brahmins_desc: "代々教師や聖職者の職に就くバラモンは、唯一ヒンドゥー教の経典を解釈する権利が与えられています。そのため、他のカーストに与えられた神聖な権利や特権を要求するのです。イギリス領インド帝国のバラモンは、政治的な代表者や仲介役としての役割を果たすこともあります。"

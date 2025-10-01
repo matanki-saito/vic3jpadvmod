@@ -116,7 +116,7 @@
  catalyst_invited_exile_negative: "敵対する政治亡命者を招聘しました"
  catalyst_invited_exile_negative_desc: "[TARGET_COUNTRY.GetName]は同調しない[concept_exile]を我々の国に招聘しました"
  catalyst_overtaken_in_prestige_rank: "$concept_prestige$ランクで追い抜かれました"
- catalyst_overtaken_in_prestige_rank_desc: "[TARGET_COUNTRY.GetName]が#v トップ[GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#![concept_prestige]ランキングで[COUNTRY.GetName]を追い抜いています"
+ catalyst_overtaken_in_prestige_rank_desc: "[TARGET_COUNTRY.GetName]が#v トップ[GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [concept_prestige]ランキングで[COUNTRY.GetName]を追い抜いています"
  catalyst_revolution_successful: "革命の成功"
  catalyst_revolution_successful_desc: "[TARGET_COUNTRY.GetName]の[concept_government]が、[concept_revolution]によって倒されました"
  catalyst_became_recognized: "承認を獲得"

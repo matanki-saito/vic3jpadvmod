@@ -573,6 +573,11 @@
  pm_manor_house_principle_divine_economics_2: "Increased Clergy Oversight"
  pm_financial_district_principle_divine_economics_2: "Increased Clergy Oversight"
  pm_company_headquarter_principle_divine_economics_2: "$pm_manor_house_principle_divine_economics_2$"
+ pm_company_headquarter_principle_divine_economics_2_aristocrats: "$pm_manor_house_principle_divine_economics_2$"
+ pm_company_headquarter_principle_divine_economics_2_aristocrats_commercial_agriculture: "$pm_manor_house_principle_divine_economics_2$"
+ pm_company_headquarter_principle_divine_economics_2_shopkeepers: "$pm_manor_house_principle_divine_economics_2$"
+ pm_company_headquarter_principle_divine_economics_2_bureaucrats: "$pm_manor_house_principle_divine_economics_2$"
+ pm_company_headquarter_principle_divine_economics_2_academics: "$pm_manor_house_principle_divine_economics_2$"
 
   # Power Bloc Statues
  pmg_base_building_power_bloc_statue: "Power Bloc Statue"
@@ -619,6 +624,7 @@
  pm_serfdom_building_subsistence_rice_paddies:0 "$pm_serfdom$"
  pm_serfdom_pastures:1 "$pm_serfdom$"
  pm_serfdom_no:0 "Free Peasants"
+ pm_corvee_labor:0 "Corvée Labor"
  pm_slavery:0 "Slavery"
  
  pm_default:0 "Basic Production"
@@ -777,6 +783,11 @@
  pm_financial_district_privately_owned: "$pm_privately_owned$"
  pm_financial_district_publicly_traded: "$pm_publicly_traded$"
  pm_company_headquarter_privately_owned: "$pm_privately_owned$"
+ pm_company_headquarter_privately_owned_aristocrats: "$pm_privately_owned$"
+ pm_company_headquarter_privately_owned_aristocrats_commercial_agriculture: "$pm_privately_owned$"
+ pm_company_headquarter_privately_owned_shopkeepers: "$pm_privately_owned$"
+ pm_company_headquarter_privately_owned_academics: "$pm_privately_owned$"
+ pm_company_headquarter_privately_owned_bureaucrats: "$pm_privately_owned$"
  pm_company_headquarter_government_run: "$pm_government_run$"
  pm_company_headquarter_worker_cooperative: "$pm_worker_cooperative$"
  

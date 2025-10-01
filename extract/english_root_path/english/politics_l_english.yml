@@ -66,7 +66,7 @@
 
  POLITICAL_MOVEMENT_TARGET_ACTIVISM_EFFECT: "#v $VALUE|=-%0$#! [concept_activism]"
 
- POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT: "Effect on [Concept('concept_loyalist', '$concept_loyalists$')] from successful enactment:\n$DETAILS$"
+ POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT: "#title Effect on [Concept('concept_loyalist', '$concept_loyalists$')] from successful enactment:#!\n$DETAILS$"
  POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT_ENTRY: "[POLITICAL_MOVEMENT.GetName]: @population! $NUM_INDIVIDUALS|pD$ [Concept('concept_individual','$concept_individuals$')] will become more $concept_loyal$"
  POLITICAL_MOVEMENT_LAW_RADICALISM_IMPACT_HEADER: "Effect on [concept_activism]:"
  POLITICAL_MOVEMENT_LAW_RADICALISM_IMPACT_ENTRY: "[POLITICAL_MOVEMENT.GetName]: Immediately changes by $IMMEDIATE_VALUE|=-%$ and will drift towards $TARGET_VALUE_LABEL$ ($TARGET_VALUE|v0%$) over time"
@@ -122,8 +122,10 @@
   
  POLITICAL_MOVEMENT_SUPPORT_FROM_POPS:1 "$VALUE|v=%$ from the $concept_political_movement_support_short$ of @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','$concept_individuals$')]\n$TAB$(representing $FRACTION|v%0$ of the politically active [Concept('concept_pop', '$concept_population$')])"
  POLITICAL_MOVEMENT_SUPPORT_FROM_MILITARY: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of $NUM_INDIVIDUALS|vD$ [GetPopType('soldiers').GetName] and [GetPopType('officers').GetName]\n$TAB$(representing $FRACTION|v%0$ of the military's total [concept_political_strength])"
- POLITICAL_MOVEMENT_SUPPORT_FROM_WEALTH: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of $WEALTH|Dv$ [concept_wealth]\n$TAB$(representing $FRACTION|v%0$ of the total $concept_wealth$ in the [concept_country])"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_WEALTH: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of $WEALTH|Dv$ [concept_political_strength] from [concept_wealth]\n$TAB$(representing $FRACTION|v%0$ of the total $concept_political_strength$ from $concept_wealth$ in the [concept_country])"
  POLITICAL_MOVEMENT_SUPPORT_FROM_POPS_POP: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of @population! $NUM_INDIVIDUALS|vD$ [Concept('concept_individual','$concept_individuals$')]"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_MILITARY_POP: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of $NUM_INDIVIDUALS|vD$ [GetPopType('soldiers').GetName] and [GetPopType('officers').GetName]"
+ POLITICAL_MOVEMENT_SUPPORT_FROM_WEALTH_POP: "$VALUE|v=%$ from the $concept_political_movement_support_short$ of $WEALTH|Dv$ [concept_political_strength] from [concept_wealth]"
  POLITICAL_MOVEMENT_SUPPORT_WITHIN_IDENTITY: "This $concept_political_movement_short$ has $SUPPORT|v%0$ $concept_political_movement_support_short$ within its associated [concept_culture] and/or [concept_religion]"
 
  POLITICAL_MOVEMENT_AGITATOR_SUPPORT: "#tooltippable [LabelingHelper.GetLabelForSupport(PoliticalMovement.GetCharacterSupport(Character.Self))]#! ([PoliticalMovement.GetCharacterSupport(Character.Self)|vD])"

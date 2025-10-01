@@ -5,9 +5,12 @@
  STATE_IS_IN_EUROPE_DESC: "[STATE.GetName] is in [concept_georegion_europe]"
  STATE_IS_IN_EUROPE_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_europe]"
 
+ STATE_IS_IN_BALKANS_DESC: "[STATE.GetName] is in [concept_georegion_balkans]"
+ STATE_IS_IN_BALKANS_DESC_NOT: "[STATE.GetName] is not in [concept_georegion_balkans]"
+
  STATE_IS_IN_AMERICAS_DESC: "[STATE.GetName] is in [concept_georegion_americas]"
  STATE_IS_IN_AMERICAS_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_americas]"
- 
+
  STATE_IS_IN_NORTH_AMERICA_DESC: "[STATE.GetName] is in [concept_georegion_north_america]"
  STATE_IS_IN_NORTH_AMERICA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_north_america]"
 
@@ -24,7 +27,7 @@
  STATE_IS_IN_SUBSAHARAN_AFRICA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_subsaharan_africa]"
 
  STATE_IS_IN_NORTH_AFRICA_DESC: "[STATE.GetName] is in [concept_georegion_north_africa]"
- STATE_IS_IN_NORTH_AFRICA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_north_africa]"  
+ STATE_IS_IN_NORTH_AFRICA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_north_africa]"
 
  STATE_IS_IN_MIDDLE_EAST_DESC: "[STATE.GetName] is in [concept_georegion_middle_east]"
  STATE_IS_IN_MIDDLE_EAST_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_middle_east]"
@@ -40,12 +43,15 @@
 
  STATE_IS_IN_CHINA_DESC: "[STATE.GetName] is in [concept_georegion_china]"
  STATE_IS_IN_CHINA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_china]"
- 
+
  STATE_IS_IN_SOUTHEAST_ASIA_DESC: "[STATE.GetName] is in [concept_georegion_southeast_asia]"
  STATE_IS_IN_SOUTHEAST_ASIA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_southeast_asia]"
- 
+
  COUNTRY_IS_IN_EUROPE_DESC: "[COUNTRY.GetName] is in [concept_georegion_europe]"
  COUNTRY_IS_IN_EUROPE_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_europe]"
+
+ COUNTRY_IS_IN_BALKANS_DESC: "[COUNTRY.GetName] is in [concept_georegion_balkans]"
+ COUNTRY_IS_IN_BALKANS_DESC_NOT: "[COUNTRY.GetName] is not in [concept_georegion_balkans]"
 
  COUNTRY_IS_IN_AMERICAS_DESC: "[COUNTRY.GetName] is in [concept_georegion_americas]"
  COUNTRY_IS_IN_AMERICAS_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_americas]"
@@ -68,7 +74,7 @@
  COUNTRY_IS_IN_SUBSAHARAN_AFRICA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_subsaharan_africa]"
 
  COUNTRY_IS_IN_NORTH_AFRICA_DESC: "[COUNTRY.GetName] is in [concept_georegion_north_africa]"
- COUNTRY_IS_IN_NORTH_AFRICA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_north_africa]"  
+ COUNTRY_IS_IN_NORTH_AFRICA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_north_africa]"
 
  COUNTRY_IS_IN_MIDDLE_EAST_DESC: "[COUNTRY.GetName] is in [concept_georegion_middle_east]"
  COUNTRY_IS_IN_MIDDLE_EAST_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_middle_east]"

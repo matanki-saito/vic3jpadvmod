@@ -68,6 +68,7 @@
  popneed_luxury_items: "高級物品"
  popneed_art: "芸術"
  popneed_leisure: "レジャー"
+ popneed_stimulants: "興奮剤"
  #Prestige goods:
  prestige_good_krupp_guns: "クルップ銃"
  prestige_good_canton_porcelain: "広州磁器"
@@ -110,6 +111,12 @@
  prestige_good_smirnoff_vodka: "スミノフ・ウォッカ"
  prestige_good_russia_iron: "ロシア産鉄"
  prestige_good_philips_chapel_radio: "チャペル無線"
+ #IP3 Goods
+ prestige_good_basma_tobacco: "バスマタバコ"
+ prestige_good_acorn_fed_pork: "ベジョータ豚"
+ prestige_good_pannonian_patent_flour: "パンノニア産上級小麦粉"
+ prestige_good_brunn_type_engines: "ブルン式エンジン"
+ #Generic Prestige Goods
  prestige_good_generic_groceries: "グルメ食品"
  prestige_good_generic_steel: "精錬鋼"
  prestige_good_generic_furniture: "おしゃれ家具"

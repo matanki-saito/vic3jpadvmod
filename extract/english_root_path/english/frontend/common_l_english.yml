@@ -22,7 +22,7 @@
  CLIPBOARD_MODULE_VERSION_INFO:0 "$MODULE$: $BRANCH$ $HASH_LONG$"
  CLIPBOARD_GAME_MODULE_VERSION_INFO:0 "$MODULE$ version:\n   Branch: $BRANCH$\n   Commit: $HASH_LONG$\n   Timestamp: $TIMESTAMP$\n   Commit Number: $COMMIT_COUNT$\n   MP Checksum: [GetMPChecksum]"
  OK_BUTTON:0 "OK"
- CANCEL_BUTTON:0 "Cancel"
+ CANCEL_BUTTON: "Cancel"
  DISMISS:0 "Dismiss"
  DISMISS_ALL:0 "Dismiss All"
  DISMISS_CS_TT:0 "#T $DISMISS$#!\nDismiss this Event. Events of the same type will still appear, only this specific one will be hidden.\n\nYou can bring this event back by using the Reset button in this view."

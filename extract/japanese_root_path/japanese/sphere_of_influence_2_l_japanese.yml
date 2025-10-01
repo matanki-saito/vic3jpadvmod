@@ -149,9 +149,9 @@
  request_recognition_proposal_notification_effects_desc: "受け入れると、[concept_recognized_power]への進捗が増加します。"
  je_earn_recognition: "認められる"
  je_earn_recognition_reason: "#bold 進捗ゲージ#!は、特定の条件に基づいて、#tooltippable;tooltip:[Country.GetTooltipTag],je_earn_recognition_advance 前進#!または#tooltippable;tooltip:[Country.GetTooltipTag],je_earn_recognition_deplete 後退#!します。#bold 進捗ゲージ#!が#bold 200#!に到達すると、[SCOPE.GetRootScope.GetCountry.GetName]が[concept_recognized_power]になります。\n\nあまりにも長い間、[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]は世界のいわゆる文明国から正式な外交承認を拒否されてきたため、我が国は文明国からの交渉に対して弱腰になってしまい、主権もうまく行使できていない。\n\nこの状況を是正し、尊敬される対等な相手として、彼らのテーブルで自分たちの席を確保するために全力を尽くさなくてはならない。"
- je_earn_recognition_complete_tt: "#bold 進捗ゲージ#! が #bold 200#!に到達しました。世界の目から見て、我が国の国際的地位が上がったことを示します。"
- je_earn_recognition_advance: "• [concept_major_power]以上で[concept_war_goal]を強制する\n• [concept_gdp]が上位10位以内\n• [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')]が上位20位以内\n• [concept_sol]が上位20位以内\n• 40%超の[concept_literacy]評価\n• [Concept('concept_votes','$concept_voting_rights$')]あり\n• #bold$offer_embassy$#![concept_article]が有効" ##bold Request Embassy#! [concept_diplomatic_action] is active
- je_earn_recognition_deplete: "• [concept_war_goal]を自国に強制される\n• [concept_gdp]が上位30位圏外\n• 20%未満の[concept_literacy]評価\n• [concept_slavery]を廃止して#boldいない#!\n• [GetLawType('law_serfdom').GetName]あり\n• [GetLawType('law_traditionalism').GetName]あり\n• [GetLawType('law_isolationism').GetName]あり\n• [GetLawType('law_outlawed_dissent').GetName]あり"
+ je_earn_recognition_complete_tt: "#bold 進捗ゲージ#!が #bold 200#!に到達しました。世界の目から見て、我が国の国際的地位が上がったことを示します。"
+ je_earn_recognition_advance: "• [concept_major_power]以上で[concept_war_goal]を強制する\n• [concept_gdp]が上位10位以内\n• [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')]が上位20位以内\n• [concept_sol]が上位20位以内\n• 40%超の[concept_literacy]評価\n• [Concept('concept_votes','$concept_voting_rights$')]あり\n• #bold $offer_embassy$#! [concept_article]が有効" ##bold Request Embassy#! [concept_diplomatic_action] is active
+ je_earn_recognition_deplete: "• [concept_war_goal]を自国に強制される\n• [concept_gdp]が上位30位圏外\n• 20%未満の[concept_literacy]評価\n• [concept_slavery]を廃止して#bold いない#!\n• [GetLawType('law_serfdom').GetName]あり\n• [GetLawType('law_traditionalism').GetName]あり\n• [GetLawType('law_isolationism').GetName]あり\n• [GetLawType('law_outlawed_dissent').GetName]あり"
  earning_recognition_progress_bar: "認められる"
  earning_recognition_progress_bar_desc: "進捗: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/200)"
  earning_recognition_progress_gdp_tt: "[concept_gdp]が上位10位以内"
@@ -263,9 +263,9 @@
  not_leader_of_power_bloc_tt: "我が国は#bold 60#!ヶ月連続で[concept_power_bloc]のリーダーでは#bold ない#!。（現在、#variable [ROOT.GetCountry.MakeScope.Var('great_game_no_longer_power_bloc_leader_var').GetValue]#!）"
  je_secure_influence_over_persia_goal: "#v $PER$#!との[concept_subject]関係を確立し、#variable 10年間#!維持する"
  modifier_has_annexed_another_subject: "我が国の[concept_overlord]が別の[concept_subject]を併合しました"
- puppeted_for_too_long_tt: "我が国は#bold 60#!か月連続で[concept_subject]です。(現在#variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#!)"
+ puppeted_for_too_long_tt: "我が国は#bold 60#!か月連続で[concept_subject]です。(現在#variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#! )"
  not_in_european_power_bloc_tt: "ヨーロッパの[Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]の[concept_power_bloc]に所属#b していません#!"
- europeans_forced_to_end_great_game_tt: "すべてのヨーロッパ列強国が#bold グレート・ゲーム#![concept_journal_entry]を失います"
+ europeans_forced_to_end_great_game_tt: "すべてのヨーロッパ列強国が#bold グレート・ゲーム#! [concept_journal_entry]を失います"
  #Dracula Events
  spooky_halloween_events.1.t: "真夜中の序章"
  spooky_halloween_events.1.d: "真夜中の鐘が鳴る頃、[SCOPE.sCharacter('dracula_scope').GetLastName]伯爵と名乗る背が高く青白い男が、馬車で[SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]に到着した。男はフン族のアッティラと古代の有力な君主の子孫であると主張し、[SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle]に協力すると申し出た。"

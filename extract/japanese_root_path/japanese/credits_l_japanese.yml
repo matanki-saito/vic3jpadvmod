@@ -1,6 +1,6 @@
 ﻿l_japanese:
  HEADER_Victoria_3: "#credits_title Victoria 3#!"
- HEADER_V3_TITLE: "#credits_title Victoria 3: Charters of Commerce#!"
+ HEADER_V3_TITLE: "#credits_title Victoria 3: National Awakening#!"
  HEADER_ALSO_INCLUDES: "#credits_header 以下のクレジットも含まれます：#!"
  HEADER_MELODIES_FOR_THE_MASSES: "#credits_header Melodies for the Masses#!"
  HEADER_VOICE_OF_THE_PEOPLE: "#credits_header Voice of the People#!"
@@ -9,6 +9,7 @@
  HEADER_SPHERE_OF_INFLUENCE: "#credits_header Sphere of Influence#!"
  HEADER_PIVOT_OF_EMPIRE: "#credits_header Pivot of Empire#!"
  HEADER_CHARTERS_OF_COMMERCE: "#credits_header Charters of Commerce#!"
+ HEADER_NATIONAL_AWAKENING: "#credits_header National Awakening#!"
  HEADER_PROJECT_LEADS: "#credits_header プロジェクトリーダー#!"
  TITLE_PROJECT_LEAD_GAME_DIRECTOR: "#credits_subheader ゲームディレクター#!"
  TITLE_PROJECT_LEAD_ART_DIRECTOR: "#credits_subheader アートディレクター#!"

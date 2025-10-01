@@ -1,0 +1,66 @@
+﻿l_english:
+
+modifier_balgaria_arming: "Bulgarian Militarization"
+modifier_prussia_of_the_balkans: "Prussia of the Balkans"
+modifier_bul_scapegoated: "Scapegoated"
+terrified_dissidents: "Terrified Dissidents"
+modifier_bul_militarisation_complete: "Militarization Complete"
+modifier_bulgarian_renaissance: "Bulgarian Renaissance"
+modifier_bul_pursuing_greater_yugoslavism: "Pursuing Greater Yugoslavia"
+
+modifier_bul_ultranationalist_rhetoric: "Ultranationalist Rhetoric"
+modifier_bul_embraced_yugoslavism: "Embraced Yugoslavism"
+
+je_prussia_of_the_balkans: "Prussia of the Balkans"
+je_prussia_of_the_balkans_desc: "[concept_army_power_projection] is [SCOPE.GetRootScope.GetCountry.GetArmyPowerProjection|0] / 1000"
+je_prussia_of_the_balkans_reason: "The Bulgarian Empire once stretched from the Black to the Ionian and Aegean Seas. Our people are determined to restore our past glory. \n\nOur newly reborn nation cannot rely on the help of strong men from outside our borders. Through technology, strength of arms and sheer numbers, we will forge an army that can protect our independence, our interests, and our ambitions."
+
+bularia_military_progress_bar: "Army Strength"
+bularia_military_progress_bar_desc: "[concept_army_power_projection]: [SCOPE.GetRootScope.GetCountry.GetArmyPowerProjection|0] / 1000"
+bularia_military_progress_tt: "[SCOPE.GetRootScope.GetCountry.GetNameNoFlag] has an [concept_army_power_projection] of at least #variable [GetPlayer.MakeScope.Var('army_projection_target').GetValue|0] #!"
+
+
+bulgaria_events.1.t: "Prussia of the Balkans"
+bulgaria_events.1.d: "The other nations, awed by the size and strength of our army, know us as the "Prussia of the Balkans". All that remains is to choose where our soldiers should march."
+bulgaria_events.1.f: ""Even if they cut off my head, I will still shout, 'Long Live Bulgaria!'" \n\n –Nikolay Haytov"
+bulgaria_events.1.a: "To Tsarigrad, we march!"
+bulgaria_events.1.b: "Only in a unified Yugoslav nation can we be truly free!"
+bulgaria_events.1.c: "This is the beginning of a Bulgarian Renaissance!"
+
+bulgaria_pursued_greater_yugoslavism_tt: "Pursued #v Greater Yugoslavism#! in the #v $bulgaria_events.1.t$#! Event"
+bulgaria_unlock_yugoslavia_tt: "We will be able to form #v $YUG$#!"
+bulgarian_empire_homeland_tt: "[GetStateRegion('STATE_MACEDONIA').GetName], [GetStateRegion('STATE_EASTERN_SERBIA').GetName] and [GetStateRegion('STATE_EASTERN_THRACE').GetName] will become [GetCulture('bulgarian').GetName] [Concept('concept_homeland','$concept_homelands$')] once acquired"
+
+bulgaria_events.2.t: "Free At Last"
+bulgaria_events.2.d:  "Bulgaria has at last become an independent nation. Who should rule us through the turmoil of change into a prosperous future?"
+#Below quote is straight from the wiki, but it suits well.
+bulgaria_events.2.f: ""Prince Ferdinand, who was a Coburg, was a cousin of my father's, and I remember the latter saying, when we got back to the hotel, that being the youngest of his family he was naturally looked upon as a fool. 'But,' said my father, 'for the fool of the family he has not done so badly for himself and I should not be surprised if he did not prove them all wrong.'" \n\n—Lady Helena Gleichen"
+bulgaria_events.2.a: "Support the Tzar's nephew."
+bulgaria_events.2.b: "Support Ferdinand."
+bulgaria_events.2.c: "No kings, we will choose a man of the people."
+bulgaria_events.2.e: "An untainted and unknown voice will lead the choir."
+bulgaria_events.2.g: "A prince must come forth from the nobility."
+bul_random_leader_tt: "We will elect a leader from the people!"
+bul_random_leader_monarch_tt: "We will crown a new prince from the aristocracy"
+
+
+bulgaria_events.3.t: "[SCOPE.sCulture('rebel_culture').GetName] Horrors"
+bulgaria_events.3.d: "Newspapers across the world are reporting about war crimes committed by our soldiers during our recent conflict with the [SCOPE.sCulture('rebel_culture').GetName] rebels."
+bulgaria_events.3.f: "The number of children killed in these massacres is something enormous. They were often spitted on bayonets, and we have several stories from eye-witnesses who saw the little babes carried about the streets, both here and at Olluk-Kni, on the points of bayonets.\n\n—J. A. MacGahan, #italic The Daily News. #!"
+bulgaria_events.3.a: "These are horrific lies!"
+bulgaria_events.3.b: "Publicly hang [SCOPE.sCharacter('scapegoat').GetFullName] for these crimes."
+bulgaria_events.3.c: "Our contacts in [SCOPE.sCountry('closest_great_power').GetNameNoFlag] will vouch for us."
+bulgaria_events.3.e: "The next rebels will get much worse."
+
+
+ai_strategy_prussia_of_the_balkans: "$je_prussia_of_the_balkans$"
+ai_strategy_prussia_of_the_balkans_desc: "$je_prussia_of_the_balkans_reason$"
+
+TUR_how_to_play_bulgaria_tt: "To play as #v $BUL$#!, release it as an independent [concept_country] or side with a [GetCulture('bulgarian').GetName] [concept_secession]"
+
+dyn_c_bulgarian_empire: "Bulgarian Empire"
+dyn_c_bulgarian_empire_adj: "Imperial Bulgarian"
+
+bulgaria_proclaim_empire: "Proclaim Bulgarian Empire"
+bulgaria_proclaim_empire_desc: "With the capture of the Constantinople, the imperial Roman capital, we will be able to finally cement the legitimacy and place of the Bulgarian Tsardom atop the nations of eastern Christianity."
+bulgarian_empire_tt: "We will be known as #v $dyn_c_bulgarian_empire$#! and granted a new flag and map color"

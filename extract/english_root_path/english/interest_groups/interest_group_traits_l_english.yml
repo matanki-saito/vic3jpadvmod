@@ -51,6 +51,8 @@
  ig_trait_stamped_and_signed_desc: "Stamps and ledgers are the methods we use to create order out of chaos. The governance of India requires an ocean of paper, and it is our task to ensure it circulates flawlessly."
  ig_trait_responsible_government: "Responsible Governance"
  ig_trait_responsible_government_desc: "Our mission is to extend justice and civilization to all men—and, of course, to perpetuate the rule which permits this forevermore."
+ ig_shipping_magnates: "Shipping Magnates"
+ ig_shipping_magnates_desc: "With their ancestral ties to merchant fleets, shipyards, and coastal commerce, our industrial elites know their way around the sea better than most navies. When they're happy, the ports are busy, the markets are flooded with goods, and the shipyards never sleep."
 
   # Armed Forces IG Traits
  ig_trait_patriotic_fervor:0 "Patriotic Fervor"
@@ -101,6 +103,8 @@
  ig_trait_imandari_desc: "Our land is a wealthy one, and we work it with diligence. In good times, we can produce what we need and more."
  ig_trait_bazaar_bargains: "Bazaar Bargains"
  ig_trait_bazaar_bargains_desc: "It is our bazaars which enrich our towns and draw visitors from miles around. If prosperity requires some extra organization, that's a price we're willing to pay."
+ ig_trait_born_particularists: "Bauernparticularismus"
+ ig_trait_born_particularists_desc: "You may draw new borders and draft new maps, but the Schwalbach peasant still to this day calls his land "the lower earldom of Katzenelnbogen". To him, the nation is a thing for schoolmasters and tax offices. He does not rebel out of ambition, but when his village ways are disturbed, he will resist with all the stubbornness of memory."
 
   # Trade Unions IG Traits
  ig_trait_solidarity:0 "Solidarity"
@@ -163,6 +167,8 @@
  ig_trait_lines_of_credit_desc: "Were it not for credit provided by our own adept financiers, the Company could never have conquered India. If we are given a solid business case, we are entirely willing to continue this relationship."
  ig_trait_cooperative_agencies: "Cooperative Agencies"
  ig_trait_cooperative_agencies_desc: "Our rulers possess abundant capital, but have little knowledge of our country. By pooling their resources and our expertise, we may enrich our homeland far more than they ever would alone."
+ ig_trait_biedermanner: "Biedermänner"
+ ig_trait_biedermanner_desc: "Orderly, respectable, and deeply afraid of disorder, the Biedermann pays his taxes, minds his shop, and avoids politics. Even when the world is burning just outside his window."
 
   # Devout IG Traits
  ig_trait_be_fruitful_and_multiply:0 "Be Fruitful and Multiply"

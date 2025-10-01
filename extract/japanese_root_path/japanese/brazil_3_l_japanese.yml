@@ -1,11 +1,11 @@
 ﻿l_japanese:
  je_brazilian_nation_building: "ブラジル国民の統合"
  je_brazilian_nation_building_reason: "ブラジルは祖国のない植民地であり、国民のない国家である。この広大な土地に住むすべての民族からひとつの国民性を作り上げるには慎重な検討、困難を極める仕事の完遂、そして統率力が必要だ。ブラジルの統一は本当に可能なのだろうか？"
- je_brazilian_nation_building_ragamuffin_war_south: "#bold ラガマフィン戦争#! が終結し、[SCOPE.sCulture('sulista_culture').GetNameNoFormatting]本国における[SCOPE.sCulture('sulista_culture').GetName]の文化的動揺度は#bold 10%#!を下回りました。"
+ je_brazilian_nation_building_ragamuffin_war_south: "#bold ラガマフィン戦争#!が終結し、[SCOPE.sCulture('sulista_culture').GetNameNoFormatting]本国における[SCOPE.sCulture('sulista_culture').GetName]の文化的動揺度は#bold 10%#!を下回りました。"
  je_brazilian_nation_building_ragamuffin_war_done: "#bold ラガマフィン戦争#!が終結し、[SCOPE.sCulture('amazonic_culture').GetName]を祖国とする全州の[concept_devastation]が#bold 5#!を下回りました。"
  je_brazilian_nation_building_brazilian_national_hero_owned: "地域の#bold [concept_brz_national_hero]#!が宣言され、プロパガンダで利用できるようになりました。"
  concept_brz_national_hero: "国民的英雄"
- concept_brz_national_hero_desc: "#bold 国民的英雄#! とは、ブラジルではない国家との戦闘に勝利し、「#bold 新しい国民的英雄#!」イベントにおいて英雄と称えられた将軍のことです。"
+ concept_brz_national_hero_desc: "#bold 国民的英雄#!とは、ブラジルではない国家との戦闘に勝利し、「#bold 新しい国民的英雄#!」イベントにおいて英雄と称えられた将軍のことです。"
  je_brazilian_nation_building_integrate_nordestino: "ノルデスティーノを統合"
  je_brazilian_nation_building_integrate_nordestino_past_tense: "ノルデスティーノはブラジルだ"
  je_brazilian_nation_building_integrate_nordestino_desc: "東北部の人々を仲間に引き入れ、新しい国家秩序と真に受け入れさせるためには、この地域の最大の不安要因のひとつ、非難と永遠の存続を求める二つの声を生む制度を破壊しなければならない。"
@@ -44,11 +44,12 @@
  culture_brazil.2.b: "このブラジルはあなたのものだ！"
  culture_brazil.3.t: "パウリスタの統合"
  culture_brazil.3.d: "[SCOPE.sCulture('paulista_culture').GetName]の人々、サンパウロと内陸部のカイピラの住民は中央政府と和解し、高まる[SCOPE.sCulture('brazilian_culture').GetName]の国民運動の折り合いをつけた。"
- culture_brazil.3.f: "「イピランガの穏やかな岸辺が聞いた、\n英雄的民衆の響き渡る叫び声、\n眩い光線を放つ自由の太陽、\nその瞬間、祖国の空に輝いた。」" #from the national anthem of Brazil
+ #from the national anthem of Brazil
+ culture_brazil.3.f: "「#italic イピランガの穏やかな岸辺が聞いた、\n英雄的民衆の響き渡る叫び声、\n眩い光線を放つ自由の太陽、\nその瞬間、祖国の空に輝いた#!」\n\n–ブラジル国歌"
  culture_brazil.3.a: "崇拝されし愛すべき祖国よ！万歳、万歳！"
  culture_brazil.4.t: "スリスタの統合"
  culture_brazil.4.d: "[SCOPE.sCulture('sulista_culture').GetName]の人々、パラナとイグアスそして南部のカウボーイは中央政府と和解し、高まる[SCOPE.sCulture('brazilian_culture').GetName]の国民運動の折り合いをつけた。"
- culture_brazil.4.f: "「空、太陽、大地、そして色。これらは私たちの国で最も美しいものだ。それだけじゃない。ブラジルを植えられたものすべてが育つ場所にしてくれている」\n\n「でもお父さん、僕たちが苦労して稼いだお金をどうして自分たちのものにできないの？僕たちはそのために働いているんだから、そうじゃないと不公平だ」\n\n「なら誰がお前の道具を作っていると思う？靴は？母さんの服は？ブラジルは私たちの綿やコーヒーを必要としている。こちらが彼らの鉄やミルクを必要としているのと同じようにね。私たちは協力し合って強くなるのだ、息子よ」" #Céu, sol, sul, terra e cor
+ culture_brazil.4.f: "「空、太陽、大地、そして色。これらは私たちの国で最も美しいものだ。それだけじゃない。ブラジルを植えられたものすべてが育つ場所にしてくれている」\n\n「でもお父さん、僕たちが苦労して稼いだお金をどうして自分たちのものにできないの？僕たちはそのために働いているんだから、そうじゃないと不公平だ」\n\n「なら誰がお前の道具を作っていると思う？靴は？母さんの服は？ブラジルは私たちの綿やコーヒーを必要としている。こちらが彼らの鉄やミルクを必要としているのと同じようにね。私たちは協力し合って強くなるのだ、息子よ」" #Reference, but not quote, to song Céu, sol, sul, terra e cor
  culture_brazil.4.a: "崇拝されし愛すべき祖国よ！万歳、万歳！"
  culture_brazil.5.t: "アマゾニックの統合"
  culture_brazil.5.d: "[SCOPE.sCulture('amazonic_culture').GetName]の人々、北部とアマゾンの辺境地の住民は中央政府と和解し、高まる[SCOPE.sCulture('brazilian_culture').GetName]の国民運動の折り合いをつけた。"

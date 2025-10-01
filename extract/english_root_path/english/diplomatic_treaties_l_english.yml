@@ -18,6 +18,7 @@ treaty_name_lux_transit_rights: "Luxembourgian-Prussian Transit Rights Agreement
 treaty_name_ham_pru_trade: "Hamburger-Prussian Trade Agreement"
 treaty_name_swe_pru_trade: "Swedish-Prussian Trade Agreement"
 treaty_name_prussian_military_mission_to_turkey: "Prussian Mission to the Ottoman Empire"
+treaty_name_treaty_of_adrianople: "Treaty of Adrianople"
 
 ### Dynamic Treaties
 # Generic
@@ -25,7 +26,7 @@ treaty_name_treaty_of_city: "Treaty of $SIGNING_LOCATION$"
 treaty_name_city_protocol: "$SIGNING_LOCATION$ Protocol"
 treaty_name_city_convention: "$SIGNING_LOCATION$ Convention"
 treaty_name_convention_of_city: "Convention of $SIGNING_LOCATION$"
-treaty_name_september_convention: "September Convention"
+treaty_name_september_convention: "$SIGNING_MONTH$ Convention"
 treaty_name_city_declaration: "$SIGNING_LOCATION$ Declaration"
 treaty_name_declaration_of_captial: "Declaration of $SIGNING_LOCATION$"
 treaty_name_country_adj_country_adj_treaty: "[FIRST_COUNTRY.GetAdjectiveNoFormatting]-[SECOND_COUNTRY.GetAdjectiveNoFormatting] Treaty"

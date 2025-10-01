@@ -1,13 +1,19 @@
 ﻿l_english:
+ ################
+ #### EUROPE ####
+ ################
+
  ### Dnieper Strategic Region
 
- # Kyiv - Ukrainian by default
+ ## Kyiv - Ukrainian by default
+ # Kyiv - Russian
  STATE_KIEV_russian: "Kiev"
  HUB_NAME_STATE_KIEV_city_russian: "Kiev"
  HUB_NAME_STATE_KIEV_farm_russian: "Zhitomir"
  HUB_NAME_STATE_KIEV_wood_russian: "Vinnitsa"
 
- # Volhynia - Ukrainian by default
+ ## Volhynia - Ukrainian by default
+ # Volhynia - Russian
  STATE_VOLHYNIA_russian: "Volhynia"
  HUB_NAME_STATE_VOLHYNIA_city_russian: "$HUB_NAME_STATE_VOLHYNIA_city$"
  HUB_NAME_STATE_VOLHYNIA_port_russian: ""
@@ -15,7 +21,8 @@
  HUB_NAME_STATE_VOLHYNIA_farm_russian: "$HUB_NAME_STATE_VOLHYNIA_farm$"
  HUB_NAME_STATE_VOLHYNIA_wood_russian: "Rovno"
 
- # Cherson - Ukrainian by default
+ ## Cherson - Ukrainian by default
+ # Cherson - Russian
  STATE_CHERSON_russian: "Kherson"
  HUB_NAME_STATE_CHERSON_city_russian: "$HUB_NAME_STATE_CHERSON_city$"
  HUB_NAME_STATE_CHERSON_port_russian: "Odessa"
@@ -23,7 +30,8 @@
  HUB_NAME_STATE_CHERSON_farm_russian: "Nikolayev"
  HUB_NAME_STATE_CHERSON_wood_russian: "Yekaterinoslav"
 
- # Kharkov - Ukrainian by default
+ ## Kharkov - Ukrainian by default
+ # Kharkov - Russian
  STATE_KHARKOV_russian: "Kharkov"
  HUB_NAME_STATE_KHARKOV_city_russian: "Kharkov"
  HUB_NAME_STATE_KHARKOV_port_russian: ""
@@ -31,7 +39,8 @@
  HUB_NAME_STATE_KHARKOV_farm_russian: "$HUB_NAME_STATE_KHARKOV_farm$"
  HUB_NAME_STATE_KHARKOV_wood_russian: "$HUB_NAME_STATE_KHARKOV_wood$"
 
- # Taurida - Ukrainian by default
+ ## Taurida - Ukrainian by default
+ # Taurida - Russian
  STATE_TAURIDA_russian: "Taurida"
  HUB_NAME_STATE_TAURIDA_city_russian: "Aleksandrovsk"
  HUB_NAME_STATE_TAURIDA_mine_russian: "Lugansk"
@@ -39,14 +48,15 @@
  HUB_NAME_STATE_TAURIDA_farm_russian: "$HUB_NAME_STATE_TAURIDA_farm$"
  HUB_NAME_STATE_TAURIDA_wood_russian: "$HUB_NAME_STATE_TAURIDA_wood$"
 
- # Crimea - Ukrainian by default
+ ## Crimea - Ukrainian by default
+ # Crimea - Russian
  STATE_CRIMEA_russian: "Crimea"
  HUB_NAME_STATE_CRIMEA_city_russian: "$HUB_NAME_STATE_CRIMEA_city$"
  HUB_NAME_STATE_CRIMEA_port_russian: "$HUB_NAME_STATE_CRIMEA_port$"
  HUB_NAME_STATE_CRIMEA_mine_russian: "$HUB_NAME_STATE_CRIMEA_mine$"
  HUB_NAME_STATE_CRIMEA_farm_russian: "Yevpatoriya"
  HUB_NAME_STATE_CRIMEA_wood_russian: "Feodosiya"
-
+ # Crimea - Tatar
  STATE_CRIMEA_tatar: "Qurum"
  HUB_NAME_STATE_CRIMEA_city_tatar: "Aqmescit"
  HUB_NAME_STATE_CRIMEA_port_tatar: "Aqyar"
@@ -54,7 +64,8 @@
  HUB_NAME_STATE_CRIMEA_farm_tatar: "Kezlev"
  HUB_NAME_STATE_CRIMEA_wood_tatar: "Kefe"
 
- # Chernihiv - Ukrainian by default
+ ## Chernihiv - Ukrainian by default
+ # Chernihiv - Russian
  STATE_CHERNIHIV_russian: "Chernigov"
  HUB_NAME_STATE_CHERNIHIV_city_russian: "Chernigov"
  HUB_NAME_STATE_CHERNIHIV_port_russian: ""
@@ -62,9 +73,10 @@
  HUB_NAME_STATE_CHERNIHIV_farm_russian: "$HUB_NAME_STATE_CHERNIHIV_farm$"
  HUB_NAME_STATE_CHERNIHIV_wood_russian: "$HUB_NAME_STATE_CHERNIHIV_wood$"
 
- ### Belarus Strategic Region
+ ### Belarus Strategic Region ###
 
- # Grodno - Belarusian by default
+ ## Grodno - Belarusian by default
+ # Grodno - Russian
  STATE_BREST_russian: "Grodno"
  HUB_NAME_STATE_BREST_city_russian: "Grodno"
  HUB_NAME_STATE_BREST_port_russian: ""
@@ -72,7 +84,8 @@
  HUB_NAME_STATE_BREST_farm_russian: "Brest-Litovsk"
  HUB_NAME_STATE_BREST_wood_russian: "Oshmyany"
 
- # Minsk - Belarusian by default
+ ## Minsk - Belarusian by default
+ # Minsk - Russian
  STATE_MINSK_russian: "Minsk"
  HUB_NAME_STATE_MINSK_city_russian: "$HUB_NAME_STATE_MINSK_city$"
  HUB_NAME_STATE_MINSK_port_russian: ""
@@ -80,7 +93,8 @@
  HUB_NAME_STATE_MINSK_farm_russian: "Slutsk"
  HUB_NAME_STATE_MINSK_wood_russian: "Borisov"
 
- # Mogilev - Belarusian by default
+ ## Mogilev - Belarusian by default
+ # Mogilev - Russian
  STATE_MOGILEV_russian: "Mogilev"
  HUB_NAME_STATE_MOGILEV_city_russian: "Mogilev"
  HUB_NAME_STATE_MOGILEV_port_russian: ""
@@ -88,7 +102,8 @@
  HUB_NAME_STATE_MOGILEV_farm_russian: "Orsha"
  HUB_NAME_STATE_MOGILEV_wood_russian: "Rogachev"
 
- # Vitebsk - Belarusian by default
+ ## Vitebsk - Belarusian by default
+ # Vitebsk - Russian
  STATE_VITEBSK_russian: "Vitebsk"
  HUB_NAME_STATE_VITEBSK_city_russian: "Vitebsk"
  HUB_NAME_STATE_VITEBSK_port_russian: ""
@@ -96,17 +111,19 @@
  HUB_NAME_STATE_VITEBSK_farm_russian: "Polotsk"
  HUB_NAME_STATE_VITEBSK_wood_russian: "Lepel"
 
- ### Poland Strategic Region
+ ### Poland Strategic Region ###
 
- # Posen - German by default
+ ## Posen - German by default
+ # Posen - Polish
  STATE_POSEN_polish: "Poznań"
  HUB_NAME_STATE_POSEN_city_polish: "Poznań"
- HUB_NAME_STATE_POSEN_port_russian: ""
+ HUB_NAME_STATE_POSEN_port_polish: ""
  HUB_NAME_STATE_POSEN_mine_polish: "Leszno"
  HUB_NAME_STATE_POSEN_farm_polish: "Bydgoszcz"
  HUB_NAME_STATE_POSEN_wood_polish: "Nowy Tomyśl"
 
- # Warsawza - Polish by default
+ ## Warsawza - Polish by default
+ # Warsawza - German
  STATE_GREATER_POLAND_german: "Warschau"
  HUB_NAME_STATE_GREATER_POLAND_city_german: "Warschau"
  HUB_NAME_STATE_GREATER_POLAND_port_russian: ""
@@ -114,7 +131,8 @@
  HUB_NAME_STATE_GREATER_POLAND_farm_german: "Radom"
  HUB_NAME_STATE_GREATER_POLAND_wood_german: "Tschenstochau"
 
- # Lublin - Polish by default
+ ## Lublin - Polish by default
+ # Lublin - German
  STATE_LESSER_POLAND_german: "Lublin"
  HUB_NAME_STATE_LESSER_POLAND_city_german: "Lublin"
  HUB_NAME_STATE_LESSER_POLAND_port_german: ""
@@ -122,7 +140,8 @@
  HUB_NAME_STATE_LESSER_POLAND_farm_german: "Cholm"
  HUB_NAME_STATE_LESSER_POLAND_wood_german: "Biala Podlaska"
 
- # Mazovia - Polish by default
+ ## Mazovia - Polish by default
+ # Mazovia - German
  STATE_MAZOVIA_german: "Plotsk"
  HUB_NAME_STATE_MAZOVIA_city_german: "Plotsk"
  HUB_NAME_STATE_MAZOVIA_port_german: ""
@@ -130,123 +149,162 @@
  HUB_NAME_STATE_MAZOVIA_farm_german: "Lomscha"
  HUB_NAME_STATE_MAZOVIA_wood_german: "Bialystok"
 
- # West Galicia - Polish by default
+ ## West Galicia - Polish by default
+ # West Galicia - German
  STATE_WEST_GALICIA_german: "Westgalizien"
  HUB_NAME_STATE_WEST_GALICIA_city_german: "Krakau"
  HUB_NAME_STATE_WEST_GALICIA_port_german: ""
  HUB_NAME_STATE_WEST_GALICIA_mine_german: "Jaroslau"
  HUB_NAME_STATE_WEST_GALICIA_farm_german: "Resze"
- HUB_NAME_STATE_WEST_GALICIA_wood_german: "Bielitz"
-
+ HUB_NAME_STATE_WEST_GALICIA_wood_german: "Tarnau"
+ # West Galicia - Polish
  STATE_WEST_GALICIA_polish: "Galicja Zachodnia"
 
- # East Galicia - Ukrainian by default
+ ## East Galicia - Ukrainian by default
+ # East Galicia - German
  STATE_EAST_GALICIA_german: "Ostgalizien"
  HUB_NAME_STATE_EAST_GALICIA_city_german: "Lemberg"
  HUB_NAME_STATE_EAST_GALICIA_port_german: ""
  HUB_NAME_STATE_EAST_GALICIA_mine_german: "Czernowitz"
  HUB_NAME_STATE_EAST_GALICIA_farm_german: "Stanislau"
  HUB_NAME_STATE_EAST_GALICIA_wood_german: "Stryj"
-
+ # East Galicia - Polish
  STATE_EAST_GALICIA_polish: "Galicja Wschodnia"
  HUB_NAME_STATE_EAST_GALICIA_city_polish: "Lwów"
  HUB_NAME_STATE_EAST_GALICIA_port_polish: ""
  HUB_NAME_STATE_EAST_GALICIA_mine_polish: "Czerniowce"
  HUB_NAME_STATE_EAST_GALICIA_farm_polish: "Stanisławów"
  HUB_NAME_STATE_EAST_GALICIA_wood_polish: "Stryj"
-
+ # East Galicia - Ukrainian
  STATE_EAST_GALICIA_ukrainian: "Lviv"
 
- # Silesia - German by default
- STATE_SILESIA_polish: "Śląsk"
- HUB_NAME_STATE_SILESIA_city_polish: "Wrocław"
- HUB_NAME_STATE_SILESIA_port_polish: ""
- HUB_NAME_STATE_SILESIA_mine_polish: "Gorzyce"
- HUB_NAME_STATE_SILESIA_farm_polish: "Chorzów"
- HUB_NAME_STATE_SILESIA_wood_polish: "Kluczbork"
+ ## Lower Silesia - German by default
+ # Lower Silesia - Polish
+ STATE_LOWER_SILESIA_polish: "Dolny Śląsk"
+ HUB_NAME_STATE_LOWER_SILESIA_city_polish: "Wrocław"
+ HUB_NAME_STATE_LOWER_SILESIA_port_polish: ""
+ HUB_NAME_STATE_LOWER_SILESIA_mine_polish: "Gorzyce"
+ HUB_NAME_STATE_LOWER_SILESIA_farm_polish: "Legnica"
+ HUB_NAME_STATE_LOWER_SILESIA_wood_polish: "Głogów"
+ # Lower Silesia - German
+ STATE_LOWER_SILESIA_german: "Niederschlesien"
+ # Lower Silesia - Czech
+ STATE_LOWER_SILESIA_czech: "Dolní Slezsko"
+ HUB_NAME_STATE_LOWER_SILESIA_city_czech: "Vratislav"
+ HUB_NAME_STATE_LOWER_SILESIA_port_czech: ""
+ HUB_NAME_STATE_LOWER_SILESIA_mine_czech: "Gorzyce"
+ HUB_NAME_STATE_LOWER_SILESIA_farm_czech: "Lehnice"
+ HUB_NAME_STATE_LOWER_SILESIA_wood_czech: "Hlohov"
 
- STATE_SILESIA_german: "Schlesien"
 
- # West Prussia - German by default
+ ## UPPER Silesia - German by default
+ # Upper Silesia - Polish
+ STATE_UPPER_SILESIA_polish: "Górny Śląsk"
+ HUB_NAME_STATE_UPPER_SILESIA_city_polish: "Opole"
+ HUB_NAME_STATE_UPPER_SILESIA_port_polish: ""
+ HUB_NAME_STATE_UPPER_SILESIA_mine_polish: "Chorzów"
+ HUB_NAME_STATE_UPPER_SILESIA_farm_polish: "Opawa"
+ HUB_NAME_STATE_UPPER_SILESIA_wood_polish: "Cieszyn"
+ # Upper Silesia - German
+ STATE_UPPER_SILESIA_german: "Oberschlesien"
+ # Upper Silesia - Austrian
+ STATE_UPPER_SILESIA_german_austrian: "Österreichisch Schlesien"
+ # Upper Silesia - Czech
+ STATE_UPPER_SILESIA_czech_split: "České Slezsko"
+ STATE_UPPER_SILESIA_czech: "Horní Slezsko"
+ HUB_NAME_STATE_UPPER_SILESIA_city_czech: "Opolí"
+ HUB_NAME_STATE_UPPER_SILESIA_port_czech: ""
+ HUB_NAME_STATE_UPPER_SILESIA_mine_czech: "Chorzov"
+ HUB_NAME_STATE_UPPER_SILESIA_farm_czech: "Opava"
+ HUB_NAME_STATE_UPPER_SILESIA_wood_czech: "Těšín"
+
+ ## West Prussia - German by default
+ # West Prussia - Polish
  STATE_WEST_PRUSSIA_polish: "Kaszuby"
  HUB_NAME_STATE_WEST_PRUSSIA_city_polish: "Gdańsk"
  HUB_NAME_STATE_WEST_PRUSSIA_port_polish: "Puck"
  HUB_NAME_STATE_WEST_PRUSSIA_mine_polish: "Chojnice"
  HUB_NAME_STATE_WEST_PRUSSIA_farm_polish: "Toruń"
  HUB_NAME_STATE_WEST_PRUSSIA_wood_polish: "Brodnica"
-
+ # West Prussia - German
  STATE_WEST_PRUSSIA_german: "Westpreußen"
 
- # East Prussia - German by default
+ ## East Prussia - German by default
+ # East Prussia - Polish
  STATE_EAST_PRUSSIA_polish: "Warmia"
  HUB_NAME_STATE_EAST_PRUSSIA_city_polish: "Królewiec"
  HUB_NAME_STATE_EAST_PRUSSIA_port_polish: "Kłajpeda"
  HUB_NAME_STATE_EAST_PRUSSIA_mine_polish: "Gąbin"
  HUB_NAME_STATE_EAST_PRUSSIA_farm_polish: "Wystruć"
  HUB_NAME_STATE_EAST_PRUSSIA_wood_polish: "Olsztyn"
- 
+ # East Prussia - German
  STATE_EAST_PRUSSIA_german: "Ostpreußen"
 
- ### Livonia Strategic Region
+ ### Livonia Strategic Region ###
 
- # Kaunas - Lithuanian by default
- STATE_KAUNAS_russian: "Kovno"
+ ## Kaunas - Lithuanian by default
+ # Kaunas - Russian
+ STATE_KAUNAS_russian: "Litva"
  HUB_NAME_STATE_KAUNAS_city_russian: "Kovno"
  HUB_NAME_STATE_KAUNAS_mine_russian: "Vilkomir"
  HUB_NAME_STATE_KAUNAS_farm_russian: "Shavli"
  HUB_NAME_STATE_KAUNAS_wood_russian: "Vawkavyshki"
  HUB_NAME_STATE_KAUNAS_port_russian: "Palangen"
-
- STATE_KAUNAS_polish: "Kaunas"
+ # Kaunas - Polish
+ STATE_KAUNAS_polish: "Litwa"
  HUB_NAME_STATE_KAUNAS_city_polish: "Kowno"
  HUB_NAME_STATE_KAUNAS_mine_polish: "Wiłkomierz"
  HUB_NAME_STATE_KAUNAS_farm_polish: "Szawle"
  HUB_NAME_STATE_KAUNAS_wood_polish: "Wyłkowyszki"
  HUB_NAME_STATE_KAUNAS_port_polish: "Połąga"
 
- # Vilnius - Lithuanian by default
+ ## Vilnius - Lithuanian by default
+ # Vilnius - Russian
  STATE_VILNIUS_russian: "Vilna"
  HUB_NAME_STATE_VILNIUS_city_russian: "Vilna"
  HUB_NAME_STATE_VILNIUS_port_russian: ""
  HUB_NAME_STATE_VILNIUS_farm_russian: "Druskeniki"
- HUB_NAME_STATE_VILNIUS_wood_russian: "Olita"
- HUB_NAME_STATE_VILNIUS_mine_russian: "Sventiany"
-
+ HUB_NAME_STATE_VILNIUS_wood_russian: "Sventiany"
+ HUB_NAME_STATE_VILNIUS_mine_russian: ""
+ # Vilnius - Polish
  STATE_VILNIUS_polish: "Wilno"
  HUB_NAME_STATE_VILNIUS_city_polish: "Wilno"
  HUB_NAME_STATE_VILNIUS_port_polish: ""
  HUB_NAME_STATE_VILNIUS_farm_polish: "Druskieniki"
- HUB_NAME_STATE_VILNIUS_wood_polish: "Olita"
- HUB_NAME_STATE_VILNIUS_mine_polish: "Święciany"
-
+ HUB_NAME_STATE_VILNIUS_wood_polish: "Święciany"
+ HUB_NAME_STATE_VILNIUS_mine_polish: ""
+ # Vilnius - Belarussian
  STATE_VILNIUS_belarusian: "Vilnia"
  HUB_NAME_STATE_VILNIUS_city_belarusian: "Vilnia"
  HUB_NAME_STATE_VILNIUS_port_belarusian: ""
  HUB_NAME_STATE_VILNIUS_farm_belarusian: "Druskeniki"
- HUB_NAME_STATE_VILNIUS_wood_belarusian: "Alita"
- HUB_NAME_STATE_VILNIUS_mine_belarusianh: "Svianciany"
+ HUB_NAME_STATE_VILNIUS_wood_belarusian: "Svianciany"
+ HUB_NAME_STATE_VILNIUS_mine_belarusianh: ""
 
- # Riga - Latvian by default
+ ## Riga - Latvian by default
+ # Riga - German
  STATE_RIGA_german: "Riga"
  HUB_NAME_STATE_RIGA_city_german: "Riga"
  HUB_NAME_STATE_RIGA_port_german: "Sloka"
  HUB_NAME_STATE_RIGA_mine_german: "Volmar"
  HUB_NAME_STATE_RIGA_farm_german: "Wenden"
  HUB_NAME_STATE_RIGA_wood_german: "Dvinsk"
-
+ # Riga - Latvian
  STATE_RIGA_latvian: "Riga"
 
- # Courland - Latvian by default
+ ## Courland - Latvian by default
+ # Courland - German
  STATE_COURLAND_german: "Kurland"
  HUB_NAME_STATE_COURLAND_city_german: "Mitava"
  HUB_NAME_STATE_COURLAND_port_german: "Libava"
  HUB_NAME_STATE_COURLAND_mine_german: "Tukkum"
  HUB_NAME_STATE_COURLAND_farm_german: "Friedrichstadt"
  HUB_NAME_STATE_COURLAND_wood_german: "Goldingen"
-
+ # Courland - Latvian
  STATE_COURLAND_latvian: "Liepāja"
 
- # Talinn - Estonian by default
+ ## Talinn - Estonian by default
+ # Talinn - German
  STATE_TALINN_german: "Estland"
  HUB_NAME_STATE_TALINN_city_german: "Revel"
  HUB_NAME_STATE_TALINN_port_german: "Baltischport"
@@ -254,19 +312,21 @@
  HUB_NAME_STATE_TALINN_farm_german: "Narva"
  HUB_NAME_STATE_TALINN_wood_german: "Hapsal"
 
- # Tartu - Estonian by default
+ ## Tartu - Estonian by default
+ # Tartu - German
  STATE_TARTU_german: "Dorpat"
  HUB_NAME_STATE_TARTU_city_german: "Dorpat"
  HUB_NAME_STATE_TARTU_port_german: "Pernau"
  HUB_NAME_STATE_TARTU_mine_german: "Odenpe"
  HUB_NAME_STATE_TARTU_farm_german: "Fellin"
  HUB_NAME_STATE_TARTU_wood_german: "Werro"
-
+ # Tartu - Estonian
  STATE_TARTU_estonian: "Tartu"
  
- ### Finland Strategic Region
+ ### Finland Strategic Region ###
 
- # Kola - Russian by default
+ ## Kola - Russian by default
+ # Kola - Finnish
  STATE_KOLA_finnish: "Kuola"
  HUB_NAME_STATE_KOLA_city_finnish: "Kuola"
  HUB_NAME_STATE_KOLA_port_finnish: "Muurmanni"
@@ -274,7 +334,8 @@
  HUB_NAME_STATE_KOLA_farm_finnish: "Kantalahti"
  HUB_NAME_STATE_KOLA_wood_finnish: "Umpi"
 
- # East Karelia - Russian by default
+ ## East Karelia - Russian by default
+ # East Karelia - Finnish
  STATE_EAST_KARELIA_finnish: "Itä-Karjala"
  HUB_NAME_STATE_EAST_KARELIA_city_finnish: "Äänislinna"
  HUB_NAME_STATE_EAST_KARELIA_port_finnish: "Sorokka"
@@ -282,216 +343,286 @@
  HUB_NAME_STATE_EAST_KARELIA_farm_finnish: "Kemi"
  HUB_NAME_STATE_EAST_KARELIA_wood_finnish: "Poventsa"
  
- # Flanders
+ ## Flanders
+ # Flanders - French
  STATE_FLANDERS_french: "Flandre"
  HUB_NAME_STATE_FLANDERS_city_french: "Bruxelles"
- #HUB_NAME_STATE_FLANDERS_port:0 "Bruges"       # same nameform in French
- #HUB_NAME_STATE_FLANDERS_mine:0 "Hasselt"      # same nameform in Dutch, French, and West-Vlams.
+ HUB_NAME_STATE_FLANDERS_port_french: "Bruges"              # same nameform in French
+ HUB_NAME_STATE_FLANDERS_mine_french: "Hasselt"             # same nameform in Dutch, French, and West-Vlams.
  HUB_NAME_STATE_FLANDERS_farm_french: "Anvers"
  HUB_NAME_STATE_FLANDERS_wood_french: "Gand"
+ # Flanders - German
+ STATE_FLANDERS_german: "Flandern"
+ HUB_NAME_STATE_FLANDERS_city_german: "Brüssel"
+ HUB_NAME_STATE_FLANDERS_port_german: "Brügge"
+ HUB_NAME_STATE_FLANDERS_mine_german: "Hasselt"             # same nameform in German
+ HUB_NAME_STATE_FLANDERS_farm_german: "Antwerpen"
+ HUB_NAME_STATE_FLANDERS_wood_german: "Gent"
  
- ### Wallonia
- # French
+ ## Wallonia
+ # Wallonia - French
  STATE_WALLONIA_french: "Wallonie"
  HUB_NAME_STATE_WALLONIA_city_french: "Luxembourg"
- #HUB_NAME_STATE_WALLONIA_mine: "Liège"
- #HUB_NAME_STATE_WALLONIA_farm: "Namur"
- #HUB_NAME_STATE_WALLONIA_wood: "Charleroi"
- # German
+ HUB_NAME_STATE_WALLONIA_mine_french: "Liège"               # same nameform in French
+ HUB_NAME_STATE_WALLONIA_farm_french: "Namur"               # same nameform in French
+ HUB_NAME_STATE_WALLONIA_wood_french: "Charleroi"           # same nameform in French
+ # Wallonia - German
  STATE_WALLONIA_german: "Wallonien"
  HUB_NAME_STATE_WALLONIA_city_german: "Luxemburg"
  HUB_NAME_STATE_WALLONIA_mine_german: "Lüttich"
  HUB_NAME_STATE_WALLONIA_farm_german: "Namür"
  HUB_NAME_STATE_WALLONIA_wood_german: "Karolingen"
+ HUB_NAME_STATE_WALLONIA_port_german: ""
  
- # Gelre
- STATE_GELRE_french: "Yssel" # technically Bouches du Rhin, Meuse Inférieur, Yssel Supérieur, et Bouches de l'Yssel.
- #HUB_NAME_STATE_GELRE_city:0 "Eindhoven"       # same nameform in French
+ ## Gelre
+ # Gelre - French
+ STATE_GELRE_french: "Yssel"                                # technically Bouches du Rhin, Meuse Inférieur, Yssel Supérieur, et Bouches de l'Yssel.
+ HUB_NAME_STATE_GELRE_city_french: "Eindhoven"              # same nameform in French
  HUB_NAME_STATE_GELRE_mine_french: "Maestricht"
  HUB_NAME_STATE_GELRE_farm_french: "Nimègue"
- #HUB_NAME_STATE_GELRE_wood:0 "Arnhem"          # same nameform in French
+ HUB_NAME_STATE_GELRE_wood_french: "Arnhem"                 # same nameform in French
+ # Gelre - German
+ HUB_NAME_STATE_GELRE_city_german: "Eindhoven"              # same nameform in German
+ HUB_NAME_STATE_GELRE_mine_german: "Maestricht"             # same nameform in German up into 20th century, nowadays Maastricht
+ HUB_NAME_STATE_GELRE_farm_german: "Nimwegen"
+ HUB_NAME_STATE_GELRE_wood_german: "Arnheim"
  
- # Friesland
+ ## Friesland
+ # Friesland - French
  STATE_FRIESLAND_french: "Frise"
  HUB_NAME_STATE_FRIESLAND_city_french: "Groningue"
- #HUB_NAME_STATE_FRIESLAND_port:0 "Harlingen"   # same nameform in French
- #HUB_NAME_STATE_FRIESLAND_mine:0 "Emmen"       # same nameform in French
- #HUB_NAME_STATE_FRIESLAND_farm:0 "Zwolle"      # same nameform in French
- #HUB_NAME_STATE_FRIESLAND_wood:0 "Drachten"    # same nameform in French
+ HUB_NAME_STATE_FRIESLAND_port_french: "Harlingen"          # same nameform in French
+ HUB_NAME_STATE_FRIESLAND_mine_french: "Emmen"              # same nameform in French
+ HUB_NAME_STATE_FRIESLAND_farm_french: "Zwolle"             # same nameform in French
+ HUB_NAME_STATE_FRIESLAND_wood_french: "Drachten"           # same nameform in French
+ # Friesland - German
+ HUB_NAME_STATE_FRIESLAND_city_german: "Gröningen"          # old German name, not sure it'd be called like this in our time still or the modern Groningen
  
- # Holland
+ ## Holland
+ # Holland - French
  STATE_HOLLAND_french: "Hollande"
- #HUB_NAME_STATE_HOLLAND_city:0 "Amsterdam"     # same nameform in French
- #HUB_NAME_STATE_HOLLAND_port:0 "Rotterdam"     # same frenchform in Name
- #HUB_NAME_STATE_HOLLAND_farm:0 "Utrecht"       # same nameform in French
+ HUB_NAME_STATE_HOLLAND_city_french: "Amsterdam"            # same nameform in French
+ HUB_NAME_STATE_HOLLAND_port_french: "Rotterdam"            # same frenchform in Name
+ HUB_NAME_STATE_HOLLAND_farm_french: "Utrecht"              # same nameform in French
  HUB_NAME_STATE_HOLLAND_wood_french: "Bréda"
- #HUB_NAME_STATE_HOLLAND_mine:0 "Broek in Waterland" # same nameform in French
+ HUB_NAME_STATE_HOLLAND_mine_french: "Broek in Waterland"   # same nameform in French
  
- # Alsace-Lorraine
- STATE_ALSACE_LORRAINE_french: "Alsace-Lorraine"  # I believe the state's default name is the French form in most translated loc, but I want to force this just in case
- HUB_NAME_STATE_ALSACE_LORRAINE_city_french: "Strasbourg"
- #HUB_NAME_STATE_ALSACE_LORRAINE_mine: "Mulhouse"
- #HUB_NAME_STATE_ALSACE_LORRAINE_farm: "Metz"
- #HUB_NAME_STATE_ALSACE_LORRAINE_wood: "Hagenau"
- #
+ ## Alsace-Lorraine
+ # Alsace-Lorraine - French
+ STATE_ALSACE_LORRAINE_french: "Alsace-Lorraine"            # I believe the state's default name is the French form in most translated loc, but I want to force this just in case
+ # Alsace-Lorraine - German
  STATE_ALSACE_LORRAINE_german: "Elsaß–Lothringen"
  HUB_NAME_STATE_ALSACE_LORRAINE_city_german: "Straßburg"
  HUB_NAME_STATE_ALSACE_LORRAINE_mine_german: "Mülhausen"
  
- # Lorraine
+ ## Lorraine
+ # Lorraine - German
  STATE_LORRAINE_german: "Lothringen"
  HUB_NAME_STATE_LORRAINE_city_german: "Nanzig"
  HUB_NAME_STATE_LORRAINE_mine_german: "Langich"
  HUB_NAME_STATE_LORRAINE_farm_german: "Verden"
  HUB_NAME_STATE_LORRAINE_wood_german: "Spinal"
 
- # Mecklenburg
+ ## French Low Countries
+ # French Low Countries - German
+ HUB_NAME_STATE_FRENCH_LOW_COUNTRIES_port_german: "Dünkirchen"
+
+ ## Mecklenburg
+ # Mecklenburg - French
  STATE_MECKLENBURG_french: "Mecklembourg"
- #HUB_NAME_STATE_MECKLENBURG_city: "Schwerin"
- #HUB_NAME_STATE_MECKLENBURG_port: "Rostock"
- #HUB_NAME_STATE_MECKLENBURG_mine: "Neustrelitz"
+ HUB_NAME_STATE_MECKLENBURG_city_french: "Schwerin"         # same nameform in French
+ HUB_NAME_STATE_MECKLENBURG_port_french: "Rostock"          # same nameform in French
+ HUB_NAME_STATE_MECKLENBURG_mine_french: "Neustrelitz"      # same nameform in French
  HUB_NAME_STATE_MECKLENBURG_farm_french: "Neubrandenbourg"
- #HUB_NAME_STATE_MECKLENBURG_wood: "Güstrow"
+ HUB_NAME_STATE_MECKLENBURG_wood_french: "Güstrow"          # same nameform in French
  
- # Pomerania
+ ## Pomerania
+ # Pomerania - French
  STATE_POMERANIA_french: "Poméranie"
- #HUB_NAME_STATE_POMERANIA_city: "Stettin"
- #HUB_NAME_STATE_POMERANIA_port: "Greifswald"
- #HUB_NAME_STATE_POMERANIA_mine: "Schwedt"
+ HUB_NAME_STATE_POMERANIA_city_french: "Stettin"            # same nameform in French
+ HUB_NAME_STATE_POMERANIA_port_french: "Greifswald"         # same nameform in French
+ HUB_NAME_STATE_POMERANIA_mine_french: "Schwedt"            # same nameform in French
  HUB_NAME_STATE_POMERANIA_farm_french: "Coslin"
- #HUB_NAME_STATE_POMERANIA_wood: "Schievelbein"
+ HUB_NAME_STATE_POMERANIA_wood_french: "Schievelbein"       # same nameform in French
+ # Pomerania - German
+ STATE_POMERANIA_german: "Pommern"
  
- # Brandenburg
+ ## Brandenburg
+ # Brandenburg - French
  STATE_BRANDENBURG_french: "Brandebourg"
- #HUB_NAME_STATE_BRANDENBURG_city: "Berlin"
- #HUB_NAME_STATE_BRANDENBURG_mine: "Cottbus"
- #HUB_NAME_STATE_BRANDENBURG_farm: "Potsdam"
- #HUB_NAME_STATE_BRANDENBURG_wood: "Stargard"
  
- # Saxony
+ ## Saxony
+ # Saxony - French
  STATE_SAXONY_french: "Saxe"
  HUB_NAME_STATE_SAXONY_city_french: "Dresde"
- #HUB_NAME_STATE_SAXONY_mine: "Leipzig"
- #HUB_NAME_STATE_SAXONY_farm: "Erfurt"
- #HUB_NAME_STATE_SAXONY_wood: "Gera"
+ HUB_NAME_STATE_SAXONY_mine_french: "Leipzig"               # same nameform in French
+ HUB_NAME_STATE_SAXONY_farm_french: "Erfurt"                # same nameform in French
+ HUB_NAME_STATE_SAXONY_wood_french: "Gera"                  # same nameform in French
+ # Saxony - German
+ STATE_SAXONY_german: "Sachsen"
 
- # Franconia
+ ## Franconia
+ # Saxony - French
  STATE_FRANCONIA_french: "Franconie"
- HUB_NAME_STATE_FRANCONIA_city_french: "Nuremberg"  # English loc already uses French form, but this will Francify it even in German loc then
- #HUB_NAME_STATE_FRANCONIA_mine:0 "Bayreuth"        # same nameform in French
+ HUB_NAME_STATE_FRANCONIA_city_french: "Nuremberg"          # English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_FRANCONIA_mine_french: "Bayreuth"           # same nameform in French
  HUB_NAME_STATE_FRANCONIA_farm_french: "Cobourg"
  HUB_NAME_STATE_FRANCONIA_wood_french: "Wurtzbourg"
+ HUB_NAME_STATE_FRANCONIA_port_french: ""
+ # Franconia - German
+ STATE_FRANCONIA_german: "Franken"
+ HUB_NAME_STATE_FRANCONIA_city_german: "Nürnberg"
+ HUB_NAME_STATE_FRANCONIA_mine_german: "Bayreuth"           # same nameform in German
+ HUB_NAME_STATE_FRANCONIA_farm_german: "Coburg"             # same nameform in German
+ HUB_NAME_STATE_FRANCONIA_wood_german: "Würzburg"           # same nameform in German
+ HUB_NAME_STATE_FRANCONIA_port_german: ""
 
- # Bavaria
+ ## Bavaria
+ # Bavaria - French
  STATE_BAVARIA_french: "Bavière"
- HUB_NAME_STATE_BAVARIA_city_french: "Munich"       # English loc already uses French form, but this will Francify it even in German loc then
- #HUB_NAME_STATE_BAVARIA_mine:0 "Rosenheim"         # same nameform in French
+ HUB_NAME_STATE_BAVARIA_city_french: "Munich"               # English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_BAVARIA_mine_french: "Rosenheim"            # same nameform in French
  HUB_NAME_STATE_BAVARIA_farm_french: "Ratisbonne"
  HUB_NAME_STATE_BAVARIA_wood_french: "Augsbourg"
+ # Bavaria - German
+ STATE_BAVARIA_german: "Bayern"
+ HUB_NAME_STATE_BAVARIA_city_german: "München"
 
- # Wurttemberg
+ ## Wurttemberg
+ # Wurttemberg - French
  STATE_WURTTEMBERG_french: "Wurtemberg"
  HUB_NAME_STATE_WURTTEMBERG_city_french: "Stutgard"
- #HUB_NAME_STATE_WURTTEMBERG_mine:0 "Lindau"        # same nameform in French
- #HUB_NAME_STATE_WURTTEMBERG_farm:0 "Ulm"           # same nameform in French
+ HUB_NAME_STATE_WURTTEMBERG_mine_french: "Lindau"           # same nameform in French
+ HUB_NAME_STATE_WURTTEMBERG_farm_french: "Ulm"              # same nameform in French
  HUB_NAME_STATE_WURTTEMBERG_wood_french: "Hailbron"
 
- # Baden
- #STATE_BADEN_french: "Baden" # wow it's the same
+ ## Baden
+ # Baden - French
  HUB_NAME_STATE_BADEN_city_french: "Carlsruhe"
  HUB_NAME_STATE_BADEN_mine_french: "Constance"
  HUB_NAME_STATE_BADEN_farm_french: "Fribourg"
- #HUB_NAME_STATE_BADEN_wood:0 "Heidelberg"      # same nameform in French
+ HUB_NAME_STATE_BADEN_wood_french: "Heidelberg"             # same nameform in French
 
- # Rhineland
+ ## Rhineland
+ # Rhineland - French
  STATE_RHINELAND_french: "Rhénanie"
  HUB_NAME_STATE_RHINELAND_city_french: "Sarrebruck"
- HUB_NAME_STATE_RHINELAND_mine_french: "Caseloutre" # Really? THIS is the French form of Kaiserlautern?
- #HUB_NAME_STATE_RHINELAND_farm:0 "Mannheim"    # same nameform in French
+ HUB_NAME_STATE_RHINELAND_mine_french: "Caseloutre"         # Really? THIS is the French form of Kaiserlautern?
+ HUB_NAME_STATE_RHINELAND_farm_french: "Mannheim"           # same nameform in French
  HUB_NAME_STATE_RHINELAND_wood_french: "Trèves"
+ # Rhineland - German
+ STATE_RHINELAND_german: "Rheinland"
 
- # Hesse
- STATE_HESSE_french: "Hesse"                    # English loc already uses French form, but this will Francify it even in German loc then
+ ## Hesse
+ # Hesse - French
+ STATE_HESSE_french: "Hesse"                                # English loc already uses French form, but this will Francify it even in German loc then
  HUB_NAME_STATE_HESSE_city_french: "Francfort"
- #HUB_NAME_STATE_HESSE_mine:0 "Giessen"         # same nameform in French
+ HUB_NAME_STATE_HESSE_mine_french: "Giessen"                # same nameform in French
  HUB_NAME_STATE_HESSE_farm_french: "Mayence"
  HUB_NAME_STATE_HESSE_wood_french: "Fulde"
 
- # Brunswick
- STATE_BRUNSWICK_french: "Brunswick"            # English loc already uses French form, but this will Francify it even in German loc then
- HUB_NAME_STATE_BRUNSWICK_city_french: "Brunswick"  # as above
- #HUB_NAME_STATE_BRUNSWICK_mine:1 "Hildesheim"
- #HUB_NAME_STATE_BRUNSWICK_farm:0 "Wernigerode"
+ ### Brunswick
+ # Brunswick - French
+ STATE_BRUNSWICK_french: "Brunswick"                        # English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_BRUNSWICK_city_french: "Brunswick"          # as above
+ HUB_NAME_STATE_BRUNSWICK_mine_french: "Hildesheim"         # same nameform in French
+ HUB_NAME_STATE_BRUNSWICK_farm_french: "Wernigerode"        # same nameform in French
  HUB_NAME_STATE_BRUNSWICK_wood_french: "Wolfsbourg"
+ # Brunswick - German
+ STATE_BRUNSWICK_german: "Braunschweig"
+ HUB_NAME_STATE_BRUNSWICK_city_german: "Braunschweig"
  
- # Anhalt
- #STATE_ANHALT: "Anhalt"
+ ## Anhalt
+ # Anhalt - French
  HUB_NAME_STATE_ANHALT_city_french: "Magdebourg"
- #HUB_NAME_STATE_ANHALT_mine:0 "Halle"
- #HUB_NAME_STATE_ANHALT_farm:0 "Dessau"
- #HUB_NAME_STATE_ANHALT_wood:0 "Stendal"
+ HUB_NAME_STATE_ANHALT_mine_french: "Halle"                 # same nameform in French
+ HUB_NAME_STATE_ANHALT_farm_french: "Dessau"                # same nameform in French
+ HUB_NAME_STATE_ANHALT_wood_french: "Stendal"               # same nameform in French
 
- # Elbe
- #STATE_ELBE_french: "Elbe" # maybe could call it L'Elbe
+ ## Elbe
+ # Elbe - French
  HUB_NAME_STATE_ELBE_city_french: "Hambourg"
- #HUB_NAME_STATE_ELBE_port: "Bremerhaven"
- #HUB_NAME_STATE_ELBE_mine: "Elmshorn"
+ HUB_NAME_STATE_ELBE_port_french: "Bremerhaven"             # same nameform in French
+ HUB_NAME_STATE_ELBE_mine_french: "Elmshorn"                # same nameform in French
  HUB_NAME_STATE_ELBE_farm_french: "Brême"
- #HUB_NAME_STATE_ELBE_wood: "Walsrode"
+ HUB_NAME_STATE_ELBE_wood_french: "Walsrode"                # same nameform in French
 
- # Hannover
+ ## Hannover
+ # Hannover - French
  STATE_HANNOVER_french: "Hanovre"
  HUB_NAME_STATE_HANNOVER_city_french: "Hanovre"
- #HUB_NAME_STATE_HANNOVER_port:0 "Emden"
- #HUB_NAME_STATE_HANNOVER_mine:0 "Bielefeld"
- #HUB_NAME_STATE_HANNOVER_farm:1 "Osnabrück"
- #HUB_NAME_STATE_HANNOVER_wood:0 "Minden"
+ HUB_NAME_STATE_HANNOVER_port_french: "Emden"               # same nameform in French
+ HUB_NAME_STATE_HANNOVER_mine_french: "Bielefeld"           # same nameform in French
+ HUB_NAME_STATE_HANNOVER_farm_french: "Osnabrück"           # same nameform in French
+ HUB_NAME_STATE_HANNOVER_wood_french: "Minden"              # same nameform in French
+ # Hannover - German
+ STATE_HANNOVER_german: "Hannover"
+ HUB_NAME_STATE_HANNOVER_city_german: "Hannover"
 
- # Westphalia
+ ## Westphalia
+ # Westphalia - French
  STATE_WESTPHALIA_french: "Westphalie"
  HUB_NAME_STATE_WESTPHALIA_city_french: "Trémoigne"
- #HUB_NAME_STATE_WESTPHALIA_mine:0 "Paderborn"
+ HUB_NAME_STATE_WESTPHALIA_mine_french: "Paderborn"         # same nameform in French
  HUB_NAME_STATE_WESTPHALIA_farm_french: "Munster"
- #HUB_NAME_STATE_WESTPHALIA_wood:0 "Essen"
+ HUB_NAME_STATE_WESTPHALIA_wood_french: "Essen"             # same nameform in French
+ # Westphalia - German
+ STATE_WESTPHALIA_german: "Westfalen"
 
- # North Rhine
+ ## North Rhine
+ # North Rhine - French
  STATE_NORTH_RHINE_french: "Rhénanie du Nord"
- HUB_NAME_STATE_NORTH_RHINE_city_french: "Cologne" # English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_NORTH_RHINE_city_french: "Cologne"          # English loc already uses French form, but this will Francify it even in German loc then
  HUB_NAME_STATE_NORTH_RHINE_mine_french: "Aix-la-Chapelle"
- #HUB_NAME_STATE_NORTH_RHINE_farm:0 "Bonn"
+ HUB_NAME_STATE_NORTH_RHINE_farm_french: "Bonn"             # same nameform in French
  HUB_NAME_STATE_NORTH_RHINE_wood_french: "Néau"
+ # North Rhine - German
+ STATE_NORTH_RHINE_german: "Nordrhein"
+ HUB_NAME_STATE_NORTH_RHINE_city_german: "Köln"
 
- # Ruhr
+ ## Ruhr
+ # Ruhr - French
  #STATE_RUHR_french: "Ruhr"
- HUB_NAME_STATE_RUHR_city_french: "Dusseldorp" # Denis Diderot
- #HUB_NAME_STATE_RUHR_mine: "Wuppertal"
- #HUB_NAME_STATE_RUHR_wood: "Siegen"
- #HUB_NAME_STATE_RUHR_farm: "Hachenburg"
+ HUB_NAME_STATE_RUHR_city_french: "Dusseldorp"              # Denis Diderot
+ HUB_NAME_STATE_RUHR_mine_french: "Wuppertal"               # same nameform in French
+ HUB_NAME_STATE_RUHR_wood_french: "Siegen"                  # same nameform in French
+ HUB_NAME_STATE_RUHR_farm_french: "Hachenburg"              # same nameform in French
 
- ### Austria
- # Styria
+ ### Austria ###
+ ## Styria
+ # Styria - French
  STATE_STYRIA_french: "Styrie"
  HUB_NAME_STATE_STYRIA_city_french: "Gratz"
- #HUB_NAME_STATE_STYRIA_mine:0 "Liezen"
- #HUB_NAME_STATE_STYRIA_farm:0 "Klagenfurt"
- #HUB_NAME_STATE_STYRIA_wood:0 "Hartberg"
+ HUB_NAME_STATE_STYRIA_mine_french: "Liezen"                # same nameform in French
+ HUB_NAME_STATE_STYRIA_farm_french: "Klagenfurt"            # same nameform in French
+ HUB_NAME_STATE_STYRIA_wood_french: "Hartberg"              # same nameform in French
 
- # Tyrol
+ ## Tyrol
+ # Tyrol - French
  STATE_TYROL_french: "Tyrol"
- #HUB_NAME_STATE_TYROL_city: "Innsbruck"
- #HUB_NAME_STATE_TYROL_mine: "Lienz"
+ HUB_NAME_STATE_TYROL_city_french: "Innsbruck"              # same nameform in French
+ HUB_NAME_STATE_TYROL_mine_french: "Lienz"                  # same nameform in French
  HUB_NAME_STATE_TYROL_farm_french: "Salzbourg"
- #HUB_NAME_STATE_TYROL_wood: "Feldkirch"
+ HUB_NAME_STATE_TYROL_wood_french: "Feldkirch"              # same nameform in French
 
- # Austria proper
+ ## South Tyrol
+ # South Tyrol - German
+ STATE_SOUTH_TYROL_german: "Südtirol"
+ HUB_NAME_STATE_SOUTH_TYROL_farm_german: "Rovereid"
+
+ ## Austria
+ # Austria - French
  STATE_AUSTRIA_french: "Austriche"
  HUB_NAME_STATE_AUSTRIA_city_french: "Vienne"
- #HUB_NAME_STATE_AUSTRIA_mine:1 "Freistadt"
+ HUB_NAME_STATE_AUSTRIA_mine_french: "Freistadt"             # same nameform in French
  HUB_NAME_STATE_AUSTRIA_farm_french: "Lintz"
  HUB_NAME_STATE_AUSTRIA_wood_french: "Saint-Hippolyte"
+ # Austria - German
+ HUB_NAME_STATE_AUSTRIA_city_german: "Wien"
  
- ### Switzerland
- # West Switzerland
+ ### Switzerland ###
+ ## West Switzerland
+ # West Switzerland - French
  STATE_WEST_SWITZERLAND_french: "Romandie"
  STATE_WEST_SWITZERLAND_sister_republic: "Helvétie"
  HUB_NAME_STATE_WEST_SWITZERLAND_city_french: "Berne"
@@ -499,74 +630,108 @@
  HUB_NAME_STATE_WEST_SWITZERLAND_farm_french: "Lausanne"     # French form is already the default for English loc, but not in all translations
  HUB_NAME_STATE_WEST_SWITZERLAND_wood_french: "Genève"
 
- # East Switzerland
+ ## East Switzerland
+ # East Switzerland - French
  STATE_EAST_SWITZERLAND_french: "Suisse"
  STATE_EAST_SWITZERLAND_sister_republic: "Rhétie"
  HUB_NAME_STATE_EAST_SWITZERLAND_city_french: "Zurich"
  HUB_NAME_STATE_EAST_SWITZERLAND_mine_french: "Coire"
  HUB_NAME_STATE_EAST_SWITZERLAND_farm_french: "Saint-Gall"
  HUB_NAME_STATE_EAST_SWITZERLAND_wood_french: "Lucerne"      # French form is already the default for English loc, but not in all translations
+ # East Switzerland - German
+ HUB_NAME_STATE_EAST_SWITZERLAND_wood_german: "Luzern"
  
- # Denmark
- # Schleswig-Holstein
+ ### Denmark ###
+ ## Schleswig-Holstein
+ # Schleswig-Holstein - French
  STATE_SCHLESWIG_HOLSTEIN_french: "Slesvig-Holsace"
- #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_city:0 "Kiel"
- #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_port:0 "Lübeck"
- #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_mine:0 "Niebüll"
+ HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_city_french: "Kiel"       # same nameform in French
+ HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_port_french: "Lübeck"     # same nameform in French
+ HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_mine_french: "Niebüll"    # same nameform in French
  HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_farm_french: "Flensbourg"
- #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_wood: "Itzehoe"
+ HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_wood_french: "Itzehoe"    # same nameform in French
  
- ### Czechia
- # Bohemia
+ ### Czechia ###
+ ## Bohemia
+ # Bohemia - French
  STATE_BOHEMIA_french: "Bohême"
  HUB_NAME_STATE_BOHEMIA_city_french: "Prague"
- #HUB_NAME_STATE_BOHEMIA_mine:0 "České Budějovice"
- #HUB_NAME_STATE_BOHEMIA_farm:0 "Hradec Králové"
+ HUB_NAME_STATE_BOHEMIA_mine_french: "České Budějovice"      # same nameform in French
+ HUB_NAME_STATE_BOHEMIA_farm_french: "Hradec Králové"        # same nameform in French
  HUB_NAME_STATE_BOHEMIA_wood_french: "Pilsen"
+ # Bohemia - German
+ STATE_BOHEMIA_german: "Böhmen"
+ HUB_NAME_STATE_BOHEMIA_city_german: "Prag"
+ HUB_NAME_STATE_BOHEMIA_mine_german: "Budweis"
+ HUB_NAME_STATE_BOHEMIA_farm_german: "Königgrätz"
+ HUB_NAME_STATE_BOHEMIA_wood_german: "Pilsen"
+ # Bohemia - Czech
+ STATE_BOHEMIA_czech: "Čechy"
+ HUB_NAME_STATE_BOHEMIA_city_czech: "Praha"
+ HUB_NAME_STATE_BOHEMIA_mine_czech: "$HUB_NAME_STATE_BOHEMIA_mine$"
+ HUB_NAME_STATE_BOHEMIA_farm_czech: "$HUB_NAME_STATE_BOHEMIA_farm$"
+ HUB_NAME_STATE_BOHEMIA_wood_czech: "$HUB_NAME_STATE_BOHEMIA_wood$"
 
- # Moravia
+ ## Moravia
+ # Moravia - French
  STATE_MORAVIA_french: "Moravie"
  HUB_NAME_STATE_MORAVIA_city_french: "Brin"
- #HUB_NAME_STATE_MORAVIA_mine:0 "Olomouc"
- #HUB_NAME_STATE_MORAVIA_farm:0 "Breclav"
- #HUB_NAME_STATE_MORAVIA_wood:1 "Jihlava"
+ HUB_NAME_STATE_MORAVIA_mine_french: "Olomouc"               # same nameform in French
+ HUB_NAME_STATE_MORAVIA_farm_french: "Breclav"               # same nameform in French
+ HUB_NAME_STATE_MORAVIA_wood_french: "Jihlava"               # same nameform in French
+ # Moravia - German
+ STATE_MORAVIA_german: "Mähren"
+ HUB_NAME_STATE_MORAVIA_city_german: "Brünn"
+ HUB_NAME_STATE_MORAVIA_mine_german: "Olmütz"
+ HUB_NAME_STATE_MORAVIA_farm_german: "Lundenburg"
+ HUB_NAME_STATE_MORAVIA_wood_german: "Iglau"
+ # Moravia - Czech
+ STATE_MORAVIA_czech: "Morava"
+ HUB_NAME_STATE_MORAVIA_city_czech: "$HUB_NAME_STATE_MORAVIA_city$"
+ HUB_NAME_STATE_MORAVIA_mine_czech: "$HUB_NAME_STATE_MORAVIA_mine$"
+ HUB_NAME_STATE_MORAVIA_farm_czech: "$HUB_NAME_STATE_MORAVIA_farm$"
+ HUB_NAME_STATE_MORAVIA_wood_czech: "$HUB_NAME_STATE_MORAVIA_wood$"
  
- ### Spain
- # Catalonia
+ ### Spain ###
+ ## Catalonia
+ # Catalonia - French
  STATE_CATALONIA_french: "Catalogne"
  HUB_NAME_STATE_CATALONIA_city_french: "Barcelone"
  HUB_NAME_STATE_CATALONIA_port_french: "Tarragone"
  HUB_NAME_STATE_CATALONIA_mine_french: "Vic"
  HUB_NAME_STATE_CATALONIA_farm_french: "Gérone"
  HUB_NAME_STATE_CATALONIA_wood_french: "Balaguer"
- #
+ # Catalonia - Catalan
  STATE_CATALONIA_catalan: "Catalunya"
- #HUB_NAME_STATE_CATALONIA_city:0 "Barcelona"
- #HUB_NAME_STATE_CATALONIA_port:0 "Tarragona"
- #HUB_NAME_STATE_CATALONIA_mine:0 "Vic"
+ HUB_NAME_STATE_CATALONIA_city_catalan: "Barcelona"          # same nameform in Catalan
+ HUB_NAME_STATE_CATALONIA_port_catalan: "Tarragona"          # same nameform in Catalan
+ HUB_NAME_STATE_CATALONIA_mine_catalan: "Vic"                # 3 confirmed
  HUB_NAME_STATE_CATALONIA_farm_catalan: "Girona"
- #HUB_NAME_STATE_CATALONIA_wood:0 "Balaguer"
+ HUB_NAME_STATE_CATALONIA_wood_catalan: "Balaguer"           # same nameform in Catalan
 
- # Navarra
+ ## Navarra
+ # Navarra - Basque
  STATE_NAVARRA_basque: "Nafarroa"
  HUB_NAME_STATE_NAVARRA_city_basque: "Iruña"
  HUB_NAME_STATE_NAVARRA_port_basque: "Bilbo"
- #HUB_NAME_STATE_NAVARRA_mine:0 "Logroño"
+ HUB_NAME_STATE_NAVARRA_mine_basque: "Logroño"               # same nameform in Basque
  HUB_NAME_STATE_NAVARRA_farm_basque: "Tutera"
  HUB_NAME_STATE_NAVARRA_wood_basque: "Gasteiz"
  
- ### Ireland and Great Britain
- # Ulster
+ ### Ireland and Great Britain ###
+ ## Ulster
+ # Ulster - UK
  HUB_NAME_STATE_ULSTER_port_uk: "Londonderry"
 
- ### Russia
- # Ingria
+ ### Russia ###
+ ## Ingria
+ # Ingria - Russian
  #STATE_INGRIA: "Ingria"
  HUB_NAME_STATE_INGRIA_city_russian_imp: "Petrograd"
  HUB_NAME_STATE_INGRIA_city_russian_sov: "Leningrad"
  
- ## Balkans
- ### Slovenia
+ ### Balkans ###
+ ## Slovenia
  # Slovenia - German
  STATE_SLOVENIA_german: "Krain"
  HUB_NAME_STATE_SLOVENIA_city_german: "Laibach"
@@ -580,7 +745,7 @@
  HUB_NAME_STATE_SLOVENIA_farm_italian: "Marburgo"
  HUB_NAME_STATE_SLOVENIA_wood_italian: "Novo Mesto"
  
- ### Croatia
+ ## Croatia
  # Croatia - German
  STATE_CROATIA_german: "Kroatien"
  HUB_NAME_STATE_CROATIA_city_german: "Agram"
@@ -603,7 +768,7 @@
  HUB_NAME_STATE_CROATIA_port_hungarian: "Fiume"
  HUB_NAME_STATE_CROATIA_wood_hungarian: "Kulpatő"
  
- ### Slavonia
+ ## Slavonia
  # Slavonia - German
  STATE_SLAVONIA_german: "Slawonien"
  HUB_NAME_STATE_SLAVONIA_city_german: "Brod an der Save"
@@ -617,7 +782,7 @@
  HUB_NAME_STATE_SLAVONIA_farm_hungarian: "Eszék"
  HUB_NAME_STATE_SLAVONIA_wood_hungarian: "Újgradiska"
  
- ### Dalmatia
+ ## Dalmatia
  # Croatia - German
  STATE_DALMATIA_german: "Dalmatien"
  HUB_NAME_STATE_DALMATIA_city_german: "Spalato"
@@ -640,7 +805,7 @@
  HUB_NAME_STATE_DALMATIA_farm_hungarian: "Knin"
  HUB_NAME_STATE_DALMATIA_wood_hungarian: "Sebenik"
  
- ### Bosnia
+ ## Bosnia
  # Bosnia - German
  STATE_BOSNIA_german: "Bosnien"
  HUB_NAME_STATE_BOSNIA_city_german: "Sarajevo"
@@ -661,7 +826,7 @@
  HUB_NAME_STATE_BOSNIA_farm_turkish: "Banjaluka"
  HUB_NAME_STATE_BOSNIA_wood_turkish: "Doboy"
  
- ### Montenegro
+ ## Montenegro
  # Montenegro - Italian
  STATE_MONTENEGRO_italian: "Montenegro"
  HUB_NAME_STATE_MONTENEGRO_city_italian: "Podgorizza"
@@ -677,15 +842,15 @@
  HUB_NAME_STATE_MONTENEGRO_farm_turkish: "Çetinye"
  HUB_NAME_STATE_MONTENEGRO_wood_turkish: "Hanovi"
  
- ### PELOPONNESE
- # PELOPONNESE - Greek
+ ## PELOPONNESE
+ # Peloponnese - Greek
  STATE_PELOPONNESE_greek: "Pelopónnisos"
  HUB_NAME_STATE_PELOPONNESE_city_greek: "Tripolitsá"
  HUB_NAME_STATE_PELOPONNESE_port_greek: "Kalamátai"
  HUB_NAME_STATE_PELOPONNESE_mine_greek: "Náfplion"
  HUB_NAME_STATE_PELOPONNESE_farm_greek: "Kórinthos"
  HUB_NAME_STATE_PELOPONNESE_wood_greek: "Pátrai"
- # PELOPONNESE - Turkish
+ # Peloponnese - Turkish
  STATE_PELOPONNESE_turkish: "Mora"
  HUB_NAME_STATE_PELOPONNESE_city_turkish: "Tripoliçe"
  HUB_NAME_STATE_PELOPONNESE_port_turkish: "Kalamat"
@@ -693,7 +858,7 @@
  HUB_NAME_STATE_PELOPONNESE_farm_turkish: "Gördes"
  HUB_NAME_STATE_PELOPONNESE_wood_turkish: "Balyabadra"
  
- ### Attica
+ ## Attica
  # Attica - Greek
  STATE_ATTICA_greek: "Stereá Elláda"
  HUB_NAME_STATE_ATTICA_city_greek: "Athênai"
@@ -709,7 +874,7 @@
  HUB_NAME_STATE_ATTICA_farm_turkish: "Zeytun"
  HUB_NAME_STATE_ATTICA_wood_turkish: "Karpenis"
  
- ### Thessaly
+ ## Thessaly
  # Thessaly - Greek
  STATE_THESSALIA_greek: "Thessalía"
  HUB_NAME_STATE_THESSALIA_city_greek: "Lárisa"
@@ -725,7 +890,7 @@
  HUB_NAME_STATE_THESSALIA_farm_turkish: "Karditsa"
  HUB_NAME_STATE_THESSALIA_wood_turkish: "Kurtuluş"
  
- ### Macedonia
+ ## Macedonia
  # Macedonia - Greek
  STATE_MACEDONIA_greek: "Makedonía"
  HUB_NAME_STATE_MACEDONIA_city_greek: "Véroia"
@@ -734,14 +899,21 @@
  HUB_NAME_STATE_MACEDONIA_farm_greek: "Kozáne"
  HUB_NAME_STATE_MACEDONIA_wood_greek: "Kastoriá"
  # Macedonia - Turkish
- STATE_MACEDONIA_turkish: "Selanik"
+ STATE_MACEDONIA_turkish: "Makedonya"
  HUB_NAME_STATE_MACEDONIA_city_turkish: "Karaferye"
  HUB_NAME_STATE_MACEDONIA_port_turkish: "Selanik"
  HUB_NAME_STATE_MACEDONIA_mine_turkish: "Filirne"
  HUB_NAME_STATE_MACEDONIA_farm_turkish: "Kozan"
  HUB_NAME_STATE_MACEDONIA_wood_turkish: "Kesriye"
+ # Macedonia - Bulgarian
+ STATE_MACEDONIA_bulgarian: "Makedonija"
+ HUB_NAME_STATE_MACEDONIA_city_bulgarian: "Ber"
+ HUB_NAME_STATE_MACEDONIA_port_bulgarian: "Solun"
+ HUB_NAME_STATE_MACEDONIA_mine_bulgarian: "Lerin"
+ HUB_NAME_STATE_MACEDONIA_farm_bulgarian: "Kozhani"
+ HUB_NAME_STATE_MACEDONIA_wood_bulgarian: "Kostur"
  
- ### Western Thrace
+ ## Western Thrace
  # Western Thrace - Greek
  STATE_WESTERN_THRACE_greek: "Dytiké Thrákē"
  HUB_NAME_STATE_WESTERN_THRACE_city_greek: "Kavála"
@@ -756,8 +928,80 @@
  HUB_NAME_STATE_WESTERN_THRACE_mine_turkish: "Serez"
  HUB_NAME_STATE_WESTERN_THRACE_farm_turkish: "İskeçe"
  HUB_NAME_STATE_WESTERN_THRACE_wood_turkish: "Gümülcine"
+ # Western Thrace - bulgarian
+ STATE_WESTERN_THRACE_bulgarian: "Zapadna Trakiya"
+ HUB_NAME_STATE_WESTERN_THRACE_city_bulgarian: "Kavala"
+ HUB_NAME_STATE_WESTERN_THRACE_port_bulgarian: "Dedeagach"
+ HUB_NAME_STATE_WESTERN_THRACE_mine_bulgarian: "Syar"
+ HUB_NAME_STATE_WESTERN_THRACE_farm_bulgarian: "Skecha"
+ HUB_NAME_STATE_WESTERN_THRACE_wood_bulgarian: "Gyumyurdzhina"
+
+ ## Northern Thrace
+ # Northern Thrace - Bulgarian
+ STATE_NORTHERN_THRACE_bulgarian: "Severna Trakiya"
+ HUB_NAME_STATE_NORTHERN_THRACE_city_bulgarian: "Plovdiv"
+ HUB_NAME_STATE_NORTHERN_THRACE_port_bulgarian: "Burgas"
+ HUB_NAME_STATE_NORTHERN_THRACE_mine_bulgarian: "Pazardzhik"
+ HUB_NAME_STATE_NORTHERN_THRACE_farm_bulgarian: "Haskovo"
+ HUB_NAME_STATE_NORTHERN_THRACE_wood_bulgarian: "Stara Zagora"
+ # Northern Thrace - Turkish
+ STATE_NORTHERN_THRACE_turkish: "Kuzey Trakya"
+ HUB_NAME_STATE_NORTHERN_THRACE_city_turkish: "Filibe"
+ HUB_NAME_STATE_NORTHERN_THRACE_port_turkish: "Burgaz"
+ HUB_NAME_STATE_NORTHERN_THRACE_mine_turkish: "Pazarcık"
+ HUB_NAME_STATE_NORTHERN_THRACE_farm_turkish: "Hasköy"
+ HUB_NAME_STATE_NORTHERN_THRACE_wood_turkish: "Zağra-i Atik"
+ # Northern Thrace - Turkish
+ STATE_NORTHERN_THRACE_greek: "Heoía Thrákē"
+ HUB_NAME_STATE_NORTHERN_THRACE_city_greek: "Philippoupolis"
+ HUB_NAME_STATE_NORTHERN_THRACE_port_greek: "Pyrgos"
+ HUB_NAME_STATE_NORTHERN_THRACE_mine_greek: "Bessáppara"
+ HUB_NAME_STATE_NORTHERN_THRACE_farm_greek: "Chaskovon"
+ HUB_NAME_STATE_NORTHERN_THRACE_wood_greek: "Zagorá"
+
+ ## Bulgaria
+ # Bulgaria - Bulgarian
+ STATE_BULGARIA_bulgarian: "Mizija"
+ HUB_NAME_STATE_BULGARIA_city_bulgarian: "Sofia"
+ HUB_NAME_STATE_BULGARIA_port_bulgarian: "Varna"
+ HUB_NAME_STATE_BULGARIA_mine_bulgarian: "Veliko Tarnovo"
+ HUB_NAME_STATE_BULGARIA_farm_bulgarian: "Shumen"
+ HUB_NAME_STATE_BULGARIA_wood_bulgarian: "Pleven"
+ # Bulgaria - Turkish
+ STATE_BULGARIA_turkish: "Tûna"
+ HUB_NAME_STATE_BULGARIA_city_turkish: "Sofya"
+ HUB_NAME_STATE_BULGARIA_port_turkish: "Varna"
+ HUB_NAME_STATE_BULGARIA_mine_turkish: "Tırnova"
+ HUB_NAME_STATE_BULGARIA_farm_turkish: "Şumnu"
+ HUB_NAME_STATE_BULGARIA_wood_turkish: "Plevne"
+
+ ## Skopia
+ # Skopia - Bulgarian
+ STATE_SKOPIA_bulgarian: "Vardarska Makedoniya"
+ HUB_NAME_STATE_SKOPIA_city_bulgarian: "Skopie"
+ HUB_NAME_STATE_SKOPIA_farm_bulgarian: "Kavadartsi"
+ HUB_NAME_STATE_SKOPIA_wood_bulgarian: "Prilep"
+ HUB_NAME_STATE_SKOPIA_mine_bulgarian: "Kalkandelen"
+ # Skopia - Greek
+ STATE_SKOPIA_greek: "Vardaría"
+ HUB_NAME_STATE_SKOPIA_city_greek: "Skopia"
+ HUB_NAME_STATE_SKOPIA_farm_greek: "Kavantártsi"
+ HUB_NAME_STATE_SKOPIA_wood_greek: "Prílapos"
+ HUB_NAME_STATE_SKOPIA_mine_greek: "Kalkándele"
+ # Skopia - Serbian
+ STATE_SKOPIA_serbian: "Stara Srbija"
+ HUB_NAME_STATE_SKOPIA_city_serbian: "Skoplje"
+ HUB_NAME_STATE_SKOPIA_farm_serbian: "Kavadarci"
+ HUB_NAME_STATE_SKOPIA_wood_serbian: "Prilep"
+ HUB_NAME_STATE_SKOPIA_mine_serbian: "Tetovo"
+ # Skopia - Turkish
+ STATE_SKOPIA_turkish: "Üsküp"
+ HUB_NAME_STATE_SKOPIA_city_turkish: "Üsküp"
+ HUB_NAME_STATE_SKOPIA_farm_turkish: "Kavadarca"
+ HUB_NAME_STATE_SKOPIA_wood_turkish: "Perlepe"
+ HUB_NAME_STATE_SKOPIA_mine_turkish: "Kalkandelen"
  
- ### Ionian Islands
+ ## Ionian Islands
  # Ionian Islands - Greek
  STATE_IONIAN_ISLANDS_greek: "Iónioi Nēsoi"
  HUB_NAME_STATE_IONIAN_ISLANDS_city_greek: "Kérkyra"
@@ -769,7 +1013,7 @@
  HUB_NAME_STATE_IONIAN_ISLANDS_port_turkish: "Zanta"
  HUB_NAME_STATE_IONIAN_ISLANDS_farm_turkish: "Kefalonya"
  
- ### Crete
+ ## Crete
  # Crete - Greek
  STATE_CRETE_greek: "Krētē"
  HUB_NAME_STATE_CRETE_city_greek: "Hērakleion"
@@ -785,7 +1029,7 @@
  HUB_NAME_STATE_CRETE_farm_turkish: "Hanya"
  HUB_NAME_STATE_CRETE_wood_turkish: "Paliohora"
  
- ### West Aegean Islands
+ ## West Aegean Islands
  # West Aegean Islands - Greek
  STATE_WEST_AEGEAN_ISLANDS_greek: "Dytikaí Aigaíai Nēsoi"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_city_greek: "Chóra"
@@ -796,9 +1040,225 @@
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_city_turkish: "Hora"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_port_turkish: "Santurin"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_farm_turkish: "İstendil"
+
+ ### Danubia ###
+ ## Transdanubia
+ # Transdanubia - German
+ STATE_TRANSDANUBIA_german: "Transdanubien"
+ HUB_NAME_STATE_TRANSDANUBIA_city_german: "Stuhlweißenburg"
+ HUB_NAME_STATE_TRANSDANUBIA_farm_german: "Kesthell"
+ HUB_NAME_STATE_TRANSDANUBIA_wood_german: "Steinamanger"
+ HUB_NAME_STATE_TRANSDANUBIA_mine_german: "Fünfkirchen"
+ # Transdanubia - Hungarian
+ STATE_TRANSDANUBIA_hungarian: "Dunántúl"
+ HUB_NAME_STATE_TRANSDANUBIA_city_hungarian: "Székesfehérvár"
+ HUB_NAME_STATE_TRANSDANUBIA_farm_hungarian: "Keszthely"
+ HUB_NAME_STATE_TRANSDANUBIA_wood_hungarian: "Szombathely"
+ HUB_NAME_STATE_TRANSDANUBIA_mine_hungarian: "Pécs"
+
+ ## Central Hungary
+ # Central Hungary - German
+ STATE_CENTRAL_HUNGARY_german: "Ungarische Tiefebene"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_city_german: "Ofen"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_farm_german: "Sollnock"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_wood_german: "Debrezin"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_mine_german: "Mischkolz"
+
+ HUB_NAME_STATE_CENTRAL_HUNGARY_city_german_budapest: "Ofen-Pesth"
+ # Central Hungary - Hungarian
+ STATE_CENTRAL_HUNGARY_hungarian: "Alföld"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_city_hungarian: "Buda"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_farm_hungarian: "Szolnok"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_wood_hungarian: "Debrecen"
+ HUB_NAME_STATE_CENTRAL_HUNGARY_mine_hungarian: "Miskolc"
+
+ HUB_NAME_STATE_CENTRAL_HUNGARY_city_hungarian_budapest: "Budapest"
+
+ ## Slovakia
+ # Slovakia - German
+ STATE_SLOVAKIA_german: "Slowakei"
+ HUB_NAME_STATE_SLOVAKIA_city_german: "Preßburg"
+ HUB_NAME_STATE_SLOVAKIA_farm_german: "Kaschau"
+ HUB_NAME_STATE_SLOVAKIA_wood_german: "Sillein"
+ HUB_NAME_STATE_SLOVAKIA_mine_german: "Neusohl"
+ # Slovakia - Hungarian
+ STATE_SLOVAKIA_hungarian: "Felvidék"
+ HUB_NAME_STATE_SLOVAKIA_city_hungarian: "Pozsony"
+ HUB_NAME_STATE_SLOVAKIA_farm_hungarian: "Kassa"
+ HUB_NAME_STATE_SLOVAKIA_wood_hungarian: "Zsolna"
+ HUB_NAME_STATE_SLOVAKIA_mine_hungarian: "Besztercebánya"
+ # Slovakia - Slovak
+ STATE_SLOVAKIA_slovak: "Slovensko"
+ HUB_NAME_STATE_SLOVAKIA_city_slovak: "Prešporok"
+ HUB_NAME_STATE_SLOVAKIA_farm_slovak: "Košice"
+ HUB_NAME_STATE_SLOVAKIA_wood_slovak: "Žilina"
+ HUB_NAME_STATE_SLOVAKIA_mine_slovak: "Banská Bystrica"
+
+ ## Ruthenia
+ # Ruthenia - German
+ STATE_RUTHENIA_german: "Unterkarpaten"
+ HUB_NAME_STATE_RUTHENIA_city_german: "Ungwar"
+ HUB_NAME_STATE_RUTHENIA_farm_german: "Munkatsch"
+ HUB_NAME_STATE_RUTHENIA_wood_german: "Hust"
+ HUB_NAME_STATE_RUTHENIA_mine_german: "Salzgruben"
+ # Ruthenia - Hungarian
+ STATE_RUTHENIA_hungarian: "Kárpátalja"
+ HUB_NAME_STATE_RUTHENIA_city_hungarian: "Ungvár"
+ HUB_NAME_STATE_RUTHENIA_farm_hungarian: "Munkács"
+ HUB_NAME_STATE_RUTHENIA_wood_hungarian: "Huszt"
+ HUB_NAME_STATE_RUTHENIA_mine_hungarian: "Aknaszlatina"
+ # Ruthenia - Slovak
+ STATE_RUTHENIA_slovak: "Podkarpatská Rus"
+ HUB_NAME_STATE_RUTHENIA_city_slovak: "Užhrad"
+ HUB_NAME_STATE_RUTHENIA_farm_slovak: "Mukačevo"
+ HUB_NAME_STATE_RUTHENIA_wood_slovak: "Chust"
+ HUB_NAME_STATE_RUTHENIA_mine_slovak: "Slatinské Doly"
+ # Ruthenia - Rusyn
+ STATE_RUTHENIA_rusyn: "Pidkarpatska Rus’"
+ HUB_NAME_STATE_RUTHENIA_city_rusyn: "Uzhhorod"
+ HUB_NAME_STATE_RUTHENIA_farm_rusyn: "Mukachevo"
+ HUB_NAME_STATE_RUTHENIA_wood_rusyn: "Solotvyno"
+ HUB_NAME_STATE_RUTHENIA_mine_rusyn: "Khust" 
  
- ## Italy
- ### Lombardy
+ ## Partium
+ # Partium - German
+ STATE_BEKES_german: "Partium"
+ HUB_NAME_STATE_BEKES_city_german: "Großwardein"
+ HUB_NAME_STATE_BEKES_farm_german: "Arad"
+ HUB_NAME_STATE_BEKES_wood_german: "Sathmar"
+ HUB_NAME_STATE_BEKES_mine_german: "" # None
+ # Partium - Hungarian
+ STATE_BEKES_hungarian: "Partium"
+ HUB_NAME_STATE_BEKES_city_hungarian: "Nagyvárad"
+ HUB_NAME_STATE_BEKES_farm_hungarian: "Arad"
+ HUB_NAME_STATE_BEKES_wood_hungarian: "Szatmárnémeti"
+ HUB_NAME_STATE_BEKES_mine_hungarian: "" # None
+ # Partium - Romanian
+ STATE_BEKES_romanian: "Partium"
+ HUB_NAME_STATE_BEKES_city_romanian: "Oradea Mare"
+ HUB_NAME_STATE_BEKES_farm_romanian: "Arad"
+ HUB_NAME_STATE_BEKES_wood_romanian: "Satu Mare"
+ HUB_NAME_STATE_BEKES_mine_romanian: "" # None
+
+ ## Northern Transylvania
+ # Northern Transylvania - German
+ STATE_NORTHERN_TRANSYLVANIA_german: "Nordsiebenbürgen"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_german: "Klausenburg"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_german: "Neumarkt am Mieresch"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_german: "Frauenbach"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_german: "Sankt Georgen"
+ # Northern Transylvania - Hungarian
+ STATE_NORTHERN_TRANSYLVANIA_hungarian: "Észak-Erdély"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_hungarian: "Kolozsvár"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_hungarian: "Marosvásárhely"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_hungarian: "Nagybánya"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_hungarian: "Sepsiszentgyörgy"
+ # Northern Transylvania - Romanian
+ STATE_NORTHERN_TRANSYLVANIA_romanian: "Transilvania de Nord"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_romanian: "Cluj"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_romanian: "Târgu Mureș"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_romanian: "Baia Mare"
+ HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_romanian: "Sfântu Gheorghe"
+
+ ## Southern Transylvania
+ # Southern Transylvania - German
+ STATE_SOUTHERN_TRANSYLVANIA_german: "Südsiebenbürgen"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_city_german: "Kronstadt"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_farm_german: "Karlsburg"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_wood_german: "Diemrich"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_mine_german: "Hermannstadt"
+ # Southern Transylvania - Hungarian
+ STATE_SOUTHERN_TRANSYLVANIA_hungarian: "Dél-Erdély"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_city_hungarian: "Brassó"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_farm_hungarian: "Gyulafehérvár"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_wood_hungarian: "Déva"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_mine_hungarian: "Nagyszeben"
+ # Southern Transylvania - Romanian
+ STATE_SOUTHERN_TRANSYLVANIA_romanian: "Transilvania de Sud"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_city_romanian: "Brașov"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_farm_romanian: "Alba Iulia"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_wood_romanian: "Deva"
+ HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_mine_romanian: "Sibiu"
+
+ ## Banat
+ # Banat - German
+ STATE_BANAT_german: "Banat"
+ HUB_NAME_STATE_BANAT_city_german: "Temeschwar"
+ HUB_NAME_STATE_BANAT_farm_german: "Orzydorf"
+ HUB_NAME_STATE_BANAT_wood_german: "Birkendorf"
+ HUB_NAME_STATE_BANAT_mine_german: "Karansebesch"
+ # Banat - Hungarian
+ STATE_BANAT_hungarian: "Bánát"
+ HUB_NAME_STATE_BANAT_city_hungarian: "Temesvár"
+ HUB_NAME_STATE_BANAT_farm_hungarian: "Orczyfalva"
+ HUB_NAME_STATE_BANAT_wood_hungarian: "Facsád"
+ HUB_NAME_STATE_BANAT_mine_hungarian: "Karánsebes"
+ # Banat - Romanian
+ STATE_BANAT_romanian: "Banat"
+ HUB_NAME_STATE_BANAT_city_romanian: "Timișoara"
+ HUB_NAME_STATE_BANAT_farm_romanian: "Orțișoara"
+ HUB_NAME_STATE_BANAT_wood_romanian: "Făget"
+ HUB_NAME_STATE_BANAT_mine_romanian: "Caransebeș"
+ # Banat - Serbian
+ STATE_BANAT_serbian: "Banat"
+ HUB_NAME_STATE_BANAT_city_serbian: "Temišvar"
+ HUB_NAME_STATE_BANAT_farm_serbian: "Orčić"
+ HUB_NAME_STATE_BANAT_wood_serbian: "Fađet"
+ HUB_NAME_STATE_BANAT_mine_serbian: "Karansebeš"
+
+ ## Western Serbia
+ # Western Serbia - German
+ HUB_NAME_STATE_WESTERN_SERBIA_city_german: "Belgrad"
+
+ ## Bukovina
+ # Bukovina - German
+ HUB_NAME_STATE_BUKOVINA_wood_german: "Sutschawa"
+
+ ## Delvidek
+ # Delvidek - German
+ STATE_DELVIDEK_german: "Wojwodina" # Not perfect
+ HUB_NAME_STATE_DELVIDEK_city_german: "Neusatz"
+ HUB_NAME_STATE_DELVIDEK_farm_german: "Großbetschkerek"
+ HUB_NAME_STATE_DELVIDEK_wood_german: "Maria-Theresiopel"
+ HUB_NAME_STATE_DELVIDEK_mine_german: "Pantschowa"
+ # Delvidek - Hungarian
+ STATE_DELVIDEK_hungarian: "Délvidék"
+ HUB_NAME_STATE_DELVIDEK_city_hungarian: "Újvidék"
+ HUB_NAME_STATE_DELVIDEK_farm_hungarian: "Nagybecskerek"
+ HUB_NAME_STATE_DELVIDEK_wood_hungarian: "Szabadka"
+ HUB_NAME_STATE_DELVIDEK_mine_hungarian: "Pancsova"
+ # Delvidek - Serbian
+ STATE_DELVIDEK_serbian: "Vojvodina"
+ HUB_NAME_STATE_DELVIDEK_city_serbian: "Novi Sad"
+ HUB_NAME_STATE_DELVIDEK_farm_serbian: "Veliki Bečkerek"
+ HUB_NAME_STATE_DELVIDEK_wood_serbian: "Subotica"
+ HUB_NAME_STATE_DELVIDEK_mine_serbian: "Pančevo"
+
+ ## Dobrudja
+ # Dobrudja - Turkish
+ STATE_DOBRUDJA_turkish: "Dobruca"
+ HUB_NAME_STATE_DOBRUDJA_city_turkish: "Tulça"
+ HUB_NAME_STATE_DOBRUDJA_port_turkish: "Köstence"
+ HUB_NAME_STATE_DOBRUDJA_farm_turkish: "Hacıoğlu Pazarcık"
+ HUB_NAME_STATE_DOBRUDJA_wood_turkish: "Mangalya"
+ HUB_NAME_STATE_DOBRUDJA_mine_turkish: "Silistre"
+ # Dobrudja - Romanian
+ STATE_DOBRUDJA_romanian: "Dobrogea"
+ HUB_NAME_STATE_DOBRUDJA_city_romanian: "Tulcea"
+ HUB_NAME_STATE_DOBRUDJA_port_romanian: "Constanța"
+ HUB_NAME_STATE_DOBRUDJA_farm_romanian: "Bazargic"
+ HUB_NAME_STATE_DOBRUDJA_wood_romanian: "Mangalia"
+ HUB_NAME_STATE_DOBRUDJA_mine_romanian: "Silistra"
+ # Dobrudja - Bulgarian
+ STATE_DOBRUDJA_bulgarian: "Dobrudzha"
+ HUB_NAME_STATE_DOBRUDJA_city_bulgarian: "Tulcha"
+ HUB_NAME_STATE_DOBRUDJA_port_bulgarian: "Kyustendzha"
+ HUB_NAME_STATE_DOBRUDJA_farm_bulgarian: "Hadzhioglu Pazardzhik"
+ HUB_NAME_STATE_DOBRUDJA_wood_bulgarian: "Mangaliya"
+ HUB_NAME_STATE_DOBRUDJA_mine_bulgarian: "Silistra"
+
+ ### Italy ###
+ ## Lombardy
  # Lombardy - German
  STATE_LOMBARDY_german: "Lombardei"
  HUB_NAME_STATE_LOMBARDY_city_german: "Mailand"
@@ -806,7 +1266,7 @@
  HUB_NAME_STATE_LOMBARDY_wood_german: "Brescia"
  HUB_NAME_STATE_LOMBARDY_mine_german: "Bergamo"
  
- ### Venetia
+ ## Venetia
  # Venetia - German
  STATE_VENETIA_german: "Venetien"
  HUB_NAME_STATE_VENETIA_city_german: "Verona"
@@ -815,7 +1275,7 @@
  HUB_NAME_STATE_VENETIA_mine_german: "Rovigo"
  HUB_NAME_STATE_VENETIA_port_german: "Venedig"
  
- ### Istria
+ ## Istria
  # Istria - German
  STATE_ISTRIA_german: "Küstenland"
  HUB_NAME_STATE_ISTRIA_city_german: "Triest"
@@ -824,23 +1284,56 @@
  HUB_NAME_STATE_ISTRIA_mine_german: "Weiden in Friaul"
  HUB_NAME_STATE_ISTRIA_port_german: "Pola"
 
- ### Northern Norway
+ ## Savoy
+ # Savoy - French
+ STATE_SAVOY_french: "Savoie"
+ HUB_NAME_STATE_SAVOY_city_french: "Annecy"
+ HUB_NAME_STATE_SAVOY_farm_french: "Chambéry"
+ HUB_NAME_STATE_SAVOY_wood_french: "Saint-Jean-de-Maurienne"
+ HUB_NAME_STATE_SAVOY_mine_french: "Thonon-les-Bains"
+ # Savoy - Italian
+ STATE_SAVOY_italian: "Savoia"
+ HUB_NAME_STATE_SAVOY_city_italian: "Annesì"
+ HUB_NAME_STATE_SAVOY_farm_italian: "Ciamberí"
+ HUB_NAME_STATE_SAVOY_wood_italian: "San Giovanni di Moriana"
+ HUB_NAME_STATE_SAVOY_mine_italian: "Tonone"
+
+ ## Piedmont
+ # Piedmont - French
+ STATE_PIEDMONT_french: "Piémont"
+ HUB_NAME_STATE_PIEDMONT_city_french: "Turin"
+ HUB_NAME_STATE_PIEDMONT_farm_french: "Alexandrie"
+ HUB_NAME_STATE_PIEDMONT_wood_french: "Coni"
+ HUB_NAME_STATE_PIEDMONT_mine_french: "Novare"
+ HUB_NAME_STATE_PIEDMONT_port_french: "Gênes"
+ # Piedmont - Italian
+ STATE_PIEDMONT_italian: "Piemonte"
+ HUB_NAME_STATE_PIEDMONT_city_italian: "Torino"
+ HUB_NAME_STATE_PIEDMONT_farm_italian: "Alessandria"
+ HUB_NAME_STATE_PIEDMONT_wood_italian: "Cuneo"
+ HUB_NAME_STATE_PIEDMONT_mine_italian: "Novara"
+ HUB_NAME_STATE_PIEDMONT_port_italian: "Genova"
+
+ ## Northern Norway
+ # Northern Norway - Norway
  HUB_NAME_STATE_NORTHERN_NORWAY_city_norway_modern: "Trondheim"
  HUB_NAME_STATE_NORTHERN_NORWAY_farm_norway: "Stranda"
  HUB_NAME_STATE_NORTHERN_NORWAY_wood_norway: "Sunndalsøra"
 
- ### Western Norway
+ ## Western Norway
+ # Western Norway - Norway
  HUB_NAME_STATE_WESTERN_NORWAY_city_norway: "Kristiansand"
  HUB_NAME_STATE_WESTERN_NORWAY_wood_norway: "Tønsberg"
 
- ### Eastern Norway
+ ## Eastern Norway
+ # Eastern Norway - Norway
  HUB_NAME_STATE_EASTERN_NORWAY_city_norway: "Kristiania"
  HUB_NAME_STATE_EASTERN_NORWAY_city_norway_modern: "Oslo"
  HUB_NAME_STATE_EASTERN_NORWAY_port_norway: "Fredrikstad"
  HUB_NAME_STATE_EASTERN_NORWAY_farm_norway_modern: "Halden"
 
- ## Anatolia
- ### Eastern Thrace
+ ### Anatolia ###
+ ## Eastern Thrace
  # Eastern Thrace - Greek
  STATE_EASTERN_THRACE_greek: "Anatolikè Thrákē"
  HUB_NAME_STATE_EASTERN_THRACE_city_greek: "Kōnstantinoúpolis"
@@ -855,7 +1348,6 @@
  HUB_NAME_STATE_EASTERN_THRACE_mine_turkish: "Kırk Kilise"
  HUB_NAME_STATE_EASTERN_THRACE_farm_turkish: "Edirne"
  HUB_NAME_STATE_EASTERN_THRACE_wood_turkish: "Midye"
- 
  # Eastern Thrace - Russian
  STATE_EASTERN_THRACE_russian: "Vostochnaya Frakiya"
  HUB_NAME_STATE_EASTERN_THRACE_city_russian: "Konstantinopol"
@@ -864,8 +1356,16 @@
  HUB_NAME_STATE_EASTERN_THRACE_farm_russian: "Adrianopol"
  HUB_NAME_STATE_EASTERN_THRACE_wood_russian: "Midia"
  HUB_NAME_STATE_EASTERN_THRACE_city_russian_tsargrad: "Tsargrad"
- 
- ### East Aegean Islands
+ # Eastern Thrace - Bulgarian
+ STATE_EASTERN_THRACE_bulgarian: "Iztochna Trakiya"
+ HUB_NAME_STATE_EASTERN_THRACE_city_bulgarian: "Konstantinopol"
+ HUB_NAME_STATE_EASTERN_THRACE_port_bulgarian: "Galipoli"
+ HUB_NAME_STATE_EASTERN_THRACE_mine_bulgarian: "Lozengrad"
+ HUB_NAME_STATE_EASTERN_THRACE_farm_bulgarian: "Odrin"
+ HUB_NAME_STATE_EASTERN_THRACE_wood_bulgarian: "Midiya"
+ HUB_NAME_STATE_EASTERN_THRACE_city_bulgarian_tsarigrad: "Tsarigrad"
+
+ ## East Aegean Islands
  # East Aegean Islands - Greek
  STATE_EAST_AEGEAN_ISLANDS_greek: "Anatolikaí Aigaíai Nēsoi"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_city_greek: "Chíos"
@@ -879,7 +1379,7 @@
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_farm_turkish: "Midilli"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_wood_turkish: "Sisam"
  
- ### Cyprus
+ ## Cyprus
  # Cyprus - Greek
  STATE_CYPRUS_greek: "Kýpros"
  HUB_NAME_STATE_CYPRUS_city_greek: "Lefkosía"
@@ -893,7 +1393,7 @@
  HUB_NAME_STATE_CYPRUS_farm_turkish: "Lefke"
  HUB_NAME_STATE_CYPRUS_wood_turkish: "Limasol"
  
- ### Aydin
+ ## Aydin
  # Aydin - Greek
  STATE_AYDIN_greek: "Iōnía"
  HUB_NAME_STATE_AYDIN_city_greek: "Smýrni"
@@ -902,7 +1402,7 @@
  HUB_NAME_STATE_AYDIN_farm_greek: "Magnēsía"
  HUB_NAME_STATE_AYDIN_wood_greek: "Aidiníon"
  
- ### Hudavendigar
+ ## Hudavendigar
  # Hudavendigar - Greek
  STATE_HUDAVENDIGAR_greek: "Vithynía"
  HUB_NAME_STATE_HUDAVENDIGAR_city_greek: "Proúsa"
@@ -911,6 +1411,13 @@
  HUB_NAME_STATE_HUDAVENDIGAR_farm_greek: "Pēgaí"
  HUB_NAME_STATE_HUDAVENDIGAR_wood_greek: "Palaiókastron"
 
+
+ ##############
+ #### ASIA ####
+ ##############
+
+
+ ## Sakhalin
  # Sakhalin - Japanese
  STATE_SAKHALIN_japanese: "Karafuto"
  HUB_NAME_STATE_SAKHALIN_city_japanese: "Toyohara" 
@@ -918,21 +1425,26 @@
  HUB_NAME_STATE_SAKHALIN_mine_japanese: "Shisuka"
  HUB_NAME_STATE_SAKHALIN_farm_japanese: "Okutan"
  HUB_NAME_STATE_SAKHALIN_wood_japanese: "Ako" # using the later 20th century name rather than the 19th c. Ochishi
- #
+
+ ## Kanto
+ # Kanto - Meiji
  HUB_NAME_STATE_KANTO_city_meiji: "Tokyo"
 
- ### West Java
+ ## West Java
+ # West Java - Jakarta
  HUB_NAME_STATE_WEST_JAVA_city_jakarta: "Jakarta"
 
- ## Madras (sr)
- ### Kurnool
+ ### Madras ###
+ ## Kurnool
+ # Kurnool - Indian
  STATE_KURNOOL_indian: "Rayalaseema"
  HUB_NAME_STATE_KURNOOL_city_indian: "Kurnool"
  HUB_NAME_STATE_KURNOOL_mine_indian: "Ballari"
  HUB_NAME_STATE_KURNOOL_farm_indian: "Anantapuramu"
  HUB_NAME_STATE_KURNOOL_wood_indian: "Kadapa"
 
- ### Madras
+ ## Madras
+ # Madras - Indian
  STATE_MADRAS_indian: "Tamil Nadu"
  HUB_NAME_STATE_MADRAS_city_indian: "Chennai"
  HUB_NAME_STATE_MADRAS_mine_indian: "Selam"
@@ -940,7 +1452,8 @@
  HUB_NAME_STATE_MADRAS_farm_indian: "Thanjavur"
  HUB_NAME_STATE_MADRAS_wood_indian: "Madurai"
 
- ### Travancore
+ ## Travancore
+ # Travancore - Indian
  STATE_TRAVANCORE_indian: "Kerala"
  HUB_NAME_STATE_TRAVANCORE_city_indian: "Kozhikode"
  HUB_NAME_STATE_TRAVANCORE_mine_indian: "Kannur"
@@ -948,7 +1461,8 @@
  HUB_NAME_STATE_TRAVANCORE_farm_indian: "Thiruvananthapuram"
  HUB_NAME_STATE_TRAVANCORE_wood_indian: "Beypur"
 
- ### Mysore
+ ## Mysore
+ # Mysore - Indian
  STATE_MYSORE_indian: "Mysuru"
  HUB_NAME_STATE_MYSORE_city_indian: "Bengaluru"
  HUB_NAME_STATE_MYSORE_mine_indian: "Chitradurga"
@@ -956,7 +1470,8 @@
  HUB_NAME_STATE_MYSORE_farm_indian: "Mysuru"
  HUB_NAME_STATE_MYSORE_wood_indian: "Shivamogga"
 
- ### Circars
+ ## Circars
+ # Circars - Indian
  STATE_CIRCARS_indian: "Andhra"
  HUB_NAME_STATE_CIRCARS_city_indian: "Visakhapatnam"
  HUB_NAME_STATE_CIRCARS_mine_indian: "Jayapura"
@@ -964,15 +1479,17 @@
  HUB_NAME_STATE_CIRCARS_farm_indian: "Nellore"
  HUB_NAME_STATE_CIRCARS_wood_indian: "Rajamahendravaram"
 
- ### Hyderabad
+ ## Hyderabad
+ # Hyderabad - Indian
  STATE_HYDERABAD_indian: "Hyderabad"
  HUB_NAME_STATE_HYDERABAD_city_indian: "Hyderabad"
  HUB_NAME_STATE_HYDERABAD_mine_indian: "Warangal"
  HUB_NAME_STATE_HYDERABAD_farm_indian: "Kalaburagi"
  HUB_NAME_STATE_HYDERABAD_wood_indian: "Aurangabad"
 
- ## Bombay (sr)
- ### Bombay
+ ### Bombay ###
+ ## Bombay
+ # Bombay - Indian
  STATE_BOMBAY_indian: "Maharashtra" # Not quite right, but close enough
  HUB_NAME_STATE_BOMBAY_city_indian: "Mumbai"
  HUB_NAME_STATE_BOMBAY_mine_indian: "Ratnagiri"
@@ -980,7 +1497,8 @@
  HUB_NAME_STATE_BOMBAY_wood_indian: "Kolhapur"
  HUB_NAME_STATE_BOMBAY_port_indian: "Panaji"
 
- ### Gujarat
+ ## Gujarat
+ # Gujarat - Indian
  STATE_GUJARAT_indian: "Gujarat"
  HUB_NAME_STATE_GUJARAT_city_indian: "Ahmedabad"
  HUB_NAME_STATE_GUJARAT_mine_indian: "Rajkot"
@@ -988,8 +1506,9 @@
  HUB_NAME_STATE_GUJARAT_wood_indian: "Bhavnagar"
  HUB_NAME_STATE_GUJARAT_port_indian: "Surat"
 
- ## Bengal (sr)
- ### West Bengal
+ ### Bengal
+ ## West Bengal
+ # West Bengal - Indian
  STATE_WEST_BENGAL_indian: "Poshchim Bongo"
  HUB_NAME_STATE_WEST_BENGAL_city_indian: "Kolkata"
  HUB_NAME_STATE_WEST_BENGAL_mine_indian: "Asansol"
@@ -997,7 +1516,8 @@
  HUB_NAME_STATE_WEST_BENGAL_wood_indian: "Jalpaiguri"
  HUB_NAME_STATE_WEST_BENGAL_port_indian: "Hajipur"
 
- ### East Bengal
+ ## East Bengal
+ # East Bengal - Indian
  STATE_EAST_BENGAL_indian: "Purbo Bongo"
  HUB_NAME_STATE_EAST_BENGAL_city_indian: "Dhaka"
  HUB_NAME_STATE_EAST_BENGAL_mine_indian: "Sylhet"
@@ -1005,21 +1525,24 @@
  HUB_NAME_STATE_EAST_BENGAL_wood_indian: "Khulna"
  HUB_NAME_STATE_EAST_BENGAL_port_indian: "Chattogram"
 
- ### Assam
+ ## Assam
+ # Assam - Indian
  STATE_ASSAM_indian: "Asama"
  HUB_NAME_STATE_ASSAM_city_indian: "Guwahati"
  HUB_NAME_STATE_ASSAM_mine_indian: "Dibrugarh"
  HUB_NAME_STATE_ASSAM_farm_indian: "Imphal"
  HUB_NAME_STATE_ASSAM_wood_indian: "Jorhat"
 
- ### Awadh
+ ## Awadh
+ # Awadh - Indian
  STATE_AWADH_indian: "Awadh"
  HUB_NAME_STATE_AWADH_city_indian: "Lucknow"
  HUB_NAME_STATE_AWADH_mine_indian: "Mirzapur"
  HUB_NAME_STATE_AWADH_farm_indian: "Varanasi"
  HUB_NAME_STATE_AWADH_wood_indian: "Gorakhpur"
 
- ### Orissa
+ ## Orissa
+ # Orissa - Indian
  STATE_ORISSA_indian: "Odisha"
  HUB_NAME_STATE_ORISSA_city_indian: "Cuttack"
  HUB_NAME_STATE_ORISSA_mine_indian: "Keonjhar"
@@ -1027,151 +1550,50 @@
  HUB_NAME_STATE_ORISSA_wood_indian: "Sambalpur"
  HUB_NAME_STATE_ORISSA_port_indian: "Baleshwar"
 
- ## Punjab / Delhi
- ### Delhi
+ ### Punjab / Delhi
+ ## Delhi
+ # Delhi - Indian
  STATE_DELHI_indian: "Delhi"
  HUB_NAME_STATE_DELHI_city_indian: "Delhi"
  HUB_NAME_STATE_DELHI_mine_indian: "Hisar"
  HUB_NAME_STATE_DELHI_farm_indian: "Karnal"
  HUB_NAME_STATE_DELHI_wood_indian: "Ambala"
 
- ### Rajputana
+ ## Rajputana
+ # Rajputana - Indian
  STATE_RAJPUTANA_indian: "Rajasthan"
  HUB_NAME_STATE_RAJPUTANA_city_indian: "Jaipur"
  HUB_NAME_STATE_RAJPUTANA_mine_indian: "Jodhpur"
  HUB_NAME_STATE_RAJPUTANA_farm_indian: "Ajmer"
  HUB_NAME_STATE_RAJPUTANA_wood_indian: "Udaipur"
 
- ### Hill Punjab
+ ## Hill Punjab
+ # Hill Punjab - Indian
  STATE_HILL_PUNJAB_indian: "Pahari Punjab"
  HUB_NAME_STATE_HILL_PUNJAB_city_indian: "Ludhiana"
  HUB_NAME_STATE_HILL_PUNJAB_mine_indian: "Shimla"
  HUB_NAME_STATE_HILL_PUNJAB_farm_indian: "Amritsar"
  HUB_NAME_STATE_HILL_PUNJAB_wood_indian: "Patiala"
 
- ## Central India
- ### Agra
+ ### Central India
+ ## Agra
+ # Agra - Indian
  STATE_AGRA_indian: "Agra"
  HUB_NAME_STATE_AGRA_city_indian: "Agra"
  HUB_NAME_STATE_AGRA_mine_indian: "Almora"
  HUB_NAME_STATE_AGRA_farm_indian: "Kanpur"
  HUB_NAME_STATE_AGRA_wood_indian: "Meerut"
 
- ### Central Provinces
+ ## Central Provinces
+ # Central Provinces - Indian
  STATE_CENTRAL_PROVINCES_indian: "Madhya Pradesh"
  HUB_NAME_STATE_CENTRAL_PROVINCES_city_indian: "Nagpur"
  HUB_NAME_STATE_CENTRAL_PROVINCES_mine_indian: "Raipur"
  HUB_NAME_STATE_CENTRAL_PROVINCES_farm_indian: "Sagar"
  HUB_NAME_STATE_CENTRAL_PROVINCES_wood_indian: "Jabalpur"
 
- #### AFRICA ####
-
- ### Tunisia
- # Italian
- STATE_TUNISIA_italian: "Tunisia"
- HUB_NAME_STATE_TUNISIA_city_italian: "Tunisi"
- HUB_NAME_STATE_TUNISIA_port_italian: "Safasso"
- #HUB_NAME_STATE_TUNISIA_mine:0 "Kasserine"
- #HUB_NAME_STATE_TUNISIA_farm:0 "Gabés"
- #HUB_NAME_STATE_TUNISIA_wood:0 "Beja"
-
- ### Bas-Congo 
- # Belgian
- STATE_BAS_CONGO_bel: "Bas-Congo"
- HUB_NAME_STATE_BAS_CONGO_city_bel: "Léopoldville"
- #HUB_NAME_STATE_BAS_CONGO_port:0 "Muanda"
- #HUB_NAME_STATE_BAS_CONGO_mine:0 "Kenge"
- #HUB_NAME_STATE_BAS_CONGO_farm:0 "Kikwit"
- HUB_NAME_STATE_BAS_CONGO_wood_bel: "Banningville"
- #
- STATE_BAS_CONGO_dutch: "Beneden-Congo" # Neder-Congo is also a valid name
- HUB_NAME_STATE_BAS_CONGO_city_dutch: "Leopoldstad"
-
- ### Congo
- # French
- HUB_NAME_STATE_CONGO_city_french: "Brazzaville"
- HUB_NAME_STATE_CONGO_port_french: "Pointe-Noire"
- HUB_NAME_STATE_CONGO_farm_french: "Dolisie"
- # Portuguese
- HUB_NAME_STATE_CONGO_port_portuguese: "Ponta Negra"
-
- ### North Cameroon
- # German
- STATE_NORTH_CAMEROON_german: "Nordkamerun"
- HUB_NAME_STATE_NORTH_CAMEROON_city_german: "Ngaundere"
- # French
- STATE_NORTH_CAMEROON_french: "Nord Cameroun"
-
- ### South Cameroon
- # German
- STATE_SOUTH_CAMEROON_german: "Südkamerun"
- HUB_NAME_STATE_SOUTH_CAMEROON_city_german: "Jaunde"
- HUB_NAME_STATE_SOUTH_CAMEROON_port_german: "Duala"
- HUB_NAME_STATE_SOUTH_CAMEROON_mine_german: "Bertua"
- # French
- STATE_SOUTH_CAMEROON_french: "Sud Cameroun"
- HUB_NAME_STATE_SOUTH_CAMEROON_city_french: "Yaoundé"
- # Portuguese
- HUB_NAME_STATE_SOUTH_CAMEROON_port_portuguese: "Rio dos Camarões"
- # Spanish
- HUB_NAME_STATE_SOUTH_CAMEROON_farm_spanish: "Santa Isabel"
-
- ### Zululand
- STATE_ZULULAND_boer: "Natal"
- HUB_NAME_STATE_ZULULAND_city_boer: "Pietermaritzburg"
- HUB_NAME_STATE_ZULULAND_port_boer: "Durban"
- HUB_NAME_STATE_ZULULAND_mine_boer: "Viljoensdorp"
- #
- HUB_NAME_STATE_ZULULAND_mine_uk: "Newcastle"
- HUB_NAME_STATE_ZULULAND_farm_uk: "Margate"
-
- ### Namaqualand
- # German
- HUB_NAME_STATE_NAMAQUALAND_port_german: "Lüderitz"
- # Boer/Afrikans
- STATE_NAMAQUALAND_boer: "Namakwaland"
-
- ### Equateur
- # Belgian & French
- HUB_NAME_STATE_EQUATEUR_city_bel: "Équateurville"
-
- ### Congo Orientale/Lualaba
- # Belgian & French
- STATE_CONGO_ORIENTALE_bel: "Congo Orientale"
- HUB_NAME_STATE_CONGO_ORIENTALE_city_bel: "Stanleyville"
- # Dutch
- STATE_CONGO_ORIENTALE_dutch: "Oost-Kongo"
- HUB_NAME_STATE_CONGO_ORIENTALE_city_dutch: "Stanleystad"
- # British
- STATE_CONGO_ORIENTALE_uk: "East Congo"
- HUB_NAME_STATE_CONGO_ORIENTALE_city_uk: "Falls Station"
-
- ## the Americas
- 
- ### North Dakota
- HUB_NAME_STATE_NORTH_DAKOTA_city_bismarck: "Bismarck"
-
- ### Washington
- STATE_WASHINGTON_usa: "Washington"
- HUB_NAME_STATE_WASHINGTON_city_usa: "Seattle"
- 
- ### Ohio
- STATE_OHIO_michigander: "South Michigan"
-
- ### District of Columbia
- HUB_NAME_STATE_DISTRICT_OF_COLUMBIA_city_uk: "Cockburn" # after Sir George Cockburn and his feat of 1814
- 
- ### Canada
- # British Columbia
- STATE_BRITISH_COLUMBIA_british: "British Columbia"
-
- ### Ontario
- HUB_NAME_STATE_ONTARIO_city_ottawa: "Ottawa"
-
- ### Santa Catarina
- HUB_NAME_STATE_SANTA_CATARINA_port_bra_republic: "Florianópolis"
-
- # Amur - Chinese by default
+ ## Amur - Chinese by default
+ # Amur - Russian
  STATE_AMUR_russian: "Amur"
  HUB_NAME_STATE_AMUR_city_russian: "Blagoveshchensk"
  HUB_NAME_STATE_AMUR_port_russian: "Nikolayevsk-on-Amur"
@@ -1179,10 +1601,161 @@
  HUB_NAME_STATE_AMUR_farm_russian: "Svobodny"
  HUB_NAME_STATE_AMUR_wood_russian: "Raychikha"
 
- # Primorye - Chinese by default
+ ## Primorye - Chinese by default
+ # Primorye - Russian
  STATE_OUTER_MANCHURIA_russian: "Primorye"
  HUB_NAME_STATE_OUTER_MANCHURIA_city_russian: "Khabarovka"
  HUB_NAME_STATE_OUTER_MANCHURIA_port_russian: "Vladivostok"
  HUB_NAME_STATE_OUTER_MANCHURIA_mine_russian: "Dalnegorsk"
  HUB_NAME_STATE_OUTER_MANCHURIA_farm_russian: "Grafskaya"
  HUB_NAME_STATE_OUTER_MANCHURIA_wood_russian: "Imperatorskaya Gavan"
+
+ ### Indochina ###
+ ## Tonkin
+ # Tonkin - Vietnamese
+ STATE_TONKIN_vietnamese: "Bac Ky"
+
+ ## Annam
+ # Annam - Vietnamese
+ STATE_ANNAM_vietnamese: "Trung Ky"
+ # Annam - French
+ HUB_NAME_STATE_ANNAM_port_french: "Tourane"
+
+ ## Mekong
+ # Mekong - Vietnamese
+ STATE_MEKONG_vietnamese: "Nam Ky"
+ # Mekong - French
+ STATE_MEKONG_french: "Cochinchine"
+ HUB_NAME_STATE_MEKONG_port_french: "Cap Saint-Jacques"
+
+ ## Cambodia
+ # Cambodia - Khmer
+ STATE_CAMBODIA_khmer: "Kampuchea"
+ # Cambodia - French
+ STATE_CAMBODIA_french: "Cambodge"
+ # Cambodia - Vietnamese
+ STATE_CAMBODIA_vietnamese_monarchy: "Tran Tay Thanh"
+ HUB_NAME_STATE_CAMBODIA_city_vietnamese: "Nam Vang"
+
+ ## Laos
+ # Laos - Vietnamese
+ STATE_LAOS_vietnamese_monarchy: "Tran Ninh"
+
+
+ ################
+ #### AFRICA ####
+ ################
+
+
+ ## Tunisia
+ # Tunisia - Italian
+ STATE_TUNISIA_italian: "Tunisia"
+ HUB_NAME_STATE_TUNISIA_city_italian: "Tunisi"
+ HUB_NAME_STATE_TUNISIA_port_italian: "Safasso"
+ HUB_NAME_STATE_TUNISIA_mine_italian: "Kasserine" # same nameform in Italian
+ HUB_NAME_STATE_TUNISIA_farm_italian: "Gabés"     # same nameform in Italian
+ HUB_NAME_STATE_TUNISIA_wood_italian: "Beja"      # same nameform in Italian
+
+ ## Bas-Congo
+ # Bas-Congo - Belgium
+ STATE_BAS_CONGO_french: "Bas-Congo"
+ HUB_NAME_STATE_BAS_CONGO_city_french: "Léopoldville"
+ HUB_NAME_STATE_BAS_CONGO_port_french: "Muanda"      # same nameform in French
+ HUB_NAME_STATE_BAS_CONGO_mine_french: "Kenge"       # same nameform in French
+ HUB_NAME_STATE_BAS_CONGO_farm_french: "Kikwit"      # same nameform in French
+ HUB_NAME_STATE_BAS_CONGO_wood_french: "Banningville"
+ # Bas-Congo - Dutch
+ STATE_BAS_CONGO_dutch: "Beneden-Congo"           # Neder-Congo is also a valid name
+ HUB_NAME_STATE_BAS_CONGO_city_dutch: "Leopoldstad"
+
+ ## Congo
+ # Congo - French
+ HUB_NAME_STATE_CONGO_city_french: "Brazzaville"
+ HUB_NAME_STATE_CONGO_port_french: "Pointe-Noire"
+ HUB_NAME_STATE_CONGO_farm_french: "Dolisie"
+ # Congo - Portuguese
+ HUB_NAME_STATE_CONGO_port_portuguese: "Ponta Negra"
+
+ ## North Cameroon
+ # North Cameroon - German
+ STATE_NORTH_CAMEROON_german: "Nordkamerun"
+ HUB_NAME_STATE_NORTH_CAMEROON_city_german: "Ngaundere"
+ # North Cameroon - French
+ STATE_NORTH_CAMEROON_french: "Nord Cameroun"
+
+ ## South Cameroon
+ # South Cameroon - German
+ STATE_SOUTH_CAMEROON_german: "Südkamerun"
+ HUB_NAME_STATE_SOUTH_CAMEROON_city_german: "Jaunde"
+ HUB_NAME_STATE_SOUTH_CAMEROON_port_german: "Duala"
+ HUB_NAME_STATE_SOUTH_CAMEROON_mine_german: "Bertua"
+ # South Cameroon - French
+ STATE_SOUTH_CAMEROON_french: "Sud Cameroun"
+ HUB_NAME_STATE_SOUTH_CAMEROON_city_french: "Yaoundé"
+ # South Cameroon - Portuguese
+ HUB_NAME_STATE_SOUTH_CAMEROON_port_portuguese: "Rio dos Camarões"
+ # South Cameroon - Spanish
+ HUB_NAME_STATE_SOUTH_CAMEROON_farm_spanish: "Santa Isabel"
+
+ ## Zululand
+ # Zululand - Boer/Afrikaans
+ STATE_ZULULAND_boer: "Natal"
+ HUB_NAME_STATE_ZULULAND_city_boer: "Pietermaritzburg"
+ HUB_NAME_STATE_ZULULAND_port_boer: "Durban"
+ HUB_NAME_STATE_ZULULAND_mine_boer: "Viljoensdorp"
+ # Zululand - British
+ HUB_NAME_STATE_ZULULAND_mine_uk: "Newcastle"
+ HUB_NAME_STATE_ZULULAND_farm_uk: "Margate"
+
+ ## Namaqualand
+ # Namaqualand - German
+ HUB_NAME_STATE_NAMAQUALAND_port_german: "Lüderitz"
+ # Namaqualand - Boer/Afrikaans
+ STATE_NAMAQUALAND_boer: "Namakwaland"
+
+ ## Equateur
+ # Equateur - Belgian & French
+ HUB_NAME_STATE_EQUATEUR_city_bel: "Équateurville"
+
+ ## Congo Orientale/Lualaba
+ # Congo Orientale - Belgian & French
+ STATE_CONGO_ORIENTALE_bel: "Congo Orientale"
+ HUB_NAME_STATE_CONGO_ORIENTALE_city_bel: "Stanleyville"
+ # Congo Orientale - Dutch
+ STATE_CONGO_ORIENTALE_dutch: "Oost-Kongo"
+ HUB_NAME_STATE_CONGO_ORIENTALE_city_dutch: "Stanleystad"
+ # Congo Orientale - British
+ STATE_CONGO_ORIENTALE_uk: "East Congo"
+ HUB_NAME_STATE_CONGO_ORIENTALE_city_uk: "Falls Station"
+
+
+ ######################
+ #### THE AMERICAS ####
+ ######################
+
+
+ ## North Dakota
+ HUB_NAME_STATE_NORTH_DAKOTA_city_bismarck: "Bismarck"
+
+ ## Washington
+ STATE_WASHINGTON_usa: "Washington"
+ HUB_NAME_STATE_WASHINGTON_city_usa: "Seattle"
+ 
+ ## Ohio
+ STATE_OHIO_michigander: "South Michigan"
+
+ ## District of Columbia
+ HUB_NAME_STATE_DISTRICT_OF_COLUMBIA_city_uk: "Cockburn" # after Sir George Cockburn and his feat of 1814
+ 
+ ### Canada ###
+ ## British Columbia
+ # British Columbia - British
+ STATE_BRITISH_COLUMBIA_british: "British Columbia"
+
+ ## Ontario
+ # Ontario - Ottawa
+ HUB_NAME_STATE_ONTARIO_city_ottawa: "Ottawa"
+
+ ## Santa Catarina
+ # Santa Catarina - Brazilian Republic
+ HUB_NAME_STATE_SANTA_CATARINA_port_bra_republic: "Florianópolis"

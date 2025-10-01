@@ -4,6 +4,8 @@
  # geographical_regions at home:
  STATE_IS_IN_EUROPE_DESC: "[STATE.GetName]は[concept_georegion_europe]にあります"
  STATE_IS_IN_EUROPE_DESC_NOT: "[STATE.GetName]は[concept_georegion_europe]に#b ありません#!"
+ STATE_IS_IN_BALKANS_DESC: "[STATE.GetName]は[concept_georegion_balkans]にあります"
+ STATE_IS_IN_BALKANS_DESC_NOT: "[STATE.GetName]は[concept_georegion_balkans]にありません"
  STATE_IS_IN_AMERICAS_DESC: "[STATE.GetName]は[concept_georegion_americas]にあります"
  STATE_IS_IN_AMERICAS_DESC_NOT: "[STATE.GetName]は[concept_georegion_americas]に#b ありません#!"
  STATE_IS_IN_NORTH_AMERICA_DESC: "[STATE.GetName]は[concept_georegion_north_america]にあります"
@@ -32,6 +34,8 @@
  STATE_IS_IN_SOUTHEAST_ASIA_DESC_NOT: "[STATE.GetName]は[concept_georegion_southeast_asia]に#b ありません#!"
  COUNTRY_IS_IN_EUROPE_DESC: "[COUNTRY.GetName]は[concept_georegion_europe]にあります"
  COUNTRY_IS_IN_EUROPE_DESC_NOT: "[COUNTRY.GetName]は[concept_georegion_europe]に#b ありません#!"
+ COUNTRY_IS_IN_BALKANS_DESC: "[COUNTRY.GetName]は[concept_georegion_balkans]にあります"
+ COUNTRY_IS_IN_BALKANS_DESC_NOT: "[COUNTRY.GetName]は[concept_georegion_balkans]にありません"
  COUNTRY_IS_IN_AMERICAS_DESC: "[COUNTRY.GetName]は[concept_georegion_americas]にあります"
  COUNTRY_IS_IN_AMERICAS_DESC_NOT: "[COUNTRY.GetName]は[concept_georegion_americas]に#b ありません#!"
  COUNTRY_IS_IN_NORTH_AMERICA_DESC: "[COUNTRY.GetName]は[concept_georegion_north_america]にあります"

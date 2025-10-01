@@ -51,16 +51,28 @@
  RELIGION_TT_ACCEPTANCE_MOD: "$ACCEPTANCE_OF_RELIGION_TERM$: [Religion.GetAcceptanceIn(GetPlayer)|=v]\n#indent_newline:3    [Religion.GetAcceptanceDescIn(GetPlayer)]#!"
 
  ACCEPTANCE_FROM_PRIMARY_CULTURE: "#v $VALUE|=+0$#! from being a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
- ACCEPTANCE_FROM_HERITAGE_AND_CULTURAL_TRAIT: "#v $VALUE|=+0$#! from sharing a [concept_cultural_heritage_trait] ([DISCRIMINATION_TRAIT.GetName]) and a non-Heritage [concept_cultural_trait] ([TARGET_DISCRIMINATION_TRAIT.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
- ACCEPTANCE_FROM_HERITAGE_TRAIT: "#v $VALUE|=+0$#! from sharing a [concept_cultural_heritage_trait] ([DISCRIMINATION_TRAIT.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
- ACCEPTANCE_FROM_CULTURAL_TRAIT: "#v $VALUE|=+0$#! from sharing a [concept_cultural_trait] ([DISCRIMINATION_TRAIT.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
- ACCEPTANCE_FROM_NO_CULTURAL_SIMILARITY: "#v $VALUE|=+0$#! as a base [concept_acceptance] for a [concept_culture]"
+ 
+ ACCEPTANCE_FROM_SHARED_HERITAGE_TRAIT: "#v $VALUE|=+0$#! from sharing a [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] ([DISCRIMINATION_TRAIT.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ ACCEPTANCE_FROM_SHARED_HERITAGE_TRAIT_GROUP: "#v $VALUE|=+0$#! from sharing a [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] ([DISCRIMINATION_TRAIT_GROUP.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ ACCEPTANCE_FROM_NO_SHARED_HERITAGE_TRAIT: "#v $VALUE|=+0$#! from no shared [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+
+ ACCEPTANCE_FROM_SHARED_LANGUAGE_TRAIT: "#v $VALUE|=+0$#! from sharing a [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] ([DISCRIMINATION_TRAIT.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ ACCEPTANCE_FROM_SHARED_LANGUAGE_TRAIT_GROUP: "#v $VALUE|=+0$#! from sharing a [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] ([DISCRIMINATION_TRAIT_GROUP.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ ACCEPTANCE_FROM_NO_SHARED_LANGUAGE_TRAIT: "#v $VALUE|=+0$#! from no shared [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+
+ ACCEPTANCE_FROM_SHARED_TRADITION_TRAIT: "#v $VALUE|=+0$#! from sharing a [Concept('concept_tradition_trait','$concept_tradition_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] ([DISCRIMINATION_TRAIT.GetName]) with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ ACCEPTANCE_FROM_NO_SHARED_TRADITION_TRAIT: "#v $VALUE|=+0$#! from no shared [Concept('concept_tradition_trait','$concept_tradition_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] with a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+
  ACCEPTANCE_FROM_STATE_RELIGION: "#v $VALUE|=+0$#! from being the [concept_state_religion]"
- ACCEPTANCE_FROM_RELIGIOUS_TRAIT: "#v $VALUE|=+0$#! from sharing a [concept_religious_trait] ([DISCRIMINATION_TRAIT.GetName]) with the [concept_state_religion]"
+ 
+ ACCEPTANCE_FROM_SHARED_RELIGIOUS_TRAIT: "#v $VALUE|=+0$#! from sharing a [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] ([DISCRIMINATION_TRAIT.GetName]) with the [concept_state_religion]"
+ ACCEPTANCE_FROM_RELIGIOUS_TRAIT_GROUP: "#v $VALUE|=+0$#! from sharing a [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] ([DISCRIMINATION_TRAIT_GROUP.GetName]) with the [concept_state_religion]"
  ACCEPTANCE_FROM_NO_RELIGIOUS_SIMILARITY: "#v $VALUE|=+0$#! as a base [concept_acceptance] for a [concept_religion]"
+
  ACCEPTANCE_FROM_LOCAL_ACCEPTANCE: "#v $VALUE|=+0$#! from [concept_cultural_community] [concept_acceptance]"
 
  ACCEPTANCE_FROM_LIVING_IN_HOMELAND: "#v $VALUE|=+0$#! from living in [concept_homeland]"
+ ACCEPTANCE_FROM_NOT_LIVING_IN_HOMELAND: "#v $VALUE|=+0$#! from not living in [concept_homeland]"
  ACCEPTANCE_ONLY:1 "[concept_acceptance]:"
 
  ACCEPTANCE_OF_RELIGION: "$ACCEPTANCE_OF_RELIGION_TERM$:"

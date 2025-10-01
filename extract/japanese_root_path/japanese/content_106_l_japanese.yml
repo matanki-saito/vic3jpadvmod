@@ -28,7 +28,7 @@
  russo_chinese.2.c: "我々の保護領にて、[SCOPE.sCountry('kirgiz_scope').GetAdjective]の領土がひとつとなる。"
  russo_chinese.3.t: "東方の支配者"
  russo_chinese.3.d: "[SCOPE.sState('vladivostok_scope').GetName]を確保することで、太平洋の支配という[ROOT.GetCountry.GetAdjective]の夢が実現に近づきました。[SCOPE.sState('vladivostok_scope').GetPortHubName]の街は、東方における我々の新しい主要港となります。"
- russo_chinese.3.f: "この港は、すべての港の中で最高といえる。オルガを思い起こさせるが、オルガより小さく、暖かく、より心地いい。だが、同じように樫の木があちこちにあり、同じように絵のように美しい山がある。低地では川のせせらぎが聞こえ、土手にはたくさんの泉がある。先日設置した駐屯所の白いテントは、まだ綺麗に手入れされただけで切り倒されていない樫の木々に映えている。" #- Sergei Maksimov
+ russo_chinese.3.f: "「この港は、すべての港の中で最高といえる。オルガを思い起こさせるが、オルガより小さく、暖かく、より心地いい。だが、同じように樫の木があちこちにあり、同じように絵のように美しい山がある。低地では川のせせらぎが聞こえ、土手にはたくさんの泉がある。先日設置した駐屯所の白いテントは、まだ綺麗に手入れされただけで切り倒されていない樫の木々に映えている」\n\n— セルゲイ・マクシモフ"
  russo_chinese.3.a: "シベリア艦隊の再編成を急げ。"
  russo_chinese.3.b: "ウラジオストクの港は、我が国で一番の港になるだろう。"
  modifier_vladivostok_navy: "東方の支配者"
@@ -157,7 +157,7 @@
  notification_caucasus_russian_failed_attack_notification_desc: "[SCOPE.sState('invasion_base_state').GetName]からの[SCOPE.sCountry('russia_scope').GetAdjective]遠征隊が、こちらの支配地域の一つを占領しようとして撃退されました。"
  caucasuswar.2.t: "襲撃されたコーカサスの物資護送部隊"
  caucasuswar.2.d: "[SCOPE.sState('invasion_base_state').GetName]にいる我が軍に必要な弾薬と物資を提供するために派遣された護送部隊が、[SCOPE.sCountry('adversary_scope').GetName]軍に奇襲され、積荷の多くが失われた。"
- caucasuswar.2.f: "救援隊が到着する頃には、死体はすでに腐り始めていた。人と馬が互いにもつれ合うようにして倒れており、その持ち物は剥ぎ取られ、奪い去られている。彼らが横たわるその道は、ロシアの領地でも、他のどの国の領地でもない。この地の民はウジ虫で、君主はハエの王だった。"
+ caucasuswar.2.f: "救援隊が到着したとき、死体はすでに腐り始めていた。人と馬が互いにもつれ合うようにして倒れており、その持ち物は剥ぎ取られ、奪い去られている。彼らが横たわるその道は、もはやロシアの領地でも、他のどの国の領地でもなかった。この地の民はウジ虫で、君主はハエの王だった。"
  caucasuswar.2.a: "損害の埋め合わせをするため、地元住民から資源をまきあげろ。"
  caucasuswar.2.b: "そのまま待機し、護衛体制を強化した部隊の到着を待て。"
  notification_caucasus_russian_supply_convoy_notification_name: "[SCOPE.sCountry('russia_scope').GetAdjective]護送部隊の襲撃に成功"
@@ -184,7 +184,7 @@
  milyutin_available_tt: "[SCOPE.sCharacter('milyutin_scope').GetFullName]が[concept_general]になる。"
  caucasuswar.6.t: "[SCOPE.sCountry('adversary_scope').GetName]への脱走"
  caucasuswar.6.d: "イマーム・[SCOPE.sCharacter('shamil_scope').GetFullName]の多国籍性は、多くの[SCOPE.sState('invasion_base_state').GetName]の民にとって魅力的なものであることが証明された。将校も地主も一様に、イマームへの離脱が多く報告されている。"
- caucasuswar.6.f: "チェチェン人が我が軍の脱走兵を虐待したおかげで、多くの当てにならない兵士たち、特にポーランド兵が逃げ出さずにすんだ。だがシャミルが脱走兵に自由を与えていることが知られたら、逃げ出す兵士が増えるだろう…私は脱走兵を出さないために、最初に捕らえた脱走兵を射殺することを考えている…また、すべての私兵指揮官に対し、信頼できない兵士の監督を強化し、脱走した兵士については直ちに私に報告するよう命じた。" #- Melenty Yakovlevich Olshevsky
+ caucasuswar.6.f: "「チェチェン人が我が軍の脱走兵を虐待したおかげで、多くの当てにならない兵士たち、特にポーランド兵が逃げ出さずにすんだ。だがシャミルが脱走兵に自由を与えていることが知られたら、逃げ出す兵士が増えるだろう…私は脱走兵を出さないために、最初に捕らえた脱走兵を射殺することを考えている…また、すべての私兵指揮官に対し、信頼できない兵士の監督を強化し、脱走した兵士については直ちに私に報告するよう命じた」\n\n— メレンティ・ヤコフレヴィチ・オルシェフスキー"
  caucasuswar.6.a: "さらなる脱走を防ぐため、地域の警備を強化する。"
  caucasuswar.6.b: "これ以上、国民の間に悪意を植え付けてはならない。"
  notification_caucasus_russian_soldiers_defection_notification_name: "[SCOPE.sCountry('russia_scope').GetAdjective]兵の我が軍への脱走"
@@ -225,7 +225,7 @@
  caucasuswar_end.2.c: "後援者たちが約束を果たす時が来た。"
  caucasuswar_end.3.t: "イマームの終焉"
  caucasuswar_end.3.d: "[SCOPE.sState('dagestan_state').GetStateRegion.GetName]が占領され、コーカサスの元ナーイブの多くが降伏または離脱したことを受け、イマームの指導者は残された最後の信者の妻子の求めに応じ、ついに[ROOT.GetCountry.GetAdjective]軍に降伏した。"
- caucasuswar_end.3.f: "「全世界があなたの功績を知っている。その栄光が色あせることはない。もしあなたが運命の力に服従し、今日最高司令官のもとに出向き、寛大なる君主[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]に降伏するならば、あなたに忠誠を誓い生きている千の人々を死から救うことができるだろう。賢く高貴な行いをもって、輝かしい功績の幕を下ろすのだ。そうすれば、あなたとあなたの家族の将来を保証するよう、サルダールが君主に嘆願する」" #- Ivan Davidovich Lazarev
+ caucasuswar_end.3.f: "「全世界があなたの功績を知っている。その栄光が色あせることはない。もしあなたが運命の力に服従し、今日最高司令官のもとに出向き、寛大なる君主[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]に降伏するならば、あなたに忠誠を誓い生きている千の人々を死から救うことができるだろう。賢く高貴な行いをもって、輝かしい功績の幕を下ろすのだ。そうすれば、あなたとあなたの家族の将来を保証するよう、サルダールが君主に嘆願する」\n\n— イワン・ダヴィドヴィチ・ラザレフ"
  caucasuswar_end.3.a: "チェチェンにようやく平和が訪れた。"
  caucasuswar_end.3.b: "シャミルが崇拝されている間は、平和は訪れない。"
  caucasuswar_end.4.t: "コーカサスの大惨事"

@@ -19,7 +19,7 @@
 #hierarchy: british_indian_caste_system
  british_indian_caste_system: "British Indian Caste System"
  british_indian_caste_system_desc: "A simplified codification by the British of an ancient Hindu class hierarchy. Initially created to serve and guide the central administration of the Raj. One's position in the hierarchy, and thus one's rights and privileges, are inherited and fixed."
- british_indian_caste_system_trigger_desc: "Has #b $hindu$#! [concept_religion] and belongs to a [concept_culture] that has the #b $south_asian_heritage$#! [concept_cultural_trait]"
+ british_indian_caste_system_trigger_desc: "Has #b $hindu$#! [concept_religion] and belongs to a [concept_culture] that has the #b $heritage_group_south_asian$#! [concept_heritage_trait]"
 
 #classes: british_indian_caste_system
  brahmins: "Brahmins"

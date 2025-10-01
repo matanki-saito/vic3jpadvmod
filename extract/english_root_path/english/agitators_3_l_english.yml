@@ -71,7 +71,7 @@
  coup.4.b: "Democracy is saved!"
  coup.5.t: "[SCOPE.gsInterestGroup('coup_ig').GetName] Abandon Government"
  coup.5.d: "The [SCOPE.gsInterestGroup('coup_ig').GetName] have departed the government entirely. The institution of [SCOPE.sLaw('coup_desired_law').GetName] is likely to be executed on the field of battle, rather than in the halls of government."
- coup.5.f: ""We see, therefore, that War is not merely a political act, but also a real political instrument, a continuation of political commerce, a carrying out of the same by other means. All beyond this which is strictly peculiar to War relates merely to the peculiar nature of the means which it uses."" #- Carl von Clausewitz
+ coup.5.f: ""We see, therefore, that War is not merely a political act, but also a real political instrument, a continuation of political commerce, a carrying out of the same by other means. All beyond this which is strictly peculiar to War relates merely to the peculiar nature of the means which it uses."\n\n— Carl von Clausewitz, #italic On War#!"
  coup.5.a: "The rats scatter once the light is shone on them."
  coup.5.b: "Let [SCOPE.sCharacter('coup_leader').GetFullName], in defeat or not, forever be known as a turncoat."
  coup_supported: "Coup Attempt Supported"
@@ -160,7 +160,7 @@
  french_pretenders.5.d1: "Down with the monarchy!"
  changed_french_monarchist_support: "The progress bar will be reset"
  fra_republican_sentiment: "Republican Sentiment"
- fra_republican_unrest: "Republican Unrest"
+ fra_republican_unrest: "$LEGACY_OF_FRENCH_REVOLUTION$"
  status_in_lead_and_on_throne_fra: "The House of [ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')] reigns secure"
  status_throne_challenged_fra: "The House of [ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')] is being challenged by [ROOT.GetCountry.GetCustom('french_leading_dynasty_name')]"
  status_no_dynasty_fra: "No royal pretender is ahead of anyone else"

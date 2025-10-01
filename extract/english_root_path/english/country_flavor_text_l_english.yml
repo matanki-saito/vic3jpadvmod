@@ -40,6 +40,12 @@
  DEN_FLAVOR_TEXT:0 "Across Denmark new liberal and national pushes are changing the face of politics. Meanwhile they are also undergoing a golden age of art, literature and philosophy. What will the rest of the century bring?"
 
  SWE_FLAVOR_TEXT:0 "After losing Finland and gaining Norway in a personal union, Sweden has begun the slow process of industrialization, while also becoming more liberal in some ways. What does the future of Sweden hold?"
+
+ CRO_FLAVOR_TEXT: "Under a reformist Ban and amicable Austrian administration, Croatia-Slavonia is experiencing a period of national revival and pan-Slavic sentiment. The Illyrian movement is sweeping the country, with academics calling for resistance to Magyarization and linguistic reforms. Will Croatia find a place of its own within the Empire, or will it be drowned beneath the Hungarian yoke?"
+
+ TRS_FLAVOR_TEXT: "Separated from Hungary following Rákóczi's War in 1711, the Principality of Transylvania finds itself at the center of German, Hungarian, and Romanian attention. Can Transylvania maintain its autonomy, or will it be swallowed up by its ambitious neighbors?"
+
+ HUN_FLAVOR_TEXT: "Long subservient to its Austrian masters, the Kingdom of Hungary finds itself at a crossroads, with emerging factions arguing in favor of greater Hungarian independence. Will radical voices triumph, or will Hungary remain yet another jewel in the Austrian crown?"
   
   # South-East Asia
  LAN_FLAVOR_TEXT:0 "The Republic of Lanfang was established by a democratic syndicate of Chinese miners hoping to exploit the gold reserves of Borneo. Can Lanfang resist the advances of the Dutch and achieve the prosperity it seeks?"
@@ -161,9 +167,11 @@
  KFA_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
  SHW_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
  SDM_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
- BRN_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
  HAR_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
  AWS_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ QWR_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ WLT_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ HDY_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
  SAF_FLAVOR_TEXT:0 "Originally a Dutch trading post, the Cape Colony has recently become a British Crown Colony with most of its former autonomy curtailed. Now, tensions are rising between the British crown and the Boer states to the north, while in the east, the power of the Zulu Empire is growing. How will the Cape Colony weather the struggles ahead?"
   
   # India
@@ -364,3 +372,7 @@
  TNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  THL_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  SLK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ OGD_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BRN_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ OMO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ ANU_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"

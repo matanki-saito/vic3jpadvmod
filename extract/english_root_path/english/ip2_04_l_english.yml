@@ -135,10 +135,6 @@
 
   TITLE_LADY: "Lady"
   TITLE_LORD: "Lord"
-  WOMAN_LOVER: "lady"
-  MAN_LOVER: "lord"
-  WOMAN_LOVERS: "ladies"
-  MAN_LOVERS: "suitors"
 
   india_events.2.t: "The Delhi Durbar"
   india_events.2.d: "The [ROOT.GetCountry.GetTopOverlord.GetAdjective] administration has planned a grand durbar in [SCOPE.sState('delhi_scope').GetCityHubName] to officially proclaim [SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('monarch_scope').GetFullName] as [SCOPE.sCharacter('monarch_scope').GetCustom('getEmpressEmperor')] of India. Dignitaries from across [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] India have been invited to attend."
@@ -329,8 +325,8 @@
   is_dominion_or_protectorate_tt: "Is a [concept_dominion] or [concept_protectorate] of [ROOT.GetCountry.GetTopOverlord.GetName]"
   indian_home_rule_granted_tt: "[GetPlayer.GetTopOverlord.GetName] will grant #v India#! #bold Home Rule#!"
   granted_india_home_rule_tt: "We have elected to grant [SCOPE.sCountry('india_scope').GetName] #bold Home Rule#!"
-  no_south_asian_primary_cultures_tt: "None of our [Concept('concept_primary_cultures','$concept_primary_cultures$')] have the trait #v $south_asian_heritage$#!"
-  south_asian_culture_over_60_tt: "Any culture with the #v $south_asian_heritage$#! trait has a base [concept_acceptance] above #v 60#!"
+  no_south_asian_primary_cultures_tt: "None of our [Concept('concept_primary_cultures','$concept_primary_cultures$')] have the trait #v $heritage_group_south_asian$#!"
+  south_asian_culture_over_60_tt: "Any culture with the #v $heritage_group_south_asian$#! trait has a base [concept_acceptance] above #v 60#!"
 
   je_india_home_rule: "Indian Home Rule"
   je_india_home_rule_reason: "Across the [SCOPE.sCountry('india_scope').GetName], national consciousness is rising amongst the native Indian population. Native Indians educated in [SCOPE.sCountry('overlord_scope').GetAdjectiveNoFlag] schools and employed by the colonial government have begun to agitate for equal status within imperial institutions, greater economic opportunity, and the eventual establishment of home rule for all of India.\n\nWhilst this [concept_journal_entry] is active, we will have the opportunity to petition [SCOPE.sCountry('overlord_scope').GetName] for greater autonomy and other local reforms. The chance that these petitions will be accepted is dependent upon the status of the #bold progress bar#!."
@@ -468,10 +464,6 @@
   authorise_indian_self_governance_tt: "The [SCOPE.sCountry('india_scope').GetName] will pass [GetLawType('law_wealth_voting').GetName] and [GetLawType('law_elected_bureaucrats').GetName]"
 
   requested_dop_permission_tt: "Has not used this action in the last #Bold 5#! years"
-
-  concept_princely_state: "Princely State"
-  concept_princely_states: "Princely States"
-  concept_princely_state_desc: "A $concept_princely_state$ is a state under the rule of a native Indian monarch subordinate to a European colonial power. They possess greatly different degrees of prominence within the Indian imperial system, but all are generally subject to a similar diplomatic arrangement."
 
   india_colonial_government: "Colonial Governors"
 
@@ -622,7 +614,7 @@
 
   remove_modifier_india_company_rule_tt: "[ROOT.GetCountry.GetNameNoFlag] loses #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_company_rule_tt $modifier_india_company_rule$#!"
   remove_modifier_india_company_rule_upgraded_tt: "[ROOT.GetCountry.GetNameNoFlag] loses #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_company_rule_upgraded_tt $modifier_india_company_rule_upgraded$#!"
-  add_modifier_india_crown_rule_tt: "[ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_crown_rule_tt $modifier_india_crown_rule$#! permanently"
+  add_modifier_india_crown_rule_tt: "[ROOT.GetCountry.GetNameNoFlag] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_india_crown_rule_tt $modifier_india_crown_rule$#! indefinitely"
 
   je_federation_of_india: "The [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')] of India"
   je_federation_of_india_reason: "[SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_of_india_intro_text')]\n\nWhilst this [concept_journal_entry] is active, [concept_princely_state] [Concept('concept_subject', '$concept_subjects$')] with low [concept_liberty_desire] and high [concept_relations] will occasionally petition for accession into the [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')].\n\n#b The [concept_privy_purse]:#!\nThe former rulers of the #b Princely States#! will be entitled to a state pension as compensation for accession to the [SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_union')]. The $concept_privy_purse$ payments will add #b National Expenses#! of @money![GetPlayer.MakeScope.ScriptValue('privy_purse_multiplier_base')|D-] times the number of #b Princely States#! annexed using this [concept_journal_entry].[SCOPE.GetRootScope.GetCountry.GetCustom('get_federation_of_india_diploplay_text')]"
@@ -700,5 +692,5 @@
   notification_overlord_government_reform_accepted_tooltip: "#header $notification_overlord_government_reform_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_overlord_government_reform_accepted_desc$"
 
   notification_overlord_government_reform_denied_name: "[SCOPE.sCountry('india_overlord_scope').GetName] Denies Government Reform"
-  notification_overlord_government_reform_denied_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] has refused our request to democratize our administration. [Concept('concept_radical', '$concept_radicalism$')] amongst our #b $south_asian_heritage$#! [Concept('concept_pop','$concept_pops$')] has increased as a result.\n\nWe may request reform again in #v 5 years#!"
+  notification_overlord_government_reform_denied_desc: "[SCOPE.sCountry('india_overlord_scope').GetName] has refused our request to democratize our administration. [Concept('concept_radical', '$concept_radicalism$')] amongst our #b $heritage_group_south_asian$#! [Concept('concept_pop','$concept_pops$')] has increased as a result.\n\nWe may request reform again in #v 5 years#!"
   notification_overlord_government_reform_denied_tooltip: "#header $notification_overlord_government_reform_denied_name$#!\n$TOOLTIP_DELIMITER$\n$notification_overlord_government_reform_denied_desc$"

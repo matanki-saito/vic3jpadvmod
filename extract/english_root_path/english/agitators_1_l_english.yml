@@ -105,7 +105,7 @@
   exile_old_ruler_tt: "[SCOPE.sCharacter('old_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('old_ruler_scope').GetFullName] has fled into [concept_exile]"
   french_pretenders.6.t: "The Provisional Government"
   french_pretenders.6.d: "The crisis throughout [ROOT.GetCountry.GetName] has proven too much for [SCOPE.sCharacter('old_ruler_scope').GetFullName] to handle. [SCOPE.sCharacter('monarch_scope').GetSheHe|U] has been forced to abdicate and flee the country, and a provisional republican government has been declared."
-  french_pretenders.6.f: ""From that day, a thousand strange systems issued impetuously from the minds of the innovators, and spread through the troubled minds of the crowd. Everything was still standing except royalty and parliament, and it seemed that from the shock of the revolution, society itself had been reduced to dust, and that the new form that should be given to society had been put to competition."" #- Alexis de Tocqueville
+  french_pretenders.6.f: ""From that day, a thousand strange systems issued impetuously from the minds of the innovators, and spread through the troubled minds of the crowd. Everything was still standing except royalty and parliament, and it seemed that from the shock of the revolution, society itself had been reduced to dust, and that the new form that should be given to society had been put to competition."\n\n— Alexis de Tocqueville"
   french_pretenders.6.a: "Long live the Republic!"
 
   je_cement_the_rightful_dynasty_fake: "Adds #bold Cement the House of The Rightful Claimant#! to the journal of [SCOPE.sCountry('reflexive_reference_france').GetName]"
@@ -191,7 +191,6 @@
   alone_with_principles: "Alone With Principles"
   cryptomonarchists_in_our_ranks: "Crypto-Monarchists In Our Ranks"
   collaboration_collapsed: "Collaboration Collapsed"
-  restitutor_orbis: "Restitutor Orbis"
   stalwarts_of_the_restoration: "Stalwarts of the Restoration"
   too_gentle_on_missionaries: "Too Gentle on Missionaries"
   inaction_in_indochina: "Inaction in Indochina"
@@ -406,8 +405,6 @@
   muzzled_activists: "Muzzled Activists"
   poorly_worded_pamphlets: "Poorly-Worded Pamphlets"
   withdrawn_from_the_public: "Withdrawn From The Public"
-  well_known_tragedy: "Well Known Tragedy"
-  scandalous_lover: "Scandalous Lover"
   on_the_run: "On The Run"
   cleared_of_charges: "Cleared of Charges"
   farming_incentives: "Farming Incentives"

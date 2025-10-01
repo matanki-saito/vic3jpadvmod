@@ -73,6 +73,7 @@
  popneed_luxury_items:0 "Luxury Items"
  popneed_art:0 "Art"
  popneed_leisure: "Leisure"
+ popneed_stimulants: "Stimulants"
 
 # Prestige goods:
 prestige_good_krupp_guns: "Krupp Guns"
@@ -116,6 +117,14 @@ prestige_good_schichau_engines: "Schichau Engines"
 prestige_good_smirnoff_vodka: "Smirnoff Vodka"
 prestige_good_russia_iron: "Russia Iron"
 prestige_good_philips_chapel_radio: "Chapel Radios"
+
+# IP3 Goods
+prestige_good_basma_tobacco: "Basma Tobacco"
+prestige_good_acorn_fed_pork: "Acorn-Fed Pork"
+prestige_good_pannonian_patent_flour: "Pannonian Patent Flour"
+prestige_good_brunn_type_engines: "Brunn-Type Engines"
+
+# Generic Prestige Goods
 prestige_good_generic_groceries: "Gourmet Groceries"
 prestige_good_generic_steel: "Refined Steel"
 prestige_good_generic_furniture: "Stylish Furniture"

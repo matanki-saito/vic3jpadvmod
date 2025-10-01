@@ -40,7 +40,7 @@
  ACHIEVEMENT_FILTER_BUTTON_LOCKED:0 "Locked"
  ACHIEVEMENT_FILTER_BUTTON_POSSIBLE:0 "Possible"
  ACHIEVEMENT_FILTER_SHOW:0 "Show Achievements:"
-  
+
   ## Rename difficulties?
  ACHIEVEMENT_GROUP_easy_group:0 "Easy Achievements"
  ACHIEVEMENT_GROUP_medium_group:0 "Medium Achievements"
@@ -52,7 +52,7 @@
   ## Test Achievement Desc (remove)
   ##ACHIEVEMENT_DESC_NEW_ACHIEVEMENT_1_0: "Have at least 9000 cash reserves"
   ##ACHIEVEMENT_DESC_NEW_ACHIEVEMENT_2_0: "As Sweden, own Sjaelland and Denmark must not exist"
-  
+
  ACHIEVEMENT_peccavi:0 "Peccavi"
  ACHIEVEMENT_perkeletankki:0 "Perkeletankki"
  ACHIEVEMENT_luxurious_luxembourg:0 "Luxurious Luxembourg"
@@ -98,7 +98,7 @@
  ACHIEVEMENT_hegemon:0 "Hegemon"
  ACHIEVEMENT_caretaker:0 "Caretaker"
  ACHIEVEMENT_star_swarmed_banner:0 "Star-Swarmed Banner"
-  
+
  ACHIEVEMENT_DESC_peccavi:0 "Starting as the British India Company, fully own the states of Sind and Punjab"
  ACHIEVEMENT_DESC_perkeletankki:0 "Starting as Finland, produce at least 100 units of tanks every week"
  ACHIEVEMENT_DESC_luxurious_luxembourg:1 "Starting as Luxembourg, be the leading producer of Luxury Clothes, Luxury Furniture, and Porcelain"
@@ -365,6 +365,28 @@ ACHIEVEMENT_DESC_achievement_champagne_socialist: "As France, have Council Repub
 has_company_cgv_tt: "Has established Confédération générale des vignerons as a Company"
 
 ACHIEVEMENT_achievement_systembolaget: "Systembolaget"
+
+# National Awakening/1.10 Achievements
+ACHIEVEMENT_achievement_usga: "Viribus Unitis"
+ACHIEVEMENT_DESC_achievement_usga: "As Austria, complete the Federal Solution Journal Entry, and form the United States of Greater Austria"
+ACHIEVEMENT_achievement_neo_absolutist: "Quill and Bayonet"
+ACHIEVEMENT_DESC_achievement_neo_absolutist: "As Austria, complete the Autocracy in the Age of Liberty Journal Entry"
+ACHIEVEMENT_achievement_im_feeling_hungary: "I’m Feeling Hungary"
+ACHIEVEMENT_DESC_achievement_im_feeling_hungary: "As Hungary, complete the Hungarian Revolution Journal Entry, and achieve independence"
+ACHIEVEMENT_achievement_brotherhood_and_unity: "Brotherhood and Unity"
+ACHIEVEMENT_DESC_achievement_brotherhood_and_unity: "Form the nation of Yugoslavia"
+ACHIEVEMENT_achievement_teamkiller: "Teamkiller"
+ACHIEVEMENT_DESC_achievement_teamkiller: "As a member of the Balkan League, complete the Spoils of War Journal Entry"
+ACHIEVEMENT_achievement_david_slays_goliath: "David Slays Goliath"
+ACHIEVEMENT_DESC_achievement_david_slays_goliath: "Starting as Montenegro, exist whilst the Ottoman Empire does not"
+ACHIEVEMENT_achievement_prussia_of_the_balkans: "Prussia of the Balkans"
+ACHIEVEMENT_DESC_achievement_prussia_of_the_balkans: "As Bulgaria, complete the Prussia of the Balkans Journal Entry, and have higher prestige than Prussia"
+ACHIEVEMENT_achievement_sorbia_is_serbia: "Sorbia is Serbia"
+ACHIEVEMENT_DESC_achievement_sorbia_is_serbia: "As Serbia, own Saxony"
+ACHIEVEMENT_achievement_biedermeier: "Biedermeier"
+ACHIEVEMENT_DESC_achievement_biedermeier: "As Austria, be the number 1 producer of art and furniture"
+ACHIEVEMENT_achievement_exactly_100: "EXACTLY 100!!!"
+ACHIEVEMENT_DESC_achievement_exactly_100: "As any independent country, have the fervor of any primary culture reach 100"
 ACHIEVEMENT_DESC_achievement_systembolaget: "As Sweden, have a Country Monopoly on Liquor"
 
 ACHIEVEMENT_achievement_all_quiet_on_the_western_front: "All Quiet on the Western Front"

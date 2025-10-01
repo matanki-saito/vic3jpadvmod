@@ -64,7 +64,6 @@
   pedro.10.d: "With the ratification of [ROOT.GetCountry.GetName]'s first republican constitution, [SCOPE.sCharacter('pedro_scope').GetFullName] has been confirmed as [SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle], guaranteeing popular support for the new government."
   pedro.10.f: ""Good people of Brazil: today, I do not speak to you as Emperor. No, I will no longer speak to you as Emperor, as a King, or of any man bearing a crown. As of this morning, I have ratified a new proposal from the Cortes. The monarchy is to be no more. It is time we divest ourselves of such old notions as kings.""
   pedro.10.a: "Long live the President."
-  president_pedro_legitimacy: "President Pedro"
   pedro.11.t: "A Magnanimous Constitution"
   pedro.11.d: "[SCOPE.sCharacter('pedro_scope').GetFullName] has become the first to ratify [ROOT.GetCountry.GetName]'s republican constitution, at the same time announcing to the public his intention to aid this transition by serving as the nation's first President."
   pedro.11.f: ""From today forth, I shall only be your president, until such a time as you, the people of Brazil, deem me unfit for my duties. I do not take lightly these duties put upon me, once entrusted as Emperor and now as President, for the responsibility is great indeed. But I ask you all: trust in me now as you did before.""
@@ -312,7 +311,7 @@
 
  # South American Minors
  ragamuffin_war_minors: "Struggle for Independence"
- ragamuffin_war_minors_reason: "The imperial government's apathy toward the plight of its people can no longer be tolerated. We have elected our own government and declared our Republic to be independent - much to the ire of Brazil."
+ ragamuffin_war_minors_reason: "The apathy of Brazil's imperial government towards the plight of its people can no longer be tolerated. We have elected our own government and declared ourselves an independent republic!"
  ragamuffin_war_minors_tt: "Enforcing our demands on $BRZ$ will Trigger the Event #bold $brazilian_minors.1.t$#!"
  brazilian_minors.4.t: "Victory in the North"
  brazilian_minors.4.d: "[ROOT.GetCountry.GetName] has won its independence from [SCOPE.sCountry('brz_scope').GetName], though at great cost and through bloody struggle. Those still standing rejoice in victory and toast the fallen."

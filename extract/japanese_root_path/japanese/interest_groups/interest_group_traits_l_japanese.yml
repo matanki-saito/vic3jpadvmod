@@ -49,6 +49,8 @@
  ig_trait_stamped_and_signed_desc: "印と帳簿は、混沌から秩序を生み出すために我々が使う手段だ。インドの統治には大量の紙が必要であり、それが完璧に流通するようにするのが我々の仕事だ。"
  ig_trait_responsible_government: "責任ある政府"
  ig_trait_responsible_government_desc: "我々の使命は、すべての人々に正義と文明を広めること、そしてもちろん、これを可能にする規則を永遠に存続させることだ。"
+ ig_shipping_magnates: "海運業の有力者"
+ ig_shipping_magnates_desc: "我が国の産業界のエリートたちは、商船隊や造船所、そして沿岸貿易と先祖代々からの繋がりを持ち、大半の海軍よりも海を熟知している。彼らが上機嫌な時は港が賑わい、市場には商品が溢れ、造船所が眠りにつくことはない。"
  #Armed Forces IG Traits
  ig_trait_patriotic_fervor: "愛国熱"
  ig_trait_patriotic_fervor_desc: "如何に戦略が素晴らしく、どれほど兵器が進歩しても、努力と気合でしか勝てない戦いがあります。国の信条を心の底から信じている兵士たちは勝率の高低にかかわらず勇敢に戦ってくれることでしょう。"
@@ -97,6 +99,8 @@
  ig_trait_imandari_desc: "土地は豊かであり、我々は熱心に土地を耕している。うまくいけば、必要分以上を生産できるだろう。"
  ig_trait_bazaar_bargains: "バザールの安売り"
  ig_trait_bazaar_bargains_desc: "我々の町を豊かにし、何マイルも離れたところから観光客を引き寄せるのはバザールだ。繁栄のために追加の組織が必要な場合、それは我々が喜んで支払う代償だ。"
+ ig_trait_born_particularists: "農民主義"
+ ig_trait_born_particularists_desc: "たとえ新たな国境線が引かれても、新しい地図が作成されても、シュヴァルバッハの農民は自らの土地を、今日に至るまで「カッツェンエルンボーゲン下級伯爵領」と呼んでいる。彼にとって国家とは、学校の教師や税務署のための物に過ぎない。彼らは野心から反抗することはないが、村の慣習が乱されると、記憶に刻まれた頑固さで抵抗する。"
  #Trade Unions IG Traits
  ig_trait_solidarity: "連帯経済"
  ig_trait_solidarity_desc: "働きたいと思う人であれば、誰一人除外されることなく仕事に就くべきです。我々は各人が持つ適正報酬労働の権利を支援します。"
@@ -156,6 +160,8 @@
  ig_trait_lines_of_credit_desc: "我々の有能な金融業者による融資がなければ、会社がインドを征服することは決して無理だっただろう。確固としたビジネスケースが提示されれば、我々はこの関係を継続する用意がある。"
  ig_trait_cooperative_agencies: "協力機関"
  ig_trait_cooperative_agencies_desc: "我々の支配者たちは豊富な資本を持っているが、我が国についての知識はほとんどない。彼らの資源と我々の専門知識を結集すれば、彼らが単独で成し遂げるよりもはるかに祖国を豊かにすることができるかもしれない。"
+ ig_trait_biedermanner: "ビーダーマイヤー"
+ ig_trait_biedermanner_desc: "秩序を重んじ、礼儀正しく、そして無秩序を何よりも恐れるビーダーマイヤーは、税金を納め、店の経営に精を出し、政治には干渉しない。たとえ窓の外で世界が燃えていようとも。"
  #Devout IG Traits
  ig_trait_be_fruitful_and_multiply: "子孫繫栄"
  ig_trait_be_fruitful_and_multiply_desc: "禁欲主義というものは、神聖なる目的に生涯をささげる人にとっては結構なものですが、一般市民の価値観においては、家族を持ち子供を育てることが人生で最も大切であると考えられています。"

@@ -140,6 +140,7 @@
  cizye_tax:0 "Cizye Tax"
  ottoman_bureaucracy:0 "Ottoman Bureaucracy"
  sick_man_of_europe:0 "Sick Man of Europe"
+ dead_man_of_europe: "Dead Man of Europe"
 
  tanzimat_events.1.t:0 "The Iltizām System"
  tanzimat_events.1.d:0 "For centuries our administration has depended on tax farming for collecting revenue, but this highly inefficient system leaves much to be desired. Proposals for reform have flooded the Grand Vizier's desk, and the nation eagerly awaits our response."
@@ -247,7 +248,7 @@
 ##################### Boxer Rebellion
 
  je_boxer_rebellion:0 "The Boxer Rebellion"
- je_boxer_rebellion_reason:1 "The humiliating loss of Chinese lands to foreign "barbarians" have resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence.\n\nFailure to see the militias vision through could have dramatic consequences for [ROOT.GetCountry.GetName]."
+ je_boxer_rebellion_reason:1 "The humiliating loss of Chinese lands to foreign "barbarians" has resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence.\n\nFailure to see the militias vision through could have dramatic consequences for [ROOT.GetCountry.GetName]."
  qing_owns_all_han_states_tt: "Owns all [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')], and no [GetCulture('han').GetName] [concept_homeland] is a [concept_split_state]"
 
  dyn_c_empire_of_china:0 "Empire of China"

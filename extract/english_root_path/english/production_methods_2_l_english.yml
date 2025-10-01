@@ -22,6 +22,7 @@
  pm_fig_orchards:0 "Fig Orchards"
  pm_fig_orchards_building_rice_farm:0 "Fig Orchards"
  pm_mulberry_groves:0 "Mulberry Groves"
+ pm_sugar_beets: "Sugar Beets"
 
  pmg_automation:0 "Automation"
  pmg_automation_building_food_industry:0 "Automation"

@@ -424,7 +424,7 @@
 
  society_tech_events.302.t:0 "Isn't It Romantic?"
  society_tech_events.302.d:0 "The [SCOPE.sBuilding('academy_building').GetName] of [SCOPE.sState('academy_state').GetName] has experienced an increasing interest in the Romantic movement, with some of our greatest artists producing genuine masterpieces."
- society_tech_events.302.f:0 ""In Xanadu did Kubla Khan\nA stately pleasure-dome decree:\nWhere Alph, the sacred river, ran\nThrough caverns measureless to man\nDown to a sunless sea."" #Coleridge
+ society_tech_events.302.f:0 ""In Xanadu did Kubla Khan\nA stately pleasure-dome decree:\nWhere Alph, the sacred river, ran\nThrough caverns measureless to man\nDown to a sunless sea. \n\n–Samuel Taylor Coleridge, #italic Kubla Khan#!" #Coleridge
  society_tech_events.302.a:0 "We will show the world how Romanticism is done!"
  society_tech_events.302.b:0 "These promising young men deserve every last penny."
  society_tech_events.302.c:0 "But could you make it a bit more... realistic?"
@@ -463,8 +463,6 @@
  no_traitors_executed_approves:0 "Approves of No Executions"
  traitors_disappeared:0 "Suspicious Disappearances"
 
- has_socialist_ideology_tt: "The [concept_leader] of this interest group has the [GetIdeology('ideology_anarchist').GetName], [GetIdeology('ideology_communist').GetName], or [GetIdeology('ideology_vanguardist').GetName] [concept_ideology]"
-
  fascism_progress_bar: "Vigor and Greatness"
  fascism_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 
@@ -484,8 +482,9 @@
 
  je_fascism_2:0 "Nation Above Self"
  je_fascism_2_reason:1 "A safe country must be safe from within. Traitors and plotters can be everywhere, and we must be able to take care of them."
- fascism_2_tt:1 "Every Interest Group with a [GetIdeology('ideology_vanguardist').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_anarchist').GetName], or [GetIdeology('ideology_radical').GetName] leader is [concept_marginalized]"
- fascism_3_tt: "Every [GetIdeology('ideology_vanguardist').GetName], [GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_anarchist').GetName], or [GetIdeology('ideology_radical').GetName] [concept_political_movement] is either #bold marginalized#! or being #bold suppressed#!"
+
+ fascism_2_tt:1 "Every Interest Group with a #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! or [GetIdeology('ideology_radical').GetName] leader is [concept_marginalized]"
+ fascism_3_tt:1 "Every #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialist#! or [GetIdeology('ideology_radical_movement').GetName] [concept_political_movement] is either #bold marginalized#! or being #bold suppressed#!"
 
  fascism_events.3.t:0 "The Organized Majority"
  fascism_events.3.d:0 "Our streets are a safe haven for our people, with security officers ensuring their safety night and day, and seditionists marginalized from our fascist government."
@@ -1196,6 +1195,7 @@
  krakatoa.5.d:0 "An eruption of unprecedented records has utterly destroyed the lives of many [SCOPE.sCountry('krakatoa_country').GetAdjectiveNoFormatting] in the state of [SCOPE.sState('krakatoa_state').GetName]. The explosion of the Krakatoa could be heard from hundreds of miles away and anything that had the ill fate of surrounding the island was immediately devastated."
  krakatoa.5.a:0 "We shall help with all we have."
  krakatoa.5.b:0 "Nature is a capricious creature."
+ krakatoa.5.c: "We have nothing to spare..."
 
  krakatoa.2.t:0 "Nights of Waves"
  krakatoa.2.d:0 "Waves taller than chimneys have ravaged the state of [SCOPE.sState('tsunami_state').GetName], a terrible consequence of the volcanic eruption."
@@ -1516,7 +1516,7 @@
  belle_epoque_events.10.d: "The prosperity of [ROOT.GetCountry.GetAdjective] society has given rise to a new generation of wealthy entrepreneurs. The most fashionable den of these 'noveaux-riches' is Maxim's, an exclusive restaurant decorated in Art Noveau, and catering to the most wealthy and fashionable citizens of [SCOPE.sState('belle_epoque_state').GetCityHubName]."
  belle_epoque_events.10.d2: "Those members of [ROOT.GetCountry.GetAdjective] society who have been made wealthy by the recent boom in technological progress have begun establishing fashions of their own, attending more and more extravagant high society functions and exclusive restaurants decorated in the style of Art Noveau."
  belle_epoque_events.10.f: ""It was an accumulation of velvet, lace, ribbons, diamonds and what all else I couldn't describe. To undress one of these women is like an outing that calls for three weeks' advance notice, it's like moving house.""
- belle_epoque_events.10.f2: ""She’s got an indiscreet voice," I remarked. "It’s full of–" I hesitated.\n\n"Her voice is full of money," he said suddenly.\n\nThat was it. I’d never understood before. It was full of money–that was the inexhaustible charm that rose and fell in it, the jingle of it, the cymbals’ song of it." #- F. Scott Fitzgerald
+ belle_epoque_events.10.f2: ""She’s got an indiscreet voice," I remarked. "It’s full of–" I hesitated.\n\n"Her voice is full of money," he said suddenly.\n\nThat was it. I’d never understood before. It was full of money–that was the inexhaustible charm that rose and fell in it, the jingle of it, the cymbals’ song of it.\n\n— F. Scott Fitzgerald, #italic The Great Gatsby#!"
  belle_epoque_events.10.a: "A place to take ladies; but never one's wife."
  belle_epoque_events.10.b: "A new world; material without being real."
  modifier_noveaux_riches: "New Riches"
@@ -1535,7 +1535,7 @@
  belle_epoque_events.12.t2: "The [SCOPE.sState('belle_epoque_state').GetCityHubName] Metro"
  belle_epoque_events.12.d: "A network of underground train stations, complete with entrances designed by Hector Guimard in Art Noveau style, has been inaugurated in [SCOPE.sState('belle_epoque_state').GetCityHubName]. The sinuous designs of the Métro entrances, with their red lights and embellished lettering, have rapidly become a symbol of [SCOPE.sState('belle_epoque_state').GetCityHubName]."
  belle_epoque_events.12.d2: "A new network of underground train stations has been inaugurated in [SCOPE.sState('belle_epoque_state').GetCityHubName], providing iconic and cheap transportation within city limits to commuters."
- belle_epoque_events.12.f: ""Those divine entrances to the Métro, by grace of which one can descend into the region of the subconscious of the living and monarchical aesthetic of tomorrow."" #- Salvador Dali
+ belle_epoque_events.12.f: ""Those divine entrances to the Métro, by grace of which one can descend into the region of the subconscious of the living and monarchical aesthetic of tomorrow."\n\n— Salvador Dali"
  belle_epoque_events.12.f2: "The streets were so much more civilized, these days, he thought, as he made his way to the metro station. Whereas once they had been flooded by the dreary march of multitudes shuffling to and from work, now those unsightly herds had been coralled underground, pressed into their tubes, hurtling through the tunnels.\n\nAnd what was progress, if not speeding through the dark?"
  belle_epoque_events.12.a: "Another step towards a city of tomorrow."
  belle_epoque_events.12.b: "A new symbol of our nation's progress."
@@ -1545,7 +1545,7 @@
  belle_epoque_events.13.t: "Colonial Exhibition in [SCOPE.sState('belle_epoque_state').GetCityHubName]"
  belle_epoque_events.13.d: "An exhibition displaying the wealth of our colonies across the world has been held in [SCOPE.sState('belle_epoque_state').GetName], drawing in visitors with displays of exotic animals, natural resources, and ethnological expositions of [SCOPE.sCulture('colonial_culture').GetName] peoples in a simulated native village."
  belle_epoque_events.13.f: "The poster for the exhibition was a lurid red, entitled "L'EXPOSITION ORIENTALE", and decorated with caricatures of the peoples of the Empire.\n\nBare-breasted women from West Africa carrying shields and clubs with snarls on their faces flanked robed Algerians bearing pineapples, and delicate lipsticked Vietnamese girls balancing pots on their heads.\n\nA child attached to the arm of his silk-clad mother looked from the poster to her, with hope in his eyes. "...it's only half a franc!""
- belle_epoque_events.13.f2: ""Our race, we think, is depressed enough, without exhibiting one of us with the apes. We think we are worthy of being considered human beings, with souls."" #- James H. Gordon
+ belle_epoque_events.13.f2: ""Our race, we think, is depressed enough, without exhibiting one of us with the apes. We think we are worthy of being considered human beings, with souls."\n\n— James H. Gordon"
  belle_epoque_events.13.a: "Astounding, and educational!"
  belle_epoque_events.13.b: "Perhaps these human displays are excessive."
  modifier_condemned_human_zoos: "Condemned Human Zoos"
@@ -1583,7 +1583,7 @@
  belle_epoque_events.17.t: "Fin de Siècle Thought"
  belle_epoque_events.17.t2: "The End of the Century"
  belle_epoque_events.17.d: "With the coming end of the century, a literary and artistic movement expressing pessimism and fear of societal degeneration has swept through [ROOT.GetCountry.GetName]."
- belle_epoque_events.17.f: ""I hope tomorrow will be a fine day, Lane."\n\n"It never is, sir."\n\n"Lane, you're a perfect pessimist."\n\n"I do my best to give satisfaction, sir."" #- The Importance of Being Earnest, Oscar Wilde
+ belle_epoque_events.17.f: ""I hope tomorrow will be a fine day, Lane."\n\n"It never is, sir."\n\n"Lane, you're a perfect pessimist."\n\n"I do my best to give satisfaction, sir."\n\n— Oscar Wilde, #italic The Importance of Being Earnest#!"
  belle_epoque_events.17.a: "The world is getting better - have they not seen our GDP figures?"
  belle_epoque_events.17.b: "There is a seed of pessimism inside all our hearts."
  modifier_fin_de_sicle: "Fin de Siècle Thought"

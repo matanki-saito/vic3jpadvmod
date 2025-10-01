@@ -22,8 +22,6 @@ company_national_iranian_oil: "National Iranian Oil Company"
 company_national_iranian_oil_tt: "We do not have the #bold Anglo-Persian Oil Company#! as an active [concept_company]."
 company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Company#! as an active [concept_company]."
 
-
-
  je_eastern_frontier: "The Eastern Frontier"
  je_eastern_frontier_reason: "The great expanse to our east, dominated by once bustling cities such as [SCOPE.sStateRegion('merv_scope').GetName] and [SCOPE.sStateRegion('herat_scope').GetName], have comprised part of [SCOPE.GetRootScope.GetCountry.GetAdjective] Khorasan ever since the days of Manochehr. While these lands have since been wrested from us by the passage of time and the domination of oppressive and powerful rulers, it can be so no longer.\n\nDecisive steps must be taken to reintegrate these wayward lands, so that no foreign power may invade and subjugate them again.\n\n#bold Turanian Captivity#!\nGenerations of Turkmen raids into our lands have resulted in large populations of Persian slaves toiling in oases such as [SCOPE.sStateRegion('uzbekia_scope').GetName] and [SCOPE.sStateRegion('khiva_scope').GetName]. Capturing these areas will allow us to liberate and #tooltippable #tooltip:je_eastern_frontier_tt_5 resettle#!#! enslaved Persian communties, if we so please."
  je_eastern_frontier_tt_1: "#tooltippable #tooltip:khorasan_tt #bold Khorasan#!#!#! is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."

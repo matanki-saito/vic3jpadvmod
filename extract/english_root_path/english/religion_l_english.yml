@@ -18,3 +18,20 @@
  christian:0 "Christian"
  muslim:0 "Muslim"
  confucian: "Confucian"
+ ibadi: "Ibadi"
+
+# Religious Heritage Groups
+heritage_group_abrahamic: "Abrahamic"
+heritage_group_eastern: "Eastern"
+heritage_group_naturalistic: "Naturalistic"
+heritage_group_non_spiritual: "Non-Spiritual"
+
+# Religious Heritages
+heritage_christian: "Christian"
+heritage_dharmic: "Dharmic"
+heritage_humanist: "Humanist"
+heritage_indigenous: "Indigenous"
+heritage_islamic: "Islamic"
+heritage_jewish: "Jewish"
+heritage_materialist: "Materialist"
+heritage_taoic: "Taoic"

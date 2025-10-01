@@ -43,6 +43,8 @@
  ig_sunni_madrasahs_desc:1 "Sunnism is the largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his uncle, Abu Bakr, as opposed to the Shi’a view that his son-in-law Ali was the legitimate successor."
  ig_shia_madrasahs:1 "Shi’a Ulema"
  ig_shia_madrasahs_desc:1 "Shi’ism is the second largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his son-in-law, Ali, as opposed to the Sunni view that his uncle Abu Bakr was the legitimate successor."
+ ig_ibadi_madrasahs: "Ibadi Ulema"
+ ig_ibadi_madrasahs_desc: "Ibadism is a sect of Islam that believes that faithful should be led by local imams, chosen based on their piety and learnedness. Believers hold that Muhammad was succeeded as Caliph of Islam by his son-in-law, Ali, but that Ali later became unfit for rule and was succeeded by Abdullah ibn Wahb al-Rasibi, the first Ibadi imam."
  ig_hindu_priesthood:0 "Hindu Priesthood"
  ig_hindu_priesthood_desc:0 "Probably the oldest organized religion still in existence, Hinduism holds that breaking the cycle of reincarnation and achieving Nirvana requires adherence to a caste system whereby individuals serve a role to improve their karma, just as the many gods worshiped by Hindus serve different roles."
  ig_vajrayana_monks:0 "Vajrayana Monks"
@@ -181,3 +183,18 @@
 
   ig_kisanharu: "Kisanharu"
   ig_kisanharu_desc: "The Kisanharu are the traditional farmers and peasantry of Nepal, typically without any land of their own. Their interests are largely agrarian in nature."
+
+  ig_wamanga: "Wamanga"
+  ig_wamanga_desc: "The newest wave of Arab settlers to the Swahili Coast are known individually as #italics Manga#! — the new Omani aristocracy of Zanzibar."
+
+  ig_kleinburger: "Kleinbürger"
+  ig_kleinburger_desc: "Made up of shopkeepers, clerks, master craftsmen, and lower professionals throughout the German lands, the Kleinbürger are regarded by many as the very embodiment of the German character."
+
+  ig_landvolk: "Landvolk"
+  ig_landvolk_desc: "The Landvolk are the smallholding farmers, village elders, and rural folk who live by the rhythm of the land. Loyal to their Gemeinde and shaped by centuries of custom, they form the rooted backbone of the countryside."
+
+  ig_magnates: "Magnates"
+  ig_magnates_desc: "Descended from great medieval lords and leaders, the magnates of the realm are heirs to centuries of land, tradition, and privilege."
+
+  ig_boyars: "Boyars"
+  ig_boyars_desc: "The Boyars are the landowning elites of Wallachia and Moldavia, comprising both traditional nobles and large landowners of non-noble birth."

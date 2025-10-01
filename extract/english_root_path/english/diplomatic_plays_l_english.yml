@@ -558,10 +558,10 @@
  war_goal_take_treaty_port_sway_desc:1 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to cede them a [concept_treaty_port] in the [WAR_GOAL.GetTargetState.GetStateRegion.GetName] [concept_state_region]."
   
  war_goal_independence_type_name:0 "Independence"
- war_goal_independence_type_desc:0 "Force your suzerain to grant independence to your country."
+ war_goal_independence_type_desc:0 "Force your suzerain to grant independence to your country and force nationalize any building levels owned by them."
  war_goal_independence:0 "Independence"
- war_goal_independence_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence to [WAR_GOAL.GetHolder.GetName]."
- war_goal_independence_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant them independence."
+ war_goal_independence_desc:0 "[WAR_GOAL.GetHolder.GetName] forces [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant independence to [WAR_GOAL.GetHolder.GetName]. If this $concept_war_goal$ is enforced as part of a peace deal or capitulation, it will also nationalize all [WAR_GOAL.GetWarGoalStakeholder.GetAdjectiveNoFormatting]-owned [concept_building] levels."
+ war_goal_independence_sway_desc:0 "Try to convince [WAR_GOAL.GetHolder.GetName] to join your side by forcing [WAR_GOAL.GetWarGoalStakeholder.GetName] to grant them independence. If this $concept_war_goal$ is enforced as part of a peace deal or capitulation, it will also nationalize all [WAR_GOAL.GetWarGoalStakeholder.GetAdjectiveNoFormatting]-owned [concept_building] levels."
 
  war_goal_leave_power_bloc_type_name: "Leave $concept_power_bloc$"
  war_goal_leave_power_bloc_type_desc: "Force the leader of a $concept_power_bloc$ to allow a member $concept_country$ to leave it."
