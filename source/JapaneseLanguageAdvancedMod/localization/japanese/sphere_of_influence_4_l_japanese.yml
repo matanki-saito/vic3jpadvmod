@@ -805,7 +805,7 @@
  notification_great_game_loss_to_natives_tooltip:0 "#header $notification_great_game_loss_to_natives_name$#!\n$TOOLTIP_DELIMITER$\n$notification_great_game_loss_to_natives_desc$"
  state_is_bordering_afghanistan_tt:0 "我が国または我が国の[Concept('concept_subject','$concept_subjects$')]に、#v $AFG$#!と国境が接する[concept_state]がある"
  great_game_core_progress_bar_military_balance:0 "陸軍の[concept_power_projection]のバランス"
- great_game_core_progress_passive_balance:0 "#v ペルシャ#!または#v 中央アジア#! [Concept('concept_strategic_region','$concept_strategic_regions$')]の直接管理または[concept_subject]が管理する[concept_gdp]のバランス\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!, #v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#! )"
+ great_game_core_progress_passive_balance:0 "#v ペルシア#!または#v 中央アジア#![Concept('concept_strategic_region','$concept_strategic_regions$')]の直接管理または[concept_subject]が管理する[concept_gdp]のバランス\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!、#v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#!)"
  pacify_the_steppe_modifier:0 "ロシアの反乱対策"
  circassia_dead_tt:0 "#v $CIR$#!が敗北した"
  colonial_rule:0 "植民地統治者"

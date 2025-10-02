@@ -1819,7 +1819,7 @@
  INFAMY_STATE_POPULATION_FACTOR:0 "[SCOPE.sState('state').GetNameNoFormatting]の[Concept('concept_pop','$concept_population$')]が[SCOPE.sState('state').GetPopulationSize|Dv]"
  INFAMY_STATE_GDP_FACTOR:0 "[SCOPE.sState('state').GetNameNoFormatting]の[concept_gdp]が[SCOPE.sState('state').GetYearlyGDP|Dv]"
  INFAMY_QUANTITY_FACTOR:0 "需要量"
- INFAMY_MONEY_TRANSFER_QUANTITY_ROOT_HAS_ALREADY_ESTABLISHED_FACTOR:0 "お金の譲渡の需要量[Concept('concept_article','$concept_articles$')][SCOPE.GetRootScope.GetCountry.GetName]"
+ INFAMY_MONEY_TRANSFER_QUANTITY_ROOT_HAS_ALREADY_ESTABLISHED_FACTOR:0 "資金譲渡[Concept('concept_article','$concept_articles$')]の需要量[SCOPE.GetRootScope.GetCountry.GetName]"
  INFAMY_TARGET_COUNTRY_DEDUCTION_FACTOR:0 "[Concept('concept_diplomatic_play','$concept_diplomatic_plays$')]が[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]に対して資金譲渡[Concept('concept_article','$concept_articles$')]を強制しています"
  MANEUVERS_BASE_VALUE:0 "基本値"
  MANEUVERS_TARGET_COUNTRY_POPULATION_FACTOR:0 "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting]の合計[Concept('concept_pop','$concept_population$')]が[SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"

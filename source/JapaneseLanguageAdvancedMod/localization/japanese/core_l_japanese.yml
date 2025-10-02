@@ -72,7 +72,7 @@
  SUPPORT:0 "支持"
  NAME:0 "名称"
  DIPLOMACY_COUNTRY:0 "国"
- DURATION_FOREVER:0 "#variable 無期限に#!"
+ DURATION_FOREVER:0 "#variable 無期限#!"
  DURATION_DATE:0 "[DATE.GetStringShort|V]"
  DURATION_DATE_RANGE:0 "$[DATE_MIN.GetStringShort|V]$～$[DATE_MAX.GetStringShort|V]$"
  DURATION_NO_DATE:0 "#variable $DURATION$#!"

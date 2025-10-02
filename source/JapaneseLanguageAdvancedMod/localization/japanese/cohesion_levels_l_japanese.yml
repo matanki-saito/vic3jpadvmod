@@ -37,5 +37,5 @@
  PREDICTED_COHESTION_CHANGE:0 "[concept_power_bloc_cohesion]の予想変化"
  POWER_BLOC_COHESION_CHURCH_AND_STATE_INCOMPATIBILITY:0 "[GetLawType('law_total_separation').GetName]または[GetLawType('law_state_atheism').GetName]を有する[Concept('concept_power_bloc_member','$concept_power_bloc_members$')]"
  POWER_BLOC_COHESION_ARMY_MODEL_INCOMPATIBILITY:0 "[GetLawType('law_national_militia').GetName]を有する[Concept('concept_power_bloc_member','$concept_power_bloc_members$')]"
- POWER_BLOC_COHESION_NUM_IND_MEMBERS:0 "#v $VALUE|+=2$#! : 独立している#v $NUM$#! [Concept('concept_power_bloc_member','$concept_power_bloc_members_short_non_leader$')]に由来"
+ POWER_BLOC_COHESION_NUM_IND_MEMBERS:0 "#v $VALUE|+=2$#! (独立している[Concept('concept_power_bloc_member','$concept_power_bloc_members_short_non_leader$')]#v $NUM$#!カ国) "
  POWER_BLOC_COHESION_WORST_PROGRESSIVENESS_ZERO:0 "#indent_newline:3 [concept_power_bloc_leader]と最も相性の悪い[concept_government_type]の[concept_power_bloc_member]および[concept_rank] ($identity_ideological_union$) \n[SCOPE.GetRootScope.GetCountry.GetName] ([SCOPE.GetRootScope.GetCountry.GetRank]) : [SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_governance_principles').GetName]および[SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]#!"
