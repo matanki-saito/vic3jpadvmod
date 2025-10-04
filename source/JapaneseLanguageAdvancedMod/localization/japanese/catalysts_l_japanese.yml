@@ -106,7 +106,7 @@
  catalyst_invited_exile_negative:0 "敵対する政治亡命者を招聘しました"
  catalyst_invited_exile_negative_desc:0 "[TARGET_COUNTRY.GetName]が非同情的な我が国からの[concept_exile]を招聘したこと"
  catalyst_overtaken_in_prestige_rank:0 "$concept_prestige$ランクで追い抜かれました"
- catalyst_overtaken_in_prestige_rank_desc:0 "[TARGET_COUNTRY.GetName]が#v トップ[GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#! [concept_prestige]ランキングで[COUNTRY.GetName]を追い抜いています"
+ catalyst_overtaken_in_prestige_rank_desc:0 "[TARGET_COUNTRY.GetName]が[concept_prestige]ランキング上位#v [GetDefine('NDiplomacy','DIPLOMATIC_CATALYST_MIN_SCORE_POSITION_FOR_OVERTAKE')]#!で[COUNTRY.GetName]を抜いたこと"
  catalyst_event_positive:0 "実証主義イベント"
  catalyst_event_positive_desc:0 "イベントやその他の理由"
  catalyst_event_negative:0 "ネガティブなイベント"

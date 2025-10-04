@@ -753,7 +753,7 @@
  pm_company_headquarter_principle_divine_economics_2_shopkeepers:0 "$pm_manor_house_principle_divine_economics_2$"
  pm_company_headquarter_principle_divine_economics_2_bureaucrats:0 "$pm_manor_house_principle_divine_economics_2$"
  pm_company_headquarter_principle_divine_economics_2_academics:0 "$pm_manor_house_principle_divine_economics_2$"
- pm_corvee_labor:0 "強制労働"
+ pm_corvee_labor:0 "賦役労働"
  pm_company_headquarter_privately_owned_aristocrats:0 "$pm_privately_owned$"
  pm_company_headquarter_privately_owned_aristocrats_commercial_agriculture:0 "$pm_privately_owned$"
  pm_company_headquarter_privately_owned_shopkeepers:0 "$pm_privately_owned$"
