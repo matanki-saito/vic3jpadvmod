@@ -1065,7 +1065,7 @@
  expedition_events.696.b:0 "彼らはそれを証明する方法はない。"
  expedition_leader_cruel_fired_tt:0 "[SCOPE.sCharacter('expedition_leader').GetFullName]は辞任するでしょう。"
  je_assassination:0 "暗殺計画を阻止する"
- je_assassination_reason:0 "策謀者たちを見つけ、手遅れになる前に暗殺計画を阻止しましょう。\n\n#bold 警察制度#!のレベルを上げ、#bold 異議の禁止#!、#bold 専門警察#!、または#bold 秘密警察#!法を制定し、#bold $identification_documents$#!または#bold $mass_surveillance$#!を研究して、反逆者たちを阻止する可能性を上げましょう。"
+ je_assassination_reason:0 "策謀者たちを見つけ、手遅れになる前に暗殺計画を阻止しましょう。\n\n#bold 警察機関#!のレベルを上げ、#bold 異議の禁止#!、#bold 専門的な警察#! 、または#bold 秘密警察#! 法を制定し、#bold $identification_documents$#! または#bold $mass_surveillance$#!を研究して、反逆者たちを阻止する可能性を上げましょう。"
  je_assassination_low:0 "暗殺策謀者の発見についてあまり進展がありません。"
  je_assassination_middle:0 "暗殺策謀者の発見について少し進展がありました。"
  je_assassination_high:0 "暗殺策謀者の正体が確定間近です。"

@@ -37,7 +37,7 @@
  greece.4.a:0 "[ROOT.GetCountry.GetNameNoFormatting]はこれからも繁栄し続けるだろう。"
  greece.4.b:0 "[ROOT.GetCountry.GetNameNoFormatting]は然るべき敬意を獲得した。"
  greece.4.c:0 "我々の国民を[ROOT.GetCountry.GetNameNoFormatting]に送還せよ。"
- move_greeks_tt:0 "すべてのギリシャ国民は首都に移動します"
+ move_greeks_tt:0 "すべてのギリシャPOPは首都州に移動します"
  greek_nationalism_1:0 "ギリシャ民族主義"
  greek_nationalism_clout_add_1:0 "繁栄の正当性"
  greek_nationalism_success_1:0 "国家の力"

@@ -306,7 +306,7 @@
  war_goal_independence_type_name:0 "独立"
  war_goal_independence_type_desc:0 "宗主国に自国の独立を認めるよう強要し、宗主国が所有する施設レベルをすべて国有化する。"
  war_goal_independence:0 "独立"
- war_goal_independence_desc:0 "[WAR_GOAL.GetHolder.GetName]は[WAR_GOAL.GetWarGoalStakeholder.GetName]に自国の独立を認めさせる。この$concept_war_goal$が和平協定や降伏の一部として実行される場合、[WAR_GOAL.GetWarGoalStakeholder.GetAdjectiveNoFormatting]が所有する[concept_building]レベルもすべて国有化される。"
+ war_goal_independence_desc:0 "[WAR_GOAL.GetHolder.GetName]が[WAR_GOAL.GetWarGoalStakeholder.GetName]に対し、[WAR_GOAL.GetHolder.GetName]の独立を認めさせる。この$concept_war_goal$が和平協定や降伏の一部として実行される場合、[WAR_GOAL.GetWarGoalStakeholder.GetAdjectiveNoFormatting]が所有する[concept_building]レベルもすべて国有化される。"
  war_goal_independence_sway_desc:0 "[WAR_GOAL.GetWarGoalStakeholder.GetName]に[WAR_GOAL.GetHolder.GetName]の独立を認めさせ、[WAR_GOAL.GetHolder.GetName]がこちら側の勢力に加わるよう説得を試みる。この$concept_war_goal$が和平条約や降伏の一部として実行される場合、[WAR_GOAL.GetWarGoalStakeholder.GetAdjectiveNoFormatting]が所有する[concept_building]レベルもすべて国有化される。"
  war_goal_liberate_subject_type_name:0 "従属国の解放"
  war_goal_liberate_subject_type_desc:0 "[Concept('concept_subject','$concept_subjects$')]の独立を他国に強要する。"

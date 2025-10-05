@@ -19,7 +19,7 @@
  treaty_name_city_protocol:0 "$SIGNING_LOCATION$議定書"
  treaty_name_city_convention:0 "$SIGNING_LOCATION$協定"
  treaty_name_convention_of_city:0 "$SIGNING_LOCATION$協定"
- treaty_name_september_convention:0 "$SIGNING_MONTH$協定"
+ treaty_name_september_convention:0 "$SIGNING_MONTH$条約"
  treaty_name_city_declaration:0 "$SIGNING_LOCATION$宣言"
  treaty_name_declaration_of_captial:0 "$SIGNING_LOCATION$宣言"
  treaty_name_country_adj_country_adj_treaty:0 "[FIRST_COUNTRY.GetAdjectiveNoFormatting]・[SECOND_COUNTRY.GetAdjectiveNoFormatting]条約"
