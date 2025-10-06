@@ -41,5 +41,5 @@
  APPLY:0 "適用"
  SETTINGS_INPUT_BINDING_MODIFIERS_WARNING_TEXT:0 "警告 : 入力バインディングはモディファイアキーのみでは構成できません"
  SETTINGS_PAGE_ACCOUNT:0 "アカウント"
- SETTING_TELEMETRY_CONSENT:0 "Send optional telemetry data"
- SETTING_TELEMETRY_CONSENT_TOOLTIP:0 "#T Telemetry Consent\n#!Allow sending optional telemetry data to Paradox Interactive."
+ SETTING_TELEMETRY_CONSENT:0 "オプションのテレメトリデータを送信する"
+ SETTING_TELEMETRY_CONSENT_TOOLTIP:0 "#T テレメトリー同意\n#!オプションのテレメトリーデータをParadox Interactiveに送信することを許可します。"
