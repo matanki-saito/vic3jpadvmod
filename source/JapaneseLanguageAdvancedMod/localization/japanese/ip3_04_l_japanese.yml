@@ -831,7 +831,7 @@
  tippu_tip_country_spawn_subject_tt:0 "#b $UTR$#!が[SCOPE.sState('tippu_tip_state').GetName]に、[ROOT.GetCountry.GetName]の[concept_tributary]として設立される"
  tippu_tip_spawn_tt:0 "$Hamad$ $al_Murjabi$が[ROOT.GetCountry.GetNameNoFlag]に、[GetIdeology('ideology_traditionalist').GetName]の[concept_agitator]として出現する"
  tippu_tip_general_tt:0 "$Hamad$ $al_Murjabi$が[ROOT.GetCountry.GetNameNoFlag]に、[concept_general]として出現する"
- aus_integrate_crown_lands_decision:0 "王領地を統合"
+ aus_integrate_crown_lands_decision:0 "領邦を統合"
  aus_integrate_crown_lands_decision_desc:0 "ハンガリー問題が解決した今、自治権を有する残りの$concept_crown_lands$にもはや有用性がないことは明らかだ。我が大帝国の繁栄のために、これらの地域はオーストリア行政下に完全に統合されなければならない。"
  notification_hungary_dual_monarchy_name:0 "[SCOPE.sCountry('austria_scope').GetName]が二重君主制を確立"
  notification_hungary_dual_monarchy_desc:0 "[SCOPE.sCountry('austria_scope').GetRuler.GetFullName][SCOPE.sCountry('austria_scope').GetRuler.GetPrimaryRoleTitle]は[SCOPE.sCountry('hungary_scope').GetName]を[SCOPE.sCountry('austria_scope').GetName]と同等の立場に昇格させました。我々の[concept_autonomy]レベルは[concept_personal_union]に上がりました。"

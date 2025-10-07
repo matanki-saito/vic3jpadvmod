@@ -1831,7 +1831,7 @@
  subject_type_crown_land:0 "@crown_land!$subject_type_crown_land_no_icon$"
  subject_type_crown_land_no_icon:0 "$concept_crown_land_subject$"
  DIPLO_PACT_RELATIONS_NO_CHANGE:0 "[concept_relations]は現在変更されない。進捗量の合計は、1日ごとに#v $PROGRESS_DAILY|%+=0$#!"
- crown_land:0 "王領地"
+ crown_land:0 "領邦"
  crown_land_action_name:0 "[concept_crown_land_subject]"
  crown_land_action_propose_name:0 "[concept_crown_land_subject]にする"
  crown_land_action_break_name:0 "独立させる"

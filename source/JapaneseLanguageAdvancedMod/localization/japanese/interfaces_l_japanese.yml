@@ -4765,7 +4765,7 @@
  MUSIC_PLAYER_DENSITY:0 "#header 音楽密度#!\n楽曲、静寂、ムード音楽といったセグメント間のバランスをコントロールします\n$TOOLTIP_DELIMITER$\n#b 強烈#! ―ラジオ放送局のように大半の楽曲をフルコースで順次演奏します\n\n#b 調和#! ―楽曲、静寂、ムード音楽のセグメントバランスが完璧に調整されています\n\n#b リラックス#! ―大半がムード音楽で構成され、より落ち着いた視聴体験となります。数時間連続視聴しても周回していることがそれほど気になりません"
  MARKET_ACCESS_SHORT:0 "[Concept('concept_market_access','アクセス')]"
  INFRASTRUCTURE_FROM_STATE:0 "$VALUE|+=1$ ([concept_state]) \n$BREAKDOWN$"
- CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY:0 "#tooltippable #tooltip:[Building.GetTooltipTag],STATE_CONSTRUCTION_EFFICIENCY_TOOLTIP#v [State.GetName]における[State.GetConstructionEfficiencyForBuildingType(Building.GetBuildingType)|%1+=]#!#!#!の建設効率"
+ CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY:0 "#tooltippable #tooltip:[Building.GetTooltipTag],STATE_CONSTRUCTION_EFFICIENCY_TOOLTIP [State.GetName]における#v [State.GetConstructionEfficiencyForBuildingType(Building.GetBuildingType)|%1+=]#!#!#!の建設効率"
  CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_WARNING:0 "@warning! $CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY$\n"
  CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY_LINE_BREAK:0 "\n$CONSTRUCTION_QUEUE_STATE_CONSTRUCTION_EFFICIENCY$"
  STATE_CONSTRUCTION_EFFICIENCY_TOOLTIP:0 "[Building.GetState.GetConstructionEfficiencyForBuildingTypeTooltip(Building.GetBuildingType)]"
