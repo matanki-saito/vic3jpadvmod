@@ -760,7 +760,7 @@
  concept_accepted_culture:0 "受容文化"
  concept_accepted_cultures:0 "受容文化"
  concept_accepted_culture_short:0 "受容"
- concept_accepted_culture_desc:0 "[Concept('concept_country','$concept_country_possessive$')]$concept_accepted_cultures$は、その[concept_primary_cultures]と、$concept_country$の現在の[SelectLocalization(GetPlayer.IsValid,'concept_accepted_culture_desc_added','Citizenship')][concept_law]により$concept_accepted_culture_short$とみなされるその他の[Concept('concept_culture','$concept_cultures$')]です。通常、上位2つの[concept_acceptance]ステータスが$concept_accepted_culture_short$とみなされます。"
+ concept_accepted_culture_desc:0 "[Concept('concept_country','$concept_country_possessive$')]$concept_accepted_cultures$は、その[concept_primary_cultures]と、$concept_country$の現在の[SelectLocalization(GetPlayer.IsValid,'concept_accepted_culture_desc_added','市民権')][concept_law]により$concept_accepted_culture_short$とみなされるその他の[Concept('concept_culture','$concept_cultures$')]です。通常、上位2つの[concept_acceptance]ステータスが$concept_accepted_culture_short$とみなされます。"
  concept_accepted_culture_desc_added:0 " [GetLawType('law_national_supremacy').GetGroup.GetName]"
  concept_primary_cultures:0 "主要文化"
  concept_primary_culture:0 "主要文化"
