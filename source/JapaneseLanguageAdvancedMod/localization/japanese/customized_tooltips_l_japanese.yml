@@ -541,7 +541,7 @@
  DATA_DISCRIMINATION_TRADITION_TRAIT_GROUP_TYPE:0 "[Concept('concept_tradition_trait','$concept_tradition_trait_short$')]"
  AGITATOR_EXILE_POOL_NOTIFICATION:0 "[Character.GetFullName]が[Character.GetHomeCountry.GetNameNoFlag]に現れました！\n彼らは支援する[concept_political_movement]がないため、[concept_exile]になることを自主的に選びました。"
  DATA_COMPANY_TYPE_CATEGORY:0 "カテゴリー : #v [CompanyType.GetCategory]#!"
- CULTURAL_COMMUNITY_ACCEPTANCE_NOT_HOMELAND_DESC:0 "[concept_homeland]でないことから$VALUE|0+=$"
+ CULTURAL_COMMUNITY_ACCEPTANCE_NOT_HOMELAND_DESC:0 "$VALUE|0+=$ ([concept_homeland]ではない) "
  CULTURE_TT_TRADITIONS_HEADER:0 "[Concept('concept_tradition_trait','$concept_tradition_trait_short$')] : "
  CULTURE_TT_FERVOR:0 "[concept_fervor] : [SelectLocalization(EqualTo_CFixedPoint(Culture.GetCurrentFervor,Culture.GetTargetFervor),'CULTURE_TT_FERVOR_NOT_CHANGING','CULTURE_TT_FERVOR_CHANGING_WITH_BREAKDOWN')]"
  CULTURE_TT_FERVOR_NOT_CHANGING:0 "#v [Culture.GetCurrentFervor|0]#! [AddTextIf(Culture.HasNationalAwakening,'@national_awakening!')]"

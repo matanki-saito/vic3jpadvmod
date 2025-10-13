@@ -1,6 +1,6 @@
 ﻿l_japanese:
  dyn_c_croatia_slavonia:0 "クロアチア・スラヴォニア"
- je_matter_of_hungary:0 "ハンガリーの問題"
+ je_matter_of_hungary:0 "ハンガリー問題"
  je_matter_of_hungary_reason:0 "数世紀前にハプスブルク家が初めて聖イシュトヴァーンの王冠を手にして以来、独立心が強いハンガリーの臣民の統治には苦労が絶えなかった。\n\n[GetCulture('hungarian').GetName]の自治権を求める要求がますます激化していることを受け、[ROOT.GetCountry.GetCapital.GetCityHubName]政府は、ハンガリー民族主義者の要求に応じるか、あるいは必要とあらば武力で鎮圧するかを判断しなければならない。\n\n#bold ハンガリー革命#!\n#Bold $je_springtime_of_the_peoples$#!の[concept_journal_entry]が有効になると、#b $HUN_ADJ$国会#!内で急進派が台頭する可能性が高く、[ROOT.GetCountry.GetCapital.GetCityHubName]政府との対立につながる恐れもある。"
  modifier_young_hungary_movement:0 "若きハンガリー運動"
  matter_of_hungary_hungarian_homelands_tt:0 "[GetStateRegion('STATE_CENTRAL_HUNGARY').GetName]および[GetStateRegion('STATE_TRANSDANUBIA').GetName]の[SCOPE.sCulture('hungarian_scope').GetName]の[Concept('concept_homeland','$concept_homelands$')]を[ROOT.GetCountry.GetName]またはその[Concept('concept_subject','$concept_subjects$')]が所有"
@@ -235,7 +235,7 @@
  hungary_events.9.f:0 "[SCOPE.sCountry('hungary_country_scope').GetCapital.GetCityHubName]から届くニュースの詳細は、それを見聞きした人々と同じぐらい多種多様なものであった。それは自由な未来に向けた大きな飛躍なのか？または混沌と無秩序への序曲なのか？それとも反乱行為なのか？はたまた帝国の支配下にある他の属領に送るエールなのか？あるいは背後からの卑劣な一撃なのか？\n\n彼自身にはわからなかった。しかし、ホーフブルク宮殿は友好的とはかけ離れた反応をするかもしれないと、彼は恐れていた。"
  hungary_events.9.a:0 "我々にはもっと火急に対応せねばならない問題がある。"
  hungary_events.9.b:0 "一連の法律が違法であると宣言し、即時撤回を要求せよ。"
- hungary_events.11.t:0 "ハンガリーの問題"
+ hungary_events.11.t:0 "ハンガリー問題"
  hungary_events.11.d:0 "[ROOT.GetCountry.GetRuler.GetFullName]が[ROOT.GetCountry.GetName]の[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]に即位したことで、前任者の[SCOPE.sCountry('hungary_country_scope').GetName]に対する甘い姿勢が問題視されるようになった。現在、最近ハンガリー議会で可決された法律の撤回を求め、多くの者が新任の[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]を急き立てている。 "
  hungary_events.11.f:0 "そもそも強制されて下りた承認が本当の承認と言えるのだろうか？\n現君主は前任者による愚かな誓いに縛られているのだろうか？\n彼は帝国の正当な権限なしに制定された法律に準じなければならないのだろうか？\n\n[ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の目に映るこれらの問題は決して難問とは呼べぬものばかり。真に問われるべきは、彼が自らの考えを貫くために、どこまで踏み込む覚悟があるのか、ということだ。"
  hungary_events.11.a:0 "法律を無効にして、ハンガリー議会を正式に廃止する。"

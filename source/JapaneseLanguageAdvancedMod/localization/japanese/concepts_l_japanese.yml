@@ -1884,7 +1884,7 @@
  concept_change_rate_scaling:0 "変化率補正"
  concept_change_rate_scaling_desc:0 "[concept_liberty_desire]が0または100に近づくにつれ、その進捗は$concept_change_rate_scaling$により鈍化します。これは現状から離れて[concept_autonomy]の増減を受け入れることに対する[Concept('concept_pop','$concept_population$')]の自然なためらいを反映しています。"
  concept_accepted_status_short:0 "受容された"
- concept_national_awakening:0 "国家覚醒"
+ concept_national_awakening:0 "民族覚醒"
  concept_national_awakening_desc:0 "[concept_fervor]が[GetDefine('NPops','CULTURAL_FERVOR_NATIONAL_AWAKENING_THRESHOLD')|0v]に達した[concept_culture]では、一定確率で$concept_national_awakening$が始まります。$concept_national_awakening$が発生している間、その$concept_cultures$は追加の$concept_fervor$を獲得し、当該$concept_culture$の[Concept('concept_political_movement','$concept_political_movements$')]は[concept_pop]に対する求心力が向上します。"
  concept_decision:0 "ディシジョン"
  concept_decisions:0 "ディシジョン"
