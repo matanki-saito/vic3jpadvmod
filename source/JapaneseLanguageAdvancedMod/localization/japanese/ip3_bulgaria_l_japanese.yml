@@ -17,7 +17,7 @@
  bulgaria_events.1.t:0 "バルカン半島のプロイセン"
  bulgaria_events.1.d:0 "他国は我々の軍の規模と力に畏怖し、「バルカン半島のプロイセン」と呼んでいる。残るは、兵士たちがどこへ進軍するべきかを選ぶだけだ。"
  bulgaria_events.1.f:0 "「たとえ首を刎ねられても『ブルガリア万歳！』と叫ぶだろう」\n\n ‑ニコライ・ハイトフ"
- bulgaria_events.1.a:0 "ツァーリグラードへ進軍だ！"
+ bulgaria_events.1.a:0 "ツァリグラトへ進軍だ！"
  bulgaria_events.1.b:0 "ユーゴスラビアの統一なくして、我らに真の自由はない！"
  bulgaria_events.1.c:0 "ブルガリアのルネサンスがここから始まる！"
  bulgaria_pursued_greater_yugoslavism_tt:0 "#v $bulgaria_events.1.t$#!のイベントにおいて、#v 大ユーゴスラビア主義#!を追求した"

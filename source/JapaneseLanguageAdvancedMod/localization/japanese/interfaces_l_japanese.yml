@@ -8033,7 +8033,7 @@
  URBAN_STATE:0 "州の[concept_urbanization]"
  POSITIVISM_BONUS:0 "実証主義者の教育"
  from_early_trade_unions:0 "労働組合に参政権がありません"
- SPRINGTIME_OF_THE_PEOPLES_UNDERWAY:0 "民衆の春の[concept_journal_entry]が進行中"
+ SPRINGTIME_OF_THE_PEOPLES_UNDERWAY:0 "諸国民の春の[concept_journal_entry]が進行中"
  POP_POLISH_ARISTOCRATS:0 "連邦の遺産"
  POP_POLISH_NATIONALISM:0 "ポーランド民族主義"
  COLONIAL_SETTLERS:0 "植民地入植者"
