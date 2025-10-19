@@ -1155,7 +1155,7 @@
  BUTTON_INTERACT:0 "インタラクト"
  NO_OF_UNREAD_PINS:0 "#BOLD #V [InformationPanelBar.GetNumberOfUnreadPins]#!#!未読のピンがあります"
  ALREADY_ACQUIRED_TITLE:0 "#BOLD 既知の技術#!"
- RESEARCH_PANEL:0 "#BOLD 新たな研究の選択#!"
+ RESEARCH_PANEL:0 "#BOLD 新たな研究を選択してください#!"
  SHOW_ON_MAP:0 "マップに表示"
  TECHNOLOGY_HEADER:0 "#BOLD 技術#!"
  GET_UNDISCOVERED_TECHNOLOGY_COST:0 "コスト : #BOLD [Era.GetTechnologyCost]IP#!"
