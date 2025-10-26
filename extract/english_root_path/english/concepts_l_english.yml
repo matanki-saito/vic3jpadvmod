@@ -1806,8 +1806,9 @@
  concept_budget_poll_taxes_desc:2 "A flat [Concept('concept_taxes','$concept_tax$')] collected on every [Concept('concept_working_adults', '$concept_working_adult$')] it applies to. Since $concept_budget_poll_taxes$ do not scale with the $concept_pop$'s income it tends to impact the [concept_lower_strata] the most."
 
  concept_budget_land_taxes:0 "Land Taxes"
- concept_budget_land_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','Peasants')] only."
+ concept_budget_land_taxes_desc:4 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','Peasants')] and [SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_farmers','Farmers')] employed in agricultural [Concept('concept_building','$concept_buildings$')]. $concept_pops$ that pay $concept_budget_land_taxes$ do not pay [concept_budget_per_capita_taxes]."
  concept_budget_land_taxes_desc_added:0 "[GetPopType('peasants').GetName]"
+ concept_budget_land_taxes_desc_farmers: "[GetPopType('farmers').GetName]"
 
  concept_budget_heathen_taxes:0 "Heathen Taxes"
  concept_budget_heathen_taxes_desc:1 "A type of [Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')] collected from all [Concept('concept_pop', '$concept_pops$')] whose [concept_religion] have low [concept_acceptance] ín their [concept_country]."

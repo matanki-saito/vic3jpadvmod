@@ -1,6 +1,6 @@
 ﻿l_english:
  HEADER_Victoria_3:0 "#credits_title Victoria 3#!"
- HEADER_V3_TITLE: "#credits_title Victoria 3: National Awakening#!"
+ HEADER_V3_TITLE: "#credits_title Victoria 3: Songs of the Homeland#!"
  HEADER_ALSO_INCLUDES: "#credits_header Also includes credits for:#!"
  HEADER_MELODIES_FOR_THE_MASSES: "#credits_header Melodies for the Masses#!"
  HEADER_VOICE_OF_THE_PEOPLE: "#credits_header Voice of the People#!"
@@ -10,7 +10,8 @@
  HEADER_PIVOT_OF_EMPIRE: "#credits_header Pivot of Empire#!"
  HEADER_CHARTERS_OF_COMMERCE: "#credits_header Charters of Commerce#!"
  HEADER_NATIONAL_AWAKENING: "#credits_header National Awakening#!"
-
+ HEADER_SONGS_OF_THE_HOMELAND: "#credits_header Songs of the Homeland#!"
+ HEADER_V3_HEADER_TEAM: "#credits_header Victoria 3 Team#!"
 
  HEADER_PROJECT_LEADS:0 "#credits_header PROJECT LEADS#!"
  TITLE_PROJECT_LEAD_GAME_DIRECTOR:0 "#credits_subheader Game Director#!"
@@ -85,6 +86,15 @@
  TITLE_MUSIC_BUSINESS_DIRECTOR:0 "#credits_subheader Music Business Director#!"
  TITLE_MUSIC_COMPOSER_AND_PRODUCER:0 "#credits_subheader Composer and Producer#!"
  TITLE_MUSICIANS:0 "#credits_subheader Musicians#!"
+ TITLE_ORCHESTRA: "#credits_subheader Orchestra#!"
+ TITLE_RECORDING_STUDIO: "#credits_subheader Recording Studio#!"
+ TITLE_CONDUCTOR: "#credits_subheader Conductor#!"
+ TITLE_ORCHESTRA_CONTRACTOR_RECORDING_MANAGER: "#credits_subheader Orchestra Contractor and Recording Manager#!"
+ TITLE_RECORDING_ENGINEER: "#credits_subheader Recording Engineer#!"
+ TITLE_ASSISTANT_ENGINEER: "#credits_subheader Assistant Engineer#!"
+ TITLE_PROTOOLS_OPERATOR: "#credits_subheader ProTools Operator#!"
+ TITLE_ORCHESTRA_LIBRARIAN: "#credits_subheader Orchestra Librarian#!"
+ TITLE_ORCHESTRATION: "#credits_subheader Orchestration#!"
 
  HEADER_STUDIO_LEADERSHIP:0 "#credits_header STUDIO LEADERSHIP#!"
  TITLE_STUDIO_MANAGER:0 "#credits_subheader Studio Manager#!"

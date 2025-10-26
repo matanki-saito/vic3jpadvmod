@@ -4523,10 +4523,10 @@
 
  INCORPORATION_TIME_SAME_CULTURE:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of [State.GetOwner.GetName] due to its [Culture.GetName] [concept_culture]."
 #TODO PRCAL-37739 Update keys to properly describe why they're happening with heritage/language and trait groups
-INCORPORATION_TIME_SAME_HERITAGE_OR_LANGUAGE: "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of the [Culture.GetName] [concept_culture], which shares the [concept_heritage_trait] [DiscriminationTrait.GetName] with another $concept_culture$ in [State.GetOwner.GetName]."
+ INCORPORATION_TIME_SAME_HERITAGE_OR_LANGUAGE: "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of the [Culture.GetName] [concept_culture], which shares the [concept_heritage_trait] [DiscriminationTrait.GetName] with another $concept_culture$ in [State.GetOwner.GetName]."
  INCORPORATION_TIME_SAME_TRAIT_GROUP:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of the [Culture.GetName] [concept_culture], which shares the [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] [DiscriminationTraitGroup.GetName] with another $concept_culture$ in [State.GetOwner.GetName]."
  INCORPORATION_TIME_NO_MATCH:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since its [Concept('concept_homeland','$concept_homelands$')] have nothing in common with any $concept_cultures$ in [State.GetOwner.GetName]."
- INCORPORATION_TIME_MODIFIER_EFFECTS: "Incorporation Speed is changed by $YEARS|0-=$ years due to:\n$DETAILS$"
+ INCORPORATION_TIME_MODIFIER_EFFECTS: "Incorporation Speed is changed by $YEARS|1-=$ years due to:\n$DETAILS$"
 
  TOOLTIP_COLONY_STATE_NOT_VALID:0 "#BOLD #V $state_type_colony$#!#!\n$TOOLTIP_DELIMITER$\n[GetDesc( State.IncorporateState )]"
  TOOLTIP_COLONY_STATE_VALID:1 "#BOLD #V $state_type_colony$#!#!\n$TOOLTIP_DELIMITER$\nClick to incorporate this state ([State.PredictBureaucracyCost|1] @bur![Nbsp][concept_bureaucracy])"

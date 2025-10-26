@@ -1416,6 +1416,7 @@
  concept_budget_land_taxes: "地税"
  concept_budget_land_taxes_desc: "[SelectLocalization(GetPlayer.IsValid,'concept_budget_land_taxes_desc_added','百姓')]からのみ徴収する、[Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')]の一種です。"
  concept_budget_land_taxes_desc_added: "[GetPopType('peasants').GetName]"
+ concept_budget_land_taxes_desc_farmers: "[GetPopType('farmers').GetName]"
  concept_budget_heathen_taxes: "異教税"
  concept_budget_heathen_taxes_desc: "信仰する[concept_religion]の[concept_acceptance]が自[concept_country]において低いすべての[Concept('concept_pop', '$concept_pops$')]から徴収した[Concept('concept_budget_poll_taxes', '$concept_budget_poll_tax$')]。"
  concept_budget_per_capita_taxes: "人頭税"
