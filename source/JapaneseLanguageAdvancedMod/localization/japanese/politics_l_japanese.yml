@@ -124,7 +124,7 @@
  POLITICAL_MOVEMENT_MIN_RADICALISM_FROM_ENACTMENT:0 "[LAW.GetName]が制定されている間、[concept_activism]は$VALUE|v%0$を下回ることはできません"
  POLITICAL_MOVEMENT_RADICALISM_SCRIPT_VALUE_FORMAT:0 "#v $VALUE|-=%$#! ($KEY$) "
  POLITICAL_MOVEMENT_TARGET_ACTIVISM_EFFECT:0 "#v $VALUE|=-%0$#! [concept_activism]"
- POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT:0 "#title 成功した制定による[Concept('concept_loyalist','$concept_loyalists$')]への効果 : #!\n$DETAILS$"
+ POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT:0 "#title 制定成功による[Concept('concept_loyalist','$concept_loyalists$')]への効果 : #!\n$DETAILS$"
  POLITICAL_MOVEMENT_LAW_LOYALIST_IMPACT_ENTRY:0 "[POLITICAL_MOVEMENT.GetName] : @population!$NUM_INDIVIDUALS|pD$ [Concept('concept_individual','$concept_individuals$')]がより$concept_loyal$になります"
  POLITICAL_MOVEMENT_LAW_RADICALISM_IMPACT_HEADER:0 "[concept_activism]への効果 : "
  POLITICAL_MOVEMENT_LAW_RADICALISM_IMPACT_ENTRY:0 "[POLITICAL_MOVEMENT.GetName] : 直ちに$IMMEDIATE_VALUE|=-%$変化し、時間とともに$TARGET_VALUE_LABEL$ ($TARGET_VALUE|v0%$) へと推移します"
