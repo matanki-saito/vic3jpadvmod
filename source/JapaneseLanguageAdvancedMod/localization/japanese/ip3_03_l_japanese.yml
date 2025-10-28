@@ -105,7 +105,7 @@
  notification_yug_unification_desc:0 "[SCOPE.sCharacter('ruler_scope').GetFullName][SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]の政府が[SCOPE.sCountry('yug_scope').GetName]を樹立しました。バルカン半島の南スラブ民族をひとつにまとめる一大国家です。"
  notification_yug_unification_tooltip:0 "#header $notification_yug_unification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_yug_unification_desc$"
  austria_events.30.t:0 "[SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting][SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle]が退位"
- austria_events.30.d:0 "[SCOPE.sCharacter('relevant_ruler').GetFullName][SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle]の健康状態は悪化の一途をたどっている。そのことから[SCOPE.sCharacter('ig_leader_scope').GetFullName]は、自身の後継者である[SCOPE.sCharacter('relevant_heir').GetFullName]に地位を譲ることが最善ではないかと考えるようになった。"
+ austria_events.30.d:0 "[SCOPE.sCharacter('relevant_ruler').GetFullName][SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle]の健康状態は悪化の一途をたどっている。そのことから[SCOPE.sCharacter('ig_leader_scope').GetFullName]は、[SCOPE.sCharacter('relevant_ruler').GetHerHim]に後継者である[SCOPE.sCharacter('relevant_heir').GetFullName]に地位を譲ることが最善ではないかと考えるようになった。"
  austria_events.30.f:0 "[SCOPE.sCharacter('relevant_heir').GetFullNameNoFormatting]が[SCOPE.sCharacter('relevant_ruler').GetPrimaryRoleTitle]の前にひざまずき、[ROOT.GetCountry.GetAdjectiveNoFormatting]の王座への即位に先立ち祝福を請う。[SCOPE.sCharacter('relevant_ruler').GetFullNameNoFormatting]は自身の後継者に目をやると、その頭部に両手を添えた。聖十字の印と共に[SCOPE.sCharacter('relevant_heir').GetFirstNameNoFormatting]が立ち上がる。[ROOT.GetCountry.GetNameNoFormatting]の新章が、今ここに幕を開けたのだ。"
  austria_events.30.a:0 "皇帝陛下と王室の使徒による統治が成功を収めますように。"
  ferdinand_I_abdicates_tt:0 "[SCOPE.sCharacter('relevant_ruler').GetFullName]が退位する。"
