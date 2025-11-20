@@ -1689,7 +1689,7 @@
  concept_subvention_rate:0 "助成率"
  concept_subventions_desc:0 "$concept_subventions$とは[concept_good]の[Concept('concept_trade','$concept_imported$')]または$concept_exported$の都度、[concept_country]が[GetBuildingType('building_trade_center').GetName]に対して支払うことができる金額の総額のことです。そのため、特定の商品の[concept_trade]を活発にする効果があり、たとえば、競合国を弱体化する目的で活用することができます。$concept_subventions$の最高水準は$concept_country_possessive$[Concept('concept_law','$concept_laws$')]によって定められます。また、[concept_market]のすべての構成国に対する$concept_subventions$の水準は[concept_market_owner]によって定められます。"
  concept_national:0 "国有"
- concept_privatizations:0 "私有化"
+ concept_privatizations:0 "民営化"
  concept_private:0 "民間"
  concept_monopoly:0 "独占権"
  concept_monopolies:0 "独占権"
