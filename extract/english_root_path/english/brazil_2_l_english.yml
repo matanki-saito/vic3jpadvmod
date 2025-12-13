@@ -236,8 +236,6 @@ je_amazonas: "Exploiting the Amazon"
 je_amazonas_reason: "While [SCOPE.sGoods('rubber_scope').GetName] and its properties have long been known to us, traditionally its uses have been limited, and consequently commercial demands have been low. However, with the #bold Industrial Revolution#! in full swing and new uses for [SCOPE.sGoods('rubber_scope').GetNameNoFormatting] found by the week, calls for increased production have soared.\n\nSteps must be taken to transform the Amazon from an inhospitable jungle into an intensively developed land capable of meeting the demands of commerce."
 je_amazonas_tt: "All rubber-producing Amazonian [Concept('concept_state','$concept_states$')] must have their #bold state trait#! upgraded to #bold Exploited Amazon Rainforest#!."
 amazon_development_cooldown_modifier: "Taming the Amazon"
-state_trait_amazon_rainforest_level_1: "Developed Amazon Rainforest"
-state_trait_amazon_rainforest_level_2: "Exploited Amazon Rainforest"
 
 amazonas.1.t: "Taming Amazonia"
 amazonas.1.d: "Currently in our possession are vast tracts of pristine, undeveloped Amazonian lands. While some laud its wild beauty, others see naught but an untamed frontier overflowing with [SCOPE.sGoods('rubber_scope').GetName] — longing for the gentle touch of progress and capital."
@@ -439,6 +437,5 @@ gov_francocracia_desc: "This is a [concept_government_type] ruled by a [Concept(
 gov_francocracia_presidential: "Perpetual Dictatorship"
 gov_francocracia_presidential_desc: "This is a [concept_government_type] ruled by a [Concept('concept_ruler','$RULER_TITLE_PERPETUAL_DICTATOR$')].\n\n$TRANSFER_OF_POWER_NAME_DESC$"
 RULER_TITLE_PERPETUAL_DICTATOR: "Perpetual Dictator"
-ideology_despotic_utopian: "Despotic Utopian"
-ideology_despotic_utopian_desc: "#lore This character believes in a society influenced by the principles of the Enlightenment, but where an autocratic government acts in the best interests of the people.#!"
+
 RULER_TITLE_SECRETARY: "Secretary-Amanuensis"

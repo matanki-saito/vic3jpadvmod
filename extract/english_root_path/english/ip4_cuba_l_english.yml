@@ -1,0 +1,188 @@
+﻿l_english:
+
+#JE panel text
+
+je_cuba_espanol: "Cuba es España"
+je_cuba_espanol_reason: "Cuba remains loyal to [ROOT.GetCountry.GetOverlord.GetNameNoFlag]. So loyal, in fact, that the Reformists amongst the [SCOPE.gsInterestGroup('landholders').GetName] seek to have [ROOT.GetCountry.GetNameNoFlag] recognised as a formal [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] province, with adequate representation in the cortes, and white [SCOPE.sCulture('caribeno').GetName] gentlemen henceforth considered [SCOPE.sCulture('spanish').GetName]. Many of the island's [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]es are sympathetic to their claim.\n\nAs Cubanos and Spaniards become further entangled politically and economically, there is a chance that the Reformists dream may come to fruition; Cuba no longer a colony but a truly a part of [ROOT.GetCountry.GetOverlord.GetNameNoFormatting]."
+je_cuba_espanol_tracker: "[concept_liberty_desire] is #v [ROOT.GetCountry.GetLibertyDesireRaw|0]#! #tooltippable;tooltip:[ROOT.GetCountry.GetTooltipTag],liberty_desire_factors_tt (#v #blue [ROOT.GetCountry.GetWeeklyLibertyDesireChange|2]#!#!#! weekly)"
+
+je_cuba_espanol_completion_header: "Cuba may unite with Spain if:\n"
+liberty_desire_factors_tt: "[Country.GetWeeklyLibertyDesireChangeDesc]"
+
+je_cuba_espanol_completion_header_victory_header: "#title If Cuba unites with Spain:#!\n$EFFECT$"
+has_investment_rights_with_overlord: "[ROOT.GetCountry.GetName] has been granted [concept_foreign_investment_rights] by [ROOT.GetCountry.GetOverlord.GetName]"
+join_with_spain_choice_tt: "[ROOT.GetCountry.GetName] may join [ROOT.GetCountry.GetOverlord.GetName] as a single nation"
+join_with_spain_no_independence_tt: "The #v $je_cuba_independencia$#! [concept_journal_entry] will fail"
+CUB_espana_total_country_exports_greater_than_tt: "[ROOT.GetCountry.GetName] exports more than #v [GetPlayer.MakeScope.ScriptValue('je_cuba_es_espana_export_target')|0]#! [Concept('concept_good', '$concept_goods$')] to the [concept_world_market]."
+
+
+je_cuba_la_vida_dulce: "La Vida Dulce"
+je_cuba_la_vida_dulce_reason: "Cuba has come to dominate the sugar trade, largely through the continued smuggling of [GetPopType('slaves').GetName]. The nation's long term prosperity will depend on expanding these established [concept_trade] routes. \n\nShould slavery be abolished, perhaps one day all Cubanos could benefit from a sweeter life."
+je_cuba_la_vida_dulce_trade_tracker: "Total Exported Goods: #g [GetPlayer.MakeScope.ScriptValue('total_country_exports')|0]#!"
+la_vida_dulce_completed: "[ROOT.GetCountry.GetNameNoFlag] has completed the $je_cuba_la_vida_dulce$ [concept_journal_entry]"
+slavery_abolished_for_more_tt: "If [concept_slavery] is abolished, [ROOT.GetCountry.GetName] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],cuba_success_without_slavery_tt $cuba_success_without_slavery$ #!for #v 30#! years:\n[GetStaticModifier('cuba_success_without_slavery').GetDesc]"
+cuba_success_without_slavery_tt: "[GetStaticModifier('cuba_success_without_slavery').GetName|v]\n[GetStaticModifier('cuba_success_without_slavery').GetDesc]"
+cuba_dominate_market: "Well-Established Trade Routes"
+reformists_gone_pro_cuba: "Viva Cuba"
+cuba_dont_hurt_business: "Reformist Concessions"
+CUB_total_country_exports_greater_than_tt: "[ROOT.GetCountry.GetName] exports more than #v [GetPlayer.MakeScope.ScriptValue('je_cuba_la_vida_dulce_export_target')|0]#! [Concept('concept_good', '$concept_goods$')] to the [concept_world_market]."
+je_cuba_independencia: "Independencia"
+je_cuba_independencia_reason: "Cuba's desire for freedom is divided. \n\nSome seek allies across the Gulf of Mexico, hoping to purchase the island's liberty through American coin, rather than Cuban blood. While on the floors of the cigar factories, men whisper about a free Cuba unbound to any power except the passion and will of its people.\n\n#v Which path to freedom?#!\nFirst, the nation must gain enough [concept_liberty_desire], or else freedom from [ROOT.GetCountry.GetOverlord.GetName] will be but a dream. Then various #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factors_tt factors#! will lead freedom-seekers to either want to be purchased by the [SelectLocalization(SCOPE.sCountry('csa').Exists, SCOPE.sCountry('csa').GetNameNoFormatting, SCOPE.sCountry('usa').GetDefinition.GetName)] or seek true independence."
+je_cuba_custom_status_desc: "[ROOT.GetCountry.GetCustom('GetJoinUSALine')]"
+je_cuba_stay_status_desc: "Freedom is but a dream..."
+je_cuba_neutral_status_desc: "The path to freedom is undecided"
+je_cuba_Pro_USA_status_desc: "Freedom-seekers want to join the USA"
+je_cuba_independencia_status_desc: "Freedom-seekers want Independence"
+je_cuba_independencia_completion_header: "The future of our nation will be decided when:\n"
+je_cuba_has_joined_usa: "Cuba's liberation has been purchased by the [SelectLocalization(SCOPE.sCountry('usa').Exists, SCOPE.sCountry('usa').GetName, 'US')]"
+je_cuba_has_joined_csa: "Cuba's liberation has been purchased by the [SelectLocalization(SCOPE.sCountry('usa').Exists, SCOPE.sCountry('usa').GetName, 'US')] or [SCOPE.sCountry('csa').GetName]"
+je_cuba_has_gained_independence: "Cuba has gained independence from [SelectLocalization(SCOPE.sCountry('spain').IsValid, SCOPE.sCountry('spain').GetName, 'SPA')] and is not a subject of any other nation"
+je_cuba_has_gained_revolted: "Cuba has completely fallen to a slave revolt, like [SelectLocalization(SCOPE.sCountry('haiti').IsValid, SCOPE.sCountry('haiti').GetName, 'HAI')]"
+cuba_free_header: "#title After Cuba is free:#!\n$EFFECT$"
+cuba_libre_chill: "Calm after the Storm"
+cuba_libre_total: "Viva Cuba"
+cuban_purchase: "Cuban Purchase"
+cuban_sale: "Sale of Cuba"
+cuba_libre_market: "Open for Business"
+slavery_continues: "Success for Whom?"
+cuba_libre_from_trade: "Means of Independence"
+slave_revolt_risk: "Slave Revolt Risk"
+cuba_share_success: "Greater Good"
+cuba_success_modernise: "Investing in the Future"
+cuba_success_without_slavery: "La Vida Dulce"
+reformists_dispand: "Unformed Reformists"
+slave_revolt_inspired: "Hope"
+american_florida_nextdoor_tt: "[SCOPE.sStateRegion('florida_region').GetName] is owned by the [SelectLocalization(SCOPE.sCountry('csa').Exists, SCOPE.sCountry('csa').GetName, '')][SelectLocalization(SCOPE.sCountry('csa').Exists, ' or ', '')][SelectLocalization(SCOPE.sCountry('usa').Exists, SCOPE.sCountry('usa').GetName, 'US')]"
+have_not_attempted_failed_negotiations_3_yrs_tt: "We have not attempted similar negotiations within the past 3 years."
+
+#Progress Bar Factors
+join_usa_same_slave_law_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA' , 'the USA' )] also practices [concept_slavery]"
+join_usa_free_slave_law_tt: "Both Cuba and [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')] have outlawed [concept_slavery]"
+join_usa_different_slave_law_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')] has an incompatible [concept_slavery] [concept_law]"
+join_usa_economic_dependence_with_USA_tt: "[concept_economic_dependence] with [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')]"
+usa_does_not_exist_tt: "Americans cannot help us"
+join_usa_same_powerbloc_compared_to_spain_tt: "[concept_power_bloc_leverage] of USA vs $SPA$'s [Concept('concept_power_bloc','$concept_power_blocs$')]"
+join_usa_usa_powerbloc_tt: "[concept_power_bloc_leverage] of [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')]'s [concept_power_bloc]"
+join_usa_no_powerblocs_tt: "[SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')] is yet to form a [concept_power_bloc]"
+join_usa_sol_spa_tt: "[concept_sol] in [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')] vs Cuba"
+join_usa_sol_cub_tt: "Cuba has higher Average [concept_sol] than [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')]"
+
+independencia_sol_tt: "Average [concept_sol] in Cuba vs Spain"
+join_usa_prestige_tt: "[concept_prestige] of [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')] vs Cuban expectations"
+join_usa_relations_tt: "[concept_relations] with [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')]"
+total_base_factor_tt: "Status Quo"
+#
+independencia_liberty_desire_factor_tt: "[concept_liberty_desire] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factor_factors_tt: [SCOPE.ScriptValue('liberty_desire_weekly_change')|2]#!"
+total_desire_to_join_the_USA_tt: "Desire to join [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')]"
+cuba_slave_revolt_slaves_fervor_tt: "[concept_fervor] of the [GetCulture('afro_caribeno').GetName] culture"
+independencia_caribeno_cultural_fervor_tt: "[concept_fervor] of the [GetCulture('caribeno').GetName] culture"
+
+
+#Drift and factor tooltips. 
+je_cuba_total_drift_tt: "drift from current value of #variable [ROOT.GetCountry.MakeScope.Var('independencia_current').GetValue|0]#! towards a target value of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],total_factors_tt [SCOPE.ScriptValue('je_cuba_independencia_bar_target')|0]#!:\n\nThis value represents the will of freedom seekers, with the lower end of the scale (towards #v 0#!) standing for Pro-US sentiment, and the higher end (towards #v 100#!) representing a desire for complete independence.\n\nThe target value of #v [SCOPE.ScriptValue('je_cuba_independencia_bar_target')|0]#! is based on the following factors:\n[GetPlayer.MakeScope.GetScriptValueDesc('je_cuba_independencia_bar_target')]"
+total_factors_tt: "[GetPlayer.MakeScope.GetScriptValueDesc('je_cuba_independencia_bar_target')]"
+
+#Progress bar text
+je_cuba_total_bar: "Will of the People"
+je_cuba_total_bar_desc: "Remain in Spain: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
+je_cuba_join_usa_bar: "Join the USA"
+je_cuba_join_usa_bar_desc: "Join the USA"
+je_cuba_join_csa_bar: "Join the CSA"
+je_cuba_join_csa_bar_desc: "Join the CSA"
+##v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)
+je_cuba_independencia_bar: "Independence"
+je_cuba_independencia_bar_desc: "Independencia"
+ ###v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)
+ 
+#button fun
+je_cuba_promise_freedom_button: "Promise Freedom to Slaves"
+je_cuba_promise_freedom_button_desc: "We vow to liberate the island's slaves during the coming war, convincing many more [GetCulture('afro_caribeno').GetName] radicals to join our cause."
+slave_revolt_adds_ld_tt: "The Slave Revolt [concept_political_movement] will now contribute to, rather than reduce, our [concept_liberty_desire]"
+slaves_will_be_freed_after_war_tt: "Should our victory be achieved, [concept_slavery] will be bannned"
+je_cuba_promise_freedom_bar_above_50: "#v $je_cuba_total_bar$#! sentiment must be above 50"
+afro_caribeno_fervor_factor_increase_tt: "[GetCulture('afro_caribeno').GetName] [concept_fervor] will push us even further away from joining the [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')] and towards true independence"
+je_cuba_promise_equality_button: "Promise Equality to [GetCulture('afro_caribeno').GetCustom('getPluralDemonym')]"
+je_cuba_promise_equality_button_desc: "We vow to give equal standing to all peoples in an independent [ROOT.GetCountry.GetNameNoFormatting], convincing many more [GetCulture('afro_caribeno').GetName] radicals to join our cause."
+afro_caribeno_future_equality: "[GetCulture('afro_caribeno').GetName] will become a [Concept('concept_primary_cultures','$concept_primary_culture$')] of [ROOT.GetCountry.GetNameNoFlag], once victory is ours."
+je_cuba_ask_usa_to_buy: "Negotiate Cuba Purchase"
+je_cuba_ask_usa_to_buy_desc: ""The purchase and annexation of Louisiana led to a necessary corollary to that of Florida and both point with unerring certainty to the acquisition of Cuba." \n–John Slidell, U.S. Senator."
+#Hugh Thomas, Cuba a History, pg 138
+cuba_must_want_to_join_usa_tt: "Freedom-seekers must want to join [SelectLocalization(SCOPE.sCountry('csa').Exists, 'the CSA', 'the USA')], rather than pursue true independence."
+je_cuba_join_usa_base_price: "Base Price"
+je_cuba_join_usa_cuba_value_price: "Cuban [concept_gdp]"
+cuba_must_want_to_fight_tt: "Freedom-seekers must be prepared to fight for their freedom, rather than seek being purchased by the USA."
+cuba_prepare_for_war: "Prepare for war"
+
+#war time
+je_cuba_independence_war: "Prepare for War"
+je_cuba_independence_war_desc: "The time has come to earn our nation's freedom." #TODO
+
+#Startup event
+cuba_independencia.1.t: "El Futuro de Cuba"
+cuba_independencia.1.d: "The future of Cuba remains to be decided. Will the island remain with Spain, join the US like Florida, declare independence, or transform through a fiery slave revolt?"
+cuba_independencia.1.f: ""The near future will demonstrate whether the indispensable condition of a righteous peace just alike to Cubans and to Spaniards... is likely to be obtained. If not, the exigency of further and other action by the US will remain to be taken. When that time comes, that action will be determined in the line of indisputable right and duty." \n\n–William McKinley, 25th President of the United States" #pg 205, Cuba, a History, by Hugh Thomas
+cuba_independencia.1.a: "Cuba will be blessed, no matter its future."
+
+cuba_independencia.2.t: "Opening Negotiations"
+cuba_independencia.2.d: "With sufficient support at home, we are now in a position to pursue closer relations with [SCOPE.sCountry('cuba_buyer').GetName] and escape the [SCOPE.sCountry('cuba_overlord').GetAdjective] yoke. Negotiators are ready to propose a scheme for the [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] acquisition of Cuba."
+cuba_independencia.2.f: ""Our country is not a colony to be annexed!" cried the speaker.\n\nThe silence that followed within this room of conspirators was deathly. One man shifted uneasily in his seat "My friend..." he consoled, "We all love Cuba, but what can we do alone? Imagine what #italic power#! we could have within that great family of states to our north!"\n\n"Power!" snorted the first speaker. "Power for #italic you#!, perhaps." He surveyed the room with a dark gaze. "If this is our decision, then may God save us all.""
+cuba_independencia.2.a: "Let us see if these talks bear fruit!"
+cuba_independencia.2.b: "Let's not be hasty. We should reconsider this."
+cuba_negotiation_warning_tt: "#r We will not be able to attempt negotiations again for #b 3#! years.#!"
+
+cuba_independencia.3.t: "The Cuban Envoys' Offer"
+cuba_independencia.3.d: "Envoys representing powerful interests in [SCOPE.sCountry('cuba').GetName] have approached us with an opportunity: Support for American control of Cuba is high enough that it may be possible to #italic purchase#! Cuba from [SCOPE.sCountry('cuba_overlord').GetName]."
+cuba_independencia.3.f: ""Of course we should do it!" thundered one voice in the smoky room. "Cuba is as necessary for us as any member now part of the country, and it belongs naturally to our great family of states."\n\nHe coughed, and for a moment his waving hand cut through the smoke, clutching a cigar. "Besides, there is such #italic opportunity#! there.""
+cuba_independencia.3.a: "An intriguing offer! Let's speak with [SCOPE.sCountry('cuba_overlord').GetName] at once."
+if_spain_accepts_purchase_tt: "#b If the deal is accepted:#!"
+cuba_independencia.3.b: "This scheme is in our interests presently."
+
+cuba_independencia.4.t: "The [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] Offer "
+cuba_independencia.4.d: "Diplomats from [SCOPE.sCountry('cuba_buyer').GetName] have approached us, offering to purchase [SCOPE.sCountry('cuba').GetName] from us for a princely sum. Support for the [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] cause is high in [SCOPE.sCountry('cuba').GetNameNoFormatting], and there is a chance this whole scheme was instigated by a faction in the colony. We will have to consider the [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] proposal first, however."
+cuba_independencia.4.f: "#italic Cuba was the first crown jewel of the empire, Havana the heart of so many ventures, so many glories. It is part of which all that makes Spain great is founded upon!#!\n\n#italic But... that number the [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] diplomats gave us is followed by#! many, many #italic zeroes.#!"
+if_we_accept_purchase_tt: "#b If we sell Cuba:#!"
+cuba_independencia.4.a: "Cuba is worth a windfall!"
+cuba_independencia.4.b: "Cuba is not for sale!"
+
+cuba_independencia.5.t: "The Cuban Scheme, Rejected"
+cuba_independencia.5.d: "Negotiations with [SCOPE.sCountry('cuba_overlord').GetName] over the purchase of [SCOPE.sCountry('cuba').GetName] have failed."
+cuba_independencia.5.f: ""We can no longer afford to disregard international rivalries, now that we ourselves have become a competitor in the world-wide struggle for trade. Opportunity must be #italic seized#!, and never again can we let such fine chances pass us by.""
+cuba_independencia.5.a: "[SCOPE.sCountry('cuba_overlord').GetNameNoFormatting]'s decision is disappointing."
+cuba_independencia.5.b: "[SCOPE.sCountry('cuba_overlord').GetNameNoFormatting]'s decision is unfortunate."
+
+cuba_independencia.6.t: "The [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting] Acquisition"
+cuba_independencia.6.d: "[SCOPE.sCountry('cuba_overlord').GetName] has accepted the offer to sell us off. Our future now belongs to [SCOPE.sCountry('cuba_buyer').GetName]."
+cuba_independencia.6.f: "The conspirators sat quietly in the dark room. "Well my friends," grumbled one sullen voice, "You did it. Cuba is now [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting]. Now what?"\n\nThe continuing silence was the only reply he got."
+cuba_independencia.6.a: "The future is [SCOPE.sCountry('cuba_buyer').GetAdjectiveNoFormatting]!"
+cuba_independencia.6.b: "Here's to a new partnership with [SCOPE.sCountry('cuba_buyer').GetNameNoFormatting]!"
+
+cuba_independencia.7.t: "The Contract for Cuba"
+cuba_independencia.7.d: "Through deft diplomacy and the support of the [SelectLocalization(SCOPE.sCountry('cuba').Exists, SCOPE.sCountry('cuba').GetAdjectiveNoFormatting, 'Cuban')] people, [SelectLocalization(SCOPE.sCountry('cuba').Exists, SCOPE.sCountry('cuba').GetNameNoFormatting, 'Cuba')] is now ours."
+cuba_independencia.7.f: ""Many things shall change in Cuba," smiled [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting], "and they shall change because of #italic our#! efforts. An old empire crumbles today, and a beautiful tomorrow awaits.""
+cuba_independencia.7.a: "Three cheers for Cuba!"
+
+cuba_events.1.t: "La Vida Dulce"
+cuba_events.1.d: "Ships never cease coming and going from [ROOT.GetCountry.GetCapital.GetCityHubName]'s harbor, securing our trade legacy for generations to come. The only question is how we should capitalize on our prosperity."
+cuba_events.1.f: ""Whoever speaks of economic union speaks of political union. The nation that buys, commands; the nation that sells, serves. Commerce must be balanced to secure freedom. The nation that wants to die sells to one nation only, and a nation that would be saved sells to more than one." \n\n–José Marti"
+cuba_events.1.independence: "Imagine our wealth if we broke off from [SCOPE.sCountry('boss').GetName]."
+cuba_events.1.fix: "Imagine our wealth if we broke off from Spain."
+cuba_events.1.a: "A toast to our perpetual success!"
+cuba_events.1.b: "We must use the proceeds to modernize."
+cuba_events.1.c: "All Cubans should benefit."
+
+cuba_events.2.t: "La Siempre Fiel Isla de Cuba"
+cuba_events.2.d: "The Reformist [SCOPE.gsInterestGroup('landholders').GetName] have succeeded in convincing their [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] counterparts to formally integrate [ROOT.GetCountry.GetNameNoFlag] as a [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] province."
+cuba_events.2.f: "[ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] entered the cortes, no longer a [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], but a mere representative for the newest [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] province of [ROOT.GetCountry.GetNameNoFormatting]. Yet despite the apparent diminishment of [ROOT.GetCountry.GetRuler.GetHerHis] status, [ROOT.GetCountry.GetRuler.GetSheHe] looked at the wooden benches of the semicircular hall, then up at the ceiling painted by Carlos Luis de Ribera, a painting of [ROOT.GetCountry.GetOverlord.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetOverlord.GetRuler.GetFullNameNoFormatting] no less, and [ROOT.GetCountry.GetRuler.GetSheHe] could not help feel a pang of petrified pride in [ROOT.GetCountry.GetRuler.GetHerHis] heart. \n\n"Viva España," [ROOT.GetCountry.GetRuler.GetSheHe] muttered under [ROOT.GetCountry.GetRuler.GetHerHis] breath, and then set about to bring the best life possible to his [ROOT.GetCountry.GetAdjectiveNoFormatting] – nay, his [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] – people."
+cuba_events.2.a: "¡Viva España!"
+cuba_events.2.b: "One Iberian Nation."
+cuba_events.2.c: "We should retain some separation."
+cuba_events.2.e: "Actually, this is a terrible idea."
+cuba_if_spa_player_tt: "If [ROOT.GetCountry.GetOverlord.GetName] is a player, we will also have an option to become a [concept_protectorate]"
+
+cuba_events.3.t: "Un Camino Differente"
+cuba_events.3.d: "The Reformist [SCOPE.gsInterestGroup('landholders').GetName] have failed to convince their [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] counterparts, or the Cuban populace, that a union with [ROOT.GetCountry.GetOverlord.GetName] will be feasible. The nation now firmly seeks more autonomy."
+cuba_events.3.f: ""Rights are to be taken, not requested; seized, not begged for."\n\n–José Martí"
+cuba_events.3.a: "¡Viva Cuba!"
+cuba_events.3.b: "We can't let this effect business."
+cuba_events.3.c: "Now is the time for [SCOPE.sCulture('afro_caribeno').GetName] slaves to rise up."
+cuba_events.3.c.fix: "It is time to break these chains."

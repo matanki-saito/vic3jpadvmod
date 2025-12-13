@@ -44,7 +44,8 @@
  party_radical_civic_union:0 "Radical Civic Union"
  party_labour_party:0 "Labor Party"
  party_hindu_mahasabha: "All-India Hindu Grand Assembly"
- 
+ circle_trigon_party: "Circle Trigon Party"
+
  revolutionary_party_name: "Revolutionary Coalition"
 
  #fascist_party
@@ -74,6 +75,7 @@
  party_national_fascist_party:0 "National Fascist Party"
  party_national_union_of_greece:0 "National Union of Greece"
  integralist_action:0 "Brazilian Integralist Action"
+ national_syndicalist_movement: "National Syndicalist Party"
 
 #conservative_party
  party_moderate_party:0 "Moderate Party"
@@ -104,6 +106,10 @@
  party_napist_party: "Napist Party"
  party_ethnikon_komma: "National Party"
  party_congress_nationalist_party: "Congress Nationalist Party"
+ party_cartist_party: "Cartist Party"
+ party_republican_union_party: "Republican Union Party"
+ party_national_republican_party: "National Republican Party"
+ party_nationalist_republican_party: "Nationalist Republican Party"
 
 #free_trade_party
  party_historic_party:0 "Historic Party"
@@ -116,6 +122,9 @@
  party_democratic_alliance: "Democratic Alliance"
  party_federalist_party: "Federalist Party"
  party_constitutional_union_party: "Constitutional Union Party"
+ party_liberal_regenerator_party: "Liberal Regenerator Party"
+ party_vintista_party: "Vintist Party"
+ party_independent_party: "Independent Party" # Not a real party, but an abstraction
 
 #liberal_party
  party_progressive_party:0 "Progressive Party"
@@ -143,6 +152,9 @@
  party_exalted_liberal: "Exalted Liberal Party"
  party_neoteristikon_komma: "New Party"
  party_opposition_party: "Opposition Party"
+ party_evolutionist_party: "Evolutionist Party"
+ party_month_of_revolution: "[SCOPE.GetRootScope.GetCountry.GetCustom('getPortugalRevolutionMonthPartyName')] Party"
+ party_septemberist_party: "Septemberist"
 
 #military_party
  party_patriotic_union:0 "Patriotic Union"
@@ -178,7 +190,7 @@
  party_republican_union: "Republican Union"
  party_farroupilha: "Farroupilha Party"
  party_swaraj_party: "Swaraj Party"
-
+ party_reformist_party: "Reformist Party"
 
 #religious_party
  party_portuguese_catholic_centre:0 "Portuguese Catholic Centre"
@@ -194,6 +206,7 @@
  party_know_nothing_party:0 "Know Nothing Party"
  party_conservative_catholics:0 "Conservative Catholics"
  party_traditionalist_communion:0 "Traditionalist Communion" # Carlists, might revise
+ party_nationalist_party: "Nationalist Party"
 
 #social_democrats_party
  party_psoe:0 "PSOE"
@@ -238,6 +251,8 @@
  party_socialist_workers_party:0 "Socialist Workers' Party"
  party_workingmens_party:0 "Workingmen’s Party"
  party_kke:0 "KKE"
+ party_portuguese_communist_party: "Portuguese Communist Party"
+ party_maximalist_federation:0 "Maximalist Federation"
 
 #agrarian_party
  party_irish_national_land_league:0 "Irish National Land League"
@@ -259,10 +274,11 @@
 #anarchist_party
  party_young_socialists:0 "Young Socialists"
  party_cnt:0 "CNT"
- party_maximalist_federation:0 "Maximalist Federation"
  party_socialist_league:0 "Socialist League"
  party_italian_syndicalist_union:0 "Italian Syndicalist Union"
  party_anarcho_communist_federation: "Anarcho-Communist Federation"
+ party_social_revolution_group: "Social Revolution Group"
+ party_portuguese_anarchist_federation: "Portuguese Anarchist Federation"
 
  # Party weight descriptions
  base_value:0 "Base Value"
@@ -321,9 +337,11 @@
  from_capitalists_schools:0 "Public Schools Law"
  from_devout_separation:0 "Total Separation Law"
  from_patriarchy:0 "Women’s Suffrage Law"
+ from_liberal_anticlericalism: "Liberal Anticlericalism"
  from_patriarchy_lesser:0 "Women in the Workplace Law"
  from_multiculturalism:0 "Multiculturalism Law"
- from_liberty:0 "From Guaranteed Liberties Law"
+ from_liberty:0 "From No Home Affairs or Guaranteed Liberties Laws"
+ from_lacking_tax_laws: "From Lacking Tax Laws"
  from_communism:0 "Leftist Leader Ideology"
  from_communism_powerful:0 "Is Powerful"
  from_socdem_communism:0 "Stronger leftist Interest Group"
@@ -360,6 +378,7 @@
  from_censorship:0 "Restricted Free Speech Laws"
  from_bad_home_affairs:0 "Authoritarian Internal Security Laws"
  from_hereditary_offices:0 "Hereditary Bureaucrats Law"
+ from_increased_suffrage: "Restricted Suffrage"
  from_land_tax:0 "Land-Based Taxation Law"
  from_anticlerical:0 "State Religion Law"
  from_republican:1 "Non-Republican Governance Principles"
@@ -399,3 +418,5 @@
  from_two_party_system: "From Conservative-Liberal System"
  from_feijo_regency: "From the Feijó Regency"
  from_jacksonian_democrat: "From Jacksonian Democrat"
+ from_traditionalist_monarchism: "From Traditionalist Monarchism"
+ from_baldomero_espartero: "From Baldomero Espartero"

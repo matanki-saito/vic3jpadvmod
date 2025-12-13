@@ -117,12 +117,20 @@ prestige_good_schichau_engines: "Schichau Engines"
 prestige_good_smirnoff_vodka: "Smirnoff Vodka"
 prestige_good_russia_iron: "Russia Iron"
 prestige_good_philips_chapel_radio: "Chapel Radios"
+prestige_good_grand_strategy_games: "Grand Strategy Games"
 
 # IP3 Goods
 prestige_good_basma_tobacco: "Basma Tobacco"
 prestige_good_acorn_fed_pork: "Acorn-Fed Pork"
 prestige_good_pannonian_patent_flour: "Pannonian Patent Flour"
 prestige_good_brunn_type_engines: "Brunn-Type Engines"
+
+# IP4 Goods
+prestige_good_bacardi_rum: "Bacardi Rum"
+prestige_good_sherry: "Sherry"
+prestige_good_cigars: "Cigars"
+prestige_good_havana_sugar: "Havana Sugar"
+prestige_good_port_wine: "Port"
 
 # Generic Prestige Goods
 prestige_good_generic_groceries: "Gourmet Groceries"

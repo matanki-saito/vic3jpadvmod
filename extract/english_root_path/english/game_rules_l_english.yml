@@ -66,6 +66,15 @@
  setting_loyalties_grace_period_extra_long: "Extra Long"
  setting_loyalties_grace_period_extra_long_desc: "[concept_radical] and [concept_loyalist] gain starts out low but progressively increases, with full effect #v 10 years#! after game start."
 
+ rule_free_construction: "Base Construction Capacity"
+ setting_free_construction_scaled_all: "Scaled (All)"
+ setting_free_construction_scaled_all_desc: "All [Concept('concept_country', '$concept_countries$')] start with a base [concept_construction] capacity scaled to their [concept_gdp]."
+
+ setting_free_construction_scaled_player_exemption: "Scaled (Player Exemption)"
+ setting_free_construction_scaled_player_exemption_desc: "Player-controlled countries always get the maximum amount of base [concept_construction], while AI-controlled [Concept('concept_country', '$concept_countries$')] have it scaled to their [concept_gdp]."
+
+ setting_free_construction_unscaled: "Maximum"
+ setting_free_construction_unscaled_desc: "All countries receive the maximum amount of base [concept_construction], regardless of their [concept_gdp]."
 
  rule_pop_consolidation: "Pop Consolidation (Performance)"
  setting_no_consolidation: "None"
@@ -102,3 +111,9 @@
  setting_allow_dynamic_naming_desc: "[Concept('concept_state', '$concept_states$')] and #bold cities#! will change their names based on the [concept_culture] of the [concept_country] that owns them"
  setting_no_dynamic_naming: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_dynamic_naming_desc #high Disabled#!#!#!"
  setting_no_dynamic_naming_desc: "[Concept('concept_state', '$concept_states$')] and #bold cities#! will not change their names based on the [concept_culture] of the [concept_country] that owns them"
+ 
+ rule_ruler_selector: "Ruler Selector"
+ setting_allow_ruler_selector: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_allow_ruler_selector_desc #high Enabled#!#!#!"
+ setting_allow_ruler_selector_desc: "Allow [concept_ruler] Selector during this campaign"
+ setting_no_ruler_selector: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],setting_no_ruler_selector_desc #high Disabled#!#!#!"
+ setting_no_ruler_selector_desc: "Allow no [concept_ruler] Selector during this campaign"

@@ -262,7 +262,7 @@
   je_spoils_of_war_reason:1 "Only a couple of days after the declaration of victory, all remaining Balkan League members have turned their gaze upon what they claim to be unjustly distributed lands conquered from the Ottomans.\n\nHigh-ranking officers and politicians alike, including ours, are demanding amends while the iron of war is already heated."
 
   je_spoils_of_war_timed_out_tt: "#b Completion#! will be evaluated when the #v $je_spoils_of_war$#! [concept_journal_entry] has #b timed out#!"
-  
+
   notification_new_balkan_league_members_name: "New Balkan League Members"
   notification_new_balkan_league_members_desc: "Subjects of $dyn_c_ottoman_empire$ have been offered a chance to join our cause."
 
@@ -300,7 +300,7 @@
   je_the_balkan_league_start_war_desc: "Starts a #b special#! [concept_diplomatic_play] against the High Porte. All #bold Balkan League#! members will join our side. As of now, [SCOPE.sCountry('ottoman_empire_scope').GetName] and their allies have an [concept_army_power_projection] of #variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D] #!, while the #bold Balkan League#! and their allies total #variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!.\n\nBy winning against the [SCOPE.sCountry('ottoman_empire_scope').GetName] using the #v Balkan War#! [concept_diplomatic_play], they will lose ownership of any owned [Concept('concept_state', '$concept_states$')] in the [SCOPE.sStrategicRegion('balkans_scope').GetName]. Winning this [concept_war] without the intervention of a [concept_great_power] on our side will grant us an additional reward."
   balkan_league_members_start_the_war_header_tt: "Following #bold Balkan League#! members will join our [concept_diplomatic_play]:"
   balkan_league_members_start_the_war_tt: "[THIS.GetCountry.GetName]"
-  balkan_war_pp_comparison: "The combined [concept_army_power_projection] of the #bold Balkan League#! and allies (#variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!) is at least half of that of the [SCOPE.sCountry('ottoman_empire_scope').GetName] and allies (#variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D]#!)" 
+  balkan_war_pp_comparison: "The combined [concept_army_power_projection] of the #bold Balkan League#! and allies (#variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!) is at least half of that of the [SCOPE.sCountry('ottoman_empire_scope').GetName] and allies (#variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D]#!)"
 
   # Initial event
   balkan_wars.1.t: "The Balkan League"

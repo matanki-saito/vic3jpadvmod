@@ -40,3 +40,5 @@
  SCOPE_DEBUG_IDEOLOGY: "Ideology $NAME$ ($ID$)"
  SCOPE_DEBUG_POWER_BLOC_PRINCIPLE: "Power Bloc Principle $NAME$ ($ID$)"
  SCOPE_DEBUG_POWER_BLOC_PRINCIPLE_GROUP: "Power Bloc Principle Group $NAME$ ($ID$)"
+ SCOPE_DEBUG_AMENDMENT_TYPE: "Amendment type $NAME$ ($ID$)"
+ SCOPE_DEBUG_AMENDMENT: "Amendment $NAME$ ($ID$)"

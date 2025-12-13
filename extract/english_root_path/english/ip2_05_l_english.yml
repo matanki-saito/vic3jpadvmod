@@ -77,7 +77,7 @@
   india_non_cooperation.2.a: "I'm sure someone will look into this."
   india_non_cooperation.3.t: "Hartal!"
   india_non_cooperation.3.d: "Moved to action by the agitation of [SCOPE.sPoliticalMovement('indian_independence_movement').GetName], workers in [SCOPE.sState('hartal_state').GetName] have put down their tools and left their workplaces. The whole region is on strike!"
-  india_non_cooperation.3.f: "The clerk burst into the magistrate's office, panting and gasping for air. "S-sir!" he stammered, "They've stopped working, sir!"\n\nThe old magistrate frowned. "Who's stopped working?"\n\n"Everyone sir, everyone in [SCOPE.sState('hartal_state').GetName]!"\n\n"Good Lord! Is that #italic allowed#!?""
+  india_non_cooperation.3.f: "The clerk burst into the magistrate's office, panting and gasping for air. "S-sir!" he stammered, "They've stopped working, sir!"\n\nThe old magistrate frowned. "Who's stopped working?"\n\n"Everyone sir, everyone in [SCOPE.sState('hartal_state').GetNameNoFormatting]!"\n\n"Good Lord! Is that #italic allowed#!?""
   india_non_cooperation.3.a: "This labor action is an affront to good government!"
   india_non_cooperation.3.b: "Perhaps it's time we negotiated with [SCOPE.sPoliticalMovement('indian_independence_movement').GetName]."
   hartal_action: "Hartal Strikes"

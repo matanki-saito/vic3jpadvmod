@@ -1,5 +1,10 @@
 ﻿l_english:
  DECISION_TOOLTIP_FORMAT:1 "#header $NAME$#!\n$TOOLTIP_DELIMITER$\n$TRIGGER_SUMMARY$\n\nWhen taken:\n$EFFECT_SUMMARY$"
+ TOGGLE_DECISION_NOTIFICATION_ENABLED_TOOLTIP: "Show an alert/important action when this decision becomes available"
+ TOGGLE_DECISION_NOTIFICATION_DISABLED_TOOLTIP: "Do not show an alert/important action when this decision becomes available"
+ TOGGLE_COUNTRY_FORMATION_NOTIFICATION_ENABLED_TOOLTIP: "Show an alert/important action when forming this nation becomes possible"
+ TOGGLE_COUNTRY_FORMATION_NOTIFICATION_DISABLED_TOOLTIP: "Do not show an alert/important action when forming this nation becomes possible"
+ TOGGLE_COUNTRY_FORMATION_NOTIFICATION: "Display alert/important action when possible"
 
  dummy_decision:0 "Dummy decision"
  dummy_decision_desc:0 "J'adore les boulettes chinoises"
@@ -8,7 +13,6 @@
  grand_exhibition_decision:0 "Hold a Grand Exhibition"
  grand_exhibition_decision_desc:0 "Hold a Grand Exhibition to show all the world your wonders. The more technologies you have to show, the more successful the exhibition will be."
  grand_exhibition_decision_custom_tooltip:0 "Must have enough to show off."
-
 
  revive_olympic_games_decision:0 "Revive the Olympic Games"
  revive_olympic_games_decision_desc:0 "Revive the ancient Olympic games for a new era."
@@ -46,3 +50,6 @@
 
  panama_survey_decision:0 "Survey the Panama Isthmus"
  panama_survey_decision_desc:0 "Authorize a survey to map the potential of building a canal across the Panama Isthmus"
+
+ establish_pact_with_nafusis: "Establish a pact with the Nafusis"
+ establish_pact_with_nafusis_desc: "The Nafusis, the predominantly Berber inhabitants of the highlands of western Tripoli, have been in a struggle against the Ottoman governorate for years now, establishing a proper alliance with them by embracing their faith and calling in their men might be the key to victory."

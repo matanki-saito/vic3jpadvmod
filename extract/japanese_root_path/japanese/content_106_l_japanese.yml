@@ -171,7 +171,7 @@
  notification_caucasus_russian_village_burned_notification_desc: "[SCOPE.sState('invasion_state').GetName]にある村々が[SCOPE.sCountry('russia_scope').GetAdjective]の侵攻によって焼かれ、住民と家畜が虐殺されました。"
  caucasuswar.4.t: "[SCOPE.sCulture('defector_culture').GetName]部族が忠誠を誓う"
  caucasuswar.4.d: "我が軍に降伏し、これ以上の戦いを望んでいない[SCOPE.sCulture('defector_culture').GetName]部族は、かつて[SCOPE.sCountry('adversary_scope').GetName]へに忠誠を誓っていたが、[ROOT.GetCountry.GetName]に忠誠を誓った。"
- caucasuswar.4.f: "以下に名を記したこの私は、全能の神とその聖なる福音書にかけて、全ロシアの専制君主であり、最も慈悲深く偉大な、生まれながらにして真の君主である皇帝陛下[ROOT.GetCountry.GetRuler.GetFullName]と、全ロシアの王位継承者である皇太子殿下を畏れ敬い、従うことを約束し、誓います。"
+ caucasuswar.4.f: "以下に名を記したこの私は、全能の神とその聖なる福音書にかけて、全ロシアの専制君主であり、最も慈悲深く偉大な、生まれながらにして真の君主である皇帝陛下[ROOT.GetCountry.GetRuler.GetFullNameNoFormatting]と、全ロシアの王位継承者である皇太子殿下を畏れ敬い、従うことを約束し、誓います。"
  caucasuswar.4.a: "もっと早く従えばよかったものを。"
  caucasuswar.4.b: "我が国の領土への定住を許可する。"
  notification_caucasus_tribe_defection_notification_name: "部族が[SCOPE.sCountry('russia_scope').GetName]に忠誠を誓う"

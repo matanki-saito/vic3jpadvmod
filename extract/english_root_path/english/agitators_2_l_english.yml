@@ -171,16 +171,6 @@ dyn_c_barbary_adj: "Barbary"
 dyn_c_maghreb: "Maghreb"
 dyn_c_maghreb_adj: "Maghrebi"
 
-state_trait_mitidja_plain: "Mitidja Plain"
-state_trait_mokta_el_hadid: "Mokta El Hadid"
-state_trait_atlas_mountains: "Atlas Mountains"
-
-
-CON_FLAVOR_TEXT: "When the Algerian Deylik fell to the French in 1830, its Eastern province persevered in the capable hands of Ahmed Bey. Intent on restoring and modernizing the old Deylik, he will have to contend with both the French invaders and rivaling Algerian factions."
-AIT_FLAVOR_TEXT: "For centuries, the Berber kingdom of Ait Abbas has ruled in Kabylia, but shifting balances of power and infighting within the ruling Mokrani family has seen the state reduced to a mere tributary. Can Ait Abbas turn its fortunes around?"
-MAS_FLAVOR_TEXT: "Unexpectedly thrust into power during the French invasion, the Islamic scholar Abdelkader finds himself at the helm of a resistance campaign turned nascent state. Can Mascara drive out the invaders, or will it succumb to French might?"
-TUG_FLAVOR_TEXT: "After a bloody family feud resulted in the death of the previous Sultan, his capable, but ruthless wife seized power in the name of their child son. Can the desert realm of Touggourt secure a place for itself in the 19th century?"
-
 custom_ship_gloire: "Gloire"
 custom_ship_magnanime: "Magnanime"
 custom_ship_devastation: "Dévastation"
@@ -784,7 +774,12 @@ je_haitian_debt_payment_button_desc: "Authorise a large payment to the [SCOPE.sC
 je_haitian_cancel_debt_button: "Unilaterally Cancel Debt"
 je_haitian_cancel_debt_button_desc: "Enough is enough. We would rather pay for our independence in blood than bleed our coffers dry for the damned [SCOPE.sCountry('france_scope').GetAdjectiveNoFlag]."
 je_haitian_cancel_debt_button_tt: "This decision will not be well-received in [SCOPE.sCountry('france_scope').GetName], and their willingness to wage war against us can be expected to rise drastically."
-modifier_cancelled_haiti_debt: "Unilaterally Cancelled Debt"
+modifier_cancelled_haiti_debt_1: "Unilaterally Cancelled Debt"
+modifier_cancelled_haiti_debt_2: "$modifier_cancelled_haiti_debt_1$"
+modifier_cancelled_haiti_debt_3: "$modifier_cancelled_haiti_debt_1$"
+modifier_cancelled_haiti_debt_4: "$modifier_cancelled_haiti_debt_1$"
+je_haitian_cancel_debt_not_tt: "Has #b not#! unilaterally canceled the debt"
+je_haitian_cancel_debt_tt: "Has unilaterally canceled the debt"
 
 modifier_french_independence_payments_1: "Small French Independence Payments"
 modifier_haitian_independence_payments_1: "Small Haitian Independence Payments"

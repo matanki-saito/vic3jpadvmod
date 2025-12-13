@@ -57,6 +57,8 @@
  ig_shinto_monks_desc:0 "Shintoism is a syncretic faith, combining Buddhist concepts of karma and reincarnation with worship and placation of kami, the spirits of nature and dead ancestors."
  ig_pagan_shamans:0 "Pagan Shamans"
  ig_pagan_shamans_desc:0 "Animism is the worship and placation of natural spirits. Rituals undertaken by animists include sacrifices of food and livestock, and consumption of hallucinogenic drugs for spiritual journeys of introspection."
+ ig_london_missionary_society: "London Missionary Society"
+ ig_london_missionary_society_desc: "Representing both Christian converts and the interests of their home country, these missionaries promote the causes of Christendom and Free Trade."
 
   # Taiping IGs
  ig_taiping_god_worshippers:0 "God-Worshipping Society"
@@ -198,3 +200,10 @@
 
   ig_boyars: "Boyars"
   ig_boyars_desc: "The Boyars are the landowning elites of Wallachia and Moldavia, comprising both traditional nobles and large landowners of non-noble birth."
+
+ # Philippines IGs
+ ig_guardia_civil: "Guardia Civil"
+ ig_guardia_civil_desc: "Established by the Spanish colonial government, the Guardia Civil is a branch of the Spanish Civil Guard overseen by the Captaincy General of the Philippines."
+
+ ig_ilustrados: "Ilustrados"
+ ig_ilustrados_desc: "Intellectuals that have been exposed to European nationalist ideals. They seek equitable political and economic reforms."

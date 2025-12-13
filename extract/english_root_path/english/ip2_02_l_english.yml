@@ -52,14 +52,7 @@ BikanerArmy: "Bikaner Army"
 MughalArmy: "Walashahi"
 ArmeeIndigene: "Armée Indigène"
 CeylonRifleRegiment: "Ceylon Rifle Regiment"
-
-# State traits
-state_trait_raniganj_coalfield: "Raniganj Coalfield"
-state_trait_jharia_dhanbad_coalfield: "Jharia-Dhanbad Coalfield"
-state_trait_himalayan_foothills: "Himalayan Foothills"
-state_trait_western_ghats: "Western Ghats"
-state_trait_yenangyaung: "Yenangyaung Oil Fields"
-state_trait_digboi: "Digboi Oil Fields"
+ejercito_de_filipinas: "Ejército de Filipinas"
 
 # Company Names
 company_bengal_coal_company: "Bengal Coal Company"
@@ -106,7 +99,7 @@ sepoy_mutiny_events.3.e: "Vande Mataram! Drive the Lal Patan from our shores!"
 sepoy_mutiny_events.3.g: "Khalsa Ji Di Sarkar! The Sikh Empire will rise again!"
 sepoy_mutiny_events.3.h: "Forward, let us cleanse the Deccan of the firangi scourge. "
 sepoy_mutiny_events.3.tt_1: "Indian rebels will declare [concept_war] on the [ROOT.GetCountry.GetName]"
-sepoy_mutiny_events.3.tt_2: "The following will be true for all [Concept('concept_presidency', '$concept_presidencies$')], based on their [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]:\n• Indian rebels will take control of relevant [Concept('concept_state', '$concept_states$')]\n• Radicals and negative [Concept('concept_modifier','$concept_modifiers$')] will be added in all constituent [Concept('concept_state', '$concept_states$')]\n• A random non-capital $building_barracks$ will be destroyed"
+sepoy_mutiny_events.3.tt_2: "The following will be true for all [Concept('concept_presidency', '$concept_presidencies$')], based on their [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]:\n• Indian rebels will take control of relevant [Concept('concept_state', '$concept_states$')]\n• Radicals and negative [Concept('concept_modifier','$concept_modifiers$')] will be added in all constituent [Concept('concept_state', '$concept_states$')]\n• A random non-capital $building_barrack$ will be destroyed"
 
 sepoy_mutiny_events.4.t: "India in Flames"
 sepoy_mutiny_events.4.d: "Sepoys in the employ of the [SCOPE.sCountry('eic_scope').GetName] have mutinied against their old masters, throwing British India into disarray. Hawkish members of the [ROOT.GetCountry.GetAdjective] court loudly argue for us to join the rebel cause, so we may oust the British from India together."
@@ -152,11 +145,11 @@ sepoy_mutiny_events.10.a: "Punish all who participate."
 sepoy_mutiny_events.10.b: "Punish all troops."
 
 sepoy_mutiny_progress_bar_bengal_name:1 "Bengal Presidency [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]"
-sepoy_mutiny_progress_bar_bengal_desc: "#bold Bengal Presidency#![SCOPE.GetRootScope.GetCountry.GetCustom('get_sepoy_mutiny_progress_bengal')]"
+sepoy_mutiny_progress_bar_bengal_desc: "#bold Bengal Presidency#![JournalEntry.GetCustom('get_sepoy_mutiny_progress_bengal')]"
 sepoy_mutiny_progress_bar_bombay_name:1 "Bombay Presidency [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]"
-sepoy_mutiny_progress_bar_bombay_desc: "#bold Bombay Presidency#![SCOPE.GetRootScope.GetCountry.GetCustom('get_sepoy_mutiny_progress_bombay')]"
+sepoy_mutiny_progress_bar_bombay_desc: "#bold Bombay Presidency#![JournalEntry.GetCustom('get_sepoy_mutiny_progress_bombay')]"
 sepoy_mutiny_progress_bar_madras_name:1 "Madras Presidency [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]"
-sepoy_mutiny_progress_bar_madras_desc: "#bold Madras Presidency#![SCOPE.GetRootScope.GetCountry.GetCustom('get_sepoy_mutiny_progress_madras')]"
+sepoy_mutiny_progress_bar_madras_desc: "#bold Madras Presidency#![JournalEntry.GetCustom('get_sepoy_mutiny_progress_madras')]"
 
 je_avert_sepoy_mutiny:0 "An Unstable Raj"
 je_avert_sepoy_mutiny_reason:0 "Opposition to Company rule on the Indian subcontinent is mounting, even within the ranks of our own local soldiers. A rebellion may be averted yet."
@@ -169,7 +162,7 @@ je_uneasy_raj_tt_2: "The [Concept('concept_presidency_stability','$concept_presi
 je_uneasy_raj_tt_3: "#bold Bengal Presidency#!\nConsists of the [Concept('concept_strategic_region','$concept_strategic_regions$')] of $region_bengal$, $region_central_india$, and $region_punjab$.\n\n#bold Bombay Presidency#!\nConsists of the [concept_strategic_region] of $region_bombay$.\n\n#bold Madras Presidency#!\nConsists of the [concept_strategic_region] of $region_madras$."
 je_uneasy_raj_tt_4:1 "The severity of the revolt will be decided by the [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] of each of the three [Concept('concept_presidency', '$concept_presidencies$')], ranging from minor unrest and defections to a total collapse of British authority.\n\nWhen the revolt breaks out [Concept('concept_princely_state','$concept_princely_states$')] with #bold high#! [concept_liberty_desire] will join the rebels, the ones with #bold medium#! will stay neutral, and those with #bold low#! will actively fight on our side."
 je_uneasy_raj: "The Unstable Raj"
-je_uneasy_raj_reason: "Unrest is brewing in the three [Concept('concept_presidency', '$concept_presidencies$')] of the [SCOPE.GetRootScope.GetCountry.GetNameNoFlag].\n\nTroubled by harsh [Concept('concept_taxes','$concept_taxation$')] regimes, increasing disrespect for local customs and territorial expansion at the expense of native princes, Indian opposition to Company rule has been mounting in recent years.\n\nWorse still, discord can be found even within the proud ranks of the native sepoy regiments, who resent any challenge to their traditional status and privileges.\n\n#bold Sepoy Mutiny#!\nIf the [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] of any $concept_presidency$ is #bold medium#! ([GetPlayer.MakeScope.ScriptValue('uneasy_raj_stability_medium_upper_bound')]) or less for #variable 100#! months, India will erupt in #tooltippable #tooltip:je_uneasy_raj_tt_4 #bold open rebellion#!#!#!. Currently this has been true for #variable [ROOT.GetCountry.MakeScope.Var('sepoy_mutiny_timer_var').GetValue]#! months."
+je_uneasy_raj_reason: "Unrest is brewing in the three [Concept('concept_presidency', '$concept_presidencies$')] of the [SCOPE.sCountry('raj_scope').GetName].\n\nTroubled by harsh [Concept('concept_taxes','$concept_taxation$')] regimes, increasing disrespect for local customs and territorial expansion at the expense of native princes, Indian opposition to Company rule has been mounting in recent years.\n\nWorse still, discord can be found even within the proud ranks of the native sepoy regiments, who resent any challenge to their traditional status and privileges.\n\n#bold Sepoy Mutiny#!\nIf the [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] of any $concept_presidency$ is #bold medium#! ([GetPlayer.MakeScope.ScriptValue('uneasy_raj_stability_medium_upper_bound')]) or less for #variable 100#! months, India will erupt in #tooltippable #tooltip:je_uneasy_raj_tt_4 #bold open rebellion#!#!#!. Currently this has been true for #variable [ROOT.GetCountry.MakeScope.Var('sepoy_mutiny_timer_var').GetValue]#! months."
 
 sepoy_mutiny_very_low_key:1 " [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]: #bold Critical#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)"
 sepoy_mutiny_low_key:1 " [Concept('concept_presidency_stability','$concept_presidency_stability_short$')]: #bold Low#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/300)"
@@ -228,7 +221,7 @@ je_uneasy_raj_on_fail_header: "#title If triggered #b Indian Uprising#!:#!\n$EFF
 je_uneasy_raj_complete_header: "#title Will solidify #b Company Rule#! if:#!\n"
 je_uneasy_raj_on_complete_header: "#title If solidifed #b Company Rule#!:#!\n$EFFECT$"
 
-british_raj_later_tt: "Upon surviving the #b Indian Uprising#!, the [ROOT.GetCountry.GetName] will be reorganized into the #b [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] Raj#!"
+british_raj_later_tt: "Upon surviving the #b Indian Uprising#!, the [SCOPE.sCountry('raj_scope').GetName] will be reorganized into the #b [SCOPE.sCountry('raj_scope').GetTopOverlord.GetAdjectiveNoFormatting] Raj#!"
 home_rule_unavailable_tt: "Whilst #b Company Rule#! persists, #v $je_india_home_rule$#! will be unachievable"
 
 dyn_c_bengal_presidency: "Bengal Presidency"
@@ -442,11 +435,8 @@ lease_of_berar_income: "Berar Lease Income"
 pressure_to_sell_berar_province: "Lease Hyderabadi Berar"
 pressure_to_sell_berar_province_desc: "Hyderabad has long neglected to properly enforce its rule in Berar, leaving the province prone to banditry and general lawlessness. The interior office advise that we assume direct control in Berar, in exchange for an annual payment made to its current ruler."
 
-je_uneasy_raj_tracker: "$je_uneasy_raj$"
-je_uneasy_raj_tracker_reason: "Unrest is brewing in the three [Concept('concept_presidency', '$concept_presidencies$')] of the [SCOPE.sCountry('british_india_scope').GetName].\n\nTroubled by harsh [Concept('concept_taxes','$concept_taxation$')] regimes, increasing disrespect for local customs and territorial expansion at the expense of native princes, Indian opposition to Company rule has been mounting in recent years.\n\nWorse still, discord can be found even within the proud ranks of the native sepoy regiments, who resent any challenge to their traditional status and privileges.\n\n#bold Sepoy Mutiny#!\nIf the [Concept('concept_presidency_stability','$concept_presidency_stability_short$')] of any $concept_presidency$ is #bold medium#! ([GetPlayer.MakeScope.ScriptValue('uneasy_raj_stability_medium_upper_bound')]) or less for #variable 100#! months, India will erupt in #tooltippable #tooltip:je_uneasy_raj_tt_4 #bold open rebellion#!#!#!. Currently this has been true for #variable [SCOPE.sCountry('british_india_scope').MakeScope.Var('sepoy_mutiny_timer_var').GetValue]#! months."
-
 indian_uprising_triggered_tt: "The #b Indian Uprising#! will be triggered"
 
-accepts_south_asian_culture_tt: "Any $heritage_group_south_asian$ [concept_culture] has a base [concept_acceptance] of #v 60#! or above."
+accepts_south_asian_culture_tt: "Any $heritage_group_south_asian$ [concept_culture] has an average [concept_acceptance] of #v 60#! or above."
 
 hokkaido_colonization_modifier: "Ezo Contract-Fishery System"
