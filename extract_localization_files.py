@@ -365,6 +365,11 @@ def main():
     create_github_release(REPO_OWNER, REPO_NAME, MY_GITHUB_TOKEN, tag_name, tag_name,
                           f"Branch public: {public_id}")
 
+    run_github_actions(
+        repository_name=f"{REPO_OWNER}/{REPO_NAME}",
+        event_type="import_localization_files",
+        token=MY_GITHUB_TOKEN
+    )
 
 def jp_filter(src, dst):
     if re.search(r"l_japanese.yml$", src):
@@ -374,6 +379,34 @@ def jp_filter(src, dst):
 def en_filter(src, dst):
     if re.search(r"l_english.yml$", src):
         shutil.copy2(src, dst)
+
+
+def run_github_actions(repository_name: str, event_type: str, token: str):
+    """
+    GitHub repository_dispatch を実行する
+
+    :param repository_name: "owner/repo" 形式
+    :param event_type: dispatch の event_type
+    :param token: GitHub Personal Access Token
+    """
+    url = f"https://api.github.com/repos/{repository_name}/dispatches"
+
+    headers = {
+        "Authorization": f"token {token}",
+        "Accept": "application/vnd.github.v3+json",
+    }
+
+    payload = {
+        "event_type": event_type
+    }
+
+    response = requests.post(url, headers=headers, json=payload)
+
+    # 成功時は 204 No Content
+    if response.status_code != 204:
+        raise RuntimeError(
+            f"GitHub API error: {response.status_code} {response.text}"
+        )
 
 
 if __name__ == "__main__":
