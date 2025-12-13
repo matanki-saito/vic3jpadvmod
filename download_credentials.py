@@ -22,8 +22,7 @@ def main():
                       region_name=region)
 
     s3 = session.resource('s3')
-    s3.Bucket(bucket_name).download_file("steamcmd/config.vdf",
-                                         "steamcmd/config/config.vdf")
+    s3.Bucket(bucket_name).download_file("config.vdf", "steamcmd/config/config.vdf")
 
 
 if __name__ == "__main__":
