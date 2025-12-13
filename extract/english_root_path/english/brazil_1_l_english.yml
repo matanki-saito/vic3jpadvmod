@@ -2,7 +2,7 @@
   pedro_dead: "Emperor Pedro II is dead"
   je_pedro_success: "The #bold Progress Bar#! is above #variable 50%#!"
   je_pedro_fail: "The #bold Progress Bar#! has reached #variable 0%#!"
-  je_pedro_fail_2: "The #bold Progress Bar#! is below #variable 50%#!"
+  je_pedro_fail_2: "The #bold Progress Bar#! is below or equal to #variable 50%#!"
   add_pedropoint: "The progress bar of the #Bold Magnanimous Monarch#! [concept_journal_entry] is advanced by #Bold 1#!"
   remove_pedropoint: "The progress bar of the #Bold Magnanimous Monarch#! [concept_journal_entry] is depleted by #Bold 1#!" 
   je_pedro_brazil: "Magnanimous Monarch"
@@ -156,25 +156,9 @@
  
  # Age of Caudillos
  je_caudillo: "The Age of Caudillos"
- je_caudillo_reason: "The status of the #bold Progress Bar#! will be determined by various #tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_advance positive#! or #tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_deplete negative#! conditions. The #bold Progress Bar#! reaching #bold 100#! will cement the power of military strongmen in [SCOPE.sCountry('caudillo_country_scope').GetName].\n\nDepleting the progress bar and keeping the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] out of government will destroy #bold Caudillismo#! in the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] and end the threat of military strongmen in the country.\n\n$je_coup_loc$\n\nFollowing our independence from Spain, a power vacuum was left in the place of the dismantled colonial governments, which was quickly filled by charismatic military leaders. These "caudillos" have come to define much of South American politics."
- je_coup_loc: "Whilst this [concept_journal_entry] is active, our nation will have an elevated chance of a [concept_coup], and any [Concept('concept_votes','$concept_voting$')] law enacted will gain the #b $amendment_electoral_clientelism$#! [concept_amendment]."
- je_electoral_meddling_loc: "Whilst this [concept_journal_entry] is active, any [Concept('concept_votes','$concept_voting$')] law enacted will gain the #b $amendment_electoral_clientelism$#! [concept_amendment].\n\n"
+ je_caudillo_reason: "The status of the #bold Progress Bar#! will be determined by various #tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_advance positive#! or #tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_deplete negative#! conditions. The #bold Progress Bar#! reaching #bold 100#! will cement the power of military strongmen in [SCOPE.sCountry('caudillo_country_scope').GetName]. Next month, the #bold Progress Bar#! will change by #variable [Country.MakeScope.Var('caudillo_next').GetValue|+=]#!.\n\nDepleting the progress bar and keeping the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] out of government will destroy #bold Caudillismo#! in the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] and end the threat of military strongmen in the country.\n\n#italic Following our independence from Spain, a power vacuum was left in the place of the dismantled colonial governments, which was quickly filled by charismatic military leaders. These "caudillos" have come to define much of South American politics.#!"
  je_caudillo_special_tooltip_advance: "The [concept_journal_entry] will end when the progress bar is either full or empty. \n\nThese factors will #bold advance#! the progress bar by #bold 1 per month each:#!\n• The [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] are [concept_powerful]\n• The [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] are [concept_in_government]\n• We have [GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName], [GetLawType('law_technocracy').GetName], or [GetLawType('law_single_party_state').GetName]\n• We have a [concept_general] or [concept_admiral] who has the [concept_popularity] of $POPULARITY_LOVED$\n• We have a [concept_ruler] with the #bold Authoritarian#! ideology"
  je_caudillo_special_tooltip_deplete: "The following factors will #bold deplete#! the progress bar by #bold 1 per month each#!:\n• The [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] are [concept_marginalized]\n• The [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] are not [concept_in_government]\n• We have [GetLawType('law_census_voting').GetName] or [GetLawType('law_universal_suffrage').GetName]\n• We have a [concept_politician] who is [Concept('concept_popularity','$loved$')], and belongs to any [concept_powerful] interest group that does not approve of [GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName], [GetLawType('law_technocracy').GetName], and [GetLawType('law_single_party_state').GetName]"
-
- je_caudillo_progress_bar: "The Age of Caudillos"
- je_caudillo_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%1]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/1200)"
-
- je_caudillo_progress_from_armed_forces_powerful: "[concept_powerful] [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
- je_caudillo_progress_from_armed_forces_in_government: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] [concept_in_government]"
- je_caudillo_progress_autocratic_laws: "[GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName], [GetLawType('law_technocracy').GetName], or [GetLawType('law_single_party_state').GetName] [Concept('concept_law', '$concept_laws$')]"
- je_caudillo_progress_from_marginalised_armed_forces: "[concept_marginalized] [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
- je_caudillo_progress_from_armed_forces_in_opposition: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] [concept_in_opposition]"
- je_caudillo_progress_from_loved_military_figure: "$POPULARITY_LOVED$ [concept_general] or [concept_admiral]"
- je_caudillo_progress_from_loved_politician: "$POPULARITY_LOVED$ [concept_politician] opposed to [GetLawType('law_autocracy').GetName], [GetLawType('law_oligarchy').GetName], [GetLawType('law_technocracy').GetName], and [GetLawType('law_single_party_state').GetName]"
- je_caudillo_progress_from_authoritarian_ruler: "[GetIdeology('ideology_authoritarian').GetName] [concept_ruler]"
- je_caudillo_progress_from_democracy: "[GetLawType('law_census_voting').GetName] or [GetLawType('law_universal_suffrage').GetName] [Concept('concept_law', '$concept_laws$')]"
-
  caudillo.1.t: "The Age of Caudillos"
  caudillo.1.d: "Following [ROOT.GetCountry.GetAdjective] independence from Spain, a power vacuum was left in place of the colonial government, which was quickly filled by charismatic [SCOPE.gsInterestGroup('army_scope').GetName] leaders. These "caudillos" have come to define much of South American politics."
  caudillo.1.f: "There was, once, a decree that all colonies would submit to the rule of their mother country. That all its goods and words would pass through her doors, and that she would judge them fairly. That she alone would be all they needed.\n\nThen there was Bonaparte, and the mother country made his puppet. Perhaps time had come for the children to fly. And fly they would, under a father's mailed fist. But this tale is yet to end."
@@ -223,6 +207,8 @@
  caudillo_rule_by_decree_modifier: "Rule by Decree"
  caudillo_decree_button: "Rule by Decree"
  caudillo_decree_button_desc: "The leader of our nation should not be burdened by bothersome governmental process, whether bureaucratic or democratic. If the nation is ordered to jump, it should ask "how high?""
+ ideology_constitutionalist: "Constitutionalist"
+ ideology_constitutionalist_desc: "#lore This group believes in constitutional rule and the role of strong democratic institutions in statecraft.#!"
  
  # Brazilian Nation-Building failure
  culture_brazil.7.t: "Failed Nation-Building"

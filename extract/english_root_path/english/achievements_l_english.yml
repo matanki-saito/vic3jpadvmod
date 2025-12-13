@@ -114,7 +114,7 @@
  ACHIEVEMENT_DESC_healthy_man_of_europe:2 "As the Ottomans, be the Greatest Power while having max level Public Health Insurance"
  ACHIEVEMENT_DESC_habsburg_resurgence:1 "As Austria, own Silesia and Prussia must be Minor Power or lower rank"
  ACHIEVEMENT_DESC_great_game:1 "As Russia, own the entire Central Asia region"
- ACHIEVEMENT_DESC_bourbon_for_everyone:2 "As Spain or Iberia headed by a Borbón ruler, have an average standard of living of at least 20 while remaining a monarchy"
+ ACHIEVEMENT_DESC_bourbon_for_everyone:1 "As Spain, have an average standard of living of at least 20 while remaining a monarchy"
  ACHIEVEMENT_DESC_manifest_mexico:3 "As Mexico, own the Pacific Coast, Great Plains & Texas, and have a higher Power Rank than the USA"
  ACHIEVEMENT_DESC_american_territory:1 "Starting as the Indian Territory, have the USA as a subject with no more than three states"
  ACHIEVEMENT_DESC_broken_promises:0 "As Italy join a diplomatic play against 2 or more of your allies"
@@ -192,8 +192,8 @@ ACHIEVEMENT_DESC_achievement_crush_the_commune: "As France, defeat the rebellion
 crush_the_commune_tt: "Defeated the rebellion of the Paris Commune"
 
 ACHIEVEMENT_achievement_military_junta: "Military Junta"
-ACHIEVEMENT_DESC_achievement_military_junta: "Have a Commander affiliated with the Armed Forces coup the government"
-achievement_military_junta.tt: "Have a Commander affiliated with the Armed Forces coup the government"
+ACHIEVEMENT_DESC_achievement_military_junta: "Have the Armed Forces coup the government"
+achievement_military_junta.tt: "Have the Armed Forces coup the government"
 
 ACHIEVEMENT_achievement_huge_ego_sorry: "Huge Ego, Sorry"
 ACHIEVEMENT_DESC_achievement_huge_ego_sorry: "Unite Germany and have Max Stirner rule your nation"
@@ -365,7 +365,6 @@ ACHIEVEMENT_DESC_achievement_champagne_socialist: "As France, have Council Repub
 has_company_cgv_tt: "Has established Confédération générale des vignerons as a Company"
 
 ACHIEVEMENT_achievement_systembolaget: "Systembolaget"
-ACHIEVEMENT_DESC_achievement_systembolaget: "As Sweden, have a Country Monopoly on Liquor"
 
 # National Awakening/1.10 Achievements
 ACHIEVEMENT_achievement_usga: "Viribus Unitis"
@@ -388,27 +387,7 @@ ACHIEVEMENT_achievement_biedermeier: "Biedermeier"
 ACHIEVEMENT_DESC_achievement_biedermeier: "As Austria, be the number 1 producer of art and furniture"
 ACHIEVEMENT_achievement_exactly_100: "EXACTLY 100!!!"
 ACHIEVEMENT_DESC_achievement_exactly_100: "As any independent country, have the fervor of any primary culture reach 100"
+ACHIEVEMENT_DESC_achievement_systembolaget: "As Sweden, have a Country Monopoly on Liquor"
+
 ACHIEVEMENT_achievement_all_quiet_on_the_western_front: "All Quiet on the Western Front"
 ACHIEVEMENT_DESC_achievement_all_quiet_on_the_western_front: "Have over a million battle casualties on a single front"
-
-# Iberian Twilight/1.12 Achievements
-ACHIEVEMENT_achievement_sugar_rush: "Sugar Rush"
-ACHIEVEMENT_DESC_achievement_sugar_rush: "As Cuba, have a 25% share of global sugar exports, and a total export volume of over 2000 units"
-ACHIEVEMENT_achievement_spanish_lake: "The Spanish Lake"
-ACHIEVEMENT_DESC_achievement_spanish_lake: "As Spain, complete the Reconquista Journal Entry"
-ACHIEVEMENT_achievement_a_las_barricadas: "A Las Barricadas"
-ACHIEVEMENT_DESC_achievement_a_las_barricadas: "As Spain, switch to an Anarchist revolution or secession, and win the ensuing conflict"
-ACHIEVEMENT_achievement_regeneration: "Regeneration"
-ACHIEVEMENT_DESC_achievement_regeneration: "As Spain, complete the Economic Regeneration Journal Entry without reducing objectives or employing creative accounting"
-ACHIEVEMENT_achievement_deconquista: "Deconquista"
-ACHIEVEMENT_DESC_achievement_deconquista: "As any Muslim country, convert Spain to Islam"
-ACHIEVEMENT_achievement_the_most_united_kingdom: "The Most United Kingdom"
-ACHIEVEMENT_DESC_achievement_the_most_united_kingdom: "As Portugal, have a Personal Union with both Brazil and Spain"
-ACHIEVEMENT_achievement_one_more_time: "One More Time"
-ACHIEVEMENT_DESC_achievement_one_more_time: "As the Phillipines, rebuild the Manila Cathedral after an earthquake"
-ACHIEVEMENT_achievement_portugal_is_not_a_small_country: "Portugal is Not a Small Country"
-ACHIEVEMENT_DESC_achievement_portugal_is_not_a_small_country: "As Portugal, own at least 12 states in Africa, and establish a direct land connection between Angola and Mozambique"
-ACHIEVEMENT_achievement_unanimity: "An Offer You Can’t Refuse"
-ACHIEVEMENT_DESC_achievement_unanimity: "Starting with at least two non-marginal Interest Groups opposing a law, remove all opposition to the law's enactment"
-ACHIEVEMENT_achievement_full_circle: "Full Circle"
-ACHIEVEMENT_DESC_achievement_full_circle: "Starting as Spain, win the Carlist Wars, and then elect the Carlist candidate after the Glorious Revolution"

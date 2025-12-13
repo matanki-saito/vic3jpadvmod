@@ -4,8 +4,8 @@
  dynamite_production_modifier:0 "Explosives Production"
  mining_production_modifier:0 "Mining Production"
  munitions_production_modifier:0 "Ammunition Production"
- je_shortform_building_munition_plant_tooltip:0 "Building is $building_munition_plant$"
- je_shortform_building_chemical_plant_tooltip:1 "Building is $building_explosives_factory$"
+ je_shortform_building_munition_plants_tooltip:0 "Building is $building_munition_plants$"
+ je_shortform_building_chemical_plants_tooltip:1 "Building is $building_explosives_factory$"
  je_shortform_building_mine_tooltip:0 "Building is Iron, Coal, Lead, or Sulfur Mines"
  je_combustion_engines:0 "Public Transit"
  je_combustion_engines_reason:0 "With personal transportation being the new crazy many in the nation feel as though we should focus on providing citizens with their own private forms of transportation at the expense of public transportation."
@@ -155,8 +155,6 @@
  je_hawaiian_interest:0 "Influencing Hawaii"
  je_hawaiian_interest_reason:0 "Recent developments in Hawaii have left an opening for the potential to secure the islands and thus bolster our influence in the region. If the Hawaiian Government cannot maintain control, we may be able to step in and secure the islands for ourselves."
  invalid_influence_hawaii_tt:1 "Hawaii coup occurs OR Hawaiian Government manages to avoid the coup."
- hawaii_coup_happened_tt: "The government of [SCOPE.sCountry('hawaii_scope').GetName] has fallen to a coup"
- hawaii_government_secured_tt: "The government of [SCOPE.sCountry('hawaii_scope').GetName] has secured its position"
  
  #Conscription enactment laws
  conscription_laws.1.t:0 "Filling The Ranks"
@@ -260,7 +258,21 @@
  decree_protests_dispersed:0 "Protests Dispersed"
  decree_let_them_protest:0 "Leave Them Be"
  decree_protests_handled:0 "Protests Allowed"
- 
+
+#Devout Flavor event
+ ideology_russian_patriarch:0 "Russian Orthodox Patriarchy"
+ ideology_russian_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, that the Tsar is above all and that the peasants deserve be serfs.#!"
+ ideology_orthodox_patriarch:0 "Orthodox Patriarchy"
+ ideology_orthodox_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, and that the right to rule comes from God.#!"
+ ideology_buddhist_moralist:0 "Buddhist Moralist"
+ ideology_buddhist_moralist_desc:0 "#lore The Buddhist path is clearly set out and that the theocracy is required to best guide the nation down the path it its teachings.#!"
+ ideology_hindu_moralist:0 "Hindu Moralist"
+ ideology_hindu_moralist_desc:0 "#lore Hindu Priests believe that bureaucrats should adhere to the caste system.#!"
+ ideology_hindu_moralist_british_india: "Hindu Moralist"
+ ideology_hindu_moralist_british_india_desc:0 "#lore Hindu Priests favor upholding the traditional Hindu caste system. Whilst India remains ruled by foreigners, they staunchly oppose the colonial government imposing their religion upon the populace.#!"
+ ideology_oriental_orthodox_patriarch:1 "Oriental Orthodox Patriarchy"
+ ideology_oriental_orthodox_patriarch_desc:1 "#lore The Oriental Orthodox Patriarchy believe that children's education should be a priority for the nation.#!"
+
 #Remove below later
  effect_qa_test_events.1.t:0 "Testing Effects?"
  effect_qa_test_events.1.d:0 "You are the true hero"
@@ -276,7 +288,7 @@
  healthcare_laws.1.c:0 "This isn't for the poor anyways."
  healthcare_laws.2.t:0 "Health Taxes"
  healthcare_laws.2.d:0 "With the calls for some form of healthcare system, many are questioning where the money for setting up the new Healthcare System will come from. Some are suggesting simply taking it out of our tax funds, while others insist the government should find another way to cover the costs."
- healthcare_laws.2.f:0 ""Let me get this straight, you expect us to not only pay for our own healthcare but someone else’s as well? I don't want the money I pay in taxes to be used so some random farmers to be able to get healthcare. That is not my responsibility. I have my own health and family to think of. I can’t possibly afford to look after everyone else in [ROOT.GetCountry.GetNameNoFormatting] as well.""
+ healthcare_laws.2.f:0 ""Let me get this straight, you expect us to not only pay for our own healthcare but someone else’s as well? I don't want the money I pay in taxes to be used so some random farmers to be able to get healthcare. That is not my responsibility. I have my own health and family to think of. I can’t possibly afford to look after everyone else in [ROOT.GetCountry.GetName] as well.""
  healthcare_laws.2.a:0 "Take it from the tax funds."
  healthcare_laws.2.b:0 "The government should cover the costs."
  healthcare_laws.2.c:0 "We can get by without it."
@@ -414,7 +426,7 @@
  expand_goods_production_complete_1_desc:3 "Well done! You have completed the first part of the Economic Dominance Objective. Continue to complete [Concept('journal_entry','$Journal Entries$')] to unlock additional tasks."
 
  je_refining_goods:0 "Refining our Production"
- je_refining_goods_status:2 "Have a level 4 [GetBuildingType('building_steel_mill').GetName] in a state."
+ je_refining_goods_status:2 "Have a level 4 [GetBuildingType('building_steel_mills').GetName] in a state."
  je_refining_goods_reason:2 "Having increased our raw [Concept('concept_good','$concept_goods$')] production, we should now look to refine these $concept_goods$ to increase potential for profits across our nation. Why import from others when we can make it ourselves?"
 
  je_specialized_goods:0 "Specialized Goods Production"
@@ -532,6 +544,10 @@
 
  hegemon_complete:1 "Hegemony Completed"
  hegemon_complete_desc:2 "Well done! You have completed the Hegemony Objective. Feel free to continue playing the game or try a different objective."
+
+#ideologies
+ ideology_isolationist_expansionism:0 "Frontier Expansion"
+ ideology_isolationist_expansionism_desc:0 "#lore This group fervently opposes immigration into the country. They are however enthusiastic about settling in newly seized territories.#!"
 
  modifier_industrial_barriers_nat_supremacy:0 "Racist Reactions"
  modifier_industrial_barriers_against_nat_supremacy:0 "Opposition to Discrimination"

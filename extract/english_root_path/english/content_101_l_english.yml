@@ -592,7 +592,7 @@
 
  ig_suppression_events.1000.t:0 "An Unflattering Article"
  ig_suppression_events.1000.d:0 "We have hired unscrupulous journalists to write damning articles about the [SCOPE.gsInterestGroup('negative_article_ig').GetName], harming their reputation."
- ig_suppression_events.1000.f:0 "The reporter for the [ROOT.GetCountry.GetAdjectiveNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')] twiddled his thumbs nervously, "Just one article and you'll pay off all my debts?" \n\n "Just one article but it has to be on the front page and it has to eviscerate the [SCOPE.gsInterestGroup('negative_article_ig').GetNameNoFormatting].""
+ ig_suppression_events.1000.f:0 "The reporter for the [ROOT.GetCountry.GetAdjectiveNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')] twiddled his thumbs nervously, "Just one article and you'll pay off all my debts?" \n\n "Just one article but it has to be on the front page and it has to eviscerate the [SCOPE.gsInterestGroup('negative_article_ig').GetName].""
  ig_suppression_events.1000.a:0 "The pen #BOLD is#! mightier."
  ig_suppression_events.1000.a.1:0 "The pen #BOLD is#! mightier than the lord."
  ig_suppression_events.1000.a.2:0 "The pen #BOLD is#! mightier than the gourd."

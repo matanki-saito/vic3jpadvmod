@@ -26,9 +26,7 @@
  LIBERTY_SUBJECT_DESIRE_WEEKLY_CHANGE_DESC_ADDITIONAL_ADDS: "#indent_newline:3 additional agreements:\n[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetModifier.GetDescFor('country_liberty_desire_of_subjects_add')]#!"
  LIBERTY_DESIRE_WEEKLY_CHANGE_DESC_ADDITIONAL_MULTS: "#indent_newline:3 additional agreements:\n[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetModifier.GetDescFor('country_liberty_desire_add')][SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetModifier.GetDescFor('country_liberty_desire_increase_mult')][SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetModifier.GetDescFor('country_liberty_desire_decrease_mult')]#!"
 
- LIBERTY_DESIRE_WEEKLY_CHANGE_SOVEREIGNIST_IN_GOV: "A [concept_character] with [GetIdeology('ideology_sovereignist_leader').GetName] in [concept_government]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_CULTURAL_FERVOUR: "[concept_fervor] of [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetAdjective] [concept_primary_cultures]"
- LIBERTY_DESIRE_WEEKLY_CHANGE_SLAVE_REVOLT: "[concept_activism] and [concept_political_movement_support] of Slave Revolt [concept_political_movement]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_RELATIONS_HOSTILE: "Hostile Relations"
  LIBERTY_DESIRE_WEEKLY_CHANGE_RELATIONS_COLD: "Cold Relations"
  LIBERTY_DESIRE_WEEKLY_CHANGE_RELATIONS_POOR: "Poor Relations"
@@ -64,7 +62,7 @@
  LIBERTY_DESIRE_WEEKLY_CHANGE_ANTI_LOBBY_INTEREST_GROUP_IN_OPPOSITION: "[concept_clout] of Anti-[concept_overlord] [concept_political_lobby] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_opposition]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_SCALING_LOW: "[concept_change_rate_scaling] from Low [concept_liberty_desire]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_SCALING_HIGH: "[concept_change_rate_scaling] from High [concept_liberty_desire]"
-
+ 
  #Liberty desire from army projection power
 
  LIBERTY_DESIRE_WEEKLY_CHANGE_NO_ARMY_POWER_PROJECTION_POSITIVE: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName] has no army"

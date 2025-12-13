@@ -33,7 +33,9 @@
  SETTING_ANISOTROPIC_FILTERING: "テクスチャフィルタリング"
  SETTING_ANISOTROPIC_FILTERING_TOOLTIP: "#T $SETTING_ANISOTROPIC_FILTERING$\n#!アニソトロピックフィルタリングはテクスチャの表面の見た目を良くします。\n\n低く設定するとパフォーマンスが向上します。"
  SETTING_RESOLUTION: "解像度"
- SETTING_RESOLUTION_TOOLTIP: "#T $SETTING_RESOLUTION$\n#!ゲームのイメージの品質を決定します。\n\n低解像度はパフォーマンスを向上させる場合があります。\n\n#X サポートされていないアスペクト比のゲーム解像度を有効にすると、インターフェイスがスクリーンの外にはみ出る場合があります。#!"
+ SETTING_RESOLUTION_TOOLTIP: "#T $SETTING_RESOLUTION$\n#!ゲームのイメージの品質を決定します。\n\n低解像度はパフォーマンスを向上させる場合があります。\n\n#X サポートしていなアスペクト比のゲーム解像度は、インターフェイスをスクリーンの外にはみ出させｒる場合があります。"
+ SETTING_WINDOWED_RESOLUTION: "ウィンドウ解像度"
+ SETTING_WINDOWED_RESOLUTION_TOOLTIP: "#T $SETTING_WINDOWED_RESOLUTION$\n#!ウィンドウモードのゲームの解像度を決定します。\n\n#b 数字#!x#b 数字#!の形式である必要があります。\n\n#X サポートしていないアスペクト比のゲーム解像度は、インターフェイスをスクリーン外にはみ出させる場合があります。#!"
  SETTING_RENDER_SCALE: "レンダラースケール"
  SETTING_RENDER_SCALE_TOOLTIP: "#T $SETTING_RENDER_SCALE$#!\nユーザーインターフェイスを除く、主な解像度に対するゲームのレンダー解像度の尺度です。\n\n低く設定するとパフォーマンスが向上する場合がありますが、全体的な忠実性が減少し、100%以上に設定すると忠実性は上がりますが、パフォーマンスが下がる可能性があります。"
  SETTING_RENDER_SCALE_FORMAT: "$VALUE|%0$"
@@ -58,7 +60,6 @@
  OPTION_LOW: "低"
  OPTION_MEDIUM: "中"
  OPTION_HIGH: "高"
- OPTION_VERY_HIGH: "非常に高速"
  OPTION_ULTRA: "ウルトラ"
  OPTION_CUSTOM: "カスタム"
  OPTION_DEFAULT: "デフォルト"
@@ -173,7 +174,7 @@
  NO_AUTOSAVE: "オートセーブなし"
  #Multiplayer
  SETTINGS_FILE_TRANSFER_SPEED: "ファイル転送速度"
- SETTINGS_FILE_TRANSFER_SPEED_TOOLTIP: "#T $SETTINGS_FILE_TRANSFER_SPEED$#!\nマルチプレイロビーでの、セーブデータファイル転送の最大速度を設定します。\n\n設定値を下げるとマルチプレイに参加する際のネットワーク安定性が向上する可能性がありますが、マルチプレイの読み込み時間に悪影響を及ぼします。\n\n最大速度はマルチプレイのホストが決定します。\n"
+ SETTINGS_FILE_TRANSFER_SPEED_TOOLTIP: "#T $File Transfer Speed$\n#!マルチプレイロビーでセーブファイルを転送する最高速度を設定します。\n\n低く設定すると、マルチプレイゲーム参加時のネットワークの安定性が向上しますが、マルチプレイロード時間に悪影響を与えます。"
  #Tools
  SETTING_MAP_EDITOR_AUTOSAVE_INTERVAL_MINUTES: "マップエディターオードセーブ（分）"
  SETTING_MAP_EDITOR_AUTOSAVE_INTERVAL_MINUTES_TOOLTIP: "マップエディターオードセーブ間隔（分）"

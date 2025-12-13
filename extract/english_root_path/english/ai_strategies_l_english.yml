@@ -113,8 +113,6 @@
  ai_strategy_unify_ethiopia_desc:0 "[COUNTRY.GetName] wants to unite the Ethiopian princes under their banner."
  ai_strategy_unify_china:0 "Unify China"
  ai_strategy_unify_china_desc:0 "[COUNTRY.GetName] wants to unite the Chinese warlords under their banner."
- ai_strategy_unify_south_africa: "Unify South Africa"
- ai_strategy_unify_south_africa_desc: "[COUNTRY.GetName] wants to bring all the lands of [concept_georegion_south_africa] under its control."
  ai_strategy_colonial_extraction: "Colonial Extraction"
  ai_strategy_colonial_extraction_desc: "As a colonial nation, [COUNTRY.GetName] seeks to extract and export raw resources at the behest of their colonial overlord."
  ai_strategy_socialism_in_one_country: "Socialism in One Country"

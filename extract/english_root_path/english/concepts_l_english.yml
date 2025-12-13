@@ -337,10 +337,6 @@
  concept_building_desc:2 "$concept_buildings$ drive your [Concept('concept_country','$concept_country_possessive$')] economy via the [concept_good_production] (and [concept_good_consumption]) of [Concept('concept_good','$concept_goods$')]. They can also produce a number of other useful effects, such as [concept_bureaucracy], [concept_infrastructure], and [concept_convoys].\n\nTo perform their functions they require a [concept_workforce] made up by [Concept('concept_pop', '$concept_pops$')] of different [Concept('concept_profession','$concept_professions$')], who receive a [concept_building_wage] in return for their labor.\n\nWhat functions a particular $concept_building$ serves is determined by its active [Concept('concept_production_method','$concept_production_methods$')], and the magnitude of its impact is determined by its [Concept('concept_building_level','$concept_building_level_short$')].[AddLocalizationIf(GetPlayer.IsValid,'concept_building_desc_added')]"
  concept_building_desc_added:1 "\n\nYou can [Concept('concept_construction','$concept_construct$')] new, or expand existing, $concept_buildings$ in each of your [Concept('concept_state','$concept_states$')] using your [GetBuildingType('building_construction_sector').GetName]."
 
- concept_building_group: "Building Group"
- concept_building_groups: "Building Groups"
- concept_building_group_desc: "A $concept_building_group$ is a group of [Concept('concept_building','$concept_buildings$')] most often used to describe similar $concept_buildings$ needed to fulfill certain conditions in, for example, [Concept('concept_journal_entry','$concept_journal_entries$')].\n\n#title Common $concept_building_groups$ are:#!#indent_newline:3 \n• [GetBuildingGroup('bg_agriculture').GetName]\n• [GetBuildingGroup('bg_plantations').GetName]\n• [GetBuildingGroup('bg_staple_crops').GetName]#!"
-
  concept_company: "Company"
  concept_companies: "Companies"
  concept_company_possessive: "Company’s"
@@ -432,13 +428,13 @@
 
  concept_available_battalions:0 "Available Battalions"
  concept_available_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] available [Concept('concept_battalion','$concept_battalions$')] include all $concept_battalions$ currently raised by [SelectLocalization(GetPlayer.IsValid,'concept_available_battalions_desc_added','barracks')] and/or [Concept('concept_conscription_center','$concept_conscription_centers$')]."
- concept_available_battalions_desc_added:0 "[GetBuildingType('building_barrack').GetName]"
+ concept_available_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
 
  concept_potential_battalions:0 "Potential Battalions"
  concept_potential_regulars:0 "Potential Regulars"
  concept_potential_conscripts:0 "Potential Conscripts"
  concept_potential_battalions_desc:2 "A [Concept('concept_country','$concept_country_possessive$')] maximum potential [Concept('concept_battalion','$concept_battalions$')] is the sum of the its Potential Regular $concept_battalions$ and Potential [Concept('concept_conscript_battalion','$concept_conscript_battalions$')].\n\n#b Potential Regular $concept_battalions$#!: the number of $concept_battalions$ the $concept_country$'s currently constructed [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_added','barracks')] are able to support\n\n#b Potential $concept_conscript_battalions$#!: the number of $concept_conscript_battalions$ the $concept_country$'s [SelectLocalization(GetPlayer.IsValid,'concept_potential_battalions_desc_additional','conscription center')]s would create if [Concept('concept_conscription_center','$concept_conscription$')] had been activated across all [Concept('concept_state','$concept_states$')]"
- concept_potential_battalions_desc_added:0 "[GetBuildingType('building_barrack').GetName]"
+ concept_potential_battalions_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
  concept_potential_battalions_desc_additional:0 "[GetBuildingType('building_conscription_center').GetName]"
 
  concept_conscription_center:0 "Conscription Center"
@@ -482,7 +478,6 @@
  concept_province_desc:2 "Subdivisions of [Concept('concept_state', '$concept_states$')], each with its own [concept_terrain]. $concept_provinces$ are transferred between $concept_states$ during [Concept('concept_colony','$concept_colonization$')], and can be temporarily transferred between [Concept('concept_theater','$concept_theaters$')] during [concept_war] as the outcome of [Concept('concept_battle','$concept_battles$')]."
 
  concept_battle_condition:0 "Battle Condition"
- concept_battle_conditions: "Battle Conditions"
  concept_battle_condition_short:0 "Condition"
  concept_battle_condition_desc:0 "During [Concept('concept_battle','$concept_battles$')] each side will be affected by a $concept_battle_condition$ that influences the outcome. Which $concept_battle_condition_short$ applies depends on a number of factors, which often includes the [Concept('concept_character_trait','$concept_character_traits$')] of the [Concept('concept_commander','$concept_commanders$')] in charge of that side."
 
@@ -569,7 +564,6 @@
  concept_incorporated_state:0 "Incorporated State"
  concept_incorporated_states:1 "Incorporated States"
  concept_incorporate_state:0 "Incorporate State"
- concept_incorporated_state_possessive: "Incorporated State’s"
  concept_incorporate:0 "Incorporate"
  concept_incorporated:0 "Incorporated"
  concept_incorporating:0 "Incorporating"
@@ -597,20 +591,7 @@
 
  concept_law:0 "Law"
  concept_laws:0 "Laws"
- concept_law_desc:4 "$concept_laws$ sets the ground rules for how your [concept_country] operates and is governed. The effects of a $concept_law$ are determined both by the base effects of the $concept_law$ and those of any [Concept('concept_amendment','$concept_amendments$')] attached to it. Certain $concept_laws$ enable [Concept('concept_institution', '$concept_institutions$')] that provide further control. $concept_enactment_of_laws_potential$"
-
- concept_amendment: "Amendment"
- concept_amendments: "Amendments"
- concept_amendment_desc: "An $concept_amendment$ is an addition to a [concept_law] that alters its effects, sponsored by a specific [concept_interest_group]. If an $concept_interest$ will [Concept('concept_endorse_oppose','$concept_endorse_or_oppose$')] an $concept_amendment$ is determined by the [concept_parent_law] of the $concept_amendment$. $concept_amendment_repeal_desc$"
-
- concept_amendment_repeal: "Amendment Repeal"
- concept_repeal: "Repeal"
- concept_repealed: "Repealed"
- concept_repealing: "Repealing"
- concept_amendment_repeal_desc: "An [concept_amendment] may be $concept_repealed$ if the $concept_amendment$ is not on cooldown, and any [concept_interest_group] in [concept_government] [Concept('concept_endorse_oppose','$concept_opposes$')] the $concept_amendment$'s [concept_parent_law]."
-
- concept_parent_law: "Parent Law"
- concept_parent_law_desc: "The $concept_parent_law$ of an [concept_amendment] determines the [Concept('concept_endorse_oppose','$concept_stance$')] of an [concept_ideology] towards the $concept_amendment$. Each [concept_interest_group] will then [Concept('concept_endorse_oppose','$concept_endorse_or_oppose$')] an $concept_amendment$ depending on their $concept_ideologies$."
+ concept_law_desc:4 "$concept_laws$ sets the ground rules for how your [concept_country] operates and is governed. Certain $concept_laws$ enable [Concept('concept_institution', '$concept_institutions$')] that provide further control. $concept_enactment_of_laws_potential$"
 
  concept_enactment_setback: "Enactment Setback"
  concept_enactment_setbacks: "Enactment Setbacks"
@@ -689,7 +670,6 @@
  concept_interest_group:0 "Interest Group"
  concept_interest_groups:0 "Interest Groups"
  concept_interest_group_possessive:1 "Interest Group’s"
- concept_interest_group_plural_possessive:1 "Interest Groups’"
  concept_interest_group_desc:5 "A political faction within your [concept_country] that share a common interest. They are supported by [Concept('concept_pop', '$concept_pops$')] in relation to their [Concept('concept_interest_group_attraction','$concept_interest_group_attraction_short$')] to them, and the [concept_clout] they enjoy is based directly on the supporting $concept_pops$' [concept_political_strength]. $concept_interest_groups$ have a number of [Concept('concept_ideology', '$concept_ideologies$')], causing them to [Concept('concept_endorse_oppose','$concept_endorse_or_oppose$')] different [Concept('concept_law', '$concept_laws$')].\n\nThey also have three [Concept('concept_interest_group_trait', '$concept_interest_group_traits$')] that are activated on different [concept_approval] levels. Their [Concept('concept_leader','$concept_leader_possessive$')] personal $concept_ideology$ also rubs off on the $concept_interest_group$."
 
  concept_interest_group_attraction:0 "Interest Group Attraction"
@@ -751,11 +731,9 @@
  concept_oppose:0 "Oppose"
  concept_opposes:0 "Opposes"
  concept_opposed: "Opposed"
- concept_opposing: "Opposing"
  concept_indifferent:0 "Indifferent"
  concept_endorses_and_opposes:0 "$concept_endorses$ and $concept_opposes$"
  concept_endorse_or_oppose: "$concept_endorse$ or $concept_oppose$"
- concept_stance: "Stance"
  concept_endorse_oppose_desc:2 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_endorsement$ or $concept_opposition$ of a [concept_law] is determined by their [Concept('concept_ideology','$concept_ideologies$')]. $concept_enactment_of_laws_potential$"
 
  concept_ideology:0 "Ideology"
@@ -807,7 +785,6 @@
 
  concept_decentralized_nation:1 "Decentralized Nation"
  concept_decentralized_nations:3 "Decentralized Nations"
- concept_decentralized: "Decentralized"
  concept_decentralized_nation_desc:1 "A [Concept('concept_country','$concept_country_nation$')] that share most properties of $concept_countries$ - [Concept('concept_pop','$concept_pops$')], a [concept_ruler], [Concept('concept_building','$concept_buildings$')], [Concept('concept_law','$concept_laws$')] and so on - but with a lack of centralized power (and/or will) to enforce borders. This makes them prone to [Concept('concept_colony','$concept_colonization$')] by $concept_countries$ who do not see them as equals to be properly [Concept('concept_diplomatic_play','$concept_diplomatic_play_negotiated$')] with for land rights.\n\n$concept_decentralized_nations$ are AI controlled and are not playable by humans."
 
  concept_arable_land:0 "Arable Land"
@@ -838,7 +815,7 @@
  concept_influential_desc:1 "$concept_influential_powerful_common$ An $concept_influential$ $concept_interest_group$'s [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] will have a lesser effect than if they were $concept_powerful$.\n\n$concept_interest_groups$ are considered $concept_influential$ while their $concept_clout$ is below [GetDefine('NPolitics','POWERFUL_IG_THRESHOLD')|%0v]."
 
  concept_marginalized:0 "Marginalized"
- concept_marginalized_desc:2 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy and cannot be included in the [concept_government]. A $concept_marginalized$ $concept_interest_group$ that is supported by at least [GetDefine('NPolitics','MARGINAL_IG_JOIN_PARTY_POPULATION_THRESHOLD')] will be able to join a [concept_party], and will cease being $concept_marginalized$ once they do so. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ that are not in a $concept_party$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
+ concept_marginalized_desc:2 "$concept_marginalized$ [Concept('concept_interest_group', '$concept_interest_groups$')] have too little [concept_clout] to be politically noteworthy. They cannot be included in the [concept_government], nor do they join [Concept('concept_party','$concept_parties$')]. Their [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] are deactivated for as long as they remain $concept_marginalized$.\n\nAlready $concept_marginalized$ $concept_interest_groups$ remain $concept_marginalized$ for as long as their $concept_clout$ is below [GetDefine('NPolitics','MARGINAL_IG_THRESHOLD')|%0v]. Non-$concept_marginalized$ $concept_interest_groups$ will become $concept_marginalized$ once their $concept_clout$ drops below [GetDefine('NPolitics','MARGINAL_IG_CUTOFF')|%0v], unless they are already [concept_in_government] in which case they do not become $concept_marginalized$ until removed."
 
  concept_politically_unaligned_aligned:1 "Politically Unaligned/Aligned"
  concept_politically_unaligned:1 "Politically Unaligned"
@@ -943,7 +920,7 @@
  concept_battalion:0 "Battalion"
  concept_battalions:1 "Battalions"
  concept_battalion_desc:3 "An army [concept_unit] in a [Concept('concept_country','$concept_country_possessive$')] military. They are created and maintained by [SelectLocalization(GetPlayer.IsValid,'concept_battalion_desc_added','Barracks')] and are commanded by [Concept('concept_general','$concept_generals$')]."
- concept_battalion_desc_added:0 "[GetBuildingType('building_barrack').GetName]"
+ concept_battalion_desc_added:0 "[GetBuildingType('building_barracks').GetName]"
 
  concept_flotilla:0 "Flotilla"
  concept_flotillas:0 "Flotillas"
@@ -962,8 +939,7 @@
 
  concept_legitimacy:1 "Legitimacy"
  concept_legitimate:0 "Legitimate"
- concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. $legitimacy_coup_loc$ Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
- legitimacy_coup_loc: "A $concept_government$ with high $concept_legitimacy$ is more [Concept('concept_coup_resistance','$concept_coup_resistant$')] to [Concept('concept_coup','$concept_coups$')]."
+ concept_legitimacy_desc:1 "A [Concept('concept_government','$concept_government_possessive$')] $concept_legitimacy$ measures how well the composition of the [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] fits with the [Concept('concept_country','$concept_country_possessive$')] [Concept('concept_law', '$concept_laws$')]. The lower the $concept_legitimacy$, the longer the time between attempts to [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enact$')] new $concept_laws$. Raising or lowering [concept_taxes] also has an impact on $concept_legitimacy$."
 
  concept_acceptance: "Acceptance"
  concept_accepted: "Accepted"
@@ -1169,16 +1145,16 @@
 
  concept_open_market:0 "Market Opening"
  concept_open_market_short:0 "Open"
- concept_open_market_desc:3 "A [concept_war_goal] that can be claimed in a [concept_diplomatic_play] or as part of a [concept_peace_deal]. A [concept_country] forced to $concept_open_market_short$ its [concept_market] immediately changes its [SelectLocalization(GetPlayer.IsValid,'concept_open_market_desc_added','Trade Policy')] to [SelectLocalization(GetPlayer.IsValid,'concept_open_market_desc_added_2','Free Trade')] and may not change it again for #v [GetDefine('NDiplomacy','WAR_GOAL_OPEN_MARKET_MONTHS')|0] months#!. [ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(GetPlayer.IsValid,'concept_open_market_desc_added_3'))]"
+ concept_open_market_desc:3 "A [concept_war_goal] that can be claimed in a [concept_diplomatic_play] or as part of a [concept_peace_deal]. A [concept_country] forced to $concept_open_market_short$ its [concept_market] immediately changes its [SelectLocalization(GetPlayer.IsValid,'concept_open_market_desc_added','Trade Policy')] to [SelectLocalization(GetPlayer.IsValid,'concept_open_market_desc_added_2','Free Trade')] and may not change it again for #v [GetDefine('NDiplomacy','WAR_GOAL_OPEN_MARKET_MONTHS')|0] months#!. [AddLocalizationIf(GetPlayer.IsValid,'concept_open_market_desc_added_3')]"
  concept_open_market_desc_added:0 "[GetLawGroup('lawgroup_trade_policy').GetName]"
  concept_open_market_desc_added_2:0 "[GetLawType('law_free_trade').GetName]"
- concept_open_market_desc_added_3: "#title Additional effects during these [GetDefine('NDiplomacy','WAR_GOAL_OPEN_MARKET_MONTHS')|0] months#!:#!#indent_newline:3\n[GetStaticModifier('forced_market_opening').GetDesc]#!"
+ concept_open_market_desc_added_3:1 "\n\nThey are also subjected to the following effects for the duration:\n[GetStaticModifier('forced_market_opening').GetDesc]"
 
  concept_humiliation:0 "Humiliation"
  concept_humiliated:1 "Humiliated"
  concept_humiliate:1 "Humiliate"
- concept_humiliation_desc:2 "A [concept_war_goal] that can be claimed in a [concept_diplomatic_play] or as part of a [concept_peace_deal]. A $concept_humiliated$ [concept_country] is unable to launch any $concept_diplomatic_plays$ of their own against the $concept_country$ they were $concept_humiliated$ by for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_MONTHS')|0] months#!.[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(GetPlayer.IsValid, 'concept_humiliation_desc_added'))]"
- concept_humiliation_desc_added: "#title Additional effects during these #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_MONTHS')|0] months#!:#!#indent_newline:3 \n[GetStaticModifier('country_humiliated').GetDesc]#!"
+ concept_humiliation_desc:2 "A [concept_war_goal] that can be claimed in a [concept_diplomatic_play] or as part of a [concept_peace_deal]. A $concept_humiliated$ [concept_country] is unable to launch any $concept_diplomatic_plays$ of their own against the $concept_country$ they were $concept_humiliated$ by for a duration of #v [GetDefine('NDiplomacy','WAR_GOAL_HUMILIATION_MONTHS')|0] months#!.[AddLocalizationIf(GetPlayer.IsValid,'concept_humiliation_desc_added')]"
+ concept_humiliation_desc_added:0 "\n\nDuring this duration they are also subjected to the following effects:\n[GetStaticModifier('country_humiliated').GetDesc]"
 
  concept_customs_union:0 "Customs Union"
  concept_customs_union_desc:1 "An enforced pact between a [concept_senior_partner] and one or several [Concept('concept_junior_partner','$concept_junior_partners$')] to share a single [concept_market], under the leadership of the $concept_senior_partner$. Usually enforced via a [concept_power_bloc] [concept_power_bloc_principle]. Additionally, all [concept_subject] $concept_diplomatic_pacts_short$ also act as a $concept_customs_union$."
@@ -1232,8 +1208,8 @@
 
  concept_rank:0 "Rank"
  concept_ranks:0 "Ranks"
- concept_rank_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_rank$ is determined by measuring its [concept_prestige] relative to other $concept_countries$ worldwide. It determines what sorts of international activities you are permitted to engage in, what your people and the world expects of you, and where you stand in the global pecking order.[ConcatIfNeitherEmpty('\n', AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' ))]"
- concept_rank_ingame_added:1 "#title Your current $concept_rank$ of [GetPlayer.GetRank] gives you the following benefits:#!#indent_newline:3 \n[GetPlayer.GetRankModifier.GetDesc]#!"
+ concept_rank_desc:3 "A [Concept('concept_country','$concept_country_possessive$')] $concept_rank$ is determined by measuring its [concept_prestige] relative to other $concept_countries$ worldwide. It determines what sorts of international activities you are permitted to engage in, what your people and the world expects of you, and where you stand in the global pecking order.[AddLocalizationIf( GetPlayer.IsValid, 'concept_rank_ingame_added' )]"
+ concept_rank_ingame_added:1 "\n\nYour current $concept_rank$ is [GetPlayer.GetRank], which gives you the following benefits:\n[GetPlayer.GetRankModifier.GetDesc]"
 
  concept_migration:0 "Migration"
  concept_migration_internal: "Internal Migration"
@@ -1271,8 +1247,8 @@
 
  concept_capital_state:0 "Capital State"
  concept_capital_state_short:0 "Capital"
- concept_capital_state_desc:3 "The site of a [Concept('concept_country','$concept_country_possessive$')] central [concept_government]. Controlling the $concept_capital_state_short$ is of great importance during wartime, and [Concept('concept_pop','$concept_pops$')] who live there have a greater degree of [concept_political_strength] by which to influence politics.[ConcatIfNeitherEmpty('\n', AddLocalizationIf( GetPlayer.IsValid, 'concept_capital_state_desc_added' ))]"
- concept_capital_state_desc_added: "[GetStaticModifier('market_capital_state').GetDesc]"
+ concept_capital_state_desc:3 "The site of a [Concept('concept_country','$concept_country_possessive$')] central [concept_government]. Controlling the $concept_capital_state_short$ is of great importance during wartime, and [Concept('concept_pop','$concept_pops$')] who live there have a greater degree of [concept_political_strength] by which to influence politics.[AddLocalizationIf(GetPlayer.IsValid,'concept_capital_state_desc_added')]"
+ concept_capital_state_desc_added:0 "\nThe following effects apply:\n[GetStaticModifier('market_capital_state').GetDesc]"
 
  concept_treaty_port:0 "Treaty Port"
  concept_treaty_ports:0 "Treaty Ports"
@@ -1312,7 +1288,7 @@
 
  concept_prestige:0 "Prestige"
  concept_prestige_desc:3 "Your [concept_rank] is determined by comparing your $concept_prestige$ to all other [Concept('concept_country','$concept_countries$')] in the world. $concept_prestige$ originates primarily from how impressive your economy is as measured by your [concept_gdp], how much [concept_power_projection] your military forces generate, and your [concept_country_tier]. It can also be affected by other factors such as your [SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Arts Academy')] and [Concept('concept_monument','$concept_monuments$')], and if you are a world leader in the production of a certain [concept_good]."
- concept_prestige_desc_gamestate:0 "[GetBuildingType('building_art_academy').GetName]"
+ concept_prestige_desc_gamestate:0 "[GetBuildingType('building_arts_academy').GetName]"
 
  concept_power_projection:0 "Power Projection"
  concept_power_projection_desc:3 "The total capability of a [Concept('concept_country','$concept_country_possessive$')] military forces, based on an average of the [concept_offense] and [concept_defense] of all their [Concept('concept_unit', '$concept_units$')]. It forms the basis for the amount of [concept_prestige] that a [concept_country] gains from its army and navy, and also affects how powerful other $concept_countries$ perceive them to be when deciding to start or take sides in a [concept_diplomatic_play]."
@@ -1373,7 +1349,7 @@
  concept_unemployed_desc:3 "An $concept_unemployed$ [concept_pop] does not work in any of its [Concept('concept_state','$concept_state_possessive$')] [Concept('concept_building','$concept_buildings$')] and therefore does not collect a [concept_building_wage]. They are likely to take the next best job that comes along, and will likely [Concept('concept_migration','$concept_emigrate$')] if nothing comes along.\n\n$concept_pops$ living in a state will face an increasing penalty to $concept_pop_growth_birthrate$ proportional to the unemployement rate in that state, up to the following:\n[GetStaticModifier('unemployment_birth_penalty_state').GetDesc]#!"
 
  concept_cultural_turmoil:0 "Cultural Turmoil"
- concept_cultural_turmoil_desc: "The [concept_turmoil] generated by [Concept('concept_pop','$concept_pops$')] of a specific [concept_culture], generally from its proportion of [Concept('concept_radical','$concept_radicals$')]. If its value in a [concept_country] is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0], it might trigger a [concept_mass_migration] of that $concept_culture$ to another $concept_country$. Alternatively, at high enough values, those $concept_pops$ may instead attempt to separate their [Concept('concept_homeland','$concept_homelands$')] in a [concept_secession]."
+ concept_cultural_turmoil_desc: "The [concept_turmoil] generated by [Concept('concept_pop','$concept_pops$')] of a specific [concept_culture]. If its value in a [concept_country] is at least [GetDefine('NPops','MASS_MIGRATION_ORIGIN_MIN_TURMOIL')|v%0], it might trigger a [concept_mass_migration] of that $concept_culture$ to another $concept_country$. Alternatively, at high enough values, those $concept_pops$ may instead attempt to separate their [Concept('concept_homeland','$concept_homelands$')] in a [concept_secession]."
 
  concept_commander_rank:0 "Commander Rank"
  concept_commander_rank_short:0 "Rank"
@@ -1383,8 +1359,7 @@
  concept_commander:0 "Commander"
  concept_commanders:1 "Commanders"
  concept_commander_possessive:0 "Commander’s"
- concept_commander_desc:2 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. A $concept_commander$ can be either a [concept_general] or an [concept_admiral] depending on the type of [concept_military_formation] they are leading. Their [concept_commander_rank] contributes to the [concept_command_limit] of the $concept_military_formation$ they are in, and also impacts the amount of troops that they are able to bring with them into battle. $commander_coup_loc$"
- commander_coup_loc: "[Concept('concept_popularity', '$concept_popular$')] $concept_commanders$ belonging to an [concept_interest_group] with low [concept_approval] may initiate a [concept_coup]."
+ concept_commander_desc:2 "A [concept_character] in command of a part of a [Concept('concept_country','$concept_country_possessive$')] military forces. A $concept_commander$ can be either a [concept_general] or an [concept_admiral] depending on the type of [concept_military_formation] they are leading. Their [concept_commander_rank] contributes to the [concept_command_limit] of the $concept_military_formation$ they are in, and also impacts the amount of troops that they are able to bring with them into battle."
 
  concept_general:0 "General"
  concept_generals:1 "Generals"
@@ -1449,8 +1424,7 @@
  concept_approval:0 "Approval"
  concept_approval_disapproval:0 "Disapproval"
  concept_approval_indifferent:0 "Indifferent"
- concept_approval_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_approval$ depends on two main factors: how much of their [concept_political_strength] comes from [Concept('concept_radical','$concept_radicals$')] compared to [Concept('concept_loyalist','$concept_loyalists$')], and how well the [Concept('concept_country','$concept_country_possessive$')] current [Concept('concept_law','$concept_laws$')] match with the $concept_interest_group$'s [Concept('concept_ideology','$concept_ideologies$')]. In addition, if a new $concept_law$ is currently being [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')], $concept_approval$ will be affected by a larger temporary adjustment which will linger while [Concept('concept_decay','$concept_decaying$')] for up to #v [GetDefine('NPolitics','CHANGED_LAW_APPROVAL_MONTHS')|0] months#! after it has passed.\n\nAn $concept_interest_group$'s $concept_approval$ impacts which [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] they activate. [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] $concept_interest_groups$ contribute to the [Concept('concept_activism','$concept_activism_short$')] of [Concept('concept_political_movement','$concept_political_movements$')], while $concept_interest_groups$ that are at least [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY'))] will refrain from joining $concept_political_movements_short$ in the first place. $ig_approval_coup_loc$"
- ig_approval_coup_loc: "An $concept_interest_group$ with $concept_approval$ at or below [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] may launch a [concept_coup] against the sitting [concept_government]."
+ concept_approval_desc:1 "An [Concept('concept_interest_group','$concept_interest_group_possessive$')] $concept_approval$ depends on two main factors: how much of their [concept_political_strength] comes from [Concept('concept_radical','$concept_radicals$')] compared to [Concept('concept_loyalist','$concept_loyalists$')], and how well the [Concept('concept_country','$concept_country_possessive$')] current [Concept('concept_law','$concept_laws$')] match with the $concept_interest_group$'s [Concept('concept_ideology','$concept_ideologies$')]. In addition, if a new $concept_law$ is currently being [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')], $concept_approval$ will be affected by a larger temporary adjustment which will linger while [Concept('concept_decay','$concept_decaying$')] for up to #v [GetDefine('NPolitics','CHANGED_LAW_APPROVAL_MONTHS')|0] months#! after it has passed.\n\nAn $concept_interest_group$'s $concept_approval$ impacts which [Concept('concept_interest_group_trait','$concept_interest_group_traits$')] they activate. [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))] $concept_interest_groups$ contribute to the [Concept('concept_activism','$concept_activism_short$')] of [Concept('concept_political_movement','$concept_political_movements$')], while $concept_interest_groups$ that are at least [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_HAPPY'))] will refrain from joining $concept_political_movements_short$ in the first place."
 
  concept_insurrection: "Insurrection"
  concept_insurrections: "Insurrections"
@@ -1568,8 +1542,8 @@
  concept_declare_interest:0 "Declare Interest"
  concept_declared_interest_declare:0 "Declare"
  concept_declared_interest_declared:0 "Declared"
- concept_declared_interest_desc:2 "If you do not own at least one non-colonial [concept_state] in a [concept_state_region], but wish to maintain an [concept_interest] there anyway, you may choose to $concept_declared_interest_declare$ an $concept_interest$ there. The number of $concept_interests$ you can $concept_declared_interest_declare$ in such $concept_state_regions$ depends on your [concept_rank].[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf( GetPlayer.IsValid, 'concept_declared_interest_ingame_added' ))]"
- concept_declared_interest_ingame_added:1 "Your current number of $concept_declared_interests$ is [GetPlayer.GetNumDeclaredInterests]. Due to your $concept_rank$ of [GetPlayer.GetRank], the most you can $concept_declared_interest_declare$ is #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
+ concept_declared_interest_desc:2 "If you do not own at least one non-colonial [concept_state] in a [concept_state_region], but wish to maintain an [concept_interest] there anyway, you may choose to $concept_declared_interest_declare$ an $concept_interest$ there. The number of $concept_interests$ you can $concept_declared_interest_declare$ in such $concept_state_regions$ depends on your [concept_rank].[AddLocalizationIf(GetPlayer.IsValid, 'concept_declared_interest_ingame_added')]"
+ concept_declared_interest_ingame_added:1 "\n\nYour current number of $concept_declared_interests$ is [GetPlayer.GetNumDeclaredInterests]. Due to your $concept_rank$ of [GetPlayer.GetRank], the most you can $concept_declared_interest_declare$ is #tooltippable #tooltip:[GetPlayer.GetTooltipTag],MAX_DECLARED_INTERESTS_TOOLTIP [GetPlayer.CalcMaxNumDeclaredInterests|v]#!#!"
 
  concept_obligation:0 "Obligation"
  concept_obligations:0 "Obligations"
@@ -1584,7 +1558,7 @@
  concept_gdp_per_capita_short: "GDP per Capita"
  concept_gdp_per_capita_desc: "Your country's [concept_gdp] divided by its total [Concept('concept_pop','$concept_population$')]."
 
- concept_gdp_ownership: "GDP Ownership"
+ concept_gdp_ownership: "GDP Ownership" 
  concept_gdp_ownership_desc: "A [Concept('concept_country','$concept_country_possessive$')] [concept_gdp] can be both domestically owned by the $concept_country$ itself and foreignly owned by other $concept_countries$. If another $concept_country$ has [Concept('concept_foreign_investment_rights','$concept_foreign_investment_rights_short$')], they may foreignly own [Concept('concept_building_level','$concept_building_levels$')] in the initial $concept_country$. The $concept_gdp_short$ generated from those $concept_building_levels$ then contribute to the foreign $concept_country_possessive$ $concept_gdp_short$. Only domestically owned $concept_gdp_short$ contributes to the domestic $concept_country_possessive$ [concept_prestige] and [concept_budget_minting]."
 
  concept_education_access:0 "Education Access"
@@ -1673,9 +1647,6 @@
  concept_production_method_desc:3 "$concept_production_methods$ determine how [Concept('concept_building','$concept_buildings$')] operate. They impact\n\n- The [Concept('concept_good_consumption','$concept_input_goods$')] the $concept_building$ must purchase to operate\n- The [Concept('concept_good_production','$concept_output_goods$')] the $concept_building$ produces and sells\n- The distribution of [Concept('concept_profession','$concept_professions$')] among its [concept_workforce]\n\n$concept_production_methods$ can also have other effects, such as the generation of [Concept('concept_modifier','$concept_modifiers$')]. $concept_production_methods$ are organized in groups, in which only one can be active at a time. You can switch which $concept_production_method$ is active in each group as long as you meet the [concept_technology] and [concept_law] requirement for it."
 
  concept_nation_formation:0 "Nation Formation"
- concept_nation_formations: "Nation Formations"
- concept_nation_formation_short_past: "Formed"
- concept_nation_formation_short_present: "Form"
  concept_nation_formation_desc:1 "If a [concept_country] meets certain requirements, such as owning land in specific [Concept('concept_state_region','$concept_state_regions$')] and/or having discovered a certain $SOCIETY$ [concept_technology], they may be able to form a new $concept_country$ of a higher [concept_country_tier]. The possible $concept_countries$ are listed in the #b $NATION_FORMATION$#! tab in the #b Journal#! panel."
 
  concept_culture:0 "Culture"
@@ -1692,8 +1663,8 @@
 
  concept_primary_cultures:0 "Primary Cultures"
  concept_primary_culture:0 "Primary Culture"
- concept_primary_cultures_desc:4 "The [concept_culture] or $concept_cultures$ a [Concept('concept_country','$concept_country_nation_state$')] is primarily associated with. If a $concept_country$ [Concept('concept_nation_formation','forms a different')] $concept_country$ its $concept_primary_cultures$ may change, but will otherwise remain the same.[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(GetPlayer.IsValid,'concept_primary_cultures_ingame_added'))]"
- concept_primary_cultures_ingame_added:1 "The $concept_primary_cultures$ in [GetPlayer.GetName] are [GetPlayer.GetPrimaryCulturesDesc]."
+ concept_primary_cultures_desc:4 "The [concept_culture] or $concept_cultures$ a [Concept('concept_country','$concept_country_nation_state$')] is primarily associated with. If a $concept_country$ [Concept('concept_nation_formation','forms a different')] $concept_country$ its $concept_primary_cultures$ may change, but will otherwise remain the same.[AddLocalizationIf(GetPlayer.IsValid,'concept_primary_cultures_ingame_added')]"
+ concept_primary_cultures_ingame_added:1 "\n\nThe $concept_primary_cultures$ in [GetPlayer.GetName] are [GetPlayer.GetPrimaryCulturesDesc]."
 
  concept_discrimination_trait: "Discrimination Trait"
  concept_discrimination_traits: "Discrimination Traits"
@@ -1978,8 +1949,6 @@
 
  concept_command_limit:0 "Command Limit"
  concept_command_limit_desc:5 "$concept_command_limit$ determines how many [Concept('concept_battalion', '$concept_battalions$')] or [Concept('concept_flotilla','$concept_flotillas$')] can be effectively [Concept('concept_organization','$concept_organization_organized$')] under a [concept_military_formation]. You can increase $concept_command_limit$ by hiring more [Concept('concept_commander','$concept_commanders$')] or by giving them promotions to higher [Concept('concept_commander_rank','$concept_commander_ranks$')].\n\n#indent_newline:3 Having more [Concept('concept_unit','$concept_units$')] in a $concept_military_formation$ than its $concept_command_limit$ reduces the maximum $concept_organization$ a $concept_military_formation$ can reach, and additionally confers the following effects:\n[GetStaticModifier('low_command_limit').GetDesc]#!"
- concept_command: "Command"
- concept_commanded: "Commanded"
 
  concept_pop_qualifications: "Qualifications"
  concept_qualifying: "Qualifying"
@@ -1994,7 +1963,7 @@
  concept_hq_desc:5 "An $concept_hq$ ($concept_hq_long$) is the territory owned by a [concept_country] in a particular [concept_strategic_region]. All [Concept('concept_military_formation','$concept_military_formations$')] have a home $concept_hq$ and can be stationed in $concept_hqs$."
 
  concept_tax_waste:0 "Tax Waste"
- concept_tax_waste_desc:1 "The amount of [concept_taxes] collected that are wasted, due to inefficiencies or corruption, prior to entering the government coffers. This is often caused by a [concept_bureaucracy] deficit."
+ concept_tax_waste_desc:1 "The amount of [concept_taxes] collected that are wasted, due to inefficiencies or corruption, prior to entering the government coffers."
 
  concept_tax_capacity:0 "Taxation Capacity"
  concept_tax_capacity_desc:2 "Each point of Taxation Capacity in a [concept_state] allows for the efficient taxation of [GetDefine('NPops','INDIVIDUALS_TAXED_PER_TAX_CAPACITY')|vK] [Concept('concept_pop','$concept_pops$')]. If the population of a [concept_state] outgrows its Taxation Capacity, the efficiency of all forms of taxation will be reduced. Taxation Capacity can be increased through researching certain $SOCIETY$ $concept_technologies$ or constructing [SelectLocalization(GetPlayer.IsValid, 'concept_tax_capacity_desc_added','Government Administration')] [Concept('concept_building','$concept_buildings$')] in the [concept_state]."
@@ -2063,9 +2032,7 @@
  concept_busy_desc: "A [concept_character] can be considered $concept_busy$ when occupied with a certain assignment, such as being on an expedition. When $concept_busy$, the $concept_character$ is unavailable for their regular duties. For example, a [concept_commander] would be unable to participate in [Concept('concept_battle','$concept_battles$')]."
 
  concept_popularity:0 "Popularity"
- concept_popular:0 "Popular"
- concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. \n\n$concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]: #indent_newline:3 \n• [Concept('concept_agitator','$concept_agitators$')]: affects chance of [Concept('concept_pop', '$concept_pops$')] joining their [concept_political_movement] \n• [Concept('concept_ruler', '$concept_rulers$')]: adds or takes away [concept_authority] \n• [Concept('concept_admiral','$concept_admirals$')]/[Concept('concept_general', '$concept_generals$')]: affects chance of becoming an [concept_interest_group] [concept_leader] $popularity_coup_loc$ \n• [concept_interest_group] [Concept('concept_leader', '$concept_leaders$')]: affects [concept_interest_group_attraction] \n• [Concept('concept_party_leader', '$concept_party_leaders$')]: affects [concept_party] [concept_momentum] during [Concept('concept_election','$concept_elections$')] \n• [Concept('concept_executive','$concept_executives$')]: affects [concept_prosperity] and chance of becoming an [concept_interest_group] [concept_leader]"
- popularity_coup_loc: " and chance of launching a successful [concept_coup]"
+ concept_popularity_desc:2 "The $concept_popularity$ of a [concept_character] measures the willingness of [Concept('concept_pop','$concept_pops$')] to follow them. \n\n$concept_popularity$ can have different effects depending on the $concept_character$'s [concept_character_role]: #indent_newline:3 \n• [Concept('concept_agitator','$concept_agitators$')]: affects chance of [Concept('concept_pop', '$concept_pops$')] joining their [concept_political_movement] \n• [Concept('concept_ruler', '$concept_rulers$')]: adds or takes away [concept_authority] \n• [Concept('concept_admiral','$concept_admirals$')]/[Concept('concept_general', '$concept_generals$')]: affects chance of becoming an [concept_interest_group] [concept_leader] and chance of successful coups \n• [concept_interest_group] [Concept('concept_leader', '$concept_leaders$')]: affects [concept_interest_group_attraction] \n• [Concept('concept_party_leader', '$concept_party_leaders$')]: affects [concept_party] [concept_momentum] during [Concept('concept_election','$concept_elections$')] \n• [Concept('concept_executive','$concept_executives$')]: affects [concept_prosperity] and chance of becoming an [concept_interest_group] [concept_leader]"
 
  concept_momentum:0 "Momentum"
  concept_momentum_desc:1 "The success of a [Concept('concept_party','$concept_party_possessive$')] [concept_election] campaign. $concept_momentum$ increases the number of [concept_votes] a $concept_party$ gains on $concept_election$ day, and is nullified thereafter. $concept_momentum$ can be affected by random chance, special events, and the [concept_popularity] of its [concept_party_leader]."
@@ -2180,9 +2147,6 @@
  concept_unification_candidate_desc:1 "A $concept_unification_candidate$ is a [concept_country] considered a viable candidate for unification. The conditions for who qualifies as a $concept_unification_candidate$ varies depending on which unified nation it is. "
 
  concept_unification:0 "Country Unification"
- concept_unification_short: "Unification"
- concept_unify: "Unify"
- concept_unified: "Unified"
  concept_major_unification:0 "Major Unification"
  concept_minor_unification:0 "Minor Unification"
  concept_unification_desc:0 "The act of unifying and forming a new [concept_country] out of several $concept_countries$ is called Unification. A $concept_country$ can be formed by controlling a specific number of [Concept('concept_state','$concept_states$')] in the new $concept_country$'s region.\n\nA #b Major Unification#! allows $concept_countries$ to become [Concept('concept_unification_candidate','$concept_unification_candidates$')] which gives them access to the Unification [concept_diplomatic_play]. This $concept_diplomatic_play$ sets the [Concept('concept_war_goal','$concept_war_goals$')] to annex all the required $concept_states$ and $concept_countries$.\n\nWhile a #b Minor Unification#! do not allow any [Concept('concept_unification_candidate','$concept_unification_candidates$')] and can only form a $concept_country$ if the number of required $concept_states$ are controlled."
@@ -2495,9 +2459,6 @@
  concept_economic_dependence: "Economic Dependence"
  concept_economic_dependence_desc: "$concept_economic_dependence$ is the amount of economic reliance two [Concept('concept_country','$concept_countries$')] have between one another. The main influence of which is the amount of [Concept('concept_building','$concept_buildings$')] that are owned by the other $concept_country$. This can either be through direct ownership from a $concept_country$ or by [concept_pop] investors.\n\nBeing in a shared market will additionally take into consideration the difference in [concept_gdp] and the impact of each [Concept('concept_country','$concept_countries_possessive$')] produced [Concept('concept_good','$concept_goods$')] and owned $concept_buildings$ on $concept_pops$.\n\nIf the two $concept_countries$ are not in a shared market, the $concept_economic_dependence$ is impacted by [concept_trade]. The impact of this is dependent on the amount of $concept_trade$ between the two $concept_countries$ and the impact on $concept_good$ Market Balance."
 
- concept_electoral_confidence: "Electoral Confidence"
- concept_electoral_confidence_desc: "$concept_electoral_confidence$ is a measure in how much the electorate of a [concept_country] trusts that any elections held will be free and fair. Tampering with elections by rigging them in favor of a specific [concept_party] will lower $concept_electoral_confidence$, while allowing elections to proceed without interference will increase it. A low $concept_electoral_confidence$ will impact [concept_legitimacy] and the amount of [concept_political_strength] gained from votes, with the degree of effect varying based on your enacted [Concept('concept_law','$concept_laws$')] and [Concept('concept_amendment','$concept_amendments$')]."
-
  concept_princely_state: "Princely State"
  concept_princely_states: "Princely States"
  concept_princely_state_desc: "A $concept_princely_state$ is a state under the rule of a native Indian monarch subordinate to a European colonial power. They possess greatly different degrees of prominence within the Indian imperial system, but all are generally subject to a similar diplomatic arrangement."
@@ -2512,7 +2473,7 @@
 
  concept_georegion_europe: "Europe"
  concept_georegion_european: "European"
- concept_georegion_europe_desc: "Europe is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_iberia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_france').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_occitania').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_rhine').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_italy').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_danubia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_balkans').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_russia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dnieper').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_belarus').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_finland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic_states').GetName]"
+ concept_georegion_europe_desc: "Europe is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_north_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_south_germany').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_iberia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_france').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_occitania').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_rhine').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_italy').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_danubia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_balkans').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_poland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_russia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dnieper').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_belarus').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_finland').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_baltic_states').GetName]"
 
  concept_georegion_americas: "Americas"
  concept_georegion_americas_desc: "The Americas are a [concept_georegion] that consist of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_canada').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_new_england').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_pacific_coast').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_great_plains').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_the_midwest').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_dixie').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_mexico').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_central_america').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_caribbean').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_brazil').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_la_plata').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_andes').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_gran_colombia').GetName]"
@@ -2561,9 +2522,6 @@
  concept_georegion_southeast_asia: "Southeast Asia"
  concept_georegion_southeast_asia_desc: "Southeast Asia is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indonesia').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_indochina').GetName]"
 
- concept_georegion_south_africa: "South Africa"
- concept_georegion_south_africa_desc: "South Africa is a [concept_georegion] that consists of the following [Concept('concept_state_region','$concept_state_regions$')]:\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_NORTHERN_CAPE').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_CAPE_COLONY').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_EASTERN_CAPE').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_VRYSTAAT').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_TRANSVAAL').GetName]\n$EFFECT_LIST_BULLET$[GetStateRegion('STATE_ZULULAND').GetName]"
-
  concept_georegion_balkans: "The Balkans"
  concept_georegion_balkans_desc: "The Balkans is a [concept_georegion] that consists of the following [Concept('concept_strategic_region','$concept_strategic_regions$')]:\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_balkans').GetName]\n$EFFECT_LIST_BULLET$[GetStrategicRegion('region_danubia').GetName]"
 
@@ -2589,45 +2547,14 @@
  concept_house_of_obrenovic: "House of Obrenović"
  concept_house_of_obrenovic_short: "Obrenović"
  concept_house_of_obrenovic_desc: "The $concept_house_of_obrenovic$ is one of the two contending $SER_ADJ$ royal houses. They are descended from #b Miloš Obrenović#!, leader of the Second Serbian Uprising and founder of the autonomous Principality of Serbia. Supporters of the $concept_house_of_obrenovic_short$ typically favor improved [concept_relations] with #b Austria#!."
-
+ 
  concept_house_of_karadjordjevic: "House of Karađorđević"
  concept_house_of_karadjordjevic_short: "Karađorđević"
  concept_house_of_karadjordjevic_desc: "The $concept_house_of_karadjordjevic$ is one of the two contending $SER_ADJ$ royal houses. They are descended from #b Karađorđe#!, leader of the ill-fated First Serbian Uprising against the Ottoman Empire. Supporters of the $concept_house_of_karadjordjevic_short$ typically favor improved [concept_relations] with #b Russia#!."
 
- concept_lands_of_anarchy_control: "Control over the Lands of Anarchy"
- concept_lands_of_anarchy_control_short: "Control"
- concept_lands_of_anarchy_control_desc: "$concept_lands_of_anarchy_control_short$ represents the Makhzen's authority over the remote tribes of Morocco.\n\nThere is a bar for each surrounding [concept_state] to the [concept_capital_state]. A higher value indicates that the tribesfolk respect and fear the [concept_government]'s decisions more, thus enabling officials to carry out their tasks effectively. Each state's starting negative [concept_modifier] scales monthly based on its current value. Greater $concept_lands_of_anarchy_control_short$ results in less effective penalties, and vice versa.\n\nBy developing the chaotic state centers, creating more job opportunities, and fostering connections between urban and rural life, the tribes will gradually be influenced, reducing their isolation. Ultimately, their influence over the tribesmen will fade away.\n\nFailing to maintain $concept_lands_of_anarchy_control_short$ can prepare our downfall, leaving behind long-lasting effects on these states."
-
  concept_austrian_constitutional_pressure: "Constitutional Pressure"
  concept_austrian_constitutional_pressure_short: "Pressure"
  concept_austrian_constitutional_pressure_desc: "$concept_austrian_constitutional_pressure$ represents the strength and influence of the opposition to the neo-absolutist regime, and is tied to the preceived authority of the regime.\n\nShould $concept_austrian_constitutional_pressure$ reach #v 100#!, the neo-absolutist government will fall, and a constitution will be have to be granted. \n\n#title The following conditions #r #b increase#!#! $concept_austrian_constitutional_pressure_short$:#! #indent_newline:3 \n• Having a [concept_war_goal] enforced on you\n• Declaring [concept_bankruptcy]\n• Taking [concept_loans]\n• [Concept('concept_state','$concept_states$')] with [Concept('concept_radical','$concept_radicals$')]\n• [Concept('concept_interest_group','$concept_interest_groups$')] opposing [GetLawType('law_autocracy').GetName]\n• [Concept('concept_activism', '$concept_activism_short$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberal#!, #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialist#!, and $movement_cultural_minority_short$ [Concept('concept_political_movement','$concept_political_movements$')]\n• Having a [concept_bureaucracy] deficit\n• Events and other conditions #!\n\n#title The following conditions #g #b decrease#!#! $concept_austrian_constitutional_pressure_short$:#! #indent_newline:3 \n• Having a positive budget balance\n• Enforcing a [concept_war_goal] on a [concept_great_power]\n• [Concept('concept_state', '$concept_states$')] with [Concept('concept_loyalist','$concept_loyalists$')]\n• [Concept('concept_interest_group','$concept_interest_groups$')] supporting [GetLawType('law_autocracy').GetName]\n• [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] of $movement_royalist_absolutist_short$, $movement_religious_majority_short$, and $movement_cultural_majority_short$ [Concept('concept_political_movement','$concept_political_movements$')]\n• Having a [concept_bureaucracy] surplus\n• Events and other conditions #!"
-
- concept_coup: "Coup"
- concept_coups: "Coups"
- concept_coup_desc: "A $concept_coup$ is an attempt by a [concept_commander] and an $ig_approval_angry$ [concept_interest_group] to overthrow the sitting [concept_government]. The risk of a $concept_coup$ increases when a [concept_country] is ruled by a $concept_government$ with low [concept_legitimacy], and a large amount of [Concept('concept_unit','$concept_units$')] are concentrated under the [Concept('concept_command_limit','$concept_command$')] of a single $concept_commander$ with high [concept_popularity].\n\nOnce a $concept_coup$ begins, if its progress reaches #v 100%#!, the commander executing the $concept_coup$ will issue a [concept_pronunciamento]. A successful $concept_pronunciamento$ will cause the overthrow of the $concept_government$.\n\nThe progress of a $concept_coup$ is determined by the [concept_coup_strength] of the commander executing the $concept_coup$, evaluated against the [concept_coup_resistance] of the sitting government."
-
- concept_coup_strength: "Coup Strength"
- concept_coup_strength_short: "Strength"
- concept_coup_strength_desc: "$concept_coup_strength$ represents the ability for a [concept_commander] to successfully orchestrate a [concept_coup] against the sitting [concept_government]. A $concept_coup$ will #b progress#! when the $concept_commander$'s [concept_interest_group]'s [concept_approval] is #b negative#!, and the $concept_coup_strength$ of the $concept_commander$ orchestrating the $concept_coup$ is higher than the [concept_coup_resistance] of the sitting government.\n\nFactors contributing to $concept_coup_strength$ include:\n• High [concept_popularity]\n• Fraction of total [Concept('concept_unit','$concept_units$')] commanded\n• [concept_clout] of $concept_commander$ $concept_interest_group$\n• Proximity of the [concept_commander]'s [concept_military_formation] to the [concept_capital_state]"
-
- concept_coup_resistance: "Coup Resistance"
- concept_coup_resistance_short: "Resistance"
- concept_coup_resist: "Resist"
- concept_coup_resistant: "Resistant"
- concept_coup_resistance_desc: "$concept_coup_resistance$ represents the ability for a [concept_government] to fend off a [concept_coup] by a [concept_commander]. A $concept_coup$ will #b retreat#! when the $concept_coup_resistance$ of the sitting $concept_government$ is higher than the [concept_coup_strength] of the $concept_commander$ orchestrating the $concept_coup$.\n\nFactors contributing to $concept_coup_resistance$ include:\n• High [concept_government] [concept_legitimacy]\n• Level of [GetInstitutionType('institution_home_affairs').GetName] investment under [GetLawType('law_secret_police').GetName] or [GetLawType('law_national_guard').GetName] [Concept('concept_law', '$concept_laws$')]"
-
- concept_pronunciamento: "Pronunciamento"
- concept_pronunciamento_desc: "A $concept_pronunciamento$ is the final stage of a [concept_coup], in which a [concept_commander] declares opposition to the sitting [concept_government] and rallies their forces to support them. When a $concept_pronunciamento$ occurs, the [concept_coup_resistance] of the sitting $concept_government$ is compared to the [concept_coup_strength] of $concept_commander$ executing the $concept_coup$.\n\nIf the $concept_legitimacy$ of the government is higher than the $concept_popularity$ of the commander, the number of $concept_units$ $concept_commanded$ by the $concept_commander$ is too low, or if the $concept_coup$ is triggered by a Character Interaction, the $concept_government$ will have a chance to defend itself against the $concept_coup$. The $government$'s chance of successfully defending itself is determined by the ratio of [concept_coup_resistance] to the aforementioned factors.\n\nA successful $concept_pronunciamento$ will cause the overthrow of the $concept_government$. A failed $concept_pronunciamento$ will result in increased [Concept('concept_radical', '$concept_radicalism$')], and negative repercussions for the coupist $concept_commander$."
-
- concept_negotiation: "Negotiation"
- concept_negotiations: "Negotiations"
- concept_negotiating: "Negotiating"
- concept_negotiated: "Negotiated"
- concept_negotiate: "Negotiate"
- concept_negotiation_desc: "$concept_negotiate$ with an [concept_interest_group] during [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enactment$')] to convince them to change their stance on the currently $concept_enactment_of_laws_enacting$ [concept_law]. An $concept_interest_group_possessive$ willingness to $concept_negotiate$ is determined by their [concept_amenability]. The higher $concept_amenability$ they have the friendlier and more willing they will be to $concept_negotiate$.\n\n@indifferent! [Concept('concept_endorse_oppose', '$concept_indifferent$')] $concept_interest_groups$ must be @in_government! [concept_in_government] to be $concept_negotiated$ with while @disapproves! [Concept('concept_endorse_oppose', '$concept_opposing$')] $concept_interest_groups$ can be $concept_negotiated$ with when [concept_in_opposition].\n\nConvincing an $concept_interest_group$ to move from @disapproves! $concept_opposing$ to @indifferent! $concept_indifferent$ can be just as effective has convincing them to move from @indifferent! [Concept('concept_endorse_oppose', '$concept_indifferent$')] to @approves! [Concept('concept_endorse_oppose', '$concept_endorsing$')]."
-
- concept_amenability: "Amenability"
- concept_amenability_desc: "How willing an [concept_interest_group] is to [Concept('concept_negotiation', '$concept_negotiate$')] during the [concept_enactment_of_laws], higher value means more willing.\n\n#b 0 - [GetDefine('NPolitics', 'MIN_AMENABILITY_TENSE_NEGOTIATION')]#!:     Will #r refuse#! to $concept_negotiate$\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_TENSE_NEGOTIATION')] - [GetDefine('NPolitics', 'MIN_AMENABILITY_NORMAL_NEGOTIATION')]#!:   #v #r $negotiation_tier_3$#!#!\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_NORMAL_NEGOTIATION')] - [GetDefine('NPolitics', 'MIN_AMENABILITY_FRIENDLY_NEGOTIATION')]#!:   #v $negotiation_tier_2$#!\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_FRIENDLY_NEGOTIATION')] - 100#!: #v #g $negotiation_tier_1$#!#!"
 
  concept_obstinance: "Obstinance"
  concept_obstinate: "Obstinate"
@@ -2651,6 +2578,3 @@
  concept_integrated_culture_verb: "Integrates"
  concept_integrated_culture_process: "Integration"
  concept_integrated_culture_desc: "An $concept_integrated_culture$ is a [concept_culture] whose demands have been satisfactorily adressed during the process of organizing the #b $dyn_c_usga$#!. When a $concept_culture$ is $concept_integrated_culture_short$, it becomes a [Concept('concept_primary_cultures','$concept_primary_culture$')], and contributes to the progress of the #b $je_danubian_federation$#! [concept_journal_entry]. $concept_integrated_culture_short$ $concept_cultures$ may become [Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')] if their demands are contradicted following their $concept_integrated_culture_short$. $concept_disqualified_culture_present_verb$ a $concept_culture$ that has already been $concept_integrated_culture_short$ will lead to heavy penalties."
-
- concept_radicalized_interest_group: "Radicalized Interest Group"
- concept_radicalized_interest_group_desc: "When an [concept_interest_group]'s [concept_approval] is below [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))], it is said to be $concept_radicalized$. A $concept_radicalized$ $concept_interest_group$ is likely to become [Concept('concept_insurrection','$concept_insurrectionary$')], or stage a [concept_coup] against the sitting [concept_government]"

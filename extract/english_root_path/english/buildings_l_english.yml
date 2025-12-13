@@ -1,46 +1,46 @@
 ﻿l_english:
  building_food_industry:0 "Food Industries"
  building_food_industry_lens_option:0 "Expand $building_food_industry$"
- building_textile_mill:0 "Textile Mills"
- building_textile_mill_lens_option:0 "Expand $building_textile_mill$"
- building_tooling_workshop:0 "Tooling Workshops"
- building_tooling_workshop_lens_option:0 "Expand $building_tooling_workshop$"
- building_paper_mill:0 "Paper Mills"
- building_paper_mill_lens_option:0 "Expand $building_paper_mill$"
- building_shipyard:0 "Shipyards"
- building_shipyard_lens_option:0 "Expand $building_shipyard$"
- building_military_shipyard: "Military Shipyards"
- building_military_shipyard_lens_option: "Expand $building_military_shipyard$"
- building_chemical_plant:1 "Fertilizer Plants"
- building_chemical_plant_lens_option:0 "Expand $building_chemical_plant$"
+ building_textile_mills:0 "Textile Mills"
+ building_textile_mills_lens_option:0 "Expand $building_textile_mills$"
+ building_tooling_workshops:0 "Tooling Workshops"
+ building_tooling_workshops_lens_option:0 "Expand $building_tooling_workshops$"
+ building_paper_mills:0 "Paper Mills"
+ building_paper_mills_lens_option:0 "Expand $building_paper_mills$"
+ building_shipyards:0 "Shipyards"
+ building_shipyards_lens_option:0 "Expand $building_shipyards$"
+ building_military_shipyards: "Military Shipyards"
+ building_military_shipyards_lens_option: "Expand $building_military_shipyards$"
+ building_chemical_plants:1 "Fertilizer Plants"
+ building_chemical_plants_lens_option:0 "Expand $building_chemical_plants$"
  building_explosives_factory:0 "Explosives Factory"
  building_explosives_factory_lens_option:0 "Expand $building_explosives_factory$"
- building_furniture_manufactory:0 "Furniture Manufacturies"
- building_furniture_manufactory_lens_option:0 "Expand $building_furniture_manufactory$"
+ building_furniture_manufacturies:0 "Furniture Manufacturies"
+ building_furniture_manufacturies_lens_option:0 "Expand $building_furniture_manufacturies$"
  building_electrics_industry:0 "Electrics Industries"
  building_electrics_industry_lens_option:0 "Expand $building_electrics_industry$"
  building_arms_industry:0 "Arms Industries"
  building_arms_industry_lens_option:0 "Expand $building_arms_industry$"
- building_artillery_foundry:0 "Artillery Foundry"
- building_artillery_foundry_lens_option:1 "Expand $building_artillery_foundry$"
+ building_artillery_foundries:0 "Artillery Foundry"
+ building_artillery_foundries_lens_option:1 "Expand $building_artillery_foundries$"
  building_automotive_industry:0 "Automotive Industries"
  building_automotive_industry_lens_option:0 "Expand $building_automotive_industry$"
  building_motor_industry:0 "Motor Industries"
  building_motor_industry_lens_option:0 "Expand $building_motor_industry$"
- building_munition_plant:0 "Munition Plants"
- building_munition_plant_lens_option:0 "Expand $building_munition_plant$"
- building_synthetics_plant:0 "Synthetics Plants"
- building_synthetics_plant_lens_option:0 "Expand $building_synthetics_plant$"
- building_steel_mill:0 "Steel Mills"
- building_steel_mill_lens_option:0 "Expand $building_steel_mill$"
+ building_munition_plants:0 "Munition Plants"
+ building_munition_plants_lens_option:0 "Expand $building_munition_plants$"
+ building_synthetics_plants:0 "Synthetics Plants"
+ building_synthetics_plants_lens_option:0 "Expand $building_synthetics_plants$"
+ building_steel_mills:0 "Steel Mills"
+ building_steel_mills_lens_option:0 "Expand $building_steel_mills$"
  building_glassworks:0 "Glassworks"
  building_glassworks_lens_option:0 "Expand $building_glassworks$"
  building_coal_mine:0 "Coal Mines"
  building_coal_mine_lens_option:0 "Expand $building_coal_mine$"
  building_coffee_plantation:0 "Coffee Plantations"
  building_coffee_plantation_lens_option:0 "Expand $building_coffee_plantation$"
- building_vineyard:0 "Vineyards"
- building_vineyard_lens_option:0 "Expand $building_vineyard$"
+ building_vineyard_plantation:0 "Vineyards"
+ building_vineyard_plantation_lens_option:0 "Expand $building_vineyard_plantation$"
  building_cotton_plantation:0 "Cotton Plantations"
  building_cotton_plantation_lens_option:0 "Expand $building_cotton_plantation$"
  building_silk_plantation:0 "Silk Plantations"
@@ -74,9 +74,9 @@
  building_opium_plantation_lens_option:0 "Expand $building_opium_plantation$"
  building_orchard:0 "Orchards"
  building_orchard_lens_option:0 "Expand $building_orchard$"
- building_gold_field:0 "Gold Fields"
- building_gold_field_lens_option:0 "Expand $building_gold_mine$"
- building_gold_field_discovered_resource:0 "Gold"
+ building_gold_fields:0 "Gold Fields"
+ building_gold_fields_lens_option:0 "Expand $building_gold_mine$"
+ building_gold_fields_discovered_resource:0 "Gold"
  building_rubber_plantation:0 "Rubber Plantations"
  building_rubber_plantation_lens_option:0 "Expand $building_rubber_plantation$"
  building_rubber_plantation_discovered_resource:0 "Rubber"
@@ -100,11 +100,11 @@
  building_urban_center_lens_option:0 "Expand $building_urban_center$"
  building_power_plant:0 "Power Plants"
  building_power_plant_lens_option:0 "Expand $building_power_plant$"
- building_subsistence_farm:0 "Subsistence Farms"
- building_subsistence_orchard:0 "Subsistence Orchards"
- building_subsistence_pasture:0 "Subsistence Pastures"
- building_subsistence_fishing_village:0 "Subsistence Fishing Villages"
- building_subsistence_rice_farm:0 "Subsistence Rice Paddies"
+ building_subsistence_farms:0 "Subsistence Farms"
+ building_subsistence_orchards:0 "Subsistence Orchards"
+ building_subsistence_pastures:0 "Subsistence Pastures"
+ building_subsistence_fishing_villages:0 "Subsistence Fishing Villages"
+ building_subsistence_rice_paddies:0 "Subsistence Rice Paddies"
  building_construction_sector:0 "Construction Sector"
  building_banana_plantation:0 "Banana Plantations"
  building_banana_plantation_lens_option:0 "Expand $building_banana_plantation$"
@@ -114,7 +114,7 @@
  building_panama_canal_lens_option:0 "Construct $building_panama_canal$"
  UNEMPLOYED:0 "[concept_unemployed]"
 
- # Building Groups
+# Building Groups
  bg_subsistence:0 "Subsistence Farms"
  bg_service:0 "Service Industries"
  bg_agriculture:0 "Agriculture"
@@ -140,9 +140,7 @@
  bg_banana_plantations:0 "Banana Plantations"
  bg_light_industry:0 "Light Industries"
  bg_heavy_industry:0 "Heavy Industries"
- bg_military_industry: "Military Industries"
  bg_rye_farms:0 "Rye Farms"
- bg_staple_crops: "Staple Crops"
  bg_wheat_farms:0 "Wheat Farms"
  bg_rice_farms:0 "Rice Farms"
  bg_maize_farms:0 "Maize Farms"
@@ -181,13 +179,12 @@
  bg_manor_houses: "Manor Houses"
  bg_financial_districts: "Financial Districts"
  bg_extraction: "Extraction"
- bg_company_headquarter: "Company Headquarters"
 
- # Factories
-
+#Factories
 
 
- # Infrastructure
+
+  # Infrastructure
  building_port:0 "Port"
  building_railway:0 "Railway"
  building_trade_center:0 "Trade Center"
@@ -202,13 +199,13 @@
  building_trade_center_lens_option:0 "Create New Market"
  building_link_merge_markets_lens_option:0 "Merge Markets"
   
- # Academies
+  #Academies
  building_university:0 "University"
  building_university_lens_option:0 "Expand $building_university$"
- building_art_academy:0 "Arts Academy"
- building_art_academy_lens_option:0 "Expand $building_art_academy$"
+ building_arts_academy:0 "Arts Academy"
+ building_arts_academy_lens_option:0 "Expand $building_arts_academy$"
 
- # Colonies
+  #Colonies
  building_colony_military:0 "Military Colony"
  building_colony_military_lens_option:0 "Establish $building_colony_military$"
  building_colony_military_hover:0 "Establish #variable Military Colony#! in #variable [STATE.GetName]#!"
@@ -219,21 +216,21 @@
  building_colony_trade_lens_option:0 "Establish $building_colony_trade$"
  building_colony_trade_hover:0 "Establish #variable Trade Colony#! in #variable [STATE.GetName]#!"
 
- # Barracks
- building_barrack:0 "Barracks"
- building_barrack_lens_option:0 "Expand $building_barrack$"
+  #Barracks
+ building_barracks:0 "Barracks"
+ building_barracks_lens_option:0 "Expand $building_barracks$"
  building_naval_base:0 "Naval Base"
  building_naval_base_lens_option:0 "Expand $building_naval_base$"
  building_conscription_center:0 "Conscription Center"
 
- # National Buildings
+  #National Buildings
  building_government_administration:0 "Government Administration"
  building_government_administration_lens_option:0 "Expand $building_government_administration$"
 
- # Unlock tooltips
+  # Unlock tooltips
  tooltip_unlock_railways:0 "Allows construction of the Railway building"
   
- # Monuments
+  # Monuments
  building_eiffel_tower:0 "The Eiffel Tower"
  
  building_dummy:1 "#This is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI#!"
@@ -245,44 +242,20 @@
  building_khaju_bridge:0 "$building_dummy$"
  building_machu_picchu:0 "$building_dummy$"
  building_petra:0 "$building_dummy$"
-
- # AP1
+  # AP1
  building_martandsuntemple:0 "$building_dummy$"
  building_observatorygreenwich:0 "$building_dummy$"
  building_temple_of_poseidon:0 "$building_dummy$"
  building_wat_arun:0 "$building_dummy$"
 
- # BP1
+  # BP1
  building_cristo_redentor:0 "Cristo Redentor"
 
- # Skyscraper
+  # Skyscraper
  building_skyscraper:0 "Skyscraper"
  building_power_bloc_statue:0 "Power Bloc Statue"
  
+
  # Halloween
- building_halloween_castledracula: "Castle Dracula"
-
- # IP2
+ building_halloween_castledracula: "Castle Dracula" #IP2
  building_victoria_terminus: "Victoria Terminus"
-
- # IP3
- building_kaiserforum_1: "Kaiserforum"
- building_kaiserforum_2: "Kaiserforum"
- building_kaiserforum_3: "Kaiserforum"
- building_kaiserforum_4:1 "Kaiserforum"
-
- # IP4
- building_sagrada_familia_cathedral_1: "Sagrada Família Cathedral"
- building_sagrada_familia_cathedral_2: "Sagrada Família Cathedral"
- building_sagrada_familia_cathedral_3: "Sagrada Família Cathedral"
- building_pena_palace: "Pena Palace"
- building_pena_convent: "Pena Convent"
- building_gran_teatro_de_la_habana: "Grand Theater of Havana"
- building_estacion_de_madrid_atocha: "Atocha Railway Station"
- building_manila_cathedral_original: "Manila Cathedral"
- building_manila_cathedral_monument: "Manila Cathedral"
- building_manila_cathedral_ruins: "Manila Cathedral Ruins"
-
- # Dynamic Company Buildings Default Name Loc
- COMPANY_HQ_NAME: "$COMPANY_NAME$ HQ"
- COMPANY_REGIONAL_HQ_NAME: "$COMPANY_NAME$ Regional HQ"

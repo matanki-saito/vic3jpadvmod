@@ -401,7 +401,7 @@
  india_nationalism_events.2.c: "[SCOPE.sState('calcutta_scope').GetCityHubName]から自分たちの土地を切り開く。"
  is_princely_state_tt: "[concept_princely_state]である。"
  every_indian_subject_made_independent_tt: "我々#b インド#!の[Concept('concept_subject','$concept_subjects$')]が#b 独立#!します"
- european_pops_may_flee_tt: "#bold インド#!の[Concept('concept_pop', '$concept_pops$')]のうち、[Concept('concept_heritage_trait','$concept_heritage_trait_short$')][Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')]が$heritage_group_european$である者は、我々の残された領土へ逃れるかもしれない。"
+ european_pops_may_flee_tt: "#bold インド#!での[Concept('concept_pop', '$concept_pops$')]で$european_heritage$である者は、我々の残された領土へ逃れるかもしれません。"
  most_european_pops_abandon_india_tt: "多数の#bold ヨーロッパ#! [Concept('concept_pop','$concept_pops$')]が[ROOT.GetCountry.GetName]から退避します"
  some_european_pops_abandon_india_tt: "我々の#bold ヨーロッパ#!系の[Concept('concept_pop','$concept_population$')]の多くは、[SCOPE.sState('calcutta_scope').GetName]へ避難します"
  bengal_free_state_tt: "#bold $dyn_c_bengal_free_state$#!として独立を宣言します"

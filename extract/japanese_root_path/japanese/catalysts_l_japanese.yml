@@ -93,8 +93,6 @@
  catalyst_recognition_requested_desc: "[TARGET_COUNTRY.GetName]が[COUNTRY.GetName]からの大使を要請しています"
  catalyst_support_regime_requested: "政権の支持が要請されました"
  catalyst_support_regime_requested_desc: "[TARGET_COUNTRY.GetName]が政権の支持を要請しています"
- catalyst_investment_rights_requested: "投資権が要請されました"
- catalyst_investment_rights_requested_desc: "[TARGET_COUNTRY.GetName]が[concept_foreign_investment_rights]を要請しています"
  catalyst_knowledge_sharing_requested: "知識の共有が要請されました"
  catalyst_knowledge_sharing_requested_desc: "[TARGET_COUNTRY.GetName]が、[COUNTRY.GetName]が[concept_technology]知識を共有するよう要請しています"
  catalyst_diplomatic_incident: "外交的事件の発生"

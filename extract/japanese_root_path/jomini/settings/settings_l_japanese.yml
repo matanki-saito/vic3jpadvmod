@@ -40,6 +40,3 @@
  SETTINGS_INPUT_BINDING_TEXT: "'$INPUT_ACTION$' アクションの入力バインディングを選択してください: \n\n$INPUT_NAME$"
  SETTINGS_INPUT_BINDING_WARNING_TEXT: "警告: この入力バインディングは '$INPUT_ACTION$' にすでに存在しています！\n'$SETTINGS_INPUT_CONFIRM$' を押すと古いバインディングを消去します"
  SETTINGS_INPUT_BINDING_MODIFIERS_WARNING_TEXT: "警告：入力バインディングはモディファイアキーのみでは構成できません"
- SETTINGS_PAGE_ACCOUNT: "アカウント"
- SETTING_TELEMETRY_CONSENT: "テレメトリデータを送信（任意）"
- SETTING_TELEMETRY_CONSENT_TOOLTIP: "#T データ送信の同意#!\n任意のテレメトリデータをParadox Interactiveに送信することを許可します。"

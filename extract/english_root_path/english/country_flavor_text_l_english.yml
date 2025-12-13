@@ -23,9 +23,7 @@
 
  TUR_FLAVOR_TEXT:0 "The Ottoman Empire has been embroiled in various wars through the beginning of the 19th century, and while some reforms have been attempted, more will be needed to prevent the decline of this empire."
 
- SPA_FLAVOR_TEXT:1 "Ruling in the name of the young Queen Isabella, Queen Mother and regent Maria Christina has been forced to cede power to Spanish liberals to secure the throne against the Carlist threat. Can this threat be curtailed, or will another Ominous Decade come to pass?"
-
- SPC_FLAVOR_TEXT: "Disputing the young Queen Isabella's right to the throne, Carlos, the late King Ferdinand's brother, has rallied conservatives across the nation with the intent to march on Madrid. Will this grand expedition succeed, or is Spain to be given over to liberalism?"
+ SPA_FLAVOR_TEXT:1 "The young Queen Isabella rules a divided Spain, with liberal and conservative factions at each other's throats. Will the Queen be a mere puppet in this struggle, or will she take a more active role?"
 
  BRZ_FLAVOR_TEXT:0 "Brazil is in a period of upheaval following the abdication of Emperor Pedro I, which left the country in the rule of regents. Will Brazil manage to overcome these obstacles and emerge as a great power?"
 
@@ -48,7 +46,7 @@
  TRS_FLAVOR_TEXT: "Separated from Hungary following Rákóczi's War in 1711, the Principality of Transylvania finds itself at the center of German, Hungarian, and Romanian attention. Can Transylvania maintain its autonomy, or will it be swallowed up by its ambitious neighbors?"
 
  HUN_FLAVOR_TEXT: "Long subservient to its Austrian masters, the Kingdom of Hungary finds itself at a crossroads, with emerging factions arguing in favor of greater Hungarian independence. Will radical voices triumph, or will Hungary remain yet another jewel in the Austrian crown?"
-
+  
   # South-East Asia
  LAN_FLAVOR_TEXT:0 "The Republic of Lanfang was established by a democratic syndicate of Chinese miners hoping to exploit the gold reserves of Borneo. Can Lanfang resist the advances of the Dutch and achieve the prosperity it seeks?"
  ACE_FLAVOR_TEXT:0 "The Aceh Sultanate is experiencing a resurgence in power due to the efforts of the Raja Muda. Can Aceh restore its empire and assert its independence in the face of Dutch expansion?"
@@ -59,8 +57,7 @@
  BUR_FLAVOR_TEXT:0 "It took many bloody conflicts to establish the Third Burmese Empire, and it seems that the struggle is far from over as the British Empire makes its ambitions known. Will Burma become yet another British colony, or will it stand strong against the foreign invaders?"
  CAM_FLAVOR_TEXT:0 "Cambodia has fallen far since the golden age of the Khmer Empire. Can the Khmer state rise once more, or will this dark age last forever?"
  LUA_FLAVOR_TEXT:0 "Once the seat of the mighty Kingdom of Lan Xang, Luang Prabang is a shadow of its former self. Split between the regional powers of Dai Nam and Siam, can the Lao people emerge strong and independent?"
- PHI_FLAVOR_TEXT: "In the far-away archipelago of the Philippines, their Spanish overlords have high expectations that the Governor-General continues to maintain an iron rule over this territory out in the Pacific. But with a growing national consciousness, tensions are on the rise. What will the future for the archipelago look like?"
-
+  
   # Australia
  UNT_FLAVOR_TEXT:0 "The United Tribes have declared their sovereign independence, though in truth they are at the mercy of the British Empire. Can the British be trusted to respect their treaties with the Maori?"
  NSW_FLAVOR_TEXT:0 "In its transition from penal colony to Crown Colony, New South Wales has seen its territory reduced as the other provinces gained their own administrations. What does the future hold for Australia?"
@@ -74,8 +71,7 @@
  WAL_FLAVOR_TEXT:0 "Calls for Romanian unification and political independence complicate regional politics, as both Russia and the Ottomans have an interest in enforcing the status quo. Can Romania win its freedom?"
  MOL_FLAVOR_TEXT:0 "Calls for Romanian unification and political independence complicate regional politics, as both Russia and the Ottomans have an interest in enforcing the status quo. Can Romania win its freedom?"
  ION_FLAVOR_TEXT:0 "The Islands have passed from Ottoman to Russian, French and finally British control within the past 30 years. Can the Islanders achieve Enosis with the new Greek state or will they seek a new path forward under British guidance?"
- MON_FLAVOR_TEXT:0 "Once little more than a loose collection of tribes resisting Ottoman taxation, Montenegro has achieved its independence at the Congress of Vienna. The tribes currently depend upon raiding the Ottoman Empire to sustain themselves, but the reformist Petar II seeks to transform them into a modern state. Will Montenegro successfully reinvent itself?"
-
+  
   # Italy
  PAP_FLAVOR_TEXT:0 "Though the political power of the Catholic Church has waned over the centuries, the Pope still presides over the Papal States. Does faith still rule the hearts of men?"
  TUS_FLAVOR_TEXT:0 "The unpopular Duke Leopoldo seeks to liberalize the Grand Duchy, but faces great opposition to his rule. How will Tuscany fare as liberalism and nationalism compete over the hearts and minds of Italians?"
@@ -83,7 +79,7 @@
  PAR_FLAVOR_TEXT:0 "The Congress of Vienna confirmed the Rule of Napoleon's second wife Marie Louise over the Duchy until her death. In this time of nationalism and upheaval, will she be able to hold on to her lands?"
  LUC_FLAVOR_TEXT:1 "Torn from their rightful Parman lands, the house of Bourbon-Parma was granted Lucca until they could reclaim their rightful throne within Parma upon the death of Marie Louise. With Italian nationalism on the rise, how long can this aberration survive?"
  MOD_FLAVOR_TEXT:1 "The Duchy of Modena is both ruled by, and politically subservient to, the Hapsburgs and the Austrian Empire. Will Modena shake off these chains of family loyalty, or do the ties that bind restrict too much?"
-
+  
   # Germans
  BAV_FLAVOR_TEXT:0 "In the wake of recent revolutions across Europe, Bavaria has turned to reaction. But the embers of rebellion still burn; will Bavaria be consumed by the flames?"
  SWI_FLAVOR_TEXT:0 "The Congress of Vienna has recognized Switzerland as a neutral power, affording some degree of safety in the theatre of European politics. Will Switzerland preserve its neutrality, or strike a different path?"
@@ -116,10 +112,10 @@
  COB_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
  LUX_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
  HOL_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
-
+ 
  # Poland
  KRA_FLAVOR_TEXT:1 "The legacy of the Polish people rests heavily on the shoulders of the Free State of Krakow, distrusted by its constituting powers and occupied by Austria. Can a new Polish state rise from the ashes once again?"
-
+  
   # North America
  QUE_FLAVOR_TEXT:0 "Once the colony of New France, Lower Canada has fallen under British rule. Tensions between the predominantly French population and the colonial government threaten to escalate in the near future, with little chance of peaceful resolution. Will Quebec win its freedom?"
  ONT_FLAVOR_TEXT:0 "Emboldened by rising tensions in Lower Canada, the people of Upper Canada prepare to resist the colonial government. Will Ontario win its freedom?"
@@ -129,8 +125,7 @@
  TEX_FLAVOR_TEXT:0 "The newly declared Republic of Texas fights a seemingly impossible war against its Mexican overlords. Will a miracle save the Lone Star State?"
  HAI_FLAVOR_TEXT:0 "Under Jean-Pierre Boyer, Haiti has come to rule over all of Hispaniola. Can this nation of former slaves achieve liberty, or is Haiti doomed to despotism?"
  CUB_FLAVOR_TEXT:0 "Cuban relations with their Spanish overlords have become strained. Calls for representation in the Spanish parliament and resistance to the abolition of slavery have met with hostility from Madrid. Is a Cuban revolution inevitable?"
- PCO_FLAVOR_TEXT: "Tensions between Puerto Rico and their Spanish overlords have been on the rise. While democratic institutions in the colony have been removed, power granted to appointed Governor-Generals have been maintained. Will Puerto Rico make progress towards greater autonomy?"
-
+  
   #Central Asia
  KHI_FLAVOR_TEXT:0 "In defiance of both Persia and Russia, Khiva is an independent power flourishing under the rule of the Khan. Can Khiva protect its independence?"
  BUK_FLAVOR_TEXT:0 "Unlike the neighboring Khanates, the Emirs of Bukhara embrace Islamic rule rather than basing their legitimacy on descent from Genghis Khan. Will faith win the day?"
@@ -151,17 +146,12 @@
  OZH_FLAVOR_TEXT: "$ZHUZ_FLAVOR_TEXT$"
  UZH_FLAVOR_TEXT: "$ZHUZ_FLAVOR_TEXT$"
  ARB_FLAVOR_TEXT: "The rule of Sheikh Jaber al-Kaabi has led the sheikhdom of Muhammarah to a period of de facto sovereignty. Will Muhammarah maintain its privileged status, and grow into a power center of its own?"
-
+  
   # Maghreb
  TRI_FLAVOR_TEXT:1 "Following a long period of de facto independence, Tripolitania has once again fallen under Ottoman rule. Will the Barbary Pirates sail again?"
  TUN_FLAVOR_TEXT:0 "After being forced to end its sponsorship of piratical raids, the Tunisian economy has taken a turn for the worse. Can the Bey restore prosperity?"
  ALD_FLAVOR_TEXT:0 "Algeria lost much of its coastline to the French in the aftermath of the Barbary Wars. Can the remnants of this nation fend off further French incursions?"
  MOR_FLAVOR_TEXT:0 "No longer under Ottoman protection, Morocco is vulnerable to French and Spanish expansionism. Can Morocco survive the imperialist onslaught?"
- CON_FLAVOR_TEXT: "When the Algerian Deylik fell to the French in 1830, its Eastern province persevered in the capable hands of Ahmed Bey. Intent on restoring and modernizing the old Deylik, he will have to contend with both the French invaders and rivaling Algerian factions."
- AIT_FLAVOR_TEXT: "For centuries, the Berber kingdom of Ait Abbas has ruled in Kabylia, but shifting balances of power and infighting within the ruling Mokrani family has seen the state reduced to a mere tributary. Can Ait Abbas turn its fortunes around?"
- MAS_FLAVOR_TEXT: "Unexpectedly thrust into power during the French invasion, the Islamic scholar Abdelkader finds himself at the helm of a resistance campaign turned nascent state. Can Mascara drive out the invaders, or will it succumb to French might?"
- TUG_FLAVOR_TEXT: "After a bloody family feud resulted in the death of the previous Sultan, his capable, but ruthless wife seized power in the name of their child son. Can the desert realm of Touggourt secure a place for itself in the 19th century?"
-
   # Africa
  SOK_FLAVOR_TEXT:0 "Under the banner of the Fulani Jihad, the Sokoto Caliphate is expanding rapidly. Can Sokoto unite West Africa and resist the Western powers?"
  GREAT_LAKES_FLAVOR_TEXT:0 "The people of the Great Lakes have established fledgling empires, dominating both water and land. Will a great nation arise from among them?"
@@ -183,7 +173,7 @@
  WLT_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
  HDY_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
  SAF_FLAVOR_TEXT:0 "Originally a Dutch trading post, the Cape Colony has recently become a British Crown Colony with most of its former autonomy curtailed. Now, tensions are rising between the British crown and the Boer states to the north, while in the east, the power of the Zulu Empire is growing. How will the Cape Colony weather the struggles ahead?"
-
+  
   # India
  BIC_FLAVOR_TEXT:0 "India is the jewel in the crown of the British Empire. Can the East India Company maintain rule over this vast landscape while appeasing its shareholders?"
  JAS_FLAVOR_TEXT:0 "Almost all of India is now under the direct or indirect control of the British East India Company. The Nawabs of the princely states still exert a strong degree of rule over their territories, but ultimately answer to the Company. Will India ever be free from British rule?"
@@ -236,7 +226,7 @@
 
  BCE_FLAVOR_TEXT:0 "Following the conclusion of the Kandyan Wars, Ceylon's fertile uplands have witnessed the rise of numerous plantations, fueled in part by the importation of Tamil laborers from the mainland. Can Ceylon sustain this momentum, or will it fall to internal strife?"
  MLD_FLAVOR_TEXT:0 "Existing in relative isolation, the Maldives has thrived under British protection, shielded from the pirates that once threatened its shores. Will change ever come to this small island nation?"
-
+  
   # Middle-East
  EGY_FLAVOR_TEXT:0 "Under Muhammad Ali, Egypt has become independent from the Ottoman Empire in all but the most technical respect. Recent gains in Syria however are sure to incite a response from the Sublime Porte. Can Egypt survive the coming storm?"
  HDJ_FLAVOR_TEXT:0 "As the Ottoman Empire declines, the future of Arabia becomes ever more uncertain. Will a new power emerge from the desert?"
@@ -254,7 +244,7 @@
  KOR_FLAVOR_TEXT:0 "Korea under the Joseon dynasty looks inward, consumed by its factional politics. Will changing times force Korea to consider the outside world?"
  NOR_FLAVOR_TEXT:0 "Norway has spent centuries under Danish and Swedish rule, but now dreams of sovereignty. What will it take for Norway to win its independence?"
  FIN_FLAVOR_TEXT:0 "Finland has thus far enjoyed relative autonomy under the Russian Empire. But the whims of the Tsars are fickle; how will Russian rule shape Finland?"
-
+  
   #South and Central America
  UCA_FLAVOR_TEXT:0 "The Federal Republic consists of provinces which would largely prefer to be independent. Can Central America hold together?"
  CLM_FLAVOR_TEXT:0 "With the dissolution of Gran Colombia in 1830, New Granada stands alone and divided between its liberal and conservative factions. Will Colombia achieve greatness once more?"
@@ -267,7 +257,7 @@
  ARG_FLAVOR_TEXT:0 "Argentina has won its independence from Spain, but now faces internal divisions. Can Argentina form a stable government?"
  CHL_FLAVOR_TEXT:0 "Chile is embarking on a process of political centralization, concentrating power into the hands of the government and the Church. What does the future hold for Chile?"
  PNI_FLAVOR_TEXT:0 "The newly created state of Piratini, boldly declares its independence against Brazil, but how long can the fledgling nation last?"
-
+  
  GENERIC_FLAVOR_TEXT:0 "The Victorian era is an age of industry and exploitation, of revolution and reaction. What new challenges will the times bring?"
  REV_GENERIC_FLAVOR_TEXT:1 "Dissatisfied with the direction that the so-called organized government was taking, these revolutionaries have decided to take up arms to overthrow it. Will they succeed in seizing power or will they be crushed like so many forgotten revolutions of the past?"
  DECENTRALIZED_FLAVOR_TEXT:0 "Encroached upon by more organized powers, this country struggles to maintain their autonomy. Will they see the dawn of a new century, or will their name survive only in history books?"
@@ -382,25 +372,7 @@
  TNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  THL_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  SLK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- SLW_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- MND_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- WTI_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- MRN_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- NTO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- SCT_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- KLO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- KKI_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- TIP_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- MGH_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- NGA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- AIN_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- MRV_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- GNI_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- ATB_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  OGD_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- MNB_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- SKM_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
- DGR_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  BRN_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  OMO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
  ANU_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"

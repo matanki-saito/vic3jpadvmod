@@ -1,4 +1,6 @@
 ﻿l_japanese:
+ ideology_montenegrin_moralist: "モンテネグロ道徳主義者"
+ ideology_montenegrin_moralist_desc: "#lore このグループは、宗教的な道徳秩序を強く信じており、意見の多様性はこの秩序に対する脅威であると考えています。#!"
  mon_build_biljarda: "ビリャルダを建設する"
  mon_build_biljarda_desc: "我らが独立国家にふさわしい宮殿を建設する。"
  treaty_name_mon_orthodox_donations: "援助と貿易への寛大なアクセス"
@@ -166,7 +168,7 @@
  montenegrin_raiding.1.f: "#italic 我々の仲間は深く、生気のない眠りについている。\nこの涙を拭ってくれる親の手はない。\n頭上の天は固く閉ざされ、\n我が叫びや祈りを聞こうとはしない。#!\n\n–ペタル2世ペトロヴィッチ＝ニェゴシュ、『#italic 山の花環#!』"
  montenegrin_raiding.1.a: "喪に服して団結しよう。"
  montenegrin_raiding.1.b: "死者は死者に葬らせよ。我々は再建しなければならない。"
- mon_lost_men_tt: "#v [GetPlayer.MakeScope.ScriptValue('barracks_burned')]#! 個の[GetBuildingType('building_barrack').GetName]が破壊され、残りも混乱状態に陥る。"
+ mon_lost_men_tt: "#v [GetPlayer.MakeScope.ScriptValue('barracks_burned')]#!個の[GetBuildingType('building_barracks').GetName]が破壊され、残りも混乱状態に陥る。"
  #montenegrin_raiding.2
  montenegrin_raiding.2.t: "オスマン帝国の反撃"
  montenegrin_raiding.2.d: "[SelectLocalization(SCOPE.sCountry('ottoman').IsValid, SCOPE.sCountry('ottoman').GetName, 'dyn_c_ottoman_empire')]の兵士が、我々の仲間を襲い、襲撃を止めるためにやって来た。"
@@ -271,14 +273,14 @@
  mon_state_formation.8.t: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は妻を望んでいる"
  mon_state_formation.8.d: "王室の結婚式が始まろうとしており、[ROOT.GetCountry.GetNameNoFlag]の全国民が[SCOPE.sCharacter('danilo').GetFullName]の選んだ花嫁は誰なのか気になっている。"
  mon_state_formation.8.d2: "[SCOPE.sCharacter('danilo').GetFullName]が[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]となった今、[ROOT.GetCountry.GetRuler.GetHerHim]が妻を選ぶ時が来た。"
- mon_state_formation.8.f: "「マルムラ元帥！結婚式はどうでした？山の部族は良い余興を見せてくれましたか？」 \n\n「あの可哀想な少女を港から護送したのだが、幽霊のよう青ざめていた。狼に囲まれた王女になることを想像したら、彼女を責めることは誰もできないだろう。ところが、誓いの儀式が済んだ直後、彼女は彼らの言葉で話しはじめ、男たちを足で使い、浴びるように酒を飲み、船乗りのように暴言を吐きはじめた。一部の男はそれが気に入らなかったが、彼女はそいつらには容赦しなかった。[SCOPE.sCharacter('danilo').GetFirstNameNoFormatting]が気を抜けば、彼女がたちまちキャンプを仕切るようになり、俺たちはようやく道理をわきまえた人間を相手にできるだろう」"
+ mon_state_formation.8.f: "「マルムラ元帥！結婚式はどうでした？山の部族は良い余興を見せてくれましたか？」 \n\n「あの可哀想な少女を港から護送したのだが、幽霊のよう青ざめていた。狼に囲まれた王女になることを想像したら、彼女を責めることは誰もできないだろう。ところが、誓いの儀式が済んだ直後、彼女は彼らの言葉で話しはじめ、男たちを足で使い、浴びるように酒を飲み、船乗りのように暴言を吐きはじめた。一部の男はそれが気に入らなかったが、彼女はそいつらには容赦しなかった。[SCOPE.sCharacter('danilo').GetFirstName]が気を抜けば、彼女がたちまちキャンプを仕切るようになり、俺たちはようやく道理をわきまえた人間を相手にできるだろう」"
  mon_state_formation.8.f2: "「あんな蛮行は見たことがない！[SCOPE.sCharacter('danilo').GetFirstNameNoFormatting][SCOPE.sCharacter('danilo').GetPrimaryRoleTitle]が、結婚式ではなく戦争へ行くための格好をして現れ、前夜に訪れた家々を自慢げに語った。騎馬兵がトルコの襲撃で切り落とされたばかりの首を持ってくると、ダニロは『約束通りだ！』と叫んだ。すると、口にするのもはばかられるが、首から滴り落ちる血を飲んだのだ。部下たちはそれを見て大笑いした。そして、この怪物と結婚するために港から連れてこられた哀れな少女へ、ついに視線が向けられた。私の部下の誰よりも勇敢な彼女は前に進み出た。司祭は銃を突きつけられながらも、ずっと反対していたが、神の恥じ入る目の前で2人を結婚させた…バルカン半島に送り返されることがないことを心から願っている」"
  mon_state_formation.8.a: "務めのために、セルビアのクラオパトラ・カラジョルデヴィッチ王女と結婚する。"
  mon_state_formation.8.b: "金のために、ウィーンのアナスタシア・フォン・シーナ男爵夫人と結婚する。"
  mon_state_formation.8.c: "愛のために、トリエステ出身のダリンカ・クヴェキッチと結婚する。"
  mon_state_formation.9.t: "ビリャルダの建設"
  mon_state_formation.9.d: "[ROOT.GetCountry.GetRuler.GetFullName]が、円形の防御塔を備えた25室の住居の建設を命じた。優れた建築家たちは、宮殿の装飾において何を強調すべきか検討している。"
- mon_state_formation.9.f: "「修道院のすぐ上にある岩の上には、銃眼はあるものの、大砲のない円形の塔があった。その塔には20人のトルコ人の首が杭に打ち付けられおり、モンテネグロの戦利品として、胸壁の周りに置かれていた…キリスト教国で、しかも修道院と主教の宮殿のすぐ近くでそんな光景を目にすることになるとは、実に奇妙だった」" #–John Gardner Wilkinson, visitor to Montenegro"
+ mon_state_formation.9.f: "「修道院のすぐ上にある岩の上には、銃眼はあるものの、大砲のない円形の塔があった。その塔には20人のトルコ人の首が杭に打ち付けられおり、モンテネグロの戦利品として、胸壁の周りに置かれていた…キリスト教国で、しかも修道院と主教の宮殿のすぐ近くでそんな光景を目にすることになるとは、実に奇妙だった」\n\n–ジョン・ガードナー・ウィルキンソン、モンテネグロ訪問者"
  mon_state_formation.9.a: "屈強な男たちに海からビリヤード台を運んでもらおう。"
  mon_state_formation.9.b: "聖人ハラランボスの頭蓋骨の破片で礼拝堂を祝福しよう。"
  mon_state_formation.9.c: "なぜ頭を塔にしか飾らない？すべての部屋に飾れ！"
@@ -297,7 +299,6 @@
  mon_school_helper: "これはいずれ国民の識字率を大幅に向上させるだろう"
  mon_state_formation.11.c: "[ROOT.GetCountry.GetRuler.GetSheHe|U]は子供たちが戦いを学べるようにする。"
  #Taxes?
- #Taxes?
  mon_state_formation.12.t: "税金は？"
  mon_state_formation.12.d: "長年にわたってオスマン帝国の徴税人を殺害してきた[ROOT.GetCountry.GetNameNoFlag]の民は、たとえそのお金が[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]に渡るとしても、税金を払うという概念そのものに反発している。"
  mon_state_formation.12.f: "「つまり、[ROOT.GetCountry.GetRuler.GetSheHe]は強盗みたいに私たちからふんだくっているの？」\n「いや、[ROOT.GetCountry.GetRuler.GetSheHe]は私たちに#italic 税金#!を課しているんだ」\n「何が違うの？」\n「税金は私たちのために使われるんだよ」\n「じゃあ、私たちに小麦をくれたり、屋根を直したりしてくれるの？」\n「いや…いいか、もし税金を払わなければ、武装した男たちが来て…」\n「#italic やっぱり#! [ROOT.GetCountry.GetRuler.GetSheHe]は強盗みたいに私たちからふんだくってるんだ！」"
@@ -305,7 +306,6 @@
  mon_state_formation.12.b: "皆の懸念を傾聴する。"
  mon_state_formation.12.c: "抵抗する者は脅す。"
  mon_state_formation.12.e: "「タックスじゃない。アックス（斧）だ！」"
- #first arms
  #first arms
  mon_state_formation.13.t: "真の狙い"
  mon_state_formation.13.d: "[ROOT.GetCountry.GetNameNoFlag]の国民は、初の[SCOPE.sBuilding('arms').GetName]を大変誇りに思っている。"
@@ -362,7 +362,7 @@
  mon_state_formation.20.t: "[ROOT.GetCountry.GetRuler.GetFirstName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]、改め[ROOT.GetCountry.GetRuler.GetFirstName]国王"
  mon_state_formation.20.d: "[ROOT.GetCountry.GetRuler.GetFullName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、我が国を正式に王国へと改称することを提案した。"
  ### https://en.wikisource.org/wiki/Translation:There,_Over_There
- mon_state_formation.20.f: "「#italic ああ、あそこ…あの丘の向こうには、\n緑の木立が広がるという。\nその麓にそびえるは、聖なるデチャニ修道院。\nそこで捧ぐ祈りは、天国を約束する。\n\nああ、あそこ…あの丘の向こうには、\nたわむ蒼穹が待つという。\nセルビアの大地へ、戦場へ、いざ往かん。\nさあ兄弟たちよ、行軍の準備をせよ！#!」\n—ニコラ1世ペトロヴィッチ＝ニェゴシュ著、『#italic Onamo, 'namo!#!』"
+ mon_state_formation.20.f: "#italic ああ、あそこ…あの丘の向こうには、\n緑の木立が広がるという。\nその麓にそびえるは、聖なるデチャニ修道院。\nそこで捧ぐ祈りは、天国を約束する。\n\nああ、あそこ…あの丘の向こうには、\nたわむ蒼穹が待つという。\nセルビアの大地へ、戦場へ、いざ往かん。\nさあ兄弟たちよ、行軍の準備をせよ！#!\n\nニコラ1世ペトロヴィッチ＝ニェゴシュ著、『#italic Onamo, 'namo!#!』"
  mon_state_formation.20.a: "このことを民衆に知らせよう。"
  mon_state_formation.20.b: "このことを、すべての国に知らせよう！"
  mon_state_formation.20.c: "このことを兵士たちに知らせよう。"

@@ -76,6 +76,6 @@
  mm_budget:0 "Budget"
  mm_political:0 "Political Situation"
  mm_diplomatic:0 "Diplomacy"
- mm_power_blocs: "Power Blocs - All"
+ mm_power_blocs: "All Power Blocs"
  mm_power_bloc_leverage: "Power Bloc's Leverage"
  mm_production:0 "Production in States"

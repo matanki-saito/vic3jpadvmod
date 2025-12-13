@@ -87,7 +87,6 @@ labour_associations_events.9.b: "We must be wary of offers like these."
 # Legislature names
 legislature_congress: "Congress"
 legislature_parliament: "Parliament"
-legislature_court: "the Court"
 legislature_national_assembly: "the National Assembly"
 legislature_duma: "the Duma"
 legislature_diet: "the Diet"
@@ -126,9 +125,6 @@ peoples_springtime.9.b: "Compromise on suffrage, but see this done."
 peoples_springtime.9.c: "Send in the Army immediately."
 
 had_springtime_revolution_tt: "[ROOT.GetCountry.GetNameNoFlag] has been forced to enact a democratic constitution"
-had_springtime_revolution_tt_no_scope: "This [concept_country] has been forced to enact a democratic constitution"
-has_liberal_or_radical_in_government_tt: "Has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#!, #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#!, or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! [concept_interest_group] [concept_in_government]"
-has_census_voting_or_universal_suffrage_tt: "Has enacted any variant of [GetLawType('law_census_voting').GetName] or [GetLawType('law_universal_suffrage').GetName]"
 
 peoples_springtime.10.t: "Red [SCOPE.GetRootScope.GetCountry.GetCustom('country_red_season_name_dynamic')]"
 peoples_springtime.10.d: "The revolutionary surge in Europe has swept a liberal government into power in [ROOT.GetCountry.GetName]. This fragile liberal order is threatened by both conservative forces who wish to reverse their gains, and radicals who threaten a new revolution."
@@ -143,9 +139,9 @@ red_summer_radical_victory_tt: "To complete with a #b [GetIdeology('ideology_rad
 red_summer_complete_tt: "#b Progress#! has reached #v 100%#!"
 red_summer_fail_tt: "#b Counter-Revolution#! has reached #v 100%#!"
 
-je_springtime_of_the_peoples_complete_header: "#title An Involved Country will experience a #b Revolutionary#! victory if:#!\n"
+je_springtime_of_the_peoples_complete_header: "#title Will result in a #b Revolutionary#! victory if:#!\n"
 je_springtime_of_the_peoples_on_complete_header: "#title On a #b Revolutionary#! victory:#!\n$EFFECT$"
-je_springtime_of_the_peoples_fail_header: "#title An Involved Country will experience a #b Conservative#! victory if:#!\n"
+je_springtime_of_the_peoples_fail_header: "#title Will result in a #b Conservative#! victory if:#!\n"
 je_springtime_of_the_peoples_on_fail_header: "#title On a #b Conservative#! victory:#!\n$EFFECT$"
 
 on_liberal_victory_tt: "On a #b [GetIdeology('ideology_liberal').GetName] victory:#!\n• Triggers the Event #v $peoples_springtime.71.t$#!"
@@ -163,8 +159,7 @@ red_summer_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress(
 red_summer_counter_revolution_progress_bar: "Counter-Revolution"
 red_summer_counter_revolution_progress_bar_desc: "Counter-Revolution: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 
-no_radical_agitators_or_politicians_tt: "No [concept_leader] or [concept_agitator] in this Country has the [GetIdeology('ideology_radical').GetName] [concept_ideology]"
-all_radical_movements_suppressed_tt: "All [GetIdeology('ideology_radical_movement').GetName] or [GetIdeology('ideology_national_liberal_movement').GetName] [Concept('concept_political_movement', '$concept_political_movements$')] are [Concept('concept_suppress','$concept_suppressed$')], with [Concept('concept_political_movement_support','$concept_political_movement_support_short$')] below #v 10%#!"
+no_radical_agitators_or_politicians_tt: "No [ROOT.GetCountry.GetAdjectiveNoFlag] [concept_leader] or [concept_agitator] has the [GetIdeology('ideology_radical').GetName] [concept_ideology]"
 
 red_summer_legitimacy_tt: "[concept_legitimacy]"
 red_summer_liberal_movements_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] of [GetIdeology('ideology_liberal_movement').GetName] and [GetIdeology('ideology_modernizer').GetName] [Concept('concept_political_movement','$concept_political_movements_short$')]"
@@ -187,21 +182,17 @@ movement_is_conservative_tt: "[concept_political_movement] is classified as #too
 
 liberal_movements_list_tt: "#bold Liberal#! [Concept('concept_political_movement','$concept_political_movements$')] include:\n• $movement_liberal$\n• $movement_radical$\n• $movement_anti_slavery$\n• $movement_positivist$\n• $movement_labor$\n• $movement_feminist$\n• $movement_german_national$\n• $movement_italian_national$\n• $movement_yugoslav_national$\n• $movement_india_pan_national$\n• $movement_utilitarian$\n• $movement_modernizer$"
 socialist_movements_list_tt: "#bold Socialist#! [Concept('concept_political_movement','$concept_political_movements$')] include:\n• $movement_socialist$\n• $movement_nihilist$\n• $movement_communist$\n• $movement_anarchist$"
-conservative_movements_list_tt: "#bold Conservative#! [Concept('concept_political_movement','$concept_political_movements$')] include:\n• $movement_royalist_constitutional$\n• $movement_royalist_absolutist$\n• $movement_orleanist$\n• $movement_legitimist$\n• $movement_bonapartist$\n• $movement_reactionary$\n• $movement_corporatist$\n• $movement_fascist$\n• $movement_pro_slavery$\n• $movement_carlist$\n• $movement_miguelist$\n• $movement_religious_majority$\n• $movement_cultural_majority$"
+conservative_movements_list_tt: "#bold Conservative#! [Concept('concept_political_movement','$concept_political_movements$')] include:\n• $movement_royalist_constitutional$\n• $movement_royalist_absolutist$\n• $movement_orleanist$\n• $movement_legitimist$\n• $movement_bonapartist$\n• $movement_reactionary$\n• $movement_corporatist$\n• $movement_fascist$\n• $movement_pro_slavery$\n• $movement_religious_majority$\n• $movement_cultural_majority$"
 
 has_liberal_ideology_tt: "Has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! [concept_ideology]"
 has_progressive_ideology_tt: "Has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [concept_ideology]"
 has_socialist_ideology_tt: "Has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! [concept_ideology]"
-has_conservative_ideology_tt: "Has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! [concept_ideology]"
-has_reactionary_ideology_tt: "Has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [concept_ideology]"
 
 red_summer_liberal_ideologies_list_tt: "Applicable [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_liberal').GetName]\n• [GetIdeology('ideology_republican_leader').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_reformer').GetName]\n• [GetIdeology('ideology_abolitionist').GetName]\n• [GetIdeology('ideology_market_liberal').GetName]\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_feminist').GetName]\n• [GetIdeology('ideology_social_democrat').GetName]\n• [GetIdeology('ideology_humanitarian').GetName]\n• [GetIdeology('ideology_humanitarian_royalist').GetName]\n• [GetIdeology('ideology_communist').GetName]\n• [GetIdeology('ideology_vanguardist').GetName]\n• [GetIdeology('ideology_anarchist').GetName]\n• [GetIdeology('ideology_utopian').GetName]"
 
 socialist_ideologies_list_tt: "#bold Socialist#! [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_communist').GetName]\n• [GetIdeology('ideology_vanguardist').GetName]\n• [GetIdeology('ideology_anarchist').GetName]\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_utopian').GetName]"
-liberal_ideologies_list_tt: "#bold Liberal#! [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_republican_leader').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_reformer').GetName]\n• [GetIdeology('ideology_abolitionist').GetName]\n• [GetIdeology('ideology_market_liberal').GetName]\n• [GetIdeology('ideology_liberal_leader').GetName]"
-progressive_ideologies_list_tt: "#bold Progressive#! [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_feminist').GetName]\n• [GetIdeology('ideology_social_democrat').GetName]\n• [GetIdeology('ideology_humanitarian').GetName]\n• [GetIdeology('ideology_humanitarian_royalist').GetName]"
-conservative_ideologies_list_tt: "#bold Conservative#! [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_traditionalist').GetName]\n• [GetIdeology('ideology_traditionalist_minoritarian').GetName]\n• [GetIdeology('ideology_slaver').GetName]\n• [GetIdeology('ideology_royalist').GetName]\n• [GetIdeology('ideology_orleanist').GetName]\n• [GetIdeology('ideology_bonapartist').GetName]\n• [GetIdeology('ideology_theocrat').GetName]\n• [GetIdeology('ideology_corporatist_leader').GetName]"
-reactionary_ideologies_list_tt: "#bold Reactionary#! [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_traditionalist').GetName]\n• [GetIdeology('ideology_fascist').GetName]\n• [GetIdeology('ideology_integralist').GetName]\n• [GetIdeology('ideology_ethno_nationalist').GetName]\n• [GetIdeology('ideology_theocrat').GetName]\n• [GetIdeology('ideology_legitimist').GetName]\n• [GetIdeology('ideology_luddite').GetName]\n• [GetIdeology('ideology_corporatist_leader').GetName]\n• [GetIdeology('ideology_carlist').GetName]\n• [GetIdeology('ideology_miguelist').GetName]"
+liberal_ideologies_list_tt: "#bold Liberal#! [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_republican_leader').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_reformer').GetName]\n• [GetIdeology('ideology_abolitionist').GetName]\n• [GetIdeology('ideology_market_liberal').GetName]"
+progressive_ideologies_list_tt: "#bold Progressive#! [Concept('concept_ideology','$concept_ideologies$')] include:\n• [GetIdeology('ideology_nihilist').GetName]\n• [GetIdeology('ideology_radical').GetName]\n• [GetIdeology('ideology_feminist').GetName]\n• [GetIdeology('ideology_social_democrat').GetName]\n• [GetIdeology('ideology_humanitarian').GetName]\n• [GetIdeology('ideology_humanitarian_royalist').GetName]"
 no_monarchists_in_government_tt: "#b No#! [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government] support the enactment of [GetLawType('law_monarchy').GetName]"
 
 peoples_springtime.71.t: "Peace, Liberty, and Concord"
@@ -347,14 +338,14 @@ austria_federation.4.a: "Organize a [SCOPE.sCulture('slovak_culture').GetName] s
 austria_federation.4.b: "Condition a [SCOPE.sCulture('slovak_culture').GetName] state on autonomy for the Zipser Germans."
 austria_federation.4.c: "Slovakia will be retained as a part of Hungary."
 austria_federation.4.d: "Endorse a shared state for Czechs and Slovaks."
-
+  
 austria_federation.5.t: "The Future of Galicia"
 austria_federation.5.desc: "The region of Galicia represents [ROOT.GetCountry.GetNameNoFlag]'s spoils from the Polish Partitions. Whilst the territory has traditionally been dominated by [SCOPE.sCulture('polish_culture').GetName] aristocrats, much of its East possessses a [GetCulture('ukrainian').GetName] majority. To secure [SCOPE.sCulture('polish_culture').GetNameNoFormatting] support, we must arrange a favorable partition."
 austria_federation.5.f: ""What do you think? Where do we draw the line?"\n\n"The Ruthenes have lower expectations than the Poles. A neat separation of the East from West will please them, yet anger the Poles, who naturally expect more. Hand Lemberg to the Poles, and the Ruthenes may still be willing to indulge us in return for some other concession. I do not envy your task, but it may well prove feasible.""
 austria_federation.5.a: "Limit the [GetCulture('polish').GetName] state to West Galicia."
 austria_federation.5.b: "Partition Galicia, with Lwów under [GetCulture('polish').GetName] authority."
 austria_federation.5.c: "Retain the whole of Galicia as a [GetCulture('polish').GetName] state."
-
+  
 austria_federation.6.t: "The Partition of Hungary"
 austria_federation.6.desc: "The traditional borders of Hungary include many sizable non-[SCOPE.sCulture('hungarian_culture').GetName] regions. We must choose between either appeasing the [SCOPE.sCulture('hungarian_culture').GetName] people, or partitioning Hungary and provoking [SCOPE.sCulture('hungarian_culture').GetNameNoFormatting] opposition to the federal project."
 austria_federation.6.desc_dual: "The [SCOPE.sCulture('hungarian_culture').GetName] nation has long been a co-equal half of our Empire, reigning essentially unchecked over a greatly diverse territory. We must choose between either appeasing [SCOPE.sCountry('hungary_scope').GetNameNoFlag], or granting its nationalities their own states and provoking [SCOPE.sCulture('hungarian_culture').GetNameNoFormatting] reaction."
@@ -595,7 +586,7 @@ technocracy.4.a: "A new world has never been closer."
 technocracy.4.b: "Our methods must extend to every facet of society."
 
 technocracy_no_supporting_igs_tt: "no [Concept('concept_interest_group', '$concept_interest_groups$')] [concept_in_government] support [GetLawType('law_technocracy').GetName]"
-technocracy_economy_laws_tt: "$lawgroup_economic_system$ law is neither [GetLawType('law_interventionism').GetName] nor [GetLawType('law_command_economy').GetName]" # TODO PRCAL-35135 make this state capitalism
+technocracy_economy_laws_tt: "$lawgroup_economic_system$ law is neither [GetLawType('law_interventionism').GetName] nor [GetLawType('law_command_economy').GetName]" # TODO PRCAL-35135 make this state capitalism 
 technocracy_legitimacy_tt: "high [concept_legitimacy]"
 technocracy_command_economy_tt: "[GetLawType('law_command_economy').GetName] [concept_law]"
 technocracy_state_capitalism_tt: "[GetLawType('law_interventionism').GetName] [concept_law]" # TODO PRCAL-35135 make this state capitalism
@@ -680,6 +671,8 @@ je_metternich_reason: "The aftermath of the #b Napoleonic Wars#! has established
 metternich_system_box_tt: "\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_bloc_checkbox')] [ROOT.GetCountry.GetPowerBloc.GetName] has more than [GetPlayer.MakeScope.ScriptValue('metternich_bloc_target')|v0] [Concept('concept_power_bloc_member','$concept_power_bloc_members_extra_short$')] (currently [GetPlayer.MakeScope.ScriptValue('num_power_bloc_members_script')|v0])"
 metternich_system_cohesion_box_tt: "\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_bloc_cohesion_checkbox')] [concept_power_bloc_cohesion] of [ROOT.GetCountry.GetPowerBloc.GetName] is greater than [GetPlayer.MakeScope.ScriptValue('metternich_bloc_cohesion_target')|v0] (currently [GetPlayer.MakeScope.ScriptValue('power_bloc_cohesion_script')|v0])"
 
+concept_unification_short: "Unification"
+
 metternich_unticked: "@simple_box!"
 metternich_ticked: "@green_checkmark_box!"
 
@@ -704,9 +697,20 @@ metternich_memory_level_8: "the strategist and visionary to whom [ROOT.GetCountr
 metternich_memory_level_9: "the paragon of modern statecraft, to whom one dreams of being compared."
 metternich_memory_level_10: "a figure to match Napoleon, claimed by every political current as one of their own."
 
+modifier_geheime_staatskonferenz: "$concept_geheime_staatskonferenz$"
+modifier_geheime_staatskonferenz_kolowrat: "$concept_geheime_staatskonferenz$"
+modifier_geheime_staatskonferenz_metternich: "$concept_geheime_staatskonferenz$"
+
+geheime_staatskonferenz_dissolve_tt: "The [concept_geheime_staatskonferenz] will be dissolved"
+
+concept_geheime_staatskonferenz: "Geheime Staatskonferenz"
+concept_geheime_staatskonferenz_desc: "The $concept_geheime_staatskonferenz$, or #b Secret State Conference#!, is the de-facto ruling body of the #b Austrian Empire#!, established by the will of Kaiser Franz I. De jure, the body exists as an advisory board to Kaiser Ferdinand. Its composition serves as a compromise between the liberal and conservative factions of the court, including members of the [SelectLocalization(GetPlayer.IsValid,'LANDOWNERS_INGAME_LINK','$ig_landowners$')], [SelectLocalization(GetPlayer.IsValid,'INTELLIGENTSIA_INGAME_LINK','$ig_intelligentsia$')], and [SelectLocalization(GetPlayer.IsValid,'ARMED_FORCES_INGAME_LINK','$ig_armed_forces$')].\n\nThe $concept_geheime_staatskonferenz$ modifier will persist for as long as the #v $je_metternich$#! [concept_journal_entry] is active. Whilst this modifier is active, the [SelectLocalization(GetPlayer.IsValid,'LANDOWNERS_INGAME_LINK','$ig_landowners$')], [SelectLocalization(GetPlayer.IsValid,'INTELLIGENTSIA_INGAME_LINK','$ig_intelligentsia$')], and [SelectLocalization(GetPlayer.IsValid,'ARMED_FORCES_INGAME_LINK','$ig_armed_forces$')] will have greatly reduced [concept_approval] if not [concept_in_government].\n$TOOLTIP_DELIMITER$\n[GetStaticModifier('modifier_geheime_staatskonferenz').GetDesc]"
+
 LANDOWNERS_INGAME_LINK: "[GetInterestGroupVariant('ig_landowners',GetPlayer).GetNameWithCountryVariant]"
 INTELLIGENTSIA_INGAME_LINK: "[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetNameWithCountryVariant]"
 ARMED_FORCES_INGAME_LINK: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
+
+modifier_geheime_staatskonferenz_member: "Staatskonferenz Member"
 
 metternich_resignation_and_flee_tt: "[SCOPE.sCharacter('metternich_scope').GetFullName] will issue [SCOPE.sCharacter('metternich_scope').GetHerHis] resignation"
 
@@ -722,7 +726,7 @@ metternich.2.f: ""I am no longer anybody. I have nothing more to do, nothing mor
 metternich.2.a: "[SCOPE.sCharacter('metternich_scope').GetSheHe|U] will no longer define us."
 
 metternich.3.t: "A Minor Coup"
-metternich.3.d: "Chancellor [SCOPE.sCharacter('metternich_scope').GetFullName] has proposed a slate of reforms to the structure of the Geheime Staatskonferenz; improving the functioning of the body whilst instating [SCOPE.sCharacter('metternich_scope').GetHerselfHimself] as its undisputed head. [SCOPE.sCharacter('kolowrat_scope').GetFullName] has aligned with the Royal Family to arrest the measure."
+metternich.3.d: "Chancellor [SCOPE.sCharacter('metternich_scope').GetFullName] has proposed a slate of reforms to the structure of the $concept_geheime_staatskonferenz$; improving the functioning of the body whilst instating [SCOPE.sCharacter('metternich_scope').GetHerselfHimself] as its undisputed head. [SCOPE.sCharacter('kolowrat_scope').GetFullName] has aligned with the Royal Family to arrest the measure."
 metternich.3.f: ""There are few men who would benefit less from additional power than Metternich", began the messenger, "and I beg the Archduke forgive me for saying so. If you are available by month's end..."\n\nThe Archduke gestured for him to pause, an irritated look on his face. His boots were half-on, and he wished to give them his full attention. "Month's end? Where is Kolowrat now?"\n\n"Bohemia, my lord. He sends tidings of the flu.""
 metternich.3.a: "Kolowrat's meddling threatens the stability of the Empire."
 metternich.3.b: "The Chancellor had best limit himself to foreign affairs."
@@ -814,7 +818,6 @@ je_eastern_question_russia_reason: "The crisis wracking the #v $dyn_c_ottoman_em
 bulgaria_is_not_free_tt: "#v $BUL$#! does #b not#! exist"
 bulgaria_is_not_at_war_with_tur_tt: "#v $BUL$#! is not at war with the #v $dyn_c_ottoman_empire$#!"
 ottomans_not_owns_dobruja_tt: "The #v $dyn_c_ottoman_empire$#! does not own any state in [GetStateRegion('STATE_DOBRUDJA').GetName]"
-bulgaria_is_independent_tt: "#v $BUL$#! has been released as an independent [concept_country]"
 
 je_eastern_question_austria: "The Bosnian Question"
 je_eastern_question_austria_reason: "Our lobbies have requested that we occupy [GetStateRegion('STATE_BOSNIA').GetName], currently a territory of [SCOPE.sCountry('bosnia_owner_scope').GetName]. If acted upon, their proposal will assist in arresting the advance of [SelectLocalization(SCOPE.sCountry('relevant_country').IsValid, SCOPE.sCountry('relevant_country').GetAdjectiveNoFlag, 'dyn_c_rsfsr_adj')] influence in the [GetStrategicRegion('region_balkans').GetName].\n\nWhilst successfully acting on their request will gain us goodwill with the [Concept('concept_political_lobby','$concept_political_lobby_short$')], failing to do so in the time allocated will greatly displease them."
@@ -841,7 +844,7 @@ eastern_question_russia.1.t: "Protector of the South Slavs"
 eastern_question_russia.1.t2: "The [SelectLocalization(SCOPE.sCountry('bulgaria_scope').IsValid, SCOPE.sCountry('bulgaria_scope').GetAdjective, 'BUL_ADJ')] Revival"
 eastern_question_russia.1.d: "Our contribution to the independence of [SCOPE.sCountry('bulgaria_scope').GetName] has granted us credibility as protector of the South Slavic peoples. We now have ample opportunity to cement our influence in Balkans."
 eastern_question_russia.1.d2: "The independence of [SCOPE.sCountry('bulgaria_scope').GetName] has exposed cracks in the Ottoman sphere. We have gained a fortuitious opportunity to expand our sphere of influence in the Balkans."
-eastern_question_russia.1.f: "The sounds of a brass band played as the newly-raised [SCOPE.sCountry('bulgaria_scope').GetAdjectiveNoFormatting] regiments embarked upon their march. How interesting it was, thought [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting], that the new [SCOPE.sCountry('bulgaria_scope').GetAdjectiveNoFormatting] uniforms looked near-identical to [SCOPE.sCharacter('name_a_scope').GetHerHis] own. Green-blue fabric, red piping. Endearing, in the way of a child imitating his father.\n\n[SCOPE.sCharacter('name_a_scope').GetHerHis|U] mission, however, required more than endearment. One day, these soldiers may need to march in the name of [SCOPE.sCharacter('name_a_scope').GetHerHis] own country's interests. [ROOT.GetCountry.GetNameNoFormatting] would need an assurance from the [SCOPE.sCountry('bulgaria_scope').GetRuler.GetPrimaryRoleTitle]. There was military cooperation to arrange, Ottoman files to lay claim to. For each hour's joy, a day's business."
+eastern_question_russia.1.f: "The sounds of a brass band played as the newly-raised [SCOPE.sCountry('bulgaria_scope').GetAdjectiveNoFormatting] regiments embarked upon their march. How interesting it was, thought [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting], that the new [SCOPE.sCountry('bulgaria_scope').GetAdjectiveNoFormatting] uniforms looked near-identical to [SCOPE.sCharacter('name_a_scope').GetHerHis] own. Green-blue fabric, red piping. Endearing, in the way of a child imitating his father.\n\nHis mission, however, required more than endearment. One day, these soldiers may need to march in the name of his own country's interests. [ROOT.GetCountry.GetNameNoFormatting] would need an assurance from the [SCOPE.sCountry('bulgaria_scope').GetRuler.GetPrimaryRoleTitle]. There was military cooperation to arrange, Ottoman files to lay claim to. For each hour's joy, a day's business."
 eastern_question_russia.1.a: "Offer [SCOPE.sCountry('bulgaria_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('bulgaria_scope').GetRuler.GetLastName] our congratulations, and an embassy."
 eastern_question_russia.1.b: "There is more opportunity further afield."
 eastern_question_russia.1.c: "Offer [SCOPE.sCountry('bulgaria_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('bulgaria_scope').GetRuler.GetLastName] our congratulations, and an embassy."
@@ -871,7 +874,7 @@ achievement_david_slays_goliath_2_tt: "Is #v $MON$#!, #v $dyn_c_serbian_monteneg
 
 slave_revolt.4.t: "On Home Soil"
 slave_revolt.4.d: "A group of escaped [GetPopType('slaves').GetName] from our colony of [SCOPE.sState('fleeing_slaves_state').GetName] have successfully reached the [ROOT.GetCountry.GetAdjectiveNoFlag] mainland after stowing away on a trade vessel. By law, all enslaved people who touch [ROOT.GetCountry.GetAdjectiveNoFormatting] soil are made free."
-slave_revolt.4.f: "[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting] sat on the edge of the dock, swinging [SCOPE.sCharacter('name_a_scope').GetHerHis] feet over the surface of the water. The sunset tinted the water red. Fitting, given today's news. [SCOPE.sCharacter('name_a_scope').GetSheHe|U] had seen it in the paper, plastered on walls, on the lips of the passers-by.\n\nA voice sounded from behind [SCOPE.sCharacter('name_a_scope').GetHerHim]. [SCOPE.sCharacter('name_a_scope').GetSheHe|U] recognized it — [SCOPE.sCharacter('name_b_scope').GetFirstNameNoFormatting], another clerk at the courthouse.\n\n"What are you thinking about?"\n\n"In [SCOPE.sState('port_state').GetPortHubName], they recoil at the idea of people in chains. But they do not spare a thought for those beyond that horizon. One day, [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] will punish us all.""
+slave_revolt.4.f: "[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting] sat on the edge of the dock, swinging his feet over the surface of the water. The sunset tinted the water red. Fitting, given today's news. He had seen it in the paper, plastered on walls, on the lips of the passers-by.\n\nA voice sounded from behind [SCOPE.sCharacter('name_a_scope').GetHerHim]. [SCOPE.sCharacter('name_a_scope').GetSheHe|U] recognized it — [SCOPE.sCharacter('name_b_scope').GetFirstNameNoFormatting], another clerk at the courthouse.\n\n"What are you thinking about?"\n\n"In [SCOPE.sState('port_state').GetPortHubName], they recoil at the idea of people in chains. But they do not spare a thought for those beyond that horizon. One day, [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] will punish us all.""
 slave_revolt.4.a: "They are entitled to all rights of free men."
 slave_revolt.4.b: "Free or not, they must return to [SCOPE.sState('fleeing_slaves_state').GetName]."
 
@@ -1041,6 +1044,7 @@ tippu_tip_general_tt: "$Hamad$ $al_Murjabi$ will appear in [ROOT.GetCountry.GetN
 
 aus_integrate_crown_lands_decision: "Integrate the Crown Lands"
 aus_integrate_crown_lands_decision_desc: "With the matter of Hungary resolved, it is clear that our remaining autonomous $concept_crown_lands$ have long outlived their usefulness. For the sake of the prosperity of our great empire, these regions must be fully integrated into the Austrian administration."
+
 notification_hungary_dual_monarchy_name: "[SCOPE.sCountry('austria_scope').GetName] Establishes Dual Monarchy"
 notification_hungary_dual_monarchy_desc: "[SCOPE.sCountry('austria_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('austria_scope').GetRuler.GetFullName] has raised [SCOPE.sCountry('hungary_scope').GetName] to co-equal status with [SCOPE.sCountry('austria_scope').GetName]. Our [concept_autonomy] Level has risen to [concept_personal_union]."
 notification_hungary_dual_monarchy_tooltip: "#header $notification_hungary_dual_monarchy_name$#!\n$TOOLTIP_DELIMITER$\n$notification_hungary_dual_monarchy_desc$"

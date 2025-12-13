@@ -109,8 +109,6 @@
  ai_strategy_unify_ethiopia_desc: "[COUNTRY.GetName]はエチオピアの王子たちを彼らの旗のもとに統一させたいと考えています。"
  ai_strategy_unify_china: "中国統一"
  ai_strategy_unify_china_desc: "[COUNTRY.GetName]は中国の武将たちを彼らの旗のもとに統一させたいと考えています。"
- ai_strategy_unify_south_africa: "南アフリカの統一"
- ai_strategy_unify_south_africa_desc: "[COUNTRY.GetName]は[concept_georegion_south_africa]のすべての領土を支配下に置きたいと考えている。"
  ai_strategy_colonial_extraction: "植民地出の採取"
  ai_strategy_colonial_extraction_desc: "植民地国家である[COUNTRY.GetName]は、植民地支配者の命令で、原料資源を採取し、輸出しようとしています。"
  ai_strategy_socialism_in_one_country: "一国の社会主義"

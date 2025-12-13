@@ -45,7 +45,7 @@
  culture_brazil.3.t: "パウリスタの統合"
  culture_brazil.3.d: "[SCOPE.sCulture('paulista_culture').GetName]の人々、サンパウロと内陸部のカイピラの住民は中央政府と和解し、高まる[SCOPE.sCulture('brazilian_culture').GetName]の国民運動の折り合いをつけた。"
  #from the national anthem of Brazil
- culture_brazil.3.f: "「#italic イピランガの穏やかな岸辺が聞いた、\n英雄的民衆の響き渡る叫び声、\n眩い光線を放つ自由の太陽、\nその瞬間、祖国の空に輝いた。#!」" #–National anthem of Brazil"
+ culture_brazil.3.f: "「#italic イピランガの穏やかな岸辺が聞いた、\n英雄的民衆の響き渡る叫び声、\n眩い光線を放つ自由の太陽、\nその瞬間、祖国の空に輝いた#!」\n\n–ブラジル国歌"
  culture_brazil.3.a: "崇拝されし愛すべき祖国よ！万歳、万歳！"
  culture_brazil.4.t: "スリスタの統合"
  culture_brazil.4.d: "[SCOPE.sCulture('sulista_culture').GetName]の人々、パラナとイグアスそして南部のカウボーイは中央政府と和解し、高まる[SCOPE.sCulture('brazilian_culture').GetName]の国民運動の折り合いをつけた。"
@@ -83,7 +83,3 @@
  every_pop_converts_tt: "この国のすべての[SCOPE.sCulture('old_national_culture').GetName][concept_pop]は[SCOPE.sCulture('new_national_culture').GetName]を取り入れる"
  south_america_culture_convert_cooldown_tt: "過去#bold 5年#!でディシジョン「#bold 国民性の促進#!」を使用していない"
  modifier_assimilation_nnc: "開花する国民性"
- 75_percent_of_upper_pops_assimilate_tt: "[ROOT.GetCountry.GetCapital.GetName]で[SCOPE.sCulture('old_south_american_culture').GetName]に属する[Concept('concept_upper_strata','上流階級')][Concept('concept_pop', '$concept_pops$')]の#v 75%#!が[SCOPE.sCulture('new_national_culture').GetName][concept_culture]に同化する"
- 75_percent_of_upper_pops_assimilate_global_tt: "この[concept_state]で[SCOPE.sCulture('old_south_american_culture').GetName]に属する[Concept('concept_upper_strata','上流階級')][Concept('concept_pop', '$concept_pops$')]の#v 75%#!が[SCOPE.sCulture('new_national_culture').GetName][concept_culture]に同化する"
- is_university_gov_admin_or_urban_center_tt: "施設は[GetBuildingType('building_urban_center').GetName]、[GetBuildingType('building_university').GetName]、または[GetBuildingType('building_government_administration').GetName]である"
- is_barracks_or_naval_base_tt: "施設は[GetBuildingType('building_barrack').GetName]または[GetBuildingType('building_naval_base').GetName]である"
