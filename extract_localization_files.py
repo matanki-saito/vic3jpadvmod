@@ -321,8 +321,8 @@ def main():
 
     print("ゲーム更新を行います")
     os.makedirs(STEAM_GAME_DIR, exist_ok=True)
-    # install_result = run_steamcmd_update(APPID, STEAM_GAME_DIR, STEAM_LOGIN_NAME)
-    # print(install_result)
+    install_result = run_steamcmd_update(APPID, STEAM_GAME_DIR, STEAM_LOGIN_NAME)
+    print(install_result)
 
     print("フォルダクリア")
     empty_directory(SOURCE_DIR)
