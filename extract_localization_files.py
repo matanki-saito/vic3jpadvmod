@@ -247,7 +247,7 @@ def git_commit_and_push(repo_dir, commit_message, token):
     )
 
     # 5) push
-    run_git_command("git push origin HEAD:master", cwd=repo_dir)
+    run_git_command("git push origin HEAD:main", cwd=repo_dir)
 
 
 def read_branch_values(base_dir):
