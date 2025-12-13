@@ -2,8 +2,9 @@
 {
 	"appid"		"529340"
 	"publishedfileid"		"2881605374"
-	"contentfolder"		"/home/gnagaoka/vic3-actions-runner/_work/vic3jpadvmod/vic3jpadvmod/out/"
-	"previewfile"		"/home/gnagaoka/vic3-actions-runner/_work/vic3jpadvmod/vic3jpadvmod/resource/title.png"
+	"contentfolder"		"D:\a\vic3jpadvmod\vic3jpadvmod\source\JapaneseLanguageAdvancedMod\"
+	"previewfile"		"D:\a\vic3jpadvmod\vic3jpadvmod\resource\title.png"
+
 	"visibility"		"0"
 	"changenote"		"Translation is updated"
 }

@@ -5,7 +5,7 @@ name: publish_mod
 
 on:
   repository_dispatch:
-    types: [publish_mod]
+    types: [ publish_mod ]
   workflow_dispatch:
     inputs:
       name:
@@ -14,7 +14,7 @@ on:
 
 jobs:
   build:
-    runs-on: [self-hosted]
+    runs-on: windows-latest
     strategy:
       matrix:
         python-version: [ 3.10.8 ]
@@ -32,6 +32,18 @@ jobs:
 
       - name: Install boto3
         run: pip install boto3
+
+      - name: Get steamcmd
+        run: |
+          curl https://steamcdn-a.akamaihd.net/client/installer/steamcmd.zip --output steamcmd.zip
+          Expand-Archive -Path steamcmd.zip
+
+      - name: Update steamcmd
+        run: |
+          cd steamcmd
+          steamcmd.exe +login anonymous +quit
+        shell: cmd
+        continue-on-error: true
 
       - name: Pack mod
         run: python make_mod.py
@@ -51,24 +63,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-        with:
-          tag_name: v2_+${{github.run_number}}
-          release_name: Release ${{ github.run_number }}
-          body: |
-            new mod released!
-          draft: false
-          prerelease: false
-
-      - name: uploading steam workshop
+      - name: Upload workshop
         run: |
-          ls
-          steamcmd -dev -textmode -ignoredxsupportcfg +login ${STEAM_LOGIN_NAME} ${STEAM_LOGIN_PASSWORD} +workshop_build_item `pwd`/resource/main.vdf +quit
+          cd steamcmd
+          steamcmd.exe -dev -textmode -ignoredxsupportcfg +login %STEAM_LOGIN_NAME% +workshop_build_item ..\resource\main.vdf +quit
         env:
           STEAM_LOGIN_NAME: ${{ secrets.STEAM_LOGIN_NAME }}
-          STEAM_LOGIN_PASSWORD: ${{ secrets.STEAM_LOGIN_PASSWORD }}
-        continue-on-error: true
+        shell: cmd
