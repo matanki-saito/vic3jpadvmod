@@ -1,0 +1,185 @@
+﻿l_english:
+
+##amenability factors
+amenability_base: "$MANEUVERS_BASE_VALUE$" #base value
+amenability_legitimacy: "[InterestGroup.GetCountry.GetNameNoFlag]'s [concept_legitimacy] ([InterestGroup.GetCountry.GetGovernmentLegitimacy])"
+amenability_clout: "[InterestGroup.GetNameNoIcon]'s [concept_clout] ([InterestGroup.GetClout|%1])"
+amenability_pressuring_supporting_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')] by [Concept('concept_political_movement','$concept_political_movements$')] supporting this [concept_law]"
+
+amenability_pressuring_opposing_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')] by [Concept('concept_political_movement','$concept_political_movements$')] opposing this [concept_law]"
+amenability_approval: "[InterestGroup.GetNameNoIcon]'s [concept_approval] ([InterestGroup.GetApprovalValue|0])"
+amenability_law_likely_to_pass: "[concept_law] likely to pass anyway"
+amenability_law_worried_to_be_tie_breaker: "Could turn the tide of this [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enactment$')]"
+amenability_law_makes_no_difference: "Confident the law will fail anyway"
+amenability_in_gov: "being in [concept_government]"
+amenability_neutral_and_opposing: "#v Neutral#! [concept_approval] though opposes law"
+amenability_angry_and_opposing: "Angry and opposing law"
+amenability_strongly_oppose: "Strongly opposes the [concept_law]"
+amenability_ruler_popularity: "[concept_ruler]'s [concept_popularity]"
+amenability_ig_additional_adds: "#indent_newline:3 Additional modifiers with [InterestGroup.GetName]:\n[InterestGroup.GetModifier.GetDescFor('interest_group_amenability_add')]#!"
+amenability_country_additional_adds: "#indent_newline:3 Additional modifiers:\n[InterestGroup.GetCountry.GetModifier.GetDescFor('country_amenability_add')]#!"
+amenability_already_letting_go: "Already letting law through due to high [concept_approval]"
+
+##modifiers
+ bribed_ig_benefits: "Gifts and Subsidies"
+ failed_negotiations_ig: "Failed Negotiations"
+ negotiation_bribes: "Missing Funds"
+ negotiation_bureaucracy: "Administrative Corruption"
+ private_construction_contracts: "Private Construction Contracts"
+ bureaucracy_ig_benefits: "Administrative Influence"
+ heroes_of_the_people: "Heroes of the Common Man"
+ hero_of_the_people: "Hero of the Common Man"
+ active_ig_promise: "Active Negotiation Deal"
+ active_ig_promise_country: "Existing Promises"
+ negotiate_promise_failed_effects: "\n\n Failure will result in the following effects:"
+ negotiation_failed_quest: "Deceived"
+ negotiation_failed_quest_legit: "Worthless Words"
+ negotiation_completed_quest:1 "Negotiation Commitment Fulfilled"
+ negotiation_extended_quest:1 "Negotiation Commitment Delayed"
+ negotiation_pushing_for_law: "Promised Law Push"
+
+##Special loc:
+ negotiate_promise_tt:1 "Until the commitment is fulfilled:"
+ FailurePromiseLine_1: "Failure will partly [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
+ FailurePromiseLine_2: "Failure will #r significantly#! [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
+ FailurePromiseLine_3: "Failure will #r completely#! [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
+ will_not_negotiate_again_tt: "Will not negotiate again until the commitment is kept"
+ law_two_years_tt: "Penalties will be reduced if [ROOT.GetCountry.GetName] attempts to enact [SCOPE.sLaw('government_petition_law').GetName] for at least #v 24 months#!. \n#v Current failure effects:#!"
+ closer_we_get_neg_tt: "Penalties will be reduced as we approach the commitment. \n#v Current failure effects:#!"
+
+ #Names of Amenability Tiers
+ negotiation_tier_3: "Tense"
+ negotiation_tier_2: "Pragmatic"
+ negotiation_tier_1: "Collaborative"
+
+ #Toast for failing a Commitment
+ notification_neg_failed_quest_toast_name: "Commitment Failed"
+ notification_neg_failed_quest_toast_desc: "[SCOPE.gsInterestGroup('ig').GetName] are displeased that we failed to deliver on our promises."
+
+###events
+
+#negotiation.1 basic event
+
+ negotiation.1.t: "[SCOPE.gsInterestGroup('negotiating_interest_group').GetCustom('NegotiationLevelName')|U] Negotiations with the [SCOPE.gsInterestGroup('negotiating_interest_group').GetName]"
+ negotiation.1.d: "Amid much shouting, insults and regrettable turns of phrase, several paths have emerged that would convince the [SCOPE.gsInterestGroup('ig').GetName] to allow [SCOPE.sLaw('law').GetName] to pass."
+ negotiation.1.f: ""When a man says he approves of something in principle, it means he hasn't the slightest intention of carrying it out in practice." \n\n—Otto Von Bismarck"
+  negotiation.1.d2: "The [SCOPE.gsInterestGroup('ig').GetName] have agreed to meet at a local market to surreptitiously discuss changing their stance on [SCOPE.sLaw('law').GetName]"
+ negotiation.1.f2: "I walked around the square several times before approaching the stall. I spoke the key phrase: "These are fine lamps." Two men closed on either side of me. In all my years of service my heart has never thumped such a desperate waltz. Certain I was undone, I fell limp in their arms and was carried through the crowd to their negotiator. I confess I agreed to everything that was stated, and now I find myself in the precarious position of having to convince my own superiors of the validity of such proposals, lest I end up gutted like the fish mongers' wares."
+ negotiation.1.d3: "Despite ungentlemanly comments, raised voices, and the shaking of fists, the [SCOPE.gsInterestGroup('ig').GetName] have admitted to several compromises that would change their perception of [SCOPE.sLaw('law').GetName]."
+ negotiation.1.f3: "After I delivered the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s offer, I became incredibly grateful for the lector in front of me, my hardwood shield against the onslaught of insults and very physical detritus that was tossed at my person. \n\n I raised my arms, but kept my voice level. "Gentleman, please. I concede that this offer may not be all you hoped for. But the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] is quite adamant. [SCOPE.sLaw('law').GetNameNoFormatting] is the future of our nation.""
+  negotiation.1.d4: "After several rounds of terse correspondence, the [SCOPE.gsInterestGroup('ig').GetName] have met with the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s representatives and outlined their demands."
+ negotiation.1.f4: ""All legislation, all government, all society is founded upon the principle of mutual concession, politeness, comity, courtesy; upon these everything is based...Let him who elevates himself above humanity, above its weaknesses, its infirmities, its wants, its necessities, say, if he pleases, I will never compromise; but let no one who is not above the frailties of our common nature disdain compromises." \n\n—Henry Clay"
+ negotiation.1.d5: "Whispering through a haze of cigar smoke in [SCOPE.gsInterestGroup('ig').GetLeader.GetFullName]'s private dining hall, the [SCOPE.gsInterestGroup('ig').GetName] discuss what compromises they might accept for changing their stance on [SCOPE.sLaw('law').GetName]."
+ negotiation.1.f5: ""Although we are conservatives, in view of the present situation, we must change to survive."\n\n—Li Hongzhang"
+  negotiation.1.d6: "The [ROOT.GetCountry.MakeScope.Var('supporting_ig').GetInterestGroup.GetName] have held secret discussions with the [SCOPE.gsInterestGroup('ig').GetName], seeking a certain arrangement concerning [SCOPE.sLaw('law').GetName]."
+ negotiation.1.f6: ""The heated mind resents the chill touch and relentless scrutiny of logic." \n\n—William E. Gladstone"
+  negotiation.1.d7: "Prominent [SCOPE.gsInterestGroup('ig').GetName] meet in [ROOT.GetCountry.GetCapital.GetCityHubName] finest cafe to discuss [SCOPE.sLaw('law').GetName]. With the right leverage, perhaps their opinions could be swayed."
+ negotiation.1.f7: ""He serves his party best who serves the country best."\n\n—Rutherford B. Hayes, 19th U.S. President"
+  negotiation.1.d8: "[SCOPE.gsInterestGroup('ig').GetLeader.GetFullName] has agreed to a private meeting, clearly seeking a path that will benefit both the nation and the [SCOPE.gsInterestGroup('ig').GetName]' interests over [SCOPE.sLaw('law').GetName]."
+ negotiation.1.f8: ""We have no eternal allies, and we have no perpetual enemies. Our interests are eternal and perpetual, and those interests it is our duty to follow."\n\n—Lord Palmerston"
+  negotiation.1.d9: "The [SCOPE.gsInterestGroup('ig').GetName] pour only their best vintage and smoke only their finest tobacco during a polite discussion with government representatives about [SCOPE.sLaw('law').GetName]."
+ negotiation.1.f9: ""Compromise makes a good umbrella, but a poor roof; it is temporary expedient, often wise in party politics, almost sure to be unwise in statesmanship."\n\n—James Russell Lowell"
+ negotiation.1.o1: "[SCOPE.gsInterestGroup('negotiating_interest_group').GetCustom('BribeLine')]"
+ bribe_tier_1: "Quietly create a special subsidy for these good people."
+ bribe_tier_2: "Perhaps if we reconsider the distribution of funds..."
+ bribe_tier_3: "Put them in charge of the treasury."
+ negotiation.1.o2: "Place their members in administrative positions."
+ ###Many Options are below with their relevant JEs
+ negotiation.1.cancel: "These offers are not in [ROOT.GetCountry.GetNameNoFlag]'s interest."
+
+
+
+###Promise JEs
+
+
+##Shared Buttons
+ negotiation_go_away_button: "Abandon Commitment"
+ negotiation_go_away_button_desc: "Due to unforeseen circumstances, and with the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l]'s deepest regrets, this endeavor will be postponed to a later date."
+ has_been_abandoned_neg_tt:1 "This commitment has been #b abandoned#!"
+ discard_petition_neg_tt: "We will abandon our commitment with [SCOPE.gsInterestGroup('ig').GetName]" 
+ time_runs_out_tt: "Time runs out"
+ already_asked_for_extension_neg_tt: "Has not already announced a delay"
+
+ negotiation_extension_button: "Announce Delay"
+ negotiation_extension_button_desc: "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l] has every intention of carrying out this commitment to its fullest. However, it does seem some unfortunate changes to timing are inevitable."
+
+
+##je_negotiate_army_quest
+
+ negotiation.1.o3: "Commit to increasing the size of the army."
+ promise_grow_army_tt: "We will commit to grow our [concept_army_power_projection] from #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP [ROOT.GetCountry.GetArmyPowerProjection|v0]#!#! to [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_army_size').GetValue|v0] within #v 10 years#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+
+je_negotiate_army_quest: "Commitment: Enlarge the Army"
+je_negotiate_army_quest_status: "[concept_army_power_projection] is #tooltippable #tooltip:[ROOT.GetCountry.GetTooltipTag],PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP  [ROOT.GetCountry.GetArmyPowerProjection|v0]#!#! / [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_army_size').GetValue|v0]"
+je_negotiate_army_quest_reason: "We have sworn commitments with the [SCOPE.gsInterestGroup('ig').GetName] to increase the might of our nation's military. \n\nEither by training more troops, or by upgrading their equipment, we will ensure [ROOT.GetCountry.GetName] stands ready to defend its interests."
+
+##Law Promise
+
+ negotiation.1.o4: "Vow to pass [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_law_var').GetLaw.GetName] next."
+ promise_pass_law_tt: "We must pass [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_law_var').GetLaw.GetName] within #v 7 years and 6 months#! [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+ promise_pass_law_extra_help_tt: "[SCOPE.gsInterestGroup('ig').GetName] will push particularly hard for [SCOPE.gsInterestGroup('ig').MakeScope.Var('desired_law_var').GetLaw.GetName] during its enactment, periodically boosting enactment chance."
+
+
+je_government_petition_negotiation_version: "Commitment: Promised Enactment"
+je_government_petition_negotiation_version_status: "The [SCOPE.gsInterestGroup('ig').GetName] have been promised [SCOPE.sLaw('government_petition_law').GetName]"
+je_government_petition_negotiation_months_passed: "[SCOPE.sLaw('government_petition_law').GetName] enactment has continued for #v [SCOPE.gsInterestGroup('ig').MakeScope.Var('law_attempt_months').GetValue|v0]#! months"
+je_government_petition_negotiation_version_reason: "After supporting the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s efforts to pass [SCOPE.sLaw('law').GetName], the [SCOPE.gsInterestGroup('ig').GetName] are expecting the [concept_government] to honor its obligations and pass [SCOPE.sLaw('government_petition_law').GetName].\n\nShould we fail to enact [SCOPE.sLaw('government_petition_law').GetName] in time, the [SCOPE.gsInterestGroup('ig').GetName] will be greatly displeased, faith in the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s government will be shattered, and there will be a greater risk of a [concept_revolution] or [concept_coup]."
+je_government_petition_negotiation_version_b: "$je_government_petition_negotiation_version$"
+je_government_petition_negotiation_version_b_reason: "$je_government_petition_negotiation_version_reason$"
+notification_help_from_ig_name: "[SCOPE.gsInterestGroup('ig').GetName] push for [SCOPE.sLaw('government_petition_law').GetName]"
+notification_help_from_ig_desc: "Reminding their allies of their commitments has increased [concept_law] enactment chance."
+
+##Promise to build Buildings JE
+
+ negotiation.1.o5: "Perchance if we invested in more [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName]."
+ promise_build_tt: "We must increase the amount of [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] in our [Concept('concept_state', '$concept_states$')] from [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] to [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] within #v 10 years#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+
+ je_negotiate_buildings: "Commitment: Valued Investments"
+je_negotiate_buildings_status: "We have built [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName]"
+je_negotiate_buildings_reason: "We have promised the [SCOPE.gsInterestGroup('ig').GetName] to construct more [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] within our [Concept('concept_state', '$concept_states$')], an action that will surely improve the [ROOT.GetCountry.GetAdjective] economy."
+
+ negotiation.1.o6: "We must invest in [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]."
+ promise_building_group_tt: "We must increase the [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName] in our [Concept('concept_state', '$concept_states$')] from [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] to [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] within #v 10 years#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+
+
+
+je_negotiate_building_group: "Commitment: Economic Initiative"
+je_negotiate_building_group_status: "[SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]"
+je_negotiate_building_group_reason: "We have vowed to steer the [ROOT.GetCountry.GetAdjective] investment towards [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]. The [SCOPE.gsInterestGroup('ig').GetName] eagerly await the results of the initiative, which they insist will only lead to the betterment of life for all [ROOT.GetCountry.GetAdjective] citizens."
+
+ ## to lower taxes:
+
+negotiation.1.o7: "Lowering taxes could help the economy."
+ promise_lower_taxes_tt: "[SCOPE.gsInterestGroup('negotiating_interest_group').GetCustom('GetPromisedTaxLevelLoc')] [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+
+tax_tier_low_short: "We commit to leave [concept_taxes] at #v Low#! or #v Very Low#! for #v 2 years#!."
+tax_tier_low: "We commit to leave [concept_taxes] at #v Low#! or #v Very Low#! for #v 4 years#!."
+tax_tier_very_low: "We commit to leave [concept_taxes] at #v Very Low#! for #v 4 years#!."
+
+
+je_negotiate_taxes: "Commitment: Tax Cuts"
+je_negotiate_taxes_status: "[ROOT.GetCountry.MakeScope.Var('neg_taxes_remaining_months').GetValue|v0] months remaining"
+je_negotiate_taxes_reason: "We have made a deal with the [SCOPE.gsInterestGroup('ig').GetName] to lower taxes so the economy can flourish. Now we must retain taxes at the current level, no matter the state finances, or else risk angering the [SCOPE.gsInterestGroup('ig').GetNameNoIcon] and the populace at large."
+
+neg_taxes_remain_low_tt: "[concept_taxes] remain at [SCOPE.GetRootScope.GetCountry.GetCustom('GetPromisedTaxLevelOneWord')] for as long as agreed"
+neg_taxes_change_level_tt: "[concept_taxes] are set above [SCOPE.GetRootScope.GetCountry.GetCustom('GetPromisedTaxLevelOneWord')|U]"
+
+neg_taxes_progress_bar: "Months Remaining"
+neg_taxes_progress_bar_desc: "Months Remaining: [ROOT.GetCountry.MakeScope.Var('neg_taxes_remaining_months').GetValue|v0]"
+tax_low: "#v Low#! or #v Very Low#!"
+tax_very_low: "#v Very Low#!"
+neg_tax_bar_lowering_desc: "[concept_taxes] remain at [SCOPE.GetRootScope.GetCountry.GetCustom('GetPromisedTaxLevelOneWord')]"
+NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE_TT: "[THIS.GetInterestGroup.GetName] will support [ROOT.GetCountry.GetLawBeingEnacted.GetName], causing [Concept('concept_enactment_success', '$concept_enactment_success$')] chance to increase by #g [THIS.ScriptValue('law_enactment_change')|=0%]#!"
+NEGOTIATE_LAW_STALL_CHANCE_DECREASE_TT: "[THIS.GetInterestGroup.GetName] will cease opposing [ROOT.GetCountry.GetLawBeingEnacted.GetName], causing [Concept('concept_enactment_stall', '$concept_enactment_stall$')] chance to decrease by #g -[THIS.ScriptValue('law_enactment_change')|0%]#!"
+
+
+negotiation.1.o8: "Let's add some fine print about [SCOPE.gsInterestGroup('ig').MakeScope.Var('amendment_type').GetAmendmentType.GetName]."
+
+negotiation.1.o9: "Vow to improve the lives of the common people."
+promise_higher_sol_tt: "We will commit to increasing average [concept_sol] of [ROOT.GetCountry.GetNameNoFlag] to [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_sol_level').GetValue|v1] within #v [SCOPE.gsInterestGroup('ig').GetCustom('SOL_commitment_duration')] years#! [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+
+je_negotiate_sol: "Commitment: The Common People"
+je_negotiate_sol_status: "Average [concept_sol] is [ROOT.GetCountry.GetAverageSoLByPopulation|v1] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_sol_level').GetValue|v1]"
+je_negotiate_sol_reason: "We have sworn an oath to the [SCOPE.gsInterestGroup('ig').GetName] to improve the lives of the common people. There is truly no more noble goal for the rulers of this nation than increasing the [concept_sol] of our [ROOT.GetCountry.GetAdjective] citizens."
+neg_sol_short_time_loc: "7.5"
+neg_sol_long_time_loc: "10"

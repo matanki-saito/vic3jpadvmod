@@ -1,12 +1,12 @@
 ﻿l_english:
 
 #Afghanistan all
-je_unify_afghanistan_lobby: "#v Unlocked by DLC: Sphere of Influence#! \nThe succession crisis sparked by the death of Timur Shah Durrani in 1793 has thrown the former Durrani Empire into a period of endless civil strife. With the threat of European powers encroaching from all sides, we must take it upon ourselves to end this period of warring principalities and reconstruct a unified Afghanistan."
+je_unify_afghanistan_lobby: "#v Unlocked by DLC: Sphere of Influence#!\nThe succession crisis sparked by the death of Timur Shah Durrani in 1793 has thrown the former Durrani Empire into a period of endless civil strife. With the threat of European powers encroaching from all sides, we must take it upon ourselves to end this period of warring principalities and reconstruct a unified Afghanistan."
 
 #Austria:
 je_matter_of_hungary_lobby:1 "Austrian control of Hungary must be maintained, whether through iron rule or compromise."
-je_metternich_lobby: "#v Unlocked by DLC: National Awakening#! \nMaintain the ideals of the Chancellor Klemens von Metternich, or allow his carefully architectured conservative order to fall by the wayside."
-je_austrian_neo_absolutism_lobby: "#v Unlocked by DLC: National Awakening#! \nThe threat of a revolution from below has necessitated that Vienna conduct its own from above. Through the establishment of a centralized, rational, and effective state apparatus — staffed by loyal and capable bureaucrats — the country will be modernized to meet the challenges of this day and age."
+je_metternich_lobby: "#v Unlocked by DLC: National Awakening#!\nMaintain the ideals of the Chancellor Klemens von Metternich, or allow his carefully architectured conservative order to fall by the wayside."
+je_austrian_neo_absolutism_lobby: "#v Unlocked by DLC: National Awakening#!\nThe threat of a revolution from below has necessitated that Vienna conduct its own from above. Through the establishment of a centralized, rational, and effective state apparatus — staffed by loyal and capable bureaucrats — the country will be modernized to meet the challenges of this day and age."
 
 #Argentina, and Chile
 je_patagonia_lobby: "The southern reaches of the continent remain outside of the control of any nation. Though the native population will certainly not make it easy, it is imperative that we secure this territory before it falls into the hands of our rivals."
@@ -16,16 +16,16 @@ je_conference_of_london_lobby: "The great powers have sent their delegations to 
 
 #BIC
 je_consolidate_colonial_rule_lobby: "In order to ensure the security of our core holdings, those native sovereigns who still evade our rule must be brought to heel, and any hint of popular resistance crushed before it spirals out of control."
-je_dravidian_movement_lobby: "#v Unlocked by DLC: Pivot of Empire#! \nThe common people of India have responded to the disproportionate representation and political power of Brahmins. After a series of anti-Brahmin conferences, the Dravidian Movement has formed and set a new agenda to oppose Brahmin dominance. They seek to remove caste distinctions from law and government administration."
-je_india_non_cooperation_movement_lobby: "#v Unlocked by DLC: Pivot of Empire#! \nThe independence movement in India is gaining momentum, and its leaders have come up with a new campaign with a clear aim: economic and political non-cooperation, spurning collaboration with British authorities. They hope to demonstrate their movement's power by crippling British trade."
+je_dravidian_movement_lobby: "#v Unlocked by DLC: Pivot of Empire#!\nThe common people of India have responded to the disproportionate representation and political power of Brahmins. After a series of anti-Brahmin conferences, the Dravidian Movement has formed and set a new agenda to oppose Brahmin dominance. They seek to remove caste distinctions from law and government administration."
+je_india_non_cooperation_movement_lobby: "#v Unlocked by DLC: Pivot of Empire#!\nThe independence movement in India is gaining momentum, and its leaders have come up with a new campaign with a clear aim: economic and political non-cooperation, spurning collaboration with British authorities. They hope to demonstrate their movement's power by crippling British trade."
 
 #Bolivia. They also get Exploiting the Amazon and Colombian content.
-je_acre_dispute_lobby: "#v Unlocked by DLC: Colossus of the South#! \nThe region of Acre has become heavily disputed. Opportunistic settlers seek to claim the land for themselves. We must strike while the iron is hot, or else lose the state forever."
+je_acre_dispute_lobby: "#v Unlocked by DLC: Colossus of the South#!\nThe region of Acre has become heavily disputed. Opportunistic settlers seek to claim the land for themselves. We must strike while the iron is hot, or else lose the state forever."
 
 #Brazil
-je_agricultural_development_lobby: "#v Unlocked by DLC: Colossus of the South#! \nBrazil is blessed with a vast amount of fertile farmland, and a suitable climate for agriculture. This provides a great chance to enrich the nation and propel Brazilian produce into worldwide prominence."
-je_pedro_brazil_lobby: "#v Unlocked by DLC: Colossus of the South#! \nPedro II aspires to maintain democratic rule and protect the civil liberties afforded by the constitution, as well as finally ending the institution of slavery which mars Brazil - despite the strength of the conservative forces arrayed against his liberal cause."
-je_brazilian_nation_building_lobby: "#v Unlocked by DLC: Colossus of the South#! \nBrazil is a colony without a motherland; a state without a nation. To forge a single identity from all the peoples who inhabit this vast land will take careful deliberations, the completion of herculean tasks, and a steady hand. Is a single, united Brazil truly possible?"
+je_agricultural_development_lobby: "#v Unlocked by DLC: Colossus of the South#!\nBrazil is blessed with a vast amount of fertile farmland, and a suitable climate for agriculture. This provides a great chance to enrich the nation and propel Brazilian produce into worldwide prominence."
+je_pedro_brazil_lobby: "#v Unlocked by DLC: Colossus of the South#!\nPedro II aspires to maintain democratic rule and protect the civil liberties afforded by the constitution, as well as finally ending the institution of slavery which mars Brazil - despite the strength of the conservative forces arrayed against his liberal cause."
+je_brazilian_nation_building_lobby: "#v Unlocked by DLC: Colossus of the South#!\nBrazil is a colony without a motherland; a state without a nation. To forge a single identity from all the peoples who inhabit this vast land will take careful deliberations, the completion of herculean tasks, and a steady hand. Is a single, united Brazil truly possible?"
 
 #Brazil minors
 ragamuffin_war_minors_lobby: "The apathy of Brazil's imperial government towards the plight of its people can no longer be tolerated. We have elected our own government and declared ourselves an independent republic!"
@@ -38,17 +38,19 @@ central_america_falls_apart_lobby: "The Central American States are crying out f
 je_reunify_central_america_lobby: "If Central America collapses into disparate fiefdoms, it will only be a matter of time before one state seeks to again unite the region and lead its people into the modern era."
 
 #Colombia:
-je_gran_colombia_lobby: "#v Unlocked by DLC: Colossus of the South#! \nThe dissolution of the state of Gran Colombia, torn apart by separatism in the 1830s, was a tragedy.  Seeking its return may arouse the ires of those that are less enthusiastic about unification - but a successful restoration of Gran Colombia would be of immense benefit to all of its founding nations."
+je_gran_colombia_lobby: "#v Unlocked by DLC: Colossus of the South#!\nThe dissolution of the state of Gran Colombia, torn apart by separatism in the 1830s, was a tragedy.  Seeking its return may arouse the ires of those that are less enthusiastic about unification - but a successful restoration of Gran Colombia would be of immense benefit to all of its founding nations."
 
 #China
 je_boxer_rebellion_lobby: "The humiliating loss of Chinese lands to foreign "barbarians" has resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence."
 je_opium_obsession_lobby: "Vast numbers of our people have become addicted to opium. This is a national disgrace that must be addressed, but we must also beware of the foreign powers who benefit greatly from the opium trade."
 je_warlord_china_lobby: "If the authority of the central government is sufficiently eroded, local military powers will tear the country into petty fiefdoms. However, perhaps not all is lost. One of these powers may succeed in restoring China from the ruins."
 
+#Cuba
+
 #Ethiopia
 je_age_of_princes_lobby: "Ethiopia has been shattered into a dozen warring fiefdoms. It is up to us to reunify the Empire and to restore peace and prosperity to our people."
 
-#Great Briton 
+#Great Briton
 je_consolidate_afghanistan_lobby: "#v Unlocked by DLC: Sphere of Influence#! \nThe porous and ill-defined borders of the Afghan states have served as a flashpoint for conflicts within the Pamir region. Negotiating with our rivals to delimit internationally recognized borders of Afghanistan will contribute greatly to decreasing the risk of a war."
 je_india_nationalism_britain_lobby: "#v Unlocked by DLC: Pivot of Empire#! \nAcross India, national consciousness is rising amongst the native population. Native Indians educated in British schools and employed by the colonial government have begun to agitate for equal status within imperial institutions, greater economic opportunity, and self-governance."
 je_canada_gbr_lobby: "We desire that all of the Canadian colonies be merged into one, and for a Canadian nation to emerge. To achieve this we must convince the local colonial administrations that unification is in their best interests."
@@ -61,16 +63,17 @@ je_the_paris_commune_france_lobby: "#v Unlocked by DLC: Voice of the People#! \n
 #Greece:
 je_greek_nationalism_lobby: "#italic "The Greek is not only he who inhabits the kingdom, but also he who lives in Janina, or Thessaloniki, or Seres, or Adrianople, or Constantinople, or Trebizone, or Crete, or Samos, or any other country of the Greek history or race..."\n—Ioannis Kolettis#!\n\nA concerted effort must be made to free and incorporate the other Greek States."
 
-je_bavarocracy_lobby: "#v Unlocked by DLC: National Awakening#! \nCement the power of King Otto and his Bavarian clique or bring about political change to the nascent Greek Kingdom."
+je_bavarocracy_lobby: "#v Unlocked by DLC: National Awakening#!\nCement the power of King Otto and his Bavarian clique or bring about political change to the nascent Greek Kingdom."
 
-#Hawaii. 
+#Hawaii.
 je_hawaii_lobby: "Hawaii's position in the Pacific Ocean makes it extremely valuable for Trans Pacific Trade. We must grow our economy before any great power seeks to take advantage of our islands."
 
 #Haiti
 je_haitian_debt_lobby: "Diplomatically isolated and fearing another invasion, in 1825 the Haitian government agreed to compensate France for the cost of its independence. If Haiti is to once again be known as the Pearl of the Antilles, our financial obligations must be dealt with, one way or another."
+je_la_trinitaria_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nThe unhappy marriage betwen Hispaniola's western and eastern halves is buckling under pressure from revolutionary societies in Santo Domingo. Can Port-au-Prince clean them out, or will a unified Haiti exist only as a historical footnote?"
 
 #Hungary:
-je_hungarian_revolution_lobby: "#v Unlocked by DLC: National Awakening#! \nWhile disagreeing on the exact nature of Hungary's future relationship with the Habsburg monarchy, a wave of liberal leaders are uniting behind a common desire for political and economic reform, intending to transform the relative backwater of Hungary into a modern and dynamic nation state."
+je_hungarian_revolution_lobby: "#v Unlocked by DLC: National Awakening#!\nWhile disagreeing on the exact nature of Hungary's future relationship with the Habsburg monarchy, a wave of liberal leaders are uniting behind a common desire for political and economic reform, intending to transform the relative backwater of Hungary into a modern and dynamic nation state."
 
 #India, See BIC or Princely States
 
@@ -82,15 +85,15 @@ je_meiji_restoration_lobby: "The Shogunate has ruled over an isolated and stagna
 je_meiji_economy_lobby: "If we stick to the path of tradition, it is only a matter of time before foreign powers defeat and subjugate us. Instead, we must industrialize our nation, adopt new ways of governing, and master new arts of war; so we rise as a great power ourselves."
 
 #Korea
-je_donghak_movement_lobby: "#v Unlocked by DLC: Sphere of Influence#! \nDonghak, or Eastern Learning, has begun to spread amongst the peasants of Korea. Riding a wave of fury at the opening of the country to the outside world. They advocate for equality and rights for all, and a rejection of foreign influence. It may be only a matter of time before the movement erupts in open rebellion."
+je_donghak_movement_lobby: "#v Unlocked by DLC: Sphere of Influence#!\nDonghak, or Eastern Learning, has begun to spread amongst the peasants of Korea. Riding a wave of fury at the opening of the country to the outside world. They advocate for equality and rights for all, and a rejection of foreign influence. It may be only a matter of time before the movement erupts in open rebellion."
 
 #Montenegro
-je_mon_serb_unity_lobby: "#v Unlocked by DLC: National Awakening#! \nMontenegrins see themselves as Serbs separated by their kin by the tyrannical Ottomans. If the borders of their lands were to meet, perhaps they could unite as brothers."
-je_mon_state_formation_lobby: "#v Unlocked by DLC: National Awakening#! \nCan Montenegro earn the respect of the Great Powers by developing from a collection of warlike tribes to a modern state?"
-je_montenegrin_raiding_lobby: "#v Unlocked by DLC: National Awakening#! \nWith little arable land, Montenegrin tribes rely on raiding Ottoman territory to survive."
+je_mon_serb_unity_lobby: "#v Unlocked by DLC: National Awakening#!\nMontenegrins see themselves as Serbs separated by their kin by the tyrannical Ottomans. If the borders of their lands were to meet, perhaps they could unite as brothers."
+je_mon_state_formation_lobby: "#v Unlocked by DLC: National Awakening#!\nCan Montenegro earn the respect of the Great Powers by developing from a collection of warlike tribes to a modern state?"
+je_montenegrin_raiding_lobby: "#v Unlocked by DLC: National Awakening#!\nWith little arable land, Montenegrin tribes rely on raiding Ottoman territory to survive."
 
 #Mughals
-je_mughal_hindustan_lobby: "#v Unlocked by DLC: Pivot of Empire#! \nOur lords once ruled from Kabul to the Carnatic coast. But each year, the so-called "Great Powers" deny our court the authority, prestige, and traditions it once enjoyed. Now the scions of Timur scarcely wield any power beyond the walls of the Red Fort of Delhi!\n\n#N #bold We must act to save our empire, lest it slide into oblivion.#!#!"
+je_mughal_hindustan_lobby: "#v Unlocked by DLC: Pivot of Empire#!\nOur lords once ruled from Kabul to the Carnatic coast. But each year, the so-called "Great Powers" deny our court the authority, prestige, and traditions it once enjoyed. Now the scions of Timur scarcely wield any power beyond the walls of the Red Fort of Delhi!\n\n#N #bold We must act to save our empire, lest it slide into oblivion.#!#!"
 
 #The Netherlands
 je_land_reclamation_lobby: "The Netherlands is densely populated, and arable land is increasingly scarce. Through great works of engineering, we can reclaim new land from the sea."
@@ -104,46 +107,61 @@ je_poland_lithuania_lobby: "The borders of the old Commonwealth stretched far be
 
 #Peru
 je_amazonas_lobby: "Steps must be taken to transform the Amazon from an inhospitable jungle into an intensively developed land capable of meeting the demands of commerce."
-je_andean_federation_lobby: "#v Unlocked by DLC: Colossus of the South#! \nThe greatest extent of the ambitions of Simón Bolívar was his proposed Federation of the Andes, a great confederation of all Latin America. Despite its initial failure at the Congress of Panama, the winds have changed, and the threat of European and American encroachment has created the environment for a possible revival of the idea."
+je_andean_federation_lobby: "#v Unlocked by DLC: Colossus of the South#!\nThe greatest extent of the ambitions of Simón Bolívar was his proposed Federation of the Andes, a great confederation of all Latin America. Despite its initial failure at the Congress of Panama, the winds have changed, and the threat of European and American encroachment has created the environment for a possible revival of the idea."
+
+#Philippines
+je_philippines_development_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nAn increase in international trade has set the stage for a burgeoning middle class to gain more influence despite ongoing political upheavals. With one of the most frequented harbors of the region, the islands are rich with opportunity for those who seek it."
+je_philippines_main_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nTensions within the Philippines are on the rise. Spanish Clergymen dominate secular and religious life, while local priests lead revolts against their authority. Ultimately, there are high expectations that the Governor-General maintains an iron rule over the archipelago. Will Spanish rule prevail or will the people of the Philippines succeed in gaining greater liberties?"
+je_filipino_ethnogenesis_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nThe Philippines have long been home to many disparate peoples. If we are to build a strong and modern state, a new pan-Philipinic identity must be developed."
 
 #Romania
 je_unite_the_principalities_lobby: "The Danubian principalities have roused from their long lethargy. The rights and interests of the homeland cry out for liberation; the good and happiness of the Romanian nation!"
 
 #Russia
 je_great_reformer_lobby: "The accession of Alexander II to the Russian throne has been hailed by many reformers as a chance to completely remodel the antiquated structures of our mighty state."
-je_pacify_the_steppes_lobby: "#v Unlocked by DLC: Sphere of Influence#! \nDespite nominal Russian control over the Kazakh steppe since the 18th century, banditry and disloyalty plagues the territory. Kazakh rebels have begun striking again and again against our supply convoys and fortresses in the region. They must be sought out, and pacified."
-je_conquest_of_central_asia_lobby: "#v Unlocked by DLC: Sphere of Influence#! \nTo secure our Southern border, counter British power in India, and open routes through which we may extend Russian influence into the Middle East, the Tsar has issued the prerogative to establish protectorates across Central Asia, and expand our empire into Turkestan proper."
+je_pacify_the_steppes_lobby: "#v Unlocked by DLC: Sphere of Influence#!\nDespite nominal Russian control over the Kazakh steppe since the 18th century, banditry and disloyalty plagues the territory. Kazakh rebels have begun striking again and again against our supply convoys and fortresses in the region. They must be sought out, and pacified."
+je_conquest_of_central_asia_lobby: "#v Unlocked by DLC: Sphere of Influence#!\nTo secure our Southern border, counter British power in India, and open routes through which we may extend Russian influence into the Middle East, the Tsar has issued the prerogative to establish protectorates across Central Asia, and expand our empire into Turkestan proper."
 
 
 #Paraguay:
-je_francocracia_lobby: "#v Unlocked by DLC: Colossus of the South#! \nWith the support of his dreaded Pyraguës, a form of secret police, Doctor Francia has ruled the country with a firm hand, exchanging his silken glove for an iron fist whenever needed. But he is aging, and it is uncertain if Francia's vision of an isolationist, Rousseauian paradise will survive the good Doctor himself."
-je_modernizing_paraguay_lobby: "#v Unlocked by DLC: Colossus of the South#! \nCarlos Antonio López has begun an ambitious program to modernize and expand our armed forces. After all, only they may truly safeguard the interests of the nation, wherever they may lie."
-je_expanding_paraguay_lobby: "#v Unlocked by DLC: Colossus of the South#! \nAround us, our neighbors maneuver and scheme, plotting to wrest control of our sacred lands from us.Should we meekly wait for the enemy to make the first move? No. As our forefathers before us, we must make our own luck."
+je_francocracia_lobby: "#v Unlocked by DLC: Colossus of the South#!\nWith the support of his dreaded Pyraguës, a form of secret police, Doctor Francia has ruled the country with a firm hand, exchanging his silken glove for an iron fist whenever needed. But he is aging, and it is uncertain if Francia's vision of an isolationist, Rousseauian paradise will survive the good Doctor himself."
+je_modernizing_paraguay_lobby: "#v Unlocked by DLC: Colossus of the South#!\nCarlos Antonio López has begun an ambitious program to modernize and expand our armed forces. After all, only they may truly safeguard the interests of the nation, wherever they may lie."
+je_expanding_paraguay_lobby: "#v Unlocked by DLC: Colossus of the South#!\nAround us, our neighbors maneuver and scheme, plotting to wrest control of our sacred lands from us.Should we meekly wait for the enemy to make the first move? No. As our forefathers before us, we must make our own luck."
 
 #Persia
-je_eastern_frontier_lobby: "#v Unlocked by DLC: Sphere of Influence#! \nDecisive steps must be taken to reintegrate the wayward lands to our east. Capturing these areas will allow us to liberate and resettle enslaved Persian communities, if we so please."
+je_eastern_frontier_lobby: "#v Unlocked by DLC: Sphere of Influence#!\nDecisive steps must be taken to reintegrate the wayward lands to our east. Capturing these areas will allow us to liberate and resettle enslaved Persian communities, if we so please."
 
-#Prussia and German States:
+#Portugal
+je_portugal_regeneration_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nSeeking to remedy centuries-long decline and establish a new liberal order, the government has unveiled plans for comprehensive institutional reforms."
+je_the_pink_map_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nColonial administrators have long entertained the idea of connecting Portuguese West and East Africa by land. It is time we realized this vision."
+je_second_liberalism_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nThe end of the Liberal Wars has ushered in constitutional rule in Portugal. Can the reformers consolidate their position and see their vision through, or will Portugal pivot toward reaction or radicalism?"
+
+#Prussia and German States:	
 je_schleswig_holstein_question_lobby: "The Schleswig-Holstein Question is currently occupying the thoughts and energies of the German nationalists. In order for Germany to progress towards national unification, the German people of Holstein must first be liberated from their Danish overlords."
 #German States except Prussia:
-je_german_unification_idea_lobby: "The ideas of nationalism are spreading like wildfire among the German people. Once these ideals have reached a critical mass of followers in the disparate states of the German Confederation, there is bound to be a push for national unification." 
+je_german_unification_idea_lobby: "The ideas of nationalism are spreading like wildfire among the German people. Once these ideals have reached a critical mass of followers in the disparate states of the German Confederation, there is bound to be a push for national unification."
 #Prussia Only:
 je_german_unification_lobby: "The time has come to make a decisive push for German unification. As one of the foremost German states, it is our duty to bring about this goal."
 
 #Princely States:
-je_princely_states_lobby: "#v Unlocked by DLC: Pivot of Empire#! \nThe tides are in our favor to increase our autonomy and pursue a path for independence, lest the British take full control."
+je_princely_states_lobby: "#v Unlocked by DLC: Pivot of Empire#!\nThe tides are in our favor to increase our autonomy and pursue a path for independence, lest the British take full control."
 
 #Serbia
-je_serbian_throne_lobby: "#v Unlocked by DLC: National Awakening#! \nAccording to informers, the house of Karađorđević, a family whose founder was once known as a hero of the Serbian people, are plotting to dethrone the ruling house of Obrenović."
-je_the_balkan_league_lobby: "#v Unlocked by DLC: National Awakening#! \nIf the Balkan nations gain freedom from the grasp of the Ottoman Empire, there is a consensus of forming an alliance to push them back once and for all. The Balkans belongs to its authentic inhabitants, despite centuries of enthrallment."
+je_serbian_throne_lobby: "#v Unlocked by DLC: National Awakening#!\nAccording to informers, the house of Karađorđević, a family whose founder was once known as a hero of the Serbian people, are plotting to dethrone the ruling house of Obrenović."
+je_the_balkan_league_lobby: "#v Unlocked by DLC: National Awakening#!\nIf the Balkan nations gain freedom from the grasp of the Ottoman Empire, there is a consensus of forming an alliance to push them back once and for all. The Balkans belongs to its authentic inhabitants, despite centuries of enthrallment."
 
-#Sikh (fully sick!) Empire 
-je_sikh_sovereignty_lobby: "#v Unlocked by DLC: Pivot of Empire#! \nOur burgeoning kingdom has enjoyed great success in the years since the Sher-e-Punjab conquered the former Mughal imperial capital. It is critical at this time that we protect our territory from outside aggression and honor the tenets of our Sikh faith. May the legacy of this dynasty be long-lasting!"
+#Sikh (fully sick!) Empire
+je_sikh_sovereignty_lobby: "#v Unlocked by DLC: Pivot of Empire#!\nOur burgeoning kingdom has enjoyed great success in the years since the Sher-e-Punjab conquered the former Mughal imperial capital. It is critical at this time that we protect our territory from outside aggression and honor the tenets of our Sikh faith. May the legacy of this dynasty be long-lasting!"
+
+#Spain
+je_the_two_spains_lobby: "#v Unlocked by DLC: Iberian Twilight#!\n"Here lies half of Spain. It died of the other half."\n— Mariano José\n\nThe divide between liberals and conservatives is felt particularly keenly in Spain, where both sides are locked in a relentless struggle for ideological supremacy."
+je_the_first_carlist_war_lobby: "The death of Ferdinand VII would see war rear its ugly head in Spain yet again. Disputing the validity of the Pragmatic Sanction of 1830, the late King's brother Carlos has rallied conservative factions against the liberal government of the child Queen Isabella. The fate of Spain now hangs in the balance."
+je_spa_economic_regeneration_master_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nOutmoded and outcompeted, Spain's economy is in dire need of reform. By launching a comprehensive, ambitious reform program, the country can rise to new heights."
 
 #Turkey
 je_sick_man_main_lobby: "The Ottoman Empire has been in decline for centuries. We must act fast to modernize and restore our place among the great powers. There is much to do: modernizing the army, suppressing separatism, passing education and bureaucratic reforms, and reclaiming Syria."
-je_tur_raided_lobby: "#v Unlocked by DLC: National Awakening#! \nThe Montenegrin tribes raiding our border must be put in their place, but can we put down these violent Christians without facing the wrath of the Great Powers?"
-je_great_eastern_crisis_lobby: "#v Unlocked by DLC: National Awakening#! \nA crisis is brewing in the Balkans, and we must maintain control over our territory as secessionists jeopardize our rule. The current unrest must be stamped out before it spreads across the region."
+je_tur_raided_lobby: "#v Unlocked by DLC: National Awakening#!\nThe Montenegrin tribes raiding our border must be put in their place, but can we put down these violent Christians without facing the wrath of the Great Powers?"
+je_great_eastern_crisis_lobby: "#v Unlocked by DLC: National Awakening#!\nA crisis is brewing in the Balkans, and we must maintain control over our territory as secessionists jeopardize our rule. The current unrest must be stamped out before it spreads across the region."
 
 #Turtle Island
 je_unite_the_nations_lobby: "For ourselves and our brothers to survive, we must band together. Only united will we be able to resist the advances, both diplomatic and forceful, of the colonizing powers on our doorsteps."
@@ -152,3 +170,11 @@ je_unite_the_nations_lobby: "For ourselves and our brothers to survive, we must 
 je_acw_war_lobby: "If the matter of slavery cannot be settled peacefully, a great civil war may befall our blessed nation."
 je_indian_removal_lobby: "The President, in defiance of the Supreme Court, has ordered that the Cherokee nation should migrate to the Indian Territory."
 je_acw_equality_lobby: "As our nation stretches its borders, it is the dream of many to live under a system that recognizes all men, from the North and South, black and white, as true equals."
+
+#Cuba
+je_cuba_espanol_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nCuba remains loyal to Spain. So loyal, in fact, that the Reformists among the landowners seek the island's recognition not as a colony but a formal province of Spain."
+je_cuba_la_vida_dulce_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nCuba has come to dominate the sugar trade, largely through the continued smuggling of slaves. The nation's long term prosperity will depend on expanding these established trade routes. And should slavery be abolished, perhaps one day all Cubanos could benefit from a sweeter life."
+je_cuba_independencia_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nCuba's desire for freedom is divided. Some seek allies across the Gulf of Mexico, hoping to purchase the island's liberty through US coin, rather than Cuban blood. While on the floors of the cigar factories, men whisper about a free Cuba unbound to any power except the passion and will of its people."
+
+#Morocco
+je_lands_of_anarchy_lobby: "#v Unlocked by DLC: Iberian Twilight#!\nMorocco has long been divided between the so-called Lands of Government, where the authority of the Sultan is keenly felt, and the Lands of Anarchy, where ties to the Dar al-Makhzen are nominal at best. If Morocco is to fend off its increasingly bellicose neighbors, anarchy must make way for order."

@@ -48,7 +48,7 @@
  movement_india_pan_national_name: "$movement_india_pan_national$"
  movement_india_pan_national_short: "Indian National"
  movement_india_pan_national_icon: "@movement_india_pan_national!"
-
+ 
  custom_moral_majority: "Moral Majority"
  custom_preservation_movement: "Preservation Movement"
  custom_fraternal_association: "Fraternal Association"
@@ -110,6 +110,10 @@
  movement_nihilist: "Nihilist Movement"
  movement_nihilist_short: "Nihilist"
  movement_nihilist_name: "$movement_nihilist$"
+ movement_carlist: "Carlist Movement"
+ movement_carlist_name: "$movement_carlist$"
+ movement_miguelist: "Miguelist Movement"
+ movement_miguelist_name: "$movement_miguelist$"
 
  movement_category_religious_icon: "@movement_category_religious!"
  movement_category_cultural_icon: "@movement_category_cultural!"
@@ -144,3 +148,11 @@
  movement_yugoslav_national_name: "[COUNTRY.GetCustom('illyrian_or_yugoslav_movement')] National Movement"
  illyrian_movement: "Illyrian"
  yugoslav_movement: "Yugoslav"
+
+ movement_slave_revolt: "Slave Revolt Movement"
+ movement_slave_revolt_short: "Slave Revolt"
+ movement_slave_revolt_name: "Slave Revolt Movement"
+
+ movement_dominican_national: "Dominican National Movement"
+ movement_dominican_national_short: "Dominican National"
+ movement_dominican_national_name: "Dominican National Movement"

@@ -34,7 +34,7 @@
 
   red_scare.2.t: "The Nationalization of Women"
   red_scare.2.d: "Following government hearings into the activities of the communist regime in [SCOPE.sCountry('red_scare_target_nation').GetName], newspapers across [ROOT.GetCountry.GetName] have reported sensational stories about all adult women in [SCOPE.sCountry('red_scare_target_nation').GetName] being nationalized as common property."
-  red_scare.2.f: ""I saw it myself, before I fled. The Red authorities have mandated collective orgies, within which there is no respect for virtuous women. The Ministry of Free Love forces them all to participate under threat of bayonet."\n\n"To be clear, you are saying that a girl in [SCOPE.sCountry('red_scare_target_nation').GetName], having reached her eighteenth year, at once becomes state property?"\n\n"Yes, yes. Their names are placed on a bulletin board in their towns, and all eligible men are permitted to marry them at will, as many as they wish..."\n\n"But, even married, they must still attend the orgies?""
+  red_scare.2.f: ""I saw it myself, before I fled. The Red authorities have mandated collective orgies, within which there is no respect for virtuous women. The Ministry of Free Love forces them all to participate under threat of bayonet."\n\n"To be clear, you are saying that a girl in [SCOPE.sCountry('red_scare_target_nation').GetNameNoFormatting], having reached her eighteenth year, at once becomes state property?"\n\n"Yes, yes. Their names are placed on a bulletin board in their towns, and all eligible men are permitted to marry them at will, as many as they wish..."\n\n"But, even married, they must still attend the orgies?""
   red_scare.2.a: "The Communists are coming for our women!"
   red_scare.2.b: "This testimony seems highly suspect."
 
@@ -291,10 +291,6 @@
   cristo_redentor.2.a: "The statue will serve as an enduring symbol of [ROOT.GetCountry.GetName]."
   cristo_redentor.2.b: "A grand display of the devotion of the [SCOPE.gsInterestGroup('devout_ig').GetName]"
 
-  #Land Reform
-  ideology_land_reformer: "Land Reformer"
-  ideology_land_reformer_desc: "This character is committed to breaking the power of large landowners and redistributing land to be worked by the common people."
-
   je_agricultural_development: "The River of Coffee"
   je_agricultural_development_reason: "[ROOT.GetCountry.GetName] is blessed with a vast amount of fertile farmland, and a climate suited to the growing of highly profitable cash crops. This provides a great chance to enrich the nation and propel [ROOT.GetCountry.GetAdjectiveNoFormatting] products into worldwide prominence."
   je_agricultural_development_goal: "Increase the amount of [concept_buy_orders] for $coffee$ within the [SCOPE.sCountry('brazil_scope').GetCapital.GetMarket.GetName] by 150%"
@@ -473,7 +469,7 @@
   has_rejected_andean_federation_tt: "We have rejected the establishment of the #bold Federation#!"
   formed_andean_federation_tt: "Has formed the #variable Federation of the Andes#!"
   andean_major_formation_available_tt: "The #variable Federation of the Andes#! Major [concept_nation_formation] will become available"
-  andean_federation_reqs_tt: "Has formed the #variable Peru-Bolivian Confederation#!, #variable Rio de la Plata#!, or #variable Gran Colombia#!, or has over #variable 10#! [Concept('concept_incorporated_state','$concept_incorporated_states$')] in #bold South America#!"
+  andean_federation_reqs_tt: "Has formed #v $PBC$#!, #v $PLT$#!, or #v $GCO$#!"
 
   notification_andean_federation_seeking_warning_name: "[SCOPE.sCountry('andes_seeker_scope').GetName] Seeks Establishment of Andean Federation"
   notification_andean_federation_seeking_warning_desc: "[SCOPE.sCountry('andes_seeker_scope').GetName] has stated its intent to establish a #variable Federation of the Andes#!, encompassing all of the Andes region"
@@ -503,7 +499,7 @@
   notification_la_plata_seeking_warning_tooltip: "#header $notification_la_plata_seeking_warning_name$#!\n$TOOLTIP_DELIMITER$\n$notification_la_plata_seeking_warning_desc$"
 
   la_plata.1.t: "The Spirit of Tucumán"
-  la_plata.1.d: "The recent flourishing of [ROOT.GetCountry.GetName] nationalist sentiment has given rise to nostalgia for solidarity of the wars of independence. Calls to seek the restoration of the United Provinces of the Río de la Plata have begun to echo through [ROOT.GetCountry.GetNameNoFormatting]."
+  la_plata.1.d:1 "The recent resurgence of [ROOT.GetCountry.GetName]'s military power has given rise to nostalgia for solidarity of the wars of independence. Calls to seek the restoration of the United Provinces of the Río de la Plata have begun to echo through [ROOT.GetCountry.GetNameNoFormatting]."
   la_plata.1.f: ""Is it really so foolish, father? La Plata is a big place, and we have bigger bullies around us. We will need each other before long, no?"\n\n"No. The last time it happened, La Plata got too small for all of us. One of those bigger bullies smashed our door in with it. We keep them out by being small and smart, not large and quarrelsome."\n\n"Your brothers failed, father. You failed too. But we can learn from your mistakes and do it right this time.""
   la_plata.1.a: "La Plata will be one."
   la_plata.1.b: "Our neighbors have already chosen self-determination."
@@ -742,6 +738,8 @@
   peru_bolivia_events.7.f: "Spies sent letters — furious, defeated, and horrified alike — that any tumult within the new confederation was long since spent. Without lingering resentments to stoke, uncertainties to raise, or division between its legislatures, the people of Peru-Bolivia would see [ROOT.GetCountry.GetNameNoFormatting] only as one thing: jealous invaders."
   peru_bolivia_events.7.a: "We are forced to face a new rival."
 
+  all_restorers_lose_prestige_tt: "All involved [Concept('concept_country', '$concept_countries$')] hostile to the #b Confederation#! will lose [concept_prestige], and gain [Concept('concept_radical', '$concept_radicals$')]"
+
   peru_bolivia_events.8.t: "For a Free Peru"
   peru_bolivia_events.8.d: "Our state has acquired its independence from the Confederation. With our newfound sovereignty, we may choose to restore our previous Constitution and seek the restoration of a unified Peru, or forge our own new path as an independent [ROOT.GetCountry.GetName]."
   peru_bolivia_events.8.f: "Some would say that revolution which leaves a nation split asunder must be considered incomplete. Others say that independence is worth whatever sacrifice it may require. With half of Peru remaining out of our grasp, this question has come to weigh heavily upon the brow of our nation."
@@ -749,7 +747,15 @@
   peru_bolivia_events.8.b: "Our nation will be united under our current constitution."
   peru_bolivia_events.8.c: "A Peruvian nation was never meant to be."
 
-  peru_bolivia_complete_tt: "Completion effects will depend on whether we have chosen to #bold dismantle#! or #bold befriend#! the #bold Peru-Bolivian Confederation#!"
+  peru_bolivia_events.9.t: "Solitude"
+  peru_bolivia_events.9.d_1: "Grievous territorial losses have reduced [ROOT.GetCountry.GetName] to the territory of [GetGeographicRegion('geographic_region_bolivia').GetName]. With only one half of its constituents remaining, the Confederation has been made redundant."
+  peru_bolivia_events.9.d_2: "Grievous territorial losses have reduced [ROOT.GetCountry.GetName] to the territory of [GetGeographicRegion('geographic_region_peru').GetName]. With only one half of its constituents remaining, the Confederation has been made redundant."
+  peru_bolivia_events.9.f_1: "Only a quarter of the General Congress' seats were filled. The half of the room once occupied by the Bolivian deputies had been left unlit—all the better to save on candles. In the scant island of light that was the Peruvian quarter, the Senators passed the session's rules by voice.\n\nIn the morning, the bill was brought before a half-staffed committee. In the afternoon, it passed the chamber. In the evening, it passed onto the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s desk, and the Confederation was no more."
+  peru_bolivia_events.9.f_2: "Only a quarter of the General Congress' seats were filled. The half of the room once occupied by the Bolivian deputies had been left unlit—all the better to save on candles. In the scant island of light that was the Peruvian quarter, the Senators passed the session's rules by voice.\n\nIn the morning, the bill was brought before a half-staffed committee. In the afternoon, it passed the chamber. In the evening, it was placed onto the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s desk, and the Confederation was no more."
+  peru_bolivia_events.9.a: "$BOL$ is all that remains."
+  peru_bolivia_events.9.b: "$PEU$ is all that remains."
+
+  peru_bolivia_complete_tt: "Effects will depend on whether this country has chosen to #bold dismantle#! or #bold befriend#! the #bold Peru-Bolivian Confederation#!"
 
   salaverry_exile_tt: "[SCOPE.sCharacter('salaverry_scope').GetFullName] will be sent into [concept_exile]"
 
@@ -759,7 +765,7 @@
 
   peru_bolivia_success_tt: "The #bold Progress Bar#! has reached #variable 120#!, marking the consolidation of the #bold Peru-Bolivian Confederation#!'s rule"
 
-  je_war_of_the_confederation: "The Peru-Bolivian Confederation"
+  je_war_of_the_confederation:1 "The War of the Confederation"
   je_war_of_the_confederation_reason: "With its greater European-descended population, untapped resources, and strategic position, a solidified #bold Peru-Bolivian Confederation#! presents an existential threat to [SCOPE.sCountry('home_country_scope').GetAdjective] national interests. In order to preserve the balance of power, the #bold Confederation#! must be either made amicable to our state or dismantled by force.\n\nThe ambitions of the #bold Peru-Bolivian Confederation#! can be averted by forcing them to release their [Concept('concept_subject', '$concept_subjects$')] before the Progress Bar reaches #variable 100%#!."
 
   modifier_against_the_confederation: "Against the Confederation"
@@ -771,8 +777,8 @@
   modifier_confederation_failure: "Lost in the Shade"
 
   je_south_american_national_identity_emergence: "The [ROOT.GetCountry.GetAdjective] Nation"
-  je_south_american_national_identity_emergence_reason: "The independence of [ROOT.GetCountry.GetName] from Spain has given rise to rumblings of nationalism across the nation. As our nation advances into the future, our intellectuals seek to formulate a new identity, one that is distinctly and solely [SCOPE.sCulture('new_national_culture').GetName].\n\nThe following conditions will benefit the process of developing our #bold national identity#!:\n• [GetIdeology('ideology_patriotic').GetName] or [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')] that are [concept_in_government] or have high [concept_clout]\n• Ongoing [Concept('concept_war','$concept_wars$')] with high [concept_war_support]\n• [GetBuildingType('building_university').GetName], [GetBuildingType('building_arts_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings with high [concept_occupancy]\n• High national [concept_prestige]\n• Not owning non-[SCOPE.sCulture('old_national_culture').GetName] [Concept('concept_homeland','$concept_homelands$')]\n\nThe progress of this #bold national awakening#! is expected to progress by #tooltippable;tooltip:[Country.GetTooltipTag],je_south_american_national_identity_emergence_special_tooltip [Country.MakeScope.Var('national_identity_progress_var_next').GetValue|+=]#! next month.\n\n@warning! Completing this [concept_journal_entry] will exclude [ROOT.GetCountry.GetName] from pursuing #bold greater pan-national ambitions#!"
-  je_south_american_national_identity_emergence_special_tooltip: "This rate is determined by the following:\n#variable [Country.MakeScope.Var('national_identity_progress_from_igs').GetValue|+=]#! from [concept_clout] of [GetIdeology('ideology_patriotic').GetName] and [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_wars').GetValue|+=]#! from ongoing [Concept('concept_war','$concept_wars$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_universities').GetValue|+=]#! from [GetBuildingType('building_university').GetName], [GetBuildingType('building_arts_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings\n#variable [Country.MakeScope.Var('national_identity_progress_from_prestige').GetValue|+=]#! from [concept_prestige]\n#variable [Country.MakeScope.Var('national_identity_progress_from_homelands').GetValue|+=]#! from owning non-[Concept('concept_primary_cultures','$concept_primary_culture$')] [Concept('concept_homeland','$concept_homelands$')]\n#variable [Country.MakeScope.Var('national_identity_progress_var_add').GetValue|+=]#! from other effects"
+  je_south_american_national_identity_emergence_reason: "The independence of [ROOT.GetCountry.GetName] from Spain has given rise to rumblings of nationalism across the nation. As our nation advances into the future, our intellectuals seek to formulate a new identity, one that is distinctly and solely [SCOPE.sCulture('new_national_culture').GetName].\n\nThe following conditions will benefit the process of developing our #bold national identity#!:\n• [GetIdeology('ideology_patriotic').GetName] or [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')] that are [concept_in_government] or have high [concept_clout]\n• Ongoing [Concept('concept_war','$concept_wars$')] with high [concept_war_support]\n• [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings with high [concept_occupancy]\n• High national [concept_prestige]\n• Not owning non-[SCOPE.sCulture('old_national_culture').GetName] [Concept('concept_homeland','$concept_homelands$')]\n\nThe progress of this #bold national awakening#! is expected to progress by #tooltippable;tooltip:[Country.GetTooltipTag],je_south_american_national_identity_emergence_special_tooltip [Country.MakeScope.Var('national_identity_progress_var_next').GetValue|+=]#! next month.\n\n@warning! Completing this [concept_journal_entry] will exclude [ROOT.GetCountry.GetName] from pursuing #bold greater pan-national ambitions#!"
+  je_south_american_national_identity_emergence_special_tooltip: "This rate is determined by the following:\n#variable [Country.MakeScope.Var('national_identity_progress_from_igs').GetValue|+=]#! from [concept_clout] of [GetIdeology('ideology_patriotic').GetName] and [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_wars').GetValue|+=]#! from ongoing [Concept('concept_war','$concept_wars$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_universities').GetValue|+=]#! from [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings\n#variable [Country.MakeScope.Var('national_identity_progress_from_prestige').GetValue|+=]#! from [concept_prestige]\n#variable [Country.MakeScope.Var('national_identity_progress_from_homelands').GetValue|+=]#! from owning non-[Concept('concept_primary_cultures','$concept_primary_culture$')] [Concept('concept_homeland','$concept_homelands$')]\n#variable [Country.MakeScope.Var('national_identity_progress_var_add').GetValue|+=]#! from other effects"
   je_south_american_national_identity_emergence_goal: "The progress of the emerging [ROOT.GetCountry.GetAdjectiveNoFormatting] #bold National Identity#! has reached #variable 100%#!"
   
   completed_pan_national_project_tt: "We have successfully completed any of the #bold Peru-Bolivian Confederation#!, #bold Gran Colombia#!, or #bold Bolivar's Ambition#! [Concept('concept_journal_entry', '$concept_journal_entries$')]"
@@ -780,7 +786,7 @@
   notification_bol_salaverry_death_desc: "The death of the leader of the Peruvian opposition has marked the end of the Peruvian civil war, and the beginning of the #bold Peru-Bolivian Confederation#!."
   notification_bol_salaverry_death_tooltip: "#header $notification_bol_salaverry_death_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bol_salaverry_death_desc$"
 
-  bol_no_revolutions_tt: "None of our [SCOPE.sCulture('south_andean_culture').GetName] and [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')] are currently in a [concept_civil_war]"
+  bol_no_revolutions_tt: "None of [SCOPE.sCountry('bolivia_scope').GetNameNoFlag]'s [SCOPE.sCulture('south_andean_culture').GetName] and [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')] are currently in a [concept_civil_war]"
 
   usa_two_party_system: "American Two-Party System"
   from_southern_interests: "From Southern Interests"

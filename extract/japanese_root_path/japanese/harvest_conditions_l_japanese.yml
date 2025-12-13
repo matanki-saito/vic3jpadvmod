@@ -29,4 +29,6 @@
  moderate_rainfall_desc: "地上に命を吹き込む天の恵みである雨粒を歓迎するかのように作物が活気づく喜ばしい出来事。"
  #Natural Disasters
  tsunami: "津波"
- tsunami_desc: "陸地に到達すると、あらゆるものをなぎ倒して飲み込む、止めることのできない大きな波"
+ tsunami_desc: "陸地に到達すると、あらゆるものをなぎ倒して飲み込む、止めることのできない大きな波。"
+ earthquake: "地震"
+ earthquake_desc: "地表を突然、激しく振動する現象で、荒廃と破壊がもたらされる。 "

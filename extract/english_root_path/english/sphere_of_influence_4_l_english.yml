@@ -589,6 +589,7 @@
   colonial_subjects: "Colonial Subjects"
   POP_ACCEPTANCE: "[concept_pop] [concept_acceptance]"
   POP_HIGH_ACCEPTANCE: "High [concept_pop] [concept_acceptance]"
+  POP_LOW_ACCEPTANCE: "Low [concept_pop] [concept_acceptance]"
 
   formation_reason_defense: "National Defense"
   formation_reason_defense_desc: "Lobby prioritizes $formation_reason_defense$"

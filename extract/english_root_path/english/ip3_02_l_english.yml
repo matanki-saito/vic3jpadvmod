@@ -12,7 +12,7 @@ je_matter_of_hungary_completion_autonomy_tt: "We have established the #bold Dual
 je_matter_of_hungary_fail_hungary_is_free: "#bold $HUN$#! has broken free from [ROOT.GetCountry.GetAdjective] control"
 je_matter_of_hungary_fail_not_at_war_with_hungary: "#bold $HUN$#! is #bold not#! opposing [ROOT.GetCountry.GetName] in a [concept_diplomatic_play]"
 je_matter_of_hungary_on_fail_lose_control: "Any remaining territories in Hungary under the control of [ROOT.GetCountry.GetName] or her [Concept('concept_subject','$concept_subjects$')] will #bold secede#!. Nationalist rebels will rise in revolt in our non-German lands."
-hungarian_above_80_acceptance_for_a_while_tt: "The average [concept_acceptance] of [GetCulture('hungarian').GetName] in [ROOT.GetCountry.GetNameNoFlag] has been greater than or equal to #v 70#! for #b 60 months#! (currently [ROOT.GetCountry.MakeScope.Var('hungarian_acceptance_var').GetValue|v0])" # Actually 70, not 80
+hungarian_above_80_acceptance_for_a_while_tt: "The average [concept_acceptance] of [GetCulture('hungarian').GetName] [Concept('concept_pop', '$concept_pops$')] in [ROOT.GetCountry.GetNameNoFlag] has been greater than or equal to #v 80#! for #b 60 months#! (currently [ROOT.GetCountry.MakeScope.Var('hungarian_acceptance_var').GetValue|v0])" # Actually 70, not 80
 hungarian_movements_pacified_tt: "No [GetCulture('hungarian').GetName] #v $movement_cultural_minority$#! has [Concept('concept_activism','$concept_activism_short$')] of $RADICALISM_AGITATING$ (#v 25%#!) or above"
 
 je_austrian_neo_absolutism: "Autocracy in the Age of Liberty"
@@ -318,11 +318,17 @@ notification_hungarian_king_elected_from_our_country_desc: "In a recent vote, th
 notification_hungarian_king_elected_from_our_country_tooltip: "#header $notification_hungarian_king_elected_from_our_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_hungarian_king_elected_from_our_country_desc$"
 
 je_grunderzeit: "Gründerzeit"
-je_grunderzeit_reason: "An #bold investment craze#! has gripped the #bold German#! lands, as capital floods into railways, factories, and banks with feverish intensity — driven by boundless optimism, speculative ambition, and the promise of a #bold new industrial age#!.\n\nGerman [Concept('concept_gdp', '$concept_gdp_short$')], Last Quarterly Result: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_baseline').GetValue|K]#!\nGerman [Concept('concept_gdp', '$concept_gdp_short$')], Current: @gdp!#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|K]#!\nGerman [Concept('concept_gdp', '$concept_gdp_short$')], Quarterly Goal: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_goal').GetValue|K]#!\n\n#bold Tempo of the Founding Years#!\nThe #bold $je_grunderzeit$#! [concept_journal_entry] is organized in #bold financial quarters#!. Each #v 3#! months the combined [Concept('concept_gdp', '$concept_gdp_short$')] of all #bold German#! [Concept('concept_country', '$concept_countries$')] in #bold Europe#! will need to grow by at least #v 2.5#! percent. Failing to do so will #n deplete#! the #bold progress bar#! by #v 1#!, while succeeding will #g increase#! it by #v 1#! instead. The progress bar reaching #v 0#! will result in a #n financial crash#!."
+je_grunderzeit_reason:1 "An #bold investment craze#! has gripped the #bold German#! lands, as capital floods into railways, factories, and banks with feverish intensity — driven by boundless optimism, speculative ambition, and the promise of a #bold new industrial age#!. Speculators gleefully stake fortunes on targets that grow more fanciful by the day. How long may this atmosphere of euphoria last?\n\nGerman [Concept('concept_gdp', '$concept_gdp_short$')], Last Quarterly Result: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_baseline').GetValue|K]#!\nGerman [Concept('concept_gdp', '$concept_gdp_short$')], Current: @gdp![JournalEntry.GetCustom('get_grunderzeit_gdp')]\nGerman [Concept('concept_gdp', '$concept_gdp_short$')], Quarterly Goal: @gdp!#variable [GetGlobalVariable('grunderzeit_combined_gdp_global_var_goal').GetValue|K]#!\n\n#bold Tempo of the Founding Years#!\nThe #bold $je_grunderzeit$#! [concept_journal_entry] is organized in #bold financial quarters#!. Each #v 3#! months the combined [Concept('concept_gdp', '$concept_gdp_short$')] of all #bold German#! [Concept('concept_country', '$concept_countries$')] in #bold Europe#! will need to grow by at least #v 2#! percent. Failing to do so will #n deplete#! the #bold progress bar#! by #v 1#!, while succeeding will #g increase#! it by #v 1#! instead. The progress bar reaching #v 0#! will result in a #n financial crash#!."
 je_grunderzeit_fail_tt: "The #bold Progress Bar#! has reached #v 0#!"
 grunderzeit_possible_tt: "#v 75%#! or more of all #bold German#! [Concept('concept_country', '$concept_countries$')] in #bold Europe#! have researched [GetTechnology('mutual_funds').GetName] and have at least one level of [GetBuildingType('building_railway').GetName] (currently [GetGlobalVariable('grunderzeit_countries_percent').GetValue|v%0])"
 grunderzeit_progress_bar: "Gründerzeit"
 grunderzeit_progress_bar_desc: "Recent [Concept('concept_gdp', '$concept_gdp_short$')] Goals Met: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/4#!"
+
+je_grunderzeit_fail_header: "A #b recession#! will begin if:\n"
+je_grunderzeit_on_fail_header: "If a #b recession#! begins:\n$EFFECT$"
+
+grunderzeit_gdp_target_met: "#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|gK]#!"
+grunderzeit_gdp_target_not_met: "#variable [GetPlayer.MakeScope.ScriptValue('grunderzeit_actual_gdp_script_value')|rK]#!"
 
 grunderzeit.1.t: "Gründerkrach" # Panic of 1873
 grunderzeit.1.d: "Years of optimism and financial growth have come to a screeching halt, with blood-red numbers numbers reported across German stock exchanges as banks and speculative companies collapse like dominos."
@@ -360,7 +366,7 @@ grunderzeit_participant_high: "The #bold $je_grunderzeit$#! [concept_journal_ent
 grunderzeit_participant_low: "The #bold $je_grunderzeit$#! [concept_journal_entry] bonuses will be #n weaker#!, but so too will any subsequent #n crash#!"
 grunderzeit_bonus_last_tt: "The following [concept_modifier] will be active for the duration of the #bold $je_grunderzeit$#! [concept_journal_entry]"
 
-grunderzeit_expectations_tt: "@warning! To maintain investor confidence, the combined [Concept('concept_gdp', '$concept_gdp_short$')] of all #bold German#! [Concept('concept_country', '$concept_countries$')] must grow by #v 2.5%#! [Concept('concept_gdp', '$concept_gdp_short$')] growth per quarter"
+grunderzeit_expectations_tt: "@warning! To maintain investor confidence, the combined [Concept('concept_gdp', '$concept_gdp_short$')] of all #bold German#! [Concept('concept_country', '$concept_countries$')] must grow by #v 2%#! [Concept('concept_gdp', '$concept_gdp_short$')] growth per quarter"
 
 grunderzeit_status_desc_default_key: "A German economic miracle is yet on the horizon."
 grunderzeit_status_desc_key_1:1 "The Economy is #n Declining#!"
@@ -370,9 +376,9 @@ grunderzeit_status_desc_key_4: "The Economy is #g Booming#!"
 grunderzeit_status_desc_key_0: "The Economy has #bold Crashed#!"
 
 je_bavarocracy: "Bavarocracy"
-je_bavarocracy_reason: "Ever since its establishment in 1832, the nascent [ROOT.GetCountry.GetAdjective] kingdom — the first truly independent Greek state since the days of Constantine XI — has been under the thumb of [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] and his Bavarian regents.\n\nIf the young king wants to prove himself as a worthy ruler of the Hellenes, he will have to take drastic steps to appease his new subjects. "
-je_bavarocracy_complete_tt: "Bavarocratic Ire is below #v 10#!"
-je_bavarocracy_fail_tt: "Bavarocratic Ire has been at #v 80#! or above for #v 50#! months. Currently this has been true for #v [GetPlayer.MakeScope.Var('je_bavarocracy_timer_var').GetValue]#! months."
+je_bavarocracy_reason:1 "Ever since its establishment in 1832, the nascent [ROOT.GetCountry.GetAdjective] kingdom — the first truly independent Greek state since the days of Constantine XI — has been under the thumb of [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] and his Bavarian regents.\n\nIf the young king wants to prove himself as a worthy ruler of the Hellenes, he will have to take bold steps to manage the [Concept('concept_bavarocratic_ire', '$concept_bavarocratic_ire_short$')] of his new subjects."
+je_bavarocracy_complete_tt: "[concept_bavarocratic_ire] is below #v 10#!"
+je_bavarocracy_fail_tt: "[concept_bavarocratic_ire] has been at #v 80#! or above for #v 50#! months. Currently this has been true for #v [GetPlayer.MakeScope.Var('je_bavarocracy_timer_var').GetValue]#! months."
 modifier_foreign_administration: "Foreign Administration"
 
 bavarocracy_german_characters_tt: "[GetCulture('south_german').GetName] [Concept('concept_commander','$concept_commanders$')] or [Concept('concept_character', '$concept_characters$')] in [concept_in_government]"
@@ -393,7 +399,7 @@ je_bavarocracy_convert_button: "Convert to Eastern Orthodoxy"
 je_bavarocracy_convert_button_desc: "Despite [ROOT.GetCountry.GetName] being a firmly [GetReligion('orthodox').GetName] country, [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] has steadfastly clung to his native [GetReligion('catholic').GetName] faith, causing considerable consternation among his newfound subjects.\n\nIf Othonian rule is to endure among the Greeks, perhaps some personal sacrifices must be made?"
 modifier_suspected_crypto_catholic: "Suspected Crypto-Catholic"
 je_bavarocracy_convert_possible: "[SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] follows the [GetReligion('catholic').GetName] creed"
-bavarocracy_progress_bar_decrease_10_tt: "#bold Decreases#! #bold Bavarocratic Ire#! by #variable 10#!"
+bavarocracy_progress_bar_decrease_10_tt: "#bold Decreases#! [concept_bavarocratic_ire] by #variable 10#!"
 
 bavarocracy_progress_bar: "Bavarocratic Ire"
 bavarocracy_progress_bar_desc: "[concept_bavarocratic_ire]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)]/100)"
@@ -434,3 +440,46 @@ modifier_revolutionary_king: "The Phrygian Crown"
 bavarocracy_expell_tt: "#b King Otto#! and his #b Bavarian#! aides will #b go into exile#!"
 bavarocracy_fail_tt: "The Fall of [SCOPE.sCharacter('king_otto_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('king_otto_scope').GetFirstName] may open up #tooltippable #tooltip:bavarocracy_fail_explanation_tt new political opportunities#!#!"
 bavarocracy_fail_explanation_tt: "The end of Bavarocracy will enable us to put a #b $DEN_ADJ$#! prince on the throne, acceptable to the [Concept('concept_great_power', '$concept_great_powers$')], or to establish the #b Second Hellenic Republic#!\n\n#b $FRA$#!, #b $GBR$#!, or #b $RUS$#! owing us an [concept_obligation] will cause them to ignore the stipulations of the #b London Conference of 1832#!, and allow us to elect one of their Princes as King of the Hellenes.\n\nA potential foreign king will come with the following [Concept('concept_ideology', '$concept_ideologies$')]:\n• $DEN_ADJ$: [GetIdeology('ideology_reformer').GetName]\n• $GBR_ADJ$: [GetIdeology('ideology_market_liberal').GetName]\n• $RUS_ADJ$: [GetIdeology('ideology_royalist').GetName]\n• $FRA_ADJ$ Oreanist: [GetIdeology('ideology_market_liberal').GetName]\n• $FRA_ADJ$ Legitimist: [GetIdeology('ideology_traditionalist').GetName]\n• $FRA_ADJ$ Bonapartist: [GetIdeology('ideology_jingoist_leader').GetName]"
+
+spooky_halloween_events.4.t: "Promethean Visions"
+spooky_halloween_events.4.d: "A young Genevan student by the name of [SCOPE.sCharacter('frankenstein_scope').GetFullName] has approached the government with a petition for a modest stipend and a workspace. In return, he confidently claims he shall breach the very boundary between life and death itself."
+spooky_halloween_events.4.f: ""If lifeless matter can be animated, one could perhaps renew life where death has taken its toll. How many of you have lost a dear one to disease, or to the cruel hand of man? What if that could be undone? Or what if something new could take its place? A new species that would revere us as creator and master.""
+spooky_halloween_events.4.a: "Most intriguing. Inform him he has our support."
+spooky_halloween_events.4.b: "Scorn this unchristian charlatan and commit him to an asylum."
+spooky_halloween_events.4.tt_1: "[SCOPE.sCharacter('frankenstein_scope').GetFullName] is locked away, never to be heard of again."
+spooky_halloween_events.4.tt_2: "[SCOPE.sCharacter('frankenstein_scope').GetFullName] flees the room before the guards get to him."
+spooky_halloween_events.4.tt_3: "The fruits of Mr. [SCOPE.sCharacter('frankenstein_scope').GetLastName]'s experiments will be revealed to us in time."
+modifier_ungodly_experiments: "Ungodly Experiments"
+modifier_experiment_expenses: "Funding Unconventional Research"
+
+spooky_halloween_events.5.t: "God and the Machine"
+spooky_halloween_events.5.d: "[SCOPE.sCharacter('frankenstein_scope').GetFullName]'s research has borne fruit. With visible unease he outlines his methods to the assembled dignitaries and claims he is ready to expand his operation. As evidence he presents his first creation as proof of concept."
+spooky_halloween_events.5.f: "The massive creature lumbers in, its movements jerky and convulsive, as if it was learning to use its limbs for the first time, yet with watery, inquisitive eyes, almost like those of a child.\n\n"In the name of God! What #italic is#! that thing?""\n\n"This, gentlemen, is the future. A #italic homo novus#! in the most literal meaning of the phrase.""
+spooky_halloween_events.5.a: "I am sure we can find use for a creature of such... caliber."
+spooky_halloween_events.5.b: "Very well, but give that poor wretch a mate."
+spooky_halloween_events.5.c: "This has gone too far. Shut it all down, now!"
+spooky_halloween_events.5.tt_1: "Enables the establishment of #b $company_ingolstadt_electrical_company$#! as a [concept_company]"
+modifier_frankenstein_1: "Superhuman Capabilities"
+modifier_frankenstein_2: "Unsettling Giant"
+modifier_frankenstein_3: "Accelerated Intellectual Growth"
+adam_1_alive_tt: "[SCOPE.sCharacter('adam_1_scope').GetFullName] is #b alive#!! He's #italic #b alive#!#!!"
+adam_2_alive_tt: "[SCOPE.sCharacter('adam_2_scope').GetFullName] is #b alive#!! It's #italic #b alive#!#!!"
+
+spooky_halloween_events.6.t: "Ecce Monstrum"
+spooky_halloween_events.6.d: "Frightened by the growing [GetCulture('promethean').GetName] presence in [SCOPE.sState('relevant_state_scope').GetName], a rabid mob has rampaged through the streets of [SCOPE.sState('relevant_state_scope').GetCityHubName]. [SCOPE.sCompany('frankenstein_company_scope').GetName] has refused to comment on the situation."
+spooky_halloween_events.6.f: "The crowd had surrounded the creature near the old fountain, a ring of torches and pitchforks forming a menacing wall and trapping the tall pale figure in its midst.\n\n"Kill it! Strike the monster down!"\n\n"Monster? How dare you name me monster, you who hunt my kin down without reason or remorse? What harm have we ever inflicted on you unprovoked? Lift a hand against me, and know that I shall strike you down, but this makes me no more a fiend than the man who protects himself from a criminal's vicious assault.""
+spooky_halloween_events.6.a: "Rabble does what rabble is."
+spooky_halloween_events.6.b: "[SCOPE.sCharacter('frankenstein_executive_scope').GetFullName] and [SCOPE.sCharacter('frankenstein_executive_scope').GetHerHis] company must be held responsible."
+modifier_widespread_pogroms: "Widespread Pogroms"
+modifier_frankestein_blame: "Blamed for Pogroms"
+
+company_ingolstadt_electrical_company: "Frankenstein et Cie., Établ. Électriques d’Ingolstadt"
+funded_frankensteins_work_tt: "We Funded Mr. Frankenstein's Research"
+promethean: "Promethean"
+language_group_promethean: "Promethean"
+language_promethean: "Promethean"
+heritage_group_promethean: "Promethean"
+heritage_promethean: "Promethean"
+
+country_frankenstein_company_bool: "Experimental Modules Operational"
+country_frankenstein_company_bool_desc: "Strange tidings have been reported from the #b Ingolstadt Electrical Factories#!. Large, humming machines – whose purpose no-one seem willing to elaborate on – work at full capacity late into the night."

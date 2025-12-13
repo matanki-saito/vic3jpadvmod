@@ -1,0 +1,120 @@
+﻿l_english:
+
+# Journal Entries
+ je_the_first_carlist_war: "The Carlist War"
+ je_the_first_carlist_war_reason: "@information! During the [concept_guerilla_war], victories will not grant Occupation Score and instead both sides will accrue a score for each victorious battle, receiving a positive modifier upon the start of the #b Royal Expedition#!, the strength of which depends on the score achieved during the $concept_guerilla_war$ respectively. #b After which the $concept_guerilla_war$ will transform into a regular war#!.\n$TOOLTIP_DELIMITER$\nThe death of #b King Ferdinand VII in 1833#! has left Spain embroiled in a succession crisis. #b The Pragmatic Sanction of 1830#! paved the way to the throne for his daughter #b Isabella#! in the Spanish Kingdom, in which succession had traditionally been handled through Salic law.\nThis act angered conservative elements of the aristocracy who held up the kings brother #b Carlos#! as the rightful heir instead.\n\nQuickly this materialized into several disparate rebellions under the label of #b Carlismo#!, that found its predominant powerbase in the north of the country, particularly amongst the #b Basque Estates#! of the #b the Kingdom of Navarra#! that had been fighting against further centralization of the state and the subsumption of their customs for decades.\nUnder the leadership of [concept_bio_tomas_de_zumalacarregui], these rebels were shaped into a formidable fighting force and could threaten the capital if allowed to unify with their allies in the Maestrazgo and Catalonia."
+ je_the_first_carlist_war_status: "The war is in the [concept_guerilla_war] Phase"
+ je_the_first_carlist_war_status_royal_expedition: "The #b Royal Expedition#! has begun!"
+ je_the_first_carlist_war_complete: "Has won the Carlist War"
+
+# Progress Bars
+ je_the_first_carlist_war_score_bar: "Guerilla Phase"
+ je_the_first_carlist_war_score_bar_desc: "Cristino Score: [GetGlobalVariable('spa_carlist_war_score').GetValue|v0]"
+ je_the_first_carlist_war_score_bar_second_desc: "Carlist Score: [GetGlobalVariable('spc_carlist_war_score').GetValue|v0]"
+
+# Scripted Buttons
+ je_the_first_carlist_war_royal_expedition: "Begin Royal Expedition"
+ je_the_first_carlist_war_royal_expedition_desc: "The situation of our disorganized forces is untenable - with every passing day, the Cristinos grow stronger. The King must consolidate his disparate forces, and consider when to strike the enemy and reclaim the capital."
+ je_the_first_carlist_flush_them_out: "Flush Them Out"
+ je_the_first_carlist_flush_them_out_desc: "The momentum of the rebels has been broken, and the time has come to go on the offensive."
+# Character Bios
+ concept_bio_tomas_de_zumalacarregui: "Tomás de Zumalacárregui"
+ concept_bio_tomas_de_zumalacarregui_desc: "#tooltip_header Tomas Zumalakarregi Imatz#!\n$TOOLTIP_DELIMITER$\nBorn on #v December 29th 1788#! in Ormaiztegi, Gipuzkoa\nDied on #v June 24th 1835#! in Zegama, Gipuzkoa\n\nTomás de Zumalacárregui e Imaz, also referred to as \"Uncle Tomas\" by his soldiers, was a Basque military officer and as Captain General of the Carlist forces in Navarra and the Basque Country responsible for the organization of the army as well as decisive early victories for the Carlist cause.\nHis sudden death on account of a gunshot wound in the field in the early summer of 1835 resulted in a considerable setback for Don Carlos' ambitions."
+
+# Concepts
+ concept_guerilla_war: "Guerilla War"
+ concept_guerilla_war_desc: "A $concept_guerilla_war$ is a special kind of [concept_war] subject to a set of rules distinct from regular warfare, the details of which can differ from one $concept_guerilla_war$ to another.\n\nThe following general rules are applied during a $concept_guerilla_war$:\n#indent_newline:2 $EFFECT_LIST_BULLET$ [Concept('concept_battle', '$concept_battles$')] are much smaller in size and created at a lower pace#! \n#indent_newline:2 $EFFECT_LIST_BULLET$ The [GetBattleCondition('battle_condition_guerilla_skirmish').GetName], [GetBattleCondition('battle_condition_guerilla_ambush').GetName] and [GetBattleCondition('battle_condition_guerilla_disarray').GetName] [Concept('concept_battle_condition', '$concept_battle_conditions$')] can occur#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ Victories do not grant [concept_occupation] Score#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ A $concept_guerilla_war$ may escalate into a regular $concept_war$ if conflict specific conditions are met"
+
+# Battle Conditions
+ battle_condition_guerilla_skirmish: "Skirmish"
+ battle_condition_guerilla_skirmish_desc: "This commander is leading allied troops in a series of minor skirmishes with the enemy."
+ battle_condition_guerilla_ambush: "Ambush"
+ battle_condition_guerilla_ambush_desc: "This commander is executing a carefully prepared ambush on the enemy."
+ battle_condition_guerilla_disarray: "In Disarray"
+ battle_condition_guerilla_disarray_desc: "This commander was completely taken by surprise by the sudden outbreak of clashes."
+
+ GUERILLA_WAR_SKIRMISH_MAX_BATTLE_SIZE_REACHED: "Reached Maximum Battle Size during a $concept_guerilla_war$"
+ CARLIST_WAR_TEST_OCCUPATION_SCORE: "Cannot gain Occupation Score during a $concept_guerilla_war$"
+
+# Modifiers
+ captured_royal_arsenals: "Captured Royal Arsenals"
+ ad_hoc_manufacturing: "Ad Hoc Manufacturing"
+ ad_hoc_manufacturing_negative: "$ad_hoc_manufacturing$"
+ carlist_war_guerilla_warfare: "Guerilla Warfare"
+ carlist_war_spa_reward: "The Throne Secured"
+ carlist_war_spc_reward: "Traditions Restored"
+ the_last_stand: "The Last Stand"
+ galvanized_forces: "Galvanized Forces"
+ national_guard_preoccupied: "National Guard Preoccupied"
+ pyrenean_smuggling: "Pyrenean Smuggling"
+
+ character_battle_condition_guerilla_ambush_mult: "[GetBattleCondition('battle_condition_guerilla_ambush').GetName]$modifier_character_battle_condition_suffix$"
+ character_battle_condition_guerilla_ambush_mult_desc: "$modifier_character_battle_condition_desc_prefix$[GetBattleCondition('battle_condition_guerilla_ambush').GetName]$modifier_character_battle_condition_desc_suffix$"
+
+ spa_carlist_terror: "Carlist Terror"
+ spa_carlist_terror_expenses: "$spa_carlist_terror$"
+ spc_secure_port: "Secured Vital Port"
+ spc_raided_grain_storages: "Raided Grain Storages"
+ spc_state_fueros_restored: "Basque Fueros Restored"
+ spc_church_restitution: "Church Restitution"
+ spc_church_compensation: "Church Compensation"
+
+# Events
+ carlist_war.1.t: "The Royal Expedition"
+ carlist_war.1.d: "[SCOPE.sCharacter('spc_carlos').GetFullName] has amassed his forces, and is calling for one strong, concentrated push towards the capital. The Cristinos, expecting his assault, have made ready. The future of $SPA$ will be decided here and now, at the gates of [SCOPE.sState('capital_scope').GetStateRegion.GetCityHubName]."
+ carlist_war.1.f: "The column stretched for as far as Javier could see, snaking between fallen boulders and scraggly bushes. The suffocating cloud of dust kicked up by ten thousand trudging feet had stained all their uniforms grey, washing out the last scraps of blue and white amongst them. At the rear of the column rode the priests and the #italic ojalateros#!, with their ravenous appetite and everlasting stock of complaints. Ahead of them lay the Liberals, and all of the steel and gunpowder they could muster.\n\nHe had checked his bandolier in the morning, and found five cartridges remaining. All he could hope was that the Liberals had only four."
+ carlist_war.1.a: "For Crown and Country!"
+ carlist_war.1.a.spc: "Dios, Patria, Rey!"
+
+ carlist_war.2.t_1: "The Embrace of Vergara"
+ carlist_war.2.t_2: "The Rightful Heir"
+ carlist_war.2.d_1: "With the Royal Expedition defeated and the [GetIdeology('ideology_carlist').GetName] armies scattered, [SCOPE.sCharacter('vergara_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('vergara_general').GetFullName] has signed a peace with the remnants of the Carlist forces at the Basque town of Vergara. At long last, a tenuous calm has been restored to [ROOT.GetCountry.GetName]."
+ carlist_war.2.d_2: "With the Liberal government scattered into exile and Basque volunteers parading through the streets of [SCOPE.sState('capital_scope').GetCityHubName], [SCOPE.sCharacter('country_ruler').GetPrimaryRoleTitle] [SCOPE.sCharacter('country_ruler').GetFullName] may finally take [SCOPE.sCharacter('country_ruler').GetHerHis] rightful throne. Nonetheless, the shadow of Napoleon still weighs upon us. There is much to do to reclaim our former glory."
+ carlist_war.2.f_1:1 "As the officers rode out to parlay, the armies faced one another across the field. The Liberals had placed their most intact regiments in front, Javier noticed - the front ranks all had their tall shakos, their blue-and-green uniforms, the yellow braiding of Provincial regiments. His own commander had, of course, done the same. He stood shoulder-to-shoulder with his fellow #italic erreketes#!, staring down his opposite numbers from fifty meters away.\n\nThen, he saw him, atop a magnificent black horse, clad in more gold than could be found in his entire regiment's garb. [SCOPE.sCharacter('vergara_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('vergara_general').GetLastNameNoFormatting]. Could he aim, get a shot off, set the field alight, abort this farcial peace? No, he thought. He could do no more. All that was left was to go home."
+ carlist_war.2.f_2: "Javier's first impression of [SCOPE.sState('capital_scope').GetCityHubName] was that, compared to Sunbil, it was a futuristic metropolis. Gaslights lit the streets near the centre, revealing a truly astounding quantity of litter and horse-dung. The walls, once white, were stained brown and grey by the foul air, and wretched tenements sprung up around workshops that spewed clouds of smoke and dust skyward.\n\nHe had, upon witnessing this, decided that he was not especially fond of the future. Far better the clear mountain air, the weight of a scythe in his hands. He had come to [SCOPE.sState('capital_scope').GetCityHubName] bearing arms, he thought, so that he would never need to think about [SCOPE.sState('capital_scope').GetCityHubName] again."
+ carlist_war.2.a: "Without a moment's pause."
+
+ carlist_war.3.t: "The King and the Fueros"
+ carlist_war.3.d: "Turned into a mere province by the government of Maria Cristina, and occupied under martial law by her forces in 1833, the Basque Country quickly turned into a stronghold of Carlist cause. With the throne of Don [SCOPE.sCharacter('don_carlos_scope').GetFirstName] secured, the time has come to fulfill his promise to restore the traditional privileges of the Basque people."
+ carlist_war.3.f:1 "Javier's hand shook as he grasped the door's handle, and threw it open. She was there - sitting on the bed, legs crossed, lap and hands occupied by a rented hand-loom. She looked up at the sound, pushed the loom to the side, and ran to him.\n\nThe last time he was here, he thought, it was as if there was a presence lurking in the corner of the room, a gold-clad spectre that had driven him to take up arms. It was gone, now. Baldomero Espartero, the demon of Navarre, banished forevermore by an #italic errekete#!'s well-placed round. He wrapped his arms around her waist, and allowed the tears to flow at last."
+ carlist_war.3.a: "The [SCOPE.sCharacter('don_carlos_scope').GetPrimaryRoleTitle] respects all his subjects"
+ carlist_war.3.b: "Perhaps we shouldn't agitate the Liberals further..."
+
+ carlist_war.4.t: "All that is Holy"
+ carlist_war.4.d: "A brutal onslaught of policies enacted by the more radical elements in the Isabelline administration had led to a series of humiliations for the Church. From the seizure of Galician #italic minifundias#! to the burning of churches in Zaragossa, nothing was spared, and nothing was sacred."
+ carlist_war.4.f: "The priest, clad in mourning robes, stalked back and forth across the foyer. At last, he turned his head towards the waiting officer.\n\n\"Toreno and Mendizábal- that heathen- have stolen the tithe, repossessed our lands and expelled the Jesuits. Someone must put an end to this insanity! I beg of you, send me to Madrid, and I will visit the wrath of God upon them. The dogs of the heretic Cortes... I remember their names and faces. Each and every one of them.\""
+ carlist_war.4.a: "Only restitution can wash away these sins."
+ carlist_war.4.b: "A large donation should suffice."
+ carlist_war.4.c: "You see, the war has taken a heavy toll on the royal coffers..."
+
+ carlist_war.5.t: "The Siege of Bilbao"
+ carlist_war.5.d: "Thus far, all prior attempts at conquering the vital port of Bilbao have failed. As the war is ramping up to its zenith, we may only have one more chance to force a victory here. A decisive strike on liberal garrison in Bilbao would not only improve morale, but also open up a new, vital supply route to our foreign backers."
+ carlist_war.5.f: ""It is here where Zumalacárregui bled for the King. Perhaps it is here where we can turn the tide once more.""
+ carlist_war.5.a: "Prepare the cannons!"
+ carlist_war.5.b: "We cannot afford another siege."
+
+ carlist_war.6.t: "Carlism on the Frontier"
+ carlist_war.6.d: "While Andalucía may be far away from the main theater of the war, its poverty is a constant source of tension behind the Cristino lines. The rampant banditry and lawlessness may be exploited to our advantage."
+ carlist_war.6.f: ""Merely a group of roving bandits? Perhaps. But a highly useful distraction nonetheless.""
+ carlist_war.6.a: "Send a small detachment to help create chaos."
+ carlist_war.6.b: "This is a waste of time. The King has no allies here."
+
+ carlist_war.7.t: "The Carlist War"
+ carlist_war.7.d:1 "Sidelined by the court in favour of [SCOPE.sCharacter('isabella_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('isabella_scope').GetFirstName], and ordered into exile by his late brother King Ferdinand, Don [SCOPE.sCharacter('don_carlos_scope').GetFirstName] has defied his brother's testament, and set out to claim the throne. The [GetIdeology('ideology_carlist_movement').GetName] cause is joined by traditionalists and those resentful of the government's centralizing tendencies."
+ carlist_war.7.f:1 "Javier Larrañaga sat with his face to the sun. On each of his flanks, a line of tents ran along the ridge-line. Scattered around them were his brothers in arms - building fires, swabbing muskets, drying themselves after a dip in the mountain stream. The report of gunfire echoed in the distance. New volunteers, still wet behind the ears, handling a weapon for the first time in their lives.\n\nA whistle sounded. He levered himself to his feet with his carbine's butt, and looked to the South. There, beyond the Ebro, was his King's prize. Thirty thousand of his countrymen stood in arms to claim it. Let God's mercy carry them to victory, for the Queen-Pretender would spare none."
+ carlist_war.7.a: "Spain's future will be decided on these hills. "
+ carlist_war_startup_tt: "@information! The Carlist War starts off as a [concept_guerilla_war]"
+
+# Two Spains Tie In
+ two_spains_fueros_conservative_drift_tt: "The #b $je_the_two_spains$#! [concept_journal_entry] will drift towards #italic Conservative#! by #v [GetPlayer.MakeScope.ScriptValue('two_spains_fueros_conservative_drift')]#!"
+ two_spains_church_restitution_conservative_drift_tt: "The #b $je_the_two_spains$#! [concept_journal_entry] will drift towards #italic Conservative#! by #v [GetPlayer.MakeScope.ScriptValue('two_spains_church_restitution_conservative_drift')]#!"
+ two_spains_church_compensation_conservative_drift_tt: "The #b $je_the_two_spains$#! [concept_journal_entry] will drift towards #italic Conservative#! by #v [GetPlayer.MakeScope.ScriptValue('two_spains_church_compensation_conservative_drift')]#!"
+ country_two_spains_conservative_drift_add: "#b $je_the_two_spains$#! Conservative Progress"
+ country_two_spains_conservative_drift_add_desc: "An increase or decrease to the amount of monthly progress towards #b Conservative#! in the #b $je_the_two_spains$#! [concept_journal_entry]"
+ country_two_spains_liberal_drift_add: "#b $je_the_two_spains$#! Liberal Progress"
+ country_two_spains_liberal_drift_add_desc: "An increase or decrease to the amount of monthly progress towards #b Liberal#! in the #b $je_the_two_spains$#! [concept_journal_entry]"
+
+# Triggers
+ CARLIST_WAR_ROYAL_EXPEDITION_MINIMUM_SCORE: "Has a minimum #b Score#! of at least [SCOPE.ScriptValue('carlist_war_royal_expedition_min_score')|v0]"
+
+ the_two_spains_tt: "We will soon be faced with the reality of #b $je_the_two_spains$#!"

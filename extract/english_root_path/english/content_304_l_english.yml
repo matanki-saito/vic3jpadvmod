@@ -107,6 +107,21 @@
  sweden_monarchy.3.f: "The Archbishop anointed the king on his forehead, chest, temples, and wrists, saying:\n\n"The Almighty God pour out his Holy Spirit into your soul and mind, plans and undertakings, by whose gift may you so rule land and kingdom as to redound to the honour and glory of God, maintain justice and equity and be for the good of the land and people." \n\n The king then rose and resumed his seat on his throne. \n\n" Now [SCOPE.sCharacter('oscar_relevant_ruler').GetFullNameNoFormatting] has been crowned king of the Swedes, Geats, and Wends. He and no other."" #- Swedish coronation manifesto
  sweden_monarchy.3.a: "Long live the King!"
 
+ sweden_migration.1.t: "Swedish Migration"
+ sweden_migration.1.d: "The poor conditions in [SCOPE.sCountry('migration_country').GetName] have made migration to [SCOPE.sState('migration_target_state').GetName] a very attractive alternative. Thousands of [SCOPE.sCulture('migration_culture').GetName] people have set off across the sea for America."
+ sweden_migration.1.f: "[SCOPE.sCulture('migration_culture').GetNameNoFormatting] peasants gather off the latest ship. Tens of thousands had already come before them, with tens of thousands more on the way. \nTo the Swedes, Minnesota appeared as an earthly paradise, its dark and bountiful soil yielding harvests enough to banish want and gladden the heart."
+ sweden_migration.1.a: "A better life is what we need right now."
+ sweden_migration.1.b: "New York will do quite nicely."
+ sweden_migration: "Swedish Migration"
+
+ sweden_law.1.t: "Racial Biology"
+ sweden_law.1.d: "The [SCOPE.sCountry('sweden_law_country').GetAdjective] State Institute for Racial Biology has been tasked with finding the cause of crime, alcoholism, and mental issues. The Institute's claims have led the Riksdag to pass through policies controlling the births of [SCOPE.sCulture('sweden_law_culture').GetName] people."
+ sweden_law.1.f: "In the lecture halls of Uppsala, professors hold up calipers as if they are oracles. They unfold charts of physiognomies, and point to each in turn. \nThis one is a pure-bred Swede, long of limb and sound of mind. This one is tainted by interbreeding, doomed to a fate of alcoholism. The former is the future of the nation. The latter is fated to quietly disappear. \nIt would be the humane thing to do, continues the professor.  Look at the graphs, at the well-arranged figures. The nation demands more of us than he is able to provide."
+ sweden_law.1.a: "Three generations of imbeciles are enough."
+ sweden_law.1.b: "We need to control this situation."
+ sweden_law_birth: "A Nation’s Pride"
+ sweden_law_birth_two: "The Ledger of Shame"
+
  king_of_sweden_and_norway_key: "of Sweden and Norway"
  king_of_sweden_key: "of Sweden"
  king_of_sweden_denmark_and_norway_key: "of Sweden, Denmark, and Norway"
@@ -422,18 +437,6 @@
 
   modifier_india_company_rule: "Company Rule"
   modifier_india_crown_rule: "Crown Rule"
-
-  ideology_colonialist: "Colonialist"
-  ideology_colonialist_desc: "This group represents a colonial interest reliant upon the continuous extraction of wealth from their territory, and favors the maintenance of this system over independent economic development."
-
-  ideology_sovereignist: "Sovereignist"
-  ideology_sovereignist_desc: "This group opposes oppressive measures imposed upon it by colonial authorities, preferring policies that serve the ends of national self-governance."
-
-  ideology_sovereignist_leader: "Sovereignist"
-  ideology_sovereignist_leader_desc: "This leader opposes oppressive measures imposed upon their nation by colonial authorities, preferring policies that serve the ends of national self-governance."
-
-  ideology_utopian: "Utopian"
-  ideology_utopian_desc: "This leader seeks the establishment of a socialist society founded upon the principles of egalitarianism, rationalism, and communal ownership."
 
   ### Corporate State ###
 

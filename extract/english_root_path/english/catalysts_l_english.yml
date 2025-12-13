@@ -94,6 +94,8 @@
  catalyst_recognition_requested_desc: "[TARGET_COUNTRY.GetName] requesting an embassy from [COUNTRY.GetName]"
  catalyst_support_regime_requested: "Support Regime Requested"
  catalyst_support_regime_requested_desc: "[TARGET_COUNTRY.GetName] requesting support for their regime"
+ catalyst_investment_rights_requested: "Investment Rights Requested"
+ catalyst_investment_rights_requested_desc: "[TARGET_COUNTRY.GetName] requesting [concept_foreign_investment_rights]"
  catalyst_knowledge_sharing_requested: "Knowledge Sharing Requested"
  catalyst_knowledge_sharing_requested_desc: "[TARGET_COUNTRY.GetName] requesting [COUNTRY.GetName] share knowledge of their [concept_technology]"
  catalyst_diplomatic_incident: "Diplomatic Incident Occurred"

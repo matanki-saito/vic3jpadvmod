@@ -68,7 +68,7 @@
 
  expedition_events.650.t:0 "Rear Column"
  expedition_events.650.d:0 "We arrived at a missionary camp, finding there the food and rest we had been craving. The lack of aliments during our journey has tempted a man to request the division of the expedition."
- expedition_events.650.f:0 ""Anything similar to his expression I had never seen before — or I had, in my younger years, when fascination and hope were mixed with ambition and desire. Oh, I wasn't touched, I was terrified. The skin surrounding his mouth was not curved in a smile, but cracked into ecstasy. "Let me stay behind, [SCOPE.sCharacter('expedition_leader').GetFullName], I'm begging you.""
+ expedition_events.650.f:0 ""Anything similar to his expression I had never seen before — or I had, in my younger years, when fascination and hope were mixed with ambition and desire. Oh, I wasn't touched, I was terrified. The skin surrounding his mouth was not curved in a smile, but cracked into ecstasy. "Let me stay behind, [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting], I'm begging you.""
  expedition_events.650.a:0 "We cannot ensure the feeding of our all men."
  expedition_events.650.b:0 "The expedition cannot be divided."
  expedition_events.650.tt:0 "The men are left behind."
@@ -78,7 +78,7 @@
  expedition_events.651.a:0 "The name of the expedition has been stained."
  expedition_events.652.t:0 "Mutiny!"
  expedition_events.652.d:0 "A mutiny has been raised by the men that had demanded the division of the expedition."
- expedition_events.652.f:0 ""Elusive glances, avoidant words. There was something in the countenance of some of our men that made me wish I had listened to their petitions to stay behind, not because I wanted to fulfill their selfish wishes, but because their company had become contemptible to me.\n\n"Mister [SCOPE.sCharacter('expedition_leader').GetFullName]," I heard, while turning around to face a cold gun pointed at my chest, "it would be advisable to turn back."""
+ expedition_events.652.f:0 ""Elusive glances, avoidant words. There was something in the countenance of some of our men that made me wish I had listened to their petitions to stay behind, not because I wanted to fulfill their selfish wishes, but because their company had become contemptible to me.\n\n"Mister [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting]," I heard, while turning around to face a cold gun pointed at my chest, "it would be advisable to turn back."""
  expedition_events.652.a:0 "Down with the traitors!"
  modifier_expedition_rear_column_disaster:0 "Rear Column Disaster"
 
@@ -294,7 +294,7 @@
 
  ig_suppression_events.3.t:0 "Persuasion"
  ig_suppression_events.3.d:1 "With the rumors about [SCOPE.sCharacter('suppressed_leader').GetHerHis] way of life reaching all social strata and [SCOPE.sCharacter('suppressed_leader').GetHerHis] reputation undermined, we can certainly persuade [SCOPE.sCharacter('suppressed_leader').GetFullName] to step down from [SCOPE.sCharacter('suppressed_leader').GetHerHis] position as the leader of [SCOPE.gsInterestGroup('target').GetName]."
- ig_suppression_events.3.f:0 ""It was one of those days when the fires of the factories twinkled like little eyes through the windows, one of those days when [SCOPE.sCharacter('suppressed_leader').GetFullName] felt as if the whole city stared at [SCOPE.sCharacter('suppressed_leader').GetHerHim], accusing, demanding. But it was not [SCOPE.sCharacter('suppressed_leader').GetHerHis] fault! [SCOPE.sCharacter('suppressed_leader').GetSheHe] knew it, [SCOPE.sCharacter('suppressed_leader').GetSheHe] had done nothing wrong... It was the government, it was obviously the government, spreading lies, they never liked [SCOPE.sCharacter('suppressed_leader').GetHerHim], did they? Oh, no, they never did.\n\n"What are you looking at!?""
+ ig_suppression_events.3.f:0 ""It was one of those days when the fires of the factories twinkled like little eyes through the windows, one of those days when [SCOPE.sCharacter('suppressed_leader').GetFullNameNoFormatting] felt as if the whole city stared at [SCOPE.sCharacter('suppressed_leader').GetHerHim], accusing, demanding. But it was not [SCOPE.sCharacter('suppressed_leader').GetHerHis] fault! [SCOPE.sCharacter('suppressed_leader').GetSheHe] knew it, [SCOPE.sCharacter('suppressed_leader').GetSheHe] had done nothing wrong... It was the government, it was obviously the government, spreading lies, they never liked [SCOPE.sCharacter('suppressed_leader').GetHerHim], did they? Oh, no, they never did.\n\n"What are you looking at!?""
  ig_suppression_events.3.a:0 "A little blackmailing never killed nobody."
  ig_suppression_events.3.a.tt:0 "[SCOPE.sCharacter('suppressed_leader').GetFullName] will step down."
  ig_suppression_events.3.b:0 "Maybe we just need to make the scandal even bigger."
@@ -625,7 +625,7 @@
 
  decree_events.3.t:0 "From the Ground Up"
  decree_events.3.d:0 "A lowborn man has risen as the popular leader of the [SCOPE.gsInterestGroup('ig_intelligentsia').GetName], with some not so pleased by such social mobility."
- decree_events.3.f:0 ""At first he was living with his poor widowed mother, then with his terrible uncle, then they both died, it was said, and he became an orphan and fled the state. Then he was seen as a wine merchant, as young as he was, and some say he tried to become a lawman of some kind. Then he tried writing, from which he has been moderately successful, and now... now here you see it, leader of the [SCOPE.gsInterestGroup('ig_intelligentsia').GetName], finally at peace.""
+ decree_events.3.f:0 ""At first he was living with his poor widowed mother, then with his terrible uncle, then they both died, it was said, and he became an orphan and fled the state. Then he was seen as a wine merchant, as young as he was, and some say he tried to become a lawman of some kind. Then he tried writing, from which he has been moderately successful, and now... now here you see it, leader of the [SCOPE.gsInterestGroup('ig_intelligentsia').GetNameNoFormatting], finally at peace.""
  decree_events.3.a:0 "He has earned this job."
  decree_events.3.b:0 "A touching story, indeed, but he doesn't deserve special treatment."
  Copperfield:0 "Copperfield"
@@ -839,7 +839,7 @@
  children_rights_events.4.c:0 "We don't really need those."
  ragged_schools_modifier:0 "Ragged Schools"
  ragged_schools_devout:0 "Religious Ragged Schools"
- ragged_schools_no_devout:0 "Non Religious Ragged Schools"
+ modifier_no_ragged_schools: "Rejected Ragged Schools"
 
  children_rights_events.5.t:0 "Pen and Paper"
  children_rights_events.5.d:0 "The enactment of [SCOPE.sLaw('current_law_scope').GetName] has come to a halt due to some public protests. Many are the families that lack the purchasing power to meet the expenses that buying new school supplies imply, thus preventing their children from scholarization."
@@ -967,7 +967,7 @@
 
  internal_security_events.1.t:0 "An Uncanny Disappearance"
  internal_security_events.1.d:0 "The disappearance of [SCOPE.sCharacter('anti_secret_police_leader').GetFullName], of the [SCOPE.gsInterestGroup('anti_secret_police_ig').GetName], has raised serious concerns among the elites, given [SCOPE.sCharacter('anti_secret_police_leader').GetHerHis] recent opposition to the [SCOPE.sLaw('current_law_scope').GetName]."
- internal_security_events.1.f:1 ""It was well past noon when the family reported to the pertinent authorities: [SCOPE.sCharacter('anti_secret_police_leader').GetFullNameNoFormatting] had gone missing all night, no warning or note was left behind. Relatives have expressed their concerns about it being prompted by [SCOPE.sCharacter('anti_secret_police_leader').GetHerHis] insistence on opposing the [SCOPE.sLaw('current_law_scope').GetName], since a small knife had been left at their door a few days before, which they now interpret as a threat.""
+ internal_security_events.1.f:1 ""It was well past noon when the family reported to the pertinent authorities: [SCOPE.sCharacter('anti_secret_police_leader').GetFullNameNoFormatting] had gone missing all night, no warning or note was left behind. Relatives have expressed their concerns about it being prompted by [SCOPE.sCharacter('anti_secret_police_leader').GetHerHis] insistence on opposing the [SCOPE.sLaw('current_law_scope').GetNameNoFormatting], since a small knife had been left at their door a few days before, which they now interpret as a threat.""
  internal_security_events.1.a:0 "There's nothing to investigate here."
  internal_security_events.1.b:0 "We cannot pass the law at the cost of our people's trust."
  forced_disappearance_modifier:0 "An Uncanny Disappearance"
@@ -1021,7 +1021,7 @@
 
  psychology_events.1.t:1 "An Absent Mind"
  psychology_events.1.d:1 "There have been reports of [SCOPE.sCharacter('mentally_ill_leader').GetFullName], leader of the [SCOPE.gsInterestGroup('mentally_ill_ig').GetName], not attending meetings or fulfilling his obligations. We can no longer ignore [SCOPE.sCharacter('mentally_ill_leader').GetHerHis] absence."
- psychology_events.1.f:1 ""[SCOPE.sCharacter('mentally_ill_leader').GetLastName] barely even responds when we call [SCOPE.sCharacter('mentally_ill_leader').GetHerHis] name. A blank stare, [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] almost doesn't blink. "Let's go for a walk," we'd tell [SCOPE.sCharacter('mentally_ill_leader').GetHerHim], and [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] nods in silence, and in silence we walk.""
+ psychology_events.1.f:1 ""[SCOPE.sCharacter('mentally_ill_leader').GetLastNameNoFormatting] barely even responds when we call [SCOPE.sCharacter('mentally_ill_leader').GetHerHis] name. A blank stare, [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] almost doesn't blink. "Let's go for a walk," we'd tell [SCOPE.sCharacter('mentally_ill_leader').GetHerHim], and [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] nods in silence, and in silence we walk.""
  psychology_events.1.a:0 "A doctor needs to see [SCOPE.sCharacter('mentally_ill_leader').GetHerHim]."
  psychology_events.1.b:0 "[SCOPE.sCharacter('mentally_ill_leader').GetSheHe|U] can get the help [SCOPE.sCharacter('mentally_ill_leader').GetSheHe] needs in an asylum."
  psychology_events.1.c:1 "Psychoanalysis has become a very promising trend."
@@ -1176,7 +1176,7 @@
  krakatoa_je_tt:0 "The Krakatoa volcano has erupted."
  TSUNAMI_LIST_HEADER: "$TOOLTIP_DELIMITER$\nYour [Concept('concept_state', '$concept_states$')] that are currently affected by the [concept_devastation] of the [GetHarvestConditionType('tsunami').GetName]:"
  TSUNAMI_LIST_CONTENT: "#indent_newline:3 \n[GetScriptedGui('je_krakatoa_tsunami_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
- TSUNAMI_LIST_ENTRY: "[THIS.GetState.GetName]: [THIS.GetState.GetStateRegion.GetDevastationLevel|-%0]"
+ TSUNAMI_LIST_ENTRY: "[THIS.GetState.GetName]: [THIS.GetState.GetDevastationLevel|-%0]"
  TSUNAMI_LIST_EMPTY_STATE: "No [concept_state] is currently affected by the [GetHarvestConditionType('tsunami').GetNameNoFormatting|b]"
  TSUNAMI_LIST_AFTER: "@information! Using the [GetDecreeType('decree_emergency_relief').GetName] [concept_decree] on affected $concept_states$ adds a #v [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_chance')|0]%#! chance to reduce $concept_devastation$ by #v;P [SCOPE.ScriptValue('krakatoa_decree_emergency_relief_devastation_recovery_amount')|0]%#! each month!"
  je_krakatoa_thermometer_progress_bar_name: "Temperature Recovery"
@@ -1396,7 +1396,7 @@
 
  election_other_parties_events.3.t:0 "The Natural Solution"
  election_other_parties_events.3.d:0 "Members of the [SCOPE.sParty('military_party').GetName] have loudly stated that the only way to lead us out of the [SCOPE.sWar('ongoing_war').GetName] war is to leave the government of our nation in their capable hands."
- election_other_parties_events.3.f:0 ""Desperate times call for desperate measures. Not that we are a desperate measure, of course, but that's how the saying goes — the natural order of linguistics. To each their own, ordo naturalis, we must play by those rules. And how could something be more natural than letting the [SCOPE.sParty('military_party').GetName] lead us through war?""
+ election_other_parties_events.3.f:0 ""Desperate times call for desperate measures. Not that we are a desperate measure, of course, but that's how the saying goes — the natural order of linguistics. To each their own, ordo naturalis, we must play by those rules. And how could something be more natural than letting the [SCOPE.sParty('military_party').GetNameNoFormatting] lead us through war?""
  election_other_parties_events.3.a:0 "They are truly our most capable people."
  election_other_parties_events.3.b:0 "Military populism? In my war?"
  supported_war_politics_modifier:0 "War Politics"
@@ -1404,7 +1404,7 @@
 
  election_other_parties_events.4.t:0 "The Golden Mean"
  election_other_parties_events.4.d:0 "Members of the [SCOPE.sParty('social_democrat_party').GetName] have drawn attention to the rise of the [SCOPE.sParty('leftist_party').GetName], expressing their willingness to offer a more moderate solution to their political extremism."
- election_other_parties_events.4.f:0 ""Have you heard of that dangerous [SCOPE.sParty('leftist_party').GetName]? I've been told that their members meet at night, plot their next terrorist attack and eat babies! Babies!""
+ election_other_parties_events.4.f:0 ""Have you heard of that dangerous [SCOPE.sParty('leftist_party').GetNameNoFormatting]? I've been told that their members meet at night, plot their next terrorist attack and eat babies! Babies!""
  election_other_parties_events.4.a:0 "And thank [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] that they do."
  election_other_parties_events.4.b:0 "Sounds a bit far-fetched, but the [SCOPE.sParty('social_democrat_party').GetName] is still the sensible option."
 

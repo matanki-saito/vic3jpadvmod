@@ -1,11 +1,4 @@
 ﻿l_english:
- # Utilitarian Content
- ideology_utilitarian_millian: "Utilitarian"
- ideology_utilitarian_millian_desc:1 "#lore This group believes that governmental functions should be codified and rationalized in order to promote the common good.#!"
-
- ideology_utilitarian_leader: "Utilitarian"
- ideology_utilitarian_leader_desc:1 "#lore This leader believes it is an important function of the government to pursue the common good, be it through basic liberties or benevolent despotism.#!"
-
  je_imperialism_of_promise: "Imperialism of Promise"
  je_imperialism_of_promise_reason: "We have a duty to promote the common good by any means necessary. Basic liberties and equal opportunities play a central role in policymaking. A [GetIdeology('ideology_utilitarian_millian').GetName] approach to colonial administration promises a strong force for progress both in the [ROOT.GetCountry.GetName] and around the world."
  je_imperialism_of_promise_status: "Oversee a [GetIdeology('ideology_utilitarian_millian').GetName] approach to colonial administration in [JournalEntry.GetCountry.GetName]."
@@ -182,6 +175,7 @@
  victoria_terminus_populated_tt: "$building_victoria_terminus$ workforce [concept_occupancy] is greater or equal to #variable 50%#!"
  rejected_victoria_terminus_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] rejects the proposal to construct $building_victoria_terminus$."
  does_not_have_state_bombay_tt: "[ROOT.GetCountry.GetNameNoFormatting] does not have $STATE_BOMBAY$."
+ owns_bombay_province_tt: "Owns the city of $HUB_NAME_STATE_BOMBAY_city$"
 
  victoria_terminus.1.t: "A Terminus Like No Other"
  victoria_terminus.1.d: "The [SCOPE.gsInterestGroup('relevant_terminus_ig').GetName] have submitted a proposal to construct a grand Terminus in [SCOPE.sState('relevant_bombay_state').GetName]. The group has collected a significant sum of money to be used in its construction."
@@ -366,12 +360,6 @@
  ig_trait_khalsa_panth: "Khalsa Panth" 
  ig_trait_khalsa_panth_desc: "Truthful living and hard work. We live the way of the holy, avoid extremes, and walk the middle path. The goods we produce get to the people who need them."
 
- ideology_sikh_militancy: "Sikh Militancy"
- ideology_sikh_militancy_desc: "#lore The Sikh have a militarized movement that will support having a strong national army.#!" 
-
- ideology_sikh_moralist: "Sikh Moralist"
- ideology_sikh_moralist_desc: "#lore The Sikh believe all have an equal connection with God and respect the practice of other faiths.#!" 
-
  # Princely States
  princely_state_decision: "Seek Sovereignty"
  princely_state_decision_desc: "For far too long, the British have underestimated and undermined our authority. Launch a campaign to secure independence"
@@ -429,7 +417,7 @@
 
  princely_states.5.t: "[SCOPE.sCountry('bic_scope').GetName] Annexes a Princely State"
  princely_states.5.d: "By the use of the doctrine of lapse, [SCOPE.sCountry('bic_scope').GetName] has taken over another princely state."
- princely_states.5.f: "Growing up, [ROOT.GetCountry.GetRuler.GetHerHis] tutors had encouraged [ROOT.GetCountry.GetRuler.GetHerHim] to play chess. Looking back, the game captured one aspect of being a ruler well. The ruler never got to move more than a step at a time. And yet, if [ROOT.GetCountry.GetRuler.GetSheHe] fell, no one else would matter. Today, as another one of [ROOT.GetCountry.GetRuler.GetHerHis] neighbors fell to [SCOPE.sCountry('bic_scope').GetName], the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] felt like the king on the chessboard, surrounded by enemies but unable to do much. But even then, [ROOT.GetCountry.GetRuler.GetSheHe] had one move left. [ROOT.GetCountry.GetRuler.GetSheHe|U] just had to make sure it was the right one."
+ princely_states.5.f: "Growing up, [ROOT.GetCountry.GetRuler.GetHerHis] tutors had encouraged [ROOT.GetCountry.GetRuler.GetHerHim] to play chess. Looking back, the game captured one aspect of being a ruler well. The ruler never got to move more than a step at a time. And yet, if [ROOT.GetCountry.GetRuler.GetSheHe] fell, no one else would matter. Today, as another one of [ROOT.GetCountry.GetRuler.GetHerHis] neighbors fell to [SCOPE.sCountry('bic_scope').GetNameNoFormatting], the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] felt like the king on the chessboard, surrounded by enemies but unable to do much. But even then, [ROOT.GetCountry.GetRuler.GetSheHe] had one move left. [ROOT.GetCountry.GetRuler.GetSheHe|U] just had to make sure it was the right one."
  princely_states.5.a: "The policy is abhorrent!"
  princely_states.5.b: "Perhaps there is wisdom in this."
 

@@ -76,7 +76,7 @@
  india_non_cooperation.2.a: "誰かが対処するだろう。"
  india_non_cooperation.3.t: "閉店ストライキ！"
  india_non_cooperation.3.d: "[SCOPE.sPoliticalMovement('indian_independence_movement').GetName]に扇動され、[SCOPE.sState('hartal_state').GetName]の労働者が仕事道具を投げ出し、仕事場から立ち去りました。地域全体がストライキに入りました！"
- india_non_cooperation.3.f: "事務員が息を切らせ、行政官の執務室に飛び込んできた。「せ、先生！」彼はどもりながら言った。「民衆が働くのをやめてしまいました！」\n\n老いた行政官は眉を寄せた。「誰が働くのをやめただと？」\n\n「全員です、先生。[SCOPE.sState('hartal_state').GetName]の全住民です！」\n\n「まさか！そんなことが#italic 許される#!のか？」"
+ india_non_cooperation.3.f: "事務員が息を切らせ、行政官の執務室に飛び込んできた。「せ、先生！」彼はどもりながら言った。「民衆が働くのをやめてしまいました！」\n\n老いた行政官は眉を寄せた。「誰が働くのをやめただと？」\n\n「全員です、先生。[SCOPE.sState('hartal_state').GetNameNoFormatting]の全住民です！」\n\n「まさか！そんなことが#italic 許される#!のか？」"
  india_non_cooperation.3.a: "この労働者の運動は、善良な政府に対する侮辱だ！"
  india_non_cooperation.3.b: "[SCOPE.sPoliticalMovement('indian_independence_movement').GetName]と話し合う時が来たようだ。"
  hartal_action: "閉店ストライキ"

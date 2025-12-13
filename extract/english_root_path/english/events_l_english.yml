@@ -218,7 +218,7 @@
  gold_always_let_go_tt: "This event will be hidden in the future, and the above effects will be applied automatically at the end of every gold rush."
  gold_always_make_stay_tt: "This event will be hidden in the future, and the above effects will be applied automatically at the end of every gold rush."
  
- goldrush.3.t:0 "Foreign Influx Provokes Outcry" 
+ goldrush.3.t:0 "Foreign Influx Provokes Outcry"
  goldrush.3.d:1 "The [SCOPE.gsInterestGroup('petty_ig').GetName] have spoken out against the migrants moving into [SCOPE.sState('pb_gold_state').GetName], pleading with the government to support "native" miners by discouraging migration into the state."
  goldrush.3.f:1 ""Do you really think that they're moving just because they want to work? Just take a look around! What do you see here? That's it! Gold! They have greed in their eyes, I tell you, they're coming to take it all from us and they won't leave a penny behind. What's even wrong with trying to protect the future of our people?""
  goldrush.3.a:1 "We need every spare hand we can get in [SCOPE.sState('pb_gold_state').GetNameNoFormatting]."
@@ -261,7 +261,7 @@
  ig_leaders.2.b.tt:0 "[SCOPE.sCharacter('reckless_leader').GetFullName] will step down."
  
  ig_leaders.3.t:0 "The Grand Plan Pays Off"
- ig_leaders.3.d:0 "[SCOPE.sCharacter('meticulous_leader').GetFullName], the methodical leader of the [SCOPE.gsInterestGroup('meticulous_ig').GetName], has been studiously working behind the scenes for some time now, and at last all [SCOPE.sCharacter('meticulous_leader').GetHerHis] work has paid off for [SCOPE.gsInterestGroup('meticulous_ig').GetName] and [ROOT.GetCountry.GetName]."
+ ig_leaders.3.d:0 "[SCOPE.sCharacter('meticulous_leader').GetFullName], the methodical leader of the [SCOPE.gsInterestGroup('meticulous_ig').GetName], has been studiously working to increase the nation's credit. At last all [SCOPE.sCharacter('meticulous_leader').GetHerHis] work has paid off, but for the [SCOPE.gsInterestGroup('meticulous_ig').GetName] or for [ROOT.GetCountry.GetName]?"
  ig_leaders.3.f:2 "The [SCOPE.sCharacter('meticulous_leader').GetWomanMan] is so pleased with [SCOPE.sCharacter('meticulous_leader').GetHerHis] acts that [SCOPE.sCharacter('meticulous_leader').GetSheHe] looks like [SCOPE.sCharacter('meticulous_leader').GetSheHe]'s about to burst into flames of contained emotion. How charming. Professionally speaking, though, not the most clever move.\n\n"Yes! Just as planned!""
  ig_leaders.3.a:1 "The [SCOPE.gsInterestGroup('meticulous_ig').GetNameNoFormatting] shall reap the rewards."
  ig_leaders.3.b:1 "[ROOT.GetCountry.GetNameNoFormatting] shall reap the rewards."
@@ -356,7 +356,7 @@
 
  commander_events.5.t:0 "War of Progress"
  commander_events.5.d:2 "[SCOPE.sCharacter('commander_invention').GetFullName] has worked out how to improve upon the  invention of the #bold repeaters#!."
- commander_events.5.f:2 ""[SCOPE.sCharacter('commander_invention').GetFullName] adjusts [SCOPE.sCharacter('commander_invention').GetHerHis] spectacles filled with confidence.\n\n"Well, it was rather simple, you see. I merely observed the technology the men currently worked with, and realized that we could change some things here and there."\n\nThere's something about the way [SCOPE.sCharacter('commander_invention').GetSheHe] talks that gives [SCOPE.sCharacter('commander_invention').GetHerHim] a graceful demeanor and a considerable popularity among the masses when [SCOPE.sCharacter('commander_invention').GetSheHe] holds that rifle. Such confidence!" #I don't know how repeaters work
+ commander_events.5.f:2 ""[SCOPE.sCharacter('commander_invention').GetFullNameNoFormatting] adjusts [SCOPE.sCharacter('commander_invention').GetHerHis] spectacles filled with confidence.\n\n"Well, it was rather simple, you see. I merely observed the technology the men currently worked with, and realized that we could change some things here and there."\n\nThere's something about the way [SCOPE.sCharacter('commander_invention').GetSheHe] talks that gives [SCOPE.sCharacter('commander_invention').GetHerHim] a graceful demeanor and a considerable popularity among the masses when [SCOPE.sCharacter('commander_invention').GetSheHe] holds that rifle. Such confidence!" #I don't know how repeaters work
  commander_events.5.a:0 "Focus on fire power."
  commander_events.5.b:0 "Focus on precision."
 
@@ -719,12 +719,12 @@
 
  expedition_events.252.t:0 "Mountain Claimed"
  expedition_events.252.d:0 "The expedition has scaled the mountain and claimed it in the name of [ROOT.GetCountry.GetName]. They have also decided to name it 'Mount [SCOPE.sCharacter('expedition_leader').GetLastName]'."
- expedition_events.252.f:1 "With one, final heave, [SCOPE.sCharacter('expedition_leader').GetFullName] threw [SCOPE.sCharacter('expedition_leader').GetHerselfHimself] over the lip of the last cliff. As [SCOPE.sCharacter('expedition_leader').GetSheHe] straightened both posture and snowy clothes, the first light of a new day broke behind them. A hero's welcome to the west, and a mountain claimed. And the cream on top of the mash, the flag of [ROOT.GetCountry.GetAdjective], brought forth by a younger expeditionary."
+ expedition_events.252.f:1 "With one, final heave, [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting] threw [SCOPE.sCharacter('expedition_leader').GetHerselfHimself] over the lip of the last cliff. As [SCOPE.sCharacter('expedition_leader').GetSheHe] straightened both posture and snowy clothes, the first light of a new day broke behind them. A hero's welcome to the west, and a mountain claimed. And the cream on top of the mash, the flag of [ROOT.GetCountry.GetAdjectiveNoFormatting], brought forth by a younger expeditionary."
  expedition_events.252.a:0 "Excellent."
 
  expedition_events.253.t:0 "Mountainside Issues"
  expedition_events.253.d:0 "While climbing the mountain, a rockfall struck a member of the expedition, rendering them unconscious. The group was forced to turn back."
- expedition_events.253.f:0 "As the rocks tumbled down the mountain, snow cascading in their wake, blood dripped over the ledge where a struck expeditionary lay. The steam escaping his split lips were the only sign of life from the poor boy. With a pang of guilt, [SCOPE.sCharacter('expedition_leader').GetFullName] threw the boy over [SCOPE.sCharacter('expedition_leader').GetHerHis] shoulders and marched down the mountain."
+ expedition_events.253.f:0 "As the rocks tumbled down the mountain, snow cascading in their wake, blood dripped over the ledge where a struck expeditionary lay. The steam escaping his split lips were the only sign of life from the poor boy. With a pang of guilt, [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting] threw the boy over [SCOPE.sCharacter('expedition_leader').GetHerHis] shoulders and marched down the mountain."
  expedition_events.253.a:0 "A shame."
 
  expedition_events.260.t:0 "Snow on the Ground"

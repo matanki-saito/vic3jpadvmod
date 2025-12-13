@@ -1,10 +1,4 @@
 ﻿l_english:
-  ideology_orleanist: "Orléanist"
-  ideology_orleanist_desc: "This leader sees the merits of a restrained monarch, and champions a French constitution fit for such purpose."
-  ideology_legitimist: "Legitimist"
-  ideology_legitimist_desc: "This leader yearns for the French kings of old, before the Reign of Terror sullied everything."
-  ideology_bonapartist: "Bonapartist"
-  ideology_bonapartist_desc: "This leader would see a new Bonaparte lead France into a new era of unquestioned might."
   sway_to_bonapartism_correct_ig_in_government_tt: "[Character.GetFullNamePossessive] [concept_interest_group] [Character.GetInterestGroup.GetName] is [concept_in_government] and #tooltippable #tooltip:[Character.GetTooltipTag],sway_to_bonapartism_correct_ig_in_government_tt_compatibility_list ideologically compatible with [GetIdeology('ideology_bonapartist').GetName]#!#!"
   sway_to_bonapartism_correct_ig_in_government_tt_compatibility_list: "[Concept('concept_interest_group','$concept_interest_groups$')] compatible with [GetIdeology('ideology_bonapartist').GetName] includes:\n[GetInterestGroupVariant('ig_armed_forces',Character.GetCountry).GetName]\n[GetInterestGroupVariant('ig_petty_bourgeoisie',Character.GetCountry).GetName]\n[GetInterestGroupVariant('ig_industrialists',Character.GetCountry).GetName]\n[GetInterestGroupVariant('ig_rural_folk',Character.GetCountry).GetName]"
   sway_to_bonapartism_compatible_ideology_tt: "[Character.GetFullNamePossessive] current [concept_ideology] ([Character.GetIdeology.GetName]) is #b not#! #tooltippable #tooltip:[Character.GetTooltipTag],sway_to_bonapartism_compatible_ideology_tt_compatibility_list opposed to [GetIdeology('ideology_bonapartist').GetName]#!#!"
@@ -101,6 +95,9 @@
   NON_ORLEANIST_MONARCH: "Non-[GetIdeology('ideology_orleanist').GetName] Monarch"
   NON_BONAPARTIST_MONARCH: "Non-[GetIdeology('ideology_bonapartist').GetName] Monarch"
   NON_LEGITIMIST_MONARCH: "Non-[GetIdeology('ideology_legitimist').GetName] Monarch"
+
+  NON_CARLIST_MONARCH: "Non-[GetIdeology('ideology_carlist').GetName] Monarch"
+  NON_MIGUELIST_MONARCH: "Non-[GetIdeology('ideology_miguelist').GetName] Monarch"
 
   exile_old_ruler_tt: "[SCOPE.sCharacter('old_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('old_ruler_scope').GetFullName] has fled into [concept_exile]"
   french_pretenders.6.t: "The Provisional Government"

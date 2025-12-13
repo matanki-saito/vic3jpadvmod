@@ -44,6 +44,7 @@
  party_radical_civic_union: "急進市民同盟"
  party_labour_party: "労働党"
  party_hindu_mahasabha: "全インド・ヒンドゥー大会"
+ circle_trigon_party: "サークルトリゴン党"
  revolutionary_party_name: "革命連合"
  #fascist_party
  party_fatherland_front: "祖国戦線"
@@ -72,6 +73,7 @@
  party_national_fascist_party: "国家ファシスト党"
  party_national_union_of_greece: "ギリシャ国民連合"
  integralist_action: "ブラジルの統合主義活動"
+ national_syndicalist_movement: "国家サンディカリスト党"
  #conservative_party
  party_moderate_party: "穏健党"
  party_regenerator_party: "再生党"
@@ -101,6 +103,10 @@
  party_napist_party: "ネイピスト党"
  party_ethnikon_komma: "国民党"
  party_congress_nationalist_party: "国民会議派民族主義党"
+ party_cartist_party: "憲章党"
+ party_republican_union_party: "共和連合党"
+ party_national_republican_party: "国民共和党"
+ party_nationalist_republican_party: "民族主義共和党"
  #free_trade_party
  party_historic_party: "歴史党"
  party_free_minded_venstre: "ヴェンスタ自由思想家派"
@@ -112,6 +118,9 @@
  party_democratic_alliance: "民主同盟"
  party_federalist_party: "連邦共和党"
  party_constitutional_union_party: "立憲連合党"
+ party_liberal_regenerator_party: "自由主義再生党"
+ party_vintista_party: "ヴィンティスト党"
+ party_independent_party: "独立党" #Not a real party, but an abstraction
  #liberal_party
  party_progressive_party: "進歩党"
  party_liberal_democrats: "自由民主派"
@@ -138,6 +147,9 @@
  party_exalted_liberal: "高位自由党"
  party_neoteristikon_komma: "新党"
  party_opposition_party: "野党"
+ party_evolutionist_party: "進化党"
+ party_month_of_revolution: "[SCOPE.GetRootScope.GetCountry.GetCustom('getPortugalRevolutionMonthPartyName')]党"
+ party_septemberist_party: "九月党"
  #military_party
  party_patriotic_union: "愛国同盟"
  party_national_peoples_party: "国家人民党"
@@ -171,6 +183,7 @@
  party_republican_union: "共和主義連合"
  party_farroupilha: "ファホウピーリャ党"
  party_swaraj_party: "スワラージ党"
+ party_reformist_party: "改革党"
  #religious_party
  party_portuguese_catholic_centre: "ポルドガル・カトリック中央"
  party_catholic_right: "カトリック右派"
@@ -185,6 +198,7 @@
  party_know_nothing_party: "ノウ・ナッシング党"
  party_conservative_catholics: "カトリック保守派"
  party_traditionalist_communion: "伝統主義コミュニオン" #Carlists, might revise
+ party_nationalist_party: "民族主義党"
  #social_democrats_party
  party_psoe: "PSOE"
  party_portuguese_socialist_party: "ポルトガル社会党"
@@ -227,6 +241,8 @@
  party_socialist_workers_party: "社会主義労働者党"
  party_workingmens_party: "勤労者党"
  party_kke: "KKE"
+ party_portuguese_communist_party: "ポルトガル共産党"
+ party_maximalist_federation: "過剰主義連盟"
  #agrarian_party
  party_irish_national_land_league: "アイルランド国土同盟"
  party_independent_agriculture_party: "独立農業党"
@@ -246,10 +262,11 @@
  #anarchist_party
  party_young_socialists: "青年社会主義者"
  party_cnt: "CNT"
- party_maximalist_federation: "過剰主義連盟"
  party_socialist_league: "社会主義者同盟"
  party_italian_syndicalist_union: "イタリア組合主義連合"
  party_anarcho_communist_federation: "無政府共産主義連盟"
+ party_social_revolution_group: "社会革命グループ"
+ party_portuguese_anarchist_federation: "ポルトガル無政府主義連盟"
  #Party weight descriptions
  base_value: "基本値"
  from_liberal_leader: "自由主義リーダー的イデオロギー"
@@ -307,9 +324,11 @@
  from_capitalists_schools: "公共学校法"
  from_devout_separation: "完全分離法"
  from_patriarchy: "女性参政権法"
+ from_liberal_anticlericalism: "自由主義的反教権主義"
  from_patriarchy_lesser: "女性の職場進出法"
  from_multiculturalism: "多文化主義法"
- from_liberty: "自由保証法由来"
+ from_liberty: "治安維持または自由保証法の欠如から"
+ from_lacking_tax_laws: "税法の欠如から"
  from_communism: "極左リーダー的イデオロギー"
  from_communism_powerful: "強力です"
  from_socdem_communism: "有力な極左利益集団"
@@ -346,6 +365,7 @@
  from_censorship: "自由言論制限法"
  from_bad_home_affairs: "独裁政治国内治安法"
  from_hereditary_offices: "世襲制官僚法"
+ from_increased_suffrage: "制限ありの参政権"
  from_land_tax: "土地ベース課税法"
  from_anticlerical: "国教法"
  from_republican: "非共和主義政府の原則"
@@ -385,3 +405,5 @@
  from_two_party_system: "保守・自由主義体制から"
  from_feijo_regency: "フェイジョ摂政から"
  from_jacksonian_democrat: "ジャクソン流民主主義より"
+ from_traditionalist_monarchism: "伝統主義的君主主義から"
+ from_baldomero_espartero: "バルドメロ・エスパルテロから"

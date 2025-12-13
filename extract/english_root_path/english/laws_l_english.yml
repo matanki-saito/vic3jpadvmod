@@ -64,16 +64,96 @@
  ideology_market_liberal:0 "Market Liberal"
  ideology_market_liberal_desc:0 "#lore This leader believes that the invisible hand of the free market should be the guiding force of the nation's economy.#!"
  
- ideology_liberal_leader:0 "Democrat"
+ ideology_liberal_leader:1 "Liberal"
  ideology_liberal_leader_desc:0 "#lore This leader prioritizes the institution of democracy and opposes uncontested rule over the nation. #!"
+
+ ideology_carlist: "Carlist"
+ ideology_carlist_desc: "#lore This leader upholds the line of Infante Carlos' claim to the Spanish throne, supporting a traditionalist monarchy and rejecting modernist notions of popular sovereignty and constitutionalism. #!"
+
+ ideology_miguelist: "Miguelist"
+ ideology_miguelist_desc: "#lore This leader supports an absolute monarchy founded upon Catholic values. They reject the outcome of the Liberal Wars, which removed the traditionalist King Miguel I from the throne of Portugal. #!"
+
+ ideology_ilustrado_leader: "Ilustrado"
+ ideology_ilustrado_leader_desc: "#lore This erudite leader seeks secularization of the parishes in the Philippines, as well as political and economic reforms that are equitable to all. #!"
+
+ ideology_despotic_utopian: "Despotic Utopian"
+ ideology_despotic_utopian_desc: "#lore This character believes in a society influenced by the principles of the Enlightenment, but where an autocratic government acts in the best interests of the people.#!"
+ ideology_authoritarian: "Authoritarian"
+ ideology_authoritarian_desc: "#lore This character believes that great nations need strong leaders, and that they are uniquely qualified for the position.#!"
+
+ ideology_humanitarian: "Humanitarian"
+ ideology_humanitarian_desc: "#lore This character is an advocate for the human race. Every man, woman, and child should be guaranteed a set of inalienable and non-negotiable rights by the state.#!"
+
+ ideology_protectionist: "Protectionist"
+ ideology_protectionist_desc: "#lore This character believes that domestic industries and international trade should be closely monitored and regulated by the state.#!"
+
+ ideology_humanitarian_royalist: "Enlightened Royalist"
+ ideology_humanitarian_royalist_desc: "#lore This character believes that the ideal form of society is a radically egalitarian nation ruled by an enlightened and humanist monarch.#!"
+
+ ideology_orleanist: "Orléanist"
+ ideology_orleanist_desc: "This leader sees the merits of a restrained monarch, and champions a French constitution fit for such purpose."
+
+ ideology_legitimist: "Legitimist"
+ ideology_legitimist_desc: "This leader yearns for the French kings of old, before the Reign of Terror sullied everything."
+
+ ideology_bonapartist: "Bonapartist"
+ ideology_bonapartist_desc: "This leader would see a new Bonaparte lead France into a new era of unquestioned might."
+
+ ideology_land_reformer: "Land Reformer"
+ ideology_land_reformer_desc: "This character is committed to breaking the power of large landowners and redistributing land to be worked by the common people."
+
+ ideology_sovereignist_leader: "Sovereignist"
+ ideology_sovereignist_leader_desc: "This leader opposes oppressive measures imposed upon their nation by colonial authorities, preferring policies that serve the ends of national self-governance."
+
+ ideology_utopian: "Utopian"
+ ideology_utopian_desc: "This leader seeks the establishment of a socialist society founded upon the principles of egalitarianism, rationalism, and communal ownership."
+
+ ideology_utilitarian_leader: "Utilitarian"
+ ideology_utilitarian_leader_desc:1 "#lore This leader believes it is an important function of the government to pursue the common good, be it through basic liberties or benevolent despotism.#!"
+
 
   # Interest Group Ideologies
 
+ ideology_sikh_militancy: "Sikh Militancy"
+ ideology_sikh_militancy_desc: "#lore The Sikh have a militarized movement that will support having a strong national army.#!"
+
+ ideology_sikh_moralist: "Sikh Moralist"
+ ideology_sikh_moralist_desc: "#lore The Sikh believe all have an equal connection with God and respect the practice of other faiths.#!"
+
+ ideology_montenegrin_moralist: "Montenegrin Moralist"
+ ideology_montenegrin_moralist_desc: "#lore This group has a strong belief in a religious moral order and views diversity of opinion as a threat to this order.#!"
+
+ ideology_colonialist: "Colonialist"
+ ideology_colonialist_desc: "This group represents a colonial interest reliant upon the continuous extraction of wealth from their territory, and favors the maintenance of this system over independent economic development."
+
+ ideology_sovereignist: "Sovereignist"
+ ideology_sovereignist_desc: "This group opposes oppressive measures imposed upon it by colonial authorities, preferring policies that serve the ends of national self-governance."
+
+ ideology_austrian_hegemony:0 "Austrian Hegemonists"
+ ideology_austrian_hegemony_desc:0 "#lore This group believes that Austrians alone should form the social and political elite of the country.#!"
+
+ ideology_patriarchal_suffrage:0 "Modern Patriarchal"
+ ideology_patriarchal_suffrage_desc:0 "#lore This group believes men should have political authority and that women should obey their fathers and husbands, but have accepted women's right to work and vote.#!"
+ ideology_feminist_ig:0 "Feminist"
+ ideology_feminist_ig_desc:0 "#lore This group holds that women are equal to men and strives for maintaining their rights as citizens.#!"
+
+ ideology_constitutionalist: "Constitutionalist"
+ ideology_constitutionalist_desc: "#lore This group believes in constitutional rule and the role of strong democratic institutions in statecraft.#!"
+
+ ideology_socialist: "Socialist"
+ ideology_socialist_desc: "#lore This group has committed itself to socialist ideology, advocating for ownership of the means of production and the dismantling of capitalism.#!"
+
  ideology_paternalistic:0 "Paternalistic"
- ideology_paternalistic_desc:0 "#lore This group has little faith in the populus attempting to govern itself, believing they need the guidance of a traditional aristocracy.#!"
+ ideology_paternalistic_desc:1 "#lore This group has little faith in the populace attempting to govern itself, believing they need the guidance of a traditional aristocracy.#!"
 
  ideology_magnatial: "Magnatial"
  ideology_magnatial_desc:0 "#lore This group has a long tradition of parliamentary governance, favoring cooperation between the monarchy and an elected chamber dominated by a landed elite.#!"
+
+ ideology_carlist_ig: "Carlist"
+ ideology_carlist_ig_desc: "#lore This group supports a traditionalist monarchy, rejecting modernist notions of popular sovereignty and constitutionalism. #!"
+
+ ideology_moderantist: "Moderantist"
+ ideology_moderantist_desc: "#lore This group has adopted a moderate liberal outlook, favoring cooperation between the monarchy and an elected chamber dominated by the landowning oligarchy.#!"
   
  ideology_patriarchal:0 "Patriarchal"
  ideology_patriarchal_desc:0 "#lore This group believes men should have political authority and that women should obey their fathers and husbands.#!"
@@ -162,6 +242,12 @@
  ideology_agrarian_jeffersonian:0 "Jeffersonian"
  ideology_agrarian_jeffersonian_desc:0 "#lore This group believes that the smallholding farmer class forms the foundation of the country, supporting agarianism as the basis for a free society.#!"
 
+ ideology_isolationist_expansionism:0 "Frontier Expansion"
+ ideology_isolationist_expansionism_desc:0 "#lore This group fervently opposes immigration into the country. They are however enthusiastic about settling in newly seized territories.#!"
+
+ ideology_utilitarian_millian: "Utilitarian"
+ ideology_utilitarian_millian_desc:1 "#lore This group believes that governmental functions should be codified and rationalized in order to promote the common good.#!"
+
   # flavor ideologies
 
  ideology_republican_paternalistic:0 "Elitist"
@@ -215,7 +301,40 @@
  ideology_technocratic: "Technocratic"
  ideology_technocratic_desc: "#lore This group supports the reordering of the social system along scientific lines, favoring technocratic governance and a rationalized economy.#!"
 
+ ideology_cartist: "Cartist"
+ ideology_cartist_desc: "#lore This group values national stability, and upholds the moderate form of liberalism embodied by the Portuguese Constitutional Charter of 1826 towards this end.#!"
+
+ ideology_regenerator: "Regenerator"
+ ideology_regenerator_desc: "#lore This group desires to restore Portugal's previous status as a prestigious power. It is committed to radical institutional reform to realize this goal.#!"
+
  liberal_and_egalitarian_amended_tt: "The [GetIdeology('ideology_liberal').GetName] and [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','$concept_ideologies$')]' stances on the $lawgroup_rights_of_women$ will change"
+
+ ideology_russian_patriarch:0 "Russian Orthodox Patriarchy"
+ ideology_russian_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, that the Tsar is above all and that the peasants deserve be serfs.#!"
+
+ ideology_orthodox_patriarch:0 "Orthodox Patriarchy"
+ ideology_orthodox_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, and that the right to rule comes from God.#!"
+
+ ideology_buddhist_moralist:0 "Buddhist Moralist"
+ ideology_buddhist_moralist_desc:0 "#lore The Buddhist path is clearly set out and that the theocracy is required to best guide the nation down the path it its teachings.#!"
+
+ ideology_hindu_moralist:0 "Hindu Moralist"
+ ideology_hindu_moralist_desc:0 "#lore Hindu Priests believe that bureaucrats should adhere to the caste system.#!"
+
+ ideology_hindu_moralist_british_india: "Hindu Moralist"
+ ideology_hindu_moralist_british_india_desc:0 "#lore Hindu Priests favor upholding the traditional Hindu caste system. Whilst India remains ruled by foreigners, they staunchly oppose the colonial government imposing their religion upon the populace.#!"
+
+ ideology_oriental_orthodox_patriarch:1 "Oriental Orthodox Patriarchy"
+ ideology_oriental_orthodox_patriarch_desc:1 "#lore The Oriental Orthodox Patriarchy believe that children's education should be a priority for the nation.#!"
+
+ ideology_ilustrado: "Ilustrado"
+ ideology_ilustrado_desc: "#lore The Ilustrados are an educated class committed to the secularization of the parishes, as well as political and economic reforms that are equitable to all.#!"
+
+ ideology_liberal_praetorian: "Liberal Praetorian"
+ ideology_liberal_praetorian_desc: "#lore This group believes that the armed forces has a right and a duty to intervene in politics in order to promote and defend select liberal values.#!"
+
+ ideology_conservative_praetorian: "Conservative Praetorian"
+ ideology_conservative_praetorian_desc: "#lore This group believes that the armed forces has a right and a duty to intervene in politics in order to promote and defend select conservative values.#!"
 
  # Movement Ideologies
  ideology_anti_slavery_movement: "$ideology_anti_slavery$"
@@ -281,8 +400,11 @@
  ideology_reactionary_movement: "$ideology_reactionary$"
  ideology_reactionary_movement_desc: "#lore This movement seeks to restore a past, real or imagined, where just kings ruled over a uniform society.#!"
 
- ideology_modernizer_movement: "$ideology_modernizer$"
- ideology_modernizer_movement_desc: "#lore This movement is strongly invested in modernizing and centralizing the nation under rational lines.#!"
+ ideology_modernizer_movement_1: "$ideology_modernizer$"
+ ideology_modernizer_movement_1_desc: "#lore This movement is strongly invested in modernizing and centralizing the nation under rational lines.#!"
+
+ ideology_modernizer_movement_2: "$ideology_modernizer$"
+ ideology_modernizer_movement_2_desc: "#lore This movement is strongly invested in modernizing and centralizing the nation under rational lines.#!"
 
  ideology_traditionalist_movement: "$ideology_traditionalist$"
  ideology_traditionalist_movement_desc: "#lore This movement seeks to maintain traditional customs, viewing them as an extension of natural laws.#!"
@@ -323,6 +445,15 @@
  ideology_national_liberal_movement: "National Liberal"
  ideology_national_liberal_movement_desc: "#lore This movement wishes to unify its culture's homelands under a nation-state founded upon liberal values.#!"
 
+ ideology_carlist_movement: "Carlist"
+ ideology_carlist_movement_desc: "#lore This movement upholds the line of Infante Carlos' claim to the Spanish throne, supporting a traditionalist monarchy and rejecting modernist notions of popular sovereignty and constitutionalism#!"
+
+ ideology_miguelist_movement: "Miguelist"
+ ideology_miguelist_movement_desc: "This movement supports an absolute monarchy founded upon Catholic values. They reject the outcome of the Liberal Wars, which removed the traditionalist King Miguel I from the throne of Portugal."
+
+ ideology_slave_revolt_movement: "$ideology_anti_slavery$"
+ ideology_slave_revolt_movement_desc: "#lore This movement is made up of slaves that wish to emancipate themselves by force of arms.#!"
+
   # Government Principles group
  lawgroup_governance_principles:0 "Governance Principles"
  lawgroup_governance_principles_desc:0 "The foundational principles and authority by which your country is governed. Determines who the Head of State is."
@@ -341,6 +472,8 @@
  law_council_republic_desc:0 "A political system where workers elect delegates to local councils. Extends concepts of workplace organization to general governance."
  law_corporate_state:0 "Corporate State"
  law_corporate_state_desc:0 "A political system based around institutionalized collaboration between officially recognized corporate groups. The state serves as a forum for negotiation between different social classes."
+ law_colonial_administration: "Colonial Administration"
+ law_colonial_administration_desc: "The state is legally an administrative sub-division of a foreign power, possessing no sovereignty of its own. It is delegated powers with which to administer a given territory on the behalf of the metropole."
   
   # Free speech group
  lawgroup_free_speech:0 "Free Speech"
@@ -443,6 +576,8 @@
  law_colonial_slavery: "Colonial Slavery"
  law_colonial_slavery_desc: "The institution of slavery is legal in this country's colonies. Any slave that sets foot upon the mainland is made free."
   
+ switch_from_colonial_slavery_to_pro_slavery_tt: "[SCOPE.gsInterestGroup('landowners_scope').GetName] will switch to the [GetIdeology('ideology_pro_slavery').GetName] [concept_ideology]"
+
   # Church and State group
  lawgroup_church_and_state:0 "Church and State"
  lawgroup_church_and_state_desc:0 "The relationship between physical and spiritual governors."
@@ -672,7 +807,9 @@
  law_right_to_associate: "Right to Associate"
  law_right_to_associate_desc: "No especial restrictions are placed upon the formation and activity of labor associations."
  law_corporatized_unions: "Corporatized Unions"
- law_corporatized_unions_desc: "Labor associations are placed under the control of the state, through either mandatory amalgamation into a single national union or the incorporation of existing associations into state functions."
+ law_corporatized_unions_desc:2 "Labor associations have been brought under the direct or indirect control of the state, serving foremostly as a means to facilitate collaboration between classes."
+ law_factory_councils: "Factory Councils"
+ law_factory_councils_desc: "Workers have been radicalized by revolutionary conditions, seizing control of their workplaces and supplanting previous management structures."
 
 # Luddites
  law_industry_banned: "Industry Banned"
@@ -697,6 +834,10 @@
  law_commercialized_agriculture_desc: "Agriculture is a business like any other, subject to market forces and owned by capital."
  law_collectivized_agriculture: "Collectivized Agriculture"
  law_collectivized_agriculture_desc:1 "Agricultural land is organized into plots worked by groups of farmers as a joint enterprise."
+ law_latifundias: "Latifundias"
+ law_latifundias_desc: "Agricultural land is dominated by vast estates worked by seasonally employed and poorly paid day-laborers"
+ law_expanded_latifundias: "Expanded Latifundias"
+ law_expanded_latifundias_desc: "$law_latifundias_desc$"
  law_manorialism: "Manorialism"
  law_manorialism_desc: "Agricultural land is owned by hereditary elites. Tenants are granted freedom of movement, but are obliged to perform unpaid labor for their landlords."
 

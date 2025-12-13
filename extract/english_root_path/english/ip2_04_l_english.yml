@@ -505,7 +505,7 @@
   is_princely_state_tt: "Is a [concept_princely_state]"
 
   every_indian_subject_made_independent_tt: "Our #b Indian#! [Concept('concept_subject','$concept_subjects$')] will become #b independent#!"
-  european_pops_may_flee_tt: "[Concept('concept_pop', '$concept_pops$')] in #bold India#! with $european_heritage$ may flee to our remaining territories"
+  european_pops_may_flee_tt: "[Concept('concept_pop', '$concept_pops$')] in #bold India#! with the $heritage_group_european$ [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] may flee to our remaining territories"
   most_european_pops_abandon_india_tt: "A large number of #bold European#! [Concept('concept_pop','$concept_pops$')] will evacuate [ROOT.GetCountry.GetName]"
   some_european_pops_abandon_india_tt: "Much of our #bold European#! [Concept('concept_pop','$concept_population$')] will evacuate to [SCOPE.sState('calcutta_scope').GetName]"
 

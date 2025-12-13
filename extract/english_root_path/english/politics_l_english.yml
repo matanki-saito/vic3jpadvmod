@@ -16,7 +16,14 @@
  IG_POP:1 "#title [Concept('concept_pop','$concept_population$')]#!"
  
  FREE_REFORM_DATE_TOOLTIP:1 "Last day for free reform: [Date.GetString]"
- 
+
+ ELECTORAL_CONFIDENCE_WITH_VALUE: "#tooltippable #tooltip:[GetPlayer.GetTooltipTag],ELECTORAL_CONFIDENCE_TOOLTIP $ELECTORAL_CONFIDENCE_VALUE$#!#! [concept_electoral_confidence]"
+ ELECTORAL_CONFIDENCE_VALUE: "[SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(GetPlayer.GetElectoralConfidence, '(CFixedPoint)1.0'),'ELECTORAL_CONFIDENCE_VALUE_GOOD', 'ELECTORAL_CONFIDENCE_VALUE_BAD')]"
+ ELECTORAL_CONFIDENCE_VALUE_GOOD: "#v [GetPlayer.GetElectoralConfidence|%0]#!"
+ ELECTORAL_CONFIDENCE_VALUE_BAD: "#v [GetPlayer.GetElectoralConfidence|%0]#!"
+ ELECTORAL_CONFIDENCE_TOOLTIP: "#header [concept_electoral_confidence]#!\n$ELECTORAL_CONFIDENCE_VALUE$ for [GetPlayer.GetName]\n$TOOLTIP_DELIMITER$\n#title Effects:#!#indent_newline:3 \n[GetPlayer.GetElectoralConfidenceEffectDesc]#!"
+ ELECTORAL_CONFIDENCE_SCALING_DESC: "#title Effects of $concept_electoral_confidence$ are modified by $SCALING|=%0v$ due to:#!\n$DETAILS$"
+
  grant_leadership_must_be_pressured_ig: "[concept_interest_group] is [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] by the [concept_political_movement] of the [concept_agitator]"
 
  POLITICAL_MOVEMENT_ENACTING:0 "enacting"
@@ -46,6 +53,7 @@
  POLITICAL_MOVEMENT_RADICALISM_WITHOUT_LABEL_RED: "#r [PoliticalMovement.GetRadicalism|%0]#!"
  POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL: "#v [PoliticalMovement.GetTargetRadicalism|%0]#!"
  POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL_RED: "#r [PoliticalMovement.GetTargetRadicalism|%0]#!"
+ POLITICAL_MOVEMENT_RADICALISM_FROM_AMENDMENT: "#v $VALUE|-=%$#! from [Amendment.GetName] [concept_amendment] to [Law.GetName]"
  POLITICAL_MOVEMENT_RADICALISM_TOOLTIP:3 "#header [concept_activism] in the [PoliticalMovement.GetNameNoIcon]#!\n[SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetRadicalism, '(CFixedPoint)0.5'), 'ACTIVISM_RED_ICON', 'ACTIVISM_ICON')] [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetRadicalism)] ($POLITICAL_MOVEMENT_RADICALISM_WITHOUT_LABEL$)\n$TOOLTIP_DELIMITER$\n#title This $concept_activism_short$ is predicted to drift towards #b [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetTargetRadicalism)]#! (#tooltippable #tooltip:[PoliticalMovement.GetTooltipTag],POLITICAL_MOVEMENT_RADICALISM_BREAKDOWN [SelectLocalization(GreaterThanOrEqualTo_CFixedPoint(PoliticalMovement.GetTargetRadicalism, '(CFixedPoint)1'), 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL_RED', 'POLITICAL_MOVEMENT_TARGET_RADICALISM_WITHOUT_LABEL')]#!#!):#! #indent_newline:3 \n[PoliticalMovement.GetTargetRadicalismDesc]"
  POLITICAL_MOVEMENT_RADICALISM_BREAKDOWN: "#header Predicted [concept_activism]#!\n$concept_activism_short$ is predicted to become [LabelingHelper.GetLabelForRadicalism(PoliticalMovement.GetTargetRadicalism)] ([PoliticalMovement.GetTargetRadicalism|v%0])\n$TOOLTIP_DELIMITER$\n[PoliticalMovement.GetTargetRadicalismDesc]"
  POLITICAL_MOVEMENT_RADICALISM_AT_ZERO:2 "[PoliticalMovement.GetName] has no [Concept('concept_activism', '$concept_activism_short$')] as it is not supported by any [Concept('concept_radical', '$concept_radicals$')] or $ig_approval_angry$ [Concept('concept_interest_group', '$concept_interest_groups$')]"
@@ -56,12 +64,12 @@
 
  POLITICAL_MOVEMENT_RADICALISM_FROM_LAW: "#v $VALUE|-=%$#! from [LAW.GetName] (active law)"
  POLITICAL_MOVEMENT_RADICALISM_FROM_LAW_ENACTING: "#v $VALUE|-=%$#! from [LAW.GetName] (currently enacting)"
- POLITICAL_MOVEMENT_RADICALISM_FROM_LAW_RECENTLY_ENACTED: "#v $VALUE|-=%$#! from [LAW.GetName] (recently enacted)"
+ POLITICAL_MOVEMENT_RADICALISM_FROM_LAW_RECENTLY_ENACTED: "#v $VALUE|-=%$#! from [LAW.GetName] (recently [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacted$')])"
  POLITICAL_MOVEMENT_RADICALISM_FROM_RADICALS: "#v $VALUE|-=%$#! from @population! $NUM_RADICALS|D$ ($RADICALS_FRACTION|%v1$) [concept_radical] supporters"
  POLITICAL_MOVEMENT_RADICALISM_FROM_LOYALISTS: "#v $VALUE|-=%$#! from @population! $NUM_LOYALISTS|D$ ($LOYALISTS_FRACTION|%v1$) [concept_loyalist] supporters"
  POLITICAL_MOVEMENT_RADICALISM_FROM_SUPPRESSION: "#v $VALUE|-=%$#! from [Concept('concept_suppress', '$concept_suppression$')]"
  POLITICAL_MOVEMENT_RADICALISM_FROM_BOLSTERING: "#v $VALUE|-=%$#! from [Concept('concept_bolster', '$concept_bolstering$')]"
- POLITICAL_MOVEMENT_MIN_RADICALISM_FROM_ENACTMENT: "[concept_activism] cannot fall below $VALUE|v%0$ while [LAW.GetName] is being enacted"
+ POLITICAL_MOVEMENT_MIN_RADICALISM_FROM_ENACTMENT: "[concept_activism] cannot fall below $VALUE|v%0$ while [LAW.GetName] is being [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacted$')]"
  POLITICAL_MOVEMENT_RADICALISM_SCRIPT_VALUE_FORMAT: "#v $VALUE|-=%$#! from $KEY$"
 
  POLITICAL_MOVEMENT_TARGET_ACTIVISM_EFFECT: "#v $VALUE|=-%0$#! [concept_activism]"
@@ -88,7 +96,7 @@
  POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP: "#v [InterestGroup.GetFractionOfCloutSupportingMovement(PoliticalMovement.Self)|%0]#!"
  POLITICAL_MOVEMENT_PRESSURE_ON_INTEREST_GROUP_LABEL: "[concept_political_movement_pressure] on [InterestGroup.GetName]"
 
- POLITICAL_MOVEMENT_TOOLTIP_HEADER: "[PoliticalMovement.GetNameNoIcon]"
+ POLITICAL_MOVEMENT_TOOLTIP_HEADER: "[PoliticalMovement.GetNameNoFormatting]"
  POLITICAL_MOVEMENT_IS_REVOLUTIONARY: "#r This $concept_political_movement$ is [Concept('concept_revolution','$concept_revolutionary$')]#!"
  POLITICAL_MOVEMENT_IS_SECESSIONIST: "#r This $concept_political_movement$ is [Concept('concept_secession','$concept_secessionist$')]#!"
  POLITICAL_MOVEMENT_REVOLUTION_CLOCK_CHECKPOINT: "[PoliticalMovement.GetCivilWar.GetClockCheckpointRemainingWeeks|v] weeks until next checkpoint (#v [PoliticalMovement.GetCivilWar.GetClockCheckpointDateString]#!)"
@@ -149,7 +157,7 @@
  
  foreign_legislative_interference: "Foreign Legislative Interference"
  foreign_legislative_interference_enactment: "$foreign_legislative_interference$"
- successfully_met_foreign_imposition_legitimacy: "Enacted an Imposed Law"
+ successfully_met_foreign_imposition_legitimacy: "[Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacted$')] an Imposed Law"
  agreeable_to_imposition: "Agreeable to Law Imposition"
  impose_law_cooldown: "Cannot be targeted by Law Impositions"
  installed_regime: "Installed Regime"
@@ -176,7 +184,7 @@
  button_implement_law_imposition_desc: "Accept the imposition and begin enacting the law proposed by [SCOPE.sC('foreign_imposition_country').GetNameNoFlag]."
  button_refuse_law_imposition: "Reject Imposition"
  button_refuse_law_imposition_desc: "Abandon this venture and notify [SCOPE.sC('foreign_imposition_country').GetNameNoFlag] that you will not be adhering to their wishes after all."
- law_imposition_already_enacting_law: "We are not already enacting the proposed law"
+ law_imposition_already_enacting_law: "We are #b not#! already enacting the proposed law"
  
  notification_imposition_demand_sent_name: "Imposition demand sent"
  notification_imposition_demand_sent_desc: "[SCOPE.sC('country_imposed_upon').GetName] shall soon be enacting [SCOPE.sLaw('foreign_imposition_law').GetName] at our demand."
@@ -187,3 +195,40 @@
  notification_imposition_deferred_name: "[SCOPE.sC('country_imposed_upon').GetName] defers enacting [SCOPE.sLaw('foreign_imposition_law').GetName]"
  notification_imposition_deferred_desc: "[SCOPE.sC('country_imposed_upon').GetName] accepts the imposition of [SCOPE.sLaw('foreign_imposition_law').GetName] on them, but has elected to carry it out in due time."
  notification_imposition_deferred_tooltip: "#header $notification_imposition_deferred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_imposition_deferred_desc$"
+
+ OPPOSING_MOVEMENT_TOOLTIP: "@disapproves! [Concept('concept_endorse_oppose','$concept_opposes$')] [Law.GetName]"
+ ENDORSING_MOVEMENT_TOOLTIP: "@approves! [Concept('concept_endorse_oppose','$concept_endorses$')] [Law.GetName]"
+
+ TOOLTIP_TYPE_AMENDMENT: "[concept_amendment]"
+ LAW_AMENDMENTS_LIST: "[Concept('concept_amendment','$concept_amendments$')]"
+ DATA_AMENDMENTS_EFFECTS_HEADER: "Effects:"
+ DATA_AMENDMENTS_MODIFIERS_HEADER: "Modifiers:"
+ DATA_AMENDMENTS_TAX_MODIFIERS_HEADER: "Tax Modifiers:"
+ DATA_AMENDMENTS_INSTITUTION_MODIFIERS_HEADER: "Institution Modifiers:"
+ DATA_AMENDMENTS_SPONSOR_MODIFIERS_HEADER: "Sponsor Modifiers:"
+ REPEAL_AMENDMENT_TOOLTIP: "#header Repeal the [Amendment.GetName] [concept_amendment]#![ConcatIfNeitherEmpty('\n', GetDesc(Amendment.Repeal))]"
+ AMENDMENT_SPONSOR: "#title Sponsor:#!\n$TAB$[Amendment.GetSponsor.GetName]"
+ AMENDMENT_PARENT_LAW_TYPE_TITLE: "#title [concept_parent_law]:#!"
+ AMENDMENT_PARENT_LAW_TYPE: "[Amendment.GetParentLawType.GetName]"
+ AMENDMENT_EFFECTS_AND_MODIFIERS: "Effects & Modifiers"
+
+ AMENDMENT_TOOLTIP_ENDORSED: "@approves! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_ENDORSED_BREAKDOWN [Amendment.GetNumEndorsingInterestGroups|v]#!#! [Concept('concept_interest_group', '$concept_interest_groups$')] [Amendment.GetEndorsingInterestGroupsSummary] [Concept('concept_endorse_oppose', '$concept_endorse$')] this $concept_amendment$"
+ AMENDMENT_TOOLTIP_NOT_ENDORSED: "This $concept_amendment$ is #b not#! @approves! [Concept('concept_endorse_oppose', '$concept_endorsed$')] by any [concept_interest_group]"
+ AMENDMENT_TOOLTIP_ENDORSED_BREAKDOWN: "[Amendment.GetEndorsingInterestGroupsBreakdown]"
+
+ AMENDMENT_TOOLTIP_INDIFFERENT: "@indifferent! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_INDIFFERENT_BREAKDOWN [Amendment.GetNumIndifferentInterestGroups|v]#!#! [Concept('concept_interest_group', '$concept_interest_groups$')] [Amendment.GetIndifferentInterestGroupsSummary] are [Concept('concept_endorse_oppose', '$concept_indifferent$')] to this $concept_amendment$"
+ AMENDMENT_TOOLTIP_NOT_INDIFFERENT: "No [concept_interest_group] is @indifferent! [Concept('concept_endorse_oppose', '$concept_indifferent$')] to this $concept_amendment$"
+ AMENDMENT_TOOLTIP_INDIFFERENT_BREAKDOWN: "[Amendment.GetIndifferentInterestGroupsBreakdown]"
+
+ AMENDMENT_TOOLTIP_OPPOSED: "@disapproves! #tooltippable #tooltip:[Amendment.GetTooltipTag],AMENDMENT_TOOLTIP_OPPOSED_BREAKDOWN [Amendment.GetNumOpposingInterestGroups|v]#!#! [Concept('concept_interest_group', '$concept_interest_groups$')] [Amendment.GetOpposingInterestGroupsSummary] [Concept('concept_endorse_oppose', '$concept_oppose$')] this $concept_amendment$"
+ AMENDMENT_TOOLTIP_NOT_OPPOSED: "This $concept_amendment$ is #b not#! @disapproves! [Concept('concept_endorse_oppose', '$concept_opposed$')] by any [concept_interest_group]"
+ AMENDMENT_TOOLTIP_OPPOSED_BREAKDOWN: "[Amendment.GetOpposingInterestGroupsBreakdown]"
+
+ ACTIVE_LAW_AMENDMENTS_TEXT: "#v #tooltippable [GetDataModelSize(Law.GetAllAmendments)]#!#! [SelectLocalization(EqualTo_int32(GetDataModelSize(Law.GetAllAmendments), '(int32)1'), 'AMENDMENT', 'AMENDMENTS')]"
+ AMENDMENT: "$concept_amendment$"
+ AMENDMENTS: "$concept_amendments$"
+ AMENDMENT_CONCEPT: "[concept_amendment]"
+ AMENDMENTS_CONCEPT: "[Concept('concept_amendment','$concept_amendments$')]"
+ ACTIVE_LAW_AMENDMENTS: "#title [Law.GetName] has #v [GetDataModelSize(Law.GetAllAmendments)]#!#! [SelectLocalization(EqualTo_int32(GetDataModelSize(Law.GetAllAmendments), '(int32)1'), 'AMENDMENT_CONCEPT', 'AMENDMENTS_CONCEPT')]:" 
+
+ AMENDMENT_TYPE_SPONSOR_MODIFIER_NAME: "$KEY$ Sponsor"

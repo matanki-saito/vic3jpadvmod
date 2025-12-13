@@ -43,4 +43,7 @@
 
 #Natural Disasters
  tsunami: "Tsunami"
- tsunami_desc: "An unstoppable force of water flattening and subsuming anything where it meets the land"
+ tsunami_desc: "An unstoppable force of water flattening and subsuming anything where it meets the land."
+
+ earthquake: "Earthquake"
+ earthquake_desc: "A violent, abrupt shaking of the Earth's surface that leaves ruin and devastation in its wake."

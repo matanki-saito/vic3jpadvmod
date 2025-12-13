@@ -38,7 +38,7 @@
 
  acw_events.7.t:0 "The Free State of [SCOPE.GetRootScope.GetCountry.GetCustom('random_free_state_of_place')]"
  acw_events.7.d:0 "Anti-secessionist agitators in [SCOPE.sState('free_state_of_county').GetName] have rallied support and declared the establishment of a unionist government."
- acw_events.7.f:0 ""In defiance of the secessionists, we, by resolution of the people, do secede from these traitors and declare ourselves Free and Independent, loyal still to the [SCOPE.sCountry('unionist_usa').GetName].""
+ acw_events.7.f:0 ""In defiance of the secessionists, we, by resolution of the people, do secede from these traitors and declare ourselves Free and Independent, loyal still to the [SCOPE.sCountry('unionist_usa').GetNameNoFormatting].""
  acw_events.7.a:0 "A show of strength will bring them to heel."
  acw_events.7.b:0 "We cannot afford to move against them right now."
 
@@ -65,7 +65,7 @@
 
  acw_followup_events.3.t:0 "The Attempt on [SCOPE.sCharacter('lincoln_proxy').GetLastName]'s Life"
  acw_followup_events.3.d:0 "A sympathizer of the recent rebellion has attempted to assassinate [SCOPE.sCharacter('lincoln_proxy').GetFullName]. The effort did not go as planned for the assassin."
- acw_followup_events.3.f:0 "[SCOPE.sCharacter('lincoln_proxy').GetFullName] heard the floorboards creak behind [SCOPE.sCharacter('lincoln_proxy').GetHerHim]. Before [SCOPE.sCharacter('lincoln_proxy').GetHerHis] assailant could even finish pulling out the derringer, [SCOPE.sCharacter('lincoln_proxy').GetLastName] was upon him. "Fiend! Cur! Have you no decency?" [SCOPE.sCharacter('lincoln_proxy').GetSheHe] cried, every word punctuated by another blow to [SCOPE.sCharacter('lincoln_proxy').GetLastName]'s would-be assassin with [SCOPE.sCharacter('lincoln_proxy').GetHerHis] bare fists."
+ acw_followup_events.3.f:0 "[SCOPE.sCharacter('lincoln_proxy').GetFullNameNoFormatting] heard the floorboards creak behind [SCOPE.sCharacter('lincoln_proxy').GetHerHim]. Before [SCOPE.sCharacter('lincoln_proxy').GetHerHis] assailant could even finish pulling out the derringer, [SCOPE.sCharacter('lincoln_proxy').GetLastNameNoFormatting] was upon him. "Fiend! Cur! Have you no decency?" [SCOPE.sCharacter('lincoln_proxy').GetSheHe] cried, every word punctuated by another blow to [SCOPE.sCharacter('lincoln_proxy').GetLastNameNoFormatting]'s would-be assassin with [SCOPE.sCharacter('lincoln_proxy').GetHerHis] bare fists."
  acw_followup_events.3.a:0 "Thus always to assassins!"
 
  acw_followup_events.4.t:0 "Forty Acres and a Mule"

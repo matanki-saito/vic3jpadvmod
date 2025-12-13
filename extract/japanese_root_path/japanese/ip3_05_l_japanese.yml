@@ -228,7 +228,7 @@
  ottoman_in_crisis_tt: "$dyn_c_ottoman_empire$は危機に瀕している。"
  je_spoils_of_war: "戦利品"
  je_spoils_of_war_reason: "勝利宣言からわずか数日後、バルカン同盟の他の加盟国は、オスマン帝国から奪った土地が不当に分配されたと主張した。\n\n戦争という名の鉄がすでに熱を帯びている中、我が国でも他国でも、高官と政治家たちが補償を要求している。"
- je_spoils_of_war_timed_out_tt: "#b 完了#! は、#v $je_spoils_of_war$#! の[concept_journal_entry]]が#b タイムアウト#! したときに評価される。"
+ je_spoils_of_war_timed_out_tt: "#b 完了#! は、#v $je_spoils_of_war$#! の[concept_journal_entry]が#b タイムアウト#! したときに評価される。"
  notification_new_balkan_league_members_name: "バルカン同盟の新たな加盟国"
  notification_new_balkan_league_members_desc: "$dyn_c_ottoman_empire$の従属国には、我々の大義に加わる機会が与えられた。"
  # Scripted buttons
