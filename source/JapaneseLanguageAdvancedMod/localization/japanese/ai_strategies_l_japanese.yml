@@ -205,3 +205,5 @@
  ai_strategy_great_reforms_desc:0 "[COUNTRY.GetName]は自国に対し、急進的ではあるが不可欠な改革の実行を目指します"
  ai_strategy_montenegro_admin:0 "外国からの輸入の維持"
  ai_strategy_montenegro_admin_desc:0 "[COUNTRY.GetName]は自国の小さな領土に必要不可欠な物資を供給し続けたいとしたいと考えています。"
+ ai_strategy_unify_south_africa:0 "南アフリカの統一"
+ ai_strategy_unify_south_africa_desc:0 "[COUNTRY.GetName]は[concept_georegion_south_africa]のすべての領土を支配下に置きたいと考えている。"

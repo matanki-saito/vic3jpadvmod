@@ -2,7 +2,7 @@
  unification_prestige:0 "国家統一者"
  formation.1.t:0 "ラオス再統一"
  formation.1.d:0 "ラーンサーン王朝が破綻して以来初めて、統一[SCOPE.sCulture('unification_culture').GetName]国家が実現しました。"
- formation.1.f:0 "スリニャ・ウォンサーが最期を迎えて以来、平和は訪れていません。[ROOT.GetCountry.GetNameNoFormatting]は再び完全なものになりました。旧王の後継者たちの反目によって引き裂かれた家族は今、一つの旗の下に再集結しています。これにより、[SCOPE.sCulture('unification_culture').GetName]国民は新たな黄金の夜明けを迎える準備が整えることができました。"
+ formation.1.f:0 "スリニャ・ウォンサーが最期を迎えて以来、平和は訪れていません。[ROOT.GetCountry.GetNameNoFormatting]は再び完全なものになりました。旧王の後継者たちの反目によって引き裂かれた家族は今、一つの旗の下に再集結しています。これにより、[SCOPE.sCulture('unification_culture').GetNameNoFormatting]国民は新たな黄金の夜明けを迎える準備が整えることができました。"
  formation.1.a:0 "ラーンサーン王朝の栄光を取り戻します。"
  formation.2.t:0 "バルティック再統一"
  formation.2.d:0 "バルティック国は一つの国に統一され、[SCOPE.sCulture('unification_culture').GetName]、[SCOPE.sCulture('unification_culture_2').GetName]、[SCOPE.sCulture('unification_culture_3').GetName]の人々が一つの旗の下に集まりました。"
@@ -133,3 +133,4 @@
  notification_unification_notification_hre_culture_desc:0 "[SCOPE.sCountry('formation_country').GetName]は国家統一を成し遂げ、中欧の人々が一つの旗の下に集まりました。"
  notification_unification_notification_hre_culture_tooltip:0 "#header $notification_unification_notification_one_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_unification_notification_one_culture_desc$"
  unification_prestige_2:0 "$unification_prestige$"
+ communist_unification_prestige:0 "イベリア統一"

@@ -463,7 +463,7 @@
  radio_production_modifier:0 "無線機生産ブースト"
  ig_suppression_events.1000.t:0 "忖度なしの記事"
  ig_suppression_events.1000.d:0 "[SCOPE.gsInterestGroup('negative_article_ig').GetName]をこき下ろして評価を下げる記事を書くために、悪意に満ちたジャーナリストを雇用している。"
- ig_suppression_events.1000.f:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]な[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]の記者は、神経質そうに親指をいじりまわしている。「たった一つの記事で私の負債をチャラにしてくれると？」\n\n 「たった一つの記事ではあるが、一面に掲載され、[SCOPE.gsInterestGroup('negative_article_ig').GetName]を骨抜きにするような内容でなければならない」"
+ ig_suppression_events.1000.f:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]な[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]の記者は、神経質そうに親指をいじりまわしている。「たった一つの記事で私の負債をチャラにしてくれると？」\n\n 「たった一つの記事ではあるが、一面に掲載され、[SCOPE.gsInterestGroup('negative_article_ig').GetNameNoFormatting]を骨抜きにするような内容でなければならない」"
  ig_suppression_events.1000.a:0 "ペン#BOLD は#!強し。"
  ig_suppression_events.1000.a.1:0 "ペン#BOLD は#!神よりも強し。"
  ig_suppression_events.1000.a.2:0 "ペン#BOLD は#!ヒョウタンよりも強し。"

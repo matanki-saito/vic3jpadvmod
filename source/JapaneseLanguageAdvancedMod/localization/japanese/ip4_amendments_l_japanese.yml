@@ -1,0 +1,9 @@
+﻿l_japanese:
+ amendment_test:0 "テスト用$concept_amendment$"
+ amendment_test_desc:0 "これはテスト用の修正の説明です。"
+ REPEAL_AMENDMENT_PENDING:0 "この[concept_amendment]は有効な[concept_law]に含まれていません"
+ REPEAL_AMENDMENT_NO_GOVERNMENT_OPPOSITION:0 "[concept_government]のどの[Concept('concept_interest_group','$concept_interest_groups$')]も[concept_amendment]に反対していません"
+ REPEAL_AMENDMENT_WEAK_GOVERNMENT_OPPOSITION:0 "[concept_amendment]に反対している[concept_government]内の[Concept('concept_interest_group','$concept_interest_groups$')]の[concept_clout]は、それを支持しているグループよりも小さい"
+ REPEAL_AMENDMENT_ON_COOLDOWN:0 "$DATE|v$まで廃止できません"
+ REPEAL_AMENDEMENT_CONFIRMATION:0 "[Amendment.GetName]を[Concept('concept_amendment_repeal','$concept_repeal$')]しますか？"
+ SPONSOR_MODIFIER_HEADER:0 "#title [concept_interest_group]の後援 : #!"

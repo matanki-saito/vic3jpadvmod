@@ -816,3 +816,4 @@
  anti_lobby_proposal_revoke_trade_privilege_def:0 "次の国の[Concept('concept_trade_privilege','$concept_trade_privileges$')]を取り消す : "
  pro_lobby_proposal_trade_privilege_def:0 "次の国から[Concept('concept_trade_privilege','$concept_trade_privileges$')]を取得する : "
  relations_negative:0 "険悪な[concept_relations]"
+ POP_LOW_ACCEPTANCE:0 "低い[concept_pop][concept_acceptance]"

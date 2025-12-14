@@ -1,6 +1,6 @@
 ﻿l_japanese:
  legitimacy_level_illegitimate:0 "#r 非正規政府#!"
- legitimacy_level_unacceptable:0 "容認できない政府"
+ legitimacy_level_unacceptable:0 "不安定な政府"
  legitimacy_level_contested:0 "対立する政府"
  legitimacy_level_legitimate:0 "合法政府"
  legitimacy_level_righteous:0 "正当なる政府"
@@ -16,7 +16,7 @@
  legitimacy_level_righteous_loyalties_gain:0 "[SelectLocalization(Country.IsValid,'legitimacy_level_loyalism_gain','legitimacy_level_loyalism_gain_no_country')]"
  LEGITIMACY_LEVEL_ACTIVE:0 "#i #b  (現在有効) #!#!"
  LEGITIMACY_LEVEL_PREDICTED:0 "#i #b  (予測) #!#!"
- LEGITIMACY_LEVEL_CONFIRM_TO_ACTIVATE:0 ""
+ LEGITIMACY_LEVEL_CONFIRM_TO_ACTIVATE:0 "#instruction 確認して適用#!"
  LEGITIMACY_LEVEL_BOUNDS_DESC:0 "[concept_legitimacy]が[LegitimacyLevel.GetLowerBound|v]～[LegitimacyLevel.GetUpperBound|v]の時に適用されます"
  LEGITIMACY_LEVEL_CURRENT_LEGITIMACY_DESC:0 "現在の[concept_legitimacy]の値 : [GetPlayer.GetGovernmentLegitimacy|v]"
  LEGITIMACY_LEVEL_PREDICTED_LEGITIMACY_DESC:0 "[concept_legitimacy]の予測値 : [ReformGovernment.GetPredictedLegitimacy|v]"

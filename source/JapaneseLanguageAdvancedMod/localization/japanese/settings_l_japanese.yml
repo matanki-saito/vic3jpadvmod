@@ -114,3 +114,4 @@
  DYNAMIC_THEME_DESC:0 "プレイした[concept_country]に基づき、自動で[ThemeCategory.GetName|v]のテーマを選択します"
  main_menu_image_theme:0 "メインメニュー画像"
  main_menu_image_theme_desc:0 "メインメニューの背景として表示されるアニメーション画像。"
+ SETTING_TELEMETRY_DATA:0 "テレメトリーデータ"

@@ -174,4 +174,4 @@
  SETTING_CONSOLE_AUTOCOMPLETE_MODE_PARTIAL_EXPAND:0 "Partial expand until different"
  SETTING_RESOLUTION:0 "解像度"
  SETTING_RESOLUTION_TOOLTIP:0 "#T $SETTING_RESOLUTION$\n#!ゲームのイメージの品質を決定します。\n\n低解像度はパフォーマンスを向上させる場合があります。\n\n#X サポートしていなアスペクト比のゲーム解像度は、インターフェイスをスクリーンの外にはみ出させｒる場合があります。"
- OPTION_VERY_HIGH:0 "非常に高い"
+ OPTION_VERY_HIGH:0 "非常に高速"

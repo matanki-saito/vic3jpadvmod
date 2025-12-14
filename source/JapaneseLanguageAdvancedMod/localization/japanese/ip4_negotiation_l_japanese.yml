@@ -1,0 +1,13 @@
+﻿l_japanese:
+ Test_negotiation_event:0 "Test negotiation event"
+ Option_1:0 "オプション"
+ NEGOTIATION_NO_ENACTING_LAW:0 "[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]中の[concept_law]はありません"
+ NEGOTIATION_INTEREST_GROUP_MARGINALIZED:0 "[INTEREST_GROUP.GetName]が[concept_marginalized]です"
+ NEGOTIATION_IG_REFUSES_TO_NEGOTIATE:0 "[INTEREST_GROUP.GetName]は[Concept('concept_negotiation','$concept_negotiate$')]を拒否します"
+ NEGOTIATION_IG_NOT_IN_GOVERNMENT_AND_INDIFFERENT:0 "[INTEREST_GROUP.GetName]は[concept_government]に所属して#b いません#!"
+ NEGOTIATION_IG_ALREADY_APPROVES:0 "[INTEREST_GROUP.GetName]は制定中の[concept_law]にすでに[Concept('concept_endorse_oppose','$concept_endorse$')]しています"
+ NEGOTIATION_COUNTRY_IS_NEGOTIATING:0 "[GetPlayer.GetName]はすでに[Concept('concept_negotiation','$concept_negotiations$')]に参加しています"
+ AMENABILITY_LABEL_REFUSE:0 "#v #r 拒否#!#! (#r [INTEREST_GROUP.MakeScope.ScriptValue('amenability')]#!) "
+ AMENABILITY_LABEL_TENSE:0 "#v #r [INTEREST_GROUP.GetCustom('NegotiationLevelName')]#!#! (#r [INTEREST_GROUP.MakeScope.ScriptValue('amenability')]#!) "
+ AMENABILITY_LABEL_NORMAL:0 "#v [INTEREST_GROUP.GetCustom('NegotiationLevelName')]#! (#b [INTEREST_GROUP.MakeScope.ScriptValue('amenability')]#!) "
+ AMENABILITY_LABEL_FRIENDLY:0 "#v #g [INTEREST_GROUP.GetCustom('NegotiationLevelName')]#!#! (#g [INTEREST_GROUP.MakeScope.ScriptValue('amenability')]#!) "

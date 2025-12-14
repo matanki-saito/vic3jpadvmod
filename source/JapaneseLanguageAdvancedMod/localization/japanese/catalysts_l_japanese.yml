@@ -133,3 +133,5 @@
  catalyst_treaty_enforced_desc:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]との[concept_treaty]を施行"
  catalyst_treaty_broken:0 "$concept_treaty$破棄"
  catalyst_treaty_broken_desc:0 "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]との[concept_treaty]を破棄"
+ catalyst_investment_rights_requested:0 "投資権が要請されました"
+ catalyst_investment_rights_requested_desc:0 "[TARGET_COUNTRY.GetName]が[concept_foreign_investment_rights]を要請しています"
