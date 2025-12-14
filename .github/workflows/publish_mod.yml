@@ -45,6 +45,13 @@ jobs:
         shell: cmd
         continue-on-error: true
 
+      - name: Set credentials
+        run: |
+          python download_credentials.py
+        env:
+          AWS_S3_ACCESS_KEY: ${{ secrets.AWS_S3_ACCESS_KEY }}
+          AWS_S3_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
+
       - name: Pack mod
         run: python make_mod.py
         env:
@@ -57,18 +64,11 @@ jobs:
           git config --global user.email "matanki.saito@gmail.com"
           git config --global user.name "matanki.saito"
           git config --global url."https://${{ secrets.GITHUB_TOKEN }}:x-oauth-basic@github.com/".insteadOf "https://github.com/"
-          git add -A
+          git add source
           git commit -m "Save/Update files [ci skip]"
           git push origin HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
-
-      - name: Set credentials
-        run: |
-          python download_credentials.py
-        env:
-          AWS_S3_ACCESS_KEY: ${{ secrets.AWS_S3_ACCESS_KEY }}
-          AWS_S3_SECRET_ACCESS_KEY: ${{ secrets.AWS_S3_SECRET_ACCESS_KEY }}
 
       - name: Upload workshop
         run: |
