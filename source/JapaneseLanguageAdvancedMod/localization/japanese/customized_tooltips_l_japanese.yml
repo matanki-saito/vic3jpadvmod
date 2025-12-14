@@ -288,7 +288,7 @@
  PRINCIPLES_TOOLTIP_TITLE:0 "[Concept('concept_power_bloc_principle','$concept_power_bloc_principles$')] : "
  BLOC_MEMBERS_TOOLTIP_TITLE:0 "[Concept('concept_power_bloc_member','$concept_power_bloc_members_short$')] : "
  DATA_POWER_BLOC_ADDITIONAL_MEMBERS:0 "他[GetDataModelSize(DataModelSkipFirst(PowerBloc.GetMembers,'(int32)5'))]…"
- DATA_POWER_BLOC_ADDITIONAL_MEMBERS_PAGE_2:0 "および[GetDataModelSize(DataModelSkipFirst(DataModelFirst(PowerBloc.GetMembers,'(int32)15')))]など…"
+ DATA_POWER_BLOC_ADDITIONAL_MEMBERS_PAGE_2:0 "他[GetDataModelSize(DataModelSkipFirst(DataModelFirst(PowerBloc.GetMembers,'(int32)15')))]…"
  DATA_POWER_BLOC_COHESION:0 "[concept_power_bloc_cohesion] : #v #tooltippable #tooltip:[PowerBloc.GetTooltipTag],COHESION_LEVEL_ACTIVE_TOOLTIP [PowerBloc.GetCohesionLevel.GetNameNoFormatting]#!#!#! ([SelectLocalization(EqualTo_CFixedPoint(PowerBloc.GetCohesion,PowerBloc.GetCohesionTarget),'COHESION_CURRENT_VALUE_WITHOUT_TARGET','COHESION_CURRENT_VALUE_WITH_TARGET')]) "
  DATA_POWER_BLOC_PRINCIPLE_SLOT_CLICK_TO_CHANGE_OR_UPGRADE:0 "#i クリックして[PowerBlocPrinciple.GetName]を変更またはアップグレード#!"
  DATA_POWER_BLOC_PRINCIPLE_SELECTION_ACTIVE_POWER_BLOC:0 "[ConcatIfNeitherEmpty(AddLocalizationIf(PowerBlocPrincipleGroup.IsPrimaryFor(PowerBlocPrincipleSelectionWindow.GetPowerBloc.GetIdentity),'POWER_BLOC_IDENTITY_PRIMARY_PRINCIPLE_GROUP'),'\n\n')]"

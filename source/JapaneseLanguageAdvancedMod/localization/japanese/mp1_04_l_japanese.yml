@@ -88,7 +88,7 @@
  je_prestige_goods_opium_complete_tt:0 "[concept_journal_entry]#b $je_prestige_goods_opium$#!を完了した"
  je_prestige_goods_opium_reward_tt:0 "[SCOPE.sCompany('relevant_company').GetName]が@prestige_good_generic_opium!#b $prestige_good_generic_opium$#!を生産できるようになる"
  not_prestige_good_generic_opium_var_tt:0 "まだ@prestige_good_generic_opium!#b $prestige_good_generic_opium$#!を#b 未#!開発"
- notification_prestige_goods_opium_unlocked_name:0 "[SCOPE.sCompany('relevant_company').GetName]が@prestige_good_generic_opium!#b$prestige_good_generic_opium$ #! を開発しました"
+ notification_prestige_goods_opium_unlocked_name:0 "[SCOPE.sCompany('relevant_company').GetName]が@prestige_good_generic_opium!#b $prestige_good_generic_opium$#! を開発しました"
  notification_prestige_goods_opium_unlocked_desc:0 "[SCOPE.sCompany('relevant_company').GetName]が所有する[Concept('concept_building','$concept_buildings$')]は@prestige_good_generic_opium!#b $prestige_good_generic_opium$#!を生産できるようになりました"
  notification_prestige_goods_opium_unlocked_tooltip:0 "#header $notification_prestige_goods_opium_unlocked_name$#!\n$TOOLTIP_DELIMITER$\n$notification_prestige_goods_opium_unlocked_desc$"
  je_prestige_goods_small_arms:0 "$prestige_good_generic_small_arms$"

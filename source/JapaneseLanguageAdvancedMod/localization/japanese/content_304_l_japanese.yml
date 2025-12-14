@@ -439,7 +439,7 @@
  alk_breakup.1.c:0 "ペンと紙を用意しろ。この土地を我々のものにするのだ！"
  alk_breakup.1.e:0 "土地を先住民に返還する。"
  modifier_ryotwari_system:0 "ライーヤトワーリー制"
- je_risorgimento_italian_minors_tt:0 "我々が唯一の#b$ITA_ADJ$ #![concept_unification_candidate]になれれば、#b$ITA_ADJ$ #!の諸小国は我々と一体になってくれるだろう。"
+ je_risorgimento_italian_minors_tt:0 "我々が唯一の#b $ITA_ADJ$#! [concept_unification_candidate]になれれば、#b $ITA_ADJ$#!の諸小国は我々と一体になってくれるだろう。"
  italian_nationalist_movements_list_tt:0 "#v $ITA_ADJ$#![concept_unification]に対応する[Concept('concept_political_movement','$concept_political_movements$')]には以下が含まれます。\n • $movement_liberal$\n • $movement_radical$\n • $movement_anti_slavery$\n • $movement_positivist$\n • $movement_labor$\n • $movement_cultural_majority$\n • $movement_fascist$\n • $movement_modernizer$\n • $movement_socialist$\n • $movement_communist$\n • $movement_anarchist$\n • $movement_nihilist$"
  modifier_italian_unificationist_sentiment:0 "イタリア国民主義的な感情"
  movement_compatible_with_italian_unification_tt:0 "運動は#v $ITA_ADJ$#![concept_unification]に#tooltippable;tooltip:[GetPlayer.GetTooltipTag],italian_nationalist_movements_list_tt 対応する#!"
