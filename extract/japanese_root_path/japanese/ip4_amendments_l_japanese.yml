@@ -5,5 +5,5 @@
  REPEAL_AMENDMENT_NO_GOVERNMENT_OPPOSITION: "[concept_government]のどの[Concept('concept_interest_group', '$concept_interest_groups$')]も[concept_amendment]に反対していません"
  REPEAL_AMENDMENT_WEAK_GOVERNMENT_OPPOSITION: "[concept_amendment]に反対している[concept_government]内の[Concept('concept_interest_group', '$concept_interest_groups$')]の[concept_clout]は、それを支持しているグループよりも小さい"
  REPEAL_AMENDMENT_ON_COOLDOWN: "$DATE|v$まで廃止できません"
- REPEAL_AMENDEMENT_CONFIRMATION: "[Amendment.GetName]を[Concept('concept_amendment_repeal', '$concept_repeal$')]しますか？"
+ REPEAL_AMENDEMENT_CONFIRMATION: "[Amendment.GetName]を[Concept('concept_amendment_repeal', '$concept_repeal$')]しますか？[ConcatIfNeitherEmpty('\n\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]  "
  SPONSOR_MODIFIER_HEADER: "#title [concept_interest_group]の後援:#!"

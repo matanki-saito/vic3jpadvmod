@@ -181,6 +181,7 @@
  bg_financial_districts: "金融街"
  bg_extraction: "抽出"
  bg_company_headquarter: "本社"
+ bg_company_regional_headquarter: "地域企業本部"
  #Factories
  #Infrastructure
  building_port: "港"

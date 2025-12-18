@@ -165,6 +165,7 @@ spanish_new_world_events.4.b_1: "The pre-Napoleonic borders must be restored in 
 spanish_new_world_events.4.b_2: "The [GetStrategicRegion('region_caribbean').GetName] should be administered from [SCOPE.sCountry('new_spain_scope').GetName]."
 spanish_new_world_events.4.c: "Leave the current administrations in place."
 modifier_maintained_local_rule: "Maintained Local Rule"
+modifier_reformed_captaincy_general: "Reformed Captaincy General"
 
 set_up_new_spain_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in North America owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
 set_up_new_grenada_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_gran_colombia').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"

@@ -662,6 +662,7 @@
  nursing_events.2.b:0 "This knowledge must be spread."
 
  medical_hygiene:0 "Medical Hygiene Standards"
+ medical_hygiene_local: "$medical_hygiene$"
 
  nursing_events.3.t:0 "Prefab Hospitals"
  nursing_events.3.d:0 "It has been suggested that a prefabricated hospital be constructed and then transported to just behind the frontlines of the [SCOPE.sWar('ongoing_war').GetName] war to help treat the wounded."

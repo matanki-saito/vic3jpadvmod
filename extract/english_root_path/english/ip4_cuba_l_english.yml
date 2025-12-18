@@ -177,7 +177,7 @@ cuba_events.2.a: "¡Viva España!"
 cuba_events.2.b: "One Iberian Nation."
 cuba_events.2.c: "We should retain some separation."
 cuba_events.2.e: "Actually, this is a terrible idea."
-cuba_if_spa_player_tt: "If [ROOT.GetCountry.GetOverlord.GetName] is a player, we will also have an option to become a [concept_protectorate]"
+cuba_if_spa_player_tt: "If [ROOT.GetCountry.GetOverlord.GetName] is a player, we will also have an option to become a [concept_dominion]"
 
 cuba_events.3.t: "Un Camino Differente"
 cuba_events.3.d: "The Reformist [SCOPE.gsInterestGroup('landholders').GetName] have failed to convince their [ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting] counterparts, or the Cuban populace, that a union with [ROOT.GetCountry.GetOverlord.GetName] will be feasible. The nation now firmly seeks more autonomy."

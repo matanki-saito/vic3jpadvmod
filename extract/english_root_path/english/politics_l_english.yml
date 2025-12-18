@@ -202,11 +202,15 @@
  TOOLTIP_TYPE_AMENDMENT: "[concept_amendment]"
  LAW_AMENDMENTS_LIST: "[Concept('concept_amendment','$concept_amendments$')]"
  DATA_AMENDMENTS_EFFECTS_HEADER: "Effects:"
+ 
+ DATA_AMENDMENTS_AMENDED_HEADER: "On Amended:"
+ DATA_AMENDMENTS_REPEAL_HEADER: "On Repeal:"
+
  DATA_AMENDMENTS_MODIFIERS_HEADER: "Modifiers:"
  DATA_AMENDMENTS_TAX_MODIFIERS_HEADER: "Tax Modifiers:"
  DATA_AMENDMENTS_INSTITUTION_MODIFIERS_HEADER: "Institution Modifiers:"
  DATA_AMENDMENTS_SPONSOR_MODIFIERS_HEADER: "Sponsor Modifiers:"
- REPEAL_AMENDMENT_TOOLTIP: "#header Repeal the [Amendment.GetName] [concept_amendment]#![ConcatIfNeitherEmpty('\n', GetDesc(Amendment.Repeal))]"
+ REPEAL_AMENDMENT_TOOLTIP: "#header Repeal the [Amendment.GetName] [concept_amendment]#!\n[ConcatIfNeitherEmpty('\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]"
  AMENDMENT_SPONSOR: "#title Sponsor:#!\n$TAB$[Amendment.GetSponsor.GetName]"
  AMENDMENT_PARENT_LAW_TYPE_TITLE: "#title [concept_parent_law]:#!"
  AMENDMENT_PARENT_LAW_TYPE: "[Amendment.GetParentLawType.GetName]"

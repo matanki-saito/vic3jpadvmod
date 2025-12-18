@@ -240,7 +240,7 @@
  ideology_corporatist_leader_desc: "#lore This leader believes in the resolution of class conflict through concessions from the upper class and collaboration between different social groups.#!"
 
  ideology_agrarian_jeffersonian:0 "Jeffersonian"
- ideology_agrarian_jeffersonian_desc:0 "#lore This group believes that the smallholding farmer class forms the foundation of the country, supporting agarianism as the basis for a free society.#!"
+ ideology_agrarian_jeffersonian_desc:0 "#lore This group believes that the smallholding farmer class forms the foundation of the country, supporting agrarianism as the basis for a free society.#!"
 
  ideology_isolationist_expansionism:0 "Frontier Expansion"
  ideology_isolationist_expansionism_desc:0 "#lore This group fervently opposes immigration into the country. They are however enthusiastic about settling in newly seized territories.#!"

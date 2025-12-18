@@ -140,6 +140,7 @@
  spanish_new_world_events.4.b_2: "[GetStrategicRegion('region_caribbean').GetName]は[SCOPE.sCountry('new_spain_scope').GetName]から統治されるべきだ。"
  spanish_new_world_events.4.c: "現行の統治体制を維持しよう。"
  modifier_maintained_local_rule: "現地統治の維持"
+ modifier_reformed_captaincy_general: "改革された総督領"
  set_up_new_spain_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName]は、[ROOT.GetCountry.GetName]またはその[Concept('concept_subject','$concept_subjects$')]が領有する北アメリカ内のすべての[concept_state]を受け取る"
  set_up_new_grenada_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName]は、[ROOT.GetCountry.GetName]またはその[Concept('concept_subject','$concept_subjects$')]が領有する[GetStrategicRegion('region_gran_colombia').GetName]内のすべての[concept_state]を受け取る"
  set_up_peru_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName]は、[ROOT.GetCountry.GetName]またはその[Concept('concept_subject','$concept_subjects$')]が領有する[GetStrategicRegion('region_andes').GetName]内のすべての[concept_state]を受け取る"

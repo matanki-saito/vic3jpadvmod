@@ -17,6 +17,7 @@
  amenability_ig_additional_adds: "#indent_newline:3 [InterestGroup.GetName]の追加補正:\n[InterestGroup.GetModifier.GetDescFor('interest_group_amenability_add')]#!"
  amenability_country_additional_adds: "#indent_newline:3 追加補正:\n[InterestGroup.GetCountry.GetModifier.GetDescFor('country_amenability_add')]#!"
  amenability_already_letting_go: "高い[concept_approval]により、もはや法案可決は阻止されない"
+ amenability_too_large_gap: "#v 2#!段階を超える差で[concept_law]に[Concept('concept_endorse_oppose','$concept_opposes$')]する"
  ##modifiers
  bribed_ig_benefits: "贈り物と助成"
  failed_negotiations_ig: "失敗した交渉"

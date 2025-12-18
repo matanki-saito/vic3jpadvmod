@@ -75,6 +75,7 @@
  pedro.12.f: "「この件は私を最も死に近づけた一撃だった。妻と二人の子供がまだいて、母国の幸福を請け負えるよう教育する義務がなければ、私は間違いなく生き延びることはできなかっただろう」"
  pedro.12.a: "女性は統治者にふさわしくない。"
  pedro.12.b: "イザベルを王位に就かせるよう育てられなければならない。"
+ add_2_pedropoint: "#Bold 高潔なる君主#! [concept_journal_entry]の進捗ゲージが#Bold 2#!進む"
  add_3_pedropoint: "#Bold 高潔なる君主#! [concept_journal_entry]の進捗ゲージが#Bold 3#!進む"
  pedro.13.t: "帝国の後継者"
  pedro.13.d: "長年の教育により、ついに[SCOPE.sCharacter('isabel_scope').GetPrimaryRoleTitle][SCOPE.sCharacter('isabel_scope').GetFirstName]が父の王位を継ぐ準備が整った。最も反発の強かった人々でさえ、王位継承が確実であることを受け入れるようになった。"
@@ -151,7 +152,7 @@
  brz_navy_loyalists: "レベル#Bold 5#!以上の[GetBuildingType('building_naval_base').GetName]を持つすべての [Concept('concept_state', '$concept_states$')]が以下を獲得:"
  #Age of Caudillos
  je_caudillo: "軍事独裁者時代"
- je_caudillo_reason: "#bold 進捗ゲージ#!の状態はさまざまな#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_advance プラス#!または#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_deplete マイナス#!の条件によって決まります。#bold 進捗ゲージ#!が#bold 100#!に達すると、[SCOPE.sCountry('caudillo_country_scope').GetName]の軍有力者の権力が確固たるものになります。\n\n進捗ゲージを枯渇させ、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]を政府から締め出すことで、[GetInterestGroupVariant('ig_armed_force',GetPlayer ).GetNameWithCountryVariant]の#bold 軍事独裁主義#!を破滅させ、国内の軍有力者の脅威を終わらせることができます。\n\n$je_coup_loc$\n\nスペインからの独立後、植民地政府が解体された。そのあと間もなく権力の空白を埋めたのはカリスマ的軍事指導者。南米の政治の大部分を決めるのはこうした「軍事独裁者」だ。"
+ je_caudillo_reason: "#bold 進捗ゲージ#!の状態はさまざまな#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_advance プラス#!または#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_deplete マイナス#!の条件によって決まります。#bold 進捗ゲージ#!が#bold 100#!に達すると、[SCOPE.sCountry('caudillo_country_scope').GetName]の軍有力者の権力が確固たるものになります。\n\n進捗ゲージを枯渇させ、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]を政府から締め出すことで、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の#bold 軍事独裁主義#!を破滅させ、国内の軍有力者の脅威を終わらせることができます。\n\n$je_coup_loc$\n\nスペインからの独立後、植民地政府が解体された。そのあと間もなく権力の空白を埋めたのはカリスマ的軍事指導者。南米の政治の大部分を決めるのはこうした「軍事独裁者」だ。"
  je_coup_loc: "この[concept_journal_entry]が有効である間、我が国では[concept_coup]の発生確率が高まり、さらに制定される[Concept('concept_votes','$concept_voting$')]法はすべて#b $amendment_electoral_clientelism$#!の[concept_amendment]を獲得します。\n"
  je_electoral_meddling_loc: "この[concept_journal_entry]が有効である間、制定される[Concept('concept_votes','$concept_voting$')]法はすべて#b $amendment_electoral_clientelism$#!の[concept_amendment]を獲得します。\n\n"
  je_caudillo_special_tooltip_advance: "[concept_journal_entry]は進捗ゲージが一杯になるか空になった時点で終了します。\n\n以下の要因によって、進捗ゲージは#bold 毎月1ずつ#bold 進みます#!:#!\n - [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]が[concept_powerful]である\n - [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]が[concept_in_government]である\n - 自国が[GetLawType('law_autocracy').GetName]、[GetLawType('law_oligarchy').GetName]、[GetLawType('law_technocracy').GetName]、または[GetLawType('law_single_party_state').GetName]である\n - 自国がの[concept_popularity]が$POPULARITY_LOVED$である[concept_general]または[concept_admiral]を有する\n - 自国が#bold 独裁主義#!のイデオロギーを持つ[concept_ruler]を有する"

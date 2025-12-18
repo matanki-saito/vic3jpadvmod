@@ -99,3 +99,8 @@
  # Triggers
  CARLIST_WAR_ROYAL_EXPEDITION_MINIMUM_SCORE: "#b スコア#!が最低でも[SCOPE.ScriptValue('carlist_war_royal_expedition_min_score')|v0]以上"
  the_two_spains_tt: "我々はまもなく、#b $je_the_two_spains$#!という現実に直面する"
+ # Notifications
+ notification_carlist_war_carlist_terror_name: "$spa_carlist_terror$"
+ notification_carlist_war_carlist_terror_desc: "カルリスタの支持者と地元の盗賊団が[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に恐怖を広げています！\n$notification_carlist_War_carlist_terror_TT_HAS_HAPPENED$"
+ notification_carlist_war_carlist_terror_tooltip: "#header $notification_carlist_war_carlist_terror_name$#!\n$TOOLTIP_DELIMITER$\n$notification_carlist_war_carlist_terror_desc$"
+ notification_carlist_War_carlist_terror_TT_HAS_HAPPENED: "発生済み:\n#indent_newline:3 $EFFECT_LIST_BULLET$[SCOPE.ScriptValue('carlist_war_carlist_terror_devastation')|n0]の[concept_devastation]と#tooltippable;tooltip:[GetRawTextTooltipTag(GetStaticModifier('spa_carlist_terror').GetDesc)] [GetStaticModifier('spa_carlist_terror').GetName]#!を[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に追加#!"

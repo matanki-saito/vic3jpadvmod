@@ -19,6 +19,7 @@ amenability_ruler_popularity: "[concept_ruler]'s [concept_popularity]"
 amenability_ig_additional_adds: "#indent_newline:3 Additional modifiers with [InterestGroup.GetName]:\n[InterestGroup.GetModifier.GetDescFor('interest_group_amenability_add')]#!"
 amenability_country_additional_adds: "#indent_newline:3 Additional modifiers:\n[InterestGroup.GetCountry.GetModifier.GetDescFor('country_amenability_add')]#!"
 amenability_already_letting_go: "Already letting law through due to high [concept_approval]"
+amenability_too_large_gap: "[Concept('concept_endorse_oppose','$concept_opposes$')] [concept_law] by greater than #v 2#! steps"
 
 ##modifiers
  bribed_ig_benefits: "Gifts and Subsidies"

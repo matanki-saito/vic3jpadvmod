@@ -324,12 +324,12 @@
  ADD_ARABLE_LAND_POSITIVE_EFFECT:0 "[STATE_REGION.GetName] Gets $VALUE|+0$ [concept_arable_land]"
  ADD_ARABLE_LAND_NEGATIVE_EFFECT:0 "[STATE_REGION.GetName] Loses $VALUE|-0$ [concept_arable_land]"
 
- ADD_DEVASTATION_POSITIVE_EFFECT:0 "[STATE_REGION.GetName] Gets $VALUE|-0$% [concept_devastation]"
- ADD_DEVASTATION_NEGATIVE_EFFECT:0 "[STATE_REGION.GetName] Loses $VALUE|+0$% [concept_devastation]"
- ADD_DEVASTATION_POSITIVE_EFFECT_FIRST:0 "[STATE_REGION.GetName] Gets $VALUE|-0$% [concept_devastation]"
- ADD_DEVASTATION_NEGATIVE_EFFECT_FIRST:0 "[STATE_REGION.GetName] Loses $VALUE|+0$% [concept_devastation]"
- ADD_DEVASTATION_POSITIVE_EFFECT_THIRD:0 "[STATE_REGION.GetName] Gets $VALUE|-0$% [concept_devastation]"
- ADD_DEVASTATION_NEGATIVE_EFFECT_THIRD:0 "[STATE_REGION.GetName] Loses $VALUE|+0$% [concept_devastation]"
+ ADD_DEVASTATION_POSITIVE_EFFECT:0 "[STATE.GetName] Gets $VALUE|-0$% [concept_devastation]"
+ ADD_DEVASTATION_NEGATIVE_EFFECT:0 "[STATE.GetName] Loses $VALUE|+0$% [concept_devastation]"
+ ADD_DEVASTATION_POSITIVE_EFFECT_FIRST:0 "[STATE.GetName] Gets $VALUE|-0$% [concept_devastation]"
+ ADD_DEVASTATION_NEGATIVE_EFFECT_FIRST:0 "[STATE.GetName] Loses $VALUE|+0$% [concept_devastation]"
+ ADD_DEVASTATION_POSITIVE_EFFECT_THIRD:0 "[STATE.GetName] Gets $VALUE|-0$% [concept_devastation]"
+ ADD_DEVASTATION_NEGATIVE_EFFECT_THIRD:0 "[STATE.GetName] Loses $VALUE|+0$% [concept_devastation]"
 
  SET_DEVASTATION_POSITIVE_EFFECT:0 "[STATE_REGION.GetName] Sets [concept_devastation]: #variable $VALUE|0$%#!"
  SET_DEVASTATION_NEGATIVE_EFFECT:0 "[STATE_REGION.GetName] Sets [concept_devastation]: #variable $VALUE|0$%#!"
@@ -811,7 +811,7 @@
 
  ADD_AMENDMENT_GLOBAL: "An [concept_amendment] is added to a [concept_law]"
  ADD_AMENDMENT_FIRST: "[AMENDMENT_TYPE.GetName] is added to [LAW.GetName]"
- ADD_AMENDMENT_THIRD: "[AMENDMENT_TYPE.GetName] is added to [LAW.GetName]"
+ ADD_AMENDMENT_THIRD: "[AMENDMENT_TYPE.GetNameWithLaw(LAW.Self)] is added to [LAW.GetName]"
 
  REMOVE_AMENDMENT_GLOBAL: "An [concept_amendment] is removed from its [concept_law]"
  REMOVE_AMENDMENT_FIRST: "[AMENDMENT.GetName] is removed from [LAW.GetName]"

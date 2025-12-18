@@ -154,7 +154,7 @@
  cuba_events.2.b: "1つのイベリア国家。"
  cuba_events.2.c: "ある程度の距離を取るべきだ。"
  cuba_events.2.e: "いや、これはひどい考えだ。"
- cuba_if_spa_player_tt: "[ROOT.GetCountry.GetOverlord.GetName]がプレイヤーの場合は、[concept_protectorate]になる選択肢も与えられる"
+ cuba_if_spa_player_tt: "[ROOT.GetCountry.GetOverlord.GetName]がプレイヤーの場合は、[concept_dominion]になる選択肢も与えられる"
  cuba_events.3.t: "別の道"
  cuba_events.3.d: "改革派の[SCOPE.gsInterestGroup('landholders').GetName]は、[ROOT.GetCountry.GetOverlord.GetAdjectiveNoFormatting]の同志やキューバの民衆に、[ROOT.GetCountry.GetOverlord.GetName]との統合が実現可能であると納得させるのに失敗した。今や国全体が自治権の拡大を強く求めている。"
  cuba_events.3.f: "「権利とは奪い取るものだ。要求するものではない。権利とは掴み取るものだ。懇願するものではない」\n\n—ホセ・マルティ"

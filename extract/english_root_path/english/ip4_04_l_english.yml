@@ -13,7 +13,7 @@ ip4_coup.1.a: "Godspeed, [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTit
 ip4_coup.1.b: "The present regime must survive."
 
 ip4_coup.2.t: "Pronunciamento!"
-ip4_coup.2.d: "[SCOPE.sCharacter('golpista_general').GetRankName] [SCOPE.sCharacter('golpista_general').GetFullName] has issued a pronunciamento from [SCOPE.sCharacter('golpista_general').GetHerHis] headquarters in [SCOPE.sState('pronunciamento_state').GetName]. The [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] and [SCOPE.sCharacter('golpista_general').GetHerHis] allies in the [SCOPE.gsInterestGroup('golpista_ig').GetName] have come into open opposition to our government."
+ip4_coup.2.d: "[SCOPE.sCharacter('golpista_general').GetRankName] [SCOPE.sCharacter('golpista_general').GetFullName] has issued a pronunciamento from [SCOPE.sCharacter('golpista_general').GetHerHis] headquarters in [SCOPE.sState('pronunciamento_state').GetName]. The [SCOPE.sCharacter('golpista_general').GetCustom('getGeneralAdmiral')] and [SCOPE.sCharacter('golpista_general').GetHerHis] allies in the [SCOPE.gsInterestGroup('golpista_ig').GetName] have come into open opposition to our government."
 ip4_coup.2.f: "Fellow citizens,\n\nThe regime in [ROOT.GetCountry.GetCapital.GetCityHubName] has proclaimed a death sentence for [ROOT.GetCountry.GetNameNoFormatting], and has deprived us of any hope of putting an end to civil discord. Nothing remains outside of an appeal to the people.\n\nMy countrymen! Hear the cry of the homeland! Close your ears to the suggestion of a regime which, in its spite and impotence, places all its hope in the disunity of the people and the army.\n\n[SCOPE.sState('pronunciamento_state').GetNameNoFormatting] Headquarters, [TimeKeeper.GetCurrentDate.GetString]\n[SCOPE.sCharacter('golpista_general').GetFullNameNoFormatting]" # Heavily edited version of General Gabriel Valencia's pronunciamento on September 4, 1841
 ip4_coup.2.a: "The military has spoken. Our mandate is done."
 ip4_coup.2.b: "We will not capitulate!"
@@ -183,8 +183,8 @@ je_the_two_spains_liberal_header: "#title Will conclude in a #b liberal#! victor
 je_the_two_spains_conservative_header: "#title Will conclude in a #b conservative#! victory if:#!\n"
 je_the_two_spains_on_liberal_victory_header: "#title If concluded in a #b liberal#! victory:#!\n$EFFECT$"
 je_the_two_spains_on_conservative_victory_header: "#title If concluded in a #b conservative#! victory:#!\n$EFFECT$"
-spain_liberal_victory_values_tt: "#b Liberal#! progress has reached #v 90%#!"
-spain_conservative_victory_values_tt: "#b Conservative#! progress has reached #v 90%#!"
+spain_liberal_victory_values_tt: "#b Liberal#! progress has reached #v 80%#!"
+spain_conservative_victory_values_tt: "#b Conservative#! progress has reached #v 80%#!"
 
 modifier_spain_political_tensions: "Political Tensions"
 
@@ -246,6 +246,7 @@ two_spains.3.b: "Revelation will set the world right again."
 modifier_the_world_made_right_again: "The World Made Right Again"
 modifier_shepherds_of_revelation: "Shepherds of Revelation"
 modifier_libertad_igualdad_fraternidad: "Libertad, Igualdad, Fraternidad"
+modifier_libertad_igualdad_fraternidad_no_voting: "$modifier_libertad_igualdad_fraternidad$"
 modifier_republican_spirit: "Republican Spirit"
 
 two_spains_military_liberal_ideologies_tt: "[Concept('concept_commander','$concept_commanders$')] will be more likely to have liberal and radical [Concept('concept_ideology','$concept_ideologies$')]"
@@ -498,6 +499,7 @@ por_increased_pb_regenerator_likelihood_50_tt: "The [SCOPE.gsInterestGroup('pb_i
 
 second_liberalism_ideologies_tt: "$two_spains_liberal_ideologies_tt$"
 modifier_portugal_liberal_hegemony: "Institutional Liberalism"
+modifier_portugal_liberal_hegemony_no_voting: "$modifier_portugal_liberal_hegemony$"
 
 je_portugal_and_brazil: "The Old Empire"
 je_portugal_and_brazil_reason: "Since our recognition of its independence in 1825, the former [ROOT.GetCountry.GetAdjective] colony of [SCOPE.sCountry('brazil_scope').GetName] has dominated the South American continent. Though the brief period of post-independence personal union under King and Emperor Pedro IV and I ended in failure, cultural ties between #b $POR$#! and #b $BRZ$#! remain strong. These existing ties present a prime opportunity for establishing a lasting economic and diplomatic relationship."
@@ -1118,7 +1120,7 @@ achievement_unanimity_tt: "Has removed all non-marginal opposition to a law curr
 achievement_portugal_is_not_a_small_country_1_tt: "Owns at least #v 12#! states in [GetGeographicRegion('geographic_region_africa').GetName]"
 achievement_portugal_is_not_a_small_country_2_tt: "Owns all [Concept('concept_state','$concept_states$')] in [GetGeographicRegion('geographic_region_angola').GetName] and [GetGeographicRegion('geographic_region_mozambique').GetName]"
 achievement_portugal_is_not_a_small_country_3_tt: "Has established a land connection between [GetGeographicRegion('geographic_region_angola').GetName] and [GetGeographicRegion('geographic_region_mozambique').GetName]"
-achievement_one_more_time_tt: "Has rebuilt the [GetBuildingType('building_manila_cathedral_monument').GetName] #v 3#! or more times"
+achievement_one_more_time_tt: "Has rebuilt the [GetBuildingType('building_manila_cathedral_monument').GetName]"
 achievement_personal_union_with_spain_tt: "Has established a [concept_personal_union] with #v $SPA$#!"
 achievement_personal_union_with_brazil_tt: "Has established a [concept_personal_union] with #v $BRZ$#!"
 achievement_deconquista_tt: "#v $SPA$#! has [GetReligion('sunni').GetName], [GetReligion('shiite').GetName], or [GetReligion('ibadi').GetName] as its [concept_state_religion]"

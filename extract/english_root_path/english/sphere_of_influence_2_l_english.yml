@@ -79,7 +79,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  persia_events.3.t: "The Turanian Scourge"
  persia_events.3.d: "For too long have the [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] tribes to our north been allowed to raid our lands without fear of reprisals. To rectify this injustice, [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetFirstName] has announced the start of a great northern pacification campaign."
- persia_events.3.f: "In pained rythmic steps, the chained make their way across the Karakum desert; its great silence broken only by the occasional jeer of their Turkmen captors, and their own plaintive cries; \n\n#italic "The alaman have taken us,\nPoor, poor Qizilbash!\nAnd carry us, and carry us,\nIn iron and chains, in iron and chains\nTo Gurgench and Bokhara."#!" # Persian song of lamentation. Alaman is a Turkmen raiding/slaving party, and qizilbash (red head) is a contemporary word used for Persians (and more).
+ persia_events.3.f: "In pained rhythmic steps, the chained make their way across the Karakum desert; its great silence broken only by the occasional jeer of their Turkmen captors, and their own plaintive cries; \n\n#italic "The alaman have taken us,\nPoor, poor Qizilbash!\nAnd carry us, and carry us,\nIn iron and chains, in iron and chains\nTo Gurgench and Bokhara."#!" # Persian song of lamentation. Alaman is a Turkmen raiding/slaving party, and qizilbash (red head) is a contemporary word used for Persians (and more).
  persia_events.3.a: "Let us show these raiders Persian steel."
 
  persia_events.4.t: "Persia Requests Military Mission"

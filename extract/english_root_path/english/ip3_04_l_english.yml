@@ -1024,6 +1024,10 @@ NEIGHBOURING_COUNTRY_WITH_REVOLUTION: "[Concept('concept_neighbors','$concept_ne
 NEIGHBOURING_COUNTRY_WITH_RELIGIOUS_REVOLUTION: "[Concept('concept_neighbors','$concept_neighboring$')] [Concept('concept_country','$concept_countries$')] with an [Concept('concept_insurrection', '$concept_insurrectionary$')] [Concept('concept_political_movement','$concept_political_movement_short$')] of its associated [concept_religion]"
 NEIGHBOURING_COUNTRY_WITH_CULTURE_REVOLUTION: "[Concept('concept_neighbors','$concept_neighboring$')] [Concept('concept_country','$concept_countries$')] with an [Concept('concept_insurrection', '$concept_insurrectionary$')] [Concept('concept_political_movement','$concept_political_movement_short$')] of its associated [concept_culture]"
 
+FASCIST_MOVEMENT_WILL_TO_POWER: "[GetIdeology('ideology_fascist_movement').GetName] [Concept('concept_political_movement', '$concept_political_movement_short$')] [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]"
+COMMUNIST_MOVEMENT_REVOLUTIONARISM: "[GetIdeology('ideology_communist_movement').GetName] [Concept('concept_political_movement', '$concept_political_movement_short$')] [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]"
+ANARCHIST_MOVEMENT_REVOLUTIONARISM: "[GetIdeology('ideology_anarchist_movement').GetName] [Concept('concept_political_movement', '$concept_political_movement_short$')] [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]"
+
 SIMULTANEOUS_INSURRECTIONARY_MOVEMENTS: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] of other [Concept('concept_insurrection', '$concept_insurrectionary$')] [Concept('concept_political_movement','$concept_political_movements$')]"
 
 subjecthood_fervor_no_effects_ld_tt: "[concept_fervor] of our [concept_primary_cultures] will no longer contribute to our [concept_liberty_desire] gain"

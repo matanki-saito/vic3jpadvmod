@@ -3,7 +3,7 @@
  LOAD_GAME:0 "Load Game"
  SAVE_GAME:0 "Save Game"
  DELETE_GAME: "Delete Game"
- DELETE_GAME_ALL: "Delete All Games"
+ DELETE_GAME_ALL: "@warning! Delete All Games"
  SAVE:0 "Save"
  DELETE: "Delete"
  DELETE_ALL: "Delete All"

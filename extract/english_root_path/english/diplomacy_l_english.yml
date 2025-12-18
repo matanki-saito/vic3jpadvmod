@@ -2197,8 +2197,11 @@
  INFAMY_QUANTITY_FACTOR: "Input quantity"
  INFAMY_MONEY_TRANSFER_QUANTITY_ROOT_HAS_ALREADY_ESTABLISHED_FACTOR: "Input quantity of Money Transfer [Concept('concept_article', '$concept_articles$')] [SCOPE.GetRootScope.GetCountry.GetName]"
  INFAMY_TARGET_COUNTRY_DEDUCTION_FACTOR: "[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')] targeting [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] enforcing Money Transfer [Concept('concept_article', '$concept_articles$')]"
+ INFAMY_FROM_LOYAL_SUBJECT: "[SCOPE.sCountry('target_country').GetName] is a $ai_attitude_loyal$ subject of [ROOT.GetCountry.GetName]"
+ INFAMY_FROM_REBELLIOUS_SUBJECT: "[SCOPE.sCountry('target_country').GetName] is a $ai_attitude_rebellious$ subject of [ROOT.GetCountry.GetName]"
+ INFAMY_MINIMUM_VALUE: "Reached minimum $concept_infamy$ for this $concept_war_goal$"
 
  MANEUVERS_BASE_VALUE: "Base Value"
  MANEUVERS_TARGET_COUNTRY_POPULATION_FACTOR: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] total [Concept('concept_pop', '$concept_population$')] of [SCOPE.sCountry('target_country').GetTotalPopulation|Dv]"
  MANEUVERS_QUANTITY_FACTOR: "Input quantity"
- MANEUVERS_TARGET_STATE_POPULATION_FACTOR: "[SCOPE.sState('target_state').GetAdjectiveNoFormatting] total [Concept('concept_pop', '$concept_population$')] of [SCOPE.sState('target_state').GetPopulationSize|Dv]"
+ MANEUVERS_TARGET_STATE_POPULATION_FACTOR: "[SCOPE.sState('target_state').GetName] total [Concept('concept_pop', '$concept_population$')] of [SCOPE.sState('target_state').GetPopulationSize|Dv]"

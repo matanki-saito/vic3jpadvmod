@@ -42,3 +42,5 @@
  SCOPE_DEBUG_POWER_BLOC_PRINCIPLE_GROUP: "Power Bloc Principle Group $NAME$ ($ID$)"
  SCOPE_DEBUG_AMENDMENT_TYPE: "Amendment type $NAME$ ($ID$)"
  SCOPE_DEBUG_AMENDMENT: "Amendment $NAME$ ($ID$)"
+ MILITARY_FORMATION_COMMON_DEBUG_INFO: "Debug Info:\nID: [MilitaryFormation.GetIDString]"
+ MILITARY_FORMATION_AI_DEBUG_INFO: "AI Tag: $TAG$\nHome HQ: $HOME_HQ$\nCurrent HQ: $CURRENT_HQ$"

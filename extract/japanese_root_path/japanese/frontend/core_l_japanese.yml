@@ -3,7 +3,7 @@
  LOAD_GAME: "ゲームをロード"
  SAVE_GAME: "ゲームをセーブ"
  DELETE_GAME: "ゲームを削除"
- DELETE_GAME_ALL: "すべてのゲームを削除"
+ DELETE_GAME_ALL: "@warning! すべてのゲームを削除"
  SAVE: "セーブ"
  DELETE: "削除"
  DELETE_ALL: "すべてを削除"
