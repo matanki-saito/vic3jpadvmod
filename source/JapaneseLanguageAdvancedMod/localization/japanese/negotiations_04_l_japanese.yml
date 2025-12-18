@@ -128,3 +128,4 @@
  je_negotiate_sol_reason:0 "我々は、庶民の生活を改善すると[SCOPE.gsInterestGroup('ig').GetName]に誓った。この国の統治者にとって、[ROOT.GetCountry.GetAdjective]市民の[concept_sol]を高めることほど気高い目標など、ほかには存在しないのだ。"
  neg_sol_short_time_loc:0 "7.5"
  neg_sol_long_time_loc:0 "10"
+ amenability_too_large_gap:0 "#v 2#!段階を超える差で[concept_law]に[Concept('concept_endorse_oppose','$concept_opposes$')]する"

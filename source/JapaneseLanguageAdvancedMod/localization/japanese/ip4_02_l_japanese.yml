@@ -366,3 +366,4 @@
  VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER:0 "残っている[Concept('concept_state','$concept_states$')] : "
  VERNACULAR_POLICY_ASSIMILATION_STATES_TT:0 "$VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER$\n[GetScriptedGui('je_vernacular_policy_assimilation_states_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
  VERNACULAR_POLICY_ASSIMILATION_STATES_LIST_ENTRY:0 "[AddLocalizationIf(THIS.GetState.IsValid,THIS.GetState.GetName)] ([THIS.ScriptValue('official_culture_fraction')|%1]) "
+ modifier_reformed_captaincy_general:0 "改革された総督領"

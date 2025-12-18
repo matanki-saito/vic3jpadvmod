@@ -1967,4 +1967,7 @@
  recognize_independence_article_short_desc:0 "[SOURCE_COUNTRY.GetNameNoFormatting]が[TARGET_COUNTRY.GetNameNoFormatting]の独立を正式に承認します"
  TREATY_DRAFT_ARTICLE_FLAG_IS_RECOGNIZE_INDEPENDENCE_EFFECT:0 " • [SOURCE_COUNTRY.GetName]が[TARGET_COUNTRY.GetName]の独立を正式に承認します"
  TREATY_ARTICLE_FLAG_IS_RECOGNIZE_INDEPENDENCE_EFFECT:0 " • [SOURCE_COUNTRY.GetName]が[TARGET_COUNTRY.GetName]の独立を正式に承認しました"
- MANEUVERS_TARGET_STATE_POPULATION_FACTOR:0 "[SCOPE.sState('target_state').GetAdjectiveNoFormatting]の総[Concept('concept_pop','$concept_population$')]が[SCOPE.sState('target_state').GetPopulationSize|Dv]"
+ MANEUVERS_TARGET_STATE_POPULATION_FACTOR:0 "[SCOPE.sState('target_state').GetName]の[Concept('concept_pop','$concept_population$')]が[SCOPE.sState('target_state').GetPopulationSize|Dv]"
+ INFAMY_FROM_LOYAL_SUBJECT:0 "[SCOPE.sCountry('target_country').GetName]は[ROOT.GetCountry.GetName]の$ai_attitude_loyal$な従属国である"
+ INFAMY_FROM_REBELLIOUS_SUBJECT:0 "[SCOPE.sCountry('target_country').GetName]は[ROOT.GetCountry.GetName]の$ai_attitude_rebellious$な従属国である"
+ INFAMY_MINIMUM_VALUE:0 "この$concept_war_goal$の最小の$concept_infamy$に達しました"

@@ -89,3 +89,7 @@
  country_two_spains_liberal_drift_add_desc:0 "#b $je_the_two_spains$#!の[concept_journal_entry]における#b 自由主義#!の毎月の進捗に対する増減補正です"
  CARLIST_WAR_ROYAL_EXPEDITION_MINIMUM_SCORE:0 "#b スコア#!が最低でも[SCOPE.ScriptValue('carlist_war_royal_expedition_min_score')|v0]以上"
  the_two_spains_tt:0 "我々はまもなく、#b $je_the_two_spains$#!という現実に直面する"
+ notification_carlist_war_carlist_terror_name:0 "$spa_carlist_terror$"
+ notification_carlist_war_carlist_terror_desc:0 "カルリスタの支持者と地元の盗賊団が[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に恐怖を広げています！\n$notification_carlist_War_carlist_terror_TT_HAS_HAPPENED$"
+ notification_carlist_war_carlist_terror_tooltip:0 "#header $notification_carlist_war_carlist_terror_name$#!\n$TOOLTIP_DELIMITER$\n$notification_carlist_war_carlist_terror_desc$"
+ notification_carlist_War_carlist_terror_TT_HAS_HAPPENED:0 "発生済み : \n#indent_newline:3 $EFFECT_LIST_BULLET$[SCOPE.ScriptValue('carlist_war_carlist_terror_devastation')|n0]の[concept_devastation]と#tooltippable;tooltip:[GetRawTextTooltipTag(GetStaticModifier('spa_carlist_terror').GetDesc)] [GetStaticModifier('spa_carlist_terror').GetName]#!を[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に追加#!"

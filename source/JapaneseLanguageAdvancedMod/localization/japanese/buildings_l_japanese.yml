@@ -248,3 +248,4 @@
  building_manila_cathedral_ruins:0 "マニラ大聖堂の廃墟"
  COMPANY_HQ_NAME:0 "$COMPANY_NAME$本部"
  COMPANY_REGIONAL_HQ_NAME:0 "$COMPANY_NAME$地域本部"
+ bg_company_regional_headquarter:0 "地域企業本部"
