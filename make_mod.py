@@ -11,8 +11,29 @@ import time
 import urllib.request
 import zipfile
 from os.path import join
+from urllib.request import urlopen, Request
 
 _ = join
+
+
+def get_extra_compatible(project_id,
+                         secret,
+                         base_url="https://paratranz.cn"):
+    regenerate_request_url = "{}/api/projects/{}".format(base_url, project_id)
+
+    req = Request(
+        regenerate_request_url,
+        headers={
+            "Accept": "application/json",
+        }
+    )
+    req.add_header("Authorization", secret)
+
+    with urlopen(req) as response:
+        data = json.loads(response.read().decode("utf-8"))
+
+    # extra.compatible を返却（存在しない場合は None）
+    return data.get("extra", {}).get("compatible")
 
 
 def download_trans_zip_from_paratranz(project_id,
@@ -48,7 +69,8 @@ def download_trans_zip_from_paratranz(project_id,
 
 
 def assembly_mod(resource_paratranz_main_zip_file_path,
-                 out_dir_path):
+                 out_dir_path,
+                 compatible_version):
     """
     Appモッドを作成
     :param resource_paratranz_main_zip_file_path: ParatranzからダウンロードできるMain Mod zipファイルのパス
@@ -98,7 +120,7 @@ def assembly_mod(resource_paratranz_main_zip_file_path,
 
     # .metadata/metadata.jsonを入れる
     os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
-    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), "1.12.*")
+    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), compatible_version)
 
     return out_dir_path
 
@@ -116,7 +138,7 @@ def convert_json_to_yml(target_path):
                     translation = re.sub(r'\n', '\\\\n', context) \
                         if (entry["stage"] == 2 or entry["stage"] == 0) else entry["translation"]
 
-                    #translationが空
+                    # translationが空
                     if translation == "":
                         translation = entry["original"]
 
@@ -357,6 +379,12 @@ def update_source(mod_folder_path):
 
 
 def main():
+    version = get_extra_compatible(
+        project_id=5456,
+        secret=os.environ.get("PARATRANZ_SECRET"))
+
+    print(version)
+
     is_local = "IS_LOCAL" in os.environ and os.environ.get("IS_LOCAL") in ["True", "true", 1]
 
     # 一時フォルダ用意
@@ -378,7 +406,8 @@ def main():
     # Modを構築する（フォルダのまま）
     mod_folder_path = assembly_mod(
         resource_paratranz_main_zip_file_path=p_file_main_path,
-        out_dir_path=out_dir_path)
+        out_dir_path=out_dir_path,
+        compatible_version=version)
     print("mod_dir_path:{}".format(out_dir_path))
 
     # utf8ファイルを移動する（この後git pushする）
