@@ -119,7 +119,7 @@
  tax_very_low:0 "#v 非常に低い#!"
  neg_tax_bar_lowering_desc:0 "[concept_taxes]は[SCOPE.GetRootScope.GetCountry.GetCustom('GetPromisedTaxLevelOneWord')]に維持される"
  NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE_TT:0 "[THIS.GetInterestGroup.GetName]が[ROOT.GetCountry.GetLawBeingEnacted.GetName]を支持するため、[Concept('concept_enactment_success','$concept_enactment_success$')]の確率が#g [THIS.ScriptValue('law_enactment_change')|=0%]#!増加する"
- NEGOTIATE_LAW_STALL_CHANCE_DECREASE_TT:0 "[THIS.GetInterestGroup.GetName]が[ROOT.GetCountry.GetLawBeingEnacted.GetName]への反対を取りやめるため、[Concept('concept_enactment_stall','$concept_enactment_stall$')]の確率が#g ―[THIS.ScriptValue('law_enactment_change')|0%]#!減少する"
+ NEGOTIATE_LAW_STALL_CHANCE_DECREASE_TT:0 "[THIS.GetInterestGroup.GetName]が[ROOT.GetCountry.GetLawBeingEnacted.GetName]への反対を取りやめるため、[Concept('concept_enactment_stall','$concept_enactment_stall$')]の確率が#g -[THIS.ScriptValue('law_enactment_change')|0%]#!減少する"
  negotiation.1.o8:0 "[SCOPE.gsInterestGroup('ig').MakeScope.Var('amendment_type').GetAmendmentType.GetName]に関する細則をいくつか盛り込んでおこう。"
  negotiation.1.o9:0 "庶民の生活を改善すると誓う。"
  promise_higher_sol_tt:0 "我々は、[ROOT.GetCountry.GetNameNoFlag]の平均[concept_sol]を#v [SCOPE.gsInterestGroup('ig').GetCustom('SOL_commitment_duration')]年#!以内に[SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_sol_level').GetValue|v1]まで引き上げることを確約する。[SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
