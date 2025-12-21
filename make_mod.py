@@ -224,6 +224,7 @@ def issue_241(text):
 
     # 値の符号は保持する
     text = re.sub(r'-\$(AMOUNT|VAL|MAINTENANCE)', lambda x: k(x.group()), text)
+    text = re.sub(r'-★.*△0%☆', lambda x: k(x.group()), text)
     text = re.sub(r'-[0-9]+', lambda x: k(x.group()), text)
     text = re.sub(r'-★WarParticipant✡GetNumDead', lambda x: k(x.group()), text)
     text = re.sub(r'#N♉-', lambda x: k(x.group()), text)
@@ -343,7 +344,7 @@ def issue_242(text):
     text = re.sub(r'([\[.\-+)($\]#])[  ]+([ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠])', r'\1\2', text)
     text = re.sub(r'([ぁ-んァ-ヶｱ-ﾝﾞﾟ一-龠])[  ]+([\[.\-+)($\]#])', r'\1\2', text)
 
-    text = re.sub(r'\][  ]+\[', r'][', text)
+    text = re.sub(r'][  ]+\[', r'][', text)
     text = re.sub(r'#![  ]+\'', '#!\'', text)
 
     text = text.replace(' ', ' ')
