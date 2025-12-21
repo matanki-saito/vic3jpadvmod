@@ -400,7 +400,7 @@
  CULTURAL_COMMUNITY_DECAYING_ACCEPTANCE_DELTA_DESC:0 "$VALUE|0+=$ (文化の統合 ($TIME|v$で0に減衰) ) "
  CULTURAL_COMMUNITY_ACCEPTANCE_HOMELAND_DESC:0 "$VALUE|0+=$ ([concept_homeland]) "
  HARVEST_CONDITION_TYPE_EFFECTS_DESC:0 "#title 効果 : #!#indent_newline:3 \n[HarvestConditionType.GetEffectDesc]#!"
- HARVEST_CONDITION_TYPE_DESC:0 "[HarvestConditionType.GetEffectDesc]"
+ HARVEST_CONDITION_TYPE_DESC:0 "[HarvestConditionType.GetDescription]"
  HARVEST_CONDITION_AREA_NAME_HEADER:0 "[HarvestConditionArea.GetEpicenterRegion.GetName]周辺の[HarvestConditionArea.GetNameNoIcon]"
  HARVEST_CONDITION_AREA_INTENSITY:0 "発生地の[Concept('concept_harvest_condition_intensity','$concept_harvest_condition_intensity_short$')] : [HarvestConditionArea.GetEpicenter.GetIntensity|v1]"
  HARVEST_CONDITION_AREA_DURATION_LABEL:0 "#b [HarvestConditionArea.GetRemainingDurationLabel]#! ([HarvestConditionArea.GetRemainingDurationRange]) "
