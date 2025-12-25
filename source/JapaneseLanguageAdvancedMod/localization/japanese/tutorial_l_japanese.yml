@@ -322,7 +322,7 @@
  lesson_budget_balance_how_4:0 "$lesson_budget_balance_how_1$"
  lesson_budget_balance_how_4_desc:0 "固定費は[SelectLocalization(GetPlayer.IsValid,'lesson_budget_balance_how_4_desc_added','Government Administration')]や[SelectLocalization(GetPlayer.IsValid,'lesson_budget_balance_how_4_desc_added_2','兵舎')]のような[Concept('concept_government_building','$concept_government_buildings$')]によって発生し、ここにはそこで使用する[Concept('concept_good','$concept_goods$')]や[concept_budget_wages]の支払いも含まれています。あなたの[concept_country]全体で支払われる$concept_budget_wages$を調整することで歳出をコントロールすることができます。\n\n望むなら、今すぐ[concept_budget_government_wages]や[concept_budget_military_wages]の減額を実行できます。変更した賃金はいつでも元に戻すことができますが、ツールチップに記載されている結果に注意しましょう！"
  lesson_budget_balance_how_4_desc_added:0 "[GetBuildingType('building_government_administration').GetName]"
- lesson_budget_balance_how_4_desc_added_2:0 "[GetBuildingType('building_barracks').GetName]"
+ lesson_budget_balance_how_4_desc_added_2:0 "[GetBuildingType('building_barrack').GetName]"
  lesson_budget_balance_how_5:0 "$lesson_budget_balance_how_1$"
  lesson_budget_balance_how_5_desc:0 "歳出を抑えるもう一つの方法に特定[Concept('concept_state','$concept_states$')]にある[Concept('concept_government_building','$concept_government_buildings$')]の規模縮小があります。[concept_budget_wages]の支払いと[Concept('concept_good','$concept_goods$')]の消費にかかる経費を恒久的に削減することができますが、[concept_building]レベルによって得られるメリットが無くなります。"
  lesson_budget_balance_how_5_continue:0 "[Concept('concept_state','$concept_states$')]タブをクリックして続行する"
