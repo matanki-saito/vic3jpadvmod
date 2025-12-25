@@ -134,13 +134,18 @@ def convert_json_to_yml(target_path):
                 for entry in json.load(fr):
                     context = entry["context"] if "context" in entry else entry["original"]
 
-                    # paratranzから出てくるcontextだと改行がエスケープされていない
-                    translation = re.sub(r'\n', '\\\\n', context) \
-                        if (entry["stage"] == 2 or entry["stage"] == 0) else entry["translation"]
-
-                    # translationが空
-                    if translation == "":
+                    # hidden ... -1
+                    # これは非表示になっておりTranslationは入っていないのでオリジナルをそのまま使う
+                    if entry["stage"] == -1:
                         translation = entry["original"]
+
+                    # untranslated ... 0 , disputed ... 2
+                    # paratranzから出てくるcontextだと改行がエスケープされていない
+                    elif entry["stage"] == 2 or entry["stage"] == 0:
+                        translation = re.sub(r'\n', '\\\\n', context)
+
+                    else:
+                        translation = entry["translation"]
 
                     # ISSUE-493のWA
                     if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
