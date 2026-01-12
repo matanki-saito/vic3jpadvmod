@@ -48,6 +48,12 @@ body:
         - 1.8.X
         - 1.9.X
         - 1.10.X
+        - 1.11.X
+        - 1.12.X    
+        - 1.13.X
+        - 1.14.X
+        - 1.15.X
+        - 1.16.X
     validations:
       required: false
   - type: input
