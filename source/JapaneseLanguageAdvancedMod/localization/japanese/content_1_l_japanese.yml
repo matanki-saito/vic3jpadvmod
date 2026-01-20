@@ -445,7 +445,7 @@
  opium_wars.1.b:0 "[SCOPE.sCountry('opium_exporter').GetName]の怒りを買うリスクは犯せない。"
  opium_wars_addiction_modifier:0 "アヘン中毒の拡散"
  opium_wars.2.t:0 "アヘン戦争"
- opium_wars.2.d:0 "[SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting]政府は[SCOPE.sCountry('opium_wars_target_country').GetName]におけるアヘン貿易を停止する意思表示をしました。[ROOT.GetCountry.GetName]はアヘンの主要輸出国であるため、この意思表示は大きな経済的関心事となっています。"
+ opium_wars.2.d:0 "[SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting]政府は[SCOPE.sCountry('opium_wars_target_country').GetName]におけるアヘン貿易を停止する意思表示をしました。[ROOT.GetCountry.GetName]はアヘンの主要輸出国であるため、これは大きな経済的関心事となっています。"
  opium_wars.2.f:0 "「アヘン貿易は道徳的に悪であると批判する人もいるが、私は彼らに言いたい。自由貿易と消費者の自由選択を妨げるあなたは、いったい何様なのかと。需要がある。だから私たちは供給するのだ。――私たちが供給しなければ、他の国が[SCOPE.sCulture('opium_addicted_culture').GetNameNoFormatting]人のアヘン常用者を搾取して富むだけのことだ。後先考えずにアヘンを乱用する愚か者がいるからといって、あらゆる者からアヘンを奪うなどということが許されるのだろうか。アヘンによって我が国へともたらされる富を、[ROOT.GetCountry.GetAdjectiveNoFormatting]の人々から奪い去ることが本当に許されるとでもいうのであろうか」"
  opium_wars.2.a:0 "かの国の民はアヘンを嗜むのだ、気に入っているのだ！"
  opium_wars.2.b:0 "私たちは他にやるべきことがある。"

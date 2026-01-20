@@ -170,7 +170,7 @@
  DATA_AMENDMENTS_TAX_MODIFIERS_HEADER:0 "税補正 : "
  DATA_AMENDMENTS_INSTITUTION_MODIFIERS_HEADER:0 "制度補正 : "
  DATA_AMENDMENTS_SPONSOR_MODIFIERS_HEADER:0 "後援者補正 : "
- REPEAL_AMENDMENT_TOOLTIP:0 "#header [concept_amendment]「[Amendment.GetName]」を廃止#![ConcatIfNeitherEmpty('\n$DATA_AMENDMENTS_REPEAL_HEADER$\n',Amendment.GetOnRepealEffectsDesc)]"
+ REPEAL_AMENDMENT_TOOLTIP:0 "#header [concept_amendment]「[Amendment.GetName]」を廃止#![GetDesc(Amendment.Repeal)][ConcatIfNeitherEmpty('\n\n$DATA_AMENDMENTS_REPEAL_HEADER$\n',Amendment.GetOnRepealEffectsDesc)]"
  AMENDMENT_SPONSOR:0 "#title 後援者 : #!\n$TAB$[Amendment.GetSponsor.GetName]"
  AMENDMENT_PARENT_LAW_TYPE_TITLE:0 "#title [concept_parent_law] : #!"
  AMENDMENT_PARENT_LAW_TYPE:0 "[Amendment.GetParentLawType.GetName]"

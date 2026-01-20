@@ -418,3 +418,8 @@
  ag_can_take_decisions_tooltip:0 "#header $ag_can_take_decisions_name$#!\n$TOOLTIP_DELIMITER$\n$ag_can_take_decisions_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  formable_possible_setting_name:0 "国家の形成"
  major_formable_possible_setting_name:0 "主要国家の形成"
+ ag_secession_growing_name:0 "$alert_secession_growing_alert_name$"
+ ag_secession_growing_desc:0 "$alert_secession_growing_alert_desc$"
+ ag_secession_growing_alert_name:0 "$alert_secession_growing_alert_name$"
+ ag_secession_growing_alert_desc:0 "$alert_secession_growing_alert_desc$"
+ ag_secession_growing_tooltip:0 "#header $ag_secession_growing_alert_name$#!\n$TOOLTIP_DELIMITER$\n$ag_secession_growing_alert_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"

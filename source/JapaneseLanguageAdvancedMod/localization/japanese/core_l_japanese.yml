@@ -226,3 +226,5 @@
  state_obstinance:0 "固執"
  NO_EFFECTS:0 "効果なし"
  country_gdp_construction:0 "$country_gdp$"
+ INTEREST_GROUP_WILL_LEAVE_PARTY:0 "次の[concept_election]で[PARTY.GetNameNoFormatting]から離脱します"
+ INTEREST_GROUP_WILL_LEAVE_PARTY_TOOLTIP:0 "[InterestGroup.GetName]が次の[concept_election]運動の開始時に[PARTY.GetName]から離脱することを決めました ([GetPlayer.GetNextStartOfCampaignDate|v]) "

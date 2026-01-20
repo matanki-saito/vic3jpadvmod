@@ -467,3 +467,4 @@
  government_support_to_financially_distressed:0 "財政難への支援"
  NON_CARLIST_MONARCH:0 "[GetIdeology('ideology_carlist').GetName]でない君主"
  NON_MIGUELIST_MONARCH:0 "[GetIdeology('ideology_miguelist').GetName]でない君主"
+ POOR_RELATIONS_WITH_PAPACY:0 "#b 教皇領#!との[concept_relations]が悪い"
