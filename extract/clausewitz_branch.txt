@@ -1,1 +1,1 @@
-caligula/release/1.12.2
+caligula/release/1.12.x

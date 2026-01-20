@@ -521,7 +521,7 @@
  opium_wars.1.b:0 "We cannot risk the ire of [SCOPE.sCountry('opium_exporter').GetName]."
  opium_wars_addiction_modifier:0 "Widespread Opium Addiction"
  opium_wars.2.t:0 "Opium Wars"
- opium_wars.2.d:0 "The [SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting] government has announced its intent to put an end to the opium trade in [SCOPE.sCountry('opium_wars_target_country').GetName]. As [ROOT.GetCountry.GetName] is major exporter of opium, this is a matter of great economic concern."
+ opium_wars.2.d:0 "The [SCOPE.sCountry('opium_wars_target_country').GetAdjectiveNoFormatting] government has announced its intent to put an end to the opium trade in [SCOPE.sCountry('opium_wars_target_country').GetName]. As [ROOT.GetCountry.GetName] is a major exporter of opium, this is a matter of great economic concern."
  opium_wars.2.f:1 ""There are some who decry the so-called moral evils of the opium trade; I say to them, who are you to stand in the way of free trade and the free choices of the consumer? The demand exists, and so we provide — if not us then some other nation would grow rich off the backs of [SCOPE.sCulture('opium_addicted_culture').GetNameNoFormatting] opium fiends. Should every man be deprived of opium simply because some irresponsible ninnyhammers abuse it? And should every [ROOT.GetCountry.GetAdjectiveNoFormatting] family be deprived of the wealth that opium brings to our country?""
  opium_wars.2.a:0 "They will eat their opium and they will like it!"
  opium_wars.2.b:0 "We have other matters to attend to."

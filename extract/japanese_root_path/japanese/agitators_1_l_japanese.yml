@@ -91,6 +91,7 @@
  NON_LEGITIMIST_MONARCH: "[GetIdeology('ideology_legitimist').GetName]でない君主"
  NON_CARLIST_MONARCH: "[GetIdeology('ideology_carlist').GetName]でない君主"
  NON_MIGUELIST_MONARCH: "[GetIdeology('ideology_miguelist').GetName]でない君主"
+ POOR_RELATIONS_WITH_PAPACY: "#b 教皇領#!との[concept_relations]が悪い"
  exile_old_ruler_tt: "[SCOPE.sCharacter('old_ruler_scope').GetFullName]が[SCOPE.sCharacter('old_ruler_scope').GetPrimaryRoleTitle]が亡命しました"
  french_pretenders.6.t: "臨時政府"
  french_pretenders.6.d: "[ROOT.GetCountry.GetName]での危機は[SCOPE.sCharacter('old_ruler_scope').GetFullName]の手に余り、[SCOPE.sCharacter('monarch_scope').GetSheHe|U]は地位を捨てて国から逃亡することを余儀なくされ、臨時の共和主義政府が設立された。"

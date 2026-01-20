@@ -601,7 +601,7 @@
  galicia_formation.1.b: "[GetCulture('polish').GetCustom('getPluralDemonym')]と[GetCulture('ukrainian').GetCustom('getPluralDemonym')]は、我々の支配の下で団結するだろう。"
  galicia_formation.1.c: "我々は、もっと偉大な存在になれる。"
  ukrainian_culture_remains_krakow_tt: "[GetCulture('ukrainian').GetName]は[ROOT.GetCountry.GetNameNoFlag]の[Concept('concept_primary_cultures','$concept_primary_culture$')]であり続ける"
- ukrainian_culture_loss_warning_krakow_tt: "@warning! #v $POL$#!の[Concept('concept_unification','Forming')]により[GetCulture('ukrainian').GetName]の[Concept('concept_primary_cultures','$concept_primary_culture$')]が削除される"
+ ukrainian_culture_loss_warning_krakow_tt: "@warning! #v $POL$#!の[Concept('concept_unification','形成')]により[GetCulture('ukrainian').GetName]の[Concept('concept_primary_cultures','$concept_primary_culture$')]が削除される"
  ruler_is_romance_tt: "[ROOT.GetCountry.GetNameNoFlag]の[concept_ruler] が#v $language_hispanophone$#!の[Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')]を持つ[concept_culture]を有している"
  subjecthood_events.1.t: "多から1つへ"
  subjecthood_events.1.d_1: "[ROOT.GetCountry.GetAdjectiveNoFlag]国家による[SCOPE.sCulture('relevant_primary_culture').GetName]民族主義の推進は、[SCOPE.sCulture('relevant_minority_culture').GetName]の地域社会の間で強制同化の懸念を高めている。彼らは[SCOPE.sLaw('current_law_scope').GetName]を施行しようとするいかなる試みにも反対することを誓っている。"

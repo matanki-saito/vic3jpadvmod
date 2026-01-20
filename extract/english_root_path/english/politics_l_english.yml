@@ -210,7 +210,7 @@
  DATA_AMENDMENTS_TAX_MODIFIERS_HEADER: "Tax Modifiers:"
  DATA_AMENDMENTS_INSTITUTION_MODIFIERS_HEADER: "Institution Modifiers:"
  DATA_AMENDMENTS_SPONSOR_MODIFIERS_HEADER: "Sponsor Modifiers:"
- REPEAL_AMENDMENT_TOOLTIP: "#header Repeal the [Amendment.GetName] [concept_amendment]#!\n[ConcatIfNeitherEmpty('\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]"
+ REPEAL_AMENDMENT_TOOLTIP: "#header Repeal the [Amendment.GetName] [concept_amendment]#!\n[GetDesc(Amendment.Repeal)][ConcatIfNeitherEmpty('\n\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]"
  AMENDMENT_SPONSOR: "#title Sponsor:#!\n$TAB$[Amendment.GetSponsor.GetName]"
  AMENDMENT_PARENT_LAW_TYPE_TITLE: "#title [concept_parent_law]:#!"
  AMENDMENT_PARENT_LAW_TYPE: "[Amendment.GetParentLawType.GetName]"

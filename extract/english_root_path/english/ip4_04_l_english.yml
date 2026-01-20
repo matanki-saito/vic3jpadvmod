@@ -165,7 +165,7 @@ notification_pope_super_rejects_archbishop_of_toledo_effects_desc: "[concept_rel
 notification_pope_super_rejects_archbishop_of_toledo_tooltip: "#header $notification_pope_super_rejects_archbishop_of_toledo_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pope_super_rejects_archbishop_of_toledo_desc$\n$notification_pope_super_rejects_archbishop_of_toledo_effects_desc$"
 
 je_the_two_spains: "The Two Spains"
-je_the_two_spains_reason: "The #b Progress Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_liberal_pivot_factors_tt [SCOPE.ScriptValue('two_spains_liberal_display')|%0o]#!/#tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_conservative_pivot_factors_tt [SCOPE.ScriptValue('two_spains_conservative_display')|%0u]#! over time.\nThe #b Tension Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_tension_pivot_factors_tt [SCOPE.ScriptValue('two_spains_tension_pivot')|%0v]#! over time.\nHaving high #b Tension#! will cause increased [concept_activism], and an elevated chance of a [concept_coup].\n\n#italic "Here lies half of Spain. It died of the other half."#!\n—Mariano José de Larra\n\nSince the War of Independence, [ROOT.GetCountry.GetName] has been trapped in an oft-violent struggle between "the two Spains", the first loyal to Church and Crown, and the second to Enlightenment and Constitution. The irreconcilable hostility of the two sides, born of an underdeveloped liberal project, has entrenched a political order that relies upon the Army more than the ballot. If [ROOT.GetCountry.GetNameNoFormatting] is to find peace, it must choose which vision is to define it."
+je_the_two_spains_reason:1 "The #b Progress Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_liberal_pivot_factors_tt [SCOPE.ScriptValue('two_spains_liberal_display')|%0o]#!/#tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_conservative_pivot_factors_tt [SCOPE.ScriptValue('two_spains_conservative_display')|%0u]#! over time.\nThe #b Tension Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_tension_pivot_factors_tt [SCOPE.ScriptValue('two_spains_tension_pivot')|%0v]#! over time.\nHaving high #b Tension#! will cause increased [concept_activism], and an elevated chance of a [concept_coup].\n\n#italic "Here lies half of Spain. It died of the other half."#!\n—Mariano José de Larra\n\nSince the War of Independence, [ROOT.GetCountry.GetCustom('getNameIBEorSPA')] has been trapped in an oft-violent struggle between "the two Spains", the first loyal to Church and Crown, and the second to Enlightenment and Constitution. The irreconcilable hostility of the two sides, born of an underdeveloped liberal project, has entrenched a political order that relies upon the Army more than the ballot. If [ROOT.GetCountry.GetCustom('getNameIBEorSPANoFormatting')] is to find peace, she must choose which vision is to define her."
 two_spains_liberal_pivot_factors_tt: "Total Liberal Values: [GetPlayer.MakeScope.ScriptValue('two_spains_liberal_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_liberal_pivot')]#!"
 two_spains_conservative_pivot_factors_tt: "Total Conservative Values: [GetPlayer.MakeScope.ScriptValue('two_spains_conservative_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_conservative_pivot')]#!"
 two_spains_tension_pivot_factors_tt: "Total Tension: [GetPlayer.MakeScope.ScriptValue('two_spains_tension_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_tension_pivot')]#!"
@@ -176,6 +176,9 @@ je_two_spains_tension_bar: "The Two Spains - Tension"
 je_two_spains_tension_bar_desc: "Tension: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 two_spains_tension_over_50_tt: "#b Tension#! between #b $je_the_two_spains$#! is greater or equal to #v 50#! (currently [ROOT.GetCountry.MakeScope.Var('two_spains_tension_current_var').GetValue|v0])"
 has_had_successful_coup_whilst_conditions_are_fulfilled_tt: "Has a successful [concept_coup] whilst the following conditions are fulfilled: #indent_newline:3 "
+
+rootgetname: "[ROOT.GetCountry.GetName]"
+rootgetname_noformatting: "[ROOT.GetCountry.GetNameNoFormatting]"
 
 not_has_carlist_war_tt: "Has completed #b $je_the_first_carlist_war$#!"
 
@@ -224,22 +227,24 @@ TWO_SPAINS_BASE_VALUE_TT: "Base Tension"
 leader_has_liberal_or_progressive_ideology_tt: "[concept_leader] has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [concept_ideology]"
 leader_has_conservative_or_reactionary_ideology_tt: "[concept_leader] has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [concept_ideology]"
 
+IBE_var: "#v $IBE$#!"
+SPA_var: "#v $SPA$#!"
+
 two_spains.1.t: "The Two Spains"
-two_spains.1.d_1: "Since the War of Independence, [ROOT.GetCountry.GetName] has been subjected to a vicious whipsaw of reform and reaction. As liberal [ROOT.GetCountry.GetNameNoFormatting] takes the throne, conservative [ROOT.GetCountry.GetNameNoFormatting] musters to strike it down anew."
-two_spains.1.d_2: "Since the War of Independence, [ROOT.GetCountry.GetName] has been subjected to a vicious whipsaw of reform and reaction. As conservative [ROOT.GetCountry.GetNameNoFormatting] takes the throne, liberal [ROOT.GetCountry.GetNameNoFormatting] musters to strike it down anew."
+two_spains.1.d_1: "Since the War of Independence, [ROOT.GetCountry.GetCustom('getNameIBEorSPA')] has been subjected to a vicious whipsaw of reform and reaction. As liberal [ROOT.GetCountry.GetCustom('getNameIBEorSPANoFormatting')] takes the throne, conservative [ROOT.GetCountry.GetCustom('getNameIBEorSPANoFormatting')] musters to strike it down anew."
+two_spains.1.d_2: "Since the War of Independence, [ROOT.GetCountry.GetName] has been subjected to a vicious whipsaw of reform and reaction. As conservative [ROOT.GetCountry.GetCustom('getNameIBEorSPANoFormatting')] takes the throne, liberal [ROOT.GetCountry.GetCustom('getNameIBEorSPANoFormatting')] musters to strike it down anew."
 two_spains.1.f: "In a cottage on the outskirts of Barcelona, a woman with blistered hands wraps a woolen thread around the pegs of a loom. The factory required five meters by the end of the week, and as it demanded, it would receive.\n\nIn Andalucía, a man swings his hoe into the unforgiving soil. A line of a hundred stands on each side of him. None of them would ever know anything more.\n\nOutside a tent in Toledo, an officer walks along a line of conscripts. His head is full of gunsmoke, and theirs contain nothing at all. They would need to learn, he knew. How to forage, how to make one cartridge do the work of ten. If the moral truly outweighed the material, it would be proven here."
 two_spains.1.a: "Crown or Cortes—which future will come to be?"
 
 two_spains.2.t: "The Most Exalted"
-two_spains.2.d: "The spirit of urban, enlightened [ROOT.GetCountry.GetName] has triumphed over the [ROOT.GetCountry.GetNameNoFormatting] of Crown and Church. Wherever the future takes us, we shall follow unburdened by tradition."
+two_spains.2.d: "The spirit of urban, enlightened [ROOT.GetCountry.GetCustom('getSpainName')] has triumphed over the [ROOT.GetCountry.GetCustom('getSpainNameNoFormatting')] of Crown and Church. Wherever the future takes us, we shall follow unburdened by tradition."
 two_spains.2.f: ""The world never saw nobler audacity,\nNor ever saw a day of greater valor,\nThan the one when, inflamed, we felt the fire,\nExcite in Riego love for the homeland.\n\nSoldiers, the homeland calls us to the fight,\nLet us swear for her to conquer or die."\n\n— Evaristo Fernández de San Miguel, #italic Himno de Riego#!"
 two_spains.2.a: "Libertad!"
 two_spains.2.b: "The spirit of Colonel Riego stands tall."
 
-
 modifier_god_fatherland_fuero_king: "God, Fatherland, Fuero, King"
 two_spains.3.t: "The Spirit of Don Carlos"
-two_spains.3.d: "The spirit of rural, traditionalist [ROOT.GetCountry.GetName] has triumphed over the [ROOT.GetCountry.GetNameNoFormatting] of Enlightenment and Constitution. The Godless future once thought inevitable has been banished from our shores."
+two_spains.3.d: "The spirit of rural, traditionalist [ROOT.GetCountry.GetCustom('getSpainName')] has triumphed over the [ROOT.GetCountry.GetCustom('getSpainNameNoFormatting')] of Enlightenment and Constitution. The Godless future once thought inevitable has been banished from our shores."
 two_spains.3.f: ""Through Catholicism man recognized the law of order, and through man this order entered into society. The redemption regained for the moral world the laws which it had lost through prevarication and sin. Catholic dogma became the criterion for the sciences, Catholic ethics the guide for human actions, and Catholic charity the standard for the affections. Human conscience, freed from the corrosive action of error and sin, was thus enlightened in its interior, as in its exterior darkness. And, guided bv the light of these three criterions, was restored to the felicity of lost innocence."\n\n— Juan Donoso Cortés, #italic Essays on Catholicism, Liberalism, and Socialism#!" # Translated by Madeleine Yinton Goddard
 two_spains.3.a: "For God, Fatherland, and King, we stand triumphant."
 two_spains.3.b: "Revelation will set the world right again."
@@ -508,6 +513,9 @@ has_completed_uk_je_tt: "Has completed #v $je_portugal_united_kingdom$#! [concep
 je_portugal_united_kingdom: "The United Kingdom"
 je_portugal_united_kingdom_reason: "From 1807 to 1821, the court of [ROOT.GetCountry.GetName] ruled from Rio de Janeiro. In an attempt to accomodate [SCOPE.sCountry('brazil_scope').GetAdjective] concerns, King João VI elevated #b $BRZ$#! to the status of a co-equal Kingdom, forming the #b United Kingdom of Portugal, Brazil, and the Algarves#!. Though the independence of #b $BRZ$#! ended the first United Kingdom, #b $POR$#! and #b $BRZ$#! were, soon after, placed under a brief personal union under King and Emperor Pedro IV and I.\n\nThe recent resurgence of $POR_ADJ$ power, and current positive atmosphere between us and our former colony, have raised hopes of restoring the #b United Kingdom#!. If the #b $BRZ_ADJ$#! succession laws are amended, these hopes may become a reality.\n\nWhilst this [concept_journal_entry] is active, we will be able to sign a [concept_treaty] to $amend_succession$ with [SCOPE.sCountry('brazil_scope').GetName], laying the groundwork for a future [concept_personal_union]."
 
+por_restoring_union_tt: "Is seeking a forceful restoration of the $POR_ADJ$-$BRZ_ADJ$ Union"
+por_not_restoring_union_tt: "Is #b not#! seeking a forceful restoration of the $POR_ADJ$-$BRZ_ADJ$ Union"
+
 portugal_ruler_not_in_line_tt: "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] is #b not#! in line to the [SCOPE.sCountry('brazil_scope').GetAdjective] throne"
 portugal_ruler_in_line_tt: "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] is in line to the [SCOPE.sCountry('brazil_scope').GetAdjective] throne"
 portugal_ruler_in_line_nominal_tt: "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] is #tooltippable;tooltip:[GetPlayer.GetTooltipTag],brazilian_succession_explanation_tt nominally#! in line to the [SCOPE.sCountry('brazil_scope').GetAdjective] throne"
@@ -529,9 +537,20 @@ lusofonia.2.b: "We will stand on our own merits."
 
 lusofonia.3.t: "Pluricontinental"
 lusofonia.3.d: "Through shrewd diplomacy, we have retrieved what was once thought irrecoverably lost to us. [SCOPE.sCountry('portugal_scope').GetName] and [SCOPE.sCountry('brazil_scope').GetName] are once more bound together in trans-oceanic matrimony."
+lusofonia.3.d2: "Through a decisive show of force, we have retrieved what was once thought irrecoverably lost to us. [SCOPE.sCountry('portugal_scope').GetName] and [SCOPE.sCountry('brazil_scope').GetName] are once more bound together in eternal union."
 lusofonia.3.f: "Antônio stood with his arms behind his back, watching the artist scratch away at the drafting paper. What had been rough shapes were now resolving themselves into something more detailed—two women draped in the flags of the United Kingdom, the Southern Cross in the sky, a pair of angelic wings. When the charcoal pencil had finished the first pass over their faces, he cleared his throat.\n\n"Hm?" the artist said, eyes still fixated on his work.\n\n"Do they have to be kissing quite so... passionately?"\n\n"Yes," replied the artist. "I assure you, it is absolutely imperative.""
 lusofonia.3.a: "Let our bonds be stronger than ever before."
 lusofonia.3.b: "Ours is the Fifth Empire, and the greatest of all."
+
+lusofonia.4.t: "The Republic of the Sword"
+lusofonia.4.d: "On the eve of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName]'s accession to the throne of [SCOPE.sCountry('brazil_scope').GetName], the [SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting] [SCOPE.gsInterestGroup('brz_armed_forces').GetName] have made a grab for power. They have proclaimed a Republic, and sworn to defend the country against any would-be foreign ruler."
+lusofonia.4.f: "The Ambassador's face twitched as he read the telegram. It was too cold. The fireplace blazed behind its pink marble hearth, but he could no longer feel it.\n\n"Not here," he said to the empty room. "Not now. Not like this. It's been far too long..."\n\nThe cold was replaced by something white-hot. He stood up, strode across the room, and flung open the door."
+lusofonia.4.a: "Call for the Naval Minister."
+lusofonia.4.b: "Anchors aweigh! We end this here and now."
+lusofonia.4.c: "We have done all we can."
+
+restore_union_play_tt: "We will have #v 5 years#! to launch a $dp_restore_union$ [concept_diplomatic_play] against [SCOPE.sCountry('brazil_scope').GetName]"
+abandon_union_tt: "The #v $je_portugal_united_kingdom$#! [concept_journal_entry] will be dismissed"
 
 modifier_portugal_transoceanic_empire: "Pluricontinentalismo"
 modifier_brazil_transoceanic_empire: "Pluricontinentalismo"
@@ -608,7 +627,7 @@ independence.2.g: "It was the proletariat that earned our victory."
 independence.2.h: "[ROOT.GetCountry.GetName] will be guided by divine providence."
 
 je_spain_provisional_government: "[ROOT.GetCountry.GetCustom('spa_provisional_government_loc')]"
-je_spain_provisional_government_reason: "[ROOT.GetCountry.GetCustom('spa_provisional_government_reason_loc')] With the Spanish throne made empty, the newly-declared Provisional Government has set itself to the task of finding a candidate to serve as King."
+je_spain_provisional_government_reason: "[ROOT.GetCountry.GetCustom('spa_provisional_government_reason_loc')] With the [ROOT.GetCountry.GetAdjectiveNoFormatting] throne made empty, the newly-declared Provisional Government has set itself to the task of finding a candidate to serve as King."
 je_spain_provisional_government_reason_snippet: "A military revolt has toppled the unpopular [ROOT.GetCountry.GetCustom('spa_couped_dynasty_loc')] dynasty, and sent the former rulers of [ROOT.GetCountry.GetName] scurrying off into exile."
 je_spain_provisional_government_reason_snippet_2: "The short-lived Republican experiment in [ROOT.GetCountry.GetName] has been toppled, and a government of committed royalists brought into power."
 
@@ -1149,3 +1168,5 @@ je_spain_glorious_revolution_dummy_reason: "N/A"
 
 has_gov_regency_tt: "Has an active #b $gov_regency_ethiopia_ras$#!"
 je_glorious_revolution_has_gov_regency_not_tt: "Does #b not#! have an active #b $gov_regency_ethiopia_ras$#! #!" # Trailing formatting close is intentional
+
+ruler_is_not_ferdinand_i_tt: "[concept_ruler] is #b not#! $Ferdinand$ $von_Habsburg_Lothringen$"

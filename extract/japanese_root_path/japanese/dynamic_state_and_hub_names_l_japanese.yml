@@ -1482,6 +1482,11 @@
  HUB_NAME_STATE_DELVIDEK_farm_serbian: "ヴェリキ・ベチケレク"
  HUB_NAME_STATE_DELVIDEK_wood_serbian: "サバドカ"
  HUB_NAME_STATE_DELVIDEK_mine_serbian: "パンチェヴォ"
+ ### Western Serbia
+ #Western Serbia - German
+ HUB_NAME_STATE_WESTERN_SERBIA_city_german: "ベオグラード"
+ #Western Serbia - Serbian
+ HUB_NAME_STATE_WESTERN_SERBIA_city_serbian: "ベオグラード"
  ### Dobrudja
  #Dobrudja - Turkish
  STATE_DOBRUDJA_turkish: "ドブロジャ"

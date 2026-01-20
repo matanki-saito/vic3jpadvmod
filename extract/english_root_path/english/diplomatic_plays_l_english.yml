@@ -637,3 +637,13 @@
  war_goal_enforce_treaty_article_type_desc: "Force a [concept_country] to sign a [concept_treaty] containing a specific [concept_article]."
  war_goal_enforce_treaty_article: "Enforce [WAR_GOAL_DRAFT.GetArticleType.GetNameNoFormatting]"
  war_goal_enforce_treaty_article_desc: "• Force [WAR_GOAL_DRAFT.GetTarget.GetName] to sign a [concept_treaty] containing the [WAR_GOAL_DRAFT.GetArticleType.GetName] [concept_article]"
+
+ war_goal_restore_union_type_name: "Restore Union"
+ war_goal_restore_union_type_desc: "Force another [concept_country] to restore our [concept_ruler] to their throne."
+ war_goal_restore_union:0 "Restore [concept_personal_union]"
+ war_goal_restore_union_desc: "[WAR_GOAL_DRAFT.GetHolder.GetName] forces [WAR_GOAL_DRAFT.GetTarget.GetName] to restore the [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] to their throne."
+ war_goal_restore_union_sway_desc: "Try to convince [WAR_GOAL_DRAFT.GetHolder.GetName] to join your side by forcing [WAR_GOAL_DRAFT.GetTarget.GetName] to restore the [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] to their throne."
+
+ dp_restore_union:0 "$war_goal_restore_union_type_name$"
+ dp_restore_union_tooltip:1 "#header Start a $dp_restore_union$ [concept_diplomatic_play]#!\n$TOOLTIP_DELIMITER$\n$dp_restore_union_desc$"
+ dp_restore_union_desc:0 "Sets the initiating [concept_war_goal] to force the targeted [concept_country] to restore the [WAR_GOAL_DRAFT.GetHolder.GetAdjectiveNoFormatting] [concept_ruler] to their throne."

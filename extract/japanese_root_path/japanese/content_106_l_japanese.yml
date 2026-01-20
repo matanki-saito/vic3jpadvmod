@@ -200,7 +200,7 @@
  caucasuswar.8.f: "これらの土地は我々のものであり、絶対的な正義をもって統治すべきである。我々は公正な国家運営に努めているため、国民を公平に扱い、我が国を訪れる人々の生命と財産を尊重する。"
  caucasuswar.8.a: "この紛争を関心を持って注視しよう。"
  caucasuswar.8.b: "我々には関与する理由がない。"
- circassia_decision_tt: "[SCOPE.sCountry('circassia_scope').GetAdjective]に、#bold 決定#!を通して、[Concept('concept_recognized_power','Recognition')]を申し出ることができるだろう。"
+ circassia_decision_tt: "[SCOPE.sCountry('circassia_scope').GetAdjective]の州に、#bold ディシジョン#!を通して、[Concept('concept_recognized_power','承認')]を申し出ることができるだろう。"
  caucasuswar.9.t: "イマームの使者"
  caucasuswar.9.d: "前[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の死と、多数の[SCOPE.gsInterestGroup('devout_scope').GetName]からの要請を受け、[SCOPE.sCountry('imamate_scope').GetName]は国家間の絆をさらに深め、[ROOT.GetCountry.GetName]の闘争を導くために、特に優れたナーイブを派遣した。"
  caucasuswar.9.f: "道を照らす師を求める東方への呼び声が聞き届けられてから3ヵ月が経った時、巨人のような存在感と、炎の嵐のような意志を持つ男が到着した。"

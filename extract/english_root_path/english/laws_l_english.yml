@@ -70,8 +70,14 @@
  ideology_carlist: "Carlist"
  ideology_carlist_desc: "#lore This leader upholds the line of Infante Carlos' claim to the Spanish throne, supporting a traditionalist monarchy and rejecting modernist notions of popular sovereignty and constitutionalism. #!"
 
+ ideology_carlist_2: "$ideology_carlist$"
+ ideology_carlist_2_desc: "$ideology_carlist_desc$"
+
  ideology_miguelist: "Miguelist"
  ideology_miguelist_desc: "#lore This leader supports an absolute monarchy founded upon Catholic values. They reject the outcome of the Liberal Wars, which removed the traditionalist King Miguel I from the throne of Portugal. #!"
+
+ ideology_miguelist_2: "$ideology_miguelist$"
+ ideology_miguelist_2_desc: "$ideology_miguelist_desc$"
 
  ideology_ilustrado_leader: "Ilustrado"
  ideology_ilustrado_leader_desc: "#lore This erudite leader seeks secularization of the parishes in the Philippines, as well as political and economic reforms that are equitable to all. #!"
@@ -151,6 +157,9 @@
 
  ideology_carlist_ig: "Carlist"
  ideology_carlist_ig_desc: "#lore This group supports a traditionalist monarchy, rejecting modernist notions of popular sovereignty and constitutionalism. #!"
+
+ ideology_carlist_ig_2: "$ideology_carlist_ig$"
+ ideology_carlist_ig_2_desc: "$ideology_carlist_ig_desc$"
 
  ideology_moderantist: "Moderantist"
  ideology_moderantist_desc: "#lore This group has adopted a moderate liberal outlook, favoring cooperation between the monarchy and an elected chamber dominated by the landowning oligarchy.#!"
@@ -309,6 +318,9 @@
 
  liberal_and_egalitarian_amended_tt: "The [GetIdeology('ideology_liberal').GetName] and [GetIdeology('ideology_egalitarian').GetName] [Concept('concept_ideology','$concept_ideologies$')]' stances on the $lawgroup_rights_of_women$ will change"
 
+ carlist_amended_tt: "The [GetIdeology('ideology_carlist').GetName] [concept_ideology]'s stances on the $lawgroup_economic_system$ and $lawgroup_distribution_of_power$ will change"
+ miguelist_amended_tt: "The [GetIdeology('ideology_miguelist').GetName] [concept_ideology]'s stances on the $lawgroup_economic_system$ and $lawgroup_distribution_of_power$ will change"
+
  ideology_russian_patriarch:0 "Russian Orthodox Patriarchy"
  ideology_russian_patriarch_desc:0 "#lore The Orthodox Patriarchy sees itself as one of the three pillars of the country, that the Tsar is above all and that the peasants deserve be serfs.#!"
 
@@ -448,8 +460,14 @@
  ideology_carlist_movement: "Carlist"
  ideology_carlist_movement_desc: "#lore This movement upholds the line of Infante Carlos' claim to the Spanish throne, supporting a traditionalist monarchy and rejecting modernist notions of popular sovereignty and constitutionalism#!"
 
+ ideology_carlist_movement_2: "$ideology_carlist_movement$"
+ ideology_carlist_movement_2_desc: "$ideology_carlist_movement_desc$"
+
  ideology_miguelist_movement: "Miguelist"
  ideology_miguelist_movement_desc: "This movement supports an absolute monarchy founded upon Catholic values. They reject the outcome of the Liberal Wars, which removed the traditionalist King Miguel I from the throne of Portugal."
+
+ ideology_miguelist_movement_2: "$ideology_miguelist_movement$"
+ ideology_miguelist_movement_2_desc: "$ideology_miguelist_movement_desc$"
 
  ideology_slave_revolt_movement: "$ideology_anti_slavery$"
  ideology_slave_revolt_movement_desc: "#lore This movement is made up of slaves that wish to emancipate themselves by force of arms.#!"

@@ -375,6 +375,12 @@
  ag_expiring_obligations_desc:0 "We are owed [Concept('concept_obligation', '$concept_obligations$')] that will expire soon."
  ag_expiring_obligations_tooltip:0 "#header $ag_expiring_obligations_name$#!\n$TOOLTIP_DELIMITER$\n$ag_expiring_obligations_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
 
+ ag_secession_growing_name: "$alert_secession_growing_alert_name$"
+ ag_secession_growing_desc: "$alert_secession_growing_alert_desc$"
+ ag_secession_growing_alert_name: "$alert_secession_growing_alert_name$"
+ ag_secession_growing_alert_desc: "$alert_secession_growing_alert_desc$"
+ ag_secession_growing_tooltip: "#header $ag_secession_growing_alert_name$#!\n$TOOLTIP_DELIMITER$\n$ag_secession_growing_alert_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+
  ag_market_goods_shortages_name:0 "[concept_shortage]"
  ag_market_goods_shortages_desc:0 "There are [Concept('concept_shortage', '$concept_shortages$')] in our [concept_market]."
  ag_market_goods_shortages_tooltip:0 "#header $ag_market_goods_shortages_name$#!\n$TOOLTIP_DELIMITER$\n$ag_market_goods_shortages_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"

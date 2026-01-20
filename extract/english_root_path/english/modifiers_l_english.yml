@@ -538,6 +538,8 @@
  insurrectionary_ig:0 "Insurrectionary Interest Group"
  insurrectionary_ig_desc:1 "Effects while plotting a [concept_revolution]"
 
+ INSURRECTIONARY_CARLISTS: "Ongoing Carlist War"
+
  secession_lost_state:0 "Failed secession"
  secession_lost_state_desc:0 "This [concept_state] participated in a secession that was put to rest"
 
