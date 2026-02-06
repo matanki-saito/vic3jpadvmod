@@ -2959,7 +2959,7 @@
  country_economic_dependence_on_overlord_add_desc:0 "[concept_overlord]への[concept_economic_dependence]に対する増減補正です"
  country_acceptance_primary_culture_add:0 "主要文化からの受容"
  country_acceptance_primary_culture_add_desc:0 "[concept_culture]が[concept_country][concept_primary_cultures]と同じ場合に、[concept_pop]が影響する[concept_acceptance]の値です"
- country_acceptance_shared_heritage_trait_add:0 "伝統特性からの受容"
+ country_acceptance_shared_heritage_trait_add:0 "系統特性からの受容"
  country_acceptance_shared_heritage_trait_add_desc:0 "[concept_culture]の[concept_heritage_trait]が[Concept('concept_country','$concept_country_possessive$')][concept_primary_cultures]のどれかと同じだった場合に、[concept_pop]が影響する[concept_acceptance]の値です"
  country_acceptance_state_religion_add:0 "国教からの受容"
  country_acceptance_state_religion_add_desc:0 "[concept_religion]が[concept_country][concept_state_religion]と同じ場合に、[concept_pop]が影響する[concept_acceptance]の値です"
