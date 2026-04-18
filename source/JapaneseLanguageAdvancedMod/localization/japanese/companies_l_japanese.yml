@@ -262,7 +262,7 @@
  COMPANY_HEADQUARTER_STATE:0 "本社所在地 : [Company.GetState.GetName]"
  COMPANY_TYPE_HEADQUARTER_STATE:0 "本社の候補地 : [CompanyType.GetPotentialState.GetCountry.GetFlagTextIcon][CompanyType.GetPotentialState.GetName]"
  COMPANY_BUILDING_TYPE_LIST_ITEM:0 "[BUILDING_TYPE.GetName]"
- COMPANY_CANNOT_ESTABLISH_BY_COMPANY:0 "[Country.GetName]のような[GetSubjectType('subject_type_chartered_company').GetName]を設立することは#b できません#!"
+ COMPANY_CANNOT_ESTABLISH_BY_COMPANY:0 "[Country.GetName]は[GetSubjectType('subject_type_chartered_company').GetName]なので設立#b できません#!"
  COMPANY_FASTPROSPERITY_IS_ACTIVE:0 "\"fastprosperity\"が有効です"
  COMPANY_PRODUCING_PRESTIGE_GOODS_HEADER:0 "[SelectLocalization(Company.IsProducingPrestigeGoods,'COMPANY_PRESTIGE_GOODS_ENABLED','COMPANY_PRESTIGE_GOODS_DISABLED')]"
  COMPANY_PRESTIGE_GOODS_DISABLED:0 "@red_cross! $PRESTIGE_GOODS_CONCEPT$ (#n 無効#!) "
