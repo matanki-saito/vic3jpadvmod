@@ -1601,7 +1601,7 @@
  revolution_pulse_events.32.b:0 "[SCOPE.sReligion('minority_religion').GetName]の周囲に兵士を配置せよ。"
  revolution_pulse_events.32.c:0 "[SCOPE.sReligion('majority_religion').GetNameNoFormatting]の懸念事項のいくつかに対処しよう。"
  revolution_pulse_events.33.t:0 "貪欲は善なり"
- revolution_pulse_events.33.d:0 "[SCOPE.sCharacter('industrialists_ig_leader').GetFullName]と[SCOPE.sState('greed_is_good_state').GetName]の[SCOPE.gsInterestGroup('instructors_ig').GetName]から、従順な政府が設立されるまでは、すべての産業生産を停止するという宣言が出されている。"
+ revolution_pulse_events.33.d:0 "[SCOPE.sCharacter('industrialists_ig_leader').GetFullName]と[SCOPE.sState('greed_is_good_state').GetName]の[SCOPE.gsInterestGroup('industrialists_ig').GetName]から、従順な政府が設立されるまでは、すべての産業生産を停止するという宣言が出されている。"
  revolution_pulse_events.33.f:0 "敵対的買収とは、簡単に言えば、大企業が小さな会社の意に反し、その小さな会社を買収することである。十分に大きな企業にとって、邪魔な政府は、合併される別の会社に過ぎない。ただし、その企業はすべてのルールを書くことができるというだけだ。\n\n東インド貿易会社を見ればわかるだろう？"
  revolution_pulse_events.33.a:0 "最低限の操業を行うよう交渉する。"
  revolution_pulse_events.33.b:0 "新工場を開設し、管理者を置く。"
