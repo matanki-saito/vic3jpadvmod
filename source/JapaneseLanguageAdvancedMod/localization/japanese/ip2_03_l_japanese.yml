@@ -376,3 +376,4 @@
  priestly_polluted_water:0 "汚染水のタンク"
  secession_war_in_progress_tt:0 "[Concept('concept_political_movement','$movement_cultural_minority$')]が[Concept('concept_secession','Seceding')]"
  owns_bombay_province_tt:0 "都市「$HUB_NAME_STATE_BOMBAY_city$」を保有している"
+ bureaucrats_no_shortage_trigger:0 "[ROOT.GetCountry.GetAdjectiveNoFlag]の[concept_bureaucracy]が#v 0#!以上であり、かつこの国が[concept_bureaucracy]不足に陥るような状況#bold ではない#!"

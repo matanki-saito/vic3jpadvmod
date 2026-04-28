@@ -235,3 +235,6 @@
  notification_manila_cathedral_rebuilt_tooltip:0 "#header $notification_manila_cathedral_rebuilt_name$#!\n$TOOLTIP_DELIMITER$\n$notification_manila_cathedral_rebuilt_desc$"
  seventh_manila_cathedral_loc:0 "7番目"
  eighth_manila_cathedral_loc:0 "8番目"
+ notification_filipino_mestizo_now_primary_culture_name:0 "[GetCulture('spanish').GetName]が[Concept('concept_primary_cultures','$concept_primary_culture$')]でなくなりました"
+ notification_filipino_mestizo_now_primary_culture_desc:0 "我が国はもはや$SPA_ADJ$の支配下にはなく、[GetCulture('filipino_mestizo').GetName]が我が国の[Concept('concept_primary_cultures','$concept_primary_culture$')]になりました。"
+ notification_filipino_mestizo_now_primary_culture_tooltip:0 "#header $notification_filipino_mestizo_now_primary_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_mestizo_now_primary_culture_desc$"

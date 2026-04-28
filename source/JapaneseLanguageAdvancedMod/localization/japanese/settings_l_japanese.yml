@@ -110,7 +110,7 @@
  OPTION_LEFT:0 "左揃え"
  OPTION_CENTERED:0 "中央揃え"
  OPTION_RIGHT:0 "右揃え"
- DYNAMIC_THEME:0 "ダイナミック"
+ DYNAMIC_THEME:0 "動的な国設定"
  DYNAMIC_THEME_DESC:0 "プレイした[concept_country]に基づき、自動で[ThemeCategory.GetName|v]のテーマを選択します"
  main_menu_image_theme:0 "メインメニュー画像"
  main_menu_image_theme_desc:0 "メインメニューの背景として表示されるアニメーション画像。"

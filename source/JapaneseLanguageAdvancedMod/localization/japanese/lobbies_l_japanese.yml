@@ -120,3 +120,7 @@
  appeasement_british_dictate_rejected_desc:0 "宗主国からの指令を拒否しています"
  appeasement_british_dictate_succeeded:0 "宗主国指令の実行完了"
  appeasement_british_dictate_succeeded_desc:0 "宗主国からの指令の実行を完了しています"
+ appeasement_orchestrate_coup_started:0 "[concept_coup]を指揮"
+ appeasement_orchestrate_coup_started_desc:0 "彼らの[concept_government]に対して[concept_coup]を指揮しました"
+ appeasement_orchestrate_coup_ended:0 "[concept_coup]に対する支持を撤回"
+ appeasement_orchestrate_coup_ended_desc:0 "彼らの[concept_government]に対する[concept_coup]の支持を撤回しました"

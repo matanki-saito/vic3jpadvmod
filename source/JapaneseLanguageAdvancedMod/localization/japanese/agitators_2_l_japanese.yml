@@ -487,7 +487,7 @@
  agitator_proof_modifier:0 "歴史の終焉？"
  yeet_agitator_events.3.t:0 "汝の労働の果実"
  yeet_agitator_events.3.d:0 "[ROOT.GetCountry.GetNameNoFlag]の新たな状況に満足しており、海外での生活がもたらす不確かさに向き合いたくない、あるいは直面することができないため、[SCOPE.sCharacter('yeeted_agitator_scope_3').GetFullName]は正式に政界から引退することを発表しました。"
- yeet_agitator_events.3.f:0 "「[SCOPE.sCharacter('yeeted_agitator_scope_3').GetSheHe]は去るのだな。噂が本当なのであれば、[SCOPE.sState('retirement_state_scope').GetFarmHubName]で絵を描き、酒を飲み、鶏を育てるらしい。どうやら人間を率いると、[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]が生み出したもっと単純な生き物も率いたくなるようだな」\n\n「[SCOPE.sCharacter('yeeted_agitator_scope_3').GetSheHe]はただ鶏が好きなのかもしれないぞ、[SCOPE.sCharacter('walter_scope').GetFirstNameNoFormatting]？」\n\n「その#bold 忌々しい#!口を閉じてろ、[SCOPE.sCharacter('donny_scope').GetFirstNameNoFormatting]」"
+ yeet_agitator_events.3.f:0 "「[SCOPE.sCharacter('yeeted_agitator_scope_3').GetSheHe]は去るのだな。噂が本当なのであれば、[SCOPE.sState('retirement_state_scope').GetFarmHubName]で絵を描き、酒を飲み、鶏を育てるらしい。どうやら人間を率いると、[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]が生み出したもっと単純な生き物も率いたくなるようだな」\n\n「[SCOPE.sCharacter('yeeted_agitator_scope_3').GetSheHe]はただ鶏が好きなのかもしれないぞ、[SCOPE.sCharacter('walter_scope').GetFirstNameNoFormatting]？」\n\n「その#bold 忌々しい#! 口を閉じてろ、[SCOPE.sCharacter('donny_scope').GetFirstNameNoFormatting]」"
  yeet_agitator_events.3.a:0 "どれだけ熱があっても、最後には冷めてしまうようだ。"
  yeet_agitator_events.3.b:0 "[SCOPE.sCharacter('yeeted_agitator_scope_3').GetHerHis]の思い出を称えようじゃないか。[ROOT.GetCountry.GetCapital.GetCityHubName]に胸像を作るというのはどうだ？"
  agitator_legacy_modifier:0 "扇動の遺産"

@@ -192,7 +192,7 @@
  serbia_med_fund_campaign_end_mod:0 "控えめな選挙活動による収穫"
  serbia_high_fund_campaign_end_mod:0 "過度な選挙活動による収穫"
  serbia_auth_fund_campaign_end_karadordevic_mod:0 "ライバルからわずかに屈辱を受けた"
- serbia_med_fund_campaign_end_karadordevic_mod:0 "ライバルから屈辱を受けた"
+ serbia_med_fund_campaign_end_karadordevic_mod:0 "ライバルから屈辱を受けました"
  serbia_high_fund_campaign_end_karadordevic_mod:0 "ライバルから激しく屈辱を受けた"
  je_the_balkan_league:0 "バルカン同盟"
  je_the_balkan_league_reason:0 "バルカン諸国がオスマン帝国の朝廷の支配から解放された今、彼らを完全に追い返すために同盟を結成するという合意がなされている。だがそういった合意が永久に続くことはない。そして、好機の猶予は限られている。\n\n[SCOPE.sStrategicRegion('balkans_scope').GetName]が、いつの日か真の住人たちの手に戻ること。それが我らすべての国の願いなのだ！"

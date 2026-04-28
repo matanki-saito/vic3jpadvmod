@@ -43,3 +43,4 @@
  SETTINGS_PAGE_ACCOUNT:0 "アカウント"
  SETTING_TELEMETRY_CONSENT:0 "オプションのテレメトリデータを送信する"
  SETTING_TELEMETRY_CONSENT_TOOLTIP:0 "#T テレメトリー同意\n#!オプションのテレメトリーデータをParadox Interactiveに送信することを許可します。"
+ OPTION_QUARTERYEAR:0 "3ヶ月に1度"

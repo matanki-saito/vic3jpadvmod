@@ -333,3 +333,5 @@
  mon_state_formation.20.e:0 "このことは誰にも知らせないでおこう。"
  mon_change_to_kingdom:0 "我が国が#v 王国#!となる"
  mon_no_change_tt:0 "我が国に変化は起こらない。"
+ modifier_royal_customs_respected:0 "王室の慣習を尊重"
+ modifier_xenophobic_backlash:0 "外国人排斥の反動"

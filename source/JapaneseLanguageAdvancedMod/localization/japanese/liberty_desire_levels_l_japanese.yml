@@ -72,3 +72,4 @@
  LIBERTY_DESIRE_OVERLORD_ARMY_POWER_PROJECTION_DIFFERENCE_10_0_NEGATIVE:0 "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]の宗主国である[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetOverlord.GetName]の[concept_army_power_projection]は[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]の#v 10.0倍#!より高い (現在#v [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.MakeScope.ScriptValue('overlords_overlord_army_projection_comparison')|v1]倍#!) "
  LIBERTY_DESIRE_WEEKLY_CHANGE_SOVEREIGNIST_IN_GOV:0 "[concept_government]内の[GetIdeology('ideology_sovereignist_leader').GetName]の[concept_character]"
  LIBERTY_DESIRE_WEEKLY_CHANGE_SLAVE_REVOLT:0 "奴隷反乱[concept_political_movement]の[concept_activism]および[concept_political_movement_support]"
+ LIBERTY_DESIRE_WEEKLY_CHANGE_OVERLORD_ISOLATIONISM:0 "宗主国が[GetLawType('law_isolationism').GetName]の[concept_law]を採用している"

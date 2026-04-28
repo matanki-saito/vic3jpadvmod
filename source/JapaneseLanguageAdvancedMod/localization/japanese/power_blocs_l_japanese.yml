@@ -628,3 +628,8 @@
  pb_kolovrat:0 "コロヴラト"
  pb_cross_tursas:0 "トゥルサス十字"
  pb_cross_finnic:0 "フィニック十字"
+ principle_group_navy:0 "海洋覇権"
+ principle_group_navy_desc:0 "[Concept('concept_power_bloc_member','$concept_power_bloc_members_short$')]は海上での優位性を確保し、[concept_trade]、領土、そして戦略的[Concept('concept_interest','$concept_interests$')]を保護するため、海軍キャパシティの増強と造船インフラの拡張に尽力します。"
+ principle_navy_1_desc:0 "$principle_group_navy_desc$"
+ principle_navy_2_desc:0 "$principle_group_navy_desc$"
+ principle_navy_3_desc:0 "$principle_group_navy_desc$"

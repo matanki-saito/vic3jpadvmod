@@ -48,3 +48,4 @@
  bulgaria_proclaim_empire:0 "ブルガリア帝国の宣言"
  bulgaria_proclaim_empire_desc:0 "ローマ帝国の首都であるコンスタンティノープルを掌握したことで、東方キリスト教諸国の頂点として、ブルガリア帝政の正統性と地位を確立することが遂に可能となる。"
  bulgarian_empire_tt:0 "我々は#v $dyn_c_bulgarian_empire$#!と呼ばれるようになり、新たな国旗とマップカラーが与えられる"
+ bulgarian_empire_claims_tt:0 "[ROOT.GetCountry.GetName]が[GetGeographicRegion('geographic_region_greater_bulgaria').GetName]の未所有の[concept_state]すべてに対し[concept_claim]を獲得する"

@@ -248,7 +248,7 @@
  election_contextual_events.3.tt.1:0 "非愛国的な誹謗中傷は大衆の目から遠ざけられます。"
  election_contextual_events.3.tt.2:0 "我々の努力も空しく情報が漏洩しました。"
  election_contextual_events.4.t:0 "誰がために鐘は鳴る"
- election_contextual_events.4.d:0 "[SCOPE.gsInterestGroup('decrepit_leader_ig').GetName]のリーダーである[SCOPE.sCharacter('decrepit_leader').GetFullName]老が、選挙期間中に予期せず天に召されました。[SCOPE.sParty('decrepit_leader_party').GetName]の顔ともいえる政治家が失われてしまったのです。今では誰もが[SCOPE.sCharacter('decrepit_leader').GetHerHis]の後任に関心をよせています。"
+ election_contextual_events.4.d:0 "[SCOPE.gsInterestGroup('decrepit_leader_ig').GetName]のリーダーである[SCOPE.sCharacter('decrepit_leader').GetFullName]老が、作戦途中で予期せず天に召されました。[SCOPE.sParty('decrepit_leader_party').GetName]の顔ともいえる政治家が失われてしまったのです。今では誰もが[SCOPE.sCharacter('decrepit_leader').GetHerHis]の後任に関心をよせています。"
  election_contextual_events.4.f:0 "「予期せずとな？ふん！あの老骨は主に召される予定がのびのびになっていただけだ。党に新風を吹き込む時がやって来たのだ！」"
  election_contextual_events.4.a:0 "人気はあるが無能な候補者を立てることにしよう。"
  election_contextual_events.4.b:0 "信念を持ちながらも、傲慢な若者にその座を与えよう。"
@@ -492,3 +492,4 @@
  colonial_administration_events.2.b:0 "植民地統治はもはや持続不可能だ。我々は多数派による支配を確立しなければならない。"
  most_european_pops_abandon_africa_tt:0 "多数の#bold ヨーロッパ#!系[Concept('concept_pop','$concept_pops$')]が[ROOT.GetCountry.GetName]から退避します"
  some_european_pops_abandon_africa_tt:0 "一部の#bold ヨーロッパ#!系[Concept('concept_pop','$concept_pops$')]が[ROOT.GetCountry.GetName]から退避します"
+ qing_does_not_own_all_han_states_tt:0 "[GetCulture('han').GetName]の[Concept('concept_homeland','$concept_homelands$')]をすべて保有して#b いない#!"

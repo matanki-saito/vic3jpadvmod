@@ -76,7 +76,7 @@
  obligation_events.5.f:0 "「誰もが母国で相応の機会を与えられているわけではない。我が国は野心的な国であり、[SCOPE.sCharacter('obligation_request_character').GetHerHis]の技術をこれまで以上に活用できる国だ」"
  obligation_events.5.a:0 "まさに我が軍に必要なものだ！"
  obligation_events.5.b:0 "恩義は一人の[SCOPE.sCharacter('obligation_request_character').GetWomanMan]の技術よりも価値がある。"
- obligation_events.6.t:0 "求められる[SCOPE.sCharacter('obligation_request_character').GetWomanMan]"
+ obligation_events.6.t:0 "求められる[SCOPE.sCharacter('obligation_request_character').GetWomanMan|U]"
  obligation_events.6.d:0 "[SCOPE.sC('obligation_request_sender').GetName]は、私たちが彼らに負っている恩義を使って、指揮官[SCOPE.sCharacter('obligation_request_character').GetFullName]を彼らの軍に従事させるよう求めています。"
  obligation_events.6.f:0 "「軍隊で国に貢献するというのは、あたかも単純な選択であるかのように語られることが多い。だが、もし、貴君が国に提供できる最高の奉仕が、他の国に奉仕することだとしたらどうだろうか？」"
  obligation_events.6.a:0 "それを得るために彼らのしたことに比べれば安いものだ！"

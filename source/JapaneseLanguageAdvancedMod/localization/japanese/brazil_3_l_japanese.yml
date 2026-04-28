@@ -85,4 +85,4 @@
  75_percent_of_upper_pops_assimilate_tt:0 "[ROOT.GetCountry.GetCapital.GetName]で[SCOPE.sCulture('old_south_american_culture').GetName]に属する[Concept('concept_upper_strata','上流階級')][Concept('concept_pop','$concept_pops$')]の#v 75%#!が[SCOPE.sCulture('new_national_culture').GetName][concept_culture]に同化する"
  75_percent_of_upper_pops_assimilate_global_tt:0 "この[concept_state]で[SCOPE.sCulture('old_south_american_culture').GetName]に属する[Concept('concept_upper_strata','上流階級')][Concept('concept_pop','$concept_pops$')]の#v 75%#!が[SCOPE.sCulture('new_national_culture').GetName][concept_culture]に同化する"
  is_university_gov_admin_or_urban_center_tt:0 "施設は[GetBuildingType('building_urban_center').GetName]、[GetBuildingType('building_university').GetName]、または[GetBuildingType('building_government_administration').GetName]である"
- is_barracks_or_naval_base_tt:0 "施設は[GetBuildingType('building_barrack').GetName]または[GetBuildingType('building_naval_base').GetName]である"
+ is_barracks_or_naval_administration_tt:0 "施設は[GetBuildingType('building_barrack').GetName]または[GetBuildingType('building_naval_administration').GetName]である"

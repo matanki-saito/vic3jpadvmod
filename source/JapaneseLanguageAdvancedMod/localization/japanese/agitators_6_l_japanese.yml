@@ -33,7 +33,7 @@
  agitator_legal_events.1.a:0 "言論抑圧法を認証するときが来たのかもしれない。"
  agitator_legal_events.1.b:0 "お喋りな愚か者を公然と批判する。"
  agitator_legal_events.2.t:0 "話者の言論抑圧"
- agitator_legal_events.2.d:0 "言論抑圧法を巧みに用いて…いや、乱用して、[SCOPE.sCharacter('opposing_agitator').GetFullName]の大義の支持者たちは[SCOPE.sLaw('current_law_scope').GetName]の提案に関するさらなる議論を停滞させた。"
+ agitator_legal_events.2.d:0 "言論抑圧法を巧みに用いて…いや、乱用して、[SCOPE.sCharacter('opposing_agitator').GetFullName]の大義の支持者たちは[SCOPE.sLaw('current_law_scop').GetName]の提案に関するさらなる議論を停滞させた。"
  agitator_legal_events.2.f:0 "「壇上の代表者に猿ぐつわをすることを求めます」\n\n「これでもう一口、義理の両親のお下品なものを食べずに済むのなら、一票を投じましょう。代表者の言論抑圧法に賛成の方は、私の左側にお座りください」"
  agitator_legal_events.2.a:0 "もしかしたら、その言論抑圧法を破棄する時期が来ているのかもしれない。"
  agitator_legal_events.2.b:0 "パリに頭絡を注文してやろう。"
