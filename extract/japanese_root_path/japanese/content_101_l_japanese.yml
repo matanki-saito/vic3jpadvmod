@@ -124,7 +124,7 @@
  modifier_expedition_rhino_hunt: "サイ狩りの戦利品"
  crime_events.1.t: "[SCOPE.sState('train_robbery_state').GetNameNoFormatting]の列車大強盗"
  crime_events.1.d: "[SCOPE.sState('train_robbery_state').GetName]全域で相次いで発生している命知らずなギャングたちによる列車強盗は、州の法律や秩序を脅かし、この地に住む裕福な人々の富に大きな打撃をもたらしている。"
- crime_events.1.f: "「奴らがやって来て客車を物色していった。そのうちの一人は指名手配犯のポスターで見たことがある。あれは間違いなく[SCOPE.sCharacter('suitable_name').GetLastNameNoFormatting]の [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')]だった」"
+ crime_events.1.f: "「奴らがやって来て客車を物色していった。そのうちの一人は指名手配犯のポスターで見たことがある。あれは間違いなく[SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting]の [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')]だった」"
  crime_events.1.a: "我々の高官たちが迅速に対処するだろう。"
  crime_events.1.b: "列車の一つや二つ何だと言うのか？"
  custom_gang: "ギャング"

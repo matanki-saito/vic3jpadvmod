@@ -70,7 +70,7 @@
 
  acw_followup_events.4.t:0 "Forty Acres and a Mule"
  acw_followup_events.4.d:0 "In the war against the secessionists, many enslaved people believed that once they were freed, they would have the right to own the land they had been forced to work on as slaves. People in [SCOPE.sState('land_redistribution_state').GetName] have pressed the issue with local authorities, who are turning to us for direction."
- acw_followup_events.4.f:0 ""Land! Land is what we need! I can't feed myself with a ballot box — give me the plot of land I've already been working on so I can feed my family.""
+ acw_followup_events.4.f:0 ""Land! Land is what we need! I can't feed myself with a ballot box—give me the plot of land I've already been working on so I can feed my family.""
  acw_followup_events.4.a:0 "Authorize the limited redistribution of land."
  acw_followup_events.4.b:0 "Economic measures are liable to cause trouble."
 
@@ -102,7 +102,7 @@
  wild_west.1.d:0 "A notorious gang of outlaws have been terrorizing the respectable settlements of [SCOPE.sState('bank_robbery_state').GetName]."
  wild_west.1.f:0 "The rough man holstered his resolver, kicking the deputy's body to the side. "I told them," he guffawed, "I told them that if I ever got free, the [SCOPE.GetRootScope.GetCountry.GetCustom('american_outlaw_gang')] would show them all what bad #Sreally#! means.""
  wild_west.1.a:0 "Let the local sheriff sort it out."
- wild_west.1.b:0 "Hire the Pinkertons — they know how to be rough."
+ wild_west.1.b:0 "Hire the Pinkertons—they know how to be rough."
  wild_west.1.c:0 "The guns of the national guard will stop the outlaws."
 
  wild_west.2.t:0 "Raids on the Iron Horse"
@@ -113,7 +113,7 @@
  wild_west.2.c:1 "Let's talk with [SCOPE.sCulture('native_people_infringed').GetName] leaders and make a deal."
 
  wild_west.3.t:0 "Gunfight at the Corral"
- wild_west.3.d:1 "Lawmen in [SCOPE.sState('OK_corral_state').GetName] have engaged in a shootout with several cowboys. The following investigation has revealed that the gunfight was likely due to a personal feud between American marshals and the citizens involved, rather than a pursuit of the law. People are demanding justice — against the lawmen."
+ wild_west.3.d:1 "Lawmen in [SCOPE.sState('OK_corral_state').GetName] have engaged in a shootout with several cowboys. The following investigation has revealed that the gunfight was likely due to a personal feud between American marshals and the citizens involved, rather than a pursuit of the law. People are demanding justice—against the lawmen."
  wild_west.3.f:1 ""Come on, does anyone else want to try their luck? See this badge? It means I'm in charge here! I'm justice! Now get moving, there's nothing to see here.""
  wild_west.3.a:0 "The Lawmen are the Law, and we cannot stop the Law."
  wild_west.3.b:0 "Recall the marshals from [SCOPE.sState('OK_corral_state').GetName] temporarily."
@@ -155,7 +155,7 @@
  acw_je_events.1.t2:0 "The Northern Declaration of Secession"
  acw_je_events.1.d1:1 "A convention of pro-slavery states have declared their independence from us as the [SCOPE.sCountry('csa_scope').GetName]. The Union has been challenged, but will not yield so easily."
  acw_je_events.1.d2:1 "A convention of abolitionist states have declared their independence from us as the [SCOPE.sCountry('fsa_scope').GetName]. The Union has been challenged, but will not yield so easily."
- acw_je_events.1.f1:1 ""In the momentous step which we have taken of dissolving our connection with the government of which we so long formed a part, it is but just that we should declare the prominent reasons which have induced our course.\n\nOur position is thoroughly identified with the institution of slavery — the great material interest of the world.""
+ acw_je_events.1.f1:1 ""In the momentous step which we have taken of dissolving our connection with the government of which we so long formed a part, it is but just that we should declare the prominent reasons which have induced our course.\n\nOur position is thoroughly identified with the institution of slavery—the great material interest of the world.""
  acw_je_events.1.f2:0 ""In the momentous step which we have taken of dissolving our connection with the government of which we so long formed a part, it is but just that we should declare the prominent reasons which have induced our course.\n\nOur position is thoroughly identified with the institution of slavery - an institution of unparalleled evil that must be abolished.""
  acw_je_events.1.a:0 "A house divided against itself cannot stand. For the Union!"
  acw_je_events.1.b:0 "I would rather call our cause one of states' rights."

@@ -6,7 +6,7 @@ je_unify_afghanistan_lobby: "#v Unlocked by DLC: Sphere of Influence#!\nThe succ
 #Austria:
 je_matter_of_hungary_lobby:1 "Austrian control of Hungary must be maintained, whether through iron rule or compromise."
 je_metternich_lobby: "#v Unlocked by DLC: National Awakening#!\nMaintain the ideals of the Chancellor Klemens von Metternich, or allow his carefully architectured conservative order to fall by the wayside."
-je_austrian_neo_absolutism_lobby: "#v Unlocked by DLC: National Awakening#!\nThe threat of a revolution from below has necessitated that Vienna conduct its own from above. Through the establishment of a centralized, rational, and effective state apparatus — staffed by loyal and capable bureaucrats — the country will be modernized to meet the challenges of this day and age."
+je_austrian_neo_absolutism_lobby: "#v Unlocked by DLC: National Awakening#!\nThe threat of a revolution from below has necessitated that Vienna conduct its own from above. Through the establishment of a centralized, rational, and effective state apparatus—staffed by loyal and capable bureaucrats—the country will be modernized to meet the challenges of this day and age."
 
 #Argentina, and Chile
 je_patagonia_lobby: "The southern reaches of the continent remain outside of the control of any nation. Though the native population will certainly not make it easy, it is imperative that we secure this territory before it falls into the hands of our rivals."
@@ -83,6 +83,7 @@ je_risorgimento_lobby: "As nationalism sweeps through Europe, figures both withi
 #Japan
 je_meiji_restoration_lobby: "The Shogunate has ruled over an isolated and stagnant Japan for centuries. If we wish to have a place in the rapidly modernizing world, we must restore power to the rightful Emperor."
 je_meiji_economy_lobby: "If we stick to the path of tradition, it is only a matter of time before foreign powers defeat and subjugate us. Instead, we must industrialize our nation, adopt new ways of governing, and master new arts of war; so we rise as a great power ourselves."
+je_ryukyu_rivalry_lobby: "For centuries, the Ryukyu Kingdom has been caught between two great powers. While nominally a tributary of China, it has also paid allegiance to Japan following the Satsuma conquest, creating a delicate balance of influence."
 
 #Korea
 je_donghak_movement_lobby: "#v Unlocked by DLC: Sphere of Influence#!\nDonghak, or Eastern Learning, has begun to spread amongst the peasants of Korea. Riding a wave of fury at the opening of the country to the outside world. They advocate for equality and rights for all, and a rejection of foreign influence. It may be only a matter of time before the movement erupts in open rebellion."

@@ -51,6 +51,13 @@
  pmg_base_building_subsistence_pasture:1 "$pm_base$"
  pmg_base_building_subsistence_fishing_village:0 "$pm_base$"
  pmg_base_building_subsistence_rice_farm:0 "$pm_base$"
+ 
+ building_naval_logistics_center: "Naval Logistics Center"
+ building_land_logistics_center: "Land Logistics Center"
+ pmg_naval_logistics_center: "$building_naval_logistics_center$"
+ pmg_land_logistics_center: "$building_land_logistics_center$"
+ pm_basic_naval_logistics_center: "$pm_base$"
+ pm_basic_land_logistics_center: "$pm_base$"
 
  pm_default_building_eiffel_tower:0 "Default Production"
  pm_default_building_cristo_redentor:0 "Default Production"
@@ -275,6 +282,8 @@
  pm_simple_farming:0 "Simple Farming"
  pm_simple_farming_building_rice_farm:0 "Simple Farming"
  pm_intensive_farming:0 "Intensive Farming"
+ pm_herring_meal_farming:0 "Fish Fertilizers"
+ pm_herring_meal_farming_building_rice_farm:0 "$pm_herring_meal_farming$"
  pm_soil_enriching_farming:0 "Soil-Enriching Farming"
  pm_soil_enriching_farming_building_rice_farm:0 "Soil-Enriching Farming"
  pm_fertilization:0 "Fertilizers"
@@ -392,6 +401,8 @@
  pm_training_streamlining:0 "Training Method Streamlining"
  pm_nco_incorporation:0 "NCO Incorporation"
  pm_mobile_warfare_tactics: "Mobile Warfare Tactics"
+
+ pm_samurai_training: "Samurai Training"
  
  ###
  
@@ -883,6 +894,14 @@
  pmg_airship_mooring_post:0 "Airships"
  pm_no_airships:0 "No Airships"
  pm_airship_mooring_post:0 "Airship Mooring Post"
+
+ pmg_base_building_naval_administration: "Recruitment"
+ pm_simple_sailor_recruitment: "Simple Recruitment"
+ 
+ pmg_base_building_naval_fortification: "Fortification"
+ pm_naval_fortification_basic: "Basic Fortification"
+ pm_naval_fortification_reinforced: "Reinforced Fortification"
+ pm_naval_fortification_advanced: "Advanced Fortification"
 
  pm_monument_prestige_only:0 "Prestige"
  pm_monument_prestige_only_vatican_city:0 "$pm_monument_prestige_only$"

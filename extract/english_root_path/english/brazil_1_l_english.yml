@@ -153,7 +153,7 @@
  brazil_navy.4.a: "Splendid!"
  dom_key: "Dom"
  dona_key: "Dona"
- brz_navy_loyalists: "All [Concept('concept_state', '$concept_states$')] with at least level #Bold 5#! [GetBuildingType('building_naval_base').GetName] get:"
+ brz_navy_loyalists: "All [Concept('concept_state', '$concept_states$')] with at least level #Bold 5#! [GetBuildingType('building_naval_administration').GetName] get:"
  
  # Age of Caudillos
  je_caudillo: "The Age of Caudillos"
@@ -243,7 +243,7 @@
  acre_dispute.1.a: "Acre is rightfully [ROOT.GetCountry.GetAdjective]"
  acre_dispute.3.t: "The Ten Thousand Acre Wood"
  acre_dispute.3.d: "[ROOT.GetCountry.GetName] has emerged victorious in the dispute over [SCOPE.sState('acre_state').GetName]. [ROOT.GetCountry.GetAdjective] settlers are ready to make the state their own."
- acre_dispute.3.f: "One pen swipe later, and it was done. Acre was now the mandated responsibility of [ROOT.GetCountry.GetNameNoFormatting]. Rivals — hopeful claimants and the prior caretakers alike — seethed at the [ROOT.GetCountry.GetAdjectiveNoFormatting] delegates’ naked glee."
+ acre_dispute.3.f: "One pen swipe later, and it was done. Acre was now the mandated responsibility of [ROOT.GetCountry.GetNameNoFormatting]. Rivals—hopeful claimants and the prior caretakers alike—seethed at the [ROOT.GetCountry.GetAdjectiveNoFormatting] delegates’ naked glee."
  acre_dispute.3.a: "Victory for [ROOT.GetCountry.GetName]!"
  acre_dispute.4.t: "An Unfavorable Resolution"
  acre_dispute.4.d: "Our efforts to seize the state of [SCOPE.sState('acre_state').GetName] have failed, and the opportunity has passed. [ROOT.GetCountry.GetName] can no longer claim sovereignty over the state."

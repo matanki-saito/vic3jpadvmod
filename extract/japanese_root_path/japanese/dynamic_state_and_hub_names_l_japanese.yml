@@ -146,8 +146,8 @@
  HUB_NAME_STATE_UPPER_SILESIA_city_polish: "オポレ"
  HUB_NAME_STATE_UPPER_SILESIA_port_polish: ""
  HUB_NAME_STATE_UPPER_SILESIA_mine_polish: "ホジュフ"
- HUB_NAME_STATE_UPPER_SILESIA_farm_polish: "オパバ"
- HUB_NAME_STATE_UPPER_SILESIA_wood_polish: "チェシン"
+ HUB_NAME_STATE_UPPER_SILESIA_farm_polish: "ラチブシュ"
+ HUB_NAME_STATE_UPPER_SILESIA_wood_polish: "リブニク"
  STATE_UPPER_SILESIA_german: "オーバーシュレジエン"
  STATE_UPPER_SILESIA_german_austrian: "エースタライヒシュ・シュレジエン"
  STATE_UPPER_SILESIA_czech_split: "チェコ・シレジア"
@@ -155,8 +155,8 @@
  HUB_NAME_STATE_UPPER_SILESIA_city_czech: "オポーレ"
  HUB_NAME_STATE_UPPER_SILESIA_port_czech: ""
  HUB_NAME_STATE_UPPER_SILESIA_mine_czech: "ホジュフ"
- HUB_NAME_STATE_UPPER_SILESIA_farm_czech: "オパヴァ"
- HUB_NAME_STATE_UPPER_SILESIA_wood_czech: "チェシン"
+ HUB_NAME_STATE_UPPER_SILESIA_farm_czech: "ラティボシュ"
+ HUB_NAME_STATE_UPPER_SILESIA_wood_czech: "リブニキ"
  STATE_LOWER_SILESIA_czech: "下シレジア"
  HUB_NAME_STATE_LOWER_SILESIA_city_czech: "ヴラティスラフ"
  HUB_NAME_STATE_LOWER_SILESIA_port_czech: ""
@@ -620,19 +620,16 @@
  #Leon
  STATE_LEON_spanish: "レオン"
  HUB_NAME_STATE_LEON_city_spanish: "レオン"
- HUB_NAME_STATE_LEON_port_spanish: "港"
  HUB_NAME_STATE_LEON_mine_spanish: "サベロ"
  HUB_NAME_STATE_LEON_farm_spanish: "サラマンカ"
  HUB_NAME_STATE_LEON_wood_spanish: "サモーラ"
  STATE_LEON_asturleonese: "レオン"
  HUB_NAME_STATE_LEON_city_asturleonese: "レオン"
- HUB_NAME_STATE_LEON_port_asturleonese: "港"
  HUB_NAME_STATE_LEON_mine_asturleonese: "サベル"
  HUB_NAME_STATE_LEON_farm_asturleonese: "サラマンカ"
  HUB_NAME_STATE_LEON_wood_asturleonese: "サモーラ"
  STATE_LEON_esperanto: "レオーノ"
  HUB_NAME_STATE_LEON_city_esperanto: "レオーノ"
- HUB_NAME_STATE_LEON_port_esperanto: "港"
  HUB_NAME_STATE_LEON_mine_esperanto: "サベーロ"
  HUB_NAME_STATE_LEON_farm_esperanto: "サラマンコ"
  HUB_NAME_STATE_LEON_wood_esperanto: "ザモーロ"
@@ -697,19 +694,16 @@
  #Aragon
  STATE_ARAGON_spanish: "アラゴン"
  HUB_NAME_STATE_ARAGON_city_spanish: "ザラゴザ"
- HUB_NAME_STATE_ARAGON_port_spanish: "港"
  HUB_NAME_STATE_ARAGON_mine_spanish: "カラタユー"
  HUB_NAME_STATE_ARAGON_farm_spanish: "テルエル"
  HUB_NAME_STATE_ARAGON_wood_spanish: "ウエスカ"
  STATE_ARAGON_aragonese: "アラゴン"
  HUB_NAME_STATE_ARAGON_city_aragonese: "ザラゴザ"
- HUB_NAME_STATE_ARAGON_port_aragonese: "港"
  HUB_NAME_STATE_ARAGON_mine_aragonese: "カラタユー"
  HUB_NAME_STATE_ARAGON_farm_aragonese: "テルエル"
  HUB_NAME_STATE_ARAGON_wood_aragonese: "ウエスカ"
  STATE_ARAGON_esperanto: "アラゴーノ"
  HUB_NAME_STATE_ARAGON_city_esperanto: "サラゴーソ"
- HUB_NAME_STATE_ARAGON_port_esperanto: "港"
  HUB_NAME_STATE_ARAGON_mine_esperanto: "カラタユード"
  HUB_NAME_STATE_ARAGON_farm_esperanto: "テルエーロ"
  HUB_NAME_STATE_ARAGON_wood_esperanto: "ウエスコ"
@@ -735,39 +729,29 @@
  #New Castile
  STATE_NEW_CASTILE_spanish: "カスティーリャ・ラ・ヌエバ"
  HUB_NAME_STATE_NEW_CASTILE_city_spanish: "マドリッド"
- HUB_NAME_STATE_NEW_CASTILE_port_spanish: "港"
  HUB_NAME_STATE_NEW_CASTILE_mine_spanish: "シウダー・レアル"
  HUB_NAME_STATE_NEW_CASTILE_farm_spanish: "トレド"
  HUB_NAME_STATE_NEW_CASTILE_wood_spanish: "クエンカ"
  #New Castile - German
  STATE_NEW_CASTILE_german: "新カスティーリャ"
- HUB_NAME_STATE_NEW_CASTILE_city_german: "マドリッド"
- HUB_NAME_STATE_NEW_CASTILE_port_german: "港"
- HUB_NAME_STATE_NEW_CASTILE_mine_german: "シウダー・レアル"
- HUB_NAME_STATE_NEW_CASTILE_farm_german: "トレド"
- HUB_NAME_STATE_NEW_CASTILE_wood_german: "クエンカ"
  STATE_NEW_CASTILE_esperanto: "カスティリーオ・ラ・ノーヴァ"
  HUB_NAME_STATE_NEW_CASTILE_city_esperanto: "マドリード"
- HUB_NAME_STATE_NEW_CASTILE_port_esperanto: "港"
  HUB_NAME_STATE_NEW_CASTILE_mine_esperanto: "ウルボ・レージャ"
  HUB_NAME_STATE_NEW_CASTILE_farm_esperanto: "トレード"
  HUB_NAME_STATE_NEW_CASTILE_wood_esperanto: "クエンコ"
  #Extremadura
  STATE_EXTREMADURA_spanish: "エストレマドゥーラ"
  HUB_NAME_STATE_EXTREMADURA_city_spanish: "バダホス"
- HUB_NAME_STATE_EXTREMADURA_port_spanish: "港"
  HUB_NAME_STATE_EXTREMADURA_mine_spanish: "プラセンシア"
  HUB_NAME_STATE_EXTREMADURA_farm_spanish: "メリダ"
  HUB_NAME_STATE_EXTREMADURA_wood_spanish: "カセレス"
  STATE_EXTREMADURA_asturleonese: "エストレマウラ"
  HUB_NAME_STATE_EXTREMADURA_city_asturleonese: "バダホ"
- HUB_NAME_STATE_EXTREMADURA_port_asturleonese: "港"
  HUB_NAME_STATE_EXTREMADURA_mine_asturleonese: "プラセンシア"
  HUB_NAME_STATE_EXTREMADURA_farm_asturleonese: "メリダ"
  HUB_NAME_STATE_EXTREMADURA_wood_asturleonese: "カセレス"
  STATE_EXTREMADURA_esperanto: "エクストレマドゥーロ"
  HUB_NAME_STATE_EXTREMADURA_city_esperanto: "バダホーソ"
- HUB_NAME_STATE_EXTREMADURA_port_esperanto: "港"
  HUB_NAME_STATE_EXTREMADURA_mine_esperanto: "プラスエンツィーオ"
  HUB_NAME_STATE_EXTREMADURA_farm_esperanto: "メリード"
  HUB_NAME_STATE_EXTREMADURA_wood_esperanto: "カセレーソ"
@@ -926,13 +910,13 @@
  STATE_ESTREMADURA_portuguese: "エストレマドゥーラ"
  HUB_NAME_STATE_ESTREMADURA_city_portuguese: "リジュボア"
  HUB_NAME_STATE_ESTREMADURA_port_portuguese: "セトゥーバル"
- HUB_NAME_STATE_ESTREMADURA_mine_portuguese: "港"
+ #HUB_NAME_STATE_ESTREMADURA_mine_portuguese: "Rio Maior"
  HUB_NAME_STATE_ESTREMADURA_farm_portuguese: "サンタレン"
  HUB_NAME_STATE_ESTREMADURA_wood_portuguese: "レイリア"
  STATE_ESTREMADURA_esperanto: "エストレマドゥーロ"
  HUB_NAME_STATE_ESTREMADURA_city_esperanto: "リスボーノ"
  HUB_NAME_STATE_ESTREMADURA_port_esperanto: "セトゥブアーロ"
- HUB_NAME_STATE_ESTREMADURA_mine_esperanto: "港"
+ #HUB_NAME_STATE_ESTREMADURA_mine_esperanto: "Rio Maior"
  HUB_NAME_STATE_ESTREMADURA_farm_esperanto: "サンタレーモ"
  HUB_NAME_STATE_ESTREMADURA_wood_esperanto: "レイリーオ"
  #Alentejo
@@ -1647,14 +1631,174 @@
  HUB_NAME_STATE_HUDAVENDIGAR_mine_greek: "ビテュニア"
  HUB_NAME_STATE_HUDAVENDIGAR_farm_greek: "パガイ"
  HUB_NAME_STATE_HUDAVENDIGAR_wood_greek: "パリオカストロン"
+ ## Japan
+ ### Sakhalin
+ #Sakhalin - Russian
+ STATE_SAKHALIN_russian_sakhalin_only: "サハリン"
+ STATE_SAKHALIN_russian_kuril_only: "クリル列島"
+ STATE_SAKHALIN_russian_sakhalin_and_kuril: "サハリンおよびクリル列島"
+ HUB_NAME_STATE_SAKHALIN_city_russian: "ウラジミロフカ"
+ HUB_NAME_STATE_SAKHALIN_port_russian: "コルサコフ"
+ HUB_NAME_STATE_SAKHALIN_mine_russian: "チフメネフスキー"
+ HUB_NAME_STATE_SAKHALIN_farm_russian: "オハ"
+ HUB_NAME_STATE_SAKHALIN_wood_russian: "アレクサンドロフスキー"
  #Sakhalin - Japanese
  STATE_SAKHALIN_japanese: "樺太"
+ STATE_SAKHALIN_japanese_kuril_only: "千島列島"
+ STATE_SAKHALIN_japanese_sakhalin_only: "樺太"
+ STATE_SAKHALIN_japanese_sakhalin_and_kuril: "樺太および千島列島"
  HUB_NAME_STATE_SAKHALIN_city_japanese: "豊原"
  HUB_NAME_STATE_SAKHALIN_port_japanese: "大泊"
  HUB_NAME_STATE_SAKHALIN_mine_japanese: "敷香"
  HUB_NAME_STATE_SAKHALIN_farm_japanese: "奥潭"
- HUB_NAME_STATE_SAKHALIN_wood_japanese: "赤穂" #using the later 20th century name rather than the 19th c. Ochishi
- HUB_NAME_STATE_KANTO_city_meiji: "東京"
+ HUB_NAME_STATE_SAKHALIN_wood_japanese: "落石"
+ #Sakhalin - Chinese
+ STATE_SAKHALIN_chinese: "庫頁"
+ HUB_NAME_STATE_SAKHALIN_city_chinese: "$HUB_NAME_STATE_SAKHALIN_city$" #Could not find sensible Chinese language alternatives here
+ HUB_NAME_STATE_SAKHALIN_port_chinese: "$HUB_NAME_STATE_SAKHALIN_port$"
+ HUB_NAME_STATE_SAKHALIN_mine_chinese: "$HUB_NAME_STATE_SAKHALIN_mine$"
+ HUB_NAME_STATE_SAKHALIN_farm_chinese: "$HUB_NAME_STATE_SAKHALIN_farm$"
+ HUB_NAME_STATE_SAKHALIN_wood_chinese: "$HUB_NAME_STATE_SAKHALIN_wood$"
+ ### Ezo / Hokkaido
+ STATE_HOKKAIDO_hokkaido: "北海道"
+ STATE_HOKKAIDO_kaitodo: "Kaitodo"
+ STATE_HOKKAIDO_hitakamido: "日高見道"
+ HUB_NAME_STATE_HOKKAIDO_city_sapporo: "札幌"
+ #Hokkaido - Ainu
+ STATE_HOKKAIDO_ainu: "ヤウンモシリ"
+ HUB_NAME_STATE_HOKKAIDO_city_ainu: "イスカルン"
+ HUB_NAME_STATE_HOKKAIDO_port_ainu: "ハクチャシ"
+ HUB_NAME_STATE_HOKKAIDO_mine_ainu: "イチキルシ"
+ HUB_NAME_STATE_HOKKAIDO_farm_ainu: "チウ・ペッ"
+ HUB_NAME_STATE_HOKKAIDO_wood_ainu: "クシリ"
+ #Hokkaido - Russian
+ STATE_HOKKAIDO_russian: "エゾ"
+ HUB_NAME_STATE_HOKKAIDO_city_russian: "石狩"
+ HUB_NAME_STATE_HOKKAIDO_port_russian: "函館"
+ HUB_NAME_STATE_HOKKAIDO_mine_russian: "岩見沢"
+ HUB_NAME_STATE_HOKKAIDO_farm_russian: "旭川"
+ HUB_NAME_STATE_HOKKAIDO_wood_russian: "釧路"
+ #Hokkaido - Japanese
+ STATE_HOKKAIDO_japanese: "蝦夷地" #Later Hokkaidō
+ STATE_HOKKAIDO_japanese_hokkaido: "北海道"
+ STATE_HOKKAIDO_japanese_kaitodo: "Kaitōdō"
+ STATE_HOKKAIDO_japanese_hitakamido: "日高見道"
+ HUB_NAME_STATE_HOKKAIDO_city_japanese: "石狩"
+ HUB_NAME_STATE_HOKKAIDO_port_japanese: "函館"
+ HUB_NAME_STATE_HOKKAIDO_mine_japanese: "岩見沢"
+ HUB_NAME_STATE_HOKKAIDO_farm_japanese: "旭川"
+ HUB_NAME_STATE_HOKKAIDO_wood_japanese: "釧路"
+ ### Tohoku
+ #Tohoku - Japanese
+ STATE_TOHOKU_japanese: "東北"
+ HUB_NAME_STATE_TOHOKU_city_japanese: "仙台"
+ HUB_NAME_STATE_TOHOKU_port_japanese: "八戸"
+ HUB_NAME_STATE_TOHOKU_mine_japanese: "福島"
+ HUB_NAME_STATE_TOHOKU_farm_japanese: "奥州"
+ HUB_NAME_STATE_TOHOKU_wood_japanese: "秋田"
+ ### Kanto
+ #Kanto - Japanese
+ STATE_KANTO_japanese: "関東"
+ HUB_NAME_STATE_KANTO_city_japanese: "江戸"
+ HUB_NAME_STATE_KANTO_port_japanese: "横浜"
+ HUB_NAME_STATE_KANTO_mine_japanese: "宇都宮"
+ HUB_NAME_STATE_KANTO_farm_japanese: "高崎"
+ HUB_NAME_STATE_KANTO_wood_japanese: "水戸"
+ ### Hokushinetsu
+ #Hokushinetsu - Japanese
+ STATE_HOKUSHINETSU_japanese: "北信越"
+ HUB_NAME_STATE_HOKUSHINETSU_city_japanese: "金沢"
+ HUB_NAME_STATE_HOKUSHINETSU_port_japanese: "新潟"
+ HUB_NAME_STATE_HOKUSHINETSU_mine_japanese: "相川"
+ HUB_NAME_STATE_HOKUSHINETSU_farm_japanese: "長野"
+ HUB_NAME_STATE_HOKUSHINETSU_wood_japanese: "福井"
+ ### Tokai
+ #Tokai - Japanese
+ STATE_TOKAI_japanese: "東海"
+ HUB_NAME_STATE_TOKAI_city_japanese: "名古屋"
+ HUB_NAME_STATE_TOKAI_port_japanese: "静岡"
+ HUB_NAME_STATE_TOKAI_mine_japanese: "神岡"
+ HUB_NAME_STATE_TOKAI_farm_japanese: "浜松"
+ HUB_NAME_STATE_TOKAI_wood_japanese: "津"
+ ### Kansai
+ #Kansai - Japanese
+ STATE_KANSAI_japanese: "大阪"
+ HUB_NAME_STATE_KANSAI_city_japanese: "大阪"
+ HUB_NAME_STATE_KANSAI_port_japanese: "兵庫津"
+ HUB_NAME_STATE_KANSAI_mine_japanese: "生野"
+ HUB_NAME_STATE_KANSAI_farm_japanese: "奈良"
+ HUB_NAME_STATE_KANSAI_wood_japanese: "和歌山"
+ ### Kyoto
+ #Kyoto - Japanese
+ STATE_KYOTO_japanese: "京都"
+ HUB_NAME_STATE_KYOTO_city_japanese: "京都"
+ HUB_NAME_STATE_KYOTO_port_japanese: "舞鶴"
+ #HUB_NAME_STATE_KYOTO_mine_japanese: "Kameoka" # Not used
+ HUB_NAME_STATE_KYOTO_farm_japanese: "彦根"
+ HUB_NAME_STATE_KYOTO_wood_japanese: "高島"
+ ### Shikoku
+ #Shikoku - Japanese
+ STATE_SHIKOKU_japanese: "四国"
+ HUB_NAME_STATE_SHIKOKU_city_japanese: "高松"
+ HUB_NAME_STATE_SHIKOKU_port_japanese: "高知"
+ HUB_NAME_STATE_SHIKOKU_mine_japanese: "松山"
+ HUB_NAME_STATE_SHIKOKU_farm_japanese: "宿毛"
+ HUB_NAME_STATE_SHIKOKU_wood_japanese: "徳島"
+ ### Chugoku
+ #Chugoku - Japanese
+ STATE_CHUGOKU_japanese: "中国"
+ HUB_NAME_STATE_CHUGOKU_city_japanese: "広島"
+ HUB_NAME_STATE_CHUGOKU_port_japanese: "呉"
+ HUB_NAME_STATE_CHUGOKU_mine_japanese: "下関"
+ HUB_NAME_STATE_CHUGOKU_farm_japanese: "岡山"
+ HUB_NAME_STATE_CHUGOKU_wood_japanese: "松江"
+ ### Kyushu
+ #Kyushu - Japanese
+ STATE_KYUSHU_japanese: "九州"
+ HUB_NAME_STATE_KYUSHU_city_japanese: "博多"
+ HUB_NAME_STATE_KYUSHU_port_japanese: "長崎"
+ HUB_NAME_STATE_KYUSHU_mine_japanese: "熊本"
+ HUB_NAME_STATE_KYUSHU_farm_japanese: "鹿児島"
+ HUB_NAME_STATE_KYUSHU_wood_japanese: "府内"
+ ### Ryukyu Islands
+ #Ryukyu Islands - Ryukyuan
+ STATE_RYUKYU_ISLANDS_ryukyuan: "ルーチュー"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_city_ryukyuan: "スイ"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_port_ryukyuan: "ナファ"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_farm_ryukyuan: "ナゼ"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_mine_ryukyuan: "イシガチ"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_wood_ryukyuan: "カメツ"
+ #Ryukyu Islands - Japanese
+ STATE_RYUKYU_ISLANDS_japanese: "南西諸島"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_city_japanese: "首里"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_port_japanese: "那覇"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_farm_japanese: "名瀬"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_mine_japanese: "石垣"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_wood_japanese: "亀津"
+ #Ryukyu Islands - Chinese
+ STATE_RYUKYU_ISLANDS_chinese: "琉球" #Postal romanization
+ HUB_NAME_STATE_RYUKYU_ISLANDS_city_chinese: "首里"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_port_chinese: "那覇"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_farm_chinese: "名瀬"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_mine_chinese: "石垣"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_wood_chinese: "亀津"
+ HUB_NAME_STATE_KANTO_city_meiji: "東京" #Tōkyō
+ ### Formosa
+ #Formosa - Chinese
+ STATE_FORMOSA_chinese: "台湾"
+ HUB_NAME_STATE_FORMOSA_city_chinese: "台北"
+ HUB_NAME_STATE_FORMOSA_port_chinese: "打狗"
+ HUB_NAME_STATE_FORMOSA_mine_chinese: "基隆"
+ HUB_NAME_STATE_FORMOSA_farm_chinese: "大墩"
+ HUB_NAME_STATE_FORMOSA_wood_chinese: "台湾府"
+ ### Formosa
+ #Formosa - Japanese
+ STATE_FORMOSA_japanese: "台湾"
+ HUB_NAME_STATE_FORMOSA_city_japanese: "台北"
+ HUB_NAME_STATE_FORMOSA_port_japanese: "高雄"
+ HUB_NAME_STATE_FORMOSA_mine_japanese: "基隆"
+ HUB_NAME_STATE_FORMOSA_farm_japanese: "台中"
+ HUB_NAME_STATE_FORMOSA_wood_japanese: "台南"
  ### West Java
  HUB_NAME_STATE_WEST_JAVA_city_jakarta: "ジャカルタ"
  ## Madras (sr)
@@ -1779,20 +1923,70 @@
  HUB_NAME_STATE_CENTRAL_PROVINCES_mine_indian: "ラーイプル"
  HUB_NAME_STATE_CENTRAL_PROVINCES_farm_indian: "サーガル"
  HUB_NAME_STATE_CENTRAL_PROVINCES_wood_indian: "ジャバルプル"
- #Amur - Chinese by default
+ ## Manchuria
+ ### Amur
+ #Amur - Russian (Chinese by default)
  STATE_AMUR_russian: "アムール"
  HUB_NAME_STATE_AMUR_city_russian: "ブラゴヴェシチェンスク"
  HUB_NAME_STATE_AMUR_port_russian: "ニコラエフスク・ナ・アムーレ"
  HUB_NAME_STATE_AMUR_mine_russian: "ゼイスキー・スクラド"
  HUB_NAME_STATE_AMUR_farm_russian: "スヴォボードヌイ"
  HUB_NAME_STATE_AMUR_wood_russian: "レイチカ"
- #Primorye - Chinese by default
+ ### - Primorye
+ #Primorye - Russian (Chinese by default)
  STATE_OUTER_MANCHURIA_russian: "プリモーリエ"
  HUB_NAME_STATE_OUTER_MANCHURIA_city_russian: "ハバロフスク"
  HUB_NAME_STATE_OUTER_MANCHURIA_port_russian: "ウラジオストク"
- HUB_NAME_STATE_OUTER_MANCHURIA_mine_russian: "ダリネゴルスク"
- HUB_NAME_STATE_OUTER_MANCHURIA_farm_russian: "グラフスカヤ"
- HUB_NAME_STATE_OUTER_MANCHURIA_wood_russian: "インペラトルスカヤ・ガヴァニ"
+ HUB_NAME_STATE_OUTER_MANCHURIA_mine_russian: "テチューヘ" #Modern Dalnegorsk
+ HUB_NAME_STATE_OUTER_MANCHURIA_farm_russian: "グラフスカヤ" #Later Iman, modern Dalnerechensk
+ HUB_NAME_STATE_OUTER_MANCHURIA_wood_russian: "インペラトルスカヤ・ガヴァニ" #Modern Sovetskaya Gavan
+ #Primorye - Japanese (Mainly derived from the Russian names, so may feel a bit odd if there's no intermediate period of Russian ownership before Japanese takeower)
+ STATE_OUTER_MANCHURIA_japanese: "沿海州"
+ HUB_NAME_STATE_OUTER_MANCHURIA_city_japanese: "ハバロフスク" #Transl. of Russian name. Alternative is a Japanese reading of Haishenwai (Haishenwai?)
+ HUB_NAME_STATE_OUTER_MANCHURIA_port_japanese: "ウラジオストク" #Transl. of Russian name Alternative is a Japanese reading of Boli (Bōrī?)
+ HUB_NAME_STATE_OUTER_MANCHURIA_mine_japanese: "テチューヘ" #From Chi. 'Yězhūhé' to Rus. 'Tetyukhe'
+ HUB_NAME_STATE_OUTER_MANCHURIA_farm_japanese: "イマン" #From Chi. 'Yīmàn' to Rus. 'Iman'
+ HUB_NAME_STATE_OUTER_MANCHURIA_wood_japanese: "皇帝港" #Literal translation of Emperor's port, don't think it was ever referred to as such.
+ ### Gyeonggi
+ #Gyeonggi - Japanese
+ STATE_SEOUL_japanese: "京畿"
+ HUB_NAME_STATE_SEOUL_city_japanese: "京城"
+ HUB_NAME_STATE_SEOUL_port_japanese: "仁川"
+ HUB_NAME_STATE_SEOUL_mine_japanese: "原州"
+ HUB_NAME_STATE_SEOUL_farm_japanese: "江陵"
+ HUB_NAME_STATE_SEOUL_wood_japanese: "光州"
+ ### Yeongnam
+ #Yeongnam - Japanese
+ STATE_BUSAN_japanese: "嶺南"
+ HUB_NAME_STATE_BUSAN_city_japanese: "大邱"
+ HUB_NAME_STATE_BUSAN_port_japanese: "釜山"
+ HUB_NAME_STATE_BUSAN_mine_japanese: "尚州"
+ HUB_NAME_STATE_BUSAN_farm_japanese: "安東"
+ HUB_NAME_STATE_BUSAN_wood_japanese: "晋州"
+ ### Gwanbuk
+ #Gwanbuk - Japanese
+ STATE_SARIWON_japanese: "関北"
+ HUB_NAME_STATE_SARIWON_city_japanese: "漢江"
+ HUB_NAME_STATE_SARIWON_port_japanese: "清津"
+ HUB_NAME_STATE_SARIWON_mine_japanese: "茂山"
+ HUB_NAME_STATE_SARIWON_farm_japanese: "吉州"
+ HUB_NAME_STATE_SARIWON_wood_japanese: "慶山"
+ ### Yangseo
+ #Yangseo - Japanese
+ STATE_PYONGYANG_japanese: "楊西"
+ HUB_NAME_STATE_PYONGYANG_city_japanese: "平壌"
+ HUB_NAME_STATE_PYONGYANG_port_japanese: "海州"
+ HUB_NAME_STATE_PYONGYANG_mine_japanese: "江界"
+ HUB_NAME_STATE_PYONGYANG_farm_japanese: "光州"
+ HUB_NAME_STATE_PYONGYANG_wood_japanese: "義州"
+ ### Yangho
+ #Yangho - Japanese
+ STATE_YANGHO_japanese: "陽湖"
+ HUB_NAME_STATE_YANGHO_city_japanese: "全州"
+ HUB_NAME_STATE_YANGHO_port_japanese: "木浦"
+ HUB_NAME_STATE_YANGHO_mine_japanese: "清州"
+ HUB_NAME_STATE_YANGHO_farm_japanese: "羅州"
+ HUB_NAME_STATE_YANGHO_wood_japanese: "忠州"
  ### Indochina Strategic region
  #Tonkin
  STATE_TONKIN_vietnamese: "トンキン"
@@ -2022,6 +2216,7 @@
  HUB_NAME_STATE_WASHINGTON_city_usa: "シアトル"
  ### Ohio
  STATE_OHIO_michigander: "南ミシガン"
+ STATE_OHIO_japanese: "オハイオ"
  ### District of Columbia
  HUB_NAME_STATE_DISTRICT_OF_COLUMBIA_city_uk: "コックバーン" #after Sir George Cockburn and his feat of 1814
  ### Canada

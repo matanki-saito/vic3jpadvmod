@@ -65,7 +65,7 @@
  #4 Guinea conquered, now Morocco
  spanish_africa.4.t: "Tying Loose Ends"
  spanish_africa.4.d: "Emboldened by the success of our recent forays into Africa, the [SCOPE.gsInterestGroup('armed_forces_scope').GetName] suggest maneuvering our now-experienced soldiers to seize control of what is between the mainland and [SCOPE.sState('west_sahara_scope').GetName]."
- spanish_africa.4.f: ""How about the chapel?", asked the governor, pointing towards the center of the plan on the table beneath the makeshift tent.\n\n"How about it, Gobernador?", replied the puzzled architect, recalling the moment of him even explaining the casting of its bell.\n\n"Are we using stones or wood?" — the smell should've given it away. He was clearly still tipsy. \n\n"Stones, sir? Stones. From the homeland herself.""
+ spanish_africa.4.f: ""How about the chapel?", asked the governor, pointing towards the center of the plan on the table beneath the makeshift tent.\n\n"How about it, Gobernador?", replied the puzzled architect, recalling the moment of him even explaining the casting of its bell.\n\n"Are we using stones or wood?"—the smell should've given it away. He was clearly still tipsy. \n\n"Stones, sir? Stones. From the homeland herself.""
  spanish_africa.4.a: "It makes perfect sense."
  spanish_africa.4.a_tt: "The [SCOPE.gsInterestGroup('armed_forces_scope').GetName] and their supporters will expect us to make [SCOPE.sCountry('morocco_scope').GetName] our [concept_subject] or own the following [Concept('concept_state_region','$concept_state_regions$')] within 10 years:\n• [SCOPE.sStateRegion('al_rif_scope').GetName]\n• [SCOPE.sStateRegion('fez_scope').GetName]\n• [SCOPE.sStateRegion('inner_morocco_scope').GetName]\n• [SCOPE.sStateRegion('marrakech_scope').GetName]\nFailing to achieve this will reduce our [concept_legitimacy] and their [concept_approval], and foster [Concept('concept_radical','$concept_radicals$')] within their ranks. Conversely, succeeding will put us on better terms with them and boost our [concept_prestige]."
  spanish_africa.4.b: "We should not act on the whims of soldiers."
@@ -73,7 +73,7 @@
  #5 Gibraltar owned completely, "The Pillars of Hercules"
  spanish_africa.5.t: "The Pillars of Hercules"
  spanish_africa.5.d:1 "At long last, we have taken the Rock of Gibraltar back from the $GBR_ADJ$, restoring the [SCOPE.sStateRegion('gibraltar_scope').GetName] as an integral part of our dominions. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has declared a new national holiday to celebrate the reconquest."
- spanish_africa.5.f: "#italic Plus Ultra#! — With this motto, the Spanish Empire had always aspired to an unimaginable journey across all coasts beyond its peninsular homelands.\n\n#italic Further Beyond#! — In the esteemed Latin tongue, its meaning signifies our duty as a nation to uphold the gates of wonder and courage for those who wish to take risks and strive for excellence beyond the Mediterranean.\n\nOnce again, we are the rightful guardians of the East and West."
+ spanish_africa.5.f: "#italic Plus Ultra#!—With this motto, the Spanish Empire had always aspired to an unimaginable journey across all coasts beyond its peninsular homelands.\n\n#italic Further Beyond#!—In the esteemed Latin tongue, its meaning signifies our duty as a nation to uphold the gates of wonder and courage for those who wish to take risks and strive for excellence beyond the Mediterranean.\n\nOnce again, we are the rightful guardians of the East and West."
  spanish_africa.5.a: "Hercules would be proud."
 
  #6 revoke_fernando_po decision: Revoke request for the lease of Fernando Po
@@ -94,7 +94,7 @@
  #8 revoke_fernando_po decision: Britain rejects
  spanish_africa.8.t: "[SCOPE.sCountry('gbr_scope').GetName] Occupies [SCOPE.sState('fernando_po_scope').GetName]"
  spanish_africa.8.d: "[SCOPE.sCountry('gbr_scope').GetName] has rejected our request to revoke the lease of [SCOPE.sState('fernando_po_scope').GetName]."
- spanish_africa.8.f: "#bold Agnign#! — an expression the indigenous people of [SCOPE.sState('fernando_po_scope').GetNameNoFormatting] uses, roughly translates to the European tongues as "to live," or "to experience".\n\nOnce they #italic lived#!, unaware of civilized people's intentions of their sacred soil.\n\nAnd they #italic experienced#! freely, cherishing every moment unfettered from foreign distractions."
+ spanish_africa.8.f: "#bold Agnign#!—an expression the indigenous people of [SCOPE.sState('fernando_po_scope').GetNameNoFormatting] uses, roughly translates to the European tongues as "to live," or "to experience".\n\nOnce they #italic lived#!, unaware of civilized people's intentions of their sacred soil.\n\nAnd they #italic experienced#! freely, cherishing every moment unfettered from foreign distractions."
  spanish_africa.8.a: "How dare they?"
 
  #9 Final Event

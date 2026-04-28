@@ -358,7 +358,7 @@
  HUB_NAME_STATE_ALENTEJO_wood:0 "Elvas"
  HUB_NAME_STATE_ESTREMADURA_city:1 "Lisbon"
  HUB_NAME_STATE_ESTREMADURA_port:0 "Setubal"
- HUB_NAME_STATE_ESTREMADURA_mine:0 "MINE"
+ #HUB_NAME_STATE_ESTREMADURA_mine:0 "Rio Maior"
  HUB_NAME_STATE_ESTREMADURA_farm:1 "Santarem"
  HUB_NAME_STATE_ESTREMADURA_wood:0 "Leiria"
  HUB_NAME_STATE_BEIRA_city:0 "Coimbra"
@@ -731,8 +731,8 @@
  HUB_NAME_STATE_LOWER_SILESIA_wood: "Glogau"
  HUB_NAME_STATE_UPPER_SILESIA_city: "Oppeln"
  HUB_NAME_STATE_UPPER_SILESIA_mine: "Königshütte"
- HUB_NAME_STATE_UPPER_SILESIA_farm: "Troppau"
- HUB_NAME_STATE_UPPER_SILESIA_wood: "Teschen"
+ HUB_NAME_STATE_UPPER_SILESIA_farm: "Ratibor"
+ HUB_NAME_STATE_UPPER_SILESIA_wood: "Rybnik"
  HUB_NAME_STATE_POSEN_city: "Posen"
  HUB_NAME_STATE_POSEN_mine: "Lissa"
  HUB_NAME_STATE_POSEN_farm: "Bromberg"
@@ -1020,11 +1020,11 @@
  HUB_NAME_STATE_KALMYKIA_wood: "Yashkul"
 
  #Sakhalin
- HUB_NAME_STATE_SAKHALIN_city: "Vladimirovka" #14-11-2023
- HUB_NAME_STATE_SAKHALIN_port: "Korsakov" #14-11-2023
- HUB_NAME_STATE_SAKHALIN_mine: "Tikhmenevsky" #14-11-2023
- HUB_NAME_STATE_SAKHALIN_farm: "Okha" #14-11-2023
- HUB_NAME_STATE_SAKHALIN_wood: "Alexandrovsky" #14-11-2023
+ HUB_NAME_STATE_SAKHALIN_city: "Ai" # Vladimirovka / Toyohara
+ HUB_NAME_STATE_SAKHALIN_port: "Kushunkotan" # Korsakov / Otomari
+ HUB_NAME_STATE_SAKHALIN_mine: "Sistukari" # Tikhmenevsky / Shisuka
+ HUB_NAME_STATE_SAKHALIN_farm: "Okhe" # Okha / Okutan 
+ HUB_NAME_STATE_SAKHALIN_wood: "Idi" #Alexandrovsky Otchishi / Ako
 
  #Caucasus
  HUB_NAME_STATE_DAGESTAN_city: "Petrovsk-Port" #14-11-2023
@@ -1154,11 +1154,11 @@
  HUB_NAME_STATE_TUVA_wood:2 "Turan"
 
   # Japan
- HUB_NAME_STATE_HOKKAIDO_city: "Sapporo"
+ HUB_NAME_STATE_HOKKAIDO_city: "Ishikari"
  HUB_NAME_STATE_HOKKAIDO_port: "Hakodate"
- HUB_NAME_STATE_HOKKAIDO_mine: "Obihiro"
+ HUB_NAME_STATE_HOKKAIDO_mine: "Iwamizawa"
  HUB_NAME_STATE_HOKKAIDO_farm: "Asahikawa"
- HUB_NAME_STATE_HOKKAIDO_wood:2 "Nemuro"
+ HUB_NAME_STATE_HOKKAIDO_wood: "Kushiro"
  HUB_NAME_STATE_TOHOKU_city: "Sendai"
  HUB_NAME_STATE_TOHOKU_port: "Hachinohe"
  HUB_NAME_STATE_TOHOKU_mine: "Fukushima"
@@ -1169,34 +1169,51 @@
  HUB_NAME_STATE_KANTO_mine:2 "Utsunomiya"
  HUB_NAME_STATE_KANTO_farm: "Takasaki"
  HUB_NAME_STATE_KANTO_wood: "Mito"
- HUB_NAME_STATE_CHUBU_city: "Nagoya"
- HUB_NAME_STATE_CHUBU_port: "Shizuoka"
- HUB_NAME_STATE_CHUBU_mine: "Nagano"
- HUB_NAME_STATE_CHUBU_farm: "Niigata"
- HUB_NAME_STATE_CHUBU_wood: "Fukui"
- HUB_NAME_STATE_KANSAI_city: "Kyoto"
- HUB_NAME_STATE_KANSAI_port: "Kobe"
- HUB_NAME_STATE_KANSAI_mine: "Osaka"
- HUB_NAME_STATE_KANSAI_farm: "Yamada"
+ HUB_NAME_STATE_TOKAI_city: "Nagoya"
+ HUB_NAME_STATE_TOKAI_port: "Shizuoka"
+ HUB_NAME_STATE_TOKAI_mine: "Kamioka"
+ HUB_NAME_STATE_TOKAI_farm: "Hamamatsu"
+ HUB_NAME_STATE_TOKAI_wood: "Tsu"
+ HUB_NAME_STATE_KANSAI_city: "Osaka"
+ HUB_NAME_STATE_KANSAI_port: "Hyogo-no-Tsu"
+ HUB_NAME_STATE_KANSAI_mine: "Ikuno"
+ HUB_NAME_STATE_KANSAI_farm: "Nara"
  HUB_NAME_STATE_KANSAI_wood: "Wakayama"
  HUB_NAME_STATE_SHIKOKU_city: "Takamatsu"
  HUB_NAME_STATE_SHIKOKU_port: "Kochi"
- HUB_NAME_STATE_SHIKOKU_mine: "Tokushima"
+ HUB_NAME_STATE_SHIKOKU_mine: "Matsuyama"
  HUB_NAME_STATE_SHIKOKU_farm: "Sukumo"
- HUB_NAME_STATE_SHIKOKU_wood: "Matsuyama"
+ HUB_NAME_STATE_SHIKOKU_wood: "Tokushima"
  HUB_NAME_STATE_CHUGOKU_city: "Hiroshima"
- HUB_NAME_STATE_CHUGOKU_port: "Okayama"
- HUB_NAME_STATE_CHUGOKU_mine: "Izumo"
- HUB_NAME_STATE_CHUGOKU_farm: "Shimonoseki"
- HUB_NAME_STATE_CHUGOKU_wood: "Tottori"
+ HUB_NAME_STATE_CHUGOKU_port: "Kure"
+ HUB_NAME_STATE_CHUGOKU_mine: "Shimonoseki"
+ HUB_NAME_STATE_CHUGOKU_farm: "Okayama"
+ HUB_NAME_STATE_CHUGOKU_wood: "Matsue"
  HUB_NAME_STATE_KYUSHU_city: "Hakata"
  HUB_NAME_STATE_KYUSHU_port:2 "Nagasaki"
  HUB_NAME_STATE_KYUSHU_mine: "Kumamoto"
  HUB_NAME_STATE_KYUSHU_farm: "Kagoshima"
  HUB_NAME_STATE_KYUSHU_wood: "Funai"
- HUB_NAME_STATE_RYUKYU_ISLANDS_city: "Naha"
- HUB_NAME_STATE_RYUKYU_ISLANDS_port: "Amami"
- HUB_NAME_STATE_RYUKYU_ISLANDS_farm: "Nago"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_city: "Shuri" # Sui
+ HUB_NAME_STATE_RYUKYU_ISLANDS_port: "Naha" # Nafa
+ HUB_NAME_STATE_RYUKYU_ISLANDS_farm: "Naze"
+ HUB_NAME_STATE_RYUKYU_ISLANDS_mine: "Ishigaki" # Ishigachi
+ HUB_NAME_STATE_RYUKYU_ISLANDS_wood: "Kametsu"
+ HUB_NAME_STATE_KYOTO_city: "Kyoto"
+ HUB_NAME_STATE_KYOTO_port: "Maizuru"
+ #HUB_NAME_STATE_KYOTO_mine: "Kameoka"
+ HUB_NAME_STATE_KYOTO_farm: "Hikone"
+ HUB_NAME_STATE_KYOTO_wood: "Takashima"
+ HUB_NAME_STATE_HOKUSHINETSU_city: "Kanazawa"
+ HUB_NAME_STATE_HOKUSHINETSU_port: "Niigita"
+ HUB_NAME_STATE_HOKUSHINETSU_mine: "Aikawa"
+ HUB_NAME_STATE_HOKUSHINETSU_farm: "Nagano"
+ HUB_NAME_STATE_HOKUSHINETSU_wood: "Fukui"
+ #HUB_NAME_STATE_KURIL_ISLANDS_city: "Shana" # Syana
+ #HUB_NAME_STATE_KURIL_ISLANDS_port: "Mairuppo" # Kataoka / Baikovo 
+ #HUB_NAME_STATE_KURIL_ISLANDS_mine: "Tomari" # Tomari / Golovnino
+ #HUB_NAME_STATE_KURIL_ISLANDS_farm: "Ru Pet" # Rubetsu / Rubetsu
+ #HUB_NAME_STATE_KURIL_ISLANDS_wood: "Furukamappu"
 
   # Korea
  HUB_NAME_STATE_BUSAN_city: "Daegu"
@@ -1320,11 +1337,11 @@
  HUB_NAME_STATE_FUJIAN_mine: "Nanping"
  HUB_NAME_STATE_FUJIAN_farm: "Sanming"
  HUB_NAME_STATE_FUJIAN_wood: "Xiamen"
- HUB_NAME_STATE_FORMOSA_city: "Taipei"
+ HUB_NAME_STATE_FORMOSA_city: "Taipeh"
  HUB_NAME_STATE_FORMOSA_port: "Takow"
  HUB_NAME_STATE_FORMOSA_mine: "Kelung"
- HUB_NAME_STATE_FORMOSA_farm: "Taichung"
- HUB_NAME_STATE_FORMOSA_wood: "Tainan"
+ HUB_NAME_STATE_FORMOSA_farm: "Toatun"
+ HUB_NAME_STATE_FORMOSA_wood: "Taiwanfoo"
  HUB_NAME_STATE_SHAOZHOU_city: "Shaoguan"
  HUB_NAME_STATE_SHAOZHOU_port: "Hong Kong"
  HUB_NAME_STATE_SHAOZHOU_mine: "Heyuan"
@@ -1639,7 +1656,7 @@
  HUB_NAME_STATE_NORTHERN_BALUCHISTAN_city: "Chakhansur"
  HUB_NAME_STATE_NORTHERN_BALUCHISTAN_mine: "Rudbar"
  HUB_NAME_STATE_NORTHERN_BALUCHISTAN_farm: "Kala Bist"
- #HUB_NAME_STATE_NORTHERN_BALUCHISTAN_wood: "wood"
+ #HUB_NAME_STATE_NORTHERN_BALUCHISTAN_wood: "Zaranj"
  HUB_NAME_STATE_CENTRAL_HIGHLANDS_city: "Bamian"
  HUB_NAME_STATE_CENTRAL_HIGHLANDS_mine: "Balkhab"
  HUB_NAME_STATE_CENTRAL_HIGHLANDS_farm: "Daulat Yar"
@@ -1951,8 +1968,8 @@
  HUB_NAME_STATE_SOUTH_AUSTRALIA_mine: "Coober Pedy"
  HUB_NAME_STATE_SOUTH_AUSTRALIA_farm: "Tarcoola"
  HUB_NAME_STATE_SOUTH_AUSTRALIA_wood: "Mildura"
- HUB_NAME_STATE_NEW_SOUTH_WALES_city: "Canberra"
- HUB_NAME_STATE_NEW_SOUTH_WALES_port: "Sydney"
+ HUB_NAME_STATE_NEW_SOUTH_WALES_city: "Sydney"
+ HUB_NAME_STATE_NEW_SOUTH_WALES_port: "Newcastle"
  HUB_NAME_STATE_NEW_SOUTH_WALES_mine: "Broken Hill"
  HUB_NAME_STATE_NEW_SOUTH_WALES_farm: "Dubbo"
  HUB_NAME_STATE_NEW_SOUTH_WALES_wood: "Armidale"
@@ -2076,12 +2093,12 @@
  HUB_NAME_STATE_QUEBEC_farm: "Sherbrooke"
  HUB_NAME_STATE_QUEBEC_wood: "Val-d’Or"
  HUB_NAME_STATE_ONTARIO_city: "Bytown"
- HUB_NAME_STATE_ONTARIO_port: "Kingston"
+ HUB_NAME_STATE_ONTARIO_port: "Moose Factory"
  HUB_NAME_STATE_ONTARIO_mine: "Sudbury"
  HUB_NAME_STATE_ONTARIO_farm: "Toronto"
  HUB_NAME_STATE_ONTARIO_wood: "Huntsville"
  HUB_NAME_STATE_MANITOBA_city: "Fort Douglas"
- HUB_NAME_STATE_MANITOBA_port: "Churchill"
+ HUB_NAME_STATE_MANITOBA_port: "York Factory"
  HUB_NAME_STATE_MANITOBA_mine: "Thompson"
  HUB_NAME_STATE_MANITOBA_farm: "Portage la Prairie"
  HUB_NAME_STATE_MANITOBA_wood: "Brandon"
@@ -2117,7 +2134,7 @@
   # United States of America
  HUB_NAME_STATE_ALASKA_city: "Anchorage"
  HUB_NAME_STATE_ALASKA_port: "Juneau"
- HUB_NAME_STATE_ALASKA_mine: "Nome"
+ HUB_NAME_STATE_ALASKA_mine: "$Fairbanks$"
  HUB_NAME_STATE_ALASKA_farm: "New Archangel"
  HUB_NAME_STATE_ALASKA_wood: "Valdez"
  HUB_NAME_STATE_MAINE_city: "Augusta"

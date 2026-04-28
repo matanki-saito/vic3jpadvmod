@@ -12,15 +12,13 @@
  je_filipino_ethnogenesis: "Archipelagic Ethnogenesis"
  je_filipino_ethnogenesis_reason: "The [ROOT.GetCountry.GetAdjective] nation is home to many peoples, who – while sharing a common history – remain distinct from each others in matters of culture and language. If we are to build a strong nation, such minor differences must be swept aside."
 
- ilustrados_education_fervor_add: "Passionate Educators"
-
  je_filipino_ethnogenesis_colonization_button: "Colonize [GetStateRegion('STATE_MINDANAO').GetName]"
  je_filipino_ethnogenesis_colonization_button_desc: "From the martial sultanates of the [GetCulture('moro').GetName] Gulf to the disparate [GetCulture('lumad').GetName] tribes of the highland, the peoples of [GetStateRegion('STATE_MINDANAO').GetName] have long resisted our attempts at imposing order on this uncivilized land.\n\nIt is time to bring them into the Filipino fold, whether they want it or not."
  modifier_integrating_the_highlands: "Integrating the Highlands"
  modifier_settling_the_highlands_cost: "Mindanaoan Infrastructure Projects"
  modifier_phi_spanish_vision: "Pearl of the Spanish Orient"
  modifier_phi_indepenent_vision: "Liberty, Justice, and Equality"
-  modifier_popular_genesis: "Popular Genesis"
+ modifier_popular_genesis: "Popular Genesis"
 
  je_philippines_main: "Perla del Mar de Oriente" # sobriquet used by Spanish missionaries and in José Rizal's last poem
  je_philippines_main_reason: "Upward mobility from the burgeoning middle class has contributed to a growing national consciousness. Tensions within the [ROOT.GetCountry.GetName] are on the rise. [GetCulture('spanish').GetName] [GetPopType('clergymen').GetName] dominate secular and religious life, while [GetCulture('filipino_mestizo').GetName] [GetPopType('clergymen').GetNameNoFormatting] lead revolts against their authority. [GetCulture('filipino_mestizo').GetNameNoFormatting] elites of the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName], too, are maneuvering for greater representation in government.\n\nUltimately, the [SelectLocalization(ROOT.GetCountry.GetTopOverlord.IsValid, ROOT.GetCountry.GetTopOverlord.GetAdjective, 'SPA_ADJ')] government has high expectations that the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] maintains an iron rule over their territory out in the Pacific. This friction threatens to topple our stability, putting the future of the [ROOT.GetCountry.GetName] at risk."
@@ -29,10 +27,8 @@
  philippines3a_tt: ""This indeed marks a new chapter for our country.""
  spain_is_overlord_tt: "[concept_overlord] is #b $SPA$#!"
 
-
  filipino_assimilation_tooltip: "Every [GetCulture('filipino_mestizo').GetName] [concept_pop], [concept_character], and [concept_homeland] will become [GetCulture('filipino').GetName]"
  filipino_hispanophone_assimilation_tooltip: "Every [GetCulture('filipino_mestizo').GetName] [concept_pop], [concept_character], and [concept_homeland] will become [GetCulture('filipino_hispanophone').GetName]"
-
 
  # custom headers for the different outcomes
  je_philippines_main_header_independence_complete: "#title Will conclude in #b Philipinic Independence#! outcome if:#!\n"
@@ -49,6 +45,11 @@
  je_philippines_main_ilustrado_button: "Encourage the Ilustrados"
  je_philippines_main_ilustrado_button_desc: "Many upper and middle class [GetCulture('filipino_mestizo').GetCustom('getPluralDemonym')] and so-called #italic Indios#! have been exposed to [GetCulture('spanish').GetName] [GetIdeology('ideology_liberal').GetName] ideals. This rapidly growing educated class has begun to align themselves with the [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]. They seek to reform laws and set a more liberal agenda in the [ROOT.GetCountry.GetName]."
  je_philippines_development_complete: "Has completed $je_philippines_development$ [concept_journal_entry]."
+
+ # notification from on_become_independent if player gains independence as Philippines before researching Nationalism or without je_philippines_main
+ notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] No Longer a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ notification_filipino_mestizo_now_primary_culture_desc: "Now that we are no longer under $SPA_ADJ$ rule, [GetCulture('filipino_mestizo').GetName] is our [Concept('concept_primary_cultures','$concept_primary_culture$')]."
+ notification_filipino_mestizo_now_primary_culture_tooltip: "#header $notification_filipino_mestizo_now_primary_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_mestizo_now_primary_culture_desc$"
 
  # loc for philippines_events
  philippines.1.t: "[ROOT.GetCountry.GetAdjective] Identity"
@@ -91,6 +92,7 @@
  philippines.5.d: "Thanks to our efforts, the Ilustrado have secured more of a foothold in the [ROOT.GetCountry.GetAdjective] government."
  philippines.5.f: ""A numerous enlightened class now exists within and without the Islands, a class created and continually augmented by the stupidity of certain governing powers, which forces the inhabitants to leave the country, to secure education abroad, and it is maintained and struggles thanks to the provocations and the system of espionage in vogue. This class, whose number is cumulatively increasing, is in constant communication with the rest of the Islands, and if today it constitutes only the brain of the country in a few years it will form the whole nervous system and manifest its existence in all its acts."\n\n—José Rizal, #italic The Philippines a Century Hence#!"
  philippines.5.a: "The influence of the Ilustrados will continue to grow."
+ ilustrados_education_fervor_add: "Passionate Educators"
 
  philippines.7.t: "Guardia Civil in the Philippines"
  philippines.7.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastName], on behalf of [ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting] administration, has introduced the [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant] to the [ROOT.GetCountry.GetAdjectiveNoFormatting] archipelago."
@@ -172,7 +174,7 @@
 
  sagrada_familia_construction: "Modernist Magnum Opus"
 
- sagrada_familia.4.t: "The End, For Now"
+ sagrada_familia.4.t: "The End, for Now"
  sagrada_familia.4.d: "Another facade of $building_sagrada_familia_cathedral_3$ has been completed, signaling the end of construction, for now. The Modernist architect's extraordinary vision is a cultural touchstone here in [SCOPE.sState('relevant_state').GetName]."
  sagrada_familia.4.f: "After so many years of construction, the ambitious architectural designs of another facade have been realized. Foreign travelers who come to $building_sagrada_familia_cathedral_3$ marvel at the structure's unique style. Two visitors stand before the newest addition to the temple.\n\n"Breathtaking," one traveler remarks, unable to conceal the awe in his voice.\n\nHis companion, however, looks on skeptically. "Perhaps this Modernist style is an acquired taste.""
  sagrada_familia.4.a: "Such exceptional art!"
@@ -205,7 +207,7 @@
 
  pena_palace.2.t: "The Jewel of Sintra"
  pena_palace.2.d: "The renovations for $building_pena_palace$ are now complete. The ruins of the former convent have been thoroughly transformed."
- pena_palace.2.f: "On a clear day, when the Sintra Mountains mist clears, the structure atop the hills can be seen from [SCOPE.sState('relevant_state').GetCityHubName]. Born of a king's imagination and reimagined by a romanticist architect, the bright red and yellow facades of $building_pena_palace$ are resplendent — a true [ROOT.GetCountry.GetAdjectiveNoFormatting] treasure."
+ pena_palace.2.f: "On a clear day, when the Sintra Mountains mist clears, the structure atop the hills can be seen from [SCOPE.sState('relevant_state').GetCityHubName]. Born of a king's imagination and reimagined by a romanticist architect, the bright red and yellow facades of $building_pena_palace$ are resplendent—a true [ROOT.GetCountry.GetAdjectiveNoFormatting] treasure."
  pena_palace.2.a: "The beauty of the palace is undisputed."
  pena_palace.2.b: "The world will marvel at our artistic achievement."
 
@@ -244,7 +246,7 @@
 
  # Estación de Madrid Atocha
  je_atocha_railway: "Atocha Railway Station"
- je_atocha_railway_reason: "For many years, the [SCOPE.gsInterestGroup('relevant_ig').GetName] have sought to construct $building_estacion_de_madrid_atocha$ in [SCOPE.sState('relevant_state').GetName]. Their efforts have been thwarted by conflicting demands and interests — from government intervention to the death of the hired architect meant to oversee construction. No proposal has met all criteria until now.\n\nThe hopes of [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] to build the station have not waned. They believe $building_estacion_de_madrid_atocha$ will be a key institution for [ROOT.GetCountry.GetNameNoFormatting] not only within [SCOPE.sState('relevant_state').GetNameNoFormatting], but throughout all of the continent as well."
+ je_atocha_railway_reason: "For many years, the [SCOPE.gsInterestGroup('relevant_ig').GetName] have sought to construct $building_estacion_de_madrid_atocha$ in [SCOPE.sState('relevant_state').GetName]. Their efforts have been thwarted by conflicting demands and interests—from government intervention to the death of the hired architect meant to oversee construction. No proposal has met all criteria until now.\n\nThe hopes of [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] to build the station have not waned. They believe $building_estacion_de_madrid_atocha$ will be a key institution for [ROOT.GetCountry.GetNameNoFormatting] not only within [SCOPE.sState('relevant_state').GetNameNoFormatting], but throughout all of the continent as well."
 
  atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has a $building_railway$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_NEW_CASTILE$"
  atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built $building_estacion_de_madrid_atocha$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_NEW_CASTILE$"

@@ -182,7 +182,7 @@
 
   positivism.1.t: "To Venerate Mankind"
   positivism.1.d: "[SCOPE.sCharacter('comte_scope').GetFullName], a philosopher of the sciences at the École Polytechnique in [SCOPE.sState('paris_scope').GetName], has published a treatise on the reorganization of society along positivist principles."
-  positivism.1.f: ""Viewed from the moral, scientific, or poetical aspect, it is equally valuable; and it is the only principle which can bring Humanity safely through the most formidable crisis that she has ever yet undergone. It will be now clear to all that the force of demonstration, a force peculiar to modern times, and which still retains much of its destructive character, becomes matured and elevated by Positivism."" #- Auguste Comte
+  positivism.1.f: ""Viewed from the moral, scientific, or poetical aspect, it is equally valuable; and it is the only principle which can bring Humanity safely through the most formidable crisis that she has ever yet undergone. It will be now clear to all that the force of demonstration, a force peculiar to modern times, and which still retains much of its destructive character, becomes matured and elevated by Positivism."\n\n—Auguste Comte, #italic A General View of Positivism#!" #- Auguste Comte
   positivism.1.a: "A curious boon to [ROOT.GetCountry.GetAdjective] academia."
   positivism.1.b: "His idea of social physics should be given a closer look."
   positivism.1.c: "If he wishes to change society, he is welcome to try."
@@ -525,6 +525,7 @@
   modifier_petit_bourgeois_discontent: "Modernizing Discontent"
   modifier_fraud_accusations_brazil: "Censored Fraud Accusations"
   modifier_new_dictatorship_brazil: "The New Republic"
+  modifier_new_dictatorship_brazil_monarchy: "The New State"
   modifier_cowed_by_integralists: "Integralist Violence"
   modifier_national_liberation_alliance: "The National Liberation Alliance"
   modifier_national_liberation_alliance_leader: "Liberatory Vanguard"
@@ -541,9 +542,14 @@
 
   je_populist_unrest: "Populist Unrest"
   je_populist_unrest_reason: "The domination of [ROOT.GetCountry.GetAdjective] politics by the [SCOPE.gsInterestGroup('landowners_ig').GetName] has sparked discontent across the nation. Populist figures supported by the [SCOPE.gsInterestGroup('pb_ig').GetName] agitate against the current government in the streets, and liberal military organizations look to the example of the Tenentes that stood against the agrarian oligarchy in the past. If this unrest is not successfully navigated, the ailing [ROOT.GetCountry.GetGovernment.GetName] faces a violent reorientation of power."
+  all_socialists_marginalized_tt: "Every Interest Group with a #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! [concept_leader] is [concept_marginalized]"
   
-  je_new_republic: "The New Republic"
+  add_je_new_republic_tt: "Adds #v The New [ROOT.GetCountry.GetCustom('brz_republic_or_state')]#! to the Journal of [ROOT.GetCountry.GetNameNoFlag|U]"
+  je_new_republic: "The New [ROOT.GetCountry.GetCustom('brz_republic_or_state')]"
   je_new_republic_reason: "[SCOPE.sCharacter('vargas_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('vargas_scope').GetFullName] and [SCOPE.sCharacter('vargas_scope').GetHerHis] supporters have overthrown the previous government of [ROOT.GetCountry.GetName], and established a new regime founded on nationalism and modernization of the state."
+
+  brz_republic: "Republic"
+  brz_state: "State"
 
   completed_coffee_and_milk_je_tt: "Has the #variable Coffee with Milk#! [concept_journal_entry], or has completed the #variable Coffee with Milk#! Journal Entry with a #bold Landowner#! victory"
 
@@ -569,6 +575,7 @@
   change_misc_populism_drift_3_up_tt: "Monthly #variable Populist Unrest#! progress will be #bold increased#! by #bold 3#!"
 
   vargas_out_tt: "The President of [SCOPE.sCountry('brazil_scope').GetName] is not affiliated with the [SCOPE.gsInterestGroup('pb_scope').GetName]"
+  vargas_not_pm_tt: "The [SCOPE.gsInterestGroup('pb_scope').GetName] are not [concept_in_government]"
 
   ideology_modernizer: "Modernizer"
   ideology_modernizer_desc: "#lore This group is strongly invested in modernizing and centralizing the nation under rational lines.#!"
@@ -639,7 +646,7 @@
   BRZ_populism.9.a: "We must be careful to not spur further revolts."
   BRZ_populism.9.b: "The Commune must be crushed with all due haste."
 
-  BRZ_vargas.1.t: "The New Republic"
+  BRZ_vargas.1.t: "The New [ROOT.GetCountry.GetCustom('brz_republic_or_state')]"
   BRZ_vargas.1.d: "After a swift seizure of power by elements of the military sympathetic to the reformist cause, [SCOPE.sCharacter('vargas_scope').GetFullName] has been declared President of [ROOT.GetCountry.GetNameNoFormatting]. [SCOPE.sCharacter('vargas_scope').GetHerHis|U] agenda calls for modernization and a swift restoration of order to the nation."
   BRZ_vargas.1.f: "It began in a small state, divested of a share in the oligarchy. Then, by clever words after an assassination, it blossomed. But only after the oligarchy itself was cheated by one of its halves did the revolt grow strong. Now, its actors were assembled: the First Republic was ready to fall. Only swift action would stop a bloody civil war."
   BRZ_vargas.1.a: "A new Brazil comes into being."
@@ -673,14 +680,14 @@
   BRZ_vargas.6.f: ""The Revolution of the Self cannot begin for Brazil while the regime of selfishness still rules. We, the vanguard of Integralism, will crush the selfishness of Marxism and transcend the bounds of materialism. We must, for Brazil demands it!"\n\nAmidst the rapturous applause of the true believers was a single man with a notebook. While outwardly a journalist, his true patron was one more concerned about allies of convenience. These rabble-rousers would form such allies."
   BRZ_vargas.6.a: "[SCOPE.sCharacter('integralist_agitator').GetSheHe|U] would make a useful ally."
   BRZ_vargas.6.b: "A fortuitous development."
-  brz_integralist_action_tt: "We will have an opportunity to further embrace #bold Integralist#! ideology if #variable The New Republic#! is successfully completed"
+  brz_integralist_action_tt: "We will have an opportunity to further embrace #bold Integralist#! ideology if #v $je_new_republic$#! is successfully completed"
 
   BRZ_vargas.7.t: "The National Liberation Alliance"
   BRZ_vargas.7.d: "A coalition of left-wing organizations in opposition to the government of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastName] has formed and issued its manifesto. The movement's primary proponent is [SCOPE.sCharacter('anl_leader_scope').GetFullName], a noteable [SCOPE.sCharacter('anl_leader_scope').GetIdeology.GetName]."
   BRZ_vargas.7.f: ""We must act now! The country is fit to be captured by the #italic fascistas#!. We have the Comintern's support. Anything's possible with them."\n\n"You forget yourself. We may be for the workers, but the workers haven't given us their blessing."\n\n"Would every single lathe turner and brick layer matter? Half of them can't even find their way out of a pub! Now, or never!""
   BRZ_vargas.7.a: "For bread, land, and freedom!"
   BRZ_vargas.7.b: "They are enemies of the state."
-  anl_more_leftists_tt: "Leftist figures will be much more likely to appear until #variable The New Republic#! is successfully completed"
+  anl_more_leftists_tt: "Leftist figures will be much more likely to appear until #v $je_new_republic$#! is successfully completed"
 
   BRZ_vargas.8.t: "Integralist March in [SCOPE.sState('integralist_state').GetName]"
   BRZ_vargas.8.d: "Integralists under [SCOPE.sCharacter('integralist_leader_scope').GetFullName] have marched in [SCOPE.sState('integralist_state').GetName], in response to a strike spurred by left-wing unrest. The march has left many wounded strikers in its wake."
@@ -735,7 +742,7 @@
 
   peru_bolivia_events.7.t: "The Triumph of the Confederation"
   peru_bolivia_events.7.d: "The [SCOPE.sCountry('peru_bolivia_scope').GetName] has successfully consolidated its power, stabilizing its politics and passing a constitution. Standing against the burgeoning titan appears to soon be futile."
-  peru_bolivia_events.7.f: "Spies sent letters — furious, defeated, and horrified alike — that any tumult within the new confederation was long since spent. Without lingering resentments to stoke, uncertainties to raise, or division between its legislatures, the people of Peru-Bolivia would see [ROOT.GetCountry.GetNameNoFormatting] only as one thing: jealous invaders."
+  peru_bolivia_events.7.f: "Spies sent letters—furious, defeated, and horrified alike—that any tumult within the new confederation was long since spent. Without lingering resentments to stoke, uncertainties to raise, or division between its legislatures, the people of Peru-Bolivia would see [ROOT.GetCountry.GetNameNoFormatting] only as one thing: jealous invaders."
   peru_bolivia_events.7.a: "We are forced to face a new rival."
 
   all_restorers_lose_prestige_tt: "All involved [Concept('concept_country', '$concept_countries$')] hostile to the #b Confederation#! will lose [concept_prestige], and gain [Concept('concept_radical', '$concept_radicals$')]"
@@ -867,4 +874,3 @@
   notification_brz_amazon_border_treaty_bolivia_name: "Treaty of Ayacucho Signed"
   notification_brz_amazon_border_treaty_bolivia_desc: "[SCOPE.sCountry('bolivia_border_treaty_country_scope').GetName] and [SCOPE.sCountry('brazil_scope').GetName] have signed a border treaty, codifying their respective borders and consolidating more of the southern Amazon Rainforest under [SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting] control."
   notification_brz_amazon_border_treaty_bolivia_tooltip: "#header $notification_brz_amazon_border_treaty_bolivia_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brz_amazon_border_treaty_bolivia_desc$"
-

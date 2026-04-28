@@ -25,3 +25,5 @@
  move_market_capital_lens_option_tooltip: "#header $move_market_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept 国有[concept_market]の[concept_market_capital]を変更することができます。#!"
  reset_production_methods_lens_option: "製法をリセットする"
  reset_production_methods_lens_option_tooltip: "#header $reset_production_methods_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept [concept_state]にある[Concept('concept_building','$concept_buildings$')]の[Concept('concept_production_method','$concept_production_methods$')] をリセットして、国内で最も平均的な水準に合わせます。#!"
+ decree_establish_missions: "使命を設定"
+ decree_establish_missions_desc: "現地住民を改宗させる"

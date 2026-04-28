@@ -66,7 +66,7 @@
   tibet_expedition_events.14.a: "We must brave the snow and push on!"
   tibet_expedition_events.14.b: "Better play it safe and weather this storm."
   tibet_expedition_events.18.t: "Gyantse Dzong"
-  tibet_expedition_events.18.d: "A vast fortified monastery thrusts out of the Tibetan stone ahead — Gyantse Dzong, granite guardian of the Tsangpo Valley and one of the key approaches to Lhasa. There can be no safe route to the capital as long as this fortress is not held by the expedition's soldiers."
+  tibet_expedition_events.18.d: "A vast fortified monastery thrusts out of the Tibetan stone ahead—Gyantse Dzong, granite guardian of the Tsangpo Valley and one of the key approaches to Lhasa. There can be no safe route to the capital as long as this fortress is not held by the expedition's soldiers."
   tibet_expedition_events.18.f: "The impregnable fortress towered over the surrounding landscape. The nearby villages were specks of dust compared to the stone giant that loomed overhead. The venerable walls and ancient halls echoed with centuries of struggle, of pride, of countless prayers and battles and intrigues. It stood as a persistent testament to the wills of generations of leaders.\n\nA barrage of [SCOPE.sCharacter('expedition_leader').GetLastNameNoFormatting]'s guns could end it in a day."
   tibet_expedition_events.18.a: "Storm that fort now!"
   tibet_expedition_events.18.b: "We are not here for bloodshed—negotiate their surrender."

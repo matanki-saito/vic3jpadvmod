@@ -26,6 +26,10 @@
  ig_trait_summon_no_zamindars_desc: "我が国の支配者たちは、交渉や柔軟性に興味がないことを示してきた。もしそれが事実であるとしたら、我々が秩序を保つために行っている控えめな行為も見逃すべきでない。"
  ig_trait_famine_reserves: "飢餓のための備蓄"
  ig_trait_famine_reserves_desc: "差し迫った必要が生じたときに穀物の貯蔵庫を開けるのは我々の義務だ。借地人から善意を買うのにこれより良い方法があるだろうか？"
+ ig_trait_fudai_support: "譜代の支持"
+ ig_trait_fudai_support_desc: "この激動の時代においても、我々はなお忠誠の価値を理解している。我々の務めは、秩序と徳の力を強化しながら、お上に仕えることだ。"
+ ig_trait_outspoken_tozama: "物言う外様"
+ ig_trait_outspoken_tozama_desc: "#italic 外様#!は政府から重用されてはいないが、我々は貴族として同じ利害を共有している。この差し迫った時代では、彼らの声は我々の声でもある。"
  #Industrialists IG Traits
  ig_trait_job_creators: "雇用創出者"
  ig_trait_job_creators_desc: "お金を生み出すには誰かがお金を使わなければなりません。我々の投資に介入しないと政府が約束してくれる限り、経済成長を見据えること以外に我らの利益を投じることはないでしょう。"

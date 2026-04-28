@@ -121,7 +121,7 @@
  lobby_events.56.a: "The [SCOPE.sPoliticalLobby('relevant_lobby').GetNameNoFormatting] is responsible for the agent they hired."
  lobby_events.56.b: "Perhaps it was just a clerical error."
 
- lobbyists_in_check: "Lobbyists In Check"
+ lobbyists_in_check: "Lobbyists in Check"
  lobbyists_unchecked: "Lobbyists Unchecked"
 
  lobby_events.57.t: "Advancement in Medicine"

@@ -42,14 +42,14 @@
  egyptian_crisis_events.1.d:0 "Egypt seized most of our Levantine provinces in 1833 after its governor tried and failed to overthrow the entire imperial government. The time to reclaim the lands we lost in that war is long overdue.\n\nHowever, this is likely to draw the attention of any [Concept('concept_great_power', '$concept_great_powers$')] in Europe."
  egyptian_crisis_events.1.f:1 ""What once was ours shall be ours again. The imprint we've left on Egypt and the Levant cannot be ignored. Like the lines that time carves on a mountain, we have also carved our fate on their land with the footprints of our ancestors.\n\nGo, go now, children of the Sun!""
  egyptian_crisis_events.1.a:0 "We must see to it that they are on our side."
- egyptian_crisis_events.1.a.tt:0 "[THIS.GetCountry.GetName] will be offered an [concept_active_interest] in the region."
+ egyptian_crisis_events.1.a.tt:0 "[THIS.GetCountry.GetName] will be offered an [concept_interest] in the region."
  egyptian_crisis_events.1.b:0 "We do not need their approval to take what is ours."
 
  egyptian_crisis_events.2.t:0 "The Turkish Incursion"
  egyptian_crisis_events.2.d:1 "The Ottomans have begun their machinations to retake the lands we won from them in 1833. This is a violation of our sovereignty! However, this is likely to draw the attention of any [Concept('concept_great_power', '$concept_great_powers$')] in Europe, giving us a chance to gain powerful allies in the conflict."
  egyptian_crisis_events.2.f:0 ""I believe the Sultan and I have some unfinished business to attend to.""
  egyptian_crisis_events.2.a:0 "We must resist this aggression!"
- egyptian_crisis_events.2.a.tt:0 "All European [Concept('concept_great_power', '$concept_great_powers$')] will be offered an [concept_active_interest] in our region."
+ egyptian_crisis_events.2.a.tt:0 "All European [Concept('concept_great_power', '$concept_great_powers$')] will be offered an [concept_interest] in our region."
 
  egyptian_crisis_events.4.t:0 "The Egyptian-Ottoman Crisis"
  egyptian_crisis_events.4.d:0 "The Ottoman Empire's attempt to take back control of the Levant from Egypt has become an international incident. Our involvement may tip the balance of power in the region."
@@ -99,7 +99,7 @@
 
  native_resettlement.4.t:0 "The Trail of Tears"
  native_resettlement.4.d:1 "Our efforts to remove the [SCOPE.sCulture('cherokee_culture').GetName] from eastern lands has led to the deaths of many during their overland march westward."
- native_resettlement.4.f:0 ""Measles, cholera, starvation — this removal has created a trail of tears and death for our people.""
+ native_resettlement.4.f:0 ""Measles, cholera, starvation—this removal has created a trail of tears and death for our people.""
  native_resettlement.4.a:2 "We did what we could."
  native_resettlement.4.b:2 "Their blood is on our hands."
 
@@ -157,13 +157,13 @@
 
  slavery_law_events.5.t:0 "The Great Debates"
  slavery_law_events.5.d:0 "[SCOPE.sCharacter('abolitionist_ig_scope')] has proposed staging a series of debates arguing the merits of abolition. If [SCOPE.sCharacter('slaver_ig_leader_scope').GetHerHis] debates go off well, [SCOPE.gsInterestGroup('abolitionist_ig_scope').GetName] and the cause of Abolition will prosper."
- slavery_law_events.5.f:0 ""It is the eternal struggle between these two principles — right and wrong — throughout the world. This slavery is the same wrong tyrannical principle, no matter in what shape it comes.""
+ slavery_law_events.5.f:0 ""It is the eternal struggle between these two principles—right and wrong—throughout the world. This slavery is the same wrong tyrannical principle, no matter in what shape it comes.""
  slavery_law_events.5.a:0 "A public debate risks too much. We cannot allow it."
  slavery_law_events.5.b:0 "Permit public debates on the merits of abolition."
 
  slavery_law_events.6.t:0 "Plantation Proponents Publicize Policies"
  slavery_law_events.6.d:0 "Defenders of continued slavery have published a wave of diatribes, treatises, and sensationalized fictional narratives all to support their cause. The quantity, if not the quality, of these works has shaken public confidence in abolitionism."
- slavery_law_events.6.f:0 ""It is my duty, and it is indispensable to the public interest, that I should remove prejudices against our nation's peculiar institutions as soon as possible. To do away with an institution which has existed throughout all ages — why! The presumption of such an effort can be equaled by nothing but its folly.""
+ slavery_law_events.6.f:0 ""It is my duty, and it is indispensable to the public interest, that I should remove prejudices against our nation's peculiar institutions as soon as possible. To do away with an institution which has existed throughout all ages—why! The presumption of such an effort can be equaled by nothing but its folly.""
  slavery_law_events.6.a:0 "Let the slavers speak empty words, full of nothing."
  slavery_law_events.6.b:0 "These publications are full of evil and lies, and must be challenged."
 
@@ -265,7 +265,7 @@
  monarchy_law_events.3.b:0 "Every monarchist deserves to be heard."
  monarchy_law_events.4.t:0 "The Gold-Foil Crown"
  monarchy_law_events.4.d:0 "Some monarchists have been discussing what the royal regalia ought to be, and it has led to a realization that the country has nothing that really seems appropriate for a monarch. One attempt at a homemade crown, made from tin and gold foil, has been seized as a symbol of the proposed monarchy's 'innately tawdy' nature."
- monarchy_law_events.4.f:0 ""Our beautiful monarchy — for a monarchy we must have — calls for the certain dignity of modest and charming regalia. To this end, I have already contacted several goldsmiths, gemcutters, jewelers, and a shop that can make a proper throne seat with what they tell me is fine Corinthian leather. In the meanwhile...""
+ monarchy_law_events.4.f:0 ""Our beautiful monarchy—for a monarchy we must have—calls for the certain dignity of modest and charming regalia. To this end, I have already contacted several goldsmiths, gemcutters, jewelers, and a shop that can make a proper throne seat with what they tell me is fine Corinthian leather. In the meanwhile...""
  monarchy_law_events.4.a:0 "That crown is just a symbol! Er..."
  monarchy_law_events.4.b:0 "That crown IS a symbol! A symbol of the nation's love for monarchy!"
 
@@ -282,7 +282,7 @@
 
  trains.1.t:0 "The Great Train Smash"
  trains.1.d:0 "An enterprising entertainer has arranged for two aging locomotives to run into each other at a local fair. The resulting collision may pose a danger to the crowd, although that hasn't stopped [SCOPE.sCharacter('train_crash_attendee').GetFullName], leader of the [SCOPE.gsInterestGroup('train_crash_attendee_ig').GetName], from declaring that [SCOPE.sCharacter('train_crash_attendee').GetSheHe] will have a front-row seat at the event."
- trains.1.f:0 ""For crying out loud, why? Why do you want to see a crash so badly?"\n\n"Honestly? I believe that somewhere in the makeup of every normal person — myself included — there lurks the suppressed desire to smash things up.""
+ trains.1.f:0 ""For crying out loud, why? Why do you want to see a crash so badly?"\n\n"Honestly? I believe that somewhere in the makeup of every normal person—myself included—there lurks the suppressed desire to smash things up.""
  trains.1.a:0 "Everyone, enjoy the spectacle!"
  trains.1.b:0 "Forbid [SCOPE.sCharacter('train_crash_attendee').GetFullName] from risking [SCOPE.sCharacter('train_crash_attendee').GetHerHis] life attending this!"
 
@@ -341,7 +341,7 @@
  africa_colonial_events.41.f:0 ""This man is a maniac! We're trying to play a careful, delicate game over here, and that man has to upturn the table and cause a headache for us all, and for what? The nation? Please! Does that man not realize the damage he's doing?""
  africa_colonial_events.41.a:0 "Accept the claim on [SCOPE.sState('rogue_imperialist_state').GetName] and upset [SCOPE.sCountry('rogue_imperialist_target').GetName]."
  africa_colonial_events.41.b:0 "Reject the explorer and upset our own jingoists."
- africa_colonial_events.41.c:0 "This man is a rolemodel! He ought to be in charge of the [SCOPE.gsInterestGroup('rogue_imperialist_ig').GetName]"
+ africa_colonial_events.41.c:0 "This man is a rolemodel! He ought to go into politics!"
 
  government_insults_military_honor:0 "Government Insults Military Honor"
  government_respects_the_military:0 "Government Respects the Military"
@@ -383,7 +383,7 @@
 
  anti_state_religion.3.t:0 "The Martyr"
  anti_state_religion.3.d:1 "A fiery [SCOPE.sReligion('country_religion_pop').GetName] preacher has shown up in the capital, provoking fights with guards and yelling the most incendiary rhetoric. He is clearly attempting to be arrested and make himself a 'martyr' for the faith."
- anti_state_religion.3.f:0 ""This government is antithetical to the natural faith of all men! Its concept of society itself is utterly foreign to spiritual truths. It believes there is an insoluble opposition between our faith and the [ROOT.GetCountry.GetAdjectiveNoFormatting] worldview — and believes that it somehow can decide the fate of our souls. Ridiculous! This government is an obscene farce blaspheming against everything good.""
+ anti_state_religion.3.f:0 ""This government is antithetical to the natural faith of all men! Its concept of society itself is utterly foreign to spiritual truths. It believes there is an insoluble opposition between our faith and the [ROOT.GetCountry.GetAdjectiveNoFormatting] worldview—and believes that it somehow can decide the fate of our souls. Ridiculous! This government is an obscene farce blaspheming against everything good.""
  anti_state_religion.3.a:0 "Charming. Arrest that man."
  anti_state_religion.3.b:0 "Indeed? Leave him be."
 
@@ -397,15 +397,15 @@
 
  election_neutral.2.t:0 "Commander Commends Civic Coalition"
  election_neutral.2.d:0 "[SCOPE.sCharacter('electioneering_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('electioneering_commander').GetLastName] has made public statements in support of [SCOPE.sParty('electioneering_commander_party').GetName], bringing into question the political neutrality of the military."
- election_neutral.2.f:0 ""It is my duty to defend the nation and its interests. Politics is as much a part of war as battles and logistics are — I don't see the problem with doing my duty and doing what I can to make sure those who are best fit to protect the nation end up being the ones in charge.""
+ election_neutral.2.f:0 ""It is my duty to defend the nation and its interests. Politics is as much a part of war as battles and logistics are—I don't see the problem with doing my duty and doing what I can to make sure those who are best fit to protect the nation end up being the ones in charge.""
  election_neutral.2.a:0 "[SCOPE.sCharacter('electioneering_commander').GetFullName] can say what [SCOPE.sCharacter('electioneering_commander').GetSheHe] wants."
- election_neutral.2.b:0 "Reprimand [SCOPE.sCharacter('electioneering_commander').GetHerHim] — good soldiers don't give orders, they take them!"
+ election_neutral.2.b:0 "Reprimand [SCOPE.sCharacter('electioneering_commander').GetHerHim]—good soldiers don't give orders, they take them!"
  election_neutral.2.c:0 "If [SCOPE.sCharacter('electioneering_commander').GetFullName] likes politics so much, [SCOPE.sCharacter('electioneering_commander').GetSheHe] ought to get more involved."
  election_neutral.2.c.tt:0 "[SCOPE.sCharacter('electioneering_commander').GetFullName] does not have the Politician trait."
 
  election_neutral.3.t:0 "Whistle-Stop Tour"
  election_neutral.3.d:0 "[SCOPE.sCharacter('whistle_stop_leader').GetFullName] intends to travel across [SCOPE.sState('whistle_stop_state').GetName] by train to campaign for the [SCOPE.sParty('whistle_stop_party').GetName]."
- election_neutral.3.f:0 ""All I intend to do is present myself to the people — I'm just a simple [SCOPE.sCharacter('whistle_stop_leader').GetWomanMan] trying to get our party's message out by the best means available.""
+ election_neutral.3.f:0 ""All I intend to do is present myself to the people—I'm just a simple [SCOPE.sCharacter('whistle_stop_leader').GetWomanMan] trying to get our party's message out by the best means available.""
  election_neutral.3.a:0 "Campaigning by rail is a smart move."
  election_neutral.3.b:0 "It'd be a shame if that campaign train kept suffering delays."
  election_neutral.3.c:0 "The fate of the nation depends on that train running on time!"
@@ -481,7 +481,7 @@
  je_military_aviation_reason:0 "Advancements in aviation have opened up a new battlefield: the skies above."
  aviation.1.t:0 "The Ace Officer"
  aviation.1.d:1 "[SCOPE.sCharacter('flying_circus_general').GetFullName] has gained renowned not merely for utilizing aircraft in battle, but for even flying one [SCOPE.sCharacter('flying_circus_general').GetHerHim]self over the skies of [SCOPE.sState('flying_circus_state').GetName]."
- aviation.1.f:1 ""The papers are calling [SCOPE.sCharacter('flying_circus_general').GetHerHim] the '[SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_adjective_loc')] [SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_noun_loc')]'! [SCOPE.sCharacter('flying_circus_general').GetSheHe|U]'s astounding — I can't tell if it'd be better to parade [SCOPE.sCharacter('flying_circus_general').GetHerHim] around at home or keep siccing [SCOPE.sCharacter('flying_circus_general').GetHerHim] on everyone in [SCOPE.sState('flying_circus_state').GetNameNoFormatting].""
+ aviation.1.f:1 ""The papers are calling [SCOPE.sCharacter('flying_circus_general').GetHerHim] the '[SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_adjective_loc')] [SCOPE.sCharacter('flying_circus_general').GetCustom('air_ace_noun_loc')]'! [SCOPE.sCharacter('flying_circus_general').GetSheHe|U]'s astounding—I can't tell if it'd be better to parade [SCOPE.sCharacter('flying_circus_general').GetHerHim] around at home or keep siccing [SCOPE.sCharacter('flying_circus_general').GetHerHim] on everyone in [SCOPE.sState('flying_circus_state').GetNameNoFormatting].""
  aviation.1.a:0 "Hero-worship will help domestically."
  aviation.1.b:0 "War heroes need to stay in the war."
 
@@ -492,7 +492,7 @@
  je_trench_warfare_reason:0 "Soldiers have discovered a new weapon in this age of scientific warfare: the shovel."
  trench_warfare.1.t:0 "The Entrenched Front"
  trench_warfare.1.d:1 "Heavy usage of trenches in [SCOPE.sState('trench_warfare_state').GetName] by [SCOPE.sCharacter('trench_warfare_general').GetFullName] has turned the land into a blasted hellscape. The stalemate cannot last forever, but it's not clear what the best way forward is."
- trench_warfare.1.f:1 ""Have you ever been there, in the trenches? It's less lonely than you'd think. You have friends everywhere — the rats will be with you every day and night, and even when your mates die, they'll stay right there with you, just down below in the mud.""
+ trench_warfare.1.f:1 ""Have you ever been there, in the trenches? It's less lonely than you'd think. You have friends everywhere—the rats will be with you every day and night, and even when your mates die, they'll stay right there with you, just down below in the mud.""
  trench_warfare.1.a:0 "We must entrench further in [SCOPE.sState('trench_warfare_state').GetName]."
  trench_warfare.1.b:0 "We can't let our defenses stagnate."
  trench_warfare.1.c:0 "We need a breakthrough."
@@ -535,7 +535,7 @@
  je_carriers_reason:1 "Breakthroughs in naval and aeronautical technology have created a new vessel: the aircraft carrier. This ship carries airplanes instead of torpedoes and cannon. Its potential strength in battle is not yet fully known, but the design is full of promise."
  naval_tech_events.5.t:0 "The Bombing Demonstration"
  naval_tech_events.5.d:0 "A prominent proponent of naval air power, [SCOPE.sCharacter('aviator_commander').GetFullName], has orchestrated a series of naval exercises, effectively bombing derelict hulks from high above with aircraft launched from other ships."
- naval_tech_events.5.f:1 ""No ship can escape the devastation of aircraft attacking from above — the most effective naval munition of the future shall be a bomb from from the skies, not a shell blasted from a deck. This exercise has shown beyond a shadow of a doubt that planes shall be the sword and the shield of tomorrow's navy.""
+ naval_tech_events.5.f:1 ""No ship can escape the devastation of aircraft attacking from above—the most effective naval munition of the future shall be a bomb from from the skies, not a shell blasted from a deck. This exercise has shown beyond a shadow of a doubt that planes shall be the sword and the shield of tomorrow's navy.""
  naval_tech_events.5.a:0 "No navy shall be as advanced as ours!"
  naval_tech_events.5.b:0 "That officer has embarrassed the service! Fire [SCOPE.sCharacter('aviator_commander').GetFullName]."
  naval_tech_events.5.c:0 "[SCOPE.sCharacter('aviator_commander').GetFullName] could advance [SCOPE.sCharacter('aviator_commander').GetHerHis] cause better in government."
@@ -548,7 +548,7 @@
  je_unite_the_principalities_button: "Press for the union"
  je_unite_the_principalities_button_desc: "The first step in unifying the Romanian nation is establishing a single ruler among our people. Ensuring common leadership, even if our countries remain separate on paper, will do much for the cause of unification."
  je_unite_the_principalities_united_two_principalities_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has formed a [concept_personal_union] over another #bold Romanian#! country or made it a [concept_puppet] of [SCOPE.GetRootScope.GetCountry.GetName]."
- je_unite_the_principalities_friend_with_all_great_powers_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has #bold positive#! relations with every [concept_great_power] that has an [concept_active_interest] in the region."
+ je_unite_the_principalities_friend_with_all_great_powers_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has #bold positive#! relations with every [concept_great_power] that has an [concept_interest] in the region."
  je_unite_the_principalities_no_other_romanians_tt: "There are no other #bold Romanian#! countries to unite with."
  je_unite_the_principalities_romania_is_real_tt: "#bold Romania#! has already formed."
  je_unite_the_principalities_amicable_or_better_relations_tt: "[SCOPE.GetRootScope.GetCountry.GetName] has #bold amicable#! or better relations with another #bold Romanian#! country, and either both countries are independent or are subjects of the same overlord that can themselves have subjects."
@@ -630,7 +630,7 @@
  je_lion_of_the_zanj_loss_of_territory: "Will cede control of every state that is not the capital to a neighboring colonizing power in the same [concept_state_region] if one is present, else it will become its own independent warlord state."
 
  zanzibar.2.t: "The [SCOPE.sCountry('deag_scope').GetAdjective] East Africa Company"
- zanzibar.2.d: "Some enterprising explorers and merchants aligned with colonial interests are claiming that it would be trivial to undercut [SCOPE.sCountry('zanzibar_scope').GetAdjectiveNoFormatting] authority in Africa by directly obtaining treaties with local chieftains in the region. By all accounts, [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting]'s authority is extremely weak — letting this happen will lead to us gaining [SCOPE.sStateRegion('zanzibar_tanganyika_scope').GetName] and the overnight collapse of [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] entirely."
+ zanzibar.2.d: "Some enterprising explorers and merchants aligned with colonial interests are claiming that it would be trivial to undercut [SCOPE.sCountry('zanzibar_scope').GetAdjectiveNoFormatting] authority in Africa by directly obtaining treaties with local chieftains in the region. By all accounts, [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting]'s authority is extremely weak—letting this happen will lead to us gaining [SCOPE.sStateRegion('zanzibar_tanganyika_scope').GetName] and the overnight collapse of [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting] entirely."
  zanzibar.2.f: ""I'm telling you, that man is half-crazy! That whole scheme of his will founder the moment we let go of his hand!"\n\nCigar smoke wafted in the dim light of the drawing room, as the two figures silently considered what to do. "Perhaps," pondered the other voice, "that just means we musn't let go of his hand." There was a slight pause, interrupted by a chuckle. "The Zanj is lovely in the spring, I've been told.""
  zanzibar.2.a: "We can gain much from the end of [SCOPE.sCountry('zanzibar_scope').GetNameNoFormatting]."
  zanzibar_2_notification: "[SelectLocalization(SCOPE.sCountry('zanzibar_scope').IsValid,'scoped_zanzibar_notification','dead_zanzibar_notification')]"
@@ -659,7 +659,7 @@
 
  zanzibar.5.t: "Tippu Tip"
  zanzibar.5.d: "An ambitious slave and ivory merchant named Hamad ibn Muhammad al Murjabi asks for [ROOT.GetCountry.GetName]'s support in a colonial venture. He proposes establishing a new government in $STATE_CONGO_ORIENTALE$. If he is supported, his state will become our subject, but the great powers will disapprove and set our quest to become [Concept('concept_recognized_power','$concept_recognized_power_short$')] back considerably."
- zanzibar.5.f: ""Why #italic do#! they call you 'Tippu Tip' anyways, Hamad?" asked the foreigner as the ivory caravan began to ford another river.\n\nThe trader smiled. "It is because of the sound of my guns, for you see — oh, blast, look!"\n\nHe bolted towards the water, calling for help from his caravan.\n\n"The boat full of slaves has sunk!" he cried. "What a pity! That was a fine canoe."" # TIPPU TIP ACTUALLY SAID THIS
+ zanzibar.5.f: ""Why #italic do#! they call you 'Tippu Tip' anyways, Hamad?" asked the foreigner as the ivory caravan began to ford another river.\n\nThe trader smiled. "It is because of the sound of my guns, for you see—oh, blast, look!"\n\nHe bolted towards the water, calling for help from his caravan.\n\n"The boat full of slaves has sunk!" he cried. "What a pity! That was a fine canoe."" # TIPPU TIP ACTUALLY SAID THIS
  zanzibar.5.a: "Tippu Tip cannot be supported, but we dare not condemn him."
  zanzibar.5.b: "We welcome this foothold in the Congo."
  zanzibar.5.c: "Restrain Tippu Tip and end this before it can begin!"
@@ -669,12 +669,12 @@
  zanzibar.6.d: "The rise of [SCOPE.sCharacter('zan_ruler').GetFullName], a notable [SCOPE.sCulture('zan_ruler_culture').GetName] figure, marks the end of centuries of Arab rule. [SCOPE.sCulture('zan_swahili_culture').GetName] leaders are demanding that this monumental occasion be used to officially overturn [SCOPE.sCulture('zan_omani_culture').GetName] dominance within [ROOT.GetCountry.GetName]."
  zanzibar.6.f: "The streets of Zanzibar's old Stone Town quarter were deserted. Everyone had shuttered themselves in their homes, waiting to see what tomorrow would bring.\n\nInitially, some had celebrated, and claimed that while a hundred tribes had lost their freedom centuries ago, a nation had regained theirs today. Others had looked out onto the island of white sands and blue waters and feared that if they did nothing today, they would lose everything tomorrow. They had all poured out into the streets, briefly, and soon ran into each other.\n\nToo many people had become abruptly aware that their neighbors were strangers to them, and so now they waited alone, side by side."
  zanzibar.6.a: "[ROOT.GetCountry.GetName] belongs to the [SCOPE.sCulture('zan_swahili_culture').GetName] nation!"
- zanzibar.6.b: "One [SCOPE.sCulture('zan_ruler_culture').GetName] [SCOPE.sCharacter('zan_ruler').GetPrimaryRoleTitle|l] is irrelevant — [ROOT.GetCountry.GetName] remains [SCOPE.sCulture('zan_omani_culture').GetName]."
+ zanzibar.6.b: "One [SCOPE.sCulture('zan_ruler_culture').GetName] [SCOPE.sCharacter('zan_ruler').GetPrimaryRoleTitle|l] is irrelevant—[ROOT.GetCountry.GetName] remains [SCOPE.sCulture('zan_omani_culture').GetName]."
 
  can_reformer_movement_fury: "Reformer Movement Fury"
 
  je_struggle_for_the_highveld: "Struggle for the Highveld"
- je_struggle_for_the_highveld_reason: "The interior lands of the veld appear to be inhospitable scrubland at first glance, but there are fertile grounds among the fields, and the escarpments glitter invitingly. Order — our order — must be put in place, to ensure this rich land can see the peace it so dearly needs to reveal its full potential."
+ je_struggle_for_the_highveld_reason: "The interior lands of the veld appear to be inhospitable scrubland at first glance, but there are fertile grounds among the fields, and the escarpments glitter invitingly. Order—our order—must be put in place, to ensure this rich land can see the peace it so dearly needs to reveal its full potential."
  je_struggle_for_the_highveld_saf_states: "[ROOT.GetCountry.GetName] owns all of at least #b 4#! states in [concept_georegion_south_africa]"
  je_struggle_for_the_highveld_saf_success: "Every other country with a capital in [concept_georegion_south_africa] is either a subject of [SCOPE.sCountry('cape_colony_scope').GetName] or shares the same overlord as [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
  je_struggle_for_the_highveld_saf_fail: "Any other country with a capital in [concept_georegion_south_africa] becomes an independent [concept_recognized_power] with a coastal [concept_incorporated_state]."
@@ -698,7 +698,7 @@
 
  struggle_for_the_highveld.1.t: "The Battle of Vegkop"
  struggle_for_the_highveld.1.d: "A heavily-armed party of Boer trekkers have successfully fended off a large [SCOPE.sCountry('ndebele').GetAdjective] #italic amabutho#! raid, crippling their power. With [SCOPE.sCountry('ndebele').GetAdjectiveNoFormatting] supremacy shaken by this defeat, their king, [SCOPE.sCharacter('mzilikazi').GetFirstName], has ordered a withdrawal from [SCOPE.sStateRegion('transvaal_region').GetName] and for the whole nation to move northward."
- struggle_for_the_highveld.1.f: "The warriors beat on their shields, soothing their rattled nerves, before they charged once more at the laager, crying the name of their [SCOPE.sCharacter('mzilikazi').GetPrimaryRoleTitle|l]. As they did, the fire and thunder from the laager intensified. Muskets emerged from behind the wagons firing bullets, loose buckshot, anything that could be frantically loaded and flung at the charging enemy. Any warrior who cleared this hail of fire and scaled the thornbushes to reach the wagons was met with the swing of hatchets. The smoke of the guns mixed with spilled blood to create a thick haze, making attackers and defenders alike breath death.\n\nWhen the cries of battle ended and the smoke cleared, among the mangled bodies strewn on the battlefield laid the ambitions of [SCOPE.sCharacter('mzilikazi').GetFirstNameNoFormatting], as dead as the warriors who had charged the laager that day."
+ struggle_for_the_highveld.1.f: "The warriors beat on their shields, soothing their rattled nerves, before they charged once more at the laager, crying the name of their [SCOPE.sCharacter('mzilikazi').GetPrimaryRole.GetName|l]. As they did, the fire and thunder from the laager intensified. Muskets emerged from behind the wagons firing bullets, loose buckshot, anything that could be frantically loaded and flung at the charging enemy. Any warrior who cleared this hail of fire and scaled the thornbushes to reach the wagons was met with the swing of hatchets. The smoke of the guns mixed with spilled blood to create a thick haze, making attackers and defenders alike breath death.\n\nWhen the cries of battle ended and the smoke cleared, among the mangled bodies strewn on the battlefield laid the ambitions of [SCOPE.sCharacter('mzilikazi').GetFirstNameNoFormatting], as dead as the warriors who had charged the laager that day."
  struggle_for_the_highveld.1.a: "Raid the [SCOPE.sCountry('ndebele').GetNameNoFormatting] as they flee north."
  struggle_for_the_highveld.1.b: "Bring some of the [SCOPE.sCountry('ndebele').GetNameNoFormatting] into our fold."
  struggle_for_the_highveld.1.c: "The Boer threat has been revealed! We must help, not hurt, [SCOPE.sCharacter('mzilikazi').GetFirstNameNoFormatting]."
@@ -724,12 +724,12 @@
  struggle_for_the_highveld.3.d: "[SCOPE.sCharacter('piet_retief').GetFullName] believes that [SCOPE.sCharacter('dingane').GetFirstName], the [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] of [SCOPE.sCountry('zulu').GetName], can be convinced to cede the southern half of [SCOPE.sStateRegion('zululand_region').GetName] to [ROOT.GetCountry.GetName]. [SCOPE.sCharacter('piet_retief').GetSheHe|U] believes a deal can be made if [SCOPE.sCharacter('piet_retief').GetSheHe] negotiates personally at [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] [SCOPE.sCharacter('dingane').GetFirstName]'s court. Some warn that the [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] is dangerous to treat with."
  struggle_for_the_highveld.3.f: ""It's simple," chuckled [SCOPE.sCharacter('piet_retief').GetFullNameNoFormatting], waving a letter in his hand. "We just have to show the [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] we can be trusted, and we'll soon have a port of our own!"\n\nThe crowd around him murmured equally in excitement and concern.\n\n"A new home! Land, ours for the taking!"\n\n"I'm not sure [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] [SCOPE.sCharacter('dingane').GetFirstNameNoFormatting] is that easy to deal with."\n\n"Pfah! That's for [SCOPE.sCharacter('piet_retief').GetFirstNameNoFormatting] to find out, not us!""
  struggle_for_the_highveld.3.a: "[SCOPE.sCharacter('piet_retief').GetFullName] will gain [SCOPE.sStateRegion('zululand_region').GetName] for [ROOT.GetCountry.GetNameNoFormatting]!"
- struggle_for_the_highveld.3.b: "[SCOPE.sCharacter('dingane').GetFirstName] is dangerous — [SCOPE.sCharacter('piet_retief').GetLastName] must drop this idea."
+ struggle_for_the_highveld.3.b: "[SCOPE.sCharacter('dingane').GetFirstName] is dangerous—[SCOPE.sCharacter('piet_retief').GetLastName] must drop this idea."
  ora_natalia_venture_rejected: "Natalia Venture Rejected"
 
  struggle_for_the_highveld.4.t: "Boers Demand the Thukela"
  struggle_for_the_highveld.4.d: "A delegation of Boer settlers, led by [SCOPE.sCharacter('piet_retief').GetFullName], have arrived at [ROOT.GetCountry.GetCapital.GetCityHubName], demanding that we somehow cede the lands south of the Thukela, half of all [SCOPE.sStateRegion('zululand_region').GetName]. This proposal is an insult and provocation, but there are many other well-armed Boers where this delegation came from."
- struggle_for_the_highveld.4.f: "[SCOPE.sCharacter('piet_retief').GetFullNameNoFormatting] stood before the [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] grinning, with nary a flicker of diffidence on [SCOPE.sCharacter('piet_retief').GetHerHis] face or in [SCOPE.sCharacter('piet_retief').GetHerHis] stance. [SCOPE.sCharacter('piet_retief').GetSheHe|U] was saying something about friendship and respect, a translator told [SCOPE.sCharacter('dingane').GetFirstNameNoFormatting], but reports were already coming in of missing cattle and enigmatic scout parties that fled when anyone approached them. The cattle could have been taken by some rival chiefs — or by the figure speaking before [SCOPE.sCharacter('dingane').GetHerHim] now. Trust was in #italic such#! rare supply these days..."
+ struggle_for_the_highveld.4.f: "[SCOPE.sCharacter('piet_retief').GetFullNameNoFormatting] stood before the [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] grinning, with nary a flicker of diffidence on [SCOPE.sCharacter('piet_retief').GetHerHis] face or in [SCOPE.sCharacter('piet_retief').GetHerHis] stance. [SCOPE.sCharacter('piet_retief').GetSheHe|U] was saying something about friendship and respect, a translator told [SCOPE.sCharacter('dingane').GetFirstNameNoFormatting], but reports were already coming in of missing cattle and enigmatic scout parties that fled when anyone approached them. The cattle could have been taken by some rival chiefs—or by the figure speaking before [SCOPE.sCharacter('dingane').GetHerHim] now. Trust was in #italic such#! rare supply these days..."
  struggle_for_the_highveld.4.a: "This demand is preposterous. Kill [SCOPE.sCharacter('piet_retief').GetLastName]'s entire delegation."
  notification_piet_retief_killed_name: "[SCOPE.sCharacter('piet_retief').GetFullName] Killed"
  notification_piet_retief_killed_desc: "[SCOPE.sCharacter('piet_retief').GetLastName] has been killed on the orders of [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle] [SCOPE.sCharacter('dingane').GetFirstName] of [SCOPE.sCountry('zulu').GetName]."
@@ -746,13 +746,13 @@
 
  struggle_for_the_highveld.5.t: "Blood River"
  struggle_for_the_highveld.5.d: "Tensions between migrating Boer Voortrekkers and [SCOPE.sCountry('zulu').GetName] have been steadily rising. An attempt to dislodge a large Boer party on the banks of the Ncome River has ended disastrously. [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstName] believes the southern part of [SCOPE.sStateRegion('zululand_region').GetName] can be ceded to the Boers in exchange for peace, but this will not happen if [SCOPE.sCharacter('dingane').GetFirstName] remains [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle|l]."
- struggle_for_the_highveld.5.f: "Another army — shattered. How much blood had been spilled? How many men were left to command? How many men left would #italic accept#! a command from their [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle|l]? [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstNameNoFormatting] was suggesting outlandish ideas, wholly out of the question, they'd be the death of the realm... or at least the death of the [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle]."
+ struggle_for_the_highveld.5.f: "Another army—shattered. How much blood had been spilled? How many men were left to command? How many men left would #italic accept#! a command from their [SCOPE.sCharacter('dingane').GetPrimaryRole.GetName|l]? [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstNameNoFormatting] was suggesting outlandish ideas, wholly out of the question, they'd be the death of the realm... or at least the death of the [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle]."
  struggle_for_the_highveld.5.a: "Make [SCOPE.sCharacter('mpande').GetPrimaryRoleTitle] [SCOPE.sCharacter('mpande').GetFirstName] the new [SCOPE.sCharacter('dingane').GetPrimaryRoleTitle|l] and sign the treaty."
  struggle_for_the_highveld.5.a.tt: "Half of [SCOPE.sStateRegion('zululand_region').GetName] will be ceded to a new Boer state."
  notification_blood_river_mpande_rules_natalia_founded_name: "Boer Republic in Natal"
  notification_blood_river_mpande_rules_natalia_founded_desc: "$ZUL$ has ceded its southern territories to a new Boer republic."
  notification_blood_river_mpande_rules_natalia_founded_tooltip: "#header $notification_blood_river_mpande_rules_natalia_founded_name$#!\n$TOOLTIP_DELIMITER$\n$notification_blood_river_mpande_rules_natalia_founded_desc$"
- struggle_for_the_highveld.5.b: "[SCOPE.sCharacter('mpande').GetFirstName] is a traitor! Seize [SCOPE.sCharacter('mpande').GetHerHim] — only [SCOPE.sCharacter('dingane').GetFirstName] can lead us."
+ struggle_for_the_highveld.5.b: "[SCOPE.sCharacter('mpande').GetFirstName] is a traitor! Seize [SCOPE.sCharacter('mpande').GetHerHim]—only [SCOPE.sCharacter('dingane').GetFirstName] can lead us."
  struggle_for_the_highveld.5.b.tt: "[SCOPE.sCountry('zulu').GetName]'s lands will remain united, but its leadership has already been questioned."
  zul_desperately_clinging_to_power: "Desperately Clinging to Personal Power"
  zul_desperately_clinging_to_power_ig: "Desperately Clinging to Political Power"
@@ -766,5 +766,5 @@
 
  struggle_for_the_highveld.7.t: "Lowest on the Highveld"
  struggle_for_the_highveld.7.d: "Despite our best efforts, [SCOPE.sCountry('highveld_winner').GetName] is now unquestionably the supreme power in South Africa."
- struggle_for_the_highveld.7.f: "A new flag was waving across South Africa — the flag of [SCOPE.sCountry('highveld_winner').GetNameNoFormatting]. [SCOPE.sCountry('highveld_loser').GetNameNoFormatting] might still persist, but the future was [SCOPE.sCountry('highveld_winner').GetAdjectiveNoFormatting]."
+ struggle_for_the_highveld.7.f: "A new flag was waving across South Africa—the flag of [SCOPE.sCountry('highveld_winner').GetNameNoFormatting]. [SCOPE.sCountry('highveld_loser').GetNameNoFormatting] might still persist, but the future was [SCOPE.sCountry('highveld_winner').GetAdjectiveNoFormatting]."
  struggle_for_the_highveld.7.a: "We weep for thee, [SCOPE.sCountry('highveld_loser').GetNameNoFormatting]."

@@ -109,7 +109,7 @@
  OPTION_CENTERED: "Centered"
  OPTION_RIGHT: "Right"
 
- DYNAMIC_THEME: "Dynamic"
+ DYNAMIC_THEME: "Country Dynamic"
  DYNAMIC_THEME_DESC: "Automatically selects the [ThemeCategory.GetName|v] theme based on the [concept_country] played"
  ui_skin_theme: "User Interface"
  ui_skin_theme_desc: "The buttons, frames, windows, headers, etc. in the game."

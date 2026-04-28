@@ -1,0 +1,99 @@
+﻿l_english:
+
+#Japan Single-Fire Events
+
+japan_events.31.t: "Theatre in [SCOPE.sState('kabuki_theatre_state').GetCityHubName] Burns Down"
+japan_events.31.d: "A fire has burned down a popular kabuki theatre in [SCOPE.sState('kabuki_theatre_state').GetName]. While the theatre troupe makes plans to rebuild, [SCOPE.gsInterestGroup('relevant_ig').GetName] members—especially [SCOPE.sCharacter('relevant_leader').GetFullName]—see this as an opportunity to regulate entertainment in [SCOPE.sState('kabuki_theatre_state').GetCityHubName] and force the performers to rebuild their theatre outside of city limits."
+japan_events.31.f: "Atop the platform of a fire lookout tower there is a restless watchman who diligently keeps an eye over [SCOPE.sState('kabuki_theatre_state').GetCityHubName]. Late in the evening, he spots the telltale signs of a fire from his vantage point. As smoke billows and the acrid scent of fire fills the air, he rushes to ring the alarm bell.\n\nUnsuspecting townsfolk are alerted of the danger and fire brigades launch into action climbing roofs to control the flames. When the fires are extinguished, it is apparent much damage is already done. All that remains of one prominent kabuki theatre are cinders and ashes in the wake of this destructive blaze."
+japan_events.31.a: "They must rebuild outside of city limits."
+japan_events.31.b: "Allow the theatre troupe to rebuild."
+
+modifier_kabuki_regulated: "Kabuki Theatre Crackdown"
+modifier_theatre_affronted_official: "Affronted Official"
+modifier_shogunate_opposition_ig_approval: "Opportunistic Opposition"
+
+japan_events.32.t: "Pictures of the Floating World"
+japan_events.32.d: "The work of a prolific ukiyo-e artist in [SCOPE.sState('ukiyo_e_state').GetCityHubName] has inspired the imagination of artists both in [ROOT.GetCountry.GetName] and abroad."
+japan_events.32.f: "A popular woodblock print depicts the lively theatre district in the outskirts of [SCOPE.sState('ukiyo_e_state').GetCityHubName]. Silver moonlight shines down on the main street filled with people where their silhouettes cast shadows. The east side of the street is lined with teahouses and puppet theatres. Opposite, to the west, are three kabuki theatres with a drum tower above each.\n\n"Only a master hand could make strokes so firm and true and so delicately shaded just where the shading should come. And only a master mind could conceive a figure so rhythmically organized throughout, so strong and at the same time so exquisitely dainty."\n— F.W.G., #italic Bulletin of the Art Institute of Chicago#!"
+japan_events.32.a: "No doubt [ROOT.GetCountry.GetAdjectiveNoFormatting] art will continue to gain global prominence."
+japan_events.32.b: "Excellent. Encourage the production for more of these works."
+
+modifier_ukiyo_e_prestige: "Prolific Woodblock Prints"
+modifier_ukiyo_e_production: "Woodblock Print Production"
+
+japan_events.33.t: "Wrestling with Tradition"
+japan_events.33.d: "The effect of Westernization on [ROOT.GetCountry.GetAdjectiveNoFormatting] culture is significant. As customs rapidly change, [SCOPE.sCharacter('relevant_character').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_character').GetFullName] is sponsoring a Sumo wrestling tournament in [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] to combat public antagonism of the tradition."
+japan_events.33.f: "Crowds begin to gather at the newly constructed Sumo Hall on temple grounds, filled with curiosity about this event that has the [SCOPE.sCharacter('relevant_character').GetPrimaryRoleTitle]'s endorsement. Among those present are some aristocrats and statesmen whose fixation with Western culture has left them skeptical of maintaining ties to this tradition. While the golden age of Sumo has long passed, [SCOPE.sCharacter('relevant_character').GetPrimaryRoleTitle] [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]'s attendance may re-establish the cultural importance of the sport in the eyes of the people."
+japan_events.33.a: "The [SCOPE.sCharacter('relevant_character').GetPrimaryRoleTitle]'s efforts will restore the public image of the sport."
+japan_events.33.b: "The tradition of this [ROOT.GetCountry.GetAdjectiveNoFormatting] sport will have great longevity."
+
+modifier_restored_sumo_popularity: "Restored Sumo Popularity"
+modifier_traditional_sports_movement_support: "National Sport"
+
+japan_events.34.t: "Whaling Disaster in [SCOPE.sState('whaling_state').GetPortHubName]"
+japan_events.34.d: "A boat sailing off the coast of [SCOPE.sState('whaling_state').GetName] has spotted two right whales—a mother and a calf. Driven by desperation after a season of poor catches, a whaling group has ventured out to sea despite bad weather conditions. More than 100 people have been reported missing."
+japan_events.34.f: "The bonfire on the boat has long disappeared out of view and the fleet can no longer be seen from ground causing great commotion in [SCOPE.sState('whaling_state').GetPortHubName].\n\n"No matter how dire times have been, we have always avoided whaling a mother and her calf," one man argues. "We should have let the whales go."\n\n"Nonsense," his cousin replies. "The whales are a blessing. I'm sure the expedition will return soon with a bountiful catch.""
+japan_events.34.a: "$bg_whaling$ is a crucial industry in [SCOPE.sState('whaling_state').GetNameNoFormatting]."
+japan_events.34.b: "Focus our future efforts on $bg_fishing$ in [SCOPE.sState('whaling_state').GetNameNoFormatting] instead."
+
+modifier_whaling_deaths: "Whaling Casualties"
+modifier_redouble_on_whaling: "Future in Whaling"
+modifier_fishing_not_whaling: "Future in Fishing"
+
+japan_events.35.t: "Anti-Arson Measures"
+japan_events.35.d: "The [SCOPE.gsInterestGroup('relevant_ig').GetName] have been concerned that the frequency of arson cases within the city limits of [SCOPE.sState('relevant_state').GetCityHubName] has driven up prices of [SCOPE.sGoods('expensive_good').GetName] in [ROOT.GetCountry.GetName]. They have argued that doubling down on strict anti-arson measures is necessary."
+japan_events.35.f: "The alarm bell rings out from the fire lookout tower alerting all to the imminent danger where another fire in [SCOPE.sState('relevant_state').GetCityHubName] has set residences and businesses aflame. As the fire brigades arrive to extinguish the blaze, $strata_commoners_townspeople$ gather in a large crowd in the street. Some regard their neighbors with suspicion and others begin to speculate whether this was an accident or if an arsonist is to blame. One thing is for certain, the prices for [SCOPE.sGoods('expensive_good').GetNameNoFormatting] will soon be multiplying."
+japan_events.35.a: "Strict measures are warranted. Execute suspected arsonists."
+japan_events.35.b: "Pardon outstanding crimes of those who aid in arrests."
+
+modifier_arson_measure_strict_ig: "Strict Arson Measures"
+modifier_arson_measure_strict_pop: "Arsonist Executions"
+modifier_arson_measure_lenient_ig: "Lenient Arson Measures"
+
+
+# Colonization of Korea Content
+je_colonize_korea: "The Government of Chōsen"
+je_colonize_korea_reason: "#italic "Industry and commerce will see marked development under good governance and peace. We are absolutely certain that peace in East Asia will as a result have stronger foundations than ever before."\n— Record of the Emperor Meiji, Volume 12#!\n\nThe time has come to establish a permanent presence in the Korean Peninsula. Only then can we ensure the future prosperity and safety of [JournalEntry.GetCountry.GetName] and all of [GetGeographicRegion('geographic_region_east_asia').GetName]. In order to properly secure control, we must oversee the development of [GetGeographicRegion('geographic_region_korea').GetName] and not waver in our ambition."
+je_colonize_korea_is_owned_by_tt: "Is owned by [JournalEntry.GetCountry.GetName]"
+je_colonize_korea_culture_percent_seoul_tt: "The [GetCulture('japanese').GetName] [Concept('concept_pop','$concept_population$')|l] of $STATE_SEOUL$ is greater than or equal to #bold [GetPlayer.MakeScope.ScriptValue('je_colonize_korea_state_japanese_culture_min')|0%]#!"
+je_colonize_korea_culture_percent_busan_tt: "The [GetCulture('japanese').GetName] [Concept('concept_pop','$concept_population$')|l] of $STATE_BUSAN$ is greater than or equal to #bold [GetPlayer.MakeScope.ScriptValue('je_colonize_korea_state_japanese_culture_min')|0%]#!"
+je_colonize_korea_culture_percent_yangho_tt: "The [GetCulture('japanese').GetName] [Concept('concept_pop','$concept_population$')|l] of $STATE_YANGHO$ is greater than or equal to #bold [GetPlayer.MakeScope.ScriptValue('je_colonize_korea_state_japanese_culture_min')|0%]#!"
+je_colonize_korea_culture_percent_sariwon_tt: "The [GetCulture('japanese').GetName] [Concept('concept_pop','$concept_population$')|l] of $STATE_SARIWON$ is greater than or equal to #bold [GetPlayer.MakeScope.ScriptValue('je_colonize_korea_state_japanese_culture_min')|0%]#!"
+je_colonize_korea_culture_percent_pyongyang_tt: "The [GetCulture('japanese').GetName] [Concept('concept_pop','$concept_population$')|l] of $STATE_PYONGYANG$ is greater than or equal to #bold [GetPlayer.MakeScope.ScriptValue('je_colonize_korea_state_japanese_culture_min')|0%]#!"
+je_colonize_korea_fail_tt: "#bold [GetGeographicRegion('geographic_region_korea').GetName]#! is no longer under [ROOT.GetCountry.GetAdjective] control"
+
+korea_colinzation_2b_executive_tt: "An [concept_executive] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_peninsula_control_loyal_prominence_tt $modifier_peninsula_control_loyal_prominence$#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years"
+korea_colinzation_2b_company_tt: "A [concept_company] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_peninsula_control_company_bonus_tt $modifier_peninsula_control_company_bonus$#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years"
+modifier_peninsula_control_loyal_prominence_tt: "[GetStaticModifier('modifier_peninsula_control_loyal_prominence').GetName|v]\n[GetStaticModifier('modifier_peninsula_control_loyal_prominence').GetDesc]"
+modifier_peninsula_control_company_bonus_tt: "[GetStaticModifier('modifier_peninsula_control_company_bonus').GetName|v]\n[GetStaticModifier('modifier_peninsula_control_company_bonus').GetDesc]"
+korea_colinzation_3b_tt: "Someone must take responsibility for this failure."
+korea_colinzation_3b_ig_leader_tt: "A [concept_leader] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_peninsula_control_loyal_prominence_loss_tt $modifier_peninsula_control_loyal_prominence$#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years"
+korea_colinzation_3b_ig_tt: "An [concept_interest_group] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_peninsula_control_approval_pol_str_loss_tt $modifier_peninsula_control_approval_pol_str_loss$#! for #v [GetPlayer.MakeScope.ScriptValue('display_moderately_long_modifier_time')]#! years"
+modifier_peninsula_control_loyal_prominence_loss_tt: "[GetStaticModifier('modifier_peninsula_control_loyal_prominence_loss').GetName|v]\n[GetStaticModifier('modifier_peninsula_control_loyal_prominence_loss').GetDesc]"
+modifier_peninsula_control_approval_pol_str_loss_tt: "[GetStaticModifier('modifier_peninsula_control_approval_pol_str_loss').GetName|v]\n[GetStaticModifier('modifier_peninsula_control_approval_pol_str_loss').GetDesc]"
+
+korea_colonization.2.t: "A Promising Future"
+korea_colonization.2.d: "The world now knows that [GetGeographicRegion('geographic_region_korea').GetName] is part of [ROOT.GetCountry.GetName] and firmly under our country's total control. By establishing our presence in the peninsula, our success further demonstrates the prominence of our place on the world stage."
+korea_colonization.2.f: "With the vision of unification between nations now realized, the ambition of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] grows. From [ROOT.GetCountry.GetRuler.GetHerHis] seat in [ROOT.GetCountry.GetCapital.GetCityHubName] [ROOT.GetCountry.GetRuler.GetSheHe] composes tanka poetry reflecting on the success of this endeavor and pleased with the developments in the peninsula.\n\nAt the same moment, out in $STATE_SEOUL$, a [GetCulture('korean').GetNameNoFormatting] bureaucrat suppresses public outcry from civilians who object to the new social order. Speaking to them with great equanimity, he insists this union will ensure the prosperity of all."
+korea_colonization.2.a: "The future prosperity and safety of the peninsula looks bright."
+korea_colonization.2.b: "Business has been integral to our agenda."
+modifier_peninsula_control_prestige_authority: "Peninsula Prestige"
+modifier_peninsula_control_assimilation_migration: "Accelerated Assimilation"
+modifier_peninsula_control_loyal_prominence: "Outstanding Oversight"
+modifier_peninsula_control_company_bonus: "Company Commendation"
+
+korea_colonization.3.t: "A Lost Opportunity"
+korea_colonization.3.d: "[GetGeographicRegion('geographic_region_korea').GetName] is no longer under our control. The economic and diplomatic impact will be felt in [ROOT.GetCountry.GetName] for years to come."
+korea_colonization.3.f: "[ROOT.GetCountry.GetAdjectiveNoFormatting] officials gather, feelings of frustration and displeasure abound, to discuss the government's failure to maintain order in the peninsula. Many refuse any compromise on how to move forward from this blow to the considerable power [ROOT.GetCountry.GetNameNoFormatting] has amassed in recent years.\n\nA gentleman rises to speak over the din of discussion: "Surely [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] can take responsibility for this setback.""
+korea_colonization.3.a: "We must all shoulder the burden of the failure of our endeavor."
+korea_colonization.3.b: "[SCOPE.sCharacter('relevant_ig_leader').GetFullName] and [SCOPE.gsInterestGroup('relevant_ig').GetName] must take responsibility for this failure."
+modifier_peninsula_control_prestige_loss: "Dwindling Control"
+modifier_peninsula_control_loyal_prominence_loss: "Prominence Depletion"
+modifier_peninsula_control_approval_pol_str_loss: "Ebbing Influence"
+
+JE_COLONIZE_KOREA_STATES_HEADER: "Remaining [Concept('concept_state', '$concept_states$')]:"
+JE_COLONIZE_KOREA_STATES_TT: "$JE_COLONIZE_KOREA_STATES_HEADER$\n[GetScriptedGui('je_colonize_korea_states_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+JE_COLONIZE_KOREA_STATES_LIST_ENTRY_OWNED_STATE: "[THIS.GetState.GetCustom('colonize_korea_state_owned_by_japan')] $je_colonize_korea_is_owned_by_tt$"
+JE_COLONIZE_KOREA_STATES_LIST_ENTRY_INCORPORATED_STATE: "[THIS.GetState.GetCustom('colonize_korea_state_is_incorporated')] $TRIGGER_IS_INCORPORATED$"
+JE_COLONIZE_KOREA_STATES_LIST_ENTRY_TURMOIL: "[THIS.GetState.GetCustom('colonize_korea_state_turmoil')] Turmoil is less than [THIS.ScriptValue('je_colonize_korea_state_turmoil_max')|v%1] ([THIS.GetState.CalcTurmoil|v%1])"
+JE_COLONIZE_KOREA_STATES_LIST_ENTRY_CULTURE: "[THIS.GetState.GetCustom('colonize_korea_state_is_assimilated')] [THIS.ScriptValue('je_colonize_korea_state_japanese_culture_min')|v%1] [GetCulture('japanese').GetName] [concept_culture] ([THIS.ScriptValue('japanese_culture_fraction')|v%1])"

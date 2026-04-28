@@ -188,3 +188,15 @@ amendment_economic_regeneration_1_desc: "The success of the Regeneration has led
 
 amendment_economic_regeneration_2: "Legacy of Regeneration"
 amendment_economic_regeneration_2_desc: "The success of the Regeneration has led to a surge in investor confidence. So long as the state remains on its current course, it will have capital to spare."
+
+amendment_frugal_ordinance: "Frugal Ordinance"
+amendment_frugal_ordinance_desc: "Commoner access to luxury items, entertainment, and literature is firmly restricted and regulated by the government."
+
+amendment_zaibatsu_oligopoly: "Zaibatsu Oligopoly"
+amendment_zaibatsu_oligopoly_desc: "The economy has come to be dominated by a closed circle of prosperous military-industrial Zaibatsu in a symbiotic relationship with the state."
+
+amendment_zaibatsu_oligopoly_1: "$amendment_zaibatsu_oligopoly$"
+amendment_zaibatsu_oligopoly_1_desc: "$amendment_zaibatsu_oligopoly_desc$"
+
+amendment_zaibatsu_oligopoly_2: "$amendment_zaibatsu_oligopoly$"
+amendment_zaibatsu_oligopoly_2_desc: "$amendment_zaibatsu_oligopoly_desc$"

@@ -27,6 +27,10 @@
  ig_trait_summon_no_zamindars_desc: "The rulers of our country have demonstrated that they have no interest in negotiation or flexibility. If this is so, then they should not miss the more subtle things we do to keep order."
  ig_trait_famine_reserves: "Famine Reserves"
  ig_trait_famine_reserves_desc: "It is our duty to open our stores of grain when a pressing need emerges. What better way is there to purchase goodwill from our tenants?"
+ ig_trait_fudai_support: "Fudai Support"
+ ig_trait_fudai_support_desc: "In these changing times, we still know the value of loyalty. It is our duty to serve and to assist, bolstering the forces of order and virtue."
+ ig_trait_outspoken_tozama: "Outspoken Tozama"
+ ig_trait_outspoken_tozama_desc: "Although the #italic Tozama#! are not favored by the government, we share the common interests of our noble station. In these pressing times, their voice is our voice as well."
 
   # Industrialists IG Traits
  ig_trait_job_creators:0 "Job Creators"

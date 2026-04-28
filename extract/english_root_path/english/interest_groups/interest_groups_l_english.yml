@@ -103,10 +103,22 @@
  ig_samurai_desc:0 "The Samurai are the hereditary military nobility of Japan, serving as privileged retainers to the powerful landowning Daimyo, and as enforcers of their feudal masters’ wills."
  ig_shogunate:0 "Shogunate"
  ig_shogunate_desc:0 "The Shogunate refers to the military government that has ruled Japan in the Emperor’s name since the 12th century. Anchored in the support of powerful feudal lords, the Daimyo, the insitution is dedicated to the upholding of Japan’s traditional order."
+ ig_daimyo: "Daimyō"
+ ig_daimyo_desc: "The Daimyō are the powerful feudal lords of Japan, and the most influential supporters of the Shogunate. Their political interests lie in upholding Japan's traditional order."
+ ig_kazoku: "Kazoku"
+ ig_kazoku_desc: "The Kazoku are the new aristocracy of Japan, formed from the amalgamation of the daimyō and traditional #italic kuge#! courtier class. Though the Restoration has eroded their formal privileges, they retain their lands and social connections."
  ig_peasants:1 "Heimin"
  ig_peasants_desc:0 "Heimin denotes the Japanese class of commoners, born without any kind of social privileges, and with political interests primarily reflecting those of rural farmers."
- ig_buddhist_monks:0 "Buddhist Monks"
- ig_buddhist_monks_desc:0 "Existing alongside, and often at odds with the native Japanese belief in kami, by the 19th century Buddhism has been present in Japan for over a millennium. The Buddhist schools patronized by the state throughout the Edo era emphasize the syncretic relationship between kami and buddhas."
+ ig_jisha: "Jisha"
+ ig_jisha_desc: "Existing alongside, and often at odds with the native Japanese belief in kami, by the 19th century Buddhism has been present in Japan for over a millennium. The Buddhist schools patronized by the state throughout the Edo era emphasize the syncretic relationship between kami and buddhas."
+ ig_rangakusha: "Rangakusha"
+ ig_rangakusha_desc: "Rangaku, or "Dutch learning", is a school of knowledge devoted to studying European scientific texts sourced from Dutch traders. It is practiced by Western-minded scholars and certain state officials."
+ ig_chonin: "Chōnin"
+ ig_chonin_desc: "Chōnin, or "townspeople", are the merchants, shopkeepers, and craftsmen who compose the urban middle classes of Japan."
+ ig_gosho: "Gōshō"
+ ig_gosho_desc: "The Gōshō are the greatest and most influential merchants. Their houses represent the largest concentrations of capital in Japan, offering financial services to the state and private actors alike."
+ ig_zaibatsu: "Zaibatsu"
+ ig_zaibatsu_desc: "Descended from the powerful merchant houses of the Edo period, the Zaibatsu are the great vertical industrial conglomerates that dominate the Japanese economy."
 
   # Hawaiian IGs
  ig_christian_missionaries:0 "Christian Missionaries"
@@ -187,7 +199,7 @@
   ig_kisanharu_desc: "The Kisanharu are the traditional farmers and peasantry of Nepal, typically without any land of their own. Their interests are largely agrarian in nature."
 
   ig_wamanga: "Wamanga"
-  ig_wamanga_desc: "The newest wave of Arab settlers to the Swahili Coast are known individually as #italics Manga#! — the new Omani aristocracy of Zanzibar."
+  ig_wamanga_desc: "The newest wave of Arab settlers to the Swahili Coast are known individually as #italics Manga#!—the new Omani aristocracy of Zanzibar."
 
   ig_kleinburger: "Kleinbürger"
   ig_kleinburger_desc: "Made up of shopkeepers, clerks, master craftsmen, and lower professionals throughout the German lands, the Kleinbürger are regarded by many as the very embodiment of the German character."

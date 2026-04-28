@@ -134,6 +134,8 @@
  bg_urban_facilities: "都市設備"
  bg_bureaucracy: "官僚制度"
  bg_government: "政府建造物"
+ bg_naval_administration: "海軍司令部"
+ bg_naval_fortification: "海軍要塞"
  bg_trade: "取引所"
  bg_infrastructure: "インフラ"
  bg_banana_plantations: "バナナ農園"
@@ -163,7 +165,7 @@
  bg_special: "特殊施設"
  bg_conscription: "徴兵施設"
  bg_shipyards: "造船所"
- bg_military_shipyards: "軍用造船所"
+ bg_ship_construction: "艦船建造"
  bg_subsistence_agriculture: "自給農業"
  bg_subsistence_ranching: "自給牧場"
  bg_gold_fields: "金鉱山"
@@ -214,12 +216,14 @@
  #Barracks
  building_barrack: "兵舎"
  building_barrack_lens_option: "$building_barrack$を拡張"
- building_naval_base: "海軍基地"
- building_naval_base_lens_option: "$building_naval_base$を拡張"
  building_conscription_center: "徴兵事務所"
  #National Buildings
  building_government_administration: "行政府"
  building_government_administration_lens_option: "$building_government_administration$を拡張"
+ building_naval_administration: "海軍司令部"
+ building_naval_administration_lens_option: "$building_naval_administration$を拡張"
+ building_naval_fortification: "海軍要塞"
+ building_naval_fortification_lens_option: "$building_naval_fortification$を拡張"
  #Unlock tooltips
  tooltip_unlock_railways: "鉄道の建設が可能になる"
  #Monuments

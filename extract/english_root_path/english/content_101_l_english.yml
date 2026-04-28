@@ -70,12 +70,12 @@
 
  expedition_events.504.t:0 "The Expedition Embarks"
  expedition_events.504.d:0 "After a few weeks of preparation and travel, the expedition led by [SCOPE.sCharacter('expedition_leader').GetFullName] has arrived in Zanzibar. From here they will begin their journey to discover the elusive source of the Nile river."
- expedition_events.504.f:1 ""The coast was less arenaceous than expected. Up the hill that led to the city, a group of locals had congregated to watch our expedition, more amused than intrigued. In a language that we could not understand, they shouted at us. One of our men gestured back and, with a shot to the air, the dispute was settled.\n\nAt the other side of the sea, the sand glistened — a layer of polished sunlight.""
+ expedition_events.504.f:1 ""The coast was less arenaceous than expected. Up the hill that led to the city, a group of locals had congregated to watch our expedition, more amused than intrigued. In a language that we could not understand, they shouted at us. One of our men gestured back and, with a shot to the air, the dispute was settled.\n\nAt the other side of the sea, the sand glistened—a layer of polished sunlight.""
  expedition_events.504.a:0 "Onward!"
 
  expedition_events.511.t:0 "Successful Expedition"
  expedition_events.511.d:0 "[SCOPE.sCharacter('expedition_leader').GetFullName] has returned triumphantly, the source of the Nile River has been discovered. It turns out that the source is the great lakes of Africa. "
- expedition_events.511.f:1 ""The roaring sound of the water reminded me of my childhood. A distant and blurry line impossible to cross ever again. In my nightmares, I used to drown. The torrent kept going and going, like an open wound — bleeding out. The heart of Africa exposed before us, the dissection of a continent with meticulous care.\n\nIn my nightmares, I still drown.""
+ expedition_events.511.f:1 ""The roaring sound of the water reminded me of my childhood. A distant and blurry line impossible to cross ever again. In my nightmares, I used to drown. The torrent kept going and going, like an open wound—bleeding out. The heart of Africa exposed before us, the dissection of a continent with meticulous care.\n\nIn my nightmares, I still drown.""
  expedition_events.511.a:0 "Excellent news!"
 
  expedition_events.512.t:0 "Failed Expedition"
@@ -117,7 +117,7 @@
  expedition_events.542.f:1 ""Unfortunately, my rifle failed to fire at the key moment and one of the hunting party was... well, I suppose skewered is the correct terminology. Poor bastard will need a few days to recover.""
  expedition_events.542.a:0 "What a disaster."
 
- expedition_events.550.t:0 "A Beetle in Hand is Worth Two in the Ear"
+ expedition_events.550.t:0 "A Beetle in Hand Is Worth Two in the Ear"
  expedition_events.550.d:1 "A beetle has crawled into the ear of [SCOPE.sCharacter('expedition_leader').GetFullName]. Without immediate medical help this could impede the expedition's progress."
  expedition_events.550.f:1 ""A buzzing noise, the itching wouldn't stop growing. "OUT. OUT. OUT." I shook my head and screamed in pain. "GET IT OUT. OUT." I could feel its wings moving inside my ear, trying to crawl deeper. "[SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')]!," one of the expedition members tries to grab my hand when I reach out for the knife.\n\n"OUT! OUT!!"""
  expedition_events.550.a:0 "We shall stop and get proper help."
@@ -143,7 +143,7 @@
 
  expedition_events.570.t:0 "Geographical Study"
  expedition_events.570.d:0 "It has been suggested that we stop and undertake a geographical study of the area to increase our local knowledge."
- expedition_events.570.f:1 ""The first rays of sun fell from the sky in a perpendicular manner over the dry, half-lighted soil. They flickered over the river's surface, moving the water as the brittle branches of an ill tree.\n\nThe almost-shimmer seeped into the rocks; a whimsical landscape where life seemed so distinct, so alien — so vivid.""
+ expedition_events.570.f:1 ""The first rays of sun fell from the sky in a perpendicular manner over the dry, half-lighted soil. They flickered over the river's surface, moving the water as the brittle branches of an ill tree.\n\nThe almost-shimmer seeped into the rocks; a whimsical landscape where life seemed so distinct, so alien—so vivid.""
  expedition_events.570.a:0 "Good idea."
  expedition_events.570.b:0 "We don't have the time."
 
@@ -158,7 +158,7 @@
 
  crime_events.1.t:1 "The Great [SCOPE.sState('train_robbery_state').GetNameNoFormatting] Train Robbery"
  crime_events.1.d:1 "A spate of train robberies have been committed by daring gangs all across [SCOPE.sState('train_robbery_state').GetName], threatening law, order, and the purses of the wealthy all across the state."
- crime_events.1.f:1 ""They came swaggering through the carriage, I recognized one of them from a wanted poster. No doubt in my mind it was the [SCOPE.sCharacter('suitable_name').GetLastNameNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')].""
+ crime_events.1.f:1 ""They came swaggering through the carriage, I recognized one of them from a wanted poster. No doubt in my mind it was the [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('outlaw_gang_type')].""
  crime_events.1.a:1 "Our marshals will make short work of them."
  crime_events.1.b:0 "Who cares about a train or two?"
 
@@ -202,7 +202,7 @@
 
  crime_events.13.t:1 "The Ripper: New Victims"
  crime_events.13.d:1 "Several more corpses in [SCOPE.sState('serial_killer_state_scope').GetName] have been identified as victims of the [SCOPE.sState('serial_killer_state_scope').GetCityHubName] Ripper. Careful and committed investigation may yield clues as to the killer's identity."
- crime_events.13.f:1 "The corpse is laying face down again. There's a long, dark stain that has dried up overnight. The inspector moves closer. The insides of the victim are scattered around the place like a meat salad.\n\n"They all look the same — [SCOPE.GetRootScope.GetCountry.GetCustom('serial_killer_modus_operandi')]."\n\nAn unnerving sight; eyes white and putrid like spoiled milk, a boy keeps spying on the scene from one of the roofs, the inspector moves his hand to make him leave. The pile of bodies keeps growing like an unfinished painting."
+ crime_events.13.f:1 "The corpse is laying face down again. There's a long, dark stain that has dried up overnight. The inspector moves closer. The insides of the victim are scattered around the place like a meat salad.\n\n"They all look the same—[SCOPE.GetRootScope.GetCountry.GetCustom('serial_killer_modus_operandi')]."\n\nAn unnerving sight; eyes white and putrid like spoiled milk, a boy keeps spying on the scene from one of the roofs, the inspector moves his hand to make him leave. The pile of bodies keeps growing like an unfinished painting."
  crime_events.13.a:1 "Fund a larger investigation."
  crime_events.13.b:1 "No evidence links these crimes."
 
@@ -429,7 +429,7 @@
  congo_free_state_events.5.d:2 "After the disappearance of the monarchy, it has become clear that the [SCOPE.sCountry('free_state').GetNameNoFlag] is a relic of the past. We could reintegrate the state now following a new direction under the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.5.d2:0 "International opinion of the [SCOPE.sCountry('free_state').GetNameNoFlag] has turned very sour after its atrocities have been revealed. We could reintegrate the state now with very little push back from the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]."
  congo_free_state_events.5.f:1 ""It is terrifying to even think that something like this could happen. Deaths and massacres and famines. All in the name of profit ⁠— and joy. Officers competing over who's the most brutal one, exhibiting the marks on the locals like war trophies.\n\nThey have trespassed all laws of mankind. Intruders from the deepest of hells whose even association with humanity is an affront to us all.""
- congo_free_state_events.5.f2:0 "That all of this has happened under the approval of the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] is blatantly ridiculous. To think that a [SCOPE.sCharacter('free_state_monarch').GetWomanMan] can own a whole nation like [SCOPE.sCharacter('free_state_monarch').GetSheHe] owns a house in the countryside is our deepest and most ludicrous error.\n\nDeaths and massacres and famines. All in the name of personal profit — and morbid joy."
+ congo_free_state_events.5.f2:0 "That all of this has happened under the approval of the [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] is blatantly ridiculous. To think that a [SCOPE.sCharacter('free_state_monarch').GetWomanMan] can own a whole nation like [SCOPE.sCharacter('free_state_monarch').GetSheHe] owns a house in the countryside is our deepest and most ludicrous error.\n\nDeaths and massacres and famines. All in the name of personal profit—and morbid joy."
  congo_free_state_events.5.a:0 "We will integrate the state."
  congo_free_state_events.5.b:0 "Perhaps it is time for it to be a truly 'Free' state."
  free_state_monarch_modifier:0 "Free State Monarch"
@@ -863,7 +863,7 @@
 
  south_america.6.t:0 "Ragamuffin Defeat"
  south_america.6.d:0 "As expected, the Ragamuffin Rebellion has been crushed. How shall we treat the remaining survivors?"
- south_america.6.f:1 ""Not all the suggestions have been especially charitable. War tends to do that to men. Some commanders smile next to the tents, their lips curved with a triumphant pleasure. Some others argue that enough blood has already been spilled — they're mocked the next evening.\n\nThe rest watch in silence, which could be, arguably, worse.""
+ south_america.6.f:1 ""Not all the suggestions have been especially charitable. War tends to do that to men. Some commanders smile next to the tents, their lips curved with a triumphant pleasure. Some others argue that enough blood has already been spilled—they're mocked the next evening.\n\nThe rest watch in silence, which could be, arguably, worse.""
  south_america.6.a:0 "Integrate them."
  south_america.6.b:0 "Ostracize them."
 
@@ -887,7 +887,7 @@
 
  council_republic_speech_advance:0 "Pro Council Republic Speech"
 
- council_republic_law_events.2.t:0 "The Revolution In Miniature"
+ council_republic_law_events.2.t:0 "The Revolution in Miniature"
  council_republic_law_events.2.d:0 "A group of workers are said to have revolted against their bosses and taken control of a factory in [ROOT.GetCountry.GetCapital.GetCityHubName]."
  council_republic_law_events.2.f:0 ""They came in one day and threw the boss out on his arse, then got to work as normal. The police tried to intervene, but you try telling hundreds of angry factory workers wielding tools what to do.""
  council_republic_law_events.2.a:0 "Let's see how this plays out."
@@ -927,4 +927,3 @@
  ig_placated_bureaucracy_cost:0 "Interest Group Placation Bureaucracy Cost"
  ig_demand_not_met:0 "Interest Group Demand Not Met"
  ig_placated_completion:0 "Interest Group Placated"
-

@@ -8,7 +8,6 @@
  modifier_developmental_dearth: "開発の停滞"
  je_filipino_ethnogenesis: "群島における民族形成"
  je_filipino_ethnogenesis_reason: "[ROOT.GetCountry.GetAdjective]の国土には多くの民族が暮らしている。彼らは共通の歴史を持ちながらも、文化や言語の点では依然として互いに異なっている。強い国家を築くには、こうした些細な違いは取り払われねばならない。"
- ilustrados_education_fervor_add: "情熱的な教育者"
  je_filipino_ethnogenesis_colonization_button: "[GetStateRegion('STATE_MINDANAO').GetName]を植民地化"
  je_filipino_ethnogenesis_colonization_button_desc: "[GetCulture('moro').GetName]湾の好戦的なスルタン国から、高地に点在する[GetCulture('lumad').GetName]の部族に至るまで、[GetStateRegion('STATE_MINDANAO').GetName]の民は長きにわたって、この未開の地に秩序を打ち立てようとする我々の試みに抵抗してきた。\n\nもはや彼らの意思に関係なく、フィリピン国家に組み入れる時が来たのだ。"
  modifier_integrating_the_highlands: "高地の統合"
@@ -36,6 +35,10 @@
  je_philippines_main_ilustrado_button: "イルストラードを推奨する"
  je_philippines_main_ilustrado_button_desc: "上流・中産階級の[GetCulture('filipino_mestizo').GetCustom('getPluralDemonym')]、および#italic インディオ#!と呼ばれる者の多くが、[GetCulture('spanish').GetName]の[GetIdeology('ideology_liberal').GetName]的な理想に触れてきた。この急速に成長する知的階級は、[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName]と連携しつつある。彼らは法律を改革し、[ROOT.GetCountry.GetName]でもっと自由主義的な政策を確立しようとしている。"
  je_philippines_development_complete: "$je_philippines_development$の[concept_journal_entry]を完了した。"
+ # notification from on_become_independent if player gains independence as Philippines before researching Nationalism or without je_philippines_main
+ notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName]が[Concept('concept_primary_cultures','$concept_primary_culture$')]でなくなりました"
+ notification_filipino_mestizo_now_primary_culture_desc: "我が国はもはや$SPA_ADJ$の支配下にはなく、[GetCulture('filipino_mestizo').GetName]が我が国の[Concept('concept_primary_cultures','$concept_primary_culture$')]になりました。"
+ notification_filipino_mestizo_now_primary_culture_tooltip: "#header $notification_filipino_mestizo_now_primary_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_mestizo_now_primary_culture_desc$"
  # loc for philippines_events
  philippines.1.t: "[ROOT.GetCountry.GetAdjective]のアイデンティティ"
  philippines.1.d: "高まる緊張の中、政府での代表権拡大を求める人々は増える一方だが、[ROOT.GetCountry.GetTopOverlord.GetName]からの独立を訴える声もある。[ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting]の支配は維持されるのか、それとも[ROOT.GetCountry.GetName]の民がより大きな自由を勝ち取るのか？"
@@ -71,6 +74,7 @@
  philippines.5.d: "我々の努力のおかげで、イルストラードは[ROOT.GetCountry.GetAdjective]政府内でより確かな地盤を獲得した。"
  philippines.5.f: "「諸島内外には、今や多数の啓蒙された階級が存在している。それは、国民が国外で教育を受けることを余儀なくした一部の統治権力の愚行が生み出し、それによって絶えず拡大してきた階級であって、常態化しているスパイ活動や挑発により維持され、日々苦闘している。この階級の人々は累積的に数を増し、諸島の他の地域と絶えず交流している。現時点ではまだ国の頭脳の一部に過ぎないが、数年後には国全体の神経系を形成し、その存在をあらゆる行動で示すだろう」\n\n— ホセ・リサール、『#italic 1世紀後のフィリピン#!』"
  philippines.5.a: "イルストラードの影響は今後も拡大していくだろう。"
+ ilustrados_education_fervor_add: "情熱的な教育者"
  philippines.7.t: "フィリピンの治安警備隊"
  philippines.7.d: "[ROOT.GetCountry.GetRuler.GetLastName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、[ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting]政府を代表し、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]を[ROOT.GetCountry.GetAdjectiveNoFormatting]諸島に導入した。"
  philippines.7.f: "「それでもなお、これほど多くの逆境にもかかわらず、スペインの権威は3世紀以上にわたって維持されてきた。そして今なお、縮小はしたものの、フィリピン群島の運命を支配し続けている」\n\n— ホセ・リサール、『#italic 1世紀後のフィリピン#!』"

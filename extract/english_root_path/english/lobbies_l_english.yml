@@ -130,3 +130,7 @@
  appeasement_british_dictate_rejected_desc: "Rejecting a dictate from our suzerain"
  appeasement_british_dictate_succeeded: "Completed Suzerain Dictate"
  appeasement_british_dictate_succeeded_desc: "Successfully completing a dictate from our suzerain"
+ appeasement_orchestrate_coup_started: "Orchestrated [concept_coup]"
+ appeasement_orchestrate_coup_started_desc: "Orchestrated a [concept_coup] against their [concept_government]"
+ appeasement_orchestrate_coup_ended: "Revoked Support for [concept_coup]"
+ appeasement_orchestrate_coup_ended_desc: "Revoked support for a [concept_coup] against their [concept_government]"

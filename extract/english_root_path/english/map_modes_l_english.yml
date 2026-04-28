@@ -9,6 +9,7 @@
  mm_player_military_access: "$concept_military_access$"
  mm_military_with_past_battles:0 "Battles"
  mm_peace_deal:0 "War & Peace Deal"
+ mm_interest: "Interests"
 
  mm_interest_group:0 "Interest Groups"
  mm_population_nationally:0 "National Population"
@@ -50,6 +51,7 @@
  mm_country_interaction:0 "Country Interaction"
  mm_market_interaction:0 "Market Interaction"
  mm_strategic_region_interaction:0 "Strategic Region Interaction"
+ mm_naval_mission_sea_regions_interaction: "$concept_naval_mission$ $concept_sea_regions$"
  mm_command_interaction:0 "Command Interaction"
  mm_harvest_conditions: "Harvest Conditions"
  mm_global_starvation: "Global Starvation"
@@ -59,7 +61,6 @@
  mm_recruit_admirals_interaction:1 "Recruit Admirals at an HQ"
  mm_create_formation_interaction: "Create Military Formation"
  mm_construction_interaction:0 "Construction Interaction"
- mm_declare_interest_interaction:0 "Declare Interest"
  mm_issue_decree_interaction:0 "Issue Decree"
  mm_incorporate_state_interaction:0 "Incorporate State"
  mm_move_capital_interaction:0 "Move Capital"

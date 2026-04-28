@@ -49,12 +49,12 @@
 
   modifier_european_military_assistance: "European Military Assistance"
   modifier_afghan_military_training_costs: "Sponsoring Afghan Contender"
-  all_pashtun_or_tajik_countries_puppeted_tt: "All [SCOPE.sCulture('pashtun_scope').GetName] or [SCOPE.sCulture('tajik_scope').GetName] [Concept('concept_country', '$concept_countries$')] in the [SCOPE.sStrategicRegion('persia_region').GetName] [concept_strategic_region] are our [Concept('concept_subject', '$concept_subjects$')]"
+  all_pashtun_or_tajik_countries_puppeted_tt: "All [GetCulture('pashtun').GetName] or [GetCulture('tajik').GetName] [Concept('concept_country', '$concept_countries$')] in the [SCOPE.sStrategicRegion('persia_region').GetName] [concept_strategic_region] are our [Concept('concept_subject', '$concept_subjects$')]"
 
   je_maintain_afghan_protectorate: "Secure Afghan Protectorate"
   je_maintain_afghan_protectorate_reason: "The mountainous borderlands between the Indian subcontinent and the steppes of Central Asia hold the key to establishing a solid and advantageous border against our rival. To secure protection of our interests and a route to assail our opponents, we must acquire stable [Concept('concept_subject', '$concept_subjects$')] throughout the Afghan region."
   je_maintain_afghan_protectorate_goal: "Establish and maintain a [concept_subject] relationship with all Afghan nations for #variable 10 years#!"
-  
+
   je_consolidate_afghanistan_objective: "Consolidate Afghanistan"
   je_consolidate_afghanistan_objective_reason: "The ill-defined borders of Afghanistan present opportunity for a crisis and devastating war in the Pamirs. In order to stabilize the border between ourselves and our opponent, we must collaborate to solidify an Afghan state."
 
@@ -81,7 +81,7 @@
 
   je_unify_afghanistan_objective: "Unify Afghanistan"
   je_unify_afghanistan_objective_reason: "The fall of the Durrani Empire has left Afghanistan in a state of constant civil war between petty contenders for the throne. In order to ward off the enroaching European powers, we must form a unified and enduring Afghan state."
-  
+
   je_unify_afghanistan: "Afghan Reunification"
   je_unify_afghanistan_reason: "The succession crisis sparked by the death of Timur Shah Durrani in 1793 has thrown the former Durrani Empire into a period of endless civil strife. With the threat of European powers enroaching from all sides, we must take it upon ourselves to end this period of warring principalities and reconstruct a unified Afghanistan.\n\nWhile appealing to a European [concept_great_power] to assist us in reunification may earn us their support, their #bold opponents#! will become more hostile towards our goals."
 
@@ -279,8 +279,8 @@
   je_consolidate_british_india: "Expand British India"
   je_consolidate_british_india_reason: "The existence of independent states on the fringes of the [SCOPE.sCountry('india_scope').GetName] represents opportunity to expand and enrich our colonies in the region, as well as remove possible avenues for our opponents to threaten the highly profitable lands of India."
 
-  raj_expanded_westward_tt: "All [Concept('concept_country', '$concept_countries$')] in the [SCOPE.sStrategicRegion('north_india_region').GetName] and [SCOPE.sStrategicRegion('south_india_region').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')] are [Concept('concept_subject', '$concept_subjects$')] of [SCOPE.sCountry('britain_scope').GetName] or its Subjects"
-  raj_expanded_eastwards_tt:1 "All [Concept('concept_state', '$concept_states$')] in the [SCOPE.sStateRegion('burma_state_scope').GetName], [SCOPE.sStateRegion('kachin_state_scope').GetName], and [SCOPE.sStateRegion('pegu_state_scope').GetName] [Concept('concept_state_region', '$concept_state_regions$')] are controlled by [SCOPE.sCountry('britain_scope').GetName] or her [Concept('concept_subject', '$concept_subjects$')]"
+  raj_expanded_westward_tt: "All [Concept('concept_country', '$concept_countries$')] in [GetGeographicRegion('geographic_region_india').GetName] are [Concept('concept_subject', '$concept_subjects$')] of [SCOPE.sCountry('britain_scope').GetName] or its Subjects"
+  raj_expanded_eastwards_tt:1 "All [Concept('concept_state', '$concept_states$')] in [GetGeographicRegion('geographic_region_burma').GetName] are controlled by [SCOPE.sCountry('britain_scope').GetName] or her [Concept('concept_subject', '$concept_subjects$')]"
 
   je_pamir_expedition_objective: "Contest the Russian Pamirs"
   je_pamir_expedition_objective_reason: "The recent Russian expansion into the Pamir mountains presents an intolerable threat to our interests in India. The creation of a buffer state in Tajikistan would humiliate Russia and grant our interests south of Pamir some breathing room, at the cost of a high risk of #bold direct war#! between #v $RUS$#! and #v $GBR$#!.\n\nThis option should be explored cautiously."
@@ -295,16 +295,16 @@
 
   has_not_cancelled_pamir_expedition_tt: "Has not #bold discarded#! this option"
   has_cancelled_pamir_expedition_tt: "Has #bold discarded#! this option"
-  
+
 
   great_game_core_progress_bar_name: "Great Game"
   great_game_core_progress_bar_britain_desc: "[GetGlobalVariable('great_game_gbr_progress').GetValue|1]#!"
   great_game_core_progress_bar_russia_desc: "[GetGlobalVariable('great_game_rus_progress').GetValue|1]#!"
 
   je_great_game_control: "The Great Game"
-  je_great_game_control_reason: "Progress towards the #bold left#! of the bar will benefit #v $GBR$#!, whilst progress towards the #bold right#! of the bar will benefit #v $RUS$#!.\n\nBeginning in the early nineteenth century, the #bold Great Game#! has emerged as a generic term for conflicts between #v $GBR$#! and #v $RUS$#! for influence over [SCOPE.sStrategicRegion('central_asia_region').GetName] and its surroundings. With both governments regarding a comprehensive military victory against the other to be impossible, the #bold Great Game#! has come to be waged through a series of indirect battles for leverage over countries on the line between both nations.\n\n#bold Victories:#!\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_caucasus')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_kazakhstan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_khanates')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_afghanistan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_persia')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_korea')]\n#bold Advances:#!\n#variable Russia#! - Enforced the Treaty of Turkmenchay\n#variable Britain#! - Successful Expedition to Bukhara\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_chinese_border')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_consolidated_british_india')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_manchurian_railway')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_contained_russian_pacific')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_trans_siberian_railway')]"
+  je_great_game_control_reason: "Progress towards the #bold left#! of the bar will benefit #v $GBR$#!, whilst progress towards the #bold right#! of the bar will benefit #v $RUS$#!.\n\nBeginning in the early nineteenth century, the #bold Great Game#! has emerged as a generic term for conflicts between #v $GBR$#! and #v $RUS$#! for influence over [GetGeographicRegion('geographic_region_central_asia_old').GetName] and its surroundings. With both governments regarding a comprehensive military victory against the other to be impossible, the #bold Great Game#! has come to be waged through a series of indirect battles for leverage over countries on the line between both nations.\n\n#bold Victories:#!\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_caucasus')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_kazakhstan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_khanates')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_afghanistan')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_persia')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_victory_korea')]\n#bold Advances:#!\n#variable Russia#! - Enforced the Treaty of Turkmenchay\n#variable Britain#! - Successful Expedition to Bukhara\n[SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_chinese_border')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_consolidated_british_india')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_manchurian_railway')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_contained_russian_pacific')][SCOPE.GetRootScope.GetCountry.GetCustom('great_game_advance_trans_siberian_railway')]"
 
-  europeans_expelled_from_casia_tt: "Neither #v $RUS$#! nor #v $GBR$#! have any [Concept('concept_subject', '$concept_subjects$')] or owned [Concept('concept_state', '$concept_states$')] in the [SCOPE.sStrategicRegion('central_asia_region').GetName] or [SCOPE.sStrategicRegion('persia_region').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')]"
+  europeans_expelled_from_casia_tt: "Neither #v $RUS$#! nor #v $GBR$#! have any [Concept('concept_subject', '$concept_subjects$')] or owned [Concept('concept_state', '$concept_states$')] in the [GetGeographicRegion('geographic_region_central_asia_old').GetName] or [GetGeographicRegion('geographic_region_persia_old').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')]"
 
   gg_drift_towards_britain: "#v $GBR$#!"
   gg_drift_towards_russia: "#v $RUS$#!"
@@ -320,7 +320,7 @@
   great_game_core_progress_bar_prestige_balance: "[concept_prestige] balance"
   great_game_core_progress_passive_balance: "balance of directly controlled or [concept_subject]-controlled [concept_gdp] of the #v Persia#! or #v Central Asia#! [Concept('concept_strategic_region','$concept_strategic_regions$')]\n(#v $GBR$#!: [GetGlobalVariable('great_game_british_passive_var').GetValue|v1%]#!, #v $RUS$#!: [GetGlobalVariable('great_game_russian_passive_var').GetValue|v1%]#!)"
 
-  great_game_complete_tt: "The #bold Great Game#! has concluded, with every country in the [SCOPE.sStrategicRegion('caucasus_region').GetName], [SCOPE.sStrategicRegion('central_asia_region').GetName], and [SCOPE.sStrategicRegion('persia_region').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')] as a [concept_subject] or [concept_power_bloc] member of either #v $RUS$#! or #v $GBR$#!"
+  great_game_complete_tt: "The #bold Great Game#! has concluded, with every country in the [GetGeographicRegion('geographic_region_caucasus').GetName], [GetGeographicRegion('geographic_region_central_asia').GetName], and [GetGeographicRegion('geographic_region_greater_persia').GetName] [Concept('concept_georegion','$concept_geogregions$')] as a [concept_subject] or [concept_power_bloc] member of either #v $RUS$#! or #v $GBR$#!"
 
   outcome_depends_on_score_tt: "The #bold outcome#! of the #bold Great Game#! will depend upon the balance of the #bold Progress Bar#!"
 
@@ -550,7 +550,7 @@
 
   preferred_igs_in_government: "Compatible [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government]"
   member_of_lobby: "Already a member of this $concept_political_lobby$"
-  enacted_laws: "Enacted [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_law', '$concept_laws$')]" 
+  enacted_laws: "Enacted [SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] [Concept('concept_law', '$concept_laws$')]"
   primary_culture_similarity: "Compatibility of [concept_primary_cultures]"
   religion_opinion: "[SCOPE.sCountry('target_country').GetAdjectiveNoFormatting] opinion the [SCOPE.sCountry('country').GetAdjectiveNoFormatting] [concept_state_religion]"
   aligned_igs_in_government: "Aligned [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government]"
@@ -572,8 +572,8 @@
   target_higher_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] has a higher [concept_rank] than [SCOPE.sCountry('country').GetNameNoFormatting]"
   target_lower_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] has a lower [concept_rank] than [SCOPE.sCountry('country').GetNameNoFormatting]"
   target_great_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] is a [concept_great_power]"
-  target_major_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] is a [concept_major_power]" 
-  target_minor_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] is a [concept_minor_power] or below" 
+  target_major_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] is a [concept_major_power]"
+  target_minor_power_rank: "[SCOPE.sCountry('target_country').GetNameNoFormatting] is a [concept_minor_power] or below"
   in_same_power_bloc: "In the same [concept_power_bloc]"
   not_in_same_power_bloc: "In a different [concept_power_bloc]"
   funding_lobbies: "[SCOPE.sCountry('target_country').GetNameNoFormatting] is [Concept('concept_fund_lobbies','$concept_funding_lobbies$')] in [SCOPE.sCountry('country').GetNameNoFormatting]"
@@ -621,7 +621,7 @@
   lobby_proposal.1.f: ""We must be as comprehensive as possible. Any other approach is irresponsible. [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting] aggression is as old as the hills."\n\n"I fear that it may appear as if we are using our own nation as a piece on a chessboard, for the sake of a foreign power. What would you say if pressed?"\n\n"A circumstantial alignment will not subordinate us. In this case, [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] interests happen to be [ROOT.GetCountry.GetAdjectiveNoFormatting] interests. It is as simple as that.""
   lobby_proposal.1.a: "We will look into this."
   lobby_proposal.1.b: "This is not in our interests."
-  
+
   lobby_proposal.2.t: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] Demands Action" # Anti-Lobby Demand
   lobby_proposal.2.d: "The [SCOPE.sPoliticalLobby('relevant_lobby').GetName] has requested that we [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_demand_text_def')] [SCOPE.sCountry('relevant_country').GetName]. Successfully acting on the proposal will gain our government significant goodwill from the lobby."
   lobby_proposal.2.f: ""And to those who would refuse, and prefer preserving the status quo?"\n\nThere was no hesitation. His response sounded well-rehearsed, because it was. This was a proactive man, one who spent hours pacing his chambers and anticipating attacks to come.\n\n"My reply would be that we should never have allowed them to become so close to us in the first place. A friendship built upon deceit is nothing at all, and the good will gained from it illusory.""
@@ -633,7 +633,7 @@
   lobby_proposal.3.f: "The negotiations, done under the table with a representative of the [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] government, had been long and arduous. The [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] representative knew they were dealing with a group without power to match theirs, and had adjusted their strategy accordingly. Nonetheless, they had come to an agreement. Nothing in writing, but that was hardly important. When the government sent the official copy - if they did - they would find that there was already a drafted response waiting in [SCOPE.sCountry('relevant_country').GetCapital.GetCityHubName]."
   lobby_proposal.3.a: "We would be happy to pursue this."
   lobby_proposal.3.b: "This is not in our interests."
-  
+
   lobby_proposal.4.t: "[SCOPE.sPoliticalLobby('relevant_lobby').GetName] Offers Opportunity" # Anti-Lobby Opportunity
   lobby_proposal.4.d: "The [SCOPE.sPoliticalLobby('relevant_lobby').GetName] has offered us an opportunity to [SCOPE.GetRootScope.GetCountry.GetCustom('anti_lobby_opportunity_text_def')] [SCOPE.sCountry('third_party_country').GetName]. Their proposal, if accepted, is intended to counter [SCOPE.sCountry('relevant_country').GetAdjective] interests."
   lobby_proposal.4.f: "It was a veiled sort of aggression, one which could, in theory, appeal to both ardent jingoists and those who preferred to mitigate losses. It would force the enemy to respond, possibly drive them towards a reckless confrontation in response to a seemingly benign maneuver.\n\n"A plan to fight [SCOPE.sCountry('relevant_country').GetNameNoFormatting] to the last [SCOPE.sCountry('third_party_country').GetAdjectiveNoFormatting]," one minister remarked. The representative flushed. He had practiced responses along both lines, but none of them quite fit."
@@ -815,7 +815,7 @@
   lobby_events.14.a: "It is only understandable."
   lobby_events.14.b: "We will not shift our stance on command."
 
-  lobby_events.15.t: "Good, not Foreign"
+  lobby_events.15.t: "Good, Not Foreign"
   lobby_events.15.d_join: "The influx of foreign investment from [SCOPE.sCountry('relevant_country').GetName] has aroused fears amongst nationalist groups. The [SCOPE.gsInterestGroup('relevant_ig').GetName], ever-wary of foreign subversion, have aligned themselves with the [SCOPE.sPoliticalLobby('relevant_lobby').GetName] in response."
   lobby_events.15.d_form: "The influx of foreign investment from [SCOPE.sCountry('relevant_country').GetName] has aroused fears amongst nationalist groups. The [SCOPE.gsInterestGroup('relevant_ig').GetName], ever-wary of foreign subversion, have begun lobbying against [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] interests."
   lobby_events.15.f: ""They build all of their factories from cardboard and lead chips, and their steel is fit only for razor blades. And even then, if you use them, they're liable to give you bruises!"\n\nThe circle of men at the table roared with laughter. The man with the red cravat gave a knowing smirk, and continued with his pitch. "If we let them buy up our land, there'll be a [SCOPE.sCountry('relevant_country').GetAdjectiveNoFormatting] spy in every dormitory within the year. I know them well. I spent a month in [SCOPE.sCountry('relevant_country').GetCapital.GetCityHubName], you see...""
@@ -1010,7 +1010,7 @@
   korea_monarchy.3.b: "She should focus on her courtly duties."
 
   heonjong_recovers_tt: "[SCOPE.sCharacter('heonjong_scope').GetFullName] recovers from [SCOPE.sCharacter('heonjong_scope').GetHerHis] illness"
-  
+
   support_for_afghan_claimant: "supporting Afghan contender"
   overlord_support_for_afghan_claimant: "#bold suzerain#! supporting Afghan contender"
   defending_against_great_game_rival: "opposing #bold Great Game#! rival"

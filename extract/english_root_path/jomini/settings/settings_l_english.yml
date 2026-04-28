@@ -13,6 +13,7 @@
  OPTION_HARD: "Hard"
  OPTION_NEVER: "Never"
  OPTION_MONTHLY: "Every month"
+ OPTION_QUARTERYEAR: "Every three months"
  OPTION_HALFYEAR: "Every half year"
  OPTION_YEARLY: "Every year"
  OPTION_FIVE_YEAR: "Every five years"

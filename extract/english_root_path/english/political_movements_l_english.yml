@@ -156,3 +156,13 @@
  movement_dominican_national: "Dominican National Movement"
  movement_dominican_national_short: "Dominican National"
  movement_dominican_national_name: "Dominican National Movement"
+
+ movement_meiji_restorationist: "Restorationist Movement"
+ movement_meiji_restorationist_short: "Restorationist"
+ movement_meiji_restorationist_name: "Sonnō Jōi Movement"
+ movement_meiji_restorationist_icon: "@movement_meiji_restorationist!"
+
+ movement_tokugawa_loyalist: "Tokugawa Loyalist Movement"
+ movement_tokugawa_loyalist_short: "Tokugawa Loyalist"
+ movement_tokugawa_loyalist_name: "Sabaku Movement"
+ movement_tokugawa_loyalist_icon: "@movement_tokugawa_loyalist!"

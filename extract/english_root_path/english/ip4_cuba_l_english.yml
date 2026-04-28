@@ -115,7 +115,7 @@ cuba_prepare_for_war: "Prepare for war"
 
 #war time
 je_cuba_independence_war: "Prepare for War"
-je_cuba_independence_war_desc: "The time has come to earn our nation's freedom." #TODO
+je_cuba_independence_war_desc: "The time has come to earn our nation's freedom."
 
 #Startup event
 cuba_independencia.1.t: "El Futuro de Cuba"

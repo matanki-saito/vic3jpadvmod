@@ -109,7 +109,7 @@
  algeria_events.9.a: "Honor and fidelity."
  algeria_events.9.b: "The legion is our country."
  french_foreign_legion_ig: "Honor and Fidelity"
- french_foreign_legion_recruitment: "The Legion is our Country"
+ french_foreign_legion_recruitment: "The Legion Is Our Country"
  legion_headquarters: "Legion Headquarters"
  # Exile health modifier
  in_exile_modifier: "In Exile"
@@ -207,7 +207,7 @@
  france_annex_luxembourg_desc: "Luxembourg lies within our natural borders, and should be part of France. Perhaps a generous offer would persuade their overlord to accept a sale."
  natural_borders.5.t: "The Purchase of Luxembourg"
  natural_borders.5.d: "[SCOPE.sCountry('lux_overlord').GetName] has wisely agreed to our terms for the purchase of [SCOPE.sCountry('lux_scope').GetName]. The territory has returned to its rightful place as part of the [ROOT.GetCountry.GetAdjective] nation."
- natural_borders.5.f: "The remarkable things one can do with money — purchase land, silence critique, hire labor — are limitless with the right mindset. With enough of it, one might purchase a country."
+ natural_borders.5.f: "The remarkable things one can do with money—purchase land, silence critique, hire labor—are limitless with the right mindset. With enough of it, one might purchase a country."
  natural_borders.5.a: "A natural extension of our borders."
  luxembourg_payment: "Luxembourg Payments"
  luxembourg_payment_received: "Luxembourg Payments"

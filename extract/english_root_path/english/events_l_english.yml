@@ -150,7 +150,7 @@
  intelligentsia_free_speech_leader_modifier:0 "Free Speech Advocator"
  intelligentsia_free_speech_leader_bad_modifier:0 "Dismissed Speech"
  
- ig_petitions.10.t:1 "Bring our Boys Home!"
+ ig_petitions.10.t:1 "Bring Our Boys Home!"
  ig_petitions.10.d:1 "The [SCOPE.gsInterestGroup('rural_folk_ig').GetName] are already looking ahead to the next harvest. The draft regularly draws away the most able hands away from the farm just when they're needed most. A delegation has arrived, asking for a stop to the [SCOPE.sLaw('current_law_scope').GetName] law."
  ig_petitions.10.f:1 "Their sturdy hands are sweaty, sometimes they shake. "No, no, it was only your imagination, good Sir, we are quite calm here, you see, but we do worry. Calmly, of course, but we worry."\n\nThe war is always going badly, they say, doesn't have to be the same with the harvest."
  ig_petitions.10.a:2 "We shall address their grievances."
@@ -427,7 +427,7 @@
 
  expedition_events.30.t:0 "Local Guides"
  expedition_events.30.d:0 "One member of the expedition has suggested that we stop at some of the nearby settlements and try to hire some local guides. Other members of the group have expressed concerns this might take a while."
- expedition_events.30.f:1 ""The flatlands extended as far as our eyes could reach. There was no possible mountain or elevation where our fatigued expedition would stop and find its way. Nothing — and then the jungle. Always the jungle. Sometimes the river (sometimes). And then the jungle. Viridian silk; the appetizing, prismatic sheen of wet flowers over forgotten streams.""
+ expedition_events.30.f:1 ""The flatlands extended as far as our eyes could reach. There was no possible mountain or elevation where our fatigued expedition would stop and find its way. Nothing—and then the jungle. Always the jungle. Sometimes the river (sometimes). And then the jungle. Viridian silk; the appetizing, prismatic sheen of wet flowers over forgotten streams.""
  expedition_events.30.a:0 "Excellent idea."
  expedition_events.30.b:0 "No, it will take too long."
 
@@ -455,7 +455,7 @@
 
  expedition_events.50.t:0 "Attack on the River"
  expedition_events.50.d:0 "While the expedition is traveling by river they are attacked by locals."
- expedition_events.50.f:2 ""Careful, [SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')]!" A sharp sound deafened the noise of the crew. An arrow was now trembling, stuck in the wooden wall just next to my head. "Down! Everybody down!"\n\nA line of men stood at the edge of the jungle, like guardian statues they held spears and bows, pointed directly at us. Their careful movements, that slow shuffle there — we had trespassed their limits. "Down!," I heard the men shout.""
+ expedition_events.50.f:2 ""Careful, [SCOPE.sCharacter('expedition_leader').GetCustom('getSirMadam')]!" A sharp sound deafened the noise of the crew. An arrow was now trembling, stuck in the wooden wall just next to my head. "Down! Everybody down!"\n\nA line of men stood at the edge of the jungle, like guardian statues they held spears and bows, pointed directly at us. Their careful movements, that slow shuffle there—we had trespassed their limits. "Down!," I heard the men shout.""
  expedition_events.50.a:0 "Stand and fight."
  expedition_events.50.b:0 "Run!"
 
@@ -476,7 +476,7 @@
 
  expedition_events.60.t:0 "Expedition Film"
  expedition_events.60.d:0 "A member of the expedition has requested that they pause for a day, so that they can film some of the local wildlife."
- expedition_events.60.f:1 ""Muddy houses emerged like chocolate puddings extracted directly from the river. Streams braided like a young girl's long hair; marshes, large lakes. The greenery of the riverside covered their silhouettes like a layer of diaphanous mint. Water was everywhere — our own private ocean.""
+ expedition_events.60.f:1 ""Muddy houses emerged like chocolate puddings extracted directly from the river. Streams braided like a young girl's long hair; marshes, large lakes. The greenery of the riverside covered their silhouettes like a layer of diaphanous mint. Water was everywhere—our own private ocean.""
  expedition_events.60.a:0 "Good idea."
  expedition_events.60.b:0 "We can't spare the time."
 
@@ -545,7 +545,7 @@
  expedition_events.12.a:0 "Blast!"
 
  civil_war_events.1.t:0 "Secession Prevails"
- civil_war_events.1.d:1 "Despite our pessimistic expectations, our national kindred won their own struggle for independence — without our help."
+ civil_war_events.1.d:1 "Despite our pessimistic expectations, our national kindred won their own struggle for independence—without our help."
  civil_war_events.1.f:1 "/"The nation's soul is split in twain! The border between our lands is a cruel cut at the very heart of our people. It is obvious to all that now is the time for unification!/""
  civil_war_events.1.a:0 "Annex the country"
  civil_war_events.1.b:0 "Leave them alone"
@@ -707,7 +707,7 @@
 
  expedition_events.250.t:0 "Mountain Sighted"
  expedition_events.250.d:0 "A member of the expedition has suggested we detour to climb a mountain and claim it in the name of [ROOT.GetCountry.GetName]."
- expedition_events.250.f:1 ""One of the expedition members has his eyes locked on the mountain. "It's a good risk, my friend," he says, "I don't think anyone has claimed this one yet, you see, imagine how they'd pay us back home — all for this insignificant rock." Snow slides down the mountainside, melted like threads of gray cotton.""
+ expedition_events.250.f:1 ""One of the expedition members has his eyes locked on the mountain. "It's a good risk, my friend," he says, "I don't think anyone has claimed this one yet, you see, imagine how they'd pay us back home—all for this insignificant rock." Snow slides down the mountainside, melted like threads of gray cotton.""
  expedition_events.250.a:0 "Excellent idea"
  expedition_events.250.b:0 "We can't spare the time."
  expedition_events_mountain_claim_tt:0 "Our expedition reaches the summit."
@@ -729,7 +729,7 @@
 
  expedition_events.260.t:0 "Snow on the Ground"
  expedition_events.260.d:0 "Some members of the expedition have expressed concern that the weather is turning against them. They insist on hunkering down to avoid the worst of it."
- expedition_events.260.f:1 ""The layers of snow kept growing like untreated tumors. A huge white, a great white, and the reflection of it making our eyes sore and hurt. If we don't stop now, maybe we won't be able to stop anymore. One of the men shivers as he rubs his arms — lips as pale as our shadow over the snow. He doesn't say a word.""
+ expedition_events.260.f:1 ""The layers of snow kept growing like untreated tumors. A huge white, a great white, and the reflection of it making our eyes sore and hurt. If we don't stop now, maybe we won't be able to stop anymore. One of the men shivers as he rubs his arms—lips as pale as our shadow over the snow. He doesn't say a word.""
  expedition_events.260.a:0 "Press on."
  expedition_events.260.b:0 "Heed their warning."
 
@@ -767,7 +767,7 @@
  expedition_events.281.f:0 ""We struck out in a random direction and it did not pay off.""
  expedition_events.281.a:0 "How irksome."
 
- expedition_events.282.t:0 "Back On Track"
+ expedition_events.282.t:0 "Back on Track"
  expedition_events.282.d:0 "The expedition managed to find the correct trail again and have set off, losing relatively little time."
  expedition_events.282.f:0 ""We picked a direction, almost at random. Good thing it turned out to be the right one.""
  expedition_events.282.a:0 "Great News"
@@ -828,7 +828,7 @@
  ig_revolutions.6.d:0 "A disgruntled consortium of [SCOPE.gsInterestGroup('ig_in_on_the_edge').GetName], unhappy with the government, are demanding 'compensation'. If we refuse, they threaten to throw in their lot with the Revolution."
  ig_revolutions.6.f:1 ""An insurrection would be a setback, a stall on [ROOT.GetCountry.GetNameNoFormatting]'s road to becoming a modern nation, but perhaps an inevitable one. If there is to be a war, it would certainly be better for it to be quick. Could you make it quick?""
  ig_revolutions.6.a:0 "Let's settle for this deal."
- ig_revolutions.6.b:0 "Let's pass — their price is too high."
+ ig_revolutions.6.b:0 "Let's pass—their price is too high."
  ig_revolutions.6.c:0 "The only thing they'll get is time in prison."
     
  ig_revolutions.7.t:0 "[SCOPE.gsInterestGroup('ig_it_on_the_edge').GetName] Have Issued Demands!"
@@ -840,7 +840,7 @@
     
  ig_revolutions.8.t:0 "[SCOPE.gsInterestGroup('ig_pb_on_the_edge').GetName] Demand Action Now!"
  ig_revolutions.8.d:0 "It seems that the [SCOPE.gsInterestGroup('ig_pb_on_the_edge').GetName] are determined to extract concessions from the government during this moment of crisis. If we refuse to bend, they threaten to throw in their lot with the Revolution."
- ig_revolutions.8.f:1 ""It's very simple — we need a strong hand at the wheel right now, and if [ROOT.GetCountry.GetRuler.GetFullNameWithTitle] cannot provide it, we'll find someone who can.""
+ ig_revolutions.8.f:1 ""It's very simple—we need a strong hand at the wheel right now, and if [ROOT.GetCountry.GetRuler.GetFullNameWithTitle] cannot provide it, we'll find someone who can.""
  ig_revolutions.8.a:0 "We can accommodate their demands."
  ig_revolutions.8.b:0 "This is ridiculous! Let them try their worst."
  ig_revolutions.8.c:0 "If they want strength, we can show them that."

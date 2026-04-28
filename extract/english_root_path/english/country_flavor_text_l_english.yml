@@ -15,6 +15,8 @@
 
  JAP_FLAVOR_TEXT:0 "The strength of the ruling Tokugawa shogunate is failing, with famine and unrest spreading all across the country. The Edo period has lasted in Japan for over 200 years, will it be able to last for 200 more?"
 
+ EZO_FLAVOR_TEXT:0 "Ezochi, or the 'Ainu Lands', has long been ruled by the Japanese Matsumae clan on the basis of the contract fishery system. While Japanese settlement north of the Wajinchi is forbidden by law, many fishermen overstay, putting increased pressure on the native population. Will the Ainu persevere, or will they be absorbed by their more powerful southern neighbors?"
+
  PER_FLAVOR_TEXT:0 "Persia is still reeling from the loss of several territories to Imperial Russia at the beginning of the century. Will they be able to come back and reclaim its place as a great power?"
 
  AUS_FLAVOR_TEXT:0 "Depending on who you ask, the Austrian Empire is in a period of either perfect balance or worrying stagnation. Revolutionary movements are suppressed across the nation, but will this status quo last forever?"
@@ -254,6 +256,7 @@
  KOR_FLAVOR_TEXT:0 "Korea under the Joseon dynasty looks inward, consumed by its factional politics. Will changing times force Korea to consider the outside world?"
  NOR_FLAVOR_TEXT:0 "Norway has spent centuries under Danish and Swedish rule, but now dreams of sovereignty. What will it take for Norway to win its independence?"
  FIN_FLAVOR_TEXT:0 "Finland has thus far enjoyed relative autonomy under the Russian Empire. But the whims of the Tsars are fickle; how will Russian rule shape Finland?"
+ RYU_FLAVOR_TEXT:0 "Ryukyu holds a highly strategic position in East Asia, existing in a state of dual subordination between the Qing Dynasty and the Japanese Shogunate. Will external pressure compel Ryukyu to play its hand?"
 
   #South and Central America
  UCA_FLAVOR_TEXT:0 "The Federal Republic consists of provinces which would largely prefer to be independent. Can Central America hold together?"

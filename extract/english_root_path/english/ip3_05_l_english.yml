@@ -97,7 +97,7 @@
  serbian_throne.6.b_move_pops_tt: "10% of Serbians in [SCOPE.sState('delvidek_scope').GetName] will move to [SCOPE.sState('capital_state').GetName]."
 
  # Complete event
- serbian_throne.9.t: "Here To Stay"
+ serbian_throne.9.t: "Here to Stay"
  serbian_throne.9.d:1 "One by one, the lackeys of the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] have betrayed them on their path to a terrible fate. All have seen the indisputable; [ROOT.GetCountry.GetName] belongs to the [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty')]!"
  serbian_throne.9.f:1 ""Is this how you treat your saviors?" panic and desperation echoed throughout the hall "My father led this country to freedom while you were all hoarding riches. You will never understand what it means to carry the blood of a hero!"\n\nLoyal hounds were awaiting judgment.\n\n"Never!""
  serbian_throne.9.a: "You shall share the fate of your father."
@@ -221,7 +221,7 @@
  serbia_greatly_aided_magyarized_serbs_mod: "Evacuated Magyarized Serbs"
  serbia_no_more_blood_feud_mod: "No More Feud"
  serbia_karadordevic_changover_mod: "Dynastic Changeover"
- serbia_karadordevic_slandered_mod: "Slandered With Pamphlets"
+ serbia_karadordevic_slandered_mod: "Slandered with Pamphlets"
  serbia_campaign_auth_fund_mod: "Forced Campaign"
  serbia_campaign_med_fund_mod: "Moderate Campaign Fund"
  serbia_campaign_high_fund_mod: "Extravagant Campaign Fund"
@@ -229,24 +229,24 @@
  serbia_med_fund_campaigned_state_mod: "Moderately Funded Campaign State"
  serbia_high_fund_campaigned_state_mod: "Extravagantly Funded Campaign State"
  serbia_ig_campaign_promotion_mod: "Promoted for Campaign"
- serbia_auth_fund_campaigned_state_a_mod: "Standards From Forced Campaign"
- serbia_auth_fund_campaigned_state_b_mod: "Foundation From Forced Campaign"
- serbia_auth_fund_campaigned_state_c_mod: "Welfare From Forced Campaign"
- serbia_auth_fund_campaigned_state_e_mod: "Inclusivity From Forced Campaign"
- serbia_med_fund_campaigned_state_a_mod: "Standards From Moderate Campaign"
- serbia_med_fund_campaigned_state_b_mod: "Foundation From Moderate Campaign"
- serbia_med_fund_campaigned_state_c_mod: "Welfare From Moderate Campaign"
- serbia_med_fund_campaigned_state_e_mod: "Inclusivity From Moderate Campaign"
- serbia_high_fund_campaigned_state_a_mod: "Standards From Extravagant Campaign"
- serbia_high_fund_campaigned_state_b_mod: "Foundation From Extravagant Campaign"
- serbia_high_fund_campaigned_state_c_mod: "Welfare From Extravagant Campaign"
- serbia_high_fund_campaigned_state_e_mod: "Inclusivity From Extravagant Campaign"
+ serbia_auth_fund_campaigned_state_a_mod: "Standards from Forced Campaign"
+ serbia_auth_fund_campaigned_state_b_mod: "Foundation from Forced Campaign"
+ serbia_auth_fund_campaigned_state_c_mod: "Welfare from Forced Campaign"
+ serbia_auth_fund_campaigned_state_e_mod: "Inclusivity from Forced Campaign"
+ serbia_med_fund_campaigned_state_a_mod: "Standards from Moderate Campaign"
+ serbia_med_fund_campaigned_state_b_mod: "Foundation from Moderate Campaign"
+ serbia_med_fund_campaigned_state_c_mod: "Welfare from Moderate Campaign"
+ serbia_med_fund_campaigned_state_e_mod: "Inclusivity from Moderate Campaign"
+ serbia_high_fund_campaigned_state_a_mod: "Standards from Extravagant Campaign"
+ serbia_high_fund_campaigned_state_b_mod: "Foundation from Extravagant Campaign"
+ serbia_high_fund_campaigned_state_c_mod: "Welfare from Extravagant Campaign"
+ serbia_high_fund_campaigned_state_e_mod: "Inclusivity from Extravagant Campaign"
  serbia_auth_fund_campaign_end_mod: "Forced Campaign Harvest"
  serbia_med_fund_campaign_end_mod: "Moderate Campaign Harvest"
  serbia_high_fund_campaign_end_mod: "Extravagant Campaign Harvest"
- serbia_auth_fund_campaign_end_karadordevic_mod: "Slightly Humiliated By Rival"
- serbia_med_fund_campaign_end_karadordevic_mod: "Humiliated By Rival"
- serbia_high_fund_campaign_end_karadordevic_mod: "Heavily Humiliated By Rival"
+ serbia_auth_fund_campaign_end_karadordevic_mod: "Slightly Humiliated by Rival"
+ serbia_med_fund_campaign_end_karadordevic_mod: "Humiliated by Rival"
+ serbia_high_fund_campaign_end_karadordevic_mod: "Heavily Humiliated by Rival"
 
    ##### BALKAN WARS #####
 
@@ -471,7 +471,7 @@
   # Lobby Notables button event
   the_grand_collapse.3.t: "Desperate Measures"
   the_grand_collapse.3.d: "In the search for potential folk leaders to persuade to our side, several options have been presented by operatives."
-  the_grand_collapse.3.f: "Ziyâfet-i Hükûmet — or the Government Banquet, in foreign tongue — is when the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] gets to show off his grandeur to all important guests.\n\nProficient servants, musicians and cooks from all parts of the world strive to leave a lasting impression in the name of their master.\n\nIt is also an unmissable opportunity for the invited notables, as they delve into an unspoken war of conveniences."
+  the_grand_collapse.3.f: "Ziyâfet-i Hükûmet—or the Government Banquet, in foreign tongue—is when the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] gets to show off his grandeur to all important guests.\n\nProficient servants, musicians and cooks from all parts of the world strive to leave a lasting impression in the name of their master.\n\nIt is also an unmissable opportunity for the invited notables, as they delve into an unspoken war of conveniences."
   the_grand_collapse.3.a: "Praise [SCOPE.sCharacter('lobbied_ig_leader_1').GetFullName], leader of the [SCOPE.gsInterestGroup('lobbied_ig_1').GetName]."
   the_grand_collapse.3.b: "Approach [SCOPE.sCharacter('lobbied_ig_leader_2').GetFullName], leader of the [SCOPE.gsInterestGroup('lobbied_ig_2').GetName]."
   the_grand_collapse.3.c: "Entice [SCOPE.sCharacter('lobbied_ig_leader_3').GetFullName], leader of the [SCOPE.gsInterestGroup('lobbied_ig_3').GetName]."
@@ -543,5 +543,3 @@
 
   notification_tur_warned_balkan_league_notification_name: "Balkan League Formed"
   notification_tur_warned_balkan_league_notification_desc: "[SCOPE.sCountry('subject_nation_scope').GetAdjectiveNoFormatting] spies have warned us of a alliance brewing against us in the [SCOPE.sStrategicRegion('balkans_scope').GetName]."
-
-

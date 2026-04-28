@@ -59,7 +59,7 @@
 
  russia_monarchy.8.t: "A Terminal Ride"
  russia_monarchy.8.d: "[SCOPE.sCharacter('georgy_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('georgy_scope').GetFullName], known for his sickly constitution, has disappeared into the countryside astride his motor-cycle. The household staff fear for his health."
- russia_monarchy.8.f: "The sound of the engine grew fainter and fainter as the bike summitted one of the rolling hills, and vanished behind it. Into the green abyss disappeared the [SCOPE.sCharacter('georgy_scope').GetPrimaryRoleTitle], racing to escape the slow, warm trickles of pain in his chest."
+ russia_monarchy.8.f: "The sound of the engine grew fainter and fainter as the bike summitted one of the rolling hills, and vanished behind it. Into the green abyss disappeared the [SCOPE.sCharacter('georgy_scope').GetPrimaryRole.GetName], racing to escape the slow, warm trickles of pain in his chest."
  russia_monarchy.8.a: "Find him, and return him home."
  russia_monarchy.8.b: "Have him rushed to our new hospitals."
  michael_becomes_heir_tt: "#variable Mikhail Romanov#! becomes the heir to the [SCOPE.sCountry('rus_scope').GetAdjective] throne"
@@ -249,7 +249,7 @@
 
   rhine_confederation.1.t: "The Second Rheinbundakte"
   rhine_confederation.1.d: "With the signing of a new Rheinbundakte under [ROOT.GetCountry.GetAdjective] supervision, a [SCOPE.sCountry('rhine_scope').GetName] has once more coalesced out of the disparate German states."
-  rhine_confederation.1.f: "In the face of an uncertain future, unity is a ready medicine for the myriad threats at our door. This river — our life, our home, our very heart! — should be our example as we march into a new era. We will move as one to a greater end. We shall raise and feed each other until that end. And should we be beset by slings and arrows, we shall find shelter within its bosom."
+  rhine_confederation.1.f: "In the face of an uncertain future, unity is a ready medicine for the myriad threats at our door. This river—our life, our home, our very heart!—should be our example as we march into a new era. We will move as one to a greater end. We shall raise and feed each other until that end. And should we be beset by slings and arrows, we shall find shelter within its bosom."
   rhine_confederation.1.a: "[ROOT.GetCountry.GetAdjectiveNoFormatting] power expands ever Eastwards."
   rhine_confederation.1.b: "A new dawn for Germany."
 
@@ -262,11 +262,6 @@
   rhine_expansion_cooldown_tt: "Has not used this decision in the last #bold 3#! years"
   confederation_of_rhine_cooldown_year_tt: "This decision will become available again in #bold 3 years#!"
 
-  modifier_jap_terakoya: "Terakoya"
-  modifier_legacy_of_terakoya: "Integrating Terakoya"
-
-  je_terakoya: "The Terakoya System"
-  je_terakoya_reason: "The Tokugawa period has been marked by programs to assist with the education of the Shogunate's population. Despite lacking an official state-run school system, the decentralized and private Terakoya, or temple schools, provide practical education to commoners across the country.\n\nWhilst the Terakoya system ensures a baseline level of literacy and practical education, it is not organized for an advanced national-scale curriculum. Reforming to a more formal schooling system will be needed if the state wishes to centralize its system of learning."
   patagonia_campaign: "Patagonian Campaign"
 
   KOR_declare_korean_empire: "Proclaim the Empire of Korea"
@@ -368,12 +363,12 @@
   resignation.1.d2: "Following a series of devastating scandals and dismal public approval, [SCOPE.sCharacter('resigning_politician').GetFullName] has announced [SCOPE.sCharacter('resigning_politician').GetHerHis] resignation from the office of [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]."
   resignation.1.d3: "Citing ill health, [SCOPE.sCharacter('resigning_politician').GetFullName] has announced [SCOPE.sCharacter('resigning_politician').GetHerHis] resignation from the office of [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]."
   resignation.1.d4: "Citing a desire to spend more time with [SCOPE.sCharacter('resigning_politician').GetHerHis] family, [SCOPE.sCharacter('resigning_politician').GetFullName] has announced [SCOPE.sCharacter('resigning_politician').GetHerHis] resignation from the office of [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]."
-  resignation.1.f: "The reactions to the announcement were myriad. The [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]'s supporters, struggling to hold back their defeat and apprehension. The opposition, split between displays of sympathy and excitement over the prospect of claiming [SCOPE.sCharacter('resigning_politician').GetHerHis] seat. For the house staff, however, all that it meant was another long week of dodging reporters and shuffling furniture."
+  resignation.1.f: "The reactions to the announcement were myriad. The [SCOPE.sCharacter('resigning_politician').GetPrimaryRole.GetName]'s supporters, struggling to hold back their defeat and apprehension. The opposition, split between displays of sympathy and excitement over the prospect of claiming [SCOPE.sCharacter('resigning_politician').GetHerHis] seat. For the house staff, however, all that it meant was another long week of dodging reporters and shuffling furniture."
   resignation.1.a: "Wish [SCOPE.sCharacter('resigning_politician').GetHerHis] successor good health and good fortune."
   resignation.1.b: "A long series of disasters has come to an end."
   resignation.1.c: "Call an immediate election to assemble a new cabinet."
 
-  leader_resigns_from_office_tt: "[SCOPE.sCharacter('resigning_politician').GetFullName] will resign from office and retire from political activity"
+  leader_resigns_from_office_tt: "[SCOPE.sCharacter('resigning_politician').GetFullName] will resign from the office of [SCOPE.sCharacter('resigning_politician').GetPrimaryRoleTitle]"
 
   modifier_disastrous_administration: "Disastrous Administration"
   modifier_best_of_luck: "Warm Send-Off"
@@ -381,11 +376,11 @@
   unlock_arrange_accident_tt: "Unlocks the 'Arrange Accident' Character Interaction"
 
   caudillo.6.t: "Leadership Challenge"
-  caudillo.6.d: "[SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetFullName], a popular military commander, has begun to challenge the civilian leadership of the [SCOPE.gsInterestGroup('leadership_challenge_ig').GetName] under [SCOPE.sCharacter('leadership_challenge_politician').GetFullName]. The [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle]'s ambitions threaten to expand caudillo rule to yet another sector of society."
-  caudillo.6.f: "#bold New Martial Offensive: Civil Offices Under Fire! #!\n\nA peculiar clarion sounded this morning as [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetFullNameNoFormatting] announced [SCOPE.sCharacter('leadership_challenge_commander').GetHerHis] intentions to introduce sweeping reforms amongst the current polity under [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting]. Whispers from [ROOT.GetCountry.GetCapital.GetCityHubName]'s streets about [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting]'s leadership have become cries to step down, rising in chorus with denouncements against [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetLastNameNoFormatting]. (Cont. Pg. 3)"
+  caudillo.6.d: "[SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetFullName], a prominent military commander, has begun to challenge the civilian leadership of the [SCOPE.gsInterestGroup('leadership_challenge_ig').GetName] under [SCOPE.sCharacter('leadership_challenge_politician').GetFullName]. The [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle]'s ambitions threaten to expand caudillo rule to yet another sector of society."
+  caudillo.6.f: "#bold New Martial Offensive: Civil Offices Under Fire! #!\n\nA peculiar clarion sounded this morning as [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRole.GetName] [SCOPE.sCharacter('leadership_challenge_commander').GetFullNameNoFormatting] announced [SCOPE.sCharacter('leadership_challenge_commander').GetHerHis] intentions to introduce sweeping reforms amongst the current polity under [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting]. Whispers from [ROOT.GetCountry.GetCapital.GetCityHubName]'s streets about [SCOPE.sCharacter('leadership_challenge_politician').GetFullNameNoFormatting]'s leadership have become cries to step down, rising in chorus with denouncements against [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRole.GetName] [SCOPE.sCharacter('leadership_challenge_commander').GetLastNameNoFormatting]. (Cont. Pg. 3)"
   caudillo.6.a: "Trust in the heroism of [SCOPE.sCharacter('leadership_challenge_commander').GetPrimaryRoleTitle] [SCOPE.sCharacter('leadership_challenge_commander').GetLastName]."
   caudillo.6.b: "The [SCOPE.gsInterestGroup('leadership_challenge_ig').GetName] must remain under civilian control."
-  politician_gets_pushed_out_tt: "[SCOPE.sCharacter('leadership_challenge_politician').GetFullName] will be forced out of politics"
+  politician_gets_pushed_out_tt: "[SCOPE.sCharacter('leadership_challenge_politician').GetFullName] will be become a [concept_politician]"
 
 
   resignation.2.t: "Hands Thrown Up"
@@ -403,9 +398,10 @@
   resignation.3.c: "[SCOPE.sCharacter('abdicating_monarch').GetHerHis|U] successor must reign with the strength [SCOPE.sCharacter('abdicating_monarch').GetSheHe] lacked."
 
   leader_abdicates_the_throne_tt: "[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFullName] will abdicate the throne of [SCOPE.sCountry('country_scope').GetName]"
-  leader_abdicates_the_throne_display_tt: "Our [concept_ruler] will abdicate the throne and retire from politics"
+  leader_abdicates_the_throne_display_tt: "Our [concept_ruler] will abdicate the throne"
 
-  ideology_not_too_close_tt: "This character's ideology is not too similar to that of our [concept_ruler]"
+  ideology_not_too_close_tt: "This [Concept('concept_character','$concept_character_possessive$')] [concept_ideology] is #b not#! too similar to that of our [concept_ruler]"
+  ideology_not_too_far_tt: "This [Concept('concept_character','$concept_character_possessive$')] [concept_ideology] is #b not#! too different from that of our [concept_ruler]"
   ruler_disapproves_of_revolutionary_law: "The [concept_ruler] or their [concept_interest_group] must disapprove of the enactment of [SCOPE.sLawType('revolutionary_law').GetFullName]"
   ruler_disapproves_of_revolutionary_law_contextless: "The [concept_ruler] or their [concept_interest_group] must disapprove of the [concept_law] enactment goals of this $concept_political_movement_short$"
 
@@ -555,7 +551,7 @@
 
   paralegal_discrimination.1.t: "New Neighbors, New Grudges"
   paralegal_discrimination.1.d: "A minority group of [SCOPE.sCulture('newcomer_culture').GetName] has recently settled in the state of [ROOT.GetState.GetName], seeking a better future. However, the local [SCOPE.sCulture('biggest_primary_culture').GetName] elites are stirring up resentment, claiming the [SCOPE.sCulture('newcomer_culture').GetNameNoFormatting] newcomers will destroy the traditional way of life."
-  paralegal_discrimination.1.f: ""They don't belong here. Our [SCOPE.sCulture('biggest_primary_culture').GetNameNoFormatting] customs, our way of life — they'll be lost if we let the [SCOPE.sCulture('newcomer_culture').GetNameNoFormatting] settle," claimed a prominent landowner, his words echoed in the taverns and markets of [ROOT.GetState.GetCityHubName]. The newcomers, hopeful but weary, whisper of opportunity but face closed doors and hostile stares."
+  paralegal_discrimination.1.f:1 ""They don't belong here! Our [SCOPE.sCulture('biggest_primary_culture').GetNameNoFormatting] customs, our way of life... they'll be lost if we let the [SCOPE.sCulture('newcomer_culture')GetCustom('getPluralDemonym')] settle!" The words, spoken by a prominent landowner, echoed through a [ROOT.GetState.GetCityHubName] tavern. The next day, they spread through the market, and on the next, they were on the lips of the town hall's secretaries. As the newcomers filed through the streets, they were met with closed doors and cold stares."
  
   paralegal_discrimination.1.a: "The [SCOPE.sCulture('newcomer_culture').GetName] people must accept their lot."
   paralegal_discrimination.1.b: "We must foster harmony between peoples, whether [SCOPE.sCulture('newcomer_culture').GetName] or [SCOPE.sCulture('biggest_primary_culture').GetName]."
@@ -613,7 +609,7 @@
   no_more_utopians_tt: "[GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] will no longer appear in this country"
 
   expedition_status_loc_leader_and_location: "[ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName]'s expedition has reached [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]"
-  expedition_status_loc_location: "The expedition has reached [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.Name]"
+  expedition_status_loc_location: "The expedition has reached [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]"
   expedition_status_loc_leader: "[ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName]'s expedition has just set off"
   expedition_status_loc_blank: "[ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName]'s expedition has reached [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]"
   expedition_status_loc_antarctica_leader_towards: "[ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName]'s expedition progresses towards the South Pole"

@@ -28,21 +28,21 @@
 
  expedition_events.611.t:0 "Successful Expedition"
  expedition_events.611.d:0 "[SCOPE.sCharacter('expedition_leader').GetFullName] has returned triumphantly, the course and source of the Congo River have been plotted."
- expedition_events.611.f:0 ""Coming back home is supposed to be the easiest part and, in a sense, it certainly was. But the jungle had forever taken us, ravished our souls in revelry and terror — a part of us had forever stayed there. When I closed my eyes there, I saw my family; when I close my eyes here, I can only see a persistent and drowning green.""
+ expedition_events.611.f:0 ""Coming back home is supposed to be the easiest part and, in a sense, it certainly was. But the jungle had forever taken us, ravished our souls in revelry and terror—a part of us had forever stayed there. When I closed my eyes there, I saw my family; when I close my eyes here, I can only see a persistent and drowning green.""
  expedition_events.611.a:0 "Excellent news!"
  congo_expedition_modifier:0 "Successful Congo Expedition"
 
  expedition_events.612.t:0 "Failed Expedition"
  expedition_events.612.d:0 "After not receiving any reports for many months, it has become clear that the expedition to plot the course of the Congo River has failed and [SCOPE.sCharacter('expedition_leader').GetFullName] has been lost along with it."
  expedition_events.612.d2:0 "After not receiving any reports for many months, the fate of the expedition seemed clear; however, a letter from [SCOPE.sCharacter('expedition_leader').GetFullName] finally arrived this morning, confessing that the only way to live was to come back."
- expedition_events.612.f:0 ""Do you see the story? Do you see anything? It seems to me that I am trying to tell you a dream — making a vain attempt, because no relation of a dream can convey the dream-sensation, that commingling of absurdity, surprise, and bewilderment in a tremor of struggling revolt, that notion of being captured by the incredible which is the very essence of dreams...""
+ expedition_events.612.f:0 ""Do you see the story? Do you see anything? It seems to me that I am trying to tell you a dream—making a vain attempt, because no relation of a dream can convey the dream-sensation, that commingling of absurdity, surprise, and bewilderment in a tremor of struggling revolt, that notion of being captured by the incredible which is the very essence of dreams...""
  expedition_events.612.a:0 "Damnation!"
  expedition_events.612.b:0 "Damnation!"
  failed_congo_river_expedition_modifier:0 "Failed Congo Expedition"
 
  expedition_events.620.t:0 "Boat Repairs"
  expedition_events.620.d:0 "Our boat has been damaged by an unnoticed boulder while trying to navigate one of the river's most slender meanders in [SCOPE.sState('current_expedition_location').GetName]."
- expedition_events.620.f:0 ""The narrowing waters flow through jagged rocks, wooden debris, drifting remains of the jungle that surrounds us. One could become lost in this river — even become truly lost in his mind, and these ruins could be mistaken for one's own ruins.\n\nA sharp noise woke us from our childish reverie, memories from simpler times in another place, another time so distant that swallows this existence, transforms it into something wilder, something lonelier. When we walked over to investigate it, we found that part of the hull had been severely damaged.""
+ expedition_events.620.f:0 ""The narrowing waters flow through jagged rocks, wooden debris, drifting remains of the jungle that surrounds us. One could become lost in this river—even become truly lost in his mind, and these ruins could be mistaken for one's own ruins.\n\nA sharp noise woke us from our childish reverie, memories from simpler times in another place, another time so distant that swallows this existence, transforms it into something wilder, something lonelier. When we walked over to investigate it, we found that part of the hull had been severely damaged.""
  expedition_events.620.a:0 "We need to stop and take care of it."
  expedition_events.620.b:0 "We cannot afford to lose any time."
  expedition_events.620.c:0 "We can easily manage to repair it in a couple of days."
@@ -68,7 +68,7 @@
 
  expedition_events.650.t:0 "Rear Column"
  expedition_events.650.d:0 "We arrived at a missionary camp, finding there the food and rest we had been craving. The lack of aliments during our journey has tempted a man to request the division of the expedition."
- expedition_events.650.f:0 ""Anything similar to his expression I had never seen before — or I had, in my younger years, when fascination and hope were mixed with ambition and desire. Oh, I wasn't touched, I was terrified. The skin surrounding his mouth was not curved in a smile, but cracked into ecstasy. "Let me stay behind, [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting], I'm begging you.""
+ expedition_events.650.f:0 ""Anything similar to his expression I had never seen before—or I had, in my younger years, when fascination and hope were mixed with ambition and desire. Oh, I wasn't touched, I was terrified. The skin surrounding his mouth was not curved in a smile, but cracked into ecstasy. "Let me stay behind, [SCOPE.sCharacter('expedition_leader').GetFullNameNoFormatting], I'm begging you.""
  expedition_events.650.a:0 "We cannot ensure the feeding of our all men."
  expedition_events.650.b:0 "The expedition cannot be divided."
  expedition_events.650.tt:0 "The men are left behind."
@@ -92,13 +92,13 @@
 
  expedition_events.670.t:0 "Into the Jungle"
  expedition_events.670.d:0 "Our estimations had not taken into account the difficulties that the [SCOPE.sState('current_expedition_location').GetName] forest would cause to our expedition. The two months that we had devoted to this region of the Congo are most likely to be doubled."
- expedition_events.670.f:0 ""We could not understand that we were already too far. I tried to talk to our officers about it, but they would just dismiss it saying that we were not that deep into the jungle. They could not understand that we were already too far — not into the jungle, not into the river, not even into this immaculate night of starry firmament and profound silence.\n\nWe are traveling towards the end of the times, towards the beginning of the times, those first ages, these last ages, there is hardly any sign here for us: advance, go back, silence against the roaring jungle — just silence.""
+ expedition_events.670.f:0 ""We could not understand that we were already too far. I tried to talk to our officers about it, but they would just dismiss it saying that we were not that deep into the jungle. They could not understand that we were already too far—not into the jungle, not into the river, not even into this immaculate night of starry firmament and profound silence.\n\nWe are traveling towards the end of the times, towards the beginning of the times, those first ages, these last ages, there is hardly any sign here for us: advance, go back, silence against the roaring jungle—just silence.""
  expedition_events.670.a:0 "It is necessary that we ration our food."
  expedition_events.670.b:0 "We are closer to the end."
 
  expedition_events.680.t:0 "The Seven Cataracts"
  expedition_events.680.d:0 "While walking through the forest of [SCOPE.sState('current_expedition_location').GetName], the expedition follows the rumor of water currents until reaching uncharted waterfalls."
- expedition_events.680.f:0 ""It was like raising the curtain. The greenness of the jungle had made us forget all the other colors, we were deaf to the vivacity of the world. And there it was, finally. We had penetrated deeper and deeper into the heart of darkness and pierced it with our teeth. We had eaten and swallowed it, emerging back with bloody hands, bloody mouth — red, a new color.\n\nWe pushed the vegetation aside, walking through wood, leaves, stone. Blue. White. The waterfalls were standing before us inviting, grand, inspiring, savage. They looked like the only source of water in a world of thirst.""
+ expedition_events.680.f:0 ""It was like raising the curtain. The greenness of the jungle had made us forget all the other colors, we were deaf to the vivacity of the world. And there it was, finally. We had penetrated deeper and deeper into the heart of darkness and pierced it with our teeth. We had eaten and swallowed it, emerging back with bloody hands, bloody mouth—red, a new color.\n\nWe pushed the vegetation aside, walking through wood, leaves, stone. Blue. White. The waterfalls were standing before us inviting, grand, inspiring, savage. They looked like the only source of water in a world of thirst.""
  expedition_events.680.a:1 "From now on, they shall be known as the [SCOPE.sCharacter('expedition_leader').GetLastName] Falls."
  modifier_expedition_waterfalls:0 "Lualaba River Falls"
  waterfalls_modifier:0 "Named the Waterfalls"
@@ -121,7 +121,7 @@
  je_urbanization_events_1_reason:0 "A nation of peasants is a nation of the past. How can we expect progress to arrive at our homes if those homes are no more than farms?"
 
  je_urbanization_events_2:1 "Urbanize [ROOT.GetCountry.GetNameNoFlag]"
- je_urbanization_events_2_reason:0 "The future is not white or black, like the old tales say — it's gray! The color of the train that lets us visit foreign lands! The color of the factory that lets us pay for such a travel! The color, my friend, of progress."
+ je_urbanization_events_2_reason:0 "The future is not white or black, like the old tales say—it's gray! The color of the train that lets us visit foreign lands! The color of the factory that lets us pay for such a travel! The color, my friend, of progress."
  modifier_final_urbanization:0 "Solidly Urbanized"
 
  urbanization_events.2.t:0 "Oh, City of Plenty"
@@ -194,7 +194,7 @@
  poverty_relief_modifier:0 "Poverty Relief"
 
  sol_events.2.t:0 "A Tale of Hope"
- sol_events.2.desc:0 "The living conditions of our people have been steadily increasing during these past times, bringing hope to the most dispirited parts of our cities — even so, we still have a long way to go."
+ sol_events.2.desc:0 "The living conditions of our people have been steadily increasing during these past times, bringing hope to the most dispirited parts of our cities—even so, we still have a long way to go."
  sol_events.2.f:0 ""It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of light, it was the season of darkness, it was the spring of hope, it was the winter of despair."" #Dickens
  sol_events.2.a:0 "Our people shall never forget what we've done for them."
  sol_events.2.b:0 "This will help us advance even further!"
@@ -226,7 +226,7 @@
 
  sol_events.5.t:0 "[ROOT.GetCountry.GetCapital.GetCityHubName], As It Is"
  sol_events.5.d:0 "A [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')] article about the living conditions in [ROOT.GetCountry.GetCapital.GetCityHubName]'s slums has been released to the public. The consequent outrage, of course, did not take long to spread."
- sol_events.5.f:0 ""When we look at this great city, our minds can easily get unduly elated by its great pomp and splendor — the brightness of its palaces, temples and mansions, its courts of justice, academies of science, and institutions of philanthropy. Surely we mourn that such a city has so much wickedness, degradation, heathenism and profligacy... The swarms of wretched, filthy, haggard, dissolute, careworn outcast masses that have been pushed to the very edges of society."" #John Knox
+ sol_events.5.f:0 ""When we look at this great city, our minds can easily get unduly elated by its great pomp and splendor—the brightness of its palaces, temples and mansions, its courts of justice, academies of science, and institutions of philanthropy. Surely we mourn that such a city has so much wickedness, degradation, heathenism and profligacy... The swarms of wretched, filthy, haggard, dissolute, careworn outcast masses that have been pushed to the very edges of society."" #John Knox
  sol_events.5.a:0 "This place needs to be sanitized as soon as possible."
  sol_events.5.b:0 "Article? What article?"
  approves_of_drainage_modifier:0 "Approves of Slums Drainage Levels"
@@ -236,7 +236,7 @@
  approves_of_ignoring_drainage_modifier:0 "Ignored Slums Drainage Levels"
 
  sol_events.6.t:0 "Bread Riots"
- sol_events.6.d:0 "The shortage of food supplies and the low — if not nonexistent — wages in the slums have led to a series of riots among the women in [ROOT.GetCountry.GetCapital.GetCityHubName], where they have vandalized several storefronts."
+ sol_events.6.d:0 "The shortage of food supplies and the low—if not nonexistent—wages in the slums have led to a series of riots among the women in [ROOT.GetCountry.GetCapital.GetCityHubName], where they have vandalized several storefronts."
  sol_events.6.f:0 ""We have no food, we have no money, we see these wealthy bastards hoarding food as if they were about to starve when one of their fingers is fatter than our arms. We are entitled to be just as well-fed as they are.""
  sol_events.6.a:0 "We can surely find something to give them."
  sol_events.6.b:0 "They shall pay for their own food like everyone else."
@@ -254,11 +254,11 @@
  electrics_building_modifier:0 "Electrics Industries Boom"
 
  je_whaling:0 "The Whaling Industry"
- je_whaling_reason:0 "Whale oil is our past and will be our future! Soap, fuel for oil lamps, even the important lubrication of our machines — this polyvalent substance covers all of these needs."
+ je_whaling_reason:0 "Whale oil is our past and will be our future! Soap, fuel for oil lamps, even the important lubrication of our machines—this polyvalent substance covers all of these needs."
 
  production_tech_events.301.t:0 "A Dangerous Business"
  production_tech_events.301.d:0 "The efficiency of our [SCOPE.sBuilding('whaling_building').GetName] in [SCOPE.sState('whaling_state').GetName] has proved to have a dangerous counterpart and death has become common to almost every voyage. It is a high price to pay, but the profit is equally high."
- production_tech_events.301.f:1 "The body of the whale lies as wide as the sky. Its head has been emptied and the barrels of oil are stained with blood.\n\nA voice resounds throughout the wharf, "We lost a dozen of men," and then he starts to list them, and their towns; a few of them are from the capital, one of them has your brother's name.\n\nThe oil shimmers — the liquid gold-like blood of a siren, luring men to their deaths."
+ production_tech_events.301.f:1 "The body of the whale lies as wide as the sky. Its head has been emptied and the barrels of oil are stained with blood.\n\nA voice resounds throughout the wharf, "We lost a dozen of men," and then he starts to list them, and their towns; a few of them are from the capital, one of them has your brother's name.\n\nThe oil shimmers—the liquid gold-like blood of a siren, luring men to their deaths."
  production_tech_events.301.a:0 "We need to ensure the safety of the sailors."
  production_tech_events.301.b:0 "But it shines!"
  whaling_state_modifier:0 "Whaling Boom"
@@ -359,7 +359,7 @@
 
  famine_events.2.t:0 "Bread and Blood"
  famine_events.2.d:0 "The lack of provisions has spread to the neighboring state of [SCOPE.sState('famine_2_state').GetName], where the failing of the crops has increased casualties among our people."
- famine_events.2.f:1 ""No imagination can conceive, no man or woman can picture, no language can express, no author, no journalist, no painter or actor can give form to the horrors that many families face in [SCOPE.sState('famine_2_state').GetNameNoFormatting]. Their malnourished faces as thin as galgos'; babies can hardly be distinguished from bulges of blankets — if only they hadn't sold all of their blankets to buy the last food of the month.""
+ famine_events.2.f:1 ""No imagination can conceive, no man or woman can picture, no language can express, no author, no journalist, no painter or actor can give form to the horrors that many families face in [SCOPE.sState('famine_2_state').GetNameNoFormatting]. Their malnourished faces as thin as galgos'; babies can hardly be distinguished from bulges of blankets—if only they hadn't sold all of their blankets to buy the last food of the month.""
  famine_events.2.a:0 "Our Emergency Relief measures have toned down the number of victims."
  famine_events.2.b:0 "These are the consequences that we must face."
  famine_events.2.c:0 "We should activate the Emergency Relief in the original [SCOPE.sState('famine_state').GetName] now."
@@ -368,7 +368,7 @@
 
  famine_events.3.t:0 "In Search of a Better Life"
  famine_events.3.d:0 "People from the state of [SCOPE.sState('famine_state').GetName] have started massively migrating across the country, in the hopes of finding a better place to settle and escape the great famine that has been devastating their lives."
- famine_events.3.f:2 ""Along the deserted and rusty railways, the cry of children is the only sound that can be heard — no train will arrive until noon, but families have already gathered near the ruined station. Some of them have been walking for days, "where is brother?," they keep walking.\n\nRumors of a better life beyond their land are a foolish hope, they suspect, "where is brother?," rain falls, some men too.""
+ famine_events.3.f:2 ""Along the deserted and rusty railways, the cry of children is the only sound that can be heard—no train will arrive until noon, but families have already gathered near the ruined station. Some of them have been walking for days, "where is brother?," they keep walking.\n\nRumors of a better life beyond their land are a foolish hope, they suspect, "where is brother?," rain falls, some men too.""
  famine_events.3.a:0 "Our Emergency Relief measures have toned down the number of victims."
  famine_events.3.b:0 "These are the consequences that we must face."
  famine_events.3.c:0 "We should activate the Emergency Relief in the original [SCOPE.sState('famine_state').GetName] now."
@@ -399,7 +399,7 @@
 
  ig_suppression_events.6.t:0 "Self-Sabotage"
  ig_suppression_events.6.d:2 "Rumors about the weak will of [SCOPE.sCharacter('suppressed_leader').GetFullName], of the [SCOPE.gsInterestGroup('target').GetName], are more a fact than a suspicion. There are many ways in which one can take advantage of a weak opponent."
- ig_suppression_events.6.f:0 ""So there are two metals before you, as you can see, right? And then you can choose, this kindly offered gold or this sharp — but equally beautiful — steel, do you understand what I'm saying?""
+ ig_suppression_events.6.f:0 ""So there are two metals before you, as you can see, right? And then you can choose, this kindly offered gold or this sharp—but equally beautiful—steel, do you understand what I'm saying?""
  ig_suppression_events.6.a:0 "Toss a coin to your leader."
  ig_suppression_events.6.b:0 "There are other... cheaper methods."
  ig_autosabotage_modifier:0 "Self-Sabotage"
@@ -449,7 +449,7 @@
 
  fascism_events.1.t:0 "Night of the Long Knives"
  fascism_events.1.d:0 "Suspicions about an internal threat within our own generals and leaders have been on the rise, reaching [SCOPE.sCharacter('fascist_leader').GetFullName]'s ears, and the necessity of exterminating threats against the fascist regime is palpable. Hasty words, elusive looks, they are everywhere. Everywhere."
- fascism_events.1.f:5 ""Knives fell in the night — they were sleeping when we arrived.\n\n"Get up!" The wooden floor was wet with their blood. "You have been accused of crimes against [SCOPE.sCharacter('fascist_leader').GetLastNameNoFormatting] and the regime, what do you have to say in your defense?"\n\nAnd their voices were like horses snorting and thundering in the battlefield, gunfire, cannons. "This is nonsense!" "You have been charged with..." "Nonsense! This is all a mutiny! Hail [SCOPE.sCharacter('fascist_leader').GetLastNameNoFormatting]!" They are everywhere. Everywhere.""
+ fascism_events.1.f:5 ""Knives fell in the night—they were sleeping when we arrived.\n\n"Get up!" The wooden floor was wet with their blood. "You have been accused of crimes against [SCOPE.sCharacter('fascist_leader').GetLastNameNoFormatting] and the regime, what do you have to say in your defense?"\n\nAnd their voices were like horses snorting and thundering in the battlefield, gunfire, cannons. "This is nonsense!" "You have been charged with..." "Nonsense! This is all a mutiny! Hail [SCOPE.sCharacter('fascist_leader').GetLastNameNoFormatting]!" They are everywhere. Everywhere.""
  fascism_events.1.a:0 "We must handle this with extreme caution."
  fascism_events.1.b:0 "Execute them publicly."
  fascism_events.1.c:0 "May they rot in jail."
@@ -483,12 +483,12 @@
  je_fascism_2:0 "Nation Above Self"
  je_fascism_2_reason:1 "A safe country must be safe from within. Traitors and plotters can be everywhere, and we must be able to take care of them."
 
- fascism_2_tt:1 "Every Interest Group with a #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! or [GetIdeology('ideology_radical').GetName] leader is [concept_marginalized]"
+ fascism_2_tt:1 "Every Interest Group with a #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! or [GetIdeology('ideology_radical').GetName] [concept_leader] is [concept_marginalized]"
  fascism_3_tt:1 "Every #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialist#! or [GetIdeology('ideology_radical_movement').GetName] [concept_political_movement] is either #bold marginalized#! or being #bold suppressed#!"
 
  fascism_events.3.t:0 "The Organized Majority"
  fascism_events.3.d:0 "Our streets are a safe haven for our people, with security officers ensuring their safety night and day, and seditionists marginalized from our fascist government."
- fascism_events.3.f:1 ""The warmth of the day makes the birds sing in a mandatory chant, rhythmically followed by the police alarms that patrol the streets. Children play in the park before the night curfew falls. A different — and safer — society is possible, and we're on the right direction.""
+ fascism_events.3.f:1 ""The warmth of the day makes the birds sing in a mandatory chant, rhythmically followed by the police alarms that patrol the streets. Children play in the park before the night curfew falls. A different—and safer—society is possible, and we're on the right direction.""
  fascism_events.3.a:0 "We need to focus on the security."
  fascism_events.3.b:0 "People need to trust us."
  fascist_authority_modifier:0 "Authoritarian Policies"
@@ -496,7 +496,7 @@
 
  fascism_events.4.t:0 "Joining Our Cause"
  fascism_events.4.d:1 "With fascist ideals taking root among other groups and discontent rising from the masses, members of the [SCOPE.gsInterestGroup('fascist_ig').GetName] have sought to influence the [SCOPE.gsInterestGroup('new_fascist_ig').GetName] into choosing more regime-aligned leaders."
- fascism_events.4.f:1 ""Are you really going to let those scoundrels have no respect for our nation? The respect that the [SCOPE.gsInterestGroup('new_fascist_ig').GetNameNoFormatting] had earned through so many years of hard work and reason is going to be forever lost under their incompetent rule.\n\nLet them dream of a peaceful and equalitarian society like a naive child — there is only one way to achieve peace: dominion.""
+ fascism_events.4.f:1 ""Are you really going to let those scoundrels have no respect for our nation? The respect that the [SCOPE.gsInterestGroup('new_fascist_ig').GetNameNoFormatting] had earned through so many years of hard work and reason is going to be forever lost under their incompetent rule.\n\nLet them dream of a peaceful and equalitarian society like a naive child—there is only one way to achieve peace: dominion.""
  fascism_events.4.a:0 "Indeed, there is only one way."
  fascism_events.4.b:1 "All roads lead to Rome."
  fascism_events.4.c: "Capitulation is death of a different kind."
@@ -599,7 +599,7 @@
 
  decree_events.1.t:0 "On the Right Track"
  decree_events.1.d:0 "The excellent state of our road networks has attracted engineers from all over our nation that now want to work with us in various interesting ways."
- decree_events.1.f:1 ""Smooth asphalt, as shining as the surface of a steel-like lagoon, calm. The smell of car smoke, rubber, nature tamed by progress... we live to make the distances shorter!\n\nIf you hire any of the engineers who graduated from our prestigious university in [SCOPE.sState('engineers_state').GetNameNoFormatting], I assure you, my dear friend, that nothing — nothing! — will ever stand in your way... or in the way of your car!""
+ decree_events.1.f:1 ""Smooth asphalt, as shining as the surface of a steel-like lagoon, calm. The smell of car smoke, rubber, nature tamed by progress... we live to make the distances shorter!\n\nIf you hire any of the engineers who graduated from our prestigious university in [SCOPE.sState('engineers_state').GetNameNoFormatting], I assure you, my dear friend, that nothing—nothing!—will ever stand in your way... or in the way of your car!""
  decree_events.1.a:0 "A better drainage system should be our priority."
  decree_events.1.b:0 "This promising young man offers us a cheaper alternative."
  decree_events.1.c:0 "Stone foundations you say? Risky, but great!"
@@ -720,7 +720,7 @@
 
  cold.102.t:0 "A Polar Explorer"
  cold.102.d:0 "We must choose a leader for the upcoming expedition to the Antarctic Continent. A few promising candidates have distinguished themselves."
- cold.102.f:0 "Few people are capable of rightly appreciating this heroic deed, this brilliant proof of human courage and energy. These men will sail right into the heart of the pack ice, which all previous explorers have regarded as certain death. These men are heroes — heroes in the highest sense of the word."
+ cold.102.f:0 "Few people are capable of rightly appreciating this heroic deed, this brilliant proof of human courage and energy. These men will sail right into the heart of the pack ice, which all previous explorers have regarded as certain death. These men are heroes—heroes in the highest sense of the word."
  cold.102.a:0 "[SCOPE.sCharacter('expedition_leader_1').GetFullName] is an experienced polar explorer."
  cold.102.b:0 "[SCOPE.sCharacter('expedition_leader_2').GetFullName] will lead us to glory."
  cold.102.c:0 "[SCOPE.sCharacter('expedition_leader_3').GetFullName] has never let us down before."
@@ -780,7 +780,7 @@
 
  cold.8.t:0 "Pack Ice"
  cold.8.d:1 "Broken pieces of sea ice start to cover the surface of the water as the expedition approaches its destination. The ship's hull tries to make its way through the cold mass by ramming and crushing, but the ice becomes stronger as they advance."
- cold.8.f:1 ""It wouldn't be sound to confess that such a peril intrigued me, but the imminent arrival of our final goal, announced by the increasing sea ice that surrounded us, could not but terrify and fascinate me at the same time. The snow cover that extended over it had prevented the sea from reflecting our silhouettes or our ship's — there was nothing else to see: it was just us, and the pole.""
+ cold.8.f:1 ""It wouldn't be sound to confess that such a peril intrigued me, but the imminent arrival of our final goal, announced by the increasing sea ice that surrounded us, could not but terrify and fascinate me at the same time. The snow cover that extended over it had prevented the sea from reflecting our silhouettes or our ship's—there was nothing else to see: it was just us, and the pole.""
  cold.8.a:0 "Onwards!"
  cold.8.b:0 "We have to trust [SCOPE.sCharacter('expedition_leader').GetFullName]'s expertise."
 
@@ -799,7 +799,7 @@
 
  cold.11.t:0 "The Great Ice Barrier"
  cold.11.d:0 "As the expedition's ship turns to the side, the crew witnesses in awe a high, perpendicular face of ice; their only entrance to the continent."
- cold.11.f:1 ""And there it stood. If it had a face, I know it'd be laughing at us. That ridiculous cracking sound — the ice breaking. And there it goes, there, a block falls into the sea. Threatening. Fatal. It's in the direction of our ship. This moment had haunted our minds since when we left the last harbor. Sailing had been difficult, but going into that uncharted continent would be like descending into the depths of a frozen hell.""
+ cold.11.f:1 ""And there it stood. If it had a face, I know it'd be laughing at us. That ridiculous cracking sound—the ice breaking. And there it goes, there, a block falls into the sea. Threatening. Fatal. It's in the direction of our ship. This moment had haunted our minds since when we left the last harbor. Sailing had been difficult, but going into that uncharted continent would be like descending into the depths of a frozen hell.""
  cold.11.a:0 "We must climb it!"
  cold.11.b:0 "We should make a detour around the fissures."
 
@@ -811,8 +811,8 @@
 
  cold.13.t:0 "Strange Marks"
  cold.13.d:0 "During the expedition's advances through the snow a strange rock with unknown marks has been discovered, partly buried under their feet."
- cold.13.f:0 ""A light-colored rock was dug up this very morning. Its smooth texture and perfect curvature was only interrupted by a pattern of unfamiliar marks, all appearing in a sequence that none of our men could dare to decipher. When positioned between one's eye and the sun, its tone varies, seemingly depending on the time of the day; now white, now yellow, at dusk — green.""
- cold.13.f2:0 ""A light-colored rock was dug up this very morning. Its smooth texture and perfect curvature was only interrupted by a pattern of unfamiliar marks, all appearing in a sequence that was unintelligible at first, but whose meaning I recognized after a while. I didn't know the language, I didn't even know the twisted words in complete isolation, but together — together I knew. They get hungry, you know. Hungry.""
+ cold.13.f:0 ""A light-colored rock was dug up this very morning. Its smooth texture and perfect curvature was only interrupted by a pattern of unfamiliar marks, all appearing in a sequence that none of our men could dare to decipher. When positioned between one's eye and the sun, its tone varies, seemingly depending on the time of the day; now white, now yellow, at dusk—green.""
+ cold.13.f2:0 ""A light-colored rock was dug up this very morning. Its smooth texture and perfect curvature was only interrupted by a pattern of unfamiliar marks, all appearing in a sequence that was unintelligible at first, but whose meaning I recognized after a while. I didn't know the language, I didn't even know the twisted words in complete isolation, but together—together I knew. They get hungry, you know. Hungry.""
  cold.13.a:0 "Stop and study it."
  cold.13.b:0 "Ignore it."
 
@@ -873,7 +873,7 @@
  expedition_events.290.t:0 "A Stop on the Way"
  expedition_events.290.d:0 "With the low temperatures of the mountains, the expedition finds a perfect meadow to take shelter, near the river and far enough from any other village to not disturb their land. An encampment using cottonwood lumber cut from the riverbanks is suggested by [SCOPE.sCharacter('expedition_leader').GetFullName]."
  expedition_events.290.d2:0 "With the low temperatures of the mountains, the expedition finds a perfect meadow to take shelter, near the river and far enough from any other village to not disturb their land. A fort built by previous explorers stands proudly as a haven."
- expedition_events.290.f:0 ""It was an unusually cold month when the range of mountains announced their unmerciful judgement before us. As the sun started to set, a glistening light penetrated the canopy of trees, making the shadows tremble and the raindrops cover the brown, almost dead grass.\n\nOur expedition was tired, and that tiredness of the soul — far from home and close to the ocean — became much more tangible when the last rays illuminated their swollen faces.""
+ expedition_events.290.f:0 ""It was an unusually cold month when the range of mountains announced their unmerciful judgement before us. As the sun started to set, a glistening light penetrated the canopy of trees, making the shadows tremble and the raindrops cover the brown, almost dead grass.\n\nOur expedition was tired, and that tiredness of the soul—far from home and close to the ocean—became much more tangible when the last rays illuminated their swollen faces.""
  expedition_events.290.a:0 "The perfect place to build a fort."
  expedition_events.290.b:0 "We cannot afford this delay."
  expedition_events.290.c:0 "We shall stop and rest."
@@ -881,8 +881,8 @@
 
  expedition_events.291.t:0 "The Miracle of Life"
  expedition_events.291.d:0 "The expedition is waken up in the middle of the night. Inhuman screams come from one of the tents, and a female voice cries: "Baby!"."
- expedition_events.291.f:0 ""The miracle of life! How less of a miracle it was and how much of a torture it seemed when looking at that poor woman giving birth. The screams couldn't be stopped for at least two more hours and all of our scarce medicines were allocated to such terrifying labor — to what extent they seemed to work, I must confess that my hopes are low and that I wish this woman a simpler life after this calvary.""
- expedition_events.291.f2:0 ""The miracle of life! How less of a miracle it was and how much of a torture it seemed when looking at that poor woman giving birth. The screams couldn't be stopped for at least two more hours and all of our scarce medicines were allocated to such terrifying labor — to what extent they seemed to work, I must confess that my hopes are low and that I wish our guide a simpler life after this calvary.""
+ expedition_events.291.f:0 ""The miracle of life! How less of a miracle it was and how much of a torture it seemed when looking at that poor woman giving birth. The screams couldn't be stopped for at least two more hours and all of our scarce medicines were allocated to such terrifying labor—to what extent they seemed to work, I must confess that my hopes are low and that I wish this woman a simpler life after this calvary.""
+ expedition_events.291.f2:0 ""The miracle of life! How less of a miracle it was and how much of a torture it seemed when looking at that poor woman giving birth. The screams couldn't be stopped for at least two more hours and all of our scarce medicines were allocated to such terrifying labor—to what extent they seemed to work, I must confess that my hopes are low and that I wish our guide a simpler life after this calvary.""
  expedition_events.291.a:0 "We will take care of the baby."
  expedition_events.291.b:0 "It's best for both of them to go back to a village."
 
@@ -903,7 +903,7 @@
  expedition_events.294.t:0 "Peaceful Intentions"
  expedition_events.294.d:0 "A few days after being sent on a reconnaissance mission, members of the expedition come back announcing that they have found a native village, in which the group can find aid."
  expedition_events.294.d2:0 "A few days after being sent on a reconnaissance mission, members of the expedition come back announcing that they have found a native village, in which the group can find aid, using the newborn baby as a symbol of their peaceful intentions."
- expedition_events.294.f:0 ""As days come and go, our landscape offers minimal changes. These mountains are sharper, these are older, more eroded; now the river runs on this side, now it runs on the other side, but the chain of circumstances stays the same.\n\nOur men came back with great news and announced that another native settlement was found, so we prepared our gifts: needles, and mirrors, and medals, and ribbons, and all accessories that looked rich and beautiful. We had already repeated the ritual a hundred times, but every one felt equally important — we needed their help.""
+ expedition_events.294.f:0 ""As days come and go, our landscape offers minimal changes. These mountains are sharper, these are older, more eroded; now the river runs on this side, now it runs on the other side, but the chain of circumstances stays the same.\n\nOur men came back with great news and announced that another native settlement was found, so we prepared our gifts: needles, and mirrors, and medals, and ribbons, and all accessories that looked rich and beautiful. We had already repeated the ritual a hundred times, but every one felt equally important—we needed their help.""
  expedition_events.294.a:0 "We should try to barter with them."
  expedition_events.294.b:0 "Is there anyone here who can guide us?"
  expedition_events.294.c:0 "They have offered us some provisions for the baby and its mother."
@@ -918,7 +918,7 @@
  expedition_events.296.t:0 "When the Earth Opened Its Mouth"
  expedition_events.296.d:0 "Making their way through the mountains, the expedition finds a dangerous gorge. Their guide advises them to take a longer, more secure route instead of crossing it."
  expedition_events.296.d2:0 "Making their way through the mountains, the expedition finds a dangerous gorge. Their native guide suggests a different path, where she used to cross with her tribe."
- expedition_events.296.f:0 ""At the mauvish beginnings of dawn, the shadows of the mountains become lilac imprints, carvings on the rocks that mimic their own figures as miniatures displayed in a museum. The gorge gets sharper and narrower, the mouth of the Earth directly pointed at us — some hungers you cannot satiate.""
+ expedition_events.296.f:0 ""At the mauvish beginnings of dawn, the shadows of the mountains become lilac imprints, carvings on the rocks that mimic their own figures as miniatures displayed in a museum. The gorge gets sharper and narrower, the mouth of the Earth directly pointed at us—some hungers you cannot satiate.""
  expedition_events.296.a:0 "Our guide knows better."
  expedition_events.296.b:0 "We have no time to waste."
  expedition_events.296.c:0 "She knows these paths."
@@ -942,7 +942,7 @@
 
  expedition_events.130.t:0 "An Unexpected Guest"
  expedition_events.130.d:1 "As the expedition encounters a group of suspicious traders, one of the men claims to be a [SCOPE.sC('ambassador_country').GetAdjectiveNoFlag] ambassador, kidnapped by these "mercenaries"."
- expedition_events.130.f:1 ""Their hands were stained with the color of earth, grass, and rusty blood. Their faces smiled when they saw us, and I looked at my men with a severe expression — no man smiles this deep in the jungle.\n\nOne of them approached us, spoke in a foreign language that one of our younger boys could recognize, "they're merchants," he said, "they want to know if we want to sell anything." "Explorers?," another voice shouted, coarse, desperate, "These men kidnapped me months ago! Thieves, mercenaries, criminals! I'm the [SCOPE.sC('ambassador_country').GetAdjectiveNoFormatting] ambassador! Free me from this treacherous fate!""
+ expedition_events.130.f:1 ""Their hands were stained with the color of earth, grass, and rusty blood. Their faces smiled when they saw us, and I looked at my men with a severe expression—no man smiles this deep in the jungle.\n\nOne of them approached us, spoke in a foreign language that one of our younger boys could recognize, "they're merchants," he said, "they want to know if we want to sell anything." "Explorers?," another voice shouted, coarse, desperate, "These men kidnapped me months ago! Thieves, mercenaries, criminals! I'm the [SCOPE.sC('ambassador_country').GetAdjectiveNoFormatting] ambassador! Free me from this treacherous fate!""
  expedition_events.130.a:0 "We need to get this man to safety."
  expedition_events.130.b:0 "How do we know he's not lying?"
 
@@ -985,7 +985,7 @@
 
  internal_security_events.3.t:0 "The Age of Information"
  internal_security_events.3.d:0 "As the [SCOPE.sLaw('current_law_scope').GetName] law gains traction, many of our people have expressed concerns about their privacy."
- internal_security_events.3.f:0 ""I have the right to not exist!," a worried citizen has reported to the [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]. "This is unheard of — an outrage! The lack of accuracy that this information may bring... imagine being accused of a crime you didn't commit just because they have put you in the wrong list, the wrong ideology, the wrong background.""
+ internal_security_events.3.f:0 ""I have the right to not exist!," a worried citizen has reported to the [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]. "This is unheard of—an outrage! The lack of accuracy that this information may bring... imagine being accused of a crime you didn't commit just because they have put you in the wrong list, the wrong ideology, the wrong background.""
  internal_security_events.3.a:0 "They may have a point."
  internal_security_events.3.b:0 "They have nothing to worry about!"
  privacy_concerns_modifier:0 "Privacy Concerns"
@@ -1105,7 +1105,7 @@
 
  exhibition_events.3.t:0 "The Greatest Exhibition"
  exhibition_events.3.d:0 "After months of preparation the exhibition is finally finished, and is being heralded as one of the greatest exhibitions of the age."
- exhibition_events.3.f:1 ""And this statue we rescued from the sea," and then it was displayed near the central fountain, still stained by the water. "If you dare to look through this glass, my dear, you'd be able to see the most forlorn constellations."\n\nAt the other side of the hall, [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] welcomed all visitors, dressed all in white.\n\nThere were trumpets and cheering, and music and smoke, and fascination and there was awe, and there was — life, so bright."
+ exhibition_events.3.f:1 ""And this statue we rescued from the sea," and then it was displayed near the central fountain, still stained by the water. "If you dare to look through this glass, my dear, you'd be able to see the most forlorn constellations."\n\nAt the other side of the hall, [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] welcomed all visitors, dressed all in white.\n\nThere were trumpets and cheering, and music and smoke, and fascination and there was awe, and there was—life, so bright."
  exhibition_events.3.a:0 "Wonderful. Just... wonderful."
 
  exhibition_events.4.t:0 "Steaming Suspicions"
@@ -1135,14 +1135,14 @@
 
  exhibition_events.7.t:0 "A Matter of Business"
  exhibition_events.7.d:0 "Suspicious gentlemen have been reported charging an extra fee for special items inside the Exhibition hall."
- exhibition_events.7.f:0 "There's a man with a tall hat — a very, very tall hat. He's pointing at one of the telescopes, this one looks specially important. "Would you, little sir, want to try it? For just one penny you can discover the wonders of the night sky!"\n\nYou pause. The machine shines. You swear you can see it pulsing beneath all that steel. The entrance cost you a whole shelling. Your pockets are ragged. The man has now a sharp smile — a very, very sharp smile."
+ exhibition_events.7.f:0 "There's a man with a tall hat—a very, very tall hat. He's pointing at one of the telescopes, this one looks specially important. "Would you, little sir, want to try it? For just one penny you can discover the wonders of the night sky!"\n\nYou pause. The machine shines. You swear you can see it pulsing beneath all that steel. The entrance cost you a whole shelling. Your pockets are ragged. The man has now a sharp smile—a very, very sharp smile."
  exhibition_events.7.a:0 "We cannot let these men tarnish the good name of the Exhibition."
  exhibition_events.7.b:0 "We can all use one or two extra pennies..."
 
  titanic.1.t:0 "The Titanic"
  titanic.1.t2:0 "The [SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_titanic')]"
  titanic.1.d:0 "[SCOPE.sCharacter('titanic_leader').GetFullName], of the [SCOPE.gsInterestGroup('titanic_ig').GetName], has determined to sponsor the construction of a memorable ocean liner in the shipyards of [SCOPE.sState('titanic_state').GetName]. It will be like nothing ever seen before."
- titanic.1.f:0 ""The majesty, the perfect reflection of the light against its four black funnels was sufficient to itself. A number of us who enjoyed the crisp air were promenading about the deck. There is a sense of emptiness that comes over us at evening. A kid stood silent. We couldn't talk after that.\n\nThe ship, the sunset — and the shameless dream of the future, crystallized.""
+ titanic.1.f:0 ""The majesty, the perfect reflection of the light against its four black funnels was sufficient to itself. A number of us who enjoyed the crisp air were promenading about the deck. There is a sense of emptiness that comes over us at evening. A kid stood silent. We couldn't talk after that.\n\nThe ship, the sunset—and the shameless dream of the future, crystallized.""
  titanic.1.a:0 "People will talk about the luxury of this ship!"
  titanic.1.b:0 "We should make its construction more efficient."
  titanic.1.c:0 "We have no time to follow a maniac's delusions."
@@ -1167,7 +1167,7 @@
  titanic.3.t:0 "An Impressive Voyage"
  titanic.3.d:0 "After the monumental Titanic left the shipyards of [SCOPE.sState('titanic_state').GetName], it wasn't long until her maiden voyage was proven to be an absolute success. Crowds wave at the passengers at the arriving port, cheering."
  titanic.3.d2:0 "After the monumental [SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_titanic')] left the shipyards of [SCOPE.sState('titanic_state').GetName], it wasn't long until her maiden voyage was proven to be an absolute success. Crowds wave at the passengers at the arriving port, cheering."
- titanic.3.f:0 ""What are men compared to the waves and the ocean? That ship was the only proof we had of man establishing his dominion over the sea. Sages of antiquity would crumble and curse, for we have bewitched their gods and surpassed their liquid monsters.\n\nWe are here, now — and awe springs eternal.""
+ titanic.3.f:0 ""What are men compared to the waves and the ocean? That ship was the only proof we had of man establishing his dominion over the sea. Sages of antiquity would crumble and curse, for we have bewitched their gods and surpassed their liquid monsters.\n\nWe are here, now—and awe springs eternal.""
  titanic.3.a:0 "It was the ship of dreams."
  titanic_good_modifier:0 "Ocean Liner Success"
 
@@ -1204,7 +1204,7 @@
 
  krakatoa.3.t:0 "Burning Ashes"
  krakatoa.3.d: "Due to the drop of temperature caused by the volcanic eruption all the crops of [SCOPE.sState('farm_state').GetName] have been destroyed in the subsequent [GetHarvestConditionType('disease_outbreak').GetName] and now the farmers have come begging for help."
- krakatoa.3.f:0 ""No food at home, sir, not a single root to be saved. Children ask questions, sir, the sky is always dark, always red. They're hungry, hungry and afraid, my lord — and so am I.""
+ krakatoa.3.f:0 ""No food at home, sir, not a single root to be saved. Children ask questions, sir, the sky is always dark, always red. They're hungry, hungry and afraid, my lord—and so am I.""
  krakatoa.3.a:0 "We can send them some food."
  krakatoa.3.b:0 "There's nothing we can do."
  krakatoa.3.c: "Open the state granaries!"
@@ -1243,7 +1243,7 @@
 
  prohibition.2.t:0 "From Within"
  prohibition.2.d:0 "[SCOPE.sCharacter('alcoholic_leader').GetFullName], of the [SCOPE.gsInterestGroup('alcoholic_ig').GetName], has been discovered to have established an illegal distillery in his own house. During the apparently innocent party of [SCOPE.sCharacter('alcoholic_leader').GetHerHis] son, guests opened the wrong shed."
- prohibition.2.f:0 ""This is madness! How could I, a model, law-abiding citizen, be accused of such treachery — such...  disgusting behavior. Treason! Blackmail! I'm being framed!""
+ prohibition.2.f:0 ""This is madness! How could I, a model, law-abiding citizen, be accused of such treachery—such...  disgusting behavior. Treason! Blackmail! I'm being framed!""
  prohibition.2.a:0 "Excuses! Send the men to that damned party!"
  prohibition.2.b:0 "[SCOPE.sCharacter('alcoholic_leader').GetSheHe|U] has always had a troublesome character."
  prohibition.2.c:0 "[SCOPE.sCharacter('alcoholic_leader').GetSheHe|U] is clearly being framed."
@@ -1260,7 +1260,7 @@
  wine_allowed_modifier:0 "Supported Wine Production"
 
  prohibition.4.t:0 "The Best Damn Pet Shop in Town" #Simpsons' Reference (I'm sorry)
- prohibition.4.d:0 "Reports of unusual sounds and suspicious behavior have been raised in [SCOPE.sState('temperance_state').GetCityHubName]. A local pet shop — recently opened — has been attracting lots of clients."
+ prohibition.4.d:0 "Reports of unusual sounds and suspicious behavior have been raised in [SCOPE.sState('temperance_state').GetCityHubName]. A local pet shop—recently opened—has been attracting lots of clients."
  prohibition.4.f:0 ""Pet shop, eh? Well, I just have one question. What kind of pet shop is filled with rambunctious yahoos and hectic music at 1:00 am?"" #Simpsons' Reference (again, I'm sorry)
  prohibition.4.a:0 "It's probably just those loud pet shop boys."
  prohibition.4.b:0 "Well, then we shall see those pet shop papers."
@@ -1303,7 +1303,7 @@
 
  expedition_events.695.t:0 "An Unexpected Group"
  expedition_events.695.d:0 "As the expedition advances, the lush jungle reveals an unlikely sight: members of the lost [SCOPE.sCountry('lost_expedition_country').GetAdjectiveNoFormatting] expedition lay sickly in improvised hammocks."
- expedition_events.695.f:0 ""It was as though a veil had been rented. I saw on that ivory face the expression of somber pride, of ruthless power, of craven terror — of an intense and hopeless despair.\n\nDid he live his life again in every detail of desire, temptation, and surrender during that supreme moment of complete knowledge? He cried in a whisper at some image, at some vision — he cried out twice, a cry that was no more than a breath: "The horror! The horror!""" #Joseph Conrad
+ expedition_events.695.f:0 ""It was as though a veil had been rented. I saw on that ivory face the expression of somber pride, of ruthless power, of craven terror—of an intense and hopeless despair.\n\nDid he live his life again in every detail of desire, temptation, and surrender during that supreme moment of complete knowledge? He cried in a whisper at some image, at some vision—he cried out twice, a cry that was no more than a breath: "The horror! The horror!""" #Joseph Conrad
  expedition_events.695.a:0 "We shall guide these men to a safe haven."
  expedition_events.695.b:0 "Join us! Two expeditions are better than one."
  expedition_events.695.c:0 "This would only delay us."
@@ -1312,7 +1312,7 @@
 
  expedition_events.696.t:0 "Word Spread"
  expedition_events.696.d:0 "Soon after their triumphant return, the expedition led by [SCOPE.sCharacter('expedition_leader').GetFullName] has been denounced by [SCOPE.sCountry('lost_expedition_country').GetNameNoFormatting] as rumors escalate about their participation in their lost expedition's fate."
- expedition_events.696.f:0 ""Bronze stains on their clothes, sun-eroded marks, oxidated. Their faces turned in a childish grimace, now they smile, now they laugh, now they — regret. Perhaps. The blood has been dried for weeks, months even. Did they hate it? Did they take pride in their actions? Could they ever get away? Forget it? Loathe it? It's been dried for weeks, months even.""
+ expedition_events.696.f:0 ""Bronze stains on their clothes, sun-eroded marks, oxidated. Their faces turned in a childish grimace, now they smile, now they laugh, now they—regret. Perhaps. The blood has been dried for weeks, months even. Did they hate it? Did they take pride in their actions? Could they ever get away? Forget it? Loathe it? It's been dried for weeks, months even.""
  expedition_events.696.a:0 "[SCOPE.sCharacter('expedition_leader_cruel').GetSheHe|U] shall step down immediately!"
  expedition_events.696.b:0 "They have no way of proving it."
  expedition_leader_cruel_fired_tt:1 "[SCOPE.sCharacter('expedition_leader').GetFullName] will step down."
@@ -1328,7 +1328,7 @@
 
  assassination_events.1.t:0 "The Invisible Men"
  assassination_events.1.d:0 "Reliable sources inform about an internal plot to end the life of [SCOPE.sCharacter('assassination_ruler_scope').GetFullNameWithTitle]. If we don't act in time, the stability of the nation will not be guaranteed."
- assassination_events.1.f:0 "Maybe it's their tone, perhaps the inevitable anxiety that comes with power. A dark, sweet kindness so disingenuous that makes even traitors dread a last supper.\n\n"People talk, and some of them wish for [SCOPE.sCharacter('assassination_ruler_scope').GetFullNameNoFormatting] to talk no more."\n\nThirty pieces of silver, a symbolic price. Today, maybe tomorrow — if we're lucky."
+ assassination_events.1.f:0 "Maybe it's their tone, perhaps the inevitable anxiety that comes with power. A dark, sweet kindness so disingenuous that makes even traitors dread a last supper.\n\n"People talk, and some of them wish for [SCOPE.sCharacter('assassination_ruler_scope').GetFullNameNoFormatting] to talk no more."\n\nThirty pieces of silver, a symbolic price. Today, maybe tomorrow—if we're lucky."
  assassination_events.1.a:0 "We shall find and hang them!"
  advance_assassination_progress_tt:0 "This will advance our progress to determine who is plotting against our ruler."
 
@@ -1356,7 +1356,7 @@
  assassination_events.4.b:1 "#italic Who#! is actually saying this?"
  assassination_events.4.c:0 "If the information got so easily spread, we have worse problems."
 
- assassination_events.6.t:1 "Assassination — or Not"
+ assassination_events.6.t:1 "Assassination—or Not"
  assassination_events.6.d:1 "The assassination plot has come to an unexpected end. With [SCOPE.sCharacter('assassination_ruler_scope').GetFullName] not being the head of the nation anymore, their efforts have been completely stopped."
  assassination_events.6.f:1 ""Sometimes you win, sometimes you lose. Sometimes you need to lose in order to win.""
  assassination_events.6.a:1 "Well, at least there was no assassination."
@@ -1368,7 +1368,7 @@
  assassination_events.7.a:0 "A day to be proud of!"
  assassination_caught_em_modifier:0 "Stopped Assassination Plot"
 
- assassination_events.8.t:0 "Assassination — or Not"
+ assassination_events.8.t:0 "Assassination—or Not"
  assassination_events.8.d:0 "The assassination plot has come to an unexpected end. With [SCOPE.sCharacter('assassination_ruler_scope').GetFullName] having died of unrelated causes, their efforts have come to a stop."
  assassination_events.8.f:0 "And so, evermore, after death there comes a resurrection. Out of the passion of this present hour, there comes joy. And let us trust the nation shall never more know death!" #Denis Wortman
  assassination_events.8.a:0 "May [SCOPE.sCharacter('assassination_ruler_scope').GetSheHe] rest in peace."
@@ -1376,7 +1376,7 @@
 
  election_other_parties_events.1.t:0 "Man Over Machine"
  election_other_parties_events.1.d:0 "Members of the [SCOPE.sParty('agrarian_party').GetName] have expressed their concerns about technology replacing the independence and dignity of manual labor."
- election_other_parties_events.1.f:0 ""Would you trust the education of your children to a machine? Or the wellness of your body? Then why should we trust them with the labor of our land?\n\nThe food we eat, the fellowship, the hard work, the cooperation that comes from agriculture — those are the foundations of our society, and progress cannot, and shall not, replace them.""
+ election_other_parties_events.1.f:0 ""Would you trust the education of your children to a machine? Or the wellness of your body? Then why should we trust them with the labor of our land?\n\nThe food we eat, the fellowship, the hard work, the cooperation that comes from agriculture—those are the foundations of our society, and progress cannot, and shall not, replace them.""
  election_other_parties_events.1.a:0 "We shouldn't compromise the work of our people."
  election_other_parties_events.1.b:0 "Progress always finds a way."
  anti_industrial_party_modifier:0 "Man Over Machine"
@@ -1396,7 +1396,7 @@
 
  election_other_parties_events.3.t:0 "The Natural Solution"
  election_other_parties_events.3.d:0 "Members of the [SCOPE.sParty('military_party').GetName] have loudly stated that the only way to lead us out of the [SCOPE.sWar('ongoing_war').GetName] war is to leave the government of our nation in their capable hands."
- election_other_parties_events.3.f:0 ""Desperate times call for desperate measures. Not that we are a desperate measure, of course, but that's how the saying goes — the natural order of linguistics. To each their own, ordo naturalis, we must play by those rules. And how could something be more natural than letting the [SCOPE.sParty('military_party').GetNameNoFormatting] lead us through war?""
+ election_other_parties_events.3.f:0 ""Desperate times call for desperate measures. Not that we are a desperate measure, of course, but that's how the saying goes—the natural order of linguistics. To each their own, ordo naturalis, we must play by those rules. And how could something be more natural than letting the [SCOPE.sParty('military_party').GetNameNoFormatting] lead us through war?""
  election_other_parties_events.3.a:0 "They are truly our most capable people."
  election_other_parties_events.3.b:0 "Military populism? In my war?"
  supported_war_politics_modifier:0 "War Politics"
@@ -1438,7 +1438,7 @@
 
  belle_epoque_events.2.t:0 "Art Nouveau"
  belle_epoque_events.2.d:1 "The spread of a new artistic style inspired by nature, imitating the sinuous curves of plants through robust iron and glass to convey the contradictions of progress, has reached [SCOPE.sState('belle_epoque_state').GetCityHubName]'s higher spheres."
- belle_epoque_events.2.f:1 ""Well, you know, I just painted on. I went on — without design or sketch, it grew as I painted. And toward the end I reached such a point of perfection — putting in every touch with such freedom — that when I came round to the corner where I started, why, I had to paint part of it over again, as the difference would have been too marked. And the harmony in blue and gold developing, you know, I forgot everything in my joy in it."" #James McNeill Whistler
+ belle_epoque_events.2.f:1 ""Well, you know, I just painted on. I went on—without design or sketch, it grew as I painted. And toward the end I reached such a point of perfection—putting in every touch with such freedom—that when I came round to the corner where I started, why, I had to paint part of it over again, as the difference would have been too marked. And the harmony in blue and gold developing, you know, I forgot everything in my joy in it."" #James McNeill Whistler
  belle_epoque_events.2.a:0 "This new style is truly mesmerizing."
  belle_epoque_events.2.b:0 "And they say they paint without a design. Well, it shows."
  art_nouveau_strike_modifier:0 "Art Nouveau Strike"
@@ -1458,7 +1458,7 @@
  belle_epoque_events.4.t:0 "The Moulin Rouge"
  belle_epoque_events.4.t2: "Smoke and Cabaret"
  belle_epoque_events.4.d:0 "The opening of a luxurious cabaret at the foot of the Montmartre hill has made the nightlife of Paris considerably lively. Attracting, of course, the attention and suspicions of the conservatives."
- belle_epoque_events.4.f:1 "The woman sighs throughout the report in a smoke induced room. Incense and cigarettes are indistinguishable — so is vapor, even though it's impossible to know where it's coming from. The music is muffled here, thick as syrup.\n\n"Thank you for the company on these cold nights," she purrs, tossing the document into the fire, "we were in much need of some extra fuel.""
+ belle_epoque_events.4.f:1 "The woman sighs throughout the report in a smoke induced room. Incense and cigarettes are indistinguishable—so is vapor, even though it's impossible to know where it's coming from. The music is muffled here, thick as syrup.\n\n"Thank you for the company on these cold nights," she purrs, tossing the document into the fire, "we were in much need of some extra fuel.""
  belle_epoque_events.4.a:0 "That place has it all!"
  belle_epoque_events.4.b:0 "This immoral joint shall be shut down at once."
  cabaret_modifier:0 "Cabaret Opening"
@@ -1505,7 +1505,7 @@
 
  belle_epoque_events.9.t: "Paris-Rouen"
  belle_epoque_events.9.d: "The development of vehicles propelled by the internal combustion engine has inspired various [ROOT.GetCountry.GetAdjective] automobile producers to hold an exhibition in the form of the Paris-Rouen Horseless Carriages Contest."
- belle_epoque_events.9.f: "The vehicles lined up in groups of five, each one different in form, propelled by petrol and steam.\n\nAt the wave of a flag, their engines released a cacaphony of rattling and hissing as they set forth down the street, traveling at a pace that far exceeded that of the onlookers on foot. Before long, the course curved out of the sight of the starting line, and cheers replaced the sound of engines."
+ belle_epoque_events.9.f: "The vehicles lined up in groups of five, each one different in form, propelled by petrol and steam.\n\nAt the wave of a flag, their engines released a cacophony of rattling and hissing as they set forth down the street, traveling at a pace that far exceeded that of the onlookers on foot. Before long, the course curved out of the sight of the starting line, and cheers replaced the sound of engines."
  belle_epoque_events.9.a: "And they're off!"
  belle_epoque_events.9.b: "What a ghastly display!"
  modifier_paris_rouen: "The Paris-Rouen Display"
@@ -1628,7 +1628,7 @@
  expedition_costs_tt:0 "The Expedition Budget will be removed once the expedition is completed or failed."
  exhibition_events.8.t:0 "An Exceptional Collection"
  exhibition_events.8.d:0 "Members of the Exhibition Committee have suggested that elements from the past expeditions should be featured prominently in the hall."
- exhibition_events.8.f:0 "It is difficult to resist his words, especially said in such a passionate manner. He throws his head back in laughter at something his companion mentions, so unambitious.\n\n"It's about the distant jungles of Africa," he eagerly explains, "the barren plains of America, the unexplored mountains of Antarctica. So few of our citizens will ever visit a single one of these places — we shall bring these places to them.""
+ exhibition_events.8.f:0 "It is difficult to resist his words, especially said in such a passionate manner. He throws his head back in laughter at something his companion mentions, so unambitious.\n\n"It's about the distant jungles of Africa," he eagerly explains, "the barren plains of America, the unexplored mountains of Antarctica. So few of our citizens will ever visit a single one of these places—we shall bring these places to them.""
  exhibition_events.8.a:0 "An exceptional specimen of a rhino."
  exhibition_events.8.b:0 "These photographs were taken on the Great Plains."
  exhibition_events.8.c:0 "These exotic American flowers have never been seen before."
@@ -1641,10 +1641,9 @@
 
  vampire_panic.1.t:0 "A Strange Superstition"
  vampire_panic.1.d:0 "Reports have come out of a strange illness harrying the members of the same family in [SCOPE.sState('vampire_state').GetName]. Locals have started exhuming the bodies of the dead in an effort to stop the so-called "curse"."
- vampire_panic.1.f:0 ""Do you not think that there are things which you cannot understand, and yet which are; that some people see things that others cannot? But there are things old and new which must not be contemplated by men´s eyes, because they know — or think they know — some things which other men have told them.\n\nAh, it is the fault of our science that it wants to explain all; and if it explain not, then it says there is nothing to explain."" #Bram Stoker
+ vampire_panic.1.f:0 ""Do you not think that there are things which you cannot understand, and yet which are; that some people see things that others cannot? But there are things old and new which must not be contemplated by men´s eyes, because they know—or think they know—some things which other men have told them.\n\nAh, it is the fault of our science that it wants to explain all; and if it explain not, then it says there is nothing to explain."" #Bram Stoker
  vampire_panic.1.d.cullen:0 "Reports have come out of a strange illness harrying the members of the Cullen family in [SCOPE.sState('vampire_state').GetName]. Locals have started exhuming the bodies of the dead in an effort to stop the so-called "curse"."
  vampire_panic.1.a:0 "Just another case of rural superstitions."
  vampire_panic.1.b:0 "A couple of professors have expressed their interest in the matter."
  vampire_panic.1.c:0 "The [SCOPE.gsInterestGroup('devout_ig').GetName] would like to investigate the bodies."
  vampire_research_modifier:0 "Superstitions Research"
-

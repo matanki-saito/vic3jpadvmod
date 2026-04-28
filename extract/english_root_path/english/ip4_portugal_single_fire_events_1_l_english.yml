@@ -12,7 +12,7 @@
  #2 Asylums of [state]
  portugal_single_fire_events.2.t: "Asylums of [SCOPE.sState('azores_state_scope').GetName]"
  portugal_single_fire_events.2.d: "The secular [SCOPE.gsInterestGroup('intelligentsia_scope').GetName] has been discomforted by the news of the Asylum for the Disadvantaged Childhood of Horta indoctrinating minors with religious zealotry. They demand action to protect the youth from religious dogma."
- portugal_single_fire_events.2.f: ""We liberals are told to hold our tongues — that this is charity, that it feeds the hungry, that #italic moral improvement#! is inseparable from the Gospel according to Saint Anthony. We reply: there is charity that liberates and charity that binds. This is the latter.""
+ portugal_single_fire_events.2.f: ""We liberals are told to hold our tongues—that this is charity, that it feeds the hungry, that #italic moral improvement#! is inseparable from the Gospel according to Saint Anthony. We reply: there is charity that liberates and charity that binds. This is the latter.""
  portugal_single_fire_events.2.a: "The [SCOPE.gsInterestGroup('devout_scope').GetName] has every right to shape the next generation of [SCOPE.GetRootScope.GetCountry.GetAdjective] patriots."
  portugal_single_fire_events.2.b: "True, this has gone too far."
  portugal_single_fire_events.2.c: "Sort it among yourselves."

@@ -1,20 +1,42 @@
 ﻿l_english:
 
 je_ip4_coup: "Coup!"
-je_ip4_coup_reason: "The [SCOPE.sCharacter('golpista_general').GetCustom('ordered_personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetRankName] [SCOPE.sCharacter('golpista_general').GetFullName], a figure respected amongst the [SCOPE.gsInterestGroup('golpista_ig').GetName], has begun to maneuver towards seizing state power through force of arms.\n\nWhilst this [concept_journal_entry] is active, the rate at which the $concept_coup$ will #tooltippable;tooltip:[GetPlayer.GetTooltipTag],coup_progress_factors_tt advance#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],coup_regress_factors_tt deplete#! will be determined by [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetLastName]'s [concept_coup_strength] ([SCOPE.sCharacter('golpista_general').MakeScope.Var('monthly_cached_commander_coup_strength').GetValue|v2]) subtracted by [ROOT.GetCountry.GetName]'s [concept_coup_resistance] ([SCOPE.ScriptValue('country_coup_resistance')|v2]). If #b Progress#! reaches #v 100%#!, and [SCOPE.sCharacter('golpista_general').GetLastNameNoFormatting] is able to launch [SCOPE.sCharacter('golpista_general').GetHerHis] [concept_coup], there is a risk of our government being overturned."
+je_ip4_coup_reason: "[ROOT.GetCountry.GetCustom('get_coup_je_text')], the [SCOPE.sCharacter('golpista_general').GetCustom('ordered_personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetRankName] [SCOPE.sCharacter('golpista_general').GetFullName] and [SCOPE.sCharacter('golpista_general').GetHerHis] allies amongst the [SCOPE.gsInterestGroup('golpista_ig').GetName] have begun to maneuver towards seizing state power through force of arms.\n\nWhilst this [concept_journal_entry] is active, the rate at which the $concept_coup$ will #tooltippable;tooltip:[GetPlayer.GetTooltipTag],coup_progress_factors_tt advance#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],coup_regress_factors_tt deplete#! will be determined by [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetLastName]'s [concept_coup_strength] ([SCOPE.sCharacter('golpista_general').MakeScope.Var('monthly_cached_commander_coup_strength').GetValue|v2]) subtracted by [ROOT.GetCountry.GetName]'s [concept_coup_resistance] ([SCOPE.ScriptValue('country_coup_resistance')|v2]). If #b Progress#! reaches #v 100%#!, and [SCOPE.sCharacter('golpista_general').GetLastNameNoFormatting] is able to launch [SCOPE.sCharacter('golpista_general').GetHerHis] [concept_coup], there is a risk of our government being overturned."
 
-coup_progress_factors_tt: "Factors that will #b advance#! the progress of the [concept_coup] include:\n• Low [concept_government] [concept_legitimacy]\n• High [concept_popularity] of coupist commanders\n• Fraction of total [Concept('concept_unit','$concept_units$')] commanded by coupist [concept_commander]\n• [concept_clout] of $ig_approval_unhappy$ [Concept('concept_interest_group','$concept_interest_groups$')] supporting the $concept_coup$\n• Proximity of the coupist [concept_commander]'s [concept_military_formation] to the [concept_capital_state]"
-coup_regress_factors_tt: "Factors that will #b deplete#! the progress of the [concept_coup] include:\n• High [concept_government] [concept_legitimacy]\n• Low [concept_popularity] of coupist commanders\n• Level of [GetInstitutionType('institution_home_affairs').GetName] investment under [GetLawType('law_secret_police').GetName] or [GetLawType('law_national_guard').GetName] [Concept('concept_law', '$concept_laws$')]\n• Increasing the [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supporting the $concept_coup$\n• Distance of the coupist [concept_commander]'s [concept_military_formation] from the [concept_capital_state]"
+coup_je_reason_text_1: "Seeking to halt the enactment of [SCOPE.sLaw('current_law_scope').GetName]"
+coup_je_reason_text_2: "Enraged by the sitting government's failure to advance their legislative agenda"
+coup_je_reason_text_3: "In retribution for the sitting government's betrayal of their commitment"
+coup_je_reason_text_4: "In the pursuit of [SCOPE.sCharacter('golpista_general').GetHerHis] personal ambitions"
+coup_je_reason_text_5: "In the name of overthrowing and replacing the reigning [ROOT.GetCountry.GetRuler.GetLastName] dynasty"
+coup_je_reason_text_6: "Seeking to install a regime more amicable to [SCOPE.sCountry('coup_lobby_country').GetName]"
+coup_je_reason_text_7: "In [SCOPE.sCharacter('golpista_general').GetHerHis] relentless pursuit of a Republic of Labor"
+coup_je_reason_text_0: "In a shameless display of ambition" # Should never appear ingame
+
+coup_progress_factors_tt: "Factors that will #b advance#! the progress of the [concept_coup] include:\n• Low [concept_government] [concept_legitimacy]\n• High [concept_popularity] of coupist [concept_commander]\n• Fraction of total [Concept('concept_unit','$concept_units$')] commanded by coupist [concept_commander]\n• [concept_clout] of $ig_approval_unhappy$ [Concept('concept_interest_group','$concept_interest_groups$')] supporting the $concept_coup$\n• Proximity of the coupist [concept_commander]'s [concept_military_formation] to the [concept_capital_state]"
+coup_regress_factors_tt: "Factors that will #b deplete#! the progress of the [concept_coup] include:\n• High [concept_government] [concept_legitimacy]\n• Low [concept_popularity] of coupist [concept_commander]\n• Level of [GetInstitutionType('institution_home_affairs').GetName] investment under [GetLawType('law_secret_police').GetName] or [GetLawType('law_national_guard').GetName] [Concept('concept_law', '$concept_laws$')]\n• Increasing the [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supporting the $concept_coup$\n• Distance of the coupist [concept_commander]'s [concept_military_formation] from the [concept_capital_state]"
 
 ip4_coup.1.t: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetLastName]'s Endeavor"
+ip4_coup.1.d_1: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName], a prominent opponent of [SCOPE.sLaw('current_law_scope').GetName], has begun to maneuver towards halting the enactment of the law by force. [SCOPE.sCharacter('golpista_general').GetHerHis|U] bid for power is backed by a faction of the [SCOPE.gsInterestGroup('golpista_ig').GetName]."
+ip4_coup.1.d_2: "A faction of the [SCOPE.gsInterestGroup('golpista_ig').GetName], enraged by the sitting government's failure to realize their legislative agenda, has begun to conspire with [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] to seize power over [ROOT.GetCountry.GetName]."
+ip4_coup.1.d_3: "A faction of the [SCOPE.gsInterestGroup('golpista_ig').GetName], enraged by the sitting government's betrayal of its commitment to them, has lost faith in the political process. They have approached [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] with a plan to seize power over [ROOT.GetCountry.GetName]."
+ip4_coup.1.d_4: "Sensing an opportunity to realize [SCOPE.sCharacter('golpista_general').GetHerHis] personal ambitions, the [SCOPE.sCharacter('golpista_general').GetCustom('personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has rallied [SCOPE.sCharacter('golpista_general').GetHerHis] supporters amongst the [SCOPE.gsInterestGroup('golpista_ig').GetName] to seize power over [ROOT.GetCountry.GetName]."
+ip4_coup.1.d_7: "Sensing an opportunity to realize the emancipation of the working class, the [SCOPE.sCharacter('golpista_general').GetCustom('personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetFullName] has organized [SCOPE.sCharacter('golpista_general').GetHerHis] sympathizers amongst the [SCOPE.gsInterestGroup('golpista_ig').GetName] in a bid to seize power over [ROOT.GetCountry.GetName]."
 ip4_coup.1.d: "The [SCOPE.sCharacter('golpista_general').GetCustom('personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has begun to make threatening moves towards seizing power over [ROOT.GetCountry.GetName]. [SCOPE.sCharacter('golpista_general').GetSheHe|U] is backed by a faction of the [SCOPE.gsInterestGroup('golpista_ig').GetName]."
 ip4_coup.1.f: "Colonel [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] lifted the tent flap, and slipped inside. The atmosphere was already heavy with smoke, and the other chairs filled. Maps were spread out across the table - terrain, government facilities, vital infrastructure. He saluted the [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] sitting at the end of the table, and took his seat.\n\nHe was not alone. Colonel [SCOPE.sCharacter('name_b_scope').GetLastNameNoFormatting] sat to his left, his pipe merrily contributing to the suffocating haze.\n\n"I apologize for my tardiness," [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] began. "There was a new gate guard."\n\nThe [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] nodded. "Forgiven. Your report, please. Status of the Twenty-Fourth?""
 ip4_coup.1.a: "Godspeed, [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetLastName]!"
 ip4_coup.1.b: "The present regime must survive."
 
+ip4_coup.11.t: "The [SCOPE.sCountry('coupist_lobby_country').GetAdjective] Scheme"
+ip4_coup.11.d: "Spearheaded by [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName], the [SCOPE.sPoliticalLobby('relevant_lobby').GetName] has begun to maneuver towards establishing a pro-[SCOPE.sCountry('coupist_lobby_country').GetAdjective] government in [ROOT.GetCountry.GetName] by force of arms. The scheme is backed by substantial foreign funding."
+ip4_coup.11.f: "Colonel [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] lifted the tent flap, and slipped inside. The atmosphere was already heavy with smoke, and the other chairs filled. Maps were spread out across the table - terrain, government facilities, vital infrastructure. He saluted the [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] sitting at the end of the table, and took his seat.\n\nHe was not alone. Colonel [SCOPE.sCharacter('name_b_scope').GetLastNameNoFormatting] sat to his left, his pipe merrily contributing to the suffocating haze.\n\n"I apologize for my tardiness," [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] began. "There was a new gate guard."\n\nThe [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] nodded. "Forgiven. Your report, please. Status of the Twenty-Fourth?""
+ip4_coup.11.a: "A [SCOPE.sCountry('coupist_lobby_country').GetAdjectiveNoFormatting] alignment could prove favorable."
+ip4_coup.11.b: "The present regime must survive."
+
 ip4_coup.2.t: "Pronunciamento!"
 ip4_coup.2.d: "[SCOPE.sCharacter('golpista_general').GetRankName] [SCOPE.sCharacter('golpista_general').GetFullName] has issued a pronunciamento from [SCOPE.sCharacter('golpista_general').GetHerHis] headquarters in [SCOPE.sState('pronunciamento_state').GetName]. The [SCOPE.sCharacter('golpista_general').GetCustom('getGeneralAdmiral')] and [SCOPE.sCharacter('golpista_general').GetHerHis] allies in the [SCOPE.gsInterestGroup('golpista_ig').GetName] have come into open opposition to our government."
+ip4_coup.2.d_1: "[SCOPE.sCharacter('golpista_general').GetRankName] [SCOPE.sCharacter('golpista_general').GetFullName] has issued a pronunciamento from [SCOPE.sCharacter('golpista_general').GetHerHis] headquarters in [SCOPE.sState('pronunciamento_state').GetName]. The [SCOPE.sCharacter('golpista_general').GetCustom('getGeneralAdmiral')] and [SCOPE.sCharacter('golpista_general').GetHerHis] allies in the [SCOPE.sPoliticalLobby('relevant_lobby').GetName] have come into open opposition to our government."
 ip4_coup.2.f: "Fellow citizens,\n\nThe regime in [ROOT.GetCountry.GetCapital.GetCityHubName] has proclaimed a death sentence for [ROOT.GetCountry.GetNameNoFormatting], and has deprived us of any hope of putting an end to civil discord. Nothing remains outside of an appeal to the people.\n\nMy countrymen! Hear the cry of the homeland! Close your ears to the suggestion of a regime which, in its spite and impotence, places all its hope in the disunity of the people and the army.\n\n[SCOPE.sState('pronunciamento_state').GetNameNoFormatting] Headquarters, [TimeKeeper.GetCurrentDate.GetString]\n[SCOPE.sCharacter('golpista_general').GetFullNameNoFormatting]" # Heavily edited version of General Gabriel Valencia's pronunciamento on September 4, 1841
+ip4_coup.2.f_7: "Citizens,\n\nYears of gags! Years of outrages! Our nation scoffed at, pillaged, trampled upon! Wasn't that enough? No! Now hunger tears at the guts of the people! No more workshops! No more marriages! All of that is revolutionary. Nothing but palaces and prisons, convents and whorehouses!\n\nTo arms, people of [SCOPE.sState('pronunciamento_state').GetCityHubName]! Enough is enough! You received freedom from your fathers; you will not leave servitude to your sons.\n\nThe oppressors have filled the cup to the brim. To arms! Let punishment fall like lightning on their outrages. The hour of the great revolution of the people has sounded! Let us march!" # Edited version of Blanqui's 1866 proclamation
 ip4_coup.2.a: "The military has spoken. Our mandate is done."
 ip4_coup.2.b: "We will not capitulate!"
 
@@ -43,7 +65,7 @@ coup_commander_core_location_progress_tt: "coupist [concept_commander] is locate
 coup_commander_periphery_location_progress_tt: "coupist [concept_commander] is located in a [concept_strategic_region] with owned [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
 coup_commander_colony_location_progress_tt: "coupist [concept_commander] is located in a [concept_strategic_region] with no owned [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
 coup_commander_no_location_progress_tt: "coupist [concept_commander] is in transit or on a [concept_front]"
-appeased_golpista_igs_tt: "appeased supporting [Concept('concept_interest_group','$concept_interest_groups$')]"
+appeased_golpista_igs_tt: "appeased coupist [concept_commander]"
 secret_police_coup_effect_tt: "level of [GetInstitutionType('institution_home_affairs').GetName] investment under [GetLawType('law_secret_police').GetName] [concept_law]"
 national_guard_coup_effect_tt: "level of [GetInstitutionType('institution_home_affairs').GetName] investment under [GetLawType('law_national_guard').GetName] [concept_law]"
 if_coup_is_successful_tt: "If the [concept_coup] is successful: #indent_newline:3 "
@@ -66,6 +88,18 @@ notification_successful_coup_in_country_tooltip: "#header $notification_successf
 notification_failed_coup_in_country_name: "Failed [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
 notification_failed_coup_in_country_desc: "An attempted $concept_coup$ by [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has ended in disaster, with the coupists crushed by forces loyal to the sitting government."
 notification_failed_coup_in_country_tooltip: "#header $notification_failed_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_failed_coup_in_country_desc$"
+
+notification_successful_orchestrated_coup_in_country_name: "Successful [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
+notification_successful_orchestrated_coup_in_country_desc: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has successfully orchestrated a $concept_coup$ against the sitting government of [SCOPE.sCountry('coup_country').GetName], sweeping a [SCOPE.sCountry('coup_country').MakeScope.Var('coup_sponsor').GetCountry.GetAdjective]-aligned government into power."
+notification_successful_orchestrated_coup_in_country_tooltip: "#header $notification_successful_orchestrated_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_successful_orchestrated_coup_in_country_desc$"
+
+notification_failed_orchestrated_coup_in_country_name: "Failed [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
+notification_failed_orchestrated_coup_in_country_desc: "An attempted $concept_coup$ in [SCOPE.sCountry('coup_country').GetName] by the pro-[SCOPE.sCountry('coup_country').MakeScope.Var('coup_sponsor').GetCountry.GetAdjective] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has ended in disaster, with the coupists crushed by forces loyal to the sitting government."
+notification_failed_orchestrated_coup_in_country_tooltip: "#header $notification_failed_orchestrated_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_failed_orchestrated_coup_in_country_desc$"
+
+notification_fizzled_orchestrated_coup_in_country_name: "Failed [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
+notification_fizzled_orchestrated_coup_in_country_desc: "An attempted $concept_coup$ in [SCOPE.sCountry('coup_country').GetName] by the pro-[SCOPE.sCountry('coup_country').MakeScope.Var('coup_sponsor').GetCountry.GetAdjective] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has ended in failure, with the coupists forced to abandon their plot."
+notification_fizzled_orchestrated_coup_in_country_tooltip: "#header $notification_fizzled_orchestrated_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_fizzled_orchestrated_coup_in_country_desc$"
 
 modifier_regency: "Regency Period"
 modifier_regency_landowners: "$modifier_regency$"
@@ -509,6 +543,8 @@ modifier_portugal_liberal_hegemony_no_voting: "$modifier_portugal_liberal_hegemo
 je_portugal_and_brazil: "The Old Empire"
 je_portugal_and_brazil_reason: "Since our recognition of its independence in 1825, the former [ROOT.GetCountry.GetAdjective] colony of [SCOPE.sCountry('brazil_scope').GetName] has dominated the South American continent. Though the brief period of post-independence personal union under King and Emperor Pedro IV and I ended in failure, cultural ties between #b $POR$#! and #b $BRZ$#! remain strong. These existing ties present a prime opportunity for establishing a lasting economic and diplomatic relationship."
 has_completed_uk_je_tt: "Has completed #v $je_portugal_united_kingdom$#! [concept_journal_entry]"
+iberia_formation_uk_je_tt: "Your country is not #bold Iberia#!"
+portugal_formation_uk_je_tt: "Your country is not #bold Portugal#!"
 
 je_portugal_united_kingdom: "The United Kingdom"
 je_portugal_united_kingdom_reason: "From 1807 to 1821, the court of [ROOT.GetCountry.GetName] ruled from Rio de Janeiro. In an attempt to accomodate [SCOPE.sCountry('brazil_scope').GetAdjective] concerns, King João VI elevated #b $BRZ$#! to the status of a co-equal Kingdom, forming the #b United Kingdom of Portugal, Brazil, and the Algarves#!. Though the independence of #b $BRZ$#! ended the first United Kingdom, #b $POR$#! and #b $BRZ$#! were, soon after, placed under a brief personal union under King and Emperor Pedro IV and I.\n\nThe recent resurgence of $POR_ADJ$ power, and current positive atmosphere between us and our former colony, have raised hopes of restoring the #b United Kingdom#!. If the #b $BRZ_ADJ$#! succession laws are amended, these hopes may become a reality.\n\nWhilst this [concept_journal_entry] is active, we will be able to sign a [concept_treaty] to $amend_succession$ with [SCOPE.sCountry('brazil_scope').GetName], laying the groundwork for a future [concept_personal_union]."
@@ -564,7 +600,7 @@ tradition_lusitanian: "Lusitanian"
 pedropoint_danger_tt: "#b $RULER_TITLE_EMPEROR$ $Pedro$ II#! is in danger of being #b overthrown#!"
 
 je_portugal_and_brazil_pursue_united_kingdom_button: "Pursue Reunification"
-je_portugal_and_brazil_pursue_united_kingdom_button_desc: "Not long ago, #b $POR$#! and #b $BRZ$#! were co-equal units within a single United Kingdom. Though the #b $BRZ_ADJ$#! General Assembly has taken measures to prevent the restoration of the union, law need not be set in stone — what once was may be again."
+je_portugal_and_brazil_pursue_united_kingdom_button_desc: "Not long ago, #b $POR$#! and #b $BRZ$#! were co-equal units within a single United Kingdom. Though the #b $BRZ_ADJ$#! General Assembly has taken measures to prevent the restoration of the union, law need not be set in stone—what once was may be again."
 je_portugal_and_brazil_pedro_button: "Support Emperor Pedro"
 je_portugal_and_brazil_pedro_button_desc: "Emperor Pedro II of #b $BRZ$#! is a firm supporter of constitutional rule, and serves as a moderating presence at the head of our former colony. If he finds his rule threatened, we may offer assistance in upholding his reign."
 
@@ -988,7 +1024,7 @@ iberia.2.c: "We salute the @ibe_republic_3_flag_small! #tooltippable;tooltip:[Ge
 iberia.2.e: "Peace among ourselves, war to the tyrants!"
 iberia.2.g: "¡Viva Ibérica!"
 
-iberia.3.t: "All Men are Brothers"
+iberia.3.t: "All Men Are Brothers"
 iberia.3.d: "Through the unification of [GetGeographicRegion('geographic_region_iberia').GetName], we seek to form a new society upon the principles of proletarian internationalism. The constructed language of #b $language_esperanto$#!, popular amongst Iberian socialists, may serve as a suitably international language of administration."
 iberia.3.f: ""It will be difficult," began the speaker. "We will need to embark upon a great endeavor to teach the language. Reactionaries will stubbornly cling to the old national languages, and camouflage themselves behind the masses who have not yet learned Esperanto. But the Revolution was also a great endeavor, was it not? And we did not cower from it because of the opposition we faced. I urge you, councilors, allow us to make this contribution to the course of the Revolution, and the dissolution of the old society. In the coming years, let our children say—#italic proletoj de la mondo, unuiĝu!#!""
 iberia.3.a: "Declare Esperanto an official language."
@@ -1073,6 +1109,7 @@ coup_resistance_modifier_add_tt: "$country_coup_resistance_add$ from [Concept('c
 
 commander_coup_strength_tt: "[concept_coup_strength] of coupist [concept_commander] ([GetPlayer.MakeScope.ScriptValue('commander_coup_strength_country_display')|2v]): #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('commander_coup_strength_country_display')]#!"
 country_coup_resistance_tt: "[concept_coup_resistance] value of [concept_country] ([GetPlayer.MakeScope.ScriptValue('country_coup_resistance')|2v]): #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('country_coup_resistance_reversed')]#!"
+orchestrate_coup_aborted: "foreign support for [concept_coup] revoked"
 
 modifier_dynastic_coup: "Orchestrating Dynastic Coup"
 
@@ -1110,8 +1147,9 @@ caciquismo.2.a: "The [SCOPE.sParty('party_1_scope').GetName] is the natural part
 caciquismo.2.b: "Favor the [SCOPE.sParty('party_2_scope').GetName]."
 caciquismo.2.c: "Change course - grant the [SCOPE.sParty('party_3_scope').GetName] a term in power."
 caciquismo.2.e: "The [SCOPE.sParty('party_4_scope').GetName] is in need of assistance."
-caciquismo.2.g: "If we are to achieve anything, the elections must be free."
-caciquismo.2.h: "$caciquismo.1.g$"
+caciquismo.2.g: "The [SCOPE.sParty('party_5_scope').GetName] shall have our support."
+caciquismo.2.h: "If we are to achieve anything, the elections must be free."
+caciquismo.2.i: "$caciquismo.1.h$"
 
 caciquismo_cannot_be_abolished_tt: "[ROOT.GetCountry.GetName] has #b not#! made sufficient progress towards establishing a #b $amendment_tradition_of_free_elections$#! (currently [ROOT.GetCountry.MakeScope.Var('electoral_fraud_abolish_var').GetValue|v0]/#v 5#!)"
 caciquismo_can_be_abolished_tt: "[ROOT.GetCountry.GetName] has made sufficient progress towards establishing a #b $amendment_tradition_of_free_elections$#! (currently [ROOT.GetCountry.MakeScope.Var('electoral_fraud_abolish_var').GetValue|v0]/#v 5#!)"
@@ -1123,8 +1161,8 @@ notification_summoned_character_leaves_country_name: "[SCOPE.sCharacter('summone
 notification_summoned_character_leaves_country_desc: "Summoned by a foreign country for a task of great import, [SCOPE.sCharacter('summoned_character_scope').GetFullName] has departed [ROOT.GetCountry.GetName] for greener pastures."
 notification_summoned_character_leaves_country_tooltip: "#header $notification_summoned_character_leaves_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_summoned_character_leaves_country_desc$"
 
-notification_colonial_governor_cycle_name: "[SCOPE.sCharacter('current_governor').GetPrimaryRoleTitle]'s Term Ends"
-notification_colonial_governor_cycle_desc: "[SCOPE.sCharacter('current_governor').GetFullName]'s term as [SCOPE.sCharacter('current_governor').GetPrimaryRoleTitle] of [SCOPE.sCountry('colony_scope').GetName] has come to an end. [SCOPE.sCharacter('current_governor').GetSheHe|U] has been replaced by [SCOPE.sCharacter('current_governor').GetCustom('get_special_colonial_trait')]."
+notification_colonial_governor_cycle_name: "[SCOPE.sCountry('colony_scope').GetRuler.GetPrimaryRoleTitle]'s Term Ends"
+notification_colonial_governor_cycle_desc: "[SCOPE.sCharacter('current_governor').GetFullName]'s term as [SCOPE.sCountry('colony_scope').GetRuler.GetPrimaryRoleTitle] of [SCOPE.sCountry('colony_scope').GetName] has come to an end. [SCOPE.sCharacter('current_governor').GetSheHe|U] has been replaced by [SCOPE.sCharacter('current_governor').GetCustom('get_special_colonial_trait')]."
 notification_colonial_governor_cycle_tooltip: "#header $notification_colonial_governor_cycle_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_governor_cycle_desc$"
 
 special_character_colonial_plantation_loc: "another [GetCharacterTrait('special_character_colonial_plantation').GetName]"
@@ -1167,6 +1205,7 @@ je_spain_glorious_revolution_dummy: "$two_spains.4.t_1$"
 je_spain_glorious_revolution_dummy_reason: "N/A"
 
 has_gov_regency_tt: "Has an active #b $gov_regency_ethiopia_ras$#!"
+has_gov_regency_not_tt: "Does #b not#! have an active #b $gov_regency_ethiopia_ras$#!"
 je_glorious_revolution_has_gov_regency_not_tt: "Does #b not#! have an active #b $gov_regency_ethiopia_ras$#! #!" # Trailing formatting close is intentional
 
 ruler_is_not_ferdinand_i_tt: "[concept_ruler] is #b not#! $Ferdinand$ $von_Habsburg_Lothringen$"

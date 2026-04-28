@@ -91,7 +91,7 @@
 
  generic_laws.9.t:1 "Law Proposal Causes Uproar in [SCOPE.sCulture('non_accepted_culture_scope').GetName] Communities"
  generic_laws.9.d:2 "Claiming that the enactment of [SCOPE.sLaw('current_law_scope').GetName] would affect the country's [SCOPE.sCulture('non_accepted_culture_scope').GetName] inhabitants in a disproportionately negative way, [SCOPE.sCulture('non_accepted_culture_scope').GetName] firebrands have riled their communities against the current law proposal."
- generic_laws.9.f:1 ""Give them a finger and they will cry for an arm.\n\nGive them an arm and — before you know it — they will weaponize the arm, batter all you know to death with it, and pilfer their corpses for even more concessions!""
+ generic_laws.9.f:1 ""Give them a finger and they will cry for an arm.\n\nGive them an arm and—before you know it—they will weaponize the arm, batter all you know to death with it, and pilfer their corpses for even more concessions!""
  generic_laws.9.a:0 "And their thoughts concern us how? Force the issue through!"
  generic_laws.9.b:0 "Make some token amends."
  generic_laws.9.c:0 "Acknowledge and address their concerns."
@@ -101,7 +101,7 @@
 
  generic_laws.10.t:0 "Discord within the [SCOPE.gsInterestGroup('defectors_ig_scope').GetNameNoFormatting]"
  generic_laws.10.d:0 "An influential faction within the [SCOPE.gsInterestGroup('defectors_ig_scope').GetName] has grown frustrated with their comembers' neutrality on the topic of [SCOPE.sLaw('current_law_scope').GetName]. Themselves in favor of the law, they have now resolved to form a separate political faction intent on passing it."
- generic_laws.10.f:0 ""How can you all stand idly by and watch the world pass before your eyes? Have you no sense of honor? — of duty to your fellow man? I say nay to such lack of ambition, and I dare say I am not alone in this.""
+ generic_laws.10.f:0 ""How can you all stand idly by and watch the world pass before your eyes? Have you no sense of honor?—of duty to your fellow man? I say nay to such lack of ambition, and I dare say I am not alone in this.""
  generic_laws.10.a:0 "With their support, the bill shall pass."
  generic_laws.10.b:0 "The [SCOPE.gsInterestGroup('defectors_support_ig_scope').GetName] extend an open hand to these mavericks."
  member_flight:0 "Member Flight"
@@ -187,7 +187,7 @@
 
  tanzimat_events.6.t:1 "Riot in the [SCOPE.sCulture('mob_victim_culture').GetName] Quarter"
  tanzimat_events.6.d:1 "Outraged by the High Porte's decision to elevate the legal status of Dhimmis, and spurred on by rumors of foreign-backed insurrection, a large [SCOPE.sReligion('mob_religion').GetName] mob has rampaged through the [SCOPE.sCulture('mob_victim_culture').GetName] quarter of [SCOPE.sState('mob_state_scope').GetCityHubName]."
- tanzimat_events.6.f:0 ""They came following noon prayer, wielding sticks and clubs — no-doubt egged on by some militant local preacher. Only some bruises and material damage so far, thank God, but I do not like the look of that crowd over by the western gate.""
+ tanzimat_events.6.f:0 ""They came following noon prayer, wielding sticks and clubs—no-doubt egged on by some militant local preacher. Only some bruises and material damage so far, thank God, but I do not like the look of that crowd over by the western gate.""
  tanzimat_events.6.a:0 "This is for the local governor to handle."
  tanzimat_events.6.b:0 "Muster the army, intervene immediately."
  tanzimat_events.6.c:0 "Let the mob run its course."
@@ -250,13 +250,14 @@
  je_boxer_rebellion:0 "The Boxer Rebellion"
  je_boxer_rebellion_reason:1 "The humiliating loss of Chinese lands to foreign "barbarians" has resulted in the formation of numerous martial arts-inspired militias intent on purging the country of any foreign influence.\n\nFailure to see the militias vision through could have dramatic consequences for [ROOT.GetCountry.GetName]."
  qing_owns_all_han_states_tt: "Owns all [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')], and no [GetCulture('han').GetName] [concept_homeland] is a [concept_split_state]"
+ qing_does_not_own_all_han_states_tt: "Does #b not#! own all [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')]"
 
  dyn_c_empire_of_china:0 "Empire of China"
  dyn_c_empire_of_china_adj:0 "Chinese"
 
  boxer_rebellion_events.1.t:0 "The Yihetuan Movement"
  boxer_rebellion_events.1.d:1 "Furious with the growing foreign presence in [ROOT.GetCountry.GetName], [SCOPE.sCulture('han_culture').GetName] subjects are organizing into anti-foreign militias, bent on driving the "barbarians" back into the sea. Many now urge [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] to back the movement, lest their zeal is turned against [SCOPE.sCulture('manchu_culture').GetName] rule."
- boxer_rebellion_events.1.f:1 ""When the foreign barbarians preach their religion, they say that they are urging men to do good, but in fact, they are disrupting our government, creating turmoil in our system, destroying our customs, and deceiving our people — that is to say, they want to turn the people of China into barbarians."" # Boxer era Han school teacher
+ boxer_rebellion_events.1.f:1 ""When the foreign barbarians preach their religion, they say that they are urging men to do good, but in fact, they are disrupting our government, creating turmoil in our system, destroying our customs, and deceiving our people—that is to say, they want to turn the people of China into barbarians."" # Boxer era Han school teacher
  boxer_rebellion_events.1.a:0 "Revive the Qing! Destroy the foreigner!"
  boxer_rebellion_events.1.b:0 "These fanatics would spell our doom."
 
@@ -284,7 +285,7 @@
 ##################### Contextual Election Events
 
  election_contextual_events.1.t:0 "Bread, Butter, Ballot" # High Food Prices
- election_contextual_events.1.d:0 "With the price of [SCOPE.sGoods('basic_foodstuff').GetName] soaring across the country, the [SCOPE.sParty('high_food_price_party').GetName] is finding itself under relentless pressure from the opposition — accused of recklessly toying with the welfare of its citizens."
+ election_contextual_events.1.d:0 "With the price of [SCOPE.sGoods('basic_foodstuff').GetName] soaring across the country, the [SCOPE.sParty('high_food_price_party').GetName] is finding itself under relentless pressure from the opposition—accused of recklessly toying with the welfare of its citizens."
  election_contextual_events.1.f:0 ""High price of [SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting]? Humbug! In my youth we would make do with even less than what you have now, for double the labor! These 'outrageous' food prices are nothing more than the musings of hysterical housewives!""
  election_contextual_events.1.a:0 "They will just have to eat something else then!"
  election_contextual_events.1.b:0 "Fund soup kitchens. A man with a full belly makes fewer mistakes."
@@ -299,7 +300,7 @@
 
  election_contextual_events.3.t:0 "Pacifist Condemns the War" # Waging a War of Aggression
  election_contextual_events.3.d:0 "[SCOPE.sCharacter('pacifist_ig_leader').GetFullName], renowned pacifist and leader of the [SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName], has launched a scathing attack on the sitting [SCOPE.sParty('government_war_party').GetName], claiming that [ROOT.GetCountry.GetAdjectiveNoFormatting] troops engaged in the [SCOPE.sWar('pacifist_war').GetNameNoFormatting] War have committed grave atrocities under their watch."
- election_contextual_events.3.f:1 ""We... I received orders to round up hostages, sir. Old faces, young faces — some not older than my own son. So-called free shooters had been harassing our lines. 'Murderers' my commander called them. 'Highwaymen' with malice in their hearts and rifles in their hands. The hostages were meant to deter them!\n\nBut after the third soldier fell that evening, the commander told me to take the hostages... he told me to take them into the barn... and... Lord, forgive me.""
+ election_contextual_events.3.f:1 ""We... I received orders to round up hostages, sir. Old faces, young faces—some not older than my own son. So-called free shooters had been harassing our lines. 'Murderers' my commander called them. 'Highwaymen' with malice in their hearts and rifles in their hands. The hostages were meant to deter them!\n\nBut after the third soldier fell that evening, the commander told me to take the hostages... he told me to take them into the barn... and... Lord, forgive me.""
  election_contextual_events.3.a:0 "Our troops did what!? To whom!?"
  election_contextual_events.3.b:0 "Interesting take. Let us censor it."
  election_contextual_events.3.c:0 "Interesting take. Let us censor it."
@@ -309,7 +310,7 @@
  election_contextual_events.3.tt.2:0 "The information is leaked despite our efforts."
 
  election_contextual_events.4.t:0 "For Whom the Bell Tolls" # Old IG leader
- election_contextual_events.4.d:0 "The aged [SCOPE.sCharacter('decrepit_leader').GetFullName], leader of the [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], has unexpectedly expired mid-campaign — robbing the [SCOPE.sParty('decrepit_leader_party').GetName] of a cornerstone politician. The question of [SCOPE.sCharacter('decrepit_leader').GetHerHis] replacement is now on everyone's lips."
+ election_contextual_events.4.d:0 "The aged [SCOPE.sCharacter('decrepit_leader').GetFullName], leader of the [SCOPE.gsInterestGroup('decrepit_leader_ig').GetName], has unexpectedly expired mid-campaign—robbing the [SCOPE.sParty('decrepit_leader_party').GetName] of a cornerstone politician. The question of [SCOPE.sCharacter('decrepit_leader').GetHerHis] replacement is now on everyone's lips."
  election_contextual_events.4.f:0 ""Unexpected? Bah! That old bag of bones was long overdue to meet [SCOPE.sCharacter('decrepit_leader').GetHerHis] maker. It's about time that party saw some new blood!""
  election_contextual_events.4.a:0 "Go with the popular, but inept candidate."
  election_contextual_events.4.b:0 "The determined, but haughty youngster secures the chair."
@@ -317,8 +318,8 @@
  imperious_upstart:0 "Imperious Upstart"
 
  election_contextual_events.5.t:0 "A Land of Want" # Low Standard of Living
- election_contextual_events.5.d:0 "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], leader of the [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], has been loudly accusing the [SCOPE.sParty('low_sol_party').GetName] of misrule, given the country's low standard of living — claiming that only the [SCOPE.sParty('low_sol_opposition_party').GetName] has the willpower to set things right."
- election_contextual_events.5.f:0 ""On my way here today I witnessed scenes so bleak they almost defy description. I saw once-venerable soldiers growling for scraps in the mud  — I saw desperate families crammed together on dusty tenement streets  — I saw malnutrition, poverty, and despair.\n\nFellow citizens, this is the legacy of the [SCOPE.sParty('low_sol_party').GetNameNoFormatting].""
+ election_contextual_events.5.d:0 "[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName], leader of the [SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName], has been loudly accusing the [SCOPE.sParty('low_sol_party').GetName] of misrule, given the country's low standard of living—claiming that only the [SCOPE.sParty('low_sol_opposition_party').GetName] has the willpower to set things right."
+ election_contextual_events.5.f:0 ""On my way here today I witnessed scenes so bleak they almost defy description. I saw once-venerable soldiers growling for scraps in the mud —I saw desperate families crammed together on dusty tenement streets —I saw malnutrition, poverty, and despair.\n\nFellow citizens, this is the legacy of the [SCOPE.sParty('low_sol_party').GetNameNoFormatting].""
  election_contextual_events.5.a:0 "Why are we to blame? Have they tried being less poor?"
  election_contextual_events.5.b:0 "Just a few bad eggs in the administration, nothing more."
  indifferent_to_destitution:0 "Indifferent to Destitution"
@@ -341,7 +342,7 @@
  dove_of_peace_in_time_of_war:0 "Dove of Peace in Time of War"
 
  election_contextual_events.8.t:0 "A Torrent of Gin and Beer" # Enacting Temperance Policies
- election_contextual_events.8.d:0 "The [SCOPE.sParty('temperance_party').GetName]'s anti-alcohol policy is hurting their electoral prospects, as scores of thirsty voters flock to the [SCOPE.sParty('anti_temperance_party').GetName] — hoping that a change in government will see an end to the country's temperance policies."
+ election_contextual_events.8.d:0 "The [SCOPE.sParty('temperance_party').GetName]'s anti-alcohol policy is hurting their electoral prospects, as scores of thirsty voters flock to the [SCOPE.sParty('anti_temperance_party').GetName]—hoping that a change in government will see an end to the country's temperance policies."
  election_contextual_events.8.f:0 ""Resist temptation? I'll tell you what tempts me: shoving this boot here up you moralizing teetotalers' you-know-wheres. I want a drink; I'll have a drink, and if you shan't let me I'll go to those that will.""
  election_contextual_events.8.a:0 "No beer, no vote!"
  election_contextual_events.8.b:0 "Run a smear campaign against these immoral bacchanalians."
@@ -349,7 +350,7 @@
 ##################### Military JEs
 
  je_rifling:0 "Rifling"
- je_rifling_reason:0 "While the concept of rifled gun barrels is many centuries old, only recently have advances in industry and technology allowed for their production and distribution on a large scale — providing a level of accuracy to our armed forces yet unheard of."
+ je_rifling_reason:0 "While the concept of rifled gun barrels is many centuries old, only recently have advances in industry and technology allowed for their production and distribution on a large scale—providing a level of accuracy to our armed forces yet unheard of."
  je_machine_guns:0 "Automatic Machine Guns"
  je_machine_guns_reason:0 "Serviceable by a single man, and capable of firing hundreds of shells per minute, the automated machine gun represents a near-insurmountable obstacle for any attacker facing entrenched positions."
 

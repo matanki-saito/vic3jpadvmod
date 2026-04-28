@@ -135,6 +135,8 @@
  bg_urban_facilities:0 "Urban Facilities"
  bg_bureaucracy:0 "Bureaucratic Institutions"
  bg_government:0 "Government Structures"
+ bg_naval_administration: "Naval Administrations"
+ bg_naval_fortification: "Naval Fortifications"
  bg_trade:0 "Trade Centers"
  bg_infrastructure:0 "Infrastructure"
  bg_banana_plantations:0 "Banana Plantations"
@@ -164,7 +166,7 @@
  bg_special:0 "Special Buildings"
  bg_conscription:0 "Conscription Buildings"
  bg_shipyards: "Shipyards"
- bg_military_shipyards: "Military Shipyards"
+ bg_ship_construction: "Ship Construction"
  bg_subsistence_agriculture: "Subsistence Agriculture"
  bg_subsistence_ranching: "Subsistence Ranching"
  bg_gold_fields: "Gold Fields"
@@ -175,6 +177,8 @@
  bg_monuments: "Monuments"
  bg_army: "Army Buildings"
  bg_navy: "Naval Buildings"
+ bg_land_logistics_center: "Land Logistics Centers"
+ bg_naval_logistics_center: "Naval Logistics Centers"
  bg_skyscraper: "Skyscrapers"
  bg_monuments_hidden: "Monuments"
  bg_owner_buildings: "Ownership Buildings"
@@ -223,13 +227,15 @@
  # Barracks
  building_barrack:0 "Barracks"
  building_barrack_lens_option:0 "Expand $building_barrack$"
- building_naval_base:0 "Naval Base"
- building_naval_base_lens_option:0 "Expand $building_naval_base$"
  building_conscription_center:0 "Conscription Center"
 
  # National Buildings
  building_government_administration:0 "Government Administration"
  building_government_administration_lens_option:0 "Expand $building_government_administration$"
+ building_naval_administration: "Naval Administration"
+ building_naval_administration_lens_option:0 "Expand $building_naval_administration$"
+ building_naval_fortification: "Naval Fortification"
+ building_naval_fortification_lens_option:0 "Expand $building_naval_fortification$"
 
  # Unlock tooltips
  tooltip_unlock_railways:0 "Allows construction of the Railway building"

@@ -57,7 +57,7 @@
   culture_brazil.5.a: "O beloved, idolized homeland! Hail, Hail!"
   culture_brazil.6.t: "The Integration of the Nordestinos"
   culture_brazil.6.d: "The [SCOPE.sCulture('nordestino_culture').GetName] people of Bahia, Pernambuco, and the whole of the Northeast have reconciled with the central government and the growing [SCOPE.sCulture('brazilian_culture').GetName] national movement."
-  culture_brazil.6.f: ""Religion, Independence, Unity, Liberty — these are the bywords of Brazil. Now, I'm sure you're all curious to know what a priest and a coffee picker is doing here. Who has an answer?"\n\n"We're Brazilians. This is what the country asks of us."\n\n"I'd give half-marks. Yes, we are all Brazilians. But no, the country asks that we cherish all that we have. For we are #italic all#! that we have."" # First part is the motto of the Confederation of the Equator
+  culture_brazil.6.f: ""Religion, Independence, Unity, Liberty—these are the bywords of Brazil. Now, I'm sure you're all curious to know what a priest and a coffee picker is doing here. Who has an answer?"\n\n"We're Brazilians. This is what the country asks of us."\n\n"I'd give half-marks. Yes, we are all Brazilians. But no, the country asks that we cherish all that we have. For we are #italic all#! that we have."" # First part is the motto of the Confederation of the Equator
   culture_brazil.6.a: "O beloved, idolized homeland! Hail, Hail!"
   brz_perfido: "Pérfido"
   brz_brasil_brasileiro: "Brasil Brasileiro"
@@ -88,4 +88,4 @@
   75_percent_of_upper_pops_assimilate_tt: "#v 75%#! of [SCOPE.sCulture('old_south_american_culture').GetName] [Concept('concept_upper_strata','Upper Strata')] [Concept('concept_pop', '$concept_pops$')] in [ROOT.GetCountry.GetCapital.GetName] will assimilate into the [SCOPE.sCulture('new_national_culture').GetName] [concept_culture]"
   75_percent_of_upper_pops_assimilate_global_tt: "#v 75%#! of [SCOPE.sCulture('old_south_american_culture').GetName] [Concept('concept_upper_strata','Upper Strata')] [Concept('concept_pop', '$concept_pops$')] in this [concept_state] will assimilate into the [SCOPE.sCulture('new_national_culture').GetName] [concept_culture]"
   is_university_gov_admin_or_urban_center_tt: "Building is [GetBuildingType('building_urban_center').GetName], [GetBuildingType('building_university').GetName], or [GetBuildingType('building_government_administration').GetName]"
-  is_barracks_or_naval_base_tt: "Building is [GetBuildingType('building_barrack').GetName] or [GetBuildingType('building_naval_base').GetName]"
+  is_barracks_or_naval_administration_tt: "Building is [GetBuildingType('building_barrack').GetName] or [GetBuildingType('building_naval_administration').GetName]"

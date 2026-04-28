@@ -103,6 +103,8 @@ legislature_althing: "the Althing"
 legislature_board_of_directors: "the Board of Directors"
 legislature_congress_of_soviets: "the Congress of Soviets"
 legislature_congress_of_councils: "the Congress of Councils"
+legislature_chamber_of_corporations: "the Chamber of Corporations"
+legislature_grand_council_of_state: "the Grand Council of State"
 
 # 1848
 red_winter_loc: "Winter"
@@ -387,7 +389,7 @@ austria_federation.8.e: "Endorse a state for all South Slavs within the Federati
 
 austria_federation.9.t: "Beyond the Forest"
 austria_federation.9.desc: "The crownlands inhabited by the [SCOPE.sCulture('romanian_culture').GetName] are some of the most diverse in our Empire. The establishment of any [SCOPE.sCulture('romanian_culture').GetNameNoFormatting] territory at all is certain to alarm [GetCulture('hungarian').GetName] nationalists, and pockets of [GetCulture('south_german').GetName] people throughout the region worry over autonomy."
-austria_federation.9.f: ""We'll need at least three autonomies, here. Possibly more. Where did all of these Germans come from?"\n\n"We settled them here — quite recently, after the last war with the Turks. They're coming back to haunt us one last time, it seems.""
+austria_federation.9.f: ""We'll need at least three autonomies, here. Possibly more. Where did all of these Germans come from?"\n\n"We settled them here—quite recently, after the last war with the Turks. They're coming back to haunt us one last time, it seems.""
 austria_federation.9.a: "Grant the Romanian state Banat and all Transylvania."
 austria_federation.9.b: "Grant the Romanian state everything except for Szekeler Land."
 austria_federation.9.c: "Transylvania is Romanian, but Banat is German."
@@ -406,7 +408,7 @@ austria_federation.10.e: "Such tiny populations do not warrant their own states.
 
 austria_federation.11.t: "The Borderland"
 austria_federation.11.desc: "The [SCOPE.sCulture('ukrainian_culture').GetName] population of [SelectLocalization(SCOPE.sState('east_galicia_state').IsValid, SCOPE.sState('east_galicia_state').GetName, 'STATE_EAST_GALICIA')] has, since the days of the Commonwealth, been ruled by [GetCulture('polish').GetName] elites. The largely-[GetCulture('polish').GetNameNoFormatting] population of the city of [SelectLocalization(SCOPE.sState('east_galicia_state').IsValid, SCOPE.sState('east_galicia_state').GetCityHubName, 'HUB_NAME_STATE_EAST_GALICIA_city_polish')] has requested autonomy under a [GetCulture('polish').GetNameNoFormatting] state. To accept would appease the [GetCulture('polish').GetCustom('getPluralDemonym')], yet deny the [SCOPE.sCulture('ukrainian_culture').GetNameNoFormatting] state a vital economic engine."
-austria_federation.11.f: ""Galicia? There's a peculiar dynamic, there. The aristocrats loathe the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], but the peasants adore [ROOT.GetCountry.GetRuler.GetHerHim]. The last time the aristocrats — Poles, mostly — tried to revolt, the peasants stormed their manors and strung them up. We were obliged to send in the Army to protect the would-be rebels. If one were to ask me, I would say that earned the Ruthenes their state, right then and there.""
+austria_federation.11.f: ""Galicia? There's a peculiar dynamic, there. The aristocrats loathe the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], but the peasants adore [ROOT.GetCountry.GetRuler.GetHerHim]. The last time the aristocrats—Poles, mostly—tried to revolt, the peasants stormed their manors and strung them up. We were obliged to send in the Army to protect the would-be rebels. If one were to ask me, I would say that earned the Ruthenes their state, right then and there.""
 austria_federation.11.a: "Grant the Ukrainian state all of East Galicia."
 austria_federation.11.b: "Create a Ukrainian state in East Galicia, with Lwów under Polish authority."
 austria_federation.11.c: "Offer the Ukrainians Bukovina in return for a Polish Lwów."
@@ -414,7 +416,7 @@ austria_federation.11.d: "All of Galicia is Polish territory."
 
 austria_federation.12.t: "The Serbs of [SelectLocalization(SCOPE.sState('vojvodina_state').IsValid, SCOPE.sState('vojvodina_state').GetName, 'STATE_DELVIDEK_serbian')]"
 austria_federation.12.desc: "The state of [SCOPE.sState('vojvodina_state').GetName] has long served as a centre of the [SCOPE.sCulture('serb_culture').GetName] culture. The [SCOPE.sCulture('serb_culture').GetNameNoFormatting] population of the region has requested the formation of a [SCOPE.sCulture('serb_culture').GetNameNoFormatting] state with its capital in [SCOPE.sState('vojvodina_state').GetCityHubName]. The proposal has been met with opposition by the local [GetCulture('hungarian').GetName] and [GetCulture('south_german').GetName] communities."
-austria_federation.12.f: ""When you release the proposal, remember that only Hungarians call it Újvidék. Everyone else calls it Novi Sad. Neusatz, for us."\n\nThe surveyor crossed out the name. "A rather messy region, isn't it?"\n\n"More than you could ever know. They once called that city the Serbian Athens — if we decide in their favor, it can be again.""
+austria_federation.12.f: ""When you release the proposal, remember that only Hungarians call it Újvidék. Everyone else calls it Novi Sad. Neusatz, for us."\n\nThe surveyor crossed out the name. "A rather messy region, isn't it?"\n\n"More than you could ever know. They once called that city the Serbian Athens—if we decide in their favor, it can be again.""
 austria_federation.12.a: "Partition [SCOPE.sState('vojvodina_state').GetNameNoFormatting] off from Hungary as a Serbian state."
 austria_federation.12.b: "[SCOPE.sState('vojvodina_state').GetNameNoFormatting] must remain within Hungary."
 austria_federation.12.c: "Endorse a state for all South Slavs within the Federation."
@@ -427,13 +429,13 @@ because_lombardy_venetia_tt: "Because [ROOT.GetCountry.GetName] retains #b Lomba
 promised_slovakia_to_hungary_tt: "Because #b Slovakia#! has already been promised to #b Hungary#!, the effects of this option will #r worsen#!"
 promised_bukovina_to_romania_tt: "Because #b Bukovina#! has already been promised to #b Transylvania#!: #indent_newline:3 \n• [GetCulture('romanian').GetName] will be [Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')] from future [Concept('concept_integrated_culture','$concept_integrated_culture_process$')]\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|-=1%] of [GetCulture('romanian').GetName] [Concept('concept_pop', '$concept_pops$')] become more [concept_radical]#!"
 
-danubian_tradition_traits_tt: "All #bold European#! [Concept('concept_culture', '$concept_cultures$')] with [Concept('concept_homeland','$concept_homelands$')] in our [Concept('concept_state', '$concept_states$')] in the [GetStrategicRegion('region_danubia').GetName], [GetStrategicRegion('region_balkans').GetName], [GetStrategicRegion('region_poland').GetName], or [GetStrategicRegion('region_south_germany').GetName] [Concept('concept_strategic_region','$concept_strategic_regions$')] will adopt the #b Danubian#! [concept_tradition_trait]"
+danubian_tradition_traits_tt: "All #bold European#! [Concept('concept_culture', '$concept_cultures$')] with [Concept('concept_homeland','$concept_homelands$')] in our [Concept('concept_state', '$concept_states$')] in the [GetGeographicRegion('region_danubia').GetName], [GetGeographicRegion('region_balkans').GetName], [GetGeographicRegion('region_poland').GetName], or [GetGeographicRegion('region_south_germany').GetName] [Concept('concept_georegion','$concept_georegions$')] will adopt the #b Danubian#! [concept_tradition_trait]"
 
 danubian_federation_button_cooldown_tt: "Has #b not#! integrated a [concept_culture] in the past #v 180 days#!"
 
 not_already_used_this_interaction_tt: "Has #b not#! already used this interaction"
 
-capital_is_in_danubian_states_tt: "[concept_capital_state] is in the [GetStrategicRegion('region_danubia').GetName], [GetStrategicRegion('region_balkans').GetName], [GetStrategicRegion('region_poland').GetName], or [GetStrategicRegion('region_south_germany').GetName] [concept_strategic_region]"
+capital_is_in_danubian_states_tt: "[concept_capital_state] is in the [GetGeographicRegion('region_danubia').GetName], [GetGeographicRegion('region_balkans').GetName], [GetGeographicRegion('region_poland').GetName], or [GetGeographicRegion('region_south_germany').GetName] [concept_georegion]"
 
 modifier_greater_austria: "Union on the Danube"
 modifier_greater_austria_character: "Emperor of All Peoples"
@@ -680,8 +682,8 @@ je_metternich_reason: "The aftermath of the #b Napoleonic Wars#! has established
 metternich_system_box_tt: "\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_bloc_checkbox')] [ROOT.GetCountry.GetPowerBloc.GetName] has more than [GetPlayer.MakeScope.ScriptValue('metternich_bloc_target')|v0] [Concept('concept_power_bloc_member','$concept_power_bloc_members_extra_short$')] (currently [GetPlayer.MakeScope.ScriptValue('num_power_bloc_members_script')|v0])"
 metternich_system_cohesion_box_tt: "\n• [SCOPE.GetRootScope.GetCountry.GetCustom('metternich_bloc_cohesion_checkbox')] [concept_power_bloc_cohesion] of [ROOT.GetCountry.GetPowerBloc.GetName] is greater than [GetPlayer.MakeScope.ScriptValue('metternich_bloc_cohesion_target')|v0] (currently [GetPlayer.MakeScope.ScriptValue('power_bloc_cohesion_script')|v0])"
 
-metternich_unticked: "@simple_box!"
-metternich_ticked: "@green_checkmark_box!"
+checkbox_unticked: "@simple_box!"
+checkbox_ticked: "@green_checkmark_box!"
 
 landowners_out_of_government_for_six_months_or_more_tt: "The [SCOPE.gsInterestGroup('aristocracy_scope').GetName] have been [concept_in_opposition] for more than #v 6#! consecutive months (currently #variable [ROOT.GetCountry.MakeScope.Var('landowners_out_var').GetValue]#! months)"
 
@@ -712,7 +714,7 @@ metternich_resignation_and_flee_tt: "[SCOPE.sCharacter('metternich_scope').GetFu
 
 metternich.1.t: "The End of an Age"
 metternich.1.d: "With the accession of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] to the throne, the long-serving Chancellor [SCOPE.sCharacter('metternich_scope').GetFullName] has announced [SCOPE.sCharacter('metternich_scope').GetHerHis] retirement. The chapter of history defined by [SCOPE.sCharacter('metternich_scope').GetHerHis] statesmanship has come to a close."
-metternich.1.f: ""But, after all, the thought I secretly cherish is that ancient Europe is at the beginning of the end. My determination being to perish with it, I shall know how to do my duty; nor is this my my motto alone — it is that of the Emperor too. New Europe, on the other hand, has not as yet begun its existence, and between the end and the beginning there will be a chaos."\n\n— Klemens von Metternich" # Sourced from Wolfgang Siemann's Metternich: Strategist and Visionary
+metternich.1.f: ""But, after all, the thought I secretly cherish is that ancient Europe is at the beginning of the end. My determination being to perish with it, I shall know how to do my duty; nor is this my my motto alone—it is that of the Emperor too. New Europe, on the other hand, has not as yet begun its existence, and between the end and the beginning there will be a chaos."\n\n— Klemens von Metternich" # Sourced from Wolfgang Siemann's Metternich: Strategist and Visionary
 metternich.1.a: "The great conductor exits the stage."
 
 metternich.2.t: "An Ingoniminous End"
@@ -871,7 +873,7 @@ achievement_david_slays_goliath_2_tt: "Is #v $MON$#!, #v $dyn_c_serbian_monteneg
 
 slave_revolt.4.t: "On Home Soil"
 slave_revolt.4.d: "A group of escaped [GetPopType('slaves').GetName] from our colony of [SCOPE.sState('fleeing_slaves_state').GetName] have successfully reached the [ROOT.GetCountry.GetAdjectiveNoFlag] mainland after stowing away on a trade vessel. By law, all enslaved people who touch [ROOT.GetCountry.GetAdjectiveNoFormatting] soil are made free."
-slave_revolt.4.f: "[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting] sat on the edge of the dock, swinging [SCOPE.sCharacter('name_a_scope').GetHerHis] feet over the surface of the water. The sunset tinted the water red. Fitting, given today's news. [SCOPE.sCharacter('name_a_scope').GetSheHe|U] had seen it in the paper, plastered on walls, on the lips of the passers-by.\n\nA voice sounded from behind [SCOPE.sCharacter('name_a_scope').GetHerHim]. [SCOPE.sCharacter('name_a_scope').GetSheHe|U] recognized it — [SCOPE.sCharacter('name_b_scope').GetFirstNameNoFormatting], another clerk at the courthouse.\n\n"What are you thinking about?"\n\n"In [SCOPE.sState('port_state').GetPortHubName], they recoil at the idea of people in chains. But they do not spare a thought for those beyond that horizon. One day, [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] will punish us all.""
+slave_revolt.4.f: "[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting] sat on the edge of the dock, swinging [SCOPE.sCharacter('name_a_scope').GetHerHis] feet over the surface of the water. The sunset tinted the water red. Fitting, given today's news. [SCOPE.sCharacter('name_a_scope').GetSheHe|U] had seen it in the paper, plastered on walls, on the lips of the passers-by.\n\nA voice sounded from behind [SCOPE.sCharacter('name_a_scope').GetHerHim]. [SCOPE.sCharacter('name_a_scope').GetSheHe|U] recognized it—[SCOPE.sCharacter('name_b_scope').GetFirstNameNoFormatting], another clerk at the courthouse.\n\n"What are you thinking about?"\n\n"In [SCOPE.sState('port_state').GetPortHubName], they recoil at the idea of people in chains. But they do not spare a thought for those beyond that horizon. One day, [SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')] will punish us all.""
 slave_revolt.4.a: "They are entitled to all rights of free men."
 slave_revolt.4.b: "Free or not, they must return to [SCOPE.sState('fleeing_slaves_state').GetName]."
 
@@ -880,7 +882,7 @@ modifier_doomed_former_slaves: "Doomed Former Slaves"
 modifier_deported_slaves: "Back to the Colonies"
 
 je_standestaat: "The Ständestaat"
-je_standestaat_reason: "The rise of mass politics in [ROOT.GetCountry.GetName] has spurred the rise of a counter-movement amongst the traditional classes. The [SelectLocalization(SCOPE.sPoliticalMovement('corporatist_movement_scope').IsValid, SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName, 'movement_corporatist')] seeks to abolish [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')] and multiparty democracy in favor of a [GetLawType('law_corporate_state').GetName], or "Ständestaat".\n\nWhilst this [concept_journal_entry] is active, the rate at which [GetIdeology('ideology_corporatist_leader').GetName] characters appear will be increased."
+je_standestaat_reason: "The rise of mass politics in [ROOT.GetCountry.GetName] has spurred the rise of a counter-movement amongst the traditional classes. The [SelectLocalization(SCOPE.sPoliticalMovement('corporatist_movement_scope').IsValid, SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName, 'movement_corporatist')] seeks to abolish [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')] and multiparty democracy in favor of a [SCOPE.GetRootScope.GetCountry.GetCustom('social_monarchy_or_corporate_state')], or "Ständestaat".\n\nWhilst this [concept_journal_entry] is active, the rate at which [GetIdeology('ideology_corporatist_leader').GetName] characters appear will be increased."
 no_interest_group_in_government_is_corporatist_tt: "#b No#! [concept_interest_group] [concept_in_government] has the [GetIdeology('ideology_corporatist').GetName] ideology, or any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],corporatist_ideologies_list_tt Corporatist#! [concept_leader] or [concept_agitator]"
 corporatist_movement_disbanded_tt: "The [SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName] has disbanded"
 corporatist_movement_disbanded_dummy_tt: "The #v $movement_corporatist$#! has disbanded"
@@ -897,13 +899,16 @@ pro_corporatist_party_list_tt: "[Concept('concept_party','$concept_parties$')] c
 form_fatherland_front_tt: "The [SCOPE.sParty('relevant_party').GetName] and its allies will be reorganized into the #v $party_fatherland_front$#!"
 
 austrian_fascism.1.t: "The New Conservatives"
-austrian_fascism.1.d: "Inspired by discontent towards [ROOT.GetCountry.GetAdjective] parliamentary democracy, the traditional classes have begun to orient themselves towards the [SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName]. Their platform invokes [GetReligion('catholic').GetName] social teachings and the pacification of the labor movement under a [GetLawType('law_corporate_state').GetName]."
-austrian_fascism.1.f: ""We are also united by a second thing, a shared practical goal: to want the best, to bring the human community to its most pleasant condition.\n\nThe one who stands on the right who sees in the actions of the left-wing socialists nothing but destruction, just as the one on the left sees in the actions of the right-wingers only dark disaster — they all may and must grant one another the conviction that the same noble striving guides them."\n\n— Othmar Spann, #italic The True State#!" #- Othmar Spann, notable Austrian representative of the Conservative Revolution and later member of the Nazi Party.
+austrian_fascism.1.d: "Inspired by discontent towards [ROOT.GetCountry.GetAdjective] parliamentary democracy, the traditional classes have begun to orient themselves towards the [SCOPE.sPoliticalMovement('corporatist_movement_scope').GetName]. Their platform invokes [GetReligion('catholic').GetName] social teachings and the pacification of the labor movement under a [SCOPE.GetRootScope.GetCountry.GetCustom('social_monarchy_or_corporate_state')]."
+austrian_fascism.1.f: ""We are also united by a second thing, a shared practical goal: to want the best, to bring the human community to its most pleasant condition.\n\nThe one who stands on the right who sees in the actions of the left-wing socialists nothing but destruction, just as the one on the left sees in the actions of the right-wingers only dark disaster—they all may and must grant one another the conviction that the same noble striving guides them."\n\n— Othmar Spann, #italic The True State#!" #- Othmar Spann, notable Austrian representative of the Conservative Revolution and later member of the Nazi Party.
 austrian_fascism.1.a: "This is the future of conservatism."
 austrian_fascism.1.b: "We now find ourselves facing the blackest reaction."
 
+corporate_state_tt: "[GetLawType('law_corporate_state').GetName]"
+social_monarchy_tt: "[GetLawType('law_social_monarchy').GetName]"
+
 austrian_fascism.2.t: "Austria Awakened"
-austrian_fascism.2.d: "The efforts of [SCOPE.sCharacter('ruler_scope').GetFullName] and the [SCOPE.sParty('fascist_party_scope').GetName] have successfully transformed [ROOT.GetCountry.GetName] into a [GetLawType('law_corporate_state').GetName]. With the labor movement silenced or co-opted, a sense of social peace has been established at last."
+austrian_fascism.2.d: "The efforts of [SCOPE.sCharacter('ruler_scope').GetFullName] and the [SCOPE.sParty('fascist_party_scope').GetName] have successfully transformed [ROOT.GetCountry.GetName] into a [SCOPE.GetRootScope.GetCountry.GetCustom('social_monarchy_or_corporate_state')]. With the labor movement silenced or co-opted, a sense of social peace has been established at last."
 austrian_fascism.2.f: ""The highest desire of the working class is the right to work for God and Country. That is precisely what the communists are most afraid of."\n\nThe Front recruiter with the slicked-back hair paced back and forth as he spoke. [SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting] stood at attention, his classmates at his sides. Forty-eight eyes followed his every movement.\n\n"Their weapon is sabotage and division, and they sow it wherever they go. This is what you will combat. You entered this hall as students, ones at the top of your class. You will leave it as stormtroopers.""
 austrian_fascism.2.a: "Österreich!"
 austrian_fascism.2.b: "The Front's will shall be law."
@@ -954,7 +959,7 @@ austria_federation.13.b: "If we must defend our sovereignty, so be it."
 
 austria_federation.14.t: "Off the Sinking Ship"
 austria_federation.14.d: "Our independence from [SCOPE.sCountry('austria_or_danubia_scope').GetName] has forever put an end to the risk of meddling from [SCOPE.sCountry('austria_or_danubia_scope').GetCapital.GetCityHubName]. Whether the [SCOPE.sCountry('austria_or_danubia_scope').GetAdjectiveNoFlag] government continues its project or not, we shall not be a part of it."
-austria_federation.14.f: "[ROOT.GetCountry.GetCapital.GetCityHubName] had begun to change. It was far deeper than the new flags and confetti in the gutters — [SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting] could see it in the café menus, the posted pamphlets, the conversations [SCOPE.sCharacter('name_a_scope').GetSheHe] heard on the streets. On his daily walk, he had come across a team of workers painting a Ministry building, burying the old schönbrunn yellow under a new coat of rust-red.\n\n"This was a Habsburg city", it had seemed to say, and so they had taken care of that. He wondered if they would come for the blue doors, too."
+austria_federation.14.f: "[ROOT.GetCountry.GetCapital.GetCityHubName] had begun to change. It was far deeper than the new flags and confetti in the gutters—[SCOPE.sCharacter('name_a_scope').GetFirstNameNoFormatting] could see it in the café menus, the posted pamphlets, the conversations [SCOPE.sCharacter('name_a_scope').GetSheHe] heard on the streets. On his daily walk, he had come across a team of workers painting a Ministry building, burying the old schönbrunn yellow under a new coat of rust-red.\n\n"This was a Habsburg city", it had seemed to say, and so they had taken care of that. He wondered if they would come for the blue doors, too."
 austria_federation.14.a: "Long live the independent [ROOT.GetCountry.GetName]!"
 austria_federation.14.b: "We may offer forgiveness from afar."
 

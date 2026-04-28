@@ -1,9 +1,9 @@
 ﻿l_english:
-  
+
   # Leader Ideologies
  ideology_moderate:0 "Moderate"
  ideology_moderate_desc:0 "#lore This leader is considered a moderate in their Interest Group, with no particular ideology of their own.#!"
- 
+
  ideology_traditionalist:0 "Traditionalist"
  ideology_traditionalist_desc:0 "#lore This leader believes in maintaining traditional customs, viewing them as an extension of natural laws. #!"
 
@@ -27,7 +27,7 @@
 
  ideology_feminist:0 "Feminist"
  ideology_feminist_desc:0 "#lore This leader holds that women are equal to men and strives for the extension of their rights as citizens.#!"
- 
+
  ideology_reformer:0 "Reformer"
  ideology_reformer_desc:0 "#lore This leader wants to make a few incremental changes to make society just a bit more equal. But not too much.#!"
 
@@ -39,7 +39,7 @@
 
  ideology_royalist:0 "Royalist"
  ideology_royalist_desc:0 "#lore This leader's loyalties are to the monarchy and its rightful ruler.#!"
- 
+
  ideology_social_democrat:0 "Social Democrat"
  ideology_social_democrat_desc:0 "#lore This leader believes in achieving a socialist society through parliamentary reform. #!"
 
@@ -63,7 +63,7 @@
 
  ideology_market_liberal:0 "Market Liberal"
  ideology_market_liberal_desc:0 "#lore This leader believes that the invisible hand of the free market should be the guiding force of the nation's economy.#!"
- 
+
  ideology_liberal_leader:1 "Liberal"
  ideology_liberal_leader_desc:0 "#lore This leader prioritizes the institution of democracy and opposes uncontested rule over the nation. #!"
 
@@ -117,6 +117,11 @@
  ideology_utilitarian_leader: "Utilitarian"
  ideology_utilitarian_leader_desc:1 "#lore This leader believes it is an important function of the government to pursue the common good, be it through basic liberties or benevolent despotism.#!"
 
+ ideology_mitogaku: "Mitogaku"
+ ideology_mitogaku_desc: "#lore This leader is an adherent of Mito studies, a patriotic academic and political doctrine originating from the Mito domain. They revere the Emperor as ruler of the world, and seek to reform Japan in order to resist foreign encroachment.#!"
+
+ ideology_shojoi: "Shōjōi"
+ ideology_shojoi_desc: "#lore This leader desires the immediate expulsion of foreigners from the country, and supports the unilateral abrogation of any commercial treaties with foreign powers.#!"
 
   # Interest Group Ideologies
 
@@ -163,79 +168,82 @@
 
  ideology_moderantist: "Moderantist"
  ideology_moderantist_desc: "#lore This group has adopted a moderate liberal outlook, favoring cooperation between the monarchy and an elected chamber dominated by the landowning oligarchy.#!"
-  
+
  ideology_patriarchal:0 "Patriarchal"
  ideology_patriarchal_desc:0 "#lore This group believes men should have political authority and that women should obey their fathers and husbands.#!"
-   
+
  ideology_republican:0 "Republican"
  ideology_republican_desc:0 "#lore This group believes the best leaders are elected by public vote and supports a republican form of government.#!"
-  
+
  ideology_populist:0 "Populist"
  ideology_populist_desc:0 "#lore This group believes in governance by the people and seeks to expand the franchise to all social classes.#!"
-  
+
  ideology_hierarchic:0 "Hierarchic"
  ideology_hierarchic_desc:0 "#lore This group favors maintaining a hierarchy in society through traditional forms of taxation and labor relations.#!"
-  
+
  ideology_oligarchic:0 "Oligarchic"
  ideology_oligarchic_desc:0 "#lore This group favors monopolizing power in the hands of a secular state controlled by local oligarchies.#!"
 
  ideology_laissez_faire:0 "Laissez-Faire"
  ideology_laissez_faire_desc:0 "#lore This group believes in the free flow of trade and labor forces, favoring the judgment of markets over that of governments.#!"
-  
+
+ ideology_interventionist: "Interventionist"
+ ideology_interventionist_desc: "#lore This group supports close cooperation between the state and private enterprise, favoring policy that actively invests in industrial development.#!"
+
  ideology_individualist:0 "Individualist"
  ideology_individualist_desc:0 "#lore This group believes each person is responsible for their own fate and opposes government programs to provide services that can be paid for by the individual.#!"
-  
+
  ideology_pious:0 "Pious"
  ideology_pious_desc:0 "#lore This group believes religious principles are paramount moral truths and that they should permeate all of society.#!"
-  
+
  ideology_particularist:0 "Particularist"
  ideology_particularist_desc:0 "#lore This group wants local autonomy in their work, free of feudal provisions of indentured servitude.#!"
-  
+
  ideology_isolationist:0 "Isolationist"
  ideology_isolationist_desc:0 "#lore This group wants the state to focus on domestic matters, opposing ambitions to expand into foreign lands as well as immigration from them.#!"
-  
+
  ideology_moralist:0 "Moralist"
  ideology_moralist_desc:1 "#lore This group has a strong belief in a religious moral order and views diversity of opinion as a threat to this order.#!"
-  
+
  ideology_jingoist:0 "Jingoist"
  ideology_jingoist_desc:0 "#lore This group believes in an aggressive foreign policy and maintaining an army to back it up.#!"
 
  ideology_loyalist:0 "Loyalist"
  ideology_loyalist_desc:0 "#lore This group believes each citizen should pay their dues to fund the vital functions of the state.#!"
- 
+
  ideology_meritocratic:0 "Meritocratic"
  ideology_meritocratic_desc:0 "#lore This group believes success is earned and that those who have achieved it deserve the accompanying responsibility and wealth.#!"
-   
+
  ideology_patriotic:0 "Patriotic"
  ideology_patriotic_desc:0 "#lore This group is fiercely devoted to its country and wants harsh measures against those who would spread dissent.#!"
-  
+
  ideology_military_absolutist: "Military Absolutist"
  ideology_military_absolutist_desc: "#lore This group supports harsh measures against those who threaten the stability of the state, and denounces parliamentary rule as an impediment to this end.#!"
 
  ideology_liberal:0 "Liberal"
  ideology_liberal_desc:0 "#lore This group views liberty and legal equality as important values to be safeguarded.#!"
-  
+
  ideology_anti_clerical:0 "Anti-Clerical"
  ideology_anti_clerical_desc:1 "#lore This group opposes the influence of organized religion on the political and education system. They believe that rational minds should be at the forefront of governance.#!"
-  
+
  ideology_proletarian:0 "Proletarian"
  ideology_proletarian_desc:0 "#lore This group views politics through the lens of class struggle and sides with the workers in this conflict.#!"
-  
+
  ideology_egalitarian:0 "Egalitarian"
  ideology_egalitarian_desc:0 "#lore This group believes that equal and humane treatment of people should be a cornerstone of political policy.#!"
-   
+
  ideology_anti_slavery:0 "Anti-Slavery"
  ideology_anti_slavery_desc:0 "#lore This group abhors slavery and views it as a feature of a barbarous past.#!"
- 
+
  ideology_pro_slavery:0 "Pro-Slavery"
  ideology_pro_slavery_desc:0 "#lore This group views slavery as a necessary part of a well-functioning society.#!"
 
  ideology_pro_slavery_colonial: "$ideology_pro_slavery$"
  ideology_pro_slavery_colonial_desc: "#lore This group views slavery as a necessary and profitable component of colonial economies.#!"
-  
+
  ideology_reactionary:0 "Reactionary"
  ideology_reactionary_desc:0 "#lore This group is nostalgic for a past, real or imagined, where just kings ruled over a uniform society.#!"
- 
+
  ideology_plutocratic:0 "Plutocratic"
  ideology_plutocratic_desc:0 "#lore This group believes that the wealthy have proven their worth as decision-makers and form an intellectual elite well suited to set the course of society.#!"
 
@@ -276,7 +284,7 @@
 
  ideology_bakufu:0 "Bakufu"
  ideology_bakufu_desc:0 "#lore This group supports the shogunate and believes power belongs in the hands of the warrior class.#!"
- 
+
  ideology_shinto_moralist:0 "Shinto Piousness"
  ideology_shinto_moralist_desc:0 "#lore This group believes in the divinity of the Emperor and ties this belief to the old worship of gods and spirits.#!"
 
@@ -348,6 +356,18 @@
  ideology_conservative_praetorian: "Conservative Praetorian"
  ideology_conservative_praetorian_desc: "#lore This group believes that the armed forces has a right and a duty to intervene in politics in order to promote and defend select conservative values.#!"
 
+ ideology_rangaku: "Rangaku"
+ ideology_rangaku_desc: "#lore This group supports an end to international isolation, and favors the adoption of Western practices of governance.#!"
+
+ ideology_mercantile: "Mercantile"
+ ideology_mercantile_desc: "#lore This group desires a legal apparatus that grants recognition and support to commercial interests.#!"
+
+ ideology_japan_hierarchic: "Bakuhan"
+ ideology_japan_hierarchic_desc:0 "#lore This group upholds the Edo #italic bakuhan#! system, in which self-governing Daimyō domains share power with the ruling Shogunate.#!"
+
+ ideology_japan_hierarchic_2: "$ideology_japan_hierarchic$"
+ ideology_japan_hierarchic_2_desc:0 "$ideology_japan_hierarchic_desc$"
+
  # Movement Ideologies
  ideology_anti_slavery_movement: "$ideology_anti_slavery$"
  ideology_anti_slavery_movement_desc: "#lore This movement abhors slavery and views it as a feature of a barbarous past.#!"
@@ -390,7 +410,7 @@
 
  ideology_liberal_movement: "Liberal"
  ideology_liberal_movement_desc: "#lore This movement values the institution of democracy, and supports guaranteeing essential freedoms for citizens. #!"
- 
+
  ideology_liberal_republican_movement: "Republican"
  ideology_liberal_republican_movement_desc: "#lore This movement holds democratic and republican ideals, and supports guaranteeing essential freedoms for citizens. #!"
 
@@ -399,7 +419,7 @@
 
  ideology_nihilist_movement: "$ideology_nihilist$"
  ideology_nihilist_movement_desc: "#lore This movement prioritizes the questioning and overturning of traditionalist social order and institutions at all costs, seeking to clear the ground for a comprehensively revolutionary society.#!"
- 
+
  ideology_positivist_movement: "$ideology_positivist$"
  ideology_positivist_movement_desc: "#lore This movement supports a society founded upon technocratic and anticlericalist lines, disdaining both the arbitrary power of monarchs and the fickle whims of the public.#!"
 
@@ -420,7 +440,7 @@
 
  ideology_traditionalist_movement: "$ideology_traditionalist$"
  ideology_traditionalist_movement_desc: "#lore This movement seeks to maintain traditional customs, viewing them as an extension of natural laws.#!"
- 
+
  ideology_traditionalist_minoritarian_movement: "$ideology_traditionalist_minoritarian$"
  ideology_traditionalist_minoritarian_movement_desc: "#lore This movement seeks to advance the station of their religion within society, both protecting its followers from discrimination and seeking to uphold its traditional customs.#!"
 
@@ -472,10 +492,25 @@
  ideology_slave_revolt_movement: "$ideology_anti_slavery$"
  ideology_slave_revolt_movement_desc: "#lore This movement is made up of slaves that wish to emancipate themselves by force of arms.#!"
 
+ ideology_meiji_restorationist_movement_shojoi: "Shōjōi"
+ ideology_meiji_restorationist_movement_shojoi_desc: "#lore This movement seeks to overthrow the ruling Shogunate, restore the power of the Emperor, and carry out the immediate expulsion of foreign interests from Japan.#!"
+
+ ideology_meiji_restorationist_movement_daijoi: "Daijōi"
+ ideology_meiji_restorationist_movement_daijoi_desc: "#lore This movement seeks to overthrow the ruling Shogunate, restore the power of the Emperor, and make use of Western methods to develop Japan's military and economic strength.#!"
+
+ ideology_tokugawa_loyalist_movement: "Bakufu"
+ ideology_tokugawa_loyalist_movement_desc: "#lore This movement supports the strict Edo class hierarchy, with a privileged position for the Samurai and primacy for the Shogunate.#!"
+
+ ideology_tokugawa_loyalist_movement_2: "$ideology_tokugawa_loyalist_movement$"
+ ideology_tokugawa_loyalist_movement_2_desc: "$ideology_tokugawa_loyalist_movement_desc$"
+
+ ideology_japan_paternalistic: "$ideology_paternalistic$"
+ ideology_japan_paternalistic_desc: "$ideology_paternalistic_desc$"
+
   # Government Principles group
  lawgroup_governance_principles:0 "Governance Principles"
  lawgroup_governance_principles_desc:0 "The foundational principles and authority by which your country is governed. Determines who the Head of State is."
-  
+
  law_chiefdom:0 "Chiefdom"
  law_chiefdom_desc:0 "A hierarchical pre-industrial political system based on kinship, with a warlord or elder of a prominent family at the head. It is incapable of efficient centralized control over entire states."
  law_monarchy:0 "Monarchy"
@@ -492,11 +527,13 @@
  law_corporate_state_desc:0 "A political system based around institutionalized collaboration between officially recognized corporate groups. The state serves as a forum for negotiation between different social classes."
  law_colonial_administration: "Colonial Administration"
  law_colonial_administration_desc: "The state is legally an administrative sub-division of a foreign power, possessing no sovereignty of its own. It is delegated powers with which to administer a given territory on the behalf of the metropole."
-  
+ law_social_monarchy: "Social Monarchy"
+ law_social_monarchy_desc: "A political system in which the state positions itself as the ultimate mediator between the nation's corporate groups. The monarchy is held to be a symbol of the country's national identity."
+
   # Free speech group
  lawgroup_free_speech:0 "Free Speech"
  lawgroup_free_speech_desc:0 "Laws regulating free speech and right to public assembly."
-  
+
  law_outlawed_dissent:0 "Outlawed Dissent"
  law_outlawed_dissent_desc:0 "Criticizing the government is considered treasonous and illegal."
  law_censorship:0 "Censorship"
@@ -505,24 +542,37 @@
  law_right_of_assembly_desc:0 "Citizens enjoy the right to public assembly."
  law_protected_speech:0 "Protected Speech"
  law_protected_speech_desc:0 "The protection of free speech is enshrined in law."
-  
+
   # Army Model group
- lawgroup_army_model:0 "Army Model"
- lawgroup_army_model_desc:0 "How your army is organized and regulated."
-  
- law_peasant_levies:0 "Peasant Levies"
- law_peasant_levies_desc:0 "The army's main force comes from conscripted infantry with zero to basic training."
- law_national_militia:0 "National Militia"
- law_national_militia_desc:0 "The standing army is small, but local militias can be activated to defend their homes."
- law_mass_conscription:0 "Mass Conscription"
- law_mass_conscription_desc:0 "Large numbers of infantry conscripts can be activated as needed to supplement the professional army."
- law_professional_army:0 "Professional Army"
- law_professional_army_desc:0 "The army consists of well-trained, professional regulars."
-  
-  # Distribution of Power group
- lawgroup_distribution_of_power:0 "Distribution of Power"
- lawgroup_distribution_of_power_desc:0 "How political power is distributed. Determines who the Head of State is accountable to."
-  
+ lawgroup_army_model: "Army Model"
+ lawgroup_army_model_desc: "How your army is organized and regulated."
+
+ law_peasant_levies: "Peasant Levies"
+ law_peasant_levies_desc: "The army's main force comes from conscripted infantry with zero to basic training."
+ law_national_militia: "National Militia"
+ law_national_militia_desc: "The standing army is small, but local militias can be activated to defend their homes."
+ law_mass_conscription: "Mass Conscription"
+ law_mass_conscription_desc: "Large numbers of infantry conscripts can be activated as needed to supplement the professional army."
+ law_professional_army: "Professional Army"
+ law_professional_army_desc: "The army consists of well-trained, professional regulars."
+
+ # Navy Model group
+ lawgroup_navy_model: "Navy Model"
+ lawgroup_navy_model_desc: "Organization and doctrine of your naval forces."
+
+ law_merchant_navy: "Merchant Navy"
+ law_merchant_navy_desc: "The fleet is focused on the propagation and protection of overseas trade and supply."
+ law_jeune_ecole: "Jeune École"
+ law_jeune_ecole_desc: "A naval model prioritizing the use of smaller, heavily armed ships to combat a larger enemy."
+ law_professional_navy: "Capital Fleet"
+ law_professional_navy_desc: "Focused on the construction and maintenance of a mighty battlefleet in order to impress and deter rivals."
+ law_diplomatic_navy: "Diplomatic Fleet"
+ law_diplomatic_navy_desc: "Prioritizing long-range cruising in order to build and maintain a global diplomatic presence."
+
+ # Distribution of Power group
+ lawgroup_distribution_of_power: "Distribution of Power"
+ lawgroup_distribution_of_power_desc: "How political power is distributed. Determines who the Head of State is accountable to."
+
  law_autocracy:0 "Autocracy"
  law_autocracy_desc:0 "The Head of State's power is absolute and they are held accountable to no earthly power."
  law_oligarchy:0 "Oligarchy"
@@ -548,17 +598,21 @@
  law_organic_regulation_desc: "This country's government is constituted through a set of "organic regulations" imposed by the Great Powers. Its Head of State is appointed by representatives of the boyar oligarchy."
  law_neo_absolutism: "Neo-Absolutism"
  law_neo_absolutism_desc: "The Head of State rules as an enlightened autocrat, with their rule facilitated by a modern, centralized state apparatus."
-  
+ law_bakufu: "Bakufu"
+ law_bakufu_desc: "Absolute power is vested in the Shōgun, who officially serves in the name of the Emperor."
+ law_warrior_caste: "Warrior Caste"
+ law_warrior_caste_desc: "Bearing arms is a privilege limited to an elite warrior strata. Commoners are barred from serving in combatant roles."
+
   # Voting System group
  law_first_past_the_post:0 "First Past The Post"
  law_first_past_the_post_desc:0 "Also known as Winner Takes All, this system elects the single candidate who wins the most number of seats in regional sub-elections. It tends to create single-party governments with strong mandates but is vulnerable to gerrymandering."
  law_proportional_representation:0 "Proportional Representation"
  law_proportional_representation_desc:0 "This system distributes parliamentary seats in proportion to the number of votes cast. It tends to create multi-party coalition governments where compromise is key to getting anything done."
-  
+
   # Workplace Safety group
  lawgroup_labor_rights:0 "Labor Rights"
  lawgroup_labor_rights_desc:0 "The rights of workers."
-  
+
  law_serfdom:0 "Serfdom"
  law_serfdom_desc:0 "Peasants are tied to their land and must perform labor for their feudal masters."
  law_no_workers_rights:0 "No Workers' Rights"
@@ -567,22 +621,22 @@
  law_regulatory_bodies_desc:0 "Government institutions have been created to regulate the excesses of employers."
  law_worker_protections:0 "Workers' Protections"
  law_worker_protections_desc:0 "Workers enjoy extensive protections that are enshrined in law."
-  
+
   # Children's Rights group
  lawgroup_childrens_rights:0 "Children's Rights"
  lawgroup_childrens_rights_desc:0 "The rights and protections afforded to children."
-  
+
  law_child_labor_allowed:0 "Child Labor Allowed"
  law_child_labor_allowed_desc:0 "No legal restrictions are placed on where children may work."
  law_restricted_child_labor:0 "Restricted Child Labor"
  law_restricted_child_labor_desc:0 "No child is permitted on the factory floor."
  law_compulsory_primary_school:0 "Compulsory Primary School"
  law_compulsory_primary_school_desc:0 "All children must attend several years of primary school during which they're prohibited from working."
-  
+
  # Slavery group
  lawgroup_slavery:0 "Slavery"
  lawgroup_slavery_desc:0 "People as property."
-  
+
  law_slavery_banned:0 "Slavery Banned"
  law_slavery_banned_desc:0 "No human being may be owned by another."
  law_debt_slavery:0 "Debt Slavery"
@@ -593,13 +647,13 @@
  law_legacy_slavery_desc:0 "As a compromise between abolitionists and slaveholders, the institution of slavery may continue as long as it does not expand."
  law_colonial_slavery: "Colonial Slavery"
  law_colonial_slavery_desc: "The institution of slavery is legal in this country's colonies. Any slave that sets foot upon the mainland is made free."
-  
+
  switch_from_colonial_slavery_to_pro_slavery_tt: "[SCOPE.gsInterestGroup('landowners_scope').GetName] will switch to the [GetIdeology('ideology_pro_slavery').GetName] [concept_ideology]"
 
   # Church and State group
  lawgroup_church_and_state:0 "Church and State"
  lawgroup_church_and_state_desc:0 "The relationship between physical and spiritual governors."
-  
+
  law_state_religion:0 "State Religion"
  law_state_religion_desc:0 "The church is an official organ of the state. All minority religions are discriminated against."
  law_freedom_of_conscience:0 "Freedom of Conscience"
@@ -612,11 +666,11 @@
  law_millet_system_desc:1 "The state upholds Sunni Islam as the official religion. Adherents of other Abrahamic religions are grouped under confessional communities, exempting them from conscription and granting them legal autonomy in return for paying a religious tax."
  law_people_of_the_book: "People of the Book"
  law_people_of_the_book_desc: "The state adheres to the principles of Islamic law. Adherents of other Abrahamic religions are recognized as #italic Dhimmi#!, exempting them from conscription and granting them legal autonomy in return for paying a religious tax."
-  
+
   # Citizenship group
  lawgroup_citizenship:0 "Citizenship"
  lawgroup_citizenship_desc:0 "Extending the rights of citizenship."
-  
+
  law_ethnostate:0 "Ethnostate"
  law_ethnostate_desc:1 "The state considers itself inextricably tied to a certain ethnicity, with other ethnicities barred from citizenship. All foreign cultures are discriminated against."
  law_national_supremacy:0 "National Supremacy"
@@ -641,7 +695,7 @@
  law_hindu_caste_not_enforced_desc: "Socioeconomic mobility on the basis of caste is not legally restricted but discrimination may still persist."
  law_affirmative_action: "Affirmative Action"
  law_affirmative_action_desc: "Active measures to create an equitable socioeconomic situation, prioritizing previously marginalized groups."
-  
+
   # Economic System group
  lawgroup_economic_system:0 "Economic System"
  lawgroup_economic_system_desc:0 "The fundamental principles of your economy."
@@ -662,7 +716,7 @@
  # Trade Policy group
  lawgroup_trade_policy:0 "Trade Policy"
  lawgroup_trade_policy_desc:0 "Laws governing trade and the exchange of goods across borders."
- 
+
  law_free_trade:0 "Free Trade"
  law_free_trade_desc:1 "The free exchange of goods must not be impeded, as trade is for the benefit of all."
  law_protectionism:0 "Protectionism"
@@ -673,7 +727,11 @@
  law_mercantilism_desc:0 "An export-focused economy with an emphasis on keeping a positive current account and competing with other nations."
  law_canton_system: "Canton System"
  law_canton_system_desc: "A variant of $law_isolationism$ where trade is only permitted in a single coastal state."
- canton_system_trade_center_trigger_tt: "Under the [GetLawType('law_canton_system').GetName] [concept_law], Trade Centers can only be constructed up to level #v 50#! in #v $STATE_GUANGDONG$#!"
+ canton_system_trade_center_trigger_tt: "Under the [GetLawType('law_canton_system').GetName] [concept_law], Trade Centers can only be constructed up to level [Building.GetState.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_trade_center_max_limit_add')|v] in #v $STATE_GUANGDONG$#!"
+ law_sakoku: "Sakoku"
+ law_sakoku_desc: "A variant of $law_isolationism$ where contact with other nations is heavily restricted and trade is limited to only a handful of designated ports."
+ sakoku_trade_center_trigger_tt: "Under the [GetLawType('law_sakoku').GetName] [concept_law], Trade Centers can only be constructed up to level [Building.GetState.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_trade_center_max_limit_add')|v] in #v $STATE_KYUSHU$#!, where commerce with foreign interests can be kept under strict supervision."
+ internal_controls_relaxed_tt: "Internal movement controls will be relaxed, causing us to adopt [GetLawType('law_migration_controls').GetName]"
 
   # Taxation Group
  lawgroup_taxation:0 "Taxation"
@@ -688,11 +746,11 @@
  law_proportional_taxation_desc:0 "A mainly income-based tax system that tries to ensure everyone pays a roughly equal share of their income to the state."
  law_graduated_taxation:0 "Graduated Taxation"
  law_graduated_taxation_desc:0 "A tax system that aims to put the burden of taxation primarily on the well-to-do through high Dividends taxes."
-  
+
   # Education System group
  lawgroup_education_system:0 "Education System"
  lawgroup_education_system_desc:0 "For when the children are done with chimney sweeping chores."
-  
+
  law_no_schools:0 "No Schools"
  law_no_schools_desc:0 "Education is the parents' responsibility. Only the most leisurely citizens learn to read and write."
  law_religious_schools:0 "Religious Schools"
@@ -701,24 +759,26 @@
  law_private_schools_desc:0 "Schooling is best left to private interests who can assure freedom of choice in one's education."
  law_public_schools:0 "Public Schools"
  law_public_schools_desc:0 "Schooling is the responsibility of the state, and should be standardized and equally accessible to all."
-  
+ law_terakoya:0 "Terakoya"
+ law_terakoya_desc:0 "The education of commoners is left to a decentralized system of privately-owned Terakoya, or temple schools."
+
   # Health System group
  lawgroup_health_system:0 "Health System"
  lawgroup_health_system_desc:1 "Laws about the government's involvement (or lack thereof) in providing healthcare for its citizens."
-  
+
  law_no_health_system:0 "No Health System"
  law_no_health_system_desc:1 "The government does not fund any system of healthcare."
  law_charitable_health_system:0 "Charity Hospitals"
- law_charitable_health_system_desc:0 "Charitable organizations — often religious ones — provide some help to anyone who's sick or dying, to the degree they are able."
+ law_charitable_health_system_desc:0 "Charitable organizations—often religious ones—provide some help to anyone who's sick or dying, to the degree they are able."
  law_private_health_insurance:0 "Private Health Insurance"
  law_private_health_insurance_desc:0 "Population health is managed through a system of privately owned hospitals paid through private health insurance programs, ensuring the well-being of those who can afford it with minimal impact on the government treasury."
  law_public_health_insurance:0 "Public Health Insurance"
  law_public_health_insurance_desc:0 "The government provides a publicly funded health insurance program ensuring equal access to care for all."
- 
+
   # Welfare group
  lawgroup_welfare:0 "Welfare"
  lawgroup_welfare_desc:0 "Government assistance for the income deprived."
-  
+
  law_no_social_security:0 "No Social Security"
  law_no_social_security_desc:0 "It is not the state's role to provide for those who cannot provide for themselves."
  law_poor_laws:0 "Poor Laws"
@@ -729,11 +789,11 @@
  law_old_age_pension_desc:0 "There is a practical limit to the age where our workforce is no longer efficient and their subsequent welfare must fall under the purview of government."
  law_disability_insurance:0 "Disability Insurance"
  law_disability_insurance_desc:0 "It is the state's responsibility to care for those who, through no fault of their own, find themselves unable to work."
-  
+
   # Rights of Women group
  lawgroup_rights_of_women:0 "Rights of Women"
  lawgroup_rights_of_women_desc:0 "The legal regulations of the fairer sex."
-  
+
  law_no_womens_rights:0 "Legal Guardianship"
  law_no_womens_rights_desc:0 "Women are legally under the guardianship of men and enjoy very few rights."
  law_women_own_property:0 "Propertied Women"
@@ -742,7 +802,7 @@
  law_women_in_the_workplace_desc:0 "How will we be able to keep the furnaces of progress aflame with only half the potential workforce?"
  law_womens_suffrage:0 "Women’s Suffrage"
  law_womens_suffrage_desc:0 "In the adjustment of the new order of things, we women demand an equal voice; we shall accept nothing less."
-  
+
   # Policing
  lawgroup_policing:0 "Policing"
  lawgroup_policing_desc:0 "The priorities of the national police force."
@@ -755,7 +815,7 @@
  law_dedicated_police_desc:0 "This country has a dedicated police force with standardized training."
  law_militarized_police:0 "Militarized Police Force"
  law_militarized_police_desc:0 "By giving your police force military equipment and military training, their effectiveness at carrying out your will increases."
-  
+
   # Bureaucracy
  lawgroup_bureaucracy:0 "Bureaucracy"
  lawgroup_bureaucracy_desc:0 "How your country is administered."
@@ -770,22 +830,22 @@
  law_elected_bureaucrats_desc:0 "Local governors are elected by their constituents, decentralizing power while making citizens easier to manage."
  law_crownland_diets: "Crownland Diets"
  law_crownland_diets_desc: "Local governance is carried out by traditional assemblies elected from the ranks of the regional nobility."
-  
+
   # Colonization
  lawgroup_colonization:0 "Colonization"
  lawgroup_colonization_desc:0 "Your stance on establishing colonies to supplant and conquer [concept_decentralized_nation]."
-  
+
  law_no_colonial_affairs:0 "No Colonial Affairs"
  law_no_colonial_affairs_desc:0 "The country does not engage in any formal type of colonization and cannot establish colonies."
  law_colonial_resettlement:0 "Colonial Resettlement"
  law_colonial_resettlement_desc:0 "Colonies are established to provide land to settlers from the country's incorporated states."
  law_colonial_exploitation:0 "Colonial Exploitation"
  law_colonial_exploitation_desc:0 "Colonies are established to exploit the area for their natural resources and cheap labor."
-  
+
   # Internal Security
  lawgroup_internal_security:0 "Internal Security"
  lawgroup_internal_security_desc:0 "Keeping your own affairs in order."
-  
+
  law_no_home_affairs:0 "No Home Affairs"
  law_no_home_affairs_desc:1 "The state relies upon conventional military and police forces to suppress unrest and uprisings."
  law_national_guard:0 "National Guard"
@@ -794,11 +854,13 @@
  law_secret_police_desc:1 "The state possesses a secret police bureau tasked with monitoring dissidents and investigating political crimes."
  law_guaranteed_liberties:0 "Guaranteed Liberties"
  law_guaranteed_liberties_desc:1 "The state's home affairs bureau is solely focused on addressing the grievances of the citizens, and is forbidden from investigating or arresting them without due cause."
-  
+ law_shinsengumi:0 "Shinsengumi"
+ law_shinsengumi_desc: "The state commissions an elite organization of swordsmen to protect government officials and police the capital."
+
   # Migration
  lawgroup_migration:0 "Migration"
  lawgroup_migration_desc:0 "Controlling the flow of people."
-  
+
  law_no_migration_controls:0 "No Migration Controls"
  law_no_migration_controls_desc:0 "The country makes no attempt to control movement across its borders."
  law_migration_controls:0 "Migration Controls"
@@ -808,7 +870,7 @@
 
  liberate_slaves_tt:0 "All [GetPopType('slaves').GetName] will be liberated"
  enslave_discriminated_farm_workers_tt:0 "All $laborers$ with low [concept_acceptance] working on farms, ranches and plantations in former Slave States will be [Concept('concept_slavery', '$concept_enslaved$')]."
- 
+
  enact_law_radical_leftist_government_warning_desc:0 "@warning! Enacting this [concept_law] may cause [Concept('concept_country', '$concept_countries$')] without a similar form of $lawgroup_governance_principles$ to become aggressive against us."
  enact_law_radical_leftist_economy_warning_desc:0 "@warning! Enacting this [concept_law] may cause [Concept('concept_country', '$concept_countries$')] without a similar form of $lawgroup_economic_system$ to become aggressive against us."
 
@@ -837,7 +899,7 @@
  ideology_luddite: "Luddite"
  ideology_luddite_desc: "Luddites are opposed to industrial automation, or in more extreme cases to industry itself."
 
-  
+
  law_extraction_economy: "Extraction Economy"
  law_extraction_economy_desc: "A colonial economic system which focuses on maximum extraction of capital for the benefit of the metropole."
 
@@ -858,9 +920,12 @@
  law_expanded_latifundias_desc: "$law_latifundias_desc$"
  law_manorialism: "Manorialism"
  law_manorialism_desc: "Agricultural land is owned by hereditary elites. Tenants are granted freedom of movement, but are obliged to perform unpaid labor for their landlords."
+ law_peasant_proprietorship: "Peasant Proprietorship"
+ law_peasant_proprietorship_desc: "Agricultural land is largely owned by independent peasant-proprietors, with a scattering of larger commercial estates."
 
  pm_homesteading: "Homesteading"
  pm_homesteading_building_subsistence: "Homesteading"
+ pm_peasant_proprietorship_building_subsistence: "$law_peasant_proprietorship$"
  pm_privately_owned_plantation: "Privately Owned"
  pm_publicly_traded_plantation: "Publicly Traded"
  pm_government_run_plantation: "Government Run"

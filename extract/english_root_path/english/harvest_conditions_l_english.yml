@@ -47,3 +47,25 @@
 
  earthquake: "Earthquake"
  earthquake_desc: "A violent, abrupt shaking of the Earth's surface that leaves ruin and devastation in its wake."
+
+#Sea conditions
+ strong_winds: "$naval_condition_strong_winds$"
+ strong_winds_desc: "$naval_condition_strong_winds_desc$"
+
+ fog: "$naval_condition_fog$"
+ fog_desc: "$naval_condition_fog_desc$"
+
+ ice: "$naval_condition_ice$"
+ ice_desc: "$naval_condition_ice_desc$"
+
+ cyclone: "$naval_condition_cyclone$"
+ cyclone_desc: "$naval_condition_cyclone_desc$"
+
+ tropical_storm: "$naval_condition_tropical_storm$"
+ tropical_storm_desc: "$naval_condition_tropical_storm_desc$"
+
+ calm_waters: "$naval_condition_calm_waters$"
+ calm_waters_desc: "$naval_condition_calm_waters_desc$"
+
+ rough_waters: "$naval_condition_rough_waters$"
+ rough_waters_desc: "$naval_condition_rough_waters_desc$"

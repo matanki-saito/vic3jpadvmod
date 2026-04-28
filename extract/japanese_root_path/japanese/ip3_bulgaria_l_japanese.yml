@@ -23,6 +23,7 @@
  bulgaria_pursued_greater_yugoslavism_tt: "#v $bulgaria_events.1.t$#!のイベントにおいて、#v 大ユーゴスラビア主義#!を追求した"
  bulgaria_unlock_yugoslavia_tt: "#v $YUG$#!を形成できるようになる"
  bulgarian_empire_homeland_tt: "[GetStateRegion('STATE_MACEDONIA').GetName]、[GetStateRegion('STATE_EASTERN_SERBIA').GetName]、[GetStateRegion('STATE_EASTERN_THRACE').GetName]は、獲得され次第[GetCulture('bulgarian').GetName]の[Concept('concept_homeland','$concept_homelands$')]となる"
+ bulgarian_empire_claims_tt: "[ROOT.GetCountry.GetName]が[GetGeographicRegion('geographic_region_greater_bulgaria').GetName]の未所有の[concept_state]すべてに対し[concept_claim]を獲得する"
  bulgaria_events.2.t: "待望の自由"
  bulgaria_events.2.d: "ブルガリアはついに独立国家となった。変革の混乱を乗り越え、豊かな未来へと導くのは誰であるべきか？"
  #Below quote is straight from the wiki, but it suits well.

@@ -5,6 +5,7 @@
  TICKTASK_RATE_DAY:0 "Once per day"
  TICKTASK_RATE_WEEK:0 "Once per week"
  TICKTASK_RATE_MONTH:0 "Once per month"
+ TICKTASK_RATE_QUARTER: "Once per quarter"
  TICKTASK_RATE_YEAR:0 "Once per year"
   
  TICKTASK_PRIO_EARLY:0 "Early"

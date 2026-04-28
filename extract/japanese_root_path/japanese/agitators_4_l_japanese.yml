@@ -46,7 +46,7 @@
  #nihilism.1 and all attached things are in content_1.
  nihilism.2.t: "何も終わらず"
  nihilism.2.d: "ニヒリズム運動への徹底的な弾圧が実を結び、「ニヒリズム」という言葉は再び猥褻なものを示すものでしかなくなった。"
- nihilism.2.f: "「あなたの一番の罪は、無意味に自分を破壊し、裏切ったことだ」" #-Dostoevsky
+ nihilism.2.f: "「あなたの一番の罪は、無意味に自分を破壊し、裏切ったことだ」\n\n—フョードル・ドストエフスキー、『#italic 罪と罰#!』"
  nihilism.2.a: "彼らは、己の持ちうる権利以上に厄介ごとをもたらした。"
  nihilism.2.b: "これを利用して、学界に対する支配力を再強化しよう。"
  nihilism.3.t: "忘却へ"
@@ -56,12 +56,12 @@
  nihilism.3.b: "彼らを過去へと消し去ろう。"
  nihilism.4.t: "子供の非難"
  nihilism.4.d: "[ROOT.GetCountry.GetAdjective][SCOPE.gsInterestGroup('intelligentsia_ig').GetName]の人気メンバーが、若者のニヒリズム過剰傾向を非難する小説を発表した。ニヒリズムを声高に公言する主人公は、[SCOPE.sCharacter('nihilist_scope').GetFullName]に類似している。"
- nihilism.4.f: "「以前は単なる間抜けだったのが、突然ニヒリストになったという事実がある」" #-Also Turgenev
+ nihilism.4.f: "「以前は単なる間抜けだったのが、突然ニヒリストになったという事実がある」\n\n—イワン・ツルゲーネフ、『#italic 父と子#!』"
  nihilism.4.a: "少なくとも、分別がある者が１人はいるようだ。"
  nihilism.4.b: "だが、主人公は勇ましくないか？"
  nihilism.5.t: "黒衣とフォイエルバッハ"
  nihilism.5.d: "[SCOPE.sState('university_nihilist_affected_state').GetName] [SCOPE.sBuilding('university_nihilist_affected_building').GetName] ではニヒリズムの美学や姿勢を受け入れる学生が多くなり、学問における急進主義について多くの関係者から懸念されている。"
- nihilism.5.f: "「私が占める小さな空間は、私がいない、私とは何の関係もない残りの空間に比べれば、限りなく小さなものである。そして、私が生きている期間は、私がいなかったし、これからもいないであろう永遠と比べれば、とても些細なものだ…しかして、この原子、この数学的な点で、血液は循環し、脳は働き、何かを欲している…それは厭わしいことなのだろうか？些細なことではないのか？」" #Turgenev, Fathers and Sons
+ nihilism.5.f: "「私が占める小さな空間は、私がいない、私とは何の関係もない残りの空間に比べれば、限りなく小さなものである。そして、私が生きている期間は、私がいなかったし、これからもいないであろう永遠と比べれば、とても些細なものだ…しかして、この原子、この数学的な点で、血液は循環し、脳は働き、何かを欲している…それは厭わしいことなのだろうか？些細なことではないのか？」\n\n—イワン・ツルゲーネフ、『#italic 父と子#!』"
  nihilism.5.a: "このような人たちにふさわしい教育は、困難から学ぶことだけだ！"
  nihilism.5.b: "これは大学当局の問題だ。"
  nihilism.6.t: "敬意の欠落"
@@ -102,7 +102,7 @@
  nihilism.12.b: "この不条理の背後にある[SCOPE.gsInterestGroup('communist_ig').GetName]が実際に団結することは絶対にありえないだろう。"
  nihilism.13.t: "急騰"
  nihilism.13.d: "政府内のニヒリストシンパは、[SCOPE.gsInterestGroup('devout_ig').GetName]のすべての財産を廃止して強制清算し、[SCOPE.sLaw('current_law_scop').GetName]を即時制定するという策略を立てた。"
- nihilism.13.f: "「砕けるものは砕かなければならない。打撃に耐えるものは生き残るにふさわしいものであり、粉々に飛び散るものはゴミである。いずれにせよ、叩きまくればよいのだ。害はない」" #-Pisarev
+ nihilism.13.f: "「砕けるものは砕かなければならない。打撃に耐えるものは生き残るにふさわしいものであり、粉々に飛び散るものはゴミである。いずれにせよ、叩きまくればよいのだ。害はない」\n\n— ディミトリー・ピーサレフ"
  nihilism.13.a: "[SCOPE.gsInterestGroup('devout_ig').GetName]は滅びるだろう、現実そのものに立ち向かうのだから！"
  nihilism.13.b: "この道は失敗する運命にある！"
  #Coup
@@ -1483,7 +1483,7 @@
  revolution_pulse_events.5.a: "[SCOPE.gsInterestGroup('rural_folk_ig').GetName]は、自分の立場をわきまえることを学ぶべきだな。"
  revolution_pulse_events.5.b: "[SCOPE.gsInterestGroup('landowners_ig').GetName]が平和を守るために譲歩しなければならない。"
  revolution_pulse_events.6.t: "戦艦[SCOPE.sState('ship_name_state').GetStateRegion.GetCityHubName]の逃亡"
- revolution_pulse_events.6.d: "戦艦#bold [SCOPE.sState('ship_name_state').GetStateRegion.GetCityHubName]#!の乗組員は、以前は[SCOPE.sState('potemkin_state').GetName]の[SCOPE.sBuilding('potemkin_naval_base')]に駐留していたが、反乱を起こして船と共に[SCOPE.sCountry('potemkin_final_destination').GetName]に逃亡した。[SCOPE.sCountry('potemkin_final_destination').GetName]の政府は船員たちの身柄引き渡しを拒否している。"
+ revolution_pulse_events.6.d: "戦艦#bold [SCOPE.sState('ship_name_state').GetStateRegion.GetCityHubName]#!の乗組員は、以前は[SCOPE.sState('potemkin_state').GetName]の[SCOPE.sBuilding('potemkin_naval_administration').GetName]に駐留していたが、反乱を起こして船と共に[SCOPE.sCountry('potemkin_final_destination').GetName]に逃亡した。[SCOPE.sCountry('potemkin_final_destination').GetName]の政府は船員たちの身柄引き渡しを拒否している。"
  revolution_pulse_events.6.f: "その大きな鋼鉄の船は、与えられた[ROOT.GetCountry.GetAdjectiveNoFormatting]の旗ではなく、[SCOPE.sCountry('potemkin_final_destination').GetNameNoFormatting]のそれを掲げて港に漕ぎ出した。甲板上の船員たちは歓声を上げながら、新しい故郷の都市の地下に逃げ込む準備をしていた。彼らは、腐った配給や錆びた寝台の恐怖からついに解放されたのだ。\n\nそして、[SCOPE.sState('potemkin_state').GetNameNoFormatting]の貧しい人々は、追跡船が[SCOPE.sState('ship_name_state').GetStateRegion.GetCityHubName]を追い始めるのを見て、ある考えが頭を過ぎった。\n\n「忘れないぞ！」"
  revolution_pulse_events.6.a: "[SCOPE.sCountry('potemkin_final_destination').GetAdjective]政府と交渉して、船を回収するんだ。"
  revolution_pulse_events.6.b: "[SCOPE.sCountry('potemkin_final_destination').GetAdjective]国は裏切り者に協力している！"

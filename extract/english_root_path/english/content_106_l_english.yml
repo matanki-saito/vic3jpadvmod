@@ -36,7 +36,7 @@
  russo_chinese.3.t:0 "The Ruler of the East"
  russo_chinese.3.d:0 "By securing [SCOPE.sState('vladivostok_scope').GetName], the dream of [ROOT.GetCountry.GetAdjective] naval dominion over the Pacific has come closer to reality. The city of [SCOPE.sState('vladivostok_scope').GetPortHubName] will become our new primary port in the East."
  russo_chinese.3.f:0 ""This port can be considered the best of all. It reminds many of Olga, but only smaller than it, warmer and more pleasant. However, there are the same oaks all around, and the same picturesque mountains. In the lowlands the rivers murmur; there are many springs on the banks. Our post set up the other day, with its white tents, looks good in a group of oak trees that have not yet been cut down and have only just been cleared."\n\n— Sergei Maksimov"
- russo_chinese.3.a:0 "Rebase the Siberian flotillas, with all due haste."
+ russo_chinese.3.a:0 "Rebase the Siberian ships, with all due haste."
  russo_chinese.3.b:0 "The port of Vladivostok shall be the finest in our nation."
 
  modifier_vladivostok_navy:0 "The Ruler of the East"
@@ -82,7 +82,7 @@
 
  kazakhstan_events.2.t:0 "The Ride of [SCOPE.sCharacter('kenesary_scope').GetFirstName]"
  kazakhstan_events.2.d:0 "A Cossack-escorted caravan moving across the steppes of [SCOPE.sState('akmolinsk_state').GetStateRegion.GetName] has been assaulted by a large and well-trained band of Kazakh rebels, led by the aristocrat [SCOPE.sCharacter('kenesary_scope').GetFullName]."
- kazakhstan_events.2.f:0 "They came in the night, descending upon the camp from all sides, a contingent of horsemen hundreds strong and so sudden in appearance that it was as if they had been birthed from the seas of grass which surrounded the tents. They slaughtered the pickets within moments, blades clashing and gunshots exchanged between standardized muskets produced in the weapon shops of Tula, and a bewildering array of firearms sourced from half of a continent's leftovers.\n\nIt only took moments for the cacaphony to fade and the riders to vanish, leaving behind only smoldering cloth, and two dozen scarred survivors."
+ kazakhstan_events.2.f:0 "They came in the night, descending upon the camp from all sides, a contingent of horsemen hundreds strong and so sudden in appearance that it was as if they had been birthed from the seas of grass which surrounded the tents. They slaughtered the pickets within moments, blades clashing and gunshots exchanged between standardized muskets produced in the weapon shops of Tula, and a bewildering array of firearms sourced from half of a continent's leftovers.\n\nIt only took moments for the cacophony to fade and the riders to vanish, leaving behind only smoldering cloth, and two dozen scarred survivors."
  kazakhstan_events.2.a:0 "Place the border lines on alert."
  notification_kazakhstan_ride_of_kenesary_notification_name:0 "[SCOPE.sCharacter('kenesary_scope').GetFullName] begins insurgent campaign"
  notification_kazakhstan_ride_of_kenesary_notification_desc:0 "The rebel leader [SCOPE.sCharacter('kenesary_scope').GetFullName] has begun a protracted campaign of military actions against the [SCOPE.sCountry('russia_scope').GetAdjective]s, and their protectorates in the three Zhuzes."

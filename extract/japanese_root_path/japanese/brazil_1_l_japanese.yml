@@ -149,7 +149,7 @@
  brazil_navy.4.a: "素晴らしい！"
  dom_key: "ドム"
  dona_key: "ドナ"
- brz_navy_loyalists: "レベル#Bold 5#!以上の[GetBuildingType('building_naval_base').GetName]を持つすべての [Concept('concept_state', '$concept_states$')]が以下を獲得:"
+ brz_navy_loyalists: "レベル#Bold 5#!以上の[GetBuildingType('building_naval_administration').GetName]を持つすべての[Concept('concept_state', '$concept_states$')]が以下を獲得:"
  #Age of Caudillos
  je_caudillo: "軍事独裁者時代"
  je_caudillo_reason: "#bold 進捗ゲージ#!の状態はさまざまな#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_advance プラス#!または#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_deplete マイナス#!の条件によって決まります。#bold 進捗ゲージ#!が#bold 100#!に達すると、[SCOPE.sCountry('caudillo_country_scope').GetName]の軍有力者の権力が確固たるものになります。\n\n進捗ゲージを枯渇させ、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]を政府から締め出すことで、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の#bold 軍事独裁主義#!を破滅させ、国内の軍有力者の脅威を終わらせることができます。\n\n$je_coup_loc$\n\nスペインからの独立後、植民地政府が解体された。そのあと間もなく権力の空白を埋めたのはカリスマ的軍事指導者。南米の政治の大部分を決めるのはこうした「軍事独裁者」だ。"

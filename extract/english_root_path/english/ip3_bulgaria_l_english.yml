@@ -30,8 +30,9 @@ bulgaria_events.1.c: "This is the beginning of a Bulgarian Renaissance!"
 bulgaria_pursued_greater_yugoslavism_tt: "Pursued #v Greater Yugoslavism#! in the #v $bulgaria_events.1.t$#! Event"
 bulgaria_unlock_yugoslavia_tt: "We will be able to form #v $YUG$#!"
 bulgarian_empire_homeland_tt: "[GetStateRegion('STATE_MACEDONIA').GetName], [GetStateRegion('STATE_EASTERN_SERBIA').GetName] and [GetStateRegion('STATE_EASTERN_THRACE').GetName] will become [GetCulture('bulgarian').GetName] [Concept('concept_homeland','$concept_homelands$')] once acquired"
+bulgarian_empire_claims_tt: "[ROOT.GetCountry.GetName] gains a [concept_claim] on every unowned [concept_state] in [GetGeographicRegion('geographic_region_greater_bulgaria').GetName]"
 
-bulgaria_events.2.t: "Free At Last"
+bulgaria_events.2.t: "Free at Last"
 bulgaria_events.2.d:  "Bulgaria has at last become an independent nation. Who should rule us through the turmoil of change into a prosperous future?"
 #Below quote is straight from the wiki, but it suits well.
 bulgaria_events.2.f: ""Prince Ferdinand, who was a Coburg, was a cousin of my father's, and I remember the latter saying, when we got back to the hotel, that being the youngest of his family he was naturally looked upon as a fool. 'But,' said my father, 'for the fool of the family he has not done so badly for himself and I should not be surprised if he did not prove them all wrong.'" \n\n—Lady Helena Gleichen"

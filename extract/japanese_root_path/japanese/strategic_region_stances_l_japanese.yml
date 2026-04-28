@@ -1,0 +1,18 @@
+﻿l_japanese:
+ # Stances
+ stance_none: "なし"
+ stance_conquer_region: "地域の征服"
+ stance_protect_region: "地域の守護"
+ stance_colonize_region: "地域の植民地化"
+ # AI Values
+ AI_REGION_STANCE_BASE_VALUE: "#b 基本値#!"
+ AI_REGION_STANCE_NUMBER_OF_CLAIMS: "[Concept('concept_claim', '$concept_claims$')]数"
+ AI_REGION_STANCE_CAPITAL_REGION: "[Concept('concept_capital_state', '$concept_capital_state_short$')]の[Concept('concept_strategic_region', '$concept_strategic_region_short$')]"
+ AI_REGION_STANCE_WANTS_TO_OPEN_UP_JAPAN: "#b $JAP$#!を開国させたいと考えています"
+ AI_REGION_STANCE_IS_LOYAL_SUBJECT: "#b 忠実#!な[concept_subject]です"
+ AI_REGION_STANCE_FREE_REAL_ESTATE: "[Concept('concept_state', '$concept_states$')]は[Concept('concept_decentralized_nation', '$concept_decentralized_nations$')]と[Concept('concept_unrecognized_power', '$concept_unrecognized_powers$')]によって支配されています"
+ AI_REGION_STANCE_CIVILIZING_MISSION_RESEARCHED: "[GetTechnology('civilizing_mission').GetName]を調査しました"
+ AI_REGION_STANCE_QUININE_RESEARCHED: "[GetTechnology('quinine').GetName]を調査しました"
+ AI_REGION_STANCE_EXISTING_REGION_STANCES: "既存の$concept_strategic_region_stances_short$"
+ AI_REGION_STANCE_SMALL_COUNTRY: "#v [Country.GetNameNoFormatting]#!は小[concept_country]です"
+ AI_REGION_STANCE_COLONIAL_COUNTRY: "#v [Country.GetNameNoFormatting]#!は[concept_colony]です"

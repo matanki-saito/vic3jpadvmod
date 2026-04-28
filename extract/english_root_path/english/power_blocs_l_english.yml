@@ -59,6 +59,8 @@
  principle_group_companies_desc: "Encouraging the usage of [Concept('concept_company', '$concept_companies$')] and [Concept('concept_company_charter', '$concept_company_charters$')] to prosper."
  principle_group_shared_canon: "Shared Canon"
  principle_group_shared_canon_desc: "Shared traditions and histories give the [Concept('concept_power_bloc_member', '$concept_power_bloc_members_short$')] of the $concept_power_bloc$ a common vocabulary for governance, education, and public life."
+ principle_group_navy: "Maritime Supremacy"
+ principle_group_navy_desc: "[Concept('concept_power_bloc_member', '$concept_power_bloc_members_short$')] commit to expanding naval capacity and shipbuilding infrastructure to secure dominance at sea and safeguard [concept_trade], territory, and strategic [Concept('concept_interest', '$concept_interests$')]."
 
  principle_construction_1_desc: "$principle_group_construction_desc$"
  principle_construction_2_desc: "$principle_group_construction_desc$"
@@ -126,6 +128,9 @@
  principle_shared_canon_1_desc: "$principle_group_shared_canon_desc$"
  principle_shared_canon_2_desc: "$principle_group_shared_canon_desc$"
  principle_shared_canon_3_desc: "$principle_group_shared_canon_desc$"
+ principle_navy_1_desc: "$principle_group_navy_desc$"
+ principle_navy_2_desc: "$principle_group_navy_desc$"
+ principle_navy_3_desc: "$principle_group_navy_desc$"
 
  POWER_STRUGGLE_DESC: "#bold Power Struggle#!\nContender: [Country.GetName]\nStart date: $START_DATE|v$\nDue date: $END_DATE|v$\nDuration: $DURATION$[ConcatIfNeitherEmpty('\n', '$DURATION_DESC$')]\nPrestige to uphold for the contender: $THRESHOLD|v$"
  POWER_STRUGGLE_DURATION_BASE: "$TAB$Base: $TIME$"

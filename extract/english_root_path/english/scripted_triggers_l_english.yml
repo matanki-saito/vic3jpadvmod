@@ -57,10 +57,10 @@ STATE_IS_IN_CENTRAL_ASIA_GLOBAL_DESC_NOT: "[concept_state] is #b not#! in [conce
 STATE_IS_IN_CENTRAL_ASIA_DESC: "[STATE.GetName] is in [concept_georegion_central_asia]"
 STATE_IS_IN_CENTRAL_ASIA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_central_asia]"
 
-STATE_IS_IN_INDIA_GLOBAL_DESC: "[concept_state] is in [concept_georegion_india]"
-STATE_IS_IN_INDIA_GLOBAL_DESC_NOT: "[concept_state] is #b not#! in [concept_georegion_india]"
-STATE_IS_IN_INDIA_DESC: "[STATE.GetName] is in [concept_georegion_india]"
-STATE_IS_IN_INDIA_DESC_NOT: "[STATE.GetName] is #b not#! in [concept_georegion_india]"
+STATE_IS_IN_INDIA_GLOBAL_DESC: "[concept_state] is in [GetGeographicRegion('geographic_region_india').GetName]"
+STATE_IS_IN_INDIA_GLOBAL_DESC_NOT: "[concept_state] is #b not#! in [GetGeographicRegion('geographic_region_india').GetName]"
+STATE_IS_IN_INDIA_DESC: "[STATE.GetName] is in [GetGeographicRegion('geographic_region_india').GetName]"
+STATE_IS_IN_INDIA_DESC_NOT: "[STATE.GetName] is #b not#! in [GetGeographicRegion('geographic_region_india').GetName]"
 
 STATE_IS_IN_EAST_ASIA_GLOBAL_DESC: "[concept_state] is in [concept_georegion_east_asia]"
 STATE_IS_IN_EAST_ASIA_GLOBAL_DESC_NOT: "[concept_state] is #b not#! in [concept_georegion_east_asia]"
@@ -132,10 +132,10 @@ COUNTRY_IS_IN_CENTRAL_ASIA_GLOBAL_DESC_NOT: "[concept_country] is #b not#! in [c
 COUNTRY_IS_IN_CENTRAL_ASIA_DESC: "[COUNTRY.GetName] is in [concept_georegion_central_asia]"
 COUNTRY_IS_IN_CENTRAL_ASIA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_central_asia]"
 
-COUNTRY_IS_IN_INDIA_GLOBAL_DESC: "[concept_country] is in [concept_georegion_india]"
-COUNTRY_IS_IN_INDIA_GLOBAL_DESC_NOT: "[concept_country] is #b not#! in [concept_georegion_india]"
-COUNTRY_IS_IN_INDIA_DESC: "[COUNTRY.GetName] is in [concept_georegion_india]"
-COUNTRY_IS_IN_INDIA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [concept_georegion_india]"
+COUNTRY_IS_IN_INDIA_GLOBAL_DESC: "[concept_country] is in [GetGeographicRegion('geographic_region_india').GetName]"
+COUNTRY_IS_IN_INDIA_GLOBAL_DESC_NOT: "[concept_country] is #b not#! in [GetGeographicRegion('geographic_region_india').GetName]"
+COUNTRY_IS_IN_INDIA_DESC: "[COUNTRY.GetName] is in [GetGeographicRegion('geographic_region_india').GetName]"
+COUNTRY_IS_IN_INDIA_DESC_NOT: "[COUNTRY.GetName] is #b not#! in [GetGeographicRegion('geographic_region_india').GetName]"
 
 COUNTRY_IS_IN_EAST_ASIA_GLOBAL_DESC: "[concept_country] is in [concept_georegion_east_asia]"
 COUNTRY_IS_IN_EAST_ASIA_GLOBAL_DESC_NOT: "[concept_country] is #b not#! in [concept_georegion_east_asia]"

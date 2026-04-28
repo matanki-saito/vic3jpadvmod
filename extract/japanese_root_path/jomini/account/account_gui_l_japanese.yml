@@ -63,7 +63,7 @@
  POPS_invalid-script-code: "クライアント失敗（スクリプト無効）"
  J_POPS_BIND_ACCOUNT_TO_STEAM: "アカウントをSteamと統合"
  J_POPS_UNBIND_ACCOUNT_TO_STEAM: "アカウントをSteamから解除"
- J_CREATE_PROFILE: "プロフィール作成"
+ J_CREATE_PROFILE: "プロフィールをアップデート"
  j_pops_profile_error_username_exists: "このユーザー名はすでに使用されています\n別のユーザー名を入力してください"
  j_pops_profile_error_profile_exists: "すでにプロフィール名があります"
  j_pops_profile_error_lower_limit: "ユーザー名は3文字以上である必要があります"

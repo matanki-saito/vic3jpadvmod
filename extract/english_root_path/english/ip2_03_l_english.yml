@@ -6,8 +6,9 @@
  has_any_secessionists_fail_tt: "Any seceding countries have broken away from [ROOT.GetCountry.GetName]."
  bic_collapse_var_tt: "[ROOT.GetCountry.GetName] is no longer a [concept_subject]"
  secession_war_in_progress_tt: "A [Concept('concept_political_movement','$movement_cultural_minority$')] is [Concept('concept_secession','Seceding')]"
+ bureaucrats_no_shortage_trigger: "[ROOT.GetCountry.GetAdjectiveNoFlag] [concept_bureaucracy] is greater or equal to #v 0#! and the country is #bold not#! about to enter a [concept_bureaucracy] deficit"
 
- utilitarian.1.t: "Good Governance For All"
+ utilitarian.1.t: "Good Governance for All"
  utilitarian.1.d:1 "The principles of [GetIdeology('ideology_utilitarian_millian').GetName] ideology now play a central role in [ROOT.GetCountry.GetAdjective] policymaking. The administration has been reformed to function like a well-oiled machine."
  utilitarian.1.f:1 "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]'s commitment to Utilitarianism has deepened with this success in steering the [ROOT.GetCountry.GetNameNoFormatting]'s development. While some still question the value of [SCOPE.sCharacter('relevant_character').GetLastNameNoFormatting]'s approach to colonial administration, the [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] have stepped forward to advocate for utilitarian approach.\n\nAs the people of India carry on with their lives, time will tell if the fruit of the administration's labor will be as lasting and far reaching as all hope. The success is a beacon for future reform."
  utilitarian.1.f2: "The administration's commitment to Utilitarianism has deepened with this success in steering the [ROOT.GetCountry.GetNameNoFormatting]'s development. While some still question the value of this approach to colonial administration, staunch supporters have stepped forward to advocate for a utilitarian approach.\n\nAs the people of India carry on with their lives, time will tell if the fruit of the administration's labor will be as lasting and far reaching as all hope. The success is a beacon for future reform."
@@ -90,7 +91,7 @@
  utilitarian.10.a: "Proceed with the census."
  utilitarian.10.b: "What purpose would it serve?"
 
- utilitarian_census_in_progress_cost: "Census In Progress"
+ utilitarian_census_in_progress_cost: "Census in Progress"
  utilitarian_no_census: "Rebuked Proposal"
  util_caste_divisions: "Caste Division Highlighted"
  util_authority: "No Census, No Problem"
@@ -126,7 +127,7 @@
  do_control_the_press: "Controlling the Press"
  not_control_the_press: "Bad Press"
 
- india_railway.2.t: "Stealing From The Crown"
+ india_railway.2.t: "Stealing from the Crown"
  india_railway.2.d: "Deliberations have started in the train robbery trial where the accused revolutionaries are charged with robbery and murder."
  india_railway.2.f: "The roar of the crowd gathered outside the courtroom warms the hearts of the defendants. The same roar makes it hard to hear the prosecutor. Relentless, he strives on.\n\n"Hijacking, possession of illegal firearms, and murder. These in itself are a terrible act your honor. But these shameless men did them all, only to commit an even more heinous crime. They tried to steal from the very crown that cares for them. The crowd outside would call them heroes, I believe the law would call them traitors.""
  india_railway.2.a: "Make an example - interrogate them."
@@ -227,7 +228,7 @@
 
  modifier_favored_by_wazir: "Favorites of the Wazir"
 
- sikh_empire.1.t: "More Than A Wedding"
+ sikh_empire.1.t: "More Than a Wedding"
  sikh_empire.1.d: "In a great feat of diplomatic and political performance, the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has invited the country's elite and foreign representatives to a lavish wedding for the prince."
  sikh_empire.1.f: "The courtly chronicler in the Maharaja's employ records the festivities in great detail:\n\n#italic "Fireworks of all kinds were displayed. A moving throne and 'Shalabagh' which were adorned and decorated with various kinds of flowers ... were carried over the shoulders of about 100 men. #!" # Sohan Lal Suri
  sikh_empire.1.a: "Welcome the foreign delegates."
@@ -455,7 +456,7 @@
  erode_venkatappa_ramasamy_appears_tt: "E. V. Ramasamy appears in [ROOT.GetCountry.GetNameNoFormatting]"
  an_agitator_appears_tt: "An [concept_agitator] appears in [ROOT.GetCountry.GetNameNoFormatting]"
 
- caste_conflict.2.t: "Equality At Last"
+ caste_conflict.2.t: "Equality at Last"
  caste_conflict.2.d: "The success of the Dravidian Movement's agenda has overseen the enactment of a new law and improved quality of life for non-Brahmins."
  caste_conflict.2.f: "The battle was far from over, this Praveen Pallar knew. Yet he could not help but smile as he took his seat in the simple government office, the fan above him gently cooling the sweat of his back.\n\nAcross from him he saw a Mr. Iyer, and to his left sat a Mr. Agastya. High caste Brahmins both. And here he was, a Pallar, holding the same position and pay as them. Neither seemed to meet his eyes. Yes, there was still work to be done, but for today, this would do.  He thanked his allies who had marched and protested with him and flipped open his first file."
  caste_conflict.2.a: "The [SCOPE.gsInterestGroup('rural_folk_ig_scope').GetName] has proven their competence."
@@ -473,7 +474,7 @@
  caste_conflict.4.f: "The two party leaders sat across from each other, and their aides listened intently as the two minds battled for the second hour now.\n\n"Please, you must make the Justice Party see reason," [SCOPE.sCharacter('intelligentsia_leader_scope').GetFullNameNoFormatting] pleaded. "We must fight together, or we will fail!"\n\n"You will have us face the British lathis by your side, but tell me, when tomorrow comes, will you also have us govern by your side? The British have done me no more wrong than you have. Indeed, much of their deeds have been guided by your hands.""
  caste_conflict.4.a: "That manifesto is unpatriotic!"
  caste_conflict.4.b: "Perhaps the manifesto makes valid points."
- argument_to_be_made: "Argument To Be Made"
+ argument_to_be_made: "Argument to Be Made"
 
  caste_conflict.5.t: "Untouchables and Outcasts"
  caste_conflict.5.d: "To assert their rights, the Dalit community drank from a public water tank that they had been denied access to. This nonviolent protest was led by [SCOPE.sCharacter('character_scope').GetFullName] and, in turn, met with a protest by Brahmin priests. "
@@ -481,5 +482,5 @@
  caste_conflict.5.a: "The actions of the priests are unacceptable."
  caste_conflict.5.b: "Let them keep each other distracted."
 
- opposition_to_untouchability: "Opposition To Untouchability"
+ opposition_to_untouchability: "Opposition to Untouchability"
  priestly_polluted_water: "Polluted Water Tank"

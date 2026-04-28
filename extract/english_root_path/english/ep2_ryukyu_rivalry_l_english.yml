@@ -1,0 +1,114 @@
+﻿l_english:
+
+# Progress Bars
+ je_ryukyu_rivalry_score_bar: "#tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#! over [SCOPE.sCountry('ryukyu_scope').GetName]"
+ je_ryukyu_rivalry_score_bar_desc: "[SCOPE.sCountry('japan_scope').GetNameNoFormatting]"
+ je_ryukyu_rivalry_score_bar_second_desc: "[SCOPE.sCountry('china_scope').GetNameNoFormatting]"
+
+ je_ryukyu_rivalry_progress_bar: "Ryukyu #tooltippable;tooltip:ryukyu_rivalry_assertiveness_tt #b Assertiveness#!#!"
+ je_ryukyu_rivalry_progress_bar_desc: "Ryukyu asserts neutrality #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!"
+
+# # Scripted Buttons
+ je_ryukyu_rivalry_reaffirm_suzerainty_button: "[SCOPE.GetRootScope.GetCountry.GetCustom('ryukyu_rivalry_reaffirm_suzerainty')]"
+je_ryukyu_rivalry_reaffirm_suzerainty_japan: "Reaffirm Suzerainty"
+je_ryukyu_rivalry_reaffirm_suzerainty_china: "Reaffirm Tributary Bonds"
+ je_ryukyu_rivalry_reaffirm_suzerainty_button_desc: "Ryukyu's court favors our opponent. We must remind them of their obligations to our domain, and bring them back under our influence."
+ ryukyu_rivalry_reaffirm_suzerainty_button_tt: "[ROOT.GetCountry.GetName] exerts less #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#! over [SCOPE.sCountry('ryukyu_scope').GetName] than its opponent"
+ ryukyu_rivalry_small_influence_gain_self_tt: "[ROOT.GetCountry.GetName] gains #green 2#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#!"
+ ryukyu_rivalry_medium_influence_gain_self_tt: "[ROOT.GetCountry.GetName] gains #green 3#! monthly #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#! for #v 5 years#!"
+ ryukyu_rivalry_large_influence_gain_self_tt: "[ROOT.GetCountry.GetName] gains #green 3#! monthly #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#! until end of [concept_journal_entry]"
+ ryukyu_rivalry_small_influence_loss_self_tt: "[ROOT.GetCountry.GetName] has lost #red 1#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#!"
+ ryukyu_rivalry_medium_influence_loss_self_tt: "[ROOT.GetCountry.GetName] has lost #red 2#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#!"
+ ryukyu_rivalry_large_influence_loss_self_tt: "[ROOT.GetCountry.GetName] has lost #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#!"
+
+ ryukyu_rivalry_large_influence_loss_japan_tt: "[SCOPE.sCountry('japan_scope').GetName] loses #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#!" 
+ ryukyu_rivalry_large_influence_loss_china_tt: "[SCOPE.sCountry('china_scope').GetName] loses #red 10#! #tooltippable;tooltip:ryukyu_rivalry_sway_tt #b Sway#!#!"
+
+ ryukyu_rivalry_send_general_tt: "[ROOT.GetCountry.GetName] permanently assigns a [concept_general] to [SCOPE.sCountry('ryukyu_scope').GetName]"
+
+ je_ryukyu_rivalry_sway_merchants_button: "Send Trade Supervisors"
+ je_ryukyu_rivalry_sway_merchants_button_desc: "By overseeing Naha's harbor, we can place envoys at court to sway which foreign powers gain access to trade and tribute."
+ ryukyu_rivalry_sway_merchants_button_tt: "[ROOT.GetCountry.GetName] own a level #v 2#! or higher [GetBuildingType('building_port').GetName] in the [SCOPE.sCountry('ryukyu_scope').GetAdjective] [concept_capital_state]"
+ je_ryukyu_rivalry_inspect_defenses_button: "Inspect Coastal Defenses"
+ je_ryukyu_rivalry_inspect_defenses_button_desc: "With military access secured, we can send a trusted general to examine Ryukyu's fortifications, ensuring walls and watchtowers reflect our oversight and strategic intent."
+ ryukyu_rivalry_inspect_defenses_button_tt: "[ROOT.GetCountry.GetName] has #v Military Access#! [concept_treaty] with [SCOPE.sCountry('ryukyu_scope').GetName]"
+ je_ryukyu_rivalry_honor_kikoeogimi_button: "Honor the Kikoe-ōgimi"
+ je_ryukyu_rivalry_honor_kikoeogimi_button_desc: "Pay tribute to the Kikoe-ōgimi, whose authority over court rituals and sacred observances can lend weight to our influence in Ryukyu's councils."
+
+# Modifiers
+ modifier_ryukyu_rivalry_overreach: "Overextended Suzerainty"
+ modifier_ryukyu_rivalry_landowner_discontent: "Ryukyu Rivalry Worries"
+ modifier_ryukyu_rivalry_merchant_influence_strain: "Port Influence Burden"
+ modifier_ryukyu_strained_diplomatic_corps: "Intensified Diplomatic Presence"
+ modifier_ryukyu_rivalry_failed_ryukyu: "Lost Ryukyu"
+ modifier_ryukyu_rivalry_succeeded_ryukyu: "Gained Ryukyu"
+ modifier_ryukyu_rivalry_officer_training: "Inspecting Ryukyuan Defenses"
+ modifier_ryukyu_rivalry_secured_neutrality: "Secured Neutrality"
+ modifier_ryukyu_rivalry_southern_secured: "Southern Approaches Secured"
+ modifier_ryukyu_rivalry_scholars_pleased: "Tributary Order Upheld"
+ modifier_ryukyu_rivalry_honor_kikoeogimi: "Ceremonial Entanglement"
+ modifier_ryukyu_rivalry_diplomatic_appeasement: "Diplomatic Appeasement"
+ modifier_ryukyu_rivalry_armed_forces_discontent: "Concerned About Inaction"
+
+# Events
+ ryukyu_rivalry.1.t: "Tributary Deliberations"
+ ryukyu_rivalry.1.d: "[SCOPE.sCountry('ryukyu_scope').GetName] increasingly favors [ROOT.GetCountry.GetName]. In response, [SCOPE.sCountry('rival_scope').GetName] has hastened her own diplomatic efforts, providing tokens of respect while quietly reinforcing the obligations of [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]'s tributary relationship."
+ryukyu_rivalry.1.f: "Sealed boxes had been set with great care in the Ryukyuan hall. Courtiers whispered behind screens as letters were read aloud: one sealed with the red-stamped script of China, another bearing the careful calligraphy of Japan. With every phrase, they outlined duties and promises, as two powers tried to pull the kingdom their way."
+
+ ryukyu_rivalry.1.a: "Issue a formal protest to the [SCOPE.sCountry('rival_scope').GetName]."
+ ryukyu_rivalry.1.b: "Leverage our established ties in [SCOPE.sCountry('ryukyu_scope').GetName]."
+ ryukyu_rivalry.1.c: "Remind the court of our long-standing patronage."
+ ryukyu_rivalry.1.e: "This matter does not warrant intervention."
+ ryukyu_rivalry.1.tt1: "[SCOPE.sCountry('ryukyu_scope').GetName] is subject of [ROOT.GetCountry.GetName] with [concept_liberty_desire] lower than #v 25#!"
+ ryukyu_rivalry.1.tt2: "[SCOPE.sCountry('ryukyu_scope').GetName] is not a subject of [ROOT.GetCountry.GetName] with at least #v Amicable#! [concept_relations]"
+ ryukyu_rivalry.1.tt3: "[ROOT.GetCountry.GetName] owns at least 3 [Concept('concept_building','$concept_buildings$')] in [SCOPE.sCountry('ryukyu_scope').GetCapital.GetName]"
+
+ryukyu_rivalry.2.t: "Rivalry at the Ports"
+ryukyu_rivalry.2.d: "The presence of [SCOPE.sCountry('rival_scope').GetAdjective] envoys at [SCOPE.sCountry('ryukyu_scope').GetName]'s ports has drawn the attention and cooperation of many [GetCulture('ryukyuan').GetName] merchants, strengthening their position in the eyes of the court. Our own sway has diminished in turn."
+ryukyu_rivalry.2.f: "Merchant ledgers had closed and reopened under different seals. Those who once sought our assurances now lingered in other reception halls, speaking of revised tariffs and safer passage. Coin, it seemed, had found a more persuasive steward."
+ryukyu_rivalry.2.a: "Foul play."
+
+ryukyu_rivalry.3.t: "Visiting General in [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]"
+ryukyu_rivalry.3.d: "A general, [SCOPE.sCharacter('ryukyu_general_scope').GetFullName], with a retinue of officers, has arrived at [SCOPE.sCountry('ryukyu_scope').GetName], seemingly to inspect the coastal defenses. Their presence has been acknowledged with respectful submission, strengthening [SCOPE.sCountry('rival_scope').GetName]'s influence at court while subtly eroding our own."
+ryukyu_rivalry.3.f: "The general strode along the ramparts with [SCOPE.sCharacter('ryukyu_general_scope').GetHerHis] officers, taking note of every cannon and watchtower. The Ryukyuan forces fell into formation, well-aware of evaluating eyes. Every gesture and salute would help tighten the invisible threads woven between the two powers."
+ryukyu_rivalry.3.a: "A dangerous escalation."
+ryukyu_rivalry_risk_of_confrontation: "@warning! If forces from both [SCOPE.sCountry('china_scope').GetName] and [SCOPE.sCountry('japan_scope').GetName] are inspecting coastal defenses, a #r confrontation#! may break out"
+
+ryukyu_rivalry.4.t: "Visiting General"
+ryukyu_rivalry.4.d: "A general, [SCOPE.sCharacter('ryukyu_general_scope').GetFullName], with a retinue of officers from [SCOPE.sCountry('from_scope').GetName] has been received in [SCOPE.sCountry('ryukyu_scope').GetName], eager to inspect our coastal defenses. Their presence has been acknowledged with respectful submission."
+ryukyu_rivalry.4.f: "$ryukyu_rivalry.3.f$"
+ryukyu_rivalry.4.a: "Keep a close eye on them."
+ryukyu_rivalry_officer_arrives: "A [concept_general] from [SCOPE.sCountry('from_scope').GetName] becomes available"
+
+ryukyu_rivalry.5.t: "The Fate of [SCOPE.sCountry('ryukyu_scope').GetNameNoFormatting]"
+ryukyu_rivalry.5.d_victor: "Our efforts in [SCOPE.sCountry('ryukyu_scope').GetName] have borne fruit. Through sustained diplomatic, economic, and political pressure, their court now looks to us for guidance, and the question of their sovereignty has been resolved in our favor."
+ryukyu_rivalry.5.d_loser: "Despite our efforts, [SCOPE.sCountry('victor_scope').GetName] has secured decisive sway over [SCOPE.sCountry('ryukyu_scope').GetName]. Their court has accepted a new political reality, placing the islands firmly within [SCOPE.sCountry('victor_scope').GetNameNoFormatting]'s sphere."
+ryukyu_rivalry.5.d_ryu: "The balance we sought to maintain can no longer be sustained. Under mounting pressure from [SCOPE.sCountry('victor_scope').GetName], our court has accepted a new political arrangement. The future of [SCOPE.sCountry('ryukyu_scope').GetName] will now unfold under their ascendancy."
+ryukyu_rivalry.5.f_annexed: "Proclamations, written in ink still fresh on seals issued in [SCOPE.sCountry('victor_scope').GetCapital.GetName], were read in Naha's market square. [SCOPE.sCountry('ryukyu_scope').GetAdjectiveNoFormatting] banners were taken down and replaced with the ruler's standard. By nightfall, the administrative office had been established, and new edicts posted."
+ryukyu_rivalry.5.f_subject: "Proclamations, written in ink still fresh on seals issued in [SCOPE.sCountry('victor_scope').GetCapital.GetNameNoFormatting], were read in Naha's market square. Each decree would define [SCOPE.sCountry('ryukyu_scope').GetName]'s new place within the realm. Long a tributary to distant courts, the kingdom now saw its magistrates bound by formal obligations to a greater power. By nightfall, its course had been set."
+ryukyu_rivalry_ryukyu_vassalise_tt: "[SCOPE.sCountry('ryukyu_scope').GetName] becomes a [SCOPE.sCountry('victor_scope').GetName] [concept_puppet]"
+ryukyu_rivalry_ryukyu_transfer_subject_tt: "[SCOPE.sCountry('ryukyu_scope').GetName] is transferred as a [concept_subject] to [SCOPE.sCountry('victor_scope').GetName]"
+ryukyu_rivalry_ryukyu_annex_tt: "[SCOPE.sCountry('victor_scope').GetName] will annex [SCOPE.sCountry('ryukyu_scope').GetName]"
+ryukyu_rivalry.5.a: "So it is decided."
+
+ryukyu_rivalry.6.t: "Confrontation in [SCOPE.sCountry('ryukyu_scope').GetCapital.GetNameNoFormatting]"
+ryukyu_rivalry.6.d_brawl: "Officers dispatched by [SCOPE.sCountry('japan_scope').GetName] and [SCOPE.sCountry('china_scope').GetName] have come to blows while inspecting the coastal defenses of [SCOPE.sCountry('ryukyu_scope').GetName]. The dispute has resulted in a death, drawing anxious glances from the Ryukyuan court."
+ryukyu_rivalry.6.d_accident: "Forces from [SCOPE.sCountry('japan_scope').GetName] and [SCOPE.sCountry('china_scope').GetName] sent to inspect coastal defenses have overlapped along the same fortifications in [SCOPE.sCountry('ryukyu_scope').GetName], causing confusion among the garrison and a brief exchange of fire."
+ryukyu_rivalry.6.d_fire: "A fire has broken out within the lodgings assigned to the foreign inspection missions in [SCOPE.sCountry('ryukyu_scope').GetName], consuming the quarters of the [SCOPE.sCountry('japan_scope').GetAdjective] and [SCOPE.sCountry('china_scope').GetAdjective] contingents. The cause remains unclear, though local officials whisper of misplaced lanterns."
+ryukyu_rivalry.6.f: "Officer Kaimon ran between watchtowers and storehouses, passing orders to the guards. Every command shouted, contradicted, and repeated in quick succession. Though calmness eventually returned, Kaimon had been reminded of how competing missions between foreign powers could expose Ryukyu's fragile situation."
+ryukyu_rivalry.6.a: "Tensions are escalating."
+ryukyu_rivalry_ryukyu_confrontation_tt1: "[SCOPE.sCountry('japan_scope').GetAdjective] and [SCOPE.sCountry('china_scope').GetAdjective] [concept_infamy] increased by #v 6#!"
+
+ryukyu_rivalry.7.t: "The Ryukyuan Decree"
+ryukyu_rivalry.7.d_ryukyu: "After years of careful observation and subtle diplomacy, our council has declared its intent to govern its affairs without external interference. The court has set firm limits on outside influence, and enshrined the primacy of its own rituals, ministers, and traditional councils. The kingdom now charts its own course."
+ryukyu_rivalry.7.d: "After years of careful observation and subtle diplomacy, [SCOPE.sCountry('ryukyu_scope').GetName] has cast off our influence and declared its intent to govern its affairs without external interference. The court has set firm limits on our presence, maintaining its rituals, ministers, and traditional councils as the kingdom turns away from our authority."
+ryukyu_rivalry.7.f: "Seals and tribute registers had been torn and scattered across the polished floors of Shuri Castle. In the audience halls, the influences of foreign powers were still felt, but no longer dictated action. Ryukyu's path would unfold in the form of a fragile neutrality, gained through patient diplomacy."
+ryukyu_rivalry.7.a: "The question of allegiance is settled."
+ryukyu_rivalry.7.b: "The use of force remains available to us."
+
+ryukyu_rivalry.8.t: "The Hidden Domain"
+ryukyu_rivalry.8.d: "With [SCOPE.sCountry('japan_scope').GetName] opening its ports, the long-dormant question of  [SCOPE.sCountry('ryukyu_scope').GetName]'s allegiance has resurfaced. For generations, the kingdom has walked a careful line. Outwardly a tributary of  [SCOPE.sCountry('china_scope').GetName], yet quietly maintaining allegiance to [SCOPE.sCountry('japan_scope').GetNameNoFormatting]. Both powers must now consider how to assert their influence."
+ryukyu_rivalry.8.f: "Lanterns glowed along the corridors of Shuri Castle, casting light on vermilion beams which the kings of Chūzan had raised in their great days. Beneath the painted ceilings, clerks laid tribute beside Satsuma decrees. The court had long balanced between investiture from the Middle Kingdom and the shadow of Kagoshima. Calmness endured for now, but the question of allegiance would soon demand its full attention."
+ryukyu_rivalry.8.a: "The matter remains unsettled."
+
+

@@ -418,7 +418,7 @@
  ignored_fascist_leader_ig_modifier: "無視されたファシストリーダー"
  je_fascism_2: "無我の国家"
  je_fascism_2_reason: "安全な国は国内が安全でなければなりません。裏切り者や策略家はどこにでもいます。我々は彼らに立ち向かうことができなければいけません。"
- fascism_2_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt 社会主義者#!または[GetIdeology('ideology_radical').GetName]のリーダーを持つ利益団体はすべて[concept_marginalized]"
+ fascism_2_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt 社会主義者#! または[GetIdeology('ideology_radical').GetName]の[concept_leader]を持つ利益団体はすべて[concept_marginalized]"
  fascism_3_tt: "#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt 社会主義者#!または[GetIdeology('ideology_radical_movement').GetName]の[concept_political_movement]はすべて、#bold 周縁集団#!であるか、#bold 抑圧#!されている"
  fascism_events.3.t: "組織化された多数派"
  fascism_events.3.d: "我が国の街路は人々の安息の場となっています。昼夜を問わず警察官が彼らの安全を守り、我が国のファシズム政府がて扇動者たちを窮地へと追い込んでいます。"

@@ -82,3 +82,6 @@
  LIBERTY_DESIRE_SHARED_PRIMARY_CULTURE_MIX: "[concept_fervor] of [concept_primary_cultures] mix"
  LIBERTY_DESIRE_NEGATIVE_OVERLORD_ALLIANCES: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]'s [Concept('concept_alliance','$concept_alliances$')] and [Concept('concept_defensive_pact','$concept_defensive_pacts$')]"
  LIBERTY_DESIRE_OVERLORD_ARMY_POWER_PROJECTION_DIFFERENCE_10_0_NEGATIVE: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]'s overlord [SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetOverlord.GetName]'s [concept_army_power_projection] over #v 10.0x#! that of [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName] (Currently #v [SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.MakeScope.ScriptValue('overlords_overlord_army_projection_comparison')|v1]x#!)"
+
+# Overlord laws & thingamabobs
+ LIBERTY_DESIRE_WEEKLY_CHANGE_OVERLORD_ISOLATIONISM: "Overlord has [GetLawType('law_isolationism').GetName] [concept_law]"

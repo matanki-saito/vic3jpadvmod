@@ -112,6 +112,11 @@
  prestige_good_russia_iron: "ロシア産鉄"
  prestige_good_philips_chapel_radio: "チャペル無線"
  prestige_good_grand_strategy_games: "グランドストラテジーゲーム"
+ prestige_good_java_coffee: "ジャワコーヒー"
+ prestige_good_ferranti_radios: "フェランティのラジオ"
+ prestige_good_oerlikon_engines: "エリコンのエンジン"
+ prestige_good_white_star_liners: "ホワイト・スター・ライナー"
+ prestige_good_kikkoman_soy_sauce: "キッコーマンの醤油"
  #IP3 Goods
  prestige_good_basma_tobacco: "バスマタバコ"
  prestige_good_acorn_fed_pork: "ベジョータ豚"

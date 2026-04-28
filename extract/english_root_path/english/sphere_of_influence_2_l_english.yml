@@ -39,10 +39,10 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
  greater_khorasan_button_tt: "Depending on our mutual [concept_relations], [SCOPE.sCountry('britain_scope').GetName] may react negatively to our occupation of [SCOPE.sStateRegion('herat_scope').GetName]."
 
  persian_baluchistan_button: "Pacify the Turkmens"
- persian_baluchistan_button_desc: "To our north, unruly [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] tribes defy our authority by raiding our lands, abducting thousands of our subjects every year to be sold off in the great slave markets of Bukhara and Khiva — ever while squatting on rightful Persian lands. Let us kill two birds with one stone and force these bandits to heel."
+ persian_baluchistan_button_desc: "To our north, unruly [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] tribes defy our authority by raiding our lands, abducting thousands of our subjects every year to be sold off in the great slave markets of Bukhara and Khiva—ever while squatting on rightful Persian lands. Let us kill two birds with one stone and force these bandits to heel."
 
  je_conquest_of_central_asia_turkmen_button: "Pacify the Turkmens"
- je_conquest_of_central_asia_turkmen_button_desc: "To our south, unruly [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] tribes defy our authority by raiding our lands, refusing to recognize the authority of any officer, tsar, or khan, and not paying a coin in taxes to anyone — ever while squatting on rightful Russian lands. Let us kill two birds with one stone and force these bandits to heel."
+ je_conquest_of_central_asia_turkmen_button_desc: "To our south, unruly [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] tribes defy our authority by raiding our lands, refusing to recognize the authority of any officer, tsar, or khan, and not paying a coin in taxes to anyone—ever while squatting on rightful Russian lands. Let us kill two birds with one stone and force these bandits to heel."
 
  modifier_turkmen_subjugation: "Turkmen Pacification Campaigns"
  modifier_turkmen_logistics: "Turanian Logistics"
@@ -96,7 +96,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  persia_events.5.t: "The Slaves of [SCOPE.sState('persia_slave_liberate_state_scope').GetCityHubName]"
  persia_events.5.d: "With the capture of [SCOPE.sState('persia_slave_liberate_state_scope').GetName], we have encountered large numbers of [SCOPE.sCulture('persian_culture').GetName] slaves. Their relatives clamor for their freedom, but manumission will likely result in their current Turkic masters' anger."
- persia_events.5.f: ""Agha, years back, while on assignment, I stood in a Bukharan bazaar observing the sale of a young Persian girl — lost in grief and treated with the grossest brutality by her master.\n\nThen I was powerless. A stranger in their lands, without the means to ransom her. My heart burned, and I became nothing. 'Inshaallah' I swore, 'a day will come'.""
+ persia_events.5.f: ""Agha, years back, while on assignment, I stood in a Bukharan bazaar observing the sale of a young Persian girl—lost in grief and treated with the grossest brutality by her master.\n\nThen I was powerless. A stranger in their lands, without the means to ransom her. My heart burned, and I became nothing. 'Inshaallah' I swore, 'a day will come'.""
  persia_events.5.a: "Bismillah, unshackle every Persian found."
  persia_events.5.b: "Free them, and facilitate their relocation."
  persia_events.5.c: "Leave them in place, they are not worth the trouble."
@@ -253,7 +253,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  lobby_events.23.t: "The Absolutist Ideal"
  lobby_events.23.d: "Within the [SCOPE.gsInterestGroup('relevant_ig_scope').GetName], [SCOPE.sCountry('relevant_country_scope').GetName] is being increasingly hailed as an example of absolutist rule exercised properly, with a near cult of reverence forming around its[SCOPE.sCountry('relevant_country_scope').GetRuler.GetCustom('ageist_adjective')] [SCOPE.sCountry('relevant_country_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_country_scope').GetRuler.GetFullName]."
- lobby_events.23.f: "While few of the club's members, if any, would want the [SCOPE.sCountry('relevant_country_scope').GetAdjectiveNoFormatting] [SCOPE.sCountry('relevant_country_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_country_scope').GetRuler.GetHerselfHimself] to rule from [ROOT.GetCountry.GetCapital.GetCityHubName] under the present circumstances, they found in [SCOPE.sCountry('relevant_country_scope').GetRuler.GetHerHim] a source of inspiration — a model for what [ROOT.GetCountry.GetNameNoFormatting] could have been, had only fate willed it differently."
+ lobby_events.23.f: "While few of the club's members, if any, would want the [SCOPE.sCountry('relevant_country_scope').GetAdjectiveNoFormatting] [SCOPE.sCountry('relevant_country_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('relevant_country_scope').GetRuler.GetHerselfHimself] to rule from [ROOT.GetCountry.GetCapital.GetCityHubName] under the present circumstances, they found in [SCOPE.sCountry('relevant_country_scope').GetRuler.GetHerHim] a source of inspiration—a model for what [ROOT.GetCountry.GetNameNoFormatting] could have been, had only fate willed it differently."
  lobby_events.23.a: "We shall pay close attention to these developments."
  lobby_events.23.b: "The [SCOPE.gsInterestGroup('relevant_ig_scope').GetName] have nothing to learn from this [SCOPE.sCountry('relevant_country_scope').GetRuler.GetCulture.GetNameNoFormatting] brute."
  racist_rhetorics_modifier: "Racist Rhetorics"
@@ -298,7 +298,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
  lobby_events.29.f: ""To all those who cherish liberty, [SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting], under the boot of that pernicious [SCOPE.sCountry('relevant_country_scope').GetRuler.GetPrimaryRoleTitle|l], stands out as an example of the very worst excesses of despotism.\nIn no country is the indomitable right of every soul to strive towards its own destiny obstructed as it is in [SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting], and in no country is a greater threat found to our own liberty than in [SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting].\n[SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting] must fall, for if it does not, we will fall in her place.""
  lobby_events.29.a: "Down with tyrants. Down with [SCOPE.sCountry('relevant_country_scope').GetNameNoFormatting]!"
  lobby_events.29.b: "Some times, a firm hand is needed to govern well."
- in_league_with_tyrants_modifier: "In League With Tyrants"
+ in_league_with_tyrants_modifier: "In League with Tyrants"
 
  lobby_events.30.t: "Action and Reaction"
  lobby_events.30.d: "As news escape [SCOPE.sCountry('relevant_country_scope').GetCapital.GetCityHubName] of yet another violent crackdown on the [SCOPE.sCountry('relevant_country_scope').GetAdjective] labor movement, outraged members of the [SCOPE.gsInterestGroup('relevant_ig_scope').GetName] have taken to the streets of [ROOT.GetCountry.GetCapital.GetCityHubName], marching under the banner of the [SCOPE.sPoliticalLobby('relevant_lobby_scope').GetName]."
@@ -314,7 +314,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
  not_leader_of_power_bloc_tt: "We have #bold not#! been the leader of a [concept_power_bloc] for #bold 60#! consecutive months. (Currently #variable [ROOT.GetCountry.MakeScope.Var('great_game_no_longer_power_bloc_leader_var').GetValue]#!)"
  je_secure_influence_over_persia_goal: "Establish and maintain a [concept_subject] relationship with #v $PER$#! for #variable 10 years#!"
 
- modifier_has_annexed_another_subject: "Our [concept_overlord] has annexed another [concept_subject]"
+ modifier_has_annexed_another_subject: "Our [concept_overlord] Has Annexed Another [concept_subject]"
 
  puppeted_for_too_long_tt: "We have been a [concept_subject] for #bold 60#! consecutive months. (Currently #variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#!)"
  not_in_european_power_bloc_tt: "Is #b not#! in a [concept_power_bloc] with a European [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]"
@@ -346,7 +346,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  spooky_halloween_events.3.t: "Mastery of Old and New"
  spooky_halloween_events.3.d: "Pondering the ever-changing world around him, [SCOPE.sCharacter('dracula_scope').GetFullName] wonders if he, too, must change with it."
- spooky_halloween_events.3.f: "[SCOPE.sCharacter('dracula_scope').GetFullNameNoFormatting] turns the pages of the [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')], absorbing the information as a sponge takes blood. Wars, atrocities, and murders dominated the headlines, as they always did. There was a certain comfort, he mused, in knowing that some matters still had solutions as simple in this world as they had in the one of yore.\n\nYet such observations only held true in part. Amid the familiar chaos, there were signs of a different world — a world in motion, driven by pistons, electric lights, and political unrest. But despite his old age, [SCOPE.sCharacter('dracula_scope').GetLastNameNoFormatting] felt no pang of sentimentality. Let lesser creatures weep for the old world, he thought. For I intend to shape the new."
+ spooky_halloween_events.3.f: "[SCOPE.sCharacter('dracula_scope').GetFullNameNoFormatting] turns the pages of the [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')], absorbing the information as a sponge takes blood. Wars, atrocities, and murders dominated the headlines, as they always did. There was a certain comfort, he mused, in knowing that some matters still had solutions as simple in this world as they had in the one of yore.\n\nYet such observations only held true in part. Amid the familiar chaos, there were signs of a different world—a world in motion, driven by pistons, electric lights, and political unrest. But despite his old age, [SCOPE.sCharacter('dracula_scope').GetLastNameNoFormatting] felt no pang of sentimentality. Let lesser creatures weep for the old world, he thought. For I intend to shape the new."
  spooky_halloween_events.3.a: "Through capital comes power."
  spooky_halloween_events.3.b: "Men are but children, and like children respect only the rod."
  spooky_halloween_events.3.c: "Why forgo true and tested methods for untried ones."
@@ -454,7 +454,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
 
  treaty_of_london_events.5.t: "Failure of the London Conference"
  treaty_of_london_events.5.d: "With negotiations between [SCOPE.sCountry('belgium_scope').GetName] and [SCOPE.sCountry('netherlands_scope').GetName] having broken down in full, it would appear that a diplomatic solution to the Belgian question has eluded Europe once again."
- treaty_of_london_events.5.f: "As the delegations made their way out of the Foreign Office and onto King Charles Street, the air of amicability that they so deperately tried to maintain could not even fool the doorman — much less each other. What this would mean for future Dutch-Belgian relations they could still not say, but that it would be bad? Now at last, there was something they could agree on."
+ treaty_of_london_events.5.f: "As the delegations made their way out of the Foreign Office and onto King Charles Street, the air of amicability that they so deperately tried to maintain could not even fool the doorman—much less each other. What this would mean for future Dutch-Belgian relations they could still not say, but that it would be bad? Now at last, there was something they could agree on."
  treaty_of_london_events.5.a: "What a waste of everybody's time."
 
  favour_belgium_loc: "decided to award Belgium all of their territorial claims in exchange for assuming Dutch debts."
