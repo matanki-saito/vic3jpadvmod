@@ -2,43 +2,28 @@
 
 ## はじめにお読みください
 
-本プロジェクトの主目的はVictoria 3の翻訳向上とその成果をユーザやParadoxへ還元することです。またサブ目標として寄付を通した翻訳支援を翻訳者へ届ける目的も持ちます。本ページ最後にあるフローについてもご参照ください。
-
-## 寄付の受け付け
-
-寄付の受付は終了いたしました。
-
-## コミニティチャンネル
-
-Discordへご参加ください！
-
-https://discord.gg/N3JGCYyh5A
-
-## Steam mod
-
-https://steamcommunity.com/sharedfiles/filedetails/?id=2881605374
-
-## 翻訳作業場所（校正者のみ）
-
-https://paratranz.cn/projects/5456
+本プロジェクトの主目的はVictoria 3の翻訳向上とその成果をユーザへ還元することです。本ページ最後にあるフローについてもご参照ください。
 
 ## 問題の報告方法
 
-ゲームの翻訳に問題を発見した場合は次に示す通り起票をお願いいたします。
+**ゲームの翻訳に問題を発見した場合は次に示す通りでお願いいたします。**
 
-1. [Githubのアカウントを取得します](https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d)
-2. ログインします
-3. メニューからIssuesを選び、New Issueボタンを押します。
+1. [Paratranz](https://paratranz.cn/projects/5456)へのご参加をお願いします。Projectの参加に際し、botかどうかなど含め一部審査はさせていただいております。
+1. 該当する項目を検索機能から見つけ、修正を行ってください。**できれば調査した結果や修正の理由が複雑等の場合には他のメンバーがあとから参考にできるようにコメント欄へ記載をお願いいたします。**
+
+以下のフローは必須ではありませんが、翻訳に悩んでいたり、他のメンバーへ意見を求めたい場合にご活用ください。
+1. [Githubのアカウント](https://qiita.com/ayatokura/items/9eabb7ae20752e6dc79d)を取得してログインしてください
+1. メニューからIssuesを選び、New Issueボタンを押してください
 ![Issue No.1](/.github/images/issue1.png)
-4. 起票したいカテゴリを選び、Get startedボタンを押してください。
+1. 起票したいカテゴリを選び、Get startedボタンを押してください。
 ![Issue No.2](/.github/images/issue2.png)
-5. わかりやすいタイトルを付けてテンプレートに沿った報告をしてください。記載が完了後はSubmit new issueボタンを押して確定させてください。
+1. わかりやすいタイトルを付けてテンプレートに沿った報告をしてください。記載が完了後はSubmit new issueボタンを押して確定させてください。
 ![Issue No.3](/.github/images/issue3.png)
-6. これで起票が完了です。運営メンバーがIssueを確認し、進捗がありましたら報告させていただきます。
+1. これで起票が完了です。運営メンバーがIssueを確認し、進捗がありましたら報告させていただきます。
 ![Issue No.4](/.github/images/issue4.png)
 
-## フローについて
+## リンク
 
-共有ホワイトボードを御覧ください
-
-[miro](https://miro.com/app/board/uXjVPa6CLjo=/?moveToWidget=3458764533160936180&cot=14)
+ - Discord（議論チャンネル） : https://discord.gg/N3JGCYyh5A
+ - Steam mod : https://steamcommunity.com/sharedfiles/filedetails/?id=2881605374
+ - 翻訳作業場所 : https://paratranz.cn/projects/5456
