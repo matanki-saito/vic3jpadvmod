@@ -76,7 +76,7 @@
  ryukyu_rivalry.6.t:0 "[SCOPE.sCountry('ryukyu_scope').GetCapital.GetNameNoFormatting]での対立"
  ryukyu_rivalry.6.d_brawl:0 "[SCOPE.sCountry('japan_scope').GetName]ならびに[SCOPE.sCountry('china_scope').GetName]から派遣された将校たちが、[SCOPE.sCountry('ryukyu_scope').GetName]の沿岸防衛の視察中に衝突した。この争いで死者が発生し、琉球の王宮は懸念の視線を投げかけている。"
  ryukyu_rivalry.6.d_accident:0 "沿岸の防衛設備を視察するために派遣された[SCOPE.sCountry('japan_scope').GetName]からの部隊と[SCOPE.sCountry('china_scope').GetName]からの部隊が、[SCOPE.sCountry('ryukyu_scope').GetName]の同じ要塞で鉢合わせした。これによって守備隊に混乱が生じ、一時的に銃撃戦となった。"
- ryukyu_rivalry.6.d_fire:0 "外国の視察団に割り当てられた[SCOPE.sCountry('ryukyu_scope').GetName]の宿舎で火災が発生し、[SCOPE.sCountry('japan_scope').GetAdjective]と[SCOPE.sCountry('china_scope').GetAdjective]の代表団の区画が全焼した。出火原因は不明だが、地元の役人たちは置き忘れた灯篭が原因ではないかと囁き合っている。"
+ ryukyu_rivalry.6.d_fire:0 "外国の使節団に割り当てられた[SCOPE.sCountry('ryukyu_scope').GetName]の宿舎で火災が発生し、[SCOPE.sCountry('japan_scope').GetAdjective]と[SCOPE.sCountry('china_scope').GetAdjective]の代表団の区画が全焼した。出火原因は不明だが、地元の役人たちは置き忘れた灯篭が原因ではないかと囁き合っている。"
  ryukyu_rivalry.6.f:0 "将校の開聞は物見櫓や倉の間を駆け抜けながら、守備兵たちに命令を伝えた。号令が矢継ぎ早に叫ばれ、食い違い、そして繰り返された。やがて平穏は戻ったが、開聞は列強間の相反する使命が琉球の脆弱な状況をいかに露呈させるかを改めて思い知らされた。"
  ryukyu_rivalry.6.a:0 "緊張が高まっている。"
  ryukyu_rivalry_ryukyu_confrontation_tt1:0 "[SCOPE.sCountry('japan_scope').GetAdjective]と[SCOPE.sCountry('china_scope').GetAdjective]の[concept_infamy]が#v 6#!増加した"

@@ -1,8 +1,8 @@
 ﻿l_japanese:
  edo_system:0 "江戸の身分制度"
- strata_samurai_high:0 "上位の侍"
+ strata_samurai_high:0 "上級武士"
  strata_samurai_high_desc:0 "大名や上級家臣など、武士階級の上層に属する者は主要な役職の大部分を独占しているだけでなく、多大な世襲の威信を享受している。"
- strata_samurai_low:0 "下位の侍"
+ strata_samurai_low:0 "下級武士"
  strata_samurai_low_desc:0 "御家人や足軽などの下級の武士や家臣で、上位層の武士の下で行政や軍事の実務を担当する。"
  strata_religious:0 "寺社"
  strata_religious_desc:0 "神社の神職たちは寺院組織を通じて編成され、当局によって管理されている。彼らは地域の生活や学問、宗教儀式において影響力を持っているが、法的に定められた身分制度からはやや外れた存在である。"

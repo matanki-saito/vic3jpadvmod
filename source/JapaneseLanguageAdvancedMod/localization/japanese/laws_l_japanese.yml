@@ -673,7 +673,7 @@
  ideology_tokugawa_loyalist_movement_2_desc:0 "$ideology_tokugawa_loyalist_movement_desc$"
  ideology_japan_paternalistic:0 "$ideology_paternalistic$"
  ideology_japan_paternalistic_desc:0 "$ideology_paternalistic_desc$"
- law_social_monarchy:0 "社会的君主制"
+ law_social_monarchy:0 "社会君主制"
  law_social_monarchy_desc:0 "この政治体制では、国家が国内の企業グループ間の最終的な調停者として位置付けられています。君主は国の国民的同一性の象徴とみなされます。"
  lawgroup_navy_model:0 "海軍モデル"
  lawgroup_navy_model_desc:0 "海軍兵力の組織と運用指針。"

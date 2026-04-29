@@ -253,7 +253,7 @@
  legitimacy_level_contested_alert:0 "正当性レベルが争われています"
  insufficient_tax_capacity_alert:0 "課税キャパシティが不足"
  alert_stalled_naval_invasion_name:0 "膠着状態の[concept_naval_invasion]"
- alert_stalled_naval_invasion_desc:0 "侵略中の[concept_admiral]が[concept_battle]を始めるための[Concept('concept_order','$concept_orders$')]を受けていないため、[SCOPE.GetRootScope.GetInvasion.GetName]は上陸を進めることができません。"
+ alert_stalled_naval_invasion_desc:0 "侵略中の[concept_admiral]が[concept_battle]を始めるための[Concept('concept_order','$concept_orders$')]を保持していないため、[SCOPE.GetRootScope.GetInvasion.GetName]は陸軍に対して進軍することができません。"
  alert_stalled_naval_invasion_hint:0 "$concept_admirals$の$concept_orders$を、[GetCommanderOrderType('interception_coast').GetName]などの戦闘開始を許可するものに変更できます。"
  alert_stalled_naval_invasion_action:0 "侵略パネル"
  alert_isolated_colony_alert_name:0 "[SCOPE.GetRootScope.GetState.GetName]が[Concept('concept_isolated_state','$concept_isolated_state_short$')][concept_colony]に"
