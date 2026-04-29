@@ -1749,7 +1749,7 @@
  general_strike_effect_tt:0 "All [Concept('concept_incorporated_state', '$concept_incorporated_states$')] get:"
  dyn_c_welsh_patagonia:0 "Y Wladfa"
  dyn_c_welsh_patagonia_adj:0 "Welsh Patagonian"
- scramble_for_africa_complete_tt: "Control #variable [JournalEntry.GetTotalGoalValue]#! or more [Concept('concept_state','$concept_states$')] in [concept_georegion_africa] through [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] or [Concept('concept_subject','$concept_subjects$')]"
+ scramble_for_africa_complete_tt: "Control #variable [JournalEntry.GetTotalGoalValue]#! or more [Concept('concept_state','$concept_states$')] in [GetGeographicRegion('geographic_region_africa').GetName] through [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] or [Concept('concept_subject','$concept_subjects$')]"
  bank_robberies:0 "Bank Robberies"
  frontier_military_aid:0 "Frontier Military Aid"
  assassination_completion_tt:0 "The assassination plot fails"

@@ -2162,8 +2162,8 @@
  abandon_piracy_desc: ""
  abandon_piracy_effects_desc: "• An agreement where one $concept_country$ abandons $concept_piracy$"
  abandon_piracy_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] abandons $concept_piracy$"
- TREATY_DRAFT_ARTICLE_FLAG_IS_ABANDON_PIRACY_GLOBAL_EFFECT: "• $abandon_piracy_article_short_desc$"
- TREATY_ARTICLE_FLAG_IS_ABANDON_PIRACY_GLOBAL_EFFECT: "• $abandon_piracy_article_short_desc$"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_ABANDON_PIRACY_EFFECT: "• $abandon_piracy_article_short_desc$"
+ TREATY_ARTICLE_FLAG_IS_ABANDON_PIRACY_EFFECT: "• $abandon_piracy_article_short_desc$"
 
  recognize_independence: "Recognize Independence"
  recognize_independence_desc: ""

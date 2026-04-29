@@ -243,7 +243,7 @@
  company_general_electric: "General Electric"
  company_us_steel: "Carnegie Steel Company"
  company_united_fruit: "United Fruit Company"
- company_united_fruit_possible_tt: "One of the following:\n• [concept_state] is in [concept_georegion_central_america]\n• [concept_state] is in [concept_georegion_south_america]"
+ company_united_fruit_possible_tt: "One of the following:\n• [concept_state] is in [GetGeographicRegion('geographic_region_central_america').GetName]\n• [concept_state] is in [GetGeographicRegion('geographic_region_south_america').GetName]"
  company_standard_oil: "Standard Oil"
  company_william_cramp: "William Cramp & Sons"
  company_ford_motor: "Ford Motor Company"

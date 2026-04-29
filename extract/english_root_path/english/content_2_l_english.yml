@@ -591,7 +591,7 @@
  romania.4.a: "Ceding [SCOPE.sState('south_bessarabia_cession').GetName] is something we can afford to do."
  romania.4.b: "[SCOPE.sState('south_bessarabia_cession').GetName] is and will remain ours, not theirs!"
 
- scramble_for_africa_complete_2_tt: "#header 95%#! of [Concept('concept_state_region','$concept_state_regions$')] in [concept_georegion_africa] must be completely owned by [Concept('concept_recognized_power','$concept_recognized_powers$')] or their [Concept('concept_subject','$concept_subjects$')]"
+ scramble_for_africa_complete_2_tt: "#header 95%#! of [Concept('concept_state_region','$concept_state_regions$')] in [GetGeographicRegion('geographic_region_africa').GetName] must be completely owned by [Concept('concept_recognized_power','$concept_recognized_powers$')] or their [Concept('concept_subject','$concept_subjects$')]"
  scramble_for_africa_fail_tt: "[ROOT.GetCountry.GetName] has no [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] or [Concept('concept_subject','$concept_subjects$')] on the African continent"
 
  je_unite_the_nations: "The Nations of Turtle Island"
@@ -675,11 +675,11 @@
 
  je_struggle_for_the_highveld: "Struggle for the Highveld"
  je_struggle_for_the_highveld_reason: "The interior lands of the veld appear to be inhospitable scrubland at first glance, but there are fertile grounds among the fields, and the escarpments glitter invitingly. Order—our order—must be put in place, to ensure this rich land can see the peace it so dearly needs to reveal its full potential."
- je_struggle_for_the_highveld_saf_states: "[ROOT.GetCountry.GetName] owns all of at least #b 4#! states in [concept_georegion_south_africa]"
- je_struggle_for_the_highveld_saf_success: "Every other country with a capital in [concept_georegion_south_africa] is either a subject of [SCOPE.sCountry('cape_colony_scope').GetName] or shares the same overlord as [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
- je_struggle_for_the_highveld_saf_fail: "Any other country with a capital in [concept_georegion_south_africa] becomes an independent [concept_recognized_power] with a coastal [concept_incorporated_state]."
- je_struggle_for_the_highveld_anyone_else_wins_everyone_else_fail: "Any other country, other than [SCOPE.sCountry('cape_colony_scope').GetName], with a capital in [concept_georegion_south_africa] becomes a [concept_recognized_power] that is not a [concept_subject] of any other country and has a coastal [concept_incorporated_state]."
- je_struggle_for_the_highveld_saf_wins_everyone_else_fail: "Every state in [concept_georegion_south_africa] is either controlled by [SCOPE.sCountry('cape_colony_scope').GetName], or by another country with a capital in any of those states that is not [Concept('concept_decentralized_nation', '$concept_decentralized$')] and is either a [concept_subject] of [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting] or of an overlord of [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
+ je_struggle_for_the_highveld_saf_states: "[ROOT.GetCountry.GetName] owns all of at least #b 4#! states in [GetGeographicRegion('geographic_region_south_africa').GetName]"
+ je_struggle_for_the_highveld_saf_success: "Every other country with a capital in [GetGeographicRegion('geographic_region_south_africa').GetName] is either a subject of [SCOPE.sCountry('cape_colony_scope').GetName] or shares the same overlord as [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
+ je_struggle_for_the_highveld_saf_fail: "Any other country with a capital in [GetGeographicRegion('geographic_region_south_africa').GetName] becomes an independent [concept_recognized_power] with a coastal [concept_incorporated_state]."
+ je_struggle_for_the_highveld_anyone_else_wins_everyone_else_fail: "Any other country, other than [SCOPE.sCountry('cape_colony_scope').GetName], with a capital in [GetGeographicRegion('geographic_region_south_africa').GetName] becomes a [concept_recognized_power] that is not a [concept_subject] of any other country and has a coastal [concept_incorporated_state]."
+ je_struggle_for_the_highveld_saf_wins_everyone_else_fail: "Every state in [GetGeographicRegion('geographic_region_south_africa').GetName] is either controlled by [SCOPE.sCountry('cape_colony_scope').GetName], or by another country with a capital in any of those states that is not [Concept('concept_decentralized_nation', '$concept_decentralized$')] and is either a [concept_subject] of [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting] or of an overlord of [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
 
  saf_highveld_add_boer_as_primary_button: "Add [SCOPE.sCulture('boer_culture').GetName] as a [Concept('concept_primary_cultures','$concept_primary_culture$')|U]"
  saf_highveld_add_boer_as_primary_button_desc: "If Boer concerns about their status within our country can been addressed, it will be possible to integrate Boer culture into [ROOT.GetCountry.GetName]."

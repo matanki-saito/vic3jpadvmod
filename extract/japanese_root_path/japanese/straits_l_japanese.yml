@@ -67,8 +67,8 @@
  STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL: "Requires [Concept('concept_strait_control', '$concept_strait_control$')] of both sides of the [concept_strait]"
  STRAIT_MILITARY_BLOCK_REQUIRES_FULL_CONTROL: "$STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL$"
  STRAIT_ACCESS_SETTING_REDUNDANT: "Current [concept_strait_access] setting"
- STRAIT_ACCESS_SETTING_NOT_ALLOWED: "#todo PRCAL-44101 Is this error needed?#!"
- TOLL_RATE_NOT_ALLOWED: "#todo PRCAL-44101 Is this error needed?#!"
+ STRAIT_ACCESS_SETTING_NOT_ALLOWED: "Toll access setting is not allowed"
+ TOLL_RATE_NOT_ALLOWED: "Toll rate is not allowed"
  STRAIT_STATES_HEADER: "この$concept_strait$によって接続されている$concept_states$"
  NO_NAVAL_FORTIFICATION_TOOLTIP: "[Country.GetName]はまだ[State.GetName]に[GetBuildingType('building_naval_fortification').GetName]を建設しておらず、[Strait.GetName]を掌握していません"
  #Effects

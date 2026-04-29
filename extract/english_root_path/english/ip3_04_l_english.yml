@@ -636,10 +636,10 @@ transfer_relevant_culture_states_to_croatia_tt: "Our [SCOPE.sCulture('relevant_c
 transfer_relevant_culture_states_to_lombardia_tt: "Our [SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting] [concept_homeland] [Concept('concept_state', '$concept_states$')] will be transferred to [SCOPE.sCountry('lombardy_scope').GetName]"
 transfer_relevant_culture_states_to_galicia_tt: "Our [SCOPE.sCulture('relevant_culture_scope').GetNameNoFormatting] [concept_homeland] [Concept('concept_state', '$concept_states$')] will be transferred to [SCOPE.sCountry('galicia_scope').GetName]"
 
-hungry_forties_triggered_tt: "At least #v 10#! states in [concept_georegion_europe] have the $disease_outbreak$ [concept_harvest_condition]"
+hungry_forties_triggered_tt: "At least #v 10#! states in [GetGeographicRegion('geographic_region_europe').GetName] have the $disease_outbreak$ [concept_harvest_condition]"
 
 je_the_hungry_forties: "The Hungry [SCOPE.GetRootScope.GetCountry.GetCustom('getDecadeName')|U]"
-je_the_hungry_forties_reason: "A wave of crop blights has struck [concept_georegion_europe], spurring poor harvests and food shortages. The blight is especially lethal to potatoes, causing them to rapidly decay into a foul-smelling, inedible mush.\n\n#b The European Potato Blight#!:\nWhilst this [concept_journal_entry] is active, the rate at which the $disease_outbreak$ [concept_harvest_condition] appears in European states will be greatly elevated."
+je_the_hungry_forties_reason: "A wave of crop blights has struck [GetGeographicRegion('geographic_region_europe').GetName], spurring poor harvests and food shortages. The blight is especially lethal to potatoes, causing them to rapidly decay into a foul-smelling, inedible mush.\n\n#b The European Potato Blight#!:\nWhilst this [concept_journal_entry] is active, the rate at which the $disease_outbreak$ [concept_harvest_condition] appears in European states will be greatly elevated."
 
 modifier_springtime_kick_out_of_insurrection: "Off the Barricades"
 modifier_revolutionary_cabinet: "Revolutionary Cabinet"

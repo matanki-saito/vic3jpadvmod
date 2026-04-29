@@ -1201,7 +1201,7 @@
  HUB_NAME_STATE_RYUKYU_ISLANDS_wood: "Kametsu"
  HUB_NAME_STATE_KYOTO_city: "Kyoto"
  HUB_NAME_STATE_KYOTO_port: "Maizuru"
- #HUB_NAME_STATE_KYOTO_mine: "Kameoka"
+ HUB_NAME_STATE_KYOTO_mine: "Kameoka"
  HUB_NAME_STATE_KYOTO_farm: "Hikone"
  HUB_NAME_STATE_KYOTO_wood: "Takashima"
  HUB_NAME_STATE_HOKUSHINETSU_city: "Kanazawa"

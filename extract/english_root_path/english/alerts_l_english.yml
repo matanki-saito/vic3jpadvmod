@@ -85,8 +85,8 @@
  alert_stalled_invasion_action: "Invasion panel"
 
  alert_stalled_naval_invasion_name: "Stalled [concept_naval_invasion]"
- alert_stalled_naval_invasion_desc: "Your [SCOPE.GetRootScope.GetInvasion.GetName] will be unable to progress to landing troops because no invading [concept_admiral] has [Concept('concept_order','$concept_orders$')] that allows them to start a [concept_battle]."
- alert_stalled_naval_invasion_hint: "You can change the $concept_orders$ of your $concept_admirals$ to ones that allow them to start battles, such as [GetCommanderOrderType('interception_coast').GetName]."
+ alert_stalled_naval_invasion_desc: "Your [SCOPE.GetRootScope.GetInvasion.GetName] will be unable to progress to landing troops because no invading [concept_general] has [Concept('concept_order','$concept_orders$')] that allows them to start a [concept_battle]."
+ alert_stalled_naval_invasion_hint: "You can change the $concept_orders$ of your $concept_generals$ to Advance, allowing them to start battles."
  alert_stalled_naval_invasion_action: "Invasion panel"
 
  alert_low_organization_active_name: "Low [concept_organization]: [SCOPE.GetRootScope.GetMilitaryFormation.GetName] at [concept_front]"
@@ -145,8 +145,8 @@
  alert_insufficient_military_maintenance_alert_hint: "Increase [Concept('concept_ship_construction', '$concept_ship_construction$')] by building more [GetBuildingType('building_shipyard').GetName], reduce [Concept('concept_fleet', '$concept_fleet$')] size to lower maintenance costs, or change the distribution of [Concept('concept_supply_ship', '$concept_supply_ship$')] construction points to allocate more to military."
  alert_insufficient_military_maintenance_alert_action: "Ship Construction Panel"
 
- alert_insufficient_ship_crew_alert_name: "Insufficient [concept_ship_crew]"
- alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] has [Concept('concept_ship', '$concept_ships$')] that are undermanned. Ships without adequate $concept_ship_crew$ will be less effective in combat and other operations."
+ alert_insufficient_ship_crew_alert_name: "Insufficient $concept_ship_crew_short$ in [SCOPE.GetRootScope.GetMilitaryFormation.GetName]"
+ alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] has [Concept('concept_ship', '$concept_ships$')] that are undermanned. Ships without adequate $concept_ship_crew$ will be less effective in combat and other operations.\n@information! In order to get crew onto a ship, the ship needs to be in a port."
  alert_insufficient_ship_crew_alert_hint: "You can increase the number of available [Concept('concept_sailor', '$concept_sailors$')] by constructing more [GetBuildingType('building_naval_administration').GetName] [Concept('concept_building', '$concept_buildings$')], or by expanding existing ones."
  alert_insufficient_ship_crew_alert_action: "Military Formation Panel"
 
