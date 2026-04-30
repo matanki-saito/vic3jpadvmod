@@ -18,7 +18,7 @@
  acw_events.4.t: "忘れ去られた出来事"
  acw_events.5.t: "血まみれの[SCOPE.sState('bleeding_kansas').GetName]"
  acw_events.5.d: "奴隷制廃止論者と支持派が続々と[SCOPE.sState('bleeding_kansas').GetName]になだれ込み、領地を統括する政府を自分たち好みに作り替えようと画策している。複数の準軍事組織が、対抗勢力や民間人に対して暴力行為を行い始めている。"
- acw_events.5.f: "「神と証人たちに誓います。私は今この時から奴隷制の破壊に人生を奉げましょう。この罪深き土地の犯した罪は血をもってのみ洗い清めることができるのですから」" #two separate quotes by John Brown.
+ acw_events.5.f: "「神と証人たちに誓います。私は今この時から奴隷制の破壊に人生を奉げましょう。この罪深き土地の犯した罪は血をもってのみ洗い清めることができるのですから」" # two separate quotes by John Brown.
  acw_events.5.a: "ボーダー・ラフィアンズが法律を記すなかれ！[SCOPE.sState('bleeding_kansas').GetName]は自由州であるべきだ。"
  acw_events.5.b: "正否を断ずるのはジェイホーカーズに非ず！[SCOPE.sState('bleeding_kansas').GetName]はこれからも奴隷州だ。"
  acw_events_5_free_state_tt: "[SCOPE.sState('bleeding_kansas').GetName]は自由地区であり続ける。"
@@ -68,7 +68,7 @@
  acw_followup_events.5.b: "軍隊を使って現地のリーダーたちを遠ざけるわけにはいかない。"
  acw_followup_events.6.t: "リディーマー"
  acw_followup_events.6.d: "元南軍と南軍シンパによる連合部隊が、公正および不正な手段で[SCOPE.sState('redeemer_state').GetName]州政府の支配権を掌握し、進行中の再建プロセスを脅かしている。"
- acw_followup_events.6.f: "かたや知的で美徳に溢れ、自尊心を持つ民主主義を信奉する側と、かたや腕力と恐怖によるほぼ抑制の利かない政治的優位性を掲げる側はハッキリと区別しようではないか。そこには自由な政府が持つ一つの特性ではなく、かつて地球に存在した呪われし権力を死に物狂いで取り戻そうとする哀れなオールドサウスの暴君の姿が見えることだろう」" #this is an inversion of Lucius Quintus Cincinnatus Lamar II's horrible racist diatribe.
+ acw_followup_events.6.f: "かたや知的で美徳に溢れ、自尊心を持つ民主主義を信奉する側と、かたや腕力と恐怖によるほぼ抑制の利かない政治的優位性を掲げる側はハッキリと区別しようではないか。そこには自由な政府が持つ一つの特性ではなく、かつて地球に存在した呪われし権力を死に物狂いで取り戻そうとする哀れなオールドサウスの暴君の姿が見えることだろう」" # this is an inversion of Lucius Quintus Cincinnatus Lamar II's horrible racist diatribe.
  acw_followup_events.6.a: "和解には彼らとの合意が要求される。"
  acw_followup_events.6.b: "彼らを逮捕して新たな州政府を設立しよう。"
  acw_followup_events.7.t: "準軍事組織の脅迫"

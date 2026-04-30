@@ -1050,7 +1050,7 @@
  PLURAL_DEMONYM_lumad: "ルマッド人"
  PLURAL_DEMONYM_ryukyuan: "琉球人"
  PLURAL_DEMONYM_DEFAULT: "[ROOT.GetCulture.GetNameNoFormatting]"
- #Singular Demonyms [Masculine]
+ # Singular Demonyms [Masculine]
  SINGULAR_DEMONYM_north_german: "北ドイツ人"
  SINGULAR_DEMONYM_south_german: "南ドイツ人"
  SINGULAR_DEMONYM_austrian: "オーストリア人"
@@ -1374,7 +1374,7 @@
  SINGULAR_DEMONYM_lumad: "ルマッド人"
  SINGULAR_DEMONYM_ryukyuan: "琉球人"
  SINGULAR_DEMONYM_DEFAULT: "[ROOT.GetCulture.GetNameNoFormatting]"
- #Plural Demonyms [Feminine]
+ # Plural Demonyms [Feminine]
  PLURAL_DEMONYM_FEMALE_north_german: "北ドイツ人"
  PLURAL_DEMONYM_FEMALE_south_german: "南ドイツ人"
  PLURAL_DEMONYM_FEMALE_austrian: "オーストリア人"
@@ -1698,7 +1698,7 @@
  PLURAL_DEMONYM_FEMALE_lumad: "ルマッド人"
  PLURAL_DEMONYM_FEMALE_ryukyuan: "琉球人"
  PLURAL_DEMONYM_FEMALE_DEFAULT: "[ROOT.GetCulture.GetNameNoFormatting]人"
- #Singular Demonyms [Feminine]
+ # Singular Demonyms [Feminine]
  SINGULAR_DEMONYM_FEMALE_north_german: "北ドイツ人"
  SINGULAR_DEMONYM_FEMALE_south_german: "南ドイツ人"
  SINGULAR_DEMONYM_FEMALE_austrian: "オーストリア人"

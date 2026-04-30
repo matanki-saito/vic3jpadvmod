@@ -1,8 +1,8 @@
 ﻿l_japanese:
- #alert_xyz_name = name of the Event
- #alert_xyz_desc = additional description about the current situation (optional)
- #alert_xyz_hint = information that should help the player to be able to understand the situation and how to fix the problem
- #alert_xyz_action = Where does clicking this take you?
+ # alert_xyz_name = name of the Event
+ # alert_xyz_desc = additional description about the current situation (optional)
+ # alert_xyz_hint = information that should help the player to be able to understand the situation and how to fix the problem
+ # alert_xyz_action = Where does clicking this take you?
  alert_country_default_name: "[concept_default]中"
  alert_country_default_desc: "[GetPlayer.GetName]は債務を返済できないため、[concept_default]になっています。収支がプラスになるまで、時間が経つほど厳しくなるペナルティを受けることになります。\n\n#title 現在の効果：#!\n[GetPlayer.GetInDefaultEffectsDesc]"
  alert_country_default_hint: "財政状況を改善するには、収入を増やすか、支出を減らしましょう。短期的な収入を増やすには、現在の税率を上げるか、新たな消費税を課すか、関税を引き上げることで、新たな収入を得ることができます。支出を減らすには、軍や政府が運営する施設における賃金を下げたり、そこで消費される商品の価格を下げたり、財政が回復するまで建設を停止したりなどの方法があります。それでもまだ十分でないという場合には、[concept_bankruptcy]を宣言するという選択肢もあります。"
@@ -68,8 +68,8 @@
  alert_stalled_invasion_hint: "$concept_generals$の$concept_orders$を、[GetCommanderOrderType('advance').GetName]などの戦闘開始を許可するものに変更できます。"
  alert_stalled_invasion_action: "侵略パネル"
  alert_stalled_naval_invasion_name: "膠着状態の[concept_naval_invasion]"
- alert_stalled_naval_invasion_desc: "侵略中の[concept_admiral]が[concept_battle]を始めるための[Concept('concept_order','$concept_orders$')]を保持していないため、[SCOPE.GetRootScope.GetInvasion.GetName]は陸軍に対して進軍することができません。"
- alert_stalled_naval_invasion_hint: "$concept_admirals$の$concept_orders$を、[GetCommanderOrderType('interception_coast').GetName]などの戦闘開始を許可するものに変更できます。"
+ alert_stalled_naval_invasion_desc: "Your [SCOPE.GetRootScope.GetInvasion.GetName] will be unable to progress to landing troops because no invading [concept_general] has [Concept('concept_order','$concept_orders$')] that allows them to start a [concept_battle]."
+ alert_stalled_naval_invasion_hint: "You can change the $concept_orders$ of your $concept_generals$ to Advance, allowing them to start battles."
  alert_stalled_naval_invasion_action: "侵略パネル"
  alert_low_organization_active_name: "[concept_organization]の低下: [concept_front]の[SCOPE.GetRootScope.GetMilitaryFormation.GetName]"
  alert_low_organization_active_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName]の[concept_organization]は[SCOPE.GetRootScope.GetMilitaryFormation.GetOrganization]であり、それによって重いペナルティが課されます。"
@@ -113,11 +113,11 @@
  alert_naval_hostilities_alert_hint: "通常、[concept_naval_hostilities]は一時的なものであり、自然に解消します。"
  alert_naval_hostilities_alert_action: "軍事海軍パネル"
  alert_insufficient_military_maintenance_alert_name: "軍事[Concept('concept_ship', '$concept_ship$')]の整備が不十分"
- alert_insufficient_military_maintenance_alert_desc: "整備が不十分なため、我々の$concept_ships$は毎週[Concept('concept_ship_hit_points', '$concept_ship_hit_points_short$')]を失っています。\n\n 整備充足率#v [GetPlayer.GetMilitaryMaintenanceFulfillment|%]#!\n整備の需要@ship_construction! #v [GetPlayer.GetMilitaryMaintenanceDemand|0]#!\n軍事$concept_ships$への割り当て@ship_construction! #v [GetPlayer.GetMilitaryConstructionCapacity|0]#!"
- alert_insufficient_military_maintenance_alert_hint: "[GetBuildingType('building_shipyard').GetName][Concept('concept_building', '$concept_building$')]をもっと建設して[Concept('concept_ship_construction', '$concept_ship_construction$')]ポイントを増やすか、[Concept('concept_fleet', '$concept_fleet$')]規模を減らして維持コストを下げるか、[Concept('concept_supply_ship', '$concept_supply_ship$')]の建造ポイントの配分を変更して軍用への割り当てを増やしましょう。"
+ alert_insufficient_military_maintenance_alert_desc: "整備が不十分なため、我々の$concept_ships$は毎週[Concept('concept_ship_hit_points', '$concept_ship_hit_points_short$')]を失っています。\n\n整備充足率#v [GetPlayer.GetMilitaryMaintenanceFulfillment|%]#!\n整備の需要@ship_construction! #v [GetPlayer.GetMilitaryMaintenanceDemand|0]#!\n軍事$concept_ships$への割り当て@ship_construction! #v [GetPlayer.GetMilitaryConstructionCapacity|0]#!"
+ alert_insufficient_military_maintenance_alert_hint: "[GetBuildingType('building_shipyard').GetName]施設をもっと建設して[Concept('concept_ship_construction', '$concept_ship_construction$')]ポイントを増やすか、[Concept('concept_fleet', '$concept_fleet$')]規模を減らして維持コストを下げるか、[Concept('concept_supply_ship', '$concept_supply_ship$')]の建造ポイントの配分を変更して軍用への割り当てを増やしましょう。"
  alert_insufficient_military_maintenance_alert_action: "艦船建造パネル"
- alert_insufficient_ship_crew_alert_name: "[concept_ship_crew]が不足"
- alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName]には人材が不足している[Concept('concept_ship', '$concept_ships$')]があります。$concept_ship_crew$が足りない艦船は、戦闘やその他の作戦行動で十分に力を発揮できなくなります。"
+ alert_insufficient_ship_crew_alert_name: "Insufficient $concept_ship_crew_short$ in [SCOPE.GetRootScope.GetMilitaryFormation.GetName]"
+ alert_insufficient_ship_crew_alert_desc: "[SCOPE.GetRootScope.GetMilitaryFormation.GetName] has [Concept('concept_ship', '$concept_ships$')] that are undermanned. Ships without adequate $concept_ship_crew$ will be less effective in combat and other operations.\n@information! In order to get crew onto a ship, the ship needs to be in a port."
  alert_insufficient_ship_crew_alert_hint: "利用可能な[Concept('concept_sailor', '$concept_sailors$')]の数は、[GetBuildingType('building_naval_administration').GetName]の[Concept('concept_building', '$concept_buildings$')]をさらに建設するか、既存のものを拡張することで増やすことができます。"
  alert_insufficient_ship_crew_alert_action: "軍の編隊パネル"
  alert_insufficient_supply_maintenance_alert_name: "[Concept('concept_supply_ship', '$concept_supply_ship$')]の整備が不十分"
@@ -284,7 +284,7 @@
  MP_CLIENT_UNGRACEFUL_EXIT: "$NAME$のゲームとの接続が失われました"
  MP_HOST_DATE: "$NAME$(#V ホスト#!): $DATE_STR$"
  MP_CLIENT_DATE: "$NAME$: $DATE_STR$"
- #Alert groups
+ # Alert groups
  ag_isolated_states_name: "孤立した[Concept('concept_isolated_state', '$concept_isolated_states$')]"
  ag_isolated_states_desc: "我が国には[GetPlayer.GetNumIsolatedStates]個の[Concept('concept_isolated_state', '$concept_isolated_states$')]があります。"
  ag_isolated_states_tooltip: "#header $ag_isolated_states_name$#!\n$TOOLTIP_DELIMITER$\n$ag_isolated_states_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
@@ -353,6 +353,9 @@
  ag_companies_losing_prosperity_name: "[concept_prosperity]を失いつつある$COMPANIES$"
  ag_companies_losing_prosperity_desc: "[concept_prosperity]ボーナスを失う危機にさらされている$COMPANIES$があります。"
  ag_companies_losing_prosperity_tooltip: "#header $ag_companies_losing_prosperity_name$#!\n$TOOLTIP_DELIMITER$\n$ag_companies_losing_prosperity_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
+ ag_insufficient_ship_crew_name: "[concept_ship_crew]が不足"
+ ag_insufficient_ship_crew_desc: "We have [Concept('concept_ship', '$concept_ships$')] that are undermanned."
+ ag_insufficient_ship_crew_tooltip: "#header $ag_insufficient_ship_crew_name$#!\n$TOOLTIP_DELIMITER$\n$ag_insufficient_ship_crew_desc$\n\n$ALERT_GROUP_TOOLTIP_FOOTER$"
  alert_company_losing_prosperity_name: "#v [SCOPE.GetRootScope.GetCompany.GetCompanyType.GetName]#!の[concept_prosperity]が減少"
  alert_company_losing_prosperity_desc: "#v [SCOPE.GetRootScope.GetCompany.GetCompanyType.GetName]#!の[concept_prosperity]の伸びがマイナスであり、$concept_prosperity$ボーナスを失う危機にさらされています。"
  alert_company_losing_prosperity_hint: "[concept_company]の[concept_prosperity]を向上させるには、その企業に関連する[Concept('concept_building', '$concept_buildings$')]の[concept_productivity]を増加させましょう。"

@@ -101,7 +101,7 @@
  cuba_prepare_for_war: "戦争に備える"
  #war time
  je_cuba_independence_war: "戦争に備える"
- je_cuba_independence_war_desc: "今こそ、我が国が自由を勝ち取る時だ。" #TODO
+ je_cuba_independence_war_desc: "今こそ、我が国が自由を勝ち取る時だ。"
  #Startup event
  cuba_independencia.1.t: "キューバの未来"
  cuba_independencia.1.d: "キューバの未来はまだ定まっていない。この島はスペインに留まるのか、フロリダのようにアメリカ合衆国に加わるのか、独立を宣言するのか、それとも激烈な奴隷の反乱によって生まれ変わるのか？"

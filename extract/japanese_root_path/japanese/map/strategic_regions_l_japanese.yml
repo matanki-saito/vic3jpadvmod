@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Current SRs
+ # Current SRs
  region_northern_europe: "北ヨーロッパ"
  region_western_europe: "西ヨーロッパ"
  region_southern_europe: "南ヨーロッパ"
@@ -30,7 +30,7 @@
  region_canada: "カナダ"
  region_pacific_coast: "太平洋沿岸"
  region_southern_africa: "南アフリカ"
- #Old SRs, do not remove, geographic regions depend on a lot of these
+ # Old SRs, do not remove, geographic regions depend on a lot of these
  region_england: "イングランド"
  region_north_sea_coast: "北海"
  region_occitania: "オクシタニア"
@@ -139,7 +139,7 @@
  region_finland_old: "$region_finland$"
  region_arctic_russia_old: "$region_arctic_russia$"
  region_urals_old: "$region_urals$"
- #Sea strategic regions
+ # Sea strategic regions
  region_micronesian_sea: "$STATE_MICRONESIAN_SEA$"
  region_horn_of_africa: "$STATE_HORN_OF_AFRICA$"
  region_norwegian_sea: "$STATE_NORWEGIAN_SEA$"
@@ -246,10 +246,10 @@
  region_coral_sea: "$STATE_CORAL_SEA$"
  region_south_indian_ocean: "$STATE_SOUTH_INDIAN_OCEAN$"
  region_zanzibar_coast: "$STATE_ZANZIBAR_COAST$"
- #Lakes
+ # Lakes
  region_patagonian_lakes: "パタゴニア湖"
  region_lake_nicaragua: "ニカラグア湖"
- #UNUSED
+ # UNUSED
  region_indian_ocean_lane_01: "インド洋"
  region_south_atlantic_sea_lane_0: "南大西洋"
  region_south_pacific_lane_01: "南太平洋"

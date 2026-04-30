@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Generic Law Passing Events
+ # Generic Law Passing Events
  generic_laws.1.t: "奮起を促す演説が大衆を魅了"
  generic_laws.1.d: "本日午後、[SCOPE.gsInterestGroup('orator_ig_scope').GetName]のリーダー[SCOPE.sCharacter('orator_ig_leader_scope').GetFullName]が、[SCOPE.sLaw('current_law_scope').GetName]制定を熱烈に訴える演説を行った。"
  generic_laws.1.f: "[SCOPE.sCharacter('orator_ig_leader_scope').GetCountry.GetCapital.GetCityHubName]の大広場で公の場に姿を見せた[SCOPE.sCharacter('orator_ig_leader_scope').GetFullNameNoFormatting]による力強いレトリックは、最も敵対する[SCOPE.sCharacter('orator_ig_leader_scope').GetHerHis]の政敵すらも感銘を受けるほどだった。演説は一部抜粋され、すでに[ROOT.GetCountry.GetNameNoFormatting]全土に流布しており、紛糾中の議論に油を注ぐ様相を呈している。"
@@ -21,7 +21,7 @@
  dealing_with_corruption: "どんな汚職だ？"
  generic_laws.3.t: "対立メンバーによる提示要求"
  generic_laws.3.d: "[SCOPE.sLaw('current_law_scope').GetName]の通過に反対している[SCOPE.gsInterestGroup('opposition_demands_ig_scope').GetName]のより実利的なメンバーが、特定の政治的譲歩と引き換えに立場の変更を申し出ている。しかしながら、このような譲歩は、[SCOPE.gsInterestGroup('opposition_demands_supporting_ig_scope').GetName]からの受けが悪いだろう。"
- generic_laws.3.f: "「妥協は良質な傘を生み出すが、屋根としては心許ない。これは一時的な便宜であり、政党政治においてはしばしば賢明な判断だが、ほぼ確実に政治家としての矜持に悖る行為だ」" #James Russell Lowell
+ generic_laws.3.f: "「妥協は良質な傘を生み出すが、屋根としては心許ない。これは一時的な便宜であり、政党政治においてはしばしば賢明な判断だが、ほぼ確実に政治家としての矜持に悖る行為だ」" # James Russell Lowell
  generic_laws.3.a: "彼らの要求を呑もう。法案の通過が先決だ。"
  generic_laws.3.b: "妥協とは弱者の常套手段だ。"
  generic_laws.3.c: "行き詰った法律を先に進める絶好の機会だ。"
@@ -41,7 +41,7 @@
  renowned_playwright: "有名な劇作家"
  generic_laws.5.t: "官僚的なしがらみ"
  generic_laws.5.d: "[SCOPE.sLaw('current_law_scope').GetName]制定に取り組んでいる議員たちは、複雑に絡み合う一連の官僚的な手続きに雁字搦めにされ、改革に向けた作業は遅々として進まず、半ば膠着状態へと陥っていた。"
- generic_laws.5.f: "完全に構築された官僚機構の仕組みは、他の組織とまったく同じように、あたかも非自動化生産工程を伴う機械の様相を呈しています。つまり、個々の歯車の歯が噛み合うか、あるいは歯車がギシギシと音を立て、やがて壊れるまで噛み合うか、ということです。" #Partially Max Weber
+ generic_laws.5.f: "完全に構築された官僚機構の仕組みは、他の組織とまったく同じように、あたかも非自動化生産工程を伴う機械の様相を呈しています。つまり、個々の歯車の歯が噛み合うか、あるいは歯車がギシギシと音を立て、やがて壊れるまで噛み合うか、ということです。" # Partially Max Weber
  generic_laws.5.a: "こんなにも複雑怪奇な法制度はくそくらえだ！"
  generic_laws.5.b: "少なくとも官僚的形式主義の一角を切り崩そう。"
  mired_in_bureaucracy: "官僚制度による雁字搦め"
@@ -112,7 +112,7 @@
  dishonest_methods: "不誠実な手段"
  underhanded_tactics: "卑怯な戦略"
  by_the_book: "教本通り"
- #Tanzimat Events
+ # Tanzimat Events
  je_sick_man_bureaucracy: "タンジマート: 官僚改革"
  sick_man.2.e: "我らの帝国には実体がない。"
  je_sick_man_bureaucracy_reason: "腐敗を伴う古風な法律と組織構造によるつぎはぎ。それが我々の官僚機構だ。自律したベイたちが支配を行う帝国の領地はほぼ存在しない。施政に立ちふさがる数々の試練を克服するには、管理体制の近代化を進める必要がある。"
@@ -173,7 +173,7 @@
  deploying_the_army: "軍隊の派遣"
  tanzimat_events.7.t: "[SCOPE.sState('massacre_state_scope').GetCityHubName]の大虐殺"
  tanzimat_events.7.d: "あな恐ろしや！無慈悲な怒りに我を失った[SCOPE.sReligion('sunni_religion').GetName]系の暴徒が隣人である[SCOPE.sReligion('massacre_victims').GetName]に牙をむいた。[SCOPE.sState('massacre_state_scope').GetCityHubName]の通りは血で赤く染まり、街の大部分が炎に包まれている。"
- tanzimat_events.7.f: "「故意に他の信者を抹殺したのが何者であっても、その因果は地獄によって報いられ、彼の地に留まることになる。しかして神はその者を非難し、拒絶し、偉大なる苦痛を与えることになるだろう」" #An-Nisa 4:93, al-Quran
+ tanzimat_events.7.f: "「故意に他の信者を抹殺したのが何者であっても、その因果は地獄によって報いられ、彼の地に留まることになる。しかして神はその者を非難し、拒絶し、偉大なる苦痛を与えることになるだろう」" # An-Nisa 4:93, al-Quran
  tanzimat_events.7.a: "群衆を沈静化させろ。必要であれば発砲も許可する。"
  tanzimat_events.7.b: "それによって裏切り者の抑制が可能になるはずだ。"
  tanzimat_events.8.t: "[SCOPE.sState('orderrestored_state_scope').GetName]の秩序が回復"
@@ -217,41 +217,41 @@
  dyn_c_empire_of_china_adj: "中国"
  boxer_rebellion_events.1.t: "義和団事変"
  boxer_rebellion_events.1.d: "[ROOT.GetCountry.GetName]における国外勢力の台頭に業を煮やした[SCOPE.sCulture('han_culture').GetName]の臣下たちは、排他的な自衛団を組織し、「野蛮人」の国外追放を叫んでいる。今では彼らの大多数が[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の[ROOT.GetCountry.GetRuler.GetFullName]に運動の支援を迫っており、これが叶わなければ彼らの熱意は[SCOPE.sCulture('manchu_culture').GetName]の施政に向けられることになるだろう。"
- boxer_rebellion_events.1.f: "「外国の野蛮人たちは宗教の布教に際し、人々に善行を奨励しているが、実際奴らは我らの政府を混乱させ、社会構造に混乱を巻き起こし、我らの習慣を破壊した挙句、人々を欺いているではないか。要するに連中は中国の人民を野蛮人へと変貌させたいのだ」" #Boxer era Han school teacher
+ boxer_rebellion_events.1.f: "「外国の野蛮人たちは宗教の布教に際し、人々に善行を奨励しているが、実際奴らは我らの政府を混乱させ、社会構造に混乱を巻き起こし、我らの習慣を破壊した挙句、人々を欺いているではないか。要するに連中は中国の人民を野蛮人へと変貌させたいのだ」" # Boxer era Han school teacher
  boxer_rebellion_events.1.a: "扶清滅洋だ！"
  boxer_rebellion_events.1.b: "彼ら狂信者が我々の破滅を決定づけるだろう。"
  boxer_rebellion_events.2.t: "天命の遵守"
  boxer_rebellion_events.2.d: "中華帝国の空に再び黄龍旗がたなびく。真珠のような煌めきに彩られた珠海デルタから数々の大都市が連なる東シナ海までを汚染していた帝国主義という名の汚れは、我が国の沿岸部から押し流されていったのだ。"
- boxer_rebellion_events.2.f: "「外国の悪魔たちが最後の一人に至るまで\n\n追放された暁には\n\n[ROOT.GetCountry.GetNameNoFormatting]は一つとなり、力を合わせて\n\n我らの土地に平和をもたらさん」" #Boxer poem
+ boxer_rebellion_events.2.f: "「外国の悪魔たちが最後の一人に至るまで\n\n追放された暁には\n\n[ROOT.GetCountry.GetNameNoFormatting]は一つとなり、力を合わせて\n\n我らの土地に平和をもたらさん」" # Boxer poem
  boxer_rebellion_events.2.a: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]の治世が一万年先まで続かんことを！"
  boxer_rebellion_events.2.b: "[ROOT.GetCountry.GetName]に一万年の繁栄あれ！"
  revere_the_emperor: "皇帝を恐れよ"
  united_in_righteousness: "義による団結"
  boxer_rebellion_events.3.t: "清と漢"
  boxer_rebellion_events.3.d: "かつて「扶清」の怒号が響き渡った地に、今は反[SCOPE.sCulture('manchu_culture').GetName]のスローガンが木霊している。義和団の大望を理解できなかった我々の失態により、[SCOPE.sCulture('han_culture').GetName]の臣下との絆は修復不可能なほどに分断されてしまった。"
- boxer_rebellion_events.3.f: "「何度も恨み言を繰り返すわけではないが、我が国は内部的には満州族の奴隷であり、彼らの君主から苦痛を与えられている。外部的には外国勢力から嫌がらせを受け、いわば二重奴隷の状態だ」" #Zou Rong
+ boxer_rebellion_events.3.f: "「何度も恨み言を繰り返すわけではないが、我が国は内部的には満州族の奴隷であり、彼らの君主から苦痛を与えられている。外部的には外国勢力から嫌がらせを受け、いわば二重奴隷の状態だ」" # Zou Rong
  boxer_rebellion_events.3.a: "この屈辱に終わりは来るのだろうか？"
  boxer_rebellion_events.3.b: "[ROOT.GetCountry.GetCapital.GetNameNoFormatting]の駐屯部隊が反乱を起こし、紫禁城を襲撃した。"
  boxer_rebellion_events.3.tt1: "満州族は権力の座から追放され、孔子の嫡流の子孫である衍聖公が皇帝として即位した。"
  boxer_rebellion_events.4.t: "清王朝の落日"
  boxer_rebellion_events.4.d: "2千年に及んだ帝国の支配も、最後はペンによって終止符が打たれることとなった。[SCOPE.sCulture('manchu_culture').GetName] のラストエンペラーが紫禁城から護送され、世界の視線が東洋へと注がれる。この新たな時代は[ROOT.GetCountry.GetName]に何をもたらすのであろうか？"
- boxer_rebellion_events.4.f: "「国家としての独立を回復するには、まず中国人の国を復興しなければならない。中国人の国を取り戻すには、野蛮人である満州族を長白山へと追放する必要がある。そして野蛮人を追い払うには、まず、現在の専制的かつ独裁的で醜く腐れ切った清王朝を転覆させなければならない」" #Sun Yat Sen
+ boxer_rebellion_events.4.f: "「国家としての独立を回復するには、まず中国人の国を復興しなければならない。中国人の国を取り戻すには、野蛮人である満州族を長白山へと追放する必要がある。そして野蛮人を追い払うには、まず、現在の専制的かつ独裁的で醜く腐れ切った清王朝を転覆させなければならない」" # Sun Yat Sen
  boxer_rebellion_events.4.a: "ようやく[SCOPE.sCulture('manchu_culture').GetName]の軛から解放された。"
  boxer_rebellion_events.4.b: "今こそ和解の時だ。"
  ##################### Contextual Election Events
- election_contextual_events.1.t: "パンとバター、そして投票" #High Food Prices
+ election_contextual_events.1.t: "パンとバター、そして投票" # High Food Prices
  election_contextual_events.1.d: "国内では[SCOPE.sGoods('basic_foodstuff').GetName]価格の高騰が止まらない。[SCOPE.sParty('high_food_price_party').GetName]は対抗勢力からの執拗な圧力に苛まれていた。無謀にも市民の富を玩具にしたのだと彼らから非難を浴びている。"
  election_contextual_events.1.f: "「[SCOPE.sGoods('basic_foodstuff').GetNameNoFormatting]価格の高騰？戯言を！私の若い頃は今よりも少ない食事で倍の仕事をしたものだ！「法外な」食料価格はヒステリックな主婦の思い過ごしに過ぎない！」"
  election_contextual_events.1.a: "ならば他のものを食べればよいだけだ！"
  election_contextual_events.1.b: "炊き出しに資金投入だ。腹が満たされればミスも少なくなる。"
  alms_for_the_poor: "貧者への施し"
- election_contextual_events.2.t: "いかさまの未来" #High Debts
+ election_contextual_events.2.t: "いかさまの未来" # High Debts
  election_contextual_events.2.d: "[SCOPE.sParty('public_debt_party').GetName]による大規模な債務拡大方針は、未来の世代に過度な負担を強いることになり、支持層の有権者が壊れた篩のように、とめどなく党から漏出してしまったという主張がなされている。"
- election_contextual_events.2.f: "「国債を抱える若者に祝福あれ」" #Herbert Hoover (Might remove this one because of slight anachronism, but the quote IS quite funny)
+ election_contextual_events.2.f: "「国債を抱える若者に祝福あれ」" # Herbert Hoover (Might remove this one because of slight anachronism, but the quote IS quite funny)
  election_contextual_events.2.a: "債務は健全な経済における礎石だ！"
  election_contextual_events.2.b: "スケープゴートを探せ。民衆は生贄を求めている。"
  fiscally_irresponsible: "無責任な財政"
- election_contextual_events.3.t: "戦争の否定する平和主義者" #Waging a War of Aggression
+ election_contextual_events.3.t: "戦争の否定する平和主義者" # Waging a War of Aggression
  election_contextual_events.3.d: "著名な平和主義者である[SCOPE.gsInterestGroup('opposition_pacifist_ig').GetName]のリーダー[SCOPE.sCharacter('pacifist_ig_leader').GetFullName]は、現職の[SCOPE.sParty('government_war_party').GetName]に激しい攻撃を仕掛けており、[ROOT.GetCountry.GetAdjectiveNoFormatting]軍が[SCOPE.sWar('pacifist_war').GetNameNoFormatting]戦争において、彼らの目の前で重大な残虐行為を犯したと主張しています。"
  election_contextual_events.3.f: "「我々・・・私は捕虜を集めるよう命令されました。年寄りや若者、中には私の息子より若い子どもまで。魔弾の射手と呼ばれた狙撃手たちが我々の戦線を妨害していました。私の司令官は彼らを「殺人者ども」と呼んでいました。胸に悪意を秘め、手にライフルを持った「ハイウェイマン」であると。捕虜は奴らの注意を逸らせるためのものでした！\n\nしかしその夕刻、三人目となる兵士が倒れると、司令官は捕虜を連行するよう私に言いました・・・納屋へ連れて行くようにと・・・そして・・・神様、お許しください」"
  election_contextual_events.3.a: "我々の兵士が何をしたと！？誰に対して！？"
@@ -261,35 +261,35 @@
  martyrized_pacifist: "信念に殉じた平和主義者"
  election_contextual_events.3.tt.1: "非愛国的な誹謗中傷は大衆の目から遠ざけられます。"
  election_contextual_events.3.tt.2: "我々の努力も空しく情報が漏洩しました。"
- election_contextual_events.4.t: "誰がために鐘は鳴る" #Old IG leader
+ election_contextual_events.4.t: "誰がために鐘は鳴る" # Old IG leader
  election_contextual_events.4.d: "[SCOPE.gsInterestGroup('decrepit_leader_ig').GetName]のリーダーである[SCOPE.sCharacter('decrepit_leader').GetFullName]老が、作戦途中で予期せず天に召されました。[SCOPE.sParty('decrepit_leader_party').GetName]の顔ともいえる政治家が失われてしまったのです。今では誰もが[SCOPE.sCharacter('decrepit_leader').GetHerHis]の後任に関心をよせています。"
  election_contextual_events.4.f: "「予期せずとな？ふん！あの老骨は主に召される予定がのびのびになっていただけだ。党に新風を吹き込む時がやって来たのだ！」"
  election_contextual_events.4.a: "人気はあるが無能な候補者を立てることにしよう。"
  election_contextual_events.4.b: "信念を持ちながらも、傲慢な若者にその座を与えよう。"
  well_connected: "太いパイプあり"
  imperious_upstart: "横柄な成りあがり"
- election_contextual_events.5.t: "困窮の国" #Low Standard of Living
+ election_contextual_events.5.t: "困窮の国" # Low Standard of Living
  election_contextual_events.5.d: "[SCOPE.gsInterestGroup('low_sol_opposition_ig').GetName]のリーダーである[SCOPE.sCharacter('low_sol_opposition_leader').GetFullName]は、失政や国内の低い生活水準の原因であるとして、[SCOPE.sParty('low_sol_party').GetName]を声高に非難している。[SCOPE.sParty('low_sol_opposition_party').GetName]のみが改善へ向けた意志を有しているとの主張だ。"
  election_contextual_events.5.f: "「私は今日ここに来る道中で信じられないような光景を目撃した。あまりにも絶望的でどう説明すれば良いのかわからないほどだ。かつて立派な兵士だった者が、屑鉄を求めて泥の中で呻いていたのだ。埃っぽい長屋のある通りでは絶望した家族が肩を寄せ合っているた。私が見たのは栄養失調、貧困、絶望だ。\n\n市民の皆さん、それが[SCOPE.sParty('low_sol_party').GetNameNoFormatting]の遺産なのだ」"
  election_contextual_events.5.a: "どうして我々を責める？彼らや少しでも貧困から脱しようとしたことがあるのか？"
  election_contextual_events.5.b: "政権内における数個の腐った卵だ、それ以上のものではない。"
  indifferent_to_destitution: "貧困への無関心"
  defender_of_the_downtrodden: "虐げられた者たちの擁護者"
- election_contextual_events.6.t: "豊潤の国" #High Standard of Living
+ election_contextual_events.6.t: "豊潤の国" # High Standard of Living
  election_contextual_events.6.d: "この国の高い生活水準が、現状への満足感を拡大させ、進行中の選挙における[SCOPE.sCharacter('high_sol_leader').GetFullName]と現職の[SCOPE.sParty('high_sol_party').GetName]への支持という結果をもたらしました。"
  election_contextual_events.6.f: "「変化？どうして私が変化を求めるのだ？私は満腹で、幸せな妻と良い仕事に恵まれている。不確かな何かを追いかけてそれを無駄にする理由がとこにある？」"
  election_contextual_events.6.a: "壊れていないのなら修理は必要ないだろう？"
  election_contextual_events.6.b: "[SCOPE.sCharacter('high_sol_leader').GetFullNameNoFormatting]の偉業を賛美しよう。"
  champion_of_prosperity: "繫栄の王者"
  patrons_of_prosperity: "繫栄のパトロン"
- election_contextual_events.7.t: "連立クーポン" #Winning a War
+ election_contextual_events.7.t: "連立クーポン" # Winning a War
  election_contextual_events.7.d: "[SCOPE.sWar('ongoing_election_war').GetName]戦争での良好な戦果を受け、国内は戦争の狂乱に包まれています。現職の[SCOPE.sParty('ongoing_election_war_party').GetName]は戦争努力を支持していると思われる議会の候補者へ手紙を送り、愛国的な有権者を彼らの政治信条に傾倒させています。"
  election_contextual_events.7.f: "「[SCOPE.sCharacter('pacifist_ig_leader').GetSheHe|U]は手紙を受け取らなかったって？あいつは腰抜けの臆病者で、毒にも薬にもならない平和主義者だからな。我々の仲間が戦地で死んでいるというのに、[SCOPE.sCharacter('pacifist_ig_leader').GetSheHe]は何をしてくれた？ごちゃ混ぜになった紙の束の周りに座って、我々の血と引き換えに得た利益を浪費するための絶好の機会を窺っているのだ。兵士には彼らのために戦ってくれる誰かが必要だ。彼らは我々のために戦ってくれているのだから」"
  election_contextual_events.7.a: "分け前・・・いや旗印の元に集結だ！"
  election_contextual_events.7.b: "我々のためか？それとも我々の敵のためか？"
  jingoist_rhetoric: "ジンゴイストのレトリック"
  dove_of_peace_in_time_of_war: "戦地を飛ぶ平和の鳩"
- election_contextual_events.8.t: "ジンとビールの潮流" #Enacting Temperance Policies
+ election_contextual_events.8.t: "ジンとビールの潮流" # Enacting Temperance Policies
  election_contextual_events.8.d: "国の禁酒政策を終焉に導くような変化を求める酒好きの有権者が多数[SCOPE.sParty('anti_temperance_party').GetName]に流れたことで、[SCOPE.sParty('temperance_party').GetName]の反アルコール政策が選挙の見通しに暗い影を落としています。"
  election_contextual_events.8.f: "「誘惑に抗えだ？俺を誘惑するのが何か教えてやる。お前のような杓子定規の絶対禁酒主義者のあそこにこのブーツをぶち込んでやることだ。俺は飲みたいし、飲んでやる。おまえさんがそれをさせないってならそうしてくれる奴に投票するまでだ」"
  election_contextual_events.8.a: "ノービール、ノー投票！"
@@ -308,9 +308,9 @@
  arsenal_proving_ground: "武器庫試験場"
  military_tech_events.402.t: "悪魔の絵筆"
  military_tech_events.402.d: "[SCOPE.sCharacter('machine_gun_general').GetPrimaryRoleTitle][SCOPE.sCharacter('machine_gun_general').GetFullName]が[SCOPE.sWar('machine_gun_war').GetName]戦争に機関銃専門のチームを投入したことにより、戦地において有利な戦果がもたらされることとなった。敵の小隊がこちらの前線にたどり着く前に全滅したからだ。"
- military_tech_events.402.f: "「その銃は弾薬帯を所定の位置まで引き出し、そこから装填された弾倉を取り出し、砲身の前まで移動させ、砲身に押し込み、適切な方法で砲尾を閉じ、撃鉄を起こして引き金を引いて弾倉を発射する。さらに空になった薬莢を取り出して機構から排除し、新しい弾倉を所定位置に供給する。そしてこれらを十分の一秒以下で実行するというものだが、このような銃の製造が可能であると誰かに言われたとしても、以前の私であれば本気で取り合わなかったことだろう。\n\nしかし私は実際にこの目でそれが真実であることを確認したのだ」" #Francis Pratt
+ military_tech_events.402.f: "「その銃は弾薬帯を所定の位置まで引き出し、そこから装填された弾倉を取り出し、砲身の前まで移動させ、砲身に押し込み、適切な方法で砲尾を閉じ、撃鉄を起こして引き金を引いて弾倉を発射する。さらに空になった薬莢を取り出して機構から排除し、新しい弾倉を所定位置に供給する。そしてこれらを十分の一秒以下で実行するというものだが、このような銃の製造が可能であると誰かに言われたとしても、以前の私であれば本気で取り合わなかったことだろう。\n\nしかし私は実際にこの目でそれが真実であることを確認したのだ」" # Francis Pratt
  military_tech_events.402.a: "我々の敵は鎌に刈られる草のように薙ぎ払われるだろう。"
- military_tech_events.402.b: "何があっても我々にはマキシム機関銃がある。奴らにはない。" #Hilaire Belloc
+ military_tech_events.402.b: "何があっても我々にはマキシム機関銃がある。奴らにはない。" # Hilaire Belloc
  military_tech_events.402.c: "このツールに関する[SCOPE.sCharacter('machine_gun_general').GetFullName]の熟練度は他の追随を許さない。"
  machine_gun_expertise_low: "機関銃エキスパート"
  machine_gun_expertise_high: "機関銃エキスパート"
@@ -488,7 +488,7 @@
  resource_extraction_charter_modifier: "植民地企業"
  colonial_administration_events.2.t: "切断された手足"
  colonial_administration_events.2.d: "本国との行政的なつながりが断たれたことで、[ROOT.GetCountry.GetName]全域で大規模な抗議活動が勃発しています。人手不足の植民地軍が対応に追われています。"
- colonial_administration_events.2.f: "「[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]は我々に自由を与え、遺産や財産にすることはなかった。だから[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]によって、我々ははもう遺贈されたり奴隷状態にされたりすることはない。」" #Urabi
+ colonial_administration_events.2.f: "「[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]は我々に自由を与え、遺産や財産にすることはなかった。だから[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]によって、我々ははもう遺贈されたり奴隷状態にされたりすることはない。」" # Urabi
  colonial_administration_events.2.a: "[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]よ、[ROOT.GetCountry.GetNameNoFormatting]をお守りください。"
  colonial_administration_events.2.b: "植民地統治はもはや持続不可能だ。我々は多数派による支配を確立しなければならない。"
  colony_alone_modifier: "支配者がいない植民地"

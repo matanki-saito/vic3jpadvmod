@@ -1,39 +1,39 @@
 ﻿l_japanese:
  ### Dnieper Strategic Region
- #Kyiv - Ukrainian by default
+ # Kyiv - Ukrainian by default
  STATE_KIEV_russian: "キーウ"
  HUB_NAME_STATE_KIEV_city_russian: "キーウ"
  HUB_NAME_STATE_KIEV_farm_russian: "ジトーミル"
  HUB_NAME_STATE_KIEV_wood_russian: "ヴィーンヌィツャ"
- #Volhynia - Ukrainian by default
+ # Volhynia - Ukrainian by default
  STATE_VOLHYNIA_russian: "ヴォルィーニ"
  HUB_NAME_STATE_VOLHYNIA_city_russian: "$HUB_NAME_STATE_VOLHYNIA_city$"
  HUB_NAME_STATE_VOLHYNIA_port_russian: ""
  HUB_NAME_STATE_VOLHYNIA_mine_russian: "$HUB_NAME_STATE_VOLHYNIA_mine$"
  HUB_NAME_STATE_VOLHYNIA_farm_russian: "$HUB_NAME_STATE_VOLHYNIA_farm$"
  HUB_NAME_STATE_VOLHYNIA_wood_russian: "リウネ"
- #Cherson - Ukrainian by default
+ # Cherson - Ukrainian by default
  STATE_CHERSON_russian: "ヘルソン"
  HUB_NAME_STATE_CHERSON_city_russian: "$HUB_NAME_STATE_CHERSON_city$"
  HUB_NAME_STATE_CHERSON_port_russian: "オデッサ"
  HUB_NAME_STATE_CHERSON_mine_russian: "クリヴォイ・ログ"
  HUB_NAME_STATE_CHERSON_farm_russian: "ムィコラーイウ"
  HUB_NAME_STATE_CHERSON_wood_russian: "エカテリノスラフ"
- #Kharkov - Ukrainian by default
+ # Kharkov - Ukrainian by default
  STATE_KHARKOV_russian: "ハルキウ"
  HUB_NAME_STATE_KHARKOV_city_russian: "ハルキウ"
  HUB_NAME_STATE_KHARKOV_port_russian: ""
  HUB_NAME_STATE_KHARKOV_mine_russian: "$HUB_NAME_STATE_KHARKOV_mine$"
  HUB_NAME_STATE_KHARKOV_farm_russian: "$HUB_NAME_STATE_KHARKOV_farm$"
  HUB_NAME_STATE_KHARKOV_wood_russian: "$HUB_NAME_STATE_KHARKOV_wood$"
- #Taurida - Ukrainian by default
+ # Taurida - Ukrainian by default
  STATE_TAURIDA_russian: "タヴリダ"
  HUB_NAME_STATE_TAURIDA_city_russian: "アレクサンドロフスク"
  HUB_NAME_STATE_TAURIDA_mine_russian: "ルハーンシク"
  HUB_NAME_STATE_TAURIDA_port_russian: "$HUB_NAME_STATE_TAURIDA_port$"
  HUB_NAME_STATE_TAURIDA_farm_russian: "$HUB_NAME_STATE_TAURIDA_farm$"
  HUB_NAME_STATE_TAURIDA_wood_russian: "$HUB_NAME_STATE_TAURIDA_wood$"
- #Crimea - Ukrainian by default
+ # Crimea - Ukrainian by default
  STATE_CRIMEA_russian: "クリミア"
  HUB_NAME_STATE_CRIMEA_city_russian: "$HUB_NAME_STATE_CRIMEA_city$"
  HUB_NAME_STATE_CRIMEA_port_russian: "$HUB_NAME_STATE_CRIMEA_port$"
@@ -46,7 +46,7 @@
  HUB_NAME_STATE_CRIMEA_mine_tatar: "ケルチ"
  HUB_NAME_STATE_CRIMEA_farm_tatar: "ケズレヴ"
  HUB_NAME_STATE_CRIMEA_wood_tatar: "ケフェ"
- #Chernihiv - Ukrainian by default
+ # Chernihiv - Ukrainian by default
  STATE_CHERNIHIV_russian: "チェルニーヒウ"
  HUB_NAME_STATE_CHERNIHIV_city_russian: "チェルニーヒウ"
  HUB_NAME_STATE_CHERNIHIV_port_russian: ""
@@ -54,28 +54,28 @@
  HUB_NAME_STATE_CHERNIHIV_farm_russian: "$HUB_NAME_STATE_CHERNIHIV_farm$"
  HUB_NAME_STATE_CHERNIHIV_wood_russian: "$HUB_NAME_STATE_CHERNIHIV_wood$"
  ### Belarus Strategic Region
- #Grodno - Belarusian by default
+ # Grodno - Belarusian by default
  STATE_BREST_russian: "グロドノ"
  HUB_NAME_STATE_BREST_city_russian: "グロドノ"
  HUB_NAME_STATE_BREST_port_russian: ""
  HUB_NAME_STATE_BREST_mine_russian: "$HUB_NAME_STATE_BREST_mine$"
  HUB_NAME_STATE_BREST_farm_russian: "ブレスト＝リトフスク"
  HUB_NAME_STATE_BREST_wood_russian: "オシミャニ"
- #Minsk - Belarusian by default
+ # Minsk - Belarusian by default
  STATE_MINSK_russian: "ミンスク"
  HUB_NAME_STATE_MINSK_city_russian: "$HUB_NAME_STATE_MINSK_city$"
  HUB_NAME_STATE_MINSK_port_russian: ""
  HUB_NAME_STATE_MINSK_mine_russian: "コイダノフ"
  HUB_NAME_STATE_MINSK_farm_russian: "スウツク"
  HUB_NAME_STATE_MINSK_wood_russian: "ボリソフ"
- #Mogilev - Belarusian by default
+ # Mogilev - Belarusian by default
  STATE_MOGILEV_russian: "モギリョフ"
  HUB_NAME_STATE_MOGILEV_city_russian: "モギリョフ"
  HUB_NAME_STATE_MOGILEV_port_russian: ""
  HUB_NAME_STATE_MOGILEV_mine_russian: "ゴメリ"
  HUB_NAME_STATE_MOGILEV_farm_russian: "オルシャ"
  HUB_NAME_STATE_MOGILEV_wood_russian: "ロガチョフ"
- #Vitebsk - Belarusian by default
+ # Vitebsk - Belarusian by default
  STATE_VITEBSK_russian: "ヴィチェプスク"
  HUB_NAME_STATE_VITEBSK_city_russian: "ヴィチェプスク"
  HUB_NAME_STATE_VITEBSK_port_russian: ""
@@ -83,35 +83,35 @@
  HUB_NAME_STATE_VITEBSK_farm_russian: "ポーロツク"
  HUB_NAME_STATE_VITEBSK_wood_russian: "レペリ"
  ### Poland Strategic Region
- #Posen - German by default
+ # Posen - German by default
  STATE_POSEN_polish: "ポズナン"
  HUB_NAME_STATE_POSEN_city_polish: "ポズナン"
  HUB_NAME_STATE_POSEN_port_russian: ""
  HUB_NAME_STATE_POSEN_mine_polish: "レシュノ"
  HUB_NAME_STATE_POSEN_farm_polish: "ブィドゴシュチュ"
  HUB_NAME_STATE_POSEN_wood_polish: "ノビ・トミシル"
- #Warsawza - Polish by default
+ # Warsawza - Polish by default
  STATE_GREATER_POLAND_german: "ワルシャワ"
  HUB_NAME_STATE_GREATER_POLAND_city_german: "ワルシャワ"
  HUB_NAME_STATE_GREATER_POLAND_port_russian: ""
  HUB_NAME_STATE_GREATER_POLAND_mine_german: "ウッチ"
  HUB_NAME_STATE_GREATER_POLAND_farm_german: "ラドム"
  HUB_NAME_STATE_GREATER_POLAND_wood_german: "チェンストホヴァ"
- #Lublin - Polish by default
+ # Lublin - Polish by default
  STATE_LESSER_POLAND_german: "ルブリン"
  HUB_NAME_STATE_LESSER_POLAND_city_german: "ルブリン"
  HUB_NAME_STATE_LESSER_POLAND_port_german: ""
  HUB_NAME_STATE_LESSER_POLAND_mine_german: "シェドルツェ"
  HUB_NAME_STATE_LESSER_POLAND_farm_german: "ホルム"
  HUB_NAME_STATE_LESSER_POLAND_wood_german: "ビャワ・ポドラスカ"
- #Mazovia - Polish by default
+ # Mazovia - Polish by default
  STATE_MAZOVIA_german: "プウォツク"
  HUB_NAME_STATE_MAZOVIA_city_german: "プウォツク"
  HUB_NAME_STATE_MAZOVIA_port_german: ""
  HUB_NAME_STATE_MAZOVIA_mine_german: "ムワバ"
  HUB_NAME_STATE_MAZOVIA_farm_german: "ウォムジャ"
  HUB_NAME_STATE_MAZOVIA_wood_german: "ビャウィストク"
- #West Galicia - Polish by default
+ # West Galicia - Polish by default
  STATE_WEST_GALICIA_german: "西ガリツィア"
  HUB_NAME_STATE_WEST_GALICIA_city_german: "クラクフ"
  HUB_NAME_STATE_WEST_GALICIA_port_german: ""
@@ -119,7 +119,7 @@
  HUB_NAME_STATE_WEST_GALICIA_farm_german: "レシェル"
  HUB_NAME_STATE_WEST_GALICIA_wood_german: "タルヌフ"
  STATE_WEST_GALICIA_polish: "西ガリツィア"
- #East Galicia - Ukrainian by default
+ # East Galicia - Ukrainian by default
  STATE_EAST_GALICIA_german: "東ガリツィア"
  HUB_NAME_STATE_EAST_GALICIA_city_german: "リヴィウ"
  HUB_NAME_STATE_EAST_GALICIA_port_german: ""
@@ -133,7 +133,7 @@
  HUB_NAME_STATE_EAST_GALICIA_farm_polish: "スタニスラフ"
  HUB_NAME_STATE_EAST_GALICIA_wood_polish: "ストルイ"
  STATE_EAST_GALICIA_ukrainian: "リヴィウ"
- #Lower Silesia - German by default
+ # Lower Silesia - German by default
  STATE_LOWER_SILESIA_polish: "ドールニィシロンスク"
  HUB_NAME_STATE_LOWER_SILESIA_city_polish: "ヴロツワフ"
  HUB_NAME_STATE_LOWER_SILESIA_port_polish: ""
@@ -141,7 +141,7 @@
  HUB_NAME_STATE_LOWER_SILESIA_farm_polish: "レグニツァ"
  HUB_NAME_STATE_LOWER_SILESIA_wood_polish: "グウォグフ"
  STATE_LOWER_SILESIA_german: "ニーダーシュレジエン"
- #UPPER Silesia - German by default
+ # UPPER Silesia - German by default
  STATE_UPPER_SILESIA_polish: "ゴルニィシロンスク"
  HUB_NAME_STATE_UPPER_SILESIA_city_polish: "オポレ"
  HUB_NAME_STATE_UPPER_SILESIA_port_polish: ""
@@ -163,7 +163,7 @@
  HUB_NAME_STATE_LOWER_SILESIA_mine_czech: "ゴジツェ"
  HUB_NAME_STATE_LOWER_SILESIA_farm_czech: "レグニツァ"
  HUB_NAME_STATE_LOWER_SILESIA_wood_czech: "グウォグフ"
- #West Prussia - German by default
+ # West Prussia - German by default
  STATE_WEST_PRUSSIA_polish: "カスフビア"
  HUB_NAME_STATE_WEST_PRUSSIA_city_polish: "グダニスク"
  HUB_NAME_STATE_WEST_PRUSSIA_port_polish: "プツク"
@@ -171,7 +171,7 @@
  HUB_NAME_STATE_WEST_PRUSSIA_farm_polish: "トルン"
  HUB_NAME_STATE_WEST_PRUSSIA_wood_polish: "ブロドニツァ"
  STATE_WEST_PRUSSIA_german: "西プロイセン"
- #East Prussia - German by default
+ # East Prussia - German by default
  STATE_EAST_PRUSSIA_polish: "ヴァルミア"
  HUB_NAME_STATE_EAST_PRUSSIA_city_polish: "クルレビエツ"
  HUB_NAME_STATE_EAST_PRUSSIA_port_polish: "クワイペダ"
@@ -180,7 +180,7 @@
  HUB_NAME_STATE_EAST_PRUSSIA_wood_polish: "オルシュティン"
  STATE_EAST_PRUSSIA_german: "東プロイセン"
  ### Livonia Strategic Region
- #Kaunas - Lithuanian by default
+ # Kaunas - Lithuanian by default
  STATE_KAUNAS_russian: "リトアニア"
  HUB_NAME_STATE_KAUNAS_city_russian: "カウナス"
  HUB_NAME_STATE_KAUNAS_mine_russian: "ヴィルクメルゲ"
@@ -193,7 +193,7 @@
  HUB_NAME_STATE_KAUNAS_farm_polish: "シャウレイ"
  HUB_NAME_STATE_KAUNAS_wood_polish: "ヴィルカヴィシュキス"
  HUB_NAME_STATE_KAUNAS_port_polish: "パランガ"
- #Vilnius - Lithuanian by default
+ # Vilnius - Lithuanian by default
  STATE_VILNIUS_russian: "ヴィリニュス"
  HUB_NAME_STATE_VILNIUS_city_russian: "ヴィリニュス"
  HUB_NAME_STATE_VILNIUS_port_russian: ""
@@ -212,7 +212,7 @@
  HUB_NAME_STATE_VILNIUS_farm_belarusian: "ドルスキニンカイ"
  HUB_NAME_STATE_VILNIUS_wood_belarusian: "シュヴェンチョニース"
  HUB_NAME_STATE_VILNIUS_mine_belarusian: ""
- #Riga - Latvian by default
+ # Riga - Latvian by default
  STATE_RIGA_german: "リガ"
  HUB_NAME_STATE_RIGA_city_german: "リガ"
  HUB_NAME_STATE_RIGA_port_german: "スロカ"
@@ -220,7 +220,7 @@
  HUB_NAME_STATE_RIGA_farm_german: "ヴェンデン"
  HUB_NAME_STATE_RIGA_wood_german: "ドヴィンスク"
  STATE_RIGA_latvian: "リガ"
- #Courland - Latvian by default
+ # Courland - Latvian by default
  STATE_COURLAND_german: "クールラント"
  HUB_NAME_STATE_COURLAND_city_german: "ミタヴァ"
  HUB_NAME_STATE_COURLAND_port_german: "リバヴァ"
@@ -228,14 +228,14 @@
  HUB_NAME_STATE_COURLAND_farm_german: "フリードリヒシュタット"
  HUB_NAME_STATE_COURLAND_wood_german: "ゴールディンゲン"
  STATE_COURLAND_latvian: "リエパーヤ"
- #Talinn - Estonian by default
+ # Talinn - Estonian by default
  STATE_TALINN_german: "エストニア"
  HUB_NAME_STATE_TALINN_city_german: "レヴェル"
  HUB_NAME_STATE_TALINN_port_german: "パルティスキ"
  HUB_NAME_STATE_TALINN_mine_german: "ヴィッテンシュタイン"
  HUB_NAME_STATE_TALINN_farm_german: "ナルヴァ"
  HUB_NAME_STATE_TALINN_wood_german: "ハープサル"
- #Tartu - Estonian by default
+ # Tartu - Estonian by default
  STATE_TARTU_german: "ドルパット"
  HUB_NAME_STATE_TARTU_city_german: "ドルパット"
  HUB_NAME_STATE_TARTU_port_german: "パルヌ"
@@ -244,14 +244,14 @@
  HUB_NAME_STATE_TARTU_wood_german: "ウェロ"
  STATE_TARTU_estonian: "タルトゥ"
  ### Finland Strategic Region
- #Kola - Russian by default
+ # Kola - Russian by default
  STATE_KOLA_finnish: "コラ"
  HUB_NAME_STATE_KOLA_city_finnish: "コラ"
  HUB_NAME_STATE_KOLA_port_finnish: "ムルマンスク"
  HUB_NAME_STATE_KOLA_mine_finnish: "オレネゴルスク"
  HUB_NAME_STATE_KOLA_farm_finnish: "カンダラクシャ"
  HUB_NAME_STATE_KOLA_wood_finnish: "ウムバ"
- #East Karelia - Russian by default
+ # East Karelia - Russian by default
  STATE_EAST_KARELIA_finnish: "東カレリア"
  HUB_NAME_STATE_EAST_KARELIA_city_finnish: "アーニスリンナ"
  HUB_NAME_STATE_EAST_KARELIA_port_finnish: "ソロカ"
@@ -259,28 +259,28 @@
  HUB_NAME_STATE_EAST_KARELIA_farm_finnish: "ケミ"
  HUB_NAME_STATE_EAST_KARELIA_wood_finnish: "ポヴェネツ"
  ## Flanders
- #Flanders - French
+ # Flanders - French
  STATE_FLANDERS_french: "フランドル"
  HUB_NAME_STATE_FLANDERS_city_french: "ブリュッセル"
- HUB_NAME_STATE_FLANDERS_port_french: "ブルッヘ" #same nameform in French
- HUB_NAME_STATE_FLANDERS_mine_french: "ハッセルト" #same nameform in Dutch, French, and West-Vlams.
+ HUB_NAME_STATE_FLANDERS_port_french: "ブルッヘ" # same nameform in French
+ HUB_NAME_STATE_FLANDERS_mine_french: "ハッセルト" # same nameform in Dutch, French, and West-Vlams.
  HUB_NAME_STATE_FLANDERS_farm_french: "アントウェルペン"
  HUB_NAME_STATE_FLANDERS_wood_french: "ヘント"
- #Flanders - German
+ # Flanders - German
  STATE_FLANDERS_german: "フランデレン"
  HUB_NAME_STATE_FLANDERS_city_german: "ブリュッセル"
  HUB_NAME_STATE_FLANDERS_port_german: "ブルージュ"
- HUB_NAME_STATE_FLANDERS_mine_german: "ハッセルト" #same nameform in German
+ HUB_NAME_STATE_FLANDERS_mine_german: "ハッセルト" # same nameform in German
  HUB_NAME_STATE_FLANDERS_farm_german: "アントウェルペン"
  HUB_NAME_STATE_FLANDERS_wood_german: "ヘント"
  ## Wallonia
- #Wallonia - French
+ # Wallonia - French
  STATE_WALLONIA_french: "ワロン"
  HUB_NAME_STATE_WALLONIA_city_french: "ルクセンブルク"
- HUB_NAME_STATE_WALLONIA_mine_french: "リエージュ" #same nameform in French
- HUB_NAME_STATE_WALLONIA_farm_french: "ナミュール" #same nameform in French
- HUB_NAME_STATE_WALLONIA_wood_french: "シャルルロワ" #same nameform in French
- #Wallonia - German
+ HUB_NAME_STATE_WALLONIA_mine_french: "リエージュ" # same nameform in French
+ HUB_NAME_STATE_WALLONIA_farm_french: "ナミュール" # same nameform in French
+ HUB_NAME_STATE_WALLONIA_wood_french: "シャルルロワ" # same nameform in French
+ # Wallonia - German
  STATE_WALLONIA_german: "ワロン"
  HUB_NAME_STATE_WALLONIA_city_german: "ルクセンブルク"
  HUB_NAME_STATE_WALLONIA_mine_german: "リュティヒ"
@@ -288,211 +288,211 @@
  HUB_NAME_STATE_WALLONIA_wood_german: "カロリング朝"
  HUB_NAME_STATE_WALLONIA_port_german: ""
  ## Gelre
- #Gelre - French
- STATE_GELRE_french: "イッセル" #technically Bouches du Rhin, Meuse Inférieur, Yssel Supérieur, et Bouches de l'Yssel.
- HUB_NAME_STATE_GELRE_city_french: "アイントホーフェン" #same nameform in French
+ # Gelre - French
+ STATE_GELRE_french: "イッセル" # technically Bouches du Rhin, Meuse Inférieur, Yssel Supérieur, et Bouches de l'Yssel.
+ HUB_NAME_STATE_GELRE_city_french: "アイントホーフェン" # same nameform in French
  HUB_NAME_STATE_GELRE_mine_french: "マーストリヒト"
  HUB_NAME_STATE_GELRE_farm_french: "ナイメーヘン"
- HUB_NAME_STATE_GELRE_wood_french: "アルンヘム" #same nameform in French
- #Gelre - German
+ HUB_NAME_STATE_GELRE_wood_french: "アルンヘム" # same nameform in French
+ # Gelre - German
  STATE_GELRE_german: "ゲルデルン"
- HUB_NAME_STATE_GELRE_city_german: "アイントホーフェン" #same nameform in German
- HUB_NAME_STATE_GELRE_mine_german: "マーストリヒト" #same nameform in German up into 20th century, nowadays Maastricht
+ HUB_NAME_STATE_GELRE_city_german: "アイントホーフェン" # same nameform in German
+ HUB_NAME_STATE_GELRE_mine_german: "マーストリヒト" # same nameform in German up into 20th century, nowadays Maastricht
  HUB_NAME_STATE_GELRE_farm_german: "ナイメーヘン"
  HUB_NAME_STATE_GELRE_wood_german: "アーネム"
  ## Friesland
- #Friesland - French
+ # Friesland - French
  STATE_FRIESLAND_french: "フリーゼ"
  HUB_NAME_STATE_FRIESLAND_city_french: "フローニンゲン"
- HUB_NAME_STATE_FRIESLAND_port_french: "ハルリンゲン" #same nameform in French
- HUB_NAME_STATE_FRIESLAND_mine_french: "エメン" #same nameform in French
- HUB_NAME_STATE_FRIESLAND_farm_french: "ズヴォレ" #same nameform in French
- HUB_NAME_STATE_FRIESLAND_wood_french: "ドラハテン" #same nameform in French
- #Friesland - German
- HUB_NAME_STATE_FRIESLAND_city_german: "フローニンゲン" #old German name, not sure it'd be called like this in our time still or the modern Groningen
+ HUB_NAME_STATE_FRIESLAND_port_french: "ハルリンゲン" # same nameform in French
+ HUB_NAME_STATE_FRIESLAND_mine_french: "エメン" # same nameform in French
+ HUB_NAME_STATE_FRIESLAND_farm_french: "ズヴォレ" # same nameform in French
+ HUB_NAME_STATE_FRIESLAND_wood_french: "ドラハテン" # same nameform in French
+ # Friesland - German
+ HUB_NAME_STATE_FRIESLAND_city_german: "フローニンゲン" # old German name, not sure it'd be called like this in our time still or the modern Groningen
  ## Holland
- #Holland - French
+ # Holland - French
  STATE_HOLLAND_french: "オランダ"
- HUB_NAME_STATE_HOLLAND_city_french: "アムステルダム" #same nameform in French
- HUB_NAME_STATE_HOLLAND_port_french: "ロッテルダム" #same frenchform in Name
- HUB_NAME_STATE_HOLLAND_farm_french: "ユトレヒト" #same nameform in French
+ HUB_NAME_STATE_HOLLAND_city_french: "アムステルダム" # same nameform in French
+ HUB_NAME_STATE_HOLLAND_port_french: "ロッテルダム" # same frenchform in Name
+ HUB_NAME_STATE_HOLLAND_farm_french: "ユトレヒト" # same nameform in French
  HUB_NAME_STATE_HOLLAND_wood_french: "ブレダ"
- HUB_NAME_STATE_HOLLAND_mine_french: "ブルク・イン・ヴァテルラント" #same nameform in French
+ HUB_NAME_STATE_HOLLAND_mine_french: "ブルク・イン・ヴァテルラント" # same nameform in French
  ## Alsace-Lorraine
- #Alsace-Lorraine - French
- STATE_ALSACE_LORRAINE_french: "アルザス＝ロレーヌ" #I believe the state's default name is the French form in most translated loc, but I want to force this just in case
- #Alsace-Lorraine - German
+ # Alsace-Lorraine - French
+ STATE_ALSACE_LORRAINE_french: "アルザス＝ロレーヌ" # I believe the state's default name is the French form in most translated loc, but I want to force this just in case
+ # Alsace-Lorraine - German
  STATE_ALSACE_LORRAINE_german: "エルザス・ロートリンゲン"
  HUB_NAME_STATE_ALSACE_LORRAINE_city_german: "シュトラスブルク"
  HUB_NAME_STATE_ALSACE_LORRAINE_mine_german: "ミュルハウゼン"
  ## Lorraine
- #Lorraine - German
+ # Lorraine - German
  STATE_LORRAINE_german: "ロートリンゲン"
  HUB_NAME_STATE_LORRAINE_city_german: "ナンツィヒ"
  HUB_NAME_STATE_LORRAINE_mine_german: "ランギヒ"
  HUB_NAME_STATE_LORRAINE_farm_german: "フェルデン"
  HUB_NAME_STATE_LORRAINE_wood_german: "スパイナル"
  ## French Low Countries
- #French Low Countries - German
+ # French Low Countries - German
  HUB_NAME_STATE_FRENCH_LOW_COUNTRIES_port_german: "ダンケルク"
  ## Mecklenburg
- #Mecklenburg - French
+ # Mecklenburg - French
  STATE_MECKLENBURG_french: "メクレンブルク"
- HUB_NAME_STATE_MECKLENBURG_city_french: "シュヴェリーン" #same nameform in French
- HUB_NAME_STATE_MECKLENBURG_port_french: "ロストック" #same nameform in French
- HUB_NAME_STATE_MECKLENBURG_mine_french: "ノイシュトレーリッツ" #same nameform in French
+ HUB_NAME_STATE_MECKLENBURG_city_french: "シュヴェリーン" # same nameform in French
+ HUB_NAME_STATE_MECKLENBURG_port_french: "ロストック" # same nameform in French
+ HUB_NAME_STATE_MECKLENBURG_mine_french: "ノイシュトレーリッツ" # same nameform in French
  HUB_NAME_STATE_MECKLENBURG_farm_french: "ノイブランデンブルク"
- HUB_NAME_STATE_MECKLENBURG_wood_french: "ギュストロー" #same nameform in French
+ HUB_NAME_STATE_MECKLENBURG_wood_french: "ギュストロー" # same nameform in French
  ## Pomerania
- #Pomerania - French
+ # Pomerania - French
  STATE_POMERANIA_french: "ポメラニア"
- HUB_NAME_STATE_POMERANIA_city_french: "シュテティーン" #same nameform in French
- HUB_NAME_STATE_POMERANIA_port_french: "グライフスヴァルト" #same nameform in French
- HUB_NAME_STATE_POMERANIA_mine_french: "シュヴェート" #same nameform in French
+ HUB_NAME_STATE_POMERANIA_city_french: "シュテティーン" # same nameform in French
+ HUB_NAME_STATE_POMERANIA_port_french: "グライフスヴァルト" # same nameform in French
+ HUB_NAME_STATE_POMERANIA_mine_french: "シュヴェート" # same nameform in French
  HUB_NAME_STATE_POMERANIA_farm_french: "コシャリン"
- HUB_NAME_STATE_POMERANIA_wood_french: "シーフェルバイン" #same nameform in French
- #Pomerania - German
+ HUB_NAME_STATE_POMERANIA_wood_french: "シーフェルバイン" # same nameform in French
+ # Pomerania - German
  STATE_POMERANIA_german: "ポンメルン"
  ## Brandenburg
- #Brandenburg - French
+ # Brandenburg - French
  STATE_BRANDENBURG_french: "ブランデンブルク"
  ## Saxony
- #Saxony - French
+ # Saxony - French
  STATE_SAXONY_french: "ザクセン"
  HUB_NAME_STATE_SAXONY_city_french: "ドレスデン"
- HUB_NAME_STATE_SAXONY_mine_french: "ライプツィヒ" #same nameform in French
- HUB_NAME_STATE_SAXONY_farm_french: "エアフルト" #same nameform in French
- HUB_NAME_STATE_SAXONY_wood_french: "ゲラ" #same nameform in French
- #Saxony - German
+ HUB_NAME_STATE_SAXONY_mine_french: "ライプツィヒ" # same nameform in French
+ HUB_NAME_STATE_SAXONY_farm_french: "エアフルト" # same nameform in French
+ HUB_NAME_STATE_SAXONY_wood_french: "ゲラ" # same nameform in French
+ # Saxony - German
  STATE_SAXONY_german: "ザクセン"
  ## Franconia
- #Saxony - French
+ # Saxony - French
  STATE_FRANCONIA_french: "フランケン"
- HUB_NAME_STATE_FRANCONIA_city_french: "ニュルンベルク" #English loc already uses French form, but this will Francify it even in German loc then
- HUB_NAME_STATE_FRANCONIA_mine_french: "バイロイト" #same nameform in French
+ HUB_NAME_STATE_FRANCONIA_city_french: "ニュルンベルク" # English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_FRANCONIA_mine_french: "バイロイト" # same nameform in French
  HUB_NAME_STATE_FRANCONIA_farm_french: "コーブルク"
  HUB_NAME_STATE_FRANCONIA_wood_french: "ヴュルツブルク"
  HUB_NAME_STATE_FRANCONIA_port_french: ""
- #Franconia - German
+ # Franconia - German
  STATE_FRANCONIA_german: "フランケン"
  HUB_NAME_STATE_FRANCONIA_city_german: "ニュルンベルク"
- HUB_NAME_STATE_FRANCONIA_mine_german: "バイロイト" #same nameform in German
- HUB_NAME_STATE_FRANCONIA_farm_german: "コーブルク" #same nameform in German
- HUB_NAME_STATE_FRANCONIA_wood_german: "ヴュルツブルク" #same nameform in German
+ HUB_NAME_STATE_FRANCONIA_mine_german: "バイロイト" # same nameform in German
+ HUB_NAME_STATE_FRANCONIA_farm_german: "コーブルク" # same nameform in German
+ HUB_NAME_STATE_FRANCONIA_wood_german: "ヴュルツブルク" # same nameform in German
  HUB_NAME_STATE_FRANCONIA_port_german: ""
  ## Bavaria
- #Bavaria - French
+ # Bavaria - French
  STATE_BAVARIA_french: "バイエルン"
- HUB_NAME_STATE_BAVARIA_city_french: "ミュンヘン" #English loc already uses French form, but this will Francify it even in German loc then
- HUB_NAME_STATE_BAVARIA_mine_french: "ローゼンハイム" #same nameform in French
+ HUB_NAME_STATE_BAVARIA_city_french: "ミュンヘン" # English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_BAVARIA_mine_french: "ローゼンハイム" # same nameform in French
  HUB_NAME_STATE_BAVARIA_farm_french: "レーゲンスブルク"
  HUB_NAME_STATE_BAVARIA_wood_french: "アウクスブルク"
- #Bavaria - German
+ # Bavaria - German
  STATE_BAVARIA_german: "バイエルン"
  HUB_NAME_STATE_BAVARIA_city_german: "ミュンヘン"
  ## Wurttemberg
- #Wurttemberg - French
+ # Wurttemberg - French
  STATE_WURTTEMBERG_french: "ヴュルテンベルク"
  HUB_NAME_STATE_WURTTEMBERG_city_french: "シュトゥットガルト"
- HUB_NAME_STATE_WURTTEMBERG_mine_french: "リンダウ" #same nameform in French
- HUB_NAME_STATE_WURTTEMBERG_farm_french: "ウルム" #same nameform in French
+ HUB_NAME_STATE_WURTTEMBERG_mine_french: "リンダウ" # same nameform in French
+ HUB_NAME_STATE_WURTTEMBERG_farm_french: "ウルム" # same nameform in French
  HUB_NAME_STATE_WURTTEMBERG_wood_french: "ハイルブロン"
  ## Baden
- #Baden - French
+ # Baden - French
  HUB_NAME_STATE_BADEN_city_french: "カールスルーエ"
  HUB_NAME_STATE_BADEN_mine_french: "コンスタンス"
  HUB_NAME_STATE_BADEN_farm_french: "フリブール"
- HUB_NAME_STATE_BADEN_wood_french: "ハイデルベルク" #same nameform in French
+ HUB_NAME_STATE_BADEN_wood_french: "ハイデルベルク" # same nameform in French
  ## Rhineland
- #Rhineland - French
+ # Rhineland - French
  STATE_RHINELAND_french: "ラインラント"
  HUB_NAME_STATE_RHINELAND_city_french: "ザールブリュッケン"
- HUB_NAME_STATE_RHINELAND_mine_french: "カイザースラウテルン" #Really? THIS is the French form of Kaiserlautern?
- HUB_NAME_STATE_RHINELAND_farm_french: "マンハイム" #same nameform in French
+ HUB_NAME_STATE_RHINELAND_mine_french: "カイザースラウテルン" # Really? THIS is the French form of Kaiserlautern?
+ HUB_NAME_STATE_RHINELAND_farm_french: "マンハイム" # same nameform in French
  HUB_NAME_STATE_RHINELAND_wood_french: "トリーア"
- #Rhineland - German
+ # Rhineland - German
  STATE_RHINELAND_german: "ラインラント"
  ## Hesse
- #Hesse - French
- STATE_HESSE_french: "ヘッセ" #English loc already uses French form, but this will Francify it even in German loc then
+ # Hesse - French
+ STATE_HESSE_french: "ヘッセ" # English loc already uses French form, but this will Francify it even in German loc then
  HUB_NAME_STATE_HESSE_city_french: "フランクフルト"
- HUB_NAME_STATE_HESSE_mine_french: "ギーセン" #same nameform in French
+ HUB_NAME_STATE_HESSE_mine_french: "ギーセン" # same nameform in French
  HUB_NAME_STATE_HESSE_farm_french: "マインツ"
  HUB_NAME_STATE_HESSE_wood_french: "フルダ"
  ### Brunswick
- #Brunswick - French
- STATE_BRUNSWICK_french: "ブランズウィック" #English loc already uses French form, but this will Francify it even in German loc then
- HUB_NAME_STATE_BRUNSWICK_city_french: "ブランズウィック" #as above
- HUB_NAME_STATE_BRUNSWICK_mine_french: "ヒルデスハイム" #same nameform in French
- HUB_NAME_STATE_BRUNSWICK_farm_french: "ヴェルニゲローデ" #same nameform in French
+ # Brunswick - French
+ STATE_BRUNSWICK_french: "ブランズウィック" # English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_BRUNSWICK_city_french: "ブランズウィック" # as above
+ HUB_NAME_STATE_BRUNSWICK_mine_french: "ヒルデスハイム" # same nameform in French
+ HUB_NAME_STATE_BRUNSWICK_farm_french: "ヴェルニゲローデ" # same nameform in French
  HUB_NAME_STATE_BRUNSWICK_wood_french: "ヴォルフスブルク"
- #Brunswick - German
+ # Brunswick - German
  STATE_BRUNSWICK_german: "ブラウンシュヴァイク"
  HUB_NAME_STATE_BRUNSWICK_city_german: "ブラウンシュヴァイク"
  ## Anhalt
- #Anhalt - French
+ # Anhalt - French
  HUB_NAME_STATE_ANHALT_city_french: "マクデブルク"
- HUB_NAME_STATE_ANHALT_mine_french: "ハレ" #same nameform in French
- HUB_NAME_STATE_ANHALT_farm_french: "デッサウ" #same nameform in French
- HUB_NAME_STATE_ANHALT_wood_french: "シュテンダール" #same nameform in French
+ HUB_NAME_STATE_ANHALT_mine_french: "ハレ" # same nameform in French
+ HUB_NAME_STATE_ANHALT_farm_french: "デッサウ" # same nameform in French
+ HUB_NAME_STATE_ANHALT_wood_french: "シュテンダール" # same nameform in French
  ## Elbe
- #Elbe - French
+ # Elbe - French
  HUB_NAME_STATE_ELBE_city_french: "ハンブルク"
- HUB_NAME_STATE_ELBE_port_french: "ブレーマーハーフェン" #same nameform in French
- HUB_NAME_STATE_ELBE_mine_french: "エルムスホルン" #same nameform in French
+ HUB_NAME_STATE_ELBE_port_french: "ブレーマーハーフェン" # same nameform in French
+ HUB_NAME_STATE_ELBE_mine_french: "エルムスホルン" # same nameform in French
  HUB_NAME_STATE_ELBE_farm_french: "ブレーメン"
- HUB_NAME_STATE_ELBE_wood_french: "ヴァルスローデ" #same nameform in French
+ HUB_NAME_STATE_ELBE_wood_french: "ヴァルスローデ" # same nameform in French
  ## Hannover
- #Hannover - French
+ # Hannover - French
  STATE_HANNOVER_french: "ハノーファー"
  HUB_NAME_STATE_HANNOVER_city_french: "ハノーファー"
- HUB_NAME_STATE_HANNOVER_port_french: "エムデン" #same nameform in French
- HUB_NAME_STATE_HANNOVER_mine_french: "ビーレフェルト" #same nameform in French
- HUB_NAME_STATE_HANNOVER_farm_french: "オスナブリュック" #same nameform in French
- HUB_NAME_STATE_HANNOVER_wood_french: "ミンデン" #same nameform in French
- #Hannover - German
+ HUB_NAME_STATE_HANNOVER_port_french: "エムデン" # same nameform in French
+ HUB_NAME_STATE_HANNOVER_mine_french: "ビーレフェルト" # same nameform in French
+ HUB_NAME_STATE_HANNOVER_farm_french: "オスナブリュック" # same nameform in French
+ HUB_NAME_STATE_HANNOVER_wood_french: "ミンデン" # same nameform in French
+ # Hannover - German
  STATE_HANNOVER_german: "ハノーファー"
  HUB_NAME_STATE_HANNOVER_city_german: "ハノーファー"
  ## Westphalia
- #Westphalia - French
+ # Westphalia - French
  STATE_WESTPHALIA_french: "ヴェストファーレン"
  HUB_NAME_STATE_WESTPHALIA_city_french: "ドルトムント"
- HUB_NAME_STATE_WESTPHALIA_mine_french: "パーダーボルン" #same nameform in French
+ HUB_NAME_STATE_WESTPHALIA_mine_french: "パーダーボルン" # same nameform in French
  HUB_NAME_STATE_WESTPHALIA_farm_french: "マンスター"
- HUB_NAME_STATE_WESTPHALIA_wood_french: "エッセン" #same nameform in French
- #Westphalia - German
+ HUB_NAME_STATE_WESTPHALIA_wood_french: "エッセン" # same nameform in French
+ # Westphalia - German
  STATE_WESTPHALIA_german: "ヴェストファーレン"
  ## North Rhine
- #North Rhine - French
+ # North Rhine - French
  STATE_NORTH_RHINE_french: "北ラインラント"
- HUB_NAME_STATE_NORTH_RHINE_city_french: "ケルン" #English loc already uses French form, but this will Francify it even in German loc then
+ HUB_NAME_STATE_NORTH_RHINE_city_french: "ケルン" # English loc already uses French form, but this will Francify it even in German loc then
  HUB_NAME_STATE_NORTH_RHINE_mine_french: "エクス＝ラ＝シャペル"
- HUB_NAME_STATE_NORTH_RHINE_farm_french: "ボン" #same nameform in French
+ HUB_NAME_STATE_NORTH_RHINE_farm_french: "ボン" # same nameform in French
  HUB_NAME_STATE_NORTH_RHINE_wood_french: "オイペン"
- #North Rhine - German
+ # North Rhine - German
  STATE_NORTH_RHINE_german: "ノルトライン"
  HUB_NAME_STATE_NORTH_RHINE_city_german: "ケルン"
  ## Ruhr
- #Ruhr - French
+ # Ruhr - French
  #STATE_RUHR_french: "Ruhr"
- HUB_NAME_STATE_RUHR_city_french: "デュッセルドルフ" #Denis Diderot
- HUB_NAME_STATE_RUHR_mine_french: "ヴッパータール" #same nameform in French
- HUB_NAME_STATE_RUHR_wood_french: "ジーゲン" #same nameform in French
- HUB_NAME_STATE_RUHR_farm_french: "ハーヘンブルク" #same nameform in French
+ HUB_NAME_STATE_RUHR_city_french: "デュッセルドルフ" # Denis Diderot
+ HUB_NAME_STATE_RUHR_mine_french: "ヴッパータール" # same nameform in French
+ HUB_NAME_STATE_RUHR_wood_french: "ジーゲン" # same nameform in French
+ HUB_NAME_STATE_RUHR_farm_french: "ハーヘンブルク" # same nameform in French
  ### Austria
- #Styria
+ # Styria
  STATE_STYRIA_french: "シュタイアーマルク"
  HUB_NAME_STATE_STYRIA_city_french: "グラーツ"
  #HUB_NAME_STATE_STYRIA_mine:0 "Liezen"
  #HUB_NAME_STATE_STYRIA_farm:0 "Klagenfurt"
  #HUB_NAME_STATE_STYRIA_wood:0 "Hartberg"
- #Tyrol
+ # Tyrol
  STATE_TYROL_french: "チロル"
  #HUB_NAME_STATE_TYROL_city: "Innsbruck"
  #HUB_NAME_STATE_TYROL_mine: "Lienz"
  HUB_NAME_STATE_TYROL_farm_french: "ザルツブルク"
  #HUB_NAME_STATE_TYROL_wood: "Feldkirch"
- #Austria proper
+ # Austria proper
  STATE_AUSTRIA_french: "オーストリア"
  HUB_NAME_STATE_AUSTRIA_city_french: "ウィーン"
  #HUB_NAME_STATE_AUSTRIA_mine:1 "Freistadt"
@@ -500,25 +500,25 @@
  HUB_NAME_STATE_AUSTRIA_wood_french: "サンティポリット"
  HUB_NAME_STATE_AUSTRIA_city_german: "ウィーン"
  ### Switzerland
- #West Switzerland
+ # West Switzerland
  STATE_WEST_SWITZERLAND_french: "ロマンディ"
  STATE_WEST_SWITZERLAND_sister_republic: "ヘルヴェティア"
  HUB_NAME_STATE_WEST_SWITZERLAND_city_french: "ベルン"
  HUB_NAME_STATE_WEST_SWITZERLAND_mine_french: "バーゼル"
- HUB_NAME_STATE_WEST_SWITZERLAND_farm_french: "ローザンヌ" #French form is already the default for English loc, but not in all translations
+ HUB_NAME_STATE_WEST_SWITZERLAND_farm_french: "ローザンヌ" # French form is already the default for English loc, but not in all translations
  HUB_NAME_STATE_WEST_SWITZERLAND_wood_french: "ジュネーヴ"
  ## East Switzerland
- #East Switzerland - French
+ # East Switzerland - French
  STATE_EAST_SWITZERLAND_french: "スイス"
  STATE_EAST_SWITZERLAND_sister_republic: "ラエティア"
  HUB_NAME_STATE_EAST_SWITZERLAND_city_french: "チューリッヒ"
  HUB_NAME_STATE_EAST_SWITZERLAND_mine_french: "クール"
  HUB_NAME_STATE_EAST_SWITZERLAND_farm_french: "ザンクト・ガレン"
- HUB_NAME_STATE_EAST_SWITZERLAND_wood_french: "ルツェルン" #French form is already the default for English loc, but not in all translations
- #East Switzerland - German
+ HUB_NAME_STATE_EAST_SWITZERLAND_wood_french: "ルツェルン" # French form is already the default for English loc, but not in all translations
+ # East Switzerland - German
  HUB_NAME_STATE_EAST_SWITZERLAND_wood_german: "ルツェルン"
- #Denmark
- #Schleswig-Holstein
+ # Denmark
+ # Schleswig-Holstein
  STATE_SCHLESWIG_HOLSTEIN_french: "シュレースヴィヒ＝ホルシュタイン"
  #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_city:0 "Kiel"
  #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_port:0 "Lübeck"
@@ -527,46 +527,46 @@
  #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_wood: "Itzehoe"
  ### Czechia
  ### Bohemia
- #Bohemia - French
+ # Bohemia - French
  STATE_BOHEMIA_french: "ボヘミア"
  HUB_NAME_STATE_BOHEMIA_city_french: "プラハ"
  #HUB_NAME_STATE_BOHEMIA_mine:0 "České Budějovice"
  #HUB_NAME_STATE_BOHEMIA_farm:0 "Hradec Králové"
  HUB_NAME_STATE_BOHEMIA_wood_french: "ピルゼン"
- #Bohemia - German
+ # Bohemia - German
  STATE_BOHEMIA_german: "ベーメン"
  HUB_NAME_STATE_BOHEMIA_city_german: "プラハ"
  HUB_NAME_STATE_BOHEMIA_mine_german: "ブドヴァイス"
  HUB_NAME_STATE_BOHEMIA_farm_german: "ケーニヒグレーツ"
  HUB_NAME_STATE_BOHEMIA_wood_german: "ピルゼン"
- #Bohemia - Czech
+ # Bohemia - Czech
  STATE_BOHEMIA_czech: "チェヒ"
  HUB_NAME_STATE_BOHEMIA_city_czech: "プラハ"
  HUB_NAME_STATE_BOHEMIA_mine_czech: "$HUB_NAME_STATE_BOHEMIA_mine$"
  HUB_NAME_STATE_BOHEMIA_farm_czech: "$HUB_NAME_STATE_BOHEMIA_farm$"
  HUB_NAME_STATE_BOHEMIA_wood_czech: "$HUB_NAME_STATE_BOHEMIA_wood$"
  ### Moravia
- #Moravia - French
+ # Moravia - French
  STATE_MORAVIA_french: "モラヴィア"
  HUB_NAME_STATE_MORAVIA_city_french: "ブルノ"
  #HUB_NAME_STATE_MORAVIA_mine:0 "Olomouc"
  #HUB_NAME_STATE_MORAVIA_farm:0 "Breclav"
  #HUB_NAME_STATE_MORAVIA_wood:1 "Jihlava"
- #Moravia - German
+ # Moravia - German
  STATE_MORAVIA_german: "メーレン"
  HUB_NAME_STATE_MORAVIA_city_german: "ブルノ"
  HUB_NAME_STATE_MORAVIA_mine_german: "オロモウツ"
  HUB_NAME_STATE_MORAVIA_farm_german: "リューネブルク"
  HUB_NAME_STATE_MORAVIA_wood_german: "イグラウ"
  ### Iberia
- #Moravia - Czech
+ # Moravia - Czech
  STATE_MORAVIA_czech: "モラヴァ"
  HUB_NAME_STATE_MORAVIA_city_czech: "$HUB_NAME_STATE_MORAVIA_city$"
  HUB_NAME_STATE_MORAVIA_mine_czech: "$HUB_NAME_STATE_MORAVIA_mine$"
  HUB_NAME_STATE_MORAVIA_farm_czech: "$HUB_NAME_STATE_MORAVIA_farm$"
  HUB_NAME_STATE_MORAVIA_wood_czech: "$HUB_NAME_STATE_MORAVIA_wood$"
  ### Spain
- #Catalonia
+ # Catalonia
  STATE_CATALONIA_spanish: "カタルーニャ"
  HUB_NAME_STATE_CATALONIA_city_spanish: "バルセロナ"
  HUB_NAME_STATE_CATALONIA_port_spanish: "タラゴナ"
@@ -597,14 +597,14 @@
  HUB_NAME_STATE_CATALONIA_mine_esperanto: "ベルゴ"
  HUB_NAME_STATE_CATALONIA_farm_esperanto: "レイド"
  HUB_NAME_STATE_CATALONIA_wood_esperanto: "ジローノ"
- #Old Castile
+ # Old Castile
  STATE_OLD_CASTILE_spanish: "カスティーリャ・ラ・ビエハ"
  HUB_NAME_STATE_OLD_CASTILE_city_spanish: "バーゴス"
  HUB_NAME_STATE_OLD_CASTILE_port_spanish: "サンタンデール"
  HUB_NAME_STATE_OLD_CASTILE_mine_spanish: "ログローニョ"
  HUB_NAME_STATE_OLD_CASTILE_farm_spanish: "バリャドリッド"
  HUB_NAME_STATE_OLD_CASTILE_wood_spanish: "ソリア"
- #Old Castile - German
+ # Old Castile - German
  STATE_OLD_CASTILE_german: "旧カスティーリャ"
  HUB_NAME_STATE_OLD_CASTILE_city_german: "ブルゴス"
  HUB_NAME_STATE_OLD_CASTILE_port_german: "サンタンデール"
@@ -617,7 +617,7 @@
  HUB_NAME_STATE_OLD_CASTILE_mine_esperanto: "ログローニョ"
  HUB_NAME_STATE_OLD_CASTILE_farm_esperanto: "ヴァラドリード"
  HUB_NAME_STATE_OLD_CASTILE_wood_esperanto: "ソリーオ"
- #Leon
+ # Leon
  STATE_LEON_spanish: "レオン"
  HUB_NAME_STATE_LEON_city_spanish: "レオン"
  HUB_NAME_STATE_LEON_mine_spanish: "サベロ"
@@ -633,7 +633,7 @@
  HUB_NAME_STATE_LEON_mine_esperanto: "サベーロ"
  HUB_NAME_STATE_LEON_farm_esperanto: "サラマンコ"
  HUB_NAME_STATE_LEON_wood_esperanto: "ザモーロ"
- #Galicia
+ # Galicia
  STATE_GALICIA_spanish: "ガリシア"
  HUB_NAME_STATE_GALICIA_city_spanish: "サンティアゴ・デ・コンポステーラ"
  HUB_NAME_STATE_GALICIA_port_spanish: "ラ・コルーニャ"
@@ -652,7 +652,7 @@
  HUB_NAME_STATE_GALICIA_mine_portuguese: "オウレンセ"
  HUB_NAME_STATE_GALICIA_farm_portuguese: "ビーゴ"
  HUB_NAME_STATE_GALICIA_wood_portuguese: "ルーゴ"
- #Galicia - German
+ # Galicia - German
  STATE_GALICIA_german: "ガリツィア"
  HUB_NAME_STATE_GALICIA_city_german: "サンティアゴ・デ・コンポステーラ"
  HUB_NAME_STATE_GALICIA_port_german: "ア・コルーニャ"
@@ -665,7 +665,7 @@
  HUB_NAME_STATE_GALICIA_mine_esperanto: "オレンソ"
  HUB_NAME_STATE_GALICIA_farm_esperanto: "ヴィーゴ"
  HUB_NAME_STATE_GALICIA_wood_esperanto: "ルーゴ"
- #Asturias
+ # Asturias
  STATE_ASTURIAS_spanish: "アストゥリアス"
  HUB_NAME_STATE_ASTURIAS_city_spanish: "オビエド"
  HUB_NAME_STATE_ASTURIAS_port_spanish: "ヒホン"
@@ -678,7 +678,7 @@
  HUB_NAME_STATE_ASTURIAS_mine_asturleonese: "ラングレウ"
  HUB_NAME_STATE_ASTURIAS_farm_asturleonese: "リャネス"
  HUB_NAME_STATE_ASTURIAS_wood_asturleonese: "ティネウ"
- #Asturias - German
+ # Asturias - German
  STATE_ASTURIAS_german: "アストゥリアス"
  HUB_NAME_STATE_ASTURIAS_city_german: "オヴィエード"
  HUB_NAME_STATE_ASTURIAS_port_german: "ヒホン"
@@ -691,7 +691,7 @@
  HUB_NAME_STATE_ASTURIAS_mine_esperanto: "ラングレーオ"
  HUB_NAME_STATE_ASTURIAS_farm_esperanto: "ヤーネス"
  HUB_NAME_STATE_ASTURIAS_wood_esperanto: "ティネーオ"
- #Aragon
+ # Aragon
  STATE_ARAGON_spanish: "アラゴン"
  HUB_NAME_STATE_ARAGON_city_spanish: "ザラゴザ"
  HUB_NAME_STATE_ARAGON_mine_spanish: "カラタユー"
@@ -726,20 +726,20 @@
  HUB_NAME_STATE_VALENCIA_mine_esperanto: "モレーヨ"
  HUB_NAME_STATE_VALENCIA_farm_esperanto: "アリカント"
  HUB_NAME_STATE_VALENCIA_wood_esperanto: "カステーロ・デ・ラ・プラーノ"
- #New Castile
+ # New Castile
  STATE_NEW_CASTILE_spanish: "カスティーリャ・ラ・ヌエバ"
  HUB_NAME_STATE_NEW_CASTILE_city_spanish: "マドリッド"
  HUB_NAME_STATE_NEW_CASTILE_mine_spanish: "シウダー・レアル"
  HUB_NAME_STATE_NEW_CASTILE_farm_spanish: "トレド"
  HUB_NAME_STATE_NEW_CASTILE_wood_spanish: "クエンカ"
- #New Castile - German
+ # New Castile - German
  STATE_NEW_CASTILE_german: "新カスティーリャ"
  STATE_NEW_CASTILE_esperanto: "カスティリーオ・ラ・ノーヴァ"
  HUB_NAME_STATE_NEW_CASTILE_city_esperanto: "マドリード"
  HUB_NAME_STATE_NEW_CASTILE_mine_esperanto: "ウルボ・レージャ"
  HUB_NAME_STATE_NEW_CASTILE_farm_esperanto: "トレード"
  HUB_NAME_STATE_NEW_CASTILE_wood_esperanto: "クエンコ"
- #Extremadura
+ # Extremadura
  STATE_EXTREMADURA_spanish: "エストレマドゥーラ"
  HUB_NAME_STATE_EXTREMADURA_city_spanish: "バダホス"
  HUB_NAME_STATE_EXTREMADURA_mine_spanish: "プラセンシア"
@@ -755,14 +755,14 @@
  HUB_NAME_STATE_EXTREMADURA_mine_esperanto: "プラスエンツィーオ"
  HUB_NAME_STATE_EXTREMADURA_farm_esperanto: "メリード"
  HUB_NAME_STATE_EXTREMADURA_wood_esperanto: "カセレーソ"
- #Upper Andalusia
+ # Upper Andalusia
  STATE_UPPER_ANDALUSIA_spanish: "アルタ・アンダルシア"
  HUB_NAME_STATE_UPPER_ANDALUSIA_city_spanish: "グラナダ"
  HUB_NAME_STATE_UPPER_ANDALUSIA_port_spanish: "ジブラルタル"
  HUB_NAME_STATE_UPPER_ANDALUSIA_mine_spanish: "マラガ"
  HUB_NAME_STATE_UPPER_ANDALUSIA_farm_spanish: "アルメリア"
  HUB_NAME_STATE_UPPER_ANDALUSIA_wood_spanish: "ハエン"
- #Upper Andalusia - German
+ # Upper Andalusia - German
  STATE_UPPER_ANDALUSIA_german: "上アンダルシア"
  HUB_NAME_STATE_UPPER_ANDALUSIA_city_german: "グラナダ"
  HUB_NAME_STATE_UPPER_ANDALUSIA_port_german: "ジブラルタル"
@@ -775,14 +775,14 @@
  HUB_NAME_STATE_UPPER_ANDALUSIA_mine_esperanto: "マラーゴ"
  HUB_NAME_STATE_UPPER_ANDALUSIA_farm_esperanto: "アルメリーオ"
  HUB_NAME_STATE_UPPER_ANDALUSIA_wood_esperanto: "ハエーノ"
- #Lower Andalusia
+ # Lower Andalusia
  STATE_LOWER_ANDALUSIA_spanish: "バハ・アンダルシア"
  HUB_NAME_STATE_LOWER_ANDALUSIA_city_spanish: "セヴィラ"
  HUB_NAME_STATE_LOWER_ANDALUSIA_port_spanish: "カディス"
  HUB_NAME_STATE_LOWER_ANDALUSIA_mine_spanish: "ウエルバ"
  HUB_NAME_STATE_LOWER_ANDALUSIA_farm_spanish: "コルドバ"
  HUB_NAME_STATE_LOWER_ANDALUSIA_wood_spanish: "エシハ"
- #Lower Andalusia - German
+ # Lower Andalusia - German
  STATE_LOWER_ANDALUSIA_german: "下アンダルシア"
  HUB_NAME_STATE_LOWER_ANDALUSIA_city_german: "セヴィラ"
  HUB_NAME_STATE_LOWER_ANDALUSIA_port_german: "カディス"
@@ -795,7 +795,7 @@
  HUB_NAME_STATE_LOWER_ANDALUSIA_mine_esperanto: "ウエルヴォ"
  HUB_NAME_STATE_LOWER_ANDALUSIA_farm_esperanto: "コルドーヴォ"
  HUB_NAME_STATE_LOWER_ANDALUSIA_wood_esperanto: "エチーホ"
- #Murcia
+ # Murcia
  STATE_MURCIA_spanish: "ムルシア"
  HUB_NAME_STATE_MURCIA_city_spanish: "ムルシア"
  HUB_NAME_STATE_MURCIA_port_spanish: "カルタヘナ"
@@ -808,7 +808,7 @@
  HUB_NAME_STATE_MURCIA_mine_esperanto: "マザルローノ"
  HUB_NAME_STATE_MURCIA_farm_esperanto: "アルブセート"
  HUB_NAME_STATE_MURCIA_wood_esperanto: "ヘリーノ"
- #Balearic Islands
+ # Balearic Islands
  STATE_BALEARIC_ISLANDS_spanish: "バレアレス諸島"
  HUB_NAME_STATE_BALEARIC_ISLANDS_city_spanish: "イビサ"
  HUB_NAME_STATE_BALEARIC_ISLANDS_port_spanish: "パルマ"
@@ -821,7 +821,7 @@
  HUB_NAME_STATE_BALEARIC_ISLANDS_mine_catalan: "マナコル"
  HUB_NAME_STATE_BALEARIC_ISLANDS_farm_catalan: "カーラ・ドール"
  HUB_NAME_STATE_BALEARIC_ISLANDS_wood_catalan: "アルクーディア"
- #Balearic Islands - German
+ # Balearic Islands - German
  STATE_BALEARIC_ISLANDS_german: "バレアレス諸島"
  HUB_NAME_STATE_BALEARIC_ISLANDS_city_german: "イビサ"
  HUB_NAME_STATE_BALEARIC_ISLANDS_port_german: "パルマ"
@@ -834,7 +834,7 @@
  HUB_NAME_STATE_BALEARIC_ISLANDS_mine_esperanto: "マナコーロ"
  HUB_NAME_STATE_BALEARIC_ISLANDS_farm_esperanto: "カーロ・ドール"
  HUB_NAME_STATE_BALEARIC_ISLANDS_wood_esperanto: "アルクディーオ"
- #Basque Country
+ # Basque Country
  STATE_BASQUE_COUNTRY_spanish: "パイス・ヴァスコ"
  HUB_NAME_STATE_BASQUE_COUNTRY_city_spanish: "パンプローナ"
  HUB_NAME_STATE_BASQUE_COUNTRY_port_spanish: "ビルバオ"
@@ -847,7 +847,7 @@
  HUB_NAME_STATE_BASQUE_COUNTRY_mine_basque: "ガリャルタ"
  HUB_NAME_STATE_BASQUE_COUNTRY_farm_basque: "ドノスティア"
  HUB_NAME_STATE_BASQUE_COUNTRY_wood_basque: "ガステイス"
- #Basque Country - German
+ # Basque Country - German
  STATE_BASQUE_COUNTRY_german: "バスク地方"
  HUB_NAME_STATE_BASQUE_COUNTRY_city_german: "パンプローナ"
  HUB_NAME_STATE_BASQUE_COUNTRY_port_german: "ビルバオ"
@@ -860,14 +860,14 @@
  HUB_NAME_STATE_BASQUE_COUNTRY_mine_esperanto: "ガィアルト"
  HUB_NAME_STATE_BASQUE_COUNTRY_farm_esperanto: "サンクタ・セバスティアーノ"
  HUB_NAME_STATE_BASQUE_COUNTRY_wood_esperanto: "ヴィトリーオ"
- #Canary Islands
+ # Canary Islands
  STATE_CANARY_ISLANDS_spanish: "カナリア諸島"
  HUB_NAME_STATE_CANARY_ISLANDS_city_spanish: "サンタ・クルツ"
  HUB_NAME_STATE_CANARY_ISLANDS_port_spanish: "コスタ・アデヘ"
  HUB_NAME_STATE_CANARY_ISLANDS_mine_spanish: "ラス・パルマス"
  HUB_NAME_STATE_CANARY_ISLANDS_farm_spanish: "プエルト・デル・ロサリオ"
  HUB_NAME_STATE_CANARY_ISLANDS_wood_spanish: "アレシフェ"
- #Canary Islands - German
+ # Canary Islands - German
  STATE_CANARY_ISLANDS_german: "カナリア諸島"
  HUB_NAME_STATE_CANARY_ISLANDS_city_german: "サンタ・クルツ"
  HUB_NAME_STATE_CANARY_ISLANDS_port_german: "コスタ・アデヘ"
@@ -880,7 +880,7 @@
  HUB_NAME_STATE_CANARY_ISLANDS_mine_esperanto: "ラスパルモ"
  HUB_NAME_STATE_CANARY_ISLANDS_farm_esperanto: "ハヴェーノ・デ・ラ・ロザリーオ"
  HUB_NAME_STATE_CANARY_ISLANDS_wood_esperanto: "アレスィーフォ"
- #Douro
+ # Douro
  STATE_ENTRE_DOURO_E_MINHO_portuguese: "エントレ・ドウロ・エ・ミーニョ"
  HUB_NAME_STATE_ENTRE_DOURO_E_MINHO_city_portuguese: "ブラガ"
  HUB_NAME_STATE_ENTRE_DOURO_E_MINHO_port_portuguese: "ポルト"
@@ -893,7 +893,7 @@
  HUB_NAME_STATE_ENTRE_DOURO_E_MINHO_mine_esperanto: "ブラガンソ"
  HUB_NAME_STATE_ENTRE_DOURO_E_MINHO_farm_esperanto: "レージャ・ヴィラージョ"
  HUB_NAME_STATE_ENTRE_DOURO_E_MINHO_wood_esperanto: "シャヴェーゾ"
- #Beira
+ # Beira
  STATE_BEIRA_portuguese: "ベイラ"
  HUB_NAME_STATE_BEIRA_city_portuguese: "コインブラ"
  HUB_NAME_STATE_BEIRA_port_portuguese: "アヴェイロ"
@@ -906,7 +906,7 @@
  HUB_NAME_STATE_BEIRA_mine_esperanto: "ブランカ・カステーロ"
  HUB_NAME_STATE_BEIRA_farm_esperanto: "ヴィセーオ"
  HUB_NAME_STATE_BEIRA_wood_esperanto: "グヴァルド"
- #Estremadura
+ # Estremadura
  STATE_ESTREMADURA_portuguese: "エストレマドゥーラ"
  HUB_NAME_STATE_ESTREMADURA_city_portuguese: "リジュボア"
  HUB_NAME_STATE_ESTREMADURA_port_portuguese: "セトゥーバル"
@@ -919,7 +919,7 @@
  #HUB_NAME_STATE_ESTREMADURA_mine_esperanto: "Rio Maior"
  HUB_NAME_STATE_ESTREMADURA_farm_esperanto: "サンタレーモ"
  HUB_NAME_STATE_ESTREMADURA_wood_esperanto: "レイリーオ"
- #Alentejo
+ # Alentejo
  STATE_ALENTEJO_portuguese: "アレンテージョ"
  HUB_NAME_STATE_ALENTEJO_city_portuguese: "エヴォラ"
  HUB_NAME_STATE_ALENTEJO_port_portuguese: "ファロ"
@@ -932,7 +932,7 @@
  HUB_NAME_STATE_ALENTEJO_mine_esperanto: "ベージョ"
  HUB_NAME_STATE_ALENTEJO_farm_esperanto: "ラーゴ"
  HUB_NAME_STATE_ALENTEJO_wood_esperanto: "エルヴァーソ"
- #Madeira
+ # Madeira
  STATE_MADEIRA_portuguese: "マデイラ"
  HUB_NAME_STATE_MADEIRA_city_portuguese: "ヴィラ・バレイラ"
  HUB_NAME_STATE_MADEIRA_port_portuguese: "フンシャル"
@@ -945,14 +945,14 @@
  HUB_NAME_STATE_MADEIRA_mine_esperanto: "サンクタ・ヴィツェントエーオ"
  HUB_NAME_STATE_MADEIRA_farm_esperanto: "ポルト・モニーゾ"
  HUB_NAME_STATE_MADEIRA_wood_esperanto: "マルラルジェーヨ・デ・カルィエート"
- #Azores
+ # Azores
  STATE_AZORES_portuguese: "アソーレス"
  HUB_NAME_STATE_AZORES_city_portuguese: "ポンタ・デルガダ"
  HUB_NAME_STATE_AZORES_port_portuguese: "アングラ・ド・エロイズモ"
  HUB_NAME_STATE_AZORES_mine_portuguese: "オルタ"
  HUB_NAME_STATE_AZORES_farm_portuguese: "ヴィラ・ド・ポルト"
  HUB_NAME_STATE_AZORES_wood_portuguese: "マダレーナ"
- #Azores - German
+ # Azores - German
  STATE_AZORES_german: "アゾレス諸島"
  HUB_NAME_STATE_AZORES_city_german: "ポンタ・デルガダ"
  HUB_NAME_STATE_AZORES_port_german: "アングラ・ド・エロイズモ"
@@ -965,14 +965,14 @@
  HUB_NAME_STATE_AZORES_mine_esperanto: "ホルト"
  HUB_NAME_STATE_AZORES_farm_esperanto: "ハヴェンヴィラージョ"
  HUB_NAME_STATE_AZORES_wood_esperanto: "マグダレーノ"
- #Cape Verde
+ # Cape Verde
  STATE_CAPE_VERDE_portuguese: "カボ・ヴェルデ"
  HUB_NAME_STATE_CAPE_VERDE_city_portuguese: "プライア"
  HUB_NAME_STATE_CAPE_VERDE_port_portuguese: "フルナ"
  HUB_NAME_STATE_CAPE_VERDE_mine_portuguese: "サル・レイ"
  HUB_NAME_STATE_CAPE_VERDE_farm_portuguese: "サンフィリペ"
  HUB_NAME_STATE_CAPE_VERDE_wood_portuguese: "ヴィラ・ド・マイオ"
- #Cape Verde - German
+ # Cape Verde - German
  STATE_CAPE_VERDE_german: "カーボ・ヴェルデ"
  HUB_NAME_STATE_CAPE_VERDE_city_german: "プライア"
  HUB_NAME_STATE_CAPE_VERDE_port_german: "フルナ"
@@ -992,43 +992,43 @@
  HUB_NAME_STATE_CAPE_VERDE_farm_spanish: "サン・フェリペ"
  HUB_NAME_STATE_CAPE_VERDE_wood_spanish: "ヴィラ・ド・マイオ"
  ### Ireland and Great Britain
- #Ulster
+ # Ulster
  HUB_NAME_STATE_ULSTER_port_uk: "ロンドンデリー"
  ### Russia
- #Ingria
+ # Ingria
  #STATE_INGRIA: "Ingria"
  HUB_NAME_STATE_INGRIA_city_russian_imp: "ペトログラード"
  HUB_NAME_STATE_INGRIA_city_russian_sov: "レニングラード"
  ## Balkans
  ### Slovenia
- #Slovenia - German
+ # Slovenia - German
  STATE_SLOVENIA_german: "カルニオラ"
  HUB_NAME_STATE_SLOVENIA_city_german: "リュブリャナ"
  HUB_NAME_STATE_SLOVENIA_mine_german: "プトゥイ"
  HUB_NAME_STATE_SLOVENIA_farm_german: "マリボル"
  HUB_NAME_STATE_SLOVENIA_wood_german: "ルドルフスヴェルト"
- #Slovenia - Italian
+ # Slovenia - Italian
  STATE_SLOVENIA_italian: "カルニオラ"
  HUB_NAME_STATE_SLOVENIA_city_italian: "リュブリャナ"
  HUB_NAME_STATE_SLOVENIA_mine_italian: "プトゥーイ"
  HUB_NAME_STATE_SLOVENIA_farm_italian: "マールブルク"
  HUB_NAME_STATE_SLOVENIA_wood_italian: "ノヴォ・メスト"
  ### Croatia
- #Croatia - German
+ # Croatia - German
  STATE_CROATIA_german: "クロアチア"
  HUB_NAME_STATE_CROATIA_city_german: "ザグレブ"
  HUB_NAME_STATE_CROATIA_mine_german: "カールシュタット"
  HUB_NAME_STATE_CROATIA_farm_german: "シサク"
  HUB_NAME_STATE_CROATIA_port_german: "リエカ"
  HUB_NAME_STATE_CROATIA_wood_german: "ポクプスコ"
- #Croatia - Italian
+ # Croatia - Italian
  STATE_CROATIA_italian: "クロアチア"
  HUB_NAME_STATE_CROATIA_city_italian: "ザグレブ"
  HUB_NAME_STATE_CROATIA_mine_italian: "カルロヴァツ"
  HUB_NAME_STATE_CROATIA_farm_italian: "シサク"
  HUB_NAME_STATE_CROATIA_port_italian: "リエカ"
  HUB_NAME_STATE_CROATIA_wood_italian: "ポクプスコ"
- #Croatia - Hungarian
+ # Croatia - Hungarian
  STATE_CROATIA_hungarian: "クロアチア"
  HUB_NAME_STATE_CROATIA_city_hungarian: "ザグレブ"
  HUB_NAME_STATE_CROATIA_mine_hungarian: "カルロヴァツ"
@@ -1036,34 +1036,34 @@
  HUB_NAME_STATE_CROATIA_port_hungarian: "リエカ"
  HUB_NAME_STATE_CROATIA_wood_hungarian: "ポクプスコ"
  ### Slavonia
- #Slavonia - German
+ # Slavonia - German
  STATE_SLAVONIA_german: "スラヴォニア"
  HUB_NAME_STATE_SLAVONIA_city_german: "スラヴォンスキ・ブロド"
  HUB_NAME_STATE_SLAVONIA_mine_german: "ビェロヴァル"
  HUB_NAME_STATE_SLAVONIA_farm_german: "オシエク"
  HUB_NAME_STATE_SLAVONIA_wood_german: "ノヴァ・グラディシュカ"
- #Slavonia - Hungarian
+ # Slavonia - Hungarian
  STATE_SLAVONIA_hungarian: "スラヴォニア"
  HUB_NAME_STATE_SLAVONIA_city_hungarian: "スラヴォンスキ・ブロド"
  HUB_NAME_STATE_SLAVONIA_mine_hungarian: "ビェロヴァル"
  HUB_NAME_STATE_SLAVONIA_farm_hungarian: "オシエク"
  HUB_NAME_STATE_SLAVONIA_wood_hungarian: "ノヴァ・グラディシュカ"
  ### Dalmatia
- #Croatia - German
+ # Croatia - German
  STATE_DALMATIA_german: "ダルマチア"
  HUB_NAME_STATE_DALMATIA_city_german: "スプリト"
  HUB_NAME_STATE_DALMATIA_port_german: "ザラ"
  HUB_NAME_STATE_DALMATIA_mine_german: "ラグーザ"
  HUB_NAME_STATE_DALMATIA_farm_german: "クニン"
  HUB_NAME_STATE_DALMATIA_wood_german: "シベニク"
- #Croatia - Italian
+ # Croatia - Italian
  STATE_DALMATIA_italian: "ダルマチア"
  HUB_NAME_STATE_DALMATIA_city_italian: "スプリト"
  HUB_NAME_STATE_DALMATIA_port_italian: "ザラ"
  HUB_NAME_STATE_DALMATIA_mine_italian: "ラグーザ"
  HUB_NAME_STATE_DALMATIA_farm_italian: "クニン"
  HUB_NAME_STATE_DALMATIA_wood_italian: "シベニク"
- #Croatia - Hungarian
+ # Croatia - Hungarian
  STATE_DALMATIA_hungarian: "ダルマチア"
  HUB_NAME_STATE_DALMATIA_city_hungarian: "スプリト"
  HUB_NAME_STATE_DALMATIA_port_hungarian: "ザラ"
@@ -1071,33 +1071,33 @@
  HUB_NAME_STATE_DALMATIA_farm_hungarian: "クニン"
  HUB_NAME_STATE_DALMATIA_wood_hungarian: "シベニク"
  ### Bosnia
- #Bosnia - German
+ # Bosnia - German
  STATE_BOSNIA_german: "ボスニア"
  HUB_NAME_STATE_BOSNIA_city_german: "サラエヴォ"
  HUB_NAME_STATE_BOSNIA_mine_german: "モスタル"
  HUB_NAME_STATE_BOSNIA_farm_german: "バニャ・ルカ"
  HUB_NAME_STATE_BOSNIA_wood_german: "ドボイ"
- #Bosnia - Hungarian
+ # Bosnia - Hungarian
  STATE_BOSNIA_hungarian: "ボスニア"
  HUB_NAME_STATE_BOSNIA_city_hungarian: "サラエヴォ"
  HUB_NAME_STATE_BOSNIA_mine_hungarian: "モスタル"
  HUB_NAME_STATE_BOSNIA_farm_hungarian: "バニャ・ルカ"
  HUB_NAME_STATE_BOSNIA_wood_hungarian: "ドボイ"
- #Bosnia - Turkish
+ # Bosnia - Turkish
  STATE_BOSNIA_turkish: "ボスニア"
  HUB_NAME_STATE_BOSNIA_city_turkish: "サラエヴォ"
  HUB_NAME_STATE_BOSNIA_mine_turkish: "モスタル"
  HUB_NAME_STATE_BOSNIA_farm_turkish: "バニャ・ルカ"
  HUB_NAME_STATE_BOSNIA_wood_turkish: "ドボイ"
  ### Montenegro
- #Montenegro - Italian
+ # Montenegro - Italian
  STATE_MONTENEGRO_italian: "モンテネグロ"
  HUB_NAME_STATE_MONTENEGRO_city_italian: "ポドゴリツァ"
  HUB_NAME_STATE_MONTENEGRO_port_italian: "コトル"
  HUB_NAME_STATE_MONTENEGRO_mine_italian: "ベラーネ"
  HUB_NAME_STATE_MONTENEGRO_farm_italian: "ツェティニェ"
  HUB_NAME_STATE_MONTENEGRO_wood_italian: "ハノヴィ"
- #Montenegro - Turkish
+ # Montenegro - Turkish
  STATE_MONTENEGRO_turkish: "モンテネグロ"
  HUB_NAME_STATE_MONTENEGRO_city_turkish: "ポドゴリツァ"
  HUB_NAME_STATE_MONTENEGRO_port_turkish: "コトル"
@@ -1105,14 +1105,14 @@
  HUB_NAME_STATE_MONTENEGRO_farm_turkish: "ツェティニェ"
  HUB_NAME_STATE_MONTENEGRO_wood_turkish: "ハノヴィ"
  ### PELOPONNESE
- #PELOPONNESE - Greek
+ # PELOPONNESE - Greek
  STATE_PELOPONNESE_greek: "ペロポネソス"
  HUB_NAME_STATE_PELOPONNESE_city_greek: "トリポリツァ"
  HUB_NAME_STATE_PELOPONNESE_port_greek: "カラマタ"
  HUB_NAME_STATE_PELOPONNESE_mine_greek: "ナフプリオン"
  HUB_NAME_STATE_PELOPONNESE_farm_greek: "コリントス"
  HUB_NAME_STATE_PELOPONNESE_wood_greek: "パトラ"
- #PELOPONNESE - Turkish
+ # PELOPONNESE - Turkish
  STATE_PELOPONNESE_turkish: "ペロポネソス"
  HUB_NAME_STATE_PELOPONNESE_city_turkish: "トリポリツァ"
  HUB_NAME_STATE_PELOPONNESE_port_turkish: "カラマタ"
@@ -1120,14 +1120,14 @@
  HUB_NAME_STATE_PELOPONNESE_farm_turkish: "コリントス"
  HUB_NAME_STATE_PELOPONNESE_wood_turkish: "パトラ"
  ### Attica
- #Attica - Greek
+ # Attica - Greek
  STATE_ATTICA_greek: "中央ギリシャ"
  HUB_NAME_STATE_ATTICA_city_greek: "アテネ"
  HUB_NAME_STATE_ATTICA_port_greek: "メソロンギ"
  HUB_NAME_STATE_ATTICA_mine_greek: "ハルキス"
  HUB_NAME_STATE_ATTICA_farm_greek: "ラミア"
  HUB_NAME_STATE_ATTICA_wood_greek: "カルペニシ"
- #Attica - Turkish
+ # Attica - Turkish
  STATE_ATTICA_turkish: "中央ギリシャ"
  HUB_NAME_STATE_ATTICA_city_turkish: "アテネ"
  HUB_NAME_STATE_ATTICA_port_turkish: "メソロンギ"
@@ -1135,14 +1135,14 @@
  HUB_NAME_STATE_ATTICA_farm_turkish: "ラミア"
  HUB_NAME_STATE_ATTICA_wood_turkish: "カルペニシ"
  ### Thessaly
- #Thessaly - Greek
+ # Thessaly - Greek
  STATE_THESSALIA_greek: "テッサリア"
  HUB_NAME_STATE_THESSALIA_city_greek: "ラリサ"
  HUB_NAME_STATE_THESSALIA_port_greek: "ヴォロス"
  HUB_NAME_STATE_THESSALIA_mine_greek: "アルタ"
  HUB_NAME_STATE_THESSALIA_farm_greek: "カルディツァ"
  HUB_NAME_STATE_THESSALIA_wood_greek: "アグリニオン"
- #Thessaly - Turkish
+ # Thessaly - Turkish
  STATE_THESSALIA_turkish: "テッサリア"
  HUB_NAME_STATE_THESSALIA_city_turkish: "ラリサ"
  HUB_NAME_STATE_THESSALIA_port_turkish: "ヴォロス"
@@ -1150,21 +1150,21 @@
  HUB_NAME_STATE_THESSALIA_farm_turkish: "カルディツァ"
  HUB_NAME_STATE_THESSALIA_wood_turkish: "アグリニオン"
  ### Macedonia
- #Macedonia - Greek
+ # Macedonia - Greek
  STATE_MACEDONIA_greek: "マケドニア"
  HUB_NAME_STATE_MACEDONIA_city_greek: "ヴェリア"
  HUB_NAME_STATE_MACEDONIA_port_greek: "テッサロニキ"
  HUB_NAME_STATE_MACEDONIA_mine_greek: "フロリナ"
  HUB_NAME_STATE_MACEDONIA_farm_greek: "コザニ"
  HUB_NAME_STATE_MACEDONIA_wood_greek: "カストリア"
- #Macedonia - Turkish
+ # Macedonia - Turkish
  STATE_MACEDONIA_turkish: "マケドニア"
  HUB_NAME_STATE_MACEDONIA_city_turkish: "ヴェリア"
  HUB_NAME_STATE_MACEDONIA_port_turkish: "マケドニア"
  HUB_NAME_STATE_MACEDONIA_mine_turkish: "フロリナ"
  HUB_NAME_STATE_MACEDONIA_farm_turkish: "コザニ"
  HUB_NAME_STATE_MACEDONIA_wood_turkish: "カストリア"
- #Macedonia - Bulgarian
+ # Macedonia - Bulgarian
  STATE_MACEDONIA_bulgarian: "マケドニア"
  HUB_NAME_STATE_MACEDONIA_city_bulgarian: "ベルリン"
  HUB_NAME_STATE_MACEDONIA_port_bulgarian: "テッサロニキ"
@@ -1172,21 +1172,21 @@
  HUB_NAME_STATE_MACEDONIA_farm_bulgarian: "コザニ"
  HUB_NAME_STATE_MACEDONIA_wood_bulgarian: "コストゥリ"
  ### Western Thrace
- #Western Thrace - Greek
+ # Western Thrace - Greek
  STATE_WESTERN_THRACE_greek: "西トラキア"
  HUB_NAME_STATE_WESTERN_THRACE_city_greek: "カヴァラ"
  HUB_NAME_STATE_WESTERN_THRACE_port_greek: "アレクサンドルーポリ"
  HUB_NAME_STATE_WESTERN_THRACE_mine_greek: "セレス"
  HUB_NAME_STATE_WESTERN_THRACE_farm_greek: "クサンティ"
  HUB_NAME_STATE_WESTERN_THRACE_wood_greek: "コモティニ"
- #Western Thrace - Turkish
+ # Western Thrace - Turkish
  STATE_WESTERN_THRACE_turkish: "西トラキア"
  HUB_NAME_STATE_WESTERN_THRACE_city_turkish: "カヴァラ"
  HUB_NAME_STATE_WESTERN_THRACE_port_turkish: "アレクサンドルーポリ"
  HUB_NAME_STATE_WESTERN_THRACE_mine_turkish: "セレス"
  HUB_NAME_STATE_WESTERN_THRACE_farm_turkish: "クサンティ"
  HUB_NAME_STATE_WESTERN_THRACE_wood_turkish: "コモティニ"
- #Western Thrace - bulgarian
+ # Western Thrace - bulgarian
  STATE_WESTERN_THRACE_bulgarian: "西トラキア"
  HUB_NAME_STATE_WESTERN_THRACE_city_bulgarian: "カヴァラ"
  HUB_NAME_STATE_WESTERN_THRACE_port_bulgarian: "アレクサンドルーポリ"
@@ -1194,21 +1194,21 @@
  HUB_NAME_STATE_WESTERN_THRACE_farm_bulgarian: "スケチャ"
  HUB_NAME_STATE_WESTERN_THRACE_wood_bulgarian: "ギュミュルジネ"
  ### Northern Thrace
- #Northern Thrace - Bulgarian
+ # Northern Thrace - Bulgarian
  STATE_NORTHERN_THRACE_bulgarian: "北トラキア"
  HUB_NAME_STATE_NORTHERN_THRACE_city_bulgarian: "プロヴディフ"
  HUB_NAME_STATE_NORTHERN_THRACE_port_bulgarian: "ブルガス"
  HUB_NAME_STATE_NORTHERN_THRACE_mine_bulgarian: "パザルジク"
  HUB_NAME_STATE_NORTHERN_THRACE_farm_bulgarian: "ハスコヴォ"
  HUB_NAME_STATE_NORTHERN_THRACE_wood_bulgarian: "スタラ・ザゴラ"
- #Northern Thrace - Turkish
+ # Northern Thrace - Turkish
  STATE_NORTHERN_THRACE_turkish: "北トラキア"
  HUB_NAME_STATE_NORTHERN_THRACE_city_turkish: "フィリベ"
  HUB_NAME_STATE_NORTHERN_THRACE_port_turkish: "ブルガス"
  HUB_NAME_STATE_NORTHERN_THRACE_mine_turkish: "パザルジク"
  HUB_NAME_STATE_NORTHERN_THRACE_farm_turkish: "ハスコイ"
  HUB_NAME_STATE_NORTHERN_THRACE_wood_turkish: "スタラ・ザゴラ"
- #Northern Thrace - Turkish
+ # Northern Thrace - Turkish
  STATE_NORTHERN_THRACE_greek: "北トラキア"
  HUB_NAME_STATE_NORTHERN_THRACE_city_greek: "フィリッポポリス"
  HUB_NAME_STATE_NORTHERN_THRACE_port_greek: "パイルゴス"
@@ -1216,14 +1216,14 @@
  HUB_NAME_STATE_NORTHERN_THRACE_farm_greek: "ハスコヴォ"
  HUB_NAME_STATE_NORTHERN_THRACE_wood_greek: "ザゴラ"
  ### Bulgaria
- #Bulgaria - Bulgarian
+ # Bulgaria - Bulgarian
  STATE_BULGARIA_bulgarian: "ミジヤ"
  HUB_NAME_STATE_BULGARIA_city_bulgarian: "ソフィア"
  HUB_NAME_STATE_BULGARIA_port_bulgarian: "ヴァルナ"
  HUB_NAME_STATE_BULGARIA_mine_bulgarian: "ヴェリコ・タルノヴォ"
  HUB_NAME_STATE_BULGARIA_farm_bulgarian: "シューメン"
  HUB_NAME_STATE_BULGARIA_wood_bulgarian: "プレヴェン"
- #Bulgaria - Turkish
+ # Bulgaria - Turkish
  STATE_BULGARIA_turkish: "トゥーナ"
  HUB_NAME_STATE_BULGARIA_city_turkish: "ソフィア"
  HUB_NAME_STATE_BULGARIA_port_turkish: "ヴァルナ"
@@ -1231,50 +1231,50 @@
  HUB_NAME_STATE_BULGARIA_farm_turkish: "シュメン"
  HUB_NAME_STATE_BULGARIA_wood_turkish: "プレヴェン"
  ### Skopia
- #Skopia - Bulgarian
+ # Skopia - Bulgarian
  STATE_SKOPIA_bulgarian: "北マケドニア"
  HUB_NAME_STATE_SKOPIA_city_bulgarian: "スコピア"
  HUB_NAME_STATE_SKOPIA_farm_bulgarian: "カヴァダルツィ"
  HUB_NAME_STATE_SKOPIA_wood_bulgarian: "プリレプ"
  HUB_NAME_STATE_SKOPIA_mine_bulgarian: "テトヴォ"
- #Skopia - Greek
+ # Skopia - Greek
  STATE_SKOPIA_greek: "ワルダリア"
  HUB_NAME_STATE_SKOPIA_city_greek: "スコピア"
  HUB_NAME_STATE_SKOPIA_farm_greek: "カーバダージ"
  HUB_NAME_STATE_SKOPIA_wood_greek: "プリレプ"
  HUB_NAME_STATE_SKOPIA_mine_greek: "テトヴォ"
- #Skopia - Serbian
+ # Skopia - Serbian
  STATE_SKOPIA_serbian: "旧セルビア"
  HUB_NAME_STATE_SKOPIA_city_serbian: "スコピエ"
  HUB_NAME_STATE_SKOPIA_farm_serbian: "カーバダージ"
  HUB_NAME_STATE_SKOPIA_wood_serbian: "プリレプ"
  HUB_NAME_STATE_SKOPIA_mine_serbian: "テトヴォ"
- #Skopia - Turkish
+ # Skopia - Turkish
  STATE_SKOPIA_turkish: "ウスクプ"
  HUB_NAME_STATE_SKOPIA_city_turkish: "ウスクプ"
  HUB_NAME_STATE_SKOPIA_farm_turkish: "カーバダージ"
  HUB_NAME_STATE_SKOPIA_wood_turkish: "プリレプ"
  HUB_NAME_STATE_SKOPIA_mine_turkish: "テトヴォ"
  ### Ionian Islands
- #Ionian Islands - Greek
+ # Ionian Islands - Greek
  STATE_IONIAN_ISLANDS_greek: "イオニア諸島"
  HUB_NAME_STATE_IONIAN_ISLANDS_city_greek: "ケルキラ"
  HUB_NAME_STATE_IONIAN_ISLANDS_port_greek: "ザキントス"
  HUB_NAME_STATE_IONIAN_ISLANDS_farm_greek: "ケファロニア"
- #Ionian Islands - Turkish
+ # Ionian Islands - Turkish
  STATE_IONIAN_ISLANDS_turkish: "イオニア諸島"
  HUB_NAME_STATE_IONIAN_ISLANDS_city_turkish: "ケルキラ"
  HUB_NAME_STATE_IONIAN_ISLANDS_port_turkish: "ザキントス"
  HUB_NAME_STATE_IONIAN_ISLANDS_farm_turkish: "ケファロニア"
  ### Crete
- #Crete - Greek
+ # Crete - Greek
  STATE_CRETE_greek: "クレタ"
  HUB_NAME_STATE_CRETE_city_greek: "イラクリオン"
  HUB_NAME_STATE_CRETE_port_greek: "マタラ"
  HUB_NAME_STATE_CRETE_mine_greek: "イエラペトラ"
  HUB_NAME_STATE_CRETE_farm_greek: "ハニア"
  HUB_NAME_STATE_CRETE_wood_greek: "パレオコラ"
- #Crete - Turkish
+ # Crete - Turkish
  STATE_CRETE_turkish: "クレタ"
  HUB_NAME_STATE_CRETE_city_turkish: "イラクリオン"
  HUB_NAME_STATE_CRETE_port_turkish: "マタラ"
@@ -1282,39 +1282,39 @@
  HUB_NAME_STATE_CRETE_farm_turkish: "ハニア"
  HUB_NAME_STATE_CRETE_wood_turkish: "パレオコラ"
  ### West Aegean Islands
- #West Aegean Islands - Greek
+ # West Aegean Islands - Greek
  STATE_WEST_AEGEAN_ISLANDS_greek: "西エーゲ海諸島"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_city_greek: "ホラ"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_port_greek: "サントリーニ"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_farm_greek: "ティノス"
- #West Aegean Islands - Turkish
+ # West Aegean Islands - Turkish
  STATE_WEST_AEGEAN_ISLANDS_turkish: "西エーゲ海諸島"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_city_turkish: "ホラ"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_port_turkish: "サントリーニ"
  HUB_NAME_STATE_WEST_AEGEAN_ISLANDS_farm_turkish: "ティノス"
  ## Danubia
  ### Transdanubia
- #Transdanubia - German
+ # Transdanubia - German
  STATE_TRANSDANUBIA_german: "ドゥナーントゥール"
  HUB_NAME_STATE_TRANSDANUBIA_city_german: "シュトゥールヴァイセンブルク"
  HUB_NAME_STATE_TRANSDANUBIA_farm_german: "ケストヘイ"
  HUB_NAME_STATE_TRANSDANUBIA_wood_german: "ソンバトヘイ"
  HUB_NAME_STATE_TRANSDANUBIA_mine_german: "ペーチ"
- #Transdanubia - Hungarian
+ # Transdanubia - Hungarian
  STATE_TRANSDANUBIA_hungarian: "ドゥナーントゥール"
  HUB_NAME_STATE_TRANSDANUBIA_city_hungarian: "セーケシュフェヘールヴァール"
  HUB_NAME_STATE_TRANSDANUBIA_farm_hungarian: "ケストヘイ"
  HUB_NAME_STATE_TRANSDANUBIA_wood_hungarian: "ソンバトヘイ"
  HUB_NAME_STATE_TRANSDANUBIA_mine_hungarian: "ペーチ"
  ### Central Hungary
- #Central Hungary - German
+ # Central Hungary - German
  STATE_CENTRAL_HUNGARY_german: "ハンガリー平原"
  HUB_NAME_STATE_CENTRAL_HUNGARY_city_german: "オーフェン"
  HUB_NAME_STATE_CENTRAL_HUNGARY_farm_german: "ソルノク"
  HUB_NAME_STATE_CENTRAL_HUNGARY_wood_german: "デブレツェン"
  HUB_NAME_STATE_CENTRAL_HUNGARY_mine_german: "ミシュコルツ"
  HUB_NAME_STATE_CENTRAL_HUNGARY_city_german_budapest: "オーフェン・ペスト"
- #Central Hungary - Hungarian
+ # Central Hungary - Hungarian
  STATE_CENTRAL_HUNGARY_hungarian: "ハンガリー大平原"
  HUB_NAME_STATE_CENTRAL_HUNGARY_city_hungarian: "ブダ"
  HUB_NAME_STATE_CENTRAL_HUNGARY_farm_hungarian: "ソルノク"
@@ -1322,171 +1322,171 @@
  HUB_NAME_STATE_CENTRAL_HUNGARY_mine_hungarian: "ミシュコルツ"
  HUB_NAME_STATE_CENTRAL_HUNGARY_city_hungarian_budapest: "ブダペスト"
  ### Slovakia
- #Slovakia - German
+ # Slovakia - German
  STATE_SLOVAKIA_german: "スロバキア"
  HUB_NAME_STATE_SLOVAKIA_city_german: "プレスブルク"
  HUB_NAME_STATE_SLOVAKIA_farm_german: "コシツェ"
  HUB_NAME_STATE_SLOVAKIA_wood_german: "ジリナ"
  HUB_NAME_STATE_SLOVAKIA_mine_german: "バンスカー・ビストリツァ"
- #Slovakia - Hungarian
+ # Slovakia - Hungarian
  STATE_SLOVAKIA_hungarian: "上ハンガリー"
  HUB_NAME_STATE_SLOVAKIA_city_hungarian: "ポジョニ"
  HUB_NAME_STATE_SLOVAKIA_farm_hungarian: "コシツェ"
  HUB_NAME_STATE_SLOVAKIA_wood_hungarian: "ジリナ"
  HUB_NAME_STATE_SLOVAKIA_mine_hungarian: "バンスカー・ビストリツァ"
- #Slovakia - Slovak
+ # Slovakia - Slovak
  STATE_SLOVAKIA_slovak: "スロバキア"
  HUB_NAME_STATE_SLOVAKIA_city_slovak: "ブラチスラヴァ"
  HUB_NAME_STATE_SLOVAKIA_farm_slovak: "コシツェ"
  HUB_NAME_STATE_SLOVAKIA_wood_slovak: "ジリナ"
  HUB_NAME_STATE_SLOVAKIA_mine_slovak: "バンスカー・ビストリツァ"
  ### Ruthenia
- #Ruthenia - German
+ # Ruthenia - German
  STATE_RUTHENIA_german: "ザカルパッチャ"
  HUB_NAME_STATE_RUTHENIA_city_german: "ウージュホロド"
  HUB_NAME_STATE_RUTHENIA_farm_german: "ムカチェヴォ"
  HUB_NAME_STATE_RUTHENIA_wood_german: "フースト"
  HUB_NAME_STATE_RUTHENIA_mine_german: "コジョクナ"
- #Ruthenia - Hungarian
+ # Ruthenia - Hungarian
  STATE_RUTHENIA_hungarian: "ザカルパッチャ"
  HUB_NAME_STATE_RUTHENIA_city_hungarian: "ウージュホロド"
  HUB_NAME_STATE_RUTHENIA_farm_hungarian: "ムカチェヴォ"
  HUB_NAME_STATE_RUTHENIA_wood_hungarian: "フースト"
  HUB_NAME_STATE_RUTHENIA_mine_hungarian: "ソロトビノ"
- #Ruthenia - Slovak
+ # Ruthenia - Slovak
  STATE_RUTHENIA_slovak: "ザカルパッチャ"
  HUB_NAME_STATE_RUTHENIA_city_slovak: "ウージュホロド"
  HUB_NAME_STATE_RUTHENIA_farm_slovak: "ムカチェヴォ"
  HUB_NAME_STATE_RUTHENIA_wood_slovak: "フースト"
  HUB_NAME_STATE_RUTHENIA_mine_slovak: "ソロトビノ"
- #Ruthenia - Rusyn
+ # Ruthenia - Rusyn
  STATE_RUTHENIA_rusyn: "ザカルパッチャ"
  HUB_NAME_STATE_RUTHENIA_city_rusyn: "ウージュホロド"
  HUB_NAME_STATE_RUTHENIA_farm_rusyn: "ムカチェヴォ"
  HUB_NAME_STATE_RUTHENIA_wood_rusyn: "ソロトビノ"
  HUB_NAME_STATE_RUTHENIA_mine_rusyn: "フースト"
  ### Partium
- #Partium - German
+ # Partium - German
  STATE_BEKES_german: "パルティウム"
  HUB_NAME_STATE_BEKES_city_german: "オラデア"
  HUB_NAME_STATE_BEKES_farm_german: "アラド"
  HUB_NAME_STATE_BEKES_wood_german: "サトゥ・マーレ"
- HUB_NAME_STATE_BEKES_mine_german: "" #None
- #Partium - Hungarian
+ HUB_NAME_STATE_BEKES_mine_german: "" # None
+ # Partium - Hungarian
  STATE_BEKES_hungarian: "パルティウム"
  HUB_NAME_STATE_BEKES_city_hungarian: "ナジヴァーラド"
  HUB_NAME_STATE_BEKES_farm_hungarian: "アラド"
  HUB_NAME_STATE_BEKES_wood_hungarian: "サトマールネーメティ"
- HUB_NAME_STATE_BEKES_mine_hungarian: "" #None
- #Partium - Romanian
+ HUB_NAME_STATE_BEKES_mine_hungarian: "" # None
+ # Partium - Romanian
  STATE_BEKES_romanian: "パルティウム"
  HUB_NAME_STATE_BEKES_city_romanian: "オラディア・マーレ"
  HUB_NAME_STATE_BEKES_farm_romanian: "アラド"
  HUB_NAME_STATE_BEKES_wood_romanian: "サトゥ・マーレ"
- HUB_NAME_STATE_BEKES_mine_romanian: "" #None
+ HUB_NAME_STATE_BEKES_mine_romanian: "" # None
  ### Northern Transylvania
- #Northern Transylvania - German
+ # Northern Transylvania - German
  STATE_NORTHERN_TRANSYLVANIA_german: "北トランシルヴァニア"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_german: "クルジュ・ナポカ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_german: "トゥルグ・ムレシュ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_german: "バヤ・マレ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_german: "セントジョージ"
- #Northern Transylvania - Hungarian
+ # Northern Transylvania - Hungarian
  STATE_NORTHERN_TRANSYLVANIA_hungarian: "北トランシルヴァニア"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_hungarian: "コロジュヴァール"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_hungarian: "マロシュヴァーシャールヘイ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_hungarian: "ナジバーニャ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_hungarian: "シェプシセントジェルジ"
- #Northern Transylvania - Romanian
+ # Northern Transylvania - Romanian
  STATE_NORTHERN_TRANSYLVANIA_romanian: "北トランシルヴァニア"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_city_romanian: "クルジュ・ナポカ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_farm_romanian: "トゥルグ・ムレシュ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_wood_romanian: "バヤ・マレ"
  HUB_NAME_STATE_NORTHERN_TRANSYLVANIA_mine_romanian: "セントジョージ"
  ### Southern Transylvania
- #Southern Transylvania - German
+ # Southern Transylvania - German
  STATE_SOUTHERN_TRANSYLVANIA_german: "南トランシルヴァニア"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_city_german: "クロンシュタット"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_farm_german: "カールスバーグ"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_wood_german: "デーヴァ"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_mine_german: "シビウ"
- #Southern Transylvania - Hungarian
+ # Southern Transylvania - Hungarian
  STATE_SOUTHERN_TRANSYLVANIA_hungarian: "南トランシルヴァニア"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_city_hungarian: "ブラショヴ"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_farm_hungarian: "アルバ・ユリア"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_wood_hungarian: "デーヴァ"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_mine_hungarian: "シビウ"
- #Southern Transylvania - Romanian
+ # Southern Transylvania - Romanian
  STATE_SOUTHERN_TRANSYLVANIA_romanian: "南トランシルヴァニア"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_city_romanian: "ブラショヴ"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_farm_romanian: "アルバ・ユリア"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_wood_romanian: "デーヴァ"
  HUB_NAME_STATE_SOUTHERN_TRANSYLVANIA_mine_romanian: "シビウ"
  ### Banat
- #Banat - German
+ # Banat - German
  STATE_BANAT_german: "バナト"
  HUB_NAME_STATE_BANAT_city_german: "ティミショアラ"
  HUB_NAME_STATE_BANAT_farm_german: "オルティショアラ"
  HUB_NAME_STATE_BANAT_wood_german: "ファジェト"
  HUB_NAME_STATE_BANAT_mine_german: "カランセベシュ"
- #Banat - Hungarian
+ # Banat - Hungarian
  STATE_BANAT_hungarian: "バナト"
  HUB_NAME_STATE_BANAT_city_hungarian: "ティミショアラ"
  HUB_NAME_STATE_BANAT_farm_hungarian: "オルティショアラ"
  HUB_NAME_STATE_BANAT_wood_hungarian: "ファジェト"
  HUB_NAME_STATE_BANAT_mine_hungarian: "カランセベシュ"
- #Banat - Romanian
+ # Banat - Romanian
  STATE_BANAT_romanian: "バナト"
  HUB_NAME_STATE_BANAT_city_romanian: "ティミショアラ"
  HUB_NAME_STATE_BANAT_farm_romanian: "オルティショアラ"
  HUB_NAME_STATE_BANAT_wood_romanian: "ファジェト"
  HUB_NAME_STATE_BANAT_mine_romanian: "カランセベシュ"
- #Banat - Serbian
+ # Banat - Serbian
  STATE_BANAT_serbian: "バナト"
  HUB_NAME_STATE_BANAT_city_serbian: "ティミショアラ"
  HUB_NAME_STATE_BANAT_farm_serbian: "オルティショアラ"
  HUB_NAME_STATE_BANAT_wood_serbian: "ファジェト"
  HUB_NAME_STATE_BANAT_mine_serbian: "カランセベシュ"
  ### Delvidek
- #Delvidek - German
- STATE_DELVIDEK_german: "ヴォヤヴォディナ" #Not perfect
+ # Delvidek - German
+ STATE_DELVIDEK_german: "ヴォヤヴォディナ" # Not perfect
  HUB_NAME_STATE_DELVIDEK_city_german: "ノヴィ・サド"
  HUB_NAME_STATE_DELVIDEK_farm_german: "ズレニャニン"
  HUB_NAME_STATE_DELVIDEK_wood_german: "スボティツァ"
  HUB_NAME_STATE_DELVIDEK_mine_german: "パンチェヴォ"
- #Delvidek - Hungarian
+ # Delvidek - Hungarian
  STATE_DELVIDEK_hungarian: "デールヴィデーク"
  HUB_NAME_STATE_DELVIDEK_city_hungarian: "ノヴィ・サド"
  HUB_NAME_STATE_DELVIDEK_farm_hungarian: "ズレニャニン"
  HUB_NAME_STATE_DELVIDEK_wood_hungarian: "サバドカ"
  HUB_NAME_STATE_DELVIDEK_mine_hungarian: "パンチェヴォ"
- #Delvidek - Serbian
+ # Delvidek - Serbian
  STATE_DELVIDEK_serbian: "ヴォヤヴォディナ"
  HUB_NAME_STATE_DELVIDEK_city_serbian: "ノヴィ・サド"
  HUB_NAME_STATE_DELVIDEK_farm_serbian: "ヴェリキ・ベチケレク"
  HUB_NAME_STATE_DELVIDEK_wood_serbian: "サバドカ"
  HUB_NAME_STATE_DELVIDEK_mine_serbian: "パンチェヴォ"
  ### Western Serbia
- #Western Serbia - German
+ # Western Serbia - German
  HUB_NAME_STATE_WESTERN_SERBIA_city_german: "ベオグラード"
- #Western Serbia - Serbian
+ # Western Serbia - Serbian
  HUB_NAME_STATE_WESTERN_SERBIA_city_serbian: "ベオグラード"
  ### Dobrudja
- #Dobrudja - Turkish
+ # Dobrudja - Turkish
  STATE_DOBRUDJA_turkish: "ドブロジャ"
  HUB_NAME_STATE_DOBRUDJA_city_turkish: "トゥルチャ"
  HUB_NAME_STATE_DOBRUDJA_port_turkish: "コンスタンツァ"
  HUB_NAME_STATE_DOBRUDJA_farm_turkish: "ドブリチ"
  HUB_NAME_STATE_DOBRUDJA_wood_turkish: "マンガリア"
  HUB_NAME_STATE_DOBRUDJA_mine_turkish: "シリストラ"
- #Dobrudja - Romanian
+ # Dobrudja - Romanian
  STATE_DOBRUDJA_romanian: "ドブロジャ"
  HUB_NAME_STATE_DOBRUDJA_city_romanian: "トゥルチャ"
  HUB_NAME_STATE_DOBRUDJA_port_romanian: "コンスタンツァ"
  HUB_NAME_STATE_DOBRUDJA_farm_romanian: "ドブリチ"
  HUB_NAME_STATE_DOBRUDJA_wood_romanian: "マンガリア"
  HUB_NAME_STATE_DOBRUDJA_mine_romanian: "シリストラ"
- #Dobrudja - Bulgarian
+ # Dobrudja - Bulgarian
  STATE_DOBRUDJA_bulgarian: "ドブロジャ"
  HUB_NAME_STATE_DOBRUDJA_city_bulgarian: "トゥルチャ"
  HUB_NAME_STATE_DOBRUDJA_port_bulgarian: "コンスタンツァ"
@@ -1495,14 +1495,14 @@
  HUB_NAME_STATE_DOBRUDJA_mine_bulgarian: "シリストラ"
  ## Italy
  ### Lombardy
- #Lombardy - German
+ # Lombardy - German
  STATE_LOMBARDY_german: "ロンバルディア"
  HUB_NAME_STATE_LOMBARDY_city_german: "ミラノ"
  HUB_NAME_STATE_LOMBARDY_farm_german: "コモ"
  HUB_NAME_STATE_LOMBARDY_wood_german: "ブレシア"
  HUB_NAME_STATE_LOMBARDY_mine_german: "ベルガモ"
  ### Venetia
- #Venetia - German
+ # Venetia - German
  STATE_VENETIA_german: "ヴェネツィア"
  HUB_NAME_STATE_VENETIA_city_german: "ヴェローナ"
  HUB_NAME_STATE_VENETIA_farm_german: "パドヴァ"
@@ -1510,7 +1510,7 @@
  HUB_NAME_STATE_VENETIA_mine_german: "ロヴィーゴ"
  HUB_NAME_STATE_VENETIA_port_german: "ヴェネツィア"
  ### Istria
- #Istria - German
+ # Istria - German
  STATE_ISTRIA_german: "トリエステ"
  HUB_NAME_STATE_ISTRIA_city_german: "トリエステ"
  HUB_NAME_STATE_ISTRIA_farm_german: "オパティヤ"
@@ -1518,27 +1518,27 @@
  HUB_NAME_STATE_ISTRIA_mine_german: "ウーディネ"
  HUB_NAME_STATE_ISTRIA_port_german: "プーラ"
  ## Savoy
- #Savoy - French
+ # Savoy - French
  STATE_SAVOY_french: "サボア"
  HUB_NAME_STATE_SAVOY_city_french: "アヌシー"
  HUB_NAME_STATE_SAVOY_farm_french: "シャンベリ"
  HUB_NAME_STATE_SAVOY_wood_french: "サン＝ジャン＝ド＝モーリエンヌ"
  HUB_NAME_STATE_SAVOY_mine_french: "トノン＝レ＝バン"
- #Savoy - Italian
+ # Savoy - Italian
  STATE_SAVOY_italian: "サヴォイア"
  HUB_NAME_STATE_SAVOY_city_italian: "アンネスィ"
  HUB_NAME_STATE_SAVOY_farm_italian: "チャンベリ"
  HUB_NAME_STATE_SAVOY_wood_italian: "サン・ジョヴァンニ・ディ・モリアーナ"
  HUB_NAME_STATE_SAVOY_mine_italian: "トノーネ"
  ## Piedmont
- #Piedmont - French
+ # Piedmont - French
  STATE_PIEDMONT_french: "ピエモン"
  HUB_NAME_STATE_PIEDMONT_city_french: "トゥリン"
  HUB_NAME_STATE_PIEDMONT_farm_french: "アレクサンドリー"
  HUB_NAME_STATE_PIEDMONT_wood_french: "コニ"
  HUB_NAME_STATE_PIEDMONT_mine_french: "ノヴァーレ"
  HUB_NAME_STATE_PIEDMONT_port_french: "ジェーヌ"
- #Piedmont - Italian
+ # Piedmont - Italian
  STATE_PIEDMONT_italian: "ピエモンテ"
  HUB_NAME_STATE_PIEDMONT_city_italian: "トリノ"
  HUB_NAME_STATE_PIEDMONT_farm_italian: "アレッサンドリア"
@@ -1558,21 +1558,21 @@
  HUB_NAME_STATE_EASTERN_NORWAY_port_norway: "フレドリクスタ"
  HUB_NAME_STATE_EASTERN_NORWAY_farm_norway_modern: "ハルデン"
  ### Eastern Thrace
- #Eastern Thrace - Greek
+ # Eastern Thrace - Greek
  STATE_EASTERN_THRACE_greek: "東トラキア"
  HUB_NAME_STATE_EASTERN_THRACE_city_greek: "コンスタンティノープル"
  HUB_NAME_STATE_EASTERN_THRACE_port_greek: "ゲリボル"
  HUB_NAME_STATE_EASTERN_THRACE_mine_greek: "クルクラーレリ"
  HUB_NAME_STATE_EASTERN_THRACE_farm_greek: "エディルネ"
  HUB_NAME_STATE_EASTERN_THRACE_wood_greek: "ミディエ"
- #Eastern Thrace - Turkish
+ # Eastern Thrace - Turkish
  STATE_EASTERN_THRACE_turkish: "東トラキア"
  HUB_NAME_STATE_EASTERN_THRACE_city_turkish: "コンスタンティノープル"
  HUB_NAME_STATE_EASTERN_THRACE_port_turkish: "ゲリボル"
  HUB_NAME_STATE_EASTERN_THRACE_mine_turkish: "クルクラーレリ"
  HUB_NAME_STATE_EASTERN_THRACE_farm_turkish: "エディルネ"
  HUB_NAME_STATE_EASTERN_THRACE_wood_turkish: "ミディエ"
- #Eastern Thrace - Russian
+ # Eastern Thrace - Russian
  STATE_EASTERN_THRACE_russian: "東トラキア"
  HUB_NAME_STATE_EASTERN_THRACE_city_russian: "コンスタンティノープル"
  HUB_NAME_STATE_EASTERN_THRACE_port_russian: "ゲリボル"
@@ -1580,7 +1580,7 @@
  HUB_NAME_STATE_EASTERN_THRACE_farm_russian: "エディルネ"
  HUB_NAME_STATE_EASTERN_THRACE_wood_russian: "ミディエ"
  HUB_NAME_STATE_EASTERN_THRACE_city_russian_tsargrad: "ツァーリグラード"
- #Eastern Thrace - Bulgarian
+ # Eastern Thrace - Bulgarian
  STATE_EASTERN_THRACE_bulgarian: "東トラキア"
  HUB_NAME_STATE_EASTERN_THRACE_city_bulgarian: "コンスタンティノープル"
  HUB_NAME_STATE_EASTERN_THRACE_port_bulgarian: "ゲリボル"
@@ -1589,26 +1589,26 @@
  HUB_NAME_STATE_EASTERN_THRACE_wood_bulgarian: "メディア"
  HUB_NAME_STATE_EASTERN_THRACE_city_bulgarian_tsarigrad: "ツァーリグラード"
  ### East Aegean Islands
- #East Aegean Islands - Greek
+ # East Aegean Islands - Greek
  STATE_EAST_AEGEAN_ISLANDS_greek: "東エーゲ海諸島"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_city_greek: "ヒオス"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_port_greek: "ロドス"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_farm_greek: "ミティリーニ"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_wood_greek: "サモス"
- #East Aegean Islands - Turkish
+ # East Aegean Islands - Turkish
  STATE_EAST_AEGEAN_ISLANDS_turkish: "東エーゲ海諸島"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_city_turkish: "ヒオス"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_port_turkish: "ロドス"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_farm_turkish: "ミティリーニ"
  HUB_NAME_STATE_EAST_AEGEAN_ISLANDS_wood_turkish: "サモス"
  ### Cyprus
- #Cyprus - Greek
+ # Cyprus - Greek
  STATE_CYPRUS_greek: "キプロス"
  HUB_NAME_STATE_CYPRUS_city_greek: "ニコシア"
  HUB_NAME_STATE_CYPRUS_port_greek: "ラルナカ"
  HUB_NAME_STATE_CYPRUS_farm_greek: "レフケ"
  HUB_NAME_STATE_CYPRUS_wood_greek: "リマソール"
- #Cyprus - Turkish
+ # Cyprus - Turkish
  STATE_CYPRUS_turkish: "キプロス"
  HUB_NAME_STATE_CYPRUS_city_turkish: "ニコシア"
  HUB_NAME_STATE_CYPRUS_port_turkish: "ラルナカ"
@@ -1616,7 +1616,7 @@
  HUB_NAME_STATE_CYPRUS_wood_turkish: "リマソール"
  ################################################ Asia
  ### Aydin
- #Aydin - Greek
+ # Aydin - Greek
  STATE_AYDIN_greek: "イオニア"
  HUB_NAME_STATE_AYDIN_city_greek: "イズミル"
  HUB_NAME_STATE_AYDIN_port_greek: "ダルダニア"
@@ -1624,7 +1624,7 @@
  HUB_NAME_STATE_AYDIN_farm_greek: "マニサ"
  HUB_NAME_STATE_AYDIN_wood_greek: "アイディニオン"
  ### Hudavendigar
- #Hudavendigar - Greek
+ # Hudavendigar - Greek
  STATE_HUDAVENDIGAR_greek: "ビテュニア"
  HUB_NAME_STATE_HUDAVENDIGAR_city_greek: "ブルサ"
  HUB_NAME_STATE_HUDAVENDIGAR_port_greek: "ニコメディア"
@@ -1633,7 +1633,7 @@
  HUB_NAME_STATE_HUDAVENDIGAR_wood_greek: "パリオカストロン"
  ## Japan
  ### Sakhalin
- #Sakhalin - Russian
+ # Sakhalin - Russian
  STATE_SAKHALIN_russian_sakhalin_only: "サハリン"
  STATE_SAKHALIN_russian_kuril_only: "クリル列島"
  STATE_SAKHALIN_russian_sakhalin_and_kuril: "サハリンおよびクリル列島"
@@ -1642,7 +1642,7 @@
  HUB_NAME_STATE_SAKHALIN_mine_russian: "チフメネフスキー"
  HUB_NAME_STATE_SAKHALIN_farm_russian: "オハ"
  HUB_NAME_STATE_SAKHALIN_wood_russian: "アレクサンドロフスキー"
- #Sakhalin - Japanese
+ # Sakhalin - Japanese
  STATE_SAKHALIN_japanese: "樺太"
  STATE_SAKHALIN_japanese_kuril_only: "千島列島"
  STATE_SAKHALIN_japanese_sakhalin_only: "樺太"
@@ -1652,9 +1652,9 @@
  HUB_NAME_STATE_SAKHALIN_mine_japanese: "敷香"
  HUB_NAME_STATE_SAKHALIN_farm_japanese: "奥潭"
  HUB_NAME_STATE_SAKHALIN_wood_japanese: "落石"
- #Sakhalin - Chinese
+ # Sakhalin - Chinese
  STATE_SAKHALIN_chinese: "庫頁"
- HUB_NAME_STATE_SAKHALIN_city_chinese: "$HUB_NAME_STATE_SAKHALIN_city$" #Could not find sensible Chinese language alternatives here
+ HUB_NAME_STATE_SAKHALIN_city_chinese: "$HUB_NAME_STATE_SAKHALIN_city$" # Could not find sensible Chinese language alternatives here
  HUB_NAME_STATE_SAKHALIN_port_chinese: "$HUB_NAME_STATE_SAKHALIN_port$"
  HUB_NAME_STATE_SAKHALIN_mine_chinese: "$HUB_NAME_STATE_SAKHALIN_mine$"
  HUB_NAME_STATE_SAKHALIN_farm_chinese: "$HUB_NAME_STATE_SAKHALIN_farm$"
@@ -1664,22 +1664,22 @@
  STATE_HOKKAIDO_kaitodo: "Kaitodo"
  STATE_HOKKAIDO_hitakamido: "日高見道"
  HUB_NAME_STATE_HOKKAIDO_city_sapporo: "札幌"
- #Hokkaido - Ainu
+ # Hokkaido - Ainu
  STATE_HOKKAIDO_ainu: "ヤウンモシリ"
  HUB_NAME_STATE_HOKKAIDO_city_ainu: "イスカルン"
  HUB_NAME_STATE_HOKKAIDO_port_ainu: "ハクチャシ"
  HUB_NAME_STATE_HOKKAIDO_mine_ainu: "イチキルシ"
  HUB_NAME_STATE_HOKKAIDO_farm_ainu: "チウ・ペッ"
  HUB_NAME_STATE_HOKKAIDO_wood_ainu: "クシリ"
- #Hokkaido - Russian
+ # Hokkaido - Russian
  STATE_HOKKAIDO_russian: "エゾ"
  HUB_NAME_STATE_HOKKAIDO_city_russian: "石狩"
  HUB_NAME_STATE_HOKKAIDO_port_russian: "函館"
  HUB_NAME_STATE_HOKKAIDO_mine_russian: "岩見沢"
  HUB_NAME_STATE_HOKKAIDO_farm_russian: "旭川"
  HUB_NAME_STATE_HOKKAIDO_wood_russian: "釧路"
- #Hokkaido - Japanese
- STATE_HOKKAIDO_japanese: "蝦夷地" #Later Hokkaidō
+ # Hokkaido - Japanese
+ STATE_HOKKAIDO_japanese: "蝦夷地" # Later Hokkaidō
  STATE_HOKKAIDO_japanese_hokkaido: "北海道"
  STATE_HOKKAIDO_japanese_kaitodo: "Kaitōdō"
  STATE_HOKKAIDO_japanese_hitakamido: "日高見道"
@@ -1689,7 +1689,7 @@
  HUB_NAME_STATE_HOKKAIDO_farm_japanese: "旭川"
  HUB_NAME_STATE_HOKKAIDO_wood_japanese: "釧路"
  ### Tohoku
- #Tohoku - Japanese
+ # Tohoku - Japanese
  STATE_TOHOKU_japanese: "東北"
  HUB_NAME_STATE_TOHOKU_city_japanese: "仙台"
  HUB_NAME_STATE_TOHOKU_port_japanese: "八戸"
@@ -1697,7 +1697,7 @@
  HUB_NAME_STATE_TOHOKU_farm_japanese: "奥州"
  HUB_NAME_STATE_TOHOKU_wood_japanese: "秋田"
  ### Kanto
- #Kanto - Japanese
+ # Kanto - Japanese
  STATE_KANTO_japanese: "関東"
  HUB_NAME_STATE_KANTO_city_japanese: "江戸"
  HUB_NAME_STATE_KANTO_port_japanese: "横浜"
@@ -1705,7 +1705,7 @@
  HUB_NAME_STATE_KANTO_farm_japanese: "高崎"
  HUB_NAME_STATE_KANTO_wood_japanese: "水戸"
  ### Hokushinetsu
- #Hokushinetsu - Japanese
+ # Hokushinetsu - Japanese
  STATE_HOKUSHINETSU_japanese: "北信越"
  HUB_NAME_STATE_HOKUSHINETSU_city_japanese: "金沢"
  HUB_NAME_STATE_HOKUSHINETSU_port_japanese: "新潟"
@@ -1713,7 +1713,7 @@
  HUB_NAME_STATE_HOKUSHINETSU_farm_japanese: "長野"
  HUB_NAME_STATE_HOKUSHINETSU_wood_japanese: "福井"
  ### Tokai
- #Tokai - Japanese
+ # Tokai - Japanese
  STATE_TOKAI_japanese: "東海"
  HUB_NAME_STATE_TOKAI_city_japanese: "名古屋"
  HUB_NAME_STATE_TOKAI_port_japanese: "静岡"
@@ -1721,7 +1721,7 @@
  HUB_NAME_STATE_TOKAI_farm_japanese: "浜松"
  HUB_NAME_STATE_TOKAI_wood_japanese: "津"
  ### Kansai
- #Kansai - Japanese
+ # Kansai - Japanese
  STATE_KANSAI_japanese: "大阪"
  HUB_NAME_STATE_KANSAI_city_japanese: "大阪"
  HUB_NAME_STATE_KANSAI_port_japanese: "兵庫津"
@@ -1729,15 +1729,15 @@
  HUB_NAME_STATE_KANSAI_farm_japanese: "奈良"
  HUB_NAME_STATE_KANSAI_wood_japanese: "和歌山"
  ### Kyoto
- #Kyoto - Japanese
+ # Kyoto - Japanese
  STATE_KYOTO_japanese: "京都"
  HUB_NAME_STATE_KYOTO_city_japanese: "京都"
  HUB_NAME_STATE_KYOTO_port_japanese: "舞鶴"
- #HUB_NAME_STATE_KYOTO_mine_japanese: "Kameoka" # Not used
+ # HUB_NAME_STATE_KYOTO_mine_japanese: "Kameoka" # Not used
  HUB_NAME_STATE_KYOTO_farm_japanese: "彦根"
  HUB_NAME_STATE_KYOTO_wood_japanese: "高島"
  ### Shikoku
- #Shikoku - Japanese
+ # Shikoku - Japanese
  STATE_SHIKOKU_japanese: "四国"
  HUB_NAME_STATE_SHIKOKU_city_japanese: "高松"
  HUB_NAME_STATE_SHIKOKU_port_japanese: "高知"
@@ -1745,7 +1745,7 @@
  HUB_NAME_STATE_SHIKOKU_farm_japanese: "宿毛"
  HUB_NAME_STATE_SHIKOKU_wood_japanese: "徳島"
  ### Chugoku
- #Chugoku - Japanese
+ # Chugoku - Japanese
  STATE_CHUGOKU_japanese: "中国"
  HUB_NAME_STATE_CHUGOKU_city_japanese: "広島"
  HUB_NAME_STATE_CHUGOKU_port_japanese: "呉"
@@ -1753,7 +1753,7 @@
  HUB_NAME_STATE_CHUGOKU_farm_japanese: "岡山"
  HUB_NAME_STATE_CHUGOKU_wood_japanese: "松江"
  ### Kyushu
- #Kyushu - Japanese
+ # Kyushu - Japanese
  STATE_KYUSHU_japanese: "九州"
  HUB_NAME_STATE_KYUSHU_city_japanese: "博多"
  HUB_NAME_STATE_KYUSHU_port_japanese: "長崎"
@@ -1761,30 +1761,30 @@
  HUB_NAME_STATE_KYUSHU_farm_japanese: "鹿児島"
  HUB_NAME_STATE_KYUSHU_wood_japanese: "府内"
  ### Ryukyu Islands
- #Ryukyu Islands - Ryukyuan
+ # Ryukyu Islands - Ryukyuan
  STATE_RYUKYU_ISLANDS_ryukyuan: "ルーチュー"
  HUB_NAME_STATE_RYUKYU_ISLANDS_city_ryukyuan: "スイ"
  HUB_NAME_STATE_RYUKYU_ISLANDS_port_ryukyuan: "ナファ"
  HUB_NAME_STATE_RYUKYU_ISLANDS_farm_ryukyuan: "ナゼ"
  HUB_NAME_STATE_RYUKYU_ISLANDS_mine_ryukyuan: "イシガチ"
  HUB_NAME_STATE_RYUKYU_ISLANDS_wood_ryukyuan: "カメツ"
- #Ryukyu Islands - Japanese
+ # Ryukyu Islands - Japanese
  STATE_RYUKYU_ISLANDS_japanese: "南西諸島"
  HUB_NAME_STATE_RYUKYU_ISLANDS_city_japanese: "首里"
  HUB_NAME_STATE_RYUKYU_ISLANDS_port_japanese: "那覇"
  HUB_NAME_STATE_RYUKYU_ISLANDS_farm_japanese: "名瀬"
  HUB_NAME_STATE_RYUKYU_ISLANDS_mine_japanese: "石垣"
  HUB_NAME_STATE_RYUKYU_ISLANDS_wood_japanese: "亀津"
- #Ryukyu Islands - Chinese
- STATE_RYUKYU_ISLANDS_chinese: "琉球" #Postal romanization
+ # Ryukyu Islands - Chinese
+ STATE_RYUKYU_ISLANDS_chinese: "琉球" # Postal romanization
  HUB_NAME_STATE_RYUKYU_ISLANDS_city_chinese: "首里"
  HUB_NAME_STATE_RYUKYU_ISLANDS_port_chinese: "那覇"
  HUB_NAME_STATE_RYUKYU_ISLANDS_farm_chinese: "名瀬"
  HUB_NAME_STATE_RYUKYU_ISLANDS_mine_chinese: "石垣"
  HUB_NAME_STATE_RYUKYU_ISLANDS_wood_chinese: "亀津"
- HUB_NAME_STATE_KANTO_city_meiji: "東京" #Tōkyō
+ HUB_NAME_STATE_KANTO_city_meiji: "東京" # Tōkyō
  ### Formosa
- #Formosa - Chinese
+ # Formosa - Chinese
  STATE_FORMOSA_chinese: "台湾"
  HUB_NAME_STATE_FORMOSA_city_chinese: "台北"
  HUB_NAME_STATE_FORMOSA_port_chinese: "打狗"
@@ -1792,7 +1792,7 @@
  HUB_NAME_STATE_FORMOSA_farm_chinese: "大墩"
  HUB_NAME_STATE_FORMOSA_wood_chinese: "台湾府"
  ### Formosa
- #Formosa - Japanese
+ # Formosa - Japanese
  STATE_FORMOSA_japanese: "台湾"
  HUB_NAME_STATE_FORMOSA_city_japanese: "台北"
  HUB_NAME_STATE_FORMOSA_port_japanese: "高雄"
@@ -1844,7 +1844,7 @@
  HUB_NAME_STATE_HYDERABAD_wood_indian: "アウランガーバード"
  ## Bombay (sr)
  ### Bombay
- STATE_BOMBAY_indian: "マハラシュトラ" #Not quite right, but close enough
+ STATE_BOMBAY_indian: "マハラシュトラ" # Not quite right, but close enough
  HUB_NAME_STATE_BOMBAY_city_indian: "ムンバイ"
  HUB_NAME_STATE_BOMBAY_mine_indian: "ラトナーギリー"
  HUB_NAME_STATE_BOMBAY_farm_indian: "プネ"
@@ -1925,7 +1925,7 @@
  HUB_NAME_STATE_CENTRAL_PROVINCES_wood_indian: "ジャバルプル"
  ## Manchuria
  ### Amur
- #Amur - Russian (Chinese by default)
+ # Amur - Russian (Chinese by default)
  STATE_AMUR_russian: "アムール"
  HUB_NAME_STATE_AMUR_city_russian: "ブラゴヴェシチェンスク"
  HUB_NAME_STATE_AMUR_port_russian: "ニコラエフスク・ナ・アムーレ"
@@ -1933,22 +1933,22 @@
  HUB_NAME_STATE_AMUR_farm_russian: "スヴォボードヌイ"
  HUB_NAME_STATE_AMUR_wood_russian: "レイチカ"
  ### - Primorye
- #Primorye - Russian (Chinese by default)
+ # Primorye - Russian (Chinese by default)
  STATE_OUTER_MANCHURIA_russian: "プリモーリエ"
  HUB_NAME_STATE_OUTER_MANCHURIA_city_russian: "ハバロフスク"
  HUB_NAME_STATE_OUTER_MANCHURIA_port_russian: "ウラジオストク"
- HUB_NAME_STATE_OUTER_MANCHURIA_mine_russian: "テチューヘ" #Modern Dalnegorsk
- HUB_NAME_STATE_OUTER_MANCHURIA_farm_russian: "グラフスカヤ" #Later Iman, modern Dalnerechensk
- HUB_NAME_STATE_OUTER_MANCHURIA_wood_russian: "インペラトルスカヤ・ガヴァニ" #Modern Sovetskaya Gavan
- #Primorye - Japanese (Mainly derived from the Russian names, so may feel a bit odd if there's no intermediate period of Russian ownership before Japanese takeower)
+ HUB_NAME_STATE_OUTER_MANCHURIA_mine_russian: "テチューヘ" # Modern Dalnegorsk
+ HUB_NAME_STATE_OUTER_MANCHURIA_farm_russian: "グラフスカヤ" # Later Iman, modern Dalnerechensk
+ HUB_NAME_STATE_OUTER_MANCHURIA_wood_russian: "インペラトルスカヤ・ガヴァニ" # Modern Sovetskaya Gavan
+ # Primorye - Japanese (Mainly derived from the Russian names, so may feel a bit odd if there's no intermediate period of Russian ownership before Japanese takeower)
  STATE_OUTER_MANCHURIA_japanese: "沿海州"
- HUB_NAME_STATE_OUTER_MANCHURIA_city_japanese: "ハバロフスク" #Transl. of Russian name. Alternative is a Japanese reading of Haishenwai (Haishenwai?)
- HUB_NAME_STATE_OUTER_MANCHURIA_port_japanese: "ウラジオストク" #Transl. of Russian name Alternative is a Japanese reading of Boli (Bōrī?)
- HUB_NAME_STATE_OUTER_MANCHURIA_mine_japanese: "テチューヘ" #From Chi. 'Yězhūhé' to Rus. 'Tetyukhe'
- HUB_NAME_STATE_OUTER_MANCHURIA_farm_japanese: "イマン" #From Chi. 'Yīmàn' to Rus. 'Iman'
- HUB_NAME_STATE_OUTER_MANCHURIA_wood_japanese: "皇帝港" #Literal translation of Emperor's port, don't think it was ever referred to as such.
+ HUB_NAME_STATE_OUTER_MANCHURIA_city_japanese: "ハバロフスク" # Transl. of Russian name. Alternative is a Japanese reading of Haishenwai (Haishenwai?)
+ HUB_NAME_STATE_OUTER_MANCHURIA_port_japanese: "ウラジオストク" # Transl. of Russian name Alternative is a Japanese reading of Boli (Bōrī?)
+ HUB_NAME_STATE_OUTER_MANCHURIA_mine_japanese: "テチューヘ" # From Chi. 'Yězhūhé' to Rus. 'Tetyukhe'
+ HUB_NAME_STATE_OUTER_MANCHURIA_farm_japanese: "イマン" # From Chi. 'Yīmàn' to Rus. 'Iman'
+ HUB_NAME_STATE_OUTER_MANCHURIA_wood_japanese: "皇帝港" # Literal translation of Emperor's port, don't think it was ever referred to as such.
  ### Gyeonggi
- #Gyeonggi - Japanese
+ # Gyeonggi - Japanese
  STATE_SEOUL_japanese: "京畿"
  HUB_NAME_STATE_SEOUL_city_japanese: "京城"
  HUB_NAME_STATE_SEOUL_port_japanese: "仁川"
@@ -1956,7 +1956,7 @@
  HUB_NAME_STATE_SEOUL_farm_japanese: "江陵"
  HUB_NAME_STATE_SEOUL_wood_japanese: "光州"
  ### Yeongnam
- #Yeongnam - Japanese
+ # Yeongnam - Japanese
  STATE_BUSAN_japanese: "嶺南"
  HUB_NAME_STATE_BUSAN_city_japanese: "大邱"
  HUB_NAME_STATE_BUSAN_port_japanese: "釜山"
@@ -1964,7 +1964,7 @@
  HUB_NAME_STATE_BUSAN_farm_japanese: "安東"
  HUB_NAME_STATE_BUSAN_wood_japanese: "晋州"
  ### Gwanbuk
- #Gwanbuk - Japanese
+ # Gwanbuk - Japanese
  STATE_SARIWON_japanese: "関北"
  HUB_NAME_STATE_SARIWON_city_japanese: "漢江"
  HUB_NAME_STATE_SARIWON_port_japanese: "清津"
@@ -1972,7 +1972,7 @@
  HUB_NAME_STATE_SARIWON_farm_japanese: "吉州"
  HUB_NAME_STATE_SARIWON_wood_japanese: "慶山"
  ### Yangseo
- #Yangseo - Japanese
+ # Yangseo - Japanese
  STATE_PYONGYANG_japanese: "楊西"
  HUB_NAME_STATE_PYONGYANG_city_japanese: "平壌"
  HUB_NAME_STATE_PYONGYANG_port_japanese: "海州"
@@ -1980,7 +1980,7 @@
  HUB_NAME_STATE_PYONGYANG_farm_japanese: "光州"
  HUB_NAME_STATE_PYONGYANG_wood_japanese: "義州"
  ### Yangho
- #Yangho - Japanese
+ # Yangho - Japanese
  STATE_YANGHO_japanese: "陽湖"
  HUB_NAME_STATE_YANGHO_city_japanese: "全州"
  HUB_NAME_STATE_YANGHO_port_japanese: "木浦"
@@ -1988,25 +1988,25 @@
  HUB_NAME_STATE_YANGHO_farm_japanese: "羅州"
  HUB_NAME_STATE_YANGHO_wood_japanese: "忠州"
  ### Indochina Strategic region
- #Tonkin
+ # Tonkin
  STATE_TONKIN_vietnamese: "トンキン"
- #Annam
+ # Annam
  STATE_ANNAM_vietnamese: "アンナン"
  HUB_NAME_STATE_ANNAM_port_french: "ダナン"
- #Mekong
+ # Mekong
  STATE_MEKONG_vietnamese: "コーチシナ"
  STATE_MEKONG_french: "コーチシナ"
  HUB_NAME_STATE_MEKONG_port_french: "サンジャック"
- #Cambodia
+ # Cambodia
  STATE_CAMBODIA_khmer: "カンプチア"
  STATE_CAMBODIA_french: "カンボジア"
  STATE_CAMBODIA_vietnamese_monarchy: "トランタイ・タン"
  HUB_NAME_STATE_CAMBODIA_city_vietnamese: "プノンペン"
- #Laos
+ # Laos
  STATE_LAOS_vietnamese_monarchy: "チャンニン"
  #### AFRICA ####
  ### Tunisia
- #Italian
+ # Italian
  STATE_TUNISIA_italian: "チュニジア"
  HUB_NAME_STATE_TUNISIA_city_italian: "チュニス"
  HUB_NAME_STATE_TUNISIA_port_italian: "サファッソ"
@@ -2014,60 +2014,60 @@
  #HUB_NAME_STATE_TUNISIA_farm:0 "Gabés"
  #HUB_NAME_STATE_TUNISIA_wood:0 "Beja"
  ### Bas-Congo
- #Belgian
+ # Belgian
  STATE_BAS_CONGO_french: "バ・コンゴ"
  HUB_NAME_STATE_BAS_CONGO_city_french: "レオポルドヴィル"
- HUB_NAME_STATE_BAS_CONGO_port_french: "ムアンダ" #same nameform in French
- HUB_NAME_STATE_BAS_CONGO_mine_french: "ケンジュ" #same nameform in French
- HUB_NAME_STATE_BAS_CONGO_farm_french: "キクウィト" #same nameform in French
+ HUB_NAME_STATE_BAS_CONGO_port_french: "ムアンダ" # same nameform in French
+ HUB_NAME_STATE_BAS_CONGO_mine_french: "ケンジュ" # same nameform in French
+ HUB_NAME_STATE_BAS_CONGO_farm_french: "キクウィト" # same nameform in French
  HUB_NAME_STATE_BAS_CONGO_wood_french: "バニングヴィル"
- STATE_BAS_CONGO_dutch: "ベネデン・コンゴ" #Neder-Congo is also a valid name
+ STATE_BAS_CONGO_dutch: "ベネデン・コンゴ" # Neder-Congo is also a valid name
  HUB_NAME_STATE_BAS_CONGO_city_dutch: "レオポルトシュタット"
  ### Congo
- #French
+ # French
  HUB_NAME_STATE_CONGO_city_french: "ブラザヴィル"
  HUB_NAME_STATE_CONGO_port_french: "ポワントノワール"
  HUB_NAME_STATE_CONGO_farm_french: "ドリシー"
- #Portuguese
+ # Portuguese
  HUB_NAME_STATE_CONGO_port_portuguese: "ポンタ・ネグラ"
  ### North Cameroon
- #German
+ # German
  STATE_NORTH_CAMEROON_german: "北カメルーン"
  HUB_NAME_STATE_NORTH_CAMEROON_city_german: "ンガウンデレ"
- #French
+ # French
  STATE_NORTH_CAMEROON_french: "北カメルーン"
  ### South Cameroon
- #German
+ # German
  STATE_SOUTH_CAMEROON_german: "南カメルーン"
  HUB_NAME_STATE_SOUTH_CAMEROON_city_german: "ヤウンデ"
  HUB_NAME_STATE_SOUTH_CAMEROON_port_german: "ドゥアラ"
  HUB_NAME_STATE_SOUTH_CAMEROON_mine_german: "ベルトゥア"
- #French
+ # French
  STATE_SOUTH_CAMEROON_french: "南カメルーン"
  HUB_NAME_STATE_SOUTH_CAMEROON_city_french: "ヤウンデ"
- #Portuguese
+ # Portuguese
  HUB_NAME_STATE_SOUTH_CAMEROON_port_portuguese: "ウーリ川"
  ### Namaqualand
- #German
+ # German
  HUB_NAME_STATE_NAMAQUALAND_port_german: "リューデリッツ"
- #Boer/Afrikans
+ # Boer/Afrikans
  STATE_NAMAQUALAND_boer: "ナマクアランド"
  ### Equateur
- #Belgian & French
+ # Belgian & French
  HUB_NAME_STATE_EQUATEUR_city_bel: "ワンガタ"
  ### Congo Orientale/Lualaba
- #Belgian & French
+ # Belgian & French
  STATE_CONGO_ORIENTALE_bel: "東コンゴ"
  HUB_NAME_STATE_CONGO_ORIENTALE_city_bel: "キサンガニ"
- #Dutch
+ # Dutch
  STATE_CONGO_ORIENTALE_dutch: "東コンゴ"
  HUB_NAME_STATE_CONGO_ORIENTALE_city_dutch: "キサンガニ"
- #British
+ # British
  STATE_CONGO_ORIENTALE_uk: "東コンゴ"
  HUB_NAME_STATE_CONGO_ORIENTALE_city_uk: "キサンガニ"
  ## Senegal (Region)
  ### Liberia / Grain Coast
- #English (Liberian)
+ # English (Liberian)
  STATE_LIBERIA_english_liberia: "リベリア"
  HUB_NAME_STATE_LIBERIA_city_english_liberia: "モンロビア"
  HUB_NAME_STATE_LIBERIA_port_english_liberia: "ブチャナン"
@@ -2075,7 +2075,7 @@
  HUB_NAME_STATE_LIBERIA_farm_english_liberia: "グリーンビル"
  HUB_NAME_STATE_LIBERIA_wood_english_liberia: "ハーパー"
  ### Gold Coast
- #Danish
+ # Danish
  STATE_GOLD_COAST_danish_full: "黄金海岸"
  STATE_GOLD_COAST_danish_partial: "デンマーク領黄金海岸"
  HUB_NAME_STATE_GOLD_COAST_city_danish: "クマシ"
@@ -2083,7 +2083,7 @@
  HUB_NAME_STATE_GOLD_COAST_mine_danish: "タマレ"
  HUB_NAME_STATE_GOLD_COAST_farm_danish: "フレデリクスボー"
  HUB_NAME_STATE_GOLD_COAST_wood_danish: "ボルガタンガ"
- #Dutch
+ # Dutch
  STATE_GOLD_COAST_dutch_full: "黄金海岸"
  STATE_GOLD_COAST_dutch_partial: "オランダ領黄金海岸"
  HUB_NAME_STATE_GOLD_COAST_city_dutch: "クマシ"
@@ -2091,7 +2091,7 @@
  HUB_NAME_STATE_GOLD_COAST_mine_dutch: "タマレ"
  HUB_NAME_STATE_GOLD_COAST_farm_dutch: "ケープ・コースト"
  HUB_NAME_STATE_GOLD_COAST_wood_dutch: "ボルガタンガ"
- #Akan
+ # Akan
  STATE_GOLD_COAST_akan: "アサンテマン"
  HUB_NAME_STATE_GOLD_COAST_city_akan: "クマシ"
  HUB_NAME_STATE_GOLD_COAST_port_akan: "ンクラン"
@@ -2099,21 +2099,21 @@
  HUB_NAME_STATE_GOLD_COAST_farm_akan: "オグァ"
  HUB_NAME_STATE_GOLD_COAST_wood_akan: "ボルガタンガ"
  ### Senegal
- #French
+ # French
  STATE_SENEGAL_french: "セネガル"
  HUB_NAME_STATE_SENEGAL_city_french: "サン＝ルイ"
  HUB_NAME_STATE_SENEGAL_port_french: "ダカール"
  HUB_NAME_STATE_SENEGAL_mine_french: "ティエス"
  HUB_NAME_STATE_SENEGAL_farm_french: "バサースト"
  HUB_NAME_STATE_SENEGAL_wood_french: "ジガンショール"
- #English
+ # English
  STATE_SENEGAL_english: "ガンビア"
  HUB_NAME_STATE_SENEGAL_city_english: "セントルイス"
  HUB_NAME_STATE_SENEGAL_port_english: "ダカール"
  HUB_NAME_STATE_SENEGAL_mine_english: "ティエス"
  HUB_NAME_STATE_SENEGAL_farm_english: "バサースト"
  HUB_NAME_STATE_SENEGAL_wood_english: "ジガンショール"
- #Portuguese
+ # Portuguese
  STATE_SENEGAL_portuguese: "カザマンス"
  HUB_NAME_STATE_SENEGAL_city_portuguese: "サン・ルイス"
  HUB_NAME_STATE_SENEGAL_port_portuguese: "ダカール"
@@ -2121,23 +2121,23 @@
  HUB_NAME_STATE_SENEGAL_farm_portuguese: "バサースト"
  HUB_NAME_STATE_SENEGAL_wood_portuguese: "ジガンショール"
  ### Senegal
- #French
+ # French
  STATE_GUINEA_french: "ギネ"
  HUB_NAME_STATE_GUINEA_city_french: "キンディア"
  HUB_NAME_STATE_GUINEA_port_french: "コナクリ"
  HUB_NAME_STATE_GUINEA_mine_french: "ラベ"
  HUB_NAME_STATE_GUINEA_farm_french: "ビサウ"
  HUB_NAME_STATE_GUINEA_wood_french: "カンカン"
- #Portuguese
+ # Portuguese
  STATE_GUINEA_portuguese: "ギネ"
  HUB_NAME_STATE_GUINEA_city_portuguese: "キンディア"
  HUB_NAME_STATE_GUINEA_port_portuguese: "コナクリ"
  HUB_NAME_STATE_GUINEA_mine_portuguese: "ラベ"
  HUB_NAME_STATE_GUINEA_farm_portuguese: "ビサウ"
  HUB_NAME_STATE_GUINEA_wood_portuguese: "カンカン"
- #Zanj Region
+ # Zanj Region
  ### Lourenco Marques
- #Portuguese
+ # Portuguese
  STATE_LOURENCO_MARQUES_portuguese: "ロウレンソ・マルケス"
  HUB_NAME_STATE_LOURENCO_MARQUES_city_portuguese: "イニャンバネ"
  HUB_NAME_STATE_LOURENCO_MARQUES_port_portuguese: "ロウレンソ・マルケス"
@@ -2145,7 +2145,7 @@
  HUB_NAME_STATE_LOURENCO_MARQUES_farm_portuguese: "チャイチャイ"
  HUB_NAME_STATE_LOURENCO_MARQUES_wood_portuguese: "カニサード"
  ### Mocambique
- #Portuguese
+ # Portuguese
  STATE_MOCAMBIQUE_portuguese: "モザンビーク"
  HUB_NAME_STATE_MOCAMBIQUE_city_portuguese: "アンゴチェ"
  HUB_NAME_STATE_MOCAMBIQUE_port_portuguese: "モザンビーク"
@@ -2153,7 +2153,7 @@
  HUB_NAME_STATE_MOCAMBIQUE_farm_portuguese: "モクバ"
  HUB_NAME_STATE_MOCAMBIQUE_wood_portuguese: "ヴィラ・カブラル"
  ### Zambezia
- #Portuguese
+ # Portuguese
  STATE_ZAMBEZIA_portuguese: "ザンベジア"
  HUB_NAME_STATE_ZAMBEZIA_city_portuguese: "ケリマネ"
  HUB_NAME_STATE_ZAMBEZIA_port_portuguese: "ソファラ"
@@ -2161,7 +2161,7 @@
  HUB_NAME_STATE_ZAMBEZIA_farm_portuguese: "モペイア"
  HUB_NAME_STATE_ZAMBEZIA_wood_portuguese: "テテ"
  ### South Cameroon
- #English
+ # English
  STATE_SOUTH_CAMEROON_english: "南カメルーン"
  STATE_SOUTH_CAMEROON_fernando_po_english: "フェルナンド・ポー"
  HUB_NAME_STATE_SOUTH_CAMEROON_city_english: "イェオンデ"
@@ -2169,7 +2169,7 @@
  HUB_NAME_STATE_SOUTH_CAMEROON_mine_english: "ベルトウア"
  HUB_NAME_STATE_SOUTH_CAMEROON_farm_english: "ポールクラランス"
  HUB_NAME_STATE_SOUTH_CAMEROON_wood_english: "エボロワ"
- #Spanish
+ # Spanish
  STATE_SOUTH_CAMEROON_spanish: "南カメルーン"
  STATE_SOUTH_CAMEROON_fernando_po_spanish: "フェルナンド・ポー"
  HUB_NAME_STATE_SOUTH_CAMEROON_city_spanish: "イェオンデ・ステーション"
@@ -2177,22 +2177,22 @@
  HUB_NAME_STATE_SOUTH_CAMEROON_mine_spanish: "ベルトウア"
  HUB_NAME_STATE_SOUTH_CAMEROON_farm_spanish: "サンタイサベル"
  HUB_NAME_STATE_SOUTH_CAMEROON_wood_spanish: "エボロワ"
- #Portuguese
+ # Portuguese
  STATE_SOUTH_CAMEROON_sao_tome_portuguese: "サントメ・プリンシペ"
- #Southern Africa region
+ # Southern Africa region
  ### Transvaal
- STATE_TRANSVAAL_southern_bantu: "レクワ" #Sotho name for the Vaal River
- HUB_NAME_STATE_TRANSVAAL_city_southern_bantu: "ツワネ" #Tswana. Pre-Trek toponymy is a bit nebulous, but Chief Tshwane himself might owe his name to a local placename
+ STATE_TRANSVAAL_southern_bantu: "レクワ" # Sotho name for the Vaal River
+ HUB_NAME_STATE_TRANSVAAL_city_southern_bantu: "ツワネ" # Tswana. Pre-Trek toponymy is a bit nebulous, but Chief Tshwane himself might owe his name to a local placename
  HUB_NAME_STATE_TRANSVAAL_port_southern_bantu: "$STATE_TRANSVAAL_southern_bantu$"
- HUB_NAME_STATE_TRANSVAAL_mine_southern_bantu: "フォケング" #Sotho. 'Place of Dew'
- HUB_NAME_STATE_TRANSVAAL_farm_southern_bantu: "ンコマジ" #Swazi. 'River of Cows', in reference to the Komati River which Komatipoort gets its name from
- HUB_NAME_STATE_TRANSVAAL_wood_southern_bantu: "ハウテン" #Sotho & Twsana. 'Place of Gold'
- STATE_TRANSVAAL_zulu: "イクワ" #Zulu name for the Vaal River
- HUB_NAME_STATE_TRANSVAAL_city_zulu: "$HUB_NAME_STATE_TRANSVAAL_city_southern_bantu$" #Same as general Bantu name. iPitoli is a Zulu name for Pretoria, but I'm pretty sure it's derived /from/ the name Pretoria
+ HUB_NAME_STATE_TRANSVAAL_mine_southern_bantu: "フォケング" # Sotho. 'Place of Dew'
+ HUB_NAME_STATE_TRANSVAAL_farm_southern_bantu: "ンコマジ" # Swazi. 'River of Cows', in reference to the Komati River which Komatipoort gets its name from
+ HUB_NAME_STATE_TRANSVAAL_wood_southern_bantu: "ハウテン" # Sotho & Twsana. 'Place of Gold'
+ STATE_TRANSVAAL_zulu: "イクワ" # Zulu name for the Vaal River
+ HUB_NAME_STATE_TRANSVAAL_city_zulu: "$HUB_NAME_STATE_TRANSVAAL_city_southern_bantu$" # Same as general Bantu name. iPitoli is a Zulu name for Pretoria, but I'm pretty sure it's derived /from/ the name Pretoria
  HUB_NAME_STATE_TRANSVAAL_cuty_zulu: "$STATE_TRANSVAAL_zulu$"
- HUB_NAME_STATE_TRANSVAAL_mine_zulu: "$HUB_NAME_STATE_TRANSVAAL_mine_southern_bantu$" #Same as general Bantu name.
- HUB_NAME_STATE_TRANSVAAL_farm_zulu: "$HUB_NAME_STATE_TRANSVAAL_farm_southern_bantu$" #Same as general Bantu name.
- HUB_NAME_STATE_TRANSVAAL_wood_zulu: "エゴリ" #Zulu, 'Place of Gold'
+ HUB_NAME_STATE_TRANSVAAL_mine_zulu: "$HUB_NAME_STATE_TRANSVAAL_mine_southern_bantu$" # Same as general Bantu name.
+ HUB_NAME_STATE_TRANSVAAL_farm_zulu: "$HUB_NAME_STATE_TRANSVAAL_farm_southern_bantu$" # Same as general Bantu name.
+ HUB_NAME_STATE_TRANSVAAL_wood_zulu: "エゴリ" # Zulu, 'Place of Gold'
  ### Zululand
  STATE_ZULULAND_boer: "ナタール"
  HUB_NAME_STATE_ZULULAND_city_boer: "フレイヘイト"
@@ -2218,9 +2218,9 @@
  STATE_OHIO_michigander: "南ミシガン"
  STATE_OHIO_japanese: "オハイオ"
  ### District of Columbia
- HUB_NAME_STATE_DISTRICT_OF_COLUMBIA_city_uk: "コックバーン" #after Sir George Cockburn and his feat of 1814
+ HUB_NAME_STATE_DISTRICT_OF_COLUMBIA_city_uk: "コックバーン" # after Sir George Cockburn and his feat of 1814
  ### Canada
- #British Columbia
+ # British Columbia
  STATE_BRITISH_COLUMBIA_british: "ブリティッシュコロンビア"
  ### Ontario
  HUB_NAME_STATE_ONTARIO_city_ottawa: "オタワ"
@@ -2228,7 +2228,7 @@
  HUB_NAME_STATE_SANTA_CATARINA_port_bra_republic: "フロリアノポリス"
  ## Caribbean Region
  ### Western Cuba
- #Spanish
+ # Spanish
  STATE_WESTERN_CUBA_spanish: "キューバ西部"
  HUB_NAME_STATE_WESTERN_CUBA_city_spanish: "ラ・アバナ"
  HUB_NAME_STATE_WESTERN_CUBA_port_spanish: "マリエル"
@@ -2236,7 +2236,7 @@
  HUB_NAME_STATE_WESTERN_CUBA_farm_spanish: "ピナール・デル・リオ"
  HUB_NAME_STATE_WESTERN_CUBA_wood_spanish: "ヌエバ・ヘローナ"
  ### Central Cuba
- #Spanish
+ # Spanish
  STATE_CENTRAL_CUBA_spanish: "キューバ中央部"
  HUB_NAME_STATE_CENTRAL_CUBA_city_spanish: "プエルト・プリンシペ"
  HUB_NAME_STATE_CENTRAL_CUBA_port_spanish: "シエンフエーゴス"
@@ -2244,7 +2244,7 @@
  HUB_NAME_STATE_CENTRAL_CUBA_farm_spanish: "トリニダード"
  HUB_NAME_STATE_CENTRAL_CUBA_wood_spanish: "シエゴ・デ・アビラ"
  ### Eastern Cuba
- #Spanish
+ # Spanish
  STATE_EASTERN_CUBA_spanish: "キューバ東部"
  HUB_NAME_STATE_EASTERN_CUBA_city_spanish: "サンティアゴ・デ・クーバ"
  HUB_NAME_STATE_EASTERN_CUBA_port_spanish: "グアンタナモ湾"
@@ -2252,7 +2252,7 @@
  HUB_NAME_STATE_EASTERN_CUBA_farm_spanish: "バヤモ"
  HUB_NAME_STATE_EASTERN_CUBA_wood_spanish: "バラコア"
  ### Haiti
- #French
+ # French
  STATE_HAITI_french_whole: "サン＝ドマング西部"
  STATE_HAITI_french_part: "サン＝ドマング"
  HUB_NAME_STATE_HAITI_city_french: "ポルトープランス"
@@ -2260,7 +2260,7 @@
  HUB_NAME_STATE_HAITI_mine_french: "レカイ"
  HUB_NAME_STATE_HAITI_farm_french: "カプ・フランセ"
  HUB_NAME_STATE_HAITI_wood_french: "レ・ゴナイーヴ"
- #French (Haiti)
+ # French (Haiti)
  STATE_HAITI_french_haiti_whole: "ハイチ西部"
  STATE_HAITI_french_haiti_part: "ハイチ"
  HUB_NAME_STATE_HAITI_city_french_haiti: "ポルトープランス"
@@ -2268,7 +2268,7 @@
  HUB_NAME_STATE_HAITI_mine_french_haiti: "レカイ"
  HUB_NAME_STATE_HAITI_farm_french_haiti: "カプ・アイシアン"
  HUB_NAME_STATE_HAITI_wood_french_haiti: "レ・ゴナイーヴ"
- #Spanish
+ # Spanish
  STATE_HAITI_spanish_whole: "サント・ドミンゴ西部"
  STATE_HAITI_spanish_part: "サント・ドミンゴ"
  HUB_NAME_STATE_HAITI_city_spanish: "プエルト・プリンシペ"
@@ -2277,7 +2277,7 @@
  HUB_NAME_STATE_HAITI_farm_spanish: "カボ・アイティアノ"
  HUB_NAME_STATE_HAITI_wood_spanish: "ゴナイーヴ"
  ### SANTO_DOMINGO
- #French
+ # French
  STATE_SANTO_DOMINGO_french_whole: "サン＝ドマング東部"
  STATE_SANTO_DOMINGO_french_part: "サン＝ドマング"
  HUB_NAME_STATE_SANTO_DOMINGO_city_french: "サン＝ドマング"
@@ -2285,7 +2285,7 @@
  HUB_NAME_STATE_SANTO_DOMINGO_mine_french: "アスア"
  HUB_NAME_STATE_SANTO_DOMINGO_farm_french: "ラベガ"
  HUB_NAME_STATE_SANTO_DOMINGO_wood_french: "サン＝ヤグ"
- #French (Haiti)
+ # French (Haiti)
  STATE_SANTO_DOMINGO_french_haiti_whole: "ハイチ東部"
  STATE_SANTO_DOMINGO_french_haiti_part: "ハイチ"
  HUB_NAME_STATE_SANTO_DOMINGO_city_french_haiti: "サン＝ドマング"
@@ -2293,7 +2293,7 @@
  HUB_NAME_STATE_SANTO_DOMINGO_mine_french_haiti: "アスア"
  HUB_NAME_STATE_SANTO_DOMINGO_farm_french_haiti: "ラベガ"
  HUB_NAME_STATE_SANTO_DOMINGO_wood_french_haiti: "サン＝ヤグ"
- #Spanish
+ # Spanish
  STATE_SANTO_DOMINGO_spanish_whole: "サント・ドミンゴ東部"
  STATE_SANTO_DOMINGO_spanish_part: "サント・ドミンゴ"
  HUB_NAME_STATE_SANTO_DOMINGO_city_spanish: "サント・ドミンゴ"

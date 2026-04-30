@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Current sea state regions
+ # Current sea state regions
  STATE_NORTHERN_BALTIC_SEA: "北バルト海"
  STATE_MICRONESIAN_SEA: "ミクロネシア海"
  STATE_EQUATORIAL_PACIFIC_OCEAN: "赤道太平洋"
@@ -106,10 +106,10 @@
  STATE_PHILIPPINES_SEA: "フィリピン海"
  STATE_EASTERN_INDIAN_OCEAN: "東インド洋"
  STATE_SOUTHERN_OCEAN_01: "南極海"
- #Lakes
+ # Lakes
  STATE_PATAGONIAN_LAKES: "パタゴニア湖"
  STATE_LAKE_NICARAGUA: "ニカラグア湖"
- #UNUSED
+ # UNUSED
  STATE_DANISH_STRAITS: "デンマーク海峡"
  STATE_IRMINGER_SEA: "イルミンガー海"
  STATE_STRAIT_OF_GIBRALTAR: "ジブラルタル海峡"

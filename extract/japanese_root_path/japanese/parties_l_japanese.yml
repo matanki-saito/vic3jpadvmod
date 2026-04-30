@@ -34,7 +34,7 @@
  party_sikh: "シク党"
  party_buddhist: "仏教党"
  party_shinto: "神道党"
- party_anarchist: "無政府主義社会" #works mechanically as a party, but should not be flavored as one
+ party_anarchist: "無政府主義社会" # works mechanically as a party, but should not be flavored as one
  party_military: "愛国党"
  party_christian_social_party: "キリスト教社会党"
  party_constitutional_party: "憲法党"
@@ -120,7 +120,7 @@
  party_constitutional_union_party: "立憲連合党"
  party_liberal_regenerator_party: "自由主義再生党"
  party_vintista_party: "ヴィンティスト党"
- party_independent_party: "独立党" #Not a real party, but an abstraction
+ party_independent_party: "独立党" # Not a real party, but an abstraction
  #liberal_party
  party_progressive_party: "進歩党"
  party_liberal_democrats: "自由民主派"
@@ -197,7 +197,7 @@
  party_clerical_party: "聖職党"
  party_know_nothing_party: "ノウ・ナッシング党"
  party_conservative_catholics: "カトリック保守派"
- party_traditionalist_communion: "伝統主義コミュニオン" #Carlists, might revise
+ party_traditionalist_communion: "伝統主義コミュニオン" # Carlists, might revise
  party_nationalist_party: "民族主義党"
  #social_democrats_party
  party_psoe: "PSOE"
@@ -267,7 +267,7 @@
  party_anarcho_communist_federation: "無政府共産主義連盟"
  party_social_revolution_group: "社会革命グループ"
  party_portuguese_anarchist_federation: "ポルトガル無政府主義連盟"
- #Party weight descriptions
+ # Party weight descriptions
  base_value: "基本値"
  from_liberal_leader: "自由主義リーダー的イデオロギー"
  from_liberalism: "自由主義またはレッセフェール的イデオロギー"

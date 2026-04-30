@@ -26,7 +26,7 @@
  pedro.2.a: "不安にさせる出来事の節目だ。"
  pedro.3.t: "早期の戴冠"
  pedro.3.d: "政治的資本の獲得を期待して、計画よりもずっと早く[SCOPE.gsInterestGroup('coronation_ig').GetName]の摂政は[ROOT.GetCountry.GetName]の[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle]として[SCOPE.sCharacter('pedro_scope').GetFullName]を戴冠させることを決定した。"
- pedro.3.f: "「オオカミは子羊とともに暮らし、\nヒョウは若いヤギとともに伏し、\n子牛と若いライオンと肥えたブタは同じ場所に住んでいる。\nそして幼な子が彼らを導くのだ」" #The Bible
+ pedro.3.f: "「オオカミは子羊とともに暮らし、\nヒョウは若いヤギとともに伏し、\n子牛と若いライオンと肥えたブタは同じ場所に住んでいる。\nそして幼な子が彼らを導くのだ」" # The Bible
  pedro.3.a: "そうして彼の治世が始まる。"
  pedro.4.t: "皇帝の不健康"
  pedro.4.d: "[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle][SCOPE.sCharacter('pedro_scope').GetFullName]はもはやかつてのような若く健康な男ではない。君主としての能力は衰えていっている。後継者問題や[ROOT.GetCountry.GetAdjective]政府の将来について、憶測と陰謀が渦巻いている。"
@@ -95,7 +95,7 @@
  highest_standards_degrees: "最高基準: 法令"
  highest_standards_trade: "最高基準: 貿易"
  highest_standards_construction: "最高基準: 建設"
- #Patagonia
+ # Patagonia
  Orelie_Antoine: "オルリ・アントワーヌ"
  de_Tounens: "ド・トゥナン"
  bp1_patagonia.1.t: "ありえない王国"
@@ -105,14 +105,14 @@
  bp1_patagonia.1.b: "忠誠心と引き換えに彼らを認めよう。"
  patagonia_button: "襲撃開始"
  patagonia_button_desc: "パタゴニアの原住民たちがこの土地を植民地化しようとする我々の活動に抵抗を続けている。彼らをなだめるには軍事力の行使が必要である。"
- #Carnaval
+ # Carnaval
  bp1_misc.1.t: "カーニバル"
  bp1_misc.1.d: "今年の祝祭は[SCOPE.sState('carnaval_state').GetName]で特に盛大に行われる予定だ。大衆の不満を和らげるいい機会かもしれない。"
  bp1_misc.1.f: "精霊のボディペイントをした女たちが踊りながら通りを進み、しゃがれた声の旋律に合わせて男たちが妖艶なリズムでドラムを叩く。子供たちは旗や揚げ物の棒を振り回している。日常の喧騒で殺風景だった街道が色彩と歓喜の海で栄光を謳歌する。\nほんの一瞬、世界は平和に思えた。"
  bp1_misc.1.a: "いい気晴らしだ。"
  bp1_misc.1.b: "真に素晴らしい祭りを開催しろ。"
  carnaval_celebrations: "祝祭"
- #Medium Roast
+ # Medium Roast
  bp1_misc.2.t: "ミディアムロースト"
  bp1_misc.2.d: "[SCOPE.sGoods('coffee_scope').GetName]の価格急落により、[SCOPE.sState('coffee_state').GetName][SCOPE.sBuilding('coffee_building').GetName]の[SCOPE.gsInterestGroup('plantation_owners').GetName]に思い切った手段が求められている。彼らは価格を上げるために余剰分を燃やすつもりのようだ。"
  bp1_misc.2.f: "帳簿というものは二種類ある。ますます不安にさせるものと、ますます明確になっていくものだ。ただ利益が減少しているだけでない。年末には何も残らないだろう。コーヒー栽培は間もなく金持ちの一風変わった趣味になり変わってしまう。\n\nあるいは、暖炉を眺めたときに気づいたように、複雑な問題には野蛮な解決策である。農家と愛飲家のために特別に作られたエスプレッソだ。"
@@ -123,7 +123,7 @@
  coffee_fuel: "試作燃料"
  burnng_coffee_ig: "ミディアムロースト"
  not_burning_coffee_ig: "コーヒー保護の提唱者"
- #Brazilian Naval Power
+ # Brazilian Naval Power
  je_brazil_navy: "ブラジルの海軍力"
  je_brazil_navy_reason: "独立以来、ブラジル海軍は我が国の主権を守る上で重要な役割を果たしてきた。我々は南米で、そして世界で最も偉大な海軍大国となるよう尽力しなければならない。"
  je_brazil_navy_goal: "最低40年間、以下が成立していること："
@@ -150,7 +150,7 @@
  dom_key: "ドム"
  dona_key: "ドナ"
  brz_navy_loyalists: "レベル#Bold 5#!以上の[GetBuildingType('building_naval_administration').GetName]を持つすべての[Concept('concept_state', '$concept_states$')]が以下を獲得:"
- #Age of Caudillos
+ # Age of Caudillos
  je_caudillo: "軍事独裁者時代"
  je_caudillo_reason: "#bold 進捗ゲージ#!の状態はさまざまな#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_advance プラス#!または#tooltippable;tooltip:[Country.GetTooltipTag],je_caudillo_special_tooltip_deplete マイナス#!の条件によって決まります。#bold 進捗ゲージ#!が#bold 100#!に達すると、[SCOPE.sCountry('caudillo_country_scope').GetName]の軍有力者の権力が確固たるものになります。\n\n進捗ゲージを枯渇させ、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]を政府から締め出すことで、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の#bold 軍事独裁主義#!を破滅させ、国内の軍有力者の脅威を終わらせることができます。\n\n$je_coup_loc$\n\nスペインからの独立後、植民地政府が解体された。そのあと間もなく権力の空白を埋めたのはカリスマ的軍事指導者。南米の政治の大部分を決めるのはこうした「軍事独裁者」だ。"
  je_coup_loc: "この[concept_journal_entry]が有効である間、我が国では[concept_coup]の発生確率が高まり、さらに制定される[Concept('concept_votes','$concept_voting$')]法はすべて#b $amendment_electoral_clientelism$#!の[concept_amendment]を獲得します。\n"
@@ -216,7 +216,7 @@
  caudillo_rule_by_decree_modifier: "法令による支配"
  caudillo_decree_button: "法令による支配"
  caudillo_decree_button_desc: "我が国の指導者は官僚的であろうと民主的であろうと、面倒な政府の仕事に煩わされるべきではない。もし国が飛べと命じられたら、「どれだけ高く？」と問うべきだ。"
- #Brazilian Nation-Building failure
+ # Brazilian Nation-Building failure
  culture_brazil.7.t: "失敗した国家建設"
  culture_brazil.7.d: "[ROOT.GetCountry.GetName]で共通の国民性を築くことに失敗したため、未統合地域の分離主義者や不満分子が増長している。彼らは多くの国民をさまざまな反政府運動に結集させている。"
  culture_brazil.7.f: "朽ち果てた基盤の上に建つボロ家、それが苦難の末に残されたものだった。ブラジルは一つの国民が一つの声を上げるのではなく、5人の兄弟がいがみ合うように前進した。彼らを率いていたのは暴君だった。その暴君自身を取り囲むのは泥、血、唸り声、そして妄想であろうとなかろうと、復讐を望む怒れる少年たちだった。"
@@ -225,7 +225,7 @@
  radicalise_sulistas_tt: "[SCOPE.sCulture('sulista_scope').GetName]における[SCOPE.sCulture('sulista_scope').GetName][Concept('concept_pop', '$concept_pops$')]#bold;red +60.0%#!、[Concept('concept_homeland', '$concept_homelands$')]がより[concept_radical]になる"
  radicalise_nordestinos_tt: "[SCOPE.sCulture('nordestino_scope').GetName]における[SCOPE.sCulture('nordestino_scope').GetName][Concept('concept_pop', '$concept_pops$')]#bold;red +60.0%#!、[Concept('concept_homeland', '$concept_homelands$')]がより[concept_radical]になる"
  radicalise_amazonics_tt: "[SCOPE.sCulture('amazonic_scope').GetName]における[SCOPE.sCulture('amazonic_scope').GetName][Concept('concept_pop', '$concept_pops$')]#bold;red +60.0%#!、[Concept('concept_homeland', '$concept_homelands$')]がより[concept_radical]になる"
- #Acre Dispute
+ # Acre Dispute
  acre_dispute.1.t: "アクレ紛争"
  acre_dispute.1.d: "正式には[SCOPE.sCountry('acre_claimant').GetName]の管理下にあるものの、[SCOPE.sState('acre_state').GetName]地域は苛烈な紛争状態にある。この機に便乗した[SCOPE.sCountry('acre_claimant').GetAdjective]の入植者たちはその土地を自分のものにしようとし、[SCOPE.sCountry('acre_owner').GetName]に対する訴訟を求めている。"
  acre_dispute.1.f: "「取引はこうだ。君は家族と家来を何人か連れて、その地域で権利を主張する。必要とあらば、そこに住め。アクレが最も重要なのだ」\n\n「そして私が取ったものは私のものですか？」\n\n「合理的範囲内でその通りだと言える」"
@@ -250,7 +250,7 @@
  notification_acre_dispute_failure_name: "アクレ紛争"
  notification_acre_dispute_failure_desc: "[SCOPE.sCountry('acre_claimant').GetName]は所有者[SCOPE.sCountry('acre_owner').GetName]から[SCOPE.sState('acre_state').GetName]を押収することに失敗した。"
  notification_acre_dispute_failure_tooltip: "#header $notification_acre_dispute_failure_name$#!\n$TOOLTIP_DELIMITER$\n$notification_acre_dispute_failure_desc$"
- #Aberdeen Act
+ # Aberdeen Act
  aberdeen_act_enforced_gbr: "アバディーン法施行"
  aberdeen_act_enforced_brz: "アバディーン法施行"
  aberdeen_act_cd_tt: "#bold 5#!年間、アバディーン法を施行していない"
@@ -264,7 +264,7 @@
  notification_aberdeen_act_notification_name: "アバディーン法"
  notification_aberdeen_act_notification_desc: "[SCOPE.sCountry('britain_scope').GetName]は海運と貿易を積極的に妨害することによって、[SCOPE.sCountry('brazil_scope').GetAdjective]における[GetLawType('law_slave_trade').GetName]の禁止を強制している。"
  notification_aberdeen_act_notification_tooltip: "#header $notification_aberdeen_act_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_aberdeen_act_notification_desc$"
- #South America Migration
+ # South America Migration
  je_south_america_migration: "アメリカ大陸への入植"
  je_south_america_migration_reason: "南米の [Concept('concept_incorporated_state','$concept_incorporated$')][Concept('concept_pop','$concept_population$')]は#b [Country.MakeScope.Var('south_america_incorporated_population').GetValue|D]#!である\n我々の目標[Concept('concept_pop', '$concept_population$')]は#b [Country.MakeScope.Var('south_america_migration_goal').GetValue|D]#!である\n\n[ROOT.GetCountry.GetName]は恵まれた広大な土地だが、人口はまばらだ。我々は海の向こう、特に、問題の多いヨーロッパに目を向け、我々の畑や工場で働く潜在的な移住者を探さなければならない。"
  southamerica_migration_button: "欧州移民の促進"
@@ -310,7 +310,7 @@
  canada_great_migration: "大移動"
  mass_migration_target_tt: "[concept_migration_target]ではない"
  average_sol_below_root_tt: "平均[concept_sol]が我が国を下回っている"
- #South American Minors
+ # South American Minors
  ragamuffin_war_minors: "独立への闘い"
  ragamuffin_war_minors_reason: "国民の苦境に対するブラジル帝国政府の無関心はもはや容認できない。我々は自らの政府を選出し、共和国としての独立を宣言した！"
  ragamuffin_war_minors_tt: "$BRZ$に対する要求を実行すると、イベント#bold $brazilian_minors.1.t$#!が開始します"

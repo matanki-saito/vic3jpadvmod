@@ -105,7 +105,7 @@
  tooltip_hinter_names: "#tooltippable_name #tooltip:[GetPlayer.GetTooltipTag],TOOLTIPS_EXPLAINER 名称#!#!"
  tooltip_hinter_concept: "[concept_concept]"
  tooltip_hinter_concepts: "[Concept('concept_concept', '$concept_concepts$')]"
- #Basics
+ # Basics
  lesson_basics_welcome: "黎明の時代にようこそ！"
  lesson_basics_welcome_desc: "時は1836年。[GetPlayer.GetRuler.GetFullName]は[GetPlayer.GetName]の[GetPlayer.GetRuler.GetPrimaryRoleTitle]となっていた。産業革命が世界を席巻し、社会には劇的な変化が訪れている。ウィーン会議によって欧州に上辺ばかりの秩序がもたらされてから20余年、再び[Concept('concept_great_power', '$concept_great_powers$')]の間で政情不安の兆しが燻り始めていた。次世紀に[GetPlayer.GetName]を栄光へと導くのはあなた次第だ。\n\nVictoria 3で「勝つ」方法はありません。あなたは自分の目標を設定し、それを追求する中でさまざまな物語を体験するだろう。"
  lesson_basics_core_gameplay: "ゲームプレイ概要"
@@ -701,7 +701,7 @@
  lesson_fix_capacity_deficit_how_1_desc: "国家予算と同様に、三つの[Concept('concept_capacity','$concept_capacities$')]にも流入や流出が発生します。画面上部に表示されている数値は、余剰または不足分の規模です。効果のバランスは累計としてではなく、ゼロを超える場合はプラスに、ゼロを下回る場合はマイナスとして変換されます。\n\n効果がマイナスの場合はプラスであるよりも深刻な事態ですので、バランスを高いプラスで維持できるように$concept_capacities$を割り当てる方がベターです。ただし、不足を抱えたまま運営を実行することは非常に良くないことですので、できるだけ早く修正を行う必要があります。"
  lesson_fix_capacity_deficit_how_2: "$lesson_fix_capacity_deficit_how_1$"
  lesson_fix_capacity_deficit_how_2_desc: "不足分を修正するには、流入と流出を把握し、[concept_capacity]の生成を増やすか配分を減らす、またはその両方を行う必要があります。キャパシティにカーソルを合わせると、赤字の要因が表示されます。それぞれ順番に見ていきましょう。"
- #lesson_fix_capacity_deficit_how_1_continue: "Go to the $concept_buildings$ tab in the #b Military#! Lens"
+ # lesson_fix_capacity_deficit_how_1_continue: "Go to the $concept_buildings$ tab in the #b Military#! Lens"
  lesson_fix_capacity_deficit_how_3: "$lesson_fix_capacity_deficit_how_1$"
  lesson_fix_capacity_deficit_how_3_desc: "まず@bur![Nbsp][concept_bureaucracy]にカーソルを合わせてください。\n\n@bur![Nbsp]$concept_bureaucracy$は、主に[SelectLocalization(GetPlayer.IsValid,'lesson_fix_capacity_deficit_how_3_desc_added','行政府')]によって生成されます。もっと生成量を増やしたい場合は単に建設でこれらの数を増やせば良いだけです。\n\nこれは[Concept('concept_incorporated_state','$concept_incorporated_states$')]全体で[Concept('concept_taxes','$concept_tax$')]の徴収効率を維持するために費やされ、人口規模によってコストが変動します。さらに、各[concept_institution]の[concept_investment_level]には一定量の@bur![Nbsp]$concept_bureaucracy$が必要であり、これは$concept_incorporated$人口に左右されます。\n\n加えて@bur![Nbsp]$concept_bureaucracy$は[Concept('concept_commander','$concept_commanders$')]を維持するために割り当てられ、より高い[concept_commander_rank]にはより多くの$concept_bureaucracy$が求められます。"
  lesson_fix_capacity_deficit_how_3_desc_added: "[GetBuildingType('building_government_administration').GetName]"

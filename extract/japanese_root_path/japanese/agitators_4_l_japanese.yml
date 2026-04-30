@@ -146,14 +146,14 @@
  modifier_demonstrated_weakness: "少数派の不満の受け入れ"
  modifier_emboldened_academia: "血気盛んな学界"
  modifier_circulating_sedition: "循環する暴動"
- coup_advance_10_tt: "#bold クーデター#! の#! 進行度が#v 10%#bold 増加します#!"
- coup_retreat_10_tt: "#bold クーデター#! の#! 進行度が#v 10 #! #bold 減少します#!"
- coup_advance_15_tt: "#bold クーデター#! の#! 進行度が#v 15 #! #bold 増加します#!"
- coup_retreat_15_tt: "#bold クーデター#! の#! 進行度が#v 15#! #bold 減少します#!"
- coup_advance_25_tt: "#bold クーデター#!の#!進行度が#v 25#! #bold 増加します#! "
- coup_retreat_25_tt: "#bold クーデター#! の#! 進行度が#v 25%#! #bold 減少します#!"
- coup_advance_50_tt: "#bold クーデター#! の#! 進行度が#v 50#! #bold 増加します#!"
- coup_retreat_50_tt: "#bold クーデター#! の#! 進行度が#v 50#! #bold 減少します#!"
+ coup_advance_10_tt: "#bold クーデター#! の進行度が#v 10%#bold 増加します#!"
+ coup_retreat_10_tt: "#bold クーデター#! の進行度が#v 10 #! #bold 減少します#!"
+ coup_advance_15_tt: "#bold クーデター#! の進行度が#v 15 #! #bold 増加します#!"
+ coup_retreat_15_tt: "#bold クーデター#! の進行度が#v 15#! #bold 減少します#!"
+ coup_advance_25_tt: "#bold クーデター#!の進行度が#v 25#! #bold 増加します#! "
+ coup_retreat_25_tt: "#bold クーデター#! の進行度が#v 25%#! #bold 減少します#!"
+ coup_advance_50_tt: "#bold クーデター#! の進行度が#v 50#! #bold 増加します#!"
+ coup_retreat_50_tt: "#bold クーデター#! の進行度が#v 50#! #bold 減少します#!"
  coup_sponsor_tt: "#bold クーデター#!の成功により、#bold 義務#!が [SCOPE.sCountry('coup_sponsor_country').GetName]に負わされます。"
  #Coup Pulse Events
  coup_pulse_events.1.t: "謀略による将軍の弾劾"
@@ -517,7 +517,7 @@
  agitators_law_events.30.f: "落ち着いて眠れず、かすんだ目で事務所に入った監督者は、すぐに職員たちの苦痛に満ちた表情に気が付いた。何故そんな表情をしているのかは、ピンボードを見るとすぐにわかった。新聞には、太字でこう書かれていた。\n\n「ご検討を: 表現の自由への賛同」"
  agitators_law_events.30.a: "我々の中にも、彼らの言うことに一理あると思う者はいるだろう。"
  agitators_law_events.30.b: "ここで見て見ぬふりをすれば、状況はますます悪くなるだけだ。"
- #Silkworm Diseases
+ # Silkworm Diseases
  je_silkworm_diseases: "微粒子病の大流行"
  je_silkworm_diseases_goal: "[ROOT.GetCountry.GetName]が、#BOLD 微粒子病#!の影響を受けた州のうち少なくとも75%の州において、解決策を発見してから1年にわたって[GetDecreeType('decree_encourage_agricultural_industry').GetName]の法令を有効にする。\n\nこの大流行の解決策は、#BOLD 低温殺菌#!の研究を行うことで得られます。あるいは、解決法を発見した他の国から教わることもできます。"
  je_silkworm_diseases_reason: "[ROOT.GetCountry.GetAdjective]の絹産業は#BOLD 微粒子病#!の大流行に悩まされており、このまま放置すると養蚕業が壊滅する恐れがあります。"
@@ -658,7 +658,7 @@
  exiles_events.10.a: "[SCOPE.sCharacter('exile_scope').GetSheHe|U]は自らの行動の結果に向き合うべきだ。"
  exiles_events.10.b: "病人に慈悲を見せても構わないだろう。"
  exiles_events.10.c: "[SCOPE.sCharacter('exile_scope').GetSheHe]の治療が終わった後も、ここにいたければいるといい。"
- #Agitators Law Events
+ # Agitators Law Events
  modifier_pro_democracy_ig: "参政権の支持"
  modifier_preferred_in_party: "党内での優遇"
  modifier_fair_dealer: "実直なブローカー"
@@ -1489,7 +1489,7 @@
  revolution_pulse_events.6.b: "[SCOPE.sCountry('potemkin_final_destination').GetAdjective]国は裏切り者に協力している！"
  revolution_pulse_events.7.t: "請願行進"
  revolution_pulse_events.7.d: "[SCOPE.sCharacter('petition_march_leader').GetFullName]が率いる[SCOPE.gsInterestGroup('petition_march_ig').GetName]を代表する請願者の集団は、[SCOPE.sCharacter('petition_march_ruler').GetPrimaryRoleTitle]に率いられて、[SCOPE.sState('petition_march_state').GetStateRegion.GetCityHubName]の現在空家となっている住宅を行進している。彼らは[SCOPE.sCharacter('petition_march_ruler').GetPrimaryRoleTitle]が彼らと会うことに同意するまで住居を出ることを拒否している。"
- revolution_pulse_events.7.f: "「主権者よ、これが私たちの直面する問題であり、これが私たちがあなたの宮殿の壁の前に集まった理由なのです。\n今、私たちは最後の救いを求めています。\n貧困、無知、権利の欠如という墓穴から民衆を導き出し、自らの運命を決定する機会を与え、官僚の耐え難い軛から解放してください」" #-1905 Petition to the Tsar
+ revolution_pulse_events.7.f: "「主権者よ、これが私たちの直面する問題であり、これが私たちがあなたの宮殿の壁の前に集まった理由なのです。\n今、私たちは最後の救いを求めています。\n貧困、無知、権利の欠如という墓穴から民衆を導き出し、自らの運命を決定する機会を与え、官僚の耐え難い軛から解放してください」" # -1905 Petition to the Tsar
  revolution_pulse_events.7.a: "王家の代表を派遣してなだめよう。"
  revolution_pulse_events.7.b: "[SCOPE.sCharacter('petition_march_ruler').GetPrimaryRoleTitle]の生活に対する明らかな脅威を、武力を持って排除せよ！"
  revolution_pulse_events.7.c: "[SCOPE.sCharacter('petition_march_ruler').GetPrimaryRoleTitle]は[SCOPE.sState('petition_march_state').GetStateRegion.GetCityHubName]への急行列車に乗ったようだ。"
@@ -1904,7 +1904,7 @@
  pretenders_7_orleanist_tt: "[SCOPE.sCountry('reflexive_reference_france').GetName]の王位が[SCOPE.sCharacter('orleanist_character').GetIdeology.GetName]の王位請求者に託されます"
  pretenders_7_bonapartist_tt: "[SCOPE.sCountry('reflexive_reference_france').GetName]の王位が[SCOPE.sCharacter('bonapartist_character').GetIdeology.GetName]の王位請求者に託されます"
  pretenders_7_fourth_way_tt: "古き王朝を捨て去り、[SCOPE.sCountry('reflexive_reference_france').GetName]の王位を[SCOPE.sCharacter('prospective_monarch_scope').GetFullName][SCOPE.sCharacter('prospective_monarch_scope').GetPrimaryRoleTitle]に託します"
- #Paris Commune rework
+ # Paris Commune rework
  notification_paris_commune_automation_pulse_1_a_name: "パリ・コミューン支持者、パリの教会を閉鎖"
  notification_paris_commune_automation_pulse_1_a_desc: "[SCOPE.sCountry('paris_commune_nation_scope').GetName]が多数の教会を占拠し、強制的に閉鎖したため、パリ全土で[SCOPE.sReligion('atheist_scope').GetName]感情の高まりに拍車がかかっている。\n\n#bold パリ・コミューン#!の進捗が#variable 10#! #bold 増加#!した。"
  notification_paris_commune_automation_pulse_1_a_tooltip: "#header $notification_paris_commune_automation_pulse_1_a_name$#!\n$TOOLTIP_DELIMITER$\n$notification_paris_commune_automation_pulse_1_a_desc$"

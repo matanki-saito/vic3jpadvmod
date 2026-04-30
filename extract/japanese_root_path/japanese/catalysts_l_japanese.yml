@@ -137,14 +137,14 @@
  catalyst_orchestrate_coup_failed_desc: "[TARGET_COUNTRY.GetName]が我が国で[concept_coup]の企てを指揮し、敗北する"
  catalyst_orchestrate_coup_fizzled: "組織的な[concept_coup]の中断"
  catalyst_orchestrate_coup_fizzled_desc: "[TARGET_COUNTRY.GetName]が我が国で[concept_coup]の企てを指揮しようとしていた"
- #Treaties
+ # Treaties
  catalyst_treaty_broken: "$concept_treaty$破棄"
  catalyst_treaty_broken_desc: "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]との[concept_treaty]を破棄"
  catalyst_treaty_signed: "$concept_treaty$の調印"
  catalyst_treaty_signed_desc: "[COUNTRY.GetName]が[TARGET_COUNTRY.GetName]と[concept_treaty]を締結"
  catalyst_treaty_enforced: "$concept_treaty$の施行"
  catalyst_treaty_enforced_desc: "[COUNTRY.GetName]は[TARGET_COUNTRY.GetName]との[concept_treaty]を施行"
- #Straits
+ # Straits
  catalyst_strait_toll_high: "高額な$concept_strait$$concept_tolls$の賦課"
  catalyst_strait_toll_high_desc: "[COUNTRY.GetName]が使用する[Concept('concept_strait', '$concept_strait$')]に、[TARGET_COUNTRY.GetName]が高額な[concept_tolls]を課している"
  catalyst_strait_toll_reduced: "海峡通行料の引き下げ"

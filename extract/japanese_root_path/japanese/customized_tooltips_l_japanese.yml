@@ -59,7 +59,7 @@
  DATA_SHIP_TYPE_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,ShipTypeTooltip $NAME$#!#!"
  DATA_SHIP_MODIFICATION_TYPE_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,ShipModificationTypeTooltip $NAME$#!#!"
  DATA_STATE_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,StateTooltip $NAME$#!#!"
- DATA_STATE_NAME_WITH_COUNTRY_FLAG_FORMAT: "#tooltippable_name#tooltip:$TAG$,EMPTY_STRING,StateTooltip $FLAG_ICON$[Nbsp]$NAME$#!#!"
+ DATA_STATE_NAME_WITH_COUNTRY_FLAG_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,StateTooltip $FLAG_ICON$[Nbsp]$NAME$#!#!"
  DATA_STATE_REGION_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_STATE_REGION_NAME_TOOLTIP,StateRegionTooltip $NAME$#!#!"
  DATA_STRATEGIC_REGION_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,StrategicRegionTooltip $NAME$#!#!"
  DATA_INTEREST_GROUP_TRAIT_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$|$IG_TAG$,DATA_INTEREST_GROUP_TRAIT_NAME_TOOLTIP,InterestGroupTraitTooltip $NAME$#!#!"
@@ -136,7 +136,7 @@
  DATA_AMENDMENT_TYPE_PARENT_LAW_OR_NONE: "親法: [SelectLocalization(AmendmentType.HasParentLaw, 'DATA_AMENDMENT_TYPE_PARENT_LAW', 'NONE')]"
  DATA_AMENDMENT_TYPE_PARENT_LAW: "[AmendmentType.GetParentLawType.GetName]"
  EMPTY_STRING: ""
- #"Regular" info used in fancier tooltips
+ # "Regular" info used in fancier tooltips
  COMMANDER_LOCATION_UNKNOWN: "#v 不明#!"
  DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP: "[AddLocalizationIf( Character.HasMilitaryFormation, 'DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP_FORMATION' )]"
  DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP_FORMATION: "[concept_military_formation]: [Character.GetMilitaryFormation.GetName|v]"
@@ -656,7 +656,7 @@
  MILITARY_FORMATION_OFFENSE_DEFENSE_FLEET: "@ship_damage! #v [MilitaryFormation.GetShipList.GetDamageAverage|0]#! [concept_attack_damage] [SelectLocalization(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower, MilitaryFormation.GetAverageOffense), 'OFFENSE_AT_FULL_MANPOWER', '')]\n@ship_armor! #v [MilitaryFormation.GetShipList.GetArmorAverage|0]#! [concept_ship_armor] [SelectLocalization(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower, MilitaryFormation.GetAverageDefense), 'DEFENSE_AT_FULL_MANPOWER', '')]"
  OFFENSE_AT_FULL_MANPOWER: "（最大限の@manpower!がある[MilitaryFormation.GetAverageOffense|v0]）"
  DEFENSE_AT_FULL_MANPOWER: "（最大限の@manpower!がある[MilitaryFormation.GetAverageDefense|v0]）"
- #BREAKDOWNS
+ # BREAKDOWNS
  COUNTRY_RANK_BREAKDOWN: "[Country.GetRankTooltip]"
  IG_APPROVAL_BREAKDOWN: "#header [concept_approval]#!\n[InterestGroup.GetName]の[concept_approval]は[InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]"
  IG_POL_STR_BREAKDOWN: "[InterestGroup.GetPoliticalStrengthDesc]"

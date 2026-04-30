@@ -823,8 +823,8 @@
  ZND_ADJ: "アザンデ"
  ZUL: "ズールー"
  ZUL_ADJ: "ズールー"
- #MAC:0 "Manchester"
- #MAC_ADJ:0 "Mancunian"
+ # MAC:0 "Manchester"
+ # MAC_ADJ:0 "Mancunian"
  SMI: "サーミ"
  SMI_ADJ: "サーミ"
  MLT: "マルタ"
@@ -1474,7 +1474,7 @@
  WKB_ADJ: "ワカ＝ガビ"
  PMA: "パーマ"
  PMA_ADJ: "パーマ"
- #Dynamic countries
+ # Dynamic countries
  dyn_c_united_sovereign_archduchy: "主権大公合衆国"
  dyn_c_united_sovereign_archduchy_adj: "大公国アメリカ"
  dyn_c_united_senators: "アメリカ合衆国上院"
@@ -1784,7 +1784,7 @@
  dyn_c_bengal_federation: "ベンガル連邦"
  dyn_c_cyberia: "サイベリア"
  dyn_c_cyberia_adj: "サイベリア"
- #Princely States
+ # Princely States
  dyn_c_jodhpur: "ジョードプル"
  dyn_c_jodhpur_adj: "ジョードプル"
  dyn_c_udaipur: "ウダイプル"
@@ -1793,10 +1793,10 @@
  dyn_c_oudh_adj: "アウド"
  dyn_c_jaipur: "ジャイプール"
  dyn_c_jaipur_adj: "ジャイプル"
- #Southeast Asia
+ # Southeast Asia
  dyn_c_tran_ninh: "チャンニン"
  dyn_c_tran_tay_thanh: "トランタイ・タン"
- #Danubian Federation
+ # Danubian Federation
  dyn_c_usga: "大オーストリア合衆国"
  dyn_c_serbian_montenegro: "セルビア・モンテネグロ"
  dyn_c_serbian_montenegro_adj: "セルビア・モンテネグロ"
@@ -1809,7 +1809,7 @@
  dyn_c_serbian_voivodeship: "セルビア・ヴォイヴォディナ"
  dyn_c_serbian_voivodeship_adj: "セルビア・ヴォイヴォディナ"
  dyn_c_federal_state_of_austria: "オーストリア連邦国"
- #Africa
+ # Africa
  dyn_c_british_west_africa: "イギリス領西アフリカ"
  dyn_c_british_west_africa_adj: "イギリス領西アフリカ"
  dyn_c_kuk_communist: "国際レーテ共和国"
@@ -1817,7 +1817,7 @@
  dyn_c_illyria_adj: "イリリア"
  dyn_c_spanish_republic: "スペイン共和国"
  dyn_c_antilles_union: "アンティル連合"
- #Japan
+ # Japan
  dyn_c_tokugawa_shogunate: "徳川幕府"
  dyn_c_japanese_taikunate: "日本大君制"
  dyn_c_japan_shogunate: "日本幕府"

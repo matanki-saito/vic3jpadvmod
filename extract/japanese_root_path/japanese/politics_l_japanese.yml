@@ -196,7 +196,7 @@
  AMENDMENTS_CONCEPT: "[Concept('concept_amendment','$concept_amendments$')]"
  ACTIVE_LAW_AMENDMENTS: "#title [Law.GetName]には#v [GetDataModelSize(Law.GetAllAmendments)]#!#!個の[SelectLocalization(EqualTo_int32(GetDataModelSize(Law.GetAllAmendments), '(int32)1'), 'AMENDMENT_CONCEPT', 'AMENDMENTS_CONCEPT')]がある:"
  AMENDMENT_TYPE_SPONSOR_MODIFIER_NAME: "$KEY$後援者"
- #Ideology Factors
+ # Ideology Factors
  COUNTRY_LOYALISTS: "国の[concept_loyalist]の割合"
  COUNTRY_RADICALS: "国の[concept_radical]の割合"
  IG_APPROVAL_BELOW_UNHAPPY: "[concept_approval]は$ig_approval_unhappy$（#v [GetDefine('NPolitics','APPROVAL_THRESHOLD_UNHAPPY')|0=+]#!）以下"

@@ -1,5 +1,4 @@
 ﻿l_japanese:
- #TODO - Burn this in the fires of Mordor
  Test_negotiation_event: "Test negotiation event"
  Option_1: "オプション"
  NEGOTIATION_NO_ENACTING_LAW: "[Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enacted$')]中の[concept_law]はありません"

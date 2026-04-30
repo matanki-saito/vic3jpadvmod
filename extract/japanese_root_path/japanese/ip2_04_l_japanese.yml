@@ -7,7 +7,7 @@
  british_dictates.2.t: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting]の指令"
  british_dictates.2.d: "[SCOPE.sCountry('overlord_scope').GetName]が直面している戦争状態を考慮し、[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]は常備軍の規模を拡大するよう、指示を出しています。"
  british_dictates.2.f: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting]のために、\n\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] は、インドにおける現在の優先順位を明確にするため、以下の指令の大要を発表したことを、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の情報としてお伝えいたします。\n\n署名:\n[SCOPE.sCharacter('board_of_control_character').GetFullNameNoFormatting]\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_oversight_board')]"
- #Uses option text from british_dictates.1
+ # Uses option text from british_dictates.1
  british_dictates.3.t: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting]の指令"
  british_dictates.3.d: "[SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName]の[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]は、インドに対する我々の行政を改革することに関心を持っています。[SCOPE.sLaw('foreign_imposition_law').GetName]を制定するための指示を出しています。"
  british_dictates.3.f: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting]のために、\n\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] は、インドにおける現在の優先順位を明確にするため、以下の指令の大要を発表したことを、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の情報としてお伝えいたします。\n\n署名:\n[SCOPE.sCharacter('board_of_control_character').GetFullNameNoFormatting]\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_oversight_board')]"
@@ -18,7 +18,7 @@
  british_dictates.4.t: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting]の指令"
  british_dictates.4.d: "[SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName]の[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]は、各大統領政府都市内の[GetBuildingType('building_university').GetName]の品質を向上するよう、指示を出しています。"
  british_dictates.4.f: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastNameNoFormatting]のために、\n\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')] は、インドにおける現在の優先順位を明確にするため、以下の指令の大要を発表したことを、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]の情報としてお伝えいたします。\n\n署名:\n[SCOPE.sCharacter('board_of_control_character').GetFullNameNoFormatting]\n[SCOPE.GetRootScope.GetCountry.GetCustom('india_oversight_board')]"
- #Uses option text from british_dictates.1
+ # Uses option text from british_dictates.1
  je_british_dictate_plantations: "[SCOPE.sCountry('overlord_scope').GetAdjectiveNoFormatting]の指令: 農業生産"
  je_british_dictate_plantations_reason: "[SCOPE.sCountry('overlord_scope').GetCapital.GetCityHubName]の#b [SCOPE.GetRootScope.GetCountry.GetCustom('india_governing_body')]#!は、インドでの事業の方向性について、日々指示を出しています。現在の指示方針に従うためには、追加[SCOPE.GetRootScope.GetCountry.GetCustom('eic_plantation_type')]の建設に力を入れなくてはなりません。"
  je_british_dictate_plantations_goal: "[ROOT.GetCountry.GetName]の[SCOPE.GetRootScope.GetCountry.GetCustom('eic_plantation_type')]の数を[Country.MakeScope.Var('count_relevant_plantations_increase_percent').GetValue|1V%]増やす"
@@ -80,7 +80,7 @@
  DOCTRINE_OF_LAPSE_NO_MALE_RULER: "[SCOPE.sC('target_country').GetName]には男性の[concept_ruler]がいません"
  DOCTRINE_OF_LAPSE_OLD_WITH_NO_MALE_HEIR: "[SCOPE.sC('target_country').GetRuler.GetFullName]は#v [GetDefine('NCharacters','OLD_AGE')]#!を超えており、男性の[concept_heir]がいません"
  DOCTRINE_OF_LAPSE_RADICALS: "[SCOPE.sC('target_country').GetName]には#negative_value [Nbsp][SCOPE.sC('target_country').GetNumRadicals|D]人#!の[Concept('concept_radical','$concept_radicals$')]がいます"
- #Misc. Events
+ # Misc. Events
  modifier_empress_of_india: "インド女帝"
  modifier_emperor_of_india: "インド皇帝"
  modifier_empress_of_great_britain: "イギリス女帝"
@@ -117,7 +117,7 @@
  TITLE_LORD: "卿"
  india_events.2.t: "デリー・ダーバー"
  india_events.2.d: "[ROOT.GetCountry.GetTopOverlord.GetAdjective]政府は、[SCOPE.sState('delhi_scope').GetCityHubName]で大規模なダーバーを開催し、[SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('monarch_scope').GetFullName]をインド[SCOPE.sCharacter('monarch_scope').GetCustom('getEmpressEmperor')]として公式に宣言することを計画した。このダーバーには、[ROOT.GetCountry.GetTopOverlord.GetAdjectiveNoFormatting]が支配するインド全土から高官が招待されている。"
- india_events.2.f: "「招待客が全員着席するなか、正午ちょうどにトランペットの音が副王の到着を知らせた。軍楽隊が行進曲を演奏し、[SCOPE.sCharacter('viceroy_scope').GetLastNameNoFormatting][SCOPE.sCharacter('ruler_scope').GetCustom('getLadyLord')]が、[SCOPE.sCharacter('viceroy_scope').GetLastNameNoFormatting][SCOPE.sCharacter('ruler_scope').GetCustom('getLadyLordSpouse')]、娘ら、従者を従えて、高座に向かった。副王はインドの星勲章をあしらった最高位者のローブを身にまとい、玉座に座った。国歌が演奏され、衛兵が銃を持って敬礼し、出席者全員が一斉に立ち上がった。そして、最高伝令官が宣言の読み上げを命じられた。トランペットのファンファーレが再び鳴り響き、[SCOPE.sCharacter('monarch_scope').GetHerHis|U]陛下がインド[SCOPE.sCharacter('monarch_scope').GetCustom('getEmpressEmperor')]となったことが宣言された」" #- Field Marshal Lord Roberts, When Queen Victoria Became Empress of India
+ india_events.2.f: "「招待客が全員着席するなか、正午ちょうどにトランペットの音が副王の到着を知らせた。軍楽隊が行進曲を演奏し、[SCOPE.sCharacter('viceroy_scope').GetLastNameNoFormatting][SCOPE.sCharacter('ruler_scope').GetCustom('getLadyLord')]が、[SCOPE.sCharacter('viceroy_scope').GetLastNameNoFormatting][SCOPE.sCharacter('ruler_scope').GetCustom('getLadyLordSpouse')]、娘ら、従者を従えて、高座に向かった。副王はインドの星勲章をあしらった最高位者のローブを身にまとい、玉座に座った。国歌が演奏され、衛兵が銃を持って敬礼し、出席者全員が一斉に立ち上がった。そして、最高伝令官が宣言の読み上げを命じられた。トランペットのファンファーレが再び鳴り響き、[SCOPE.sCharacter('monarch_scope').GetHerHis|U]陛下がインド[SCOPE.sCharacter('monarch_scope').GetCustom('getEmpressEmperor')]となったことが宣言された」" # - Field Marshal Lord Roberts, When Queen Victoria Became Empress of India
  india_events.2.a: "君主の中の君主。[SCOPE.sCharacter('monarch_scope').GetHerHim]に神のご加護がありますように。"
  india_events.2.b: "[SCOPE.sCharacter('monarch_scope').GetHerHim]に忠誠を誓い、謹んで要請を申し上げるチャンスだ。"
  indian_independence_request_tt: "「陛下におかれましては、#b インド#!が#b イギリス#!臣民と同等の政治的地位、社会的地位を与えられるよう、ご配慮を賜りますようお願い申し上げます」"
@@ -258,7 +258,7 @@
  demand_return_of_koh_i_noor_desc: "かつての植民地支配者は、その支配時代に伝説のダイヤモンド、コ・イ・ヌールをインドから奪い、自分たちの金庫に保管しました。我々は、盗まれた我が国の財産を返還するよう要求します。"
  koh_i_noor_return_requested_too_recently_tt: "過去#v 10#!年間、インドの[concept_country]は#bold コ・イ・ヌール#!の返還を要求していません。"
  not_at_war_with_koh_i_noor_owner_tt: "#bold コ・イ・ヌール#!の所有者と戦争中ではない"
- #Home Rule
+ # Home Rule
  modifier_disciplined_war_criminal: "規律的虐殺の加害者"
  modifier_disgrace_in_india: "不名誉な虐殺"
  modifier_the_man_who_saved_india: "結果よりも義務を優先"
@@ -525,7 +525,7 @@
  bht_end_privy_purse_payments: "御手元金の支払いを終了"
  bht_end_privy_purse_payments_desc: "我々が併合した#b 藩王国#!の前支配者の一族に対する#b $modifier_privy_purse_payments$#!は、我々の予算のかなりの割合を占めています。予定よりも早く支払いを打ち切ることはできますが、御手元金を頼りに暮らすようになった貴族を怒らせてしまうかもしれません。"
  warning_may_cause_massive_debt_tt: "@warning! 最大で@money![GetPlayer.MakeScope.ScriptValue('privy_purse_value_potential')|D-]の#b $modifier_privy_purse_payments$#!が追加されます"
- add_claims_on_india_tt: "[ROOT.GetCountry.GetName]が[Concept('concept_georegion_india', '$concept_georegion_indian$')]の全[Concept('concept_state', '$concept_states$')]の[Concept('concept_claim', '$concept_claims$')]を得ます"
+ add_claims_on_india_tt: "[ROOT.GetCountry.GetName] gains [Concept('concept_claim', '$concept_claims$')] on all [GetGeographicRegion('geographic_region_india').GetName] [Concept('concept_state', '$concept_states$')]"
  no_federation_je_tt: "有効な#v インド連邦#!の[concept_journal_entry]が#b ありません#!"
  no_union_je_tt: "有効な#v インド統一#!の[concept_journal_entry]が#b ありません#!"
  all_princely_states_get_invitation_tt: "対象となるすべての[Concept('concept_princely_state','$concept_princely_states$')]が[ROOT.GetCountry.GetNameNoFlag]に加わるよう招請されます"

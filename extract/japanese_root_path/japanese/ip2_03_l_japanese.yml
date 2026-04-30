@@ -76,7 +76,7 @@
  utilitarian_no_census: "却下された提案"
  util_caste_divisions: "カースト区分に注目"
  util_authority: "調査しなければ問題も露呈しない"
- #India Railway Content
+ # India Railway Content
  je_india_railway: "進歩の提供者"
  je_india_railway_reason: "壮大な鉄道網は私たち全員をつなげてくれます。それは国に大きな進歩をもたらし、国の未来を形作るでしょう！"
  je_india_railway_status: "インドまでつながる壮大な$building_railway$を建設する。"
@@ -130,7 +130,7 @@
  india_railway.5.f2: "この駅の完成により、インド帝国の将来は安泰です。列車網は貿易、軍事、政府の機関となります。蒸気や石炭は、帝国の鉱脈を流れていくのです。\n\nそしてこの美しい駅は、偉大なる[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]にちなんで名付けられ、鼓動する心臓となるのです。"
  india_railway.5.a: "素晴しい。"
  india_railway_reward: "素晴らしいつながり"
- #Victoria Terminus Content
+ # Victoria Terminus Content
  je_victoria_terminus: "ヴィクトリア・ターミナス"
  je_victoria_terminus_reason: "[SCOPE.gsInterestGroup('relevant_terminus_ig').GetName]の関係者は、$STATE_BOMBAY$に #tooltippable #tooltip:victoria_terminus_construct_tt #bold 壮大なターミナスを建設#!#! #!するための資金を集めた。このエレガントなターミナスは、さらなる鉄道プラットホームと管理事務所を備え、インドの世論を高めることを約束している。"
  je_victoria_terminus_status: "$STATE_BOMBAY$の[Concept('concept_state_region','$concept_state_region$')]に$building_victoria_terminus$を建設します。"
@@ -156,7 +156,7 @@
  victoria_terminus.2.b: "世界は我々の斬新な功績に驚嘆するだろう。"
  victoria_terminus_reward_loc: "新都市の分岐点"
  victoria_terminus_reward_int: "象徴的な成長"
- #Sikh Empire Content
+ # Sikh Empire Content
  je_sikh_sovereignty: "シク王国の主権"
  je_sikh_sovereignty_reason: "今は、新しく設立された王朝の初期です。#bold シェール・エ・パンジャーブ#!がかつてのムガル帝国の首都を征服して以来、私たちの急成長中の王国は大きな成功を収めてきました。\n\n現時点では、外部からの侵略から領土を守り、[GetReligion('sikh').GetName]の信仰の教義を尊重することが重要です。この王朝の遺産が長く受け継がれていきますように！\n\n#b [concept_empire_stability]と[concept_court_intrigue]#!\n[ROOT.GetCountry.GetNameNoFormatting]は、外部だけでなく、内部の脅威にも直面しています。宮廷内の勢力が、彼らの候補者を援護し、[concept_ruler]を打倒する陰謀を企てるかもしれません。もし#b $sikh_empire_intrigue_bar$#!が#v 100%#!に達すれば、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]($concept_ruler$)は暗殺され、#b $sikh_empire_progress_bar$#!は#v 0#!に#bold リセット#!され、$concept_court_intrigue_short$が低下して新たな候補者が即位することになります。"
  je_sikh_sovereignty_complete: "[concept_empire_stability]が#v 100%#!に到達しました"
@@ -184,7 +184,7 @@
  modifier_favored_by_wazir: "ワズィールの寵臣たち"
  sikh_empire.1.t: "ただの結婚式ではない"
  sikh_empire.1.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、外交的かつ政治的な偉業として、国のエリート層と外国の代表者を王子の豪華な結婚式に招待しました。"
- sikh_empire.1.f: "マハラジャに雇われた宮廷の年代記作者は、祝賀行事を詳細に記録しています。\n\n#italic 「あらゆる種類の花火が打ち上げられました。動く玉座と、さまざまな種類の花で飾られた『シャラバグ』が、約100人の男の肩に担がれました。」#!" #Sohan Lal Suri
+ sikh_empire.1.f: "マハラジャに雇われた宮廷の年代記作者は、祝賀行事を詳細に記録しています。\n\n#italic 「あらゆる種類の花火が打ち上げられました。動く玉座と、さまざまな種類の花で飾られた『シャラバグ』が、約100人の男の肩に担がれました。」#!" # Sohan Lal Suri
  sikh_empire.1.a: "外国の代表団を歓迎しよう。"
  sikh_empire.1.b: "世界の王室の舞台における我らの役割を確保するのだ。"
  intrigue_reduced_by_10_tt: "[concept_court_intrigue]が#v 10#!ポイント減少します"
@@ -273,7 +273,7 @@
  sikh_ruler_death_fire: "煙で窒息死していました。"
  sikh_ruler_death_drowned: "浴槽でうつ伏せに倒れていました。"
  five_deaths_in_a_row_tt: "#v 5#!人の[ROOT.GetCountry.GetAdjective]の$RULER_TITLE_MAHARAJA$は、この[concept_journal_entry]（現在[ROOT.GetCountry.MakeScope.Var('sikh_dead_maharajas_var').GetValue|V0]）を完了することなく死亡しました。"
- #Sikh Empire IGs and IG traits
+ # Sikh Empire IGs and IG traits
  ig_granthis: "グランティ"
  ig_granthis_desc: "グランシはシク教の聖職者です。シク教は世俗的な利益の追求は神の唯一性を阻害するとする一神教の宗教です。"
  ig_trait_rehat: "リハット"
@@ -286,7 +286,7 @@
  ig_jats_desc: "ジャート族とは、パンジャーブ地域の伝統的な農民や小作農のことで、牧畜業を起源としています。彼らは主に、農民的なものに関心を抱いています。"
  ig_trait_khalsa_panth: "カールサー・パンス"
  ig_trait_khalsa_panth_desc: "誠実な生活と勤勉。私たちは聖なる道を歩み、極端を避け、中道を歩みます。私たちが生産する商品は、それを必要とする人々に届きます。"
- #Princely States
+ # Princely States
  princely_state_decision: "独立を求めて"
  princely_state_decision_desc: "あまりにも長い間、イギリスは我々の権威を見下し陥れていた。独立を勝ち取るための戦いを開始せよ。"
  je_princely_states: "主権を得るための戦い"
@@ -340,14 +340,14 @@
  notification_doctrine_of_lapse_reaction_message_name: "失権の原理"
  notification_doctrine_of_lapse_reaction_message_desc: "[ROOT.GetCountry.GetName]と[SCOPE.sCountry('bic_scope').GetName]の関係は、[SCOPE.sCountry('bic_scope').GetName]が失権の原理を利用して藩王国を併合して以来、悪化しています。"
  notification_doctrine_of_lapse_reaction_message_tooltip: "#header $notification_doctrine_of_lapse_reaction_message_name$#!\n$TOOLTIP_DELIMITER$\n$notification_doctrine_of_lapse_reaction_message_desc$"
- #Caste System Content
+ # Caste System Content
  notification_caste_hierarchy_appears_name: "新たな社会階層が認識される"
  notification_caste_hierarchy_appears_desc: "カースト制度は、[SCOPE.sCountry('relevant_country_scope').GetName]において認められた[concept_social_hierarchy]です。"
  notification_caste_hierarchy_appears_tooltip: "#header $notification_caste_hierarchy_appears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_appears_desc$"
  notification_caste_hierarchy_disappears_name: "社会的階層は認められなくなった"
  notification_caste_hierarchy_disappears_desc: "最近の文化的および社会的な変化により、カースト制度は[SCOPE.sCountry('relevant_country_scope').GetName]においてもはや認められた[concept_social_hierarchy]ではありません。"
  notification_caste_hierarchy_disappears_tooltip: "#header $notification_caste_hierarchy_disappears_name$#!\n$TOOLTIP_DELIMITER$\n$notification_caste_hierarchy_disappears_desc$"
- #Dravidian Movement
+ # Dravidian Movement
  je_dravidian_movement: "ドラヴィダ運動"
  je_dravidian_movement_reason: "[ROOT.GetCountry.GetName]の民衆が、代表権や政治力がバラモン階級に偏っていることに反発し、立ち上がった。反バラモンの協議を重ね、ドラヴィダ運動を結成して、バラモン支配に対抗するための新しい指針を定めたのだ。彼らは、法律や行政に存在するカースト区分の排除を目指している。"
  dravidian_movement_fail_tt: "インド内政自治法が通過"

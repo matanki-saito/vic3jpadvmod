@@ -1,16 +1,16 @@
 ﻿l_japanese:
- government_conflict: "政府間の衝突" #Modifier
- disfavored_in_government: "政府内での冷遇" #Modifier
+ government_conflict: "政府間の衝突" # Modifier
+ disfavored_in_government: "政府内での冷遇" # Modifier
  rejected_petition: "嘆願の拒否"
- accepted_petition: "嘆願の受諾" #Modifier
- accepted_petition_LI: "嘆願の受諾" #Modifier
- accepted_petition_DV: "嘆願の受諾" #Modifier
- accepted_petition_IT: "嘆願の受諾" #Modifier
- accepted_petition_RF: "嘆願の受諾" #Modifier
- accepted_petition_TU: "嘆願の受諾" #Modifier
- accepted_petition_IN: "嘆願の受諾" #Modifier
- accepted_petition_AF: "嘆願の受諾" #Modifier
- accepted_petition_PB: "嘆願の受諾" #Modifier
+ accepted_petition: "嘆願の受諾" # Modifier
+ accepted_petition_LI: "嘆願の受諾" # Modifier
+ accepted_petition_DV: "嘆願の受諾" # Modifier
+ accepted_petition_IT: "嘆願の受諾" # Modifier
+ accepted_petition_RF: "嘆願の受諾" # Modifier
+ accepted_petition_TU: "嘆願の受諾" # Modifier
+ accepted_petition_IN: "嘆願の受諾" # Modifier
+ accepted_petition_AF: "嘆願の受諾" # Modifier
+ accepted_petition_PB: "嘆願の受諾" # Modifier
  state_gold_rush: "ゴールドラッシュ"
  state_limited_gold_rush: "限定的なゴールドラッシュ"
  state_gold_depleted: "金鉱山の枯渇"
@@ -723,10 +723,10 @@
  ig_revolutions.9.a: "いいだろう、[SCOPE.gsInterestGroup('ig_tu_on_the_edge').GetName]に譲歩しよう。"
  ig_revolutions.9.b: "あんな暴徒に与えるものなどない！"
  ig_revolutions.9.c: "こういう時こそ、警察の出番だ。"
- ig_powerbrokers: "影の実力者" #Modifier
- ig_concessions_and_appeasement: "譲歩と宥和" #Modifier
- ig_unappeased: "鎮めない" #Modifier
- ig_mass_arrests: "大量逮捕" #Modifier
+ ig_powerbrokers: "影の実力者" # Modifier
+ ig_concessions_and_appeasement: "譲歩と宥和" # Modifier
+ ig_unappeased: "鎮めない" # Modifier
+ ig_mass_arrests: "大量逮捕" # Modifier
  commander_events.6.t: "将軍が誤射した大砲"
  commander_events.6.d: "[SCOPE.sCharacter('cheated_leader').GetFullName]の妻と[SCOPE.sCharacter('seducer_commander').GetFullName]の情事についての噂が我々の耳に入りました。将軍に何らかの処分を課さない場合、民衆の抱く[SCOPE.sCharacter('cheated_leader').GetHerHis]の印象に悪影響を及ぼすでしょう。"
  commander_events.6.f: "現行犯で捕まっただけでは物足りないと言わんばかりに、[SCOPE.sCharacter('seducer_commander').GetFullNameNoFormatting]が風呂から上がると、体にはっきりと発疹が広がっていた。考えられる不義は一つだけだ。今、それを否定することはできなかった。将軍の肉体そのものが情事を裏切った後では。"

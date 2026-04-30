@@ -5,7 +5,7 @@
  pm_no_urban_clergy: "国家無神論"
  state_atheism.1.t: "民衆のアヘン"
  state_atheism.1.d: "[SCOPE.sLaw('current_law_scope').GetName]法の成立により、[ROOT.GetCountry.GetStateReligion.GetName]の信仰がなければ精神的な充足が得られず、民衆が絶望に陥ってしまうのではという不安が生じています。"
- state_atheism.1.f: "宗教とは、虐げられた者のため息であり、無常なる世界の心であり、魂無き状況における魂だ。それは民衆のアヘンなのである。" #Karl Marx
+ state_atheism.1.f: "宗教とは、虐げられた者のため息であり、無常なる世界の心であり、魂無き状況における魂だ。それは民衆のアヘンなのである。" # Karl Marx
  state_atheism.1.a: "神は死んだ。"
  state_atheism.1.b: "我々は魂ではなく、腹に栄養を与えるのだ。"
  state_atheism.1.c: "アヘンこそが民衆のアヘンだ。"

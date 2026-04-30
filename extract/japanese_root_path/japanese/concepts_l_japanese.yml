@@ -620,16 +620,16 @@
  concept_presidency: "管区"
  concept_presidency_desc: "$concept_presidencies$は植民地インドの最高レベルの行政単位です。3つの$concept_presidencies$があり、境界は[Concept('concept_georegion','$concept_georegions$')]によって区切られています。\n\n#bold ベンガル管区#!\n#title $concept_georegions$:#! [GetGeographicRegion('geographic_region_bengal_old').GetName]、[GetGeographicRegion('geographic_region_central_india_old').GetName]、および[GetGeographicRegion('geographic_region_punjab_old').GetName]\n\n#bold ボンベイ管区#!\n#title $concept_georegions$:#! [GetGeographicRegion('geographic_region_bombay_old').GetName]\n\n#bold マドラス管区#!\n#title $concept_georegions$:#! [GetGeographicRegion('geographic_region_madras_old').GetName]"
  concept_presidencies: "管区"
- concept_court_intrigue: "宮廷の陰謀" #for je_sikh_sovereignty
+ concept_court_intrigue: "宮廷の陰謀" # for je_sikh_sovereignty
  concept_court_intrigue_short: "陰謀"
  concept_court_intrigue_desc: "$concept_court_intrigue$は$RULER_TITLE_MAHARAJA$([concept_ruler])を打倒するためのさまざまな陰謀の進展を表しています。$concept_court_intrigue_short$は#b $je_sikh_sovereignty$#! [concept_journal_entry]で追跡されています。$concept_court_intrigue_short$が#v 100%#!に到達した場合、$RULER_TITLE_MAHARAJA$ ($concept_ruler$)は暗殺され、[concept_empire_stability]は#v 0#!に#bold リセット#!され、$concept_court_intrigue_short$は低下し、新しい候補が即位します。\n\n#title 以下の条件が満たされると、$concept_court_intrigue$が#g #b 低下#!#!します: #! #indent_newline:3 \n• $RULER_TITLE_MAHARAJA$ ([concept_ruler])は#b $Ranjit$ $Singh$#!\n• [GetCharacterTrait('ruthless').GetName]な[Concept('concept_leader', '$concept_leaders$')]の[concept_in_government]の[concept_approval]が#v 5#!より大きい\n• [GetCharacterTrait('compliant').GetName]な[Concept('concept_leader', '$concept_leaders$')]の[concept_in_government]\n• [concept_ruler]の[concept_interest_group]が[concept_powerful]\n• 高い[concept_legitimacy]\n• イベントやその他の効果#!\n\n#title 以下の条件が満たされると、$concept_court_intrigue$が#r #b 上昇#!#!します: #! #indent_newline:3 \n• [GetCharacterTrait('reckless').GetName]な[concept_ruler]\n• 低い[concept_ruler] [concept_popularity]\n• [GetCharacterTrait('ruthless').GetName]な[Concept('concept_leader', '$concept_leaders$')]の[concept_in_government]または[concept_in_opposition]の[concept_approval]が#v 0#!未満\n• [GetCharacterTrait('ambitious').GetName]な[Concept('concept_leader', '$concept_leaders$')]の[concept_in_government]または[concept_in_opposition]の[concept_approval]が#v 0#!未満\n• [concept_ruler]の[concept_interest_group]が [concept_marginalized]\n• 低い[concept_legitimacy]\n• イベントやその他の効果#!"
- concept_empire_stability: "帝国の安定性" #for je_sikh_sovereignty
+ concept_empire_stability: "帝国の安定性" # for je_sikh_sovereignty
  concept_empire_stability_short: "安定性"
  concept_empire_stability_desc: "$concept_empire_stability$は$RULER_TITLE_MAHARAJA$ ([concept_ruler])の力を表しています。[Concept('concept_empire_stability','$concept_empire_stability_short$')]は#b $je_sikh_sovereignty$#! [concept_journal_entry]で追跡されています。\n\n$concept_empire_stability_short$が上昇するには、正当性が#v 50#!より大きくなければなりません。[concept_court_intrigue]が#v 100%#!に到達すると、$RULER_TITLE_MAHARAJA$ ($concept_ruler$)は暗殺され、$concept_empire_stability_short$が#v 0#!に#bold リセット#!され、$concept_court_intrigue_short$が低下して新しい候補者が即位します。\n\n#title 以下の条件が満たされると、$concept_empire_stability$が#g #b 上昇#!#!します: #! #indent_newline:3 \n• [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の[concept_interest_group]が[concept_in_government]\n• [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の[concept_interest_group]が[concept_powerful]\n• [GetReligion('sikh').GetName]が[concept_state_religion]\n• [GetLawType('law_freedom_of_conscience').GetName][concept_law]が[Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')]\n• イベントやその他の条件#!\n\n#title 以下の条件が満たされると、$concept_empire_stability$が#r #b 低下#!#!します: #! #indent_newline:3 \n• [GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の[concept_interest_group]が[concept_in_government]ではない\n• [concept_court_intrigue]が#v 100%#!に到達する\n• イベントやその他の条件#!"
- concept_ottoman_integrity: "ルメリアの国家完全性" #for je_great_eastern_crisis
+ concept_ottoman_integrity: "ルメリアの国家完全性" # for je_great_eastern_crisis
  concept_ottoman_integrity_short: "国家完全性"
  concept_ottoman_integrity_desc: "$concept_ottoman_integrity$は[Concept('concept_secession','$concept_secessionist$')][Concept('concept_political_movement','$concept_political_movements$')]に脅かされる、[GetStrategicRegion('region_balkans').GetName][concept_strategic_region]における$dyn_c_ottoman_empire_adj$の安定性を表します。[Concept('concept_ottoman_integrity','$concept_ottoman_integrity_short$')]は#b $je_great_eastern_crisis$#!の[concept_journal_entry]内で随時確認できます\n\n$concept_ottoman_integrity_short$を増加させるには、$dyn_c_ottoman_empire$内における全$concept_secessionist$$concept_political_movements$の[concept_activism]が#v 75#! #b 未満#!である必要があります。\n\n#title 次の条件は$concept_ottoman_integrity$の#g #b 増加#!#!につながります:#! #indent_newline:3 \n• $dyn_c_ottoman_empire$における[concept_legitimacy]が#v 50#! #b 以上#!\n• $dyn_c_ottoman_empire$が[concept_war]状態で#r #b ない#!#!\n• $dyn_c_ottoman_empire$に増大中の[Concept('concept_secession','$concept_secessionist$')][Concept('concept_political_movement','$concept_political_movements$')]が #r #b ない#!#!\n• $dyn_c_ottoman_empire$が最近[concept_secession]を鎮圧した#!"
- concept_balkan_culture: "バルカン文化" #for je_great_eastern_crisis
+ concept_balkan_culture: "バルカン文化" # for je_great_eastern_crisis
  concept_balkan_cultures: "バルカン文化"
  concept_balkan_culture_short: "バルカン"
  concept_balkan_culture_desc: "#title 以下の[Concept('concept_culture', '$concept_cultures$')]から生じた[Concept('concept_secession', '$concept_secessionist$')][Concept('concept_political_movement','$concept_political_movements$')]は[concept_ottoman_integrity]に影響を与えます:#! #indent_newline:3 \n• [GetCulture('albanian').GetName]\n• [GetCulture('bosniak').GetName]\n• [GetCulture('bulgarian').GetName]\n• [GetCulture('croat').GetName]\n• [GetCulture('greek').GetName]\n• [GetCulture('romanian').GetName]\n• [GetCulture('serb').GetName]"
@@ -1009,7 +1009,7 @@
  concept_capital_state: "首都"
  concept_capital_state_short: "首都"
  concept_capital_state_desc: "[Concept('concept_country','$concept_country_possessive$')]の中央[concept_government]がある場所です。戦争時は$concept_capital_state_short$を支配することが重要であり、そこに住む[Concept('concept_pop','$concept_pops$')]は政治に影響を与えることができる程度の[concept_political_strength]を持っています。[ConcatIfNeitherEmpty('\n', AddLocalizationIf( GetPlayer.IsValid, 'concept_capital_state_desc_added' ))]"
- concept_capital_state_desc_added: "[GetStaticModifier('market_capital_state').GetDesc]"
+ concept_capital_state_desc_added: "[GetStaticModifier('capital_state').GetDesc]"
  concept_treaty_port: "条約港"
  concept_treaty_ports: "条約港"
  concept_treaty_port_desc: "他の[concept_country]との[concept_trade]を開始する目的で、[concept_treaty]に基づいて設置された沿岸部の[concept_split_state]です。$concept_treaty_port$は$concept_province$を割譲した$concept_country$の[concept_market]に属し、[concept_world_market]との[concept_trade]を自由に行うことができます。\n\n[concept_tariffs]、[concept_subventions]、[Concept('concept_embargo','$concept_embargoes$')]が$concept_treaty_ports$に影響を与えることはなく、所有者は$concept_treaty_port$から輸出される[Concept('concept_good','$concept_goods$')]を輸入する際に[concept_trade_advantage]を得ることができます（逆も同様です）。$concept_treaty_port$を割譲する$concept_treaty$が破棄された場合、$concept_treaty_port$ではなくなり、通常の[concept_state]となります。"
@@ -1597,8 +1597,8 @@
  concept_supply_network_desc: "海運業を営む[concept_country]はすべて、[Concept('concept_shipping_lane','$concept_shipping_lanes$')]の輸送ニーズを維持するため、[concept_market]に[GetGoods('merchant_marine').GetName]を必要とします。あなたの$concept_supply_network$の総合力は、[GetGoods('merchant_marine').GetName]の供給量と$concept_shipping_lanes$全体の総需要を比較して決定されます。この強さは、すべての$concept_shipping_lanes$の基準ラインの[Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')]となります。"
  concept_ship: "艦船"
  concept_ships: "艦船"
- concept_military_ship: "$concept_ship$"
- concept_military_ships: "$concept_ships$"
+ concept_military_ship: "Military Ship"
+ concept_military_ships: "Military Ships"
  concept_ship_possessive: "艦船"
  concept_ship_desc: "$concept_ship$は[concept_ship_construction]ポイントを使用して造船所で建造され、その[concept_ship_type]に応じて[Concept('concept_ship_group','$concept_ship_groups$')]に分類されます。$concept_ships$は世界中に[Concept('concept_interest','$concept_interests$')]を築くために使用され、[concept_fleet]でさまざまな[Concept('concept_naval_mission','$concept_naval_missions$')]を遂行します。"
  concept_ship_group: "艦船グループ"
@@ -2188,10 +2188,10 @@
  concept_strait_allowed_countries_short: "国"
  concept_strait_allowed_countries_desc: "[concept_strait_access]が#b 軍事以外#!または#b 閉鎖#!に設定されている場合、どの[Concept('concept_country','$concept_countries$')]がその影響を受けるかを決定します。\n\n#title $concept_strait_allowed_countries$は以下のいずれかに設定できます:#!#indent_newline:3 \n#b 敵以外#!#indent_newline:3 \n$concept_strait_access_short$の制限は[Concept('concept_strait_control','$concept_strait_controller$')]の敵国の$concept_ships$にのみ影響を与える#!\n\n#b 同盟国のみ#!#indent_newline:3 \n$concept_strait_controller$の同盟国の$concept_ships$のみがこの制限の対象外となる#!\n\n#b $concept_strait_controller_short$のみ#!#indent_newline:3 \n$concept_strait_controller$とその[Concept('concept_subject','$concept_subjects$')]の$concept_ships$のみがこの制限の対象外となる#!#!"
  concept_strait_control: "海峡支配"
- concept_strait_control_short: "掌握"
- concept_strait_controller: "海峡管理国"
- concept_strait_controller_short: "管理国"
- concept_strait_control_desc: "$concept_strait_control$の所在は、[concept_strait]の両側にある2つの[Concept('concept_state','$concept_states$')]の支配によって決まります。 どのような場合でも、これらの$concept_states$のいずれか一方を支配する[concept_country]が$concept_strait_controller$となり、対象の$concept_strait$における[concept_strait_access]を変更できます。ただし#b $strait_gibraltar$#!は例外で、ここの[concept_strait_access]を#b 閉鎖#!に設定するには、両方の$concept_states$を支配下に置かなければなりません。\n\n2つの$concept_states$が異なる$concept_strait_accesses$を設定している場合、厳しい方の$concept_strait_access_short$制限が優先されます。"
+ concept_strait_control_short: "支配"
+ concept_strait_controller: "海峡支配国"
+ concept_strait_controller_short: "支配国"
+ concept_strait_control_desc: "$concept_strait_control$権の所在は、[concept_strait]の両側にある2つの[Concept('concept_state','$concept_states$')]の支配によって決まります。 どのような場合でも、これらの$concept_states$のいずれか一方を支配する[concept_country]が$concept_strait_controller$となり、対象の$concept_strait$における[concept_strait_access]を変更できます。ただし#b $strait_gibraltar$#!は例外で、ここの[concept_strait_access]を#b 閉鎖#!に設定するには、両方の$concept_states$を支配下に置かなければなりません。\n\n2つの$concept_states$が異なる$concept_strait_accesses$を設定している場合、厳しい方の$concept_strait_access_short$制限が優先されます。"
  concept_japanese_emperor: "皇帝"
  concept_japanese_emperor_desc: "天皇は#b 日本#!の伝統的な統治者であり、また#b 神道#!という[concept_religion]の長でもあります。徳川幕府の時代全体を通して天皇は京都の御所に籠り、その政務は幕府によって厳しく規制されていました。"
  concept_zaibatsu: "財閥"

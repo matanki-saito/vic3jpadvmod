@@ -59,13 +59,13 @@
  darulfunun_modifier: "ダル・アル・フヌン"
  persia_events.2.t: "ホラーサーンの真珠"
  persia_events.2.d: "アフガンの厳しい抵抗と外部勢力の陰謀にもかかわらず、[SCOPE.sState('herat_scope').GetName]の大都市は、ついに[SCOPE.GetRootScope.GetCountry.GetAdjective]によって陥落した。"
- persia_events.2.f: "#italic 「この世界を海だと考えると、\nホラーサーンはその中の牡蠣、\nヘラートの街は\nその真ん中にある真珠。」#!" #Medieval Persian epigram
+ persia_events.2.f: "#italic 「この世界を海だと考えると、\nホラーサーンはその中の牡蠣、\nヘラートの街は\nその真ん中にある真珠。」#!" # Medieval Persian epigram
  persia_events.2.a: "東への門は突破した。あとは前進あるのみ。"
  modifier_herat_inspiration: "ホラーサーンの主"
  persia_events.2.tt: "[SCOPE.sState('herat_scope').GetName]の支配を失うと、[concept_modifier]は#bold 消滅#!する。"
  persia_events.3.t: "トゥランの惨劇"
  persia_events.3.d: "あまりにも長い間、北部の[SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag]部族は、報復を恐れることなく土地を襲撃できていた。この不公平を正すため、[SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetFirstName]は、大規模な北部鎮圧作戦を始めることを発表した。"
- persia_events.3.f: "鎖につながれた者は、痛々しい足取りでカラクム砂漠を進む。その大きな沈黙を破るのは、トルクメン人捕虜の時折の野次と悲痛な叫びだけだった。\n\n#italic 「私たちはアラマンに連れ出された。\n哀れな、哀れなキジルバシュ！\n私たちは\n鉄と鎖につながれ、鉄と鎖につながれ\n、ウルゲンチとボハラへ連行される、連行される。」#!" #Persian song of lamentation. Alaman is a Turkmen raiding/slaving party, and qizilbash (red head) is a contemporary word used for Persians (and more).
+ persia_events.3.f: "鎖につながれた者は、痛々しい足取りでカラクム砂漠を進む。その大きな沈黙を破るのは、トルクメン人捕虜の時折の野次と悲痛な叫びだけだった。\n\n#italic 「私たちはアラマンに連れ出された。\n哀れな、哀れなキジルバシュ！\n私たちは\n鉄と鎖につながれ、鉄と鎖につながれ\n、ウルゲンチとボハラへ連行される、連行される。」#!" # Persian song of lamentation. Alaman is a Turkmen raiding/slaving party, and qizilbash (red head) is a contemporary word used for Persians (and more).
  persia_events.3.a: "この襲撃者たちにペルシャ鋼を見せてやろう。"
  persia_events.4.t: "ペルシャが軍事任務団を要求する"
  persia_events.4.d: "[SCOPE.sCountry('persian_nation_scope').GetName]政府から、その軍隊の強化のために軍事任務団を派遣するよう求められた。見返りは、特定の外交および治外法権の譲歩である。"
@@ -93,7 +93,7 @@
  persia_events.6.b: "あの街は、英国擲弾兵1人の骨の価値すらない。"
  persia_events.7.t: "大メルブ"
  persia_events.7.d: "[SCOPE.sState('merv_scope').GetName]のバザールは再び活気に満ち、街の輝かしい過去がよみがえっている。オアシスに再び富が流入しているため、政府はそれをうまく活用する方法を決定する必要がある。"
- persia_events.7.f: "「#italic あの明るい太陽の州で\n最初のペルシャの土地[SCOPE.GetRootScope.GetCountry.GetRuler.GetSheHe]が輝く\nそこには[SCOPE.GetRootScope.GetCountry.GetRuler.GetHerHis]のかわいい子供が集まる\n花びらと果物がどの川の上でも赤く染まる\n最も美しいムルガブ川が蛇行する\nメロンの明るい宮殿と木立の間で」#!" #The Veiled Prophet of Khorassan by Thomas Moore
+ persia_events.7.f: "「#italic あの明るい太陽の州で\n最初のペルシャの土地[SCOPE.GetRootScope.GetCountry.GetRuler.GetSheHe]が輝く\nそこには[SCOPE.GetRootScope.GetCountry.GetRuler.GetHerHis]のかわいい子供が集まる\n花びらと果物がどの川の上でも赤く染まる\n最も美しいムルガブ川が蛇行する\nメロンの明るい宮殿と木立の間で」#!" # The Veiled Prophet of Khorassan by Thomas Moore
  persia_events.7.a: "富を使い、ムルガブ川の大きなダムを復元する。"
  persia_events.7.b: "メルブの宮殿と庭園を再建して、もっと壮麗にするべきだ。"
  modifier_soltanbent_dam: "ソルタンベントが復元された"
@@ -258,16 +258,16 @@
  lobby_events.30.a: "彼らの怒りが海外に集中している限りは構わない。"
  lobby_events.30.b: "その怒りを、外交的行動で和らげよう。"
  lodged_diplomatic_complaint_modifier: "外交的苦情の申立"
- custom_loc_young: "若者" #starting space on purpose to allow for empty loc
- custom_loc_normal_age: "" #Empty on Purpose
- custom_loc_ageing: "老人" #starting space on purpose to allow for empty loc
+ custom_loc_young: "若者" # starting space on purpose to allow for empty loc
+ custom_loc_normal_age: "" # Empty on Purpose
+ custom_loc_ageing: "老人" # starting space on purpose to allow for empty loc
  not_leader_of_power_bloc_tt: "我が国は#bold 60#!ヶ月連続で[concept_power_bloc]のリーダーでは#bold ない#!。（現在、#variable [ROOT.GetCountry.MakeScope.Var('great_game_no_longer_power_bloc_leader_var').GetValue]#!）"
  je_secure_influence_over_persia_goal: "#v $PER$#!との[concept_subject]関係を確立し、#variable 10年間#!維持する"
  modifier_has_annexed_another_subject: "我が国の[concept_overlord]が別の[concept_subject]を併合しました"
  puppeted_for_too_long_tt: "我が国は#bold 60#!か月連続で[concept_subject]です。(現在#variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#! )"
  not_in_european_power_bloc_tt: "ヨーロッパの[Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]の[concept_power_bloc]に所属#b していません#!"
  europeans_forced_to_end_great_game_tt: "すべてのヨーロッパ列強国が#bold グレート・ゲーム#! [concept_journal_entry]を失います"
- #Dracula Events
+ # Dracula Events
  spooky_halloween_events.1.t: "真夜中の序章"
  spooky_halloween_events.1.d: "真夜中の鐘が鳴る頃、[SCOPE.sCharacter('dracula_scope').GetLastName]伯爵と名乗る背が高く青白い男が、馬車で[SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]に到着した。男はフン族のアッティラと古代の有力な君主の子孫であると主張し、[SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle]に協力すると申し出た。"
  spooky_halloween_events.1.f: "男の握手は冷たく、押しつぶされるだった。政府の代表者はしかめっ面をこらえながら、伯爵の鋭い視線に無理やり向き合った。「[SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle]を待つ間、部屋と食事を用意してあります。長旅でお疲れのことでしょう」\n\n伯爵はかすかで不気味な笑みを浮かべながら答えた。「遅い夕食をとったばかりなので、その必要はありませんよ。それに、[SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName]の街は久しぶりです。どれだけ変わったか見てみることにします」"
@@ -296,7 +296,7 @@
  spooky_halloween_events.3.b: "男は子どもと何ら変わりない。子供のように権威と規律にのみ反応するのだ。"
  spooky_halloween_events.3.c: "実証済みの方法を放棄して、検証されていない方法を採用する理由などない。"
  spooky_halloween_events.3.e: "古い世界は新たな世界に取って代わられるべきだ。"
- #Old modifiers from the modifiers file
+ # Old modifiers from the modifiers file
  modifier_conscientious_objection_denied: "非良心的兵役拒否を承認しません"
  modifier_conscientious_objection_rejected: "良心的兵役拒否を承認しません"
  modifier_conscientious_objection_approved: "非良心的兵役拒否を承認します"

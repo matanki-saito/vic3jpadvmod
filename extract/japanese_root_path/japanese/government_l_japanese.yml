@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Monarchies
+ # Monarchies
  gov_absolute_kingdom: "絶対君主制"
  gov_absolute_kingdom_desc: "[Concept('concept_ruler','$RULER_TITLE_KING$')]または[Concept('concept_ruler','$RULER_TITLE_QUEEN$')]が完全なる権力を行使する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_kingdom: "君主制"
@@ -209,7 +209,7 @@
  gov_united_kingdom_braz_por_spa_kingdom_desc: "$gov_united_kingdom_braz_por_spa_desc$"
  gov_domain_alliance: "藩同盟"
  gov_domain_alliance_desc: "同盟を結んだ複数の$DAIMYO_TITLE$の領土からなる[concept_government_type]です。"
- #Regencies
+ # Regencies
  gov_regency_ethiopia_ras: "摂政"
  gov_regency_ethiopia_ras_desc: "[Concept('concept_ruler','$RULER_TITLE_RAS$')]がまだ王位に就けないため、[Concept('concept_ruler','$RULER_TITLE_REGENT$')]が権力を行使し、代理として統治を行う[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_regency_princely_state_rawalate: "摂政"
@@ -338,7 +338,7 @@
  gov_regency_city_state_constitutional_desc: "[Concept('concept_ruler','$RULER_TITLE_COUNT$')]または[Concept('concept_ruler','$RULER_TITLE_COUNTESS$')]がまだ王位に就けないため、選挙で選ばれた議会が権力を行使し、[Concept('concept_ruler','$RULER_TITLE_REGENT$')]が代理として統治を行う[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_provisional_government_spain: "臨時政府"
  gov_provisional_government_spain_desc: "これは[Concept('concept_ruler','$RULER_TITLE_REGENT$')]が暫定的に統治し、コルテスが国の将来の政府を決定する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
- #Theocracies
+ # Theocracies
  gov_theocracy: "神権制"
  gov_theocracy_desc: "聖職者が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_theocratic_dictatorship: "神権的独裁制"
@@ -368,7 +368,7 @@
  gov_shiite_theocracy: "シーア派神権制"
  gov_shiite_theocracy_desc: "イスラム教シーア派のリーダーが統治する神政主義の[concept_government_type]。上級[Concept('concept_ruler','$RULER_AYATOLLAH$')]が[concept_head_of_state]の役割を担います。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_bhutanese_dual_system_dharma: "ブータン二頭政"
- gov_bhutanese_dual_system_dharma_desc: "宗教的および世俗的支配者が権力を分け合いますが、宗教的[Concept('concept_ruler','$RULER_TITLE_DHARMA_RAJA$')]が権勢を振るう[concept_government]体制です。"
+ gov_bhutanese_dual_system_dharma_desc: "宗教的および世俗的支配者が権力を分け合いますが、宗教的[Concept('concept_ruler','$RULER_TITLE_DHARMA_RAJA$')]が権勢を振るう[concept_government_type]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_dalai_lama: "宗教王国"
  gov_dalai_lama_desc: "聖職者の長が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_heavenly_kingdom_theocracy: "太平天国"
@@ -379,7 +379,7 @@
  gov_american_theocracy_democratic_desc: "「この[concept_government_type]では、全国の信徒によって[Concept('concept_election','$concept_elected$')]された評議会が国を統治します。\n\n$TRANSFER_OF_POWER_NAME_DESC$」"
  gov_american_theocracy_dictatorial: "教会独裁制"
  gov_american_theocracy_dictatorial_desc: "単一の教会組織の長が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
- #Presidential Republics
+ # Presidential Republics
  gov_brazil_oligarchic_republic_presidential: "寡頭制共和国"
  gov_brazil_oligarchic_republic_presidential_desc: "[concept_government_type]です。[concept_country]を支配するのは[Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')][Concept('concept_election','$concept_elected$')]、その大部分を少数の農家の支配者が占めています。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_peru_bolivia_confederal_state: "連邦国家"
@@ -411,13 +411,13 @@
  gov_presidential_oligarchy: "大統領寡頭制"
  gov_presidential_oligarchy_desc: "経済力と権力を伴う政治階級にある者たちが[concept_country]を治める[concept_government_type]です。"
  gov_presidential_democracy: "共和国"
- gov_presidential_democracy_desc: "[Concept('concept_election','$concept_elected$')]された[Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')]が[concept_country]を治める[concept_government]です。"
+ gov_presidential_democracy_desc: "[Concept('concept_election','$concept_elected$')]された[Concept('concept_ruler','$RULER_TITLE_PRESIDENT$')]が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_banana_republic: "バナナ共和国"
  gov_banana_republic_desc: "[Concept('concept_ruler','独裁者')]が[concept_country]を治める[concept_government]で、活動的に果物を輸出しています。"
  gov_military_dictatorship: "軍事独裁制"
- gov_military_dictatorship_desc: "軍事[Concept('concept_ruler','独裁者')]が[concept_country]を治める[concept_government]です。"
+ gov_military_dictatorship_desc: "軍事[Concept('concept_ruler','独裁者')]が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_bhutanese_dual_system_temporal: "ブータン二頭政"
- gov_bhutanese_dual_system_temporal_desc: "宗教的および世俗的支配者が権力を分け合いますが、世俗的[Concept('concept_ruler','$RULER_TITLE_DRAGON_REGENT$')]が権勢を振るう[concept_government]体制です。"
+ gov_bhutanese_dual_system_temporal_desc: "宗教的および世俗的支配者が権力を分け合いますが、世俗的[Concept('concept_ruler','$RULER_TITLE_DRAGON_REGENT$')]が権勢を振るう[concept_government_type]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_junta: "軍事政権"
  gov_junta_desc: "軍部が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_warlord_state: "軍閥国家"
@@ -450,15 +450,15 @@
  gov_crown_colony: "直轄植民地"
  gov_crown_colony_desc: "イギリス王室の植民地であり、植民地行政官によって統治され、自治権は限られています。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_chartered_company: "勅許会社"
- gov_chartered_company_desc: "宗主国によって許可を与えられた独占企業が統治する[concept_government]体制です。"
+ gov_chartered_company_desc: "宗主国によって許可を与えられた独占企業が統治する[concept_government_type]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_colonial_administration: "植民地統治"
- gov_colonial_administration_desc: "任命された植民地統治者が宗主国に代わって国を治める[concept_government]体制です。"
+ gov_colonial_administration_desc: "任命された植民地統治者が宗主国に代わって国を治める[concept_government_type]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_colonial_administration_spa: "総督領"
  gov_colonial_administration_spa_desc: "任命された植民地統治者がスペインの宗主に代わって国を治める[concept_government_type]です。統治者は植民地の忠誠を確保する駐屯軍指揮官であると同時に、民事における最高権威と見なされます。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_colonial_administration_gov_in_chief: "植民地統治"
- gov_colonial_administration_gov_in_chief_desc: "任命された植民地統治者が宗主国に代わって国を治める[concept_government]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_colonial_administration_gov_in_chief_desc: "任命された植民地統治者が宗主国に代わって国を治める[concept_government_type]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_colonial_administration_fallback: "植民地統治"
- gov_colonial_administration_fallback_desc: "任命された植民地統治者が国を治める[concept_government]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_colonial_administration_fallback_desc: "任命された植民地統治者が国を治める[concept_government_type]体制です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_dominion_india_parliamentary: "自治領"
  gov_dominion_india_parliamentary_desc: "民主的に[Concept('concept_election','$concept_elected$')]された議会が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_dominion_dictatorial: "自治領"
@@ -839,7 +839,7 @@
  gov_social_monarchy_duchy_absolutist_desc: "[Concept('concept_ruler','$RULER_TITLE_DUKE$')]または[Concept('concept_ruler','$RULER_TITLE_DUCHESS$')]$gov_social_monarchy_absolutist_desc1$。$gov_social_monarchy_absolutist_desc2$\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_social_monarchy_city_state_absolutist: "$gov_social_monarchy_absolutist$"
  gov_social_monarchy_city_state_absolutist_desc: "[Concept('concept_ruler','$RULER_TITLE_COUNT$')]または[Concept('concept_ruler','$RULER_TITLE_COUNTESS$')]$gov_social_monarchy_absolutist_desc1$。$gov_social_monarchy_absolutist_desc2$\n\n$TRANSFER_OF_POWER_NAME_DESC$"
- #Parliamentary Republics
+ # Parliamentary Republics
  gov_french_2nd_republic_parliamentary: "第二共和政"
  gov_french_2nd_republic_parliamentary_desc: "民主的に[Concept('concept_election','$concept_elected$')]された議会が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_french_2nd_republic_parliamentary_dictator: "第二共和政"
@@ -857,7 +857,7 @@
  gov_parliamentary_oligarchy: "寡頭制"
  gov_parliamentary_oligarchy_desc: "経済力と権力を伴う政治階級にある者たちが[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_parliamentary_democracy: "民主共和制"
- gov_parliamentary_democracy_desc: "[Concept('concept_election','$concept_elected$')]された議会が[concept_country]を治める[concept_government]です。"
+ gov_parliamentary_democracy_desc: "[Concept('concept_election','$concept_elected$')]された議会が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_free_city: "自由都市"
  gov_free_city_desc: "民主的に[Concept('concept_election','$concept_elected$')]された町議会によって選ばれた[Concept('concept_ruler','$RULER_TITLE_BURGOMASTER$')]が[concept_country]を治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_parliamentary_single_party_state: "独裁共和制"
@@ -899,7 +899,7 @@
  gov_cybernetic_state_desc: "社会主義国家の技術系機関の代表者によって任命された専門家の評議会が[concept_country]を統治する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_phalanstere: "ファランステール"
  gov_phalanstere_desc: "社会主義国家の技術系機関の代表者によって任命された専門家の評議会が[concept_country]を統治する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
- #Transfer of Power
+ # Transfer of Power
  transfer_of_power_hereditary: "世襲"
  transfer_of_power_hereditary_desc: "世襲によって[concept_transfer_of_power]が行われる場合は、[Concept('concept_ruler', '$concept_rulers$')]が生涯国を統治し、$concept_ruler$の死亡後に[concept_heir]が新たな$concept_ruler$となります。"
  transfer_of_power_presidential_elective: "大統領選挙"
@@ -914,7 +914,7 @@
  TRANSFER_OF_POWER_PLAYER_NAME_DESC: "この$concept_government_type$は、#tooltippable #tooltip:[GetPlayer.GetGovernment.GetTooltipTag],TRANSFER_OF_POWER_TOOLTIP_DESC [GetPlayer.GetGovernment.GetTransferOfPowerName]#!#! [concept_transfer_of_power]を採用します"
  TRANSFER_OF_POWER_TOOLTIP_DESC: "[GovernmentType.GetTransferOfPowerDesc]"
  TRANSFER_OF_POWER_PLAYER_TOOLTIP_DESC: "[GetPlayer.GetGovernment.GetTransferOfPowerDesc]"
- #Titles
+ # Titles
  RULER_TITLE_DEFAULT: "支配者"
  RULER_TITLE_KING: "国王"
  RULER_TITLE_QUEEN: "女王"

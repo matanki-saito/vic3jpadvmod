@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Coronation of Queen Victoria
+ # Coronation of Queen Victoria
  victoria.1.t: "ヴィクトリア女王の戴冠式"
  victoria.1.d: "国王が死んだ。彼の若き姪[SCOPE.sCharacter('queen_victoria').GetFirstName]の即位により、王国は歓びに包まれ、ハノーファーの王冠はイギリスの支配から外れます。彼女が末永く統治することを願おう！"
  victoria.1.d2: "国王が死んだ。彼の若き姪[SCOPE.sCharacter('queen_victoria').GetFirstName]の即位により、王国は歓びに包まれた。彼女が末永く統治することを願おう！"
@@ -16,7 +16,7 @@
  britain_monarchy.1.a: "国王陛下万歳！"
  edward_vii_death_tt: "エドワード7世が死亡"
  grand_exhibition_decision_custom_tooltip_2: "過去に万国博覧会は開催されていません"
- #Prostitution Events
+ # Prostitution Events
  prostitution.1.t: "伝染病法"
  prostitution.1.d: "[SCOPE.sCharacter('cda_ig_leader').GetFullName]によって率いられている[SCOPE.sState('cda_state').GetName]の[SCOPE.gsInterestGroup('cda_ig').GetName]が、政府に売春への対応を要求しています。彼らは、売春婦と疑われる女性を、性感染症を広めるという理由で、病院に拘束することを警察に許可する法律の施行を要求しています。"
  prostitution.1.d2: "[SCOPE.sCharacter('cda_ig_leader').GetFullName]によって率いられている[SCOPE.sState('cda_state').GetName]の[SCOPE.gsInterestGroup('cda_ig').GetName]が、男性の間で性感染症の発症率が高まっていることへの解決策を要求しています。彼らは、売春婦と疑われる女性を、性感染症を広めるという理由で、病院に拘束することを警察に許可する法律の施行を要求しています。"
@@ -55,7 +55,7 @@
  defunded_police: "警察を非難"
  sale_of_alaska_happened: "アラスカ売却が発生しました"
  oregon_dispute_happened: "オレゴン国境紛争が解決されました"
- #Alaska Purchase
+ # Alaska Purchase
  usa_purchase_alaska: "アラスカ購入交渉"
  usa_purchase_alaska_desc: "アラスカの広大な土地の戦略的、経済的価値を疑う人もいるが、私たちは自由のフロンティアを押し広げる機会を逃してはならないのです。"
  alaska.1.t: "アラスカへの申し出"
@@ -87,7 +87,7 @@
  alaska_rus_big_money: "アラスカ売却 - 巨額"
  alaska_rus_medium_money: "アラスカ売却 - 中程度の金額"
  alaska_rus_small_money: "アラスカ売却 - 少額"
- #Oregon Border Dispute
+ # Oregon Border Dispute
  je_oregon: "オレゴン国境紛争"
  je_oregon_reason: "オレゴン州境の適切な位置は、長い間、イギリスとアメリカの間で未決定の問題でした。この争いに決着をつけるべき時が来たのです。"
  oregon_tt: "がアメリカ西部のフロンティアを測量によってオレゴン山岳道を発見しました"
@@ -107,7 +107,7 @@
  je_conquer_oregon: "オレゴン併合"
  je_conquer_oregon_reason: "イギリスは外交的にオレゴンを引き渡すことを拒んでいます。武力をもって獲得するしかないでしょう。"
  oregon_resolved: "オレゴン国境紛争の解決"
- #Plague!
+ # Plague!
  plague.1.t: "[ROOT.GetCountry.GetAdjective]のインフルエンザ"
  plague.1.d: "[SCOPE.sState('plague_origin_state').GetName]で、特に致死性の高いインフルエンザが爆発的に発生しました。このインフルエンザは急速に拡大し、世界的な大流行となるおそれがあります。"
  plague.1.f: "「インフルエンザの流行は、まるで死の幽鬼のように、一夜にして私たちを襲いました。保健委員会がこの疫病を報告するようになってから3日後には、私たちの病院はこの病の犠牲者で溢れかえっていました」"
@@ -167,7 +167,7 @@
  anti_mask_ignored: "反マスク同盟を無視"
  anti_mask_appeased: "反マスク同盟を宥める"
  anti_mask_discredited: "反マスク同盟の信用を落とす"
- #Battle of Cable Street
+ # Battle of Cable Street
  cable_street.1.t: "[SCOPE.sState('fascist_rally_state').GetCityHubName]の戦い"
  cable_street.1.d: "[SCOPE.sCharacter('fascist_leader').GetFullName]および[SCOPE.sParty('fascist_party').GetName]が、[SCOPE.sState('fascist_rally_state').GetName]における大規模集会を計画している。[SCOPE.gsInterestGroup('antifa_ig').GetName]を旗印に漫然と組織された反ファシストグループによる激しい抵抗が予想される。"
  cable_street.1.f: "「バリケードを作れ！ファシストどもをやっつけろ！奴らを通すな！」"
@@ -176,7 +176,7 @@
  cable_street.1.c: "集会を禁ずる。"
  protected_fascist_rally: "ファシストの集会の保護"
  banned_fascist_rally: "ファシストの集会の禁止"
- #Heavenly Kingdom
+ # Heavenly Kingdom
  heavenly.1.t: "[SCOPE.sState('missionary_state').GetName]での宣教活動"
  heavenly.1.d: "[SCOPE.sCountry('treaty_port_owner').GetAdjective] [SCOPE.sState('treaty_port_scope').GetName]に拠点を置く宣教師が、[SCOPE.sState('missionary_state').GetName]に学校や病院を作る許可を求めています。彼らはきっと信仰を広めるための基盤としてこれらを活用するでしょう。"
  heavenly.1.f: "「主の言葉を広めるのに、癒し以上に良い方法があるでしょうか？私たちの病院への道を見つけた人は、神への道を見つけることができるのです」"
@@ -237,7 +237,7 @@
  modifier_conversion_of_china: "中国の改宗"
  modifier_second_crusade_against_manchu: "没落した王朝に対する警戒"
  modifier_relations_with_west: "西欧との関係"
- #Walord China extras
+ # Walord China extras
  warlord_china_events.301.t: "[SCOPE.sCharacter('yan_xishan_thinker').GetFullName]の思想"
  warlord_china_events.301.d: "我らが偉大なる[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、国家統一のために新しいイデオロギーを考案しました。多くの源より描き出されたそれは複雑で、大衆に伝えるのは難しいかもしれません。"
  warlord_china_events.301.f: "「我々の輝かしい新イデオロギーは、軍国主義、民族主義、無政府主義、民主主義、資本主義、共産主義、個人主義、帝国主義、普遍主義、父権主義、ユートピア主義の価値あるものをすべて統合した完全な包括的ものである」"
@@ -246,7 +246,7 @@
  yan_xishan_thought_mod: "統合思想"
  warlord_legitimacy: "国家の正当性"
  failed_yan_xishan_thought_mod: "混同主義"
- #The British Raj
+ # The British Raj
  british_raj_decision: "イギリス領インド帝国の宣言"
  british_raj_decision_desc: "東インド会社の不始末があまりにも長く続きすぎました。私たちは、より直接的な手段で亜大陸の支配を確保しなければなりません。"
  sepoy_mutiny_happened: "セポイの反乱の発生"
@@ -265,7 +265,7 @@
  if_accepted_by_target_country_tt: "[SCOPE.sCountry('target_country').GetName]が許可した場合："
  transfers_treasury_to_eic_tt: "[[ROOT.GetCountry.GetName]]の[[Concept('concept_treasury', '')]]の中身(@money![ROOT.GetCountry.GetGoldReserves|K])が[[ROOT.GetCountry.GetOverlord.GetName]]に移送されました。"
  transfers_treasury_to_eic_diplo_tt: "[SCOPE.sCountry('target_country').GetName]の[[Concept('concept_treasury', '')]]の中身(@money![SCOPE.sCountry('target_country').GetGoldReserves|K])が[ROOT.GetCountry.GetName]に移送されました。"
- #Strike!
+ # Strike!
  strike.1.t: "ストライキ！"
  strike.1.d: "[SCOPE.sBuilding('prime_strike_workplace').GetName]で働く労働者たちはその酷い労働環境にうんざりしています。[SCOPE.gsInterestGroup('unions_ig').GetName]と共に、彼らは [SCOPE.sState('strike_state').GetName]で業界全体のストライキを開始しました。"
  strike.1.f: "「利己主義者の支配から労働者を救うことは、我々の民族の最も高貴で最も優れた者にふさわしい仕事です。あなたも、その責任を引き受け、誓約された真の騎士たる労働者の支援を信頼し、自分の持つ能力を駆使して、人間の間にこれらの原則を勝利に導くために活動しませんか？」"
@@ -397,7 +397,7 @@
  je_atmospheric_engine_reason: "鉱山の生産量を飛躍的に向上させる、画期的な装置が発明されました。"
  production_tech_events.601.t: "大気圧機関"
  production_tech_events.601.d: "鉱業界では、大気圧エンジンの普及により、生産性が飛躍的に向上しています。"
- production_tech_events.601.f: "「蒸気が初めて送り出され、車輪が1分間に何回転もするようになったとき、ビジネスにおける慣習と呼ばれるものは、人間の生活を蒸気機関と調和させ、その動きを機関に匹敵するほどに時間を厳守させることを目的とするようになっていったのだ」" #George William Russell
+ production_tech_events.601.f: "「蒸気が初めて送り出され、車輪が1分間に何回転もするようになったとき、ビジネスにおける慣習と呼ばれるものは、人間の生活を蒸気機関と調和させ、その動きを機関に匹敵するほどに時間を厳守させることを目的とするようになっていったのだ」" # George William Russell
  production_tech_events.601.a: "この機械から、もう少し搾り取ることができるはずだ。"
  production_tech_events.601.b: "これは、交通機関にとって大きな意味を持つ。"
  production_tech_events.601.c: "もしかしたら、もっといい方法があるかもしれない。"
@@ -420,7 +420,7 @@
  je_communism_2_reason: "人民は、いまだに王、司祭、資本家などの専政的な支配者の下で苦しんでいる。我々は、反動政府を打倒し、労働者の楽園を建設しなければならないのだ。"
  communism.1.t: "世界を勝ち取る"
  communism.1.desc: "[ROOT.GetCountry.GetName]に社会主義思想が浸透していく中、[ROOT.GetCountry.GetRuler.GetLastName]政府はその進行を食い止めるため、思い切った譲歩を検討する必要があると判断しました。急速な政策転換の機運が高まっています。"
- communism.1.f: "「プロレタリアートは、いたるところで脅迫的な態度をとり、自分たちよりもはるかに弱い敵の隊列を数え、自分たちの権利の実現を要求し始めている。すべての人々はある種の予感に満たされている。そして、生命器官が麻痺していないすべての人々は、救済の言葉を発するであろう近づいてくる未来に、震えるような期待を持って直面しているのだ」" #Bakunin
+ communism.1.f: "「プロレタリアートは、いたるところで脅迫的な態度をとり、自分たちよりもはるかに弱い敵の隊列を数え、自分たちの権利の実現を要求し始めている。すべての人々はある種の予感に満たされている。そして、生命器官が麻痺していないすべての人々は、救済の言葉を発するであろう近づいてくる未来に、震えるような期待を持って直面しているのだ」" # Bakunin
  communism.1.a: "労働に対してより高い賃金を提示する。"
  communism.1.b: "最後の奴隷商人どもをひと思いに楽にしてやる。"
  communism.1.c: "労働者により良い条件を保証する。"
@@ -429,7 +429,7 @@
  communist_government_modifier: "厳しい逆境"
  communism.2.t: "労働者共和国"
  communism.2.d: "[ROOT.GetCountry.GetName]の労働者は、ついにブルジョア政府を打倒し、評議会共和制を確率しました。しかし、社会主義が真に達成されるまでには、まだはるかに多くの仕事が残っています。"
- communism.2.f: "「人間の労働力、ひいては生命そのものが売買や搾取、強奪の対象であり続ける限り、「人間の生命の神聖さ」の原則は、抑圧された奴隷をその鎖につなぎとめる目的で発せられた恥ずべき嘘であり続けるのだ」" #Trotsky
+ communism.2.f: "「人間の労働力、ひいては生命そのものが売買や搾取、強奪の対象であり続ける限り、「人間の生命の神聖さ」の原則は、抑圧された奴隷をその鎖につなぎとめる目的で発せられた恥ずべき嘘であり続けるのだ」" # Trotsky
  communism.2.a: "前衛主義者がこの道を先導する！"
  communism.2.b: "すべての権力を評議会へ！"
  communism.2.b2: "すべての権力をソビエトへ！"
@@ -438,19 +438,19 @@
  chose_communism.tt: "[SCOPE.gsInterestGroup('unions').GetName]は、[concept_political_movement]から[[Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')]]場合、[GetIdeology('ideology_communist').GetName]のリーダーを選択する可能性がはるかに高いです。"
  chose_anarchism.tt: "[SCOPE.gsInterestGroup('unions').GetName]は、[concept_political_movement]から[[Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')]]場合、[GetIdeology('ideology_anarchist').GetName]のリーダーを選択する可能性がはるかに高いです。"
  je_anarchy: "相互扶助"
- je_anarchy_reason: "国家があれば、ある階級が別の階級に支配され、その結果、奴隷制が生じるに違いない。奴隷制のない国家は考えられない。そして、これが、われわれが国家の敵であるからだ。" #Bakunin
+ je_anarchy_reason: "国家があれば、ある階級が別の階級に支配され、その結果、奴隷制が生じるに違いない。奴隷制のない国家は考えられない。そして、これが、われわれが国家の敵であるからだ。" # Bakunin
  je_vanguard: "国と革命"
- je_vanguard_reason: "プロレタリアートは、搾取を行う者の抵抗を粉砕し、膨大な数の人口を社会主義経済の組織化に導くために、国家権力、力の集中組織、暴力の組織を必要としています。" #Lenin
+ je_vanguard_reason: "プロレタリアートは、搾取を行う者の抵抗を粉砕し、膨大な数の人口を社会主義経済の組織化に導くために、国家権力、力の集中組織、暴力の組織を必要としています。" # Lenin
  vanguard_custom_tooltip: "有力な利益集団はすべて、[GetIdeology('ideology_vanguardist').GetName]、[GetIdeology('ideology_communist').GetName]、または[GetIdeology('ideology_anarchist').GetName]のリーダーに率いられています。"
  vanguard_instruction_status: "知識人、農村民、労働組合、軍部は、周縁集団の場合、前衛主義を採用します。"
  je_communist_welfare: "我らの革命"
  je_communist_welfare_reason: "共産主義は、すべての人の需要を満たすまでは達成できない。各人がその能力に応じて、各人がその必要に応じて。"
  je_5_year_plan: "五カ年計画"
- je_5_year_plan_reason: "共産主義とは、労働者の力と国全体の電化を組み合わせたものである。" #Lenin
+ je_5_year_plan_reason: "共産主義とは、労働者の力と国全体の電化を組み合わせたものである。" # Lenin
  je_5_year_plan_goal: "[JournalEntry.GetTotalGoalValue][concept_gdp]の達成"
  communism.3.t: "前衛主義の前進"
  communism.3.d: "[SCOPE.gsInterestGroup('new_vanguard_ig').GetName]内の反動主義的要素がついに排除されました。彼らの新しいリーダーである[SCOPE.sCharacter('new_vanguard_leader').GetFullName]は、国家と社会すぎに忠実であることが期待できるでしょう。"
- communism.3.f: "「プロレタリアートの独裁、すなわち、抑圧者を抑圧する目的で被抑圧者の先導者を支配階級として組織されることは、単に民主主義の拡大をもたらすだけでは終わらない。それは、抑圧者、搾取者、資本家の自由に対して、一連の制限を課すことにつながるだろう」" #Lenin
+ communism.3.f: "「プロレタリアートの独裁、すなわち、抑圧者を抑圧する目的で被抑圧者の先導者を支配階級として組織されることは、単に民主主義の拡大をもたらすだけでは終わらない。それは、抑圧者、搾取者、資本家の自由に対して、一連の制限を課すことにつながるだろう」" # Lenin
  communism.3.a: "忠誠心は絶対に保証されなければならない。"
  communism.3.b: "彼らは重要な役割を担っている。"
  new_vanguard.tt: "[SCOPE.gsInterestGroup('new_vanguard_ig').GetName]は、[concept_political_movement]から[[Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')]]場合、前衛主義者のリーダーを選択する可能性がはるかに高いです。"
@@ -458,7 +458,7 @@
  new_vanguard_clout: "前衛主義への統合"
  communism.4.t: "パンの略取"
  communism.4.d: "[ROOT.GetCountry.GetName]は、急速に無政府主義者の楽園になりつつあります。貧困は完全に解消され、相互扶助に基づく無階級社会が根付いています。"
- communism.4.f: "「社会についての異なる概念が形成されつつある。無政府主義という名のもとに、それは、想像しうるあらゆる目的のために、あらゆる側面で、あらゆる程度で、自発的な繋がりの高度な発展と結びついた、個性の最も完全な発展を求めるものである」" #Kropotkin
+ communism.4.f: "「社会についての異なる概念が形成されつつある。無政府主義という名のもとに、それは、想像しうるあらゆる目的のために、あらゆる側面で、あらゆる程度で、自発的な繋がりの高度な発展と結びついた、個性の最も完全な発展を求めるものである」" # Kropotkin
  communism.4.a: "母なるアナーキーは息子たちを愛する。"
  anarchist_utopia: "パンの略取"
  je_opium: "アヘン貿易"
@@ -557,7 +557,7 @@
  opium_loyalty_focus: "国への愛"
  opium_wars.8.t: "アヘン中毒"
  opium_wars.8.d: "[SCOPE.sCulture('opium_addiction_pop').GetName]は、アヘン中毒の深刻な影響を経験しています。この物質の使用と乱用は[SCOPE.sState('opium_addiction_state').GetName]全体に広がっているのです。"
- opium_wars.8.f: "アヘン常用者は、インキュバスと悪夢の重圧のもとに寝たきりになっている。彼は気怠い疫病の死のような倦怠感によって、ベッドに無理やり寝かしつけられている。そして、最も優しい愛の対象に加えられた傷害や暴挙を目撃せざるを得ないように、彼は自分が実行したいことをみせつけられているのだ。彼は立ち上がって歩けるなら命を投げ出すだろうが、幼児のように無力で、立ち上がることもできないのだ。" #Thomas De Quincey
+ opium_wars.8.f: "アヘン常用者は、インキュバスと悪夢の重圧のもとに寝たきりになっている。彼は気怠い疫病の死のような倦怠感によって、ベッドに無理やり寝かしつけられている。そして、最も優しい愛の対象に加えられた傷害や暴挙を目撃せざるを得ないように、彼は自分が実行したいことをみせつけられているのだ。彼は立ち上がって歩けるなら命を投げ出すだろうが、幼児のように無力で、立ち上がることもできないのだ。" # Thomas De Quincey
  opium_wars.8.a: "痛ましい！"
  opium_wars.8.b: "これは医学的な問題として扱うことができるかもしれない。"
  opium_addiction_state_mod: "アヘン中毒"
@@ -634,7 +634,7 @@
  meiji_favored_ig: "天皇の好意"
  meiji.2.t: "再編された日本"
  meiji.2.d: "改革された軍隊、開かれた国、新しい社会。[ROOT.GetCountry.GetName]は世界の列強と対等に立ち、おそらく独自の帝国的野望を追求し始めるでしょう。"
- meiji.2.f: "「天の恵みにより、われわれの祖先が太古の昔から君臨してきた神聖な御座に、われわれは座っている。日本の文明と制度は他国のそれとはあまりにも異なっているので、一度に宣言した目的に達することは期待できない。われわれの目的は、賢明なる諸国の間に普及している諸制度の中から、わが国の現状に最も適したものを選択し、わが国の政策と慣習を徐々に改革・改善することによって、諸国と対等になるように適応していくことにあるのだ」" #Emperor Meiji
+ meiji.2.f: "「天の恵みにより、われわれの祖先が太古の昔から君臨してきた神聖な御座に、われわれは座っている。日本の文明と制度は他国のそれとはあまりにも異なっているので、一度に宣言した目的に達することは期待できない。われわれの目的は、賢明なる諸国の間に普及している諸制度の中から、わが国の現状に最も適したものを選択し、わが国の政策と慣習を徐々に改革・改善することによって、諸国と対等になるように適応していくことにあるのだ」" # Emperor Meiji
  meiji.2.a: "[ROOT.GetCountry.GetAdjectiveNoFormatting]帝国は興隆するだろう。"
  meiji.2.b: "私たちは強力な友人を必要とし、強力な敵を作ることになるだろう。"
  meiji.2.c: "鉄道は私たちの未来の成功の鍵だ。"
@@ -656,7 +656,7 @@
  western_military_consultant: "西欧軍事顧問"
  meiji.5.t: "[SCOPE.sCountry('japan_embassy_country').GetName]への使節団"
  meiji.5.d: "西側への使節団訪問の一環として、高官たちは[SCOPE.sCountry('japan_embassy_country').GetAdjectiveNoFormatting]政治家の要人たる[SCOPE.sCharacter('japan_embassy_politician').GetFullName]との会合を行いました。新しく開かれた[ROOT.GetCountry.GetAdjectiveNoFormatting]国家と良い関係を築くことに興味を持った彼らは、私たちが[SCOPE.sCountry('japan_embassy_country').GetName]と締結したいであろういくつかの条約の草案を作成しました。"
- meiji.5.f: "「最近の国家はみな、友好的で礼儀正しい関係を築いているように見える。しかし、それは表面的なもので、その裏には相互の侮蔑と覇権争いが隠されているのだ。[ROOT.GetCountry.GetNameNoFormatting]は現在多くの国と外交関係を結んでいるかもしれないが、[SCOPE.sCountry('japan_embassy_country').GetAdjectiveNoFormatting]国家との親密さはあらゆる国家との関係の中でも最も緊密なものでなければならない。それは、私たちが自治権を保持していることへの真の敬意によるものだ」" #Bismarck
+ meiji.5.f: "「最近の国家はみな、友好的で礼儀正しい関係を築いているように見える。しかし、それは表面的なもので、その裏には相互の侮蔑と覇権争いが隠されているのだ。[ROOT.GetCountry.GetNameNoFormatting]は現在多くの国と外交関係を結んでいるかもしれないが、[SCOPE.sCountry('japan_embassy_country').GetAdjectiveNoFormatting]国家との親密さはあらゆる国家との関係の中でも最も緊密なものでなければならない。それは、私たちが自治権を保持していることへの真の敬意によるものだ」" # Bismarck
  meiji.5.a: "強力な外交的結びつきを確立しよう。"
  meiji.5.b: "[SCOPE.sCountry('japan_embassy_country').GetName]は、私たちに多くのことを教えてくれる。"
  meiji.5.c: "[SCOPE.sCountry('japan_embassy_country').GetName]から得るものは何もない。"
@@ -1024,7 +1024,7 @@
  tewodros_modifier: "無法者の王子"
  italian_unification.1.t: "イタリア統一運動"
  italian_unification.1.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]の英雄的リーダーシップのもと、イタリア国家は世界に誕生しました。共通の旗のもとに団結したイタリアは、必ずやヨーロッパと世界の未来を切り開くでしょう。"
- italian_unification.1.f: "「そうだ、若者たちよ、イタリアは諸君らのおかげで世界の喝采を浴びることができた。そう、征服したのも、これから整復するのも諸君らなのだ。戦いの運命を左右する戦術を用意しているのは、諸君らなのだから。我が国の歴史におけるこの素晴らしい1ページに、さらに輝かしいものが加わるだろう。そして奴隷はついに、自由な兄弟たちに、足枷の輪によって鍛え上げられた研ぎ澄まされた剣を見せることになるのだ」" #Garibaldi
+ italian_unification.1.f: "「そうだ、若者たちよ、イタリアは諸君らのおかげで世界の喝采を浴びることができた。そう、征服したのも、これから整復するのも諸君らなのだ。戦いの運命を左右する戦術を用意しているのは、諸君らなのだから。我が国の歴史におけるこの素晴らしい1ページに、さらに輝かしいものが加わるだろう。そして奴隷はついに、自由な兄弟たちに、足枷の輪によって鍛え上げられた研ぎ澄まされた剣を見せることになるのだ」" # Garibaldi
  italian_unification.1.a: "イタリア万歳！"
  italian_unification.1.b: "我々は勇敢なる[SCOPE.gsInterestGroup('ruler_ig_scope').GetName]のことを忘れはしない。"
  italian_unification.2.t: "[SCOPE.sCountry('italian_annex_country').GetName]との統一"
@@ -1034,7 +1034,7 @@
  italian_unification.2.b: "今はその時ではない。"
  communism.5.t: "大粛清"
  communism.5.d: "政治の世界における反動的な要素は、ほとんど完全に根絶されるか、抑制されています。前衛党が最高位に君臨しています。"
- communism.5.f: "「政党とは階級の前衛であり、その任務は大衆を指導することであり、単に大衆の平均的な政治水準を反映することではないのだ」" #Lenin
+ communism.5.f: "「政党とは階級の前衛であり、その任務は大衆を指導することであり、単に大衆の平均的な政治水準を反映することではないのだ」" # Lenin
  communism.5.a: "不誠実は反逆である。"
  great_purge_modifier: "大粛清"
  communism.6.t: "我らの革命"
@@ -1236,7 +1236,7 @@
  cautious_railway_construction: "慎重な鉄道建設"
  amazon.2.t: "地上の地獄"
  amazon.2.d: "[SCOPE.sState('amazon_state').GetName]にある[SCOPE.sBuilding('rubber_plantation_scope').GetName]で働く労働者が酷い虐待を受けています。何かを失敗した際の一般的な罰則として、身体の切断が当たり前になっているのです。"
- amazon.2.f: "「彼らになぜ逃げてきたのかと尋ねると、自国では政府高官や政府軍人の手によるひどい扱いに耐えてきたものの、それにもはや耐えられなくなったこと、一定量のゴムを採取することがデキなければ殺されてしまうこと、ノルマを満たそうとすれば飢えや野ざらしで死ぬしかなかったことを告白したのです」" #Roger Casement
+ amazon.2.f: "「彼らになぜ逃げてきたのかと尋ねると、自国では政府高官や政府軍人の手によるひどい扱いに耐えてきたものの、それにもはや耐えられなくなったこと、一定量のゴムを採取することがデキなければ殺されてしまうこと、ノルマを満たそうとすれば飢えや野ざらしで死ぬしかなかったことを告白したのです」" # Roger Casement
  amazon.2.a: "生産を緩めることはできない。"
  amazon.2.b: "農園の状況について調査を開始しよう。"
  amazon.2.c: "加害者はその罪を償うことになる。"
@@ -1272,7 +1272,7 @@
  canada_settlement_mod: "カナダ西部への入植"
  major_railways.3.t: "最後のスパイク"
  major_railways.3.d: "カナダ太平洋鉄道がついに完成し、大西洋岸と太平洋岸が結ばれました。この新しい鉄道は、西部諸州への入植の新しい機会を開くものとなるでしょう。"
- major_railways.3.f: "「その一撃が引き金となり、爆発する\nその音は大気中に広がりゆく。\n技師やダイナマイト工たち、\n機関労働者や探検家たちの叫び声も、\nレールを横切るそれらは、前触れにすぎなかったのだ\n大陸中に広がる合唱の」" #E. J. Pratt
+ major_railways.3.f: "「その一撃が引き金となり、爆発する\nその音は大気中に広がりゆく。\n技師やダイナマイト工たち、\n機関労働者や探検家たちの叫び声も、\nレールを横切るそれらは、前触れにすぎなかったのだ\n大陸中に広がる合唱の」" # E. J. Pratt
  major_railways.3.a: "沿岸部には大きな期待ができる。"
  major_railways.3.b: "プレーリーには大きな可能性がある。"
  je_canada_pacific_railway: "カナダ太平洋鉄道"
@@ -1378,7 +1378,7 @@
  je_autocracy_goal: "通算30年間、以下が成立していること："
  autocracy.1.t: "公的な愛国主義"
  autocracy.1.d: "宗教、専制政治、愛国という国是は[ROOT.GetCountry.GetAdjective]の国民の普遍的なイデオロギーとなっています。[SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]の絶対的な権威に異を唱えるものはほとんどいません。"
- autocracy.1.f: "「[SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]への愛と王位への献身が国民に根付いており、祖国の法律と確固たる行政が存在する国家においては、悪意ある者のあらゆる努力は無に帰するであろう」" #Tsar Nicholas I
+ autocracy.1.f: "「[SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]への愛と王位への献身が国民に根付いており、祖国の法律と確固たる行政が存在する国家においては、悪意ある者のあらゆる努力は無に帰するであろう」" # Tsar Nicholas I
  autocracy.1.a: "[SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTitle]万歳！"
  autocracy.1.b: "[SCOPE.sCulture('primary_culture_scope').GetName]の国民は優れた人々だ。"
  autocracy.1.c: "[SCOPE.gsInterestGroup('church_scope').GetName]が道を示してくれる。"
@@ -1438,7 +1438,7 @@
  first_skyscraper_tt: "我が国は世界初となる摩天楼を建設した"
  war_crimes.1.t: "戦争犯罪"
  war_crimes.1.d: "[SCOPE.sCharacter('war_crimes_perpetrator').GetFullName]が行った[SCOPE.sState('war_crimes_state').GetName]市民に対するマスタードガスの使用により、[SCOPE.sCharacter('war_crimes_perpetrator').GetHerHim]には戦争犯罪者のレッテルが貼られた。戦時下に許容される行為の枠組みを定めた法律の制定を求める声が各地であがっている。"
- war_crimes.1.f: "「マスタード色の大きな水疱に失明、あらゆる箇所が粘着剤のように結合し、常に酸素を求めてもがいている。喉が閉じているようだと囁くように訴える彼らには、窒息で死ぬ未来が見えているのだ」" #Vera Brittain
+ war_crimes.1.f: "「マスタード色の大きな水疱に失明、あらゆる箇所が粘着剤のように結合し、常に酸素を求めてもがいている。喉が閉じているようだと囁くように訴える彼らには、窒息で死ぬ未来が見えているのだ」" # Vera Brittain
  war_crimes.1.a: "愛と戦争の前ではすべてが公平だ。"
  war_crimes.1.b: "[SCOPE.sCharacter('war_crimes_perpetrator').GetFullName]は、[SCOPE.sCharacter('war_crimes_perpetrator').GetHerHis]が犯した犯罪によって裁かれるだろう。"
  je_war_crimes: "化学兵器戦争"
@@ -1460,7 +1460,7 @@
  tunguska_mining: "ツングースカ採掘遠征"
  tunguska.1.t: "ツングースカ事件"
  tunguska.1.desc: "[SCOPE.sState('tunguska_state').GetName]にあるツングースカ周辺に大規模な爆発音が響き渡りました。科学者たちは、天体が地球に衝突したのだと考えています。"
- tunguska.1.f: "「一瞬何が起きたのかわからなかった。すると妻が外に出てきて家に入るよう私を促した。あの音が鳴り響いた後、まるで落石か大砲の発砲があったかのように大地が震えている。地面に立っていた時は、頭部に岩が激突することを恐れ、私はずっと下を向いていた。空が割れ、家々の隙間を熱風が吹き抜ける。まるで大砲から放たれた爆風のように、それは大地に爪痕を残し、一部の作物に被害をもたらした」" #S. Semenov
+ tunguska.1.f: "「一瞬何が起きたのかわからなかった。すると妻が外に出てきて家に入るよう私を促した。あの音が鳴り響いた後、まるで落石か大砲の発砲があったかのように大地が震えている。地面に立っていた時は、頭部に岩が激突することを恐れ、私はずっと下を向いていた。空が割れ、家々の隙間を熱風が吹き抜ける。まるで大砲から放たれた爆風のように、それは大地に爪痕を残し、一部の作物に被害をもたらした」" # S. Semenov
  tunguska.1.a: "面白い話だが、本題とは無関係だ。"
  tunguska.1.b: "科学調査を行う大義名分になる。"
  tunguska.1.c: "これは何かの前兆だ！"
@@ -1468,7 +1468,7 @@
  cholera.1.t: "コレラに関するコミュニケーションの流儀"
  cholera.1.d1: "[SCOPE.sState('cholera_state').GetCityHubName]で感染爆発を起こしたコレラの発生源が、独創的な外科医兼薬剤師のジョン・スノウ氏によって突き止められました。このことが、公衆衛生分野における大きな進歩へと繋がります。"
  cholera.1.d2: "[SCOPE.sState('cholera_state').GetCityHubName]で感染爆発を起こしたコレラの発生源が、独創的な外科医兼薬剤師によって突き止められました。このことが、公衆衛生分野における大きな進歩へと繋がります。"
- cholera.1.f: "「すなわち調査の結果、ロンドンの当地域においては、先述した揚水井戸の水をよく飲む習慣のある人を除いて、コレラの発生や蔓延は特に見られませんでした。私の発言を受け、翌日ポンプのハンドルが取り外されています」" #John Snow
+ cholera.1.f: "「すなわち調査の結果、ロンドンの当地域においては、先述した揚水井戸の水をよく飲む習慣のある人を除いて、コレラの発生や蔓延は特に見られませんでした。私の発言を受け、翌日ポンプのハンドルが取り外されています」" # John Snow
  cholera.1.a: "街中に汚物を持ち込まないよう努めなければ。"
  cholera.1.b: "疫学は将来有望な分野だ。"
  cholera.1.c: "ジョン・スノウは何もわかっていない。"
@@ -1479,7 +1479,7 @@
  bison_hunting_subsistence: "減少したバイソンの群れ"
  manifest_destiny.3.t: "バイソン狩猟"
  manifest_destiny.3.d: "[SCOPE.sState('native_american_state').GetName]に住む[SCOPE.sCountry('native_american_country').GetAdjectiveNoFlag]の人々は、基本的な需要のほとんどをバイソンに依存しています。仮にバイソンの個体数が減少した場合、恩恵を受けるのは[SCOPE.sState('bison_state').GetName]に住む入植者です。"
- manifest_destiny.3.f: "「白人ハンターや観光客の手によって、毎シーズン何千という個体が無為に、そして不名誉に殺害されている。ただ彼らのローブにするために、あるいは単に欲求を満たすスポーツとして。殺されたバイソンの死骸は腐敗し、砂漠と人気のない平原に白く風化した骨が散らばっている」" #J.M. Baltimore
+ manifest_destiny.3.f: "「白人ハンターや観光客の手によって、毎シーズン何千という個体が無為に、そして不名誉に殺害されている。ただ彼らのローブにするために、あるいは単に欲求を満たすスポーツとして。殺されたバイソンの死骸は腐敗し、砂漠と人気のない平原に白く風化した骨が散らばっている」" # J.M. Baltimore
  manifest_destiny.3.a: "営利狩猟を奨励しよう。"
  manifest_destiny.3.b: "軍隊にバイソンを駆除させよう。"
  manifest_destiny.3.c: "バイソンの群れを保護しよう。"
@@ -1506,7 +1506,7 @@
  protected_fascist_rally_antifa: "ファシストの集会の保護"
  communist_elections.3.t: "社会主義的国際主義"
  communist_elections.3.d: "[SCOPE.sParty('socialist_party').GetName]は、[SCOPE.sCountry('socialist_country').GetName]の[SCOPE.sCharacter('foreign_socialist_leader').GetIdeology.GetName] [SCOPE.gsInterestGroup('foreign_socialist_ig').GetName]から選挙活動を支持されています。"
- communist_elections.3.f: "「さあ同志たちよ、集え。\nそして最後の戦いに挑むのだ。\n社会主義を称える革命の歌声が人類を一つにする」" #The Internationale
+ communist_elections.3.f: "「さあ同志たちよ、集え。\nそして最後の戦いに挑むのだ。\n社会主義を称える革命の歌声が人類を一つにする」" # The Internationale
  communist_elections.3.a: "[SCOPE.sCountry('socialist_country').GetAdjective]の社会主義者は歓迎しよう。"
  communist_elections.3.b: "外国による選挙への干渉を制限しよう。"
  communist_elections.3.c: "すべての侵入者を探し出し追放しろ。"
@@ -1551,7 +1551,7 @@
  remove_liquor_ban_desc: "政治的あるいは経済的な状況によって酒類禁止撤廃の必要に迫られるかもしれません。"
  native_resettlement.6.t: "チェロキー国家"
  native_resettlement.6.d: "[SCOPE.sLawType('pronativelaw').GetName]法の制定によってインディアン強制移住法は無効となり、[SCOPE.sCulture('cherokee_culture').GetName]系住民は先祖伝来の土地における自由な居住が可能となりました。"
- native_resettlement.6.f: "吟遊詩人は汝を称える、\n各地を放浪しながら世界中に言葉を伝える。狂気というものがどのように人々を\n嘲笑い、非難し、追い詰めていったのかを。\n度重なる罵倒にかかわらず、\n長きにわたる希望と要求の不成就にもかかわらず、\nその聡明なる知啓が具現化した夢を名誉と呼ばずしてなんとするのか。" #Alexander Posey
+ native_resettlement.6.f: "吟遊詩人は汝を称える、\n各地を放浪しながら世界中に言葉を伝える。狂気というものがどのように人々を\n嘲笑い、非難し、追い詰めていったのかを。\n度重なる罵倒にかかわらず、\n長きにわたる希望と要求の不成就にもかかわらず、\nその聡明なる知啓が具現化した夢を名誉と呼ばずしてなんとするのか。" # Alexander Posey
  native_resettlement.6.a: "大いなる苦痛が回避されました。"
  john_ross_enactment: "ジョン・ロスによる抗議の請願"
  trail_of_tears_stalled: "さらなる強制移住は3年間保留になります"
@@ -1722,7 +1722,7 @@
  general_strike_effect_tt: "すべての[Concept('concept_incorporated_state', '$concept_incorporated_states$')]に次が与えられます: "
  dyn_c_welsh_patagonia: "ア・ウラドヴァ"
  dyn_c_welsh_patagonia_adj: "ウェールズ・パタゴニア"
- scramble_for_africa_complete_tt: "[Concept('concept_unincorporated_state','$concept_unincorporated_states$')]か[Concept('concept_subject','$concept_subjects$')]を通じ、[concept_georegion_africa]で#variable [JournalEntry.GetTotalGoalValue]#!以上の[Concept('concept_state','$concept_states$')]を支配する"
+ scramble_for_africa_complete_tt: "Control #variable [JournalEntry.GetTotalGoalValue]#! or more [Concept('concept_state','$concept_states$')] in [GetGeographicRegion('geographic_region_africa').GetName] through [Concept('concept_unincorporated_state','$concept_unincorporated_states$')] or [Concept('concept_subject','$concept_subjects$')]"
  bank_robberies: "銀行強盗"
  frontier_military_aid: "フロンティア軍事支援"
  assassination_completion_tt: "暗殺計画失敗"

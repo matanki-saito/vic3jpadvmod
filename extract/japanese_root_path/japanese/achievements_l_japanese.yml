@@ -143,7 +143,7 @@
  own_all_gran_colombia_tt: "大コロンビアの戦略的重要地域にあるすべての州を所有する"
  own_all_andes_tt: "アンデスの戦略的重要地域にあるすべての州を所有する"
  own_all_la_plata_tt: "ラ・プラタの戦略的重要地域にあるすべての州を所有する"
- #1.3 Achievements
+ # 1.3 Achievements
  ACHIEVEMENT_achievement_amish_paradise: "アーミッシュの楽園"
  ACHIEVEMENT_DESC_achievement_amish_paradise: "ヤンキーの国家として、1846年より前に産業禁止法を成立させ、平均生活水準を20以上にする"
  achievement_amish_paradise.tt: "1846年より前に産業禁止法を成立させる"
@@ -187,7 +187,7 @@
  ACHIEVEMENT_achievement_meiji_restoration: "明治維新"
  ACHIEVEMENT_DESC_achievement_meiji_restoration: "日本として、1912年より前に維新のジャーナル記事を完了する"
  achievement_meiji_restoration_tt: "維新のジャーナル記事を完了する"
- #1.5 Achievements
+ # 1.5 Achievements
  ACHIEVEMENT_achievement_magnanimous: "高潔"
  ACHIEVEMENT_DESC_achievement_magnanimous: "ブラジルとして、ジャーナル記事「高潔なる君主」を完了し、王政を維持する"
  achievement_magnanimous_tt: "ジャーナル記事「高潔なる君主」を完了した"
@@ -229,7 +229,7 @@
  ACHIEVEMENT_DESC_achievement_duran_duran: "ヘラートとして、アフガニスタンを形成し、旧ドゥッラーニー朝のすべての歴史的な州を所有し、他国が主導するいかなる勢力にも属さない"
  ACHIEVEMENT_achievement_hyperpeace: "このうえなき平和"
  ACHIEVEMENT_DESC_achievement_hyperpeace: "いずれかの国として、フィンランドと朝鮮を自国の勢力に加える"
- ACHIEVEMENT_achievement_bootlicker: "ご機嫌取り" #I'm judging you
+ ACHIEVEMENT_achievement_bootlicker: "ご機嫌取り" # I'm judging you
  ACHIEVEMENT_DESC_achievement_bootlicker: "臣下として、親王派である圧力団体の宥和を最大にする"
  ACHIEVEMENT_achievement_im_the_captain_now: "今は私が隊長だ。"
  ACHIEVEMENT_DESC_achievement_im_the_captain_now: "勢力ブロックの一員として、勢力ブロックのリーダー争いに勝つ"
@@ -256,7 +256,7 @@
  ACHIEVEMENT_DESC_achievement_cult_of_reason: "国家無神論法を成立させ、少なくとも10か国のメンバーを擁するイデオロギー勢力ブロックのリーダーになる"
  ACHIEVEMENT_achievement_declaration_of_independence: "独立宣言"
  ACHIEVEMENT_DESC_achievement_declaration_of_independence: "従属国としてスタートし、宗主国から独立する"
- #1.8 Achievements
+ # 1.8 Achievements
  ACHIEVEMENT_achievement_prolecorp: "プロレ・コーポ"
  ACHIEVEMENT_DESC_achievement_prolecorp: "指令経済を採用する評議会共和国として、企業の繁栄を最大にする"
  ACHIEVEMENT_achievement_azadi: "アザディ"
@@ -277,7 +277,7 @@
  ACHIEVEMENT_DESC_achievement_our_words_are_backed: "ガンジーを国家元首としながら、100以上の悪名を持つ"
  ACHIEVEMENT_achievement_the_man_who_would_be_king: "王になろうとする男"
  ACHIEVEMENT_DESC_achievement_the_man_who_would_be_king: "ジョシア・ハーランの下で、カフィリスタンとしてアフガニスタンを統一する"
- #1.9 Achievements
+ # 1.9 Achievements
  ACHIEVEMENT_achievement_its_a_blockade: "封鎖だ！"
  ACHIEVEMENT_DESC_achievement_its_a_blockade: "100レベル以上の取引所と接続された世界市場ハブを完全に封鎖する"
  ACHIEVEMENT_achievement_fordlandia: "フォードランディア"
@@ -297,7 +297,7 @@
  has_company_cgv_tt: "ワイン生産者総連盟を法人として設立している"
  ACHIEVEMENT_achievement_systembolaget: "システムボラゲト"
  ACHIEVEMENT_DESC_achievement_systembolaget: "スウェーデンとして、国による酒類の独占権を保有する"
- #National Awakening/1.10 Achievements
+ # National Awakening/1.10 Achievements
  ACHIEVEMENT_achievement_usga: "力を合わせて"
  ACHIEVEMENT_DESC_achievement_usga: "オーストリアとして、ジャーナル記事「連邦の解決策」を完了し、大オーストリア合衆国を形成する"
  ACHIEVEMENT_achievement_neo_absolutist: "羽根ペンと銃剣"
@@ -320,7 +320,7 @@
  ACHIEVEMENT_DESC_achievement_exactly_100: "独立国として、いずれかの主要文化の熱意を100にする"
  ACHIEVEMENT_achievement_all_quiet_on_the_western_front: "西部戦線異状なし"
  ACHIEVEMENT_DESC_achievement_all_quiet_on_the_western_front: "単一戦線で戦死者を100万人以上出す"
- #Iberian Twilight/1.12 Achievements
+ # Iberian Twilight/1.12 Achievements
  ACHIEVEMENT_achievement_sugar_rush: "砂糖ラッシュ"
  ACHIEVEMENT_DESC_achievement_sugar_rush: "キューバとして、世界の砂糖輸出の25%を占め、総輸出量が2000ユニットを超える"
  ACHIEVEMENT_achievement_spanish_lake: "スペインの海"
@@ -341,7 +341,7 @@
  ACHIEVEMENT_DESC_achievement_unanimity: "少なくとも2つの主要な利益集団が法案に反対している状態からスタートし、その法律の制定に対するすべての反対勢力を排除する"
  ACHIEVEMENT_achievement_full_circle: "振り出しに戻る"
  ACHIEVEMENT_DESC_achievement_full_circle: "スペインとしてスタートし、カルリスタ戦争に勝利した後、栄光ある革命の後にカルリスタの候補を選出する"
- #The Great Wave Achievements
+ # The Great Wave Achievements
  ACHIEVEMENT_achievement_mikasa_es_su_casa: "三笠はあなたの家"
  ACHIEVEMENT_DESC_achievement_mikasa_es_su_casa: "日本として、スペイン語圏文化の国に前ドレッドノート戦艦を売却する。"
  ACHIEVEMENT_achievement_nothing_personnel_kid: "個人的な恨みはないんだ、坊や"

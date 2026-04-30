@@ -364,7 +364,7 @@
  STATE_NIGERIA: "ナイジェリア"
  STATE_EAST_HAUSALAND: "東ハウサランド"
  STATE_KATANGA: "カタンガ"
- STATE_CONGO_ORIENTALE: "東コンゴ" #Congo Orientale
+ STATE_CONGO_ORIENTALE: "東コンゴ" # Congo Orientale
  STATE_KASAI: "カサイ"
  STATE_BAS_CONGO: "バ・コンゴ"
  STATE_EQUATEUR: "エクアトゥール"

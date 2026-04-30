@@ -273,7 +273,7 @@
  DIPLOMATIC_ACCEPTANCE_ACTOR_LIBERTY_DESIRE: "[SCOPE.sCountry('actor').GetNameNoFormatting]の[concept_liberty_desire]により"
  DIPLOMATIC_ACCEPTANCE_TARGET_LIBERTY_DESIRE: "[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]の[concept_liberty_desire]により"
  DIPLOMATIC_ACCEPTANCE_ACTOR_CAPITAL_MARKET_ACCESS: "[SCOPE.sCountry('other_country').GetCapital.GetNameNoFormatting]の[concept_market_access]により"
- #Shared with treaties
+ # Shared with treaties
  DIPLOMATIC_ACCEPTANCE_BASE: "基礎#b 難色#!により"
  DIPLOMATIC_ACCEPTANCE_IDEOLOGICAL_OPINION: "自国[Concept('concept_government','$concept_governments$')]とのイデオロギー類似点から"
  DIPLOMATIC_ACCEPTANCE_ISOLATIONIST: "彼らが#v $ai_strategy_armed_isolationism$#!の[concept_ai_strategy]を追求していることから"
@@ -381,7 +381,7 @@
  WARGOAL_MULT_FROM_UNINCORPORATED_STATE: "対象は[concept_unincorporated_state]です: $EFFECT|%=-$"
  WARGOAL_MULT_FROM_UNINCORPORATED_STATES: "対象には[Concept('concept_unincorporated_state','$concept_unincorporated_states$')]が含まれています: $EFFECT|%=-$"
  WARGOAL_MULT_FROM_OWN_SUBJECT: "[TARGET_COUNTRY.GetName]は[COUNTRY.GetName]の[concept_subject]であるため#v x$EFFECT$#!倍になる"
- #Power Bloc Sacred Civics Principle
+ # Power Bloc Sacred Civics Principle
  DIPLOMATIC_ACCEPTANCE_PRINCIPLE_SACRED_CIVICS: "$principle_group_sacred_civics$ [concept_power_bloc_principle]"
  RELATIONS: "[concept_relations]"
  ATTITUDE: "[concept_attitude]"
@@ -417,7 +417,7 @@
  DIPLO_PACT_RELATIONS_BREAKDOWN_FORMAT: "#header [concept_relations]の進捗#!\n#v あと$DAYS$#!日で[SelectLocalization( LessThan_CFixedPoint( '(CFixedPoint)$PROGRESS_DAILY|5$', '(CFixedPoint)0' ), '#r -', '#g ' )]100%#!\n$TOOLTIP_DELIMITER$\n一日あたりの進捗#v $PROGRESS_DAILY|%2=+$#!。 要因: \n$BREAKDOWN$"
  DIPLO_PACT_RELATIONS_CHANGE_TOTAL: "\n$DESC$、要因: #indent_newline:3 \n$DESC_DETAILS$#!"
  FORCE_REGIME_CHANGE_GOV_PRINCIPLES_DIST_POWER_PROGRESSIVENESS_DIFFERENCE: "#indent_newline:3 [SCOPE.GetRootScope.GetCountry.GetName]と[SCOPE.sC('target_country').GetName] では、[GetLawGroup('lawgroup_governance_principles').GetName]と[GetLawGroup('lawgroup_distribution_of_power').GetName]のカテゴリーにおける[Concept('concept_law','$concept_laws$')]が大きく異なる。\n[SCOPE.GetRootScope.GetCountry.GetName]：[SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_governance_principles').GetName]および[SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]\n[SCOPE.sC('target_country').GetName]：[SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_governance_principles').GetName]および[SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]#!"
- #Unilateral actions
+ # Unilateral actions
  increase_relations: "関係改善"
  increase_relations_action_name: "[concept_relations]を改善する"
  increase_relations_action_propose_name: "[concept_relations]の改善を開始"
@@ -939,8 +939,8 @@
  raise_payments_action_propose_name: "$raise_payments$"
  raise_payments_action_break_name: "従属国の支払額を元に戻す"
  raise_payments_pact_desc: "[SCOPE.GetRootScope.GetDiplomaticPact.GetFirstCountry.GetName]が、[SCOPE.GetRootScope.GetDiplomaticPact.GetSecondCountry.GetName]からの定期支払の増額を要求しています。"
- #raise_payments_propose_name: "$raise_payments$"
- #raise_payments_break_name: "[INITIATOR_COUNTRY.GetName] restores regular payments"
+ # raise_payments_propose_name: "$raise_payments$"
+ # raise_payments_break_name: "[INITIATOR_COUNTRY.GetName] restores regular payments"
  raise_payments_action_notification_break_name: "[INITIATOR_COUNTRY.GetName]が支払額を元に戻しました"
  raise_payments_action_notification_break_desc: "[INITIATOR_COUNTRY.GetName] が[concept_subject]の@arrow_right![concept_overlord]支払額を通常レベルに戻しました。"
  raise_payments_trigger_desc_global: "従属国の支払いを増額しました"

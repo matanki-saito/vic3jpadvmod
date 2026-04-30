@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Landowners IG Traits
+ # Landowners IG Traits
  ig_trait_noblesse_oblige: "ノブレス・オブリージュ"
  ig_trait_noblesse_oblige_desc: "庶民よりも優れた存在である我々には、市井の人々の世話をする義務があります。彼ら自身による組織化の試みは自己破壊的であり、失敗するのは明らかです。"
  ig_trait_family_ties: "家族の絆"
@@ -30,7 +30,7 @@
  ig_trait_fudai_support_desc: "この激動の時代においても、我々はなお忠誠の価値を理解している。我々の務めは、秩序と徳の力を強化しながら、お上に仕えることだ。"
  ig_trait_outspoken_tozama: "物言う外様"
  ig_trait_outspoken_tozama_desc: "#italic 外様#!は政府から重用されてはいないが、我々は貴族として同じ利害を共有している。この差し迫った時代では、彼らの声は我々の声でもある。"
- #Industrialists IG Traits
+ # Industrialists IG Traits
  ig_trait_job_creators: "雇用創出者"
  ig_trait_job_creators_desc: "お金を生み出すには誰かがお金を使わなければなりません。我々の投資に介入しないと政府が約束してくれる限り、経済成長を見据えること以外に我らの利益を投じることはないでしょう。"
  ig_trait_engines_of_progress: "進歩の原動力"
@@ -55,7 +55,7 @@
  ig_trait_responsible_government_desc: "我々の使命は、すべての人々に正義と文明を広めること、そしてもちろん、これを可能にする規則を永遠に存続させることだ。"
  ig_shipping_magnates: "海運業の有力者"
  ig_shipping_magnates_desc: "我が国の産業界のエリートたちは、商船隊や造船所、そして沿岸貿易と先祖代々からの繋がりを持ち、大半の海軍よりも海を熟知している。彼らが上機嫌な時は港が賑わい、市場には商品が溢れ、造船所が眠りにつくことはない。"
- #Armed Forces IG Traits
+ # Armed Forces IG Traits
  ig_trait_patriotic_fervor: "愛国熱"
  ig_trait_patriotic_fervor_desc: "如何に戦略が素晴らしく、どれほど兵器が進歩しても、努力と気合でしか勝てない戦いがあります。国の信条を心の底から信じている兵士たちは勝率の高低にかかわらず勇敢に戦ってくれることでしょう。"
  ig_trait_veteran_consultation: "退役軍人顧問"
@@ -82,7 +82,7 @@
  ig_trait_imperial_service_desc: "我々の軍服を着て国境を広げることは、何百万もの人々が目指す大きな名誉である。常に埋めるべき地位があることは彼らにとって幸運だ。"
  ig_trait_veerta: "ヴィールタ"
  ig_trait_veerta_desc: "我々の軍はインド全土を征服し、あらゆる敵に対して終わりのない勝利の流れを生み出した。我々の勇気と規律は、この名誉の役割が決して終わることがないことを保証する。"
- #Rural Folk IG Traits
+ # Rural Folk IG Traits
  ig_trait_farmers_markets: "産直市場"
  ig_trait_farmers_markets_desc: "近年では我々が生産した物品を必要とする人々に届けることが大きな関心事となっています。環境さえ整っていれば、我々は自らの手で必要とされる場所に品物を届けることができます。"
  ig_trait_honest_work: "誠実な仕事"
@@ -105,7 +105,7 @@
  ig_trait_bazaar_bargains_desc: "我々の町を豊かにし、何マイルも離れたところから観光客を引き寄せるのはバザールだ。繁栄のために追加の組織が必要な場合、それは我々が喜んで支払う代償だ。"
  ig_trait_born_particularists: "農民主義"
  ig_trait_born_particularists_desc: "たとえ新たな国境線が引かれても、新しい地図が作成されても、シュヴァルバッハの農民は自らの土地を、今日に至るまで「カッツェンエルンボーゲン下級伯爵領」と呼んでいる。彼にとって国家とは、学校の教師や税務署のための物に過ぎない。彼らは野心から反抗することはないが、村の慣習が乱されると、記憶に刻まれた頑固さで抵抗する。"
- #Trade Unions IG Traits
+ # Trade Unions IG Traits
  ig_trait_solidarity: "連帯経済"
  ig_trait_solidarity_desc: "働きたいと思う人であれば、誰一人除外されることなく仕事に就くべきです。我々は各人が持つ適正報酬労働の権利を支援します。"
  ig_trait_industrial_organizers: "産業組織者"
@@ -114,7 +114,7 @@
  ig_trait_work_to_rule_desc: "自分たちの待遇を考えるよりも、我々はただ黙って言われたことだけをこなしておけばよい。どうやら経営陣はそう考えているようです。未成熟な労働環境にその哲学を実際に当てはめるとどうなるのか、彼らに思い知らせてあげましょう。"
  ig_trait_bourse_du_travail: "労働取引所"
  ig_trait_bourse_du_travail_desc: "組織作りは終業と共に終わるものではない！一致団結するには、工場の現場だけではなく、家庭や地域社会でも助け合うことが必要なのだ。"
- #Intelligentsia IG Traits
+ # Intelligentsia IG Traits
  ig_trait_propagandists: "宣伝者"
  ig_trait_propagandists_desc: "恵まれない世界の国々に新時代がもたらす恩恵のお手本として、我が国における進歩の達成は何にも増して維持されなければならない。我々の詩、文書、政治的マニフェストにはそう記されています。"
  ig_trait_avant_garde: "アバンギャルド"
@@ -135,7 +135,7 @@
  ig_trait_swaraj_desc: "我々は国家から疎外され、国家によって奴隷化されている。支配者たちは我々に思慮のない奉仕を要求しながら、我々の主体性を否定する。このようなことは失敗に終わる運命にある。そして、必要に応じて、我々は確実に失敗するように仕向けるだろう。"
  ig_trait_westernisation: "西洋化"
  ig_trait_westernisation_desc: "我々の現在の政府は正義と進歩の代表としての役割を果たしているが、我が国の多くの地域は依然として正義から遠ざかっている。我々は国家と国民の隔たりを減らすよう努めなければならない。"
- #Petite-Bourgeoisie IG Traits
+ # Petite-Bourgeoisie IG Traits
  ig_trait_treasury_bonds: "国庫債券"
  ig_trait_treasury_bonds_desc: "政府が間違いなく負債の返済を続けるのであれば、苦労して稼いだお金をこの偉大な国家のために投じる行為は、国のためになるというだけではなく、良好な投資となりえます。"
  ig_trait_middle_managers: "中間管理職"
@@ -166,7 +166,7 @@
  ig_trait_cooperative_agencies_desc: "我々の支配者たちは豊富な資本を持っているが、我が国についての知識はほとんどない。彼らの資源と我々の専門知識を結集すれば、彼らが単独で成し遂げるよりもはるかに祖国を豊かにすることができるかもしれない。"
  ig_trait_biedermanner: "ビーダーマイヤー"
  ig_trait_biedermanner_desc: "秩序を重んじ、礼儀正しく、そして無秩序を何よりも恐れるビーダーマイヤーは、税金を納め、店の経営に精を出し、政治には干渉しない。たとえ窓の外で世界が燃えていようとも。"
- #Devout IG Traits
+ # Devout IG Traits
  ig_trait_be_fruitful_and_multiply: "子孫繫栄"
  ig_trait_be_fruitful_and_multiply_desc: "禁欲主義というものは、神聖なる目的に生涯をささげる人にとっては結構なものですが、一般市民の価値観においては、家族を持ち子供を育てることが人生で最も大切であると考えられています。"
  ig_trait_divine_right: "神授王権"

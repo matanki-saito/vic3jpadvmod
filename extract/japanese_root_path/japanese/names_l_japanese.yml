@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Multi-word names
+ # Multi-word names
  de_Saint-Andre: "ド・サン・タンドレ"
  Le_Bris: "ル・ブリス"
  Le_Mouel: "ル・ミュール"
@@ -633,7 +633,7 @@
  Abd_al-Jalil: "アブドゥル＝ジャリル"
  al-Nasir: "アル＝ナシール"
  al-Mahmudi: "アル＝マフムーディ"
- #Surnames
+ # Surnames
  Vallee: "ヴァリー"
  Calvez: "カルヴェズ"
  Galand: "ガーランド"
@@ -9120,7 +9120,7 @@
  Yeu: "イェウ"
  Yue: "ユエ"
  Nduai: "ドュナイ"
- #First names
+ # First names
  Mordiern: "モリデルン"
  Jakou: "ジャコウ"
  Enzo: "エンツォ"
@@ -12280,7 +12280,7 @@
  Grrgrrr: "グルルガル"
  Rawr: "ラウル"
  Bamse: "バムセ"
- #Historical Character Names
+ # Historical Character Names
  Dost: "ドースト"
  Radetzky: "ラデツキー"
  von_Hess: "フォン・ヘス"
@@ -12331,8 +12331,8 @@
  Wilhelm_II: "ヴィルヘルム2世"
  von_Hesse_Kassel: "フォン・ヘッセン＝カッセル"
  Prince_Friedrich: "フリードリヒ"
- #Prince_Georg: "Prince Georg"
- #Prince_Karl: "Prince Karl"
+ # Prince_Georg: "Prince Georg"
+ # Prince_Karl: "Prince Karl"
  Mehrab_II: "メフラブ2世"
  di_Borbone_Parma: "ディ・ボルボーネ＝パルマ"
  Martin_Perfecto: "マルティン・ペルフェクト"
@@ -14109,7 +14109,7 @@
  Constantine: "コンスタンティン"
  Annabella: "アンナベラ"
  of_Austria-Este: "ダスブルゴ＝エステ"
- von_Osterreich-Este: "フォン・オストライヒ＝エステ" #of Austria-Este
+ von_Osterreich-Este: "フォン・オストライヒ＝エステ" # of Austria-Este
  FitzJames: "フィッツジェームズ"
  of_Galloway: "オブ・ギャロウェイ"
  ShipakA_kamithagI_: "スキパカカミサギ"
@@ -18115,7 +18115,7 @@
  Lalla_Fatma: "ラーラ・ファトマ"
  Sheikh_Mohamed: "シェイク・モハメド"
  Lalla_Aisha: "ラーラ・アイシャ"
- #Placeholder names TODO delete this
+ # Placeholder names TODO delete this
  Zelenogorsk: "ゼレノゴルスク"
  Dunzi: "ドゥンジ"
  Sunsiamo: "スンシャーモ"
@@ -20202,9 +20202,9 @@
  Damodar_Hari: "ダモダール・ハリ"
  Chapekar: "チャペカール"
  Ibsen: "イプセン"
- Erode_Venkatappa: "E.V." #for E. V. Ramasamy
+ Erode_Venkatappa: "E.V." # for E. V. Ramasamy
  Ramasamy: "ラーマサーミ"
- Bhimrao_Ramji: "B.R." #for B. R. Ambedkar
+ Bhimrao_Ramji: "B.R." # for B. R. Ambedkar
  Nana_Saheb: "ナーナー・サーヘブ"
  Nightingale: "ナイチンゲール"
  Einstein: "アインシュタイン"
@@ -21782,7 +21782,7 @@
  Fokker: "フォッカー"
  van_Valkenburg: "ファン・ボールケンブルク"
  van_Tets: "ファン・テッツ"
- den_Tex: "デン・テックス" #Howdy
+ den_Tex: "デン・テックス" # Howdy
  Smits_van_Oyen: "シュミッツ・ファン・オイエン"
  Smits_van_Eckart: "シュミッツ・ファン・エカート"
  van_Slijpe: "ファン・シュライプ"
@@ -21808,7 +21808,7 @@
  Muys_van_Holy: "ムイス・フォン・ホーリ"
  toe_Water: "トゥー・ヴァーター"
  des_Tombe: "デス・トンブ"
- Wttewaall: "ヴィットヴァーアル" #this is the correct spelling, there isn't a misplaced or missing vowel anywhere
+ Wttewaall: "ヴィットヴァーアル" # this is the correct spelling, there isn't a misplaced or missing vowel anywhere
  Gualtherus: "グアルテラス"
  Sebald: "ジーバル"
  Jannetje: "ヤネチェ"

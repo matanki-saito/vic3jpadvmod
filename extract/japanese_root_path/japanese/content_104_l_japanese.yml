@@ -617,7 +617,7 @@
  children_rights_events.3.b: "子どもたちは戻って来ない。慣れた方が良いな。"
  workers_appeased_modifier: "労働者をなだめた"
  confronted_workers_modifier: "労働者と対立した"
- #Antarctica Expedition
+ # Antarctica Expedition
  antarctica_expedition: "南極遠征"
  antarctica_expedition_desc: "技術の奇跡と冒険家たる英雄によってようやく南極大陸の深部へと足を踏み入れることができるかもしれません。競争は始まっています。南極点への一番乗りは我々でなければ！"
  cold.101.t: "南極大陸遠征隊"
@@ -1368,7 +1368,7 @@
  belle_epoque_events.15.d2: "我が国の職人たちが作る完璧な絹のドレスや洒落た宝飾品のイメージに魅せられた女性たちが、我が国のデザイナーの衣服を購入するため、遠く[SCOPE.sCountry('haute_couture_buyer_scope').GetName]から[SCOPE.sCountry('haute_couture_country').GetName]へと旅立つという動きが出始めています。"
  belle_epoque_events.15.f: "最近よく見られるようになったこの光景は、[SCOPE.sState('belle_epoque_state').GetCityHubName]駅の車掌を常に楽しませてくれた。いっぱいになった財布を持ち、不安そうな目をした女性たちが[SCOPE.sCountry('haute_couture_buyer_scope').GetAdjectiveNoFormatting]駅からの列車に乗ってやって来て、数週間後には見事なガウンとすっかり軽くなった財布を持って去っていくのだ。\n\nプラットホームではその両方の集団が入り交じるのだが、無関心な夫たちは目をそらし、一方で妻たちはというと、お互いの趣味の良さを褒め合い、また会おうと約束していた。"
  belle_epoque_events.15.a: "[ROOT.GetCountry.GetName]は世界のファッションの中心地となる。"
- belle_epoque_events.15.b: "これはすべて、デザイナーや職人たちのおかげだ。" #Like that would ever happen.
+ belle_epoque_events.15.b: "これはすべて、デザイナーや職人たちのおかげだ。" # Like that would ever happen.
  modifier_prestigious_fashion_industry: "権威ある服飾業界"
  modifier_recognised_fashion_industry: "ファッション業界の労働者の働きぶりを認識"
  belle_epoque_events.16.t: "グランド・ルー・ド・パリ"

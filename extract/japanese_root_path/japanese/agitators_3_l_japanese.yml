@@ -1,5 +1,5 @@
 ﻿l_japanese:
- #Natural Borders of France
+ # Natural Borders of France
  je_french_natural_borders: "フランスの自然国境"
  je_french_natural_borders_reason: "フランスで再び拡張主義的な傾向が生じている。市民は、あるいは少なくとも声の大きい一部の市民は、国境をライン川のほとりとアルプスの斜面にまで広げることを要求している。"
  own_all_french_homelands: "フランス本国の全州を所有する"
@@ -18,7 +18,7 @@
  natural_borders.3.t: "トリノ条約"
  natural_borders.3.d: "[SCOPE.sCountry('ionian_overlord').GetName]は[SCOPE.sState('savoy_state').GetName]と[SCOPE.sState('nice_state').GetName]を[ROOT.GetCountry.GetName]に譲ることに合意した。"
  natural_borders.3.d2: "[SCOPE.sCountry('ionian_overlord').GetName]は[SCOPE.sState('savoy_state').GetName]を[ROOT.GetCountry.GetName]に譲ることに合意した。"
- natural_borders.3.f: "「政治的必要性、イタリアの将来の緊急性、強力な同盟国に対する感謝の気持ち、そして最後に我が国の例外的な状況という最も強力な動機から、残念ではあるが、我が愛する [SCOPE.sCharacter('savoy_ruler').GetPrimaryRoleTitle]は、長年にわたって我が国と密接に結びついてきた地方を分離することに決めた。すべての反対派は、国の利益と義務の感情の前に抵抗をやめるべきである」" #Treaty of Turin
+ natural_borders.3.f: "「政治的必要性、イタリアの将来の緊急性、強力な同盟国に対する感謝の気持ち、そして最後に我が国の例外的な状況という最も強力な動機から、残念ではあるが、我が愛する [SCOPE.sCharacter('savoy_ruler').GetPrimaryRoleTitle]は、長年にわたって我が国と密接に結びついてきた地方を分離することに決めた。すべての反対派は、国の利益と義務の感情の前に抵抗をやめるべきである」" # Treaty of Turin
  natural_borders.3.a: "サヴォイを迅速に併合せよ。"
  natural_borders.3.b: "国民を安心させるために、国民投票を実施せよ。"
  france_natural_borders_pursuit: "自然国境の追求"
@@ -32,7 +32,7 @@
  sell_savoy_desc: "サヴォイ地方は我が国とフランスとの間で争点となっている。もし我々がサヴォイを割譲するのであれば、フランスはきっと我々に借りを作ったと考えるだろう。"
  at_peace_nocontext_tt: "平和裏に"
  relations_amicable_nocontext_tt: "関係は友好以上"
- #Coup!
+ # Coup!
  je_coup: "クーデター！"
  je_coup_reason: "[SCOPE.gsInterestGroup('golpista_ig').GetName]は、民主的な制度に対するクーデターを計画しており、政府を掌握して自分たちの狙いにより友好的な政権を樹立させようと画策しています。"
  je_coup_goal: "[SCOPE.gsInterestGroup('golpista_ig').GetName]は、クーデターを実行するための準備をしている"
@@ -78,14 +78,14 @@
  modifier_insurrectionary_politician: "反乱のリーダー"
  modifier_threatened_insurrection: "反乱に対する団結"
  modifier_brewing_insurrection: "反乱の醸成"
- #Royal Marriage
+ # Royal Marriage
  wedding.2.t: "配偶者を捜索"
  wedding.2.d: "[SCOPE.sCharacter('royal_marriage_character').GetPrimaryRoleTitle][SCOPE.sCharacter('royal_marriage_character').GetFullName]はそれなりに優れた出自のパートナーとの出会いを求めています。"
  wedding.2.f: "「お母さん、どうして私は [SCOPE.sCharacter('royal_marriage_character').GetPrimaryRoleTitle] と結婚できないのでしょう？なぜ[SCOPE.sCharacter('royal_marriage_character').GetSheHe]は外国の紳士と結婚しなければならないのですか？」\n\n「私たちは平民なのよ、あなた。偉い人たちが私たちのところに現れることはないでしょう」"
  wedding.2.a: "[SCOPE.sCountry('marriage_country_1').GetAdjective]家のメンバーで、[SCOPE.sCharacter('foreign_ruler_1').GetLastName]がふさわしいだろう。"
  wedding.2.b: "[SCOPE.sCountry('marriage_country_2').GetName]の[SCOPE.sCharacter('foreign_ruler_2').GetPrimaryRoleTitle]には適当な親族がいるはずだ。"
  wedding.2.c: "[SCOPE.sCountry('marriage_country_3').GetAdjective]の王室は、素晴らしい相手だろう。"
- #Abdication event
+ # Abdication event
  wedding.3.t: "退位"
  wedding.3.d1: "[ROOT.GetCountry.GetName]の[SCOPE.gsInterestGroup('monarch_ig').GetName]が不利な政治状況に激怒した[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName]は、[SCOPE.sCharacter('abdicating_monarch').GetHerHis]の後継者である[SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]を退位させることを決めた。"
  wedding.3.d2: "[SCOPE.sCharacter('abdicating_monarch').GetHerHis]の[concept_popularity]の欠如が[SCOPE.sLaw('monarchy_law').GetName]の制度にとって良いどころか害になっているかもしれないと気づき、[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFirstName]は退任して[SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('heir_scope').GetFullName]にその座を譲ることを決意した。"
@@ -93,13 +93,13 @@
  wedding.3.f: "「彼らは [SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle]が狂ってしまったと言っている。馬と結婚しようとしたとかなんとか」\n\n「[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]を何だと思ってるんだ？これは、明らかに [SCOPE.gsInterestGroup('monarch_ig').GetNameNoFormatting] の状況に関係する、より高次の問題だ」\n\n「そんなに複雑なことじゃあないさ。みんな[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle]を嫌っているから、彼は去らなければならないんだ。単純な民主主義だ」"
  wedding.3.a: "プライベートで、整えられた戴冠式を開催しよう。"
  wedding.3.b: "大規模な公開戴冠式を開催しよう。"
- #New Pop Support Weights
+ # New Pop Support Weights
  ALL_POPS: "[Concept('concept_pop', '$concept_pops$')]"
  POP_ATHEISTS: "無神論者"
  POP_MIDDLE_STRATA: "[concept_middle_strata]"
  POP_LOWER_STRATA: "[concept_lower_strata]"
  POP_UNEMPLOYED_STATE: "[Concept('concept_state', '$concept_states$')]に暮らしている[Concept('concept_unemployed','$concept_unemployment$')]の高い[Concept('concept_pop', '$concept_pops$')]"
- #French Foreign Legion
+ # French Foreign Legion
  je_french_foreign_legion: "フランス外人部隊"
  je_french_foreign_legion_reason: "我々がアフリカを支配しようとするならば、アフリカ大陸に恒久的な軍事的プレゼンスを確立しなければならない。この軍隊は、現地の人々や、外国の勇敢な、あるいは絶望的な兵士から集めなければならないことを受け入れる覚悟が必要である。"
  algeria_events.9.t: "フランス外人部隊"
@@ -110,9 +110,9 @@
  french_foreign_legion_ig: "名誉と忠実。"
  french_foreign_legion_recruitment: "この軍団が我らが国だ。"
  legion_headquarters: "軍団本部"
- #Exile health modifier
+ # Exile health modifier
  in_exile_modifier: "亡命中"
- #French monarchy interactions, buttons, etc
+ # French monarchy interactions, buttons, etc
  sway_to_bonapartism: "ボナパルティズムへの揺らぎ"
  sway_to_bonapartism_desc: "賄賂と説得をうまく組み合わせれば、正当な王位継承候補を支持するように政治家を説得できるかもしれません。"
  supporting_bonapartist_tt: "キャラクターインタラクション「ボナパルティズムへの揺らぎ」が利用可能になる"
@@ -149,7 +149,7 @@
  status_throne_challenged_fra: "[ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')]家は[ROOT.GetCountry.GetCustom('french_leading_dynasty_name')]によって脅かされています"
  status_no_dynasty_fra: "どの王位継承者も優位に立っていません"
  status_dynasty_cementing_fra: "優位に立つ[ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')]家がその支配を固めつつあります"
- #Repatriate Agitator interaction
+ # Repatriate Agitator interaction
  return_to_home_country: "扇動者の送還"
  return_to_home_country_desc: "#lore [Character.GetFullName]を我々の[Concept('concept_rivalry','$concept_rival$')]のもとに送還します#!"
  exiles_events.100.t: "送還"
@@ -159,13 +159,13 @@
  exiles_events.100.b: "よくぞ帰った！"
  repatriated_agitator: "送還された扇動者"
  exiling_dissident_radicals_factors: "[Concept('concept_radical','$concept_radicals$')]の生成量は、言論の自由の[Concept('concept_law', '$concept_laws$')]と、[concept_character]の[concept_popularity]によって決まります"
- #Positivist Ideology
+ # Positivist Ideology
  ideology_positivist: "実証主義者"
  ideology_positivist_desc: "このキャラクターは熱心な技術主義者かつ反教権主義者であり、君主の恣意的な権力と大衆の気まぐれの両方を軽蔑しています。"
- #Technocracy Law
+ # Technocracy Law
  law_technocracy: "技術家政治"
  law_technocracy_desc: "この国家は、理性と能力を備え、選挙では選出されていない者たちで構成された評議会によって統治されます。"
- #Technocracy law events
+ # Technocracy law events
  technocracy.1.t: "公衆の面前での暴言"
  technocracy.1.d: "事業において何度もまずい判断を下したのち、[SCOPE.sCharacter('technocrat_leader').GetFullName]はタブロイド紙で自らを非難する者たちに怒りをぶつけました。この暴言により、[SCOPE.sCharacter('technocrat_leader').GetHerHis]の評判は地に落ち、[GetLawType('law_technocracy').GetName]への支持が痛手を被ることとなりました。"
  technocracy.1.f: "「この呪われた者たちの劇場では、低俗な情熱が称えられる！無知蒙昧な野蛮さと、禁欲的なポピュリズムの時代だ。ごく少数の啓蒙者たちの慈悲深い支配を拒めるのは、真に狂った者だけだ。貴様らはみな迷える羊なのだ！その壮大さにすべてが震えるほどの理想郷的な母体の恩恵を、私と仲間が享受している間、お前たちはそこに留まっていればよいのだ。そしてお前たちは、どうか仲間に加えてくれと#bold 懇願#!するだろう！私の言葉をよく覚えておくがいい！」"
@@ -191,7 +191,7 @@
  technocracy_debate_enactment: "技術家政治論争"
  anti_aristocratic_sentiment: "反貴族的思想"
  ATHEIST_CLERGYMEN: "無神論者の[concept_religion]を有することから"
- #1.3.3
+ # 1.3.3
  rally_against_france: "反フランスへの結集"
  natural_borders.4.t: "ライン川の監視"
  natural_borders.4.d: "[SCOPE.sCountry('france_scope').GetName]がサヴォイからライン川まで国境を広げるという野望を明らかにした。これにより、[SCOPE.sState('french_claim_state').GetName]への侵略の可能性が非常に高まっている。"

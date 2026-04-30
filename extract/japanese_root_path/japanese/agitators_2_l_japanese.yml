@@ -88,7 +88,7 @@
  vanquished_barbary: "征服されたバーバリー"
  algeria_events.2.t: "[SCOPE.sCharacter('cremieux_decree_leader_scope').GetLastNameNoFormatting]令"
  algeria_events.2.d: "彼らの窮状に同情し、[SCOPE.sCharacter('cremieux_decree_leader_scope').GetInterestGroup]のリーダー、[SCOPE.sCharacter('cremieux_decree_leader_scope').GetFullName]は、アルジェリアの先住民[SCOPE.sPop('cremieux_decree_pop_scope').GetReligion.GetName]に、市民権を与えることを提案した。"
- algeria_events.2.f: "第136号 - アルジェリアの先住ユダヤ人を[ROOT.GetCountry.GetAdjectiveNoFormatting]市民と宣言する。\n\nアルジェリアの各県の先住ユダヤ人を [ROOT.GetCountry.GetAdjectiveNoFormatting] 市民と宣言する。したがって、彼らの実際の地位および個人的地位は、この法令が発布された後、 [ROOT.GetCountry.GetAdjectiveNoFormatting]法に則って解決され、今日までに取得した権利は不可侵のままでとなる。\nこれに反するいかなる立法規定、法令、規則または条例も廃止する。\n\n[SCOPE.sState('cremieux_decree_sign_state_scope').GetCityHubName]にて発行\n署名：[SCOPE.sCharacter('cremieux_decree_leader_scope').GetFullNameNoFormatting]" #Approximate wording of Crémieux Decree
+ algeria_events.2.f: "第136号 - アルジェリアの先住ユダヤ人を[ROOT.GetCountry.GetAdjectiveNoFormatting]市民と宣言する。\n\nアルジェリアの各県の先住ユダヤ人を [ROOT.GetCountry.GetAdjectiveNoFormatting] 市民と宣言する。したがって、彼らの実際の地位および個人的地位は、この法令が発布された後、 [ROOT.GetCountry.GetAdjectiveNoFormatting]法に則って解決され、今日までに取得した権利は不可侵のままでとなる。\nこれに反するいかなる立法規定、法令、規則または条例も廃止する。\n\n[SCOPE.sState('cremieux_decree_sign_state_scope').GetCityHubName]にて発行\n署名：[SCOPE.sCharacter('cremieux_decree_leader_scope').GetFullNameNoFormatting]" # Approximate wording of Crémieux Decree
  algeria_events.2.a: "承認だ。神は、我々がこの地域に親愛を施すことを知っておられる。"
  algeria_events.2.b: "否認だ。これでは船が揺れすぎてしまう。"
  algeria_events.3.t: "アルジェリアの大失敗"
@@ -99,7 +99,7 @@
  widespread_condemnation_modifier: "広範な非難"
  algeria_events.4.t: "フランス領アルジェリア"
  algeria_events.4.d: "数十年にわたる苦闘が実を結んだ。かつて農民や奴隷が東洋の専制君主の下で労働していた場所に、[ROOT.GetCountry.GetAdjectiveNoFormatting]文明の光明が新しい土地、そう我らの土地を照らし出したのだ。"
- algeria_events.4.f: "アルジェリアとその店々に対する哀悼を\nその痕跡はもはや存在しない！\n忌まわしき者どもが犯したこの不義よ！\n市場とされたアル・カイサリヤにて\n聖典が綴じられ売られていたとは嘆かわしい\nやつらは我らが父祖の墓を荒らし\n骨をばらまいたのだ\n荷馬車で踏みつけにするために。" #Traditional Algerian song/poem
+ algeria_events.4.f: "アルジェリアとその店々に対する哀悼を\nその痕跡はもはや存在しない！\n忌まわしき者どもが犯したこの不義よ！\n市場とされたアル・カイサリヤにて\n聖典が綴じられ売られていたとは嘆かわしい\nやつらは我らが父祖の墓を荒らし\n骨をばらまいたのだ\n荷馬車で踏みつけにするために。" # Traditional Algerian song/poem
  algeria_events.4.a: "バーバリー・コーストに文明がやってきた。"
  algeria_events.4.b: "アルジェリアはシャンパーニュのようなフランスになる。"
  algeria_events.4.c: "[ROOT.GetCountry.GetNameNoFormatting]が求めるものを、アルジェリアは提供しなければならない。"
@@ -144,7 +144,7 @@
  barbary_pirates_modifier: "コルセアの遺産"
  dyn_c_regency_of_algiers: "アルジェの摂政"
  dyn_c_regency_of_algiers_adj: "アルジェリア"
- dyn_c_barbary: "バーバリー" #Alt. Tamazgha, but that is a very modern term
+ dyn_c_barbary: "バーバリー" # Alt. Tamazgha, but that is a very modern term
  dyn_c_barbary_adj: "バーバリー"
  dyn_c_maghreb: "マグレブ"
  dyn_c_maghreb_adj: "マグリブ"
@@ -158,7 +158,7 @@
  custom_ship_charles_martel: "シャルル・マルテル"
  custom_ship_potemkin: "ポチョムキン"
  custom_ship_gangut: "ガングート"
- #Dreyfus Affair
+ # Dreyfus Affair
  je_dreyfus_affair: "ドレフュス事件"
  je_dreyfus_affair_reason: "「私は弾劾する」の出版以来、フランスの社会的、政治的構造を引き裂こうとする不和が拡大している。一人の男の無実をめぐる議論から始まったこの論争は、今やはるかに大きな次元に達している。\n\n君主主義者と共和主義者、自由主義者と保守主義者、敬虔なカトリック教徒と世俗主義者が対立している。そしてそのすべてが、1つの#bold 問い#!への答えを見出そうとしているのだ。すなわち、この国はセントルイスのフランスなのか、それともヴォルテールのフランスなのか。"
  je_dreyfus_status: "現在の事件の強度は、[SCOPE.GetRootScope.GetCountry.GetCustom('dynamic_dreyfus_case_strength')]です。"
@@ -261,20 +261,20 @@
  dreyfus_legacy_disc_modifier: "未解決事件"
  dreyfus.9.t: "[SCOPE.sCharacter('ferdinand_esterhazy_scope').GetLastNameNoFormatting]がインタビューで罪の意識を認めている。"
  dreyfus.9.d: "[SCOPE.sCharacter('ferdinand_esterhazy_scope').GetFullName]が地元ジャーナリストとのインタビューの中で、[SCOPE.sCountry('ferdinand_esterhazy_country_scope').GetNameNoFlag]に亡命中、多くの人から [SCOPE.sCharacter('alfred_dreyfus_scope').GetLastName]事件の真犯人として多くの人に疑われていたが、どうやら[SCOPE.sCharacter('ferdinand_esterhazy_scope').GetHerHis]の罪を認め、彼が覚書の真の作者と告白しているようだ。"
- dreyfus.9.f: "「今日亡くなったサンデール大佐の依頼で覚書を書きました。サンデール大佐が亡くなったのは不幸なことです、彼はその事実を知っていたのですから。しかし、証人がいなくなろうとも、その覚書を書いたのが私であることは証明できる。\n\nこの覚書は、[SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]の有罪を物質的に証明するために使われる予定でした。情報局は[SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]に対して、道徳上の証明しか集めることができませんでした。しかし、フランスのスパイサービスを通じて、[SCOPE.sCountry('dreyfus_rival_country_scope').GetAdjectiveNoFormatting]参謀本部が[SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]にしか伝えられない文書を保有していたことは知られていました」" #Approx. quote from interview with Esterhazy
+ dreyfus.9.f: "「今日亡くなったサンデール大佐の依頼で覚書を書きました。サンデール大佐が亡くなったのは不幸なことです、彼はその事実を知っていたのですから。しかし、証人がいなくなろうとも、その覚書を書いたのが私であることは証明できる。\n\nこの覚書は、[SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]の有罪を物質的に証明するために使われる予定でした。情報局は[SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]に対して、道徳上の証明しか集めることができませんでした。しかし、フランスのスパイサービスを通じて、[SCOPE.sCountry('dreyfus_rival_country_scope').GetAdjectiveNoFormatting]参謀本部が[SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]にしか伝えられない文書を保有していたことは知られていました」" # Approx. quote from interview with Esterhazy
  dreyfus.9.a: "[SCOPE.sCharacter('alfred_dreyfus_scope').GetLastNameNoFormatting]の事件に光が灯った。"
  dreyfus.9.b: "[SCOPE.sCountry('ferdinand_esterhazy_country_scope').GetAdjectiveNoFormatting]に不和を招くための嘘以外の何物でもない。"
  dreyfus.9.c: "この事件は、今や「真実」よりも大きなものだ。この告白に耳を傾けてはならない。"
  dreyfus_truth_relative: "無視された証拠"
  dreyfus_truth_relative_positive: "無視された証拠"
  dreyfus_aknowledged_evidence: "認識された証拠"
- #Slave Revolt Events
+ # Slave Revolt Events
  slave_revolt_events.1.t: "自由の憲法"
  slave_revolt_events.1.d: "何世紀もの間、[SCOPE.sCulture('freed_slave_culture_scope').GetName]の人々は、自由を切望しながら、鞭の軛の下で苦労してきた。独立した[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]の設立により、その淡い希望は今や現実のものとなり、自由憲法に関する提案が[SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle]に対して提示された。"
  slave_revolt_events.1.f: "(1) [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]に居住する人々は、ここに、宇宙の他のいかなる権力からも主権的かつ独立した自由国家を形成することに同意する。\n\n (2)[SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]の領域内のすべての住民は完全に正しい自由人となる。\n\n (3) [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting]における奴隷は永遠に廃止される。"
  slave_revolt_events.1.a: "奴隷制からの解放は、憲法に明記されるべきだ。"
  slave_revolt_events.1.b: "では、誰が畑を耕すのだろうか？"
- #Revolution events
+ # Revolution events
  revolution_pulse2_events.1.t: "国家の利益のため"
  revolution_pulse2_events.1.d: "政府は、近年の軍事的進歩についての最新情報を把握することの重要性を強調し、[SCOPE.sCountry('fact_finding_mission_country_scope').GetName]での軍事的実態調査任務に[SCOPE.sCharacter('army_lad_leader_scope').GetFullName]を派遣することを提案しました。けんかっ早い将軍を、反乱の兆候を見せつつある[SCOPE.sCharacter('army_lad_leader_scope').GetHerHis]支持者から引き離そうという目論みであるのは明白です。"
  revolution_pulse2_events.1.f: "鏡の曇りが消えたその瞬間、政府が頼んでいることは砂漠で雪を探せと言っているのと同じことなのだということに[SCOPE.sCharacter('army_lad_leader_scope').GetHerHim]は気づいた。そのことにもっと早く気づいていれば、断ることができたかもしれない。だが今それを言ったところで、自分が愚か者だと思われるだけだった。"
@@ -301,7 +301,7 @@
  transnational_bloody_suppression: "流血を伴う抑圧"
  revolution_pulse2_events.4.t: "[SCOPE.sState('company_store_strike_state').GetNameNoFormatting]を襲うスクリップに対する抗議"
  revolution_pulse2_events.4.d: "[SCOPE.sState('company_store_strike_state').GetName]の大規模な[SCOPE.sBuilding('company_store_strike_building').GetName]で働く労働者たちが、その企業の店舗でのみ使用可能な通貨である「スクリップ」で賃金を支払うという制度に抗議し、論争の的となっている店に火をつけ、会社の本部に向かって抗議行進を行い、賃金を現金で支払うよう求める暴動を始めました。"
- revolution_pulse2_events.4.f: "「16トンも積み込んで、得たものは何だ？\nまた1日歳を取り、借金はさらに増える\n聖ピーターよ、俺を呼んでもそっちには行けないぞ\n俺の魂は会社のものだから」" #Lyrics of Sixteen Tons by Merle Travis
+ revolution_pulse2_events.4.f: "「16トンも積み込んで、得たものは何だ？\nまた1日歳を取り、借金はさらに増える\n聖ピーターよ、俺を呼んでもそっちには行けないぞ\n俺の魂は会社のものだから」" # Lyrics of Sixteen Tons by Merle Travis
  revolution_pulse2_events.4.a: "なにで支払うかは会社が決めることだ。暴動を解散させろ。"
  revolution_pulse2_events.4.b: "火に油を注ぐはよそう。労働者の要求には一理ある。"
  revolution_pulse2_events.4.tt: "現金の代わりに企業の独自通貨で賃金を支払うことを禁じる法案を制定する。"
@@ -343,7 +343,7 @@
  revolution_pulse2_events.10.b: "田園地方ではなく、都市部を捜索しろ。"
  modifier_scouring_countryside: "田園地方での捜索"
  modifier_scouring_cities: "都市部での捜索"
- #Custom professions
+ # Custom professions
  custom_profession_hatmaker: "帽子職人"
  custom_profession_watchmaker: "時計職人"
  custom_profession_fishmonger: "魚屋"
@@ -351,7 +351,7 @@
  custom_profession_smith: "鍛冶屋"
  custom_profession_brewer: "醸造家"
  custom_profession_tailor: "仕立職人"
- #Land ownership law events
+ # Land ownership law events
  land_ownership_law_events.1.t: "[SCOPE.sState('homesteading_act_state_scope').GetNameNoFormatting]のホームステッド法"
  land_ownership_law_events.1.d: "[SCOPE.sState('homesteading_act_state_scope').GetName]の一等地は、自分たちのような高潔なるヨーマンが開拓すべきであると主張する[SCOPE.sLaw('current_law_scope').GetName]の法律案は、辺境での好機を狙っている[SCOPE.gsInterestGroup('rural_folks_scope').GetName]のメンバーの間で人気が高まっており、現在農業分野を支配している[SCOPE.gsInterestGroup('landowners_scope').GetName]は大いに悔しがっています。"
  land_ownership_law_events.1.f: "庁舎では何日にもわたって議論が繰り広げられた。この先祖代々の遺産や、自然権を主張するのと同じように、非難が飛び交った。窃盗、不法占拠、不法所持が武器として用いられた。そして盾となったのは、血縁の権利、家族の名前、そして最初に見つけた者を利する、ほぼ誰も知らない条例であった。"
@@ -433,7 +433,7 @@
  legal_jargon_complicates_reform: "法律の専門用語により改革が混迷"
  the_return_of_the_good_old_days: "古き良き時代の再来"
  anti_feudal_opposition: "新封建制の拒絶"
- #Garibaldi Events
+ # Garibaldi Events
  garibaldi_popularity_modifier_tier_1: "未検証の理想主義"
  garibaldi_popularity_modifier_tier_2: "ガウチョ"
  garibaldi_popularity_modifier_tier_3: "獅子"
@@ -441,32 +441,32 @@
  garibaldi_popularity_modifier_tier_5: "二つの世界の英雄"
  garibaldi_events.1.t: "ガリバルディの尽力"
  garibaldi_events.1.d: "[SCOPE.sCountry('garibaldi_spawn_foe_scope').GetName]に対する我々の戦いが正当なるものであると考えた、イタリアの革命家で国家主義者の[SCOPE.sCharacter('garibaldi_scope').GetFullName]は、我々の大義に賛同し、将軍として手助けしようと申し出ています。"
- garibaldi_events.1.f: "「私が提供するのは、賃金や営舎、食料ではない。\n私が提供するのは、飢え、渇き、強行軍、戦闘、そして死だ。\n口先だけでなく、心の底から国を愛する者は、私に従え」" #Garibaldi
+ garibaldi_events.1.f: "「私が提供するのは、賃金や営舎、食料ではない。\n私が提供するのは、飢え、渇き、強行軍、戦闘、そして死だ。\n口先だけでなく、心の底から国を愛する者は、私に従え」" # Garibaldi
  garibaldi_events.1.a: "[SCOPE.sCharacter('garibaldi_scope').GetFullName]に我々の軍を率いてもらおう。"
  garibaldi_events.1.b: "兵を煽って何をするかわからんやつに用などない。"
  rejected_garibaldi_modifier: "ガリバルディの援助を拒否"
  garibaldi_events.2.t: "別れを告げるガリバルディ"
  garibaldi_events.2.d_1: "[SCOPE.sCountry('garibaldi_italian_nation_scope').GetName]と[SCOPE.sCountry('garibaldi_foreign_nation_scope').GetName]の間で戦闘が勃発したことにより、[SCOPE.sCharacter('garibaldi_scope').GetFullName]はイタリアの敵に立ち向かうため、[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]を去ることにしました。"
  garibaldi_events.2.d_2: "[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]に平和が訪れ、暴君との戦いがひとまずは終わりを迎えたため、[SCOPE.sCharacter('garibaldi_scope').GetFullName]は戦う価値のある別の目的を求めてこの国を離れることにしました。"
- garibaldi_events.2.f: "「イタリアの自由のため戦う兄弟がいるのであれば、我々はそこに駆けつけなければならない」" #Garibaldi
+ garibaldi_events.2.f: "「イタリアの自由のため戦う兄弟がいるのであれば、我々はそこに駆けつけなければならない」" # Garibaldi
  garibaldi_events.2.a: "ご武運を、[SCOPE.sCharacter('garibaldi_scope').GetLastName]将軍。"
  garibaldi_events.3.t: "イタリア義勇軍"
  garibaldi_events.3.d: "[SCOPE.sCountry('italian_legion_foe_scope').GetAdjective]の圧政に対する戦いに加わるため、[SCOPE.sState('italian_legion_state_scope').GetName]は[SCOPE.sState('italian_legion_state_scope').GetName]にいるイタリアの人々に呼びかけ、志を共にする同胞で構成された軍を組織しています。"
- garibaldi_events.3.f: "「我が仲間たちよ！\n我らの数は少なく、敵は多数だ。\nより輝かしい勝利が得られるだろう。\nしっかりと構え、やつらが接近するまで射撃はするな。\nその時が来たら撃つのだ！\nそして銃剣を構え突撃せよ！」" #Garibaldi
+ garibaldi_events.3.f: "「我が仲間たちよ！\n我らの数は少なく、敵は多数だ。\nより輝かしい勝利が得られるだろう。\nしっかりと構え、やつらが接近するまで射撃はするな。\nその時が来たら撃つのだ！\nそして銃剣を構え突撃せよ！」" # Garibaldi
  garibaldi_events.3.a: "彼らの技術と熱意は、戦場で必要になるだろう。"
  garibaldi_events.3.b: "彼らの専門知識を活かし、陸軍にもっと人を引き入れて訓練するんだ。"
  italian_legion_barracks_modifier: "イタリア軍の兵舎"
  italian_legionaries_modifier: "イタリア軍の義勇兵"
  garibaldi_events.4.t: "ガリバルディ、農民を奮い立たせる"
  garibaldi_events.4.d: "平民の心を動かす[SCOPE.sCharacter('garibaldi_scope').GetFullName]の能力は[SCOPE.sCountry('garibaldi_peasants_foe_scope').GetAdjective]との戦いで役に立っているものの、彼の過激な演説により[SCOPE.sState('garibaldi_peasants_state_scope').GetName]の[GetPopType('farmers').GetName]が我々の支配にも背き始めたため、政府の大臣の何人かが、彼を黙らせるよう要求しています。"
- garibaldi_events.4.f: "「農民が真実を学んだその時、暴君と奴隷はこの世界に存在し得なくなる」" #Garibaldi
+ garibaldi_events.4.f: "「農民が真実を学んだその時、暴君と奴隷はこの世界に存在し得なくなる」" # Garibaldi
  garibaldi_events.4.a: "彼はこの戦いにおいてあまりにも重要だ。敵対することは避けよう。"
  garibaldi_events.4.b: "声を落とすよう彼に命令しろ。"
  emboldened_peasantry_modifier: "奮い立つ農民たち"
- #Luddite Law Events
+ # Luddite Law Events
  luddite_law_events.1.t: "機械の中のダーウィン"
  luddite_law_events.1.d: "[SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName][SCOPE.GetRootScope.GetCountry.GetCustom ('generic_newspaper_type')]に掲載された記事が、国内の文壇で話題になり、[SCOPE.sLaw('current_law_scope').GetName]に関する継続中の論争を紛糾させている。機械は進化し続ける機械生命体であるとし、人類が慎重に行動しなければ、いつか機械が人間を支配する種に取って代わるかもしれないと警告しているのだ。"
- luddite_law_events.1.f: "「私たちは、この問いに言及しよう。地球の覇権を握る人間の次の後継者は、どのような生物になりそうなのか。時にこのような議論を耳にする。私達は、自分自身で後継者を作っているのではないかと。\n\n日々、機械は私たちの上に立ち、日ごとに私たちは機械に従属するようになっている。より多くの人間が、日々、機械の世話をする奴隷として拘束され、より多くの人間が、日々、機械生活の発展に全人生のエネルギーを捧げている。\n\n結果が出るのは時間の問題だ」" #Darwin among the Machines by Samuel Butler
+ luddite_law_events.1.f: "「私たちは、この問いに言及しよう。地球の覇権を握る人間の次の後継者は、どのような生物になりそうなのか。時にこのような議論を耳にする。私達は、自分自身で後継者を作っているのではないかと。\n\n日々、機械は私たちの上に立ち、日ごとに私たちは機械に従属するようになっている。より多くの人間が、日々、機械の世話をする奴隷として拘束され、より多くの人間が、日々、機械生活の発展に全人生のエネルギーを捧げている。\n\n結果が出るのは時間の問題だ」" # Darwin among the Machines by Samuel Butler
  luddite_law_events.1.a: "機械が私たちに取って代わることはないだろう。"
  luddite_law_events.1.b: "どうやら彼の暗いスタジオに長居しすぎたようだな。"
  luddite_law_events.1.c: "魅力的なアイデアだ。本当に、とても魅力的だ。"
@@ -474,7 +474,7 @@
  time_to_go_outside_modifier: "外へ出よ"
  luddite_law_events.2.t: "シンプルな生活"
  luddite_law_events.2.d: "[SCOPE.gsInterestGroup('simple_living_ig_scope').GetName]のリーダーである[SCOPE.sCharacter('simple_living_leader_scope').GetFullName]は、根っからの反近代主義者である。 その人物が[SCOPE.sLaw('current_law_scope').GetName]の提案を称賛し、[SCOPE.sCulture('simple_living_primary_culture_scope').GetName]が人々を近代化の退廃的行進から遠ざけて、優しき[SCOPE.GetRootScope.GetCountry.GetCustom('GetDivinity')]の胸中に戻ろうと主張している。"
- luddite_law_events.2.f: "「現代の人々は、自分たちが世界に課している改造の範囲がますます広がっていることを自慢しているが、その結果、すべてのものがそれによってますます人工的になっている」" #René Guénon
+ luddite_law_events.2.f: "「現代の人々は、自分たちが世界に課している改造の範囲がますます広がっていることを自慢しているが、その結果、すべてのものがそれによってますます人工的になっている」" # René Guénon
  luddite_law_events.2.a: "[SCOPE.sCharacter('simple_living_leader_scope').GetHerHis|U]言葉には価値があり、我々の目標は一致している。"
  luddite_law_events.2.b: "娯楽に熱狂するな。"
  a_zealot_scorned_modifier: "蔑まれた狂信者"
@@ -483,13 +483,13 @@
  widespread_dogmatic_intolerance: "教義敵不寛容の拡散"
  luddite_law_events.3.t: "技術恐怖症の流行"
  luddite_law_events.3.d: "[SCOPE.sState('technophobic_fury_state_scope').GetName]の[SCOPE.sBuilding('technophobic_fury_building_scope').GetName]における特定作業の自動化の可能性に対する抗議として始まったものが瞬く間に急進化した。槌を持った現場監督が工場現場のドアの鍵を開けたことがそのきっかけだった。壊れた機械や骨折の話は瞬く間に[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]に広がり、[SCOPE.sLaw('current_law_scope').GetName]に関する議論を不穏なものとしている。"
- luddite_law_events.3.f: "「俺たちが織る網が完成する時、\n剣がシャトルと交換される時、\n俺たちは経帷子をはためかせる\n専制君主を足元に横たえ\nその血で深く染めるのさ」" #Song for the Luddites, Lord Byron
+ luddite_law_events.3.f: "「俺たちが織る網が完成する時、\n剣がシャトルと交換される時、\n俺たちは経帷子をはためかせる\n専制君主を足元に横たえ\nその血で深く染めるのさ」" # Song for the Luddites, Lord Byron
  luddite_law_events.3.a: "不幸な事件、不幸な時期。"
  luddite_law_events.3.b: "暴徒と首謀者の両方を逮捕せよ。彼らは我々の代表ではない。"
  rage_against_the_machine_modifier: "機械への怒り"
  anti_worker_crackdowns_modifier: "工場の崩壊"
  a_reputation_for_violence_modifier: "暴力的な評価"
- #Exile Agitator Events
+ # Exile Agitator Events
  yeet_agitator_events.1.t: "不毛の地"
  yeet_agitator_events.1.d: "政治的盟友とされていた者たちと[ROOT.GetCountry.GetAdjectiveNoFlag]の国民の両方が自らの考えを受け入れず、それによって苛立った[SCOPE.sCharacter('yeeted_agitator_scope_1').GetFullName]は政界から引退することを決意し、怒りを抱えながら、起こり得たであろう未来について執筆することに残りの人生を費やすことにしました。"
  yeet_agitator_events.1.f: "「あの田舎者どもに真実を教えて、私は何を得た？\n耳をつんざくような沈黙だ！\nなのにやつらは[ROOT.GetCountry.GetCapital.GetCityHubName]を思索の街と呼ぶのか？#italic 文化#!を育む街だと？\n掃き溜めのような街で育まれるものなどない。唯一見つけられたのは街の外の畑で取れた作物ぐらいで、#italic それさえも#!手入れがなってなかった。\nせいせいしたよ！\nもう貴様らと顔を合わせずに済むのだからな！」"
@@ -515,7 +515,7 @@
  yeet_agitator_events.3.b: "[SCOPE.sCharacter('yeeted_agitator_scope_3').GetHerHis]の思い出を称えようじゃないか。[ROOT.GetCountry.GetCapital.GetCityHubName]に胸像を作るというのはどうだ？"
  agitator_legacy_modifier: "扇動の遺産"
  honouring_agitator_modifier: "胸を張る展示品"
- #Paris Commune ( Written by Jade)
+ # Paris Commune ( Written by Jade)
  commune_progress_subtract_5: "#bold パリ・コミューン#!の進捗が#bold 5#!ポイント#bold 減少#!します"
  commune_progress_add_5: "#bold パリ・コミューン#!の進捗が#bold 5#!ポイント#bold 増加#!します"
  paris_commune_pulse_events.1.t: "教会と国家の掌握"
@@ -561,7 +561,7 @@
  accusations_of_hysterical_mania_modifier: "熱狂への非難"
  paris_commune_pulse_events.5.t: "敵の戦闘員"
  paris_commune_pulse_events.5.d: "ヴェルサイユの政府は[SCOPE.gsInterestGroup('armed_forces_scope').GetName]に対し、捕らえられたコミューン支持者を24時間以内に裁判にかけ、判決を下すことを許可しました。その報復として、パリの中央委員会は軍事裁判による死者1人につき3人を処刑すると決定した。"
- paris_commune_pulse_events.5.f: "「こうして我々パリ市民は、非道なる2つの法の狭間に置かれることとなった。コミューンによって復活した容疑者の法律と、議会によって確実に承認されるであろう、迅速な処刑に関する法律だ。\n\nやつらは大砲で戦うのではなく、法令でお互いを殺し合っているのだ」" #Emile Zola
+ paris_commune_pulse_events.5.f: "「こうして我々パリ市民は、非道なる2つの法の狭間に置かれることとなった。コミューンによって復活した容疑者の法律と、議会によって確実に承認されるであろう、迅速な処刑に関する法律だ。\n\nやつらは大砲で戦うのではなく、法令でお互いを殺し合っているのだ」" # Emile Zola
  paris_commune_pulse_events.5.a: "撃ち殺せ。やつらは敵の戦闘員だ。"
  paris_commune_pulse_events.5.b: "やつらは裏切り者だ。疑わしい者は処刑せよ。"
  paris_commune_pulse_events.5.c: "これはあからさまな反乱の扇動だ。武器を持たない容疑者は投獄しろ。"

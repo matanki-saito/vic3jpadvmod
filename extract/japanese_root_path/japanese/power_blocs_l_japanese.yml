@@ -236,8 +236,8 @@
  pb_bear: "熊"
  pb_iron_cross: "鉄十字"
  pb_lion_passant_guardant: "ライオン"
- #CoA Imports
- #Heraldic
+ # CoA Imports
+ # Heraldic
  pb_shield_iberian: "イベリアの盾"
  pb_shield_hesse: "ヘッセの盾"
  pb_shield_accolade: "アコレードの盾"
@@ -255,7 +255,7 @@
  pb_corseca_trieste: "コルセカ（トリエステ）"
  pb_coa_saf_hope_allegory: "希望の寓意"
  pb_coa_saf_wagon: "四輪馬車"
- #Astral
+ # Astral
  pb_sun: "太陽"
  pb_sunburst: "太陽光線"
  pb_sun_of_may: "五月の太陽"
@@ -281,7 +281,7 @@
  pb_southern_cross_brazil: "南十字星（ブラジル）"
  pb_southern_cross_australia: "南十字星（オーストラリア）"
  pb_alaska_big_dipper: "北斗七星（アラスカ）"
- #Misc. Indig. etc.
+ # Misc. Indig. etc.
  pb_tunduk: "テュンドゥク"
  pb_tamga_idel_ural: "イデル＝ウラルのタムガ"
  pb_tamga_tatar: "タタールのタムガ"
@@ -300,7 +300,7 @@
  pb_ashanti_golden_stool: "アシャンティの黄金の腰掛"
  pb_elephant_charge_kutch: "象の突進"
  pb_hand_dreaming: "夢見る手"
- #Animals
+ # Animals
  pb_swan: "白鳥"
  pb_horse_tribal: "部族の馬"
  pb_horse: "馬"
@@ -310,19 +310,19 @@
  pb_cobra_coiled: "とぐろを巻いたコブラ"
  pb_bee: "蜂"
  pb_sumka_stylized_eagle: "スムカの鷲"
- #Weapons / Tools
+ # Weapons / Tools
  pb_katar: "カタール短剣"
  pb_crossed_kris_daggers: "交差したクリス短剣"
  pb_spearhead: "槍の穂先"
  pb_trident: "三叉槍"
  pb_mining_hammers: "採鉱ハンマー"
- #Limbs (best category)
+ # Limbs (best category)
  pb_hand_mena: "手（メナ）"
  pb_hand: "手"
- #Agriculture
+ # Agriculture
  pb_wheat_garb: "麦の束"
  pb_corn_sickle: "トウモロコシと鎌"
- #Geometry and Symbols
+ # Geometry and Symbols
  pb_circle: "円"
  pb_triangle: "三角形"
  pb_rhombus: "菱形"
@@ -340,7 +340,7 @@
  pb_laurel_circled: "月桂樹（円環）"
  pb_laurel: "月桂樹"
  pb_lightning_bolt: "稲妻"
- #Islamicate
+ # Islamicate
  pb_zulfikar: "ズルフィカール"
  pb_shahada_and_sword: "シャハーダと剣"
  pb_shahada: "シャハーダ"
@@ -369,7 +369,7 @@
  pb_crescent: "三日月"
  pb_coa_afghanistan: "紋章: アフガニスタン"
  pb_sulu: "スールー"
- #Christian
+ # Christian
  pb_chi_rho: "キー・ロー"
  pb_cross_switzerland: "スイス十字"
  pb_cross_st_michael: "聖ミカエル十字"
@@ -390,12 +390,12 @@
  pb_asturian_cross: "アストゥリアス十字"
  pb_fleur_de_lis: "ルール・ド・リス"
  pb_fleur_quebec: "ルール・ド・リス（ケベック）"
- #Sikh
+ # Sikh
  pb_khanda: "カンダ"
  pb_sun_sikh: "シクの太陽"
- #Jewish
+ # Jewish
  pb_star_hexagram: "六芒星"
- #Dharmic
+ # Dharmic
  pb_buddha: "ブッダ"
  pb_dharmachakra_india: "ダルマチャクラ（インド）"
  pb_dharmachakra: "ダルマチャクラ"
@@ -409,7 +409,7 @@
  pb_angkor_vat: "アンコールワット"
  pb_coa_temple_ceylon: "セイロンの寺"
  pb_pakhangba: "パカンバ"
- #Fascist and Ultranationalist
+ # Fascist and Ultranationalist
  pb_hammer_and_sickle_round: "ハンマーと鎌（丸形）"
  pb_hammer_and_sickle: "ハンマーと鎌"
  pb_hammer_sickle_wreath: "ハンマーと鎌（リース付き）"
@@ -432,7 +432,7 @@
  pb_vlajka_emblem: "ヴライカのエンブレム"
  pb_labrys_ppf: "ラブリス（PPF）"
  pb_triskel_wolfsangel: "トリスケル・ヴォルフスアンゲル"
- #Runes and Pagan (Arguably continuation of previous 'group')
+ # Runes and Pagan (Arguably continuation of previous 'group')
  pb_walknut: "ヴァルクヌート"
  pb_rune_tiwaz: "ティワズ"
  pb_rune_hagal: "ハガル"

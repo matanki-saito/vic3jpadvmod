@@ -1,7 +1,7 @@
 ﻿l_japanese:
- #Army Names
- tatmadaw: "ミャンマー軍" #Burma
- sarf_e_khas: "ニザーム陸軍" #Hyderabad
+ # Army Names
+ tatmadaw: "ミャンマー軍" # Burma
+ sarf_e_khas: "ニザーム陸軍" # Hyderabad
  OudhRoyalArmy: "アウド王国陸軍"
  GwaliorArmy: "シンディア陸軍"
  NagpurArmy: "ブホンスル陸軍"
@@ -53,7 +53,7 @@
  ArmeeIndigene: "先住民軍"
  CeylonRifleRegiment: "セイロンライフル連隊"
  ejercito_de_filipinas: "フィリピン軍"
- #Company Names
+ # Company Names
  company_bengal_coal_company: "ベンガル石炭会社"
  company_bombay_dyeing_company: "ボンベイ染料製造株式会社"
  company_david_sassoon: "デイヴィド・サスーン株式会社"

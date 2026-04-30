@@ -1,7 +1,7 @@
 ﻿l_japanese:
  je_mughal_hindustan: "赤い砦の囚人"
  je_mughal_hindustan_reason: "[SCOPE.sCountry('mughal_scope').GetName]の領主たちはかつてカブールからカルナータカ沿岸までを支配していましたが、その黄金時代はとうに過ぎ去りました。[SCOPE.sCountry('bic_scope').GetName]の権力は着実に成長し、毎年新たな特権を主張し、かつて私たちの宮廷が享受していた権威、名声、伝統をますます否定しています。いまや、ティムールの偉大な子孫たちは、デリーの赤い砦の外ではほとんど権力を持たないほどです！\n\n#N #bold 我々は[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]が忘れ去られないように行動し、[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]を救わなければなりません。#!#!"
- mughal.1.t: "継承の不満" #You don't need to make this a pun in other languages if you don't want to.
+ mughal.1.t: "継承の不満" # You don't need to make this a pun in other languages if you don't want to.
  mughal.1.d: "1835年、イギリスの代理人は、[SCOPE.sCharacter('akbar_ii').GetFirstName][SCOPE.sCharacter('akbar_ii').GetPrimaryRoleTitle]が[SCOPE.sCharacter('bahadur_ii').GetFirstName][SCOPE.sCharacter('bahadur_ii').GetPrimaryRoleTitle]を[SCOPE.sCharacter('akbar_ii').GetHerHis|l]の後継者として認めることを主張しましたが、これは[SCOPE.sCharacter('akbar_ii').GetPrimaryRoleTitle]が[SCOPE.sCharacter('akbar_ii').GetHerHis|l]の病弱な8番目の息子であるミルザ・#tooltippable_name #bold サリム#!#!を法定相続人として指名したいという希望にもかかわらずでした。裁判所内の一部の者は[SCOPE.sCharacter('akbar_ii').GetFirstNameNoFormatting]に、この決定に最後にもう一度異議を申し立てるよう促しています。"
  mughal.1.f: "「自分の姿を見てください！」と廷臣は怒鳴った。「この場所を見てください！何百年にもわたる権力と栄光がここにあります！ティムールの血があなたの体を流れています！しかし、あなたはここでおとなしく座り、カルカッタの代理人に後継者を決めさせているのです！あなたは皇帝ではないのですか？#bold 偉大な人物は偉大なことをしなければならないのです！#!」"
  mughal.1.a: "[SCOPE.sCountry('probably_east_india_company_scope').GetName]の決断は最終的なものだ。"
@@ -50,7 +50,7 @@
  notification_britain_hindustan_intervention_tooltip: "#header $notification_britain_hindustan_intervention_name$#!\n$TOOLTIP_DELIMITER$\n$notification_britain_hindustan_intervention_desc$"
  mughal.7.t: "孔雀の玉座が脱出に成功"
  mughal.7.d: "政治工作、陰謀、そして上からの介入により、[SCOPE.sCountry('mughal_scope').GetName]は[SCOPE.sCountry('bic_scope').GetName]から独立を勝ち取りました。[SCOPE.sCountry('mughal_scope').GetCapital.GetCityHubName]は[SCOPE.sCharacter('hindustan_ruler').GetPrimaryRoleTitle][SCOPE.sCharacter('hindustan_ruler').GetFirstName]の統治を祝うお祭り騒ぎです。"
- mughal.7.f: "「先生、ご覧ください！善良さと誠実さ、忠誠心と愛、この祝福された土地にすべてが戻ってきました！」と、詩人志望の若者は叫んだ。\n\n聴衆の中の老人は、若者が自分の作品を弾みながら歌っているのを見て弱々しく微笑んだ。[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]が自由になったのは良いことだが、国がまだ安全とは程遠いことがわかっていた。父と息子は互いにいがみ合い、兄弟はお互いと戦い、インド全土で団結が損なわれていた。\n\nそれでも、詩人が単調に語り続ける中、クッションの上で身をよじりながら、彼は考え込んだ。この不吉な雰囲気にもかかわらず、終末の日はまだ来ておらず、最後のラッパは鳴っていない。結局のところ、誰が最後の大惨事の手綱を握っているのか、誰にもわからないのだ。そんな心配をするよりも、今ある喜びを祝うべきなのだろう。" #with apologies to Mirza Ghalib and his fine work, the Chiragh-i-Dair
+ mughal.7.f: "「先生、ご覧ください！善良さと誠実さ、忠誠心と愛、この祝福された土地にすべてが戻ってきました！」と、詩人志望の若者は叫んだ。\n\n聴衆の中の老人は、若者が自分の作品を弾みながら歌っているのを見て弱々しく微笑んだ。[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]が自由になったのは良いことだが、国がまだ安全とは程遠いことがわかっていた。父と息子は互いにいがみ合い、兄弟はお互いと戦い、インド全土で団結が損なわれていた。\n\nそれでも、詩人が単調に語り続ける中、クッションの上で身をよじりながら、彼は考え込んだ。この不吉な雰囲気にもかかわらず、終末の日はまだ来ておらず、最後のラッパは鳴っていない。結局のところ、誰が最後の大惨事の手綱を握っているのか、誰にもわからないのだ。そんな心配をするよりも、今ある喜びを祝うべきなのだろう。" # with apologies to Mirza Ghalib and his fine work, the Chiragh-i-Dair
  mughal.7.a: "新たな[SCOPE.sCountry('mughal_scope').GetNameNoFormatting]ではインド全土が歓迎されるだろう。"
  mughal.7.b: "王の中の王よ、最強の君主よ。我々はあなたを忘れない！"
  mughal.7.c: "長らくくすぶっていた野望の炎が今燃え上がるのだ！"
