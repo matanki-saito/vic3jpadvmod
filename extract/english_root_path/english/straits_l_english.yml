@@ -82,7 +82,7 @@
  STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL: "Requires [Concept('concept_strait_control', '$concept_strait_control$')] of both sides of the [concept_strait]"
  STRAIT_MILITARY_BLOCK_REQUIRES_FULL_CONTROL: "$STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL$"
  STRAIT_ACCESS_SETTING_REDUNDANT: "Current [concept_strait_access] setting"
- STRAIT_ACCESS_SETTING_NOT_ALLOWED: "Toll access setting is not allowed"
+ STRAIT_ACCESS_SETTING_NOT_ALLOWED: "[concept_strait_access] setting is not allowed"
  TOLL_RATE_NOT_ALLOWED: "Toll rate is not allowed"
 
  STRAIT_STATES_HEADER: "$concept_states$ connected by this $concept_strait$"
