@@ -379,7 +379,7 @@
  land_ownership_law_events.5.f:0 "椅子を作る者、果物を収穫する者、誰が何を売ったか集計する者など、それぞれの家族が集っていた。そして、この先も生き残っていくには、すべての物の行き先を管理することが必要であるという結論に至った。果物や家具は皆の手に届くところにとどめておく。野菜や洗面台は適正な価格で販売され、棚に並べた者に公平に分配する。決して豊かではないが、誰も飢えることはない。"
  land_ownership_law_events.5.a:0 "農民が[ROOT.GetCountry.GetCapital.GetCityHubName]に影響を及ぼす？なんとも奇妙だな。"
  land_ownership_law_events.5.b:0 "彼らの商売の方式を、未来の展望として称賛しよう。"
- land_ownership_law_events.5.c:0 "田園地帯と都市、農民と労働者、団結せよ！"
+ land_ownership_law_events.5.c:0 "農村と都市、農民と労働者よ、団結せよ！"
  co_operatively_backed:0 "協同組合"
  the_cooperative_movement:0 "協力的活動"
  land_ownership_law_events.6.t:0 "耕運具から見た土地"

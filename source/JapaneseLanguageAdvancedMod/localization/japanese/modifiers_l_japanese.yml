@@ -2658,7 +2658,7 @@
  country_higher_leverage_from_economic_dependence_bool_desc:0 "[concept_economic_dependence]による[concept_power_bloc_leverage]の増加"
  country_mass_migration_attraction_mult:0 "集団移住求心力"
  country_mass_migration_attraction_mult_desc:0 "[concept_country]が集団移住の対象に選ばれる確率に対するボーナスあるいはペナルティです"
- country_infamy_generation_against_unrecognized_mult:0 "非承認国に対する悪名の生成"
+ country_infamy_generation_against_unrecognized_mult:0 "未承認国に対する悪名の生成"
  country_infamy_generation_against_unrecognized_mult_desc:0 "[Concept('concept_unrecognized_power','$concept_unrecognized_powers$')]を対象とした[Concept('concept_diplomatic_incident','$concept_diplomatic_incidents$')]によって生成される[concept_infamy]の量に対する増減です。"
  state_welfare_payments_mult:0 "福祉の支給乗数"
  state_welfare_payments_mult_desc:0 "[concept_state]のすべての$state_welfare_payments_add$の合計にこの値を乗算します"
