@@ -2174,7 +2174,7 @@
  concept_strait_controller:0 "海峡管理国"
  concept_strait_controller_short:0 "管理国"
  concept_strait_control_desc:0 "$concept_strait_control$の所在は、[concept_strait]の両側にある2つの[Concept('concept_state','$concept_states$')]の支配によって決まります。 どのような場合でも、これらの$concept_states$のいずれか一方を支配する[concept_country]が$concept_strait_controller$となり、対象の$concept_strait$における[concept_strait_access]を変更できます。ただし#b $strait_gibraltar$#!は例外で、ここの[concept_strait_access]を#b 閉鎖#!に設定するには、両方の$concept_states$を支配下に置かなければなりません。\n\n2つの$concept_states$が異なる$concept_strait_accesses$を設定している場合、厳しい方の$concept_strait_access_short$制限が優先されます。"
- concept_japanese_emperor:0 "皇帝"
+ concept_japanese_emperor:0 "天皇"
  concept_japanese_emperor_desc:0 "天皇は#b 日本#!の伝統的な統治者であり、また#b 神道#!という[concept_religion]の長でもあります。徳川幕府の時代全体を通して天皇は京都の御所に籠り、その政務は幕府によって厳しく規制されていました。"
  concept_zaibatsu:0 "財閥"
  concept_zaibatsu_desc:0 "#b #italic $concept_zaibatsu$#!#!とは、一族が所有し、垂直統合された産業・金融複合企業のことを指します。\n\n典型的な$concept_zaibatsu$は、持株会社と銀行を中核として組織されており、それらが複数の (主として産業系の) 子会社の株式を保有しています。$concept_zaibatsu$は江戸時代後期の商人一族による複合企業から生まれ、もともと持っていた資産と国家との結びつきを活用して、日本の産業基盤の大部分に対する支配を固めました。\n\n財閥とみなされる[Concept('concept_company','$concept_companies$')]には、#v $company_mitsui$#!、#v $company_mitsubishi$#!、#v $company_yasuda$#!、#v $company_sumitomo$#!などがあります。"

@@ -24,7 +24,7 @@
  modifier_radio_ig:0 "良好なラジオ認知度"
  modifier_radio_opium:0 "アヘン承認"
  technology_events.30.t:0 "戦争の武器"
- technology_events.30.d:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]の[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]によって、進行中の[SCOPE.sWar('ongoing_war').GetName]戦争で我が国が使用する武器についての記事が出版された。"
+ technology_events.30.d:0 "[ROOT.GetCountry.GetAdjectiveNoFormatting]・[SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]紙によって、進行中の[SCOPE.sWar('ongoing_war').GetName]戦争で我が国が使用する武器についての記事が出版された。"
  technology_events.30.f:0 "[SCOPE.GetRootScope.GetCountry.GetCustom('war_weapons_article')]の一般市民は、このような武器の使用は規制されるべきとの声をあげている。\n\n「痛みと苦しみを伴うこのような武器は地上に存在すべきではない」"
  technology_events.30.a:0 "武器の使用規制はしない。"
  technology_events.30.b:0 "使用の事実を隠蔽する。"

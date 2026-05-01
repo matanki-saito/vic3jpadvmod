@@ -111,7 +111,7 @@
  italian_unification.6.b:0 "あのテロリストどもと共通する大義など持ちあわせていない。"
  italian_unification.7.t:0 "[SCOPE.sState('rsm_capital_scope').GetCityHubName]での5日間"
  italian_unification.7.d:0 "ロンバルド＝ヴェネトでのイタリア人の騒動に続き、民族主義者の反乱軍が、[ROOT.GetCountry.GetAdjective]からの独立を得るための革命国家である[SCOPE.sCountry('rsm_scope').GetName]の結成を宣言しました。"
- italian_unification.7.f:0 "その朝、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]が朝食をとった場所の近くにある敷地を、白い衣に身を包み、白い牝馬にまたがった騎手が通り過ぎていった。ひび割れた毛穴から汗をにじませながら[ROOT.GetCountry.GetRuler.GetHerHim]に近づいてきた歩兵は、血のように赤い手紙を携えていた。イタリアの領地が反乱を起こしたのだ。次に入ってきた汗だくの補佐官は、別の報告書を持っていた。反乱を起こしたこれらの領土が援軍を求めているのだという。[ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、この援軍が必ず来るものだと確信していた。"
+ italian_unification.7.f:0 "その朝、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]が朝食をとった場所の近くにある敷地を、白い衣に身を包み、白い牝馬にまたがった騎手が通り過ぎていった。ひび割れた毛穴から汗をにじませながら[ROOT.GetCountry.GetRuler.GetHerHim]に近づいてきた歩兵は、血のように赤い手紙を携えていた。イタリアの領地が反乱を起こしたのだ。次に入ってきた汗だくの補佐官は、別の報告書を持っていた。反乱を起こしたこれらの領土が援軍を求めているのだという。[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting]は、この援軍が必ず来るものだと確信していた。"
  italian_unification.7.a:0 "すぐにクアドリラテロへ！"
  italian_unification.7.b:0 "サン・マルコ万歳！"
  italian_states_choose_sides_tt:0 "#bold イタリア#!の各州に対し、[SCOPE.sCountry('rsm_scope').GetName]を支援する機会が与えられます"

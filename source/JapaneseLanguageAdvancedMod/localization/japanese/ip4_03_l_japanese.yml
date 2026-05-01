@@ -88,7 +88,7 @@
  unlocks_je_philippines_main_ilustrado_button_tt:0 "#b $je_philippines_main$#!の[concept_journal_entry]で#b $je_philippines_main_ilustrado_button$#!ボタンを使用する要件を満たす"
  modifier_growth_of_the_middle_class:0 "中流階級の成長"
  philippines.11.t:0 "島国のアイデンティティ"
- philippines.11.d:0 "[ROOT.GetCountry.GetAdjective]の民の教育に多大な努力を注いだ結果、汎フィリピン的な国家主義的アイデンティティが生まれた。"
+ philippines.11.d:0 "[ROOT.GetCountry.GetAdjective]の民の教育に多大な努力を注いだ結果、汎フィリピン的な民族主義的アイデンティティが生まれた。"
  philippines.11.f:0 "「独立国家の樹立は、真の民族解放への第一歩にすぎない。その構成民族すべてがひとつの声で語るとき、我々の事業はようやく完結するのだ」"
  philippines.11.a:0 "未来に向かって、ともに歩もう。"
  philippines.12.t:0 "本国に愛された子"
