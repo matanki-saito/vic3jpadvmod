@@ -158,7 +158,7 @@
  ship_type_dreadnought:0 "弩級戦艦"
  ship_type_dreadnought_desc:0 "単一口径巨砲を搭載した、革命的な戦艦。"
  ship_type_super_dreadnought:0 "超弩級戦艦"
- ship_type_super_dreadnought_desc:0 "さらなる大口径砲と重装備を備えた、大型化されたドレッドノート級艦船。"
+ ship_type_super_dreadnought_desc:0 "さらなる大口径砲と重装備を備えた、大型化された弩級戦艦。"
  ship_type_submarine:0 "潜水艦"
  ship_type_submarine_desc:0 "主に敵の商船に対して使用することを目的とする、潜水能力を持つ艦船。"
  ship_type_troop_ship:0 "兵員輸送船"

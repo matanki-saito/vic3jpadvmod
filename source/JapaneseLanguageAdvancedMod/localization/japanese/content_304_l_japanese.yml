@@ -270,7 +270,7 @@
  resignation.2.b:0 "来たるべき嵐の前では、我々は無力だ。"
  resignation.2.c:0 " 中途半端な対策をしている時間はない。非常大権を行使せよ。"
  resignation.3.t:0 "[ROOT.GetCountry.GetRuler.GetFullName]の辞任"
- resignation.3.d:0 "[ROOT.GetCountry.GetName]の秩序崩壊を受け、[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle][SCOPE.sCharacter('abdicating_monarch').GetFullName]は[ROOT.GetCountry.GetName]の王位放棄を表明した。A power vacuum has emerged in [ROOT.GetCountry.GetCapital.GetCityHubName]では権力の空白が生まれ、革命派と政府体制支持者が我先にその空白を埋めようとしている。"
+ resignation.3.d:0 "[ROOT.GetCountry.GetName]における秩序崩壊を受け、[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle]の[SCOPE.sCharacter('abdicating_monarch').GetFullName]は[ROOT.GetCountry.GetName]の玉座からの退位を表明した。[ROOT.GetCountry.GetCapital.GetCityHubName]では権力の空白が生まれ、革命派と体制派が我先にその空白を埋めようとしている。"
  resignation.3.f:0 "宮殿の3階のバルコニーから、天命が暴徒に渡ったことは一目瞭然だった。[SCOPE.sCharacter('abdicating_monarch').GetFullNameNoFormatting]はもはや[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle]ではなくなったが、[SCOPE.sCharacter('abdicating_monarch').GetSheHe]は絞首台に引きずられて行くより、群衆が降伏を認めてくれるうちに身を引いた方が良いと考えたのだった。"
  resignation.3.a:0 "[SCOPE.sCharacter('heir_scope').GetPrimaryRoleTitle][SCOPE.sCharacter('heir_scope').GetFirstName]に期待するしかない。"
  resignation.3.b:0 "時間がある内に国境を越えて逃げよう。"
