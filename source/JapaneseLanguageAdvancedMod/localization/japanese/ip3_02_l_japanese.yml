@@ -361,7 +361,7 @@
  bavarocracy_prince_british_tt:0 "#b $GBR_ADJ$#!の[GetIdeology('ideology_market_liberal').GetName]の王子が、#b ゲオルギオス1世#!として#b ギリシャ国王#!となる"
  bavarocracy_prince_russian_tt:0 "#b $RUS_ADJ$#!の[GetIdeology('ideology_royalist').GetName]の王子が、#b ゲオルギオス1世#!として#b ギリシャ国王#!となる"
  bavarocracy_prince_french_bourbon_tt:0 "#b レジティミスト#!の[GetIdeology('ideology_traditionalist').GetName]の王子が、#b ゲオルギオス1世#!として#b ギリシャ国王#!となる"
- bavarocracy_prince_french_orleans_tt:0 "#b オルレアン主義者#!の[GetIdeology('ideology_market_liberal').GetName]の王子が、#b ゲオルギオス1世#!として#b ギリシャ国王#!となる"
+ bavarocracy_prince_french_orleans_tt:0 "#b オルレアニスト#!の[GetIdeology('ideology_market_liberal').GetName]の王子が、#b ゲオルギオス1世#!として#b ギリシャ国王#!となる"
  bavarocracy_prince_french_bonaparte_tt:0 "#b ボナパルティスト#!の[GetIdeology('ideology_jingoist_leader').GetName]の王子が、#b ゲオルギオス1世#!として#b ギリシャ国王#!となる"
  bavarocracy_prince_garibaldi_tt:0 "ジュゼッペ・ガリバルディが、#b イオシフ1世#!として#b ギリシャ国王#!となる"
  modifier_revolutionary_king:0 "フリギアの王冠"

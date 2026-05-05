@@ -736,7 +736,7 @@
  DIPLO_ACTION_OVERLORD_RELATIONS_COLD_OR_LESS_NOT:0 "$DIPLO_ACTION_OVERLORD_RELATIONS$が$relations_cold$超"
  AI_WILL_ACCEPT_WITH_OWE_OBLIGATION:0 "@obligation!我々が[COUNTRY.GetName]に対し[concept_obligation]を負うならば、彼らは受け入れるでしょう"
  AI_WILL_ACCEPT_WITH_CALL_IN_OBLIGATION:0 "@obligation![COUNTRY.GetName]が我々に負っている[concept_obligation]に対し恩返しを#b 要求#!すれば、受け入れるでしょう"
- DIPLOMATIC_ACCEPTANCE_INCOMPATIBLE_ECONOMIC_SYSTEMS:0 "相容れない#b 経済システム#!"
+ DIPLOMATIC_ACCEPTANCE_INCOMPATIBLE_ECONOMIC_SYSTEMS:0 "相容れない#b 経済制度#!"
  DIPLOMATIC_ACCEPTANCE_INFLUENCE_PAYMENTS:0 "この[concept_country]に対する[SCOPE.sCountry('actor').GetAdjectiveNoFormatting]の財政的影響力"
  WARGOAL_MULT_FROM_UNINCORPORATED_STATE:0 "対象は[concept_unincorporated_state]です : $EFFECT|%=-$"
  WARGOAL_MULT_FROM_UNINCORPORATED_STATES:0 "対象には[Concept('concept_unincorporated_state','$concept_unincorporated_states$')]が含まれています : $EFFECT|%=-$"

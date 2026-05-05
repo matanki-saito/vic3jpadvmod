@@ -213,7 +213,7 @@
  STATE_HOLLAND_french:0 "オランド"
  HUB_NAME_STATE_HOLLAND_wood_french:0 "ブレダ"
  STATE_ALSACE_LORRAINE_french:0 "アルザス＝ロレーヌ"
- STATE_ALSACE_LORRAINE_german:0 "エルザス・ロートリンゲン"
+ STATE_ALSACE_LORRAINE_german:0 "エルザス＝ロートリンゲン"
  HUB_NAME_STATE_ALSACE_LORRAINE_city_german:0 "シュトラースブルク"
  HUB_NAME_STATE_ALSACE_LORRAINE_mine_german:0 "ミュールハウゼン"
  STATE_LORRAINE_german:0 "ロートリンゲン"

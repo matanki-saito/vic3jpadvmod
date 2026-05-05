@@ -300,7 +300,7 @@
  coffee_with_milk.5.a:0 "この偉業を成し遂げた人々に乾杯！"
  coffee_with_milk.5.b:0 "いつかは農業から拡大していかなければならない。"
  coffee_with_milk.6.t:0 "寡頭制の摩擦"
- coffee_with_milk.6.d:0 "力の弱い北東部の州[SCOPE.sState('northeast_state').GetName]の農園主は、[SCOPE.sState('coffee_state').GetName]と[SCOPE.sState('milk_state').GetName]が[ROOT.GetCountry.GetAdjective]政治システムを支配していると認識されていることに強く反発している。"
+ coffee_with_milk.6.d:0 "力の弱い北東部の州[SCOPE.sState('northeast_state').GetName]の農園主は、[SCOPE.sState('coffee_state').GetName]と[SCOPE.sState('milk_state').GetName]が[ROOT.GetCountry.GetAdjective]政治制度を支配していると認識されていることに強く反発している。"
  coffee_with_milk.6.f:0 "「近頃は[SCOPE.sState('coffee_state').GetNameNoFormatting]が独断で何でも決めてしまう。一体何のために？コーヒー？砂糖や肉はもちろんのこと、食べ物に比べてコーヒーにどれだけの価値があるというんだ？」\n\n「人々はコーヒーに喜んでお金を払う。砂糖や肉には払わない。それに、何が言いたい？お前は放浪する牛を捕まえて、靴を作ってる。靴がなくても人は十分生きていける」\n\n「私が言いたいのは、奴らに制圧される前に[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は[SCOPE.sState('coffee_state').GetNameNoFormatting]と[SCOPE.sState('milk_state').GetNameNoFormatting]に制約を設けるべきだということだ。それに炎天下を裸足で歩かなければいけないなら、靴があった方がいいと思うだろう、このバカ！」"
  coffee_with_milk.6.a:0 "彼らはもっと活躍するために努力をしなければ。"
  coffee_with_milk.6.b:0 "政府の首根っこを掴むことはできない。"

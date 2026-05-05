@@ -686,7 +686,7 @@
  lesson_incorporate_state_how_3_desc:0 "あなたが選択した[concept_state]の[Concept('concept_incorporated_state','$concept_incorporate$')]を開始しました。[Concept('concept_state','$concept_states$')]の[Concept('concept_incorporated_state','$concept_incorporating$')]は、この領土とあなたの[concept_primary_cultures]との文化的相違度に応じて必要年数が変わってきます。@bur![concept_bureaucracy]の全コストは即時に課せられますが、$concept_incorporation$による利益は時間とともに蓄積されていきます。"
  lesson_incorporate_state_how_3_back:0 "撤回するには州の編入を中止してください"
  lesson_incorporate_state_complete:0 "$concept_state$ $concept_incorporated$！"
- lesson_incorporate_state_complete_desc:0 "おめでとうございます！[concept_unincorporated_state]が[Concept('concept_incorporated_state','$concept_incorporated$')]になりました。これでこの州は税金を支払い、[Concept('concept_institution','$concept_institutions$')]の恩恵を受け、あなたの国の政治システムにフルに参加できるようになりました。"
+ lesson_incorporate_state_complete_desc:0 "おめでとうございます！[concept_unincorporated_state]が[Concept('concept_incorporated_state','$concept_incorporated$')]になりました。これでこの州は税金を支払い、[Concept('concept_institution','$concept_institutions$')]の恩恵を受け、あなたの国の政治制度に完全に参加できるようになりました。"
  lesson_interest_group_1:0 "[Concept('concept_interest_group','$concept_interest_groups$')]とは？"
  lesson_interest_group_1_desc:0 "利益集団は$OVERVIEW$の$POLITICS$パネルから参照できます。"
  lesson_interest_group_1_continue:0 "$OVERVIEW$タブから$POLITICS$パネルを開く"
