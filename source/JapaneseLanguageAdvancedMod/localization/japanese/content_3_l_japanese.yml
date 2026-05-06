@@ -248,7 +248,7 @@
  election_contextual_events.3.tt.1:0 "非愛国的な誹謗中傷は大衆の目から遠ざけられます。"
  election_contextual_events.3.tt.2:0 "我々の努力も空しく情報が漏洩しました。"
  election_contextual_events.4.t:0 "誰がために鐘は鳴る"
- election_contextual_events.4.d:0 "[SCOPE.gsInterestGroup('decrepit_leader_ig').GetName]のリーダーである[SCOPE.sCharacter('decrepit_leader').GetFullName]老が、作戦途中で予期せず天に召されました。[SCOPE.sParty('decrepit_leader_party').GetName]の顔ともいえる政治家が失われてしまったのです。今では誰もが[SCOPE.sCharacter('decrepit_leader').GetHerHis]の後任に関心をよせています。"
+ election_contextual_events.4.d:0 "[SCOPE.gsInterestGroup('decrepit_leader_ig').GetName]のリーダーである[SCOPE.sCharacter('decrepit_leader').GetFullName]老が、選挙期間中に予期せず天に召されました。[SCOPE.sParty('decrepit_leader_party').GetName]の顔ともいえる政治家が失われてしまったのです。今では誰もが[SCOPE.sCharacter('decrepit_leader').GetHerHis]の後任に関心をよせています。"
  election_contextual_events.4.f:0 "「予期せずとな？ふん！あの老骨は主に召される予定がのびのびになっていただけだ。党に新風を吹き込む時がやって来たのだ！」"
  election_contextual_events.4.a:0 "人気はあるが無能な候補者を立てることにしよう。"
  election_contextual_events.4.b:0 "信念を持ちながらも、傲慢な若者にその座を与えよう。"
