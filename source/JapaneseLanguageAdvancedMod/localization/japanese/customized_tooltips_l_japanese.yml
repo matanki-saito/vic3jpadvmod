@@ -171,7 +171,7 @@
  INTEREST_GROUP_TOOLTIP_NAME:0 "[SelectLocalization(InterestGroup.GetCountry.IsLocalPlayer,'INTEREST_GROUP_TOOLTIP_PLAYER_COUNTRY_NAME','INTEREST_GROUP_TOOLTIP_OTHER_COUNTRY_NAME')]"
  DATA_LEGITIMACY_LEVEL_TOOLTIP:0 "$LEGITIMACY_LEVEL_BOUNDS_DESC$\n$TOOLTIP_DELIMITER$\n[LegitimacyLevel.GetEffects]"
  DATA_CHARACTER_DEBUG_INFO:0 "デバッグ情報 : \nID : $ID|v$\n死亡率 : $DEATH_DATE|v$"
- STATE_IS_INCORPORATED:0 "@incorporated![State.GetOwner.GetName]に併合する[Concept('concept_incorporated_state','$concept_incorporated$')]"
+ STATE_IS_INCORPORATED:0 "@incorporated![State.GetOwner.GetName]に[Concept('concept_incorporated_state','$concept_incorporated$')]"
  STATE_IS_UNINCORPORATED:0 "@unincorporated![State.GetOwner.GetName]に[SelectLocalization(State.IsIncorporating,'編入中','未編入')]"
  UNINCORPORATED:0 "[Concept('concept_unincorporated_state','$concept_unincorporated_state_short$')]"
  DATA_TECHNOLOGY_TECH_TREE_TOOLTIP:0 "[Technology.GetTooltip(GetPlayer.Self)][AddLocalizationIf(And(Not(Technology.HasResearchedTech(GetPlayer.Self)),Not(Technology.IsInResearchQueue(GetPlayer.Self))),'START_RESEARCH_COMMANDS')][AddLocalizationIf(And(Technology.IsInResearchQueue(GetPlayer.Self),Not(Technology.IsResearching(GetPlayer.Self))),'START_RESEARCH_COMMANDS_IN_QUEUE')]\n$TOOLTIP_DELIMITER$\n#lore [Technology.GetDesc]#!"
