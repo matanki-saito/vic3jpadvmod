@@ -16,7 +16,7 @@
  shipname_fallback_ordinal_troopship: "兵員輸送船No. $NUM$"
  shipname_fallback_ordinal_supply_ship: "輸送船No. $NUM$"
  shipname_fallback_submarine: "S-$NUM$"
- shipname_fallback_ordinal_tb_flotilla: "$NUM|O$ $ship_type_torpedo_boat$ Flotilla"
+ shipname_fallback_ordinal_tb_flotilla: "$NUM|O$ $ship_type_torpedo_boat$小艦隊"
  shipname_fallback_ordinal_test: "$PREFIX$Max Ordinal No. $NUM$"
  # Country Specific
  shipname_german_submarines_format: "$PREFIX$U-$NUM$"

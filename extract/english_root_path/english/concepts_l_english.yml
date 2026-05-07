@@ -2532,7 +2532,7 @@
 
  concept_sea_node: "Sea Node"
  concept_sea_nodes: "Sea Nodes"
- concept_sea_node_desc: "An intersection or point along a naval [concept_shipping_lane] representing a part of the ocean. $concept_shipping_lanes$ always take the route between two coastal [Concept('concept_state','$concept_states$')] that pass through the fewest number of $concept_sea_nodes$. Each additional $concept_sea_node$ beyond the first adds #v [GetDefine('NEconomy','SHIPPING_LANE_MERCHANT_MARINE_COST_SCALING')|=-%0]#! to the shipping cost."
+ concept_sea_node_desc: "An intersection or point along a naval [concept_shipping_lane] representing a part of the ocean. $concept_shipping_lanes$ always take the shortest travel distance route between two coastal [Concept('concept_state','$concept_states$')]. For each multiple of the expected travel distance (#v [GetDefine('NEconomy','SEA_DISTANCE_EXPECTED_TRAVEL_DISTANCE')]#!), #v [GetDefine('NEconomy','SHIPPING_LANE_MERCHANT_MARINE_COST_SCALING')|=-%0]#! is added to the shipping cost."
  concept_sea_region: "Sea Region"
  concept_sea_regions: "Sea Regions"
  concept_sea_region_short: "Region"

@@ -54,13 +54,14 @@
  interest_tier_effect_can_sign_support_independence: "@checkmark! [GetArticleType('support_independence').GetName]の[Concept('concept_article', '$concept_treaties$')]を締結できます"
  interest_tier_effect_can_sign_guarantee_independence: "@checkmark! [GetArticleType('guarantee_independence').GetName]の[Concept('concept_article', '$concept_treaties$')]を締結できます"
  interest_tier_effect_stake_colonial_claim_unrecognized: "@checkmark! [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')]と[Concept('concept_unrecognized_power', '$concept_unrecognized_powers$')]に対して[concept_diplomatic_action]「[GetDiplomaticActionType('da_stake_colonial_claim').GetName]」を有効にします"
+ interest_tier_effect_can_sign_foreign_investment_rights: "@checkmark! Allows to sign [GetArticleType('foreign_investment_rights').GetName] [Concept('concept_article', '$concept_treaties$')]"
  ## Diplomatic Actions
  da_stake_colonial_claim: "植民地請求権を主張"
  da_stake_colonial_claim_desc: "海外の[concept_state_region]に対する[concept_claim]を主張します。"
  da_stake_colonial_claim_action_notification_name: "[INITIATOR_COUNTRY.GetName]が[TARGET_STATE.GetStateRegion.GetName]の植民地に対する[concept_claim|l]を主張"
  da_stake_colonial_claim_action_notification_desc: "植民地獲得の野心を膨らませている[INITIATOR_COUNTRY.GetName]が、[TARGET_STATE.GetStateRegion.GetName]の請求権を主張しました！"
  DA_STAKE_COLONIAL_CLAIM_COOLDOWN: "#v [TimeKeeper.GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'da_stake_colonial_claim_cooldown') )]#!まで、このアクションを再び実行することはできません"
- DA_STAKE_COLONIAL_CLAIM_EMPTY_EFFECT: "他の大陸の[concept_state_region]を選択して[concept_claim|l]を主張してください"
+ DA_STAKE_COLONIAL_CLAIM_EMPTY_EFFECT: "自国の[concept_capital_state]がある大陸以外の[concept_state_region]を選択して、[concept_claim|l]を主張してください"
  ## Notifications
  notification_colonial_claim_generated_name: "[SCOPE.sState('colony_notification_state').GetName]が#bold 主要植民地#!化"
  notification_colonial_claim_generated_desc: "[SCOPE.sState('colony_notification_state').GetName]が十分な規模に拡大したため、[SCOPE.sState('colony_notification_state').GetStateRegion.GetName]全体の[concept_claim]が認められました。"

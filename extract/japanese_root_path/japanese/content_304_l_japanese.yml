@@ -278,6 +278,7 @@
  assassination_attempt_failed_tt: "#bold 暗殺計画#!は失敗しますが、気付かれません"
  assassination_attempt_failed_loud_tt: "#bold 暗殺計画#!は失敗し、大スキャンダルになります"
  would_be_accepted_under_national_supremacy_tt: "この[concept_pop]の文化は、この国の[concept_primary_cultures]と[Concept('concept_heritage_trait','$concept_heritage_trait_short$')]および[Concept('concept_language_trait','$concept_language_trait_short$')][Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')]を共有している"
+ capitalist_in_british_india_tt: "[concept_profession] is [GetPopType('capitalists').GetName] in colonial #b India#!"
  resign_from_office: "公職を辞任する"
  resign_from_office_desc: "このキャラクターは[Character.GetCountry.GetName]の[Character.GetPrimaryRoleTitle]の職を辞任する"
  resignation.1.t: "辞表"

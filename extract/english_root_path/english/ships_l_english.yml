@@ -295,6 +295,7 @@
  SHIP_UPKEEP_EXPENSES_RESUPPLYING_DESC: "$MULT|0-%$ $concept_goods$ consumed due to resupplying"
  SHIP_UPKEEP_EXPENSES_INSUFFICIENT_SUPPLY_SHIPS_DESC: "$MULT|0-%$ $concept_goods$ consumed due to Insufficient [concept_supply_ship]"
  SUPPLY_NO_ROUTE_DESC: "#n No supply route available#!"
+ SUPPLY_GOODS_SHORTAGE_DESC: "Supply delivery at #[GetMoraleColorString( MilitaryFormation.GetLogisticsCenterSupplyAvailability )] [MilitaryFormation.GetLogisticsCenterSupplyAvailability|%0]#! due to [Concept('concept_shortage','$concept_input_goods_shortages$')]"
  FRIENDLY_PORT_SUPPLY_DISCOUNT_DESC: "#p -[MilitaryFormation.GetFriendlyPortDiscount|0+%]#! from nearby friendly port"
  SHIP_WAGE_COST_ENTRY: "@money!#v $VAL|0-$#! from #v $NUM_CREW$#! $concept_ship_crew_short$ from [BUILDING.GetName] in [STATE.GetName]"
 

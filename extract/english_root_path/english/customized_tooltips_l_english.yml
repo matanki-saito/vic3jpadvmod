@@ -229,7 +229,6 @@
  AGITATOR_POLITICAL_MOVEMENT_SUPPORTS:1 "Supports [Character.GetPoliticalMovement.GetName]"
  AGITATOR_POLITICAL_MOVEMENT_NONE: "Does not support any [concept_political_movement]"
 
- AGITATOR_WOULD_START_MOVEMENT: "[SelectLocalization(Character.PredictMovementTypeToStart.IsValid, )]"
  DATA_POLITICAL_MOVEMENT_STATES_JOIN_REVOLUTION_HEADER: "#title [Concept('concept_state','$concept_states$')] that would join the [Concept('concept_revolution','$concept_revolutionary$')] side (@state! #v [PoliticalMovement.GetCivilWar.GetNumUprisingStates|0]#!):#! #indent_newline:3 \n[PoliticalMovement.GetCivilWar.GetUprisingStatesString]#!"
  DATA_POLITICAL_MOVEMENT_STATES_SECEDED_HEADER: "#title [Concept('concept_state','$concept_states$')] that would join the [Concept('concept_secession','$concept_secessionist$')] side (@state! #v [PoliticalMovement.GetCivilWar.GetNumUprisingStates|0]#!):#! #indent_newline:3 \n[PoliticalMovement.GetCivilWar.GetUprisingStatesString]#!"
  DATA_CHARACTER_NAME_TOOLTIP_LOCATION_COUNTRY: "[concept_country]: [Character.GetCountry.GetName]"
