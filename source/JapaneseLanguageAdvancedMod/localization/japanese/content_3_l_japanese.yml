@@ -273,7 +273,7 @@
  election_contextual_events.7.f:0 "「[SCOPE.sCharacter('pacifist_ig_leader').GetSheHe|U]は手紙を受け取らなかったって？あいつは腰抜けの臆病者で、毒にも薬にもならない平和主義者だからな。我々の仲間が戦地で死んでいるというのに、[SCOPE.sCharacter('pacifist_ig_leader').GetSheHe]は何をしてくれた？ごちゃ混ぜになった紙の束の周りに座って、我々の血と引き換えに得た利益を浪費するための絶好の機会を窺っているのだ。兵士には彼らのために戦ってくれる誰かが必要だ。彼らは我々のために戦ってくれているのだから」"
  election_contextual_events.7.a:0 "分け前・・・いや旗印の元に集結だ！"
  election_contextual_events.7.b:0 "我々のためか？それとも我々の敵のためか？"
- jingoist_rhetoric:0 "ジンゴイストのレトリック"
+ jingoist_rhetoric:0 "好戦主義者のレトリック"
  dove_of_peace_in_time_of_war:0 "戦地を飛ぶ平和の鳩"
  election_contextual_events.8.t:0 "ジンとビールの潮流"
  election_contextual_events.8.d:0 "国の禁酒政策を終焉に導くような変化を求める酒好きの有権者が多数[SCOPE.sParty('anti_temperance_party').GetName]に流れたことで、[SCOPE.sParty('temperance_party').GetName]の反アルコール政策が選挙の見通しに暗い影を落としています。"

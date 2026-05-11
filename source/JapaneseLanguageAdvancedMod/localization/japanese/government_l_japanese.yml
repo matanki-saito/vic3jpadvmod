@@ -535,7 +535,7 @@
  gov_danubian_federation_technocratic_corporate_state:0 "ドナウ連邦"
  gov_danubian_federation_technocratic_corporate_state_desc:0 "民族的区分に従い定めた多数の連邦単位で構成される[concept_government_type]です。中央権力は、異なる共同体と民族連邦単位から選出された技術系役人の委員会によって政権運営を任された、能力のある人物である[Concept('concept_ruler','$RULER_TITLE_CHIEF_EXECUTIVE$')]が保持します。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_corporate_state_austrofascist:0 "協同体国家"
- gov_corporate_state_austrofascist_desc:0 "協調組合主義に沿って組織され、その中で国家が、異なる社会化階級間の調停者としての役割を公式的に果たす[concept_government_type]です。[Concept('concept_ruler','$RULER_TITLE_CHANCELLOR$')]がトップで、独裁的な権限をもって統治します。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_corporate_state_austrofascist_desc:0 "コーポラティズムに沿って組織され、その中で国家が、異なる社会化階級間の調停者としての役割を公式的に果たす[concept_government_type]です。[Concept('concept_ruler','$RULER_TITLE_CHANCELLOR$')]がトップで、独裁的な権限をもって統治します。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_american_parliamentary:0 "民主的議会制"
  gov_american_parliamentary_desc:0 "民主的に[Concept('concept_election','$concept_elected$')]された立法府が[concept_country]を統治する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_american_parliamentary_dictator:0 "議会独裁制"

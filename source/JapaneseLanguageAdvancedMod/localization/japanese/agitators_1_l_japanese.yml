@@ -59,7 +59,7 @@
  indochina.2.a:0 "突き進み、[SCOPE.sCountry('potential_imperialism_target').GetNameNoFormatting]を攻撃せよ！"
  indochina.2.b:0 "戦争ではなく、平和を作るべきだ。"
  indochina.3.t:0 "インドシナでの関係？"
- indochina.3.d:0 "[SCOPE.sCountry('indochina_target').GetName]でカトリック教徒に対する残忍な迫害があり、ジンゴイストと敬虔主義者の両方が直ちに強硬な対応を要求している。"
+ indochina.3.d:0 "[SCOPE.sCountry('indochina_target').GetName]でカトリックの信者に対する残忍な迫害があり、好戦主義者と信仰家の両方が直ちに強硬な対応を要求している。"
  indochina.3.f:0 "「さあ行こう…すぐに戻る。2ヶ月ほどの、簡単な冒険さ」"
  indochina.3.a:0 "[SCOPE.sCountry('indochina_target').GetNameNoFormatting]を罰し、インドシナを開かれた場所とせねばならない！"
  indochina.4.t:0 "インドシナ連合"
