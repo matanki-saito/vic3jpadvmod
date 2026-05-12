@@ -185,7 +185,7 @@
  je_hispanoamerica_improve_leverage:0 "我が国が[concept_power_bloc]のリーダーである場合、[ROOT.GetCountry.GetName]は#b すべての旧[ROOT.GetCountry.GetAdjectiveNoFormatting]植民地#!に対し、#positive_value 100#!の[concept_power_bloc_leverage]を獲得する"
  modifier_not_recognized_by_spain:0 "スペインによる独立の未承認"
  je_spanish_american_independence:0 "かつての本国"
- je_spanish_american_independence_reason:0 "[ROOT.GetCountry.GetName]は形式上も実質的にも完全な主権国家として振る舞ってはいるものの、かつての宗主国が承認を保留している限り、世界からの評価は永遠に不安定なままである。我々はマドリッドと良好な関係を築くか、あるいは誰も我が国の正統性を疑うことができないような力強い姿を世界に対して示すべきである。\n\n#b 正式承認#!\nアメリカ大陸におけるスペインの旧植民地は、19世紀初頭の#b スペインアメリカ独立戦争#!の結果、#italic 事実上#!の独立を達成したが、この新たな地位に対する#italic 法的#!承認は行われなかった。\n\nスペインが旧植民地の独立を#b 独立承認#![concept_treaty][concept_article]を用いて正式に認めるまで、両国間の外交関係は#b 著しく制限#!されたままとなる。"
+ je_spanish_american_independence_reason:0 "[ROOT.GetCountry.GetName]は形式上も実質的にも完全な主権国家として振る舞ってはいるものの、かつての宗主国が承認を保留している限り、世界からの評価は永遠に不安定なままである。我々はマドリードと良好な関係を築くか、あるいは誰も我が国の正統性を疑うことができないような力強い姿を世界に対して示すべきである。\n\n#b 正式承認#!\nアメリカ大陸におけるスペインの旧植民地は、19世紀初頭の#b スペイン領アメリカ独立戦争#!の結果、#italic 事実上#!の独立を達成したが、この新たな地位に対する#italic 法的#!承認は行われなかった。\n\nスペインが旧植民地の独立を#b 独立承認#![concept_treaty][concept_article]を用いて正式に認めるまで、両国間の外交関係は#b 著しく制限#!されたままとなる。"
  modifier_renewed_diplomatic_efforts:0 "外交努力の再開"
  je_spanish_american_reconquista_tt:0 "スペインが#b アメリカ再征服#!を追求するなら、国際社会における#b 地位が失墜#!することになり、我々はこの[concept_modifier]を失う"
  je_spanish_american_optional_tt:0 "我が国と[SCOPE.sCountry('spain_scope').GetName]との[concept_relations]が#v 80#!以上の場合、[SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting]から我が国への[concept_mass_migration]が始まる"

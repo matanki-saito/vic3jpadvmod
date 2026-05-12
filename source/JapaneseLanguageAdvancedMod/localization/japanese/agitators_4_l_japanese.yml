@@ -153,7 +153,7 @@
  coup_pulse_events.1.d:0 "[SCOPE.sCharacter('accused_general').GetFullName]、[SCOPE.gsInterestGroup('accused_general_ig').GetName]に属する将軍が重大な不誠実さを非難されている。[SCOPE.sCharacter('accused_general').GetFullName]は、これは自分たちの支配の障壁を取り除くための破壊分子による陰謀に過ぎないと主張している。"
  coup_pulse_events.1.f:0 "「紳士諸君、断言しよう。私の手紙に書かれているようなことは、私は全く知らない。もし、私の容疑を晴らすために、私物を調べなければならないのであれば、私は喜んで協力しよう」"
  coup_pulse_events.1.a:0 "将軍の忠誠心に賭けてはならない。"
- coup_pulse_events.1.a.tt:0 "[SCOPE.sCharacter('accoded_general').GetFullName]を引退させよう。"
+ coup_pulse_events.1.a.tt:0 "[SCOPE.sCharacter('accused_general').GetFullName]は[concept_general]ではなくなる"
  coup_pulse_events.1.b:0 "誰が、いったい誰がこの告発をしたのか？"
  coup_pulse_events.2.t:0 "分断の増大"
  coup_pulse_events.2.d:0 "[SCOPE.gsInterestGroup('conflicted_loyalty_ig').GetName]は、[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle][SCOPE.sCharacter('golpista_general').GetLastName]の[SCOPE.sParty('conflicted_loyalty_party').GetName]と密接に関わっているにもかかわらず、政府を武力で転覆させるという考えには反対を表明している。"

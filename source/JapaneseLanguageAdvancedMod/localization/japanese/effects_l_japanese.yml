@@ -201,7 +201,7 @@
  SET_POP_HAPPINESS:0 "[POP.GetState.GetName]にいる[Pop.GetName]の幸福度が$VALUE|+$に設定されます"
  CHANGE_POPTYPE:0 "[Pop.GetState.GetName]の[Pop.GetName]が#variable [POP_TYPE.GetName]#!になります"
  CHANGE_POP_RELIGION:0 "[Pop.GetState.GetName]にいる[Pop.GetName]の$VALUE|0v%$が[Religion.GetName]を信仰します"
- CONVERT_POPULATION:0 "[STATE.GetName]にいる非[Religion.GetName]の$VALUE|0v%$が[Religion.GetName]を信仰します"
+ CONVERT_POPULATION:0 "[STATE.GetName]にいる非[Religion.GetName]人口の$VALUE|0v%$が[Religion.GetName]を信仰します"
  CHANGE_POP_CULTURE:0 "[Pop.GetState.GetName]にいる[Pop.GetName]の$VALUE|0v%$が[Culture.GetName]に同化します"
  MOVE_POP:0 "[Pop.GetState.GetName]の[Pop.GetName]が$VALUE|vD$、[TARGET_STATE.GetName]に移動します"
  EFFECT_CREATE_ASSIGNMENT:0 "[CHARACTER.GetFullName]を[STRATEGIC_REGION.GetName]に配属されます"

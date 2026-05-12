@@ -1,5 +1,4 @@
 ﻿l_japanese:
- dyn_c_croatia_slavonia:0 "クロアチア・スラヴォニア"
  je_matter_of_hungary:0 "ハンガリー問題"
  je_matter_of_hungary_reason:0 "数世紀前にハプスブルク家が初めて聖イシュトヴァーンの王冠を手にして以来、独立心が強いハンガリーの臣民の統治には苦労が絶えなかった。\n\n[GetCulture('hungarian').GetName]の自治権を求める要求がますます激化していることを受け、[ROOT.GetCountry.GetCapital.GetCityHubName]政府は、ハンガリー民族主義者の要求に応じるか、あるいは必要とあらば武力で鎮圧するかを判断しなければならない。\n\n#bold ハンガリー革命#!\n#Bold $je_springtime_of_the_peoples$#!の[concept_journal_entry]が有効になると、#b $HUN_ADJ$国会#!内で急進派が台頭する可能性が高く、[ROOT.GetCountry.GetCapital.GetCityHubName]政府との対立につながる恐れもある。"
  modifier_young_hungary_movement:0 "若きハンガリー運動"

@@ -359,4 +359,4 @@
  ACHIEVEMENT_DESC_achievement_son_of_varmland:0 "スウェーデンとして、最初のモニター艦を建造する。"
  achievement_son_of_varmland_tt:0 "モニター艦を建造する最初の[concept_country]である"
  ACHIEVEMENT_achievement_everyone_disliked_that:0 "誰ひとり気に入らなかった"
- ACHIEVEMENT_DESC_achievement_everyone_disliked_that:0 "司令官を昇進させることで、すべての利益集団の支持を低下させる。"
+ ACHIEVEMENT_DESC_achievement_everyone_disliked_that:0 "司令官を昇進させることで、7つ以上の利益団体の支持を低下させる。"

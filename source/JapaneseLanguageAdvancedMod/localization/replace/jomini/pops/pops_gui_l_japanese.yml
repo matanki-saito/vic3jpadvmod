@@ -1,3 +1,0 @@
-﻿l_japanese:
- POPS_LOGIN_RESET_PASSWORD_EMAIL_SENT:0 "[POPSLoginView.GetEmail]にメールを送信しました。パスワードをリセットするには、メールに記載する手順に従ってください"
- CREATE_SOCIAL_PROFILE_ERROR:0 "エラー : [CreateSocialProfileWindow.GetErrorMessage]"

@@ -194,7 +194,7 @@
  region_arabic_old:0 "$region_arabi$"
  region_caucasus_old:0 "$region_caucasu$"
  region_central_asia_old:0 "$region_central_asia$"
- region_anatolia_old:0 "$region_anatolia$"
+ region_anatolia_old:0 "アナトリア"
  region_indochina_old:0 "$region_indochina$"
  region_north_china_old:0 "$region_north_china$"
  region_south_china_old:0 "$region_south_china$"

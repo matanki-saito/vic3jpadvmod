@@ -4,3 +4,8 @@
  veterancy2:0 "熟練"
  veterancy3:0 "古参"
  veterancy4:0 "精鋭"
+ ship_veterancy_none:0 "$no_veterancy$"
+ ship_veterancy_1:0 "$veterancy1$"
+ ship_veterancy_2:0 "$veterancy2$"
+ ship_veterancy_3:0 "$veterancy3$"
+ ship_veterancy_4:0 "$veterancy4$"

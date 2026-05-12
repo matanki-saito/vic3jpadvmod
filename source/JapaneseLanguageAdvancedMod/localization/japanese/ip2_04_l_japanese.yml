@@ -520,7 +520,7 @@
  bht_end_privy_purse_payments:0 "御手元金の支払いを終了"
  bht_end_privy_purse_payments_desc:0 "我々が併合した#b 藩王国#!の前支配者の一族に対する#b $modifier_privy_purse_payments$#!は、我々の予算のかなりの割合を占めています。予定よりも早く支払いを打ち切ることはできますが、御手元金を頼りに暮らすようになった貴族を怒らせてしまうかもしれません。"
  warning_may_cause_massive_debt_tt:0 "@warning! 最大で@money![GetPlayer.MakeScope.ScriptValue('privy_purse_value_potential')|D-]の#b $modifier_privy_purse_payments$#!が追加されます"
- add_claims_on_india_tt:0 "[ROOT.GetCountry.GetName]が[Concept('concept_georegion_india','$concept_georegion_indian$')]の全[Concept('concept_state','$concept_states$')]の[Concept('concept_claim','$concept_claims$')]を得ます"
+ add_claims_on_india_tt:0 "[ROOT.GetCountry.GetName]が[GetGeographicRegion('geographic_region_india').GetName]の[Concept('concept_state','$concept_states$')]すべてに対する[Concept('concept_claim','$concept_claims$')]を得ます"
  no_federation_je_tt:0 "有効な#v インド連邦#!の[concept_journal_entry]が#b ありません#!"
  no_union_je_tt:0 "有効な#v インド統一#!の[concept_journal_entry]が#b ありません#!"
  all_princely_states_get_invitation_tt:0 "対象となるすべての[Concept('concept_princely_state','$concept_princely_states$')]が[ROOT.GetCountry.GetNameNoFlag]に加わるよう招請されます"

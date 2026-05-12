@@ -95,7 +95,7 @@
  MAP_INTERACTION_EDIT_NAVAL_MISSION_NO_MISSION_MULTIPLE_DESC:0 "$concept_fleets$には利用可能な[Concept('concept_naval_mission','$concept_naval_missions$')]がありません"
  MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_SINGLE_DESC:0 "[MilitaryFormation.GetName]が[concept_naval_mission]「[NavalMission.GetName]」を実行する[Concept('concept_sea_node','$concept_sea_regions$')]を選択"
  MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_MULTIPLE_DESC:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN$')] 複数#!#!の[Concept('concept_naval_mission','$concept_naval_missions$')]の[Concept('concept_sea_node','$concept_sea_regions$')]を選択"
- MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_EXTRA_DESC:0 "合計任務海域 : $MISSION_AREA|v$\n必要補給艦 : @supply!$SUPPLY_SHIPS|v$\n移動時間 : $TRAVEL_TIME|v$日"
+ MAP_INTERACTION_EDIT_NAVAL_MISSION_SEA_REGIONS_EXTRA_DESC:0 "任務エリア合計 : $MISSION_AREA|v$\n補給艦の必要数 : @supply!$SUPPLY_SHIPS|v$\n移動時間 : $TRAVEL_TIME|v$日"
  FLEET_LIST_ENTRY:0 "[MilitaryFormation.GetName]"
  NAVAL_MISSION_LIST_ENTRY:0 "[NavalMission.GetName]"
  NAVAL_MISSION_TYPE_LIST_ENTRY:0 "[NavalMissionType.GetName]"

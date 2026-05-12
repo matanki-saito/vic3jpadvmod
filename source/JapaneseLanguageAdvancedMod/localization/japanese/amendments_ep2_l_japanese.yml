@@ -1,3 +1,13 @@
 ﻿l_japanese:
  amendment_taikunate:0 "大君国"
  amendment_taikunate_desc:0 "この議会制度では、徳川家が特別な権利を維持し、当主は政府の長としての地位を恒久的に保有する。"
+ amendment_frugal_ordinance:0 "倹約令"
+ amendment_frugal_ordinance_desc:0 "庶民が贅沢品、娯楽、文学に触れることは政府によって厳格に制限され、規制されている。"
+ amendment_zaibatsu_oligopoly:0 "財閥の寡占"
+ amendment_zaibatsu_oligopoly_desc:0 "経済は、国家との共生関係にある、裕福な軍産財閥の閉鎖的な集団によって支配されるようになった。"
+ amendment_zaibatsu_oligopoly_1:0 "$amendment_zaibatsu_oligopoly$"
+ amendment_zaibatsu_oligopoly_1_desc:0 "$amendment_zaibatsu_oligopoly_desc$"
+ amendment_zaibatsu_oligopoly_2:0 "$amendment_zaibatsu_oligopoly$"
+ amendment_zaibatsu_oligopoly_2_desc:0 "$amendment_zaibatsu_oligopoly_desc$"
+ amendment_reformed_shinsengumi:0 "新選組の系譜"
+ amendment_reformed_shinsengumi_desc:0 "国家の秘密警察機関は、幕府から京都の治安維持を任された精鋭の剣士部隊、新選組を起源としている。"

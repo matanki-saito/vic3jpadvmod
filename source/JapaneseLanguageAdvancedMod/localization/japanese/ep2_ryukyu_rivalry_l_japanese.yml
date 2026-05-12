@@ -79,7 +79,7 @@
  ryukyu_rivalry.6.d_fire:0 "外国の使節団に割り当てられた[SCOPE.sCountry('ryukyu_scope').GetName]の宿舎で火災が発生し、[SCOPE.sCountry('japan_scope').GetAdjective]と[SCOPE.sCountry('china_scope').GetAdjective]の代表団の区画が全焼した。出火原因は不明だが、地元の役人たちは置き忘れた灯篭が原因ではないかと囁き合っている。"
  ryukyu_rivalry.6.f:0 "将校の開聞は物見櫓や倉の間を駆け抜けながら、守備兵たちに命令を伝えた。号令が矢継ぎ早に叫ばれ、食い違い、そして繰り返された。やがて平穏は戻ったが、開聞は列強間の相反する使命が琉球の脆弱な状況をいかに露呈させるかを改めて思い知らされた。"
  ryukyu_rivalry.6.a:0 "緊張が高まっている。"
- ryukyu_rivalry_ryukyu_confrontation_tt1:0 "[SCOPE.sCountry('japan_scope').GetAdjective]と[SCOPE.sCountry('china_scope').GetAdjective]の[concept_infamy]が#v 6#!増加した"
+ ryukyu_rivalry_ryukyu_confrontation_tt1:0 "[SCOPE.sCountry('japan_scope').GetAdjective]と[SCOPE.sCountry('china_scope').GetAdjective]の[concept_infamy]が#v 6#!増加する"
  ryukyu_rivalry.7.t:0 "琉球の布告"
  ryukyu_rivalry.7.d_ryukyu:0 "長年にわたる慎重な観察と巧妙な外交を経て、我が国の評議機関は外部の干渉を排して国政を自ら執る意思を表明した。王府は外部からの影響に厳格な制限を設けて、王国の儀礼、官僚、伝統的評議機関の優位を明文化した。王国は今や、自らの進む道を定めるのである。"
  ryukyu_rivalry.7.d:0 "長年にわたる慎重な観察と巧妙な外交を経て、[SCOPE.sCountry('ryukyu_scope').GetName]は我が国の影響を振り切り、外部の干渉を排して国政を自ら執る意思を表明した。王府は我々の介入に厳格な制限を設けて、王国がその儀礼、官僚、伝統的評議機関を維持し、我が国の権威から距離を置く道を選んだのである。"
