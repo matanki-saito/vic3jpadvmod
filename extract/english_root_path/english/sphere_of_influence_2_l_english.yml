@@ -1,27 +1,4 @@
 ﻿l_english:
-
-company_da_afghan_nassaji_sherkat: "Da Afghan Nassaji Sherkat"
-company_iranian_state_railway: "Iranian State Railway"
-company_tashkent_railroad: "Tashkent Railroad"
-company_west_ural_petroleum: "West Ural Petroleum Company, Limited"
-company_sherkat_shemali: "Sherkat-e Ettehadiya-ye Welayat-e Shemali"
-company_opium_export_monopoly: "Bongah-e Enhesar-e Saderat-e Taryak"
-company_sherkate_eslamiya: "Sherkat-e Eslamiya"
-company_nicolas_portalis: "MM. Nicolas Portalis et Cie."
-company_hanseong_jeongi_hoesa: "Hanseong Jeongi Hoesa"
-company_kirgizian_mining_company: "Kirgizian Mining Joint Stock Company"
-company_persshelk: "Persshelk"
-company_perskhlopok: "Perskhlopok"
-company_moscow_irrigation_company: "Moscow Irrigation Company"
-company_guinness: "Arthur Guinness Son & Co. Ltd"
-company_oriental_development_company: "Oriental Development Company"
-company_turkish_petroleum: "Turkish Petroleum Company"
-company_anglo_persian_oil: "Anglo-Persian Oil Company"
-company_national_iranian_oil: "National Iranian Oil Company"
-
-company_national_iranian_oil_tt: "We do not have the #bold Anglo-Persian Oil Company#! as an active [concept_company]."
-company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Company#! as an active [concept_company]."
-
  je_eastern_frontier: "The Eastern Frontier"
  je_eastern_frontier_reason: "The great expanse to our east, dominated by once bustling cities such as [SCOPE.sStateRegion('merv_scope').GetName] and [SCOPE.sStateRegion('herat_scope').GetName], have comprised part of [SCOPE.GetRootScope.GetCountry.GetAdjective] Khorasan ever since the days of Manochehr. While these lands have since been wrested from us by the passage of time and the domination of oppressive and powerful rulers, it can be so no longer.\n\nDecisive steps must be taken to reintegrate these wayward lands, so that no foreign power may invade and subjugate them again.\n\n#bold Turanian Captivity#!\nGenerations of Turkmen raids into our lands have resulted in large populations of Persian slaves toiling in oases such as [SCOPE.sStateRegion('uzbekia_scope').GetName] and [SCOPE.sStateRegion('khiva_scope').GetName]. Capturing these areas will allow us to liberate and #tooltippable #tooltip:je_eastern_frontier_tt_5 resettle#!#! enslaved Persian communties, if we so please."
  je_eastern_frontier_tt_1: "[GetGeographicRegion('geographic_region_greater_khorasan').GetName] is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."
@@ -138,12 +115,6 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
  notification_persian_assistance_request_rejected_desc: "[SCOPE.sCountry('relevant_country').GetName] has sent a generic reply to our request for a military mission, stating that they cannot commit to assistance at this time."
  notification_persian_assistance_request_rejected_tooltip: "#header $notification_persian_assistance_request_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_persian_assistance_request_rejected_desc$"
 
- dyn_c_muhammara: "Muhammara"
- dyn_c_muhammara_adj: "Kaabi"
- dyn_c_iran: "Iran"
- dyn_c_iran_adj: "Iranian"
- dyn_c_durrani_empire: "Durrani Empire"
- dyn_c_durrani_empire_adj: "Durrani"
  herat_war: "Herat War"
 
  je_secure_influence_over_persia: "Secure Influence over Persia"
@@ -158,7 +129,6 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
  je_achieve_sovereignty_tt: "We have been a [concept_subject] for #bold 10#! consecutive years. (Currently #variable [ROOT.GetCountry.MakeScope.Var('achieve_sovereignty_var').GetValue]#!)"
  je_achieve_sovereignty_tt_2: "By maintaining our independence in the face of European aggression, we will progress towards ending the Great Game in our favor."
  je_achieve_sovereignty_tt_3: "[ROOT.GetCountry.GetName] is a [concept_recognized_power]"
-
 
  request_recognition: "Request Embassy"
  request_recognition_desc: "An [concept_instant_diplomatic_action] targeting a [concept_great_power] that increases your country's progress towards becoming a [concept_recognized_power]."
@@ -396,6 +366,7 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
  Koninklijk_Nederlands_Leger: "Koninklijk Nederlands Leger"
  Armee_Belge: "Armée Belge"
 
+ # London Conference
  je_conference_of_london: "London Conference"
  je_conference_of_london_reason: "The great powers have sent their delegations to London to decide on a solution to the unsolved border issues between Netherlands and Belgium. \n\n#variable [GetGlobalVariable( 'je_conference_of_london_participants_var' ).GetValue]#! [Concept('concept_great_power', '$concept_great_powers$')] are participating in the Conference.\n#bold #tooltippable #tooltip:favour_belgium_button_desc $favour_belgium_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_1' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:favour_netherlands_button_desc $favour_netherlands_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_2' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:partition_compromise_button_desc $partition_compromise_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_3' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:luxembourg_compromise_button_desc $luxembourg_compromise_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_4' ).GetValue]#! total [concept_prestige]\n\nThe conference will conclude in #variable [GetGlobalVariable('je_conference_of_london_timer').GetValue]#! months. The proposal with the most prestige #tooltippable #tooltip:london_treaty_voting_rules supporting#!#! it will then be selected as the conference's offical solution.\n\n#Bold Result#!\nThe Conference has [ROOT.GetCountry.GetCustom('treaty_of_london_coutcome')][ROOT.GetCountry.GetCustom('treaty_of_london_acceptance_timer')]"
  je_conference_of_london_tt_1: "The Conference has decided how to settle the Belgian question."
@@ -424,8 +395,6 @@ company_anglo_persian_oil_tt: "We do not have the #bold National Iranian Oil Com
  london_conference_has_concluded_loc: "The London Conference has concluded."
  improve_relations_with_german_confederation_tt: "The following will be true for every German-cultured [concept_country] in Europe:"
  je_conference_of_london_acceptance_timer_tt: "\n\nWe will automatically accept the outcome of the conference in #variable [GetGlobalVariable('je_conference_of_london_acceptance_timer').GetValue]#! months."
-
-
 
  treaty_of_london_events.1.t: "The Belgian Question"
  treaty_of_london_events.1.d: "Since the secession of [SCOPE.sCountry('belgium_scope').GetName] in 1830, [ROOT.GetCountry.GetAdjective] efforts to reunify the country have all met with failure. Weary of the effects of the current, uneasy truce, many are now urging the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to commit to a final, negotiated settlement."

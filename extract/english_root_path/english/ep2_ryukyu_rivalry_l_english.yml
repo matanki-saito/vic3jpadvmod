@@ -97,7 +97,7 @@ ryukyu_rivalry.6.d_accident: "Forces from [SCOPE.sCountry('japan_scope').GetName
 ryukyu_rivalry.6.d_fire: "A fire has broken out within the lodgings assigned to the foreign inspection missions in [SCOPE.sCountry('ryukyu_scope').GetName], consuming the quarters of the [SCOPE.sCountry('japan_scope').GetAdjective] and [SCOPE.sCountry('china_scope').GetAdjective] contingents. The cause remains unclear, though local officials whisper of misplaced lanterns."
 ryukyu_rivalry.6.f: "Officer Kaimon ran between watchtowers and storehouses, passing orders to the guards. Every command shouted, contradicted, and repeated in quick succession. Though calmness eventually returned, Kaimon had been reminded of how competing missions between foreign powers could expose Ryukyu's fragile situation."
 ryukyu_rivalry.6.a: "Tensions are escalating."
-ryukyu_rivalry_ryukyu_confrontation_tt1: "[SCOPE.sCountry('japan_scope').GetAdjective] and [SCOPE.sCountry('china_scope').GetAdjective] [concept_infamy] increased by #v 6#!"
+ryukyu_rivalry_ryukyu_confrontation_tt1: "[SCOPE.sCountry('japan_scope').GetAdjective] and [SCOPE.sCountry('china_scope').GetAdjective] [concept_infamy] is increased by #v 6#!"
 
 ryukyu_rivalry.7.t: "The Ryukyuan Decree"
 ryukyu_rivalry.7.d_ryukyu: "After years of careful observation and subtle diplomacy, our council has declared its intent to govern its affairs without external interference. The court has set firm limits on outside influence, and enshrined the primacy of its own rituals, ministers, and traditional councils. The kingdom now charts its own course."

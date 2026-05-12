@@ -383,9 +383,6 @@
 
  modifier_destroy_guerillas:0 "Destroying Guerrillas"
 
- dyn_c_confederate_state_of_america:0 "Confederate State of America"
- dyn_c_united_state:0 "United State of America"
-
  congo_free_state_events.1.t:1 "The [SCOPE.sCountry('free_state').GetNameNoFlag]"
  congo_free_state_events.1.d:0 "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('free_state_monarch').GetFullName] has declared that this land will now be a free state under [SCOPE.sCharacter('free_state_monarch').GetHerHis] control in a personal union with our country."
  congo_free_state_events.1.f:1 "The [SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle] has [SCOPE.sCharacter('free_state_monarch').GetHerHis] face paralyzed in a static smile, like a marble statue. [SCOPE.sCharacter('free_state_monarch').GetSheHe|U] talks with a velvet voice that makes the walls turn red and cozy: "I do not want to risk losing a fine chance to secure for ourselves a slice of this magnificent African cake."\n\nThe paintings behind [SCOPE.sCharacter('free_state_monarch').GetHerHim] all depict a common topic; the canvas shimmers in the parts with blood."
@@ -702,7 +699,7 @@
 
  free_speech_laws.3.t:0 "Overzealous Censorship"
  free_speech_laws.3.d:0 "The [SCOPE.sLaw('current_law_scope').GetName] law is having trouble gaining popular support as references to it are being suppressed by the current censorship apparatus."
- free_speech_laws.3.f:0 ""Anything regarding censorship is immediately censored, so how on earth are we meant to have an open discussion about it?"\n\n "First time, eh? They're only as smart as what they understand. If they're none too literate, you can slip a few metaphors and similes past."\n\n"What in blazes is a simile? Some crooked smile?"
+ free_speech_laws.3.f:0 ""Anything regarding censorship is immediately censored, so how on earth are we meant to have an open discussion about it?"\n\n "First time, eh? They're only as smart as what they understand. If they're none too literate, you can slip a few metaphors and similes past."\n\n"What in blazes is a simile? Some crooked smile?""
  free_speech_laws.3.a:0 "Not much we can do."
  free_speech_laws.3.b:0 "Maybe we can skirt the laws a bit."
 
@@ -927,3 +924,17 @@
  ig_placated_bureaucracy_cost:0 "Interest Group Placation Bureaucracy Cost"
  ig_demand_not_met:0 "Interest Group Demand Not Met"
  ig_placated_completion:0 "Interest Group Placated"
+
+ oscar_wilde_events.1.t:1 "Each Man Kills the Thing He Loves"
+ oscar_wilde_events.1.wilde:2 "The infamous dandy playwright [SCOPE.sCharacter('oscar_wilde').GetFullName] has been sentenced to two years of hard labor on a charge of homosexuality. If [SCOPE.sCharacter('oscar_wilde').GetSheHe] doesn't receive a pardon, we may as well have sentenced the arts in [ROOT.GetCountry.GetNameNoFlag] along with [SCOPE.sCharacter('oscar_wilde').GetHerHim]."
+ oscar_wilde_events.1.flavor_wilde:1 ""[SCOPE.sCharacter('oscar_wilde').GetHerHis] work represents some of the very best of our nation's tradition of satire and cutting wit.\n\n"
+ oscar_wilde_events.1.flavor_author:0 ""It has all the terrible beauty of a Greek tragedy, a tragedy in which I took a great part.\n\n"
+ oscar_wilde_events.1.flavor_quote:0 "The books that the world calls immoral are books that show the world its own shame.""
+ oscar_wilde_tt:0 "[SCOPE.sCharacter('oscar_wilde').GetFullName] will be set free."
+ oscar_wilde_events.1.a:0 "A genius deserves an exemption."
+ oscar_wilde_events.1.b:0 "We cannot be seen undermining our judges' verdicts."
+ oscar_wilde_events.1.c:0 "It is barbaric for this to be a criminal act at all..."
+ happy_arts_protected:0 "Approves Artists Protected"
+ unhappy_defended_homosexuality:0 "Disapproves of Homosexual Tolerance"
+ imprisoning_gentlemen:0 "Gentlemen Imprisoned"
+ upheld_ruling:0 "Upheld Ruling"

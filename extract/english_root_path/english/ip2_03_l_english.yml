@@ -101,22 +101,29 @@
  je_india_railway_reason: "A grand railway network shall connect us all. It will bring great progress to the country and shape the future of our nation!"
  je_india_railway_status: "Construct a grand $building_railway$ network to connect India."
 
- delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the #tooltippable #tooltip:indian_railway_delhi_calcutta_tt #bold Delhi-Calcutta line#! #!#!"
- allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the #tooltippable #tooltip:indian_railway_allahabad_bombay_tt #bold Allahabad-Bombay line#! #!#!"
- bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the #tooltippable #tooltip:indian_railway_bombay_madras_tt #bold Bombay-Madras line#! #!#!"
- gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the #tooltippable #tooltip:indian_railway_gujarat_bombay_tt #bold Gujarat-Bombay line#! #!#!"
+ delhi_calcutta_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName]"
+ allahabad_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName]"
+ bombay_madras_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the [GetGeographicRegion('geographic_region_bombay_madras_line').GetName]"
+ gujarat_bombay_line_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has all [Concept('concept_state_region','$concept_state_regions$')] to build the [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName]"
 
- delhi_calcutta_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] in the #tooltippable #tooltip:indian_railway_delhi_calcutta_tt #bold Delhi-Calcutta line#! #!#! have a $building_railway$"
- allahabad_bombay_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] in the #tooltippable #tooltip:indian_railway_allahabad_bombay_tt #bold Allahabad-Bombay line#! #!#! have a $building_railway$"
- bombay_madras_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] in the #tooltippable #tooltip:indian_railway_bombay_madras_tt #bold Bombay-Madras line#! #!#! have a $building_railway$"
- gujarat_bombay_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] in the #tooltippable #tooltip:indian_railway_gujarat_bombay_tt #bold Gujarat-Bombay line#! #!#! have a $building_railway$"
+ delhi_calcutta_line_status_tt: "$delhi_calcutta_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_delhi_calcutta_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
+ allahabad_bombay_line_status_tt: "$allahabad_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_allahabad_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
+ bombay_madras_line_status_tt: "$bombay_madras_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_bombay_madras_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
+ gujarat_bombay_line_status_tt: "$gujarat_bombay_line_complete_tt$: #indent_newline:3 \n[GetScriptedGui('je_india_railway_gujarat_bombay_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
+
+ delhi_calcutta_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] on the [GetGeographicRegion('geographic_region_delhi_calcutta_line').GetName] have a $building_railway$"
+ allahabad_bombay_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] on the [GetGeographicRegion('geographic_region_allahabad_bombay_line').GetName] have a $building_railway$"
+ bombay_madras_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] on the [GetGeographicRegion('geographic_region_bombay_madras_line').GetName] have a $building_railway$"
+ gujarat_bombay_line_complete_tt: "All [Concept('concept_state_region','$concept_state_regions$')] on the [GetGeographicRegion('geographic_region_gujarat_bombay_line').GetName] have a $building_railway$"
+
+ INDIAN_RAILWAY_ENTRY: "$checkbox_ticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] has a [GetBuildingType('building_railway').GetName]"
+ INDIAN_RAILWAY_ENTRY_NO: "$checkbox_unticked$ [SCOPE.sStateRegion('state_region_to_display').GetName] has a [GetBuildingType('building_railway').GetName]"
 
  #tooltippable tooltips for each segment of the railway
  indian_railway_delhi_calcutta_tt: "The Delhi-Calcutta line includes the $concept_state_regions$ of:\n$STATE_WEST_BENGAL$\n$STATE_BIHAR$\n$STATE_AWADH$\n$STATE_AGRA$\n$STATE_DELHI$"
  indian_railway_allahabad_bombay_tt: "The Allahabad-Bombay line includes the $concept_state_regions$ of:\n$STATE_AGRA$\n$STATE_BUNDELKHAND$\n$STATE_CENTRAL_PROVINCES$\n$STATE_MALWA$\n$STATE_BOMBAY$"
  indian_railway_bombay_madras_tt: "The Bombay-Madras line includes the $concept_state_regions$ of:\n$STATE_BOMBAY$\n$STATE_HYDERABAD$\n$STATE_KURNOOL$\n$STATE_MADRAS$"
  indian_railway_gujarat_bombay_tt: "The Gujarat-Bombay line includes the $concept_state_regions$ of:\n$STATE_BOMBAY$\n$STATE_GUJARAT$"
- 
 
  india_railway.1.t: "Train Robbery in [SCOPE.sState('relevant_state').GetNameNoFormatting]"
  india_railway.1.d: "International press has been reporting on a train robbery in [SCOPE.sState('relevant_state').GetNameNoFormatting] led by [SCOPE.sCulture('discriminated_culture').GetNameNoFormatting] agitators."

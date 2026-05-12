@@ -58,6 +58,7 @@
  interest_tier_effect_can_sign_support_independence: "@checkmark! Allows to sign [GetArticleType('support_independence').GetName] [Concept('concept_article', '$concept_treaties$')]"
  interest_tier_effect_can_sign_guarantee_independence: "@checkmark! Allows to sign [GetArticleType('guarantee_independence').GetName] [Concept('concept_article', '$concept_treaties$')]"
  interest_tier_effect_stake_colonial_claim_unrecognized: "@checkmark! Enables the [GetDiplomaticActionType('da_stake_colonial_claim').GetName] [concept_diplomatic_action] on [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')] and [Concept('concept_unrecognized_power', '$concept_unrecognized_powers$')]"
+ interest_tier_effect_can_sign_foreign_investment_rights: "@checkmark! Allows to sign [GetArticleType('foreign_investment_rights').GetName] [Concept('concept_article', '$concept_treaties$')]"
 
 ## Diplomatic Actions
  da_stake_colonial_claim: "Stake Colonial Claim"
@@ -65,7 +66,7 @@
  da_stake_colonial_claim_action_notification_name: "[INITIATOR_COUNTRY.GetName] stakes colonial [concept_claim|l] on [TARGET_STATE.GetStateRegion.GetName]"
  da_stake_colonial_claim_action_notification_desc: "[INITIATOR_COUNTRY.GetName] has claimed [TARGET_STATE.GetStateRegion.GetName] as part of their growing colonial ambitions!"
  DA_STAKE_COLONIAL_CLAIM_COOLDOWN: "Cannot take this action again until #v [TimeKeeper.GetCurrentDateWithDiff( GetVarTimeRemaining( GetPlayer.MakeScope, 'da_stake_colonial_claim_cooldown') )]#!"
- DA_STAKE_COLONIAL_CLAIM_EMPTY_EFFECT: "Choose a [concept_state_region] on another continent to [concept_claim|l]"
+ DA_STAKE_COLONIAL_CLAIM_EMPTY_EFFECT: "Choose a [concept_state_region] on a different continent than your [concept_capital_state] to [concept_claim|l]"
 
 
 ## Notifications

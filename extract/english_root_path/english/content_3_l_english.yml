@@ -252,9 +252,6 @@
  qing_owns_all_han_states_tt: "Owns all [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')], and no [GetCulture('han').GetName] [concept_homeland] is a [concept_split_state]"
  qing_does_not_own_all_han_states_tt: "Does #b not#! own all [GetCulture('han').GetName] [Concept('concept_homeland','$concept_homelands$')]"
 
- dyn_c_empire_of_china:0 "Empire of China"
- dyn_c_empire_of_china_adj:0 "Chinese"
-
  boxer_rebellion_events.1.t:0 "The Yihetuan Movement"
  boxer_rebellion_events.1.d:1 "Furious with the growing foreign presence in [ROOT.GetCountry.GetName], [SCOPE.sCulture('han_culture').GetName] subjects are organizing into anti-foreign militias, bent on driving the "barbarians" back into the sea. Many now urge [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] to back the movement, lest their zeal is turned against [SCOPE.sCulture('manchu_culture').GetName] rule."
  boxer_rebellion_events.1.f:1 ""When the foreign barbarians preach their religion, they say that they are urging men to do good, but in fact, they are disrupting our government, creating turmoil in our system, destroying our customs, and deceiving our people—that is to say, they want to turn the people of China into barbarians."" # Boxer era Han school teacher
@@ -396,8 +393,6 @@
  defensive_doctrine:0 "Defensive Naval Doctrine"
  quantity_over_quality:0 "Quantity Over Quality"
 
-
-
 ##################### Indonesia
 
  net_expand_east_indies:0 "Expand the East Indies Administration."
@@ -405,41 +400,9 @@
  expand_east_indies_tt:1 "Transfer control of all holdings or vassals in the East Indies to our colony."
  expand_dei_cooldown_tt:0 "Has not expanded the East Indies Administration for 2 years"
 
- IDN:0 "Indonesia"
- IDN_ADJ:0 "Indonesian"
-
- dyn_c_majapahit:0 "Majapahit"
- dyn_c_majapahit_adj:0 "Majapahit"
-
- dyn_c_srivijaya:0 "Srivijaya"
- dyn_c_srivijaya_adj:0 "Srivijayan"
-
- dyn_c_sumatra:0 "Sumatra"
- dyn_c_sumatra_adj:0 "Sumatran"
-
- dyn_c_kalimantan:0 "Kalimantan"
- dyn_c_kalimantan_adj:0 "Kalimantan"
-
- dyn_c_boni:0 "Bo-Ni"
- dyn_c_boni_adj:0 "Bo-Ni"
-
- dyn_c_mataram:0 "Mataram"
- dyn_c_mataram_adj:0 "Mataram"
-
 ##################### Arabia
+
  yemenite:0 "Yemenite"
- dyn_c_qasimid_state:0 "Qasimid State"
- dyn_c_qasimid_state_adj:0 "Qasimid"
-
-##################### India
-
- BHT:0 "India"
- BHT_ADJ:0 "Indian"
-
-#################### Sudan
-
- dyn_c_funj_state:0 "Funj"
- dyn_c_funj_state_adj:0 "Funj"
 
 #################### Misc. Journal Entries
 
@@ -520,8 +483,6 @@ poland_events.7.f: ""Brothers, all! We come with glad tidings for you and your h
 poland_events.7.f2: ""Your attention, peasants. You may be wondering why I have brought so many fine gentlemen with rifles today. It is simple: we are here to liberate you. Which first begins with the back tax you owe to the Commonwealth. In due time, the powers that be may consider properly administering your area. Don't resist. Or do: that would go a long way to alleviating the smell of dung from this cesspit.""
 poland_events.7.a: "Welcome, brothers."
 poland_events.7.b: "Our empire grows."
-dyn_c_commonwealth: "Commonwealth"
-dyn_c_commonwealth_adj: "Commonwealth"
 
 colonial_administration: "$gov_colonial_administration$"
 

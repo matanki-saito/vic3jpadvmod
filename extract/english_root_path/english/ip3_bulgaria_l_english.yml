@@ -59,9 +59,6 @@ ai_strategy_prussia_of_the_balkans_desc: "$je_prussia_of_the_balkans_reason$"
 
 TUR_how_to_play_bulgaria_tt: "To play as #v $BUL$#!, release it as an independent [concept_country] or side with a [GetCulture('bulgarian').GetName] [concept_secession]"
 
-dyn_c_bulgarian_empire: "Bulgarian Empire"
-dyn_c_bulgarian_empire_adj: "Imperial Bulgarian"
-
 bulgaria_proclaim_empire: "Proclaim Bulgarian Empire"
 bulgaria_proclaim_empire_desc: "With the capture of the Constantinople, the imperial Roman capital, we will be able to finally cement the legitimacy and place of the Bulgarian Tsardom atop the nations of eastern Christianity."
 bulgarian_empire_tt: "We will be known as #v $dyn_c_bulgarian_empire$#! and granted a new flag and map color"

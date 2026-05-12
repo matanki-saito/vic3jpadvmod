@@ -486,6 +486,10 @@
  ship_interest_gain_add_desc: "この$concept_ship$が担当する戦略的重要地域で生成される[concept_involvement]に対するボーナスあるいはペナルティです。"
  ship_interest_gain_mult: "$ship_interest_gain_add$"
  ship_interest_gain_mult_desc: "$ship_interest_gain_add_desc$"
+ country_ship_crew_starting_veterancy_experience_add: "艦船乗組員の$concept_veterancy_experience$の初期値"
+ country_ship_crew_starting_veterancy_experience_add_desc: "艦船乗組員の[concept_veterancy_experience]の初期値に対するボーナスあるいはペナルティ。"
+ country_ship_crew_starting_veterancy_experience_mult: "$country_ship_crew_starting_veterancy_experience_add$"
+ country_ship_crew_starting_veterancy_experience_mult_desc: "$country_ship_crew_starting_veterancy_experience_add_desc$"
  country_flagship_interest_gain_mult: "$flagship_interest_gain$"
  country_flagship_interest_gain_mult_desc: "[concept_flagship]によって生成される[concept_involvement]に対するボーナスあるいはペナルティです。"
  commander_battle_end_loss: "戦地での敗北"
@@ -2458,8 +2462,8 @@
  country_institution_impact_institution_health_system_mult_desc: "市民に[GetInstitutionType('institution_police').GetName]をもたらすことの#v 影響#!の増減です"
  country_institution_cost_institution_social_security_mult: "[GetInstitutionType('institution_social_security').GetName]の@bur![Nbsp][concept_bureaucracy]コスト"
  country_institution_cost_institution_social_security_mult_desc: "市民に[GetInstitutionType('institution_social_security').GetName]をもたらすために必要となる@bur![Nbsp][concept_bureaucracy]のコストの増減です"
- country_institution_cost_institution_home_affairs_mult: "@bur![Nbsp][concept_bureaucracy] Cost of [GetInstitutionType('institution_home_affairs').GetName]"
- country_institution_cost_institution_home_affairs_mult_desc: "An increase or reduction to the @bur![Nbsp][concept_bureaucracy] cost of bringing [GetInstitutionType('institution_home_affairs').GetName] to the citizens"
+ country_institution_cost_institution_home_affairs_mult: "[GetInstitutionType('institution_home_affairs').GetName]の@bur![Nbsp][concept_bureaucracy]コスト"
+ country_institution_cost_institution_home_affairs_mult_desc: "市民に[GetInstitutionType('institution_home_affairs').GetName]をもたらすために必要となる@bur![Nbsp][concept_bureaucracy]のコストの増減です"
  country_support_independence_weekly_liberty_desire_add: "[GetArticleType('support_independence').GetName]の週次[concept_liberty_desire]"
  country_support_independence_weekly_liberty_desire_add_desc: "この国が[GetArticleType('support_independence').GetName]を通じて独立を支援している[Concept('concept_country', '$concept_countries$')]の[concept_liberty_desire]の週次の増減"
  state_institution_impact_add: "[Concept('concept_institution', '$concept_institutions$')]の影響"
@@ -3728,7 +3732,7 @@
  country_allow_conversion_second_rate_citizen_bool_desc: "ステータスが@acceptance_status_4!$second_rate_citizen$の[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]における[Concept('concept_pop', '$concept_pops$')]が、時間が経つにつれて、受容した[concept_religion]に改宗できるようになります"
  country_allow_conversion_full_acceptance_bool: "ステータスが@acceptance_status_5!$full_acceptance$の[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]の[concept_conversion]を許可します"
  country_allow_conversion_full_acceptance_bool_desc: "ステータスが@acceptance_status_5!$full_acceptance$の[Concept('concept_acceptance_status','$concept_acceptance_status_short$')]における[Concept('concept_pop', '$concept_pops$')]が、時間が経つにつれて、受容した[concept_religion]に改宗できるようになります"
- # Acceptance: Minimum (floors)
+ #Acceptance: Minimum (floors)
  country_brahmins_acceptance_min_add: "$brahmins$[concept_social_class]の最小[concept_acceptance]"
  country_brahmins_acceptance_min_add_desc: "$brahmins$[concept_social_class]の[Concept('concept_pop', '$concept_pops$')]が達成できる[concept_acceptance]値の中で最も低い値"
  country_kshatriyas_acceptance_min_add: "$kshatriyas$[concept_social_class]の最小[concept_acceptance]"
@@ -3751,7 +3755,7 @@
  country_strata_commoners_townspeople_acceptance_min_add_desc: "$strata_commoners_townspeople$[concept_social_class]の[Concept('concept_pop', '$concept_pops$')]が達成できる[concept_acceptance]値の中で最も低い値"
  country_strata_outcastes_acceptance_min_add: "$strata_outcastes$[concept_social_class]の最小[concept_acceptance]"
  country_strata_outcastes_acceptance_min_add_desc: "$strata_outcastes$[concept_social_class]の[Concept('concept_pop', '$concept_pops$')]が達成できる[concept_acceptance]値の中で最も低い値"
- # Acceptance: Maximum (caps)
+ #Acceptance: Maximum (caps)
  country_brahmins_acceptance_max_add: "$brahmins$[concept_social_class]の最大[concept_acceptance]"
  country_brahmins_acceptance_max_add_desc: "$brahmins$[concept_social_class]の[Concept('concept_pop', '$concept_pops$')]が達成できる[concept_acceptance]値の中で最も高い値"
  country_kshatriyas_acceptance_max_add: "$kshatriyas$[concept_social_class]の最大[concept_acceptance]"
@@ -3774,7 +3778,7 @@
  country_strata_commoners_townspeople_acceptance_max_add_desc: "$strata_commoners_townspeople$[concept_social_class]の[Concept('concept_pop', '$concept_pops$')]が達成できる[concept_acceptance]値の中で最も高い値"
  country_strata_outcastes_acceptance_max_add: "$strata_outcastes$[concept_social_class]の最大[concept_acceptance]"
  country_strata_outcastes_acceptance_max_add_desc: "$strata_outcastes$[concept_social_class]の[Concept('concept_pop', '$concept_pops$')]が達成できる[concept_acceptance]値の中で最も高い値"
- # Cultural Acceptance: Flat (add)
+ #Cultural Acceptance: Flat (add)
  country_brahmins_cultural_acceptance_add: "$brahmins$[concept_social_class]の文化[concept_acceptance]"
  country_brahmins_cultural_acceptance_add_desc: "$brahmins$[concept_social_class]の文化[concept_acceptance]の増減にかかる定量補正です"
  country_kshatriyas_cultural_acceptance_add: "$kshatriyas$[concept_social_class]の文化[concept_acceptance]"
@@ -3797,7 +3801,7 @@
  country_strata_commoners_townspeople_cultural_acceptance_add_desc: "$strata_commoners_townspeople$[concept_social_class]の文化[concept_acceptance]の増減にかかる定量補正です"
  country_strata_outcastes_cultural_acceptance_add: "$strata_outcastes$[concept_social_class]の文化[concept_acceptance]"
  country_strata_outcastes_cultural_acceptance_add_desc: "$strata_outcastes$[concept_social_class]の文化[concept_acceptance]の増減にかかる定量補正です"
- # Cultural Acceptance: Percent (mult)
+ #Cultural Acceptance: Percent (mult)
  country_brahmins_cultural_acceptance_mult: "$brahmins$[concept_social_class]の文化[concept_acceptance]"
  country_brahmins_cultural_acceptance_mult_desc: "$brahmins$[concept_social_class]の文化[concept_acceptance]の増減にかかる割合です"
  country_kshatriyas_cultural_acceptance_mult: "$kshatriyas$[concept_social_class]の文化[concept_acceptance]"
@@ -3820,7 +3824,7 @@
  country_strata_commoners_townspeople_cultural_acceptance_mult_desc: "$strata_commoners_townspeople$[concept_social_class]の文化[concept_acceptance]の増減にかかる割合です"
  country_strata_outcastes_cultural_acceptance_mult: "$strata_outcastes$[concept_social_class]の文化[concept_acceptance]"
  country_strata_outcastes_cultural_acceptance_mult_desc: "$strata_outcastes$[concept_social_class]の文化[concept_acceptance]の増減にかかる割合です"
- # Education Access: Flat (add)
+ #Education Access: Flat (add)
  country_brahmins_education_access_add: "$brahmins$[concept_social_class]の[concept_education_access]"
  country_brahmins_education_access_add_desc: "$brahmins$[concept_social_class]の[concept_education_access]の増減にかかる定量補正です"
  country_kshatriyas_education_access_add: "$kshatriyas$[concept_social_class]の[concept_education_access]"
@@ -3843,7 +3847,7 @@
  country_strata_commoners_townspeople_education_access_add_desc: "$strata_commoners_townspeople$[concept_social_class]の[concept_education_access]の増減にかかる定量補正です"
  country_strata_outcastes_education_access_add: "$strata_outcastes$[concept_social_class]の[concept_education_access]"
  country_strata_outcastes_education_access_add_desc: "$strata_outcastes$[concept_social_class]の[concept_education_access]の増減にかかる定量補正です"
- # Education Access: Percent (mult)
+ #Education Access: Percent (mult)
  country_brahmins_education_access_mult: "$brahmins$[concept_social_class]の[concept_education_access]"
  country_brahmins_education_access_mult_desc: "$brahmins$[concept_social_class]の[concept_education_access]の増減にかかる割合です"
  country_kshatriyas_education_access_mult: "$kshatriyas$[concept_social_class]の[concept_education_access]"
@@ -3866,7 +3870,7 @@
  country_strata_commoners_townspeople_education_access_mult_desc: "$strata_commoners_townspeople$[concept_social_class]の[concept_education_access]の増減にかかる割合です"
  country_strata_outcastes_education_access_mult: "$strata_outcastes$[concept_social_class]の[concept_education_access]"
  country_strata_outcastes_education_access_mult_desc: "$strata_outcastes$[concept_social_class]の[concept_education_access]の増減にかかる割合です"
- # Qualification Growth: Flat (add)
+ #Qualification Growth: Flat (add)
  country_brahmins_qualification_growth_add: "$brahmins$[concept_social_class]の資格成長"
  country_brahmins_qualification_growth_add_desc: "$brahmins$[concept_social_class]の資格成長の増減にかかる定量補正です"
  country_kshatriyas_qualification_growth_add: "$kshatriyas$[concept_social_class]の資格成長"
@@ -3889,7 +3893,7 @@
  country_strata_commoners_townspeople_qualification_growth_add_desc: "$strata_commoners_townspeople$[concept_social_class]の資格成長の増減にかかる定量補正です"
  country_strata_outcastes_qualification_growth_add: "$strata_outcastes$[concept_social_class]の資格成長"
  country_strata_outcastes_qualification_growth_add_desc: "$strata_outcastes$[concept_social_class]の資格成長の増減にかかる定量補正です"
- # Qualification Growth: Percent (mult)
+ #Qualification Growth: Percent (mult)
  country_brahmins_qualification_growth_mult: "$brahmins$[concept_social_class]の資格成長"
  country_brahmins_qualification_growth_mult_desc: "$brahmins$[concept_social_class]の資格成長の増減にかかる割合です"
  country_kshatriyas_qualification_growth_mult: "$kshatriyas$[concept_social_class]の資格成長"
@@ -3912,7 +3916,7 @@
  country_strata_commoners_townspeople_qualification_growth_mult_desc: "$strata_commoners_townspeople$[concept_social_class]の資格成長の増減にかかる割合です"
  country_strata_outcastes_qualification_growth_mult: "$strata_outcastes$[concept_social_class]の資格成長"
  country_strata_outcastes_qualification_growth_mult_desc: "$strata_outcastes$[concept_social_class]の資格成長の増減にかかる割合です"
- # Qualification Growth: Within same class
+ #Qualification Growth: Within same class
  country_brahmins_qualification_growth_same_class_mult: "$brahmins$[concept_social_class]内の資格成長"
  country_brahmins_qualification_growth_same_class_mult_desc: "$brahmins$$concept_social_class$の[Concept('concept_profession', '$concept_professions$')]に対する$brahmins$[concept_social_class]の資格成長の増減にかかる割合です"
  country_kshatriyas_qualification_growth_same_class_mult: "$kshatriyas$[concept_social_class]内の資格成長"
@@ -3935,7 +3939,7 @@
  country_strata_commoners_townspeople_qualification_growth_same_class_mult_desc: "$strata_commoners_townspeople$$concept_social_class$の[Concept('concept_profession', '$concept_professions$')]に対する$strata_commoners_townspeople$[concept_social_class]の資格成長の増減にかかる割合です"
  country_strata_outcastes_qualification_growth_same_class_mult: "$strata_outcastes$[concept_social_class]内の資格成長"
  country_strata_outcastes_qualification_growth_same_class_mult_desc: "$strata_outcastes$$concept_social_class$の[Concept('concept_profession', '$concept_professions$')]に対する$strata_outcastes$[concept_social_class]の資格成長の増減にかかる割合です"
- # Qualification Growth: Outside class
+ #Qualification Growth: Outside class
  country_brahmins_qualification_growth_other_class_mult: "$brahmins$の$brahmins$[concept_social_class]外の資格成長"
  country_brahmins_qualification_growth_other_class_mult_desc: "別の[Concept('concept_social_class', '$concept_social_classes$')]の[Concept('concept_profession', '$concept_professions$')]に対する$brahmins$の資格成長の増減にかかる割合です"
  country_kshatriyas_qualification_growth_other_class_mult: "$kshatriyas$の$kshatriyas$[concept_social_class]外の資格成長"

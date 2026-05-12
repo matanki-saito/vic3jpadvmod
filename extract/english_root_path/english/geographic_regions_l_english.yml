@@ -89,6 +89,7 @@
  geographic_region_mozambique: "Mozambique"
  geographic_region_zambezi_basin: "Zambezi Basin"
  geographic_region_south_africa: "South Africa"
+ geographic_region_north_africa_egypt: "North Africa and Egypt"
 
  # America
  geographic_region_north_america: "North America"
@@ -131,6 +132,12 @@
  geographic_region_greater_afghanistan: "Greater Afghanistan"
  geographic_region_great_game_region: "Great Game Region"
  geographic_region_australia: "$AST$"
+ geographic_region_new_zealand: "$NZL$"
+ geographic_region_australasia: "Australasia"
+ geographic_region_delhi_calcutta_line: "Delhi-Calcutta Line"
+ geographic_region_allahabad_bombay_line: "Allahabad-Bombay Line"
+ geographic_region_bombay_madras_line: "Bombay-Madras Line"
+ geographic_region_gujarat_bombay_line: "Gujarat-Bombay Line"
 
  # Seismic Regions
  geographic_region_ring_of_fire: "Ring of Fire"
@@ -144,6 +151,7 @@
  geographic_region_wet_process_coffee_region: "Humid Coffee Belt"
  geographic_region_new_world: "New World"
  geographic_region_old_world: "Old World"
+ geographic_region_krakatoa_tsunami_zone: "Krakatoa Tsunami Zone"
 
  # New SRs
  geographic_region_northern_europe: "$region_northern_europe$"
@@ -199,10 +207,10 @@
  geographic_region_west_siberia_old: "$region_west_siberia$"
  geographic_region_east_siberia_old: "$region_east_siberia$"
  geographic_region_persia_old: "$region_persia$"
- geographic_region_arabic_old: "$region_arabi$"
- geographic_region_caucasus_old: "$region_caucasu$"
+ geographic_region_arabic_old: "$region_arabia$"
+ geographic_region_caucasus_old: "$region_caucasus$"
  geographic_region_central_asia_old: "$region_central_asia$"
- geographic_region_anatolia_old: "$region_anatolia$"
+ geographic_region_anatolia_old: "$region_anatolia_old$"
  geographic_region_indochina_old: "$region_indochina$"
  geographic_region_north_china_old: "$region_north_china$"
  geographic_region_south_china_old: "$region_south_china$"

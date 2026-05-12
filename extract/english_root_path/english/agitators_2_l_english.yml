@@ -164,13 +164,6 @@ algeria_events.8.tt.3: "You formed Algeria as Ait Abbas or Touggourt"
 modern_jugurtha: "Modern Jugurtha"
 barbary_pirates_modifier: "Corsair Heritage"
 
-dyn_c_regency_of_algiers: "Regency of Algiers"
-dyn_c_regency_of_algiers_adj: "Algerian"
-dyn_c_barbary: "Barbary" # Alt. Tamazgha, but that is a very modern term
-dyn_c_barbary_adj: "Barbary"
-dyn_c_maghreb: "Maghreb"
-dyn_c_maghreb_adj: "Maghrebi"
-
 custom_ship_gloire: "Gloire"
 custom_ship_magnanime: "Magnanime"
 custom_ship_devastation: "Dévastation"

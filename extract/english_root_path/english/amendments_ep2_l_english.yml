@@ -1,3 +1,18 @@
 ﻿l_english:
- amendment_taikunate: "Taikunate"
- amendment_taikunate_desc: "The Tokugawa clan retains special privileges within this parliamentary system, with the head of the clan possessing a permanent position as head of government."
+amendment_frugal_ordinance: "Frugal Ordinance"
+amendment_frugal_ordinance_desc: "Commoner access to luxury items, entertainment, and literature is firmly restricted and regulated by the government."
+
+amendment_zaibatsu_oligopoly: "Zaibatsu Oligopoly"
+amendment_zaibatsu_oligopoly_desc: "The economy has come to be dominated by a closed circle of prosperous military-industrial Zaibatsu in a symbiotic relationship with the state."
+
+amendment_zaibatsu_oligopoly_1: "$amendment_zaibatsu_oligopoly$"
+amendment_zaibatsu_oligopoly_1_desc: "$amendment_zaibatsu_oligopoly_desc$"
+
+amendment_zaibatsu_oligopoly_2: "$amendment_zaibatsu_oligopoly$"
+amendment_zaibatsu_oligopoly_2_desc: "$amendment_zaibatsu_oligopoly_desc$"
+
+amendment_taikunate: "Taikunate"
+amendment_taikunate_desc: "The Tokugawa clan retains special privileges within this parliamentary system, with the head of the clan possessing a permanent position as head of government."
+
+amendment_reformed_shinsengumi: "Shinsengumi Lineage"
+amendment_reformed_shinsengumi_desc: "The state's secret police agency has its roots in the Shinsengumi, an elite unit of swordsmen commissioned by the Bakufu to preserve order in Kyōto."

@@ -394,24 +394,25 @@
  pm_religious_bureaucrats:0 "Administrative Clergy"
   
   # Barracks
- pmg_training:0 "Training"
- pm_no_organization:0 "No Organized Training"
- pm_general_training:0 "General Training"
- pm_advanced_tactics_training:0 "Advanced Tactics Training"
- pm_training_streamlining:0 "Training Method Streamlining"
- pm_nco_incorporation:0 "NCO Incorporation"
+ pmg_training: "Training"
+ pm_no_organization: "No Organized Training"
+ pm_general_training: "General Training"
+ pm_advanced_tactics_training: "Advanced Tactics Training"
+ pm_training_streamlining: "Training Method Streamlining"
+ pm_nco_incorporation: "NCO Incorporation"
  pm_mobile_warfare_tactics: "Mobile Warfare Tactics"
+
+ pm_motorized_recon: "Motorized Reconnaissance"
+ pm_motorized_recon_conscription: "$pm_motorized_recon$"
 
  pm_samurai_training: "Samurai Training"
  
- ###
- 
- pmg_training_conscription:0 "$pmg_training$"
- pm_no_organization_conscription:0 "$pm_no_organization$"
- pm_general_training_conscription:0 "$pm_general_training$"
- pm_advanced_tactics_training_conscription:0 "$pm_advanced_tactics_training$"
- pm_training_streamlining_conscription:0 "$pm_training_streamlining$"
- pm_nco_incorporation_conscription:0 "$pm_nco_incorporation$"
+ pmg_training_conscription: "$pmg_training$"
+ pm_no_organization_conscription: "$pm_no_organization$"
+ pm_general_training_conscription: "$pm_general_training$"
+ pm_advanced_tactics_training_conscription: "$pm_advanced_tactics_training$"
+ pm_training_streamlining_conscription: "$pm_training_streamlining$"
+ pm_nco_incorporation_conscription: "$pm_nco_incorporation$"
  pm_mobile_warfare_tactics_conscription: "$pm_mobile_warfare_tactics$"
 
   # Electrics
@@ -419,7 +420,7 @@
  pm_radios:0 "Radio Production"
  pm_telephones:0 "Telephone Production"
 
-  #´Textile Mills
+  # Textile Mills
  pm_dye_workshops:0 "Dye Workshops"
  pm_handsewn_clothes:0 "Handsewn Clothes"
   
@@ -888,27 +889,64 @@
  
  pm_worker_cooperative_building_railway:0 "$pm_worker_cooperative$"
 
- pmg_base_building_skyscraper:0 "Skyscraper"
- pm_skyscraper_bureaucratic_nexus:0 "Bureaucratic Nexus"
- pm_skyscraper_trade_nexus:0 "Trade Nexus"
- pmg_airship_mooring_post:0 "Airships"
- pm_no_airships:0 "No Airships"
- pm_airship_mooring_post:0 "Airship Mooring Post"
+ pmg_base_building_skyscraper: "Skyscraper"
+ pm_skyscraper_bureaucratic_nexus: "Bureaucratic Nexus"
+ pm_skyscraper_trade_nexus: "Trade Nexus"
+ pmg_airship_mooring_post: "Airships"
+ pm_no_airships: "No Airships"
+ pm_airship_mooring_post: "Airship Mooring Post"
 
  pmg_base_building_naval_administration: "Recruitment"
  pm_simple_sailor_recruitment: "Simple Recruitment"
  
+ # Naval Fortifications
  pmg_base_building_naval_fortification: "Fortification"
  pm_naval_fortification_basic: "Basic Fortification"
  pm_naval_fortification_reinforced: "Reinforced Fortification"
  pm_naval_fortification_advanced: "Advanced Fortification"
-
- pm_monument_prestige_only:0 "Prestige"
- pm_monument_prestige_only_vatican_city:0 "$pm_monument_prestige_only$"
- pm_monument_no_effects:0 "No Effect"
  
- pmg_dummy:0 "Dummy PM group for graphics-only buildings. Should never be shown in UI."
- pm_dummy:0 "Dummy PM for graphics-only buildings. Should never be shown in UI."
+ pmg_dummy: "Dummy PM group for graphics-only buildings. Should never be shown in UI."
+ pm_dummy: "Dummy PM for graphics-only buildings. Should never be shown in UI."
+
+ # Outdated Naval Base PMs
+ pmg_escorts: "Convoy Escorts"
+ pmg_raiders: "Convoy Raiders"
+ pm_frigates: "Escort Frigates"
+ pm_destroyers: "Destroyers"
+ pm_commerce_raider: "Commerce Raiders"
+ pm_torpedo_boat: "Torpedo Boats"
+
+ #Canal PM
+ pmg_canal: "Canal"
+ pm_canal: "Canal"
+
+ # Building Monuments
+ pm_monument_prestige_only: "Prestige"
+ pm_monument_prestige_only_vatican_city: "$pm_monument_prestige_only$"
+ pm_monument_no_effects: "No Effect"
+
+ pmg_base_building_angkor_wat: "Base"
+ pm_default_building_angkor_wat: "Angkor Wat"
+ pmg_base_building_big_ben: "Base"
+ pm_default_building_big_ben: "Big Ben"
+ pmg_base_building_forbidden_city: "Base"
+ pm_default_building_forbidden_city: "Forbidden City"
+ pmg_base_building_hagia_sophia: "Base"
+ pm_default_building_hagia_sophia: "Hagia Sophia"
+ pmg_base_building_mosque_of_djenne: "Base"
+ pm_default_building_mosque_of_djenne: "Mosque of Djenne"
+ pmg_base_building_saint_basils_cathedral: "Base"
+ pm_default_building_saint_basils_cathedral: "Saint Basil’s Cathedral"
+ pmg_base_building_statue_of_liberty: "Base"
+ pm_default_building_statue_of_liberty: "Statue of Liberty"
+ pmg_base_building_taj_mahal: "Base"
+ pm_default_building_taj_mahal: "Taj Mahal"
+ pmg_base_building_vatican_city: "Base"
+ pm_default_building_vatican_city: "Vatican City"
+ pmg_base_building_white_house: "Base"
+ pm_default_building_white_house: "White House"
+
+ pm_default_building_machu_picchu: "Machu Picchu"
 
  # IP3 Building Monuments
  pmg_base_building_kaiserforum_1: "$pm_base$"
@@ -942,7 +980,7 @@
 
  MODIFIER_NAME_FORMAT_PRODUCTION_METHOD: "#tooltippable_name #tooltip:$TAG$,$TOOLTIP$,ProductionMethodTooltip $PRODUCTION_METHOD$#!#!"
 
- ### NEW PMS
+ ### IP4 PMS
 
  #Sugar
  ox_driven_rollers_sugar: "Ox-Driven Rollers"

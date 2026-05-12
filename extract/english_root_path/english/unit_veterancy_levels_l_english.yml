@@ -4,3 +4,8 @@
  veterancy2: "Seasoned"
  veterancy3: "Veteran"
  veterancy4: "Elite"
+ ship_veterancy_none: "$no_veterancy$"
+ ship_veterancy_1: "$veterancy1$"
+ ship_veterancy_2: "$veterancy2$"
+ ship_veterancy_3: "$veterancy3$"
+ ship_veterancy_4: "$veterancy4$"

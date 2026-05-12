@@ -582,6 +582,7 @@
  can_reformer_movement_fury: "改革運動の盛り上がり"
  je_struggle_for_the_highveld: "ハイベルドを巡る戦い"
  je_struggle_for_the_highveld_reason: "草原の内陸地は一見すると荒涼とした低木地でしかないが、その中には肥沃な土地があり、断崖は誘うように輝いている。この豊かな大地がその潜在能力を最大限に発揮するのに欠かせない平和を獲得すべく、我々は秩序を、我々の手による秩序を確立しなければならない。"
+ je_struggle_for_the_highveld_lobby: "$je_struggle_for_the_highveld_reason$"
  je_struggle_for_the_highveld_saf_states: "[ROOT.GetCountry.GetName]は[GetGeographicRegion('geographic_region_south_africa').GetName]内の少なくとも#b 4#!つの州のすべてを所有している"
  je_struggle_for_the_highveld_saf_success: "[GetGeographicRegion('geographic_region_south_africa').GetName]に首都を置く他のすべての国が、[SCOPE.sCountry('cape_colony_scope').GetName]の従属国であるか、または[SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]と同じ宗主国を共有する。"
  je_struggle_for_the_highveld_saf_fail: "[GetGeographicRegion('geographic_region_south_africa').GetName]に首都を置く他の国のいずれかが、沿岸部の[concept_incorporated_state]を有する独立した[concept_recognized_power]となる。"

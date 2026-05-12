@@ -354,6 +354,7 @@
   assassination_attempt_failed_loud_tt: "Our #bold assassination attempt#! will fail, and cause a major scandal"
 
   would_be_accepted_under_national_supremacy_tt: "This [concept_pop]'s culture shares both a [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] and [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] with any of this country's [concept_primary_cultures]"
+  capitalist_in_british_india_tt: "[concept_profession] is [GetPopType('capitalists').GetName] in colonial #b India#!"
 
   resign_from_office: "Resign from Office"
   resign_from_office_desc: "This character will resign from [Character.GetHerHis] position as [Character.GetPrimaryRoleTitle] of [Character.GetCountry.GetName]"

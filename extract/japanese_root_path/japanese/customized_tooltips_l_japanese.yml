@@ -75,6 +75,10 @@
  DATA_BATTLE_CONDITION_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_BATTLE_CONDITION_NAME_TOOLTIP,BattleConditionTooltip $NAME$#!#!"
  DATA_NAVAL_BATTLE_CONDITION_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,NavalBattleConditionTooltip $ICON$[Nbsp]$NAME$#!#!"
  DATA_NAVAL_BATTLE_CONDITION_NAME_FORMAT_NO_ICON: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,NavalBattleConditionTooltip $NAME$#!#!"
+ DATA_SHIP_VETERANCY_LEVEL_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,ShipVeterancyLevelTooltip $ICON$[Nbsp]$NAME$#!#!"
+ DATA_SHIP_VETERANCY_LEVEL_NAME_FORMAT_NO_ICON: "#tooltippable_name #tooltip:$TAG$,EMPTY_STRING,ShipVeterancyLevelTooltip $NAME$#!#!"
+ NO_VETERANCY_MODIFIERS: "補正なし。"
+ SHIP_VETERANCY_LEVEL_EXPERIENCE_THRESHOLD: "次の$concept_veterancy_level_short$の[Concept('concept_unit_experience','$concept_experience$')]閾値: [ShipVeterancyLevel.GetNextLevel.GetExperienceThreshold|v0]"
  DATA_COMBAT_UNIT_TYPE_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP,CombatUnitTypeTooltipWithoutCulture $NAME$#!#!"
  DATA_COMBAT_UNIT_TYPE_NAME_FORMAT_WITH_CULTURE: "#tooltippable_name #tooltip:[CombatUnitType.GetTooltipTag]|[Culture.GetTooltipTag],DATA_COMBAT_UNIT_TYPE_NAME_TOOLTIP,CombatUnitTypeTooltipWithCulture $NAME$#!#!"
  DATA_MOBILIZATION_OPTION_NAME_FORMAT: "#tooltippable_name #tooltip:$TAG$,DATA_MOBILIZATION_OPTION_NAME_TOOLTIP,MobilizationOptionTooltip $NAME$#!#!"
@@ -136,7 +140,7 @@
  DATA_AMENDMENT_TYPE_PARENT_LAW_OR_NONE: "親法: [SelectLocalization(AmendmentType.HasParentLaw, 'DATA_AMENDMENT_TYPE_PARENT_LAW', 'NONE')]"
  DATA_AMENDMENT_TYPE_PARENT_LAW: "[AmendmentType.GetParentLawType.GetName]"
  EMPTY_STRING: ""
- # "Regular" info used in fancier tooltips
+ #"Regular" info used in fancier tooltips
  COMMANDER_LOCATION_UNKNOWN: "#v 不明#!"
  DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP: "[AddLocalizationIf( Character.HasMilitaryFormation, 'DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP_FORMATION' )]"
  DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP_FORMATION: "[concept_military_formation]: [Character.GetMilitaryFormation.GetName|v]"
@@ -209,7 +213,6 @@
  AGITATOR_POLITICAL_MOVEMENT_IN_COUNTRY: "[SelectLocalization(Character.GetPoliticalMovement.IsValid, 'AGITATOR_POLITICAL_MOVEMENT_SUPPORTS', 'AGITATOR_POLITICAL_MOVEMENT_NONE')]"
  AGITATOR_POLITICAL_MOVEMENT_SUPPORTS: "[Character.GetPoliticalMovement.GetName]を支持"
  AGITATOR_POLITICAL_MOVEMENT_NONE: "どの[concept_political_movement]も支持していない"
- AGITATOR_WOULD_START_MOVEMENT: "[SelectLocalization(Character.PredictMovementTypeToStart.IsValid, )]"
  DATA_POLITICAL_MOVEMENT_STATES_JOIN_REVOLUTION_HEADER: "#title [Concept('concept_revolution','$concept_revolutionary$')]側に加わることが予想される[Concept('concept_state','$concept_states$')](@state! #v [PoliticalMovement.GetCivilWar.GetNumUprisingStates|0]#! ):#! #indent_newline:3 \n[PoliticalMovement.GetCivilWar.GetUprisingStatesString]#!"
  DATA_POLITICAL_MOVEMENT_STATES_SECEDED_HEADER: "#title [Concept('concept_secession','$concept_secessionist$')]側に加わることが予想される[Concept('concept_state','$concept_states$')](@state! #v [PoliticalMovement.GetCivilWar.GetNumUprisingStates|0]#! ):#! #indent_newline:3 \n[PoliticalMovement.GetCivilWar.GetUprisingStatesString]#!"
  DATA_CHARACTER_NAME_TOOLTIP_LOCATION_COUNTRY: "[concept_country]: [Character.GetCountry.GetName]"
@@ -656,7 +659,7 @@
  MILITARY_FORMATION_OFFENSE_DEFENSE_FLEET: "@ship_damage! #v [MilitaryFormation.GetShipList.GetDamageAverage|0]#! [concept_attack_damage] [SelectLocalization(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower, MilitaryFormation.GetAverageOffense), 'OFFENSE_AT_FULL_MANPOWER', '')]\n@ship_armor! #v [MilitaryFormation.GetShipList.GetArmorAverage|0]#! [concept_ship_armor] [SelectLocalization(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower, MilitaryFormation.GetAverageDefense), 'DEFENSE_AT_FULL_MANPOWER', '')]"
  OFFENSE_AT_FULL_MANPOWER: "（最大限の@manpower!がある[MilitaryFormation.GetAverageOffense|v0]）"
  DEFENSE_AT_FULL_MANPOWER: "（最大限の@manpower!がある[MilitaryFormation.GetAverageDefense|v0]）"
- # BREAKDOWNS
+ #BREAKDOWNS
  COUNTRY_RANK_BREAKDOWN: "[Country.GetRankTooltip]"
  IG_APPROVAL_BREAKDOWN: "#header [concept_approval]#!\n[InterestGroup.GetName]の[concept_approval]は[InterestGroup.GetApprovalRating|v] (#bold [InterestGroup.GetApprovalValue|+=]#!)\n$TOOLTIP_DELIMITER$\n[InterestGroup.GetApprovalValueDesc]"
  IG_POL_STR_BREAKDOWN: "[InterestGroup.GetPoliticalStrengthDesc]"

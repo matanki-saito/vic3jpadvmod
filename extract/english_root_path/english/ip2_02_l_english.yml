@@ -224,10 +224,6 @@ je_uneasy_raj_on_complete_header: "#title If solidifed #b Company Rule#!:#!\n$EF
 british_raj_later_tt: "Upon surviving the #b Indian Uprising#!, the [SCOPE.sCountry('raj_scope').GetName] will be reorganized into the #b [SCOPE.sCountry('raj_scope').GetTopOverlord.GetAdjectiveNoFormatting] Raj#!"
 home_rule_unavailable_tt: "Whilst #b Company Rule#! persists, #v $je_india_home_rule$#! will be unachievable"
 
-dyn_c_bengal_presidency: "Bengal Presidency"
-dyn_c_madras_presidency: "Madras Presidency"
-dyn_c_bombay_presidency: "Bombay Presidency"
-
 sepoy_mutiny_barracks_destruction_modifier: "Sepoy Barracks Mutiny"
 sepoy_mutiny_barracks_unrest_modifier: "Sepoy Barracks Unrest"
 

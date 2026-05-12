@@ -2,7 +2,7 @@
   CHARACTERS_HEADER: "[Concept('concept_character', '$NATIONAL_CAST$')]"
   ALL_CHARACTERS: "All Characters"
   NATIONAL_CAST: "National Cast"
-  CHARACTERS_FILTER_COUNT: "[PopsOverviewPanel.GetNumFilteredCharacters|0]/[PopsOverviewPanel.GetNumTotalCharacters|0] $concept_characters$"
+  CHARACTERS_FILTER_COUNT: "[CharacterFilter.GetNumFilteredCharacters|0]/[CharacterFilter.GetNumTotalCharacters|0] $concept_characters$"
   MILITARY_ROLE_FILTER_NAME: "Military"
   POLITICAL_ROLE_FILTER_NAME: "Political"
   OTHER_ROLE_FILTER_NAME: "Other"

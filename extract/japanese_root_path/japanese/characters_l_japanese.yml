@@ -2,7 +2,7 @@
  CHARACTERS_HEADER: "[Concept('concept_character', '$NATIONAL_CAST$')]"
  ALL_CHARACTERS: "すべてのキャラクター"
  NATIONAL_CAST: "国のキャラクター"
- CHARACTERS_FILTER_COUNT: "[PopsOverviewPanel.GetNumFilteredCharacters|0]/[PopsOverviewPanel.GetNumTotalCharacters|0]人の$concept_characters$"
+ CHARACTERS_FILTER_COUNT: "[CharacterFilter.GetNumFilteredCharacters|0]/[CharacterFilter.GetNumTotalCharacters|0]人の$concept_characters$"
  MILITARY_ROLE_FILTER_NAME: "軍事"
  POLITICAL_ROLE_FILTER_NAME: "政治"
  OTHER_ROLE_FILTER_NAME: "その他"

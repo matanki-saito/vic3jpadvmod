@@ -823,6 +823,23 @@
  ZND_ADJ:0 "Zande"
  ZUL:0 "Zulu"
  ZUL_ADJ:0 "Zulu"
+
+ # Moved from other base loc files. Should ideally be sorted later. Probably never will :)
+ KUR: "Kurdistan"
+ KUR_ADJ: "Kurdish"
+ GLI: "Galicia"
+ GLI_ADJ: "Galician"
+ PRA: "Grão-Pará"
+ PRA_ADJ: "Grão-Parán"
+ PAL: "Palestine"
+ PAL_ADJ: "Palestinian"
+ IDN: "Indonesia"
+ IDN_ADJ: "Indonesian"
+ BHT: "India"
+ BHT_ADJ: "Indian"
+ LOU: "Louisiana"
+ LOU_ADJ: "Louisianian"
+
  # MAC:0 "Manchester"
  # MAC_ADJ:0 "Mancunian"
  SMI:0 "Sapmi"
@@ -1405,7 +1422,8 @@
  RYU_ADJ: "Ryukyuan"
  ULT: "Ulta"
  ULT_ADJ: "Ulta"
- #Spanish American Colonies
+
+ # Spanish American Colonies
  SC1: "Nueva España"
  SC1_ADJ: "New Spanish"
  SC2: "Nueva Granada"
@@ -1414,6 +1432,8 @@
  SC3_ADJ: "Peruvian"
  SC4: "Río de la Plata"
  SC4_ADJ: "Platinean"
+
+ # Australia
  KLN: "Kulin"
  KLN_ADJ: "Kulinic"
  KRI: "Douriango"
@@ -1477,7 +1497,7 @@
  PMA: "Pama"
  PMA_ADJ: "Pama"
 
-  # Dynamic countries
+ ### Dynamic country names ###
  dyn_c_united_sovereign_archduchy:0 "United Sovereign Archduchy"
  dyn_c_united_sovereign_archduchy_adj:0 "Archducal American"
  dyn_c_united_senators:0 "United Senators of America"
@@ -1787,6 +1807,85 @@
  dyn_c_bengal_federation: "Federation of Bengal"
  dyn_c_cyberia: "Cyberia"
  dyn_c_cyberia_adj: "Cyberian"
+ dyn_c_south_africa: "Cape Colony"
+ dyn_c_south_africa_adj: "Cape Colonies"
+ dyn_c_mahdist_state: "Mahdist State"
+ dyn_c_mahdist_state_adj: "Mahdist Sudanese"
+ dyn_c_scandinavia_kalmar_union: "Kalmar Union"
+ dyn_c_scandinavia_kalmar_union_adj: "Scandinavian"
+ dyn_c_welsh_patagonia: "Y Wladfa"
+ dyn_c_welsh_patagonia_adj: "Welsh Patagonian"
+ dyn_c_peru_bolivia: "Peru-Bolivia"
+ dyn_c_peru_bolivia_adj: "Peruvian-Bolivian"
+ dyn_c_confederate_state_of_america: "Confederate State of America"
+ dyn_c_united_state: "United State of America"
+ dyn_c_qasimid_state: "Qasimid State"
+ dyn_c_qasimid_state_adj: "Qasimid"
+ dyn_c_funj_state: "Funj"
+ dyn_c_funj_state_adj: "Funj"
+ dyn_c_commonwealth: "Commonwealth"
+ dyn_c_commonwealth_adj: "Commonwealth"
+ dyn_c_empire_of_china: "Empire of China"
+ dyn_c_empire_of_china_adj: "Chinese"
+ dyn_c_louisiana: "$LOU$"
+ dyn_c_new_france: "New France"
+ dyn_c_new_france_adj: "New French"
+ dyn_c_louisiana_commune: "Louisiana Commune"
+ dyn_c_archbishopric_of_st_louis: "St. Louis"
+
+ # IP1
+ dyn_c_regency_of_algiers: "Regency of Algiers"
+ dyn_c_regency_of_algiers_adj: "Algerian"
+ dyn_c_barbary: "Barbary" # Alt. Tamazgha, but that is a very modern term
+ dyn_c_barbary_adj: "Barbary"
+ dyn_c_maghreb: "Maghreb"
+ dyn_c_maghreb_adj: "Maghrebi"
+
+ # IP2
+ dyn_c_bengal_presidency: "Bengal Presidency"
+ dyn_c_madras_presidency: "Madras Presidency"
+ dyn_c_bombay_presidency: "Bombay Presidency"
+
+ # IP3
+ dyn_c_croatia_slavonia: "Croatia-Slavonia"
+ dyn_c_bulgarian_empire: "Bulgarian Empire"
+ dyn_c_bulgarian_empire_adj: "Imperial Bulgarian"
+
+ # IP4
+ dyn_c_iberian_union: "Iberian Union"
+ dyn_c_iberian_union_def: "the #v $dyn_c_iberian_union$#!"
+ dyn_c_iberian_federation: "Iberian Federation"
+ dyn_c_iberian_federation_def: "the $dyn_c_iberian_federation$"
+ dyn_c_iberian_confederation: "Iberian Confederation"
+ dyn_c_iberian_confederation_def: "the $dyn_c_iberian_confederation$"
+ dyn_c_iberian_concordat: "Iberian Concordat"
+ dyn_c_iberian_concordat_def: "the $dyn_c_iberian_concordat$"
+ dyn_c_esperantia: "Esperantia"
+ dyn_c_esperantia_adj: "Esperantia"
+ dyn_c_aggressor: "Aggressor"
+ dyn_c_aggressor_adj: "Aggressor"
+
+ # EP1
+ dyn_c_muhammara: "Muhammara"
+ dyn_c_muhammara_adj: "Kaabi"
+ dyn_c_iran: "Iran"
+ dyn_c_iran_adj: "Iranian"
+ dyn_c_durrani_empire: "Durrani Empire"
+ dyn_c_durrani_empire_adj: "Durrani"
+
+ # Indonesia
+ dyn_c_majapahit: "Majapahit"
+ dyn_c_majapahit_adj: "Majapahit"
+ dyn_c_srivijaya: "Srivijaya"
+ dyn_c_srivijaya_adj: "Srivijayan"
+ dyn_c_sumatra: "Sumatra"
+ dyn_c_sumatra_adj: "Sumatran"
+ dyn_c_kalimantan: "Kalimantan"
+ dyn_c_kalimantan_adj: "Kalimantan"
+ dyn_c_boni: "Bo-Ni"
+ dyn_c_boni_adj: "Bo-Ni"
+ dyn_c_mataram: "Mataram"
+ dyn_c_mataram_adj: "Mataram"
 
  # Princely States
  dyn_c_jodhpur: "Jodhpur"
@@ -1839,3 +1938,7 @@
  dyn_c_empire_of_japan_adj: "Japanese"
  dyn_c_republic_of_japan: "Republic of Japan"
  dyn_c_republic_of_japan_adj: "Japanese"
+
+ dyn_c_earth_kingdom: "Earth Kingdom"
+ dyn_c_earth_republic: "Earth Republic"
+ dyn_c_taiping_republic: "Heavenly Republic"

@@ -54,7 +54,7 @@
  interest_tier_effect_can_sign_support_independence: "@checkmark! [GetArticleType('support_independence').GetName]の[Concept('concept_article', '$concept_treaties$')]を締結できます"
  interest_tier_effect_can_sign_guarantee_independence: "@checkmark! [GetArticleType('guarantee_independence').GetName]の[Concept('concept_article', '$concept_treaties$')]を締結できます"
  interest_tier_effect_stake_colonial_claim_unrecognized: "@checkmark! [Concept('concept_decentralized_nation', '$concept_decentralized_nations$')]と[Concept('concept_unrecognized_power', '$concept_unrecognized_powers$')]に対して[concept_diplomatic_action]「[GetDiplomaticActionType('da_stake_colonial_claim').GetName]」を有効にします"
- interest_tier_effect_can_sign_foreign_investment_rights: "@checkmark! Allows to sign [GetArticleType('foreign_investment_rights').GetName] [Concept('concept_article', '$concept_treaties$')]"
+ interest_tier_effect_can_sign_foreign_investment_rights: "@checkmark! [GetArticleType('foreign_investment_rights').GetName]の[Concept('concept_article', '$concept_treaties$')]を締結できます"
  ## Diplomatic Actions
  da_stake_colonial_claim: "植民地請求権を主張"
  da_stake_colonial_claim_desc: "海外の[concept_state_region]に対する[concept_claim]を主張します。"
