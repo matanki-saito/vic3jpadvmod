@@ -184,7 +184,7 @@
  modifier_daimyo_house_arrest:0 "大名の謹慎"
  modifier_daimyo_executed:0 "大名の領地召上"
  ep2_meiji_pulse.9.t:0 "攘夷実行の勅命"
- ep2_meiji_pulse.9.d:0 "西洋列強が[ROOT.GetCountry.GetName]に強要した条約に憤った天皇は、将軍を介することなく、[ROOT.GetCountry.GetAdjectiveNoFormatting]の地から外国人を排斥せよとの勅命を直接下した。[SCOPE.sPoliticalMovement('restorationist_movement_scope').GetName]の兵たちは天皇の大義のもとに結集している。"
+ ep2_meiji_pulse.9.d:0 "欧米列強が[ROOT.GetCountry.GetName]に強要した条約に憤った天皇は、将軍を介することなく、[ROOT.GetCountry.GetAdjectiveNoFormatting]の地から異人を排斥せよとの勅命を直接下した。[SCOPE.sPoliticalMovement('restorationist_movement_scope').GetName]の兵たちは天皇の大義のもとに結集している。"
  ep2_meiji_pulse.9.f:0 "家臣は大砲の脇に立ち、海峡の方を見つめていた。この刻限、海峡を往く蒸気船は、沈みゆく夕日に照らされて黒い影絵と化していた。傍らでは、長州藩の下級武士たちが、槊杖と黒色火薬の袋を手に忙しなく立ち働いている。\n\nふと火の山を見上げ、その麓に広がる下関の町並みに目を遣ると、あの勅書の一節が脳裏をよぎった。「たとえ国土が灰燼に帰そうとも、通商のための開港は断じて許さぬ」と、そこには記されていた。\n\nあれは正しかったのだろうか？あのなだらかな緑の斜面が黒く焼かれることを、花咲く野が焼き払われることを、我が故郷が踏み潰されることを、己は許せるのか？――許せる、と彼は思った。一片の迷いもなく。"
  ep2_meiji_pulse.9.a:0 "この件について話し合うため、将軍は上洛せねばならない。"
  ep2_meiji_pulse.9.b:0 "この勅令は偽物だ。なかったことにせよ。"

@@ -633,7 +633,7 @@
  paris_commune_pulse_events.16.a:0 "補助的な役割で参加することを許可しよう。"
  paris_commune_pulse_events.16.b:0 "戦場に入ることを全面的に禁止しろ。"
  paris_commune_pulse_events.16.c:0 "ライフルと銃剣を手渡せ。"
- modifier_woman_soldiers:0 "武闘派フェミニズム"
+ modifier_woman_soldiers:0 "過激派フェミニズム"
  modifier_progressives_stalled:0 "進歩主義の失速"
  french_pretenders.10.t:0 "揺るぎなき[ROOT.GetCountry.GetRuler.GetCustom('french_dynasty_name')]家"
  french_pretenders.10.d_1:0 "[ROOT.GetCountry.GetRuler.GetHerHis]の前任者たちに比べ、より控えめで近代的な戴冠式を選択した[ROOT.GetCountry.GetRuler.GetFullName]がランスの大聖堂で[ROOT.GetCountry.GetName]の[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]を戴冠した。"
