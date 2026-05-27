@@ -50,6 +50,7 @@
  ship_mod_32_pdr_sbml: "32ポンドSBML"
  ship_mod_32_pdr_sbml_8_in_shell_guns: "32ポンドSBML + 8インチML榴弾砲"
  ship_mod_32_pdr_sbml_24_pdr_sbml: "32ポンドSBML + 24ポンドSBML"
+ ship_mod_no_guns: "兵器なし"
  ## Propulsion
  ship_mod_full_sail_rig: "全帆装"
  ship_mod_full_sail_rig_single_expansion_engine: "全帆装 + 単式蒸気機関"
@@ -338,3 +339,12 @@
  ship_mod_submarine_range_light: "$ship_mod_reduced_stowage$"
  ship_mod_submarine_range_medium: "$ship_mod_standard_stowage$"
  ship_mod_submarine_range_high: "$ship_mod_increased_stowage$"
+ # Supply Ship - modules are for visuals only
+ ship_mod_supply_ship_armor_light: "$ship_mod_unarmored_hull$"
+ ship_mod_supply_ship_armor_medium: "$ship_mod_thin_steel_plate$"
+ ship_mod_supply_ship_armor_high: "$ship_mod_light_armored_deck$"
+ ship_mod_supply_ship_guns_light: "$ship_mod_no_guns$"
+ ship_mod_supply_ship_propulsion_light: "$ship_mod_full_sail_rig$"
+ ship_mod_supply_ship_propulsion_medium: "$ship_mod_full_sail_rig_compound_engine$"
+ ship_mod_supply_ship_propulsion_high: "$ship_mod_triple_expansion_engine$"
+ ship_mod_supply_ship_range_light: "$ship_mod_standard_stowage$"

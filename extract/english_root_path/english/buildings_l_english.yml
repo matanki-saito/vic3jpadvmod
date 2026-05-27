@@ -112,6 +112,8 @@
  building_suez_canal_lens_option:0 "Construct $building_suez_canal$"
  building_panama_canal:0 "Panama Canal"
  building_panama_canal_lens_option:0 "Construct $building_panama_canal$"
+ building_kiel_canal: "Kiel Canal"
+ building_kiel_canal_lens_option: "Construct $building_kiel_canal$"
  UNEMPLOYED:0 "[concept_unemployed]"
 
  # Building Groups
@@ -206,7 +208,7 @@
  building_railway_lens_option:0 "Railway"
  building_trade_center_lens_option:0 "Create New Market"
  building_link_merge_markets_lens_option:0 "Merge Markets"
-  
+
  # Academies
  building_university:0 "University"
  building_university_lens_option:0 "Expand $building_university$"
@@ -252,7 +254,7 @@
  building_taj_mahal: "Taj Mahal"
  building_vatican_city: "Vatican City"
  building_white_house: "White House"
- 
+
  building_dummy: "#This is a dummy building that serve no gameplay mechanical purpose but still need to be reacted to by city hub graphics. It (and this text) should never show up in the UI#!"
  building_argebam: "$building_dummy$"
  building_chichen_itza: "$building_dummy$"
@@ -275,7 +277,7 @@
  # Skyscraper
  building_skyscraper: "Skyscraper"
  building_power_bloc_statue: "Power Bloc Statue"
- 
+
  # Halloween
  building_halloween_castledracula: "Castle Dracula"
 

@@ -675,6 +675,7 @@
 
  je_struggle_for_the_highveld: "Struggle for the Highveld"
  je_struggle_for_the_highveld_reason: "The interior lands of the veld appear to be inhospitable scrubland at first glance, but there are fertile grounds among the fields, and the escarpments glitter invitingly. Order—our order—must be put in place, to ensure this rich land can see the peace it so dearly needs to reveal its full potential."
+ je_struggle_for_the_highveld_lobby: "$je_struggle_for_the_highveld_reason$"
  je_struggle_for_the_highveld_saf_states: "[ROOT.GetCountry.GetName] owns all of at least #b 4#! states in [GetGeographicRegion('geographic_region_south_africa').GetName]"
  je_struggle_for_the_highveld_saf_success: "Every other country with a capital in [GetGeographicRegion('geographic_region_south_africa').GetName] is either a subject of [SCOPE.sCountry('cape_colony_scope').GetName] or shares the same overlord as [SCOPE.sCountry('cape_colony_scope').GetNameNoFormatting]."
  je_struggle_for_the_highveld_saf_fail: "Any other country with a capital in [GetGeographicRegion('geographic_region_south_africa').GetName] becomes an independent [concept_recognized_power] with a coastal [concept_incorporated_state]."

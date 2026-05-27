@@ -140,7 +140,7 @@ modifier_lingering_brigandry: "Lingering Brigandry"
 modifier_brutal_anti_bandit_campaigns: "Brutal Anti-Bandit Campaigns"
 
 je_taming_the_north: "Taming the North"
-je_taming_the_north_reason: "With the formation of the #b [SCOPE.sState('hokkaido_state_scope').GetName] Development Commission#!, commonly known as the #b Kaitakushi#!, this former frontier is abuzz with activity. Every day new men and women arrive from the south, seeking new lands and opportunities.\n\nYet this is no ordinary rush of peoples. For with the settlers come bureaucrats, intellectuals, and modernizing visionaries with a mission to shape the land—eager to see their vision of [ROOT.GetCountry.GetName]'s future manifested in the [SCOPE.sState('hokkaido_state_scope').GetName] of today."
+je_taming_the_north_reason: "With the formation of the #b [SCOPE.sState('hokkaido_state_scope').GetName] Development Commission#!, commonly known as the #b Kaitakushi#!, this former frontier is abuzz with activity. Every day [ROOT.GetCountry.GetCustom('ezo_or_japan_arrival_text')] arrive from the south, seeking new lands and opportunities.\n\nYet this is no ordinary rush of peoples. For with the settlers come bureaucrats, intellectuals, and modernizing visionaries with a mission to shape the land—eager to see their vision of [SelectLocalization(SCOPE.sCountry('japan_scope').IsValid, SCOPE.sCountry('japan_scope').GetName, 'JAP')]'s future manifested in the [SCOPE.sState('hokkaido_state_scope').GetName] of today."
 taming_the_north_agriculture_potentials_goal_tt: "We have used the #b $button_je_taming_the_north_agriculture_potentials$#! action #v 3#! times"
 taming_the_north_agriculture_arable_goal_tt: "We have used the #b $button_je_taming_the_north_agriculture_arable_land$#! action #v 3#! times"
 taming_the_north_colonies_goal_tt: "We have used the #b $button_je_taming_the_north_establish_colonies$#! action"
@@ -148,14 +148,17 @@ je_taming_the_north_additional_goal_pre: "If we own all of #b $STATE_SAKHALIN$#!
 je_taming_the_north_additional_goal: "If we own all of [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName] the #b $modifier_tamed_north$#! [concept_timed_modifier] will also apply to [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:"
 je_taming_the_north_additional_goal_completed: "Since we own all of [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName] the #b $modifier_tamed_north$#! [concept_timed_modifier] will also apply to [SCOPE.sStateRegion('sakhalin_state_region_scope').GetName]:"
 
+ezo_arrival_text: "disaffected $Tokugawa$ retainers"
+japan_arrival_text: "new men and women"
+
 modifier_tamed_north: "The Model Colony"
 modifier_northern_learnings: "Kaitakushi Learnings"
 
 button_je_taming_the_north_establish_colonies: "Establish State-Sponsored Colonies"
-button_je_taming_the_north_establish_colonies_desc: "A colony without sufficient colonists is doomed to fail. We should consider incentives to help attract families from across [ROOT.GetCountry.GetName] to settle in the north."
+button_je_taming_the_north_establish_colonies_desc: "A colony without sufficient colonists is doomed to fail. We should consider incentives to help attract families from across [SelectLocalization(SCOPE.sCountry('japan_scope').IsValid, SCOPE.sCountry('japan_scope').GetName, 'JAP')] to settle in the north."
 
 button_je_taming_the_north_integrate_ainu: "Implement Ainu Legal Protections"
-button_je_taming_the_north_integrate_ainu_desc: "Until now, the Commission's stance of the [GetCulture('ainu').GetName] has been one of forceful integration and cultural erasure. However, our incremental moves towards a more equitable relationship with the [GetCulture('ainu').GetNameNoFormatting] inhabitants of the North has resulted in a warming of relations between our two peoples.\n\nA proposal has thus been forwarded to the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to legally enshrine the [GetCulture('ainu').GetNameNoFormatting] as a protected brotherly people under [ROOT.GetCountry.GetAdjective] law, equal in both rights and duties to the [GetCulture('japanese').GetName]."
+button_je_taming_the_north_integrate_ainu_desc: "Until now, the Commission's stance towards the [GetCulture('ainu').GetName] has been one of forceful integration and cultural erasure. However, our incremental moves towards a more equitable relationship with the [GetCulture('ainu').GetNameNoFormatting] inhabitants of the North has resulted in a warming of relations between our two peoples.\n\nA proposal has thus been forwarded to the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to legally enshrine the [GetCulture('ainu').GetNameNoFormatting] as a protected brotherly people under [ROOT.GetCountry.GetAdjective] law, equal in both rights and duties to the [GetCulture('japanese').GetName]."
 ainu_frenship_tt: "We have consistently furthered the interests of the [GetCulture('ainu').GetName] in #b events#!"
 
 button_je_taming_the_north_sapporo_agricultural_college: "Found the Sapporo Agricultural College"
@@ -173,8 +176,10 @@ button_je_taming_the_north_agriculture_arable_land_desc: "Whilst these vast land
 hokkaido_agriculture_arable_tt: "This decision can be taken a total of #v 3#! times. (currently [ROOT.GetCountry.MakeScope.Var('hokkaido_agriculture_arable_counter_var').GetValue|v0])"
 
 hokkaido_events.1.t: "The Eighth Circuit"
+hokkaido_events.1.t_1: "The Northern Gateway"
 hokkaido_events.1.d: "With the incorporation of [SCOPE.sState('hokkaido_scope').GetName]—or the Ainu-lands—into Japan proper, a new name must be chosen to reflect the new status of this land. The newly established Development Commission has presented a number of proposals to be reviewed by the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]."
-hokkaido_events.1.f: ""A land of savages is what it is. Of swamps and mud. Of impoverished fishermen and flesh eaters. Whatever are you hoping to get in that godforsaken land that [ROOT.GetCountry.GetCapital.GetCityHubName] cannot already grant you?"\n\n"Purpose, mother. And something to make my own.""
+hokkaido_events.1.d_1: "With the solidification of the [ROOT.GetCountry.GetName]'s control over [SCOPE.sState('hokkaido_scope').GetName]—or the Ainu-lands—a new name must be chosen to reflect the new status of this land. The newly established Development Commission has presented a number of proposals to be reviewed by the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]."
+hokkaido_events.1.f: ""A land of savages is what it is. Of swamps and mud. Of impoverished fishermen and flesh eaters. Whatever are you hoping to get in that godforsaken land that [SelectLocalization(SCOPE.sCountry('japan_scope').IsValid, SCOPE.sCountry('japan_scope').GetCapital.GetCityHubName, 'HUB_NAME_STATE_KANTO_city')] cannot already grant you?"\n\n"Purpose, mother. And something to make my own.""
 hokkaido_events.1.a: "Its name shall be #tooltippable;tooltip:hokkaido_events.1_tt_3 #b Hokkai-dō#!#!: The North Sea Circuit." # 北加伊道
 hokkaido_events.1.b: "#tooltippable;tooltip:hokkaido_events.1_tt_2 #b Hokkai-dō#!#!, in honor of the inhabitants of this land." # 北海道
 hokkaido_events.1.c: "#tooltippable;tooltip:hokkaido_events.1_tt_4 #b Kaitō-dō#!#!, the Sea-Island Circuit, is clearly the better option."
@@ -200,7 +205,7 @@ modifier_tondenhei_settlements: "Tondenhei Settlements"
 modifier_peasant_settlements: "Peasant Settlements"
 modifier_restricted_settlements: "Ainu Heartlands Preserved"
 hokkaido_events.2.tt_1: "#v 1.5%#! of all [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] from the [concept_capital_state] will relocate to [SCOPE.sState('hokkaido_state_scope').GetName]"
-hokkaido_events.2.tt_2: "#v 3%#! of all [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (one of the [Concept('concept_state', '$concept_states$')] with the lowest [Concept('concept_gdp','$concept_gdp_short$')] in the [GetGeographicRegion('geographic_region_home_islands').GetName]) will relocate to [SCOPE.sState('hokkaido_state_scope').GetName]"
+hokkaido_events.2.tt_2: "#v 3%#! of all [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (one of the [Concept('concept_state', '$concept_states$')] with the lowest [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')] in the [GetGeographicRegion('geographic_region_home_islands').GetName]) will relocate to [SCOPE.sState('hokkaido_state_scope').GetName]"
 modifier_old_swords_in_new_lands: "Old Swords in New Lands"
 modifier_go_north_young_man: "Go North, Young Man"
 
@@ -221,7 +226,7 @@ hokkaido_events.4.d: "The [SCOPE.sState('hokkaido_state_scope').GetName] Develop
 hokkaido_events.4.f: "It was impressive, really. A decade ago the largest vessel capable of safely navigating the river in front of him would have been a small rowboat. Now he was watching a group of workers unload crates and burlap sacks from a massive steam pram billowing smoke into the crisp mountain air above. Material for the next lock perhaps? Or for the drainage project further upstream? Or just supplies from the new village in the valley beyond? He couldn't say, and in truth it mattered not, for whatever it carried, it was carrying the future."
 hokkaido_events.4.a: "With each swing of the hoe, we mould this land."
 hokkaido_events.4.b: "And with each new home, we grow it."
-hokkaido_events.4.tt_1: "#v 2%#! of all [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (one of the [Concept('concept_state', '$concept_states$')] with the lowest [Concept('concept_gdp','$concept_gdp_short$')] in the [GetGeographicRegion('geographic_region_home_islands').GetName]) will relocate to [SCOPE.sState('hokkaido_state_scope').GetName]"
+hokkaido_events.4.tt_1: "#v 2%#! of all [GetCulture('japanese').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('hokkaido_migration_origin_scope').GetName] (one of the [Concept('concept_state', '$concept_states$')] with the lowest [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')] in the [GetGeographicRegion('geographic_region_home_islands').GetName]) will relocate to [SCOPE.sState('hokkaido_state_scope').GetName]"
 modifier_immigration_burst: "Immigration Wave"
 modifier_open_to_business: "Open for Business"
 

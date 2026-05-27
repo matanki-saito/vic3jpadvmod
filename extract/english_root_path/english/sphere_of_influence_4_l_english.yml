@@ -927,7 +927,11 @@
   je_korean_rebellion_reason: "The rebellion breaking out across [SCOPE.sCountry('korea_scope').GetName] has threatened the balance of power in the country. The overthrow of [SCOPE.sCharacter('korea_ruler_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('korea_ruler_scope').GetFullName] will certainly lead to independence for [SCOPE.sCountry('korea_scope').GetNameNoFormatting], and opportunities for European powers to acquire influence in the peninsula."
   korean_ruler_retained_tt: "[SCOPE.sCharacter('korea_ruler_scope').GetFullName] remains the [SCOPE.sCharacter('korea_ruler_scope').GetPrimaryRoleTitle] of [SCOPE.sCountry('korea_scope').GetName]"
   korean_ruler_deposed_tt: "The government of [SCOPE.sCountry('korea_scope').GetName] has been deposed by a [concept_revolution]"
-  japan_demands_korea_tt: "We will have the opportunity to seize #bold additional influence#! in [SCOPE.sCountry('korea_scope').GetName]"
+  japan_demands_korea_tt: "[SCOPE.sCountry('japan_scope').GetName] will have the opportunity to seize #bold additional influence#! in [SCOPE.sCountry('korea_scope').GetName]"
+  je_korean_rebellion_government_victory: "To achieve a #b Government#! victory:\n"
+  je_korean_rebellion_on_government_victory: "On a #b Government#! victory:\n$EFFECT$"
+  je_korean_rebellion_rebel_victory: "To achieve a #b Rebel#! victory:\n"
+  je_korean_rebellion_on_rebel_victory: "On a #b Rebel#! victory:\n$EFFECT$"
 
   korea_fail_condition_war_tt: "[SCOPE.sCountry('korea_rebellion_scope').GetName] is at [concept_war] with [SCOPE.sCountry('korea_scope').GetName]"
 

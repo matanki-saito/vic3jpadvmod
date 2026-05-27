@@ -328,6 +328,7 @@
  pass_regulation_or_else:1 "We must pass the [GetLawType('law_regulatory_bodies').GetName] [concept_law] within 10 years or face a General Strike"
  pass_protections_or_else:1 "We must pass the [GetLawType('law_worker_protections').GetName] [concept_law] law within 10 years or face a General Strike"
  pass_institution_or_else:1 "We must expand the [GetInstitutionType('institution_workplace_safety').GetName] [concept_institution] within 10 years or face a General Strike"
+ pass_institution_or_else_2: "We must expand the [GetInstitutionType('institution_social_security').GetName] [concept_institution] within 10 years or face a General Strike"
  je_strike:0 "Strike!"
  je_strike_reason:0 "Workers dissatisfied with their conditions have gone on strike. As they refuse to work, their industry has effectively come to a standstill."
  je_fulfill_striker_promise_tt:0 "Fulfill a promise to the strikers using the Labor Negotiations decision"

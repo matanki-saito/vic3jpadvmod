@@ -490,9 +490,12 @@
 
  # Filters
  FILTER_VISIBILITY: "Visibility"
- COMPANY_AVAILABLE_FILTER_NAME: "Available"
- COMPANY_POTENTIAL_FILTER_NAME: "Potential"
- COMPANY_ATTAINABLE_FILTER_NAME: "Attainable"
+ COMPANY_AVAILABLE_FILTER_TITLE: "Available"
+ COMPANY_POTENTIAL_FILTER_TITLE: "Potential"
+ COMPANY_ATTAINABLE_FILTER_TITLE: "Attainable"
+ COMPANY_AVAILABLE_FILTER_NAME: "Available [Concept('concept_company', '$concept_companies$')] meet all requirements and can be created immediately unless the $concept_company$ limit has been reached"
+ COMPANY_POTENTIAL_FILTER_NAME: "Potential [Concept('concept_company', '$concept_companies$')] cannot be created yet, as their basic prerequisites are not met such as not owning a required [concept_state]"
+ COMPANY_ATTAINABLE_FILTER_NAME: "Attainable [Concept('concept_company', '$concept_companies$')] have their basic prerequisites met but still have unfulfilled requirements before they can be created"
  FILTER_PRESTIGE_GOODS: "Prestige Goods"
  FILTER_BUILDING_TYPE: "Building Type"
  COMPANIES_FILTER_COUNT: "[CompaniesPanel.GetNumFilteredCompanies|0]/[Add_int32(Add_int32(GetDataModelSize(AccessPlayer.GetAvailableCompanies), GetDataModelSize(AccessPlayer.GetAttainableCompanies)), GetDataModelSize(AccessPlayer.GetPotentialCompanies))]"

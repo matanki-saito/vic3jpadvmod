@@ -45,6 +45,8 @@
  party_labour_party:0 "Labor Party"
  party_hindu_mahasabha: "All-India Hindu Grand Assembly"
  circle_trigon_party: "Circle Trigon Party"
+ party_kokumin_domei: "National Citizens' Alliance"
+ TAIKUNATE_TAIKUN_PARTY_NAME: "Onwahā"
 
  revolutionary_party_name: "Revolutionary Coalition"
 
@@ -76,6 +78,7 @@
  party_national_union_of_greece:0 "National Union of Greece"
  integralist_action:0 "Brazilian Integralist Action"
  national_syndicalist_movement: "National Syndicalist Party"
+ party_taikunate_fascist: "Sakura Faction"
 
 #conservative_party
  party_moderate_party:0 "Moderate Party"
@@ -110,6 +113,14 @@
  party_republican_union_party: "Republican Union Party"
  party_national_republican_party: "National Republican Party"
  party_nationalist_republican_party: "Nationalist Republican Party"
+ party_kokumin_kyokai: "National Association"
+ party_seiyukai: "Constitutional Government Association"
+ party_taikunate_conservative: "[GetScriptedGui('taikunate_conservative_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Faction"
+ TAIKUNATE_CONSERVATIVE_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]"
+ TAIKUNATE_CONSERVATIVE_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]"
+ TAIKUNATE_CONSERVATIVE_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_wood_hub_name_absolute')]"
+ TAIKUNATE_CONSERVATIVE_PARTY_NAME_FALLBACK: "Edo"
+ party_ezo_conservative: "Onwahā Faction"
 
 #free_trade_party
  party_historic_party:0 "Historic Party"
@@ -125,6 +136,16 @@
  party_liberal_regenerator_party: "Liberal Regenerator Party"
  party_vintista_party: "Vintist Party"
  party_independent_party: "Independent Party" # Not a real party, but an abstraction
+ party_constitutional_reform_party: "Constitutional Reform Party"
+ party_shimpoto: "Progressive Party"
+ party_seiyuhonto: "Orthodox Constitutional Government Party"
+ party_jitsugyo_doshikai: "Businessmen’s Association"
+ party_taikunate_free_trade: "[GetScriptedGui('taikunate_free_trade_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Faction"
+ TAIKUNATE_FREE_TRADE_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]"
+ TAIKUNATE_FREE_TRADE_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]"
+ TAIKUNATE_FREE_TRADE_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_port_hub_name_absolute')]"
+ TAIKUNATE_FREE_TRADE_PARTY_NAME_FALLBACK: "Ōsaka"
+ party_ezo_free_trade: "Hakodate Faction"
 
 #liberal_party
  party_progressive_party:0 "Progressive Party"
@@ -136,7 +157,6 @@
  party_progress_party:0 "Progress Party"
  party_national_liberal_party:0 "National Liberal Party"
  party_empire_reform_association:0 "Empire Reform Association"
- party_constitutional_reform_party:0 "Constitutional Reform Party"
  party_society_for_progress:0 "Society for Progress"
  party_freedom_and_accord_party:0 "Freedom and Accord Party"
  party_blue_party:0 "Blue Party"
@@ -155,6 +175,15 @@
  party_evolutionist_party: "Evolutionist Party"
  party_month_of_revolution: "[SCOPE.GetRootScope.GetCountry.GetCustom('getPortugalRevolutionMonthPartyName')] Party"
  party_septemberist_party: "Septemberist"
+ party_aikoku_koto: "Patriotic Public Party"
+ party_kenseito: "Constitutional Party"
+ party_minseito: "Constitutional Democratic Party"
+ party_taikunate_liberal: "[GetScriptedGui('taikunate_liberal_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Faction"
+ TAIKUNATE_LIBERAL_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]"
+ TAIKUNATE_LIBERAL_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]"
+ TAIKUNATE_LIBERAL_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_city_hub_name_absolute')]"
+ TAIKUNATE_LIBERAL_PARTY_NAME_FALLBACK: "Satsuma"
+ party_ezo_liberal: "Sapporo Faction"
 
 #military_party
  party_patriotic_union:0 "Patriotic Union"
@@ -167,6 +196,14 @@
  party_russian_assembly:0 "Russian Assembly"
  party_russian_all_military_union:0 "Russian All-Military Union"
  party_union_of_rights: "Union of Rights"
+ party_dai_nippon_kyokai: "Great Japan Association"
+ party_teikokuto: "Imperial Party"
+ party_taikunate_military: "[GetScriptedGui('taikunate_military_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Faction"
+ TAIKUNATE_MILITARY_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]"
+ TAIKUNATE_MILITARY_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]"
+ TAIKUNATE_MILITARY_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_mine_hub_name_absolute')]"
+ TAIKUNATE_MILITARY_PARTY_NAME_FALLBACK: "Sendai"
+ party_ezo_military: "Kameda Faction"
 
 #radical_party
  party_democratic_progressive_party:0 "Democratic Progressive Party"
@@ -191,6 +228,12 @@
  party_farroupilha: "Farroupilha Party"
  party_swaraj_party: "Swaraj Party"
  party_reformist_party: "Reformist Party"
+ party_taikunate_radical: "Fukushima Faction" # Reference to the Fukushima Incident of 1882
+ party_toyo_jiyuto: "Eastern Liberal Party"
+ party_yushinkai: "Society for Rebirth"
+ party_rikken_kokuminto: "Constitutional National Party"
+ party_kakushinto: "Reformist Party"
+ party_ezo_radical: "Patriotic Public Party"
 
 #religious_party
  party_portuguese_catholic_centre:0 "Portuguese Catholic Centre"
@@ -207,6 +250,8 @@
  party_conservative_catholics:0 "Conservative Catholics"
  party_traditionalist_communion:0 "Traditionalist Communion" # Carlists, might revise
  party_nationalist_party: "Nationalist Party"
+ party_taikunate_religious: "Hiei Faction"
+ party_ezo_religious: "Zenko Faction" # From Zenkoji
 
 #social_democrats_party
  party_psoe:0 "PSOE"
@@ -232,6 +277,10 @@
  party_seke:0 "SEKE"
  party_anl: "National Liberation Alliance"
  party_inc: "Congress Party"
+ party_shakai_to: "Rickshaw Association"
+ party_rodonominto: "Labor-Farmer Party"
+ party_shakai_taishuto: "Socialist Masses Party"
+ party_ezo_social_democrat: "Common People's Association"
 
 #communist_party
  party_british_socialist_party:0 "British Socialist Party"
@@ -246,7 +295,7 @@
  party_bkp:0 "BKP"
  party_mkp:0 "MKP"
  party_cpc:0 "CPC"
- party_jcp:0 "JCP"
+ party_jcp:0 "Japanese Communist Party"
  party_justice_party:0 "Justice Party"
  party_socialist_workers_party:0 "Socialist Workers' Party"
  party_workingmens_party:0 "Workingmen’s Party"
@@ -270,6 +319,15 @@
  party_national_grange:0 "National Grange"
  party_agrarian_and_farmer_party: "Agrarian and Farmer Party"
  party_conservative_republican_party: "Conservative Republican Party"
+ party_toyo_shakaito: "Eastern Socialist Party"
+ party_nominrodoto: "Farmer-Labor Party"
+ party_nihon_nominto: "Japan Farmer’s Party"
+ party_taikunate_agrarian: "[GetScriptedGui('taikunate_agrarian_party_name_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)] Faction"
+ TAIKUNATE_AGRARIAN_PARTY_DOMAIN_NAME: "[THIS.GetInterestGroup.GetLeader.GetCustom('japan_domain_by_character')]"
+ TAIKUNATE_AGRARIAN_PARTY_LEADER_NAME: "[THIS.GetInterestGroup.GetLeader.GetLastNameNoFormatting]"
+ TAIKUNATE_AGRARIAN_PARTY_STATE_NAME: "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_farm_hub_name_absolute')]"
+ TAIKUNATE_AGRARIAN_PARTY_NAME_FALLBACK: "Kaga"
+ party_ezo_agrarian: "Asahikawa Faction"
 
 #anarchist_party
  party_young_socialists:0 "Young Socialists"

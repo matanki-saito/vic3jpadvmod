@@ -462,7 +462,7 @@
  state_birth_rate_mult:0 "Birth Rate"
  state_birth_rate_mult_desc:0 "How many children are born each year"
  state_blockade_resistance_add: "Blockade Resistance"
- state_blockade_resistance_add_desc: "An increase or decrease to the amount of [concept_blockade] strength required to fully $concept_blockade$ a [concept_state]."
+ state_blockade_resistance_add_desc: "An increase or decrease to the [concept_blockade_resistance] of a [concept_state]."
 
  state_mortality_mult:2 "$concept_pop_growth_mortality$"
  state_mortality_mult_desc:2 "An increase or decrease to the [Concept('concept_pop_growth','$concept_pop_growth_mortality$')] for all [Concept('concept_pop', '$concept_pops$')]"
@@ -479,7 +479,7 @@
  state_pollution_generation_add: "Generated Pollution"
  state_pollution_generation_add_desc: "An increase or decrease to how much pollution is generated in a state"
  state_pollution_reduction_health_mult: "Pollution Health Effects Reduction"
- state_pollution_reduction_health_mult_desc: "An increase of decrease to the effects of [concept_pollution_impact] on the health of your population"
+ state_pollution_reduction_health_mult_desc: "An increase or decrease to the effects of [concept_pollution_impact] on the health of your population"
  state_peasants_consumption_multiplier_add: "Goods consumption for [GetPopType('peasants').GetName]"
  state_peasants_consumption_multiplier_add_desc: "A bonus or penalty to goods consumption for [GetPopType('peasants').GetName]"
  state_peasants_education_access_add: "Education Access for [GetPopType('peasants').GetName]"
@@ -3282,8 +3282,8 @@
 
  unit_army_experience_gain_add:0 "Weekly $concept_unit_experience$ Gain for Armies"
  unit_army_experience_gain_add_desc:0 "How much $concept_unit_experience$ is gained by Armies each week so that they can increase their $concept_veterancy_level$"
- unit_experience_gain_add:0 "Weekly $concept_unit_experience$ Gain for Armies & Navies"
- unit_experience_gain_add_desc:0 "How much $concept_unit_experience$ is gained by both Armies & Navies each week so that they can increase their $concept_veterancy_level$"
+ unit_experience_gain_add:0 "Weekly $concept_unit_experience$ Gain for Armies"
+ unit_experience_gain_add_desc:0 "How much $concept_unit_experience$ is gained by Armies each week so that they can increase their $concept_veterancy_level$"
  unit_army_experience_gain_mult:0 "$unit_army_experience_gain_add$"
  unit_army_experience_gain_mult_desc:0 "$unit_army_experience_gain_add_desc$"
  ship_crew_experience_gain_add:0 "Weekly $concept_unit_experience$ Gain for $concept_ship_crew$"

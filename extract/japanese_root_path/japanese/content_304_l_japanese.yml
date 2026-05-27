@@ -110,6 +110,7 @@
  friendly_nation_with_interest_in_alaska_tt: "#bold 太平洋沿岸#! [concept_strategic_region]にある、[concept_incorporated_state]を持つ#bold 北米#! [concept_great_power]は我々と良好な[concept_relations]にある"
  sold_alaska_tt: "#bold アラスカ#!の売却に成功した"
  not_sold_alaska_tt: "#bold アラスカ#!の売却に#bold 失敗#!した"
+ alaska_transaction_ongoing_tt: "現在、#b アラスカ#!の購入を提案している国家はない。"
  has_alaska_sale_cooldown_tt: "過去#bold 1#!年間で、このアクションを使用していない"
  notification_alaska_negotiations_fail_name: "拒絶されたアラスカの申し出"
  notification_alaska_negotiations_fail_desc: "[SCOPE.sCountry('alaska_buyer').GetName]がアラスカ売却の交渉から手を引いた。同領土は次の交渉が行われるまで我々の支配下に置かれる。"

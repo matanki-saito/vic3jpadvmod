@@ -76,7 +76,7 @@
 
  alert_naval_invasion_name: "[SCOPE.GetRootScope.GetInvasion.GetName]"
  alert_naval_invasion_desc: "You are currently being [Concept('concept_naval_invasion','$concept_naval_invaded$')] by [SCOPE.GetRootScope.GetInvasion.GetInvaderCountry.GetName] in [SCOPE.GetRootScope.GetInvasion.GetTargetState.GetName]."
- alert_naval_invasion_hint: "You can send additional [Concept('concept_fleet','$concept_fleets$')] to #v [SCOPE.GetRootScope.GetInvasion.GetSeaNodeName]#! and sink enemy $concept_fleets$, and/or send [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] [Concept('concept_army','$concept_armies$')] to defend [SCOPE.GetRootScope.GetInvasion.GetDefenderHQ.GetName]."
+ alert_naval_invasion_hint: "You can send additional [Concept('concept_fleet','$concept_fleets$')] to #v [SCOPE.GetRootScope.GetInvasion.GetSeaNodeName]#! and sink enemy $concept_fleets$, and/or send [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] [Concept('concept_army','$concept_armies$')] to defend [SCOPE.GetRootScope.GetInvasion.GetTargetState.GetName]."
  alert_naval_invasion_action: "Invasion panel"
 
  alert_stalled_invasion_name: "Stalled [concept_invasion]"

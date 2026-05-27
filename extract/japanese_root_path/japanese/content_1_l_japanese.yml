@@ -320,6 +320,7 @@
  pass_regulation_or_else: "10年以内に[GetLawType('law_regulatory_bodies').GetName] [concept_law]を成立させなければ、ゼネストに直面することになるだろう。"
  pass_protections_or_else: "10年以内に[GetLawType('law_worker_protections').GetName] [concept_law]法を成立させなければ、ゼネストに直面することになるだろう。"
  pass_institution_or_else: "10年以内に[GetInstitutionType('institution_workplace_safety').GetName] [concept_institution]を拡充しなければ、ゼネストに直面することになるだろう。"
+ pass_institution_or_else_2: "10年以内に[GetInstitutionType('institution_social_security').GetName][concept_institution]を拡充しなければ、ゼネストに直面することになるだろう。"
  je_strike: "ストライキ！"
  je_strike_reason: "労働条件に不満を持つ労働者がストライキを起こしました。彼らが仕事をしないため、産業は事実上停止しています。"
  je_fulfill_striker_promise_tt: "労使交渉のディシジョンにより、ストライキ参加者との約束を果たす"

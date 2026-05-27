@@ -19,6 +19,7 @@
  treaty_name_swe_pru_trade: "スウェーデン・プロイセン貿易協定"
  treaty_name_prussian_military_mission_to_turkey: "プロイセンのオスマン帝国派遣団"
  treaty_name_treaty_of_adrianople: "アドリアノープル条約"
+ anglo_american_convention_of_1818: "1818年英米協定"
  ### Dynamic Treaties
  # Generic
  treaty_name_treaty_of_city: "$SIGNING_LOCATION$条約"

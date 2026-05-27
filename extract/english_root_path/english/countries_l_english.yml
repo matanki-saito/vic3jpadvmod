@@ -858,6 +858,8 @@
  TIR_ADJ:0 "Tiris"
  KSS:0 "Kissi"
  KSS_ADJ:0 "Kissi"
+ IBL: "Ibibioland"
+ IBL_ADJ: "Ibibio"
  GAO:0 "Gao"
  GAO_ADJ:0 "Gao"
  TIV:0 "Tivland"
@@ -1938,6 +1940,9 @@
  dyn_c_empire_of_japan_adj: "Japanese"
  dyn_c_republic_of_japan: "Republic of Japan"
  dyn_c_republic_of_japan_adj: "Japanese"
+
+ dyn_c_ezo_government: "Ezo Government"
+ dyn_c_ezo_republic: "Ezo Republic"
 
  dyn_c_earth_kingdom: "Earth Kingdom"
  dyn_c_earth_republic: "Earth Republic"

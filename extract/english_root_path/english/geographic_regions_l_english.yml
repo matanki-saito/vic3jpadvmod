@@ -119,6 +119,8 @@
  geographic_region_transoxiana: "Transoxiana"
  geographic_region_honshu: "Honshū"
  geographic_region_honshu_desc: "Historically known as #italic Akitsushima#!, or 'Dragonfly Island', Honshū is the largest island of the Japanese archipelago, and home to the majority of the its people and places of importance."
+ geographic_region_ezochi: "Ezochi"
+ geographic_region_ezochi_desc: "Ezochi refers to the northernmost islands of the Japanese archipelago, encompassing the island of Ezo, Kita-Ezochi, and the Kuril Islands. It has historically been regarded as a frontier territory, inhabited by the Ainu and other foreign peoples."
  geographic_region_asia: "Asia"
  geographic_region_home_islands: "Home Islands"
  geographic_region_japan: "Japan"

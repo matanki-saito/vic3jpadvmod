@@ -18,9 +18,36 @@
  pmg_base_building_fortification: "Crew Drills"
  pm_fortification: "Regular Crew Drills"
 
- TOLL_BUDGET_ENTRY: "@money!#variable $VALUE|D$#!: [STATE.GetName] importing #variable $QTY$#! (@money!#variable $GOODS_PRICE|D$#!, total @money!#variable $GOODS_VALUE|D$#!) [GOODS.GetName] through [COUNTRY.GetFlagTextIcon][STRAIT.GetName] with a #variable $TOLL_RATE|%0$#! toll rate"
  TAX_INCOME_TOLLS: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],TOLLS_BREAKDOWN,TariffsTooltip @money![GetPlayer.PredictTolls|D+=]#!#! [concept_tolls]"
  TOLLS_BREAKDOWN: "#tooltip_header [concept_tolls]#!\nTotal: #v @money![GetPlayer.PredictTolls|K+=]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTollsDesc]"
+
+ ## Country Budget Tolls
+ # Top level entry for toll income breakdown on country budget. Breakdown leads to STRAIT_TOLL_VALUE_HEADER + STRAIT_TOLL_INCOME_COUNTRY_DESC
+ STRAIT_TOLL_INCOME_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $VALUE|D+$#!#!#! from [STRAIT.GetName] #b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$#! [concept_tolls]"
+
+ # Breakdown leads to STRAIT_COUNTRY_TOLL_INCOME_HEADER + TOLL_BUDGET_ENTRY
+ STRAIT_TOLL_VALUE_HEADER: "#header [STRAIT.GetName] [concept_tolls]#!\nTotal: @money!#v $VALUE|D$#!\n$TOOLTIP_DELIMITER$\n"
+ STRAIT_TOLL_INCOME_COUNTRY_DESC: "@money!#tooltippable #tooltip:$BREAKDOWN$ #v $VALUE|D+$#!#!#! from [COUNTRY.GetName]"
+
+ # Breakdown leads to STRAIT_TOLL_VALUE_GOODS_ENTRY_BREAKDOWN
+ STRAIT_COUNTRY_TOLL_INCOME_HEADER: "#header [STRAIT.GetName] [concept_tolls] from [COUNTRY.GetName]#!\nTotal: @money!#v $VALUE|D+$#!\n$TOOLTIP_DELIMITER$\n"
+ TOLL_BUDGET_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $VALUE|D+$#!#!#! from [GOODS.GetTextIcon][Nbsp]#v $QTY|D$#! [GOODS.GetNameNoIcon] to [STATE.GetName]"
+
+ ## Building Expense Tolls
+ # Top header for toll breakdown on a building. Gets a list of STRAIT_TOLL_EXPENSE_ENTRY_ONE_CONTROLLER or STRAIT_TOLL_EXPENSE_ENTRY_TWO_CONTROLLERS added to it at the end
+ STRAIT_TOLL_BUILDING_EXPENSE_HEADER: "#header [BUILDING.GetState.GetCountry.GetFlagTextIcon][Nbsp][BUILDING.GetState.GetName] [BUILDING.GetName] [concept_tolls]#!\nTotal: @money!#v $VALUE|D-$#!\n$TOOLTIP_DELIMITER$\n"
+
+ # Breakdowns lead to STRAIT_TOLL_VALUE_HEADER + STRAIT_TOLL_EXPENSE_GOODS_ENTRY
+ STRAIT_TOLL_EXPENSE_ENTRY_ONE_CONTROLLER: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $VALUE|D-$#!#!#! at [STRAIT.GetName] due to [COUNTRY.GetAdjective] #b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$#! [concept_tolls]"
+ STRAIT_TOLL_EXPENSE_ENTRY_TWO_CONTROLLERS: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $VALUE|D-$#!#!#! at [STRAIT.GetName] due to [FIRST_COUNTRY.GetAdjective] #b $FIRST_TOLL_RATE_ICON$[Nbsp]$FIRST_TOLL_RATE_DESC$ #! and [SECOND_COUNTRY.GetAdjective] #b $SECOND_TOLL_RATE_ICON$[Nbsp]$SECOND_TOLL_RATE_DESC$#! [concept_tolls]"
+
+ # Breakdown leads to STRAIT_TOLL_VALUE_GOODS_ENTRY_BREAKDOWN
+ STRAIT_TOLL_EXPENSE_GOODS_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $TOTAL_EXPENSE|D-$#!#!#! from [GOODS.GetTextIcon][Nbsp]$AMOUNT|vD$ [GOODS.GetName]"
+
+ # Breaks down the toll calculation. STRAIT_TOLL_RATE_DESC is added at the end for each country with a toll on the strait
+ STRAIT_TOLL_VALUE_GOODS_ENTRY_HEADER: "[TARGET_COUNTRY.GetFlagTextIcon][Nbsp][TARGET_STATE.GetName] [concept_tolls] for [GOODS.GetName] through [STRAIT.GetName]"
+ STRAIT_TOLL_VALUE_GOODS_ENTRY_BREAKDOWN: "#header $STRAIT_TOLL_VALUE_GOODS_ENTRY_HEADER$#!\n$concept_tolls$: @money!#variable $TOLL_VALUE|D$#!\n$TOOLTIP_DELIMITER$\n[TARGET_COUNTRY.GetFlagTextIcon][Nbsp][TARGET_STATE.GetName] is [Concept('concept_trade','$concept_importing$')] [GOODS.GetTextIcon][Nbsp]$AMOUNT|vD$ [GOODS.GetNameNoIcon] through the [STRAIT.GetName]. A [concept_world_market] price of @money!#v $PRICE|D$#! means the total $concept_import$ value is @money!#v $VALUE|D$#!. With a $concept_toll_rate$ of #v $TOTAL_TOLL_RATE|%0$#! applied to this value, the final expense is @money!#variable $TOLL_VALUE|D$#!.\n\nThe #v $TOTAL_TOLL_RATE|%0$#! $concept_toll_rate$ is due to:"
+ STRAIT_TOLL_RATE_DESC: "#v $TOLL_RATE|%0$#! [COUNTRY.GetAdjective] #b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$ $concept_tolls$#!"
 
  STRAIT_ACCESS_PLAYER: "#b [Strait.GetAccessStatusFor(GetPlayer.Self)]#! [concept_strait_access] for [GetPlayer.GetName] $YOU$"
  STRAIT_TOLLS_PLAYER: "@money!#v [Strait.GetTollsFor(GetPlayer.Self)|D+]#! [concept_tolls] revenue per week"
@@ -84,6 +111,10 @@
  STRAIT_ACCESS_SETTING_REDUNDANT: "Current [concept_strait_access] setting"
  STRAIT_ACCESS_SETTING_NOT_ALLOWED: "[concept_strait_access] setting is not allowed"
  TOLL_RATE_NOT_ALLOWED: "Toll rate is not allowed"
+ STRAIT_TOLL_RATE_ON_COOLDOWN: "[concept_tolls] cannot be changed again until $DATE|v$"
+ STRAIT_TOLL_RATE_GRACE_PERIOD: "[concept_tolls] can only be reverted to the previous rate until $DATE|v$"
+ STRAIT_ACCESS_SETTING_ON_COOLDOWN: "[concept_strait_access] cannot be changed again until $DATE|v$"
+ STRAIT_ACCESS_SETTING_GRACE_PERIOD: "[concept_strait_access] can only be reverted to the previous setting until $DATE|v$"
 
  STRAIT_STATES_HEADER: "$concept_states$ connected by this $concept_strait$"
  NO_NAVAL_FORTIFICATION_TOOLTIP: "[Country.GetName] has not built a [GetBuildingType('building_naval_fortification').GetName] in [State.GetName] yet and has no control over the [Strait.GetName]"

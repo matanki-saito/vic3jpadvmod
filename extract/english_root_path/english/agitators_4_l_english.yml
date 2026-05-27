@@ -1374,8 +1374,8 @@
   historical_agitators.17.b: "Any man has a right to avenge his country."
   historical_agitators.17.c: "Get this saber-rattler out of his office."
 
-  lv_4_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] will be promoted to the [Concept('concept_commander_rank', 'Rank')] of $commander_rank_4_general$"
-  lv_2_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] will be promoted to the [Concept('concept_commander_rank', 'Rank')] of $commander_rank_2_general$"
+  lv_4_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] will be promoted to the [Concept('concept_commander_rank', 'concept_commander_rank_short')] of $commander_rank_4_general$"
+  lv_2_general_tt: "[SCOPE.sCharacter('historic_agitator_scope').GetFullName] will be promoted to the [Concept('concept_commander_rank', 'concept_commander_rank_short')] of $commander_rank_2_general$"
 
   historical_agitators.18.t: "Silk Merchant's Son"
   historical_agitators.18.d: "Freshly reentering politics, [SCOPE.sCharacter('historic_agitator_scope').GetFullName] has been invited to make public addresses on the constitution of the [ROOT.GetCountry.GetAdjective] state."

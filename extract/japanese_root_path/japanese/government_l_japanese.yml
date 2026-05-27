@@ -444,6 +444,8 @@
  gov_fascist_state_desc: "ファシストの[concept_ideology]に固執している[concept_government_type]。残酷で独裁的な政権です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_domain_frontier: "藩の辺境"
  gov_domain_frontier_desc: "場所請負制に基づき、松前藩の藩主が統治する藩境の領域。"
+ gov_ezo_republic: "蝦夷共和国"
+ gov_ezo_republic_desc: "これは、侍を選挙人とする議会によって[Concept('concept_election','$concept_elected$')]された[Concept('concept_ruler','$RULER_TITLE_SOSAI$')]を元首とする[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  ### Colonial Administrations
  gov_crown_colony_india: "直轄植民地"
  gov_crown_colony_india_desc: "イギリス王室の植民地であり、植民地行政官によって統治され、自治権は限られています。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
@@ -465,6 +467,8 @@
  gov_dominion_dictatorial_desc: "独裁権力のある[Concept('concept_ruler','$RULER_TITLE_PRIME_MINISTER$')]が治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_dominion_elected: "自治領"
  gov_dominion_elected_desc: "民主的に[Concept('concept_election','$concept_elected$')]された植民地議会が治める[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_ezo_republic_colonial: "蝦夷共和国"
+ gov_ezo_republic_colonial_desc: "これは、旧幕府支持者が日本政府に代わって統治する辺境の地です。その政府は、侍を選挙人とする会議によって[Concept('concept_election','$concept_elected$')]されます。"
  ### Corporate States
  gov_fascist_corporate_state: "ファシズム国家"
  gov_fascist_corporate_state_desc: "ファシストの[concept_ideology]に固執している[concept_government_type]。残酷で独裁的な政権です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
@@ -1083,6 +1087,7 @@
  RULER_TITLE_SUPREME_PROTECTOR: "最高保護国"
  RULER_TITLE_SUPREME_CHIEF: "最高責任者"
  RULER_TITLE_PRINCIPAL_CHIEF: "大首長"
+ RULER_TITLE_SOSAI: "総裁"
  HEIR_TITLE_DEFAULT: "後継者"
  french_second_republic: "第二共和政"
  french_three_republic: "第三共和政"

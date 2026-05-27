@@ -184,7 +184,7 @@
  subject_type_crown_land_no_icon: "$concept_crown_land_subject$"
 
  SUBJECT_CANNOT_HAVE_SUBJECTS:1 " [COUNTRY.GetName] cannot have subjects of their own due to being a $SUBJECT_TYPE|v$-type [concept_subject]!"
- SUBJECT_MUST_BE_HIGHER_COUNTRY_RANK:1 " $COUNTRY_NAME$ must be of a higher [concept_rank] than $COUNTRY_OTHER_NAME$ to make them into a $SUBJECT_TYPE|v$-type [concept_subject]"
+ SUBJECT_MUST_BE_HIGHER_COUNTRY_RANK: "$COUNTRY_NAME$ must be of a higher [concept_rank] than $COUNTRY_OTHER_NAME$ to make them into a $SUBJECT_TYPE|v$-type [concept_subject]"
  SUBJECT_INVALID_OVERLORD_RANK:1 " $COUNTRY_NAME$ cannot have a $SUBJECT_TYPE|v$-type [concept_subject] due to their [concept_rank] being $RANK|v$"
  SUBJECT_INVALID_SUBJECT_RANK:1 " $COUNTRY_NAME$ cannot become a $SUBJECT_TYPE|v$-type [concept_subject] due to their [concept_rank] being $RANK|v$"
  SUBJECT_MUST_BE_SAME_COUNTRY_TYPE:1 " $COUNTRY_NAME$ cannot have $COUNTRY_OTHER_NAME$ as their $SUBJECT_TYPE|v$-type [concept_subject] due to being a $COUNTRY_TYPE|v$"

@@ -133,6 +133,7 @@
  friendly_nation_with_interest_in_alaska_tt: "A #bold North American#! [concept_great_power] with an [concept_incorporated_state] in the #bold Pacific Coast#! [concept_strategic_region] has positive [concept_relations] with us"
  sold_alaska_tt: "We have successfully sold #bold Alaska#!"
  not_sold_alaska_tt: "We have #bold not#! successfully sold #bold Alaska#!"
+ alaska_transaction_ongoing_tt: "No country is currently making an offer for #b Alaska#!"
 
  has_alaska_sale_cooldown_tt: "Has not used this action in the past #bold year#!"
 

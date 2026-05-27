@@ -112,7 +112,7 @@
 
  texan_war_of_independence:0 "Texan War of Independence"
   
- WARGOAL_NO_TREATY_PORT:1 " Target state has no valid [concept_treaty_port] province"
+ WARGOAL_NO_TREATY_PORT: "Target state has no valid [concept_treaty_port] province"
  WARGOAL_IS_TREATY_PORT:1 " Target state is a [concept_treaty_port]"
  WARGOAL_NO_PORT: " Target $concept_state$ must have a #v $building_port$#! constructed"
  WARGOAL_CANNOT_HOLD_TREATY_PORT:0 " [COUNTRY.GetAdjective] [concept_rank] must be higher than [TARGET_COUNTRY.GetMarket.GetOwner.GetAdjective] [concept_rank] of [TARGET_COUNTRY.GetMarket.GetOwner.GetRank]"
@@ -142,9 +142,8 @@
  WARGOAL_COUNTRY_HAS_NOT_LAW:0 " [COUNTRY.GetName] have #b not#! enacted [LAW_TYPE.GetName]"
  WARGOAL_FORCE_NATIONALIZATION_INVESTMENT_RIGHTS: "[TARGET_COUNTRY.GetName] must not have [concept_foreign_investment_rights] in [COUNTRY.GetName]"
  WARGOAL_FORCE_NATIONALIZATION_NOTHING:0 "[TARGET_COUNTRY.GetName] does not own any [Concept('concept_building', '$concept_buildings$')] in [COUNTRY.GetName]"
- WARGOAL_STAKEHOLDER_DOES_NOT_EXIST:1 " This [concept_war_goal] does not have a valid stakeholder!"
  WARGOAL_TARGET_DOES_NOT_OWN_STATE:1 " #variable $COUNTRY_NAME$#! does not own #variable $STATE_NAME$#!"
- WARGOAL_NEEDS_INTEREST_MARKER_IN_REGION:0 "#variable $COUNTRY_NAME$#! has an [concept_interest] in #variable $REGION_NAME$#!"
+ WARGOAL_NEEDS_INTEREST_MARKER_IN_REGION: "$COUNTRY_NAME$ has an [concept_interest] in #variable $REGION_NAME$#!"
  OTHER_WARGOAL_ON_SAME_TARGET:1 " #variable [COUNTRY.GetName]#! has a mutually exclusive [concept_war_goal] targeting #variable [TARGET.GetName]#!"
  WARGOAL_TOO_LOW_RANK:1 " [COUNTRY.GetName] has too low country rank!"
  WARGOAL_TOO_HIGH_RANK:1 " [COUNTRY.GetName] has too high country rank!"
@@ -153,7 +152,7 @@
  WARGOAL_HOLDER_HAS_CLAIM:2 " #variable $COUNTRY_NAME$#! has a [concept_claim] on #variable $TARGET_NAME$#!"
  WARGOAL_HOLDER_HAS_NO_COLONIAL_CONQUEST:1 " #variable $COUNTRY_NAME$#! cannot perform a Colonial Conquest on #variable $STATE_NAME$#!"
  WARGOAL_HOLDER_HAS_COLONIAL_CONQUEST:1 " #variable $COUNTRY_NAME$#! can perform a Colonial Conquest on #variable $STATE_NAME$#!"
- WARGOAL_COUNTRY_CREATION_NOT_SET: " Must select a [concept_country] to create"
+ WARGOAL_COUNTRY_CREATION_NOT_SET: "Must select a [concept_country] to create"
  WARGOAL_COUNTRY_CREATION_INVALID:1 " #variable $TARGET_NAME$#! does not own the States needed to release #variable $COUNTRY_NAME$#!"
  WARGOAL_TARGET_HAS_NOTHING_TO_RELEASE:1 " #variable $TARGET_NAME$#! has no recently acquired States or Subjects to release"
  WARGOAL_RECENT_REGIME_CHANGE:0 "[TARGET_COUNTRY.GetName] was recently the target of a Regime Change"

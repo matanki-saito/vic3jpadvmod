@@ -20,6 +20,7 @@
  SETTING_TOOLTIP_UNLOCK_TIME_TOOLTIP:0 "#T $SETTING_TOOLTIP_UNLOCK_TIME$#!\nSets the delay before tooltips are unlocked."
  SETTING_TOOLTIP_LOCK_TIME:0 "Lock Delay"
  SETTING_TOOLTIP_LOCK_TIME_TOOLTIP:0 "#T $SETTING_TOOLTIP_LOCK_TIME$#!\nSets the delay before tooltips are locked."
+ SETTING_INPUT_ACTION_LOCK_TOOLTIP:0 "Lock Tooltip"
  SETTING_TOOLTIP_OPEN_TIME_WHEN_ANOTHER_LOCKED:0 "Locked Open Delay"
  SETTING_TOOLTIP_OPEN_TIME_WHEN_ANOTHER_LOCKED_TOOLTIP:0 "#T $SETTING_TOOLTIP_OPEN_TIME_WHEN_ANOTHER_LOCKED$#!\nSets the delay before tooltips are locked when another tooltip is already open."
  SETTINGS_CATEGORY_ADVANCED_GRAPHICS:0 "Advanced"
@@ -105,6 +106,7 @@
  OPTION_PORTRAIT_RENDER_SCALE_HIGH: "×2.0 - High"
 
  SETTING_EVENT_OPTION_TEXT_ALIGNMENT: "Event Option Text Alignment"
+ SETTING_EVENT_OPTION_TEXT_ALIGNMENT_TOOLTIP: "Determines if the text for event options should be left-aligned or centered"
  OPTION_LEFT: "Left"
  OPTION_CENTERED: "Centered"
  OPTION_RIGHT: "Right"

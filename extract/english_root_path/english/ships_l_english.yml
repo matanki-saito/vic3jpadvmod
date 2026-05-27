@@ -19,7 +19,7 @@
  SHIP_UTILITY_MODIFICATIONS_SHORT_CONCEPT: "[Concept('concept_ship_modification', '$concept_ship_utility_modifications_short$')]"
 
  SHIP_MAINTENANCE_LABEL: "Maintenance"
- SHIP_MAINTENANCE_VALUE: "#v [ShipTemplate.GetSupplyGoodsCost|D]#![AddLocalizationIf(NotZero_CFixedPoint(ShipDesignerPopup.GetMaintenanceCostDifference), 'SHIP_MAINTENANCE_VALUE_DIFFERENCE')]"
+ SHIP_MAINTENANCE_VALUE: "#v [ShipTemplate.GetTotalMaintenanceCost|D]#![AddLocalizationIf(NotZero_CFixedPoint(ShipDesignerPopup.GetMaintenanceCostDifference), 'SHIP_MAINTENANCE_VALUE_DIFFERENCE')]"
  SHIP_MAINTENANCE_VALUE_DIFFERENCE: " (#v [ShipDesignerPopup.GetMaintenanceCostDifference|-=D]#!)"
  SUPPLY_SHIPS_RATIO: "[concept_ship_construction] Allocation"
  SHIP_TEMPLATE_CONSTRUCTION_COST_VALUE: "#v [ShipTemplate.GetConstructionCost|D0]#![AddLocalizationIf(NotZero_CFixedPoint(ShipDesignerPopup.GetConstructionCostDifference), 'SHIP_TEMPLATE_CONSTRUCTION_COST_DIFFERENCE')]"
@@ -51,8 +51,8 @@
  SHIP_CONSTRUCTION_VALUE: "[SelectLocalization(Country.IsShipConstructionPaused, 'CONSTRUCTION_DURATION_PAUSED', 'SHIP_CONSTRUCTION_VALUE_WITHOUT_ICON')]"
  SHIP_CONSTRUCTION_VALUE_WITHOUT_ICON: "#v [Country.GetShipConstructionUsage|0]#!/[Country.GetShipConstruction|0]"
  SHIP_CONSTRUCTION_VALUE_WITH_ICON: "@ship_construction![Nbsp]#v [Country.GetShipConstructionUsage|0]#!/[Country.GetShipConstruction|0]"
- SHIP_MILITARY_CONSTRUCTION_VALUE_WITH_ICON: "@ship_construction![Nbsp]#v [Country.GetMilitaryConstructionUsageTotal|0]#!/[Country.GetMilitaryConstructionCapacity|0]"
- SHIP_SUPPLY_CONSTRUCTION_VALUE_WITH_ICON: "@ship_construction![Nbsp]#v [Country.GetSupplyConstructionUsageTotal|0]#!/[Country.GetSupplyConstructionCapacity|0]"
+ SHIP_MILITARY_CONSTRUCTION_VALUE_WITH_ICON: "@ship_construction![Nbsp]#v [Country.GetMilitaryConstructionQueueUsage|0]#!/[Country.GetFreeMilitaryConstructionCapacity|0]"
+ SHIP_SUPPLY_CONSTRUCTION_VALUE_WITH_ICON: "@ship_construction![Nbsp]#v [Country.GetSupplyConstructionQueueUsage|0]#!/[Country.GetFreeSupplyConstructionCapacity|0]"
  SHIP_CONSTRUCTION_TOOLTIP: "#header Construction of [ShipConstruction.GetShipType.GetName]#!\n[ConcatIfNeitherEmpty(AddLocalizationIf(ShipConstruction.IsInProgress, 'SHIP_CONSTRUCTION_WEEKS_LEFT'), '\n')]$TOOLTIP_DELIMITER$\n@ship_construction![Nbsp][ShipConstruction.GetProgress|v0]/[ShipConstruction.GetConstructionCost|v0] [concept_ship_construction] progress ([ShipConstruction.GetProgressPercent|v%])\n[SelectLocalization(EqualTo_CFixedPoint(ShipConstruction.GetEfficiency, '(CFixedPoint)1'), 'SHIP_CONSTRUCTION_SPEED', 'SHIP_CONSTRUCTION_SPEED_WITH_EFFICIENCY')][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(ShipConstruction.GetFleet.IsValid, 'SHIP_CONSTRUCTION_IN_FLEET'))]"
  SHIP_CONSTRUCTION_WEEKS_LEFT: "[ShipConstruction.GetWeeksLeft|v] week(s) until complete"
  SHIP_CONSTRUCTION_IN_FLEET: "Will be assigned to [concept_fleet]: [ShipConstruction.GetFleet.GetName]"
@@ -303,6 +303,7 @@
  SUPPLY_GOODS_SHORTAGE_DESC: "Supply delivery at #[GetMoraleColorString( MilitaryFormation.GetLogisticsCenterSupplyAvailability )] [MilitaryFormation.GetLogisticsCenterSupplyAvailability|%0]#! due to [Concept('concept_shortage','$concept_input_goods_shortages$')]"
  FRIENDLY_PORT_SUPPLY_DISCOUNT_DESC: "#p -[MilitaryFormation.GetFriendlyPortDiscount|0+%]#! from nearby friendly port"
  SHIP_WAGE_COST_ENTRY: "@money!#v $VAL|0-$#! from #v $NUM_CREW$#! $concept_ship_crew_short$ from [BUILDING.GetName] in [STATE.GetName]"
+ SHIP_WAGE_COST_PREDICTED_ENTRY: "@money!#v $VAL|0-$#! from #v $NUM_CREW$#! $concept_ship_crew_short$ from $building_naval_administration$ in [STATE.GetName]"
 
  MILITARY_FORMATION_SHIPS_HEADER: "Ships [MilitaryFormation.GetUnitIcon] $FLEET_TOTAL_NUMBER_OF_SHIPS$"
  FLEET_TRANSPORTED_ARMIES_HEADER: "Transported [Concept('concept_army','$concept_armies$')]"
@@ -441,7 +442,7 @@
 
  NO_UTILITY_MODIFICATIONS: "No $SHIP_UTILITY_MODIFICATIONS_SHORT_CONCEPT$"
 
- SHIP_TEMPLATE_MAINTENANCE_COST_TOOLTIP: "#header Maintenance [Concept('concept_good', '$concept_goods$')]#!\n@money! #v [ShipTemplate.GetSupplyGoodsCost|D-]#! estimated weekly cost per [concept_ship]\n$TOOLTIP_DELIMITER$\n#title [Concept('concept_good', '$concept_goods$')] required:#!#indent_newline:3 \n[ShipTemplate.GetSupplyGoodsCostDesc]#!"
+ SHIP_TEMPLATE_MAINTENANCE_COST_TOOLTIP: "#header Maintenance [Concept('concept_good', '$concept_goods$')]#!\n@money! #v [ShipTemplate.GetTotalMaintenanceCost|D-]#! estimated weekly cost per [concept_ship]\n$TOOLTIP_DELIMITER$\n#title [Concept('concept_good', '$concept_goods$')] required:#!#indent_newline:3 \n[ShipTemplate.GetTotalMaintenanceCostDesc]#!"
  SHIP_TEMPLATE_COST_TOOLTIP: "#header [concept_ship_construction]#!\nCost: [ShipTemplate.GetConstructionCost|V0] @ship_construction!\n$TOOLTIP_DELIMITER$\n#title Due to:#!#indent_newline:3 \n[ShipTemplate.GetConstructionCostBreakdown]#!"
  SHIP_TEMPLATE_CONSTRUCTION_COST_WITH_LABEL: "@ship_construction! #tooltippable;tooltip:[ShipTemplate.GetTooltipTag],SHIP_TEMPLATE_COST_TOOLTIP [ShipTemplate.GetConstructionCost|v0]#! [concept_ship_construction]\n[ShipTemplate.GetConstructionWeeks|v] week(s) to build currently"
 

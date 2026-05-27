@@ -942,7 +942,15 @@
  concept_defense_desc:0 "A [Concept('concept_unit','$concept_unit_possessive$')] fighting ability in [concept_battle] while defending from enemy incursions."
 
  concept_blockade_strength: "Blockade Strength"
+ concept_blockade_strength_short: "Strength"
  concept_blockade_strength_desc: "Determines the degree to which a [concept_fleet] is able to successfully [concept_blockade] enemy [Concept('concept_state', '$concept_states$')]."
+
+ concept_blockade_efficiency: "Blockade Efficiency"
+ concept_blockade_efficiency_desc: "$concept_blockade_efficiency$ is the average [concept_blockade] level a [concept_fleet] achieves across all hostile ports in its [concept_naval_mission] area. It is based on [concept_blockade_strength] vs the [concept_blockade_resistance] of each target port, distributed evenly across all targeted ports."
+
+ concept_blockade_resistance: "Blockade Resistance"
+ concept_blockade_resistance_short: "Resistance"
+ concept_blockade_resistance_desc: "$concept_blockade_resistance$ is the amount of [concept_blockade_strength] required to fully [concept_blockade] a [concept_state]. It is based on factors such as coastal [concept_building] output and local [concept_trade] volumes."
 
  concept_blockade: "Blockade"
  concept_blockade_level: "Blockade Level"
@@ -1436,7 +1444,7 @@
  concept_naval_invasion: "Naval Invasion"
  concept_naval_invasions: "Naval Invasions"
  concept_naval_invaded: "Naval Invaded"
- concept_naval_invasion_desc: "A maritime invasion of a coastal [concept_state], coordinated between a [concept_fleet] and an [concept_army]. The $concept_fleet$ keeps the waters off the coast clear to ensure the $concept_army$ can land safely, while the $concept_army$ executes a series of land [Concept('concept_battle','$concept_battles$')] to win [concept_occupation] in the targeted $concept_state$.\n\nThe controller of the targeted $concept_state$ can defend against the $concept_naval_invasion$ by positioning their own [Concept('concept_fleet','$concept_fleets$')] in the affected [concept_sea_node] or stationing a [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] $concept_army$ in the land [concept_hq] encompassing the invaded $concept_state$."
+ concept_naval_invasion_desc: "A maritime invasion of a coastal [concept_state], coordinated between a [concept_fleet] and an [concept_army]. The $concept_fleet$ keeps the waters off the coast clear to ensure the $concept_army$ can land safely, while the $concept_army$ executes a series of land [Concept('concept_battle','$concept_battles$')] to win [concept_occupation] in the targeted $concept_state$.\n\nThe controller of the targeted $concept_state$ can defend against the $concept_naval_invasion$ by positioning their own [Concept('concept_fleet','$concept_fleets$')] in the affected [concept_sea_node] or stationing a [Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')] $concept_army$ in the invaded $concept_state$."
 
  concept_working_adults:0 "Working Adults"
  concept_working_adult:1 "Working Adult"
@@ -1589,14 +1597,23 @@
  concept_interest_tier_short: "Tier"
  concept_interest_tier_desc: "An [concept_interest_tier] signifies the level of presence that a [concept_country] has in a [concept_strategic_region] and can be upgraded by increasing [concept_involvement] in a given $concept_strategic_region_short$.\nHigher tiers unlock new interactions and benefits."
 
- concept_obligation:0 "Obligation"
- concept_obligations:0 "Obligations"
- concept_obligated:0 "Obligated"
+ concept_diplomatic_relevancy: "Diplomatic Relevancy"
+ concept_diplomatically_relevant: "Diplomatically Relevant"
+ concept_diplomatically_irrelevant: "Diplomatically Irrelevant"
+ concept_diplomatic_relevancy_desc: "Having $concept_diplomatic_relevancy$ is required for a [concept_country] to engage in certain interactions like signing [Concept('concept_treaty', '$concept_treaties$')]. A $concept_country$ is considered $concept_diplomatically_relevant$ for another if one of the following conditions is fulfilled:\n$EFFECT_LIST_BULLET$They share a direct border\n$EFFECT_LIST_BULLET$They share a direct border with only one [concept_sea_node] between them\n$EFFECT_LIST_BULLET$One $concept_country$ is bordering a [concept_subject] of the other\n$EFFECT_LIST_BULLET$One $concept_country_possessive$ $concept_subject$ is bordering the other $concept_country_possessive$ $concept_subject$\n$EFFECT_LIST_BULLET$An existing $concept_treaty$ between the two $concept_countries$\n$EFFECT_LIST_BULLET$Both $concept_countries$ being [Concept('concept_great_power','$concept_great_powers$')]\n$EFFECT_LIST_BULLET$One of the $concept_countries$ declaring a [concept_rivalry] towards the other\n$EFFECT_LIST_BULLET$One of the $concept_countries$ conducting [concept_piracy] targetting the other\n$EFFECT_LIST_BULLET$Both $concept_countries$ having overlapping [Concept('concept_interest', '$concept_interests$')]"
+
+ concept_strategic_adjacency: "Strategic Adjacency"
+ concept_strategically_adjacent: "Strategically Adjacent"
+ concept_strategic_adjacency_desc: "$concept_strategic_adjacency$ is an adjacency check for two [Concept('concept_country', '$concept_countries$')] that is used to allow certain interactions between them if they fulfill the conditions. Two $concept_countries$ count as $concept_strategically_adjacent$ if one of these conditions is fulfilled:\n$EFFECT_LIST_BULLET$They share a direct border\n$EFFECT_LIST_BULLET$They share a direct border with only one [concept_sea_node] between them\n$EFFECT_LIST_BULLET$One $concept_country$ is bordering a [concept_subject] of the other\n$EFFECT_LIST_BULLET$One $concept_country_possessive$ $concept_subject$ is bordering the other $concept_country_possessive$ $concept_subject$\n$EFFECT_LIST_BULLET$One $concept_country$ is bordering an unpressed [concept_war_goal]"
+
+ concept_obligation: "Obligation"
+ concept_obligations: "Obligations"
+ concept_obligated: "Obligated"
  concept_obligation_desc: "One [concept_country] can become $concept_obligated$ to another as a result of agreements made during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or when one $concept_country$ buys out another's [concept_loans]. While $concept_obligated$ to a $concept_country$ you are unable to start $concept_diplomatic_plays$ against them or even join a $concept_diplomatic_play_short$ on the other side as them. The other $concept_country$ may use an $concept_obligation$ they hold over you to force you into a [concept_diplomatic_pact] or [concept_treaty], or may absolve it to [concept_sway] you into supporting them in a $concept_diplomatic_play$ or increase [concept_relations] with you."
 
- concept_gdp:0 "Gross Domestic Product"
- concept_gdp_short:1 "GDP"
- concept_gdp_desc:4 "Each unit of [Concept('concept_good','$concept_goods$')] [Concept('concept_good_production', '$concept_good_produced$')|l] in your [concept_country] contributes to your [concept_gdp]. The [concept_market_price] value of your national production is reduced by the value of $concept_goods$ used as inputs into the process.\n\n$concept_gdp_short$ affects [concept_prestige] and [concept_budget_minting]."
+ concept_gdp: "Gross Domestic Product"
+ concept_gdp_short: "GDP"
+ concept_gdp_desc: "Each unit of [Concept('concept_good','$concept_goods$')] [Concept('concept_good_production', '$concept_good_produced$')|l] in your [concept_country] contributes to your [concept_gdp]. The [concept_market_price] value of your national production is reduced by the value of $concept_goods$ used as inputs into the process.\n\n$concept_gdp_short$ affects [concept_prestige] and [concept_budget_minting]."
 
  concept_gdp_per_capita: "Gross Domestic Product per Capita"
  concept_gdp_per_capita_short: "GDP per Capita"
@@ -2040,8 +2057,10 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 1, 2022
 
- concept_supply_network:0 "Supply Network"
- concept_supply_networks:0 "Supply Networks"
+ concept_supply_network: "Supply Network"
+ concept_supply_network_short: "Network"
+ concept_supply_networks: "Supply Networks"
+ concept_supply_networks_short: "Networks"
  concept_supply_network_desc:3 "Every seafaring [concept_country] requires [GetGoods('merchant_marine').GetName] on the [concept_market] to maintain the transportation needs of their [Concept('concept_shipping_lane','$concept_shipping_lanes$')]. The total strength of your $concept_supply_network$ is determined by comparing the [GetGoods('merchant_marine').GetName] supply to the total demand across all your $concept_shipping_lanes$. This strength is the baseline [Concept('concept_shipping_lane_effectiveness','$concept_shipping_lane_effectiveness_short$')] of all your $concept_shipping_lanes$."
 
 
@@ -2167,6 +2186,7 @@
 
  concept_supply_ship: "Supply Ship"
  concept_supply_ships: "Supply Ships"
+ concept_supply_ship_construction: "Supply Ship Construction"
  concept_supply_ship_desc: "$concept_supply_ships$ are used to deliver supplies, rations and ammo to [Concept('concept_fleet','$concept_fleets$')] that are at sea and [Concept('concept_army','$concept_armies$')] that are overseas.\n\nThey are constructed in a $building_shipyard$ much like regular [Concept('concept_ship','$concept_ships$')] and are retained in a pool unless currently needed."
 
  concept_critical_hit_chance: "Critical Chance"
@@ -2211,6 +2231,7 @@
 
  concept_tolls: "Tolls"
  concept_toll: "Toll"
+ concept_toll_rate: "Toll Rate"
  concept_tolls_desc: "$concept_tolls$ can be raised by [Concept('concept_country', '$concept_countries$')] that [Concept('concept_strait_control', '$concept_strait_control_short$')] a [concept_strait]. They add a cost that is a share of the [concept_trade] going through them. This cost is covered by the affected [GetBuildingType('building_trade_center').GetName] and reduces their profitability, while the $concept_country$ controlling the $concept_strait$ gains additional income from this. $concept_tolls$ can be raised individually by both controllers of a $concept_strait$ and are summed up."
 
  concept_strait: "Strait"
@@ -2754,7 +2775,7 @@
 
  concept_coup: "Coup"
  concept_coups: "Coups"
- concept_coup_desc: "A $concept_coup$ is an attempt by a [concept_commander] with low [concept_loyalty] to overthrow the sitting [concept_government]. The risk of a $concept_coup$ increases when a [concept_country] is ruled by a $concept_government$ with low [concept_legitimacy], or if a disloyal $concept_commander$ has a high [Concept('concept_commander_rank', 'Rank')] and [concept_popularity].\n\nOnce a $concept_coup$ begins, if its progress reaches #v 100%#!, the commander executing the $concept_coup$ will issue a [concept_pronunciamento]. A successful $concept_pronunciamento$ will cause the overthrow of the $concept_government$.\n\nThe progress of a $concept_coup$ is determined by the [concept_coup_strength] of the commander executing the $concept_coup$, evaluated against the [concept_coup_resistance] of the sitting government."
+ concept_coup_desc: "A $concept_coup$ is an attempt by a [concept_commander] with low [concept_loyalty] to overthrow the sitting [concept_government]. The risk of a $concept_coup$ increases when a [concept_country] is ruled by a $concept_government$ with low [concept_legitimacy], or if a disloyal $concept_commander$ has a high [Concept('concept_commander_rank', 'concept_commander_rank_short')] and [concept_popularity].\n\nOnce a $concept_coup$ begins, if its progress reaches #v 100%#!, the commander executing the $concept_coup$ will issue a [concept_pronunciamento]. A successful $concept_pronunciamento$ will cause the overthrow of the $concept_government$.\n\nThe progress of a $concept_coup$ is determined by the [concept_coup_strength] of the commander executing the $concept_coup$, evaluated against the [concept_coup_resistance] of the sitting government."
 
  concept_coup_strength: "Coup Strength"
  concept_coup_strength_short: "Strength"
@@ -2838,3 +2859,6 @@
  concept_russian_aid: "Russian Aid"
  concept_russian_aid_short: "Russian Aid"
  concept_russian_aid_desc: "$concept_russian_aid$ is support from #v $RUS$#! to our tribes, as fellow brethren of the Orthodox Church. \n\nThe base amount we receive depends on our [concept_relations] with #v $RUS$#!: \n\n• #v Neutral Relations#! (or worse): @money!200 \n• #v Cordial Relations#! : @money!400 \n• #v Amicable Relations#! : @money!700 \n• #v Friendly Relations#! : @money!1000"
+
+ concept_government_premium: "Government Premium"
+ concept_government_premium_desc: "Coverage for services provided."

@@ -112,6 +112,8 @@
  building_suez_canal_lens_option: "$building_suez_canal$を建築"
  building_panama_canal: "パナマ運河"
  building_panama_canal_lens_option: "$building_panama_canal$を建築"
+ building_kiel_canal: "キール運河"
+ building_kiel_canal_lens_option: "$building_kiel_canal$を建設"
  UNEMPLOYED: "[concept_unemployed]"
  #Building Groups
  bg_subsistence: "自給農家"

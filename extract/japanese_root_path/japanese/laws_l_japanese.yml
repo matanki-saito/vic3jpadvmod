@@ -537,7 +537,7 @@
  law_sakoku_desc: "他国との接触が厳しく制限され、貿易も指定されたわずかな港のみに限定されている、$law_isolationism$の形態の一つです。"
  sakoku_trade_center_trigger_tt: "[GetLawType('law_sakoku').GetName]の[concept_law]の下では、取引所は#v $STATE_KYUSHU$#!においてレベル[Building.GetState.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_trade_center_max_limit_add')|v]までしか建設できず、外国勢力との通商は厳格な監督下に置かれる。"
  internal_controls_relaxed_tt: "国内の移動制限が緩和され、[GetLawType('law_migration_controls').GetName]が採用される"
- internal_controls_strengthened_tt: "Restrictions will be placed on contact with foreign nations, causing us to adopt [GetLawType('law_closed_borders').GetName]"
+ internal_controls_strengthened_tt: "諸外国との接触が制限され、[GetLawType('law_closed_borders').GetName]を採用することになる"
  #Taxation Group
  lawgroup_taxation: "課税"
  lawgroup_taxation_desc: "州は市民への課税から収入を得ることになります。"
