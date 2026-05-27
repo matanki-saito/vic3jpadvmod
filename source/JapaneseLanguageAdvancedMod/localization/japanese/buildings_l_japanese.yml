@@ -265,3 +265,5 @@
  building_taj_mahal:0 "タージ・マハル"
  building_vatican_city:0 "バチカン市国"
  building_white_house:0 "ホワイトハウス"
+ building_kiel_canal:0 "キール運河"
+ building_kiel_canal_lens_option:0 "$building_kiel_canal$を建設"

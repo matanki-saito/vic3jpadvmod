@@ -1747,3 +1747,4 @@
  generic_revolt_tokugawa_loyalist_adj:0 "幕府"
  shogun_forced_to_open_market_character:0 "$shogun_ig_forced_to_open_market$"
  caused_by_liberal_or_socialist_movement_tt:0 "[Concept('concept_revolution','$concept_revolutionary$')]の[concept_political_movement]が#tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt 自由主義#!または#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt 社会主義#!である"
+ pass_institution_or_else_2:0 "10年以内に[GetInstitutionType('institution_social_security').GetName][concept_institution]を拡充しなければ、ゼネストに直面することになるだろう。"

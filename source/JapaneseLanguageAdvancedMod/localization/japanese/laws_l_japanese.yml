@@ -700,3 +700,4 @@
  law_peasant_proprietorship:0 "自作農制"
  law_peasant_proprietorship_desc:0 "農地の大部分は独立した自作農が所有していますが、その中により規模の大きい商業的な農園が点在しています。"
  pm_peasant_proprietorship_building_subsistence:0 "$law_peasant_proprietorship$"
+ internal_controls_strengthened_tt:0 "諸外国との接触が制限され、[GetLawType('law_closed_borders').GetName]を採用することになる"

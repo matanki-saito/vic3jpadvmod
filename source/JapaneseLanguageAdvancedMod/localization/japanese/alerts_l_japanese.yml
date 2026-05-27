@@ -189,7 +189,7 @@
  alert_can_establish_company_action:0 "企業パネル"
  alert_naval_invasion_name:0 "[SCOPE.GetRootScope.GetInvasion.GetName]"
  alert_naval_invasion_desc:0 "現在、[SCOPE.GetRootScope.GetInvasion.GetTargetState.GetName]において[SCOPE.GetRootScope.GetInvasion.GetInvaderCountry.GetName]による[Concept('concept_naval_invasion','$concept_naval_invaded$')]が行われています。"
- alert_naval_invasion_hint:0 "追加の[Concept('concept_fleet','$concept_fleets$')]を#v [SCOPE.GetRootScope.GetInvasion.GetSeaNodeName]#! に派遣し、敵の$concept_fleets$を沈めたり、[Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')][Concept('concept_army','$concept_armies$')]を派遣し、[SCOPE.GetRootScope.GetInvasion.GetDefenderHQ.GetName]を防衛したりすることができます。"
+ alert_naval_invasion_hint:0 "追加の[Concept('concept_fleet','$concept_fleets$')]を#v [SCOPE.GetRootScope.GetInvasion.GetSeaNodeName]#!に派遣し、敵の$concept_fleets$を沈めたり、[Concept('concept_mobilize_army','$concept_mobilize_army_mobilized$')]した[Concept('concept_army','$concept_armies$')]を派遣し、[SCOPE.GetRootScope.GetInvasion.GetTargetState.GetName]を防衛したりすることができます。"
  alert_naval_invasion_action:0 "侵略パネル"
  alert_state_goods_shortage_name:0 "[SCOPE.GetRootScope.GetStateGoods.GetState.GetName]における[SCOPE.GetRootScope.GetStateGoods.GetGoods.GetName][concept_shortage] ([SCOPE.GetRootScope.GetStateGoods.GetGoods.GetCompareIconAgainstBasePriceNoFormatting(SCOPE.GetRootScope.GetStateGoods.GetGoods.GetStatePrice)]) "
  alert_state_goods_shortage_desc:0 "この不足により影響を受ける施設が#tooltippable #tooltip:[SCOPE.GetRootScope.GetStateGoods.GetTooltipTag],STATE_GOODS_BUILDING_SHORTAGE_BREAKDOWN [SCOPE.GetRootScope.GetStateGoods.GetNumBuildingsAffectedByShortage|v]#!#!軒あります"

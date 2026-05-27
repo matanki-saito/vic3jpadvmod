@@ -666,3 +666,4 @@
  struggle_for_the_highveld.7.d:0 "我々は力を尽くしたが、今や[SCOPE.sCountry('highveld_winner').GetName]は南アフリカで疑いようのない最高の勢力となった。"
  struggle_for_the_highveld.7.f:0 "南アフリカ全土で新しい旗が翻っていた。それは[SCOPE.sCountry('highveld_winner').GetNameNoFormatting]の旗だった。[SCOPE.sCountry('highveld_loser').GetNameNoFormatting]が存続する可能性はあるが、未来は[SCOPE.sCountry('highveld_winner').GetAdjectiveNoFormatting]のものなのだ。"
  struggle_for_the_highveld.7.a:0 "[SCOPE.sCountry('highveld_loser').GetNameNoFormatting]よ、我々は汝のために涙する。"
+ je_struggle_for_the_highveld_lobby:0 "$je_struggle_for_the_highveld_reason$"

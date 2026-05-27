@@ -88,7 +88,7 @@
  subject_type_dominion:0 "@dominion!$subject_type_dominion_no_icon$"
  subject_type_personal_union:0 "@personal_union!$subject_type_personal_union_no_icon$"
  SUBJECT_CANNOT_HAVE_SUBJECTS:0 " [COUNTRY.GetName]は、 $SUBJECT_TYPE|v$タイプの[concept_subject]であるため、従属国を持つことができません！"
- SUBJECT_MUST_BE_HIGHER_COUNTRY_RANK:0 " $COUNTRY_NAME$は$SUBJECT_TYPE|v$タイプの[concept_subject]になるためには、 $COUNTRY_OTHER_NAME$よりも高い[concept_rank]である必要があります。"
+ SUBJECT_MUST_BE_HIGHER_COUNTRY_RANK:0 "$COUNTRY_NAME$は$SUBJECT_TYPE|v$タイプの[concept_subject]になるためには、 $COUNTRY_OTHER_NAME$よりも高い[concept_rank]である必要があります。"
  SUBJECT_INVALID_OVERLORD_RANK:0 " $COUNTRY_NAME$は[concept_rank]が$RANK|v$であるため、 $SUBJECT_TYPE|v$タイプの[concept_subject]を持つことはできません。"
  SUBJECT_INVALID_SUBJECT_RANK:0 " $COUNTRY_NAME$は[concept_rank]が$RANK|v$であるため、 $SUBJECT_TYPE|v$タイプの[concept_subject]になることはできません。"
  SUBJECT_MUST_BE_SAME_COUNTRY_TYPE:0 " $COUNTRY_NAME$は$COUNTRY_TYPE|v$であるため、 $COUNTRY_OTHER_NAME$を$SUBJECT_TYPE|v$タイプの[concept_subject]として持つことはできません。"

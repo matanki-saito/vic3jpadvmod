@@ -115,3 +115,5 @@
  main_menu_image_theme:0 "メインメニュー画像"
  main_menu_image_theme_desc:0 "メインメニューの背景として表示されるアニメーション画像。"
  SETTING_TELEMETRY_DATA:0 "テレメトリーデータ"
+ SETTING_INPUT_ACTION_LOCK_TOOLTIP:0 "ツールチップを固定"
+ SETTING_EVENT_OPTION_TEXT_ALIGNMENT_TOOLTIP:0 "イベント選択肢のテキストを左揃えにするか、中央揃えにするかを決定します。"

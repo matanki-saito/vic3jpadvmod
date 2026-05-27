@@ -1901,3 +1901,7 @@
  dyn_c_earth_kingdom:0 "地の王国"
  dyn_c_earth_republic:0 "地の共和国"
  dyn_c_taiping_republic:0 "天の共和国"
+ IBL:0 "イビビオランド"
+ IBL_ADJ:0 "イビビオ"
+ dyn_c_ezo_government:0 "蝦夷政府"
+ dyn_c_ezo_republic:0 "蝦夷共和国"

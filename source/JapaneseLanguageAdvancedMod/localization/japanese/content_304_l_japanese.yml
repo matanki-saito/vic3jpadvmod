@@ -500,3 +500,4 @@
  sweden_law_birth_two:0 "恥の台帳"
  ideology_not_too_far_tt:0 "この[Concept('concept_character','$concept_character_possessive$')]の[concept_ideology]は我々の[concept_ruler]のものとあまり#b 違わない#!"
  capitalist_in_british_india_tt:0 "[concept_profession]が植民地#b インド#!の[GetPopType('capitalists').GetName]である"
+ alaska_transaction_ongoing_tt:0 "現在、#b アラスカ#!の購入を提案している国家はない。"
