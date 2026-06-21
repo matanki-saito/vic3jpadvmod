@@ -1785,7 +1785,7 @@
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_WEEKLY_TRIGGER:0 "毎週確認 : \n$TRIGGER_DESC$"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_MONTHLY_TRIGGER:0 "毎月確認 : \n$TRIGGER_DESC$"
  TREATY_ARTICLE_NON_FULFILLMENT_DESC_YEARLY_TRIGGER:0 "毎年確認 : \n$TRIGGER_DESC$"
- TREATY_ARTICLE_NOT_FULFILLED_BY:0 "[COUNTRY.GetName][ConcatIfNeitherEmpty(' ',AddLocalizationIf(ObjectsEqual(Country.Self,GetPlayer.Self),'あなた'))]は[Article.GetTreaty.GetName]の[Article.GetName][concept_article]に[Concept('concept_contravention','$concept_contravening$')]しています。\n\n#tooltippable #tooltip:$BREAKDOWN_TAG$ $CURRENT_CONTRAVENTIONS|v$#!#! $concept_contraventions$現在の\n$MAX_CONTRAVENTIONS|v$ $concept_contraventions$は$concept_article$を[Concept('concept_non_fulfillment','$concept_non_fulfilled$')]するでしょう"
+ TREATY_ARTICLE_NOT_FULFILLED_BY:0 "[COUNTRY.GetName][ConcatIfNeitherEmpty(' ',AddLocalizationIf(ObjectsEqual(Country.Self,GetPlayer.Self),'(あなた)'))]は[Article.GetTreaty.GetName]の[Article.GetName][concept_article]に[Concept('concept_contravention','$concept_contravening$')]しています。\n\n現在の$concept_contraventions$#tooltippable #tooltip:$BREAKDOWN_TAG$ $CURRENT_CONTRAVENTIONS|v$回#!#!\n$MAX_CONTRAVENTIONS|v$回の$concept_contraventions$で$concept_article$は[Concept('concept_non_fulfillment','$concept_non_fulfilled$')]となります。"
  TREATY_DRAFT_ARTICLE_MUTUALLY_EXCLUSIVE:0 "@simple_box! [TREATY_ARTICLE_TYPE.GetName]がまだ選択されて#b いない#!"
  TREATY_DRAFT_ARTICLE_ONCE_PER_TREATY:0 "@green_checkmark_box! すでにこの[concept_treaty]に追加されている"
  TREATY_DRAFT_ARTICLE_ONCE_PER_SIDE:0 "@green_checkmark_box! すでにこの[concept_treaty]の[Country.GetAdjective]側に追加されている"
