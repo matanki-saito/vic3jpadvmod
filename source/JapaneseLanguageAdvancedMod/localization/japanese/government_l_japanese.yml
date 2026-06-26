@@ -600,7 +600,7 @@
  gov_regency_enlightened_despotate:0 "摂政"
  gov_regency_enlightened_despotate_desc:0 "[Concept('concept_ruler','$RULER_TITLE_PHILOSOPHER_KING$')]または[Concept('concept_ruler','$RULER_TITLE_PHILOSOPHER_QUEEN$')]がまだ王位に就けないため、[Concept('concept_ruler','$RULER_TITLE_REGENT$')]が権力を行使し、代理として統治を行う[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_regency_shogunate:0 "摂政"
- gov_regency_shogunate_desc:0 "[Concept('concept_ruler','$RULER_TITLE_SHOGUN$')]がまだ王位に就けないため、[Concept('concept_ruler','$RULER_TITLE_REGENT$')]が権力を行使し、代理として統治を行う[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_regency_shogunate_desc:0 "[Concept('concept_ruler','$RULER_TITLE_SHOGUN$')]がまだ国を統治する能力を持たないため、[Concept('concept_ruler','$RULER_TITLE_SHOGUN_KOKEN_SHOKU$')]が権力を行使し、代理として統治を行う[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_regency_massina_empire:0 "摂政"
  gov_regency_massina_empire_desc:0 "[Concept('concept_ruler','$RULER_TITLE_ALMAMI$')]がまだ王位に就けないため、[Concept('concept_ruler','$RULER_TITLE_REGENT$')]が権力を行使し、代理として統治を行う[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_regency_hawaiian_monarchy_recognised:0 "摂政"
@@ -1088,3 +1088,4 @@
  gov_ezo_republic_colonial:0 "蝦夷共和国"
  gov_ezo_republic_colonial_desc:0 "これは、旧幕府支持者が日本政府に代わって統治する辺境の地です。その政府は、侍を選挙人とする会議によって[Concept('concept_election','$concept_elected$')]されます。"
  RULER_TITLE_SOSAI:0 "総裁"
+ RULER_TITLE_SHOGUN_KOKEN_SHOKU:0 "将軍後見職"

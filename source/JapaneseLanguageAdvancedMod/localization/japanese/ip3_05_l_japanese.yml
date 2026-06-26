@@ -416,3 +416,4 @@
  balkan_wars.14_clarification_decrease_tt:0 "次のバルカン同盟諸国との関係が悪化する : "
  notification_tur_warned_balkan_league_notification_name:0 "バルカン同盟の結成"
  notification_tur_warned_balkan_league_notification_desc:0 "[SCOPE.sCountry('subject_nation_scope').GetAdjectiveNoFormatting]の密偵が、[SCOPE.sStrategicRegion('balkans_scope').GetName]で我々に敵対する同盟が結成されつつあると警告してきました。"
+ balkan_war:0 "バルカン戦争"

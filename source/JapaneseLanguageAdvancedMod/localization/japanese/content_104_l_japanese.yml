@@ -1441,3 +1441,4 @@
  KRAKATOA_THERMOMETER_MONTHLY_ADD:0 "$je_krakatoa_thermometer_progress_bar_name$"
  krakatoa.5.c:0 "何かを分け与える余裕などない…"
  modifier_no_ragged_schools:0 "貧民学校の拒否"
+ freud_agitator_tt:0 "[SCOPE.sCharacter('freud_scope').GetIdeology.GetName]で[SCOPE.gsInterestGroup('intelligentsia_ig').GetName]の[concept_agitator]、[SCOPE.sCharacter('freud_scope').GetFullName]が[ROOT.GetCountry.GetName]に出現する"

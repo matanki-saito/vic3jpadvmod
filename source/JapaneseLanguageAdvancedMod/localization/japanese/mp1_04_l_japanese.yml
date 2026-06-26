@@ -145,3 +145,4 @@
  notification_prestige_goods_explosives_unlocked_name:0 "[SCOPE.sCompany('relevant_company').GetName]が@prestige_good_generic_explosives!#b $prestige_good_generic_explosives$#!を開発しました"
  notification_prestige_goods_explosives_unlocked_desc:0 "[SCOPE.sCompany('relevant_company').GetName]が所有する[Concept('concept_building','$concept_buildings$')]が@prestige_good_generic_explosives!#b $prestige_good_generic_explosives$#!を生産できるようになりました"
  notification_prestige_goods_explosives_unlocked_tooltip:0 "#header $notification_prestige_goods_explosives_unlocked_name$#!\n$TOOLTIP_DELIMITER$\n$notification_prestige_goods_explosives_unlocked_desc$"
+ has_at_least_5_levels_of_railway_tt:0 "#v 5#!レベル以上の[GetBuildingType('building_railway').GetName]がある"

@@ -852,3 +852,4 @@
  checkbox_ticked:0 "@green_checkmark_box! "
  corporate_state_tt:0 "[GetLawType('law_corporate_state').GetName]"
  social_monarchy_tt:0 "[GetLawType('law_social_monarchy').GetName]"
+ modifier_citizens_of_the_world_ig:0 "世界の市民"

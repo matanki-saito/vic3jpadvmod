@@ -2054,3 +2054,7 @@
  already_asked_for_extension_tt:0 "まだ延長を要請していない"
  modifier_active_government_petition:0 "重要な法律"
  government_petition_active_warning_tt:0 "@warning! この[concept_journal_entry]が有効な間、我々は[concept_government]の[Concept('concept_government_reform','$concept_government_reform_short$')]を実行できない"
+ all_non_tu_nihilists_become_anarchist_tt:0 "残りのすべての[GetIdeology('ideology_nihilist').GetName]の[Concept('concept_character','$concept_characters$')]が[GetIdeology('ideology_anarchist').GetName]の[concept_ideology]を採り入れる"
+ all_tu_nihilists_become_communist_tt:0 "[GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetName]に属しているすべての[GetIdeology('ideology_nihilist').GetName]の[Concept('concept_character','$concept_characters$')]が[GetIdeology('ideology_communist').GetName]の[concept_ideology]を採り入れる"
+ all_nihilists_become_radical_tt:0 "すべての[GetIdeology('ideology_nihilist').GetName]の[Concept('concept_character','$concept_characters$')]が[GetIdeology('ideology_radical').GetName]の[concept_ideology]を採り入れる"
+ modifier_successfully_met_petition:0 "成功した請願"

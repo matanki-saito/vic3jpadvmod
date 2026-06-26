@@ -95,3 +95,4 @@
  STRAIT_TOLL_RATE_GRACE_PERIOD:0 "[concept_tolls]は$DATE|v$まで以前の料率にのみ戻せます"
  STRAIT_ACCESS_SETTING_ON_COOLDOWN:0 "[concept_strait_access]は$DATE|v$まで再変更できません"
  STRAIT_ACCESS_SETTING_GRACE_PERIOD:0 "[concept_strait_access]は$DATE|v$まで以前の設定にのみ戻せます"
+ STRAIT_NAVAL_FORTIFICATION_TOOLTIP:0 "[State.GetName]の[State.GetBuilding('building_naval_fortification').GetName]は、上陸[Concept('concept_battle','$concept_battles$')]に対する防御を強化します"

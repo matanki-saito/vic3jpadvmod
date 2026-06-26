@@ -249,7 +249,6 @@
  bg_naval_administration:0 "海軍司令部"
  bg_naval_fortification:0 "海軍要塞"
  bg_ship_construction:0 "艦船建造"
- bg_land_logistics_center:0 "陸軍の物流拠点"
  bg_naval_logistics_center:0 "海軍の物流拠点"
  building_naval_administration:0 "海軍司令部"
  building_naval_administration_lens_option:0 "$building_naval_administration$を拡張"
@@ -267,3 +266,4 @@
  building_white_house:0 "ホワイトハウス"
  building_kiel_canal:0 "キール運河"
  building_kiel_canal_lens_option:0 "$building_kiel_canal$を建設"
+ bg_army_logistics_center:0 "陸軍の兵站拠点"

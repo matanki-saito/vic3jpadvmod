@@ -729,3 +729,7 @@
  ADD_MANEUVERS_FIRST_NEG:0 "[DiplomaticPlay.GetName]での[TARGET_COUNTRY.GetNameNoFlag]に対する[Concept('concept_maneuver','$concept_maneuvers$')]が$VALUE|0-$減少"
  ADD_MANEUVERS_THIRD:0 "[DiplomaticPlay.GetName]での[TARGET_COUNTRY.GetName]に対する[Concept('concept_maneuver','$concept_maneuvers$')]が$VALUE|0+$増加"
  ADD_MANEUVERS_THIRD_NEG:0 "[DiplomaticPlay.GetName]での[TARGET_COUNTRY.GetName]に対する[Concept('concept_maneuver','$concept_maneuvers$')]が$VALUE|0-$減少"
+ SET_MOVEMENT_DEFEATED:0 "[POLITICAL_MOVEMENT.GetName]を敗北状態に設定"
+ CLEAR_MOVEMENT_DEFEATED:0 "[POLITICAL_MOVEMENT.GetName]の敗北状態を解除"
+ SET_MOVEMENT_DEFEATED_THIRD:0 "この[concept_country]において[POLITICAL_MOVEMENT.GetName]を敗北状態に設定"
+ CLEAR_MOVEMENT_DEFEATED_THIRD:0 "この[concept_country]において[POLITICAL_MOVEMENT.GetName]の敗北状態を解除"

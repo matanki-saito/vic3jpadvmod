@@ -74,7 +74,6 @@
  lands_of_anarchy_sent_medicine_to_tribes_mod:0 "部族への援助"
  lands_of_anarchy_made_the_rich_send_medicine_to_tribes_mod:0 "富裕層の強制援助"
  lands_of_anarchy_refused_medicine_mod:0 "マフゼンの援助拒否"
- lands_of_anarchy_tribe_recieved_medicine_mod:0 "薬の受領"
  lands_of_anarchy_incorporation_mod:0 "$state_of_anarchy_scaled_mod$"
  lands_of_anarchy_colonize_sahara_mod:0 "砂漠の管理"
  lands_of_harmony_mod:0 "調和の地"
@@ -98,3 +97,4 @@
  lands_of_anarchy_refused_medicine_tt:0 "部族への医薬品送付を拒否"
  lands_of_anarchy_lost_state_tt:0 "関連する[concept_state]を所有していない"
  lands_of_anarchy_colonize_sahara_reduce_progress_tt:0 "すべての進捗ゲージの進捗を#n 20#!#bold 減らす#!"
+ lands_of_anarchy_tribe_received_medicine_mod:0 "薬の受領"

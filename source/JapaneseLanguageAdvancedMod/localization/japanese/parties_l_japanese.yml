@@ -330,8 +330,6 @@
  from_archetype_party:0 "自然党員"
  from_influential_supporting_member:0 "支持役の影響力があるグループ"
  from_two_prior_members:0 "その他の党員2名"
- from_three_prior_members:0 "その他の党員3名"
- from_more_than_three_prior_members:0 "4名以上のその他の党員"
  from_authoritarian:0 "独裁主義リーダー的イデオロギー"
  from_protectionist_leader:0 "保護貿易主義リーダー的イデオロギー"
  from_french_monarchist_rival:0 "対立する強力な君主制主義者"
@@ -453,3 +451,4 @@
  TAIKUNATE_AGRARIAN_PARTY_STATE_NAME:0 "[THIS.GetInterestGroup.GetLeader.GetHomeState.GetCustom('japan_state_get_farm_hub_name_absolute')]"
  TAIKUNATE_AGRARIAN_PARTY_NAME_FALLBACK:0 "加賀"
  party_ezo_agrarian:0 "旭川派"
+ from_three_or_more_prior_members:0 "その他の党員3名以上"

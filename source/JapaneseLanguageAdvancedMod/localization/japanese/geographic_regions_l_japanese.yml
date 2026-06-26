@@ -228,3 +228,8 @@
  geographic_region_krakatoa_tsunami_zone:0 "クラカタウ津波地帯"
  geographic_region_ezochi:0 "蝦夷地"
  geographic_region_ezochi_desc:0 "蝦夷地とは、日本列島の最北端に位置する諸島群を指し、蝦夷島、北蝦夷地、千島列島を含む。歴史的にこの地は辺境の地と見なされ、アイヌやその他の異民族が居住していた。"
+ geographic_region_southern_cone:0 "サザンコーン"
+ geographic_region_polar_seas:0 "極海"
+ geographic_region_polar_seas_desc:0 "極地方に隣接し、海氷が発生しやすい海域。"
+ geographic_region_tropical_seas:0 "熱帯海域"
+ geographic_region_tropical_seas_desc:0 "赤道に隣接し、熱帯性の嵐が発生しやすい海域。"

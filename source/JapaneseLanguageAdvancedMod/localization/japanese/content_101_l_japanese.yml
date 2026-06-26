@@ -297,8 +297,6 @@
  central_america.2.f:0 "「それは我々の国の所有権を取り戻そうとしている。もしくは国に屈服している。それは我々の両親の名前を忘れてしまっている。もしくは敵の先祖について学んでいる。それは我々の土地に種をまいている。もしくは略奪を見届けている。自由か、それとも戦争か！」"
  central_america.2.a:0 "運命を受け入れるしかない。"
  central_america.2.b:0 "そう簡単に連合を破棄するわけにはいかない。"
- dp_annex_war:0 "国の併合"
- dp_annex_war_tooltip:0 "$dp_annex_war$の[concept_diplomatic_play]を開始する"
  modifier_destroy_guerillas:0 "ゲリラ兵の殲滅"
  congo_free_state_events.1.t:0 "[SCOPE.sCountry('free_state').GetNameNoFlag]"
  congo_free_state_events.1.d:0 "[SCOPE.sCharacter('free_state_monarch').GetPrimaryRoleTitle]の[SCOPE.sCharacter('free_state_monarch').GetFullName]は、この土地が我が国との同君連合により[SCOPE.sCharacter('free_state_monarch').GetHerHis]の支配下となり、今後は自由州になることを宣言した。"

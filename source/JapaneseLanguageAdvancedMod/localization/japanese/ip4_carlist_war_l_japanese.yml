@@ -13,8 +13,6 @@
  je_the_first_carlist_flush_them_out_desc:0 "反乱軍の勢いは削がれた。今こそ攻勢に転じる時だ。"
  concept_bio_tomas_de_zumalacarregui:0 "トマス・デ・ズマラカレギ"
  concept_bio_tomas_de_zumalacarregui_desc:0 "#tooltip_header トマス・ズマラカレギ・アイマツ#!\n$TOOLTIP_DELIMITER$\n#v 1788年12月29日#!、ギプスコア州オルマイステギ生まれ\n#v 1835年6月24日#!、ギプスコア州ゼガマで死去\n\nトマス・デ・ズマラカレギ・エ・アイマツは兵士たちから「トマスおじさん」とも呼ばれたバスク出身の軍人であり、ナバラとバスク地方のカルリスタ軍の総司令官として、軍の組織化とカルリスタの初期の決定的な勝利に貢献した人物である。\n1835年の初夏、戦場での銃撃による彼の突然の死は、ドン・カルロスの野望に大きな打撃を与えた。"
- concept_guerilla_war:0 "ゲリラ戦争"
- concept_guerilla_war_desc:0 "$concept_guerilla_war$は、通常の[concept_war]とは異なる一連のルールに従う特殊な戦争であり、その詳細は$concept_guerilla_war$ごとに異なる場合があります。\n\n$concept_guerilla_war$中は一般に以下のルールが適用されます : \n#indent_newline:2 $EFFECT_LIST_BULLET$ [Concept('concept_battle','$concept_battles$')]は規模が非常に小さく、発生頻度も低い#! \n#indent_newline:2 $EFFECT_LIST_BULLET$ [GetBattleCondition('battle_condition_guerilla_skirmish').GetName]、[GetBattleCondition('battle_condition_guerilla_ambush').GetName]、および[GetBattleCondition('battle_condition_guerilla_disarray').GetName]の[Concept('concept_battle_condition','$concept_battle_conditions$')]が発生する可能性がある#!\n#indent_newline:2 $EFFECT_LIST_BULLET$勝利しても[concept_occupation]スコアは得られない#!\n#indent_newline:2 $EFFECT_LIST_BULLET$特定の条件が満たされれば、$concept_guerilla_war$は通常の$concept_war$に発展する可能性がある"
  battle_condition_guerilla_skirmish:0 "小競り合い"
  battle_condition_guerilla_skirmish_desc:0 "この司令官は、敵との一連の小競り合いで連合部隊を率いている。"
  battle_condition_guerilla_ambush:0 "待ち伏せ"
@@ -93,3 +91,4 @@
  notification_carlist_war_carlist_terror_desc:0 "カルリスタの支持者と地元の盗賊団が[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に恐怖を広げています！\n$notification_carlist_War_carlist_terror_TT_HAS_HAPPENED$"
  notification_carlist_war_carlist_terror_tooltip:0 "#header $notification_carlist_war_carlist_terror_name$#!\n$TOOLTIP_DELIMITER$\n$notification_carlist_war_carlist_terror_desc$"
  notification_carlist_War_carlist_terror_TT_HAS_HAPPENED:0 "発生済み : \n#indent_newline:3 $EFFECT_LIST_BULLET$[SCOPE.ScriptValue('carlist_war_carlist_terror_devastation')|n0]の[concept_devastation]と#tooltippable;tooltip:[GetRawTextTooltipTag(GetStaticModifier('spa_carlist_terror').GetDesc)] [GetStaticModifier('spa_carlist_terror').GetName]#!を[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に追加#!"
+ first_carlist_war:0 "カルリスタ戦争"
