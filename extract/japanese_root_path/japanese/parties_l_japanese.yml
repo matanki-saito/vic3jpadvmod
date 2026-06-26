@@ -243,7 +243,7 @@
  party_traditionalist_communion: "伝統主義コミュニオン" #Carlists, might revise
  party_nationalist_party: "民族主義党"
  party_taikunate_religious: "比叡派"
- party_ezo_religious: "善行派" #From Zenkoji
+ party_ezo_religious: "善光派" #From Zenkoji
  #social_democrats_party
  party_psoe: "PSOE"
  party_portuguese_socialist_party: "ポルトガル社会党"
@@ -453,8 +453,7 @@
  from_archetype_party: "自然党員"
  from_influential_supporting_member: "支持役の影響力があるグループ"
  from_two_prior_members: "その他の党員2名"
- from_three_prior_members: "その他の党員3名"
- from_more_than_three_prior_members: "4名以上のその他の党員"
+ from_three_or_more_prior_members: "その他の党員3名以上"
  from_authoritarian: "独裁主義リーダー的イデオロギー"
  from_protectionist_leader: "保護貿易主義リーダー的イデオロギー"
  from_french_monarchist_rival: "対立する強力な君主制主義者"

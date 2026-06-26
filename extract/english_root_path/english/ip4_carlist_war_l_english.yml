@@ -7,6 +7,8 @@
  je_the_first_carlist_war_status_royal_expedition: "The #b Royal Expedition#! has begun!"
  je_the_first_carlist_war_complete: "Has won the Carlist War"
 
+ first_carlist_war: "The Carlist War"
+
 # Progress Bars
  je_the_first_carlist_war_score_bar: "Guerilla Phase"
  je_the_first_carlist_war_score_bar_desc: "Cristino Score: [GetGlobalVariable('spa_carlist_war_score').GetValue|v0]"
@@ -20,10 +22,6 @@
 # Character Bios
  concept_bio_tomas_de_zumalacarregui: "Tomás de Zumalacárregui"
  concept_bio_tomas_de_zumalacarregui_desc: "#tooltip_header Tomas Zumalakarregi Imatz#!\n$TOOLTIP_DELIMITER$\nBorn on #v December 29th 1788#! in Ormaiztegi, Gipuzkoa\nDied on #v June 24th 1835#! in Zegama, Gipuzkoa\n\nTomás de Zumalacárregui e Imaz, also referred to as \"Uncle Tomas\" by his soldiers, was a Basque military officer and as Captain General of the Carlist forces in Navarra and the Basque Country responsible for the organization of the army as well as decisive early victories for the Carlist cause.\nHis sudden death on account of a gunshot wound in the field in the early summer of 1835 resulted in a considerable setback for Don Carlos' ambitions."
-
-# Concepts
- concept_guerilla_war: "Guerilla War"
- concept_guerilla_war_desc: "A $concept_guerilla_war$ is a special kind of [concept_war] subject to a set of rules distinct from regular warfare, the details of which can differ from one $concept_guerilla_war$ to another.\n\nThe following general rules are applied during a $concept_guerilla_war$:\n#indent_newline:2 $EFFECT_LIST_BULLET$ [Concept('concept_battle', '$concept_battles$')] are much smaller in size and created at a lower pace#! \n#indent_newline:2 $EFFECT_LIST_BULLET$ The [GetBattleCondition('battle_condition_guerilla_skirmish').GetName], [GetBattleCondition('battle_condition_guerilla_ambush').GetName] and [GetBattleCondition('battle_condition_guerilla_disarray').GetName] [Concept('concept_battle_condition', '$concept_battle_conditions$')] can occur#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ Victories do not grant [concept_occupation] Score#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ A $concept_guerilla_war$ may escalate into a regular $concept_war$ if conflict specific conditions are met"
 
 # Battle Conditions
  battle_condition_guerilla_skirmish: "Skirmish"

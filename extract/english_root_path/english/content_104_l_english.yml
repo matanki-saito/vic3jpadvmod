@@ -1069,6 +1069,7 @@
  freud_rejected_modifier:0 "Rejected Psychoanalysis"
  sigmun_freud_tt:0 "Sigmund Freud will become the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] leader, with a high popularity."
  sigmun_freud_else_tt:0 "A researcher with high popularity will become the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] leader."
+ freud_agitator_tt: "[SCOPE.sCharacter('freud_scope').GetFullName], an [SCOPE.gsInterestGroup('intelligentsia_ig').GetName] [SCOPE.sCharacter('freud_scope').GetIdeology.GetName] [concept_agitator], will appear in [ROOT.GetCountry.GetName]"
 
  psychology_events.6.t:0 "The Journal of Philosophical Studies"
  psychology_events.6.d:0 "Members of the philosophy department from the [SCOPE.sBuilding('university_building').GetName] of [SCOPE.sState('university_state').GetName] have signed a formal petition for governmental funding of their next project: a scientific journal."

@@ -235,7 +235,7 @@
  gov_regency_enlightened_despotate: "Regency"
  gov_regency_enlightened_despotate_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_REGENT$')], who rules on behalf of a [Concept('concept_ruler','$RULER_TITLE_PHILOSOPHER_KING$')] or [Concept('concept_ruler','$RULER_TITLE_PHILOSOPHER_QUEEN$')] who is not yet able to take the throne.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_regency_shogunate: "Regency"
- gov_regency_shogunate_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_REGENT$')], who rules on behalf of a [Concept('concept_ruler','$RULER_TITLE_SHOGUN$')] who is not yet able to take the throne.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_regency_shogunate_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_SHOGUN_KOKEN_SHOKU$')], who rules on behalf of a [Concept('concept_ruler','$RULER_TITLE_SHOGUN$')] who is not yet able to govern the country.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_regency_massina_empire: "Regency"
  gov_regency_massina_empire_desc: "This is a [concept_government_type] where the power rests with the [Concept('concept_ruler','$RULER_TITLE_REGENT$')], who rules on behalf of a [Concept('concept_ruler','$RULER_TITLE_ALMAMI$')] who is not yet able to take the throne.\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_regency_hawaiian_monarchy_recognised: "Regency"
@@ -1073,6 +1073,7 @@
  RULER_TITLE_BUGYO: "Bugyo"
  RULER_TITLE_KARO: "Karō"
  RULER_TITLE_KEISHI: "Keishi"
+ RULER_TITLE_SHOGUN_KOKEN_SHOKU: "Shōgun Kōken-Shoku"
 
  RULER_CHIEFTAIN:0 "Chieftain"
  RULER_CHIEFTESS:0 "Chieftess"

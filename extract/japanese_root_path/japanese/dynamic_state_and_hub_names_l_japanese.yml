@@ -486,18 +486,26 @@
  #HUB_NAME_STATE_STYRIA_mine:0 "Liezen"
  #HUB_NAME_STATE_STYRIA_farm:0 "Klagenfurt"
  #HUB_NAME_STATE_STYRIA_wood:0 "Hartberg"
+ STATE_STYRIA_german: "シュタイアーマルク"
  #Tyrol
  STATE_TYROL_french: "チロル"
  #HUB_NAME_STATE_TYROL_city: "Innsbruck"
  #HUB_NAME_STATE_TYROL_mine: "Lienz"
  HUB_NAME_STATE_TYROL_farm_french: "ザルツブルク"
  #HUB_NAME_STATE_TYROL_wood: "Feldkirch"
+ STATE_TYROL_german: "チロル"
+ #South Tyrol
+ STATE_SOUTH_TYROL_german: "南チロル"
+ HUB_NAME_STATE_SOUTH_TYROL_city_german: "トリエント"
+ HUB_NAME_STATE_SOUTH_TYROL_mine_german: "メラン"
+ HUB_NAME_STATE_SOUTH_TYROL_wood_german: "ボーツェン"
  #Austria proper
  STATE_AUSTRIA_french: "オーストリア"
  HUB_NAME_STATE_AUSTRIA_city_french: "ウィーン"
  #HUB_NAME_STATE_AUSTRIA_mine:1 "Freistadt"
  HUB_NAME_STATE_AUSTRIA_farm_french: "リンツ"
  HUB_NAME_STATE_AUSTRIA_wood_french: "サンティポリット"
+ STATE_AUSTRIA_german: "オーストリア"
  HUB_NAME_STATE_AUSTRIA_city_german: "ウィーン"
  ### Switzerland
  #West Switzerland
@@ -2276,6 +2284,13 @@
  HUB_NAME_STATE_HAITI_mine_spanish: "ロス・カヨス"
  HUB_NAME_STATE_HAITI_farm_spanish: "カボ・アイティアノ"
  HUB_NAME_STATE_HAITI_wood_spanish: "ゴナイーヴ"
+ ### Puerto Rico
+ #Spanish
+ STATE_PUERTO_RICO_spanish: "プエルトリコ"
+ HUB_NAME_STATE_PUERTO_RICO_city_spanish: "サンフアン" #same as in english
+ HUB_NAME_STATE_PUERTO_RICO_port_spanish: "ポンセ" #same as in english
+ HUB_NAME_STATE_PUERTO_RICO_farm_spanish: "マヤグエス"
+ HUB_NAME_STATE_PUERTO_RICO_wood_spanish: "カグアス" #same as in english
  ### SANTO_DOMINGO
  #French
  STATE_SANTO_DOMINGO_french_whole: "サン＝ドマング東部"

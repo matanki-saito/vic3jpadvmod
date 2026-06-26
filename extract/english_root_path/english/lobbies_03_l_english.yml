@@ -60,8 +60,8 @@
  lobby_events.37.a: "Their passion will give the law momentum."
  lobby_events.37.b: "Very well. But the proposal is not our priority."
 
- ig_law_enactment_time_stall: "Enactment Stagnation"
- ig_law_enactment_time_good: "Enactment Momentum"
+ ig_law_enactment_speed_stall: "Enactment Stagnation"
+ ig_law_enactment_speed_good: "Enactment Momentum"
 
  lobby_events.38.t: "Unwanted Legislation"
  lobby_events.38.d: "The [SCOPE.gsInterestGroup('relevant_ig').GetName] are unhappy with the proposed [SCOPE.sLaw('relevant_law_scope').GetName] law. They have joined the [SCOPE.sPoliticalLobby('relevant_lobby').GetName], criticizing [SCOPE.sCountry('relevant_lobby_country').GetName]'s enactment of a similar law."

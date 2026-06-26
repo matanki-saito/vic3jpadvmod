@@ -63,7 +63,7 @@
  catalyst_state_conquered_desc: "[TARGET_COUNTRY.GetName]が[COUNTRY.GetName]の[concept_state]を征服します"
  catalyst_diplomatic_strategy_changed: "外交戦略が変更されました"
  catalyst_diplomatic_strategy_changed_desc: "[COUNTRY.GetName]が[concept_ai_strategy]を変更します"
- catalyst_declared_bankruptcy: "破産宣告"
+ catalyst_declared_bankruptcy: "破産の宣言"
  catalyst_declared_bankruptcy_desc: "[TARGET_COUNTRY.GetName]は[concept_bankruptcy]を宣言して脆弱性を露呈しました"
  catalyst_ideological_drift: "イデオロギーの変化"
  catalyst_ideological_drift_desc: "[TARGET_COUNTRY.GetName]との間のイデオロギー的な相違点が増加します"

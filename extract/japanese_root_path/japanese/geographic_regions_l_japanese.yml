@@ -93,6 +93,7 @@
  geographic_region_latin_america: "ラテンアメリカ"
  geographic_region_north_andes: "北アンデス"
  geographic_region_greater_canada: "大カナダ"
+ geographic_region_southern_cone: "サザンコーン"
  geographic_region_colonial_new_spain: "植民地ヌエバ・エスパーニャ"
  geographic_region_colonial_new_grenada: "植民地ヌエバ・グラナダ"
  geographic_region_colonial_peru: "植民地ペルー"
@@ -136,6 +137,11 @@
  geographic_region_alpide_belt_desc: "地震の震源が集中する、地震活動が活発な地帯。"
  geographic_region_great_rift_valley: "大地溝帯"
  geographic_region_great_rift_valley_desc: "活発な地溝帯。若干の地震活動を伴う。"
+ # Maritime Hazard Regions
+ geographic_region_polar_seas: "極海"
+ geographic_region_polar_seas_desc: "極地方に隣接し、海氷が発生しやすい海域。"
+ geographic_region_tropical_seas: "熱帯海域"
+ geographic_region_tropical_seas_desc: "赤道に隣接し、熱帯性の嵐が発生しやすい海域。"
  #Content
  geographic_region_wet_process_coffee_region: "湿潤コーヒーベルト"
  geographic_region_new_world: "新世界"

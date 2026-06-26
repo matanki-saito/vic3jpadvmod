@@ -931,6 +931,7 @@
  freud_rejected_modifier: "拒否された精神分析"
  sigmun_freud_tt: "高い知名度を誇るシグムンド・フロイトが[SCOPE.gsInterestGroup('intelligentsia_ig').GetName]のリーダーとなることでしょう。"
  sigmun_freud_else_tt: "高い知名度を誇る研究者が[SCOPE.gsInterestGroup('intelligentsia_ig').GetName]のリーダーとなることでしょう。"
+ freud_agitator_tt: "[SCOPE.sCharacter('freud_scope').GetIdeology.GetName]で[SCOPE.gsInterestGroup('intelligentsia_ig').GetName]の[concept_agitator]、[SCOPE.sCharacter('freud_scope').GetFullName]が[ROOT.GetCountry.GetName]に出現する"
  psychology_events.6.t: "哲学研究ジャーナル"
  psychology_events.6.d: "[SCOPE.sState('university_state').GetName]にある[SCOPE.sBuilding('university_building').GetName]哲学部のメンバーたちが、次回のプロジェクトである「科学ジャーナル」への公的資金投入を求める正式な嘆願書に署名を行いました。"
  psychology_events.6.f: "哲学研究の基礎を踏まえ、我々は心の精査における新時代を歓迎します。それは厳正な研究と真剣な実験の時代であり、国境を越えた科学的コラボレーションの時代であり、この議題に関するすべての研究結果を共有する安息所となります。"

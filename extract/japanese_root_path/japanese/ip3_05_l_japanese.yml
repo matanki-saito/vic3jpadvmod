@@ -365,6 +365,7 @@
  # Custom tt
  balkan_wars_league_fail_by_losing_the_war_tt: "[ROOT.GetCountry.GetName]が#bold バルカン戦争#!で敗北"
  support_for_balkan_league: "同盟の加盟国であることから"
+ balkan_war: "バルカン戦争"
  dp_balkan_war: "バルカン戦争"
  the_cataclysm_partitioning: "バルカン半島の領土が各国間で分割され、新たな国家が誕生するかもしれません。"
  homeland_states_spoils_of_war_header_tt: "次の[Concept('concept_state', '$concept_states$')]は我々の[Concept('concept_homeland', '$concept_homelands$')]とみなされている:#indent_newline:3 "

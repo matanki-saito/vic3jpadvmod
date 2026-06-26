@@ -4,8 +4,6 @@
  je_brazilian_nation_building_ragamuffin_war_south: "#bold ラガマフィン戦争#!が終結し、[SCOPE.sCulture('sulista_culture').GetNameNoFormatting]本国における[SCOPE.sCulture('sulista_culture').GetName]の文化的動揺度は#bold 10%#!を下回りました。"
  je_brazilian_nation_building_ragamuffin_war_done: "#bold ラガマフィン戦争#!が終結し、[SCOPE.sCulture('amazonic_culture').GetName]を祖国とする全州の[concept_devastation]が#bold 5#!を下回りました。"
  je_brazilian_nation_building_brazilian_national_hero_owned: "地域の#bold [concept_brz_national_hero]#!が宣言され、プロパガンダで利用できるようになりました。"
- concept_brz_national_hero: "国民的英雄"
- concept_brz_national_hero_desc: "#bold 国民的英雄#!とは、ブラジルではない国家との戦闘に勝利し、「#bold 新しい国民的英雄#!」イベントにおいて英雄と称えられた将軍のことです。"
  je_brazilian_nation_building_integrate_nordestino: "ノルデスティーノを統合"
  je_brazilian_nation_building_integrate_nordestino_past_tense: "ノルデスティーノはブラジルだ"
  je_brazilian_nation_building_integrate_nordestino_desc: "東北部の人々を仲間に引き入れ、新しい国家秩序と真に受け入れさせるためには、この地域の最大の不安要因のひとつ、非難と永遠の存続を求める二つの声を生む制度を破壊しなければならない。"

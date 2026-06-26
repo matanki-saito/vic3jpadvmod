@@ -422,6 +422,7 @@
   # Custom tt
   balkan_wars_league_fail_by_losing_the_war_tt: "[ROOT.GetCountry.GetName] loses #bold The Balkan War#!"
   support_for_balkan_league: "from being a League member"
+  balkan_war: "The Balkan War"
   dp_balkan_war: "The Balkan War"
   the_cataclysm_partitioning: "Balkan lands will be partitioned among its nations, and new ones may emerge."
   homeland_states_spoils_of_war_header_tt: "The following [Concept('concept_state', '$concept_states$')] are considered as our [Concept('concept_homeland', '$concept_homelands$')]: #indent_newline:3 "

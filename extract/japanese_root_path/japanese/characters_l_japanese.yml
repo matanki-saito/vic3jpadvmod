@@ -19,6 +19,7 @@
  ideology_child_desc: "このキャラクターは子どもであり、まだ政治イデオロギーを形成していない。"
  character_role_ig_leader: "[concept_leader]"
  character_role_magnate: "[concept_magnate]"
+ character_role_other: "その他"
  holding_revenue_magnate_scale: "[concept_holding][concept_revenue]"
  PREP_IN: "の"
  PREP_OF: "の"

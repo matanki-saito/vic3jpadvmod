@@ -102,6 +102,7 @@
  geographic_region_latin_america: "Latin America"
  geographic_region_north_andes: "North Andes"
  geographic_region_greater_canada: "Greater Canada"
+ geographic_region_southern_cone: "Southern Cone"
 
  geographic_region_colonial_new_spain: "Colonial New Spain"
  geographic_region_colonial_new_grenada: "Colonial New Grenada"
@@ -148,6 +149,12 @@
  geographic_region_alpide_belt_desc: "A seismically active belt of earthquake epicenters."
  geographic_region_great_rift_valley: "Great Rift Valley"
  geographic_region_great_rift_valley_desc: "An active continental rift zone with some seismic activity."
+
+ # Maritime Hazard Regions
+ geographic_region_polar_seas: "Polar Seas"
+ geographic_region_polar_seas_desc: "Seas bordering the polar regions, prone to sea ice."
+ geographic_region_tropical_seas: "Tropical Seas"
+ geographic_region_tropical_seas_desc: "Seas bordering the Equator, prone to tropical storms."
 
  #Content
  geographic_region_wet_process_coffee_region: "Humid Coffee Belt"

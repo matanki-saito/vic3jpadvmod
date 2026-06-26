@@ -179,7 +179,7 @@
  bg_monuments: "Monuments"
  bg_army: "Army Buildings"
  bg_navy: "Naval Buildings"
- bg_land_logistics_center: "Land Logistics Centers"
+ bg_army_logistics_center: "Army Logistics Centers"
  bg_naval_logistics_center: "Naval Logistics Centers"
  bg_skyscraper: "Skyscrapers"
  bg_monuments_hidden: "Monuments"

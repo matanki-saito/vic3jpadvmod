@@ -1815,6 +1815,8 @@
  dyn_c_mahdist_state_adj: "Mahdist Sudanese"
  dyn_c_scandinavia_kalmar_union: "Kalmar Union"
  dyn_c_scandinavia_kalmar_union_adj: "Scandinavian"
+ dyn_c_gotland_revolt: "Gotland Revolt"
+ dyn_c_gotland_revolt_adj: "Gotlandic"
  dyn_c_welsh_patagonia: "Y Wladfa"
  dyn_c_welsh_patagonia_adj: "Welsh Patagonian"
  dyn_c_peru_bolivia: "Peru-Bolivia"

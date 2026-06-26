@@ -910,3 +910,7 @@
  DISABLE_TEMPORARY_HOSTILITIES: "Ends the state of temporary hostilities with [TARGET_COUNTRY.GetName]"
  DISABLE_TEMPORARY_HOSTILITIES_FIRST: "[COUNTRY.GetNameNoFlag] ends the state of temporary hostilities with [TARGET_COUNTRY.GetName]"
  DISABLE_TEMPORARY_HOSTILITIES_THIRD: "[COUNTRY.GetName] ends the state of temporary hostilities with [TARGET_COUNTRY.GetName]"
+ SET_MOVEMENT_DEFEATED: "Set [POLITICAL_MOVEMENT.GetName] as defeated"
+ CLEAR_MOVEMENT_DEFEATED: "Clear defeat status of [POLITICAL_MOVEMENT.GetName]"
+ SET_MOVEMENT_DEFEATED_THIRD: "Set [POLITICAL_MOVEMENT.GetName] as defeated in this [concept_country]"
+ CLEAR_MOVEMENT_DEFEATED_THIRD: "Clear defeat status of [POLITICAL_MOVEMENT.GetName] in this [concept_country]"

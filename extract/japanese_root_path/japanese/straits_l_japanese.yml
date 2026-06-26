@@ -19,29 +19,29 @@
  TOLLS_BREAKDOWN: "#tooltip_header [concept_tolls]#!\n合計: #v @money![GetPlayer.PredictTolls|K+=]#!\n$TOOLTIP_DELIMITER$\n[GetPlayer.PredictTollsDesc]"
  ## Country Budget Tolls
  # Top level entry for toll income breakdown on country budget. Breakdown leads to STRAIT_TOLL_VALUE_HEADER + STRAIT_TOLL_INCOME_COUNTRY_DESC
- STRAIT_TOLL_INCOME_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $VALUE|D+$#!#!#! （[STRAIT.GetName] #b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$#! [concept_tolls]）"
+ STRAIT_TOLL_INCOME_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ [STRAIT.GetName]の[concept_tolls]（#b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$#!）により#variable $VALUE|D+$#!#!#!"
  # Breakdown leads to STRAIT_COUNTRY_TOLL_INCOME_HEADER + TOLL_BUDGET_ENTRY
- STRAIT_TOLL_VALUE_HEADER: "#header [concept_tolls] （[STRAIT.GetName]）#!\n合計：#v $VALUE|D$#! @money!\n$TOOLTIP_DELIMITER$"
- STRAIT_TOLL_INCOME_COUNTRY_DESC: "@money!#tooltippable #tooltip:$BREAKDOWN$#v $VALUE|D+$#!#!#! （[COUNTRY.GetName]）"
+ STRAIT_TOLL_VALUE_HEADER: "#header [STRAIT.GetName]の[concept_tolls]#!\n合計: @money!#v $VALUE|D$#!\n$TOOLTIP_DELIMITER$\n"
+ STRAIT_TOLL_INCOME_COUNTRY_DESC: "@money!#tooltippable #tooltip:$BREAKDOWN$ [COUNTRY.GetName]から#v $VALUE|D+$#!#!#!"
  # Breakdown leads to STRAIT_TOLL_VALUE_GOODS_ENTRY_BREAKDOWN
- STRAIT_COUNTRY_TOLL_INCOME_HEADER: "#header [STRAIT.GetName]：[concept_tolls]（[COUNTRY.GetName]）#!\n合計：@money!#v $VALUE|D+$#!\n$TOOLTIP_DELIMITER$"
- TOLL_BUDGET_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $VALUE|D+$#!#!#!：[GOODS.GetTextIcon][Nbsp]#v $QTY|D$#! [GOODS.GetNameNoIcon] - [STATE.GetName]"
+ STRAIT_COUNTRY_TOLL_INCOME_HEADER: "#header [COUNTRY.GetName]からの[STRAIT.GetName]の[concept_tolls]#!\n合計: @money!#v $VALUE|D+$#!\n$TOOLTIP_DELIMITER$\n"
+ TOLL_BUDGET_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ [STATE.GetName]への[GOODS.GetTextIcon][Nbsp]#v $QTY|D$#!の[GOODS.GetNameNoIcon]から#variable $VALUE|D+$#!#!#!"
  ## Building Expense Tolls
  # Top header for toll breakdown on a building. Gets a list of STRAIT_TOLL_EXPENSE_ENTRY_ONE_CONTROLLER or STRAIT_TOLL_EXPENSE_ENTRY_TWO_CONTROLLERS added to it at the end
- STRAIT_TOLL_BUILDING_EXPENSE_HEADER: "#header [BUILDING.GetName]：[concept_tolls] （[BUILDING.GetState.GetCountry.GetFlagTextIcon][Nbsp][BUILDING.GetState.GetName]）#!\n合計：@money!#v $VALUE|D+$#!\n$TOOLTIP_DELIMITER$"
+ STRAIT_TOLL_BUILDING_EXPENSE_HEADER: "#header [BUILDING.GetState.GetCountry.GetFlagTextIcon][Nbsp][BUILDING.GetState.GetName]の[BUILDING.GetName]の[concept_tolls]#!\n合計: @money!#v $VALUE|D-$#!\n$TOOLTIP_DELIMITER$\n"
  # Breakdowns lead to STRAIT_TOLL_VALUE_HEADER + STRAIT_TOLL_EXPENSE_GOODS_ENTRY
- STRAIT_TOLL_EXPENSE_ENTRY_ONE_CONTROLLER: "[STRAIT.GetName] : @money!#tooltippable #tooltip:$BREAKDOWN$#variable $VALUE|D-$#!#!#! （[COUNTRY.GetName]：#b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$#! [concept_tolls]）"
- STRAIT_TOLL_EXPENSE_ENTRY_TWO_CONTROLLERS: "[STRAIT.GetName] : @money!#tooltippable #tooltip:$BREAKDOWN$#variable $VALUE|D-$#!#!#!, [FIRST_COUNTRY.GetName] （#b $FIRST_TOLL_RATE_ICON$[Nbsp]$FIRST_TOLL_RATE_DESC$ #!），[SECOND_COUNTRY.GetName] （#b $SECOND_TOLL_RATE_ICON$[Nbsp]$SECOND_TOLL_RATE_DESC$#! [concept_tolls]）"
+ STRAIT_TOLL_EXPENSE_ENTRY_ONE_CONTROLLER: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable[STRAIT.GetName]における[COUNTRY.GetAdjective]の[concept_tolls]（#b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$#!）により$VALUE|D-$#!#!#!"
+ STRAIT_TOLL_EXPENSE_ENTRY_TWO_CONTROLLERS: "@money!#tooltippable #tooltip:$BREAKDOWN$ [STRAIT.GetName]における[FIRST_COUNTRY.GetAdjective]の[concept_tolls]（#b $FIRST_TOLL_RATE_ICON$[Nbsp]$FIRST_TOLL_RATE_DESC$#!）および[SECOND_COUNTRY.GetAdjective]の[concept_tolls]（#b $SECOND_TOLL_RATE_ICON$[Nbsp]$SECOND_TOLL_RATE_DESC$#!）により#variable $VALUE|D-$#!#!#!"
  # Breakdown leads to STRAIT_TOLL_VALUE_GOODS_ENTRY_BREAKDOWN
- STRAIT_TOLL_EXPENSE_GOODS_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ #variable $TOTAL_EXPENSE|D-$#!#!#! （[GOODS.GetTextIcon][Nbsp]$AMOUNT|vD$ [GOODS.GetName]）"
+ STRAIT_TOLL_EXPENSE_GOODS_ENTRY: "@money!#tooltippable #tooltip:$BREAKDOWN$ [GOODS.GetTextIcon][Nbsp]$AMOUNT|vD$の[GOODS.GetName]より#variable $TOTAL_EXPENSE|D-$#!#!#!"
  # Breaks down the toll calculation. STRAIT_TOLL_RATE_DESC is added at the end for each country with a toll on the strait
- STRAIT_TOLL_VALUE_GOODS_ENTRY_HEADER: "[GOODS.GetName]：[concept_tolls] （[TARGET_COUNTRY.GetFlagTextIcon][Nbsp][TARGET_STATE.GetName] - [STRAIT.GetName]）"
- STRAIT_TOLL_VALUE_GOODS_ENTRY_BREAKDOWN: "#header $STRAIT_TOLL_VALUE_GOODS_ENTRY_HEADER$#!\n$concept_tolls$: @money!#variable $TOLL_VALUE|D$#!\n$TOOLTIP_DELIMITER$\n[TARGET_COUNTRY.GetFlagTextIcon][Nbsp][TARGET_STATE.GetName] : [Concept('concept_trade','$concept_importing$')] [GOODS.GetTextIcon][Nbsp]$AMOUNT|vD$ [GOODS.GetNameNoIcon] （[STRAIT.GetName]）\n[concept_world_market]：@money!#v $PRICE|D$#!\n$concept_import$：@money!#v $VALUE|D$#!\n$concept_toll_rate$：#v $TOTAL_TOLL_RATE|%0$#!\n総支出：@money!#variable $TOLL_VALUE|D$#!\n\n#v $TOTAL_TOLL_RATE|%0$#!的$concept_toll_rate$の理由："
- STRAIT_TOLL_RATE_DESC: "#v $TOLL_RATE|%0$#! [COUNTRY.GetName]（#b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$ $concept_tolls$#!）"
+ STRAIT_TOLL_VALUE_GOODS_ENTRY_HEADER: "[STRAIT.GetName]を通過する[GOODS.GetName]に課される[TARGET_COUNTRY.GetFlagTextIcon][Nbsp][TARGET_STATE.GetName]の[concept_tolls]"
+ STRAIT_TOLL_VALUE_GOODS_ENTRY_BREAKDOWN: "#header $STRAIT_TOLL_VALUE_GOODS_ENTRY_HEADER$#!\n$concept_tolls$: @money!#variable $TOLL_VALUE|D$#!\n$TOOLTIP_DELIMITER$\n[TARGET_COUNTRY.GetFlagTextIcon][Nbsp][TARGET_STATE.GetName]は[STRAIT.GetName]を経由して[GOODS.GetTextIcon][Nbsp]$AMOUNT|vD$の[GOODS.GetNameNoIcon]を[Concept('concept_trade','$concept_importing$')]しています。[concept_world_market]における価格が@money!#v $PRICE|D$#!であるため、合計$concept_import$額は@money!#v $VALUE|D$#!となります。この額には#v $TOTAL_TOLL_RATE|%0$#!の$concept_toll_rate$が適用されるため、最終的な支出は@money!#variable $TOLL_VALUE|D$#!となります。\n\n$concept_toll_rate$が#v $TOTAL_TOLL_RATE|%0$#!となる要因:"
+ STRAIT_TOLL_RATE_DESC: "[COUNTRY.GetAdjective]による#v $TOLL_RATE|%0$#!の$concept_tolls$（#b $TOLL_RATE_ICON$[Nbsp]$TOLL_RATE_DESC$#!）"
  STRAIT_ACCESS_PLAYER: "[GetPlayer.GetName]$YOU$の[concept_strait_access]は#b [Strait.GetAccessStatusFor(GetPlayer.Self)]#!"
  STRAIT_TOLLS_PLAYER: "[concept_tolls]による毎週の収益は@money!#v [Strait.GetTollsFor(GetPlayer.Self)|D+]#!"
  #Tolls
- TOLL_RATE_REDUNDANT: "現在の通行料"
+ TOLL_RATE_REDUNDANT: "現在の通行税"
  TOLL_RATE_HEADER_no_tolls: "なし"
  TOLL_RATE_HEADER_low_tolls: "低"
  TOLL_RATE_HEADER_medium_tolls: "中"
@@ -88,13 +88,14 @@
  STRAIT_MILITARY_BLOCK_REQUIRES_FULL_CONTROL: "$STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL$"
  STRAIT_ACCESS_SETTING_REDUNDANT: "現在の[concept_strait_access]の設定"
  STRAIT_ACCESS_SETTING_NOT_ALLOWED: "通行料アクセスの設定は許可されていません"
- TOLL_RATE_NOT_ALLOWED: "通行料は許可されていません"
- STRAIT_TOLL_RATE_ON_COOLDOWN: "[concept_tolls]は$DATE|v$ まで再変更できません"
- STRAIT_TOLL_RATE_GRACE_PERIOD: "[concept_tolls]は$DATE|v$ まで以前の料率にのみ戻せます"
- STRAIT_ACCESS_SETTING_ON_COOLDOWN: "[concept_strait_access]は$DATE|v$ まで再変更できません"
- STRAIT_ACCESS_SETTING_GRACE_PERIOD: "[concept_strait_access]は$DATE|v$ まで以前の設定にのみ戻せます"
+ TOLL_RATE_NOT_ALLOWED: "通行税は許可されていません"
+ STRAIT_TOLL_RATE_ON_COOLDOWN: "[concept_tolls]は$DATE|v$まで再び変更できません"
+ STRAIT_TOLL_RATE_GRACE_PERIOD: "$DATE|v$までは[concept_tolls]を以前の料金に戻せます"
+ STRAIT_ACCESS_SETTING_ON_COOLDOWN: "[concept_strait_access]は$DATE|v$まで再び変更できません"
+ STRAIT_ACCESS_SETTING_GRACE_PERIOD: "[concept_strait_access]を以前の設定に戻すのは$DATE|v$までのみ可能です"
  STRAIT_STATES_HEADER: "この$concept_strait$によって接続されている$concept_states$"
  NO_NAVAL_FORTIFICATION_TOOLTIP: "[Country.GetName]はまだ[State.GetName]に[GetBuildingType('building_naval_fortification').GetName]を建設しておらず、[Strait.GetName]を掌握していません"
+ STRAIT_NAVAL_FORTIFICATION_TOOLTIP: "[State.GetName]の[State.GetBuilding('building_naval_fortification').GetName]は、上陸[Concept('concept_battle','$concept_battles$')]に対する防御を強化します"
  #Effects
  STRAIT_ACCESS_OPEN: "すべての[Concept('concept_ship', '$concept_ships$')]が[Strait.GetName]を通過できます"
  STRAIT_ACCESS_NO_MILITARY_NO_ENEMIES: "[Country.GetName]の#r 敵国#!に所属する軍事[Concept('concept_ship', '$concept_ships$')]は[Strait.GetName]を通過できません"

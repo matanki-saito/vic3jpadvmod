@@ -285,7 +285,7 @@
 
  BUILDING_OWNERSHIP_INVALID_ENTRY: "Refreshing..."
 
-#TODO PRCAL-27395 - Describe the actual filter selected
+ #TODO PRCAL-27395 - Describe the actual filter selected
  CURRENT_CONSTRUCTION_FILTER_DESC: "[SelectLocalization(MapListBuildingPanel.HasFilter('all'), 'CURRENT_CONSTRUCTION_FILTER_ALL', 'CURRENT_CONSTRUCTION_FILTER_SPECIFIC')]"
  CURRENT_CONSTRUCTION_FILTER_ALL: "Domestic & Abroad"
  CURRENT_CONSTRUCTION_FILTER_SPECIFIC: "[SelectLocalization(MapListBuildingPanel.HasFilter('domestic'), 'CURRENT_CONSTRUCTION_FILTER_DOMESTIC', 'CURRENT_CONSTRUCTION_FILTER_ABROAD')]"
@@ -756,6 +756,8 @@
  SHRINK:0 "< Shrink"
  GROW:0 "Grow >"
  TECH_TREE:0 "Technology Tree"
+ SEARCH_CLEAR: "Clear search"
+ SEARCHBAR_SEARCH_TEXT: "Search..."
  GRAPHLAYOUT_NODE_DEBUG:1 "#D Key: $KEY$\nLayout node id: $LAYOUT_NODE_ID$\nBase node id: $BASE_NODE_ID$\nIncoming nodes: $INCOMING$\nOutgoing nodes: $OUTGOING$\nLayer: $LAYER$\nWidth: $WIDTH$\nCenterX: $CENTER_X$\nPriority: $PRIORITY$\nPosition: $POSITION$ #!"
 
  urban_capacity:0 "State [concept_urbanization]"
@@ -1368,6 +1370,11 @@
  BUILDING_URBANIZATION:0 "[concept_urbanization]:"
  BUILDING_INFRA_USAGE_TOOLTIP:0 "[Building.GetInfrastructureUsageBreakdown]"
  BUILDING_URBANIZATION_TOOLTIP:0 "[Building.GetUrbanizationProvidedBreakdown]"
+ BUILDING_LOGISTICS_SUPPLY_VALUE:0 "[SelectLocalization(Building.HasAnyInputShortage, 'BUILDING_LOGISTICS_SUPPLY_REDUCED', 'BUILDING_LOGISTICS_SUPPLY_FULL')]"
+ BUILDING_LOGISTICS_SUPPLY_FULL:0 "#v [Building.GetProducedSupply|D]#!"
+ BUILDING_LOGISTICS_SUPPLY_REDUCED:0 "#negative_value [Building.GetProducedSupply|D]#!/#v [Building.GetSupplyWithoutShortage|D]#!"
+ BUILDING_LOGISTICS_SUPPLY_TOOLTIP:0 "#v [Building.GetProducedSupply|D]#! [Concept('concept_supply', '$concept_supplies$')] delivered per week to the [Concept('concept_military_formation', '$concept_military_formations$')] using this [concept_state] as their $concept_supply$ hub.[AddLocalizationIf(Building.HasAnyInputShortage, 'BUILDING_LOGISTICS_SUPPLY_SHORTAGE_LINE')]"
+ BUILDING_LOGISTICS_SUPPLY_SHORTAGE_LINE:0 "\n@warning! Supply delivery at #[GetMoraleColorString( Building.CalcInputAvailabilityOutputMult )] [Building.CalcInputAvailabilityOutputMult|%0]#! due to [Concept('concept_shortage','$concept_input_goods_shortages$')]"
  BUILDING_BATTALIONS_MOBILIZED:0 "[Concept('concept_mobilize_battalion', '$concept_mobilize_battalions_mobilized$')]:"
 
  PANEL_MILITARY_ARMY_POWER_PROJECTION_TOOLTIP:0 "[Country.GetArmyPowerProjectionDesc]"
@@ -1398,18 +1405,29 @@
 
  POWER_PROJECTION_FROM_MILITARY_FORMATION: "#tooltippable #tooltip:[MILITARY_FORMATION.GetTooltipTag],MILITARY_FORMATION_POWER_PROJECTION_TOOLTIP $VALUE|D=+$#!#! from [MILITARY_FORMATION.GetName]"
  MILITARY_FORMATION_POWER_PROJECTION_TOOLTIP: "[MilitaryFormation.GetPowerProjectionDesc]"
- MILITARY_FORMATION_POWER_PROJECTION_DESC: "#header [concept_power_projection]: $TOTAL_POWER_PROJECTION|Dv$#!\n$TOOLTIP_DELIMITER$\nAverage [concept_offense] and [concept_defense] of $AVERAGE_CE|1v$ spread across $TOTAL_MANPOWER|D1$ [concept_manpower] results in $TOTAL_POWER_PROJECTION|Dv$ $concept_power_projection$ for the formation."
- FLEET_POWER_PROJECTION_DESC: "#header [concept_power_projection]: $VAL|Dv$#!\n$TOOLTIP_DELIMITER$\nAverage [concept_offense] and [concept_defense] aggregated from $NUM_SHIPS|v$ [Concept('concept_ship', '$concept_ships$')] results in $VAL|Dv$ $concept_power_projection$ for the [concept_fleet]."
+ MILITARY_FORMATION_POWER_PROJECTION_DESC: "#header [concept_power_projection]#!\n#v $TOTAL_POWER_PROJECTION|Dv$#! in total\n$TOOLTIP_DELIMITER$\nAverage [concept_offense] and [concept_defense] of $AVERAGE_CE|1v$ spread across $TOTAL_MANPOWER|D1$ [concept_manpower] results in $TOTAL_POWER_PROJECTION|Dv$ $concept_power_projection$ for the formation."
+ FLEET_POWER_PROJECTION_DESC: "#header [concept_power_projection]#!\n#v $VAL|Dv$#! in total\n$TOOLTIP_DELIMITER$\nAverage [concept_offense] and [concept_defense] aggregated from $NUM_SHIPS|v$ [Concept('concept_ship', '$concept_ships$')] results in $VAL|Dv$ $concept_power_projection$ for the [concept_fleet]."
 
  REGULARS_AND_CONSCRIPTS: "Regulars & Conscripts"
 
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_WITH_ICON: "[MilitaryFormation.GetUnitIcon]$MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS$"
  MILITARY_FORMATION_CARRYING_CAPACITY_WITH_ICON: "@ship_carrying_capacity! [MilitaryFormation.GetCarryingCapacity]"
  MILITARY_FORMATION_MARINE_CAPACITY_WITH_ICON: "@ship_marine_capacity! [MilitaryFormation.GetMarineCapacity]"
- MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS: "#v [MilitaryFormation.GetNumCombatUnits]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
+ MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS: "[SelectLocalization(MilitaryFormation.IsFleet, 'MILITARY_FORMATION_UNIT_COUNT_FLEET', SelectLocalization(MilitaryFormation.HasRaisedConscripts, 'MILITARY_FORMATION_UNIT_COUNT_WITH_CONSCRIPTS', 'MILITARY_FORMATION_UNIT_COUNT_NO_CONSCRIPTS'))]"
+ MILITARY_FORMATION_UNIT_COUNT_NO_CONSCRIPTS: "#v [MilitaryFormation.GetNumRegulars]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
+ MILITARY_FORMATION_UNIT_COUNT_WITH_CONSCRIPTS: "#v [MilitaryFormation.GetNumRegulars]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')] @conscripts!#v [MilitaryFormation.GetNumConscripts|v]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
+ MILITARY_FORMATION_UNIT_COUNT_FLEET: "#v [MilitaryFormation.GetNumCombatUnits]#!/[SelectLocalization(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetCommandLimitUsage), 'INSUFFICIENT_COMMAND_LIMIT', 'SUFFICIENT_COMMAND_LIMIT')]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_NO_LIMIT: "#v [MilitaryFormation.GetNumCombatUnits]#!"
  INSUFFICIENT_COMMAND_LIMIT: "#r [MilitaryFormation.GetCommandLimitRaw]#!"
  SUFFICIENT_COMMAND_LIMIT: "[MilitaryFormation.GetCommandLimitRaw]"
+ MILITARY_FORMATION_REGULARS_COUNT: "[MilitaryFormation.GetUnitIcon]$MILITARY_FORMATION_REGULARS_COUNT_NO_ICON$"
+ MILITARY_FORMATION_REGULARS_COUNT_NO_ICON: "#v [SelectLocalization(MilitaryFormation.IsFleet, 'MILITARY_FORMATION_NUM_COMBAT_UNITS', 'MILITARY_FORMATION_NUM_REGULARS')]#![ConcatIfNeitherEmpty('/', AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), 'INSUFFICIENT_COMMAND_LIMIT'))]"
+ MILITARY_FORMATION_NUM_REGULARS: "[MilitaryFormation.GetNumRegulars]"
+ MILITARY_FORMATION_NUM_COMBAT_UNITS: "[MilitaryFormation.GetNumCombatUnits]"
+ MILITARY_FORMATION_CONSCRIPTS_COUNT: "@conscripts!$MILITARY_FORMATION_CONSCRIPTS_COUNT_NO_ICON$"
+ MILITARY_FORMATION_CONSCRIPTS_COUNT_NO_ICON: "#v [SelectLocalization(MilitaryFormation.HasRaisedConscripts, 'MILITARY_FORMATION_NUM_CONSCRIPTS_RAISED', 'MILITARY_FORMATION_NUM_CONSCRIPTS_POTENTIAL')]#!"
+ MILITARY_FORMATION_NUM_CONSCRIPTS_RAISED: "[MilitaryFormation.GetNumConscripts|v][ConcatIfNeitherEmpty('/', AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumConscripts), 'INSUFFICIENT_COMMAND_LIMIT'))]"
+ MILITARY_FORMATION_NUM_CONSCRIPTS_POTENTIAL: "[MilitaryFormation.GetMaxConscripts|v]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP: "[SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_BATTALIONS_TOOLTIP', 'MILITARY_FORMATION_SHIPS_TOOLTIP')][AddLocalizationIf(MilitaryFormation.IsArmy,'MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP_BUILDINGS')]"
  MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP_BUILDINGS: "\n$TOOLTIP_DELIMITER$\nThese [Concept('concept_unit', '$concept_units_short$')] come from:\n[MilitaryFormation.GetBuildingsDesc]"
 
@@ -1424,7 +1442,10 @@
  ARMIES_IN_COUNTRY_TOOLTIP_BREAKDOWN: "[Country.GetArmiesBreakdown]"
  ARMY_ENTRY_FORMAT: "$TAB$@battalions!#tooltippable #tooltip:[MILITARY_FORMATION.GetTooltipTag],MILITARY_FORMATION_BATTALIONS_TOOLTIP $NUM_BATTALIONS|v$#!#! $FORMATION_NAME$"
 
- MILITARY_FORMATION_BATTALIONS_TOOLTIP: "#header [Concept('concept_battalion', '$concept_battalions$')] in [MilitaryFormation.GetName]#!\n@battalions![MilitaryFormation.GetNumCombatUnits|v] in total $INCOMING_NUMBER_OF_REGULARS_LABEL$\n@battalions!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_COMMAND_LIMIT_DESC [MilitaryFormation.GetCommandLimit|v]#!#![AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), ' @warning!')] [concept_command_limit]\n$TOOLTIP_DELIMITER$\n@battalions!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_REGULAR_BATTALIONS_TOOLTIP [MilitaryFormation.GetNumRegulars|v]#!#! Regular [Concept('concept_battalion', '$concept_battalions$')]\n@conscripts!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetNumConscripts|v]#!#! raised out of #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetMaxConscripts|v]#!#! potential [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]"
+ MILITARY_FORMATION_BATTALIONS_TOOLTIP: "#header [Concept('concept_battalion', '$concept_battalions$')] in [MilitaryFormation.GetName]#!\n@battalions!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_REGULAR_BATTALIONS_TOOLTIP [MilitaryFormation.GetNumRegulars|v]#!#! Regular [Concept('concept_battalion', '$concept_battalions$')] $INCOMING_NUMBER_OF_REGULARS_LABEL$\n@battalions!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_COMMAND_LIMIT_DESC [MilitaryFormation.GetCommandLimit|v]#!#![AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumRegulars), ' @warning!')] [concept_command_limit]"
+ MILITARY_FORMATION_CONSCRIPTS_TOOLTIP: "#header [Concept('concept_conscript_battalion', '$concept_conscript_battalions$')] in [MilitaryFormation.GetName]#!\n[SelectLocalization(GreaterThan_int32(MilitaryFormation.GetMaxConscripts, '(int32)0'), 'MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_RAISED_LINE', 'MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_NONE_LINE')]\n@conscripts!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_COMMAND_LIMIT_DESC [MilitaryFormation.GetCommandLimit|v]#!#![AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumConscripts), ' @warning!')] [concept_command_limit]"
+ MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_RAISED_LINE: "@conscripts!#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetNumConscripts|v]#!#! raised out of #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPT_BATTALIONS_TOOLTIP [MilitaryFormation.GetMaxConscripts|v]#!#! potential [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]"
+ MILITARY_FORMATION_CONSCRIPTS_TOOLTIP_NONE_LINE: "@conscripts!No $CONSCRIPTS_CONCEPT$"
  MILITARY_FORMATION_REGULAR_BATTALIONS_TOOLTIP: "#header Regulars [Concept('concept_battalion', '$concept_battalions$')] in [MilitaryFormation.GetName]#!\n@battalions![MilitaryFormation.GetNumRegulars|v] in total\n@battalions![MilitaryFormation.GetNumFullyMobilizedRegulars|v] [Concept('concept_mobilize_army', '$concept_mobilize_army_mobilized$')] ([MilitaryFormation.GetRegularsMobilizationPercentage|%v])\n$TOOLTIP_DELIMITER$\n[Concept('concept_combat_unit_group', '$concept_combat_unit_groups$')]:\n[MilitaryFormation.GetRegularsGroupsBreakdown]"
 
  INCOMING_NUMBER_OF_REGULARS_LABEL: "[SelectLocalization(NotZero(MilitaryFormation.GetIncomingNumRegulars), 'INCOMING_NUMBER_OF_REGULARS', 'NO_INCOMING_NUMBER_OF_REGULARS')]"
@@ -1476,8 +1497,8 @@
  BATTLE_UNIT_TYPE_WARSHIPS_TOOLTIP: "There are @ships! [BattleUnitType.GetNumberOfRegularUnits|v] [CombatUnitType.GetName] [Concept('concept_ship', '$concept_ships$')] in this battle"
  BATTLE_UNIT_TYPE_AVERAGE_MORALE: "Average morale of units is #[GetMoraleColorString( BattleUnitType.GetAverageMorale )] [BattleUnitType.GetAverageMorale|0%]#!"
  BATTLE_MILITARY_FORMATION_TOOLTIP: "#header [concept_manpower]#!\n@manpower![BattleMilitaryFormation.GetCurrentManpowerFromFormation|vK] / #maximum [BattleMilitaryFormation.GetMaxManpowerFromFormation|vK]#! [concept_manpower]"
- BATTLE_MILITARY_FORMATION_OFFENSE_TOOLTIP: "#header [concept_offense]#!\n@unit_offense! [BattleMilitaryFormation.GetAverageOffense|1v] [concept_offense] on average"
- BATTLE_MILITARY_FORMATION_DEFENSE_TOOLTIP: "#header [concept_defense]#!\n@unit_defense! [BattleMilitaryFormation.GetAverageDefense|1v] [concept_defense] on average"
+ BATTLE_MILITARY_FORMATION_OFFENSE_TOOLTIP: "#header [concept_offense]#!\n@unit_offense! [BattleMilitaryFormation.GetAverageOffense|1] [concept_offense] on average"
+ BATTLE_MILITARY_FORMATION_DEFENSE_TOOLTIP: "#header [concept_defense]#!\n@unit_defense! [BattleMilitaryFormation.GetAverageDefense|1] [concept_defense] on average"
  BATTLE_MILITARY_FORMATION_MORALE_TOOLTIP: "#header [concept_morale]#!\nAverage $concept_morale$ of [Concept('concept_unit','$concept_units$')] in [MilitaryFormation.GetName] is #BOLD #[GetMoraleColorString( BattleMilitaryFormation.GetCurrentMorale )] [BattleMilitaryFormation.GetCurrentMorale|0%]#!#!"
 
  PANEL_MILITARY_NAVY_CURRENT_SHIPS: "@ships! [Country.GetNumShips|0v]"
@@ -1563,6 +1584,14 @@
  TRANSPORT_FLEET_IN_NAVAL_INVASION: "[MilitaryFormation.GetName] is in a $concept_naval_mission$"
  REHOME_FLEET_TRANSPORTING_ARMIES: "[MilitaryFormation.GetName] #b cannot#! be rehomed while transporting an [concept_army]"
  REHOME_FLEET_IN_NAVAL_INVASION: "[MilitaryFormation.GetName] #b cannot#! be rehomed during a $concept_naval_invasion$"
+ RECALL_FLEET_FOR_REPAIRS_NOT_A_FLEET: "[MilitaryFormation.GetName] is not a [concept_fleet]"
+ RECALL_FLEET_FOR_REPAIRS_ALREADY_RECALLED: "[MilitaryFormation.GetName] is already returning to port for repairs"
+ RECALL_FLEET_FOR_REPAIRS_IN_NAVAL_INVASION: "[MilitaryFormation.GetName] #b cannot#! be recalled during a $concept_naval_invasion$"
+ RECALL_FLEET_FOR_REPAIRS_TRANSPORTING: "[MilitaryFormation.GetName] #b cannot#! be recalled while transporting an [concept_army]"
+ RECALL_FLEET_FOR_REPAIRS_ALREADY_IN_PORT: "[MilitaryFormation.GetName] is already docked"
+ RECALL_FLEET_FOR_REPAIRS_NO_FRIENDLY_PORT: "[MilitaryFormation.GetName] has no friendly port within reach"
+ RECALL_FLEET_FOR_REPAIRS_IN_COMBAT: "[MilitaryFormation.GetName] #b cannot#! be recalled while engaged in combat"
+ RECALL_FLEET_FOR_REPAIRS_NO_REPAIRS_NEEDED: "[MilitaryFormation.GetName] is already fully repaired and crewed"
  TRANSPORT_INVALID_FLEET: "Invalid [concept_fleet]"
  DISEMBARK_ARMY_BEING_TRANSPORTED: "This [concept_army] is being transported and cannot manually disembark"
  EMBARK_ARMY_HAS_NON_MARINE_UNITS: "[MilitaryFormation.GetName] has #v [MilitaryFormation.GetNonMarineUnitCount|v]#! non-[GetCombatUnitGroup('combat_unit_group_marines').GetName] [SelectLocalization(EqualTo_int32(MilitaryFormation.GetNonMarineUnitCount, '(int32)1'), 'concept_unit', 'concept_units')]"
@@ -1673,7 +1702,9 @@
  MILITARY_FORMATION_UNIT_GROUP_DEFAULT_UNIT_TOOLTIP: "#header Default [concept_combat_unit_type]#!\nCurrent: #b [MilitaryFormation.GetSelectedUnitTypeForGroup(CombatUnitGroup.Self).GetNameWithCulture(MilitaryFormation.GetPrimaryCultureForGroup(CombatUnitGroup.Self).Self)]#!\n$TOOLTIP_DELIMITER$\nThis is the #b Default#! $concept_combat_unit_type$ for [CombatUnitGroup.GetName] that will be built if more units are added to this [concept_combat_unit_group]."
 
  MILITARY_FORMATION_SUPPLY_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ [SelectLocalization(LessThan_CFixedPoint('(CFixedPoint)$VALUE$', '(CFixedPoint)1'),'#negative_value $VALUE|%0$#!','#variable $VALUE|%0$#!')]#!#!"
- MILITARY_FORMATION_SUPPLY_TOOLTIP: "#header [Concept('concept_supply', '$concept_supplies$')] in [MilitaryFormation.GetName]#!\n@ship_supplies! #v [MilitaryFormation.GetCurrentSupplyAmount|D]#! stockpiled (@ship_supplies! [MilitaryFormation.GetSupplyWeeklyChange|+=D1] per week)\n@ship_supplies! #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_SUPPLY_CAPACITY_TOOLTIP #v [MilitaryFormation.GetSupplyCapacity|D]#!#!#! [concept_supply_capacity]\n$TOOLTIP_DELIMITER$[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasFullSupplyPath), 'SUPPLY_NO_ROUTE_DESC'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.HasLogisticsCenterGoodsShortage, 'SUPPLY_GOODS_SHORTAGE_DESC'))]\n#title @ship_supplies! [MilitaryFormation.GetSupplyWeeklyChange|+=D1] $concept_supplies$ per week due to:#!#indent_newline:3 \n@ship_supplies! #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_SUPPLY_CONSUMPTION_TOOLTIP #n -[MilitaryFormation.GetSupplyConsumption|D]#!#!#! consumed\n@ship_supplies! #p +[MilitaryFormation.GetSupplyDelivered|D]#! delivered by @supply! #v [MilitaryFormation.GetNumAssignedSupplyShips]#! [Concept('concept_supply_ship', '$concept_supply_ships$')]#!\n\n@supply! #v [MilitaryFormation.GetNumWantedSupplyShipsForEquilibrium]#! $concept_supply_ships$ required to maintain current $concept_supply$ stockpile\n@supply! #v [MilitaryFormation.GetNumAssignedSupplyShips]#! $concept_supply_ships$ currently assigned"
+ MILITARY_FORMATION_SUPPLY_TOOLTIP: "#header [Concept('concept_supply', '$concept_supplies$')] in [MilitaryFormation.GetName]#!\n@ship_supplies! #v [MilitaryFormation.GetCurrentSupplyAmount|D]#! stockpiled (@ship_supplies! [MilitaryFormation.GetSupplyWeeklyChange|+=D1] per week)\n@ship_supplies! #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_SUPPLY_CAPACITY_TOOLTIP #v [MilitaryFormation.GetSupplyCapacity|D]#!#!#! [concept_supply_capacity]\n$TOOLTIP_DELIMITER$[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasFullSupplyPath), 'SUPPLY_NO_ROUTE_DESC'))][ConcatIfNeitherEmpty('\n', AddLocalizationIf(MilitaryFormation.HasLogisticsCenterGoodsShortage, 'SUPPLY_GOODS_SHORTAGE_DESC'))]\n#title @ship_supplies! [MilitaryFormation.GetSupplyWeeklyChange|+=D1] $concept_supplies$ per week due to:#!#indent_newline:3 \n@ship_supplies! #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_SUPPLY_CONSUMPTION_TOOLTIP #n -[MilitaryFormation.GetSupplyConsumption|D]#!#!#! consumed\n@ship_supplies! #p +[MilitaryFormation.GetSupplyDelivered|D]#! [SelectLocalization(GreaterThan_int32(MilitaryFormation.GetNumAssignedSupplyShips, '(int32)0'), 'SUPPLY_DELIVERED_BY_SHIPS', 'SUPPLY_DELIVERED_VIA_LAND')]\n\n@supply! #v [MilitaryFormation.GetNumWantedSupplyShipsForEquilibrium]#! $concept_supply_ships$ required to maintain current $concept_supply$ stockpile\n@supply! #v [MilitaryFormation.GetNumAssignedSupplyShips]#! $concept_supply_ships$ currently assigned"
+ SUPPLY_DELIVERED_BY_SHIPS:0 "delivered by @supply! #v [MilitaryFormation.GetNumAssignedSupplyShips]#! [Concept('concept_supply_ship', '$concept_supply_ships$')]"
+ SUPPLY_DELIVERED_VIA_LAND:0 "delivered via an overland $concept_supply$ route"
  MILITARY_FORMATION_SUPPLY_COLORED: "[SelectLocalization(LessThan_CFixedPoint(MilitaryFormation.GetSupplyRaw, '(CFixedPoint)1'), 'MILITARY_FORMATION_SUPPLY_RED', 'MILITARY_FORMATION_SUPPLY_GREEN')]"
  MILITARY_FORMATION_SUPPLY_GREEN: "@supply! #g [MilitaryFormation.GetSupplyRaw|0%]#!"
  MILITARY_FORMATION_SUPPLY_RED: "@supply! #n [MilitaryFormation.GetSupplyRaw|0%]#!"
@@ -1705,7 +1736,7 @@
 
  MILITARY_FORMATION_WANTED_SUPPLY_SHIPS_EXPLAIN: "#indent_newline:3 \n@ship_supplies! #tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_BASE_SUPPLY_CONSUMPTION_TOOLTIP #n -[MilitaryFormation.GetSupplyConsumptionBase|D1]#!#!#! Base $concept_supply$ consumption\nMultiplied by supply route distance (#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_NAVAL_SUPPLY_DISTANCE_BREAKDOWN [MilitaryFormation.GetEffectiveSupplyDistance|v0]#!#!)[ConcatIfNeitherEmpty('\n', SelectLocalization(And(MilitaryFormation.IsActiveInNavalMission, GreaterThan_int32(MilitaryFormation.GetNavalMission.GetNumSeaRegions, '(int32)1')), 'MILITARY_FORMATION_NAVAL_MISSION_SUPPLY_FACTOR_DESC', ''))]\nDivided by [concept_carrying_capacity] of $concept_supply_ships$ (#v [MilitaryFormation.GetSupplyShipCarryCapacity|D1]#!)[AddLocalizationIf(MilitaryFormation.IsReplenishingSupply, 'MILITARY_FORMATION_WANTED_SUPPLY_SHIPS_REPLENISH')]#!"
  MILITARY_FORMATION_WANTED_SUPPLY_SHIPS_TOOLTIP: "#header [Concept('concept_supply_ship', '$concept_supply_ships$')]#!\n$MILITARY_FORMATION_WANTED_SUPPLY_ASSIGNED_ROW$\n$MILITARY_FORMATION_WANTED_SUPPLY_NEEDED_ROW$\n$TOOLTIP_DELIMITER$[ConcatIfNeitherEmpty('\n', AddLocalizationIf(Not(MilitaryFormation.HasFullSupplyPath), 'SUPPLY_NO_ROUTE_DESC'))]\n#title @supply! #v [MilitaryFormation.GetNumWantedSupplyShips|D]#! needed $concept_supply_ships$ is due to:#!$MILITARY_FORMATION_WANTED_SUPPLY_SHIPS_EXPLAIN$"
- MILITARY_FORMATION_NAVAL_SUPPLY_DISTANCE_BREAKDOWN: "#header Supply route distance#!\nCurrent: [MilitaryFormation.GetEffectiveSupplyDistance|v0]\n$TOOLTIP_DELIMITER$\n#title Due to:#!#indent_newline:3 \n[MilitaryFormation.GetDistanceToHomePort|v0] distance to home port[ConcatIfNeitherEmpty('\n', AddLocalizationIf(GreaterThanZero_CFixedPoint(MilitaryFormation.GetFriendlyPortDiscount), 'FRIENDLY_PORT_SUPPLY_DISCOUNT_DESC'))]#!"
+ MILITARY_FORMATION_NAVAL_SUPPLY_DISTANCE_BREAKDOWN: "#header Supply route distance#!\n[MilitaryFormation.GetEffectiveSupplyDistance|v0] currently\n$TOOLTIP_DELIMITER$\n#title Due to:#!#indent_newline:3 \n[MilitaryFormation.GetDistanceToHomePort|v0] distance to home port[ConcatIfNeitherEmpty('\n', AddLocalizationIf(GreaterThanZero_CFixedPoint(MilitaryFormation.GetFriendlyPortDiscount), 'FRIENDLY_PORT_SUPPLY_DISCOUNT_DESC'))]#!"
  MILITARY_FORMATION_WANTED_SUPPLY_ASSIGNED_ROW: "@supply! #v [MilitaryFormation.GetNumAssignedSupplyShips|D]#! assigned $concept_supply_ships$ to [MilitaryFormation.GetName]"
  MILITARY_FORMATION_WANTED_SUPPLY_NEEDED_ROW: "@supply! #v [MilitaryFormation.GetNumWantedSupplyShips|D]#! $concept_supply_ships$ needed to maintain the [SelectLocalization(MilitaryFormation.IsArmy, Concept('concept_army','$concept_army_possessive$'), Concept('concept_fleet','$concept_fleet_possessive$'))] current [concept_supply] stockpile[AddLocalizationIf(NotEqualTo_int32(MilitaryFormation.GetNumWantedSupplyShips, MilitaryFormation.GetNumWantedSupplyShipsOnMission), 'MILITARY_FORMATION_WANTED_SUPPLY_NEEDED_POSTFIX')]"
  MILITARY_FORMATION_WANTED_SUPPLY_NEEDED_POSTFIX: "#indent_newline:3 \n (@supply! #v [MilitaryFormation.GetNumWantedSupplyShipsOnMission|D]#! will be required once arrived at destination)#!"
@@ -1726,7 +1757,8 @@
  FRONT_MORALE_TOOLTIP: "$COUNTRY_NAME|v$ morale is #BOLD #$MORALE_COLOR$ $VAL|0%$#!#! in $FRONT_NAME$"
  MILITARY_FORMATION_MORALE: "@morale! #[GetMoraleColorString( MilitaryFormation.GetMorale )] [MilitaryFormation.GetMorale|0%]#!"
  MILITARY_FORMATION_MORALE_NO_ICON: "#[GetMoraleColorString( MilitaryFormation.GetMorale )] [MilitaryFormation.GetMorale|0%]#!"
- MILITARY_FORMATION_MORALE_TOOLTIP: "#header [concept_morale]#!\nAverage $concept_morale$ of [Concept('concept_unit','$concept_units$')] in [MilitaryFormation.GetName] is #BOLD #[GetMoraleColorString( MilitaryFormation.GetMorale )] [MilitaryFormation.GetMorale|0%]#!#!"
+ MILITARY_FORMATION_MORALE_TOOLTIP: "#header [concept_morale]#!\n@morale! #BOLD #[GetMoraleColorString( MilitaryFormation.GetMorale )] [MilitaryFormation.GetMorale|0%]#!#! on average[MilitaryFormation.GetMoraleBreakdown]"
+ MILITARY_FORMATION_MORALE_UNIT_TYPE_ENTRY: "@morale! #[GetMoraleColorString('(CFixedPoint)$VALUE$')] $VALUE|%0$#! from #v $COUNT$#! [CombatUnitType.GetName]"
  MORALE_TOOLTIP: "[Country.GetAdjectiveNoFormatting|v] morale is #BOLD #[GetMoraleColorString( FrontMarker.GetFront.GetMorale( Country.Self ) )] [FrontMarker.GetFront.GetMorale( Country.Self )|0%]#!#! in [FrontMarker.GetFront.GetName]"
 
  COMBAT_UNIT_MORALE_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #[GetMoraleColorString('(CFixedPoint)$VALUE$')] #variable $VALUE|0%$#!#!#!#!"
@@ -1760,7 +1792,7 @@
  MILITARY_FORMATION_ORGANIZATION_TARGET_DESC: "Target is [MilitaryFormation.GetOrganizationTargetRaw|v0] due to:#indent_newline:3 \n[MilitaryFormation.GetOrganizationTargetDesc]#!"
  MILITARY_FORMATION_ORGANIZATION_FULL: "[MilitaryFormation.GetName] is at full $concept_organization$"
 
- MILITARY_FORMATION_ORGANIZATION_TOOLTIP: "#header @organization![Nbsp][concept_organization]#!\nCurrent: $MILITARY_ORGANIZATION_VALUE_WITH_CHANGE$\n$TOOLTIP_DELIMITER$\n[SelectLocalization(And(EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationPercentage,'(CFixedPoint)1'),EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationTargetRaw,GetDefine('NMilitary','MILITARY_FORMATION_ORGANIZATION_MAX'))),'MILITARY_FORMATION_ORGANIZATION_FULL','MILITARY_FORMATION_ORGANIZATION_TARGET_DESC')][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(NotEqualTo_CFixedPoint(MilitaryFormation.GetOrganizationDailyChange,'(CFixedPoint)0'),'MILITARY_FORMATION_ORGANIZATION_DAILY_CHANGE'))][ConcatIfNeitherEmpty('\n\n',MilitaryFormation.GetLowOrganizationDesc)]"
+ MILITARY_FORMATION_ORGANIZATION_TOOLTIP: "#header [concept_organization]#!\n@organization! $MILITARY_ORGANIZATION_VALUE_WITH_CHANGE$\n$TOOLTIP_DELIMITER$\n[SelectLocalization(And(EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationPercentage,'(CFixedPoint)1'),EqualTo_CFixedPoint(MilitaryFormation.GetOrganizationTargetRaw,GetDefine('NMilitary','MILITARY_FORMATION_ORGANIZATION_MAX'))),'MILITARY_FORMATION_ORGANIZATION_FULL','MILITARY_FORMATION_ORGANIZATION_TARGET_DESC')][ConcatIfNeitherEmpty('\n\n',AddLocalizationIf(NotEqualTo_CFixedPoint(MilitaryFormation.GetOrganizationDailyChange,'(CFixedPoint)0'),'MILITARY_FORMATION_ORGANIZATION_DAILY_CHANGE'))][ConcatIfNeitherEmpty('\n\n',MilitaryFormation.GetLowOrganizationDesc)]"
  MILITARY_FORMATION_ORGANIZATION_MAX: "$VAL|vD$ maximum"
  MILITARY_FORMATION_ORGANIZATION_LOSS_RATE: "$VAL|+=D$ from loss rate of $RATE|%-^$ per day"
  MILITARY_FORMATION_ORGANIZATION_LOSS_MIN: "$VAL|+=D$ from minimum loss per day"
@@ -1784,7 +1816,7 @@
  ARMY_TOO_MANY_EXPECTED_UNITS_OF_THIS_UNIT_GROUP_TOOLTIP: "@warning! Once the number of [Concept('concept_special_unit','$concept_special_units$')] currently [Concept('concept_incoming_units', '$concept_incoming_units_short$')] have joined, the [concept_organization] limit for [MilitaryFormation.GetName] will be impacted due to having more #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#! and #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#! combined than it has #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n\n#title Total numbers of [Concept('concept_unit','$concept_units$')] in each [Concept('concept_combat_unit_group','$concept_combat_unit_group_short$')]\n(Current + [Concept('concept_incoming_units', '$concept_incoming_units_short$')]):#!\n@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_infantry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#!\n@battalions! #v [MilitaryFormation.GetNumSpecialUnitsExpected]#! [Concept('concept_special_unit','$concept_special_units$')]\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_artillery').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_artillery').GetName]#!\n$TAB$@battalions! #v [MilitaryFormation.GetNumTotalCombatUnitsExpectedInGroup(GetCombatUnitGroup('combat_unit_group_cavalry').Self)]#! #b [GetCombatUnitGroup('combat_unit_group_cavalry').GetName]#!\n\n[MilitaryFormation.GetEffectFromSpecialUnitsDesc]"
 
  MILITARY_FORMATION_ORGANIZATION_COMMAND_LIMIT_PENALTY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|+=D$#!#! from insufficient [concept_command_limit]"
- MILITARY_FORMATION_ORGANIZATION_COMMAND_LIMIT: "#header Insufficient [concept_command_limit]#!\n$TOOLTIP_DELIMITER$\n#indent_newline:3 Penalty to max [concept_organization]#! from:\nCurrent number of [Concept('concept_unit','$concept_units$')]: $NUM_UNITS|v$\nCurrent [concept_command_limit]: $COMMAND_LIMIT|v$#!#!"
+ MILITARY_FORMATION_ORGANIZATION_COMMAND_LIMIT: "#header Insufficient [concept_command_limit]#!\n$TOOLTIP_DELIMITER$\n#indent_newline:3 Penalty to max [concept_organization]#! from:\nHighest of raised [Concept('concept_unit','$concept_units$')] or [Concept('concept_conscript_battalion','$concept_conscript_battalions$')]: $NUM_UNITS|v$\nCurrent [concept_command_limit]: $COMMAND_LIMIT|v$#!#!"
  MILITARY_FORMATION_ORGANIZATION_SPECIAL_UNITS_PENALTY: "#tooltippable #tooltip:$BREAKDOWN_TAG$ $VAL|+=D$#!#! from too many [Concept('concept_special_unit','$concept_special_units$')]"
  MILITARY_FORMATION_ORGANIZATION_SPECIAL_UNITS: "#header Too many [Concept('concept_special_unit','$concept_special_units$')]#!\n$TOOLTIP_DELIMITER$\n#indent_newline:3 Penalty to max [concept_organization]#! from:\nCurrent number of [Concept('concept_special_unit','$concept_special_units$')]: $NUM_SPECIAL_UNITS|v$\nCurrent number of [Concept('concept_default_unit','$concept_default_units$')]: $NUM_DEFAULT_UNITS|v$#!#!"
  MILITARY_FORMATION_LOW_ORGANIZATION_IMPACT: "#indent_newline:3 Due to low [concept_organization], [MilitaryFormation.GetName] suffers the following effects:\n$DESC$#!"
@@ -1806,8 +1838,10 @@
  MILITARY_FORMATION_ADMIRALS_CONCEPT: "[Concept('concept_admiral', '$concept_admirals$')]"
  MILITARY_FORMATION_NO_GENERALS: "This [concept_army] has no [concept_general], consider recruiting one"
  MILITARY_FORMATION_RECRUIT_GENERAL: "Recruit a [concept_general]"
+ MILITARY_FORMATION_RECRUIT_GENERAL_LIMIT: "@red_cross! #b Cannot#! recruit a [Concept('concept_general', '$concept_general$')] because [GetPlayer.GetName] already has $NUM_IDLE_GENERALS$/$MAX_IDLE_GENERALS$ idle $concept_generals$."
  MILITARY_FORMATION_NO_ADMIRALS: "This [concept_fleet] has no [concept_admiral], consider recruiting one"
  MILITARY_FORMATION_RECRUIT_ADMIRAL: "Recruit an [concept_admiral]"
+ MILITARY_FORMATION_RECRUIT_ADMIRAL_LIMIT: "@red_cross! #b Cannot#! recruit an [Concept('concept_admiral', '$concept_admiral$')] because [GetPlayer.GetName] already has $NUM_IDLE_ADMIRALS$/$MAX_IDLE_ADMIRALS$ idle $concept_admirals$."
 
  MILITARY_FORMATION_IS_FULLY_MOBILIZED: "Fully Mobilized"
  MILITARY_FORMATION_IS_MOBILIZING: "Mobilizing: #v [MilitaryFormation.GetMobilizationPercentage|%0]#!"
@@ -1874,7 +1908,7 @@
 
  MILITARY_FORMATION_EXPENSE: "#v @money![MilitaryFormation.GetGoodsConsumptionCostRaw|0-K]#!"
  MILITARY_FORMATION_EXPENSE_TOOLTIP_TAG: "[MilitaryFormation.GetGoodsConsumptionDesc]"
- MILITARY_FORMATION_EXPENSE_TOOLTIP: "#header [MilitaryFormation.GetName] Upkeep#!\nWeekly cost: #v @money!$VAL|0-K$#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty('$MULT_DESC$','\n')]#title @money!$GOODS|0-K$ expenses from [Concept('concept_good','$concept_goods$')]:#!#indent_newline:3 \n[Select_CString(Not(StringIsEmpty('$BREAKDOWN_BY_GOODS$')), '$BREAKDOWN_BY_GOODS$',Select_CString(EqualTo_int32(MilitaryFormation.GetNumWantedSupplyShips, '(int32)0'),Localize('MILITARY_FORMATION_NO_GOODS_CONSUMED'), Localize('NO_SUPPLY_SHIPS_ASSIGNED')))]#!\n\n#title @money!$WAGES|0-K$ expenses from wages:#!#indent_newline:3 \n$BREAKDOWN_BY_BUILDING$#!"
+ MILITARY_FORMATION_EXPENSE_TOOLTIP: "#header [MilitaryFormation.GetName] Upkeep#!\n@money! #v $VAL|0-K$#! per week\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty('$MULT_DESC$','\n')]#title @money!$GOODS|0-K$ expenses from [Concept('concept_good','$concept_goods$')]:#!#indent_newline:3 \n[Select_CString(Not(StringIsEmpty('$BREAKDOWN_BY_GOODS$')), '$BREAKDOWN_BY_GOODS$',Select_CString(EqualTo_int32(MilitaryFormation.GetNumWantedSupplyShips, '(int32)0'),Localize('MILITARY_FORMATION_NO_GOODS_CONSUMED'), Localize('NO_SUPPLY_SHIPS_ASSIGNED')))]#!\n\n#title @money!$WAGES|0-K$ expenses from wages:#!#indent_newline:3 \n$BREAKDOWN_BY_BUILDING$#!"
  MILITARY_FORMATION_EXPENSE_BY_GOODS: "#v @money!$VAL|0-K$#! for [Goods.GetName]"
  MILITARY_FORMATION_EXPENSE_BY_BUILDING: "#v @money!$VAL|0-K$#! from [Building.GetName] in [Building.GetState.GetName]"
  MILITARY_FORMATION_BUILDABLE_UNITS: "Buildable Units"
@@ -1988,10 +2022,16 @@
  BLOCKADE_RESISTANCE_BUILDINGS: "$VALUE|D+=$ from coastal [concept_building] output"
  BLOCKADE_RESISTANCE_TRADE: "$VALUE|D+=$ from local [concept_trade]"
 
- MILITARY_FORMATION_OFFENSE: "@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1v]"
- MILITARY_FORMATION_OFFENSE_TOOLTIP: "#header [concept_offense]#!\n@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1v] [concept_offense] on average\n$TOOLTIP_DELIMITER$\n@unit_offense! [MilitaryFormation.GetAverageOffense|1v] [concept_offense] on average at full [concept_manpower]"
- MILITARY_FORMATION_DEFENSE: "@unit_defense! [MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower|1v]"
- MILITARY_FORMATION_DEFENSE_TOOLTIP: "#header [concept_defense]#!\n@unit_defense! [MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower|1v] [concept_defense] on average\n$TOOLTIP_DELIMITER$\n@unit_defense! [MilitaryFormation.GetAverageDefense|1v] [concept_defense] on average at full [concept_manpower]"
+ MILITARY_FORMATION_OFFENSE: "@unit_offense! [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1]"
+ MILITARY_FORMATION_OFFENSE_TOOLTIP: "#header [concept_offense]#!\n@unit_offense! #v [MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower|1]#! on average[AddLocalizationIf(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageOffenseExcludeUnavailableManpower, MilitaryFormation.GetAverageOffense), 'MILITARY_FORMATION_OFFENSE_FULL_MANPOWER_ROW')][MilitaryFormation.GetOffenseCommanderBreakdown]"
+ MILITARY_FORMATION_OFFENSE_FULL_MANPOWER_ROW: "\n@unit_offense! #v [MilitaryFormation.GetAverageOffense|1]#! on average at full [concept_manpower]"
+ MILITARY_FORMATION_DEFENSE: "@unit_defense! [MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower|1]"
+ MILITARY_FORMATION_DEFENSE_TOOLTIP: "#header [concept_defense]#!\n@unit_defense! #v [MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower|1]#! on average[AddLocalizationIf(NotEqualTo_CFixedPoint(MilitaryFormation.GetAverageDefenseExcludeUnavailableManpower, MilitaryFormation.GetAverageDefense), 'MILITARY_FORMATION_DEFENSE_FULL_MANPOWER_ROW')][MilitaryFormation.GetDefenseCommanderBreakdown]"
+ MILITARY_FORMATION_DEFENSE_FULL_MANPOWER_ROW: "\n@unit_defense! #v [MilitaryFormation.GetAverageDefense|1]#! on average at full [concept_manpower]"
+ MILITARY_FORMATION_STAT_BREAKDOWN_SECTION: "\n$TOOLTIP_DELIMITER$\n#title Due to:#!#indent_newline:3 \n$BREAKDOWN$#!"
+ FORMATION_COMMANDER_STAT_DECIMAL_BASE_ENTRY: "$VALUE|v1$ on average from $TITLE$"
+ FORMATION_COMMANDER_STAT_DECIMAL_COMMANDER_ENTRY: "$VALUE|v1=$ from [Character.GetFullName] as [Character.GetPrimaryRoleTitle]"
+ MILITARY_FORMATION_STAT_FROM_UNITS: "all [Concept('concept_unit','$concept_units$')]"
 
  FORMATION_STATUS_TRAVELING_TO_FRONT_SHORT: "Traveling to [Front.GetName] ([MilitaryFormation.GetTravelDaysLeft|v]d)"
  FORMATION_STATUS_TRAVELING_TO_SEA_NODE_SHORT: "Traveling to [Province.GetStateRegion.GetName] ([MilitaryFormation.GetTravelDaysLeftFormatted]d)"
@@ -2015,6 +2055,30 @@
  FORMATION_STATUS_RETROFITTING_SHIPS: "Retrofitting $SHIPS_CONCEPT$ ([MilitaryFormation.GetRetrofitProgress|0%v])"
  FORMATION_STATUS_RETROFITTING_SHIPS_SHORT: "Retrofitting $concept_ships$"
 
+ FORMATION_STATUS_TRAVELING_TO_PORT_FOR_REPAIRS: "Traveling to [State.GetName] to restore [concept_fleet_hit_points] and refill [concept_ship_crew] ($TRAVEL_DAYS$ days left, currently in [MilitaryFormation.GetLocationString])"
+ FORMATION_STATUS_TRAVELING_TO_PORT_FOR_REPAIRS_SHORT: "Returning to [State.GetName] for repairs ($TRAVEL_DAYS$d)"
+ FORMATION_STATUS_REPAIRING_AT_PORT: "Docked, restoring [concept_fleet_hit_points] and refilling [concept_ship_crew]"
+ FORMATION_STATUS_REPAIRING_AT_PORT_SHORT: "Repairing and refilling crew"
+
+ FORMATION_STATUS_TRAVELING_TO_MERGE: "Traveling to merge with [MILITARY_FORMATION.GetName] ($TRAVEL_DAYS$ days left, currently in [MilitaryFormation.GetLocationString])"
+ FORMATION_STATUS_TRAVELING_TO_MERGE_SHORT: "Merging with [MILITARY_FORMATION.GetName] ($TRAVEL_DAYS$d)"
+
+ FORMATION_STATUS_TRAVELING_TO_SUPPORT_INVASION: "Traveling to support [MILITARY_FORMATION.GetName] for a $concept_naval_invasion$ ($TRAVEL_DAYS$ days left, currently in [MilitaryFormation.GetLocationString])"
+ FORMATION_STATUS_TRAVELING_TO_SUPPORT_INVASION_SHORT: "Supporting [MILITARY_FORMATION.GetName] for $concept_naval_invasion$ ($TRAVEL_DAYS$d)"
+
+ FORMATION_STATUS_TRAVELING_TO_NAVAL_MISSION: "Deploying to $concept_naval_mission$ area in [Province.GetStateRegion.GetName] ($TRAVEL_DAYS$ days left, currently in [MilitaryFormation.GetLocationString])"
+ FORMATION_STATUS_TRAVELING_TO_NAVAL_MISSION_SHORT: "Deploying to $concept_naval_mission_short$ in [Province.GetStateRegion.GetName] ($TRAVEL_DAYS$d)"
+
+ FORMATION_STATUS_TRANSPORTING_TO_STATE: "Transporting [concept_army] to [State.GetName] ($TRAVEL_DAYS$ days left, currently in [MilitaryFormation.GetLocationString])"
+ FORMATION_STATUS_TRANSPORTING_TO_STATE_SHORT: "Transporting [concept_army] to [State.GetName] ($TRAVEL_DAYS$d)"
+
+ FORMATION_STATUS_AWAITING_NEW_FRONTS: "Loitering, waiting for a $concept_front$ to deploy to"
+ FORMATION_STATUS_AWAITING_NEW_FRONTS_SHORT: "Waiting for a $concept_front$"
+ FORMATION_STATUS_NO_PATH_FOUND: "Loitering, no path could be found to the target"
+ FORMATION_STATUS_NO_PATH_FOUND_SHORT: "No path to target"
+ FORMATION_STATUS_AWAITING_EMBARKATION: "Loitering, waiting to embark on a [concept_fleet]"
+ FORMATION_STATUS_AWAITING_EMBARKATION_SHORT: "Waiting to embark"
+
  TRAVEL_DAYS_LEFT_FORMATTED: "#v $VALUE$#!"
  FLEET_TRAVEL_DAYS_LEFT_FORMATTED: "#tooltippable #tooltip:$BREAKDOWN_TAG$ #v $VALUE$#!#!#!"
  FLEET_TRAVEL_DAYS_LEFT_TOOLTIP: "#header Travel Time#!\n#v $VALUE$#! days\n$TOOLTIP_DELIMITER$\n#v $DISTANCE|D$#! Distance\n#v $SPEED|D$#!/day [concept_ship_speed]"
@@ -2023,7 +2087,8 @@
  COMBAT_UNIT_TYPES_CONCEPT: "[Concept('concept_combat_unit_type', '$concept_combat_unit_types$')]"
  COMBAT_UNITS_CONCEPT: "[Concept('concept_unit', '$concept_units$')]"
 
- MILITARY_FORMATION_BLOCKADE_TOOLTIP: "#header Maximum [concept_blockade] Strength#!\n@blockade_strength! [MilitaryFormation.GetBlockadeStrengthMax|vK] for [MilitaryFormation.GetName]\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetBlockadeStrength|vK] current strength due to [MilitaryFormation.GetSeaPresence|v%0] [concept_presence].\n[MilitaryFormation.GetName] must reach at least #variable 50%#! $concept_presence$ until they have an effective $concept_blockade$."
+ MILITARY_FORMATION_BLOCKADE_TOOLTIP: "#header [concept_blockade_strength]#!\n@blockade_strength! #v [MilitaryFormation.GetBlockadeStrengthMax|D]#! at full [concept_presence][AddLocalizationIf(NotEqualTo_CFixedPoint(MilitaryFormation.GetBlockadeStrength, MilitaryFormation.GetBlockadeStrengthMax), 'MILITARY_FORMATION_BLOCKADE_CURRENT_ROW')]\n$TOOLTIP_DELIMITER$\nCurrently at #v [MilitaryFormation.GetSeaPresence|%0]#! [concept_presence], needing at least #v [GetDefine('NMilitary','BLOCKADE_SEA_PRESENCE_THRESHOLD')|%0]#! for an effective [concept_blockade]."
+ MILITARY_FORMATION_BLOCKADE_CURRENT_ROW: "\n@blockade_strength! #v [MilitaryFormation.GetBlockadeStrength|D]#! currently"
 
  MILITARY_FORMATION_ATTRITION_RISK_ICON: "[SelectLocalization(MilitaryFormation.IsArmy, 'MILITARY_FORMATION_ATTRITION_RISK_ICON_ARMY', 'MILITARY_FORMATION_ATTRITION_RISK_ICON_NAVY')]"
  MILITARY_FORMATION_ATTRITION_RISK_ICON_ARMY: "[SelectLocalization(GreaterThan_CFixedPoint(MilitaryFormation.GetAttritionRaw, GetStaticModifier('base_army_attrition').GetValueFor('military_formation_attrition_risk_add')), '@high_attrition!', '@attrition!')]"
@@ -2037,7 +2102,7 @@
  MILITARY_FORMATION_ATTRITION_RISK_ICON_ARMY_VAL: "[SelectLocalization(GreaterThan_CFixedPoint(MilitaryFormation.GetAttritionRaw, GetStaticModifier('base_army_attrition').GetValueFor('military_formation_attrition_risk_add')), '@high_attrition!', '@attrition!')]"
  MILITARY_FORMATION_ATTRITION_RISK_ICON_NAVY_VAL: "[SelectLocalization(GreaterThan_CFixedPoint(MilitaryFormation.GetAttritionRaw, GetStaticModifier('base_army_attrition').GetValueFor('military_formation_attrition_risk_add')), '@high_attrition!', '@attrition!')]"
  MILITARY_FORMATION_ATTRITION: "$MILITARY_FORMATION_ATTRITION_RISK_ICON$ [MilitaryFormation.GetAverageAttritionPerWeek|%1^-]"
- MILITARY_FORMATION_ATTRITION_DESC: "#header [concept_attrition] in [MilitaryFormation.GetName]#!\nCurrent: $MILITARY_FORMATION_ATTRITION_RISK_ICON_VAL$[Nbsp][MilitaryFormation.GetAverageAttritionPerWeek|%1^-]\n$TOOLTIP_DELIMITER$\n#indent_newline:3 [Concept('concept_unit', '$concept_units$')] in [MilitaryFormation.GetName] will suffer [MilitaryFormation.GetAverageAttritionPerWeek|%1^-] [concept_casualties] per week (#v $CASUALTIES|0-$#! @manpower![Nbsp][concept_manpower]) on average, due to:\n#indent_newline:3 $MILITARY_FORMATION_ATTRITION_RISK_ICON_VAL$[Nbsp]$VAL|0%-$ weekly [concept_attrition] risk\n$BREAKDOWN$#!\n$MIN|0%v$ to $MAX|0%v$ $concept_casualties$ when subjected to $concept_attrition$#!"
+ MILITARY_FORMATION_ATTRITION_DESC: "#header [concept_attrition] in [MilitaryFormation.GetName]#!\n$MILITARY_FORMATION_ATTRITION_RISK_ICON_VAL$[Nbsp][MilitaryFormation.GetAverageAttritionPerWeek|%1^-] per week\n$TOOLTIP_DELIMITER$\n#indent_newline:3 #title [MilitaryFormation.GetAverageAttritionPerWeek|%1^-] [concept_casualties] per week (@manpower! #v $CASUALTIES|0-$#!) on average, due to:#!\n#indent_newline:3 $MILITARY_FORMATION_ATTRITION_RISK_ICON_VAL$[Nbsp]$VAL|0%-$ weekly [concept_attrition] risk\n$BREAKDOWN$#!\n$MIN|0%v$ to $MAX|0%v$ $concept_casualties$ when subjected to $concept_attrition$#!"
  MILITARY_FORMATION_ATTRITION_DESC_BASE: "$TAB$Base Attrition Risk: #v $VAL|%0-$#!"
  MILITARY_FORMATION_ATTRITION_RISK_EXILE_PENALTY: "$VAL|%-=^2$ from being @exiled_state![Nbsp][Concept('concept_exiled_army','$concept_exiled_army_short$')]"
  MILITARY_FORMATION_ATTRITION_RISK_ON_ENEMY_TERRITORY: "$VAL|%-=^2$ from being on enemy territory"
@@ -2055,7 +2120,8 @@
 
  SUPPLY_NETWORK_MAPMARKER_HEADER:2 "[GetPlayer.GetAdjectiveNoFormatting] [concept_supply_network] details:"
  SUPPLY_NETWORK_DESC:2 "$SUPPLY_NETWORK_MAPMARKER_HEADER$\n$NUM_CONVOYS_NO_DAMAGE$\n$USED_CONVOYS$\n$NUM_SEA_NODES$\n$SUPPLY_NETWORK_STRENGTH$"
- SEA_NODE_TOOLTIP: "#header [concept_sea_node] in [SeaNodeMarker.GetProvince.GetStateRegion.GetStrategicRegion.GetNameNoFormatting]#!\n$TOOLTIP_DELIMITER$\n[MakeParagraphIf(GetPlayer.HasAccessToFriendlyPort(SeaNodeMarker.GetProvince.Self), 'SEA_NODE_CLOSEST_FRIENDLY_PORT')][SeaNodeMarker.GetSupplyNetworkTooltip]"
+ SEA_NODE_TOOLTIP: "[SelectLocalization(SeaNodeMarker.ShouldShowInteraction, SeaNodeMarker.GetSupplyNetworkTooltip, 'SEA_NODE_STATUS_TOOLTIP')]"
+ SEA_NODE_STATUS_TOOLTIP: "#header [concept_sea_node] in [SeaNodeMarker.GetProvince.GetStateRegion.GetStrategicRegion.GetNameNoFormatting]#!\n$TOOLTIP_DELIMITER$\n[MakeParagraphIf(GetPlayer.HasAccessToFriendlyPort(SeaNodeMarker.GetProvince.Self), 'SEA_NODE_CLOSEST_FRIENDLY_PORT')][SeaNodeMarker.GetSupplyNetworkTooltip]"
  SEA_NODE_CLOSEST_FRIENDLY_PORT: "#title Closest friendly port:#!\n$TAB$[GetPlayer.GetClosestFriendlyPort(SeaNodeMarker.GetProvince.Self).GetState.GetOwner.GetFlagTextIcon] [GetPlayer.GetClosestFriendlyPort(SeaNodeMarker.GetProvince.Self).GetState.GetName] ([GetPlayer.GetDistanceToClosestFriendlyPort(SeaNodeMarker.GetProvince.Self)|v] [SelectLocalization(GreaterThan_int32(GetPlayer.GetDistanceToClosestFriendlyPort(SeaNodeMarker.GetProvince.Self), '(int32)1'), '$concept_sea_nodes$', '$concept_sea_node$')] away)"
  SEA_NODE_SUPPLY_NETWORK_DESC: "[ConcatIfNeitherEmpty('#title Ports connected via this $concept_sea_node$:#!\n', '$CONNECTED_STATES$')]"
 
@@ -2073,7 +2139,7 @@
  MOVEMENT_MARKER_TRAVEL_TIME_WITH_DISTANCE_BREAKDOWN_ENTRY: "#v #tooltippable #tooltip:$BREAKDOWN$ $TRAVEL_TIME$#!#!#! days - $MOVEMENT_MARKER_FORMATION_LIST_ENTRY$"
  FLEET_TRAVEL_TIME_TOOLTIP: "#header Travel Time#!\n#v $TRAVEL_TIME$#! days\n$TOOLTIP_DELIMITER$\n#v $DISTANCE|D$#! Distance\n#v $SPEED|D$#!/day [concept_ship_speed]"
 
- SEA_NODE_MOVEMENT_MARKER_TOOLTIP: "#header [SeaNodeMovementMarker.GetSeaNode.GetStateRegion.GetName]#!\n[SelectLocalization(SeaNodeMovementMarker.HasActiveSupplyNetwork, SeaNodeMovementMarker.GetActiveSupplyNetworkDesc, 'NO_ACTIVE_SUPPLY_NETWORK')][ConcatIfNeitherEmpty('\n', SeaNodeMovementMarker.GetConvoyRaidingDesc)][ConcatIfNeitherEmpty('\n', SeaNodeMovementMarker.GetInvasionDesc)]\n$TOOLTIP_DELIMITER$\n[MakeParagraphIf(GetPlayer.HasAccessToFriendlyPort(SeaNodeMovementMarker.GetSeaNode.Self), 'SEA_NODE_MOVEMENT_MARKER_CLOSEST_FRIENDLY_PORT')]$SEA_NODE_MOVEMENT_MARKER_RIGHT_CLICK_ERRORS$[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(SeaNodeMovementMarker.IsAllSelectedFormationsTarget, 'SEA_NODE_TRAVEL_TIME'))][AddLocalizationIf(SeaNodeMovementMarker.GetSeaNode.WouldAddSeaRegionToSelectedFleetMissions, 'SEA_NODE_MOVEMENT_MARKER_RIGHT_CLICK_PROMPT_ADD_REGION')][AddLocalizationIf(SeaNodeMovementMarker.GetSeaNode.WouldAssignSelectedFleetsToNewMission('naval_mission_type_project_power'), 'SEA_NODE_MOVEMENT_MARKER_RIGHT_CLICK_PROMPT_NEW_MISSION')][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(StringIsEmpty(SeaNodeMovementMarker.GetPresentFormationsBreakdown)), 'SEA_NODE_MOVEMENT_MARKER_PRESENT_FORMATIONS'))]"
+ SEA_NODE_MOVEMENT_MARKER_TOOLTIP: "#header [SeaNodeMovementMarker.GetSeaNode.GetStateRegion.GetName]#!\n[SelectLocalization(SeaNodeMovementMarker.HasActiveSupplyNetwork, SeaNodeMovementMarker.GetActiveSupplyNetworkDesc, 'NO_ACTIVE_SUPPLY_NETWORK')][ConcatIfNeitherEmpty('\n', SeaNodeMovementMarker.GetConvoyRaidingDesc)][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(SeaNodeMovementMarker.AreSelectedFleetsRaidingSupply, 'SEA_NODE_SUPPLY_RAID_SUMMARY'))][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(SeaNodeMovementMarker.AreSelectedFleetsProtectingSupply, 'SEA_NODE_SUPPLY_PROTECT_SUMMARY'))][ConcatIfNeitherEmpty('\n\n', SeaNodeMovementMarker.GetInvasionDesc)]\n$TOOLTIP_DELIMITER$\n[MakeParagraphIf(GetPlayer.HasAccessToFriendlyPort(SeaNodeMovementMarker.GetSeaNode.Self), 'SEA_NODE_MOVEMENT_MARKER_CLOSEST_FRIENDLY_PORT')]$SEA_NODE_MOVEMENT_MARKER_RIGHT_CLICK_ERRORS$[ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(SeaNodeMovementMarker.IsAllSelectedFormationsTarget, 'SEA_NODE_TRAVEL_TIME'))][AddLocalizationIf(SeaNodeMovementMarker.GetSeaNode.WouldAddSeaRegionToSelectedFleetMissions, 'SEA_NODE_MOVEMENT_MARKER_RIGHT_CLICK_PROMPT_ADD_REGION')][AddLocalizationIf(SeaNodeMovementMarker.GetSeaNode.WouldAssignSelectedFleetsToNewMission('naval_mission_type_project_power'), 'SEA_NODE_MOVEMENT_MARKER_RIGHT_CLICK_PROMPT_NEW_MISSION')][ConcatIfNeitherEmpty('\n\n', AddLocalizationIf(Not(StringIsEmpty(SeaNodeMovementMarker.GetPresentFormationsBreakdown)), 'SEA_NODE_MOVEMENT_MARKER_PRESENT_FORMATIONS'))]"
  SEA_NODE_MOVEMENT_MARKER_TOOLTIP_CONVOY_RAIDED: "@warning! Our [concept_supply_network] at [SeaNodeMovementMarker.GetSeaNode.GetStateRegion.GetNameNoFormatting] is being reduced by [SeaNodeMovementMarker.GetConvoyRaidingEnemyFleetsDesc]"
  SEA_NODE_MOVEMENT_MARKER_TOOLTIP_NAVALLY_INVADED: "@warning! Our enemies are commencing a [concept_naval_invasion]. The [concept_sea_node] is currently [SeaNodeMovementMarker.GetInvasionStatus]"
  SEA_NODE_MOVEMENT_MARKER_TOOLTIP_SUPPLY_NETWORK: "#v $SUPPLY_NETWORK_STRENGTH|%$#! [concept_supply_network] strength"
@@ -2086,6 +2152,13 @@
  SEA_NODE_TRAVEL_TIME: "#title Travelling here, will arrive in:#!#indent_newline:3 \n[SeaNodeMovementMarker.GetTravelTimeBreakdown]#!"
  SEA_NODE_SUPPLY_SHIP_PREDICTION_SUMMARY: "@supply! #tooltippable #tooltip:[GetRawTextTooltipTag(SeaNodeMovementMarker.GetSupplyShipPredictionBreakdown)] [SeaNodeMovementMarker.GetSupplyShipPredictionTotalDelta|D=-]#!#! required [Concept('concept_supply_ship', '$concept_supply_ships$')]"
  SEA_NODE_SUPPLY_SHIP_PREDICTION_FLEET_ENTRY: "@supply! #v $DELTA|D=-$#! $MOVEMENT_MARKER_FORMATION_LIST_ENTRY$"
+ SEA_NODE_SUPPLY_RAID_SUMMARY: "#title Supply raiding:#!\n[SelectLocalization(SeaNodeMovementMarker.HasSupplyRaidTargets, 'SEA_NODE_SUPPLY_RAID_VALUES', 'SEA_NODE_SUPPLY_RAID_EMPTY')]"
+ SEA_NODE_SUPPLY_RAID_VALUES: "@supply! #tooltippable #tooltip:[GetRawTextTooltipTag(SeaNodeMovementMarker.GetSupplyRaidTargetsBreakdown)] #v [SeaNodeMovementMarker.GetSupplyShipsPassingThroughNode]#!#!#! enemy [Concept('concept_supply_ship', '$concept_supply_ships$')] passing through\nup to @supply! #v [SeaNodeMovementMarker.GetMaxSupplyShipsDestroyablePerBattle]#! can be sunk per [Concept('concept_naval_battle', '$concept_naval_battle$')]"
+ SEA_NODE_SUPPLY_RAID_EMPTY: "@supply! #v 0#! enemy [Concept('concept_supply_ship', '$concept_supply_ships$')] passing through"
+ SEA_NODE_SUPPLY_RAID_TARGET_ENTRY: "@supply! #v $SUPPLY_SHIPS$#! from [COUNTRY.GetName] (up to #v $PER_BATTLE$#! per $concept_naval_battle$)"
+ SEA_NODE_SUPPLY_PROTECT_SUMMARY: "#title Supply protection:#!\n[SelectLocalization(SeaNodeMovementMarker.HasOwnSupplyShipsPassingThrough, 'SEA_NODE_SUPPLY_PROTECT_VALUES', 'SEA_NODE_SUPPLY_PROTECT_EMPTY')]"
+ SEA_NODE_SUPPLY_PROTECT_VALUES: "@supply! #v [SeaNodeMovementMarker.GetOwnSupplyShipsPassingThroughNode]#! of your [Concept('concept_supply_ship', '$concept_supply_ships$')] passing through\nup to @supply! #v [SeaNodeMovementMarker.GetMaxSupplyShipsProtectablePerBattle]#! can be protected per [Concept('concept_naval_battle', '$concept_naval_battle$')]"
+ SEA_NODE_SUPPLY_PROTECT_EMPTY: "@supply! #v 0#! of your [Concept('concept_supply_ship', '$concept_supply_ships$')] passing through"
  NO_ACTIVE_SUPPLY_NETWORK: "#title You have no active [concept_supply_network] here#!"
  SEA_NODE_MOVEMENT_MARKER_PRESENT_FORMATIONS: "#title Present [Concept('concept_military_formation', '$concept_military_formations$')]:#indent_newline:3 \n[SeaNodeMovementMarker.GetPresentFormationsBreakdown]#!"
 
@@ -2123,7 +2196,10 @@
  SUPPLY_NETWORK_STRENGTH:0 "Supply Network Strength: #$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
  SUPPLY_NETWORK_STRENGTH_TEXT:0 "Supply Network Strength:"
  SUPPLY_NETWORK_STRENGTH_VALUE:0 "#$SUPPLY_NETWORK_STRENGTH_COLOR$ [Country.GetSupplyNetworkStrength|%0]#!"
- SUPPLY_NETWORK_STRENGTH_TOOLTIP:1 "#header [concept_shipping_lane_effectiveness]#!\nHow many [GetGoods('merchant_marine').GetName] are available versus required"
+ SUPPLY_NETWORK_STRENGTH_TOOLTIP:1 "#header [concept_shipping_lane_effectiveness]#!\n#v [Country.GetSupplyNetworkStrength|%0]#! [SelectLocalization(NotZero_CFixedPoint(Country.GetSupplyNetworkStrengthWeeklyChange), 'SUPPLY_NETWORK_TREND_DETAIL_TRENDING', 'SUPPLY_NETWORK_TREND_DETAIL_HOLDING')]"
+ SUPPLY_NETWORK_TREND_DETAIL_TRENDING: "(Trending #v [Country.GetSupplyNetworkStrengthWeeklyChange|%0+]#! per week towards #tooltippable #tooltip:[Country.GetTooltipTag],SUPPLY_NETWORK_TARGET_BREAKDOWN_TOOLTIP #v [Country.GetSupplyNetworkStrengthTarget|%0]#!#!#!)"
+ SUPPLY_NETWORK_TREND_DETAIL_HOLDING: "(holding at #v [Country.GetSupplyNetworkStrength|%0]#!)"
+ SUPPLY_NETWORK_TARGET_BREAKDOWN_TOOLTIP: "#header [Country.GetMarket.GetName]:#!\n#v [GetGoods('merchant_marine').WithMarketContext(Country.GetMarket.Self).GetMarketSellOrders|D]#! @merchant_marine! [GetGoods('merchant_marine').GetNameNoIcon] [concept_sell_orders]\n#v [GetGoods('merchant_marine').WithMarketContext(Country.GetMarket.Self).GetMarketBuyOrders|D]#! @merchant_marine! [GetGoods('merchant_marine').GetNameNoIcon] [concept_buy_orders]\n#v [GetGoods('merchant_marine').WithMarketContext(Country.GetMarket.Self).GetSupplyDemandRatio|%0]#! supply / demand ratio (a [concept_shortage] starts below the #v [GetDefine('NEconomy','SUPPLY_NETWORK_SHORTAGE_THRESHOLD')|%0]#! threshold)\n#v [Country.GetMerchantMarineShortageTarget|%0]#! $concept_shortage$ penalty (scaling from #v [GetDefine('NEconomy','SUPPLY_NETWORK_SHORTAGE_PENALTY_MIN')|%0]#! to #v [GetDefine('NEconomy','SUPPLY_NETWORK_SHORTAGE_PENALTY_MAX')|%0]#! the further supply falls below the threshold)\n#v [Country.GetSupplyNetworkStrengthTarget|%0]#! resulting target [Concept('concept_shipping_lane_effectiveness', 'Effectiveness')] (#v 100%#! - #v [Country.GetMerchantMarineShortageTarget|%0]#!)"
  NUM_SEA_NODES:1 "Sea Nodes: #v [Country.GetSupplyNetworkNumSeaNodes]#!"
  NUM_SEA_NODES_TEXT:0 "Sea Nodes:"
  NUM_SEA_NODES_VALUE:0 "[Country.GetSupplyNetworkNumSeaNodes]"
@@ -2737,6 +2813,10 @@
  FRONT_PRESENT_ARMIES_ENEMY: "#v [GetDataModelSize(Front.GetPlayerEnemySide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Enemy)"
  FRONT_PRESENT_ARMIES_INITIATOR: "#v [GetDataModelSize(Front.GetInitiatorSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Initiator)"
  FRONT_PRESENT_ARMIES_TARGET: "#v [GetDataModelSize(Front.GetTargetSide.GetArmies)]#! [Concept( 'concept_army', '$concept_armies$' )] (Target)"
+
+ FRONT_OCCUPATION_PROGRESS_SIDE_ADVANCING_DECISIVELY: "[COUNTRY.GetName] is #v decisively advancing#! on this front"
+ FRONT_OCCUPATION_PROGRESS_SIDE_ADVANCING: "[COUNTRY.GetName] is #v advancing#! on this front"
+ FRONT_OCCUPATION_PROGRESS_NEITHER: "The front is currently stalemated"
 
  SEA_REGION_PANEL_NO_PRESENT_FLEETS: "No present [Concept( 'concept_fleet', '$concept_fleets$' )] on this side"
  SEA_REGION_PANEL_NO_PRESENT_NEUTRAL_FLEETS: "No present neutral [Concept( 'concept_fleet', '$concept_fleets$' )]"
@@ -3538,13 +3618,14 @@
  THESE_FLEETS_HAVE: "These $concept_fleets$ have"
  THIS_FLEET_HAS: "This $concept_fleet$ has"
  NAVAL_INVASION_FORTIFICATION_BUTTON_TITLE: "[Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetNameNoFormatting] in [Invasion.GetTargetState.GetName]"
- NAVAL_INVASION_FORTIFICATION_REQUIREMENTS: "#v [Invasion.GetNeededPowerProjection|0]#! needed [concept_power_projection] to break through [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] in [Invasion.GetTargetState.GetName]"
- NAVAL_INVASION_ASSIGNED_POWER_PROJECTION: "#tooltippable #tooltip:[Invasion.GetTooltipTag],NAVAL_INVASION_PP_BREAKDOWN #v [Invasion.GetTotalPowerProjection]#!#!#! [concept_power_projection] assigned"
- NAVAL_INVASION_PP_BREAKDOWN: "#header #v [Invasion.GetTotalPowerProjection]#! Assigned [concept_power_projection]#!\n$TOOLTIP_DELIMITER$\n[Invasion.GetTotalPowerProjectionBreakdown]"
+ NAVAL_INVASION_FORTIFICATION_REQUIREMENTS: "[Invasion.GetTargetStateFortificationBreakdown]"
+ NAVAL_INVASION_ASSIGNED_POWER_PROJECTION: "#tooltippable #tooltip:[Invasion.GetTooltipTag],NAVAL_INVASION_PP_BREAKDOWN #v [Invasion.GetTotalPowerProjection|0]#!#!#! currently"
+ NAVAL_INVASION_PP_BREAKDOWN: "#header #v [Invasion.GetTotalPowerProjection|0]#! Assigned [concept_power_projection]#!\n$TOOLTIP_DELIMITER$\n[Invasion.GetTotalPowerProjectionBreakdown]"
  INVASION_POWER_PROJECTION_BREAKDOWN_ENTRY: "#indent_newline:3 #v [MilitaryFormation.GetPowerProjection]#! [MilitaryFormation.GetName]"
  NAVAL_INVASION_NO_FORTIFICATION: "A [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] in [Invasion.GetTargetState.GetName] would provide additional defense against landing battles"
- NAVAL_INVASION_REQUIRED_POWER_PROJECTION: "@green_checkmark_box! Invading Army has at least #v 100#! [concept_power_projection] to break through [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName]"
- NAVAL_INVASION_NOT_REQUIRED_POWER_PROJECTION: "@simple_box! Invading Army has at least #v 100#! [concept_power_projection] to break through [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] (#v [Invasion.GetTotalPowerProjection]#! currently)"
+ NAVAL_INVASION_REQUIRED_POWER_PROJECTION: "@green_checkmark_box! Invading Army has at least #v 100#! [concept_power_projection] to break through [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] ($NAVAL_INVASION_ASSIGNED_POWER_PROJECTION$)"
+ NAVAL_INVASION_NOT_REQUIRED_POWER_PROJECTION: "@simple_box! Invading Army has at least #v 100#! [concept_power_projection] to break through [Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] (#v [Invasion.GetTotalPowerProjection|0]#! currently)"
+ NAVAL_INVASION_STATE_UNIT_DEFENSE_HEADER: "[Invasion.GetTargetState.GetBuilding('building_naval_fortification').GetName] in [Invasion.GetTargetState.GetName] provide additional defense against landing [Concept('concept_battle','$concept_battles$')]\n"
 
  CANCEL_INVASION: "Cancel Invasion"
  CANCEL_INVASION_TOOLTIP: "#header Cancel this [concept_invasion]#![ConcatIfNeitherEmpty('\n', GetDesc(Invasion.Cancel))]"
@@ -3873,6 +3954,7 @@
  POWER_BLOC_ADDED_LEVERAGE_GAIN_FROM_DIPLOMATIC_PACT: "#v $VALUE|+=0$#! from [DIPLOMATIC_PACT.GetName]"
  POWER_BLOC_LEVERAGE_GAIN_FROM_TREATY_ARTICLE: "#v $VALUE|%=+1$#! from [TREATY_ARTICLE.GetName]"
  POWER_BLOC_ADDED_LEVERAGE_GAIN_FROM_TREATY_ARTICLE: "#v $VALUE|+=0$#! from [TREATY_ARTICLE.GetName]"
+ POWER_BLOC_LEVERAGE_GAIN_FROM_INVOLVEMENT_MULT: "#v $VALUE|%=+0$#! from [INTEREST_TIER_TYPE.GetNameNoIcon] [concept_interest] in [COUNTRY.GetName]"
  POWER_BLOC_LEVERAGE_PENALTY_FROM_EXPELLED_DIPLOMATS: "Expelled diplomats"
  POWER_BLOC_LEVERAGE_GAIN_IN_COMMON_WAR: "Common [concept_war]"
  POWER_BLOC_LEVERAGE_GAIN_NOT_IN_COMMON_WAR: "No common [concept_war]"
@@ -4010,6 +4092,7 @@
  TOTAL_TRADE_CENTER: "[GetBuildingType('building_trade_center').GetName] size:"
  TOTAL_MANOR_HOUSE: "[GetBuildingType('building_manor_house').GetName] size:"
  TOTAL_FINANCIAL_DISTRICT: "[GetBuildingType('building_financial_district').GetName] size:"
+ TOTAL_HOLDING: "[Building.GetName] size:"
  TOTAL_BARRACKS: "[GetBuildingType('building_barrack').GetName] size:"
  TOTAL_CONSCRIPTION_CENTER: "[GetBuildingType('building_conscription_center').GetName] size:"
  TOTAL_NAVAL_ADMINISTRATION: "[GetBuildingType('building_naval_administration').GetName] size:"
@@ -4587,7 +4670,8 @@
  POTENTIAL_LEADER_IDEOLOGY_NON_SPECIFIC_LEADER: "a #b [IDEOLOGY.GetNameNoFormatting]#!"
  INTEREST_GROUP_NEXT_LEADER_POLITICAL_OUTSIDER: "A new [Ideology.GetName] [concept_politician] would appear and become leader of the [concept_interest_group]."
 
- PROMINENCE_AND_ROLES_OF_CHARACTERS: "[concept_prominence] and [Concept( 'concept_character_role', '$concept_character_roles$' )] of #b $IDEOLOGY$s#!"
+ PROMINENCE_AND_ROLES_OF_CHARACTERS: "[concept_prominence] and [Concept( 'concept_character_role', '$concept_character_roles$' )] of [IDEOLOGY.GetName] [Concept('concept_character', '$concept_characters$')]"
+ PROMINENCE_AND_ROLES_WITH_BREAKDOWN: "$KEY$: #tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE|+=0$#!#!"
  MOVEMENT_PRESSURE: "[concept_political_movement_pressure]"
 
  STATE_PANEL_POLLUTION: "[concept_pollution_impact]\n$STATE_POLLUTION_CONDENSED$"
@@ -4603,10 +4687,10 @@
  STATE_BLOCKADE_LEVEL: "[Concept('concept_blockade','$concept_blockade_level$')]\n[State.GetBlockadeLevel|%-0]"
  TOOLTIP_STATE_BLOCKADE_LEVEL: "#header [Concept('concept_blockade','$concept_blockade_level$')]#!\n[State.GetBlockadeLevel|%-0] in [State.GetName] ([State.GetCurrentBlockadeStrength|vK]/[State.GetRequiredBlockadeStrength|vK] $concept_blockade$ strength)\n$TOOLTIP_DELIMITER$\n[State.GetBlockadeEffectsDesc]"
  STATE_BOMBARDMENT: "$port_bombardment$"
- TOOLTIP_STATE_BOMBARDMENT: "#header $port_bombardment$#!\n[State.GetName] is under bombardment by hostile fleets.\n$TOOLTIP_DELIMITER$\nBombardment generates [concept_devastation] and may damage coastal buildings.\nCountered by Naval Fortifications.\n\n$concept_devastation$ from bombardment is limited to a maximum of [GetDefine('NMilitary', 'BOMBARDMENT_DEVASTATION_MAX')|-0/%].\n\n#v #tooltippable #tooltip:[GetRawTextTooltipTag(State.GetDailyDevastationIncreaseFromBombardmentBreakdown)] [State.GetDailyDevastationIncreaseFromBombardment|=-%/]#!#!#! current daily $concept_devastation$ increase from bombardment."
+ TOOLTIP_STATE_BOMBARDMENT: "#header $port_bombardment$#!\n[State.GetName] is under bombardment by hostile [Concept('concept_fleet','$concept_fleets$')]\n#v #tooltippable #tooltip:[GetRawTextTooltipTag(State.GetDailyDevastationIncreaseFromBombardmentBreakdown)] [State.GetDailyDevastationIncreaseFromBombardment|=-%/]#!#!#! daily [concept_devastation] from bombardment\n$TOOLTIP_DELIMITER$\nBombardment generates $concept_devastation$ and may damage coastal [Concept('concept_building','$concept_buildings$')]\nCan be countered by [GetBuildingType('building_naval_fortification').GetName]\n\n$concept_devastation$ from bombardment is limited to a maximum of [GetDefine('NMilitary', 'BOMBARDMENT_DEVASTATION_MAX')|-0/%]"
  NO_BOMBARDMENT_STRENGTH: "No [concept_fleet] Bombardment Strength."
- DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH: "#header Daily [concept_devastation] increase from bombardment#!\n[State.GetDailyDevastationIncreaseFromBombardment|=-%/] currently\n$TOOLTIP_DELIMITER$\nDerivation:\n$DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH_BREAKDOWN$"
- DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH_BREAKDOWN: "#tooltippable #tooltip:$STRENGTH_DESC$ $STRENGTH|v0$#!#! [concept_fleet] bombardment strength\nDivided by [STATE.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_fortification_bombardment_resistance_add')|v] $state_fortification_bombardment_resistance_add$\n= #v $EFFECTIVE$%#! effective bombardment (max 1%)#indent_newline:3 \nFinally scaled by $SCALE|v$#!"
+ DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH: "#header Daily [concept_devastation] increase from bombardment#!\n#v [State.GetDailyDevastationIncreaseFromBombardment|=-%/]#! currently\n$TOOLTIP_DELIMITER$\n#title Calculated as:#!#indent_newline:3 \n$DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH_BREAKDOWN$#!"
+ DEVASTATION_FROM_FLEET_BOMBARDMENT_STRENGTH_BREAKDOWN: "#v #tooltippable #tooltip:$STRENGTH_DESC$ $STRENGTH|v0$#!#!#! [concept_fleet] bombardment strength\nDivided by #v [STATE.GetModifier.GetNonFormattedValueWithBreakdownAndNoDecimalsFor('state_fortification_bombardment_resistance_add')|v]#! $state_fortification_bombardment_resistance_add$\n= #v $EFFECTIVE|%^$#! effective bombardment (capped at 100%)\nMultiplied by #v $SCALE|v$#! [concept_devastation] scaling per day\nLimited to #v [GetDefine('NMilitary', 'BOMBARDMENT_DEVASTATION_MAX')|-0/%]#! total [concept_devastation] (currently #v [STATE.GetDevastationLevel|%r1]#!)"
  FLEET_BOMBARDMENT_STRENGTH_SUM: "#header [concept_fleet] bombardment strength#!\n$TOTAL_STRENGTH|v0$ currently\n$TOOLTIP_DELIMITER$\n$FLEETS$"
  FLEET_BOMBARDMENT_STRENGTH: "[MILITARY_FORMATION.GetName]#indent_newline:3 \n$HULL_DAMAGE|v0$ [concept_hull_attack_damage]\nMultiplied by $SEA_PRESENCE_FACTOR|v$ (from $SEA_PRESENCE|v$ sea presence)\nMultiplied by $EFFICIENCY|v%$ [concept_mission_efficiency]\nDivided by $NUM_HOSTILES|v$ hostile coastal states the fleet must cover#!"
 
@@ -4627,8 +4711,12 @@
  MOVEMENT_CAUSING_OBSTINANCE_STATES_BREAKDOWN: "#header The [PoliticalMovement.GetName] is causing [concept_obstinance]#!\nIn #v [PoliticalMovement.GetNumOfObstinateStates]#! [Concept('concept_state','$concept_states$')] currently\n$TOOLTIP_DELIMITER$\n"
 
  STATE_DEVASTATION:1 "[concept_devastation]\n$STATE_DEVASTATION_CONDENSED$"
- TOOLTIP_STATE_DEVASTATION: "#BOLD #V [concept_devastation]#!#!\n #b [State.GetDevastationLevel|%R1]#! Current Devastation\n#b #tooltippable #tooltip:[GetRawTextTooltipTag(State.GetDevastationDailyChangeBreakdown)] [State.GetDevastationDailyChange|%-2]#!#!#! Daily Change\n$TOOLTIP_DELIMITER$\n[State.GetDevastationEffects]"
- DEVASTATION_DECAY_MULT_TOOLTIP_HEADER: "#header [concept_devastation] Recovery #!\n $DAILY_CHANGE|%-2$ Daily change \n $TOOLTIP_DELIMITER$ \n #title Due to:#! \n"
+ TOOLTIP_STATE_DEVASTATION: "#header [concept_devastation]#!\n #v [State.GetDevastationLevel|%r1]#! in [State.GetController.GetFlagTextIcon] [State.GetName]\n#b #tooltippable #tooltip:[GetRawTextTooltipTag(State.GetDevastationDailyChangeBreakdown)] [State.GetDevastationDailyChange|%-2=]#!#!#! per day\n$TOOLTIP_DELIMITER$\n[State.GetDevastationEffects]"
+ DEVASTATION_DECAY_MULT_TOOLTIP_HEADER: "#header [concept_devastation] daily change#!\n$DAILY_CHANGE|%-2=$ per day\n$TOOLTIP_DELIMITER$\n#title Due to:#!\n"
+ DEVASTATION_DAILY_CHANGE_RECOVERY: "#v #tooltippable #tooltip:$DETAIL$ $VALUE|%-2=$#!#!#! from [concept_devastation] recovery"
+ DEVASTATION_DAILY_CHANGE_OCCUPATION: "#v $VALUE|%-2$#! from hostile [concept_occupation]"
+ DEVASTATION_DAILY_CHANGE_FROM_BOMBARDMENT: "#v #tooltippable #tooltip:$DETAIL$ $VALUE|%-2=$#!#!#! from $port_bombardment$"
+ DEVASTATION_RECOVERY_BREAKDOWN: "#header [concept_devastation] recovery#!\n#v $VALUE|%-2=$#! per day\n$TOOLTIP_DELIMITER$\n#v $BASE|%-3=$#! base recovery\nIncreased by #v #tooltippable #tooltip:$DETAIL$ $MULT|%0=$#!#!#! recovery speed"
  STATE_TURMOIL:1 "[concept_turmoil]\n$STATE_TURMOIL_CONDENSED$"
  TOOLTIP_STATE_TURMOIL:0 "#BOLD #V [concept_turmoil]#!#!\n[concept_turmoil] from [concept_radical] [Concept('concept_pop', '$concept_pops$')]: #b [State.CalcTurmoil|%2-]#!\n$TOOLTIP_DELIMITER$\n[State.GetTurmoilEffects]"
  STATE_TURMOIL_EFFECTS_MULT_DESC:1 "Effects of [concept_turmoil] multiplied by $MULT|%=-$ due to:\n#b $MODIFIER_NAME$:#!\n$DETAILS$"
@@ -4667,7 +4755,7 @@
  INCORPORATE:0 "[Concept('concept_incorporated_state','$concept_incorporate$')] @bur![State.PredictBureaucracyCost|1v]"
 
  INCORPORATION_TIME_SAME_CULTURE:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of [State.GetOwner.GetName] due to its [Culture.GetName] [concept_culture]."
-#TODO PRCAL-37739 Update keys to properly describe why they're happening with heritage/language and trait groups
+ #TODO PRCAL-37739 Update keys to properly describe why they're happening with heritage/language and trait groups
  INCORPORATION_TIME_SAME_HERITAGE_OR_LANGUAGE: "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of the [Culture.GetName] [concept_culture], which shares the [concept_heritage_trait] [DiscriminationTrait.GetName] with another $concept_culture$ in [State.GetOwner.GetName]."
  INCORPORATION_TIME_SAME_TRAIT_GROUP:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since it is a [concept_homeland] of the [Culture.GetName] [concept_culture], which shares the [Concept('concept_discrimination_trait_group','$concept_discrimination_trait_group_short$')] [DiscriminationTraitGroup.GetName] with another $concept_culture$ in [State.GetOwner.GetName]."
  INCORPORATION_TIME_NO_MATCH:0 "It takes $YEARS|v0$ years in total to [Concept('concept_incorporated_state','$concept_incorporate$')] [State.GetName] since its [Concept('concept_homeland','$concept_homelands$')] have nothing in common with any $concept_cultures$ in [State.GetOwner.GetName]."
@@ -5467,6 +5555,8 @@
  WARGOAL_CONTESTATION_CONTROL_OWN_STATE: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of [TARGET_STATE.GetCountry.GetFlagTextIcon] [TARGET_STATE.GetName]#!"
  WARGOAL_CONTESTATION_CONTROL_OWN_CAPITAL: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of the [COUNTRY.GetAdjective] [Concept('concept_capital_state','$concept_capital_state_short$')] ([COUNTRY.GetCapital.GetName])#!"
  WARGOAL_CONTESTATION_CONTROL_ALL_OWN_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of all [COUNTRY.GetAdjective] [Concept('concept_state','$concept_states$')]#!"
+ WARGOAL_CONTESTATION_CONTROL_HALF_OWN_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of at least #v 50%#! of [COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')]#!"
+ WARGOAL_CONTESTATION_CONTROL_HALF_TARGET_COUNTRY_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ at least #v 50%#! of [TARGET_COUNTRY.GetAdjective] [Concept('concept_incorporated_state','$concept_incorporated_states$')]#!"
  WARGOAL_CONTESTATION_CONTROL_ALL_CLAIMED_STATES: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] maintain $concept_control_war_goal_short$ of all [COUNTRY.GetAdjective] [Concept('concept_state','$concept_states$')] [Concept('concept_claim','$concept_claimed$')] by [TARGET_COUNTRY.GetName] ($LIST$)#!"
  WARGOAL_CONTESTATION_CONTROL_ANY_RELEASABLE_STATE: "#indent_newline:3 $TAB$$EFFECT_LIST_BULLET$[COUNTRY.GetName] and its [Concept('concept_ally', '$concept_allies$')] $concept_control_war_goal_short$ at least one [TARGET_COUNTRY.GetAdjective] [concept_state] that can be released as part of [COUNTRY_CREATION.GetName] ($LIST$)#!"
 
@@ -5648,6 +5738,7 @@
  OWNED: "Levels Owned"
  DIVIDENDS: "Dividends"
  OWNERS: "Owners"
+ HOLDING: "[concept_holding] of:"
 
  IN_TOTAL:0 "in Total"
  POP_WEEKLY_INCOME:0 "#bold Weekly Income: #variable @money!$VAL|+D$#!#!\n$BREAKDOWN$\n"
@@ -6339,6 +6430,9 @@
  TAX_INCOME:0 "Taxation Income"
 
  DECLARE_BANKRUPTCY:0 "Declare [concept_bankruptcy]"
+ DECLARED_BANKRUPTCY: "Declared [concept_bankruptcy]"
+ BANKRUPTCY_AFFECTED_BY: "Affected by $concept_bankruptcy$"
+ BANKRUPTCY_TIME_REMAINING: "#v [GetPlayer.GetTimedModifier('declared_bankruptcy').GetTimeLeftFormatted]#!"
  DECLARE_BANKRUPTCY_TOOLTIP:0 "[Country.GetDeclareBankruptcyDesc]"
  DECLARE_BANKRUPTCY_NOT_IN_DEFAULT:0 "We are not in [concept_default]"
  DECLARE_BANKRUPTCY_DESC:1 "#header Declare [concept_bankruptcy]#!\n$TOOLTIP_DELIMITER$\nDeclaring [concept_bankruptcy] will erase our [concept_loans] and bring [GetPlayer.GetName] out of [concept_default], but doing so will have severe domestic consequences for our [concept_country]:\n$EFFECTS$[ConcatIfNeitherEmpty('\n\nNot possible due to:\n','$ERRORS$')]"
@@ -6405,7 +6499,8 @@
  WORLD_MARKET_TOTAL_TRADE_ADVANTAGE_ENTRY: "#tooltippable;tooltip:$BREAKDOWN_TAG$ $ADVANTAGE|vD$#! for [STATE.GetName] ($RELATIVE_ADVANTAGE|=+%0$ $concept_relative_trade_advantage$)"
  WORLD_MARKET_TOTAL_TRADE_ADVANTAGE_BREAKDOWN: "#header Global [concept_trade_advantage]#!\n$TOTAL_ADVANTAGE|vD$ for [Goods.GetName] $DIRECTION$\n$TOOLTIP_DELIMITER$\n$DETAILS$"
 
- ADVANTAGE_FROM_CAPACITY: "$VAL|0%=+$ from $CAPACITY|v$ [concept_trade_capacity] (maximum of $MAX|0%=+$)"
+ ADVANTAGE_FROM_CAPACITY: "$VAL|0%=+$ from $CAPACITY|0v$ [concept_trade_capacity] (maximum of $MAX|0%=+$)"
+ ADVANTAGE_FROM_PRESTIGE_MERCHANT_MARINE: "$VAL|0%=+$ [concept_trade_advantage] from $FRACTION|0v%$ [Concept('concept_prestige_good','$concept_prestige$')] [GetGoods('merchant_marine').GetName] input"
  ADVANTAGE_FROM_WORLD_MARKET_ACCESS: "#n x$VAL|2$#! due to [concept_world_market_access]"
  ADVANTAGE_FROM_OPPOSITE_DIRECTION_TRADE: "#n x$VAL|2$#! due to opposite direction [concept_trade] in the same [concept_market]"
  ADVANTAGE_FROM_POWER_BLOC: "#tooltippable;tooltip:$BREAKDOWN_TAG$ $VAL|D=+v$#! from [concept_power_bloc]"
@@ -7238,6 +7333,7 @@
  POLITICAL_ACTION_EXPAND_MARKET_DESC:0 "expand your market coverage"
  POLITICAL_ACTION_EXPAND_MARKET_PAST_TENSE_DESC:0 "Expanded your market coverage"
  INTERACTION_NOT_ALLOWED_FOR: "This action is not allowed for [COUNTRY.GetName]"
+ ACTION_REDUNDANT: "This action is already in effect"
 
  CANNOT_AFFORD_LAW:0 "You cannot afford @aut!#variable $VAL$#!"
  LAW_HAS_NOT_PASSED_COOLDOWN:0 "You must wait until #variable $DATE$#! before you can make changes to your $TYPE$."
@@ -7784,7 +7880,7 @@
 
  ESTABLISH_COLONY_STATE_NOT_VALID:1 "Target is not a valid [concept_state]."
  ESTABLISH_COLONY_REVOLUTIONARY:0 "Revolutionary states cannot [Concept('concept_colony','$concept_colonize$')] states until civil war has ended."
- ESTABLISH_COLONY_NO_INTEREST:1 "We must have an [concept_interest] in $REGION|v$ to [Concept('concept_colony','$concept_colonize$')] here." #TODO PRCAL-43188: Clarify you need tier 2 interest
+ ESTABLISH_COLONY_NO_INTEREST:1 "We must have [concept_interest_tier] [INTEREST_TIER_TYPE.GetRank|v]: [INTEREST_TIER_TYPE.GetNameNoFormatting|v] in $REGION|v$ to [Concept('concept_colony','$concept_colonize$')] here."
  ESTABLISH_COLONY_TYPE_NOT_VALID:1 "[concept_colony] type is not valid."
  ESTABLISH_COLONY_TARGET_COUNTRY_NOT_VALID:1 "There are no valid targets for [Concept('concept_colony','$concept_colonization$')] in the [concept_state]."
  ESTABLISH_COLONY_ALREADY_HAS_COLONY:1 "We already have a [concept_colony] here!"
@@ -9000,6 +9096,7 @@
  outliner_title_heirs: "#outliner_header Heirs#!"
  outliner_title_executives: "#outliner_header Executives#!"
  outliner_title_magnates: "#outliner_header Magnates#!"
+ outliner_title_other: "#outliner_header Other Characters#!"
  outliner_title_companies: "#outliner_header Companies#!"
  outliner_title_interest_groups:0 "#outliner_header Interest Groups#!"
  outliner_title_marginalized_interest_groups:0 "#outliner_header Marginalized Groups#!"
@@ -10789,7 +10886,7 @@
  TOOLTIP_TYPE_CHARACTER_TRAIT:0 "Trait"
  TOOLTIP_TYPE_COMMANDER_RANK:0 "Commander Rank"
  TOOLTIP_TYPE_PRODUCTION_METHOD:0 "[concept_production_method]"
- TOOLTIP_TYPE_TECHNOLOGY:0 "Technology"
+ TOOLTIP_TYPE_TECHNOLOGY: "[Technology.GetCategoryName] Technology"
  TOOLTIP_TYPE_INTEREST_GROUP_TRAIT:0 "IG Trait"
  TOOLTIP_TYPE_STRATEGIC_REGION:0 "[concept_strategic_region]"
  TOOLTIP_TYPE_WAR:0 "[concept_war]"
@@ -11174,6 +11271,7 @@
  SOL_CONDENSED:0 "[LabelingHelper.GetLabelForStandardOfLivingNoIconCFixedPointFormatFromExpected(State.GetAverageStandardOfLivingAll,State.GetExpectedStandardOfLivingAll)|v] ([State.GetFormattedStandardOfLivingAll|v])"
  STATE_TURMOIL_CONDENSED:0 "#b [State.CalcTurmoil|%1-]#!"
  STATE_DEVASTATION_CONDENSED:0 "#b [State.GetDevastationLevel|%R1]#!"
+ BOMBARDMENT_STATE_DEVASTATION_WITH_DAILY_CHANGE: "#v [State.GetDevastationLevel|%1]#!"
  STATE_INFRASTRUCTURE_CONDENSED:0 "[SelectLocalization(GreaterThan_CFixedPoint(State.GetInfrastructureUsage,State.GetInfrastructure), 'WARNING', '')]Using #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_USAGE_TOOLTIP [State.GetInfrastructureUsage|0v]#!#! of #tooltippable #tooltip:[State.GetTooltipTag],STATE_INFRASTRUCTURE_TOOLTIP [State.GetInfrastructure|0v]#!#!"
  STATE_TAX_CAPACITY_CONDENSED:0 "[AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage,State.CalcTaxCapacity), 'WARNING')]Using #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_USAGE_TOOLTIP [State.CalcTaxCapacityUsage|0v]#!#! of #tooltippable #tooltip:[State.GetTooltipTag],STATE_TAX_CAPACITY_TOOLTIP [State.CalcTaxCapacity|0v]#!#! [AddLocalizationIf(GreaterThan_CFixedPoint(State.CalcTaxCapacityUsage, State.CalcTaxCapacity), 'STATE_TAX_CAPACITY_INSUFFICIENT')]"
  STATE_MARKET_CAPITAL_STATUS_CONDENSED:0 "[State.GetMarket.GetName]\n[State.GetMarketAccess|%v0]"
@@ -11363,6 +11461,9 @@
  REHOME_MILITARY_FORMATION_TOOLTIP: "Set the home [concept_hq] of [MilitaryFormation.GetName] to another $concept_hq$"
  REHOME_MILITARY_FORMATION_LABEL: "Change home [concept_hq]"
 
+ RECALL_FLEET_FOR_REPAIRS_LABEL: "Recall for repairs"
+ RECALL_FLEET_FOR_REPAIRS_TOOLTIP: "#header Recall for repairs#!\n$TOOLTIP_DELIMITER$\n[ConcatIfNeitherEmpty(GetDesc(MilitaryFormation.RecallForRepairs),'\n\n')]Send [MilitaryFormation.GetName] to the nearest friendly port to restore [concept_fleet_hit_points] and refill [concept_ship_crew]. Resumes the assigned $concept_naval_mission$ once fully restored."
+
  MAP_INTERACTION_DEPLOY_MILITARY_FORMATION_TO_FRONT_DESC: "Deploy $FORMATION_NAME$ to a [concept_front]"
  MAP_INTERACTION_DEPLOY_MILITARY_FORMATION_TO_FRONT_PERFORMED: "$FORMATION_NAME$ deployed to [concept_front]"
 
@@ -11436,3 +11537,5 @@
  COUNTRY_SAILORS_VALUE: "[Concept('concept_sailor', '$concept_sailors$')]: [Country.GetCurrentSailors|v0K] / [Country.GetModifier.GetValueFor('country_sailors_max_add')|v0K][AddLocalizationIf( Country.HasInsufficientMaxSailors, 'COUNTRY_SAILORS_VALUE_NEED_MORE_THAN_MAX' )]"
  COUNTRY_SAILORS_VALUE_NEED_MORE_THAN_MAX: " (@warning! Need: [Country.GetNeededSailors|v0K])"
  SHIP_MOD_GOODS_COST: "[Concept('concept_good', '$concept_budget_construction_goods$')]: #indent_newline:3 \n[ShipModificationType.GetConstructionGoodsModifier.GetDesc]#!"
+
+ MOVEMENT_RADICALISM_UNOWNED_HOMELAND_STATES_FACTOR: "unowned [Concept('concept_homeland', '$concept_homelands$')]"

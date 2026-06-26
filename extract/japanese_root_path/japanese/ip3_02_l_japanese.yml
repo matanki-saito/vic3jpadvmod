@@ -136,7 +136,7 @@
  has_founded_budapest_tt: "#bold ブダペスト#!設立の#bold ディシジョン#!を実行した"
  modifier_hungary_timeout: "歴史が通り過ぎた国"
  hungarian_revolution_annex_transylvania_button: "トランシルヴァニアとの統合を宣言する"
- hungarian_revolution_annex_transylvania_button_desc: "[ROOT.GetCountry.GetAdjective]王領と見なされてはいるものの、1711年に起きた#bold ラーコーツィの反乱#!が失敗に終わって以来、ハンガリー本国と[SCOPE.sCountry('transylvania_scope').GetName]の統治は別々に行われていた。\n\nしかし、トランシルヴァニア議会は依然として統一支持派である[SCOPE.sCulture('hungarian_culture_scope').GetName]と[SCOPE.sCulture('szekely_culture_scope').GetName]の代表者が大半を占めており、ちょっとした働きかけさえあれば、再び連合に加わる可能性が高いと思われる。ただ、[SCOPE.sCountry('austria_scope').GetName]がそのような動きを看過する道理はなく、おそらく我が国を裏切り者だと見なすだろう。"
+ hungarian_revolution_annex_transylvania_button_desc: "[ROOT.GetCountry.GetAdjective]王領と見なされてはいるものの、1711年に#bold ラーコーツィの反乱#!が失敗に終わって以来、ハンガリー本国と[SCOPE.sCountry('transylvania_scope').GetName]の統治は別々に行われていた。\n\nしかし、トランシルヴァニア議会は依然として統一支持派である[SCOPE.sCulture('hungarian_culture_scope').GetName]と[SCOPE.sCulture('szekely_culture_scope').GetName]の代表者が大半を占めており、ちょっとした働きかけさえあれば、再び連合に加わる可能性が高いと思われる。ただ、[SCOPE.sCountry('austria_scope').GetName]がそのような動きを看過する道理はなく、おそらく我が国を裏切り者だと見なすだろう。"
  if_trs_accepts_tt: "[SCOPE.sCountry('transylvania_scope').GetName]が[ROOT.GetCountry.GetName]と[SCOPE.sCountry('transylvania_scope').GetNameNoFormatting]の統合という我々の提案を受け入れた場合、[SCOPE.sCountry('transylvania_scope').GetNameNoFormatting]は#b 併合される#!"
  hungarian_revolution_twelve_points_button: "十二か条の公布"
  hungarian_revolution_twelve_points_button_desc: "長年急進派と改革慎重派とで分断されていた[ROOT.GetCountry.GetAdjective]の進歩主義者たちは、国家の自由を恒久的に守ることを目的として、広範囲を網羅する一連の法律である「十二か条」という旗印の下に一致団結した。"

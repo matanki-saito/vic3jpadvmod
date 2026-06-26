@@ -10,7 +10,7 @@
  je_guinean_conquest: "Equatorial Foothold"
  je_guinean_conquest_reason: "Reinforcing the coastal security of Western Africa and its isolated areas has rekindled our ambition to reclaim our imperial status as a significant power on the continent.\n\nWe need to push forward and expand our influence along the coasts of [GetGeographicRegion('geographic_region_subsaharan_africa').GetName], as our imperial competitors are also eager to profit from the region's riches."
  je_moroccan_conquest: "Maghreb's Garden"
- je_moroccan_conquest_reason: "Given the success of our recent initiatives in Africa, officials agree that our efforts would be truly fulfilled by acquiring the territories beyond the [SCOPE.sStateRegion('gibraltar_scope').GetName].\n\nThey also warn us that it would present a new challenge to subdue its inhabitants under our rule, even after conquering the official lands, considering the numerous tribal communities separated from central politics. Nevertheless, we'll turn this part of the Maghreb into our backyard beyond Andalusia by accomplishing this task."
+ je_moroccan_conquest_reason: "Given the success of our recent initiatives in Africa, officials agree that our efforts would be truly fulfilled by acquiring the territories beyond the $strait_gibraltar$.\n\nThey also warn us that it would present a new challenge to subdue its inhabitants under our rule, even after conquering the official lands, considering the numerous tribal communities separated from central politics. Nevertheless, we'll turn this part of the Maghreb into our backyard beyond Andalusia by accomplishing this task."
 
  je_guinean_conquest_complete_tt: "At least #v 3#! [Concept('concept_state', '$concept_states$')] in [GetGeographicRegion('geographic_region_subsaharan_africa').GetName] are owned by [ROOT.GetCountry.GetName] or any of her #v $colonial$#! [Concept('concept_subject', '$concept_subjects$')]"
 
@@ -72,7 +72,7 @@
 
  #5 Gibraltar owned completely, "The Pillars of Hercules"
  spanish_africa.5.t: "The Pillars of Hercules"
- spanish_africa.5.d:1 "At long last, we have taken the Rock of Gibraltar back from the $GBR_ADJ$, restoring the [SCOPE.sStateRegion('gibraltar_scope').GetName] as an integral part of our dominions. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has declared a new national holiday to celebrate the reconquest."
+ spanish_africa.5.d:1 "At long last, we have taken the Rock of Gibraltar back from the $GBR_ADJ$, restoring the $strait_gibraltar$ as an integral part of our dominions. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has declared a new national holiday to celebrate the reconquest."
  spanish_africa.5.f: "#italic Plus Ultra#!—With this motto, the Spanish Empire had always aspired to an unimaginable journey across all coasts beyond its peninsular homelands.\n\n#italic Further Beyond#!—In the esteemed Latin tongue, its meaning signifies our duty as a nation to uphold the gates of wonder and courage for those who wish to take risks and strive for excellence beyond the Mediterranean.\n\nOnce again, we are the rightful guardians of the East and West."
  spanish_africa.5.a: "Hercules would be proud."
 

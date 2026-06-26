@@ -4,8 +4,6 @@
   je_brazilian_nation_building_ragamuffin_war_south: "The #bold Ragamuffin War#! has ended and [SCOPE.sCulture('sulista_culture').GetName] cultural turmoil in [SCOPE.sCulture('sulista_culture').GetNameNoFormatting] homelands has been reduced below to #bold 10%#!."
   je_brazilian_nation_building_ragamuffin_war_done: "The #bold Ragamuffin War#! has ended and [concept_devastation] of all states with [SCOPE.sCulture('amazonic_culture').GetName] homelands have reduced to below #bold 5#!."
   je_brazilian_nation_building_brazilian_national_hero_owned: "A regional #bold [concept_brz_national_hero]#! has been proclaimed and can be used in propaganda."
-  concept_brz_national_hero: "National Hero"
-  concept_brz_national_hero_desc: "A #bold National Hero#! is a general who has won a battle against a state that is not Brazilian, and been hailed as a hero in the event '#bold A New National Hero#!'."
   je_brazilian_nation_building_integrate_nordestino: "Integrate the Nordestinos"
   je_brazilian_nation_building_integrate_nordestino_past_tense: "Nordestinos are Brazilian"
   je_brazilian_nation_building_integrate_nordestino_desc: "To bring the people of the Northeast into the fold and truly reconcile them with the new national order, we must destroy one of the greatest sources of unrest in the region, an institution that provokes both cries of opprobrium and calls for its eternal preservation."

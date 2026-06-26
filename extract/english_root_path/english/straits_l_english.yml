@@ -118,6 +118,7 @@
 
  STRAIT_STATES_HEADER: "$concept_states$ connected by this $concept_strait$"
  NO_NAVAL_FORTIFICATION_TOOLTIP: "[Country.GetName] has not built a [GetBuildingType('building_naval_fortification').GetName] in [State.GetName] yet and has no control over the [Strait.GetName]"
+ STRAIT_NAVAL_FORTIFICATION_TOOLTIP: "[State.GetBuilding('building_naval_fortification').GetName] in [State.GetName] provide additional defense against landing [Concept('concept_battle','$concept_battles$')]"
 
  #Effects
  STRAIT_ACCESS_OPEN: "All [Concept('concept_ship', '$concept_ships$')] may pass through [Strait.GetName]"

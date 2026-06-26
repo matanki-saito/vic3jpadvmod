@@ -50,7 +50,7 @@
  ship_mod_32_pdr_sbml: "32ポンドSBML"
  ship_mod_32_pdr_sbml_8_in_shell_guns: "32ポンドSBML + 8インチML榴弾砲"
  ship_mod_32_pdr_sbml_24_pdr_sbml: "32ポンドSBML + 24ポンドSBML"
- ship_mod_no_guns: "兵器なし"
+ ship_mod_no_guns: "武装なし"
  ## Propulsion
  ship_mod_full_sail_rig: "全帆装"
  ship_mod_full_sail_rig_single_expansion_engine: "全帆装 + 単式蒸気機関"

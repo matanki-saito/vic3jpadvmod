@@ -19,6 +19,7 @@
   ideology_child_desc: "This character is a child and has not yet developed a political ideology."
   character_role_ig_leader: "[concept_leader]"
   character_role_magnate: "[concept_magnate]"
+  character_role_other: "Other"
   holding_revenue_magnate_scale: "[concept_holding] [concept_revenue]"
   PREP_IN: "in"
   PREP_OF: "of"

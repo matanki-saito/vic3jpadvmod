@@ -121,6 +121,10 @@
   nihilism.13.a: "The [SCOPE.gsInterestGroup('devout_ig').GetName] will perish, for it stands against reality itself!"
   nihilism.13.b: "This path is doomed to fail!"
 
+  all_non_tu_nihilists_become_anarchist_tt: "All remaining [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] will adopt the [GetIdeology('ideology_anarchist').GetName] [concept_ideology]"
+  all_tu_nihilists_become_communist_tt: "All [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetName] [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] will adopt the [GetIdeology('ideology_communist').GetName] [concept_ideology]"
+  all_nihilists_become_radical_tt: "All [GetIdeology('ideology_nihilist').GetName] [Concept('concept_character', '$concept_characters$')] will adopt the [GetIdeology('ideology_radical').GetName] [concept_ideology]"
+
   #Coup
   modifier_persecuted_general: "Persecuted General"
   modifier_uncertain_loyalties_country: "Uncertain Military Loyalties"
@@ -447,7 +451,7 @@
   agitators_law_events.7.d: "The public agitation that [SCOPE.sCharacter('opposing_agitator').GetFullName] has inspired against [SCOPE.sLaw('current_law_scope').GetName] has led the [SCOPE.gsInterestGroup('neutral_ig').GetName] to refuse to support the law in its current state."
   agitators_law_events.7.f: ""We regret to inform you that our mind is set on this matter. It is clear that popular support is viciously against the law in its current form, and we have no interest in siding with a proposal that has been demonstrated to be toxic in totality.""
   agitators_law_events.7.a: "Amend the law to make it more palatable to support."
-  agitators_law_events.7.b: "Make it clear to the [SCOPE.gsInterestGroup('neutral_ig').GetName] that they are unneccessary."
+  agitators_law_events.7.b: "Make it clear to the [SCOPE.gsInterestGroup('neutral_ig').GetName] that they are unnecessary."
 
   agitators_law_events.8.t: "A Torrent of Abuse"
   agitators_law_events.8.d: "[SCOPE.sCharacter('opposing_agitator').GetFullName] has launched a vicious series of insults against [SCOPE.sCharacter('supporting_ig_leader').GetFullName] for his support of [SCOPE.sLaw('current_law_scope').GetName]. The [SCOPE.gsInterestGroup('supporting_ig').GetName] have demanded the government act to defend [SCOPE.sCharacter('supporting_ig_leader').GetHerHis] honor."
@@ -2056,6 +2060,7 @@
   je_government_petition_status: "The [SCOPE.gsInterestGroup('government_petition_ig').GetName] are petitioning for [SCOPE.sLaw('government_petition_law').GetName] to pass."
   je_government_petition_reason: "As a loyal component of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s government, the [SCOPE.gsInterestGroup('government_petition_ig').GetName] are petitioning for [SCOPE.sLaw('government_petition_law').GetName] to pass.\n\nIf [SCOPE.sLaw('government_petition_law').GetName] is successfully passed, the [SCOPE.gsInterestGroup('government_petition_ig').GetName] will be greatly pleased, but if this petition is ignored, the nation will face penalties, up to the [SCOPE.gsInterestGroup('government_petition_ig').GetName]'s resignation from government."
   modifier_failed_to_meet_petition: "Failed Petition"
+  modifier_successfully_met_petition: "Successful Petition"
   modifier_successfully_met_petition_legitimacy: "Responsive Governance"
   modifier_expelled_from_government_petition: "Expelled from Government"
   modifier_failed_to_meet_petition_legitimacy: "Unresponsive Governance"

@@ -281,6 +281,12 @@
  concept_regional_company_hqs_short: "Regional HQs"
  concept_regional_company_hq_desc: "A [concept_company] can establish a $concept_regional_company_hq$ in a foreign [concept_country] if they have been granted an Investment [concept_company_charter] by their own $concept_country$. Additionally they need access to the foreign $concept_country$ via [concept_foreign_investment_rights] and an established presence with a small number of [Concept('concept_building_level','$concept_building_levels$')]. The $concept_regional_company_hq$ acts mostly like a [concept_company_hq], but will use the foreign $concept_country_possessive$ [concept_investment_pool] to construct additional $concept_building_levels$ and will reinvest parts of their [concept_dividends] directly into their own $concept_country_possessive$ $concept_investment_pool$."
 
+ concept_company_category: "Company Category"
+ concept_company_categories: "Company Categories"
+ concept_company_category_short: "Category"
+ concept_company_categories_short: "Categories"
+ concept_company_category_desc: "A $concept_company_category$ describes which kinds of [Concept('concept_pop','$concept_pops$')] partake in the ownership of a [concept_company]. It determines which [Concept('concept_production_method','$concept_production_methods$')] are available in the [concept_company_hq], shaping which [Concept('concept_profession','$concept_professions$')] are employed there. It also determines who receive a share of the [concept_dividends], and whether the $concept_company$ pays [concept_government_dividends] or not.\n\n#title The $concept_company_categories_short$ are:#!#indent_newline:3 \n#b $company_category_capitalist_owned$#!#indent_newline:3 \n$company_category_capitalist_owned_desc$#!\n\n#b $company_category_aristocrat_owned$#!#indent_newline:3 \n$company_category_aristocrat_owned_desc$#!\n\n#b $company_category_shopkeeper_owned$#!#indent_newline:3 \n$company_category_shopkeeper_owned_desc$#!\n\n#b $company_category_bureaucrat_owned$#!#indent_newline:3 \n$company_category_bureaucrat_owned_desc$#!\n\n#b $company_category_academic_owned$#!#indent_newline:3 \n$company_category_academic_owned_desc$#!"
+
  concept_concept:0 "Concept"
  concept_concepts:0 "Concepts"
  concept_concept_desc:0 "This is a tooltippable game concept with another [concept_concept] within."
@@ -466,7 +472,7 @@
  concept_conscript_battalion_short:0 "Conscript"
  concept_conscript_battalions_short:0 "Conscripts"
  concept_conscript_battalion_drafting:0 "Drafting"
- concept_conscript_battalion_desc:4 "$concept_conscript_battalions$ are temporary [Concept('concept_battalion', '$concept_battalions$')] recruited and maintained from the civilian [Concept('concept_pop','$concept_population$')] by [Concept('concept_conscription_center','$concept_conscription_centers$')] and activated during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or [Concept('concept_war','$concept_wars$')].\n\n@information! Note that $concept_conscript_battalions$ does not count towards the [concept_command_limit] of an [concept_army] until actually being raised and employed."
+ concept_conscript_battalion_desc:4 "$concept_conscript_battalions$ are temporary [Concept('concept_battalion', '$concept_battalions$')] recruited and maintained from the civilian [Concept('concept_pop','$concept_population$')] by [Concept('concept_conscription_center','$concept_conscription_centers$')] and activated during [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] or [Concept('concept_war','$concept_wars$')].\n\n@information! Note that $concept_conscript_battalions$ do not count towards the [concept_command_limit] of an [concept_army] until actually being raised and employed. When raised, only the higher of your regular [Concept('concept_battalion','$concept_battalions$')] or $concept_conscript_battalions$ is compared against the $concept_command_limit$, so raising $concept_conscript_battalions$ will only strain the limit if you have more of them than regular $concept_battalions$."
 
  concept_front:0 "Front"
  concept_fronts:1 "Fronts"
@@ -498,13 +504,13 @@
  concept_armies: "Armies"
  concept_army_possessive: "Army’s"
  concept_army_long: "Army Formation"
- concept_army_desc: "An $concept_army$ is a part of your land forces which is composed of $combat_unit_group_infantry$, $combat_unit_group_artillery$ and $combat_unit_group_cavalry$. An $concept_army$ can be given orders like $advance$ or $defend$."
+ concept_army_desc: "An $concept_army$ is a land [Concept('concept_military_formation','$concept_military_formation$')] composed of $combat_unit_group_infantry$, $combat_unit_group_artillery$ and $combat_unit_group_cavalry$ [Concept('concept_battalion','$concept_battalions$')], led by a [concept_general] who lends bonuses from his [Concept('concept_character_trait','$concept_character_traits$')] and [Concept('concept_order','$concept_orders$')] to the whole $concept_army$.\n\nWhen deployed to a [Concept('concept_front','$concept_front$')], an $concept_army$ executes its $concept_order$ such as #b $advance$#! or #b $defend$#!, fighting [Concept('concept_battle','$concept_battles$')] against any enemy $concept_armies$ present on that $concept_front$. How well it fights depends on the [Concept('concept_offense','$concept_offense$')] and [Concept('concept_defense','$concept_defense$')] of its $concept_battalions$ and their [concept_morale].\n\nAn $concept_army$ must be ordered to [Concept('concept_mobilize_army','$concept_mobilize_army_mobilize$')] before its $concept_battalions$ are ready to fight, and stands down again automatically once the [concept_war] ends. Before $concept_mobilize_army_mobilizing$, the $concept_army$ can be configured with [Concept('concept_mobilization_option','$concept_mobilization_options$')] that apply effects to its $concept_battalions$ at a cost of [Concept('concept_good','$concept_goods$')] while $concept_mobilize_army_mobilized$."
 
  concept_fleet: "Fleet"
  concept_fleets: "Fleets"
  concept_fleet_possessive: "Fleet’s"
  concept_fleet_long: "Fleet Formation"
- concept_fleet_desc: "A $concept_fleet$ is a part of your naval forces which is composed of $concept_ships$. A $concept_fleet$ can be sent on missions like [GetNavalMissionType('naval_mission_type_intercept').GetName], [GetNavalMissionType('naval_mission_type_blockade').GetName], and [GetNavalMissionType('naval_mission_type_port_bombardment').GetName]. Fleets tend to take a long time to build up, and many ship types become obsolete over time as they cannot always be upgraded. Think carefully before investing too heavily into large fleets."
+ concept_fleet_desc: "A $concept_fleet$ is a naval [Concept('concept_military_formation','$concept_military_formation$')] composed of [Concept('concept_ship','$concept_ships$')], led by an [concept_admiral] who lends bonuses from his [Concept('concept_character_trait','$concept_character_traits$')] and [Concept('concept_order','$concept_orders$')] to the whole $concept_military_formation$.\n\nIt can be sent on [Concept('concept_naval_mission','$concept_naval_missions$')] like [GetNavalMissionType('naval_mission_type_intercept').GetName], [GetNavalMissionType('naval_mission_type_blockade').GetName], and [GetNavalMissionType('naval_mission_type_port_bombardment').GetName] covering several [Concept('concept_sea_node','$concept_sea_regions$')], clashing in [Concept('concept_naval_battle','$concept_naval_battles$')] with any enemy $concept_fleets$ that they find (or that find them).\n\n$concept_fleets$ tend to take a long time to build up, and many $concept_ships$ become obsolete over time as they cannot always be upgraded. Think carefully before investing too heavily into large $concept_fleets$."
 
  concept_battle: "Battle"
  concept_battles: "Battles"
@@ -1335,7 +1341,7 @@
 
  concept_non_fulfillment: "Non-Fulfillment"
  concept_non_fulfilled: "Non-Fulfilled"
- concept_non_fulfillment_desc: "Some [Concept('concept_article','$concept_articles$')] may come with specific duties attached that will adversely affect the [concept_treaty] if [Concept('concept_contravention', '$concept_contravened$')]. An $concept_article$ is considered $concept_non_fulfilled$ if consecutively $concept_contravened$ up to the maximum number of allowed $concept_contraventions$ for that $concept_article$.\n\nConsequences of $concept_non_fulfillment$ may include subjecting the $concept_contravening$ [concept_country] to #bold compensation payments#!, as well as #bold freezing#! or outright #bold breaking#! the $concept_treaty$.\n\nIf a $concept_treaty$ is #b frozen#!, the $concept_contravening$ $concept_country$ still pays and fulfills whatever they can from their $concept_articles$, but recieve #b nothing#! in return."
+ concept_non_fulfillment_desc: "Some [Concept('concept_article','$concept_articles$')] may come with specific duties attached that will adversely affect the [concept_treaty] if [Concept('concept_contravention', '$concept_contravened$')]. An $concept_article$ is considered $concept_non_fulfilled$ if consecutively $concept_contravened$ up to the maximum number of allowed $concept_contraventions$ for that $concept_article$.\n\nConsequences of $concept_non_fulfillment$ may include subjecting the $concept_contravening$ [concept_country] to #bold compensation payments#!, as well as #bold freezing#! or outright #bold breaking#! the $concept_treaty$.\n\nIf a $concept_treaty$ is #b frozen#!, the $concept_contravening$ $concept_country$ still pays and fulfills whatever they can from their $concept_articles$, but receives #b nothing#! in return."
 
  concept_prestige:0 "Prestige"
  concept_prestige_desc:3 "Your [concept_rank] is determined by comparing your $concept_prestige$ to all other [Concept('concept_country','$concept_countries$')] in the world. $concept_prestige$ originates primarily from how impressive your economy is as measured by your [concept_gdp], how much [concept_power_projection] your military forces generate, and your [concept_country_tier]. It can also be affected by other factors such as your [SelectLocalization(GetPlayer.IsValid,'concept_prestige_desc_gamestate','Arts Academy')] and [Concept('concept_monument','$concept_monuments$')], and if you are a world leader in the production of a certain [concept_good]."
@@ -1552,7 +1558,7 @@
  concept_controlling_war_goal_short: "Controlling"
  concept_control_war_goal_short: "Control"
  concept_controls_war_goal_short: "Controls"
- concept_controlled_war_goal_desc: "If the holder of a [concept_war_goal], or their [Concept('concept_ally','$concept_allies$')], [Concept('concept_occupation','$concept_occupy$')] the required [concept_state] or [Concept('concept_state','$concept_states$')], they are considered to have $concept_control_war_goal_short$ of this [concept_war_goal]. [concept_war_support] can only drop below #v 0#! if the opposing side $concept_controls_war_goal_short$ all their $concept_war_goals$."
+ concept_controlled_war_goal_desc: "If the holder of a [concept_war_goal], or their [Concept('concept_ally','$concept_allies$')], [Concept('concept_occupation','$concept_occupy$')] at least [GetDefine('NWar','STATE_PARTIAL_OCCUPATION_THRESHOLD')|%v] of the required [concept_state] or [Concept('concept_state','$concept_states$')], they are considered to have $concept_control_war_goal_short$ of this [concept_war_goal]. [concept_war_support] can only drop below #v 0#! if the opposing side $concept_controls_war_goal_short$ all their $concept_war_goals$."
 
  concept_primary_demand:0 "Primary Demand"
  concept_primary_demand_short:0 "Primary"
@@ -2019,7 +2025,7 @@
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 5, 2022
 
  concept_command_limit:0 "Command Limit"
- concept_command_limit_desc:5 "$concept_command_limit$ determines how many [Concept('concept_battalion', '$concept_battalions$')] or [Concept('concept_ship','$concept_ships$')] can be effectively [Concept('concept_organization','$concept_organization_organized$')] under a [concept_military_formation]. You can increase $concept_command_limit$ by promoting your [concept_commander] to a higher [concept_commander_rank].\n\n#indent_newline:3 Having more [Concept('concept_unit','$concept_units$')] in a $concept_military_formation$ than its $concept_command_limit$ reduces the maximum $concept_organization$ a $concept_military_formation$ can reach, and additionally confers the following effects:\n[GetStaticModifier('low_command_limit').GetDesc]#!"
+ concept_command_limit_desc:5 "$concept_command_limit$ determines how many [Concept('concept_battalion', '$concept_battalions$')] or [Concept('concept_ship','$concept_ships$')] can be effectively [Concept('concept_organization','$concept_organization_organized$')] under a [concept_military_formation]. You can increase $concept_command_limit$ by promoting your [concept_commander] to a higher [concept_commander_rank].\n\n#indent_newline:3 For an [concept_army], whichever is higher of your regular [Concept('concept_battalion','$concept_battalions$')] or raised [Concept('concept_conscript_battalion','$concept_conscript_battalions$')] is compared against the $concept_command_limit$. This means raising $concept_conscript_battalions$ will only strain the $concept_command_limit$ if there are more of them than your regular $concept_battalions$.\n\n#indent_newline:3 Having more [Concept('concept_unit','$concept_units$')] in a $concept_military_formation$ than its $concept_command_limit$ reduces the maximum $concept_organization$ a $concept_military_formation$ can reach, and additionally confers the following effects:\n[GetStaticModifier('low_command_limit').GetDesc]#!"
  concept_command: "Command"
  concept_commanded: "Commanded"
 
@@ -2190,7 +2196,7 @@
  concept_supply_ship_desc: "$concept_supply_ships$ are used to deliver supplies, rations and ammo to [Concept('concept_fleet','$concept_fleets$')] that are at sea and [Concept('concept_army','$concept_armies$')] that are overseas.\n\nThey are constructed in a $building_shipyard$ much like regular [Concept('concept_ship','$concept_ships$')] and are retained in a pool unless currently needed."
 
  concept_critical_hit_chance: "Critical Chance"
- concept_critical_hit_chance_desc: "$ship_critical_hit_chance_add_desc$"
+ concept_critical_hit_chance_desc: "$ship_critical_hit_chance_add_desc$. \nCritical hits ignore [GetDefine('NBattle','NAVAL_BATTLE_CRIT_ARMOR_REDUCTION')|v0%] of the targets [concept_ship_armor]."
 
  concept_critical_hit_multiplier: "Critical Damage"
  concept_critical_hit_multiplier_desc: "$ship_critical_hit_multiplier_add_desc$"
@@ -2484,41 +2490,41 @@
  concept_end_of_discussion_factor:0 "End-of-Discussion Factor"
  concept_end_of_discussion_factor_desc:1 "The presence of a $concept_end_of_discussion_factor$ represents that [Concept('concept_interest_group', '$concept_interest_groups$')] in [concept_government] consider further discussion of the merits of the [concept_law] currently being enacted no longer useful. The lower this factor gets, the more negative pressure it puts on the possibility that the enactment may $concept_enactment_advance_short$ or $concept_enactment_stall_short$."
 
- concept_enactment_of_laws:0 "Enactment of Laws"
+ concept_enactment_of_laws: "Enactment of Laws"
  concept_enactment_of_laws_enactment: "Enactment"
- concept_enactment_of_laws_enact:0 "Enact"
+ concept_enactment_of_laws_enact: "Enact"
  concept_enactment_of_laws_enacting: "Enacting"
- concept_enactment_of_laws_enacted:0 "Enacted"
- concept_enactment_of_laws_desc:1 "The act of attempting to push a new [concept_law] through several [Concept('concept_enactment_phase','$concept_enactment_phases_short$')] in the [Concept('concept_country','$concept_country_possessive$')] legislature. At regular intervals the $concept_law$'s [concept_enactment_success] chance will be tested. The time between tests can vary by law, and is also dependent on the [Concept('concept_government','$concept_government_possessive$')] [concept_legitimacy]. If the $concept_law$ does not progress to the next [concept_enactment_phase], it will either [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], be [Concept('concept_enactment_debate','$concept_enactment_debate_short_debated$')], or [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] which affects its chances to pass the next test or introduce other consequences to your $concept_country$.n\n$concept_enactment_of_laws_potential$"
+ concept_enactment_of_laws_enacted: "Enacted"
+ concept_enactment_of_laws_desc: "The act of attempting to push a new [concept_law] through several [Concept('concept_enactment_phase','$concept_enactment_phases_short$')] in the [Concept('concept_country','$concept_country_possessive$')] legislature. At regular intervals the $concept_law$'s [concept_enactment_success] chance will be tested. The time between tests can vary by law, and is also dependent on the [Concept('concept_government','$concept_government_possessive$')] [concept_legitimacy]. If the $concept_law$ does not progress to the next [concept_enactment_phase], it will either [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], be [Concept('concept_enactment_debate','$concept_enactment_debate_short_debated$')], or [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] which affects its chances to pass the next test or introduce other consequences to your $concept_country$.n\n$concept_enactment_of_laws_potential$"
  concept_enactment_of_laws_potential: "For a $concept_law$ to be able to be [Concept('concept_enactment_of_laws','$concept_enactment_of_laws_enacted$')] it must be [Concept('concept_endorse_oppose','$concept_endorsed$')] by at least one $concept_interest_group$ [concept_in_government], supported by a current [concept_political_movement], or have a positive [concept_enactment_success] chance for some other reason."
 
- concept_enactment_success:1 "Enactment Success"
- concept_enactment_success_short:0 "Success"
+ concept_enactment_success: "Enactment Success"
+ concept_enactment_success_short: "Success"
  concept_enactment_successes: "Successes"
- concept_enactment_success_desc:2 "$concept_enactment_success$ indicates the percentage chance that a [concept_law] will progress to the next [Concept('concept_enactment_phase','$concept_enactment_phase_short$')] at the next checkpoint. It is equal to the [concept_base_success_chance] plus any effects accumulated during the enactment process. The $concept_base_success_chance$ is increased by support from an [concept_interest_group] [concept_in_government], a [concept_political_movement] with at least $RADICALISM_AGITATING$ #v 25%#! [concept_activism], or [Concept('concept_endorse_oppose','$concept_endorsement$')] from the [Concept('concept_ruler','$concept_ruler_possessive$')] [concept_ideology]."
+ concept_enactment_success_desc: "$concept_enactment_success$ indicates the percentage chance that a [concept_law] will progress to the next [Concept('concept_enactment_phase','$concept_enactment_phase_short$')] at the next checkpoint. It is equal to the [concept_base_success_chance] plus any effects accumulated during the enactment process. The $concept_base_success_chance$ is increased by support from an [concept_interest_group] [concept_in_government], a [concept_political_movement] with at least $RADICALISM_AGITATING$ #v 25%#! [concept_activism], or [Concept('concept_endorse_oppose','$concept_endorsement$')] from the [Concept('concept_ruler','$concept_ruler_possessive$')] [concept_ideology]."
 
- concept_enactment_advance:1 "Enactment Advance"
- concept_enactment_advance_short:0 "Advance"
- concept_enactment_advance_desc:2 "$concept_enactment_advance$ indicates the percentage chance that the enactment process of a [concept_law] will advance somehow at the next checkpoint, even if it won't complete or progress to the next [Concept('concept_enactment_phase','$concept_enactment_phase_short$')] yet. It is derived from the enactment's [concept_base_success_chance]."
+ concept_enactment_advance: "Enactment Advance"
+ concept_enactment_advance_short: "Advance"
+ concept_enactment_advance_desc: "$concept_enactment_advance$ indicates the percentage chance that the enactment process of a [concept_law] will advance somehow at the next checkpoint, even if it won't complete or progress to the next [Concept('concept_enactment_phase','$concept_enactment_phase_short$')] yet. It is derived from the enactment's [concept_base_success_chance]."
 
- concept_enactment_debate:1 "Enactment Debate"
- concept_enactment_debate_short:0 "Debate"
- concept_enactment_debate_short_debated:0 "Debated"
- concept_enactment_debate_desc:1 "$concept_enactment_debate$ indicates the percentage chance that the enactment process of a [concept_law] will meet with some kind of complication at the next checkpoint. The lower the total chances of [Concept('concept_enactment_success','$concept_enactment_success_short$')], [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], and [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] the greater the chance of $concept_enactment_debate_short$."
+ concept_enactment_debate: "Enactment Debate"
+ concept_enactment_debate_short: "Debate"
+ concept_enactment_debate_short_debated: "Debated"
+ concept_enactment_debate_desc: "$concept_enactment_debate$ indicates the percentage chance that the enactment process of a [concept_law] will meet with some kind of complication at the next checkpoint. The lower the total chances of [Concept('concept_enactment_success','$concept_enactment_success_short$')], [Concept('concept_enactment_advance','$concept_enactment_advance_short$')], and [Concept('concept_enactment_stall','$concept_enactment_stall_short$')] the greater the chance of $concept_enactment_debate_short$."
 
- concept_enactment_stall:1 "Stalled Enactment"
- concept_enactment_stall_short:0 "Stall"
- concept_enactment_stall_desc:1 "$concept_enactment_stall$ indicates the percentage chance that the enactment process of a [concept_law] will be substantially hindered at the next checkpoint. Its base chance is equal to the total [concept_clout] of opposing [Concept('concept_interest_group','$concept_interest_groups$')] whose [concept_approval] is $ig_approval_unhappy$ or $ig_approval_angry$."
+ concept_enactment_stall: "Stalled Enactment"
+ concept_enactment_stall_short: "Stall"
+ concept_enactment_stall_desc: "$concept_enactment_stall$ indicates the percentage chance that the enactment process of a [concept_law] will be substantially hindered at the next checkpoint. Its base chance is equal to the total [concept_clout] of opposing [Concept('concept_interest_group','$concept_interest_groups$')] whose [concept_approval] is $ig_approval_unhappy$ or $ig_approval_angry$."
 
- concept_base_success_chance:0 "Base Success chance"
- concept_base_success_chance_desc:0 "$concept_base_success_chance$ is equal to the total [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government] plus or minus [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] gained from any relevant [Concept('concept_political_movement', '$concept_political_movements$')]."
+ concept_base_success_chance: "Base Success chance"
+ concept_base_success_chance_desc: "$concept_base_success_chance$ is equal to the total [concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')] in [concept_government] plus or minus [Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] gained from any relevant [Concept('concept_political_movement', '$concept_political_movements$')]."
 
- concept_advance_factor:0 "Advance Factor"
- concept_advance_factor_desc:0 "$concept_advance_factor$ is a static factor used to determine [concept_enactment_advance] by scaling the [concept_base_success_chance]."
+ concept_advance_factor: "Advance Factor"
+ concept_advance_factor_desc: "$concept_advance_factor$ is a static factor used to determine [concept_enactment_advance] by scaling the [concept_base_success_chance]."
 
- concept_migration_pull:0 "Migration Attraction"
- concept_migration_pull_short:0 "Attraction"
- concept_migration_pull_desc:1 "$concept_migration_pull$ is a [concept_state]'s ability to attract migrants. It is based primarily on the average [concept_sol] among [Concept('concept_pop','$concept_pops$')] in the $concept_state$ but can be modified by a number of other factors. Any [Concept('concept_unemployed','$concept_unemployment$')] in the $concept_state$ will depress $concept_migration_pull$. The value is compared against other $concept_states$ between which $concept_migration$ may occur to determine in which direction migrants tend to flow.\n\n$concept_migration_pull$ is also the primary factor used to determine a $concept_country$'s [concept_mass_migration_pull]."
+ concept_migration_pull: "Migration Attraction"
+ concept_migration_pull_short: "Attraction"
+ concept_migration_pull_desc: "$concept_migration_pull$ is a [concept_state]'s ability to attract migrants. It is based primarily on the average [concept_sol] among [Concept('concept_pop','$concept_pops$')] in the $concept_state$ but can be modified by a number of other factors. Any [Concept('concept_unemployed','$concept_unemployment$')] in the $concept_state$ will depress $concept_migration_pull$. The value is compared against other $concept_states$ between which $concept_migration$ may occur to determine in which direction migrants tend to flow.\n\n$concept_migration_pull$ is also the primary factor used to determine a $concept_country$'s [concept_mass_migration_pull]."
  concept_cultural_community: "Cultural Community"
  concept_cultural_communities: "Cultural Communities"
  concept_cultural_community_short: "Community"
@@ -2540,14 +2546,12 @@
  concept_incoming_units_short:0 "Under Recruitment"
  concept_incoming_units_desc:1 "Each Unit under recruitment either has a level of a [concept_military_building] in the [concept_construction_queue] or have a $concept_military_building$ that are trying to hire [Concept('concept_pop','$concept_pops$')] in order to be able to create the [concept_unit]."
 
-### NEW ITEMS
+ concept_neighbors: "Neighbors"
+ concept_neighboring: "Neighboring"
+ concept_neighbors_desc: "Two [Concept('concept_country','$concept_countries$')] are considered to be $concept_neighbors$ if they share a land border or if they both own coastal [Concept('concept_state','$concept_states$')] that connect to the same [concept_sea_node]."
 
- concept_neighbors:0 "Neighbors"
- concept_neighboring:0 "Neighboring"
- concept_neighbors_desc:1 "Two [Concept('concept_country','$concept_countries$')] are considered to be $concept_neighbors$ if they share a land border or if they both own coastal [Concept('concept_state','$concept_states$')] that connect to the same [concept_sea_node]."
-
- concept_welfare_payments:0 "Welfare Payments"
- concept_welfare_payments_desc:1 "$concept_welfare_payments$ are a form of direct subsidy paid by by a [concept_country] to all $concept_pops$ in the [concept_workforce] that receive wages lower than the defined fraction of the [concept_normal_wage]."
+ concept_welfare_payments: "Welfare Payments"
+ concept_welfare_payments_desc: "$concept_welfare_payments$ are a form of direct subsidy paid by by a [concept_country] to all $concept_pops$ in the [concept_workforce] that receive wages lower than the defined fraction of the [concept_normal_wage]."
 
  concept_sea_node: "Sea Node"
  concept_sea_nodes: "Sea Nodes"
@@ -2757,6 +2761,10 @@
  concept_dynastic_loyalty: "Dynastic Loyalty"
  concept_dynastic_loyalty_desc:1 "$concept_dynastic_loyalty$ represents the Serbian population's support for keeping the ruling dynasty on the throne, as opposed to their rivals. The ruling dynasty must gain enough support to prevent the opposition from voicing a claim. Failing to do so will cause them to lose the throne, and stagnate national growth.\n\nThe following conditions will #bold advance#! $concept_dynastic_loyalty$:\n• High [concept_ruler] [concept_popularity]\n• Low [concept_popularity] of rival claimants\n• High [concept_legitimacy] \n• High [concept_sol]\n• Fraction of [Concept('concept_loyalist','$concept_loyalists$')]\n• Non-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_opposition] above 4 [concept_approval] by [concept_clout] \n• Has [GetLawType('law_censorship').GetName] or [GetLawType('law_outlawed_dissent').GetName] enacted\n• Not being a [concept_subject]\n• Each [concept_major_power] or [concept_great_power] supporting our independence\n• Events or other choices\n\nThe following conditions will #bold deplete#! $concept_dynastic_loyalty$:\n• Low [concept_ruler] [concept_popularity]\n• High [concept_popularity] of rival claimants\n• Low [concept_legitimacy]\n• Low [concept_sol]\n• Fraction of [Concept('concept_radical','$concept_radicals$')]\n• Non-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_opposition] below -4 [concept_approval] by [concept_clout] \n• Negative [concept_authority]\n• Negative [concept_bureaucracy]\n• Positive [concept_relations] with [concept_overlord]\n• Events or other choices"
 
+ concept_brz_national_hero: "National Hero"
+ concept_brz_national_hero_desc: "A #bold National Hero#! is a general who has won a battle against a state that is not Brazilian, and been hailed as a hero in the event '#bold A New National Hero#!'."
+
+ # IP3 Concepts
  concept_house_of_obrenovic: "House of Obrenović"
  concept_house_of_obrenovic_short: "Obrenović"
  concept_house_of_obrenovic_desc: "The $concept_house_of_obrenovic$ is one of the two contending $SER_ADJ$ royal houses. They are descended from #b Miloš Obrenović#!, leader of the Second Serbian Uprising and founder of the autonomous Principality of Serbia. Supporters of the $concept_house_of_obrenovic_short$ typically favor improved [concept_relations] with #b Austria#!."
@@ -2797,6 +2805,9 @@
  concept_negotiate: "Negotiate"
  concept_negotiation_desc: "$concept_negotiate$ with an [concept_interest_group] during [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enactment$')] to convince them to change their stance on the currently $concept_enactment_of_laws_enacting$ [concept_law]. An $concept_interest_group_possessive$ willingness to $concept_negotiate$ is determined by their [concept_amenability]. The higher $concept_amenability$ they have the friendlier and more willing they will be to $concept_negotiate$.\n\n@indifferent! [Concept('concept_endorse_oppose', '$concept_indifferent$')] $concept_interest_groups$ must be @in_government! [concept_in_government] to be $concept_negotiated$ with while @disapproves! [Concept('concept_endorse_oppose', '$concept_opposing$')] $concept_interest_groups$ can be $concept_negotiated$ with when [concept_in_opposition].\n\nConvincing an $concept_interest_group$ to move from @disapproves! $concept_opposing$ to @indifferent! $concept_indifferent$ can be just as effective has convincing them to move from @indifferent! [Concept('concept_endorse_oppose', '$concept_indifferent$')] to @approves! [Concept('concept_endorse_oppose', '$concept_endorsing$')]."
 
+ concept_guerilla_war: "Guerilla War"
+ concept_guerilla_war_desc: "A $concept_guerilla_war$ is a special kind of [concept_war] subject to a set of rules distinct from regular warfare, the details of which can differ from one $concept_guerilla_war$ to another.\n\nThe following general rules are applied during a $concept_guerilla_war$:\n#indent_newline:2 $EFFECT_LIST_BULLET$ [Concept('concept_battle', '$concept_battles$')] are much smaller in size and created at a lower pace#! \n#indent_newline:2 $EFFECT_LIST_BULLET$ The [GetBattleCondition('battle_condition_guerilla_skirmish').GetName], [GetBattleCondition('battle_condition_guerilla_ambush').GetName] and [GetBattleCondition('battle_condition_guerilla_disarray').GetName] [Concept('concept_battle_condition', '$concept_battle_conditions$')] can occur#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ Victories do not grant [concept_occupation] Score#!\n#indent_newline:2 $EFFECT_LIST_BULLET$ A $concept_guerilla_war$ may escalate into a regular $concept_war$ if conflict specific conditions are met"
+
  concept_amenability: "Amenability"
  concept_amenability_desc: "How willing an [concept_interest_group] is to [Concept('concept_negotiation', '$concept_negotiate$')] during the [concept_enactment_of_laws], higher value means more willing.\n\n#b 0 - [GetDefine('NPolitics', 'MIN_AMENABILITY_TENSE_NEGOTIATION')]#!:     Will #r refuse#! to $concept_negotiate$\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_TENSE_NEGOTIATION')] - [GetDefine('NPolitics', 'MIN_AMENABILITY_NORMAL_NEGOTIATION')]#!:   #v #r $negotiation_tier_3$#!#!\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_NORMAL_NEGOTIATION')] - [GetDefine('NPolitics', 'MIN_AMENABILITY_FRIENDLY_NEGOTIATION')]#!:   #v $negotiation_tier_2$#!\n#b [GetDefine('NPolitics', 'MIN_AMENABILITY_FRIENDLY_NEGOTIATION')] - 100#!: #v #g $negotiation_tier_1$#!#!"
 
@@ -2821,7 +2832,7 @@
  concept_integrated_culture_present_verb: "Integrating"
  concept_integrated_culture_verb: "Integrates"
  concept_integrated_culture_process: "Integration"
- concept_integrated_culture_desc: "An $concept_integrated_culture$ is a [concept_culture] whose demands have been satisfactorily adressed during the process of organizing the #b $dyn_c_usga$#!. When a $concept_culture$ is $concept_integrated_culture_short$, it becomes a [Concept('concept_primary_cultures','$concept_primary_culture$')], and contributes to the progress of the #b $je_danubian_federation$#! [concept_journal_entry]. $concept_integrated_culture_short$ $concept_cultures$ may become [Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')] if their demands are contradicted following their $concept_integrated_culture_short$. $concept_disqualified_culture_present_verb$ a $concept_culture$ that has already been $concept_integrated_culture_short$ will lead to heavy penalties."
+ concept_integrated_culture_desc: "An $concept_integrated_culture$ is a [concept_culture] whose demands have been satisfactorily addressed during the process of organizing the #b $dyn_c_usga$#!. When a $concept_culture$ is $concept_integrated_culture_short$, it becomes a [Concept('concept_primary_cultures','$concept_primary_culture$')], and contributes to the progress of the #b $je_danubian_federation$#! [concept_journal_entry]. $concept_integrated_culture_short$ $concept_cultures$ may become [Concept('concept_disqualified_culture','$concept_disqualified_culture_short$')] if their demands are contradicted following their $concept_integrated_culture_process$. $concept_disqualified_culture_present_verb$ a $concept_culture$ that has already been $concept_integrated_culture_short$ will lead to heavy penalties."
 
  concept_radicalized_interest_group: "Radicalized Interest Group"
  concept_radicalized_interest_group_desc: "When an [concept_interest_group]'s [concept_approval] is below [GetApprovalRatingFromValue(GetDefine('NPolitics','APPROVAL_THRESHOLD_ANGRY'))], it is said to be $concept_radicalized$. A $concept_radicalized$ $concept_interest_group$ is likely to become [Concept('concept_insurrection','$concept_insurrectionary$')], or stage a [concept_coup] against the sitting [concept_government]."
