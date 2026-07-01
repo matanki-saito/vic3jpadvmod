@@ -336,7 +336,7 @@
  treaty_of_london_events.2.f:0 "「オランダは仲裁を望んでいるのか？彼らは間違いなく、ベルギーの正当な領土にしっかりと目を付けている。彼らの野望は誰の目にも明らかだが、この問題で我々に選択の余地はほとんどないかもしれない。歩み寄りを拒否すれば、ヨーロッパにおける我々の地位は、簡単に修復できない形で損なわれるかもしれない。」"
  treaty_of_london_events.2.a:0 "よし、列強の調停に同意しよう。"
  treaty_of_london_events.2.b:0 "我々はあの忌々しいオランダに何も譲るつもりはない！"
- treaty_of_london_events.3.t:0 "ロンドン招集"
+ treaty_of_london_events.3.t:0 "ロンドンからの呼び掛け"
  treaty_of_london_events.3.d:0 "[SCOPE.sCountry('belgium_scope').GetAdjectiveNoFlag]と[SCOPE.sCountry('netherlands_scope').GetAdjectiveNoFlag]の関係性の不安定な性質は、1830年以来ずっと、ヨーロッパの安定性を脅かしてきました。この問題を永久に解決するための会議がロンドンで開かれ、ヨーロッパの列強すべてが仲裁するために招集されています。"
  treaty_of_london_events.3.f:0 "「この10年近く、我々はこの2カ国について議論しようとしてきたが、この10年近く、その努力に挫折してきた。今、我々は天の恵みか、あるいは幸運の巡り合わせか、この2カ国を我々の望むところに引き寄せることができた。この機会は無駄にはできない。ヨーロッパの安定は我々の成功にかかっているのだ。」"
  treaty_of_london_events.3.a:0 "この問題にはきっぱりと決着をつけよう。"
