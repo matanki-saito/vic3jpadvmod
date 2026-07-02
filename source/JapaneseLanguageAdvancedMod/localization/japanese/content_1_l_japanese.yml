@@ -1624,7 +1624,7 @@
  dei_breakup.1.a:0 "列島の人々は、自らの権利を手にしたのだ。"
  dei_breakup.1.b:0 "一つの祖国、一つの民族、一つの言語だ！"
  dei_breakup.1.c:0 "我々は救われるまで嵐に立ち向かう。"
- alaska.1.f_ru:0 "「[SCOPE.sCountry('alaska_buyer').GetNameNoFormatting]の代表者として、この時点をもって我々は[SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName]の国庫より、全ロシア[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]陛下の外交代表者またはその他の代理人に、金で720万ドル支払うことに合意する」"
+ alaska.1.f_ru:0 "「[SCOPE.sCountry('alaska_buyer').GetNameNoFormatting]の代表者として、この時点をもって我々は[SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName]の国庫より、全ロシアの[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]陛下の外交代表者またはその他の代理人に、金で720万ドル支払うことに合意する」"
  alaska.3.b:0 "挑戦する価値はあった。"
  communism_variable_at_full_tt:0 "#bold 進捗ゲージ#!が#variable 100%#!に到達しました"
  communism_variable_at_zero_tt:0 "#bold 進捗ゲージ#!が#variable 0%#!まで減少しました"
