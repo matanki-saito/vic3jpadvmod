@@ -300,7 +300,7 @@
  balkan_wars.11.d:0 "[SCOPE.sStrategicRegion('balkans_scope').GetName]における我々の旧従属国によって構成される#bold バルカン同盟#!が、我々への反旗を翻すと正式に宣言した。もし彼らが次の戦争に勝利すれば、我々はこの地域の領土をすべて失い、新たな国家が誕生することになるだろう。"
  balkan_wars.11.f:0 "老いたイマームはミンバルの階段に立つ信者たちの方を向き、フトゥバを始めた。\n\n「信者たちよ！\n\n今日、我々の先祖の時代と同じく、地上における神の影たるオスマン帝国のスルタンが、我らに信仰、土地、そして名誉を守るために立ち上がるよう命じているのだ。この戦争は単なる人間同士の争いではなく、全能の神からの試練であり、暴政と抑圧に対する真理の道における闘争なのだ！」"
  balkan_wars.11.a:0 "彼らはその日を悔やむことになるだろう。"
- balkan_wars.11.a_opener_tt:0 "#bold バルカン同盟#!の次の国々が我々を相手に外交プレイを開始した : "
+ balkan_wars.11.a_opener_tt:0 "#bold バルカン同盟#!の次の国々が我々を相手に外交戦を開始した : "
  balkan_wars.11.a_league_members_list_tt:0 "[THIS.GetCountry.GetName]"
  balkan_wars.12.t:0 "戦争の開始"
  balkan_wars.12.d:0 "バルカン同盟の全加盟国を代表して、[SCOPE.sCountry('first_balkan_war_initiator').GetName]は、[SCOPE.sStrategicRegion('balkans_scope').GetName]における[SCOPE.sCountry('ottoman_empire_scope').GetName]の全領土を取り戻す戦争の準備をしていると正式に発表した。"
