@@ -1,7 +1,7 @@
 ﻿l_japanese:
  je_ryukyu_rivalry_score_bar:0 "[SCOPE.sCountry('ryukyu_scope').GetName]に対する#tooltippable;tooltip:ryukyu_rivalry_sway_tt #b 揺さぶり#!#!"
- je_ryukyu_rivalry_score_bar_desc:0 "[SCOPE.sCountry('japan_scope').GetNameNoFormatting]"
- je_ryukyu_rivalry_score_bar_second_desc:0 "[SCOPE.sCountry('china_scope').GetNameNoFormatting]"
+ je_ryukyu_rivalry_score_bar_desc:0 "[SelectLocalization(SCOPE.sCountry('japan_scope').IsValid,SCOPE.sCountry('japan_scope').GetName,'JAP')]"
+ je_ryukyu_rivalry_score_bar_second_desc:0 "[SelectLocalization(SCOPE.sCountry('china_scope').IsValid,SCOPE.sCountry('china_scope').GetName,'CHI')]"
  je_ryukyu_rivalry_progress_bar:0 "琉球の#tooltippable;tooltip:ryukyu_rivalry_assertiveness_tt #b 主張度#!#!"
  je_ryukyu_rivalry_progress_bar_desc:0 "琉球が中立を主張#v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!"
  je_ryukyu_rivalry_reaffirm_suzerainty_button:0 "[SCOPE.GetRootScope.GetCountry.GetCustom('ryukyu_rivalry_reaffirm_suzerainty')]"

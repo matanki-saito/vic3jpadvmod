@@ -733,3 +733,6 @@
  CLEAR_MOVEMENT_DEFEATED:0 "[POLITICAL_MOVEMENT.GetName]の敗北状態を解除"
  SET_MOVEMENT_DEFEATED_THIRD:0 "この[concept_country]において[POLITICAL_MOVEMENT.GetName]を敗北状態に設定"
  CLEAR_MOVEMENT_DEFEATED_THIRD:0 "この[concept_country]において[POLITICAL_MOVEMENT.GetName]の敗北状態を解除"
+ ADD_AMENDMENT_TIMEOUT_GLOBAL:0 "一時的な[concept_amendment]が[concept_law]に追加されます"
+ ADD_AMENDMENT_TIMEOUT_FIRST:0 "[AMENDMENT_TYPE.GetName]が[LAW.GetName]に一時的に追加され、同[concept_law]の施行から#b $TIMEOUT_MONTHS$か月#!後に失効します"
+ ADD_AMENDMENT_TIMEOUT_THIRD:0 "[AMENDMENT_TYPE.GetNameWithLaw(LAW.Self)]が[LAW.GetName]に一時的に追加され、同[concept_law]の施行から#b $TIMEOUT_MONTHS$か月#!後に失効します"

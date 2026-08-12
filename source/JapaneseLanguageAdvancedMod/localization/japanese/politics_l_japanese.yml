@@ -291,3 +291,5 @@
  UNHAPPY_WITH_NON_ORLEANIST_MONARCHY:0 "非[GetIdeology('ideology_orleanist').GetName]の[GetLawType('law_monarchy').GetName]で、[concept_approval]が#v 0#!未満"
  UNHAPPY_WITH_NON_LEGITIMIST_MONARCHY:0 "非[GetIdeology('ideology_legitimist').GetName]の[GetLawType('law_monarchy').GetName]で、[concept_approval]が#v 0#!未満"
  UNHAPPY_WITH_NON_BONAPARTIST_MONARCHY:0 "非[GetIdeology('ideology_bonapartist').GetName]の[GetLawType('law_monarchy').GetName]で、[concept_approval]が#v 0#!未満"
+ AMENDMENT_TIMEOUT_ACTIVE:0 "#title 期限付き : #!\n$TAB$#variable [Amendment.GetTimeoutDate]#!に失効"
+ AMENDMENT_TIMEOUT_ENACTING:0 "#title 期限付き : #!\n$TAB$[concept_law]の施行から#variable [Amendment.GetTimeoutMonths]#!か月後に失効"
