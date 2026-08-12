@@ -483,9 +483,9 @@
  #Styria
  STATE_STYRIA_french: "シュタイアーマルク"
  HUB_NAME_STATE_STYRIA_city_french: "グラーツ"
- #HUB_NAME_STATE_STYRIA_mine:0 "Liezen"
- #HUB_NAME_STATE_STYRIA_farm:0 "Klagenfurt"
- #HUB_NAME_STATE_STYRIA_wood:0 "Hartberg"
+ #HUB_NAME_STATE_STYRIA_mine: "Liezen"
+ #HUB_NAME_STATE_STYRIA_farm: "Klagenfurt"
+ #HUB_NAME_STATE_STYRIA_wood: "Hartberg"
  STATE_STYRIA_german: "シュタイアーマルク"
  #Tyrol
  STATE_TYROL_french: "チロル"
@@ -502,7 +502,7 @@
  #Austria proper
  STATE_AUSTRIA_french: "オーストリア"
  HUB_NAME_STATE_AUSTRIA_city_french: "ウィーン"
- #HUB_NAME_STATE_AUSTRIA_mine:1 "Freistadt"
+ #HUB_NAME_STATE_AUSTRIA_mine: "Freistadt"
  HUB_NAME_STATE_AUSTRIA_farm_french: "リンツ"
  HUB_NAME_STATE_AUSTRIA_wood_french: "サンティポリット"
  STATE_AUSTRIA_german: "オーストリア"
@@ -528,9 +528,9 @@
  #Denmark
  #Schleswig-Holstein
  STATE_SCHLESWIG_HOLSTEIN_french: "シュレースヴィヒ＝ホルシュタイン"
- #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_city:0 "Kiel"
- #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_port:0 "Lübeck"
- #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_mine:0 "Niebüll"
+ #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_city: "Kiel"
+ #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_port: "Lübeck"
+ #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_mine: "Niebüll"
  HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_farm_french: "フレンスブルク"
  #HUB_NAME_STATE_SCHLESWIG_HOLSTEIN_wood: "Itzehoe"
  ### Czechia
@@ -538,8 +538,8 @@
  #Bohemia - French
  STATE_BOHEMIA_french: "ボヘミア"
  HUB_NAME_STATE_BOHEMIA_city_french: "プラハ"
- #HUB_NAME_STATE_BOHEMIA_mine:0 "České Budějovice"
- #HUB_NAME_STATE_BOHEMIA_farm:0 "Hradec Králové"
+ #HUB_NAME_STATE_BOHEMIA_mine: "České Budějovice"
+ #HUB_NAME_STATE_BOHEMIA_farm: "Hradec Králové"
  HUB_NAME_STATE_BOHEMIA_wood_french: "ピルゼン"
  #Bohemia - German
  STATE_BOHEMIA_german: "ベーメン"
@@ -557,9 +557,9 @@
  #Moravia - French
  STATE_MORAVIA_french: "モラヴィア"
  HUB_NAME_STATE_MORAVIA_city_french: "ブルノ"
- #HUB_NAME_STATE_MORAVIA_mine:0 "Olomouc"
- #HUB_NAME_STATE_MORAVIA_farm:0 "Breclav"
- #HUB_NAME_STATE_MORAVIA_wood:1 "Jihlava"
+ #HUB_NAME_STATE_MORAVIA_mine: "Olomouc"
+ #HUB_NAME_STATE_MORAVIA_farm: "Breclav"
+ #HUB_NAME_STATE_MORAVIA_wood: "Jihlava"
  #Moravia - German
  STATE_MORAVIA_german: "メーレン"
  HUB_NAME_STATE_MORAVIA_city_german: "ブルノ"
@@ -2018,9 +2018,9 @@
  STATE_TUNISIA_italian: "チュニジア"
  HUB_NAME_STATE_TUNISIA_city_italian: "チュニス"
  HUB_NAME_STATE_TUNISIA_port_italian: "サファッソ"
- #HUB_NAME_STATE_TUNISIA_mine:0 "Kasserine"
- #HUB_NAME_STATE_TUNISIA_farm:0 "Gabés"
- #HUB_NAME_STATE_TUNISIA_wood:0 "Beja"
+ #HUB_NAME_STATE_TUNISIA_mine: "Kasserine"
+ #HUB_NAME_STATE_TUNISIA_farm: "Gabés"
+ #HUB_NAME_STATE_TUNISIA_wood: "Beja"
  ### Bas-Congo
  #Belgian
  STATE_BAS_CONGO_french: "バ・コンゴ"

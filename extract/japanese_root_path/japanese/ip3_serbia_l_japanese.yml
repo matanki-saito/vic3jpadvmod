@@ -18,7 +18,7 @@
  je_tot_slander_button_cooldown_tt: "過去#bold 4年#!でこのディシジョンを使用していない。"
  je_tot_campaign_button: "選挙活動を開始"
  je_tot_campaign_button_desc: "王室の側近たちを集め、[concept_authority]を行使したり、[concept_money]を使って全国行脚を組織する。目標は、すべての[Concept('concept_state','$concept_states$')]を訪問し、民衆と対話し、彼らの貴重な[Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')]と引き換えに、具体的な進展策を提供すること。また、我々の[concept_popularity]を高め、ライバルの名誉を傷つけることもできる。"
- je_tot_campaign_button_tt: "準備が始まる。ほどなくして、この着想を永久に放棄するか、あるいは選挙活動が終了するまでに次の支出から#bold 1つ#!選択するよう問われる:"
+ je_tot_campaign_button_tt: "準備が始まる。ほどなくして、この着想を永久に放棄するか、あるいは選挙活動が終了するまでに次の支出から#bold 1つ#! 選択するよう問われる:"
  je_tot_campaign_button_tt_2: "選択した支出のレベルにより、訪問した[Concept('concept_state','$concept_states$')]への投資の有効性と、今後数年間の我々の[concept_popularity]が決まる。"
  je_serbian_throne_fail_header: "#title 以下の場合、現統治王朝を打倒:#!\n"
  je_serbian_throne_on_fail_header: "#title [concept_dynastic_loyalty]低下時:#!\n$EFFECT$"
@@ -249,7 +249,7 @@
  je_the_balkan_league_muster_button_desc: "もっと徴兵することを検討するべきだ。"
  je_the_balkan_league_muster_button_cooldown_tt: "過去#bold 6年#!でこのディシジョンを使用していない。"
  je_the_balkan_league_resign_button: "脱退する"
- je_the_balkan_league_resign_button_desc: "同盟からの正式な脱退は外交的立場を中立化させるが、#bold バルカン同盟#!の他の国からは裏切り者とみなされるだろう。"
+ je_the_balkan_league_resign_button_desc: "同盟からの正式な脱退は外交的立場を中立化させるが、#bold バルカン同盟#! の他の国からは裏切り者とみなされるだろう。"
  je_the_balkan_wars_resign_button_tt: "ジャーナル記事を失敗させる特別なイベントが発生する。"
  je_the_balkan_wars_resign_button_tt2: "[SCOPE.sCountry('ottoman_empire_scope').GetName]との関係が向上し、次の国との関係が悪化する:"
  je_the_balkan_wars_resign_button_tt2_bl_members_list: "[THIS.GetCountry.GetName]"
@@ -285,7 +285,7 @@
  balkan_wars.4.d: "バルカン同盟の崩壊により、この大義のために立ち上がる勢力はもはや存在しない。我々の領土を取り戻すためにかつて存在したであろう希望は、すべて失われてしまった。"
  balkan_wars.4.f: "バルカン半島の人々の生活は、再び単調さに屈した。彼らは、先見の明も専門知識もない指導者たちの約束に騙され、破滅させられたようだ。\n\n帝国主義の暴君たちがひしめくこの世界において、この未開の地で国境を隔てた同盟を結ぶなど、統一の野望というよりは、もはや幻想のようなものだろう。\n\n戦いは続くが、以前よりも一層厳しく、殺伐としている。"
  balkan_wars.4.a: "いつの日か…"
- balkan_wars.4.a_tt: "#bold バルカン同盟#!は解散した。"
+ balkan_wars.4.a_tt: "#bold バルカン同盟#! は解散した。"
  # Bail event
  balkan_wars.5.t: "使い捨ての忠誠心"
  balkan_wars.5.d: "我々はバルカン同盟から自発的に脱退した。確固たる未来を築くためには、[SCOPE.sCountry('ottoman_empire_scope').GetName]に歯向かうことなど考えるべきではない。"
@@ -335,7 +335,7 @@
  balkan_wars.10.c: "最も必要としているのは兵役に就いている者だ。"
  # Chaos in the Balkans event
  balkan_wars.11.t: "バルカン半島の混沌"
- balkan_wars.11.d: "[SCOPE.sStrategicRegion('balkans_scope').GetName]における我々の旧従属国によって構成される#bold バルカン同盟#!が、我々への反旗を翻すと正式に宣言した。もし彼らが次の戦争に勝利すれば、我々はこの地域の領土をすべて失い、新たな国家が誕生することになるだろう。"
+ balkan_wars.11.d: "[SCOPE.sStrategicRegion('balkans_scope').GetName]における我々の旧従属国によって構成される#bold バルカン同盟#! が、我々への反旗を翻すと正式に宣言した。もし彼らが次の戦争に勝利すれば、我々はこの地域の領土をすべて失い、新たな国家が誕生することになるだろう。"
  balkan_wars.11.f: "老いたイマームはミンバルの階段に立つ信者たちの方を向き、フトゥバを始めた。\n\n「信者たちよ！\n\n今日、我々の先祖の時代と同じく、地上における神の影たるオスマン帝国のスルタンが、我らに信仰、土地、そして名誉を守るために立ち上がるよう命じているのだ。この戦争は単なる人間同士の争いではなく、全能の神からの試練であり、暴政と抑圧に対する真理の道における闘争なのだ！」"
  balkan_wars.11.a: "彼らはその日を悔やむことになるだろう。"
  balkan_wars.11.a_opener_tt: "#bold バルカン同盟#!の次の国々が我々を相手に外交プレイを開始した:"
@@ -374,7 +374,7 @@
  balkan_wars_league_fail_timeout_tt: "我々の#v 好機の猶予#!は終了した"
  balkan_wars_league_fail_by_rejecting_immediately_tt: "[ROOT.GetCountry.GetName]が#bold バルカン同盟#!への参加を拒否"
  aggresive_diplomatic_plays_permitted_tt: "[ROOT.GetCountry.GetName]が[Concept('concept_subject', '$concept_subject$')]ではない、あるいは主従同意によって[Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]を開始することが許可されていない"
- je_the_balkan_league_complete_header_tt: "[GetStrategicRegion('region_balkans').GetName]の[Concept('concept_state', '$concept_states$')]は、#v $dyn_c_ottoman_empire$#!が地域から完全に排除された後に分割される。現在所有している場所は次のとおり:"
+ je_the_balkan_league_complete_header_tt: "[GetStrategicRegion('region_balkans').GetName]の[Concept('concept_state', '$concept_states$')]は、#v $dyn_c_ottoman_empire$#! が地域から完全に排除された後に分割される。現在所有している場所は次のとおり:"
  je_the_balkan_league_complete_tt: "[THIS.GetStateRegion.GetName]"
  ##### THE GRAND COLLAPSE #####
  # Journal Entry

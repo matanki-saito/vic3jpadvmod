@@ -29,7 +29,7 @@
  INTEREST_TIER_TARGET_DOWN: "#b [Country.GetCurrentInvolvementIn(StrategicRegion.Self)|0]#! @arrow_right! #v [Country.GetTargetInvolvementIn(StrategicRegion.Self)|0]#!（@arrow_down_down!#b [Country.GetInvolvementGrowth(StrategicRegion.Self)|+0]#!/週）"
  INTEREST_TIER_TARGET_UP_PLAYER_CONTEXT: "#b [GetPlayer.GetCurrentInvolvementIn(StrategicRegion.Self)|0]#! @arrow_right! #v [GetPlayer.GetTargetInvolvementIn(StrategicRegion.Self)|0]#!（@arrow_up_up!#b [GetPlayer.GetInvolvementGrowth(StrategicRegion.Self)|0]#!/週）"
  INTEREST_TIER_TARGET_DOWN_PLAYER_CONTEXT: "#b [GetPlayer.GetCurrentInvolvementIn(StrategicRegion.Self)|0]#! @arrow_right! #v [GetPlayer.GetTargetInvolvementIn(StrategicRegion.Self)|0]#!（@arrow_down_down!#b [GetPlayer.GetInvolvementGrowth(StrategicRegion.Self)|0]#!/週）"
- INTERST_TIER_INVOLVEMENT_BREAKDOWN_TITLE: "#title$concept_involvement$の目標値#v [Country.GetTargetInvolvementIn(StrategicRegion.Self)|0]#!の要因:#!"
+ INTERST_TIER_INVOLVEMENT_BREAKDOWN_TITLE: "#title $concept_involvement$の目標値#v [Country.GetTargetInvolvementIn(StrategicRegion.Self)|0]#!の要因:#!"
  INTERST_TIER_INVOLVEMENT_BREAKDOWN: "[Country.GetTargetInvolvementDescIn(StrategicRegion.Self)]"
  INTERST_TIER_INVOLVEMENT_POWER_BLOC_BREAKDOWN: "#tooltippable #tooltip:[concept_power_bloc]メンバーから[GetRawTextTooltipTag('$BREAKDOWN$')] $TOTAL|v0$#!#!"
  INTEREST_TIER_EFFECTS_TITLE: "#title 効果:#!"

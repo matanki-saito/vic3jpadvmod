@@ -646,7 +646,7 @@
  notification_no_portuguese_monarch_available_tooltip: "#header $notification_no_portuguese_monarch_available_name$#!\n$TOOLTIP_DELIMITER$\n$notification_no_portuguese_monarch_available_desc$"
  notification_spain_would_rather_not_appoint_a_braganca_king_name: "スペインが我々の候補を拒否"
  notification_spain_would_rather_not_appoint_a_braganca_king_desc: "[SCOPE.sCountry('spain_scope').GetName]が、我々の提示したスペイン王位候補者を拒否した。"
- notification_spain_would_rather_not_appoint_a_braganca_king_tooltip: "#header \n$notification_spain_would_rather_not_appoint_a_braganca_king_name$#!\n$TOOLTIP_DELIMITER$\n$notification_spain_would_rather_not_appoint_a_braganca_king_desc$"
+ notification_spain_would_rather_not_appoint_a_braganca_king_tooltip: "#header $notification_spain_would_rather_not_appoint_a_braganca_king_name$#!\n$TOOLTIP_DELIMITER$\n$notification_spain_would_rather_not_appoint_a_braganca_king_desc$"
  notification_no_espartero_available_name: "エスパルテロ元帥が[SCOPE.sCountry('spain_scope').GetAdjective]の王位を拒否"
  notification_no_espartero_available_desc: "バルドメロ・エスパルテロは、高齢と職務への適性の欠如を理由に、[SCOPE.sCountry('spain_scope').GetName]国王の称号を与えるという我々の申し出を拒否した。"
  notification_no_espartero_available_tooltip: "#header $notification_no_espartero_available_name$#!\n$TOOLTIP_DELIMITER$\n$notification_no_espartero_available_desc$"

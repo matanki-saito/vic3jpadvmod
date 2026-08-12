@@ -550,6 +550,21 @@
  civil_war_events.1.a:0 "Annex the country"
  civil_war_events.1.b:0 "Leave them alone"
 
+ treaty_port_inheritance_events.1.t:0 "An Inherited Concession"
+ treaty_port_inheritance_events.1.d:1 "With the old regime swept aside, the treaty ports it once granted to [SCOPE.sC('target_country').GetName] have passed into our keeping. Their merchants still raise a foreign flag over our harbors under agreements we never signed. We may honor what we have inherited, or cast the foreigners out and reclaim these ports for [ROOT.GetCountry.GetName]."
+ treaty_port_inheritance_events.1.f:1 ""The ink was dry long before we took power, yet the chains it forged are now ours to wear or to break.""
+ treaty_port_inheritance_events.1.a:0 "Honor the agreements"
+ treaty_port_inheritance_events.1.b:0 "Reclaim our harbors"
+
+ treaty_port_inheritance_events.2.t:0 "Concessions Honored"
+ treaty_port_inheritance_events.2.d:1 "There has been an upheaval in the lands about our treaty ports. With the previous regime gone, [SCOPE.sC('new_host').GetName] has chosen to honor the agreements struck with those who came before. Our merchants may continue to fly our flag over their harbors."
+ treaty_port_inheritance_events.2.f:1 ""A change of masters, yet the same old bargain. How refreshingly reasonable.""
+ treaty_port_inheritance_events.2.a:0 "A wise decision"
+ treaty_port_inheritance_events.3.t:0 "Concessions Revoked"
+ treaty_port_inheritance_events.3.d:1 "There has been an upheaval in the lands about our treaty ports. With the previous regime gone, [SCOPE.sC('new_host').GetName] has torn up the agreements struck with those who came before. Our ports have been seized and our merchants turned out into the street. This insult shall not soon be forgotten."
+ treaty_port_inheritance_events.3.f:1 ""They would deny us what was promised by those who came before. Let them remember that our guns have long memories.""
+ treaty_port_inheritance_events.3.a:0 "An outrage!"
+
  diplomatic_events.1.t:0 "Violation of Sovereignty"
  diplomatic_events.1.d:1 "[SCOPE.sC('initiator').GetName] has sent an ultimatum to [SCOPE.sC('target_country').GetName] demanding they join them in the [SCOPE.sW('war').GetName|v] war.\nThey refused and sided with [SCOPE.sW('war').GetLeaderOfOppositeSide( SCOPE.sC('initiator') ).GetName]!\nWhat do we do?"
  diplomatic_events.1.f:1 "The smoke coming from the fireplace is enough to stain the windows of the office with a pale smog, now that the sunset is imminent. The street lamps are getting lit, and two men share a concerned look.\n\n"The lamps are going out all over the world, and we shall not see them lit again in our life-time.""

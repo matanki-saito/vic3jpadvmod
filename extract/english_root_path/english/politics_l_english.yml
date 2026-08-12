@@ -214,6 +214,8 @@
  DATA_AMENDMENTS_SPONSOR_MODIFIERS_HEADER: "Sponsor Modifiers:"
  REPEAL_AMENDMENT_TOOLTIP: "#header Repeal the [Amendment.GetName] [concept_amendment]#!\n[GetDesc(Amendment.Repeal)][ConcatIfNeitherEmpty('\n\n$DATA_AMENDMENTS_REPEAL_HEADER$\n', Amendment.GetOnRepealEffectsDesc)]"
  AMENDMENT_SPONSOR: "#title Sponsor:#!\n$TAB$[Amendment.GetSponsor.GetName]"
+ AMENDMENT_TIMEOUT_ACTIVE: "#title Temporary:#!\n$TAB$Expires on #variable [Amendment.GetTimeoutDate]#!"
+ AMENDMENT_TIMEOUT_ENACTING: "#title Temporary:#!\n$TAB$Expires #variable [Amendment.GetTimeoutMonths]#! months after the [concept_law] takes effect"
  AMENDMENT_PARENT_LAW_TYPE_TITLE: "#title [concept_parent_law]:#!"
  AMENDMENT_PARENT_LAW_TYPE: "[Amendment.GetParentLawType.GetName]"
  AMENDMENT_EFFECTS_AND_MODIFIERS: "Effects & Modifiers"

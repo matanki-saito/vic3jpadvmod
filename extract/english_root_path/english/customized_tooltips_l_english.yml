@@ -688,7 +688,9 @@
 
  DATA_MILITARY_FORMATION: ""
 
- DATA_MILITARY_FORMATION_REGULARS: "#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP $MILITARY_FORMATION_REGULARS_COUNT$#!#![AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), ' @warning!')] [SelectLocalization(MilitaryFormation.IsArmy, 'BATTALIONS_CONCEPT', 'SHIPS_CONCEPT')] $INCOMING_NUMBER_OF_REGULARS_LABEL$"
+ DATA_MILITARY_FORMATION_REGULARS: "#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_TOTAL_NUMBER_OF_UNITS_TOOLTIP $MILITARY_FORMATION_REGULARS_COUNT$#!#![SelectLocalization(MilitaryFormation.IsFleet, 'MILITARY_FORMATION_COMMAND_LIMIT_ICON_FLEET', 'MILITARY_FORMATION_COMMAND_LIMIT_ICON_REGULARS')] [SelectLocalization(MilitaryFormation.IsArmy, 'BATTALIONS_CONCEPT', 'SHIPS_CONCEPT')] $INCOMING_NUMBER_OF_REGULARS_LABEL$"
+ MILITARY_FORMATION_COMMAND_LIMIT_ICON_FLEET: "[AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumCombatUnits), ' @warning!')]"
+ MILITARY_FORMATION_COMMAND_LIMIT_ICON_REGULARS: "[AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumRegulars), ' @warning!')]"
  DATA_MILITARY_FORMATION_CONSCRIPTS: "[SelectLocalization(GreaterThan_int32(MilitaryFormation.GetMaxConscripts, '(int32)0'), 'DATA_MILITARY_FORMATION_CONSCRIPTS_PRESENT', 'DATA_MILITARY_FORMATION_NO_CONSCRIPTS')]"
  DATA_MILITARY_FORMATION_CONSCRIPTS_PRESENT: "#tooltippable #tooltip:[MilitaryFormation.GetTooltipTag],MILITARY_FORMATION_CONSCRIPTS_TOOLTIP $MILITARY_FORMATION_CONSCRIPTS_COUNT$#!#![AddLocalizationIf(LessThan_int32(MilitaryFormation.GetCommandLimitRaw, MilitaryFormation.GetNumConscripts), ' @warning!')] $CONSCRIPTS_CONCEPT$"
  DATA_MILITARY_FORMATION_NO_CONSCRIPTS: "@conscripts! No $CONSCRIPTS_CONCEPT$"

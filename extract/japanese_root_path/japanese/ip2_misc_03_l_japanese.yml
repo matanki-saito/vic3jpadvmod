@@ -1,7 +1,7 @@
 ﻿l_japanese:
- #Army Names
- tatmadaw: "ミャンマー軍" #Burma
- sarf_e_khas: "ニザーム陸軍" #Hyderabad
+ # Army Names
+ tatmadaw: "ミャンマー軍" # Burma
+ sarf_e_khas: "ニザーム陸軍" # Hyderabad
  OudhRoyalArmy: "アウド王国陸軍"
  GwaliorArmy: "シンディア陸軍"
  NagpurArmy: "ブホンスル陸軍"
@@ -53,7 +53,7 @@
  ArmeeIndigene: "先住民軍"
  CeylonRifleRegiment: "セイロンライフル連隊"
  ejercito_de_filipinas: "フィリピン軍"
- #Company Names
+ # Company Names
  company_bengal_coal_company: "ベンガル石炭会社"
  company_bombay_dyeing_company: "ボンベイ染料製造株式会社"
  company_david_sassoon: "デイヴィド・サスーン株式会社"
@@ -141,7 +141,7 @@
  sepoy_mutiny_progress_bar_madras_desc: "#bold マドラス管区#![SCOPE.GetRootScope.GetCountry.GetCustom('get_sepoy_mutiny_progress_madras')]"
  je_avert_sepoy_mutiny: "不安定な統治"
  je_avert_sepoy_mutiny_reason: "インド亜大陸では、現地の兵士の中にも、会社の支配に対する反発が高まっています。反乱はまだ防げるかもしれません。"
- je_avert_sepoy_mutiny_tt_1: "ジャーナル記事#BOLD $je_consolidate_colonial_rule$#!を完了する"
+ je_avert_sepoy_mutiny_tt_1: "ジャーナル記事#BOLD $je_consolidate_colonial_rule$#! を完了する"
  je_sepoy_mutiny: "セポイの反乱"
  je_sepoy_mutiny_reason: "当社に対して、反乱と反逆が勃発しました。我々が権威を維持するためには、これを完全に打ち砕かねばなりません。"
  je_uneasy_raj_tt_1: "植民地統治を改革しました"
@@ -295,14 +295,14 @@
  religious_nationalist_groups_tt: "#bold $je_communal_divides$#! [concept_journal_entry]が有効な間、#bold $movement_muslim_nationalist$#!と#bold $movement_hindu_nationalist$#!は多くの求心力ボーナスを受け取ります。"
  granted_home_rule_tt: "#bold 内政自治#!が付与されました"
  je_communal_divides_fail_tt: "[SCOPE.GetRootScope.GetCountry.GetName]、またはその[Concept('concept_subject','$concept_subjects$')]は、[SCOPE.sStateRegion('east_bengal_scope').GetName]、[SCOPE.sStateRegion('punjab_scope').GetName]、[SCOPE.sStateRegion('sindh_scope').GetName]、および[SCOPE.sStateRegion('kashmir_scope').GetName][Concept('concept_state_region','$concept_state_regions$')]に[Concept('concept_state','$concept_states$')]を所有していません。"
- hindu_nationalist_movement_below_25_tt: "#v $movement_hindu_nationalist$#!の[concept_activism]は#b 25%#!未満です"
- muslim_nationalist_movement_below_25_tt: "#v $movement_muslim_nationalist$#!の[concept_activism]は#b 25%#!未満です"
- hindu_nationalist_movement_above_50_tt: "#v $movement_hindu_nationalist$#!の[concept_activism]は#b 50%#!以上です"
- muslim_nationalist_movement_above_50_tt: "#v $movement_muslim_nationalist$#!の[concept_activism]は#b 50%#!以上です"
- hindu_nationalist_support_below_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_hindu_nationalist$#!の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#!未満です"
- muslim_nationalist_support_below_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_muslim_nationalist$#!の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#!未満です"
- hindu_nationalist_support_above_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_hindu_nationalist$#!の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#!以上です"
- muslim_nationalist_support_above_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_muslim_nationalist$#!の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#!以上です"
+ hindu_nationalist_movement_below_25_tt: "#v $movement_hindu_nationalist$#! の[concept_activism]は#b 25%#! 未満です"
+ muslim_nationalist_movement_below_25_tt: "#v $movement_muslim_nationalist$#! の[concept_activism]は#b 25%#! 未満です"
+ hindu_nationalist_movement_above_50_tt: "#v $movement_hindu_nationalist$#! の[concept_activism]は#b 50%#! 以上です"
+ muslim_nationalist_movement_above_50_tt: "#v $movement_muslim_nationalist$#! の[concept_activism]は#b 50%#! 以上です"
+ hindu_nationalist_support_below_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_hindu_nationalist$#! の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#! 未満です"
+ muslim_nationalist_support_below_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_muslim_nationalist$#! の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#! 未満です"
+ hindu_nationalist_support_above_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_hindu_nationalist$#! の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#! 以上です"
+ muslim_nationalist_support_above_5_tt: "運動と同じ文化・宗教の[concept_pop]による、#v $movement_muslim_nationalist$#! の[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')]は#b 5%#! 以上です"
  je_communal_divides_federal_solution: "インド連合国の樹立"
  je_communal_divides_federal_solution_desc: "ヒンドゥー教徒とイスラム教徒の対立が劇化し、生半可な対策ではとても対処できないほど根深いものになっている。イスラム教徒の明確な自治州をベンガルと西部に2つ設立することで、イスラム教徒に迫害が及ばない地域が生まれ、同時に我が国の領土保全に対するリスクも最小限に抑えられる。"
  make_delhi_capital: "ニューデリーを設立"
@@ -372,7 +372,7 @@
  achievement_azadi_punjab_tt: "[GetGeographicRegion('geographic_region_punjab_old').GetName]の[concept_georegion]に属するすべての州は、この国またはその従属国が所有"
  achievement_prolecorp_tt: "[concept_prosperity]が#v 100#!を超える[concept_company]を所有している"
  achievement_the_man_who_would_be_king_1_tt: "[concept_ruler]が$Josiah$・$Harlan$である"
- achievement_the_man_who_would_be_king_2_tt: "#v $KAF$#!から#v $AFG$#!を形成した"
+ achievement_the_man_who_would_be_king_2_tt: "#v $KAF$#! から#v $AFG$#! を形成した"
  india_events.18.t: "ベラールの管理"
  india_events.18.d: "ベラールで強盗や騒乱が頻発していることを理由に、[SCOPE.sCountry('bic_scope').GetName]が、かなりの額の年間租借料と引き換えに、我々に代わって[SCOPE.sState('berar_scope').GetName]を管理すると申し出ました。"
  india_events.18.f: "「その盗賊のリーダーには、いくら懸賞金がかかっているのだ？」イギリスの高官が尋ねた。\n\n「5000ルピーです」\n\n「5000！このガッバルにそんな価値があるとは思えないが？」\n\n「このあたりの村々では」と役人が答え、目の前の地図に大きな円を描いた。「子供が夜泣きすると、母親は『早く寝ないとガッバルに連れていかれるわよ』と言うのです」\n\n「そんなに恐れられているのなら、我々に任せたほうがよろしい」そう言って高官はほほ笑んだ。「結局のところ、我々は縄張りからテロリストを排除する専門家だからな」"

@@ -1,22 +1,4 @@
 ﻿l_english:
-  je_risorgimento: "Risorgimento"
-  je_risorgimento_reason:2 "The winds of nationalism sweeping Europe have begun to pass through [ROOT.GetCountry.GetName], inspiring figures both within our government and without to look towards the restoration of a single, unified Italy.\n\nWhilst this journal entry is active, having any active [concept_revolution] caused by an [SelectLocalization(SCOPE.sPoliticalMovement('italian_national_movement').IsValid, SCOPE.sPoliticalMovement('italian_national_movement').GetName, 'movement_italian_national')] will lead to the seizure of the [ROOT.GetCountry.GetAdjective] government by pan-Italian revolutionaries[ROOT.GetCountry.GetCustom('italy_fate_loc')]."
-  austrian_radicals_cooldown_tt: "Has not used the #bold Encourage Italian Nationalism#! decision in the past #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#!"
-  italian_radicals_cooldown_tt: "Has not used the #bold Sponsor Pro-Unification Sentiment#! decision in the past #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')]#!"
-  is_italy_tt: "Has formed the nation of #bold Italy#!"
-  italy_will_get_couped_custom: " and the instatement of a #bold democratic republic#!"
-  italy_will_get_annexed_custom: " and #red annexation#! into the leading Italian state"
-  owns_italian_homelands_tt: "Owns [GetCulture('north_italian').GetName] or [GetCulture('south_italian').GetName] [concept_homeland] states"
-  je_risorgimento_italian_minors_tt: "The #b $ITA_ADJ$#! minor nations may unify with us if we become the sole #b $ITA_ADJ$#! [concept_unification_candidate]"
-
-  je_risorgimento_austrian_radicals_button: "Encourage Italian Nationalism"
-  je_risorgimento_austrian_radicals_button_desc: "Ever since the end of the Napoleonic Wars, Italian territories have been held by foreign powers. Our journey to unify the peninsula may inspire them to raise arms against their own oppressors."
-  je_risorgimento_italian_radicals_button: "Spur Pro-Unification Sentiment"
-  je_risorgimento_italian_radicals_button_desc: "Throughout the Italian peninsula, the masses are slowly awakening and turning towards the idea of a unified Italy. If their rulers are not inclined to follow the call, perhaps their people will be."
-  ausrad_cooldown_year_tt: "This decision will become available again in #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')] years#!"
-  itarad_cooldown_year_tt: "This decision will become available again in #v [GetPlayer.MakeScope.ScriptValue('risorgimento_action_cooldown_years')] years#!"
-
-  owns_no_italian_homelands_tt: "Does #b not#! own any [GetCulture('north_italian').GetName] or [GetCulture('south_italian').GetName] [concept_homeland] states"
 
  russia_monarchy.1.t: "The Accession of Alexander II"
  russia_monarchy.1.d: "With the end of Nicholas I's reign, [SCOPE.sCharacter('tsar_scope').GetFullName] has ascended to the [ROOT.GetCountry.GetAdjective] throne as Alexander II, Tsar of all the Russias. [SCOPE.sCharacter('tsar_scope').GetHerHis|U] reign is hoped by many liberal bureaucrats to hail a new era of reform."
@@ -129,110 +111,10 @@
  oscar_i_death_tt: "Oscar I dies."
  charles_xv_death_tt: "Charles XV dies."
 
- unfriendly_nation_with_interest_in_alaska_tt: "A hostile [concept_country] with a [concept_rank] higher than ours has an [concept_interest] in the #bold Pacific Coast#! [concept_strategic_region]"
- friendly_nation_with_interest_in_alaska_tt: "A #bold North American#! [concept_great_power] with an [concept_incorporated_state] in the #bold Pacific Coast#! [concept_strategic_region] has positive [concept_relations] with us"
- sold_alaska_tt: "We have successfully sold #bold Alaska#!"
- not_sold_alaska_tt: "We have #bold not#! successfully sold #bold Alaska#!"
- alaska_transaction_ongoing_tt: "No country is currently making an offer for #b Alaska#!"
-
- has_alaska_sale_cooldown_tt: "Has not used this action in the past #bold year#!"
-
-  notification_alaska_negotiations_fail_name: "Offer for Alaska Refused"
-  notification_alaska_negotiations_fail_desc: "[SCOPE.sCountry('alaska_buyer').GetName] has backed out of the negotiations for the sale of Alaska. The territory will remain under our control until another attempt is made."
-  notification_alaska_negotiations_fail_tooltip: "#header $notification_alaska_negotiations_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_alaska_negotiations_fail_desc$"
-
- je_sale_of_alaska: "The Sale of Alaska"
- je_sale_of_alaska_reason: "[SCOPE.sState('alaska_scope').GetName], an isolated territory on the periphery of [SCOPE.sCountry('alaska_owner_scope').GetName], has come under threat of seizure by hostile foreign powers in recent years.\n\nTo extract some profit from the territory, and avoid the humiliation of having it seized by our enemies in the case of war, officials in the [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]'s government have suggested finding a buyer for [SCOPE.sState('alaska_scope').GetName]."
-
- je_sell_alaska_button: "Find a Buyer"
- je_sell_alaska_button_desc: "The territory of Alaska represents more of a liability than a benefit to our state. Finding a buyer for Alaska will serve as a boon to both our treasury and our national security."
-
- selling_alaska_tt: "We will receive significant monetary compensation for [SCOPE.sState('alaska_scope').GetName], and improved [concept_relations] with its #bold buyer#!"
-
- je_buy_alaska_button: "Make an Offer for Alaska"
- je_buy_alaska_button_desc: "Alaska is currently held as a colonial territory by a friendly nation. We may be able to leverage our relations to purchase the territory."
-
  foster_national_agitation: "Stir National Agitation"
  foster_national_agitation_desc: "#lore Task [Character.GetFullName] with agitating amongst the [Character.GetCulture.GetName] population of a foreign power#!"
  not_homeland_of_states_tt: "The owner of this state does not have [SCOPE.sCulture('agitator_culture').GetName] as a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
  is_rival_of_owner_tt: "The owner of this state has a [concept_rivalry] with us"
- 
- italian_unification.4.t: "Tricolors Over [SCOPE.sState('capital_scope').GetCityHubName]"
- italian_unification.4.d_annex: "Inspired by calls for the reunification of Italy, nationalist rebels have seized control of [SCOPE.sState('capital_scope').GetCityHubName] and have sworn themselves to a unified Italy under [SCOPE.sCountry('italian_leader').GetRuler.GetFullName] of [SCOPE.sCountry('italian_leader').GetName]."
- italian_unification.4.d_coup: "Inspired by calls for the reunification of Italy, nationalist rebels have seized control of [SCOPE.sState('capital_scope').GetCityHubName] and declared the government of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] to have fallen."
- italian_unification.4.f: ""Traitors! Traitors in the midst! Sound the alarm, call for the guards at once!"\n\n"Do you mean the suited men beside me, senor? I should hope so, since you were foolish enough to announce your presence. Now, I shall make this plain, as your raving ineptitude forced our hand in the first place: a united Italy is rising. It demands a place on the world stage, and it won't be cared for by men of your ill-fitting ilk.""
- italian_unification.4.a: "We will rise again, as part of a whole."
- italian_unification.4.b: "Long live Italia!"
- italian_unification.4.c: "We will rise again, as part of a whole."
-
- italian_unification.5.t: "Italian Nationalists Seize [SCOPE.sState('capital_scope').GetCityHubName]"
- italian_unification.5.d: "Inspired by calls for the establishment of a single Italian nation, nationalist rebels have seized [SCOPE.sCountry('italian_pannational_country').GetName] and pledged themselves to the unification of Italy under the banner of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName]."
- italian_unification.5.f: "A unified Italy has never been far from the lips of the mad and the ambitious alike. Indeed, a splendid reawakening of the peninsula would give even the single God pause. Such attempts have been folly in the past. Yet in furtive whispers, there is a belief that there may be hope for a new Rome to rise."
- italian_unification.5.a: "We welcome our brothers and sisters."
- italian_unification.5.b: "It is best to not frighten our neighbors."
-
- italian_unification.6.t: "Italian Nationalists Overthrow [SCOPE.sCountry('italian_pannational_country').GetAdjective] Government"
- italian_unification.6.d: "Inspired by calls for the reunification of Italy, nationalist rebels have seized [SCOPE.sCountry('italian_pannational_country').GetCapital.GetCityHubName] and declared a republic over its former sovereign territories."
- italian_unification.6.f: "What the aide brought to him was incredulous: another attempt at bringing the Italian peninsula under a single banner. It seemed impossible, divided between at least a half-dozen petty lords and city-states that would as soon strangle each other as Europe. But as the aide spoke, it became plain that this was no idle boast. No, this merited envoys, carrying either a gladius or an olive branch."
- italian_unification.6.a: "Offer our sympathies to the new regime."
- italian_unification.6.b: "We have no common cause with these terrorists."
-
- italian_unification.7.t: "Five Days in [SCOPE.sState('rsm_capital_scope').GetCityHubName]"
- italian_unification.7.d: "Following unrest amongst the Italian population of Lombardy-Venetia, nationalist rebels have declared the formation of the [SCOPE.sCountry('rsm_scope').GetName], a revolutionary state founded to seize independence from [ROOT.GetCountry.GetAdjective] rule."
- italian_unification.7.f: "A rider in white, astride a white mare, passed along the grounds near where the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] took breakfast that morning. The footman who approached [ROOT.GetCountry.GetRuler.GetHerHim] with sweat seeping from every cracked pore carried a blood-red letter. The Italian holdings had entered revolt. The next sweating aide to enter carried another report: these revolting territories called for reinforcements. Reinforcements, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstNameNoFormatting] knew, that would surely be coming."
- italian_unification.7.a: "Take to the Quadrilateral at once!"
- italian_unification.7.b: "Viva San Marco!"
-
- italian_states_choose_sides_tt: "The #bold Italian#! states will be given the opportunity to support the [SCOPE.sCountry('rsm_scope').GetName]"
- italian_states_choose_sides_danger_tt: "@warning! Relations with #bold Italian#! states may rapidly deterioriate"
-
- italian_unification.8.t: "The Italian War of Independence"
- italian_unification.8.d: "Revolutionaries in [SCOPE.sCountry('rsm_scope').GetCapital.GetCityHubName] have declared the formation of a [SCOPE.sCountry('rsm_scope').GetName], independent from the rule of [SCOPE.sCountry('rsm_revolted_scope').GetName]. They call for aid from all Italian states in their struggle."
- italian_unification.8.f: ""Mother... my mind is made up. I am going to Venice, with or without your blessing."\n\n"Good, fine, go! No son of mine would ever waste his life on something so meaningless as a flag. I've already lost brothers and uncles to this sort of useless adjudication of penne lengths. Stay here and be safe!"\n\n"It's anything but useless, mother! We have a chance to be one Italy again. We could go anywhere, do anything again. We would have #bold something#! again!""
- italian_unification.8.a: "They stand for us, and us for them."
- italian_unification.8.b: "We will not shed [ROOT.GetCountry.GetAdjectiveNoFormatting] blood for [SCOPE.sCountry('rsm_scope').GetCapital.GetCityHubName]."
-
- italian_unification.10.t: "Whispers of Risorgimento"
- italian_unification.10.d: "The winds of nationalism have begun to pass through the long-divided states of the Italian peninsula. [ROOT.GetCountry.GetAdjective] patriots and romantic scholars alike have begun to call for the unification of a single Italian state."
- italian_unification.10.f: ""No, signore. I am not a foreigner, and I am not [ROOT.GetCountry.GetAdjectiveNoFormatting]. I am an Italian, and an Italian in Italy is never a foreigner.""
- italian_unification.10.a: "Italy must be restored from oblivion."
- italian_unification.10.b: "We will not throw ourselves to the winds for this."
-
- modifier_risorgimento_supporters: "Support for Risorgimento"
- modifier_risorgimento_support: "Support for Risorgimento"
- modifier_risorgimento_opponents: "Opposition to Risorgimento"
- modifier_risorgimento_opposition: "Opposition to Risorgimento"
-
- risorgimento_support: "support for Risorgimento"
- veiled_protectorate_ottomans_support: "support for Ottoman reconquest of Egypt"
- veiled_protectorate_egypt_support: "support for Egyptian independence"
- german_leadership_neutrality: "lacks reason to get involved in #v $dp_leadership_germany$#! play"
-
- unlock_national_agitation_tt: "Unlocks the 'Stir National Agitation' Character Interaction for [Concept('concept_agitator','$concept_agitators$')]"
- risorgimento_unifying_stance_tt: "Has chosen to #bold support#! Risorgimento"
- risorgimento_unifying_stance_set_tt: "We will be able to take extra actions to #bold support#! Risorgimento"
- risorgimento_opposing_stance_tt: "Has not chosen to #bold support#! Risorgimento"
-
- notification_ita_italian_unification_intent_name: "[SCOPE.sCountry('italian_unifier_candidate').GetName] Supports Italian Unification"
- notification_ita_italian_unification_intent_desc: "The government of [SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('italian_unifier_candidate').GetRuler.GetFullName] has signaled support for the unification of the Italian peninsula into a single nation."
- notification_ita_italian_unification_intent_tooltip: "#header $notification_ita_italian_unification_intent_name$#!\n$TOOLTIP_DELIMITER$\n$notification_ita_italian_unification_intent_desc$"
-
-  notification_nationalism_national_agitation_occurred_name: "[SCOPE.sCulture('agitation_culture').GetName] Unrest in [SCOPE.sState('agitation_state').GetName]"
-  notification_nationalism_national_agitation_occurred_desc: "[SCOPE.sCulture('agitation_culture').GetName] nationalist unrest has sharply increased in [SCOPE.sState('agitation_state').GetName]. Agents of [SCOPE.sCountry('agitation_sponsor').GetName] have been suspected of fostering the seditious behavior."
-  notification_nationalism_national_agitation_occurred_tooltip: "#header $notification_nationalism_national_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_national_agitation_occurred_desc$"
-
-  notification_nationalism_decision_agitation_occurred_name: "Unrest in #bold Italian#! Regions"
-  notification_nationalism_decision_agitation_occurred_desc: "#bold Italian#! nationalist [Concept('concept_activism', '$concept_activism_short$')] has sharply increased in our #bold Italian#! territories. [SCOPE.sCountry('saboteur_country').GetAdjective] propaganda is suspected to be the root of the unrest."
-  notification_nationalism_decision_agitation_occurred_tooltip: "#header $notification_nationalism_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_nationalism_decision_agitation_occurred_desc$"
-
-  notification_sabotage_decision_agitation_occurred_name: "Pro-Unification Unrest Strikes [SCOPE.sCountry('victim_country').GetName]"
-  notification_sabotage_decision_agitation_occurred_desc: "Inspired by the calls for Italian unification from [SCOPE.sCountry('saboteur_country').GetName], the [Concept('concept_activism', '$concept_activism_short$')] of the [SCOPE.sPoliticalMovement('italian_nationalist_movement').GetName] has increased."
-  notification_sabotage_decision_agitation_occurred_tooltip: "#header $notification_sabotage_decision_agitation_occurred_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sabotage_decision_agitation_occurred_desc$"
-
-  italian_nationalist_movements_list_tt: "[Concept('concept_political_movement','$concept_political_movements$')] compatible with #v $ITA_ADJ$#! [concept_unification] include:\n• $movement_liberal$\n• $movement_radical$\n• $movement_anti_slavery$\n• $movement_positivist$\n• $movement_labor$\n• $movement_cultural_majority$\n• $movement_fascist$\n• $movement_modernizer$\n• $movement_socialist$\n• $movement_communist$\n• $movement_anarchist$\n• $movement_nihilist$"
-
-  modifier_italian_unificationist_sentiment: "Italian Nationalist Sentiments"
-  movement_compatible_with_italian_unification_tt: "Movement is #tooltippable;tooltip:[GetPlayer.GetTooltipTag],italian_nationalist_movements_list_tt compatible#! with #v $ITA_ADJ$#! [concept_unification]"
 
   je_confederation_of_the_rhine: "The Confederation of the Rhine"
   je_confederation_of_the_rhine_reason: "From 1806 to 1813, by the design of Napoleon Bonaparte, the German states were unified under a single government - the #bold Confederation of the Rhine#!. This edifice solidified Napoleon's control over Germany by proxy, containing the power of both #bold Prussia#! and #bold Austria#!. Reviving this arrangement will secure the power of [SCOPE.sCountry('rhine_overlord').GetName] within Germany, and avert the design of an uncontrollable unified Germany."
@@ -567,6 +449,32 @@
 
   modifier_great_reforms_complete: "Great Reforms Completed"
 
+
+  # Alaska
+
+ unfriendly_nation_with_interest_in_alaska_tt: "A hostile [concept_country] with a [concept_rank] higher than ours has an [concept_interest] in the #bold Pacific Coast#! [concept_strategic_region]"
+ friendly_nation_with_interest_in_alaska_tt: "A #bold North American#! [concept_great_power] with an [concept_incorporated_state] in the #bold Pacific Coast#! [concept_strategic_region] has positive [concept_relations] with us"
+ sold_alaska_tt: "We have successfully sold #bold Alaska#!"
+ not_sold_alaska_tt: "We have #bold not#! successfully sold #bold Alaska#!"
+ alaska_transaction_ongoing_tt: "No country is currently making an offer for #b Alaska#!"
+
+ has_alaska_sale_cooldown_tt: "Has not used this action in the past #bold year#!"
+
+ notification_alaska_negotiations_fail_name: "Offer for Alaska Refused"
+ notification_alaska_negotiations_fail_desc: "[SCOPE.sCountry('alaska_buyer').GetName] has backed out of the negotiations for the sale of Alaska. The territory will remain under our control until another attempt is made."
+ notification_alaska_negotiations_fail_tooltip: "#header $notification_alaska_negotiations_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_alaska_negotiations_fail_desc$"
+
+ je_sale_of_alaska: "The Sale of Alaska"
+ je_sale_of_alaska_reason: "[SCOPE.sState('alaska_scope').GetName], an isolated territory on the periphery of [SCOPE.sCountry('alaska_owner_scope').GetName], has come under threat of seizure by hostile foreign powers in recent years.\n\nTo extract some profit from the territory, and avoid the humiliation of having it seized by our enemies in the case of war, officials in the [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]'s government have suggested finding a buyer for [SCOPE.sState('alaska_scope').GetName]."
+
+ je_sell_alaska_button: "Find a Buyer"
+ je_sell_alaska_button_desc: "The territory of Alaska represents more of a liability than a benefit to our state. Finding a buyer for Alaska will serve as a boon to both our treasury and our national security."
+
+ selling_alaska_tt: "We will receive significant monetary compensation for [SCOPE.sState('alaska_scope').GetName], and improved [concept_relations] with its #bold buyer#!"
+
+ je_buy_alaska_button: "Make an Offer for Alaska"
+ je_buy_alaska_button_desc: "Alaska is currently held as a colonial territory by a friendly nation. We may be able to leverage our relations to purchase the territory."
+
   most_european_pops_abandon_alaska_tt: "A large number of #bold European#! [Concept('concept_pop','$concept_pops$')] will evacuate [SCOPE.sState('capital_scope').GetName]"
   some_european_pops_abandon_alaska_tt: "Some #bold European#! [Concept('concept_pop','$concept_pops$')] will evacuate [SCOPE.sState('capital_scope').GetName]"
   inherit_characters_from_athabaska_tt: "Inherits all [Concept('concept_character', '$concept_characters$')] from #v $ATB$#!"
@@ -583,6 +491,41 @@
   alk_breakup.1.e: "Turn the land over to its native peoples."
 
   modifier_ryotwari_system: "Ryotwari System"
+
+  # Alaska Purchase
+  sale_of_alaska_happened:0 "The Sale of Alaska has happened"
+ usa_purchase_alaska:0 "Negotiate the Alaska Purchase"
+ usa_purchase_alaska_desc:0 "Though some doubt the strategic and economic value of the vast expanses of Alaska, we should not pass up the opportunity to push the frontiers of liberty."
+ alaska.1.t:1 "An Offer for Alaska"
+ alaska.1.d:1 "[SCOPE.sCountry('alaska_buyer').GetName] has made us an offer for the purchase of [SCOPE.sState('alaska_scope').GetName]."
+ alaska.1.f_ru:1 ""As representative of [SCOPE.sCountry('alaska_buyer').GetNameNoFormatting], we henceforth agree to pay at the treasury in [SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName], to the diplomatic representative or other agent of [ROOT.GetCountry.GetRuler.GetHerHis] Majesty the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] of all Russias, seven million two hundred thousand dollars in gold.""
+ alaska.1.f:1 ""As representative of [SCOPE.sCountry('alaska_buyer').GetNameNoFormatting], we henceforth agree to pay at the treasury in [SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName], to the diplomatic representative or other agent of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] of [SCOPE.sCountry('alaska_seller').GetNameNoFormatting], seven million two hundred thousand dollars in gold.""
+ alaska.1.a:0 "The land is worthless, let the [SCOPE.sCountry('alaska_buyer').GetAdjectiveNoFormatting]s have it."
+ alaska.1.b:0 "[SCOPE.sState('alaska_scope').GetName] may hide riches yet."
+ alaska.2.t:0 "The [SCOPE.sState('alaska_scope').GetName] Purchase"
+ alaska.2.d:0 "[SCOPE.sCountry('alaska_seller').GetName] has agreed to our terms. A treaty for the purchase of [SCOPE.sState('alaska_scope').GetName] has been drafted."
+ alaska.2.f:0 ""Tomorrow, if you like, I will come to the department, and we can enter upon the treaty."\n"Why wait until tomorrow, Mr. Stoeckl? Let us make the treaty tonight!""
+ alaska.2.a:0 "What riches do these vast territories hide?"
+ alaska.3.t:0 "Failed [SCOPE.sState('alaska_scope').GetName] Purchase"
+ alaska.3.d:0 "Negotiations with [SCOPE.sCountry('alaska_seller').GetName] over the purchase of [SCOPE.sState('alaska_scope').GetName] have failed."
+ alaska.3.f:0 ""We see, therefore, that War is not merely a political act, but also a real political instrument, a continuation of political commerce, a carrying out of the same by other means.""
+ alaska.3.a:0 "We will continue diplomacy through other means."
+ alaska.3.b:0 "It was worth an attempt."
+ alaska.4.t:1 "An Offer for Alaska"
+ alaska.4.d:2 "[SCOPE.sCountry('alaska_seller').GetName] finds itself unable to protect its North American colony of [SCOPE.sState('alaska_scope').GetName], and appears willing to sell the territory to us for an affordable sum."
+ alaska.4.f:0 ""The representative of [SCOPE.sCountry('alaska_buyer').GetNameNoFormatting] agrees to pay at the treasury in [SCOPE.sCountry('alaska_buyer').GetCapital.GetCityHubName], to the diplomatic representative or other agent of [SCOPE.sCountry('alaska_seller').GetRuler.GetHerHis] Majesty the [SCOPE.sCountry('alaska_seller').GetRuler.GetPrimaryRoleTitle] of all [SCOPE.sCountry('alaska_seller').GetNameNoFormatting], seven million two hundred thousand dollars in gold.""
+ alaska.4.a:1 "Make the necessary arrangements."
+ alaska.4.c:1 "We cannot afford such an expense right now."
+ alaska.4.tt1:1 "We will offer £3m over the course of 1 year."
+
+ je_alaska:0 "The Acquisition of Alaska"
+ je_alaska_reason:0 "Situated in the far North, [SCOPE.sState('alaska_state').GetStateRegion.GetName] is a vast, uncharted territory that may hold many riches. Acquiring the territory will expand our borders greatly, advance our national prestige, and allow for dominating trade in the northern Pacific. "
+ alaska_usa_big_money:0 "Paying for Alaska - Large Payments"
+ alaska_usa_medium_money:0 "Paying for Alaska - Moderate Payments"
+ alaska_usa_small_money:0 "Paying for Alaska - Meager Payments"
+ alaska_rus_big_money:0 "Sale of Alaska - Large Payments"
+ alaska_rus_medium_money:0 "Sale of Alaska - Moderate Payments"
+ alaska_rus_small_money:0 "Sale of Alaska - Meager Payments"
 
   ### Utopians
 

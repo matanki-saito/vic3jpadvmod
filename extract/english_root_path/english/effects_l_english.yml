@@ -863,6 +863,9 @@
  ADD_AMENDMENT_GLOBAL: "An [concept_amendment] is added to a [concept_law]"
  ADD_AMENDMENT_FIRST: "[AMENDMENT_TYPE.GetName] is added to [LAW.GetName]"
  ADD_AMENDMENT_THIRD: "[AMENDMENT_TYPE.GetNameWithLaw(LAW.Self)] is added to [LAW.GetName]"
+ ADD_AMENDMENT_TIMEOUT_GLOBAL: "A temporary [concept_amendment] is added to a [concept_law]"
+ ADD_AMENDMENT_TIMEOUT_FIRST: "[AMENDMENT_TYPE.GetName] is temporarily added to [LAW.GetName], expiring #b $TIMEOUT_MONTHS$ months#! after the [concept_law] takes effect"
+ ADD_AMENDMENT_TIMEOUT_THIRD: "[AMENDMENT_TYPE.GetNameWithLaw(LAW.Self)] is temporarily added to [LAW.GetName], expiring #b $TIMEOUT_MONTHS$ months#! after the [concept_law] takes effect"
 
  REMOVE_AMENDMENT_GLOBAL: "An [concept_amendment] is removed from its [concept_law]"
  REMOVE_AMENDMENT_FIRST: "[AMENDMENT.GetName] is removed from [LAW.GetName]"

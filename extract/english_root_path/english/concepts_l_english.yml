@@ -956,13 +956,16 @@
 
  concept_blockade_resistance: "Blockade Resistance"
  concept_blockade_resistance_short: "Resistance"
- concept_blockade_resistance_desc: "$concept_blockade_resistance$ is the amount of [concept_blockade_strength] required to fully [concept_blockade] a [concept_state]. It is based on factors such as coastal [concept_building] output and local [concept_trade] volumes."
+ concept_blockade_resistance_desc: "$concept_blockade_resistance$ is the amount of [concept_blockade_strength] required to fully [concept_blockade] a [concept_state]. It is based on factors such as [Concept('concept_coastal_building','$concept_coastal_building$')] output and local [concept_trade] volumes."
 
  concept_blockade: "Blockade"
  concept_blockade_level: "Blockade Level"
  concept_blockades: "Blockades"
  concept_blockaded: "Blockaded"
  concept_blockade_desc: "$concept_blockades$ are a set up in a [concept_sea_node] via an [concept_admiral] [concept_order]. They damage [Concept('concept_supply_network','$concept_supply_networks$')] and reduce access to the [concept_world_market] in ports adjacent to the $concept_sea_node$. The $concept_blockade_level$ is determined by the respective attribute on ship [Concept('concept_unit','$concept_unit$')]. $ship_group_capital_ships$ are best suited for $concept_blockades$."
+ concept_coastal_building: "Coastal Building"
+ concept_coastal_buildings: "Coastal Buildings"
+ concept_coastal_building_desc: "A $concept_coastal_building$ is a [Concept('concept_building','$concept_building$')] located in the port area of a coastal [concept_state]. During a [Concept('concept_blockade','$concept_blockade$')], non-military $concept_coastal_buildings$ suffer reduced [concept_throughput]. [GetNavalMissionType('naval_mission_type_port_bombardment').GetName] can destroy levels of any $concept_coastal_building$, including military ones.\n\nThere are a total of #v [GetNumCoastalBuildingTypes]#! $concept_coastal_buildings$:#indent_newline:3 \n[GetCoastalBuildingTypesList]#!"
 
  concept_naval_hostilities: "Naval Hostilities"
  concept_naval_hostilities_desc: "$concept_naval_hostilities$ is a state of hostility between two [Concept('concept_country','$concept_countries$')] that permits hostile naval actions without a formal [concept_war]. Fleets may engage in [Concept('concept_battle','$concept_battles$')] and enforce [Concept('concept_blockade','$concept_blockades$')] against countries with which they have $concept_naval_hostilities$."
@@ -1248,7 +1251,7 @@
 
  concept_supply: "Supply"
  concept_supplies: "Supplies"
- concept_supply_desc: "The $concept_supply$ of a [concept_military_formation] determines how quickly [Concept('concept_unit','$concept_units$')] regain [concept_organization].\n\n#indent_newline:3 $concept_supply$ is usually #v 100%#!, but can be lower if an $concept_army$ is:\n- Overseas and supplied by a compromised [concept_shipping_lane]\n- Contain $concept_units$ whose [concept_building] is subject to [Concept('concept_shortage','$concept_input_goods_shortages$')]\n- Will be zero if the $concept_army$ is completely cut off from its $concept_hq$#!\n\n[Concept('concept_modifier','$concept_modifiers$')] can also apply in some cases."
+ concept_supply_desc: "The $concept_supply$ of a [concept_military_formation] determines how quickly [Concept('concept_unit','$concept_units$')] regain [concept_organization].\n\n#indent_newline:3 $concept_supply$ is usually #v 100%#!, but can be lower if an $concept_army$ is:\n- Overseas and supplied by a compromised [concept_shipping_lane]\n- Will be zero if the $concept_army$ is completely cut off from its $concept_hq$#!\n\n[Concept('concept_modifier','$concept_modifiers$')] can also apply in some cases."
 
  concept_manpower: "Manpower"
  concept_manpower_desc: "The amount of [SelectLocalization(GetPlayer.IsValid,'concept_manpower_desc_added','Soldiers')] and [SelectLocalization(GetPlayer.IsValid,'concept_manpower_desc_added_2','Officers')] in a [concept_unit]. The greater the $concept_manpower$ the more [concept_casualties] the $concept_unit$ will be able to deal and take."

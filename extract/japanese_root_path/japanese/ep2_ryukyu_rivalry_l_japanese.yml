@@ -1,8 +1,8 @@
 ﻿l_japanese:
  # Progress Bars
  je_ryukyu_rivalry_score_bar: "[SCOPE.sCountry('ryukyu_scope').GetName]に対する#tooltippable;tooltip:ryukyu_rivalry_sway_tt #b 揺さぶり#!#!"
- je_ryukyu_rivalry_score_bar_desc: "[SCOPE.sCountry('japan_scope').GetNameNoFormatting]"
- je_ryukyu_rivalry_score_bar_second_desc: "[SCOPE.sCountry('china_scope').GetNameNoFormatting]"
+ je_ryukyu_rivalry_score_bar_desc: "[SelectLocalization(SCOPE.sCountry('japan_scope').IsValid, SCOPE.sCountry('japan_scope').GetName, 'JAP')]"
+ je_ryukyu_rivalry_score_bar_second_desc: "[SelectLocalization(SCOPE.sCountry('china_scope').IsValid, SCOPE.sCountry('china_scope').GetName, 'CHI')]"
  je_ryukyu_rivalry_progress_bar: "琉球の#tooltippable;tooltip:ryukyu_rivalry_assertiveness_tt #b 主張度#!#!"
  je_ryukyu_rivalry_progress_bar_desc: "琉球が中立を主張 #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!"
  # # Scripted Buttons

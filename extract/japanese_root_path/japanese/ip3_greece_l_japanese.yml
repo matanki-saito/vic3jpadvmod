@@ -6,7 +6,7 @@
  greek_state_complete_tt: "少なくとも#v [GetPlayer.MakeScope.ScriptValue('greek_homeland_states_owned_to_complete_min')]#!の[Concept('concept_state','$concept_states$')]を[GetGeographicRegion('geographic_region_megali_greece').GetName]内に所有（現在、#v [ROOT.GetCountry.MakeScope.Var('greek_homeland_states_owned_var').GetValue|V0]#!がこの要件を満たしている）"
  greek_state_complete_tt_2: "少なくとも#v [GetPlayer.MakeScope.ScriptValue('greek_homeland_states_owned_to_complete_max')]#!の[Concept('concept_state','$concept_states$')]を[GetGeographicRegion('geographic_region_megali_greece').GetName]内に所有（現在、#v [ROOT.GetCountry.MakeScope.Var('greek_homeland_states_owned_var').GetValue|V0]#!がこの要件を満たしている）"
  greek_state_complete_tt_3: "少なくとも#v [GetPlayer.MakeScope.ScriptValue('byzantium_state_region_owned_to_complete')]#!の[Concept('concept_state','$concept_states$')]を[GetGeographicRegion('geographic_region_historic_byzantium').GetName]内に所有（現在、#v [ROOT.GetCountry.MakeScope.Var('byzantium_states_owned_var').GetValue|V0]#!がこの要件を満たしている）"
- byz_is_this_tt: "[concept_nation_formation]で#bold $BYZ$#!の国家を形成した"
+ byz_is_this_tt: "[concept_nation_formation]で#bold $BYZ$#! の国家を形成した"
  greek_homeland_states_tt: "#title 以下の[Concept('concept_state_region','$concept_state_regions$')]は[GetCulture('greek').GetName][Concept('concept_homeland','$concept_homelands$')]である:#! #indent_newline:3 \n• $STATE_EASTERN_THRACE$\n• $STATE_IONIAN_ISLANDS$\n• $STATE_PELOPONNESE$\n• $STATE_ATTICA$\n• $STATE_SKOPIA$\n• $STATE_MACEDONIA$\n• $STATE_THESSALIA$\n• $STATE_WESTERN_THRACE$\n• $STATE_HUDAVENDIGAR$\n• $STATE_AYDIN$\n• $STATE_CYPRUS$\n• $STATE_TRABZON$\n• $STATE_CRETE$\n• $STATE_WEST_AEGEAN_ISLANDS$\n• $STATE_EAST_AEGEAN_ISLANDS$"
  byzantium_state_regions_tt: "#title 以下は$BYZ$の[Concept('concept_state_region','$concept_state_regions$')]:#! #indent_newline:3 \n• $STATE_EASTERN_THRACE$\n• $STATE_ATTICA$\n• $STATE_THESSALIA$\n• $STATE_MACEDONIA$\n• $STATE_SKOPIA$\n• $STATE_WESTERN_THRACE$\n• $STATE_NORTHERN_THRACE$\n• $STATE_HUDAVENDIGAR$\n• $STATE_AYDIN$\n• $STATE_WEST_AEGEAN_ISLANDS$\n• $STATE_EAST_AEGEAN_ISLANDS$\n• $STATE_ALBANIA$"
  byzantium_snippet_text: "\n\n#b ビザンティウムの野望:#!\n高い[concept_legitimacy]を達成し、[GetStateRegion('STATE_IONIAN_ISLANDS').GetName]の支配を確保できれば、#b 東ローマ#!の称号を追い求める選択肢が得られる。"
@@ -87,7 +87,7 @@
  # Yugoslavia / Illyrian content, je_yugoslavia
  je_yugoslavia: "$YUG$の樹立"
  je_yugoslavia_reason: "[ROOT.GetCountry.GetNameNoFormatting]が手掛けるユーゴスラビア統一国家樹立の見込みは上々だ。[SCOPE.sCulture('croatian_scope').GetName]、[SCOPE.sCulture('serbian_scope').GetName]、[SCOPE.sCulture('slovene_scope').GetName]、[SCOPE.sCulture('bosniak_scope').GetName]の人々は、この新しい[Concept('concept_unification', '$concept_major_unification$')]の目標をこぞって支持している。\n\n$YUG$の[concept_nation_formation]が成功すれば、国際社会における我が国の戦略的優位性が高まり、外国の支配下で暮らす南スラブ住民たちの希望の光となるだろう。これによって我が国にもたらされる利益は計り知れない。"
- is_yugoslavia_tt: "[concept_nation_formation]において#bold $YUG$#!の国家を形成した"
+ is_yugoslavia_tt: "[concept_nation_formation]において#bold $YUG$#! の国家を形成した"
  no_insurrectionary_movement_tt: "[ROOT.GetCountry.GetNameNoFlag]に[Concept('concept_insurrection', '$concept_insurrectionary$')]の[Concept('concept_political_movement', '$concept_political_movements$')]が#b ない#!"
  # je_yugoslavia fail notification
  notification_yugoslavia_failed_message_name: "$YUG_ADJ$の掲げる計画が大幅に後退"
@@ -162,12 +162,12 @@
  failed_sick_man_main_tt: "#v $je_sick_man_main$#!または#v $je_sick_man_separatism$#!の[Concept('concept_journal_entry','$concept_journal_entries$')]に失敗した"
  eastern_crisis_complete_tt: "[concept_ottoman_integrity]が#v 100%#!に到達"
  eastern_crisis_movement_attraction: "不和の波"
- crisis_modifier_if_activated_tt: "$je_great_eastern_crisis$の[concept_journal_entry]が有効である間、文化的および宗教的[Concept('concept_political_movement','$concept_political_movements$')]が#tooltippable #tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_attraction_tt [GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]#!#!を獲得"
+ crisis_modifier_if_activated_tt: "$je_great_eastern_crisis$の[concept_journal_entry]が有効である間、文化的および宗教的[Concept('concept_political_movement','$concept_political_movements$')]が#tooltippable #tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_attraction_tt [GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]#!#! を獲得"
  crisis_modifier_when_done_tt: "文化的および宗教的[Concept('concept_political_movement','$concept_political_movements$')]が#tooltippable #tooltip:[GetPlayer.GetTooltipTag],eastern_crisis_movement_attraction_tt [GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]#!#!を失う"
  eastern_crisis_movement_attraction_tt: "[GetStaticModifier('eastern_crisis_movement_attraction').GetName|v]\n[GetStaticModifier('eastern_crisis_movement_attraction').GetDesc]"
  eastern_crisis_consequence_tt: "$je_great_eastern_crisis$の[concept_journal_entry]が有効になると、文化的および宗教的[Concept('concept_political_movement','$concept_political_movements$')]がさらなる支持を得るようになる" # if failed je_sick_man_main or je_sick_man_separatism
  control_eastern_crisis_bar: "ルメリアの国家完全性"
- control_eastern_crisis_bar_desc: "[concept_ottoman_integrity]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#!（[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('control_eastern_crisis_upper_bound')]）"
+ control_eastern_crisis_bar_desc: "[concept_ottoman_integrity]: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! （[JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/[GetPlayer.MakeScope.ScriptValue('control_eastern_crisis_upper_bound')]）"
  progress_from_ottoman_legitimacy_tt: "$dyn_c_ottoman_empire$の[concept_legitimacy]が#v [GetPlayer.MakeScope.ScriptValue('control_eastern_crisis_legitimacy_min')]#!以上"
  progress_from_being_at_peace_tt: "$dyn_c_ottoman_empire$が[concept_war]状態では#r #b ない#!#!"
  progress_from_being_at_war_tt: "$dyn_c_ottoman_empire$が[concept_war]中である"
