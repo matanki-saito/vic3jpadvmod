@@ -18,6 +18,7 @@
  INTEREST_TIER_TYPE_BOUNDS_DESC: "Applies between [InterestTierType.GetLowerBound|v] and [InterestTierType.GetUpperBound|v] [concept_involvement]"
  INTEREST_TIER_TYPE_NO_EFFECT: "#italic No effect#!"
 
+ INTEREST_TIER_MARKER_STRATEGIC_REGION: "[concept_strategic_region]: [StrategicRegion.GetName]"
  INTEREST_TIER_ACTIVE: "#i #b Current Tier#!#! for [Country.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(Country.IsLocalPlayer, 'YOU'))]"
  INTEREST_TIER_ACTIVE_TOOLTIP: "#header [InterestTierType.GetName]#! $INTEREST_TIER_ACTIVE$\n$INTEREST_TIER_BOUNDS_DESC$\n[SelectLocalization(EqualTo_CFixedPoint(Country.GetCurrentInvolvementIn(StrategicRegion.Self), Country.GetTargetInvolvementIn(StrategicRegion.Self)), 'INTEREST_TIER_CURRENT_INVOLVEMENT_DESC', 'INTEREST_TIER_TARGET_INVOLVEMENT_DESC')]\n$TOOLTIP_DELIMITER$\n$INTEREST_TIER_EFFECTS_AND_BREAKDOWN$"
  INTEREST_TIER_INACTIVE_TOOLTIP: "#header [InterestTierType.GetName]#!\n$INTEREST_TIER_BOUNDS_DESC$\n$TOOLTIP_DELIMITER$\n#title Effects:#!#indent_newline:3 \n[ConcatIfNeitherEmpty('\n',InterestTierType.GetOnActivateEffectDesc(Country.Self, StrategicRegion.Self))][ConcatIfNeitherEmpty('\n', InterestTierType.GetOnDeactivateEffectDesc(Country.Self, StrategicRegion.Self))][ConcatIfNeitherEmpty('\n', InterestTierType.GetStateModifier.GetDesc)][ConcatIfNeitherEmpty('\n', InterestTierType.GetTradeAdvantageDesc)][ConcatIfNeitherEmpty('\n', InterestTierType.GetLeverageGenerationMultDesc)]#!"
