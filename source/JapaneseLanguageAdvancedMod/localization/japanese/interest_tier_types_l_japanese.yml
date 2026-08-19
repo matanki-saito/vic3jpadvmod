@@ -65,3 +65,4 @@
  INTEREST_TIER_LEVERAGE_GENERATION_MULT_DESC:0 "この地域に[concept_capital_state]がある[Concept('concept_country','$concept_countries$')]に対する[concept_power_bloc_leverage]の生成量 : $VAL|%=+0$"
  DA_STAKE_COLONIAL_CLAIM_INTEREST_TIER:0 "[SCOPE.sCountry('target_country').GetName]が[Concept('concept_state','$concept_states$')]を領有する[concept_strategic_region]において、「[GetInterestTierType('interest_tier_influential').GetName]」以上の[concept_interest]を有している"
  DA_STAKE_COLONIAL_CLAIM_INTEREST_TIER_UNRECOGNIZED:0 "[SCOPE.sCountry('target_country').GetName]が[Concept('concept_state','$concept_states$')]を領有する[concept_strategic_region]において、「[GetInterestTierType('interest_tier_pervasive').GetName]」以上の[concept_interest]を有している"
+ INTEREST_TIER_MARKER_STRATEGIC_REGION:0 "[concept_strategic_region] : [StrategicRegion.GetName]"
