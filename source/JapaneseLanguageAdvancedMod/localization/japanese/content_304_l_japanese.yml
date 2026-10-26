@@ -280,7 +280,7 @@
  modifier_corporate_state_private_property_carveouts:0 "状況に応じた分割"
  modifier_corporate_state_private_property_ignored_ig:0 "脅威にさらされた私有地"
  corporate_state.1.t:0 "国民連合"
- corporate_state.1.d:0 "[SCOPE.gsInterestGroup('trade_unions_ig').GetName]の一部が、提案された[SCOPE.sLaw('current_law_scope').GetName]の中で、労働者の公式的な承認を支持する声が上がっています。彼らはコミュニストとの対立において、貴重な対抗勢力となっています。"
+ corporate_state.1.d:0 "[SCOPE.gsInterestGroup('trade_unions_ig').GetName]の一部が、提案された[SCOPE.sLaw('current_law_scope').GetName]の中で、労働者の公式的な承認を支持する声が上がっています。彼らは共産主義者との対立において、貴重な対抗勢力となっています。"
  corporate_state.1.f:0 "「今日、ブルジョワジーは労働者階級の組合化に対して、決して非論理的ではない共感と意思を示している。実際、ブルジョワジーの情報機関は、「非政治的」労働組合や、生産システムを支配するという彼らの主張にも大きな地位を与えるために、国家と代表機関の改革を容易に受け入れるだろう。ブルジョワジーは、プロレタリアートの行動が、取引ごとに提起される当面の経済的要求に限定される限り、現状を保護し、危険な「政治的」意識の形成を回避するのに役立つと考えている…」"
  corporate_state.1.a:0 "彼らの支援を歓迎する。"
  corporate_state.1.b:0 "我が国の労働組織の勧誘のために、彼らを利用する。"
