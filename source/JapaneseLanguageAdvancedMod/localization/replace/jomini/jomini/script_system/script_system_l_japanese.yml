@@ -58,3 +58,7 @@
  TRIGGER_AND:0 "以下のすべて : "
  TRIGGER_OR:0 "以下のうち一つ : "
  SUPPRESS:0 ""
+ JOMINI_ANY_TRIGGER_SCOPE_LIST_TOOLTIP:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN|q$')] $TEXT$#!#!"
+ JOMINI_ANY_TRIGGER_SCOPE_LIST_MORE:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN|q$')] …その他$COUNT$個のアイテム#!#!"
+ JOMINI_ANY_TRIGGER_SCOPE_LIST_ENTRY_TOOLTIP:0 "#tooltippable #tooltip:[GetRawTextTooltipTag('$BREAKDOWN|q$')] $TEXT$#!#!"
+ JOMINI_ANY_TRIGGER_SCOPE_LIST_HEADER:0 "影響を受ける州"

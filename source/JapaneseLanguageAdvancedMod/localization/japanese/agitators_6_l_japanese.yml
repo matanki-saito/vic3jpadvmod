@@ -10,7 +10,6 @@
  bluff_called:0 "ハッタリの暴露"
  expert_agreed_with_gov:0 "専門家の好意"
  professional_agreed_with_gov:0 "プロフェッショナルの好意"
- scandalous:0 "公開スキャンダル"
  whistleblower:0 "誠実な顔"
  unopposed_whistleblower:0 "誠実な顔のみ"
  successful_law_ram:0 "計画の成功"
@@ -252,3 +251,4 @@
  movement_law_breakthrough:0 "$agitator_law_breakthrough$"
  movement_law_collapse:0 "$agitator_law_collapse$"
  pot_stirrer_ig:0 "$pot_stirrer$"
+ modifier_scandalous:0 "公開スキャンダル"

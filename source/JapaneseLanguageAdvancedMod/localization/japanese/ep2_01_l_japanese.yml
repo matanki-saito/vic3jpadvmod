@@ -107,3 +107,5 @@
  ryukyu_influence_progress_bar_ryukyu_prestige:0 "琉球の[concept_prestige]レベル"
  ryukyu_influence_progress_bar_ryukyu_prestige_high:0 "琉球の[concept_prestige]レベルが高い"
  ryukyu_influence_progress_bar_ryukyu_prestige_low:0 "琉球の[concept_prestige]レベルが低い"
+ je_ryukyu_rivalry_victory_japan_conclusion_desc:0 "この$concept_journal_entry$は#b 日本#!の勝利で幕を閉じた"
+ je_ryukyu_rivalry_victory_china_conclusion_desc:0 "この$concept_journal_entry$は#b 中国#!の勝利で幕を閉じた"

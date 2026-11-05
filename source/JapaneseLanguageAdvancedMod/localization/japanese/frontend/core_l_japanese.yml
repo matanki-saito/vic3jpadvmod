@@ -73,3 +73,4 @@
  DELETE_GAME_ALL:0 "@warning! すべてのゲームを削除"
  DELETE_ALL:0 "すべてを削除"
  DELETE_ALL_CONFIRMATION_DESC:0 "すべてのセーブデータを削除します。よろしいですか？"
+ MISSING_DLCS:0 "@warning! #X DLCがありません#!"

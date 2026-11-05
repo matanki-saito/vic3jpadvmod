@@ -27,7 +27,7 @@
  godless_ig_leader:0 "[SCOPE.gsInterestGroup('godless_ig').GetName]の[SCOPE.sCharacter('godless_leader').GetFullName]が無神論者のリーダーに取って代わられます。"
  society_of_the_godless_mod:0 "神無き者たちの協会"
  antireligious_policies:0 "反宗教的政策"
- state_atheism_conversion_tt:0 "あなたの[Concept('concept_incorporated_state','$concept_incorporated_states$')]内の[Concept('concept_pop','$concept_pops$')]のうち10%が無神論者になります"
+ state_atheism_conversion_tt:0 "あなたの[Concept('concept_incorporated_state','$concept_incorporated_states|q$')]内の[Concept('concept_pop','$concept_pops|q$')]のうち10%が無神論者になります"
  unpopular_attacks_on_charities:0 "慈善団体に対する不評な攻撃"
  state_welfare_disparaged:0 "社会保障の軽視"
  state_welfare_promoted:0 "社会保障の推進"
