@@ -1,0 +1,11 @@
+﻿l_japanese:
+ ai_regional_objective_acquire_states: "州の獲得"
+ ai_regional_objective_acquire_states_desc: "この[concept_country]は、[Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]内の[concept_state]を新たに獲得しようとしています。"
+ ai_regional_objective_recover_claims: "請求権のある領土の奪還"
+ ai_regional_objective_recover_claims_desc: "この[concept_country]は、[Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]内で[Concept('concept_claim', '$concept_claims|q$')]を持つ領土の奪還を目指しています。"
+ ai_regional_objective_subjugate_country: "国家の従属化"
+ ai_regional_objective_subjugate_country_desc: "この[concept_country]は、[Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]内の[concept_local_country]を屈服させ、[Concept('concept_vassal', '$concept_vassalize|q$')]することを目指しています。"
+ ai_regional_objective_befriend_countries: "歓心を買う"
+ ai_regional_objective_befriend_countries_desc: "この[concept_country]は、[Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]内の[Concept('concept_local_country', '$concept_local_countries|q$')]からの評価を高め、[concept_relations]を改善しようとしています。"
+ ai_regional_objective_protect_country: "脅威にさらされた国の保護"
+ ai_regional_objective_protect_country_desc: "この[concept_country]は、[concept_local_country]を[Concept('concept_rivalry', '$concept_rival|q$')]の脅威から守ろうとしています。"

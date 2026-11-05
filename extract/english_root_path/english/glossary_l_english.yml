@@ -1,0 +1,70 @@
+﻿l_english:
+ GLOSSARY_OPEN_WEB_LINK: "Learn More"
+ GLOSSARY_OPEN_WEB_LINK_TOOLTIP: "This will open the following link in your web browser\n\n[GlossaryType.GetWebLink|v]"
+
+ glossary_house_of_obrenovic: "House of Obrenović"
+ glossary_house_of_obrenovic_short: "Obrenović"
+ glossary_house_of_obrenovic_desc: "The #b;italic House of Obrenović#! is one of the two contending $SER_ADJ$ royal houses. They are descended from #b Miloš Obrenović#!, leader of the Second Serbian Uprising and founder of the autonomous #b Principality of Serbia#!. Supporters of the $glossary_house_of_obrenovic_short$ typically favor the pursuit of closer $concept_relations$ with #b Austria#!."
+
+ glossary_house_of_karadjordjevic: "House of Karađorđević"
+ glossary_house_of_karadjordjevic_short: "Karađorđević"
+ glossary_house_of_karadjordjevic_desc: "The #b;italic House of Karađorđević#! is one of the two contending $SER_ADJ$ royal houses. They are descended from #b Karađorđe#!, leader of the ill-fated First Serbian Uprising against the #b Ottoman Empire#!. Supporters of the $glossary_house_of_karadjordjevic_short$ typically favor establishing closer $concept_relations$ with #b Russia#!, as well as the pursuit of pan-Slavic ambitions."
+
+ glossary_ri: "Ri"
+ glossary_ri_desc: "#b;italic Ri#! is a traditional unit of measurement derived from the Chinese #italic li#!.\n\nThe defined length of a ri shifted over time, but in the late Edo period it roughly corresponded to 36 #italic chō#!, or 3.9km."
+
+ glossary_uchikowashi: "Uchikowashi"
+ glossary_uchikowashi_desc: "#b;italic Uchikowashi#! refers to the act of destroying the property of perceived immoral actors such as moneylenders, rice-hoarders, and price-gougers by members of the public.\n\nWhile these acts were often accompanied by looting, in many cases the perpetrators of uchikowashi would deliberately refrain from doing so in order to highlight the legitimacy of their act."
+
+ glossary_zaibatsu: "Zaibatsu"
+ glossary_zaibatsu_desc: "A #b;italic Zaibatsu#! is a family-owned and vertically-integrated industrial and financial conglomerate.\n\nA typical zaibatsu is organized around a holding company and a bank, which hold ownership shares in several, typically industrial, subsidiary companies. The zaibatsu emerged from family merchant conglomerates of the late Edo period, which made use of their pre-existing wealth and ties to the state to consolidate control of much of #b Japan#!'s industrial base.\n\n$concept_companies$ regarded as Zaibatsu include #v $company_mitsui$#!, #v $company_mitsubishi$#!, #v $company_yasuda$#!, and #v $company_sumitomo$#!."
+
+ glossary_gongen: "Gongen"
+ glossary_gongen_desc: "A #b;italic Gongen#! is a Buddha manifesting as a kami, pairing an indigenous deity with a bringer of Buddhist enlightenment."
+
+ glossary_boddhisattva: "Bodhisattva"
+ glossary_boddhisattva_desc: "A #b;italic Bodhisattva#! is, in Buddhism, an enlightened being and teacher who helps others attain nirvana."
+
+ glossary_decembrists: "Decembrist Revolt"
+ glossary_decembrists_desc: "The #b;italic Decembrist Revolt#! was an attempted coup d'état by the liberal revolutionary #b Northern Society of the Decembrists#!, taking place following the death of #b Emperor Alexander I#! in #b 1825#!.\n\nThe revolutionaries, who sought the establishment of a constitutional order in #b Russia#!, marched three thousand soldiers into #b Senate Square#! in #b St. Petersburg#!, but were quickly suppressed by loyalist troops.\n\nThe Decembrist uprising marked the first challenge to the rule of #b Emperor Nicholas I#!."
+
+ glossary_zemstvo: "Zemstvo"
+ glossary_zemstvo_desc: "A #b;italic zemstvo#! assembly is an institution of local self-government on the level of a #b guberniya#! or #b uyezd#!. The main body of a zemstvo is an assembly elected by curiae of landowners, propertied city voters, and representatives of peasant communities. This assembly is granted the responsibility to manage economic activity throughout their jurisdiction, and the right to impose duties and taxes upon their population in order to fulfill their needs."
+
+ glossary_annexation_of_finland: "Annexation of $FIN$ in 1809"
+ glossary_annexation_of_finland_desc: "The Finnish War was fought between the #b Kingdom of Sweden#! and the #b Russian Empire#! from 1808 to 1809. After peace negotiations resulted in the Treaty of Fredrikshamn, the #b Grand Duchy of Finland#! was then created as an autonomous part within the #b Russian Empire#!."
+
+ glossary_establishment_of_congress_poland: "Establishment of $dyn_c_congress_poland$ in 1815"
+ glossary_congress_poland_possessive: "Congress Poland’s"
+ glossary_establishment_of_congress_poland_desc: "Ceded to the #b Russian Empire#! following #b France#!'s defeat in the #b Napoleonic Wars#!, #b $dyn_c_congress_poland$#! was established in 1815 by the Congress of Vienna."
+
+ glossary_annexation_baltic_governorates: "Annexation of $dyn_c_baltic_governorate$"
+ glossary_annexation_baltic_governorates_desc: "The dominions of Swedish Estonia and Swedish Livonia were ceded by #b Sweden#! in the Treaty of Nystad following the Great Northern War fought between 1700 and 1721. Later, in 1795, the #b Duchy of Courland and Semigallia#! was annexed by the #b Russian Empire#! in the Third Partition of Poland."
+
+ glossary_peredvizhniki_artists: "Peredvizhniki"
+ glossary_peredvizhniki_artists_desc: "#b;italic Peredvizhniki#!, also called The Wanderers or The Itinerants, were a group of Russian realist artists who left the Imperial Academy of Arts due to academic restrictions. They created an artists' cooperative in protest. The Association of Travelling Art Exhibits operated from 1871 to 1923 and toured the country with dozens of exhibitions."
+
+ glossary_tomas_de_zumalacarregui: "Tomás de Zumalacárregui"
+ glossary_tomas_de_zumalacarregui_desc: "#tooltip_header Tomas Zumalakarregi Imatz#!\n$TOOLTIP_DELIMITER$\nBorn on #v December 29th 1788#! in Ormaiztegi, Gipuzkoa\nDied on #v June 24th 1835#! in Zegama, Gipuzkoa\n\nTomás de Zumalacárregui e Imaz, also referred to as \"Uncle Tomas\" by his soldiers, was a Basque military officer and as Captain General of the Carlist forces in Navarra and the Basque Country responsible for the organization of the army as well as decisive early victories for the Carlist cause.\nHis sudden death on account of a gunshot wound in the field in the early summer of 1835 resulted in a considerable setback for Don Carlos' ambitions."
+
+ glossary_revolutions_of_1830: "Revolutions of 1830"
+ glossary_revolutions_of_1830_desc: "The #b;italic Revolutions of 1830#! were a series of liberal and romantic nationalist revolutions across Europe, beginning in July of 1830 in #b France#! and lasting until mid-1831. The revolutionaries sought to overthrow the restored #b Bourbon Monarchy#! in France, and establish independent national states in #b Belgium#!, #b Italy#!, and #b Poland#!. The revolutions led to the establishment of the French #b July Monarchy#! and an independent #b Belgium#! under King Leopold I.\n\nThe Polish revolution of 1830, known as the #b November Uprising#!, led to revolutionary activity spreading throughout the Western governorates of the #b Russian Empire#!, and the revocation of much of [Glossary('glossary_establishment_of_congress_poland','$glossary_congress_poland_possessive|q$')] autonomy following the uprising's military defeat."
+
+ glossary_sejm: "The Sejm"
+ glossary_sejm_short: "Sejm"
+ glossary_sejm_desc: "The bicameral parliament of Poland representing the nobility in a form of [GetLawType('law_landed_voting').GetName]."
+
+ glossary_november_uprising: "The November Uprising"
+ glossary_november_uprising_short: "November Uprising"
+ glossary_november_uprising_desc: "A widespread rebellion against Russian rule led by the Army of Congress Poland, which was abolished after the uprising was crushed. The Uprising found widespread support from many of the former citizens of the Polish-Lithuanian Commonwealth."
+
+ glossary_third_partition: "The Third Partition"
+ glossary_third_partition_short: "Third Partition"
+ glossary_third_partition_desc: "The Polish-Lithuanian Commonwealth was divided between the $concept_great_powers$ of Russia, Prussia, and Austria in 1795."
+
+ glossary_congress_of_vienna: "Congress of Vienna"
+
+ glossary_french_revolution: "French Revolution"
+ glossary_1792: "#b 1792#!"
+
+ glossary_french_revolutionary_wars: "French Revolutionary Wars"

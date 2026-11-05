@@ -12,8 +12,8 @@ coup_je_reason_text_6: "Seeking to install a regime more amicable to [ROOT.Var('
 coup_je_reason_text_7: "In [ROOT.Var('coup_loc_char_var').GetCharacter.GetHerHis] relentless pursuit of a Republic of Labor"
 coup_je_reason_text_0: "In a shameless display of ambition" # Should never appear ingame
 
-coup_progress_factors_tt: "Factors that will #b advance#! the progress of the [concept_coup] include:\n• Low [concept_government] [concept_legitimacy]\n• High [concept_popularity] of coupist [concept_commander]\n• Fraction of total [Concept('concept_unit','$concept_units$')] commanded by coupist [concept_commander]\n• [concept_clout] of $ig_approval_unhappy$ [Concept('concept_interest_group','$concept_interest_groups$')] supporting the $concept_coup$\n• Proximity of the coupist [concept_commander]'s [concept_military_formation] to the [concept_capital_state]"
-coup_regress_factors_tt: "Factors that will #b deplete#! the progress of the [concept_coup] include:\n• High [concept_government] [concept_legitimacy]\n• Low [concept_popularity] of coupist [concept_commander]\n• Level of [GetInstitutionType('institution_home_affairs').GetName] investment under [GetLawType('law_secret_police').GetName] or [GetLawType('law_national_guard').GetName] [Concept('concept_law', '$concept_laws$')]\n• Increasing the [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups$')] supporting the $concept_coup$\n• Distance of the coupist [concept_commander]'s [concept_military_formation] from the [concept_capital_state]"
+coup_progress_factors_tt: "Factors that will #b advance#! the progress of the [concept_coup] include:\n• Low [concept_government] [concept_legitimacy]\n• High [concept_popularity] of coupist [concept_commander]\n• Fraction of total [Concept('concept_unit','$concept_units|q$')] commanded by coupist [concept_commander]\n• [concept_clout] of $ig_approval_unhappy$ [Concept('concept_interest_group','$concept_interest_groups|q$')] supporting the $concept_coup$\n• Proximity of the coupist [concept_commander]'s [concept_military_formation] to the [concept_capital_state]"
+coup_regress_factors_tt: "Factors that will #b deplete#! the progress of the [concept_coup] include:\n• High [concept_government] [concept_legitimacy]\n• Low [concept_popularity] of coupist [concept_commander]\n• Level of [GetInstitutionType('institution_home_affairs').GetName] investment under [GetLawType('law_secret_police').GetName] or [GetLawType('law_national_guard').GetName] [Concept('concept_law', '$concept_laws|q$')]\n• Increasing the [concept_approval] of [Concept('concept_interest_group','$concept_interest_groups|q$')] supporting the $concept_coup$\n• Distance of the coupist [concept_commander]'s [concept_military_formation] from the [concept_capital_state]"
 
 ip4_coup.1.t: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetLastName]'s Endeavor"
 ip4_coup.1.d_1: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName], a prominent opponent of [SCOPE.sLaw('current_law_scope').GetName], has begun to maneuver towards halting the enactment of the law by force. [SCOPE.sCharacter('golpista_general').GetHerHis|U] bid for power is backed by a faction of the [SCOPE.gsInterestGroup('golpista_ig').GetName]."
@@ -22,6 +22,7 @@ ip4_coup.1.d_3: "A faction of the [SCOPE.gsInterestGroup('golpista_ig').GetName]
 ip4_coup.1.d_4: "Sensing an opportunity to realize [SCOPE.sCharacter('golpista_general').GetHerHis] personal ambitions, the [SCOPE.sCharacter('golpista_general').GetCustom('personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has rallied [SCOPE.sCharacter('golpista_general').GetHerHis] supporters amongst the [SCOPE.gsInterestGroup('golpista_ig').GetName] to seize power over [ROOT.GetCountry.GetName]."
 ip4_coup.1.d_7: "Sensing an opportunity to realize the emancipation of the working class, the [SCOPE.sCharacter('golpista_general').GetCustom('personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetFullName] has organized [SCOPE.sCharacter('golpista_general').GetHerHis] sympathizers amongst the [SCOPE.gsInterestGroup('golpista_ig').GetName] in a bid to seize power over [ROOT.GetCountry.GetName]."
 ip4_coup.1.d: "The [SCOPE.sCharacter('golpista_general').GetCustom('personality_traits_loc')|l] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has begun to make threatening moves towards seizing power over [ROOT.GetCountry.GetName]. [SCOPE.sCharacter('golpista_general').GetSheHe|U] is backed by a faction of the [SCOPE.gsInterestGroup('golpista_ig').GetName]."
+ip4_coup.1.f_low_tech: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullNameNoFormatting] stood in front of [SCOPE.sCharacter('golpista_general').GetHerHis] men as they waited for their co-conspirators to arrive at the rendevous. From the other side of a low hill, a dust cloud indicated the approach of [SCOPE.sCharacter('name_b_scope').GetFullNameNoFormatting] and [SCOPE.sCharacter('name_b_scope').GetHerHis] retinue.\n\n"Any word from [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting]?" demanded [SCOPE.sCharacter('golpista_general').GetLastNameNoFormatting].\n\n"Not yet, [SCOPE.sCharacter('golpista_general').GetRankName]," [SCOPE.sCharacter('name_b_scope').GetLastNameNoFormatting] replied, "But I expect them to arrive shortly."\n\n"Let us hope so, [SCOPE.sCharacter('name_b_scope').GetFirstNameNoFormatting]," said [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullNameNoFormatting] as [SCOPE.sCharacter('golpista_general').GetSheHe] looked towards the horizon, "We have much to do.""
 ip4_coup.1.f: "Colonel [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] lifted the tent flap, and slipped inside. The atmosphere was already heavy with smoke, and the other chairs filled. Maps were spread out across the table - terrain, government facilities, vital infrastructure. He saluted the [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] sitting at the end of the table, and took his seat.\n\nHe was not alone. Colonel [SCOPE.sCharacter('name_b_scope').GetLastNameNoFormatting] sat to his left, his pipe merrily contributing to the suffocating haze.\n\n"I apologize for my tardiness," [SCOPE.sCharacter('name_a_scope').GetLastNameNoFormatting] began. "There was a new gate guard."\n\nThe [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] nodded. "Forgiven. Your report, please. Status of the Twenty-Fourth?""
 ip4_coup.1.a: "Godspeed, [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetLastName]!"
 ip4_coup.1.b: "The present regime must survive."
@@ -57,14 +58,14 @@ pronunciamento_immediately_var_tt: "The government has forced an immediate confr
 
 coup_progress_reached_100_tt: "The #b progress#! of the [concept_coup] has reached #v 100%#!"
 coup_progress_reached_0_tt: "The #b progress#! of the [concept_coup] has reached #v 0%#!"
-coup_clout_of_golpista_ig_tt: "[concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups$')]"
-coup_commander_num_army_units_tt: "fraction of total army [Concept('concept_unit','$concept_units$')] commanded by coupist [concept_commander]"
-coup_commander_num_navy_units_tt: "fraction of total naval [Concept('concept_unit','$concept_units$')] commanded by coupist [concept_commander]"
+coup_clout_of_golpista_ig_tt: "[concept_clout] of supporting [Concept('concept_interest_group','$concept_interest_groups|q$')]"
+coup_commander_num_army_units_tt: "fraction of total army [Concept('concept_unit','$concept_units|q$')] commanded by coupist [concept_commander]"
+coup_commander_num_navy_units_tt: "fraction of total naval [Concept('concept_unit','$concept_units|q$')] commanded by coupist [concept_commander]"
 coup_popularity_vs_legitimacy_tt: "[concept_popularity] of coupist [concept_commander]"
-coup_commander_rank_progress_tt: "[Concept('concept_commander_rank', '$concept_commander_rank_short$')] of coupist [concept_commander]"
+coup_commander_rank_progress_tt: "[Concept('concept_commander_rank', '$concept_commander_rank_short|q$')] of coupist [concept_commander]"
 coup_commander_core_location_progress_tt: "coupist [concept_commander] is located in [concept_capital_state] [concept_strategic_region]"
-coup_commander_periphery_location_progress_tt: "coupist [concept_commander] is located in a [concept_strategic_region] with owned [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
-coup_commander_colony_location_progress_tt: "coupist [concept_commander] is located in a [concept_strategic_region] with no owned [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
+coup_commander_periphery_location_progress_tt: "coupist [concept_commander] is located in a [concept_strategic_region] with owned [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')]"
+coup_commander_colony_location_progress_tt: "coupist [concept_commander] is located in a [concept_strategic_region] with no owned [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')]"
 coup_commander_no_location_progress_tt: "coupist [concept_commander] is in transit or on a [concept_front]"
 coup_commander_unassigned_location_progress_tt: "coupist [concept_commander] is unassigned from [Concept('concept_military_formation', 'Field Command')]"
 appeased_golpista_igs_tt: "appeased coupist [concept_commander]"
@@ -85,23 +86,18 @@ je_ip4_coup_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress
 
 notification_successful_coup_in_country_name: "[concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
 notification_successful_coup_in_country_desc: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has successfully orchestrated a $concept_coup$ against the sitting government of [SCOPE.sCountry('coup_country').GetName], sweeping the [SCOPE.gsInterestGroup('golpista_ig').GetName] into power."
-notification_successful_coup_in_country_tooltip: "#header $notification_successful_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_successful_coup_in_country_desc$"
 
 notification_failed_coup_in_country_name: "Failed [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
 notification_failed_coup_in_country_desc: "An attempted $concept_coup$ by [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has ended in disaster, with the coupists crushed by forces loyal to the sitting government."
-notification_failed_coup_in_country_tooltip: "#header $notification_failed_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_failed_coup_in_country_desc$"
 
 notification_successful_orchestrated_coup_in_country_name: "Successful [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
 notification_successful_orchestrated_coup_in_country_desc: "[SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has successfully orchestrated a $concept_coup$ against the sitting government of [SCOPE.sCountry('coup_country').GetName], sweeping a [SCOPE.sCountry('coup_country').MakeScope.Var('coup_sponsor').GetCountry.GetAdjective]-aligned government into power."
-notification_successful_orchestrated_coup_in_country_tooltip: "#header $notification_successful_orchestrated_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_successful_orchestrated_coup_in_country_desc$"
 
 notification_failed_orchestrated_coup_in_country_name: "Failed [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
 notification_failed_orchestrated_coup_in_country_desc: "An attempted $concept_coup$ in [SCOPE.sCountry('coup_country').GetName] by the pro-[SCOPE.sCountry('coup_country').MakeScope.Var('coup_sponsor').GetCountry.GetAdjective] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has ended in disaster, with the coupists crushed by forces loyal to the sitting government."
-notification_failed_orchestrated_coup_in_country_tooltip: "#header $notification_failed_orchestrated_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_failed_orchestrated_coup_in_country_desc$"
 
 notification_fizzled_orchestrated_coup_in_country_name: "Failed [concept_coup] in [SCOPE.sCountry('coup_country').GetName]"
 notification_fizzled_orchestrated_coup_in_country_desc: "An attempted $concept_coup$ in [SCOPE.sCountry('coup_country').GetName] by the pro-[SCOPE.sCountry('coup_country').MakeScope.Var('coup_sponsor').GetCountry.GetAdjective] [SCOPE.sCharacter('golpista_general').GetPrimaryRoleTitle] [SCOPE.sCharacter('golpista_general').GetFullName] has ended in failure, with the coupists forced to abandon their plot."
-notification_fizzled_orchestrated_coup_in_country_tooltip: "#header $notification_fizzled_orchestrated_coup_in_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_fizzled_orchestrated_coup_in_country_desc$"
 
 modifier_regency: "Regency Period"
 modifier_regency_landowners: "$modifier_regency$"
@@ -137,7 +133,7 @@ regency.3.a: "Long live the [SCOPE.sCharacter('monarch_scope').GetPrimaryRoleTit
 proclaim_regent_monarch: "Proclaim Regent as Monarch"
 proclaim_regent_monarch_desc: "With no legitimate claimant in line to the throne, we face the unenviable task of choosing a new sovereign to rule [Character.GetCountry.GetName]. The sitting [Character.GetPrimaryRoleTitle] is a strong contender for the position."
 no_heir_tt: "There is no legitimate [Concept('concept_heir','claimant')] to the throne"
-eterna_regency_tt: "The sitting [Concept('concept_ruler','$RULER_TITLE_REGENT$')] has been in power for more than #v 10 years#! (currently [Character.MakeScope.Var('regency_years').GetValue|v0])"
+eterna_regency_tt: "The sitting [Concept('concept_ruler','$RULER_TITLE_REGENT|q$')] has been in power for more than #v 10 years#! (currently [Character.MakeScope.Var('regency_years').GetValue|v0])"
 modifier_new_royal_dynasty: "New Royal Dynasty"
 effects_depend_on_popularity_tt: "The effects of this interaction will vary based on the [concept_popularity] of [Character.GetFullName]"
 espartero_becomes_monarch_tt: "[SCOPE.sCharacter('espartero_scope').GetFullName] will be crowned as [SCOPE.sCharacter('espartero_scope').GetCountry.GetCustom('country_male_royal_title')] of [ROOT.GetCountry.GetName]"
@@ -185,25 +181,22 @@ appoint_cardinal_desc: "The Pope of the Roman Catholic Church possesses the righ
 
 modifier_pretender_archbishop: "Pretender Archbishop"
 
-notification_pope_confirms_archbishop_of_toledo_name: "[SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] Confirms Archbishop of Toledo"
+notification_pope_confirms_archbishop_of_toledo_name: "[SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] confirms Archbishop of Toledo"
 notification_pope_confirms_archbishop_of_toledo_desc: "The [SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] has confirmed [SCOPE.sCountry('spain_scope').GetRuler.GetFullName]'s appointment of [SCOPE.sCharacter('spanish_archbishop_scope').GetFullName] as Archbishop of Toledo, implicitly recognizing the legitimacy of [SCOPE.sCountry('spain_scope').GetHeir.GetPrimaryRoleTitle] [SCOPE.sCountry('spain_scope').GetHeir.GetFirstName]'s government."
 notification_pope_confirms_archbishop_of_toledo_effects_desc: "[concept_relations] have improved between [SCOPE.sCountry('spain_scope').GetName] and the [SCOPE.sCountry('papacy_scope').GetName], and $concept_relations$ between [SCOPE.sCountry('carlist_spain_scope').GetName] and the [SCOPE.sCountry('papacy_scope').GetNameNoFormatting] have suffered"
-notification_pope_confirms_archbishop_of_toledo_tooltip: "#header $notification_pope_confirms_archbishop_of_toledo_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pope_confirms_archbishop_of_toledo_desc$\n$notification_pope_confirms_archbishop_of_toledo_effects_desc$"
 
-notification_pope_rejects_archbishop_of_toledo_name: "[SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] Refuses to Confirm Archbishop of Toledo"
+notification_pope_rejects_archbishop_of_toledo_name: "[SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] refuses Toledo's Archbishop"
 notification_pope_rejects_archbishop_of_toledo_desc: "The [SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] has refused to confirm [SCOPE.sCountry('spain_scope').GetRuler.GetFullName]'s appointment of [SCOPE.sCharacter('spanish_archbishop_scope').GetFullName] as Archbishop of Toledo, in accordance with the Roman Catholic Church's policy of not recognizing the legitimacy of [SCOPE.sCountry('spain_scope').GetHeir.GetFullName] as [SCOPE.sCountry('spain_scope').GetHeir.GetPrimaryRoleTitle] of [SCOPE.sCountry('spain_scope').GetName]."
 notification_pope_rejects_archbishop_of_toledo_effects_desc: "[concept_relations] have worsened between [SCOPE.sCountry('spain_scope').GetName] and the [SCOPE.sCountry('papacy_scope').GetName], and $concept_relations$ between [SCOPE.sCountry('carlist_spain_scope').GetName] and the [SCOPE.sCountry('papacy_scope').GetNameNoFormatting] have improved"
-notification_pope_rejects_archbishop_of_toledo_tooltip: "#header $notification_pope_rejects_archbishop_of_toledo_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pope_rejects_archbishop_of_toledo_desc$\n$notification_pope_rejects_archbishop_of_toledo_effects_desc$"
 
-notification_pope_super_rejects_archbishop_of_toledo_name: "[SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] Refuses to Confirm Archbishop of Toledo"
+notification_pope_super_rejects_archbishop_of_toledo_name: "[SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle] refuses Toledo's Archbishop"
 notification_pope_super_rejects_archbishop_of_toledo_desc: "The [SCOPE.sCountry('papacy_scope').GetRuler.GetPrimaryRoleTitle], in accordance with the Roman Catholic Church's policy of not recognizing the legitimacy of [SCOPE.sCountry('spain_scope').GetHeir.GetFullName] as [SCOPE.sCountry('spain_scope').GetHeir.GetPrimaryRoleTitle] of [SCOPE.sCountry('spain_scope').GetName], has demanded that [SCOPE.sCharacter('spanish_archbishop_scope').GetFullName] denounce [SCOPE.sCountry('spain_scope').GetRuler.GetFullName]'s appointment of [SCOPE.sCharacter('spanish_archbishop_scope').GetHerHim] as Archbishop of Toledo. [SCOPE.sCharacter('spanish_archbishop_scope').GetFullName] has retired from politics."
 notification_pope_super_rejects_archbishop_of_toledo_effects_desc: "[concept_relations] have greatly worsened between [SCOPE.sCountry('spain_scope').GetName] and the [SCOPE.sCountry('papacy_scope').GetName], and $concept_relations$ between [SCOPE.sCountry('carlist_spain_scope').GetName] and the [SCOPE.sCountry('papacy_scope').GetNameNoFormatting] have improved"
-notification_pope_super_rejects_archbishop_of_toledo_tooltip: "#header $notification_pope_super_rejects_archbishop_of_toledo_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pope_super_rejects_archbishop_of_toledo_desc$\n$notification_pope_super_rejects_archbishop_of_toledo_effects_desc$"
 
 je_the_two_spains: "The Two Spains"
-je_the_two_spains_reason:1 "The #b Progress Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_liberal_pivot_factors_tt [SCOPE.ScriptValue('two_spains_liberal_display')|%0o]#!/#tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_conservative_pivot_factors_tt [SCOPE.ScriptValue('two_spains_conservative_display')|%0u]#! over time.\nThe #b Tension Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_tension_pivot_factors_tt [SCOPE.ScriptValue('two_spains_tension_pivot')|%0v]#! over time.\nHaving high #b Tension#! will cause increased [concept_activism], and an elevated chance of a [concept_coup].\n\n#italic "Here lies half of Spain. It died of the other half."#!\n—Mariano José de Larra\n\nSince the War of Independence, [ROOT.GetCountry.GetCustom('getNameIBEorSPA')] has been trapped in an oft-violent struggle between "the two Spains", the first loyal to Church and Crown, and the second to Enlightenment and Constitution. The irreconcilable hostility of the two sides, born of an underdeveloped liberal project, has entrenched a political order that relies upon the Army more than the ballot. If [ROOT.GetCountry.GetCustom('getNameIBEorSPANoFormatting')] is to find peace, she must choose which vision is to define her."
-two_spains_liberal_pivot_factors_tt: "Total Liberal Values: [GetPlayer.MakeScope.ScriptValue('two_spains_liberal_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_liberal_pivot')]#!"
-two_spains_conservative_pivot_factors_tt: "Total Conservative Values: [GetPlayer.MakeScope.ScriptValue('two_spains_conservative_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_conservative_pivot')]#!"
+je_the_two_spains_reason: "The #b Progress Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_liberal_pivot_factors_tt [SCOPE.ScriptValue('two_spains_liberal_display')|%0o]#!/#tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_conservative_pivot_factors_tt [SCOPE.ScriptValue('two_spains_conservative_display')|%0u]#! over time.\nThe #b Tension Bar#! will drift towards #tooltippable;tooltip:[GetPlayer.GetTooltipTag],two_spains_tension_pivot_factors_tt [SCOPE.ScriptValue('two_spains_tension_pivot')|%0v]#! over time.\nHaving high #b Tension#! will cause increased [concept_activism], and an elevated chance of a [concept_coup].\n\n#italic "Here lies half of Spain. It died of the other half."#!\n—Mariano José de Larra\n\nSince the War of Independence, [ROOT.GetCountry.GetCustom('getNameIBEorSPA')] has been trapped in an oft-violent struggle between "the two Spains", the first loyal to Church and Crown, and the second to Enlightenment and Constitution. The irreconcilable hostility of the two sides, born of an underdeveloped liberal project, has entrenched a political order that relies upon the Army more than the ballot. If [ROOT.GetCountry.GetCustom('getNameIBEorSPANoFormatting')] is to find peace, she must choose which vision is to define her."
+two_spains_liberal_pivot_factors_tt: "Total #b Liberal#! Values: [GetPlayer.MakeScope.ScriptValue('two_spains_liberal_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_liberal_pivot')]#!"
+two_spains_conservative_pivot_factors_tt: "Total #b Conservative#! Values: [GetPlayer.MakeScope.ScriptValue('two_spains_conservative_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_conservative_pivot')]#!"
 two_spains_tension_pivot_factors_tt: "Total Tension: [GetPlayer.MakeScope.ScriptValue('two_spains_tension_pivot')|2v]  #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('two_spains_tension_pivot')]#!"
 je_two_spains_progress_bar: "The Two Spains"
 je_two_spains_progress_bar_left_desc: "#v [GetPlayer.MakeScope.ScriptValue('two_spains_liberal_progress')|%]#!"
@@ -219,9 +212,11 @@ rootgetname_noformatting: "[ROOT.GetCountry.GetNameNoFormatting]"
 not_has_carlist_war_tt: "Has completed #b $je_the_first_carlist_war$#!"
 
 je_the_two_spains_liberal_header: "#title Will conclude in a #b liberal#! victory if:#!\n"
+je_the_two_spains_liberal_conclusion_desc: "The $concept_journal_entry$ concluded with a #b liberal#! victory"
 je_the_two_spains_conservative_header: "#title Will conclude in a #b conservative#! victory if:#!\n"
-je_the_two_spains_on_liberal_victory_header: "#title If concluded in a #b liberal#! victory:#!\n$EFFECT$"
-je_the_two_spains_on_conservative_victory_header: "#title If concluded in a #b conservative#! victory:#!\n$EFFECT$"
+je_the_two_spains_conservative_conclusion_desc: "The $concept_journal_entry$ concluded with a #b conservative#! victory"
+je_the_two_spains_on_liberal_victory_header: "#title If concluded with a #b liberal#! victory:#!\n$EFFECT$"
+je_the_two_spains_on_conservative_victory_header: "#title If concluded with a #b conservative#! victory:#!\n$EFFECT$"
 spain_liberal_victory_values_tt: "#b Liberal#! progress has reached #v 80%#!"
 spain_conservative_victory_values_tt: "#b Conservative#! progress has reached #v 80%#!"
 
@@ -235,29 +230,29 @@ TWO_SPAINS_INTELLIGENTSIA_CLOUT_TT: "[concept_clout] of the [GetInterestGroupVar
 TWO_SPAINS_CONSERVATIVE_INTELLIGENTSIA_TT: "[GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName] [concept_leader] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [concept_ideology]"
 TWO_SPAINS_TRADE_UNIONS_CLOUT_TT: "[concept_clout] of the [GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetName]"
 TWO_SPAINS_CONSERVATIVE_TRADE_UNIONS_TT: "[GetInterestGroupVariant('ig_trade_unions',GetPlayer).GetName] [concept_leader] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [concept_ideology]"
-TWO_SPAINS_LIBERAL_IGS_CLOUT_TT: "[concept_clout] of other [Concept('concept_interest_group','$concept_interest_groups$')] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_leader', '$concept_leaders$')]"
-TWO_SPAINS_ARMY_UNITS_LIBERAL_COMMANDERS_TT: "Fraction of total army [Concept('concept_unit','$concept_units$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_commander','$concept_commanders$')]"
-TWO_SPAINS_NAVY_UNITS_LIBERAL_COMMANDERS_TT: "Fraction of total navy [Concept('concept_unit','$concept_units$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_commander','$concept_commanders$')]"
-TWO_SPAINS_LIBERAL_MOVEMENTS_TT: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberal#! [Concept('concept_political_movement','$concept_political_movements$')]"
+TWO_SPAINS_LIBERAL_IGS_CLOUT_TT: "[concept_clout] of other [Concept('concept_interest_group','$concept_interest_groups|q$')] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_leader', '$concept_leaders|q$')]"
+TWO_SPAINS_ARMY_UNITS_LIBERAL_COMMANDERS_TT: "Fraction of total army [Concept('concept_unit','$concept_units|q$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_commander','$concept_commanders|q$')]"
+TWO_SPAINS_NAVY_UNITS_LIBERAL_COMMANDERS_TT: "Fraction of total navy [Concept('concept_unit','$concept_units|q$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_commander','$concept_commanders|q$')]"
+TWO_SPAINS_LIBERAL_MOVEMENTS_TT: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short|q$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberal#! [Concept('concept_political_movement','$concept_political_movements|q$')]"
 
 # Conservative drift factors
 TWO_SPAINS_LANDOWNERS_CLOUT_TT: "[concept_clout] of the [GetInterestGroupVariant('ig_landowners',GetPlayer).GetName]"
 TWO_SPAINS_LIBERAL_LANDOWNERS_TT: "[GetInterestGroupVariant('ig_landowners',GetPlayer).GetName] [concept_leader] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [concept_ideology]"
 TWO_SPAINS_DEVOUT_CLOUT_TT: "[concept_clout] of the [GetInterestGroupVariant('ig_devout',GetPlayer).GetName]"
 TWO_SPAINS_LIBERAL_DEVOUT_TT: "[GetInterestGroupVariant('ig_devout',GetPlayer).GetName] [concept_leader] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [concept_ideology]"
-TWO_SPAINS_CONSERVATIVE_IGS_CLOUT_TT: "[concept_clout] of other [Concept('concept_interest_group','$concept_interest_groups$')] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_leader', '$concept_leaders$')]"
-TWO_SPAINS_ARMY_UNITS_CONSERVATIVE_COMMANDERS_TT: "Fraction of total army [Concept('concept_unit','$concept_units$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_commander','$concept_commanders$')]"
-TWO_SPAINS_NAVY_UNITS_CONSERVATIVE_COMMANDERS_TT: "Fraction of total navy [Concept('concept_unit','$concept_units$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_commander','$concept_commanders$')]"
-TWO_SPAINS_CONSERVATIVE_MOVEMENTS_TT: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_movements_list_tt Conservative#! [Concept('concept_political_movement','$concept_political_movements$')]"
+TWO_SPAINS_CONSERVATIVE_IGS_CLOUT_TT: "[concept_clout] of other [Concept('concept_interest_group','$concept_interest_groups|q$')] with #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_leader', '$concept_leaders|q$')]"
+TWO_SPAINS_ARMY_UNITS_CONSERVATIVE_COMMANDERS_TT: "Fraction of total army [Concept('concept_unit','$concept_units|q$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_commander','$concept_commanders|q$')]"
+TWO_SPAINS_NAVY_UNITS_CONSERVATIVE_COMMANDERS_TT: "Fraction of total navy [Concept('concept_unit','$concept_units|q$')] commanded by #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_commander','$concept_commanders|q$')]"
+TWO_SPAINS_CONSERVATIVE_MOVEMENTS_TT: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short|q$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_movements_list_tt Conservative#! [Concept('concept_political_movement','$concept_political_movements|q$')]"
 
 # Tension drift factors
 TWO_SPAINS_LEGITIMACY_TT: "[concept_government] [concept_legitimacy]"
 TWO_SPAINS_RADICAL_FRACTION_TT: "total [concept_turmoil]"
-TWO_SPAINS_LOYALIST_FRACTION_TT: "total [Concept('concept_loyalist', '$concept_loyalism$')]"
-TWO_SPAINS_LIBERAL_MOVEMENTS_ACTIVISM_TT: "[Concept('concept_activism', '$concept_activism_short$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberal#! [Concept('concept_political_movement','$concept_political_movements$')]"
-TWO_SPAINS_CONSERVATIVE_MOVEMENTS_ACTIVISM_TT: "[Concept('concept_activism', '$concept_activism_short$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_movements_list_tt Conservative#! [Concept('concept_political_movement','$concept_political_movements$')]"
-TWO_SPAINS_CONSERVATIVE_IG_APPROVAL_TT: "net [concept_approval] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_interest_group','$concept_interest_groups$')]"
-TWO_SPAINS_LIBERAL_IG_APPROVAL_TT: "net [concept_approval] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_interest_group','$concept_interest_groups$')]"
+TWO_SPAINS_LOYALIST_FRACTION_TT: "total [Concept('concept_loyalist', '$concept_loyalism|q$')]"
+TWO_SPAINS_LIBERAL_MOVEMENTS_ACTIVISM_TT: "[Concept('concept_activism', '$concept_activism_short|q$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_movements_list_tt Liberal#! [Concept('concept_political_movement','$concept_political_movements|q$')]"
+TWO_SPAINS_CONSERVATIVE_MOVEMENTS_ACTIVISM_TT: "[Concept('concept_activism', '$concept_activism_short|q$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_movements_list_tt Conservative#! [Concept('concept_political_movement','$concept_political_movements|q$')]"
+TWO_SPAINS_CONSERVATIVE_IG_APPROVAL_TT: "net [concept_approval] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],conservative_ideologies_list_tt Conservative#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],reactionary_ideologies_list_tt Reactionary#! [Concept('concept_interest_group','$concept_interest_groups|q$')]"
+TWO_SPAINS_LIBERAL_IG_APPROVAL_TT: "net [concept_approval] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [Concept('concept_interest_group','$concept_interest_groups|q$')]"
 TWO_SPAINS_BASE_VALUE_TT: "Base Tension"
 
 leader_has_liberal_or_progressive_ideology_tt: "[concept_leader] has any #tooltippable;tooltip:[GetPlayer.GetTooltipTag],liberal_ideologies_list_tt Liberal#! or #tooltippable;tooltip:[GetPlayer.GetTooltipTag],progressive_ideologies_list_tt Progressive#! [concept_ideology]"
@@ -290,12 +285,12 @@ modifier_libertad_igualdad_fraternidad: "Libertad, Igualdad, Fraternidad"
 modifier_libertad_igualdad_fraternidad_no_voting: "$modifier_libertad_igualdad_fraternidad$"
 modifier_republican_spirit: "Republican Spirit"
 
-two_spains_military_liberal_ideologies_tt: "[Concept('concept_commander','$concept_commanders$')] will be more likely to have liberal and radical [Concept('concept_ideology','$concept_ideologies$')]"
+two_spains_military_liberal_ideologies_tt: "[Concept('concept_commander','$concept_commanders|q$')] will be more likely to have liberal and radical [Concept('concept_ideology','$concept_ideologies|q$')]"
 
 TWO_SPAINS_TENSION: "Tension between #v $je_the_two_spains$#!"
 
-two_spains_liberal_ideologies_tt: "All [Concept('concept_interest_group', '$concept_interest_groups$')] will have a higher chance to choose liberal and radical [Concept('concept_leader', '$concept_leaders$')]."
-two_spains_conservative_ideologies_tt: "All [Concept('concept_interest_group', '$concept_interest_groups$')] will have a higher chance to choose conservative and reactionary [Concept('concept_leader', '$concept_leaders$')]."
+two_spains_liberal_ideologies_tt: "All [Concept('concept_interest_group', '$concept_interest_groups|q$')] will have a higher chance to choose liberal and radical [Concept('concept_leader', '$concept_leaders|q$')]."
+two_spains_conservative_ideologies_tt: "All [Concept('concept_interest_group', '$concept_interest_groups|q$')] will have a higher chance to choose conservative and reactionary [Concept('concept_leader', '$concept_leaders|q$')]."
 
 spain_current_ruler_abdicates_tt: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] will be forced to abdicate the [ROOT.GetCountry.GetAdjective] throne"
 spain_current_ruler_abdicates_owner_scope_tt: "[Character.GetCountry.GetRuler.GetPrimaryRoleTitle] [Character.GetCountry.GetRuler.GetFirstName] will be forced to abdicate the [Character.GetCountry.GetAdjective] throne"
@@ -327,11 +322,13 @@ je_devorismo: "The Reign of the Devourers"
 je_devorismo_reason: "The conclusive victory of the Liberals in the Portuguese Civil War has banished the pretender King Miguel to Rome, and rendered his supporters a spent force in domestic politics. In the aftermath, the dominant [GetIdeology('ideology_cartist').GetName] faction of the Liberals have set about solidifying their monopoly on power - and their unimpeded access to the [ROOT.GetCountry.GetAdjective] treasury.\n\nOver the past year, the $ideology_cartist$ government has embarked upon a sweeping program of selling national properties to private investors, a policy that has been named "Devorismo", or "Devourism" by its detractors. These privatizations, far from meaningfully alleviating [ROOT.GetCountry.GetNameNoFormatting]'s substantial debts, have led to a concentration of property in the hands of wealthy supporters of the Liberals, and contributed to a split in [ROOT.GetCountry.GetAdjectiveNoFormatting] liberalism that grows wider and wider by the day."
 
 je_devorismo_cartist_header: "#title Will conclude in a #b Cartist#! victory if:#!\n"
+je_devorismo_cartist_conclusion_desc: "The $concept_journal_entry$ concluded with a #b Cartist#! victory"
 je_devorismo_constitutionalist_header: "#title Will conclude in a #b Constitutionalist#! victory if:#!\n"
-je_devorismo_on_cartist_victory_header: "#title If concluded in a #b Cartist#! victory:#!\n$EFFECT$"
-je_devorismo_on_constitutionalist_victory_header: "#title If concluded in a #b Constitutionalist#! victory:#!\n$EFFECT$"
+je_devorismo_constitutionalist_conclusion_desc: "The $concept_journal_entry$ concluded with a #b Constitutionalist#! victory"
+je_devorismo_on_cartist_victory_header: "#title If concluded with a #b Cartist#! victory:#!\n$EFFECT$"
+je_devorismo_on_constitutionalist_victory_header: "#title If concluded with a #b Constitutionalist#! victory:#!\n$EFFECT$"
 
-all_privatisable_buildings_have_been_privatised_tt: "More than [GetPlayer.MakeScope.ScriptValue('je_devorismo_privatisation_target')|v0%] of [Concept('concept_building_level','$concept_building_levels_short$')] of [Concept('concept_building', '$concept_buildings$')] eligible for [Concept('concept_privatize', '$concept_privatization$')] have been $concept_privatized$"
+all_privatisable_buildings_have_been_privatised_tt: "More than [GetPlayer.MakeScope.ScriptValue('je_devorismo_privatisation_target')|v0%] of [Concept('concept_building_level','$concept_building_levels_short|q$')] of [Concept('concept_building', '$concept_buildings|q$')] eligible for [Concept('concept_privatize', '$concept_privatization|q$')] have been $concept_privatized$"
 
 modifier_devorismo: "Devorismo"
 
@@ -358,8 +355,8 @@ devorismo.3.b: "We were all revolutionaries, once."
 
 if_revolution_ongoing_tt: "If a [concept_revolution] is ongoing: #indent_newline:3 \n• Triggers the Event #v $devorismo.2.t_dummy$#!#!"
 if_loans_paid_off_tt: "If [ROOT.GetCountry.GetName] has [concept_gold_reserves] greater than @money!#v 0.00#!: #indent_newline:3 \n• Triggers the Event #v $devorismo.1.t$#!#!"
-if_nothing_left_to_privatise_tt: "If more than [GetPlayer.MakeScope.ScriptValue('je_devorismo_privatisation_target')|v0%] of eligible [Concept('concept_building', '$concept_buildings$')] have been $concept_privatized$: #indent_newline:3 \n• Triggers the Event #v $devorismo.5.t$#!#!"
-if_removed_cartists_tt: "If [ROOT.GetCountry.GetName] has [Concept('concept_election', '$concept_election_voting_franchise$')], and no [GetIdeology('ideology_cartist').GetName] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_government]: #indent_newline:3 \n• Triggers the Event #v $devorismo.6.t$#!#!"
+if_nothing_left_to_privatise_tt: "If more than [GetPlayer.MakeScope.ScriptValue('je_devorismo_privatisation_target')|v0%] of eligible [Concept('concept_building', '$concept_buildings|q$')] have been $concept_privatized$: #indent_newline:3 \n• Triggers the Event #v $devorismo.5.t$#!#!"
+if_removed_cartists_tt: "If [ROOT.GetCountry.GetName] has [Concept('concept_election', '$concept_election_voting_franchise|q$')], and no [GetIdeology('ideology_cartist').GetName] [Concept('concept_interest_group','$concept_interest_groups|q$')] [concept_in_government]: #indent_newline:3 \n• Triggers the Event #v $devorismo.6.t$#!#!"
 no_cartist_in_government_tt: "The [GetIdeology('ideology_cartist').GetName] [SCOPE.gsInterestGroup('cartist_ig').GetName] is #b not#! [concept_in_government]"
 
 devorismo.4.t: "A Likely Story"
@@ -617,17 +614,14 @@ je_portugal_and_brazil_pedro_button_if_they_decline_tt: "If they decline, [conce
 
 modifier_portuguese_diplomatic_assistance: "Portuguese Diplomatic Assistance"
 
-notification_brazil_rejects_portuguese_assistance_name: "[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('pedro_scope').GetFirstName] Rejects [SCOPE.sCountry('portugal_scope').GetAdjective] Assistance"
-notification_brazil_rejects_portuguese_assistance_desc: "[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('pedro_scope').GetFirstName] of [SCOPE.sCountry('brazil_scope').GetName] has rejected [SCOPE.sCountry('portugal_scope').GetAdjective] offers of assistance in upholding his reign. [concept_relations] between our [Concept('concept_country', '$concept_countries$')] have suffered as a result."
-notification_brazil_rejects_portuguese_assistance_tooltip: "#header $notification_brazil_rejects_portuguese_assistance_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brazil_rejects_portuguese_assistance_desc$"
+notification_brazil_rejects_portuguese_assistance_name: "[SCOPE.sCharacter('pedro_scope').GetFirstName] rejects [SCOPE.sCountry('portugal_scope').GetAdjective] assistance"
+notification_brazil_rejects_portuguese_assistance_desc: "[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('pedro_scope').GetFirstName] of [SCOPE.sCountry('brazil_scope').GetName] has rejected [SCOPE.sCountry('portugal_scope').GetAdjective] offers of assistance in upholding his reign. [concept_relations] between our [Concept('concept_country', '$concept_countries|q$')] have suffered as a result."
 
-notification_brazil_accepts_portuguese_assistance_name: "[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('pedro_scope').GetFirstName] Accepts [SCOPE.sCountry('portugal_scope').GetAdjective] Assistance"
+notification_brazil_accepts_portuguese_assistance_name: "[SCOPE.sCharacter('pedro_scope').GetFirstName] accepts [SCOPE.sCountry('portugal_scope').GetAdjective] assistance"
 notification_brazil_accepts_portuguese_assistance_desc: "[SCOPE.sCharacter('pedro_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('pedro_scope').GetFirstName] of [SCOPE.sCountry('brazil_scope').GetName] has accepted the [SCOPE.sCountry('portugal_scope').GetAdjective] offer of assistance in upholding his reign. [SCOPE.sCountry('brazil_scope').GetNameNoFormatting] now owes us an [concept_obligation]."
-notification_brazil_accepts_portuguese_assistance_tooltip: "#header $notification_brazil_accepts_portuguese_assistance_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brazil_accepts_portuguese_assistance_desc$"
 
-notification_leopold_becomes_king_of_spain_name: "[SCOPE.sCharacter('leopold_von_hohenzollern_scope').GetFullName] Assumes [SCOPE.sCountry('spain_scope').GetAdjective] Throne"
+notification_leopold_becomes_king_of_spain_name: "[SCOPE.sCharacter('leopold_von_hohenzollern_scope').GetFullName] assumes [SCOPE.sCountry('spain_scope').GetAdjective] throne"
 notification_leopold_becomes_king_of_spain_desc: "[SCOPE.sCharacter('leopold_von_hohenzollern_scope').GetFullName], the former heir to Hohenzollern-Sigmaringen, has received the title of King of [SCOPE.sCountry('spain_scope').GetNameNoFormatting]. He has departed Germany to assume the [SCOPE.sCountry('spain_scope').GetAdjectiveNoFormatting] throne."
-notification_leopold_becomes_king_of_spain_tooltip: "#header $notification_leopold_becomes_king_of_spain_name$#!\n$TOOLTIP_DELIMITER$\n$notification_leopold_becomes_king_of_spain_desc$"
 
 has_expelled_brazilian_diplomats_tt: "Has expelled #b $BRZ_ADJ$#! diplomats, or #b $BRZ$#! has expelled #b $POR_ADJ$#! diplomats"
 
@@ -665,6 +659,7 @@ independence.2.g: "It was the proletariat that earned our victory."
 independence.2.h: "[ROOT.GetCountry.GetName] will be guided by divine providence."
 
 je_spain_provisional_government: "[ROOT.GetCountry.GetCustom('spa_provisional_government_loc')]"
+je_spain_provisional_government_concluded: "The Provisional Government"
 je_spain_provisional_government_reason: "[ROOT.GetCountry.GetCustom('spa_provisional_government_reason_loc')] With the [ROOT.GetCountry.GetAdjectiveNoFormatting] throne made empty, the newly-declared Provisional Government has set itself to the task of finding a candidate to serve as King."
 je_spain_provisional_government_reason_snippet: "A military revolt has toppled the unpopular [ROOT.GetCountry.GetCustom('spa_couped_dynasty_loc')] dynasty, and sent the former rulers of [ROOT.GetCountry.GetName] scurrying off into exile."
 je_spain_provisional_government_reason_snippet_2: "The short-lived Republican experiment in [ROOT.GetCountry.GetName] has been toppled, and a government of committed royalists brought into power."
@@ -702,7 +697,7 @@ je_spain_provisional_government_bonaparte_button_desc: "The House of Bonaparte r
 je_spain_provisional_government_republic_button: "Declare a Republic"
 je_spain_provisional_government_republic_button_desc: "Republicanism is a new position in $SPA$, only recently emerging to contest the constitutional monarchism typical amongst Spanish doctrinaire liberals. If no King can be found, or if republicanism politically eclipses constitutionalism, to declare a Republic may be the only option that remains."
 
-successfully_crowned_a_king_tt: "Has successfully crowned a [Concept('concept_ruler','$RULER_TITLE_KING$')]"
+successfully_crowned_a_king_tt: "Has successfully crowned a [Concept('concept_ruler','$RULER_TITLE_KING|q$')]"
 je_active_for_more_than_five_years_tt: "This [concept_journal_entry] has been active for more than #v 5 years#!"
 
 activate_provisional_government_tt: "A #b Provisional Government#! will be convened to elect a $RULER_TITLE_KING$"
@@ -786,7 +781,7 @@ spain_provisional_government.7.b: "$spain_provisional_government.3.b$"
 
 spain_provisional_government.71.t: "The Bonaparte Restoration"
 spain_provisional_government.71.d: "The House of Bonaparte has accepted our offer of the [SCOPE.sCountry('spain_scope').GetAdjective] throne, dispatching a prince to [SCOPE.sCountry('spain_scope').GetCapital.GetCityHubName] to serve as King of [SCOPE.sCountry('spain_scope').GetNameNoFormatting]. After his election, he has crowned himself before the Cortes."
-spain_provisional_government.71.f:1 ""Karl Marx said- well, he was quoting Hegel... that world-historic personalities appear, so to speak, twice."" Francisco paced around the room, staring furiously down at the book in his hand, ""And that Hegel forgot to add: the first time as tragedy, the second time as farce.""\n\nThe copyist, eyes rimmed with red, watched him as he paced. "You're going to wear a rut in my floor," he said. "We both know what must be done, and we'll do it."\n\nFrancisco halted his circuit, and placed the book down on a chair half-drowned in pamphlets. His eyes trailed over to the table, at the jars of powder forming its new centrepiece, at the packet of nails.\n\n"So we do," he said. "So we do.""
+spain_provisional_government.71.f: ""Karl Marx said- well, he was quoting Hegel... that world-historic personalities appear, so to speak, twice."" Francisco paced around the room, staring furiously down at the book in his hand, ""And that Hegel forgot to add: the first time as tragedy, the second time as farce.""\n\nThe copyist, eyes rimmed with red, watched him as he paced. "You're going to wear a rut in my floor," he said. "We both know what must be done, and we'll do it."\n\nFrancisco halted his circuit, and placed the book down on a chair half-drowned in pamphlets. His eyes trailed over to the table, at the jars of powder forming its new centrepiece, at the packet of nails.\n\n"So we do," he said. "So we do.""
 spain_provisional_government.71.a: "Hail, Bonaparte, restored at last!"
 
 spain_provisional_government.8.t: "The Proclamation of the Republic"
@@ -801,29 +796,23 @@ espartero_refuses_kingship_tt: "#b Baldomero Espartero#! will refuse the [ROOT.G
 
 not_using_other_interaction_tt: "Is #b not#! currently using another interaction"
 
-notification_no_portuguese_monarch_available_name: "House of Bragança Declines [SCOPE.sCountry('spain_scope').GetAdjective] Throne"
+notification_no_portuguese_monarch_available_name: "House of Bragança declines [SCOPE.sCountry('spain_scope').GetAdjective] throne"
 notification_no_portuguese_monarch_available_desc: "[SCOPE.sCountry('portugal_scope').GetName] has declined our offer to place a member of the House of Bragança on the throne of [SCOPE.sCountry('spain_scope').GetName]."
-notification_no_portuguese_monarch_available_tooltip: "#header $notification_no_portuguese_monarch_available_name$#!\n$TOOLTIP_DELIMITER$\n$notification_no_portuguese_monarch_available_desc$"
 
-notification_spain_would_rather_not_appoint_a_braganca_king_name: "Spain Declines Our Candidate"
+notification_spain_would_rather_not_appoint_a_braganca_king_name: "Spain declines our candidate"
 notification_spain_would_rather_not_appoint_a_braganca_king_desc: "[SCOPE.sCountry('spain_scope').GetName] has rejected the candidate we have offered for the Spanish throne."
-notification_spain_would_rather_not_appoint_a_braganca_king_tooltip: "#header $notification_spain_would_rather_not_appoint_a_braganca_king_name$#!\n$TOOLTIP_DELIMITER$\n$notification_spain_would_rather_not_appoint_a_braganca_king_desc$"
 
-notification_no_espartero_available_name: "Marshal Espartero Declines [SCOPE.sCountry('spain_scope').GetAdjective] Throne"
+notification_no_espartero_available_name: "Marshal Espartero declines [SCOPE.sCountry('spain_scope').GetAdjective] throne"
 notification_no_espartero_available_desc: "Baldomero Espartero has declined our offer to grant him the title of King of [SCOPE.sCountry('spain_scope').GetName], citing his old age and lack of fitness for the post."
-notification_no_espartero_available_tooltip: "#header $notification_no_espartero_available_name$#!\n$TOOLTIP_DELIMITER$\n$notification_no_espartero_available_desc$"
 
-notification_no_german_monarch_available_name: "House of Hohenzollern Declines [SCOPE.sCountry('spain_scope').GetAdjective] Throne"
+notification_no_german_monarch_available_name: "House of Hohenzollern declines [SCOPE.sCountry('spain_scope').GetAdjective] throne"
 notification_no_german_monarch_available_desc: "[SCOPE.sCountry('hohenzollern_scope').GetName] has declined our offer to place a member of the House of Hohenzollern on the throne of [SCOPE.sCountry('spain_scope').GetName]."
-notification_no_german_monarch_available_tooltip: "#header $notification_no_german_monarch_available_name$#!\n$TOOLTIP_DELIMITER$\n$notification_no_german_monarch_available_desc$"
 
-notification_no_italian_monarch_available_name: "House of Savoy Declines [SCOPE.sCountry('spain_scope').GetAdjective] Throne"
+notification_no_italian_monarch_available_name: "House of Savoy declines [SCOPE.sCountry('spain_scope').GetAdjective] throne"
 notification_no_italian_monarch_available_desc: "[SCOPE.sCountry('savoy_scope').GetName] has declined our offer to place a member of the House of Savoy on the throne of [SCOPE.sCountry('spain_scope').GetName]."
-notification_no_italian_monarch_available_tooltip: "#header $notification_no_italian_monarch_available_name$#!\n$TOOLTIP_DELIMITER$\n$notification_no_italian_monarch_available_desc$"
 
-notification_no_french_monarch_available_name: "House of Bonaparte Declines [SCOPE.sCountry('spain_scope').GetAdjective] Throne"
+notification_no_french_monarch_available_name: "House of Bonaparte declines [SCOPE.sCountry('spain_scope').GetAdjective] throne"
 notification_no_french_monarch_available_desc: "[SCOPE.sCountry('france_scope').GetName] has declined our offer to place a member of the House of Bonaparte on the throne of [SCOPE.sCountry('spain_scope').GetName]."
-notification_no_french_monarch_available_tooltip: "#header $notification_no_french_monarch_available_name$#!\n$TOOLTIP_DELIMITER$\n$notification_no_french_monarch_available_desc$"
 
 ana_de_jesus_maria_de_braganca_tt: "$Ana_de_Jesus_Maria$ $de_Braganca$, a [GetIdeology('ideology_moderate').GetName] member of the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName], will take the [ROOT.GetCountry.GetAdjective] throne"
 fernando_de_saxe_coburg_gotha_tt: "$Fernando$ $de_SaxO_nia-Coburgo_e_Gota$, a [GetIdeology('ideology_moderate').GetName] member of the [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName], will take the [ROOT.GetCountry.GetAdjective] throne"
@@ -855,7 +844,7 @@ luis_i_de_braganca_tt: "$Luis$ $de_Braganca$, a [GetIdeology('ideology_reformer'
 carlos_i_de_braganca_tt: "$Carlos$ $de_Braganca$, a [GetIdeology('ideology_authoritarian').GetName] member of the [GetInterestGroupVariant('ig_landowners',GetPlayer).GetName], will take the [ROOT.GetCountry.GetAdjective] throne"
 manuel_ii_de_braganca_tt: "$Manuel$ $de_Braganca$, a [GetIdeology('ideology_reformer').GetName] member of the [GetInterestGroupVariant('ig_intelligentsia',GetPlayer).GetName], will take the [ROOT.GetCountry.GetAdjective] throne"
 
-continue_search_for_king_tt: "The search for a [Concept('concept_ruler','$RULER_TITLE_KING$')] will #b continue#!"
+continue_search_for_king_tt: "The search for a [Concept('concept_ruler','$RULER_TITLE_KING|q$')] will #b continue#!"
 
 modifier_changed_administrative_language: "Changed Language of Administration"
 modifier_changed_administrative_language_state: "Exchanging Administrators"
@@ -866,8 +855,10 @@ je_spanish_anarchism: "The Internacionalistas"
 je_spanish_anarchism_reason: "The destitution and political tension endemic to [ROOT.GetCountry.GetName] has created fertile soil for the growth of the [SelectLocalization(SCOPE.sPoliticalMovement('anarchist_movement_scope').IsValid, SCOPE.sPoliticalMovement('anarchist_movement_scope').GetName, 'movement_anarchist')]. Anarchist agitators have found a solid base of support amongst those whose livelihoods have been made precarious by the modernization of $SPA$.\n\nFrom the mills of [SelectLocalization(SCOPE.sState('relevant_urban_state').IsValid, SCOPE.sState('relevant_urban_state').GetCityHubName, ROOT.GetCountry.GetCapital.GetCityHubName)] to the Southern villages packed with destitute day-laborers, work-weary faces turn to those with fiery eyes and powder-stained fingers. They listen, and learn—and, given the barest chance, they will act."
 
 je_spanish_anarchism_government_victory: "To achieve a #b government#! victory:\n"
+je_spanish_anarchism_government_victory_conclusion_desc: "The $concept_journal_entry$ concluded with a #b government#! victory"
 je_spanish_anarchism_on_government_victory: "On a #b government#! victory:\n$EFFECT$"
 je_spanish_anarchism_anarchist_victory: "To achieve an #b $ideology_anarchist$#! victory:\n"
+je_spanish_anarchism_anarchist_victory_conclusion_desc: "The $concept_journal_entry$ concluded with an #b $ideology_anarchist$#! victory"
 je_spanish_anarchism_on_anarchist_victory: "On an #b $ideology_anarchist$#! victory:\n$EFFECT$"
 
 anarchists_marginal_for_5_years_tt: "The #v $movement_anarchist$#! has been #b Marginal#! or nonexistent for #v 60#! consecutive months (currently [ROOT.GetCountry.MakeScope.Var('anarchist_movement_stamped_out').GetValue|v0])"
@@ -905,7 +896,7 @@ anarchism_events.4.f: "The building's facade, scorched pitch-black, yawned befor
 anarchism_events.4.a: "Violent times await us."
 anarchism_events.4.b: "All the more reason to be vigilant."
 
-anarchist_terrorism_start_tt: "For as long as the [Concept('concept_activism','$concept_activism_short$')] of the [SCOPE.sPoliticalMovement('propaganda_of_the_deed_movement_scope').GetName] is above @activism_red! $RADICALISM_PROTESTING$ (#v [GetDefine('NPolitics', 'RADICALISM_PROTESTING_THRESHOLD')|%0]#!), the movement may carry out #r terrorist attacks#! against our [Concept('concept_executive','$concept_executives$')], [Concept('concept_politician', '$concept_politicians$')], or [concept_ruler]"
+anarchist_terrorism_start_tt: "For as long as the [Concept('concept_activism','$concept_activism_short|q$')] of the [SCOPE.sPoliticalMovement('propaganda_of_the_deed_movement_scope').GetName] is above @activism_red! $RADICALISM_PROTESTING$ (#v [GetDefine('NPolitics', 'RADICALISM_PROTESTING_THRESHOLD')|%0]#!), the movement may carry out #r terrorist attacks#! against our [Concept('concept_executive','$concept_executives|q$')], [Concept('concept_politician', '$concept_politicians|q$')], or [concept_ruler]"
 
 modifier_propaganda_of_the_deed_security: "Security Forces on Alert"
 
@@ -943,19 +934,19 @@ modifier_one_way_out_slave_revolt_state: "One Way Out"
 modifier_one_way_out_slave_revolt: "One Way Out"
 
 je_iberia: "The Iberian Union"
-je_iberia_reason: "As the German peoples strive for a unified #v $GER$#! and the Italians aspire towards #v $ITA$#!, so too do the myriad peoples of the Iberian peninsula look towards a united [GetGeographicRegion('geographic_region_iberia_old').GetName]. [GetPlayer.GetCustom('iberian_union_political_text')]\n\nThe official endorsement of unification by one or more of the peninsula's powers has transformed a unified $geographic_region_iberia$ from a distant dream to an imminently achievable goal—if all the peninsula's powers can be brought into alignment.\n\n@information! All [Concept('concept_country','$concept_countries$')] Involved in this [concept_journal_entry] are broadly receptive to some form of [Concept('concept_unification','$concept_unification_short$')]. For the peninsula to be diplomatically unified, all of its polities must harmonize their [Concept('concept_law','$concept_laws$')], and possess compatible #b Governance Principles#!."
+je_iberia_reason: "As the German peoples strive for a unified #v $GER$#! and the Italians aspire towards #v $ITA$#!, so too do the myriad peoples of the Iberian peninsula look towards a united [GetGeographicRegion('geographic_region_iberia_old').GetName]. [GetPlayer.GetCustom('iberian_union_political_text')]\n\nThe official endorsement of unification by one or more of the peninsula's powers has transformed a unified $geographic_region_iberia$ from a distant dream to an imminently achievable goal—if all the peninsula's powers can be brought into alignment.\n\n@information! All [Concept('concept_country','$concept_countries|q$')] Involved in this [concept_journal_entry] are broadly receptive to some form of [Concept('concept_unification','$concept_unification_short|q$')]. For the peninsula to be diplomatically unified, all of its polities must harmonize their [Concept('concept_law','$concept_laws|q$')], and possess compatible #b Governance Principles#!."
 iberia_union_political_text_monarchy: "At the height of the Spanish and Portuguese Empires, all Iberia was bound together under the #v Iberian Union#!. Dynastic unionists call for the restoration of this Union, seeking to bring down the economic barriers separating Spain and Portugal and realize a new golden age."
 iberia_union_political_text_theocracy: "The universal Catholic Church stands above all nations. Fervent universalists call for an #v Iberian Concordat#! to bring all of the peninsula into sacred union."
 iberia_union_political_text_republic: "Inspired by the example set by the European liberal revolutions, radical republicans call for the unification of all the peoples of the peninsula under a single #v Iberian Federation#!."
 iberia_union_political_communist: "The proletariat knows no nation—the feudal and bourgeois constructs that have ruled the peninsula for centuries must be destroyed, and a socialist #v Iberian Federation#! born from their ashes."
 
-iberia_exists_tt: "#v $IBE$#! has been [Concept('concept_nation_formation','$concept_nation_formation_short_past$')]"
+iberia_exists_tt: "#v $IBE$#! has been [Concept('concept_nation_formation','$concept_nation_formation_short_past|q$')]"
 
-pursued_iberian_unification_tt: "Has chosen to pursue #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short$')]"
-je_iberia_activate_tt: "#v $je_iberia$#! Global [concept_journal_entry] will be added to the Journal of all [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName]"
-upon_researching_pan_nationalism_iberia_tt: "Upon researching #v $pan-nationalism$#!, #v $je_iberia$#! Global [concept_journal_entry] will be added to the Journal of all [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName]"
-je_iberia_discard_tt: "We will elect to not pursue #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short$')]"
-je_iberia_may_activate_again_warning_tt: "@warning! If any other [concept_country] in [GetGeographicRegion('geographic_region_iberia_old').GetName] chooses to pursue #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short$')], #v $je_iberia$#! Global [concept_journal_entry] will be added to the Journal"
+pursued_iberian_unification_tt: "Has chosen to pursue #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short|q$')]"
+je_iberia_activate_tt: "#v $je_iberia$#! Global [concept_journal_entry] will be added to the Journal of all [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName]"
+upon_researching_pan_nationalism_iberia_tt: "Upon researching #v $pan-nationalism$#!, #v $je_iberia$#! Global [concept_journal_entry] will be added to the Journal of all [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName]"
+je_iberia_discard_tt: "We will elect to not pursue #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short|q$')]"
+je_iberia_may_activate_again_warning_tt: "@warning! If any other [concept_country] in [GetGeographicRegion('geographic_region_iberia_old').GetName] chooses to pursue #v $IBE_ADJ$#! [Concept('concept_unification','$concept_unification_short|q$')], #v $je_iberia$#! Global [concept_journal_entry] will be added to the Journal"
 je_iberia_made_visible_tt: "#v $je_iberia$#! Global [concept_journal_entry] will be visible in the Journal"
 
 iberia.1.t: "One Peninsula"
@@ -969,12 +960,12 @@ iberia.11.t: "One Peninsula"
 iberia.11.d: "With pan-national sentiments rising across [GetGeographicRegion('geographic_region_iberia_old').GetName], the government of [SCOPE.sCountry('iberia_forming_country').GetName] has declared unification of the peninsula to be official policy. With [SCOPE.sCountry('iberia_forming_country').GetNameNoFormatting]'s position made clear, we must declare our own."
 iberia.11.f: ""The union of Spain and Portugal is advantageous for both countries: it is natural, it is just, it is legitimate, it is necessary—indeed, we shall say more, it is inevitable. Anything that works against this union is harmful to both peoples; anything that strengthens it is beneficial. The difficulty lies only in finding the means to realize this great idea in a spontaneous, free, and honorable manner for both."\n\n—Fernández Cuesta"
 
-iberia_shared_governance_principles_laws_tt: "All Involved [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have the same $lawgroup_governance_principles$ [concept_law]"
-iberia_sufficient_shared_laws_tt: "All Involved [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] share at least [SCOPE.ScriptValue('iberia_shared_law_requirement')|v0] active [Concept('concept_law','$concept_laws$')] (currently [GetGlobalVariable('iberia_shared_laws_var').GetValue|v0])"
+iberia_shared_governance_principles_laws_tt: "All Involved [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have the same $lawgroup_governance_principles$ [concept_law]"
+iberia_sufficient_shared_laws_tt: "All Involved [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] share at least [SCOPE.ScriptValue('iberia_shared_law_requirement')|v0] active [Concept('concept_law','$concept_laws|q$')] (currently [GetGlobalVariable('iberia_shared_laws_var').GetValue|v0])"
 
-all_iberian_subjects_below_75_ld_tt: "All [concept_subject] [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have [concept_liberty_desire] below #v 75#!"
-all_independent_iberian_countries_above_50_relations_tt: "All independent [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have [concept_relations] above [GetDefine('NDiplomacy', 'RELATIONS_THRESHOLD_AMICABLE')|v0] with [ROOT.GetCountry.GetNameNoFlag]"
-iberia_all_countries_involved_tt: "All [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] are Involved in this [concept_journal_entry]"
+all_iberian_subjects_below_75_ld_tt: "All [concept_subject] [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have [concept_liberty_desire] below #v 75#!"
+all_independent_iberian_countries_above_50_relations_tt: "All independent [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have [concept_relations] above [GetDefine('NDiplomacy', 'RELATIONS_THRESHOLD_AMICABLE')|v0] with [ROOT.GetCountry.GetNameNoFlag]"
+iberia_all_countries_involved_tt: "All [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] are Involved in this [concept_journal_entry]"
 
 has_formed_iberia_tt: "Has formed #v $IBE$#!"
 ruler_is_borbon_tt: "[concept_ruler] is a #v $de_Borbon$#!"
@@ -994,24 +985,24 @@ iberia_union_desc_anarchy: "The Iberian communes have sufficiently harmonized th
 
 je_iberia_preserve_union_button: "Retain Personal Union"
 je_iberia_preserve_union_button_desc: "The personal union that currently exists between the Iberian states is a sufficient basis for the political organization of the peninsula. We shall issue a constitution that permanently enshrines this loose Union, and guarantees full internal autonomy for its constituents."
-retained_personal_union_tt: "All Involved [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have elected to retain their [concept_personal_union]"
+retained_personal_union_tt: "All Involved [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] have elected to retain their [concept_personal_union]"
 
 end_iberia_je_tt: "#v $je_iberia$#! [concept_journal_entry] will conclude in a retention of the currently-existing [concept_personal_union]"
 
-create_iberia_tt: "All Involved [Concept('concept_country','$concept_countries$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] will be unified as [SCOPE.sCountry('iberia_root_country').GetCustom('iberia_name_to_be')], under [SCOPE.sCountry('iberia_root_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('iberia_root_country').GetRuler.GetFullName]"
-iberia_laws_origin_tt: "#v $IBE$#! will inherit all [SCOPE.sCountry('iberia_root_country').GetAdjectiveNoFlag] [Concept('concept_law','$concept_laws$')] and [Concept('concept_character', '$concept_characters$')]"
+create_iberia_tt: "All Involved [Concept('concept_country','$concept_countries|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] will be unified as [SCOPE.sCountry('iberia_root_country').GetCustom('iberia_name_to_be')], under [SCOPE.sCountry('iberia_root_country').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('iberia_root_country').GetRuler.GetFullName]"
+iberia_laws_origin_tt: "#v $IBE$#! will inherit all [SCOPE.sCountry('iberia_root_country').GetAdjectiveNoFlag] [Concept('concept_law','$concept_laws|q$')] and [Concept('concept_character', '$concept_characters|q$')]"
 
-iberia_adopts_esperanto_tt: "Upon completing this [concept_journal_entry], [GetCulture('iberian').GetName] will become a [Concept('concept_primary_cultures','$concept_primary_culture$')] of #v $IBE$#!"
+iberia_adopts_esperanto_tt: "Upon completing this [concept_journal_entry], [GetCulture('iberian').GetName] will become a [Concept('concept_primary_cultures','$concept_primary_culture|q$')] of #v $IBE$#!"
 esperanto_optional_tt: "Upon completing this [concept_journal_entry], $esperanto_optional_on_complete_tt$"
 esperanto_mandatory_tt: "Upon completing this [concept_journal_entry], $esperanto_mandatory_on_complete_tt$"
-esperanto_optional_on_complete_tt: "[GetCulture('iberian').GetName] will become a [Concept('concept_primary_cultures','$concept_primary_culture$')] of #v $IBE$#!"
-esperanto_mandatory_on_complete_tt: "[GetCulture('iberian').GetName] will become the exclusive [Concept('concept_primary_cultures','$concept_primary_culture$')] of #v $IBE$#!"
-gain_variable_radicals_tt: "@warning! A variable amount of our [Concept('concept_pop', '$concept_pops$')] will become more [concept_radical]"
+esperanto_optional_on_complete_tt: "[GetCulture('iberian').GetName] will become a [Concept('concept_primary_cultures','$concept_primary_culture|q$')] of #v $IBE$#!"
+esperanto_mandatory_on_complete_tt: "[GetCulture('iberian').GetName] will become the exclusive [Concept('concept_primary_cultures','$concept_primary_culture|q$')] of #v $IBE$#!"
+gain_variable_radicals_tt: "@warning! A variable amount of our [Concept('concept_pop', '$concept_pops|q$')] will become more [concept_radical]"
 
-all_iberian_states_become_esperanto_tt: "All [Concept('concept_state_region', '$concept_state_regions$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] will become [GetCulture('iberian').GetName] [Concept('concept_homeland','$concept_homelands$')]"
-remove_all_non_esperanto_primaries_tt: "All non-[GetCulture('iberian').GetName] [Concept('concept_culture', '$concept_cultures$')] will stop being [concept_primary_cultures] of #v $IBE$#!"
-25_percent_of_bureaucrats_and_academics_assimilate_esperanto_tt: "#v 25%#! of [GetPopType('bureaucrats').GetName] and [GetPopType('academics').GetName] [Concept('concept_pop', '$concept_pops$')] will assimilate into the [GetCulture('iberian').GetName] [concept_culture]"
-1_percent_of_pops_assimilate_esperanto_tt: "#v 1%#! of all #v $IBE_ADJ$#! [Concept('concept_pop', '$concept_pops$')] will assimilate into the [GetCulture('iberian').GetName] [concept_culture]"
+all_iberian_states_become_esperanto_tt: "All [Concept('concept_state_region', '$concept_state_regions|q$')] in [GetGeographicRegion('geographic_region_iberia_old').GetName] will become [GetCulture('iberian').GetName] [Concept('concept_homeland','$concept_homelands|q$')]"
+remove_all_non_esperanto_primaries_tt: "All non-[GetCulture('iberian').GetName] [Concept('concept_culture', '$concept_cultures|q$')] will stop being [concept_primary_cultures] of #v $IBE$#!"
+25_percent_of_bureaucrats_and_academics_assimilate_esperanto_tt: "#v 25%#! of [GetPopType('bureaucrats').GetName] and [GetPopType('academics').GetName] [Concept('concept_pop', '$concept_pops|q$')] will assimilate into the [GetCulture('iberian').GetName] [concept_culture]"
+1_percent_of_pops_assimilate_esperanto_tt: "#v 1%#! of all #v $IBE_ADJ$#! [Concept('concept_pop', '$concept_pops|q$')] will assimilate into the [GetCulture('iberian').GetName] [concept_culture]"
 
 iberia.2.t: "Iberian Sunrise"
 iberia.2.d_1: "The petty nation-states of Iberia have been vanquished, and the peninsula liberated by the united workers of[ROOT.GetCountry.GetCustom('to_the_or_not_to_the')] [ROOT.GetCountry.GetName]. From Alentejo to the Pyrenees, the black flag flies high and free."
@@ -1064,8 +1055,8 @@ ruler_is_constitutionalist_claimant_tt: "[concept_ruler] of [ROOT.GetCountry.Get
 
 ig_sufficiently_upset_tt: "[concept_interest_group] [concept_approval] is less than #v 0#!"
 
-pending_coup_event_tt:1 "Does #b not#! have a pending [concept_coup] Event"
-doing_coup_for_player_tt:1 "[concept_commander] is #b not#! currently carrying out an orchestrated [concept_coup]"
+pending_coup_event_tt: "Does #b not#! have a pending [concept_coup] Event"
+doing_coup_for_player_tt: "[concept_commander] is #b not#! currently carrying out an orchestrated [concept_coup]"
 
 decision_depose_ruling_dynasty: "Depose Ruling Dynasty"
 decision_depose_ruling_dynasty_desc: "The legitimacy of the dynasty currently occupying the throne is disputed by certain elements within the military. Given assurance of their success, they may act to replace it."
@@ -1081,12 +1072,12 @@ miguelist_claimant: "[GetIdeology('ideology_miguelist').GetName] Claimant"
 constitutionalist_claimant: "#b Constitutionalist#! Claimant"
 
 coup_popularity_tt: "[concept_popularity] of [concept_commander]"
-coup_num_army_units_tt: "fraction of total army [Concept('concept_unit','$concept_units$')] commanded"
-coup_num_navy_units_tt: "fraction of total naval [Concept('concept_unit','$concept_units$')] commanded"
-coup_commander_rank_tt: "[Concept('concept_commander_rank', '$concept_commander_rank_short$')] of [concept_commander]"
+coup_num_army_units_tt: "fraction of total army [Concept('concept_unit','$concept_units|q$')] commanded"
+coup_num_navy_units_tt: "fraction of total naval [Concept('concept_unit','$concept_units|q$')] commanded"
+coup_commander_rank_tt: "[Concept('concept_commander_rank', '$concept_commander_rank_short|q$')] of [concept_commander]"
 coup_commander_core_location_tt: "located in [concept_capital_state] [concept_strategic_region]"
-coup_commander_periphery_location_tt: "located in a [concept_strategic_region] with owned [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
-coup_commander_colony_location_tt: "located in a [concept_strategic_region] with no owned [Concept('concept_incorporated_state', '$concept_incorporated_states$')]"
+coup_commander_periphery_location_tt: "located in a [concept_strategic_region] with owned [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')]"
+coup_commander_colony_location_tt: "located in a [concept_strategic_region] with no owned [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')]"
 coup_commander_no_location_tt: "is in transit or on a [concept_front]"
 coup_commander_unassigned_location_tt: "unassigned from [Concept('concept_military_formation', 'Field Command')]"
 coup_clout_tt: "[concept_clout] of [concept_interest_group]"
@@ -1095,7 +1086,7 @@ coup_legitimacy_tt: "[concept_legitimacy] of [concept_government]"
 coup_strength_modifier_tt: "$character_coup_strength_mult$ modifiers"
 coup_resistance_modifier_tt: "$country_coup_resistance_mult$ modifiers"
 coup_strength_modifier_add_tt: "$character_coup_strength_add$ from events or other factors"
-coup_resistance_modifier_add_tt: "$country_coup_resistance_add$ from [Concept('concept_institution', '$concept_institutions$')] or other factors"
+coup_resistance_modifier_add_tt: "$country_coup_resistance_add$ from [Concept('concept_institution', '$concept_institutions|q$')] or other factors"
 
 commander_coup_strength_tt: "[concept_coup_strength] of coupist [concept_commander] ([GetPlayer.MakeScope.ScriptValue('commander_coup_strength_country_display')|2v]): #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('commander_coup_strength_country_display')]#!"
 country_coup_resistance_tt: "[concept_coup_resistance] value of [concept_country] ([GetPlayer.MakeScope.ScriptValue('country_coup_resistance')|2v]): #indent_newline:3 \n[GetPlayer.MakeScope.GetScriptValueDesc('country_coup_resistance_reversed')]#!"
@@ -1147,13 +1138,11 @@ can_abolish_caciquismo_next_election_tt: "#b $amendment_tradition_of_free_electi
 
 mutes_all_election_events_tt: "[ROOT.GetCountry.GetName] will not receive further [concept_election] Events during this $concept_election$"
 
-notification_summoned_character_leaves_country_name: "[SCOPE.sCharacter('summoned_character_scope').GetFullName] Departs [ROOT.GetCountry.GetName]"
+notification_summoned_character_leaves_country_name: "[SCOPE.sCharacter('summoned_character_scope').GetFullName] departs [ROOT.GetCountry.GetName]"
 notification_summoned_character_leaves_country_desc: "Summoned by a foreign country for a task of great import, [SCOPE.sCharacter('summoned_character_scope').GetFullName] has departed [ROOT.GetCountry.GetName] for greener pastures."
-notification_summoned_character_leaves_country_tooltip: "#header $notification_summoned_character_leaves_country_name$#!\n$TOOLTIP_DELIMITER$\n$notification_summoned_character_leaves_country_desc$"
 
-notification_colonial_governor_cycle_name: "[SCOPE.sCountry('colony_scope').GetRuler.GetPrimaryRoleTitle]'s Term Ends"
+notification_colonial_governor_cycle_name: "[SCOPE.sCountry('colony_scope').GetRuler.GetPrimaryRoleTitle]'s term ends"
 notification_colonial_governor_cycle_desc: "[SCOPE.sCharacter('current_governor').GetFullName]'s term as [SCOPE.sCountry('colony_scope').GetRuler.GetPrimaryRoleTitle] of [SCOPE.sCountry('colony_scope').GetName] has come to an end. [SCOPE.sCharacter('current_governor').GetSheHe|U] has been replaced by [SCOPE.sCharacter('current_governor').GetCustom('get_special_colonial_trait')]."
-notification_colonial_governor_cycle_tooltip: "#header $notification_colonial_governor_cycle_name$#!\n$TOOLTIP_DELIMITER$\n$notification_colonial_governor_cycle_desc$"
 
 special_character_colonial_plantation_loc: "another [GetCharacterTrait('special_character_colonial_plantation').GetName]"
 special_character_colonial_local_loc: "another [GetCharacterTrait('special_character_colonial_local').GetName]"
@@ -1165,7 +1154,7 @@ special_character_colonial_fallback_loc: "a [concept_politician] from the mainla
 had_glorious_revolution_tt: "Has had the #b Glorious Revolution#!"
 achievement_unanimity_tt: "Has removed all non-marginal opposition to a law currently being enacted"
 achievement_portugal_is_not_a_small_country_1_tt: "Owns at least #v 12#! states in [GetGeographicRegion('geographic_region_africa').GetName]"
-achievement_portugal_is_not_a_small_country_2_tt: "Owns all [Concept('concept_state','$concept_states$')] in [GetGeographicRegion('geographic_region_angola').GetName] and [GetGeographicRegion('geographic_region_mozambique').GetName]"
+achievement_portugal_is_not_a_small_country_2_tt: "Owns all [Concept('concept_state','$concept_states|q$')] in [GetGeographicRegion('geographic_region_angola').GetName] and [GetGeographicRegion('geographic_region_mozambique').GetName]"
 achievement_portugal_is_not_a_small_country_3_tt: "Has established a land connection between [GetGeographicRegion('geographic_region_angola').GetName] and [GetGeographicRegion('geographic_region_mozambique').GetName]"
 achievement_one_more_time_tt: "Has rebuilt the [GetBuildingType('building_manila_cathedral_monument').GetName]"
 achievement_personal_union_with_spain_tt: "Has established a [concept_personal_union] with #v $SPA$#!"
@@ -1196,6 +1185,8 @@ je_spain_glorious_revolution_dummy_reason: "N/A"
 
 has_gov_regency_tt: "Has an active #b $gov_regency_ethiopia_ras$#!"
 has_gov_regency_not_tt: "Does #b not#! have an active #b $gov_regency_ethiopia_ras$#!"
+has_gov_regency_third_tt: "[COUNTRY.GetName] has an active #b $gov_regency_ethiopia_ras$#!"
+has_gov_regency_third_not_tt: "[COUNTRY.GetName] does #b not#! have an active #b $gov_regency_ethiopia_ras$#!"
 je_glorious_revolution_has_gov_regency_not_tt: "Does #b not#! have an active #b $gov_regency_ethiopia_ras$#! #!" # Trailing formatting close is intentional
 
 ruler_is_not_ferdinand_i_tt: "[concept_ruler] is #b not#! $Ferdinand$ $von_Habsburg_Lothringen$"

@@ -1,0 +1,12 @@
+﻿l_english:
+amendment_orthodox_conversions: "Orthodox Conversions"
+amendment_orthodox_conversions_desc: "Driven by rumors of tax breaks and land, as well as the desire to resist their [GetCulture('east_german').GetName] landlords, [GetCulture('latvian').GetName] and [GetCulture('estonian').GetName] peasants have begun a wave of mass conversion to \"the Tsar's faith\"."
+
+amendment_factory_councils: "Factory Councils"
+amendment_factory_councils_desc: "Workers have been radicalized by revolutionary conditions, seizing control of their workplaces and supplanting previous management structures.\n\n@information! Upon enactment of a [GetLawType('law_council_republic').GetName], this [concept_amendment] will become a [concept_law]"
+
+amendment_bourgeois_specialists: "Bourgeois Specialists"
+amendment_bourgeois_specialists_desc: "To compensate for a lack of managerial expertise amongst the working class, educated professionals employed by the old regime have been granted positions in the state apparatus in return for a generous wage."
+
+amendment_cossacks: "Cossack Hosts"
+amendment_cossacks_desc: "Cossacks form a group of semi-nomadic farmers who have been co-opted by the state and tasked with settling and pacifying the territories on the periphery."

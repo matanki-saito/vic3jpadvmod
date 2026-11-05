@@ -5,35 +5,35 @@
  # Journal entry
  je_serbian_throne: "A Throne of Thorns"
  je_serbian_throne_reason: "[ROOT.GetCountry.GetCustom('serbia_throne_of_thorns_house_loc')]\n\nIf [concept_dynastic_loyalty] reaches #v 0%#!, our [concept_ruler] and their dynasty will be overthrown and replaced by a member of the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')]."
- je_serbian_throne_invalidation_tt: "None of the characters from house [Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')] or [Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')] are alive"
- je_serbian_throne_status_loc_karadordevic_dominance: "[Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')] has gained widespread loyalty"
- je_serbian_throne_status_loc_karadordevic_leaning: "People are leaning towards the [Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')]"
- je_serbian_throne_status_loc_neutral: "People are divided between [Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')] and [Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')]"
- je_serbian_throne_status_loc_obrenovic_leaning:1 "People are leaning towards the [Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')]"
- je_serbian_throne_status_loc_obrenovic_dominance:1 "[Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')] has gained widespread loyalty"
+ je_serbian_throne_invalidation_tt: "None of the characters from house [Glossary('glossary_house_of_obrenovic','$glossary_house_of_obrenovic_short|q$')] or [Glossary('glossary_house_of_karadjordjevic','$glossary_house_of_karadjordjevic_short|q$')] are alive"
+ je_serbian_throne_status_loc_karadordevic_dominance: "[Glossary('glossary_house_of_karadjordjevic','$glossary_house_of_karadjordjevic_short|q$')] has gained widespread loyalty"
+ je_serbian_throne_status_loc_karadordevic_leaning: "People are leaning towards the [Glossary('glossary_house_of_karadjordjevic','$glossary_house_of_karadjordjevic_short|q$')]"
+ je_serbian_throne_status_loc_neutral: "People are divided between [Glossary('glossary_house_of_obrenovic','$glossary_house_of_obrenovic_short|q$')] and [Glossary('glossary_house_of_karadjordjevic','$glossary_house_of_karadjordjevic_short|q$')]"
+ je_serbian_throne_status_loc_obrenovic_leaning: "People are leaning towards the [Glossary('glossary_house_of_obrenovic','$glossary_house_of_obrenovic_short|q$')]"
+ je_serbian_throne_status_loc_obrenovic_dominance: "[Glossary('glossary_house_of_obrenovic','$glossary_house_of_obrenovic_short|q$')] has gained widespread loyalty"
 
- je_serbian_throne_obrenovic_desc: "According to our informers, the [concept_house_of_karadjordjevic], a family whose founder was once known as a hero of the Serbian people, are plotting to dethrone the [concept_house_of_obrenovic]. $concept_house_of_karadjordjevic_short$ liberated Serbian provinces from the tyranny of renegade janissaries and sparked the light of freedom at the dawn of the century.\n\nHowever, it was also he who fled the field of battle when the situation was dire. The $concept_house_of_obrenovic$ stepped up to carry the banner since then. In time, the plotters will surely attempt to incite the populace to achieve their mischievous goals and dethrone the $concept_house_of_obrenovic_short$."
- je_serbian_throne_karadjordjevic_desc: "The [concept_house_of_karadjordjevic] has successfully toppled their rivals in the [concept_house_of_obrenovic], redeeming the great Karađorđe in the eyes of the nation. Once more, [ROOT.GetCountry.GetName] is ruled by the dynasty that stood at the fore of the the heroic First Uprising against the Turks.\n\nHowever, $concept_house_of_obrenovic_short$ plotters circle, seeking to restore their rule and bring $SER$ back into the $AUS_ADJ$ sphere. If the dynasty shows a hint of weakness, they will strike, and attempt to return the $concept_house_of_karadjordjevic_short$ to ignominious exile."
+ je_serbian_throne_obrenovic_desc: "According to our informers, the [glossary_house_of_karadjordjevic], a family whose founder was once known as a hero of the Serbian people, are plotting to dethrone the [glossary_house_of_obrenovic]. $glossary_house_of_karadjordjevic_short$ liberated Serbian provinces from the tyranny of renegade janissaries and sparked the light of freedom at the dawn of the century.\n\nHowever, it was also he who fled the field of battle when the situation was dire. The $glossary_house_of_obrenovic$ stepped up to carry the banner since then. In time, the plotters will surely attempt to incite the populace to achieve their mischievous goals and dethrone the $glossary_house_of_obrenovic_short$."
+ je_serbian_throne_karadjordjevic_desc: "The [glossary_house_of_karadjordjevic] has successfully toppled their rivals in the [glossary_house_of_obrenovic], redeeming the great Karađorđe in the eyes of the nation. Once more, [ROOT.GetCountry.GetName] is ruled by the dynasty that stood at the fore of the the heroic First Uprising against the Turks.\n\nHowever, $glossary_house_of_obrenovic_short$ plotters circle, seeking to restore their rule and bring $SER$ back into the $AUS_ADJ$ sphere. If the dynasty shows a hint of weakness, they will strike, and attempt to return the $glossary_house_of_karadjordjevic_short$ to ignominious exile."
 
  # Scripted Buttons
  je_tot_slander_button: "Slander Rival Dynasty"
  je_tot_slander_button_desc: "We have the power of imagery, why not use it for our own good?"
- je_tot_slander_button_custom_tt: "Boosts [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] based on [concept_literacy] with #bold one#! of the following expenses:"
+ je_tot_slander_button_custom_tt: "Boosts [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] based on [concept_literacy] with #bold one#! of the following expenses:"
  je_tot_slander_button_cooldown_tt: "Has not used this decision in the past #bold four years#!."
 
  je_tot_campaign_button: "Launch Campaign"
- je_tot_campaign_button_desc: "Assembles the royal entourage to organize a nationwide tour by enforcing [concept_authority] or spending [concept_money]. The goal is to visit all [Concept('concept_state','$concept_states$')], conversing with the common folk, providing them palpable progress initiatives in exchange for their precious [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')]. It will also boost our [concept_popularity] and defame our rival."
+ je_tot_campaign_button_desc: "Assembles the royal entourage to organize a nationwide tour by enforcing [concept_authority] or spending [concept_money]. The goal is to visit all [Concept('concept_state','$concept_states|q$')], conversing with the common folk, providing them palpable progress initiatives in exchange for their precious [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')]. It will also boost our [concept_popularity] and defame our rival."
  je_tot_campaign_button_tt: "Preparations begin, and we will soon be asked to abandon the idea forever or choose between #bold one#! of the following expenses until the campaign's ending:"
- je_tot_campaign_button_tt_2: "Chosen level of expense will determine the effectiveness of investments to visited [Concept('concept_state','$concept_states$')] and our [concept_popularity] for years to come."
+ je_tot_campaign_button_tt_2: "Chosen level of expense will determine the effectiveness of investments to visited [Concept('concept_state','$concept_states|q$')] and our [concept_popularity] for years to come."
 
  je_serbian_throne_fail_header: "#title Will dethrone sitting dynasty if:#!\n"
  je_serbian_throne_on_fail_header: "#title If [concept_dynastic_loyalty] depleted:#!\n$EFFECT$"
 
- obrenovic_concept_short: "[Concept('concept_house_of_obrenovic','$concept_house_of_obrenovic_short$')]"
- karadjordjevic_concept_short: "[Concept('concept_house_of_karadjordjevic','$concept_house_of_karadjordjevic_short$')]"
- obrenovic_concept: "[concept_house_of_obrenovic]"
- karadjordjevic_concept: "[concept_house_of_karadjordjevic]"
- 
+ obrenovic_glossary_short: "[Glossary('glossary_house_of_obrenovic','$glossary_house_of_obrenovic_short|q$')]"
+ karadjordjevic_glossary_short: "[Glossary('glossary_house_of_karadjordjevic','$glossary_house_of_karadjordjevic_short|q$')]"
+ obrenovic_glossary: "[glossary_house_of_obrenovic]"
+ karadjordjevic_glossary: "[glossary_house_of_karadjordjevic]"
+
  # Progress bar
  serbian_dethrone_progress_bar: "Loyalty"
  serbian_dethrone_progress_bar_desc: "[concept_dynastic_loyalty]: [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|v1%] ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/500)"
@@ -41,13 +41,13 @@
  # Initial event
  serbia.1.t: "A Throne of Thorns"
  serbia.1.d: "The scale of power shifts between the [SCOPE.sCharacter('rival_dynasty_contender_scope').GetLastName] and the ruling [ROOT.GetCountry.GetRuler.GetLastName] families. Allegiances have been promised left and right without much thought. Who is the rightful ruler of [ROOT.GetCountry.GetName]?"
- serbia.1.f:1 ""Indubitably, my [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] our support is to you. As we were bound by your hallowed speech under the oak tree for revolution, we shall stand by you once again for the glory of Serbia."\n\nBootlicker as he was, his confidence was effortless. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] wondered how he could manage it. His unreliable nature had been public information for some time, now - it seemed that he was the only person in the room who believed in his own credibility."
+ serbia.1.f: ""Indubitably, my [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] our support is to you. As we were bound by your hallowed speech under the oak tree for revolution, we shall stand by you once again for the glory of Serbia."\n\nBootlicker as he was, his confidence was effortless. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] wondered how he could manage it. His unreliable nature had been public information for some time, now - it seemed that he was the only person in the room who believed in his own credibility."
  serbia.1.a: "The price of loyalty is everchanging."
 
  # Custom event to crown Mihailo Obrenovic
  serbia.2.t: "Mihailo's Succession"
  serbia.2.d: "Secondborn to a revolutionist, [ROOT.GetCountry.GetRuler.GetFullName] has been crowned as the new prince of [ROOT.GetCountry.GetName]. The masses think he has more in him than his elder brother."
- serbia.2.f:1 ""...and our struggle extends beyond worldly matters, as we hold in our hands the divine right to rule and not be ruled." The new prince glanced over to gauge reactions. "I will carry the torch of those before me until the burning light of my soul leaves this mortal shell."\n\n"Time and my right!""
+ serbia.2.f: ""...and our struggle extends beyond worldly matters, as we hold in our hands the divine right to rule and not be ruled." The new prince glanced over to gauge reactions. "I will carry the torch of those before me until the burning light of my soul leaves this mortal shell."\n\n"Time and my right!""
  serbia.2.a: "May his reign be memorable."
 
  # Random events
@@ -62,7 +62,7 @@
  #2 RE
  serbian_throne.2.t: "Slander Pamphlets"
  serbian_throne.2.d: "We have been given the opportunity to produce pamphlets to defame the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')]."
- serbian_throne.2.f:1 "There is a fine line between propaganda and slander. And for sure, the former has the potential to be a politician's deadliest weapon. A pamphlet sample made by a renowned artist and calligrapher was presented to the Prince that morning.\n\nHolding the paper, he observed that under many mischievous 'facts' written on top, there was the patriarch of the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] on all fours, chewing on thigh meat that was captioned as 'a Serbian Peasant' in the local tongue while being ridiculed and commanded by an Ottoman pasha."
+ serbian_throne.2.f: "There is a fine line between propaganda and slander. And for sure, the former has the potential to be a politician's deadliest weapon. A pamphlet sample made by a renowned artist and calligrapher was presented to the Prince that morning.\n\nHolding the paper, he observed that under many mischievous 'facts' written on top, there was the patriarch of the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] on all fours, chewing on thigh meat that was captioned as 'a Serbian Peasant' in the local tongue while being ridiculed and commanded by an Ottoman pasha."
  serbian_throne.2.a: "Ingenious."
  serbian_throne.2.b: "Start the production, now!"
 
@@ -98,15 +98,15 @@
 
  # Complete event
  serbian_throne.9.t: "Here to Stay"
- serbian_throne.9.d:1 "One by one, the lackeys of the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] have betrayed them on their path to a terrible fate. All have seen the indisputable; [ROOT.GetCountry.GetName] belongs to the [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty')]!"
- serbian_throne.9.f:1 ""Is this how you treat your saviors?" panic and desperation echoed throughout the hall "My father led this country to freedom while you were all hoarding riches. You will never understand what it means to carry the blood of a hero!"\n\nLoyal hounds were awaiting judgment.\n\n"Never!""
+ serbian_throne.9.d: "One by one, the lackeys of the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] have betrayed them on their path to a terrible fate. All have seen the indisputable; [ROOT.GetCountry.GetName] belongs to the [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty')]!"
+ serbian_throne.9.f: ""Is this how you treat your saviors?" panic and desperation echoed throughout the hall "My father led this country to freedom while you were all hoarding riches. You will never understand what it means to carry the blood of a hero!"\n\nLoyal hounds were awaiting judgment.\n\n"Never!""
  serbian_throne.9.a: "You shall share the fate of your father."
  serbian_throne.9.b: "Do not ever set foot on Serbian soil."
  serbian_throne.9.c: "Mercy is a gift given only to true leaders."
 
  # Fail event
  serbian_throne.10.t: "The Reckoning"
- serbian_throne.10.d:1 "Just as their father delivered them from the brink of destruction, the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] has reigned supreme against the [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty_short')] tyranny. The throne of [ROOT.GetCountry.GetName] now belongs to them."
+ serbian_throne.10.d: "Just as their father delivered them from the brink of destruction, the [ROOT.GetCountry.GetCustom('serbia_rival_dynasty')] has reigned supreme against the [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty_short')] tyranny. The throne of [ROOT.GetCountry.GetName] now belongs to them."
  serbian_throne.10.f: ""Comrades! Sacred mothers! We are now free from the grasp of nesting politicians who do nothing for the sake of our homeland..." exclaimed the new [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] of [ROOT.GetCountry.GetNameNoFormatting]. \n\nRecalling his father's heroic pursuit of freedom, the crowd kept on cheering, eager to heed the final judgment. \n\n"...and what say you for the fate of betrayers?" the Prince paused briefly, confident that whatever next came out of his mouth, they would comply without question."
  serbian_throne.10.a: ""...shall we send them to meet the Lord?""
  serbian_throne.10.b: ""...are we to keep feeding them?""
@@ -114,7 +114,7 @@
 
  # Invalidation event
  serbian_throne.11.t: "No Reason to Fight"
- serbian_throne.11.d:1 "The protagonists of the infamous blood-feud between the houses of $concept_house_of_obrenovic_short$ and $concept_house_of_karadjordjevic_short$ are no longer a threat to each other. Now is the time to move on as a united nation without petty quarrels."
+ serbian_throne.11.d: "The protagonists of the infamous blood-feud between the houses of $glossary_house_of_obrenovic_short$ and $glossary_house_of_karadjordjevic_short$ are no longer a threat to each other. Now is the time to move on as a united nation without petty quarrels."
  serbian_throne.11.f: ""It is unwise to divide a realm for the sake of transient discords of families. That is why solidarity is the essence of progress as distractions have always been known to lead men astray from the straight path.\n\nBesides, infighting ordinarily causes suffering to those whose only responsibility is to pay taxes. \n\nGentlemen, we have a nation to build!""
  serbian_throne.11.a: "Long live Serbia!"
 
@@ -168,38 +168,38 @@
  serbian_dethrone_negative_authority_tt: "negative [concept_authority]"
  serbian_dethrone_negative_influence_tt: "negative [concept_influence]"
  serbian_dethrone_sol_tt: "[concept_sol]"
- serbian_dethrone_low_ig_approval_tt: "disapproval of non-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_opposition]"
- serbian_dethrone_ig_approval_getting_better_tt: "approval of non-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups$')] [concept_in_opposition]"
- serbian_dethrone_radical_fraction_tt: "[Concept('concept_radical','$concept_radicals$')]"
- serbian_dethrone_loyalist_fraction_tt: "[Concept('concept_loyalist','$concept_loyalists$')]"
+ serbian_dethrone_low_ig_approval_tt: "disapproval of non-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups|q$')] [concept_in_opposition]"
+ serbian_dethrone_ig_approval_getting_better_tt: "approval of non-[concept_marginalized] [Concept('concept_interest_group','$concept_interest_groups|q$')] [concept_in_opposition]"
+ serbian_dethrone_radical_fraction_tt: "[concept_radical] [Concept('concept_pop','$concept_pops|q$')]"
+ serbian_dethrone_loyalist_fraction_tt: "[concept_loyalist] [Concept('concept_pop','$concept_pops|q$')]"
  serbian_dethrone_stopped_hajduks_tt: "stopping hajduk lootings"
  serbian_dethrone_independence_tt: "not being a [concept_subject]"
  serbian_dethrone_censorship_or_outlawed_tt: "having enacted [GetLawType('law_censorship').GetName] or [GetLawType('law_outlawed_dissent').GetName]"
  serbian_dethrone_pamphlet_tt: "pamphlets modified by literacy"
- serbian_dethrone_loyalty_progress_increase_tt: "This will hasten our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] progress."
- serbian_dethrone_loyalty_progress_greatly_increase_tt: "This will #bold greatly#! hasten our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] progress."
- serbian_dethrone_loyalty_progress_decrease_tt: "This will delay our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] progress."
- serbian_dethrone_loyalty_progress_increase_literacy_tt: "This will hasten our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] progress based on literacy."
+ serbian_dethrone_loyalty_progress_increase_tt: "This will hasten our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] progress."
+ serbian_dethrone_loyalty_progress_greatly_increase_tt: "This will #bold greatly#! hasten our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] progress."
+ serbian_dethrone_loyalty_progress_decrease_tt: "This will delay our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] progress."
+ serbian_dethrone_loyalty_progress_increase_literacy_tt: "This will hasten our [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] progress based on literacy."
  serbian_dethrone_loyalty_progress_increase_unwilling_armed_forces_tt: "[SCOPE.gsInterestGroup('serb_armed_forces').GetName] will dislike this due to their ties with [SCOPE.sCharacter('rival_dynasty_contender_scope').GetFullName]."
  serbian_dethrone_exposing_hypocrite_mod_tt: "having one less hypocrite politician"
  serbian_dethrone_exposing_hypocrite_fail_mod_tt: "failed assassination attempt"
  serbian_dethrone_exposing_hypocrite_forcing_to_work_mod_tt: "coerced politician"
- serbia_exposing_hypocrite_mod_tt: "Adds a positive modifier to the [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] progress bar"
+ serbia_exposing_hypocrite_mod_tt: "Adds a positive modifier to the [Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] progress bar"
  serbia_clerical_publicity_tt: "clerical publicity efforts"
  serbia_quashed_urban_rebels_tt: "quashing rebels"
  serbia_aided_magyarized_serbs_tt: "aiding Magyarized Serbs"
  serbia_greatly_aided_magyarized_serbs_tt: "evacuating Magyarized Serbs"
- serbian_dethrone_greatpower_supports_independence_tt: "[Concept('concept_major_power','$concept_major_powers$')] or [Concept('concept_great_power','$concept_great_powers$')] supporting our independence"
+ serbian_dethrone_greatpower_supports_independence_tt: "[Concept('concept_major_power','$concept_major_powers|q$')] or [Concept('concept_great_power','$concept_great_powers|q$')] supporting our independence"
  serbian_dethrone_overlord_relations_tt: "[concept_overlord] relations"
 
 
  # Complete condition
- je_serbian_throne_complete_timer_tt: "[Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] has reached #v 100%#!"
+ je_serbian_throne_complete_timer_tt: "[Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] has reached #v 100%#!"
  je_serbian_throne_dynasty_cement_tt: "The [ROOT.GetCountry.GetCustom('serbia_ruling_dynasty_concept')] keeps the throne, and an era of stability begins"
  je_serbian_throne_cull_opponent_tt: "[ROOT.GetCountry.GetCustom('serbia_rival_dynasty_short_concept')]'s fate will be decided"
 
  # Fail condition
- je_serbian_throne_fail_timer_tt: "[Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty$')] has reached #v 0%#!"
+ je_serbian_throne_fail_timer_tt: "[Concept('concept_dynastic_loyalty','$concept_dynastic_loyalty|q$')] has reached #v 0%#!"
  je_serbian_throne_dynasty_change_tt: "The [ROOT.GetCountry.GetCustom('serbia_rival_dynasty_concept')] claims the throne, and a phase of disorder ensues"
  je_serbian_throne_cull_ruler_tt: "[ROOT.GetCountry.GetCustom('serbia_ruling_dynasty_short_concept')]'s fate will be decided"
 
@@ -214,8 +214,8 @@
  serbia_clerical_publicity_mod: "Clerical Publicity"
  serbia_funded_clerical_publicity_mod: "Funded Clerical Publicity"
  serbia_forced_clerical_publicity_mod: "Forced Clerical Publicity"
- serbia_urban_rebels_killed_by_armed_forces_mod:1 "Cruel and Necessary"
- serbia_urban_rebels_killed_by_loyalists_mod:2 "Crushed Rebellion"
+ serbia_urban_rebels_killed_by_armed_forces_mod: "Cruel and Necessary"
+ serbia_urban_rebels_killed_by_loyalists_mod: "Crushed Rebellion"
  serbia_urban_rebels_bribed_mod: "Bribed Urban Rebels"
  serbia_aided_magyarized_serbs_mod: "Aided Magyarized Serbs"
  serbia_greatly_aided_magyarized_serbs_mod: "Evacuated Magyarized Serbs"
@@ -263,7 +263,7 @@
 
   je_spoils_of_war_timed_out_tt: "#b Completion#! will be evaluated when the #v $je_spoils_of_war$#! [concept_journal_entry] has #b timed out#!"
 
-  notification_new_balkan_league_members_name: "New Balkan League Members"
+  notification_new_balkan_league_members_name: "New Balkan League members"
   notification_new_balkan_league_members_desc: "Subjects of $dyn_c_ottoman_empire$ have been offered a chance to join our cause."
 
   # Scripted buttons
@@ -294,10 +294,10 @@
   je_the_balkan_wars_resign_button_tt: "Triggers a special event that causes the journal entry to fail."
   je_the_balkan_wars_resign_button_tt2: "Increases relations with [SCOPE.sCountry('ottoman_empire_scope').GetName], and decreases relations with the following countries:"
   je_the_balkan_wars_resign_button_tt2_bl_members_list: "[THIS.GetCountry.GetName]"
-  je_the_balkan_wars_resign_button_tt3: "We may choose to become a [Concept('concept_protectorate', '$concept_protectorate$')] to [SCOPE.sCountry('ottoman_empire_scope').GetName]."
+  je_the_balkan_wars_resign_button_tt3: "We may choose to become a [Concept('concept_protectorate', '$concept_protectorate|q$')] to [SCOPE.sCountry('ottoman_empire_scope').GetName]."
 
   je_the_balkan_league_start_war: "Start the War"
-  je_the_balkan_league_start_war_desc: "Starts a #b special#! [concept_diplomatic_play] against the High Porte. All #bold Balkan League#! members will join our side. As of now, [SCOPE.sCountry('ottoman_empire_scope').GetName] and their allies have an [concept_army_power_projection] of #variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D] #!, while the #bold Balkan League#! and their allies total #variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!.\n\nBy winning against the [SCOPE.sCountry('ottoman_empire_scope').GetName] using the #v Balkan War#! [concept_diplomatic_play], they will lose ownership of any owned [Concept('concept_state', '$concept_states$')] in the [SCOPE.sStrategicRegion('balkans_scope').GetName]. Winning this [concept_war] without the intervention of a [concept_great_power] on our side will grant us an additional reward."
+  je_the_balkan_league_start_war_desc: "Starts a #b special#! [concept_diplomatic_play] against the High Porte. All #bold Balkan League#! members will join our side. As of now, [SCOPE.sCountry('ottoman_empire_scope').GetName] and their allies have an [concept_army_power_projection] of #variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D] #!, while the #bold Balkan League#! and their allies total #variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!.\n\nBy winning against the [SCOPE.sCountry('ottoman_empire_scope').GetName] using the #v Balkan War#! [concept_diplomatic_play], they will lose ownership of any owned [Concept('concept_state', '$concept_states|q$')] in the [SCOPE.sStrategicRegion('balkans_scope').GetName]. Winning this [concept_war] without the intervention of a [concept_great_power] on our side will grant us an additional reward."
   balkan_league_members_start_the_war_header_tt: "Following #bold Balkan League#! members will join our [concept_diplomatic_play]:"
   balkan_league_members_start_the_war_tt: "[THIS.GetCountry.GetName]"
   balkan_war_pp_comparison: "The combined [concept_army_power_projection] of the #bold Balkan League#! and allies (#variable [ROOT.GetCountry.MakeScope.ScriptValue('balkan_league_power_projection')|D]#!) is at least half of that of the [SCOPE.sCountry('ottoman_empire_scope').GetName] and allies (#variable [ROOT.GetCountry.MakeScope.ScriptValue('ottoman_power_projection')|D]#!)"
@@ -339,7 +339,7 @@
   balkan_wars.5.f: "A sense of mutiny was in the air when the declaration was given directly by [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting]. It revolved around the idea that perhaps, it is wiser to stay content and not make any tempered choices to prevent grander catastrophes by pursuing delusive ambitions.\n\nThe audience seemed to be more and more persuaded as the speech neared its crescendo."
   balkan_wars.5.a: "We shall have no part in this."
   balkan_wars.5.b: "If we can't beat them, we must join them."
-  balkan_wars_5.b_protectorate_tt: "[ROOT.GetCountry.GetName] becomes a [Concept('concept_protectorate', '$concept_protectorate$')] of [SCOPE.sCountry('ottoman_empire_scope').GetName] "
+  balkan_wars_5.b_protectorate_tt: "[ROOT.GetCountry.GetName] becomes a [Concept('concept_protectorate', '$concept_protectorate|q$')] of [SCOPE.sCountry('ottoman_empire_scope').GetName] "
 
   # Failed Ambitions event
   balkan_wars.6.t: "Failed Ambitions"
@@ -367,16 +367,16 @@
   balkan_wars.9.d: "[SCOPE.gsInterestGroup('armed_forces_scope').GetName], aided by locals, has been driving [SCOPE.sCulture('turkish_pop_scope').GetName] people out of their homes in [SCOPE.sState('caught_root_state_scope').GetName]. This may easily turn into bloodshed if unchecked."
   balkan_wars.9.f: "Neighbors of old are actively seeking opportunities to target unguarded Turks at every turn. In the absence of the [SCOPE.sCountry('ottoman_empire_scope').GetRuler.GetPrimaryRoleTitle]'s forces, vulnerable communities are enduring daily harassment and hostility.  \n\nEscalating tensions have led to the alarming disappearance of several family members in certain villages, with authorities showing blatant indifference. Predictably, some officials are even complicit in these raids."
   balkan_wars.9.a: "Create a corridor."
-  balkan_wars.9.a_move_pops_tt: "All [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('caught_root_state_scope').GetName] will safely emigrate to [SCOPE.sState('caught_ottoman_state_scope').GetName]."
+  balkan_wars.9.a_move_pops_tt: "All [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')] in [SCOPE.sState('caught_root_state_scope').GetName] will safely emigrate to [SCOPE.sState('caught_ottoman_state_scope').GetName]."
   balkan_wars.9.b: "Leave soldiers and locals to themselves."
-  balkan_wars.9.b_move_pops_tt: "75% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('caught_root_state_scope').GetName] will escape to [SCOPE.sState('caught_ottoman_state_scope').GetName]."
-  balkan_wars.9.b_kill_pops_tt: "25% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed."
+  balkan_wars.9.b_move_pops_tt: "75% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')] in [SCOPE.sState('caught_root_state_scope').GetName] will escape to [SCOPE.sState('caught_ottoman_state_scope').GetName]."
+  balkan_wars.9.b_kill_pops_tt: "25% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed."
   balkan_wars.9.c: "Encourage the soldiers."
-  balkan_wars.9.c_move_pops_tt: "Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('caught_root_state_scope').GetName] will escape to [SCOPE.sState('cruelty_ottoman_state_scope').GetName]."
-  balkan_wars.9.c_kill_pops_tt: "Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed."
+  balkan_wars.9.c_move_pops_tt: "Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')] in [SCOPE.sState('caught_root_state_scope').GetName] will escape to [SCOPE.sState('cruelty_ottoman_state_scope').GetName]."
+  balkan_wars.9.c_kill_pops_tt: "Half of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed."
   balkan_wars.9.c_cruel_trait_tt: "This option is available because the ruler is #bold Cruel#!."
   balkan_wars.9.e: "They lived here for centuries, this is not right."
-  balkan_wars.9.e_kill_pops_tt: "5% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops$')] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed."
+  balkan_wars.9.e_kill_pops_tt: "5% of the [SCOPE.sCulture('turkish_pop_scope').GetName] [Concept('concept_pop', '$concept_pops|q$')] in [SCOPE.sState('caught_root_state_scope').GetName] will be killed."
 
   # Surplus Management random event
   balkan_wars.10.t: "Surplus Management"
@@ -422,16 +422,17 @@
   # Custom tt
   balkan_wars_league_fail_by_losing_the_war_tt: "[ROOT.GetCountry.GetName] loses #bold The Balkan War#!"
   support_for_balkan_league: "from being a League member"
+  power_bloc_integrity: "from defending Power Bloc integrity"
   balkan_war: "The Balkan War"
   dp_balkan_war: "The Balkan War"
   the_cataclysm_partitioning: "Balkan lands will be partitioned among its nations, and new ones may emerge."
-  homeland_states_spoils_of_war_header_tt: "The following [Concept('concept_state', '$concept_states$')] are considered as our [Concept('concept_homeland', '$concept_homelands$')]: #indent_newline:3 "
+  homeland_states_spoils_of_war_header_tt: "The following [Concept('concept_state', '$concept_states|q$')] are considered as our [Concept('concept_homeland', '$concept_homelands|q$')]: #indent_newline:3 "
   homeland_states_spoils_of_war_tt: "[THIS.GetStateRegion.GetName]"
-  balkan_wars_league_fail_by_becoming_subject_tt: "[ROOT.GetCountry.GetName] is a [Concept('concept_subject', '$concept_subject$')] of another nation"
+  balkan_wars_league_fail_by_becoming_subject_tt: "[ROOT.GetCountry.GetName] is a [Concept('concept_subject', '$concept_subject|q$')] of another nation"
   balkan_wars_league_fail_timeout_tt: "Our #v Window of Opportunity#! closes"
   balkan_wars_league_fail_by_rejecting_immediately_tt: "[ROOT.GetCountry.GetName] rejected to join the #bold Balkan League#!"
-  aggresive_diplomatic_plays_permitted_tt: "[ROOT.GetCountry.GetName] is not a [Concept('concept_subject', '$concept_subject$')] or Subject agreement permits them to start [Concept('concept_diplomatic_play', '$concept_diplomatic_plays$')]"
-  je_the_balkan_league_complete_header_tt: "The [GetStrategicRegion('region_balkans').GetName] [Concept('concept_state', '$concept_states$')] will be partitioned once #v $dyn_c_ottoman_empire$#! is completely eradicated from the region, and they currently own:"
+  aggresive_diplomatic_plays_permitted_tt: "[ROOT.GetCountry.GetName] is not a [Concept('concept_subject', '$concept_subject|q$')] or Subject agreement permits them to start [Concept('concept_diplomatic_play', '$concept_diplomatic_plays|q$')]"
+  je_the_balkan_league_complete_header_tt: "The [GetStrategicRegion('region_balkans').GetName] [Concept('concept_state', '$concept_states|q$')] will be partitioned once #v $dyn_c_ottoman_empire$#! is completely eradicated from the region, and they currently own:"
   je_the_balkan_league_complete_tt: "[THIS.GetStateRegion.GetName]"
 
  ##### THE GRAND COLLAPSE #####
@@ -463,10 +464,10 @@
   the_grand_collapse.2.d: "Our subject [SCOPE.sCountry('marketless_country_scope').GetName] is offering its loyalty in exchange for a tribute in these dire times."
   the_grand_collapse.2.f: "The diplomatic papers presented by the Hariciye Nezâreti indicated conspicuous arrogance disguised under royal recognition. Like hyenas encircling a fatally wounded lion, our subjects keep attempting to chew whatever they can while the opportunity is nigh.\n\nUpon gazing through the documents, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullNameNoFormatting] closed his eyes and murmured a prayer before making the final decision."
   the_grand_collapse.2.a: "Grant them economic independence."
-  the_grand_collapse_2.a_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market$')]"
+  the_grand_collapse_2.a_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market|q$')]"
   the_grand_collapse.2.b: "Redraw their borders."
   the_grand_collapse.2.c: "Give them more autonomy."
-  the_grand_collapse_2.c_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market$')]"
+  the_grand_collapse_2.c_tt: "[SCOPE.sCountry('marketless_country_scope').GetName] gains access to its own [Concept('concept_market', '$concept_market|q$')]"
   the_grand_collapse.2.e: "Opportunists do not deserve our attention."
 
   # Lobby Notables button event
@@ -491,7 +492,7 @@
   the_grand_collapse.5.a: "It had been decreed upon us, so let it be."
 
   # Custom tt
-  grand_collapse_loyalist_req_tt: "[Concept('concept_loyalist','$concept_loyalists$')] outnumber [Concept('concept_radical','$concept_radicals$')]"
+  grand_collapse_loyalist_req_tt: "[Concept('concept_loyalist','$concept_loyalists|q$')] outnumber [Concept('concept_radical','$concept_radicals|q$')]"
   the_grand_collapse_recently_lobbied_ig_tt: "Has not used this decision in the past #bold two years#!."
   the_grand_collapse_timeout_tt: "We have been reduced to the heart of Anatolia and lost all dominion over other nations."
   the_grand_collapse_not_succeeded_tanzimat_tt: "Has not completed #v $je_sick_man_main$#! [concept_journal_entry]"
@@ -542,5 +543,5 @@
   balkan_wars.14_clarification_increase_tt: "Relations will increase with the Balkan League Nations:"
   balkan_wars.14_clarification_decrease_tt: "Relations will decrease with the Balkan League Nations:"
 
-  notification_tur_warned_balkan_league_notification_name: "Balkan League Formed"
+  notification_tur_warned_balkan_league_notification_name: "Balkan League formed"
   notification_tur_warned_balkan_league_notification_desc: "[SCOPE.sCountry('subject_nation_scope').GetAdjectiveNoFormatting] spies have warned us of a alliance brewing against us in the [SCOPE.sStrategicRegion('balkans_scope').GetName]."

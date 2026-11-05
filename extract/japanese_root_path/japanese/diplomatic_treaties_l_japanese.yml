@@ -20,6 +20,14 @@
  treaty_name_prussian_military_mission_to_turkey: "プロイセンのオスマン帝国派遣団"
  treaty_name_treaty_of_adrianople: "アドリアノープル条約"
  anglo_american_convention_of_1818: "1818年英米協定"
+ treaty_name_treaty_of_london: "ロンドン条約"
+ treaty_name_treaty_of_aigun: "アイグン条約"
+ treaty_name_treaty_of_beijing: "北京条約"
+ treaty_name_chuguchak_protocol: "チョチェク協約"
+ treaty_name_treaty_of_ayacucho: "アヤクーチョ条約"
+ treaty_name_treaty_of_bogota: "ボゴタ条約"
+ treaty_name_treaty_of_turin: "トゥリン条約"
+ treaty_name_lease_of_berar: "ベラールの租借"
  ### Dynamic Treaties
  # Generic
  treaty_name_treaty_of_city: "$SIGNING_LOCATION$条約"

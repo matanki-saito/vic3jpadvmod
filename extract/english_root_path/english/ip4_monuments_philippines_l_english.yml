@@ -5,7 +5,7 @@
  je_philippines_development: "Advancements in the Archipelago"
  je_philippines_development_reason: "In the far-away archipelago of the [ROOT.GetCountry.GetNameNoFlag], an increase in international trade has set the stage for a burgeoning middle class to gain more influence despite ongoing political upheavals.\n\nGrow the domestic agricultural sector, increase the [concept_sol], and build ports to secure a fruitful future for the [ROOT.GetCountry.GetNameNoFormatting]."
  philippines10a_tt: ""$STATE_VISAYAS$ will surely thrive for generations to come.""
- philippines10b_tt: ""$STATE_MINDANAO$ will continue to develop into a prosperous region."\n$TAB$#b #r Option only available if [JournalEntry.GetCountry.GetName] own Port of Davao#! #!"
+ philippines10b_tt: ""$STATE_MINDANAO$ will continue to develop into a prosperous region."\n$TAB$#b #r Option only available if [ROOT.GetCountry.GetName] own Port of Davao#! #!"
  modifier_archipelagic_anger: "Broken Commercial Links"
  modifier_developmental_dearth: "Developmental Dearth"
 
@@ -23,7 +23,7 @@
  je_philippines_main: "Perla del Mar de Oriente" # sobriquet used by Spanish missionaries and in José Rizal's last poem
  je_philippines_main_reason: "Upward mobility from the burgeoning middle class has contributed to a growing national consciousness. Tensions within the [ROOT.GetCountry.GetName] are on the rise. [GetCulture('spanish').GetName] [GetPopType('clergymen').GetName] dominate secular and religious life, while [GetCulture('filipino_mestizo').GetName] [GetPopType('clergymen').GetNameNoFormatting] lead revolts against their authority. [GetCulture('filipino_mestizo').GetNameNoFormatting] elites of the [SCOPE.gsInterestGroup('intelligentsia_ig').GetName], too, are maneuvering for greater representation in government.\n\nUltimately, the [SelectLocalization(ROOT.GetCountry.GetTopOverlord.IsValid, ROOT.GetCountry.GetTopOverlord.GetAdjective, 'SPA_ADJ')] government has high expectations that the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] maintains an iron rule over their territory out in the Pacific. This friction threatens to topple our stability, putting the future of the [ROOT.GetCountry.GetName] at risk."
 
- philippines2a_tt: ""The future of the [JournalEntry.GetCountry.GetName] is bright.""
+ philippines2a_tt: ""The future of the [ROOT.GetCountry.GetName] is bright.""
  philippines3a_tt: ""This indeed marks a new chapter for our country.""
  spain_is_overlord_tt: "[concept_overlord] is #b $SPA$#!"
 
@@ -32,14 +32,18 @@
 
  # custom headers for the different outcomes
  je_philippines_main_header_independence_complete: "#title Will conclude in #b Philipinic Independence#! outcome if:#!\n"
- je_philippines_main_header_independence_on_complete: "#title If concluded in a #b Philippines Independence#! outcome:#!\n$EFFECT$"
+ je_philippines_main_header_independence_complete_conclusion_desc: "The $concept_journal_entry$ concluded with a #b Philipinic Independence#! outcome"
+ je_philippines_main_header_independence_on_complete: "#title If concluded with a #b Philippines Independence#! outcome:#!\n$EFFECT$"
  je_philippines_main_header_reliance_complete: "#title Will conclude in a #b Reliance#! outcome if:#!\n"
- je_philippines_main_header_on_reliance_complete: "#title If concluded in a #b Reliance#! outcome:#!\n$EFFECT$"
+ je_philippines_main_header_reliance_complete_conclusion_desc: "The $concept_journal_entry$ concluded with a #b Reliance#! outcome"
+ je_philippines_main_header_on_reliance_complete: "#title If concluded with a #b Reliance#! outcome:#!\n$EFFECT$"
 
  je_philippines_ethnogenesis_header_independence_complete: "#title Will conclude in a #b Philipinic Ethnogenesis#! outcome if:#!\n"
- je_philippines_ethnogenesis_header_independence_on_complete: "#title If concluded in a #b Philipinic Ethnogenesis#! outcome:#!\n$EFFECT$"
+ je_philippines_ethnogenesis_header_independence_complete_conclusion_desc: "The $concept_journal_entry$ concluded with a #b Philipinic Ethnogenesis#! outcome"
+ je_philippines_ethnogenesis_header_independence_on_complete: "#title If concluded with a #b Philipinic Ethnogenesis#! outcome:#!\n$EFFECT$"
  je_philippines_ethnogenesis_header_reliance_complete: "#title Will conclude in a #b Hispanophone Ethnogenesis#! outcome if:#!\n"
- je_philippines_ethnogenesis_header_reliance_on_complete: "#title If concluded in a #b Hispanophone Ethnogenesis#! outcome:#!\n$EFFECT$"
+ je_philippines_ethnogenesis_header_reliance_complete_conclusion_desc: "The $concept_journal_entry$ concluded with a #b Hispanophone Ethnogenesis#! outcome"
+ je_philippines_ethnogenesis_header_reliance_on_complete: "#title If concluded with a #b Hispanophone Ethnogenesis#! outcome:#!\n$EFFECT$"
 
  # je_philippines_main scripted buttons
  je_philippines_main_ilustrado_button: "Encourage the Ilustrados"
@@ -47,9 +51,8 @@
  je_philippines_development_complete: "Has completed $je_philippines_development$ [concept_journal_entry]."
 
  # notification from on_become_independent if player gains independence as Philippines before researching Nationalism or without je_philippines_main
- notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] No Longer a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
- notification_filipino_mestizo_now_primary_culture_desc: "Now that we are no longer under $SPA_ADJ$ rule, [GetCulture('filipino_mestizo').GetName] is our [Concept('concept_primary_cultures','$concept_primary_culture$')]."
- notification_filipino_mestizo_now_primary_culture_tooltip: "#header $notification_filipino_mestizo_now_primary_culture_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_mestizo_now_primary_culture_desc$"
+ notification_filipino_mestizo_now_primary_culture_name: "[GetCulture('spanish').GetName] no longer a [Concept('concept_primary_cultures','$concept_primary_culture|q$')]"
+ notification_filipino_mestizo_now_primary_culture_desc: "Now that we are no longer under $SPA_ADJ$ rule, [GetCulture('filipino_mestizo').GetName] is our [Concept('concept_primary_cultures','$concept_primary_culture|q$')]."
 
  # loc for philippines_events
  philippines.1.t: "[ROOT.GetCountry.GetAdjective] Identity"
@@ -65,9 +68,8 @@
  philippines.2.f: ""Land of the morning,\nChild of the sun returning,\nWith fervor burning\nThee do our souls adore."\n\n–José Palma, #italic Lupang Hinirang#!"
  philippines.2.a: "The future of the [ROOT.GetCountry.GetName] is bright."
 
- notification_filipino_culture_genesis_name: "Genesis of the [GetCulture('filipino').GetName] Culture"
+ notification_filipino_culture_genesis_name: "Genesis of the [GetCulture('filipino').GetName] culture"
  notification_filipino_culture_genesis_desc: "The [SCOPE.sCountry('filipino_nation_scope').GetName] has experienced a widespread cultural awakening, transitioning towards a distinct [GetCulture('filipino').GetName] culture."
- notification_filipino_culture_genesis_tooltip: "#header $notification_filipino_culture_genesis_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_culture_genesis_desc$"
 
  philippines.3.t: "Reliance on [SelectLocalization(ROOT.GetCountry.GetTopOverlord.IsValid, ROOT.GetCountry.GetTopOverlord.GetNameNoFormatting, 'SPA')]"
  philippines.3.d: "We continue to benefit from our ties with the metropole, as [ROOT.GetCountry.GetTopOverlord.GetAdjective] and [ROOT.GetCountry.GetAdjective] affairs become increasingly intertwined."
@@ -76,9 +78,8 @@
  modifier_metropole_business_networks: "Metropole Financial Ties"
  modifier_national_consolidation: "National Consolidation Drive"
 
- notification_filipino_hispanophone_culture_genesis_name: "Genesis of the [GetCulture('filipino_hispanophone').GetName] Culture"
+ notification_filipino_hispanophone_culture_genesis_name: "Genesis of the [GetCulture('filipino_hispanophone').GetName] culture"
  notification_filipino_hispanophone_culture_genesis_desc: "The [SCOPE.sCountry('filipino_nation_scope').GetName] has experienced a widespread cultural awakening, transitioning towards a distinct [GetCulture('filipino_hispanophone').GetName] culture."
- notification_filipino_hispanophone_culture_genesis_tooltip: "#header $notification_filipino_hispanophone_culture_genesis_name$#!\n$TOOLTIP_DELIMITER$\n$notification_filipino_hispanophone_culture_genesis_desc$"
 
  philippines.4.t: "Local Clergy Clash"
  philippines.4.d: "A newspaper article written in protest of an old decree from the [ROOT.GetCountry.GetTopOverlord.GetAdjective] government argues that [GetCulture('filipino_mestizo').GetName] friars should wield the same authority as [GetCulture('spanish').GetName] friars."
@@ -140,7 +141,7 @@
  cathedral_2_built_cathedral_3_ready_status_loc: "The third phase of [GetBuildingType('building_sagrada_familia_cathedral_3').GetName] is ready for construction"
  cathedral_3_built_complete_status_loc: "The $building_sagrada_familia_cathedral_3$ is complete"
 
- sagrada_familia_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built three phases of the $building_sagrada_familia_cathedral_3$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_CATALONIA$"
+ sagrada_familia_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built three phases of the $building_sagrada_familia_cathedral_3$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_CATALONIA$"
  sagrada_familia_populated_tt: "$building_sagrada_familia_cathedral_3$ workforce [concept_occupancy] is greater or equal to #variable 50%#!"
  rejected_sagrada_familia_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] rejects the proposal to construct $building_sagrada_familia_cathedral_3$"
  does_not_have_state_catalonia_tt: "[ROOT.GetCountry.GetNameNoFormatting] does not have $STATE_CATALONIA$"
@@ -187,8 +188,8 @@
  je_pena_palace: "Glorious Eden"
  je_pena_palace_reason: "The spouse of [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFullName] has recently aquired the old Pena Convent atop the Sintra Mountains. With great artistic ambition, he seeks to transform the monastery into a summer residence for the royal family."
 
- pena_palace_possible_tt: "[JournalEntry.GetCountry.GetName] has $building_pena_convent$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_ESTREMADURA$"
- pena_palace_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built $building_pena_palace$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_ESTREMADURA$"
+ pena_palace_possible_tt: "[ROOT.GetCountry.GetName] has $building_pena_convent$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_ESTREMADURA$"
+ pena_palace_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built $building_pena_palace$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_ESTREMADURA$"
  pena_palace_populated_tt: "$building_pena_palace$ workforce [concept_occupancy] is greater or equal to #variable 50%#!"
  rejected_pena_palace_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] rejects the proposal to construct and renovate $building_pena_palace$"
  does_not_have_state_estremadura_tt: "[ROOT.GetCountry.GetNameNoFormatting] does not have $STATE_ESTREMADURA$"
@@ -218,12 +219,12 @@
  je_gran_teatro: "Gran Teatro"
  je_gran_teatro_reason: "In the heart of [SCOPE.sState('relevant_state').GetName] is the Plaza de Isabella, a finely kept square where one can find some of the most fashionable cafés and restaurants of [SCOPE.sState('relevant_state').GetCityHubName]. People of all classes gather from nine o'clock in the evening until the small hours of the morning, bringing the plaza to life. Teatro Tacón is among the many fine establishments opposite of the sqaure. But despite the magnificent interior,  its exterior appearance leaves much to be desired.\n\n[GetCulture('galician').GetName] members of the [SCOPE.gsInterestGroup('relevant_ig').GetName] have drafted a proposal to expand and transform the site where Teatro Tacón sits into the $building_gran_teatro_de_la_habana$ with the hopes that it will be much celebrated in the decades to come."
 
- gran_teatro_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built $building_gran_teatro_de_la_habana$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_WESTERN_CUBA$"
+ gran_teatro_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built $building_gran_teatro_de_la_habana$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_WESTERN_CUBA$"
  gran_teatro_populated_tt: "$building_gran_teatro_de_la_habana$ workforce [concept_occupancy] is greater or equal to #variable 50%#!"
  rejected_gran_teatro_project_tt: "The proposal to construct the $building_gran_teatro_de_la_habana$ has been rejected"
  does_not_have_state_western_cuba_tt: "[ROOT.GetCountry.GetNameNoFormatting] does not have $STATE_WESTERN_CUBA$"
 
- gran_teatro.1.t:1 "Expanding the Arts in $HUB_NAME_STATE_WESTERN_CUBA_city$"
+ gran_teatro.1.t: "Expanding the Arts in $HUB_NAME_STATE_WESTERN_CUBA_city$"
  gran_teatro.1.d: "[GetCulture('galician').GetName] members of the [SCOPE.gsInterestGroup('relevant_ig').GetName] have issued a proposal to construct $building_gran_teatro_de_la_habana$ in the heart of [SCOPE.sState('relevant_state').GetName] at the site of Teatro Tacón. The group has collected a significant sum of money to be used in this renovation endevour."
  gran_teatro.1.f: ""The celebrated Tacon Theatre faces the Paseo de Isabella, and is built on the corner of San Rafael Street. It is a capacious structure, but extremely plain and unimpressive in its exterior appearance. ... The frescos are in good style, and the ornamentation, without being excessive, is in excellent and harmonious taste. A large, magnificent glass chandelier, lighted with gas, and numerous smaller ones extending from the boxes give a brilliant light to this elegant house, which is one of the largest theatres in the world."\n\n— Maturin Murray Ballou" # from Due South; or, Cuba past and present, 1885
  gran_teatro.1.a: "The grandeur of $building_gran_teatro_de_la_habana$ will be indisputable."
@@ -248,8 +249,8 @@
  je_atocha_railway: "Atocha Railway Station"
  je_atocha_railway_reason: "For many years, the [SCOPE.gsInterestGroup('relevant_ig').GetName] have sought to construct $building_estacion_de_madrid_atocha$ in [SCOPE.sState('relevant_state').GetName]. Their efforts have been thwarted by conflicting demands and interests—from government intervention to the death of the hired architect meant to oversee construction. No proposal has met all criteria until now.\n\nThe hopes of [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] to build the station have not waned. They believe $building_estacion_de_madrid_atocha$ will be a key institution for [ROOT.GetCountry.GetNameNoFormatting] not only within [SCOPE.sState('relevant_state').GetNameNoFormatting], but throughout all of the continent as well."
 
- atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has a $building_railway$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_NEW_CASTILE$"
- atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built $building_estacion_de_madrid_atocha$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_NEW_CASTILE$"
+ atocha_railway_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has a $building_railway$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_NEW_CASTILE$"
+ atocha_railway_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has built $building_estacion_de_madrid_atocha$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_NEW_CASTILE$"
  atocha_railway_populated_tt: "$building_estacion_de_madrid_atocha$ workforce [concept_occupancy] is greater or equal to #variable 50%#!"
  rejected_atocha_railway_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] rejects the proposal to construct $building_estacion_de_madrid_atocha$."
  does_not_have_state_new_castile_tt: "[ROOT.GetCountry.GetNameNoFormatting] does not have $STATE_NEW_CASTILE$"
@@ -279,17 +280,17 @@
  je_manila_cathedral: "Rebuilding the Manila Cathedral"
  je_manila_cathedral_reason: "Damage from a very strong earthquake has left $building_manila_cathedral_original$ in ruins. As [SCOPE.sState('relevant_state').GetNameNoFormatting] recovers from the devastation of the disaster, [GetPopType('clergymen').GetNameNoFormatting] of the [SCOPE.gsInterestGroup('relevant_ig').GetNameNoFormatting] have gathered funds and want to move forward with reconstruction of the cathedral."
 
- manila_cathedral_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has $building_manila_cathedral_ruins$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_LUZON$"
- manila_cathedral_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has rebuilt $building_manila_cathedral_monument$ in the [Concept('concept_state_region','$concept_state_region$')] of $STATE_LUZON$"
+ manila_cathedral_possible_tt: "[ROOT.GetCountry.GetNameNoFormatting] has $building_manila_cathedral_ruins$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_LUZON$"
+ manila_cathedral_complete_tt: "[ROOT.GetCountry.GetNameNoFormatting] has rebuilt $building_manila_cathedral_monument$ in the [Concept('concept_state_region','$concept_state_region|q$')] of $STATE_LUZON$"
  manila_cathedral_populated_tt: "$building_manila_cathedral_monument$ workforce [concept_occupancy] is greater or equal to #variable 50%#!"
  rejected_manila_cathedral_project_tt: "[ROOT.GetCountry.GetNameNoFormatting] rejects the proposal to rebuild $building_manila_cathedral_monument$"
  does_not_have_state_luzon_tt: "[ROOT.GetCountry.GetNameNoFormatting] does not have $STATE_LUZON$"
 
  manila_cathedral.1.t: "Earthquake at [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetNameNoFormatting, 'STATE_LUZON')]"
- manila_cathedral.1.d:1 "The $building_manila_cathedral_original$ is now in ruins after an intense earthquake struck [SCOPE.sState('relevant_state').GetName]. [GetPopType('clergymen').GetName] of the [SCOPE.gsInterestGroup('relevant_ig').GetName] have issued a proposal to rebuild the cathedral. The group has collected a significant sum of money to be used in its construction."
+ manila_cathedral.1.d: "The $building_manila_cathedral_original$ is now in ruins after an intense earthquake struck [SCOPE.sState('relevant_state').GetName]. [GetPopType('clergymen').GetName] of the [SCOPE.gsInterestGroup('relevant_ig').GetName] have issued a proposal to rebuild the cathedral. The group has collected a significant sum of money to be used in its construction."
  manila_cathedral.1.f: ""The destructive ravages and changes produced by earthquakes are nowhere more remarkable than in the Philippines. They have overturned mountains, they have filled up valleys, they have desolated extensive plains; they have opened passages for the sea into the interior, and from the lakes into the sea. There are many traditional stories of these territorial revolutions, but of late disasters the records are trustworthy. ... Successive earthquakes have brought upon Luzon a series of calamities."\n\n— John Bowring" #A Visit to the Philippine Islands, 1859
  manila_cathedral.1.a: "We must quickly rebuild the cathedral."
- manila_cathedral.1.b:1 "[SCOPE.sState('relevant_state').GetNameNoFormatting] has much more pressing issues."
+ manila_cathedral.1.b: "[SCOPE.sState('relevant_state').GetNameNoFormatting] has much more pressing issues."
 
  manila_cathedral_construct_tt: "The $building_manila_cathedral_monument$ may be constructed in the State Panel for [SelectLocalization(SCOPE.sState('relevant_state').IsValid, SCOPE.sState('relevant_state').GetName, 'STATE_LUZON')]"
  dismissed_manila_cathedral_je_tt: "#r The #bold $je_manila_cathedral$#! [concept_journal_entry] will be dismissed#!"
@@ -308,13 +309,11 @@
  manila_cathedral_reward_loc: "Devout Display"
  manila_cathedral_reward_int: "Ecclesiastical Authority"
 
- notification_manila_cathedral_in_ruins_name: "$building_manila_cathedral_monument$ in Ruins"
+ notification_manila_cathedral_in_ruins_name: "$building_manila_cathedral_monument$ in ruins"
  notification_manila_cathedral_in_ruins_desc: "The $building_manila_cathedral_monument$ is now in ruins after an earthquake struck [SCOPE.sState('relevant_state').GetName]. We can once more rebuild it."
- notification_manila_cathedral_in_ruins_tooltip: "#header $notification_manila_cathedral_in_ruins_name$#!\n$TOOLTIP_DELIMITER$\n$notification_manila_cathedral_in_ruins_desc$"
 
  notification_manila_cathedral_rebuilt_name: "The [SCOPE.GetRootScope.GetCountry.GetCustom('getManilaCathedralCount')] $building_manila_cathedral_monument$"
  notification_manila_cathedral_rebuilt_desc: "The $building_manila_cathedral_monument$ has been rebuilt in [SCOPE.sState('relevant_state').GetName]. The enduring legacy will benefit all of [ROOT.GetCountry.GetNameNoFormatting]."
- notification_manila_cathedral_rebuilt_tooltip: "#header $notification_manila_cathedral_rebuilt_name$#!\n$TOOLTIP_DELIMITER$\n$notification_manila_cathedral_rebuilt_desc$"
 
  seventh_manila_cathedral_loc: "Seventh"
  eighth_manila_cathedral_loc: "Eighth"

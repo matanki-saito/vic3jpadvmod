@@ -15,8 +15,8 @@
  decree_encourage_agricultural_industry_desc:0 "Increase Agricultural and Plantation sector throughput"
  decree_encourage_resource_industry:0 "Encourage Resource Industry"
  decree_encourage_resource_industry_desc:0 "Increase Resource sector throughput"
- decree_enlistment_efforts:1 "Enlistment Efforts"
- decree_enlistment_efforts_desc:1 "Incentivizing recruitment and training of local troops through financial incentives and preferential treatment"
+ decree_enlistment_efforts: "Enlistment Efforts"
+ decree_enlistment_efforts_desc: "Incentivizing recruitment and training of local troops through financial incentives and preferential treatment"
  decree_violent_suppression:0 "Violent Suppression"
  decree_violent_suppression_desc:0 "Use the nation's national guard to control the angry mobs"
 
@@ -27,7 +27,7 @@
  move_market_capital_lens_option_tooltip:0 "#header $move_market_capital_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept You can change your [concept_market_capital] of your national [concept_market].#!"
 
  reset_production_methods_lens_option:0 "Reset Production Methods"
- reset_production_methods_lens_option_tooltip:0 "#header $reset_production_methods_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Reset [Concept('concept_production_method','$concept_production_methods$')] of [Concept('concept_building','$concept_buildings$')] in a [concept_state] to match your most common national standards.#!"
+ reset_production_methods_lens_option_tooltip:0 "#header $reset_production_methods_lens_option$#!\n$TOOLTIP_DELIMITER$\n#concept Reset [Concept('concept_production_method','$concept_production_methods|q$')] of [Concept('concept_building','$concept_buildings|q$')] in a [concept_state] to match your most common national standards.#!"
 
  decree_establish_missions: "Establish Missions"
  decree_establish_missions_desc: "Convert the local populace"

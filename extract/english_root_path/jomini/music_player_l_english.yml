@@ -5,6 +5,7 @@
  MUSIC_PLAYER_PLAY_PAUSE: "Play/Pause"
  MUSIC_PLAYER_CURRENT_ELAPSED_TIME: "$MIN$:$SEC$"
  MUSIC_PLAYER_NO_TRACK: "No current track"
+ MUSIC_PLAYER_WAITING_FOR_NEXT_TRACK: "Waiting for the next track"
  MUSIC_PLAYER_TRACK_PLAY: "Play now"
  MUSIC_PLAYER_TRACK_ENABLE: "Enable"
  MUSIC_PLAYER_TRACK_DISABLE: "Disable"
@@ -13,6 +14,13 @@
  MUSIC_PLAYER_DENSITY_INTENSE: "Intense"
  MUSIC_PLAYER_DENSITY_BALANCED: "Balanced"
  MUSIC_PLAYER_DENSITY_RELAXED: "Relaxed"
+ MUSIC_PLAYER_SHUFFLE_MODE_LEAST_PLAYED: "Least Played"
+ MUSIC_PLAYER_SHUFFLE_MODE_RANDOM: "Random"
+ MUSIC_PLAYER_SHUFFLE_MODE_WEIGHTED: "Weighted"
+ MUSIC_PLAYER_SHUFFLE_MODE_DESC: "Determines how the next music track is chosen"
+ MUSIC_PLAYER_SHUFFLE_MODE_LEAST_PLAYED_DESC: "Rotates through the tracks you have heard the fewest times, so everything gets played about equally often"
+ MUSIC_PLAYER_SHUFFLE_MODE_RANDOM_DESC: "Every enabled track has the same chance of being picked, whatever is happening in your game"
+ MUSIC_PLAYER_SHUFFLE_MODE_WEIGHTED_DESC: "Favors tracks that suit what is happening in your game"
  MUSIC_PLAYER_CATEGORY_ENABLED: "Enabled"
  MUSIC_PLAYER_CATEGORY_DISABLED: "Disabled"
-  
+

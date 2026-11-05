@@ -131,11 +131,11 @@ spanish_new_world_events.1.a: "The old empire is gone. It is time to face the re
 spanish_new_world_events.1.b: "Cowards. Send for the war minister, treason shall not be rewarded."
 spanish_new_world_events.1.tt_1: "This will set us on a path of #g normalisation#! with our former colonies."
 spanish_new_world_events.1.tt_2: "This will set us on a #b difficult#! path of #r conquest#! targeting our former colonies."
-spanish_new_world_events.1.tt_3: "[SCOPE.sCountry('britain_scope').GetName] and the [SCOPE.sCountry('usa_scope').GetName] will be likely to #b intervene against us#! in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] targeting our former colonies, unless we enjoy very good relations with them."
+spanish_new_world_events.1.tt_3: "[SCOPE.sCountry('britain_scope').GetName] and the [SCOPE.sCountry('usa_scope').GetName] will be likely to #b intervene against us#! in [Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')] targeting our former colonies, unless we enjoy very good relations with them."
 spanish_new_world_events.1.tt_4: "[ROOT.GetCountry.GetAdjective] [concept_relations] with [SCOPE.sCountry('britain_scope').GetName], [SCOPE.sCountry('usa_scope').GetName], and #b all former [ROOT.GetCountry.GetAdjectiveNoFormatting] colonies#! deteriorates by #r 30#!"
 spanish_new_world_events.1.tt_5: "We will #b disgrace#! ourselves in the eyes of the international community, and all South American countries will lose the #b $modifier_not_recognized_by_spain$#! [concept_modifier]"
 modifier_spanish_infamy_reduction: "New World Diplomatic Initiatives"
-spanish_new_world_events.1.tt_3_event_insight: "#b $GBR$#! and #b $USA$#! will be likely to #b intervene against us#! in [Concept('concept_diplomatic_play','$concept_diplomatic_plays$')] targeting our former colonies, unless we enjoy very good relations with them."
+spanish_new_world_events.1.tt_3_event_insight: "#b $GBR$#! and #b $USA$#! will be likely to #b intervene against us#! in [Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')] targeting our former colonies, unless we enjoy very good relations with them."
 spanish_new_world_events.1.tt_4_event_insight: "[ROOT.GetCountry.GetAdjective] [concept_relations] with #b $GBR$#!, #b $USA$#!, and #b all former [ROOT.GetCountry.GetAdjectiveNoFormatting] colonies#! deteriorates by #r 30#!"
 
 spanish_new_world_events.2.t: "Our American Empire"
@@ -167,16 +167,16 @@ spanish_new_world_events.4.c: "Leave the current administrations in place."
 modifier_maintained_local_rule: "Maintained Local Rule"
 modifier_reformed_captaincy_general: "Reformed Captaincy General"
 
-set_up_new_spain_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in North America owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_new_grenada_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_gran_colombia').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_peru_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_andes').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_la_plata_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_la_plata').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_caribbean_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_caribbean').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_new_spain_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_new_spain').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_new_grenada_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_new_grenada').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_peru_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_peru').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_la_plata_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_la_plata').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
-set_up_caribbean_pre_napoleonic_tt: "[SCOPE.sCountry('new_spain_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_caribbean').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects$')]"
+set_up_new_spain_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in North America owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_new_grenada_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_gran_colombia').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_peru_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_andes').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_la_plata_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_la_plata').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_caribbean_default_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_caribbean').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_new_spain_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_new_spain').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_new_grenada_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_new_grenada').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_peru_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_peru').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_la_plata_pre_napoleonic_tt: "[SCOPE.sCountry('relevant_country_scope').GetName] will receive every [concept_state] in [GetGeographicRegion('geographic_region_colonial_la_plata').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
+set_up_caribbean_pre_napoleonic_tt: "[SCOPE.sCountry('new_spain_scope').GetName] will receive every [concept_state] in [GetStrategicRegion('region_caribbean').GetName] owned by [ROOT.GetCountry.GetName] or its [Concept('concept_subject','$concept_subjects|q$')]"
 
 spanish_new_world_events.5.t: "Recognition"
 spanish_new_world_events.5.d: "With the legal status of [ROOT.GetCountry.GetName] no longer in question, the country's presence on the international stage is bound to increase."
@@ -219,7 +219,7 @@ button_proclaim_independence_desc: "The moon does not heed the barking of dogs. 
 modifier_a_show_of_strength: "A Display of Strength"
 
 je_hispanoamerica: "Hispanoamerica"
-je_hispanoamerica_reason: "We will not waste men and resources in a futile attempt to restore what once was. Instead, cordiality and mutual benefit will define the [ROOT.GetCountry.GetAdjective] relationship with her former colonies. We shall instruct our diplomats to draw up [Concept('concept_treaty','$concept_treaties$')] of Commerce and Friendship with our former subjects, sending a powerful message to the world of our magnanimity.\n\n#b Formal Recognition#!\nWhile [ROOT.GetCountry.GetNameNoFormatting]'s former colonies in the Americas achieved #italic de facto#! independence following the #b Spanish American Wars of Independence#! in the early 19th century, no #italic de jure#! recognition of this new status followed.\n\nUntil [ROOT.GetCountry.GetNameNoFormatting] formally recognizes the independence of her former colonies using the #b Recognize Independence#! [concept_treaty] [concept_article], bilateral diplomatic relations will remain #b severely hindered#!."
+je_hispanoamerica_reason: "We will not waste men and resources in a futile attempt to restore what once was. Instead, cordiality and mutual benefit will define the [ROOT.GetCountry.GetAdjective] relationship with her former colonies. We shall instruct our diplomats to draw up [Concept('concept_treaty','$concept_treaties|q$')] of Commerce and Friendship with our former subjects, sending a powerful message to the world of our magnanimity.\n\n#b Formal Recognition#!\nWhile [ROOT.GetCountry.GetNameNoFormatting]'s former colonies in the Americas achieved #italic de facto#! independence following the #b Spanish American Wars of Independence#! in the early 19th century, no #italic de jure#! recognition of this new status followed.\n\nUntil [ROOT.GetCountry.GetNameNoFormatting] formally recognizes the independence of her former colonies using the #b Recognize Independence#! [concept_treaty] [concept_article], bilateral diplomatic relations will remain #b severely hindered#!."
 modifier_hispanoamerica_reward: "A Most Special Relationship"
 je_hispanoamerica_improve_relations: "[ROOT.GetCountry.GetAdjective] [concept_relations] with #b all former [ROOT.GetCountry.GetAdjectiveNoFormatting] colonies#! improves by #g 30#!"
 je_hispanoamerica_improve_leverage: "If we are the leader of a [concept_power_bloc], [ROOT.GetCountry.GetName] gains #positive_value 100#! [concept_power_bloc_leverage] in #b all former [ROOT.GetCountry.GetAdjectiveNoFormatting] colonies#!"
@@ -236,7 +236,7 @@ je_spanish_american_optional_tt_2: "Since our [concept_relations] with [SCOPE.sC
 ### Vernacular Content
 
 je_vernacular_policy: "The Status of the Vernacular"
-je_vernacular_policy_reason: "For centuries, the [SCOPE.sCulture('official_culture_scope').GetName] [Concept('concept_homeland','$concept_homelands$')] have been home to many [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')]. Considered distinct cultures and languages in their own right by some and nothing but corrupted variants of true [SCOPE.sCulture('official_culture_scope').GetName] by others, their prevalence has sparked fierce discussions on the 'vernacular issue' in [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nWith some arguing that the nation cannot hope to be truly united before regionalism is stamped out, other counter with arguments that [ROOT.GetCountry.GetName] never has been, and never can be anything but an amalgamation of regional tongues and identities, none inherently superior to the other."
+je_vernacular_policy_reason: "For centuries, the [SCOPE.sCulture('official_culture_scope').GetName] [Concept('concept_homeland','$concept_homelands|q$')] have been home to many [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')]. Considered distinct cultures and languages in their own right by some and nothing but corrupted variants of true [SCOPE.sCulture('official_culture_scope').GetName] by others, their prevalence has sparked fierce discussions on the 'vernacular issue' in [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nWith some arguing that the nation cannot hope to be truly united before regionalism is stamped out, other counter with arguments that [ROOT.GetCountry.GetName] never has been, and never can be anything but an amalgamation of regional tongues and identities, none inherently superior to the other."
 
 ### Spanish Buttons
 
@@ -263,7 +263,7 @@ je_vernacular_policy_accept_wallonian_button: "Accept [GetCulture('wallonian').G
 je_vernacular_policy_accept_wallonian_button_desc: "Formally recognize [GetCulture('wallonian').GetName] as an accepted vernacular in administration, education, and public life."
 
 vernacular_events.1.t: "On the Status of the Regional Tongues"
-vernacular_events.1.d: "Arguing in favour of the universalisation of the [SCOPE.sCulture('official_culture_scope').GetName] language, prominent politicians and intellectuals have pushed for harsh assimilation measures targeting [ROOT.GetCountry.GetName]'s regional language speakers."
+vernacular_events.1.d: "Arguing in favor of the universalisation of the [SCOPE.sCulture('official_culture_scope').GetName] language, prominent politicians and intellectuals have pushed for harsh assimilation measures targeting [ROOT.GetCountry.GetName]'s regional language speakers."
 vernacular_events.1.f: "While it would be genuinely liberating for a single global language to exist, that is not politically feasible, but a single language inside the state would be a viable project.\n\n— Henri Grégoire, #italic Report on the Necessity and Means to Annihilate the Patois and to Universalise the Use of the French Language#!"
 vernacular_events.1.a: "Speak [SCOPE.sCulture('official_culture_scope').GetName], be clean."
 vernacular_events.1.b: "No. Work towards granting the [ROOT.GetCountry.GetCustom('getRegionalLanguagesType')] co-official status."
@@ -284,7 +284,7 @@ vernacular_events.2.f: ""My grandfather once told me about this village, having 
 vernacular_events.2.a: "One people."
 vernacular_events.2.b: "One language."
 modifier_assimilation_reward: "Assimilationist Schooling Policies"
-vernacular_events.2.b_tt: "The following modifier will be applied to all [SCOPE.sCulture('official_culture_scope').GetName] [concept_homeland] [Concept('concept_state','$concept_states$')]:"
+vernacular_events.2.b_tt: "The following modifier will be applied to all [SCOPE.sCulture('official_culture_scope').GetName] [concept_homeland] [Concept('concept_state','$concept_states|q$')]:"
 modifier_academie_francaise: "Expanded the Académie Française"
 modifier_increased_centralization: "Centralization of the Bureaucracy"
 modifier_royal_spanish_academy: "Expanded the Real Academia Española"
@@ -341,13 +341,11 @@ special_character_colonial_business_desc: "This character is an influential busi
 special_character_colonial_military: "Military Governor"
 special_character_colonial_military_desc: "This character is an experienced military officer well-accustomed with service abroad."
 
-notification_appointed_new_governor_notification_name: "[SCOPE.sCountry('source_country').GetName] Appoints New [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
+notification_appointed_new_governor_notification_name: "[SCOPE.sCountry('source_country').GetName] appoints a new [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
 notification_appointed_new_governor_notification_desc: "Citing administrative concerns, [SCOPE.sCountry('source_country').GetCapital.GetCityHubName] has replaced our [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] with a new candidate."
-notification_appointed_new_governor_notification_tooltip: "#header $notification_appointed_new_governor_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_appointed_new_governor_notification_desc$"
 
-notification_requested_new_governor_notification_name: "[SCOPE.sCountry('source_country').GetName] Requests New [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
+notification_requested_new_governor_notification_name: "[SCOPE.sCountry('source_country').GetName] requests a new [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
 notification_requested_new_governor_notification_desc: "The administration in [SCOPE.sCountry('source_country').GetCapital.GetCityHubName] has requested the appointment of a new [concept_ruler], reducing their [concept_liberty_desire]."
-notification_requested_new_governor_notification_tooltip: "#header $notification_requested_new_governor_notification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_requested_new_governor_notification_desc$"
 
 
 
@@ -426,10 +424,10 @@ modifier_cibao_unrest: "Cibao Insurgency"
 
 je_la_trinitaria: "One and Indivisible"
 je_la_trinitaria_reason: "The union of Hispaniola's western and eastern part; [SCOPE.sState('haiti_state_scope').GetName] and [SCOPE.sState('santo_domingo_state_scope').GetName], has not been a happy one. Established through force of arms in 1822, it initially enjoyed some limited support from select elites and Afro-Dominicans. However, [ROOT.GetCountry.GetName]'s policies of heavy taxation, land redistribution, and mass confiscations, combined with anti-Catholic practices and general mismanagement, would soon turn the majority of the population against rule from [ROOT.GetCountry.GetCapital.GetCityHubName].\n\nUnless decisive steps are taken, this discontent is likely to materialize as an armed insurrection in the near future."
-dominican_movement_tt: "The #v $movement_dominican_national$#! has [Concept('concept_activism','$concept_activism_short$')] of $RADICALISM_AGITATING$ (#v 25%#!) or above"
-dominican_movement_suppressed_tt: "No #v $movement_dominican_national$#! exists with [Concept('concept_activism','$concept_activism_short$')] of $RADICALISM_AGITATING$ (#v 25%#!) or above"
+dominican_movement_tt: "The #v $movement_dominican_national$#! has [Concept('concept_activism','$concept_activism_short|q$')] of $RADICALISM_AGITATING$ (#v 25%#!) or above"
+dominican_movement_suppressed_tt: "No #v $movement_dominican_national$#! exists with [Concept('concept_activism','$concept_activism_short|q$')] of $RADICALISM_AGITATING$ (#v 25%#!) or above"
 modifier_a_marriage_at_gunpoint: "Union at Gunpoint"
-dominican_secession_tt: "A [Concept('concept_secession', '$concept_secessionist$')] [concept_diplomatic_play] has started in [GetStateRegion('STATE_SANTO_DOMINGO').GetName]"
+dominican_secession_tt: "A [Concept('concept_secession', '$concept_secessionist|q$')] [concept_diplomatic_play] has started in [GetStateRegion('STATE_SANTO_DOMINGO').GetName]"
 
 modifier_french_independence_payments_1_desc: "$je_haitian_debt$: $modifier_french_independence_payments_1$"
 modifier_french_independence_payments_2_desc: "$je_haitian_debt$: $modifier_french_independence_payments_2$"
@@ -437,11 +435,11 @@ modifier_french_independence_payments_3_desc: "$je_haitian_debt$: $modifier_fren
 modifier_french_independence_payments_4_desc: "$je_haitian_debt$: $modifier_french_independence_payments_4$"
 
 # SGUI LOC
-HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER: "Remaining [Concept('concept_country', '$concept_countries$')]:"
+HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER: "Remaining [Concept('concept_country', '$concept_countries|q$')]:"
 HISPANOAMERICA_RECOGNITION_COUNTRIES_TT: "$HISPANOAMERICA_RECOGNITION_COUNTRIES_HEADER$\n[GetScriptedGui('je_hispanoamerica_not_recognized_countries_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 HISPANOAMERICA_RECOGNITION_COUNTRIES_LIST_ENTRY: "[AddLocalizationIf(THIS.GetCountry.Exists, THIS.GetCountry.GetName)]"
 FORMER_SPANISH_COLONY_TT: "Is a former $SPA_ADJ$ [concept_colony]"
 
-VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER: "Remaining [Concept('concept_state', '$concept_states$')]:"
+VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER: "Remaining [Concept('concept_state', '$concept_states|q$')]:"
 VERNACULAR_POLICY_ASSIMILATION_STATES_TT: "$VERNACULAR_POLICY_ASSIMILATION_STATES_HEADER$\n[GetScriptedGui('je_vernacular_policy_assimilation_states_sgui').ExecuteTooltip(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
 VERNACULAR_POLICY_ASSIMILATION_STATES_LIST_ENTRY: "[AddLocalizationIf(THIS.GetState.IsValid, THIS.GetState.GetName)] ([THIS.ScriptValue('official_culture_fraction')|%1])"

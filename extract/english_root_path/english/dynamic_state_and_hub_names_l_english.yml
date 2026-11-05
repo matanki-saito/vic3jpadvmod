@@ -217,19 +217,19 @@
  ### Livonia Strategic Region
 
  # Kaunas - Lithuanian by default
- STATE_KAUNAS_russian: "Litva"
- HUB_NAME_STATE_KAUNAS_city_russian: "Kovno"
- HUB_NAME_STATE_KAUNAS_mine_russian: "Vilkomir"
- HUB_NAME_STATE_KAUNAS_farm_russian: "Shavli"
- HUB_NAME_STATE_KAUNAS_wood_russian: "Vawkavyshki"
- HUB_NAME_STATE_KAUNAS_port_russian: "Palangen"
+ STATE_LITHUANIA_russian: "Litva"
+ HUB_NAME_STATE_LITHUANIA_city_russian: "Kovno"
+ HUB_NAME_STATE_LITHUANIA_mine_russian: "Vilkomir"
+ HUB_NAME_STATE_LITHUANIA_farm_russian: "Shavli"
+ HUB_NAME_STATE_LITHUANIA_wood_russian: "Vawkavyshki"
+ HUB_NAME_STATE_LITHUANIA_port_russian: "Palangen"
 
- STATE_KAUNAS_polish: "Litwa"
- HUB_NAME_STATE_KAUNAS_city_polish: "Kowno"
- HUB_NAME_STATE_KAUNAS_mine_polish: "Wiłkomierz"
- HUB_NAME_STATE_KAUNAS_farm_polish: "Szawle"
- HUB_NAME_STATE_KAUNAS_wood_polish: "Wyłkowyszki"
- HUB_NAME_STATE_KAUNAS_port_polish: "Połąga"
+ STATE_LITHUANIA_polish: "Litwa"
+ HUB_NAME_STATE_LITHUANIA_city_polish: "Kowno"
+ HUB_NAME_STATE_LITHUANIA_mine_polish: "Wiłkomierz"
+ HUB_NAME_STATE_LITHUANIA_farm_polish: "Szawle"
+ HUB_NAME_STATE_LITHUANIA_wood_polish: "Wyłkowyszki"
+ HUB_NAME_STATE_LITHUANIA_port_polish: "Połąga"
 
  # Vilnius - Lithuanian by default
  STATE_VILNIUS_russian: "Vilna"
@@ -583,7 +583,7 @@
  # Austria proper
  STATE_AUSTRIA_french: "Austriche"
  HUB_NAME_STATE_AUSTRIA_city_french: "Vienne"
- #HUB_NAME_STATE_AUSTRIA_mine:1 "Freistadt"
+ #HUB_NAME_STATE_AUSTRIA_mine: "Freistadt"
  HUB_NAME_STATE_AUSTRIA_farm_french: "Lintz"
  HUB_NAME_STATE_AUSTRIA_wood_french: "Saint-Hippolyte"
 
@@ -648,7 +648,7 @@
  HUB_NAME_STATE_MORAVIA_city_french: "Brin"
  #HUB_NAME_STATE_MORAVIA_mine:0 "Olomouc"
  #HUB_NAME_STATE_MORAVIA_farm:0 "Breclav"
- #HUB_NAME_STATE_MORAVIA_wood:1 "Jihlava"
+ #HUB_NAME_STATE_MORAVIA_wood: "Jihlava"
 
  # Moravia - German
  STATE_MORAVIA_german: "Mähren"
@@ -1120,7 +1120,9 @@
  ### Russia
  # Ingria
  #STATE_INGRIA: "Ingria"
- HUB_NAME_STATE_INGRIA_city_russian_imp: "Petrograd"
+ STATE_INGRIA_russian: "Sankt-Peterburg"
+ HUB_NAME_STATE_INGRIA_city_russian_imp: "Sankt-Peterburg"
+ HUB_NAME_STATE_INGRIA_city_russian_petrograd: "Petrograd"
  HUB_NAME_STATE_INGRIA_city_russian_sov: "Leningrad"
 
  ## Balkans
@@ -1805,8 +1807,8 @@
  ### Sakhalin
  # Sakhalin - Russian
  STATE_SAKHALIN_russian_sakhalin_only: "Sakhalin"
- STATE_SAKHALIN_russian_kuril_only: "Kuril'skie Ostrova"
- STATE_SAKHALIN_russian_sakhalin_and_kuril: "Sakhalin i Kuril'skie Ostrova"
+ STATE_SAKHALIN_russian_kuril_only: "Kuril’skie Ostrova"
+ STATE_SAKHALIN_russian_sakhalin_and_kuril: "Sakhalin i Kuril’skie Ostrova"
  HUB_NAME_STATE_SAKHALIN_city_russian: "Vladimirovka"
  HUB_NAME_STATE_SAKHALIN_port_russian: "Korsakov"
  HUB_NAME_STATE_SAKHALIN_mine_russian: "Tikhmenevsky"
@@ -2146,6 +2148,14 @@
  HUB_NAME_STATE_OUTER_MANCHURIA_mine_russian: "Tetyukhe" # Modern Dalnegorsk
  HUB_NAME_STATE_OUTER_MANCHURIA_farm_russian: "Grafskaya" # Later Iman, modern Dalnerechensk
  HUB_NAME_STATE_OUTER_MANCHURIA_wood_russian: "Imperatorskaya Gavan" # Modern Sovetskaya Gavan
+
+ # Primorye - Ukrainian
+ STATE_OUTER_MANCHURIA_ukrainian: "Zelenyi Klyn"
+ HUB_NAME_STATE_OUTER_MANCHURIA_city_ukrainian: "Khabarivka"
+ HUB_NAME_STATE_OUTER_MANCHURIA_port_ukrainian: "Vladyvostok"
+ HUB_NAME_STATE_OUTER_MANCHURIA_mine_ukrainian: "Tetiukhe"
+ HUB_NAME_STATE_OUTER_MANCHURIA_farm_ukrainian: "Hrafska"
+ HUB_NAME_STATE_OUTER_MANCHURIA_wood_ukrainian: "Imperatorska Havan"
 
  # Primorye - Japanese (Mainly derived from the Russian names, so may feel a bit odd if there's no intermediate period of Russian ownership before Japanese takeower)
  STATE_OUTER_MANCHURIA_japanese: "Enkaishū"

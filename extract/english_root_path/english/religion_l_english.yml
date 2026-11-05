@@ -2,7 +2,7 @@
  catholic:0 "Catholic"
  protestant:0 "Protestant"
  orthodox:0 "Orthodox"
- oriental_orthodox:1 "Oriental Orthodox"
+ oriental_orthodox: "Oriental Orthodox"
  sunni:0 "Sunni"
  shiite:0 "Shiite"
  jewish:0 "Jewish"

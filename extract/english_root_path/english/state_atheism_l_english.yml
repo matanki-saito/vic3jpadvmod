@@ -27,7 +27,7 @@
  godless_ig_leader: "[SCOPE.sCharacter('godless_leader').GetFullName] of the [SCOPE.gsInterestGroup('godless_ig').GetName] is replaced by an Atheist leader"
  society_of_the_godless_mod: "Society of the Godless"
  antireligious_policies: "Anti-Religious Policies"
- state_atheism_conversion_tt: "10% of [Concept('concept_pop', '$concept_pops$')] in your [Concept('concept_incorporated_state', '$concept_incorporated_states$')] become Atheist"
+ state_atheism_conversion_tt: "10% of [Concept('concept_pop', '$concept_pops|q$')] in your [Concept('concept_incorporated_state', '$concept_incorporated_states|q$')] become Atheist"
  unpopular_attacks_on_charities: "Unpopular Attacks on Charities"
  state_welfare_disparaged: "State Welfare Disparaged"
  state_welfare_promoted: "State Welfare Promoted"

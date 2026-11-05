@@ -181,18 +181,18 @@
  STATE_EAST_PRUSSIA_german: "東プロイセン"
  ### Livonia Strategic Region
  #Kaunas - Lithuanian by default
- STATE_KAUNAS_russian: "リトアニア"
- HUB_NAME_STATE_KAUNAS_city_russian: "カウナス"
- HUB_NAME_STATE_KAUNAS_mine_russian: "ヴィルクメルゲ"
- HUB_NAME_STATE_KAUNAS_farm_russian: "シャウレイ"
- HUB_NAME_STATE_KAUNAS_wood_russian: "ヴァウカヴィスク"
- HUB_NAME_STATE_KAUNAS_port_russian: "パランガ"
- STATE_KAUNAS_polish: "リトアニア"
- HUB_NAME_STATE_KAUNAS_city_polish: "カウナス"
- HUB_NAME_STATE_KAUNAS_mine_polish: "ウクメルゲ"
- HUB_NAME_STATE_KAUNAS_farm_polish: "シャウレイ"
- HUB_NAME_STATE_KAUNAS_wood_polish: "ヴィルカヴィシュキス"
- HUB_NAME_STATE_KAUNAS_port_polish: "パランガ"
+ STATE_LITHUANIA_russian: "リトヴァ"
+ HUB_NAME_STATE_LITHUANIA_city_russian: "コヴノ"
+ HUB_NAME_STATE_LITHUANIA_mine_russian: "ヴィルコミル"
+ HUB_NAME_STATE_LITHUANIA_farm_russian: "シャヴリ"
+ HUB_NAME_STATE_LITHUANIA_wood_russian: "ヴァウカヴィシュキ"
+ HUB_NAME_STATE_LITHUANIA_port_russian: "パランゲン"
+ STATE_LITHUANIA_polish: "リトヴァ"
+ HUB_NAME_STATE_LITHUANIA_city_polish: "コヴノ"
+ HUB_NAME_STATE_LITHUANIA_mine_polish: "ヴィウコミェシュ"
+ HUB_NAME_STATE_LITHUANIA_farm_polish: "シャヴレ"
+ HUB_NAME_STATE_LITHUANIA_wood_polish: "ヴィウコヴィシュキ"
+ HUB_NAME_STATE_LITHUANIA_port_polish: "パランガ"
  #Vilnius - Lithuanian by default
  STATE_VILNIUS_russian: "ヴィリニュス"
  HUB_NAME_STATE_VILNIUS_city_russian: "ヴィリニュス"
@@ -1005,7 +1005,9 @@
  ### Russia
  #Ingria
  #STATE_INGRIA: "Ingria"
- HUB_NAME_STATE_INGRIA_city_russian_imp: "ペトログラード"
+ STATE_INGRIA_russian: "サンクトペテルブルク"
+ HUB_NAME_STATE_INGRIA_city_russian_imp: "サンクトペテルブルク"
+ HUB_NAME_STATE_INGRIA_city_russian_petrograd: "ペトログラード"
  HUB_NAME_STATE_INGRIA_city_russian_sov: "レニングラード"
  ## Balkans
  ### Slovenia
@@ -1908,7 +1910,7 @@
  HUB_NAME_STATE_DELHI_wood_indian: "アンバーラー"
  ### Rajputana
  STATE_RAJPUTANA_indian: "ラージャスターン"
- HUB_NAME_STATE_RAJPUTANA_city_indian: "ジャイプール"
+ HUB_NAME_STATE_RAJPUTANA_city_indian: "ジャイプル"
  HUB_NAME_STATE_RAJPUTANA_mine_indian: "ジョードプル"
  HUB_NAME_STATE_RAJPUTANA_farm_indian: "アジュメール"
  HUB_NAME_STATE_RAJPUTANA_wood_indian: "ウダイプル"
@@ -1948,6 +1950,13 @@
  HUB_NAME_STATE_OUTER_MANCHURIA_mine_russian: "テチューヘ" #Modern Dalnegorsk
  HUB_NAME_STATE_OUTER_MANCHURIA_farm_russian: "グラフスカヤ" #Later Iman, modern Dalnerechensk
  HUB_NAME_STATE_OUTER_MANCHURIA_wood_russian: "インペラトルスカヤ・ガヴァニ" #Modern Sovetskaya Gavan
+ #Primorye - Ukrainian
+ STATE_OUTER_MANCHURIA_ukrainian: "ゼレニー・クリン"
+ HUB_NAME_STATE_OUTER_MANCHURIA_city_ukrainian: "ハバリウカ"
+ HUB_NAME_STATE_OUTER_MANCHURIA_port_ukrainian: "ヴラディヴォストク"
+ HUB_NAME_STATE_OUTER_MANCHURIA_mine_ukrainian: "テチューヘ"
+ HUB_NAME_STATE_OUTER_MANCHURIA_farm_ukrainian: "フラフスカ"
+ HUB_NAME_STATE_OUTER_MANCHURIA_wood_ukrainian: "インペラトルスカ・ハヴァン"
  #Primorye - Japanese (Mainly derived from the Russian names, so may feel a bit odd if there's no intermediate period of Russian ownership before Japanese takeower)
  STATE_OUTER_MANCHURIA_japanese: "沿海州"
  HUB_NAME_STATE_OUTER_MANCHURIA_city_japanese: "ハバロフスク" #Transl. of Russian name. Alternative is a Japanese reading of Haishenwai (Haishenwai?)

@@ -70,9 +70,9 @@
  modifier_michael_ii: "The Troubled Patriot"
  modifier_alexei_ii: "The Warrior-Tsar"
 
- alexander_ii_enthroned_tt: "Market Liberal characters will be more likely to appear in [SCOPE.sCountry('russia_scope').GetName] for the duration of [SCOPE.sCharacter('tsar_scope').GetFullName]'s reign"
- alexander_iii_enthroned_tt: "Traditionalist characters will be more likely to appear in [SCOPE.sCountry('russia_scope').GetName] for the duration of [SCOPE.sCharacter('tsar_scope').GetFullName]'s reign"
- alexei_ii_enthroned_tt: "Jingoist characters will be more likely to appear in [SCOPE.sCountry('russia_scope').GetName] for the duration of [SCOPE.sCharacter('tsar_scope').GetFullName]'s reign"
+ alexander_ii_enthroned_tt: "[GetIdeology('ideology_modernizer_leader').GetName] characters will be more likely to appear in [SCOPE.sCountry('russia_scope').GetName] for the duration of [SCOPE.sCharacter('tsar_scope').GetFullName]'s reign"
+ alexander_iii_enthroned_tt: "[GetIdeology('ideology_traditionalist').GetName] characters will be more likely to appear in [SCOPE.sCountry('russia_scope').GetName] for the duration of [SCOPE.sCharacter('tsar_scope').GetFullName]'s reign"
+ alexei_ii_enthroned_tt: "[GetIdeology('ideology_jingoist_leader').GetName] characters will be more likely to appear in [SCOPE.sCountry('russia_scope').GetName] for the duration of [SCOPE.sCharacter('tsar_scope').GetFullName]'s reign"
 
  sweden_monarchy.1.t: "The Accession of Oscar I"
  sweden_monarchy.1.d: "With the end of Karl Johan's reign, [SCOPE.sCharacter('oscar_scope').GetFullName] has ascended to the [ROOT.GetCountry.GetAdjective] throne as Oscar I, King [ROOT.GetCountry.GetCustom('get_king_sweden_norway')]. [SCOPE.sCharacter('oscar_scope').GetHerHis|U] reign is hoped by many to hail a new era of reform."
@@ -113,7 +113,7 @@
 
  foster_national_agitation: "Stir National Agitation"
  foster_national_agitation_desc: "#lore Task [Character.GetFullName] with agitating amongst the [Character.GetCulture.GetName] population of a foreign power#!"
- not_homeland_of_states_tt: "The owner of this state does not have [SCOPE.sCulture('agitator_culture').GetName] as a [Concept('concept_primary_cultures','$concept_primary_culture$')]"
+ not_homeland_of_states_tt: "The owner of this state does not have [SCOPE.sCulture('agitator_culture').GetName] as a [Concept('concept_primary_cultures','$concept_primary_culture|q$')]"
  is_rival_of_owner_tt: "The owner of this state has a [concept_rivalry] with us"
 
   je_confederation_of_the_rhine: "The Confederation of the Rhine"
@@ -139,8 +139,8 @@
   modifier_fall_of_germany: "The Rhine Fiasco"
 
   no_confederation_of_the_rhine_tt: "The #bold Confederation of the Rhine#! does not exist"
-  root_has_german_subjects_tt: "We have [Concept('concept_subject', '$concept_subjects$')] with the [SCOPE.sCulture('north_german_scope').GetName] or [SCOPE.sCulture('south_german_scope').GetName] [concept_primary_cultures]"
-  root_has_german_states_tt: "We control unincorporated and unclaimed [SCOPE.sCulture('north_german_scope').GetName] or [SCOPE.sCulture('south_german_scope').GetName] [concept_homeland] [Concept('concept_state', '$concept_states$')]"
+  root_has_german_subjects_tt: "We have [Concept('concept_subject', '$concept_subjects|q$')] with the [SCOPE.sCulture('north_german_scope').GetName] or [SCOPE.sCulture('south_german_scope').GetName] [concept_primary_cultures]"
+  root_has_german_states_tt: "We control unincorporated and unclaimed [SCOPE.sCulture('north_german_scope').GetName] or [SCOPE.sCulture('south_german_scope').GetName] [concept_homeland] [Concept('concept_state', '$concept_states|q$')]"
   no_german_great_powers_tt: "There are no [SCOPE.sCulture('north_german_scope').GetName] or [SCOPE.sCulture('south_german_scope').GetName] nations with a [concept_rank] above [concept_major_power]"
   rhine_expansion_cooldown_tt: "Has not used this decision in the last #bold 3#! years"
   confederation_of_rhine_cooldown_year_tt: "This decision will become available again in #bold 3 years#!"
@@ -225,18 +225,16 @@
   arrange_accident: "Arrange Accident"
   arrange_accident_desc: "#lore Task our loyal [GetLawType('law_secret_police').GetName] with the assassination of [Character.GetFullName].#!\n\n@information! This interaction's likelihood of success will #b increase#! with the level of our $institution_home_affairs$ [concept_institution]."
 
-  notification_arranged_accident_failed_name: "Failed Assassination Attempt on [SCOPE.sCharacter('assassinated_scope').GetFullName]"
+  notification_arranged_accident_failed_name: "Failed assassination attempt on [SCOPE.sCharacter('assassinated_scope').GetFullName]"
   notification_arranged_accident_failed_desc: "Our [GetLawType('law_secret_police').GetName]'s assassination attempt on [SCOPE.sCharacter('assassinated_scope').GetFullName] has failed. The target is unaware of [SCOPE.sCharacter('assassinated_scope').GetHerHis] close brush with death."
-  notification_arranged_accident_failed_tooltip: "#header $notification_arranged_accident_failed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_arranged_accident_failed_desc$"
 
-  notification_arranged_accident_failed_incrimination_name: "Publicized Assassination Attempt on [SCOPE.sCharacter('assassinated_scope').GetFullName]"
+  notification_arranged_accident_failed_incrimination_name: "Assassination attempt on [SCOPE.sCharacter('assassinated_scope').GetFullName] exposed"
   notification_arranged_accident_failed_incrimination_desc: "Our [GetLawType('law_secret_police').GetName]'s assassination attempt on [SCOPE.sCharacter('assassinated_scope').GetFullName] has failed. The failed attempt has been noticed and condemned by the now-enraged [SCOPE.gsInterestGroup('relevant_ig').GetName]."
-  notification_arranged_accident_failed_incrimination_tooltip: "#header $notification_arranged_accident_failed_incrimination_name$#!\n$TOOLTIP_DELIMITER$\n$notification_arranged_accident_failed_incrimination_desc$"
 
   assassination_attempt_failed_tt: "Our #bold assassination attempt#! will fail, but remain undetected"
   assassination_attempt_failed_loud_tt: "Our #bold assassination attempt#! will fail, and cause a major scandal"
 
-  would_be_accepted_under_national_supremacy_tt: "This [concept_pop]'s culture shares both a [Concept('concept_heritage_trait','$concept_heritage_trait_short$')] and [Concept('concept_language_trait','$concept_language_trait_short$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short$')] with any of this country's [concept_primary_cultures]"
+  would_be_accepted_under_national_supremacy_tt: "This [concept_pop]'s culture shares both a [Concept('concept_heritage_trait','$concept_heritage_trait_short|q$')] and [Concept('concept_language_trait','$concept_language_trait_short|q$')] [Concept('concept_discrimination_trait','$concept_discrimination_trait_short|q$')] with any of this country's [concept_primary_cultures]"
   capitalist_in_british_india_tt: "[concept_profession] is [GetPopType('capitalists').GetName] in colonial #b India#!"
 
   resign_from_office: "Resign from Office"
@@ -284,8 +282,8 @@
   leader_abdicates_the_throne_tt: "[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle] [SCOPE.sCharacter('abdicating_monarch').GetFullName] will abdicate the throne of [SCOPE.sCountry('country_scope').GetName]"
   leader_abdicates_the_throne_display_tt: "Our [concept_ruler] will abdicate the throne"
 
-  ideology_not_too_close_tt: "This [Concept('concept_character','$concept_character_possessive$')] [concept_ideology] is #b not#! too similar to that of our [concept_ruler]"
-  ideology_not_too_far_tt: "This [Concept('concept_character','$concept_character_possessive$')] [concept_ideology] is #b not#! too different from that of our [concept_ruler]"
+  ideology_not_too_close_tt: "This [Concept('concept_character','$concept_character_possessive|q$')] [concept_ideology] is #b not#! too similar to that of our [concept_ruler]"
+  ideology_not_too_far_tt: "This [Concept('concept_character','$concept_character_possessive|q$')] [concept_ideology] is #b not#! too different from that of our [concept_ruler]"
   ruler_disapproves_of_revolutionary_law: "The [concept_ruler] or their [concept_interest_group] must disapprove of the enactment of [SCOPE.sLawType('revolutionary_law').GetFullName]"
   ruler_disapproves_of_revolutionary_law_contextless: "The [concept_ruler] or their [concept_interest_group] must disapprove of the [concept_law] enactment goals of this $concept_political_movement_short$"
 
@@ -300,7 +298,7 @@
   chi_add_1_fragile_unity_tt:1 "The progress bar of the #Bold Fragile Unity#! [concept_journal_entry] is increased by #Bold 1#!"
   chi_remove_1_fragile_unity_tt:1 "The progress bar of the #Bold Fragile Unity#! [concept_journal_entry] is depleted by #Bold 1#!"
 
-  missionary_activities_begin_tt: "[GetReligion('protestant').GetName] #bold missionary activities#! will begin in states neighbouring foreign [Concept('concept_treaty_port','$concept_treaty_ports$')] in our nation"
+  missionary_activities_begin_tt: "[GetReligion('protestant').GetName] #bold missionary activities#! will begin in states neighbouring foreign [Concept('concept_treaty_port','$concept_treaty_ports|q$')] in our nation"
 
   owner_is_christian_tt: "Owner has a [concept_religion] with the #variable Christian#! trait"
 
@@ -415,19 +413,20 @@
   no_independent_chinese_countries_tt: "Every [concept_country] with [GetCulture('han').GetName], [GetCulture('manchu').GetName], [GetCulture('yue').GetName], [GetCulture('yi').GetName], or [GetCulture('hakka').GetName] [concept_primary_cultures] has been annexed or made our [concept_subject]"
 
   je_great_reformer: "The Great Reformer"
-  je_great_reformer_reason: "The accession of [SCOPE.sCharacter('alexander_ii_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('alexander_ii_scope').GetFullName] to the [ROOT.GetCountry.GetAdjectiveNoFormatting] throne has been hailed by many reformers as a chance to completely remodel the antiquated structures of the [ROOT.GetCountry.GetAdjectiveNoFormatting] state. The reform-minded [SCOPE.sCharacter('alexander_ii_scope').GetPrimaryRoleTitle] has created a multitude of commissions to study and implement various reform proposals. If these "Great Reforms" can succeed, a reinvigorated [ROOT.GetCountry.GetNameNoFormatting] may surpass any other European power.\n\nFor the duration of [SCOPE.sCharacter('alexander_ii_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('alexander_ii_scope').GetFullNameNoFormatting]'s reign, [GetIdeology('ideology_market_liberal').GetName] characters will be much more likely to appear in [ROOT.GetCountry.GetName]."
-  je_great_reformer_goal: "Complete #v 3#! Great Reforms [Concept('concept_journal_entry', '$concept_journal_entries$')]"
+  je_great_reformer_reason: "The accession of [SCOPE.sCharacter('alexander_ii_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('alexander_ii_scope').GetFullName] to the [ROOT.GetCountry.GetAdjectiveNoFormatting] throne has been hailed by many reformers as a chance to completely remodel the antiquated structures of the [ROOT.GetCountry.GetAdjectiveNoFormatting] state. The reform-minded [SCOPE.sCharacter('alexander_ii_scope').GetPrimaryRoleTitle] has created a multitude of commissions to study and implement various reform proposals. If these "Great Reforms" can succeed, a reinvigorated [ROOT.GetCountry.GetNameNoFormatting] may surpass any other European power.\n\n@information! For the duration of [SCOPE.sCharacter('alexander_ii_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('alexander_ii_scope').GetFullNameNoFormatting]'s reign, [GetIdeology('ideology_modernizer_leader').GetName] characters will be much more likely to appear in [ROOT.GetCountry.GetName]."
+  je_great_reformer_goal: "Complete #v 3#! Great Reforms [Concept('concept_journal_entry', '$concept_journal_entries|q$')]"
 
   je_great_reforms_serfdom: "Great Reforms: Peasant Reform"
   je_great_reforms_serfdom_reason: "Discontent with the practice of [GetLawType('law_serfdom').GetName] has long existed within reformist circles. Liberal [GetPopType('aristocrats').GetName] have criticized the practice for tying up vast sums of capital in owning unproductive serfs, limiting the ability of the aristocracy to invest in more productive spheres. So long as this practice continues, it will serve as a burden upon the potential of the state to undergo economic modernization.\n\nIn order to match the economic progress of Western Europe, the serfs must be emancipated, and the economy reoriented towards more productive ends."
   je_great_reforms_military: "Great Reforms: Military Reform"
   je_great_reforms_military_reason: "The #b Imperial Russian Army#!, largely made up of poorly-trained [GetLawType('law_peasant_levies').GetName], has fallen further and further behind the more professional military forces of Europe as time has passed. To make up for these defects, the quality of the Army's armaments and training must be improved, and conscription reformed to produce a larger pool of experienced military personnel."
   je_great_reforms_bureaucratic: "Great Reforms: Bureaucratic Reform"
-  je_great_reforms_bureaucratic_reason: "Despite the efforts of the previous Tsar to strengthen the state bureaucracy, the [ROOT.GetCountry.GetAdjective] state apparatus remains overly reliant upon arbitrary and antiquated local bodies. In order to see through our other reforms with the greatest efficacy, the equal rule of law and authority of the state must be ensured across our vast territories.\n\nThe taxation system, currently dependent upon local landowners collecting taxes from peasants, must be brought into the hands of the state. Likewise, local administrators must be made accountable, and the administrative privileges of the nobility reduced."
+  je_great_reforms_bureaucratic_reason: "Despite the efforts of the previous Tsar to strengthen the state bureaucracy, the [ROOT.GetCountry.GetAdjective] state apparatus remains overly reliant upon arbitrary and antiquated bodies. In order to see through our other reforms with the greatest efficacy, the equal rule of law and authority of the state must be ensured across our vast territories.\n\nThe taxation system, currently dependent upon local landowners collecting taxes from peasants, must be brought into the hands of the state. Likewise, local administrators must be made accountable, and the administrative privileges of the nobility reduced."
 
-  je_great_reforms_serfdom_complete_tt: "Has completed #b $je_great_reforms_serfdom$#!"
-  je_great_reforms_military_complete_tt: "Has completed #b $je_great_reforms_military$#!"
-  je_great_reforms_bureaucratic_complete_tt: "Has completed #b $je_great_reforms_bureaucratic$#!"
+  je_great_reforms_serfdom_complete_tt: "Has completed #v $je_great_reforms_serfdom$#!"
+  je_great_reforms_military_complete_tt: "Has completed #v $je_great_reforms_military$#!"
+  je_great_reforms_bureaucratic_complete_tt: "Has completed #v $je_great_reforms_bureaucratic$#!"
+  je_great_reforms_zemstvos_complete_tt: "Has completed #v $je_tp_great_reform_zemstvos_button_name$#!"
 
   ruler_not_alexander_ii_tt: "[SCOPE.sCharacter('alexander_ii_scope').GetFullName] is no longer the [SCOPE.sCharacter('alexander_ii_scope').GetPrimaryRoleTitle] of [ROOT.GetCountry.GetName]"
 
@@ -460,9 +459,8 @@
 
  has_alaska_sale_cooldown_tt: "Has not used this action in the past #bold year#!"
 
- notification_alaska_negotiations_fail_name: "Offer for Alaska Refused"
+ notification_alaska_negotiations_fail_name: "Offer for Alaska refused"
  notification_alaska_negotiations_fail_desc: "[SCOPE.sCountry('alaska_buyer').GetName] has backed out of the negotiations for the sale of Alaska. The territory will remain under our control until another attempt is made."
- notification_alaska_negotiations_fail_tooltip: "#header $notification_alaska_negotiations_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_alaska_negotiations_fail_desc$"
 
  je_sale_of_alaska: "The Sale of Alaska"
  je_sale_of_alaska_reason: "[SCOPE.sState('alaska_scope').GetName], an isolated territory on the periphery of [SCOPE.sCountry('alaska_owner_scope').GetName], has come under threat of seizure by hostile foreign powers in recent years.\n\nTo extract some profit from the territory, and avoid the humiliation of having it seized by our enemies in the case of war, officials in the [SCOPE.sCharacter('ruler_scope').GetPrimaryRoleTitle]'s government have suggested finding a buyer for [SCOPE.sState('alaska_scope').GetName]."
@@ -475,9 +473,9 @@
  je_buy_alaska_button: "Make an Offer for Alaska"
  je_buy_alaska_button_desc: "Alaska is currently held as a colonial territory by a friendly nation. We may be able to leverage our relations to purchase the territory."
 
-  most_european_pops_abandon_alaska_tt: "A large number of #bold European#! [Concept('concept_pop','$concept_pops$')] will evacuate [SCOPE.sState('capital_scope').GetName]"
-  some_european_pops_abandon_alaska_tt: "Some #bold European#! [Concept('concept_pop','$concept_pops$')] will evacuate [SCOPE.sState('capital_scope').GetName]"
-  inherit_characters_from_athabaska_tt: "Inherits all [Concept('concept_character', '$concept_characters$')] from #v $ATB$#!"
+  most_european_pops_abandon_alaska_tt: "A large number of #bold European#! [Concept('concept_pop','$concept_pops|q$')] will evacuate [SCOPE.sState('capital_scope').GetName]"
+  some_european_pops_abandon_alaska_tt: "Some #bold European#! [Concept('concept_pop','$concept_pops|q$')] will evacuate [SCOPE.sState('capital_scope').GetName]"
+  inherit_characters_from_athabaska_tt: "Inherits all [Concept('concept_character', '$concept_characters|q$')] from #v $ATB$#!"
 
   alaskan_declaration_of_independence_tt: "We will declare our sovereignty as the #bold Alyaska Republic#!"
   modifier_alyaska_republic: "Declared Alyaska Republic"
@@ -520,6 +518,7 @@
 
  je_alaska:0 "The Acquisition of Alaska"
  je_alaska_reason:0 "Situated in the far North, [SCOPE.sState('alaska_state').GetStateRegion.GetName] is a vast, uncharted territory that may hold many riches. Acquiring the territory will expand our borders greatly, advance our national prestige, and allow for dominating trade in the northern Pacific. "
+ je_alaska_pacific_homeland_tt: "An [concept_incorporated_state] in $region_pacific_coast$ is a [concept_homeland] of one of our cultures"
  alaska_usa_big_money:0 "Paying for Alaska - Large Payments"
  alaska_usa_medium_money:0 "Paying for Alaska - Moderate Payments"
  alaska_usa_small_money:0 "Paying for Alaska - Meager Payments"
@@ -546,12 +545,12 @@
   utopian.2.c: "A new society will be birthed from cooperation between classes."
   utopian.2.e: "In dark times, one must cling to what inspires them."
 
-  non_pb_utopians_go_communist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] #b not#! affiliated with the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] will adopt the [GetIdeology('ideology_communist').GetName] [concept_ideology]"
-  non_pb_utopians_go_anarchist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] #b not#! affiliated with the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] will adopt the [GetIdeology('ideology_anarchist').GetName] [concept_ideology]"
-  pb_utopians_go_corporatist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] affiliated with the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] will adopt the [GetIdeology('ideology_corporatist').GetName] [concept_ideology]"
-  utopians_go_corporatist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] will adopt the [GetIdeology('ideology_corporatist_leader').GetName] [concept_ideology]"
-  utopians_stay_utopian_tt: "All currently existing [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] will retain their current [concept_ideology]"
-  no_more_utopians_tt: "[GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters$')] will no longer appear in this country"
+  non_pb_utopians_go_communist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters|q$')] #b not#! affiliated with the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] will adopt the [GetIdeology('ideology_communist_leader').GetName] [concept_ideology]"
+  non_pb_utopians_go_anarchist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters|q$')] #b not#! affiliated with the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] will adopt the [GetIdeology('ideology_anarchist').GetName] [concept_ideology]"
+  pb_utopians_go_corporatist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters|q$')] affiliated with the [GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetName] will adopt the [GetIdeology('ideology_corporatist').GetName] [concept_ideology]"
+  utopians_go_corporatist_tt: "All [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters|q$')] will adopt the [GetIdeology('ideology_corporatist_leader').GetName] [concept_ideology]"
+  utopians_stay_utopian_tt: "All currently existing [GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters|q$')] will retain their current [concept_ideology]"
+  no_more_utopians_tt: "[GetIdeology('ideology_utopian').GetName] [Concept('concept_character', '$concept_characters|q$')] will no longer appear in this country"
 
   expedition_status_loc_leader_and_location: "[ROOT.Var('expedition_leader_storage_var').GetCharacter.GetFullName]'s expedition has reached [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]"
   expedition_status_loc_location: "The expedition has reached [ROOT.Var('current_expedition_location_var').GetState.GetStateRegion.GetName]"

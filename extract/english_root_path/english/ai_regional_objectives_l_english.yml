@@ -1,0 +1,11 @@
+﻿l_english:
+ ai_regional_objective_acquire_states: "Acquire a State"
+ ai_regional_objective_acquire_states_desc: "This [concept_country] means to acquire a new [concept_state] in the [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]."
+ ai_regional_objective_recover_claims: "Recover Claims"
+ ai_regional_objective_recover_claims_desc: "This [concept_country] wishes to recover its [Concept('concept_claim', '$concept_claims|q$')] in the [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]."
+ ai_regional_objective_subjugate_country: "Subjugate a Country"
+ ai_regional_objective_subjugate_country_desc: "This [concept_country] is looking to subjugate and [Concept('concept_vassal', '$concept_vassalize|q$')] a [concept_local_country] in the [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]."
+ ai_regional_objective_befriend_countries: "Curry Favor"
+ ai_regional_objective_befriend_countries_desc: "This [concept_country] wants to improve its standing and [concept_relations] with the [Concept('concept_local_country', '$concept_local_countries|q$')] in the [Concept('concept_strategic_region', '$concept_strategic_region_short|q$')]."
+ ai_regional_objective_protect_country: "Defend vulnerable Country"
+ ai_regional_objective_protect_country_desc: "This [concept_country] is aiming to defend a [concept_local_country] from a threatening [Concept('concept_rivalry', '$concept_rival|q$')]."

@@ -7,7 +7,7 @@
  aeroplanes:0 "Aeroplanes"
  manowars:0 "Man-o-Wars"
  ironclads:0 "Ironclads"
-  
+
  dye:0 "Dye"
  wool:0 "Wool"
  silk:0 "Silk"
@@ -22,7 +22,8 @@
  oil:0 "Oil"
  gold:0 "Gold"
  merchant_marine: "Merchant Marine"
-  
+ copper: "Copper"
+
  steel:0 "Steel"
  glass:0 "Glass"
  fertilizer:0 "Fertilizer"
@@ -34,7 +35,7 @@
  steamers:0 "Steamers"
  electricity:0 "Electricity"
  transportation:0 "Transportation"
-  
+
  luxury_clothes:0 "Luxury Clothes"
  luxury_furniture:0 "Luxury Furniture"
  porcelain:0 "Porcelain"
@@ -46,7 +47,7 @@
  sugar:0 "Sugar"
  automobiles:0 "Automobiles"
  fine_art:0 "Fine Art"
- 
+
  grain:0 "Grain"
  fish:0 "Fish"
  meat:0 "Meat"
@@ -57,7 +58,7 @@
  groceries:0 "Groceries"
  furniture:0 "Furniture"
  services:0 "Services"
-  
+
  popneed_simple_clothing:0 "Simple Clothing"
  popneed_basic_food:0 "Basic Food"
  popneed_heating:0 "Heating"
@@ -136,6 +137,12 @@ prestige_good_sherry: "Sherry"
 prestige_good_cigars: "Cigars"
 prestige_good_havana_sugar: "Havana Sugar"
 prestige_good_port_wine: "Port"
+
+# IP5 goods
+prestige_good_sikorsky_aeroplanes: "Sikorsky Aeroplanes"
+prestige_good_fiskars_tools: "Fiskars Tools"
+prestige_good_maslosoyuz_butter: "Maslosoyuz Butter"
+prestige_good_sateen_clothes: "Sateen Clothes"
 
 # Generic Prestige Goods
 prestige_good_generic_groceries: "Gourmet Groceries"

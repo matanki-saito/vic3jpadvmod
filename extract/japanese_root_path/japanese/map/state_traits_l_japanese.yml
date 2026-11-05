@@ -245,3 +245,7 @@
  state_trait_ishikari_plain_1: "石狩平野"
  state_trait_ishikari_plain_2: "石狩大平野"
  state_trait_hudson_bay: "$STATE_HUDSON_BAY$"
+ state_trait_copper_country: "カッパー・カントリー"
+ state_trait_american_copper_belt: "アメリカ銅鉱化帯"
+ state_trait_african_copper_belt: "中央アフリカ銅鉱化帯"
+ state_trait_domeyko_fault: "ドメイコ断層"

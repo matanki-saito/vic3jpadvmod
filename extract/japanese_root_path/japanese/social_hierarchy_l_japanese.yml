@@ -28,4 +28,4 @@
  shudras_desc: "シュードラは承認された4つのカーストのうち、一番低い階級です。彼らは使用人や労働者にしかなれず、上位のカーストの言いなりです。また富と知識を集めることはできません。"
  dalit: "ダリット"
  dalit_desc: "4つのカースト以外で生まれた人を指します。ダリットがこのヒエラルキーに入る方法はありません。そのため何世代にもわたり、彼らは追放され軽んじられてきました。ダリットは強制的に卑しい仕事をさせられ、権利や特権が与えられることはないのです。"
- STRATA_CONCEPTS_DEPEND_ON_SOCIAL_HIERARCHY: "どの$concept_pops$がこの階級に属するかは、[Concept('concept_country','$concept_country_possessive$')]の[concept_social_hierarchy]に依存します。"
+ STRATA_CONCEPTS_DEPEND_ON_SOCIAL_HIERARCHY: "どの$concept_pops$がこの階級に属するかは、[Concept('concept_country','$concept_country_possessive|q$')]の[concept_social_hierarchy]に依存します。"

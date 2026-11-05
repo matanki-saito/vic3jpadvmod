@@ -4,12 +4,12 @@
 amenability_base: "$MANEUVERS_BASE_VALUE$" #base value
 amenability_legitimacy: "[InterestGroup.GetCountry.GetNameNoFlag]'s [concept_legitimacy] ([InterestGroup.GetCountry.GetGovernmentLegitimacy])"
 amenability_clout: "[InterestGroup.GetNameNoIcon]'s [concept_clout] ([InterestGroup.GetClout|%1])"
-amenability_pressuring_supporting_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')] by [Concept('concept_political_movement','$concept_political_movements$')] supporting this [concept_law]"
+amenability_pressuring_supporting_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short|q$')] by [Concept('concept_political_movement','$concept_political_movements|q$')] supporting this [concept_law]"
 
-amenability_pressuring_opposing_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short$')] by [Concept('concept_political_movement','$concept_political_movements$')] opposing this [concept_law]"
+amenability_pressuring_opposing_movements: "[Concept('concept_political_movement_pressure','$concept_political_movement_pressured_short|q$')] by [Concept('concept_political_movement','$concept_political_movements|q$')] opposing this [concept_law]"
 amenability_approval: "[InterestGroup.GetNameNoIcon]'s [concept_approval] ([InterestGroup.GetApprovalValue|0])"
 amenability_law_likely_to_pass: "[concept_law] likely to pass anyway"
-amenability_law_worried_to_be_tie_breaker: "Could turn the tide of this [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enactment$')]"
+amenability_law_worried_to_be_tie_breaker: "Could turn the tide of this [Concept('concept_enactment_of_laws', '$concept_enactment_of_laws_enactment|q$')]"
 amenability_law_makes_no_difference: "Confident the law will fail anyway"
 amenability_in_gov: "being in [concept_government]"
 amenability_neutral_and_opposing: "#v Neutral#! [concept_approval] though opposes law"
@@ -19,7 +19,11 @@ amenability_ruler_popularity: "[concept_ruler]'s [concept_popularity]"
 amenability_ig_additional_adds: "#indent_newline:3 Additional modifiers with [InterestGroup.GetName]:\n[InterestGroup.GetModifier.GetDescFor('interest_group_amenability_add')]#!"
 amenability_country_additional_adds: "#indent_newline:3 Additional modifiers:\n[InterestGroup.GetCountry.GetModifier.GetDescFor('country_amenability_add')]#!"
 amenability_already_letting_go: "Already letting law through due to high [concept_approval]"
-amenability_too_large_gap: "[Concept('concept_endorse_oppose','$concept_opposes$')] [concept_law] by greater than #v 2#! steps"
+amenability_too_large_gap: "[Concept('concept_endorse_oppose','$concept_opposes|q$')] [concept_law] by greater than #v 2#! steps"
+amenability_law_needs_their_support: "Believes the [concept_law] cannot pass without them"
+amenability_law_enactment_chance_too_low: "[Concept('concept_enactment_success', '$concept_enactment_success|q$')] chance is [InterestGroup.MakeScope.ScriptValue('negotiation_min_enactment_chance')|%0]"
+amenability_could_coup_instead: "could stage a successful [concept_coup]"
+amenability_is_staging_coup: "is staging a [concept_coup]"
 
 ##modifiers
  bribed_ig_benefits: "Gifts and Subsidies"
@@ -35,15 +39,15 @@ amenability_too_large_gap: "[Concept('concept_endorse_oppose','$concept_opposes$
  negotiate_promise_failed_effects: "\n\n Failure will result in the following effects:"
  negotiation_failed_quest: "Deceived"
  negotiation_failed_quest_legit: "Worthless Words"
- negotiation_completed_quest:1 "Negotiation Commitment Fulfilled"
- negotiation_extended_quest:1 "Negotiation Commitment Delayed"
+ negotiation_completed_quest: "Negotiation Commitment Fulfilled"
+ negotiation_extended_quest: "Negotiation Commitment Delayed"
  negotiation_pushing_for_law: "Promised Law Push"
 
 ##Special loc:
- negotiate_promise_tt:1 "Until the commitment is fulfilled:"
- FailurePromiseLine_1: "Failure will partly [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
- FailurePromiseLine_2: "Failure will #r significantly#! [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
- FailurePromiseLine_3: "Failure will #r completely#! [Concept('concept_radicalized_interest_group', '$concept_radicalize$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
+ negotiate_promise_tt: "Until the commitment is fulfilled:"
+ FailurePromiseLine_1: "Failure will partly [Concept('concept_radicalized_interest_group', '$concept_radicalize|q$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
+ FailurePromiseLine_2: "Failure will #r significantly#! [Concept('concept_radicalized_interest_group', '$concept_radicalize|q$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
+ FailurePromiseLine_3: "Failure will #r completely#! [Concept('concept_radicalized_interest_group', '$concept_radicalize|q$')|l] the [ROOT.GetInterestGroup.GetName], however penalties will be reduced if we partially achieve the commitment.\n"
  will_not_negotiate_again_tt: "Will not negotiate again until the commitment is kept"
  law_two_years_tt: "Penalties will be reduced if [ROOT.GetCountry.GetName] attempts to enact [SCOPE.sLaw('government_petition_law').GetName] for at least #v 24 months#!. \n#v Current failure effects:#!"
  closer_we_get_neg_tt: "Penalties will be reduced as we approach the commitment. \n#v Current failure effects:#!"
@@ -54,7 +58,7 @@ amenability_too_large_gap: "[Concept('concept_endorse_oppose','$concept_opposes$
  negotiation_tier_1: "Collaborative"
 
  #Toast for failing a Commitment
- notification_neg_failed_quest_toast_name: "Commitment Failed"
+ notification_neg_failed_quest_toast_name: "Commitment failed"
  notification_neg_failed_quest_toast_desc: "[SCOPE.gsInterestGroup('ig').GetName] are displeased that we failed to deliver on our promises."
 
 ###events
@@ -96,8 +100,8 @@ amenability_too_large_gap: "[Concept('concept_endorse_oppose','$concept_opposes$
 ##Shared Buttons
  negotiation_go_away_button: "Abandon Commitment"
  negotiation_go_away_button_desc: "Due to unforeseen circumstances, and with the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle|l]'s deepest regrets, this endeavor will be postponed to a later date."
- has_been_abandoned_neg_tt:1 "This commitment has been #b abandoned#!"
- discard_petition_neg_tt: "We will abandon our commitment with [SCOPE.gsInterestGroup('ig').GetName]" 
+ has_been_abandoned_neg_tt: "This commitment has been #b abandoned#!"
+ discard_petition_neg_tt: "We will abandon our commitment with [SCOPE.gsInterestGroup('ig').GetName]"
  time_runs_out_tt: "Time runs out"
  already_asked_for_extension_neg_tt: "Has not already announced a delay"
 
@@ -133,14 +137,14 @@ notification_help_from_ig_desc: "Reminding their allies of their commitments has
 ##Promise to build Buildings JE
 
  negotiation.1.o5: "Perchance if we invested in more [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName]."
- promise_build_tt: "We must increase the amount of [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] in our [Concept('concept_state', '$concept_states$')] from [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] to [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] within #v 10 years#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+ promise_build_tt: "We must increase the amount of [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] in our [Concept('concept_state', '$concept_states|q$')] from [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] to [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] within #v 10 years#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
 
  je_negotiate_buildings: "Commitment: Valued Investments"
 je_negotiate_buildings_status: "We have built [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_levels_existing')|v0] / [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_level_increase').GetValue|v0] [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName]"
-je_negotiate_buildings_reason: "We have promised the [SCOPE.gsInterestGroup('ig').GetName] to construct more [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] within our [Concept('concept_state', '$concept_states$')], an action that will surely improve the [ROOT.GetCountry.GetAdjective] economy."
+je_negotiate_buildings_reason: "We have promised the [SCOPE.gsInterestGroup('ig').GetName] to construct more [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_type').GetBuildingType.GetName] within our [Concept('concept_state', '$concept_states|q$')], an action that will surely improve the [ROOT.GetCountry.GetAdjective] economy."
 
  negotiation.1.o6: "We must invest in [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName]."
- promise_building_group_tt: "We must increase the [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName] in our [Concept('concept_state', '$concept_states$')] from [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] to [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] within #v 10 years#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
+ promise_building_group_tt: "We must increase the [SCOPE.gsInterestGroup('ig').MakeScope.Var('promised_building_group').GetBuildingGroup.GetName] in our [Concept('concept_state', '$concept_states|q$')] from [SCOPE.gsInterestGroup('ig').MakeScope.ScriptValue('building_group_levels_existing')|v0] to [SCOPE.gsInterestGroup('ig').MakeScope.Var('building_group_level_increase').GetValue|v0] within #v 10 years#!. [SCOPE.gsInterestGroup('ig').GetCustom('FailurePromiseLine')]"
 
 
 
@@ -170,8 +174,8 @@ neg_taxes_progress_bar_desc: "Months Remaining: [ROOT.GetCountry.MakeScope.Var('
 tax_low: "#v Low#! or #v Very Low#!"
 tax_very_low: "#v Very Low#!"
 neg_tax_bar_lowering_desc: "[concept_taxes] remain at [SCOPE.GetRootScope.GetCountry.GetCustom('GetPromisedTaxLevelOneWord')]"
-NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE_TT: "[THIS.GetInterestGroup.GetName] will support [ROOT.GetCountry.GetLawBeingEnacted.GetName], causing [Concept('concept_enactment_success', '$concept_enactment_success$')] chance to increase by #g [THIS.ScriptValue('law_enactment_change')|=0%]#!"
-NEGOTIATE_LAW_STALL_CHANCE_DECREASE_TT: "[THIS.GetInterestGroup.GetName] will cease opposing [ROOT.GetCountry.GetLawBeingEnacted.GetName], causing [Concept('concept_enactment_stall', '$concept_enactment_stall$')] chance to decrease by #g -[THIS.ScriptValue('law_enactment_change')|0%]#!"
+NEGOTIATE_LAW_SUCCESS_CHANCE_INCREASE_TT: "[THIS.GetInterestGroup.GetName] will support [ROOT.GetCountry.GetLawBeingEnacted.GetName], causing [Concept('concept_enactment_success', '$concept_enactment_success|q$')] chance to increase by #g [THIS.ScriptValue('law_enactment_change')|=0%]#!"
+NEGOTIATE_LAW_STALL_CHANCE_DECREASE_TT: "[THIS.GetInterestGroup.GetName] will cease opposing [ROOT.GetCountry.GetLawBeingEnacted.GetName], causing [Concept('concept_enactment_stall', '$concept_enactment_stall|q$')] chance to decrease by #g -[THIS.ScriptValue('law_enactment_change')|0%]#!"
 
 
 negotiation.1.o8: "Let's add some fine print about [SCOPE.gsInterestGroup('ig').MakeScope.Var('negotiation_amendment_type').GetAmendmentType.GetName]."

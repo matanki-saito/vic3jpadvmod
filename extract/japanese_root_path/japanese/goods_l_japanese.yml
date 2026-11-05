@@ -21,6 +21,7 @@
  oil: "燃油"
  gold: "金"
  merchant_marine: "商船"
+ copper: "銅"
  steel: "鋼鉄"
  glass: "ガラス"
  fertilizer: "肥料"
@@ -128,6 +129,11 @@
  prestige_good_cigars: "葉巻"
  prestige_good_havana_sugar: "ハバナ産砂糖"
  prestige_good_port_wine: "ポートワイン"
+ #IP5 goods
+ prestige_good_sikorsky_aeroplanes: "シコルスキー飛行機"
+ prestige_good_fiskars_tools: "フィスカース工具"
+ prestige_good_maslosoyuz_butter: "マスロソユーズ・バター"
+ prestige_good_sateen_clothes: "サテン衣類"
  #Generic Prestige Goods
  prestige_good_generic_groceries: "グルメ食品"
  prestige_good_generic_steel: "精錬鋼"

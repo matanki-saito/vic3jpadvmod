@@ -12,7 +12,6 @@ modifier_bul_ultranationalist_rhetoric: "Ultranationalist Rhetoric"
 modifier_bul_embraced_yugoslavism: "Embraced Yugoslavism"
 
 je_prussia_of_the_balkans: "Prussia of the Balkans"
-je_prussia_of_the_balkans_desc: "[concept_army_power_projection] is [SCOPE.GetRootScope.GetCountry.GetArmyPowerProjection|0] / 1000"
 je_prussia_of_the_balkans_reason: "The Bulgarian Empire once stretched from the Black to the Ionian and Aegean Seas. Our people are determined to restore our past glory. \n\nOur newly reborn nation cannot rely on the help of strong men from outside our borders. Through technology, strength of arms and sheer numbers, we will forge an army that can protect our independence, our interests, and our ambitions."
 
 bularia_military_progress_bar: "Army Strength"
@@ -29,7 +28,7 @@ bulgaria_events.1.c: "This is the beginning of a Bulgarian Renaissance!"
 
 bulgaria_pursued_greater_yugoslavism_tt: "Pursued #v Greater Yugoslavism#! in the #v $bulgaria_events.1.t$#! Event"
 bulgaria_unlock_yugoslavia_tt: "We will be able to form #v $YUG$#!"
-bulgarian_empire_homeland_tt: "[GetStateRegion('STATE_MACEDONIA').GetName], [GetStateRegion('STATE_EASTERN_SERBIA').GetName] and [GetStateRegion('STATE_EASTERN_THRACE').GetName] will become [GetCulture('bulgarian').GetName] [Concept('concept_homeland','$concept_homelands$')] once acquired"
+bulgarian_empire_homeland_tt: "[GetStateRegion('STATE_MACEDONIA').GetName], [GetStateRegion('STATE_EASTERN_SERBIA').GetName] and [GetStateRegion('STATE_EASTERN_THRACE').GetName] will become [GetCulture('bulgarian').GetName] [Concept('concept_homeland','$concept_homelands|q$')] once acquired"
 bulgarian_empire_claims_tt: "[ROOT.GetCountry.GetName] gains a [concept_claim] on every unowned [concept_state] in [GetGeographicRegion('geographic_region_greater_bulgaria').GetName]"
 
 bulgaria_events.2.t: "Free at Last"

@@ -27,7 +27,6 @@
  lowlands_land_reclamation_desc: "技術を複合させることで低地にある一部のエリアから水を排出し、海を利用可能な陸地へと変化させることができます。"
  lowlands_land_reclamation_custom_tooltip: "低地の干拓が開始されます。 "
  notification_lowlands_land_reclamation_notification_desc: "低地の干拓が完了"
- notification_lowlands_land_reclamation_notification_tooltip: "耕作地を獲得しました。"
  notification_lowlands_land_reclamation_notification_name: "低地の干拓"
  lowlands_land_reclamation_requirement_tooltip: "ホランド、ヘルレ、フリースラントを所有"
  niger_river_expedition: "ニジェール川遠征"

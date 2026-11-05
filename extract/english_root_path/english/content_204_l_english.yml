@@ -172,13 +172,14 @@
 
   je_positivist_movement: "The Positive Stage"
   je_positivist_movement_reason: "Followers of the social theory of Positivism have begun organizing for political reform in [ROOT.GetCountry.GetName]. The Positivists desire to focus on the future of [ROOT.GetCountry.GetNameNoFormatting], and for the nation to develop and industrialize under the governance of technical experts.\n\nEffects at the conclusion of this [concept_journal_entry] will depend on the degree of influence that the #bold Positivists#! secure\n\n#italic Positivism is the philosophical theory that all things may be derived by logic and reason from the senses. The Positivist movement advocates for reforms based on the scientific principles, to advance beyond the theorized "theological" and "metaphysical" stages of human development and establish a society based on full knowledge of the natural world.#!"
-  is_democratic_tt: "This nation allows for [Concept('concept_votes','$concept_voting$')] in [Concept('concept_election','$concept_elections$')]"
+  is_democratic_tt: "This [concept_country] allows for [Concept('concept_votes','$concept_voting|q$')] in [Concept('concept_election','$concept_elections|q$')]"
+  is_democratic_not_tt: "This [concept_country] does #b not#! allow for [Concept('concept_votes','$concept_voting|q$')] in [Concept('concept_election','$concept_elections|q$')]"
 
   positivist_progress_bar: "Positivism"
   positivist_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 
-  positivism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] of the #b $movement_positivist$#!"
-  positivism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short$')] of the #b $movement_positivist$#!"
+  positivism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short|q$')] of the #b $movement_positivist$#!"
+  positivism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short|q$')] of the #b $movement_positivist$#!"
 
   positivism.1.t: "To Venerate Mankind"
   positivism.1.d: "[SCOPE.sCharacter('comte_scope').GetFullName], a philosopher of the sciences at the École Polytechnique in [SCOPE.sState('paris_scope').GetName], has published a treatise on the reorganization of society along positivist principles."
@@ -220,7 +221,7 @@
   positivism.4.f: "For Sale: Temple of Humanity, deconsecrated.\n\nBeautiful location in the heart of [SCOPE.sState('capital_scope').GetCityHubName]. Sturdy design and spacious, can host hundreds of like-minded people for any gathering. Perfect for an up and coming school.\n\nOpen for inquiries."
   positivism.4.a: "Another grand design, faded into obscurity."
   positivism.4.b: "They will chase their impossible dreams forevermore."
-  remove_positivism_vars_tt: "[Concept('concept_interest_group', '$concept_interest_groups$')] will no longer be more likely to select Positivist characters"
+  remove_positivism_vars_tt: "[Concept('concept_interest_group', '$concept_interest_groups|q$')] will no longer be more likely to select Positivist characters"
 
   positivism_pulse.1.t: "Practicing Positivists"
   positivism_pulse.1.d: "The philosophy of Positivism has spread beyond the Positivist Church, with many [GetPopType('engineers').GetName], [GetPopType('academics').GetName], and [GetPopType('officers').GetName] adopting its scientific principles in order to fulfill their reformist ambitions."
@@ -244,7 +245,7 @@
   positivism_pulse.3.a: "They had ought to stick to military affairs."
   positivism_pulse.3.b: "They could only improve the [SCOPE.gsInterestGroup('armed_forces_ig').GetName]."
   armed_forces_positivists_tt: "The [SCOPE.gsInterestGroup('armed_forces_ig').GetName] will be more likely to select Positivist leaders in the future"
-  armed_forces_positivists_large_tt: "The [SCOPE.gsInterestGroup('armed_forces_ig').GetName] will be much more likely to select Positivist leaders when [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short$')] by an applicable [concept_political_movement]"
+  armed_forces_positivists_large_tt: "The [SCOPE.gsInterestGroup('armed_forces_ig').GetName] will be much more likely to select Positivist leaders when [Concept('concept_political_movement_pressure', '$concept_political_movement_pressured_short|q$')] by an applicable [concept_political_movement]"
 
   positivism_pulse.4.t: "Theory and Practice"
   positivism_pulse.4.d: "Several prominent Positivist reform advocates have become entangled in a dispute with the Positivist Church over their political activities. The orthodox stance of the Church is that its members should not be carrying out political activities outside of itself."
@@ -442,13 +443,11 @@
   formed_gran_colombia_tt: "Has formed the nation of #variable Gran Colombia#!"
 
   modifier_seeking_gran_colombia: "Pursuing Gran Colombia"
-  notification_gran_colombia_seeking_warning_name: "[SCOPE.sCountry('colombia_seeker_scope').GetName] Seeks Restoration of Gran Colombia"
-  notification_gran_colombia_seeking_warning_desc: "[SCOPE.sCountry('colombia_seeker_scope').GetName] has stated its intent to restore the nation of #variable Gran Colombia#!, laying claim to all of its former territories"
-  notification_gran_colombia_seeking_warning_tooltip: "#header $notification_gran_colombia_seeking_warning_name$#!\n$TOOLTIP_DELIMITER$\n$notification_gran_colombia_seeking_warning_desc$"
+  notification_gran_colombia_seeking_warning_name: "[SCOPE.sCountry('colombia_seeker_scope').GetName] seeks restoration of Gran Colombia"
+  notification_gran_colombia_seeking_warning_desc: "[SCOPE.sCountry('colombia_seeker_scope').GetName] has stated its intent to restore the nation of #variable Gran Colombia#!, laying claim to all of its former territories."
 
-  notification_gran_colombia_meddling_haiti_name: "[SCOPE.sCountry('colombia_seeker_scope').GetName] Agitates Amongst [SCOPE.sCulture('caribeno_scope').GetName] Population"
+  notification_gran_colombia_meddling_haiti_name: "[SCOPE.sCountry('colombia_seeker_scope').GetName] radicalizes [SCOPE.sCulture('caribeno_scope').GetName] [Concept('concept_pop','$concept_pops|q$')]"
   notification_gran_colombia_meddling_haiti_desc: "The restoration of [SCOPE.sCountry('colombia_seeker_scope').GetName] has fostered immense discontent and national sentiment amongst the [SCOPE.sCulture('caribeno_scope').GetName] population living in the East of Hispaniola."
-  notification_gran_colombia_meddling_haiti_tooltip: "#header $notification_gran_colombia_meddling_haiti_name$#!\n$TOOLTIP_DELIMITER$\n$notification_gran_colombia_meddling_haiti_desc$"
 
   gran_colombia.1.t: "Gran Colombia"
   gran_colombia.1.d: "With recent developments, certain figures in the [ROOT.GetCountry.GetRuler.GetLastName] government have taken interest in seeking the unification of the Northern Bolivarian states, and restoration of the former state of Gran Colombia."
@@ -471,9 +470,8 @@
   andean_major_formation_available_tt: "The #variable Federation of the Andes#! Major [concept_nation_formation] will become available"
   andean_federation_reqs_tt: "Has formed #v $PBC$#!, #v $PLT$#!, or #v $GCO$#!"
 
-  notification_andean_federation_seeking_warning_name: "[SCOPE.sCountry('andes_seeker_scope').GetName] Seeks Establishment of Andean Federation"
-  notification_andean_federation_seeking_warning_desc: "[SCOPE.sCountry('andes_seeker_scope').GetName] has stated its intent to establish a #variable Federation of the Andes#!, encompassing all of the Andes region"
-  notification_andean_federation_seeking_warning_tooltip: "#header $notification_andean_federation_seeking_warning_name$#!\n$TOOLTIP_DELIMITER$\n$notification_andean_federation_seeking_warning_desc$"
+  notification_andean_federation_seeking_warning_name: "[SCOPE.sCountry('andes_seeker_scope').GetName] seeks an Andean Federation"
+  notification_andean_federation_seeking_warning_desc: "[SCOPE.sCountry('andes_seeker_scope').GetName] has stated its intent to establish a #variable Federation of the Andes#!, encompassing all of the Andes region."
 
   andean_federation.1.t: "The Federation Proposal"
   andean_federation.1.d: "The growth of [ROOT.GetCountry.GetName] into a powerful, unified nation has inspired radical supporters of Simón Bolívar's ambition. These visionaries propose revisiting the Congress of Panama's goal of establishing a unified Federation stretching along the entire Andes."
@@ -494,9 +492,8 @@
   formed_la_plata_tt: "Has formed the nation of #variable Rio de la Plata#!"
 
   modifier_seeking_la_plata: "Claimant to La Plata"
-  notification_la_plata_seeking_warning_name: "[SCOPE.sCountry('la_plata_seeker_scope').GetName] Seeks Restoration of Rio de la Plata"
+  notification_la_plata_seeking_warning_name: "[SCOPE.sCountry('la_plata_seeker_scope').GetName] seeks to restore Rio de la Plata"
   notification_la_plata_seeking_warning_desc: "[SCOPE.sCountry('la_plata_seeker_scope').GetName] has stated its intent to restore the nation of #variable Rio de la Plata#!, laying claim to all of the former United Provinces' territories."
-  notification_la_plata_seeking_warning_tooltip: "#header $notification_la_plata_seeking_warning_name$#!\n$TOOLTIP_DELIMITER$\n$notification_la_plata_seeking_warning_desc$"
 
   la_plata.1.t: "The Spirit of Tucumán"
   la_plata.1.d:1 "The recent resurgence of [ROOT.GetCountry.GetName]'s military power has given rise to nostalgia for solidarity of the wars of independence. Calls to seek the restoration of the United Provinces of the Río de la Plata have begun to echo through [ROOT.GetCountry.GetNameNoFormatting]."
@@ -546,6 +543,7 @@
   
   add_je_new_republic_tt: "Adds #v The New [ROOT.GetCountry.GetCustom('brz_republic_or_state')]#! to the Journal of [ROOT.GetCountry.GetNameNoFlag|U]"
   je_new_republic: "The New [ROOT.GetCountry.GetCustom('brz_republic_or_state')]"
+  je_new_republic_concluded: "The New State" # brz_state is the fallback for brz_republic_or_state
   je_new_republic_reason: "[SCOPE.sCharacter('vargas_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('vargas_scope').GetFullName] and [SCOPE.sCharacter('vargas_scope').GetHerHis] supporters have overthrown the previous government of [ROOT.GetCountry.GetName], and established a new regime founded on nationalism and modernization of the state."
 
   brz_republic: "Republic"
@@ -559,13 +557,13 @@
   populist_unrest_progress_bar: "Populist Unrest"
   populist_unrest_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/100)"
 
-  populism_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states$')] in [concept_turmoil]"
-  populism_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states$')] with [Concept('concept_loyalist','$concept_loyalists$')]"
-  populism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short$')] of [GetIdeology('ideology_modernizer').GetName], [GetIdeology('ideology_liberal').GetName], and [GetIdeology('ideology_positivist').GetName] [Concept('concept_political_movement','$concept_political_movements$')]"
-  populism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short$')] of [GetIdeology('ideology_modernizer').GetName], [GetIdeology('ideology_liberal').GetName], and [GetIdeology('ideology_positivist').GetName] [Concept('concept_political_movement','$concept_political_movements$')]"
+  populism_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states|q$')] in [concept_turmoil]"
+  populism_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states|q$')] with [Concept('concept_loyalist','$concept_loyalists|q$')]"
+  populism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short|q$')] of [GetIdeology('ideology_modernizer').GetName], [GetIdeology('ideology_liberal').GetName], and [GetIdeology('ideology_positivist').GetName] [Concept('concept_political_movement','$concept_political_movements|q$')]"
+  populism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short|q$')] of [GetIdeology('ideology_modernizer').GetName], [GetIdeology('ideology_liberal').GetName], and [GetIdeology('ideology_positivist').GetName] [Concept('concept_political_movement','$concept_political_movements|q$')]"
   populism_progress_from_pb_tt: "[concept_clout] of the #v $ig_petty_bourgeoisie$#!"
-  populism_progress_from_laws_tt: "#bold Policing#! and #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions$')]"
-  populism_progress_from_events_tt: "events and other effects"
+  populism_progress_from_laws_tt: "#bold Policing#! and #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions|q$')]"
+  populism_progress_from_events_tt: "$EVENTS_AND_OTHER_EFFECTS$"
 
   change_misc_populism_drift_1_down_tt: "Monthly #variable Populist Unrest#! progress will be #bold reduced#! by #bold 1#!"
   change_misc_populism_drift_2_down_tt: "Monthly #variable Populist Unrest#! progress will be #bold reduced#! by #bold 2#!"
@@ -677,7 +675,7 @@
 
   BRZ_vargas.6.t: "Integralist Action"
   BRZ_vargas.6.d: "[SCOPE.sCharacter('integralist_agitator').GetFullName] has founded the [ROOT.GetCountry.GetAdjective] Integralist Action, a far-right and traditionalist party that aims to repress leftism and enshrine Catholic teachings into the structure of the state."
-  BRZ_vargas.6.f: ""The Revolution of the Self cannot begin for Brazil while the regime of selfishness still rules. We, the vanguard of Integralism, will crush the selfishness of Marxism and transcend the bounds of materialism. We must, for Brazil demands it!"\n\nAmidst the rapturous applause of the true believers was a single man with a notebook. While outwardly a journalist, his true patron was one more concerned about allies of convenience. These rabble-rousers would form such allies."
+  BRZ_vargas.6.f: ""The Revolution of the Self cannot begin for Brazil while the regime of selfishness still rules. We, the vanguard of Integralism, will crush the selfishness of $marxism$ and transcend the bounds of materialism. We must, for Brazil demands it!"\n\nAmidst the rapturous applause of the true believers was a single man with a notebook. While outwardly a journalist, his true patron was one more concerned about allies of convenience. These rabble-rousers would form such allies."
   BRZ_vargas.6.a: "[SCOPE.sCharacter('integralist_agitator').GetSheHe|U] would make a useful ally."
   BRZ_vargas.6.b: "A fortuitous development."
   brz_integralist_action_tt: "We will have an opportunity to further embrace #bold Integralist#! ideology if #v $je_new_republic$#! is successfully completed"
@@ -745,7 +743,7 @@
   peru_bolivia_events.7.f: "Spies sent letters—furious, defeated, and horrified alike—that any tumult within the new confederation was long since spent. Without lingering resentments to stoke, uncertainties to raise, or division between its legislatures, the people of Peru-Bolivia would see [ROOT.GetCountry.GetNameNoFormatting] only as one thing: jealous invaders."
   peru_bolivia_events.7.a: "We are forced to face a new rival."
 
-  all_restorers_lose_prestige_tt: "All involved [Concept('concept_country', '$concept_countries$')] hostile to the #b Confederation#! will lose [concept_prestige], and gain [Concept('concept_radical', '$concept_radicals$')]"
+  all_restorers_lose_prestige_tt: "All involved [Concept('concept_country', '$concept_countries|q$')] hostile to the #b Confederation#! will lose [concept_prestige], and gain [Concept('concept_radical', '$concept_radicals|q$')]"
 
   peru_bolivia_events.8.t: "For a Free Peru"
   peru_bolivia_events.8.d: "Our state has acquired its independence from the Confederation. With our newfound sovereignty, we may choose to restore our previous Constitution and seek the restoration of a unified Peru, or forge our own new path as an independent [ROOT.GetCountry.GetName]."
@@ -768,32 +766,32 @@
 
   peru_bolivia_completion_nonbolivia_tt: "The Peru-Bolivian Confederation will [Concept('concept_unification', 'Unify')] into a single [concept_country]"
  
-  peru_bolivia_dead_tt: "[SCOPE.sCountry('bolivia_scope').GetName] does not exist, or has lost all of its [SCOPE.sCulture('south_andean_culture').GetName] and [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')]"
+  peru_bolivia_dead_tt: "[SCOPE.sCountry('bolivia_scope').GetName] does not exist, or has lost all of its [SCOPE.sCulture('south_andean_culture').GetName] and [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects|q$')]"
 
   peru_bolivia_success_tt: "The #bold Progress Bar#! has reached #variable 120#!, marking the consolidation of the #bold Peru-Bolivian Confederation#!'s rule"
 
   je_war_of_the_confederation:1 "The War of the Confederation"
-  je_war_of_the_confederation_reason: "With its greater European-descended population, untapped resources, and strategic position, a solidified #bold Peru-Bolivian Confederation#! presents an existential threat to [SCOPE.sCountry('home_country_scope').GetAdjective] national interests. In order to preserve the balance of power, the #bold Confederation#! must be either made amicable to our state or dismantled by force.\n\nThe ambitions of the #bold Peru-Bolivian Confederation#! can be averted by forcing them to release their [Concept('concept_subject', '$concept_subjects$')] before the Progress Bar reaches #variable 100%#!."
+  je_war_of_the_confederation_reason: "With its greater European-descended population, untapped resources, and strategic position, a solidified #bold Peru-Bolivian Confederation#! presents an existential threat to [SCOPE.sCountry('home_country_scope').GetAdjective] national interests. In order to preserve the balance of power, the #bold Confederation#! must be either made amicable to our state or dismantled by force.\n\nThe ambitions of the #bold Peru-Bolivian Confederation#! can be averted by forcing them to release their [Concept('concept_subject', '$concept_subjects|q$')] before the Progress Bar reaches #variable 100%#!."
 
   modifier_against_the_confederation: "Against the Confederation"
 
-  peruvian_claims_tt: "We will gain [Concept('concept_claim', '$concept_claims$')] on the remainder of #bold Peru#!"
+  peruvian_claims_tt: "We will gain [Concept('concept_claim', '$concept_claims|q$')] on the remainder of #bold Peru#!"
 
   modifier_confederation_diplomatic_success: "Peace in the Andes"
   modifier_confederation_war_success: "Triumph of the Nation"
   modifier_confederation_failure: "Lost in the Shade"
 
   je_south_american_national_identity_emergence: "The [ROOT.GetCountry.GetAdjective] Nation"
-  je_south_american_national_identity_emergence_reason: "The independence of [ROOT.GetCountry.GetName] from Spain has given rise to rumblings of nationalism across the nation. As our nation advances into the future, our intellectuals seek to formulate a new identity, one that is distinctly and solely [SCOPE.sCulture('new_national_culture').GetName].\n\nThe following conditions will benefit the process of developing our #bold national identity#!:\n• [GetIdeology('ideology_patriotic').GetName] or [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')] that are [concept_in_government] or have high [concept_clout]\n• Ongoing [Concept('concept_war','$concept_wars$')] with high [concept_war_support]\n• [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings with high [concept_occupancy]\n• High national [concept_prestige]\n• Not owning non-[SCOPE.sCulture('old_national_culture').GetName] [Concept('concept_homeland','$concept_homelands$')]\n\nThe progress of this #bold national awakening#! is expected to progress by #tooltippable;tooltip:[Country.GetTooltipTag],je_south_american_national_identity_emergence_special_tooltip [Country.MakeScope.Var('national_identity_progress_var_next').GetValue|+=]#! next month.\n\n@warning! Completing this [concept_journal_entry] will exclude [ROOT.GetCountry.GetName] from pursuing #bold greater pan-national ambitions#!"
-  je_south_american_national_identity_emergence_special_tooltip: "This rate is determined by the following:\n#variable [Country.MakeScope.Var('national_identity_progress_from_igs').GetValue|+=]#! from [concept_clout] of [GetIdeology('ideology_patriotic').GetName] and [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_wars').GetValue|+=]#! from ongoing [Concept('concept_war','$concept_wars$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_universities').GetValue|+=]#! from [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings\n#variable [Country.MakeScope.Var('national_identity_progress_from_prestige').GetValue|+=]#! from [concept_prestige]\n#variable [Country.MakeScope.Var('national_identity_progress_from_homelands').GetValue|+=]#! from owning non-[Concept('concept_primary_cultures','$concept_primary_culture$')] [Concept('concept_homeland','$concept_homelands$')]\n#variable [Country.MakeScope.Var('national_identity_progress_var_add').GetValue|+=]#! from other effects"
+  je_south_american_national_identity_emergence_concluded: "National Genesis"
+  je_south_american_national_identity_emergence_reason: "The independence of [ROOT.GetCountry.GetName] from Spain has given rise to rumblings of nationalism across the nation. As our nation advances into the future, our intellectuals seek to formulate a new identity, one that is distinctly and solely [SCOPE.sCulture('new_national_culture').GetName].\n\nThe following conditions will benefit the process of developing our #bold national identity#!:\n• [GetIdeology('ideology_patriotic').GetName], [GetIdeology('ideology_militarist').GetName], or [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups|q$')] that are [concept_in_government] or have high [concept_clout]\n• Ongoing [Concept('concept_war','$concept_wars|q$')] with high [concept_war_support]\n• [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings with high [concept_occupancy]\n• High national [concept_prestige]\n• Not owning non-[SCOPE.sCulture('old_national_culture').GetName] [Concept('concept_homeland','$concept_homelands|q$')]\n\nThe progress of this #bold national awakening#! is expected to progress by #tooltippable;tooltip:[Country.GetTooltipTag],je_south_american_national_identity_emergence_special_tooltip [Country.MakeScope.Var('national_identity_progress_var_next').GetValue|+=]#! next month.\n\n@warning! Completing this [concept_journal_entry] will exclude [ROOT.GetCountry.GetName] from pursuing #bold greater pan-national ambitions#!"
+  je_south_american_national_identity_emergence_special_tooltip: "This rate is determined by the following:\n#variable [Country.MakeScope.Var('national_identity_progress_from_igs').GetValue|+=]#! from [concept_clout] of [GetIdeology('ideology_patriotic').GetName], [GetIdeology('ideology_militarist').GetName], and [GetIdeology('ideology_liberal').GetName] [Concept('concept_interest_group','$concept_interest_groups|q$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_wars').GetValue|+=]#! from ongoing [Concept('concept_war','$concept_wars|q$')]\n#variable [Country.MakeScope.Var('national_identity_progress_from_universities').GetValue|+=]#! from [GetBuildingType('building_university').GetName], [GetBuildingType('building_art_academy').GetName], and [GetBuildingType('building_government_administration').GetName] buildings\n#variable [Country.MakeScope.Var('national_identity_progress_from_prestige').GetValue|+=]#! from [concept_prestige]\n#variable [Country.MakeScope.Var('national_identity_progress_from_homelands').GetValue|+=]#! from owning non-[Concept('concept_primary_cultures','$concept_primary_culture|q$')] [Concept('concept_homeland','$concept_homelands|q$')]\n#variable [Country.MakeScope.Var('national_identity_progress_var_add').GetValue|+=]#! from other effects"
   je_south_american_national_identity_emergence_goal: "The progress of the emerging [ROOT.GetCountry.GetAdjectiveNoFormatting] #bold National Identity#! has reached #variable 100%#!"
   
-  completed_pan_national_project_tt: "We have successfully completed any of the #bold Peru-Bolivian Confederation#!, #bold Gran Colombia#!, or #bold Bolivar's Ambition#! [Concept('concept_journal_entry', '$concept_journal_entries$')]"
-  notification_bol_salaverry_death_name: "[SCOPE.sCharacter('salaverry_scope').GetFullName] Executed"
+  completed_pan_national_project_tt: "We have successfully completed any of the #bold Peru-Bolivian Confederation#!, #bold Gran Colombia#!, or #bold Bolivar's Ambition#! [Concept('concept_journal_entry', '$concept_journal_entries|q$')]"
+  notification_bol_salaverry_death_name: "[SCOPE.sCharacter('salaverry_scope').GetFullName] executed"
   notification_bol_salaverry_death_desc: "The death of the leader of the Peruvian opposition has marked the end of the Peruvian civil war, and the beginning of the #bold Peru-Bolivian Confederation#!."
-  notification_bol_salaverry_death_tooltip: "#header $notification_bol_salaverry_death_name$#!\n$TOOLTIP_DELIMITER$\n$notification_bol_salaverry_death_desc$"
 
-  bol_no_revolutions_tt: "None of [SCOPE.sCountry('bolivia_scope').GetNameNoFlag]'s [SCOPE.sCulture('south_andean_culture').GetName] and [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects$')] are currently in a [concept_civil_war]"
+  bol_no_revolutions_tt: "None of [SCOPE.sCountry('bolivia_scope').GetNameNoFlag]'s [SCOPE.sCulture('south_andean_culture').GetName] and [SCOPE.sCulture('quechua_culture').GetName] [Concept('concept_subject', '$concept_subjects|q$')] are currently in a [concept_civil_war]"
 
   usa_two_party_system: "American Two-Party System"
   from_southern_interests: "From Southern Interests"
@@ -806,6 +804,8 @@
   communism.10.a: "A storm approaches."
   communism.10.b: "The world will be free, one day."
   communism_var_tick_05_tt: "#bold Socialist#! unrest will #bold increase#! by #variable 0.5#! every month"
+  communism_10_b_option_tt: "An [concept_interest_group] [concept_in_government] is of type $ig_trade_unions$ or has a [concept_leader] with a $ideology_socialist$ [concept_ideology]"
+  communism_10_b_option_not_tt: "No [concept_interest_group] [concept_in_government] is of type $ig_trade_unions$ or has a [concept_leader] with a $ideology_socialist$ [concept_ideology]"
 
   communism.11.t: "Firebreak"
   communism.11.d: "Whether through the trust of our people or the truncheons of our soldiers, [ROOT.GetCountry.GetName] has emerged unbroken from the wave of socialist agitation that threatened it."
@@ -813,7 +813,7 @@
   communism.11.a: "A triumph for all of [ROOT.GetCountry.GetNameNoFormatting]."
   communism.11.b: "Things will never be the same again."
 
-  communism_je_1_fail_tt: "[GetIdeology('ideology_communist').GetName], [GetIdeology('ideology_anarchist').GetName], and [GetIdeology('ideology_vanguardist').GetName] characters will appear much more frequently in [ROOT.GetCountry.GetNameNoFlag]"
+  communism_je_1_fail_tt: "[GetIdeology('ideology_communist_leader').GetName], [GetIdeology('ideology_anarchist').GetName], and [GetIdeology('ideology_vanguardist').GetName] characters will appear much more frequently in [ROOT.GetCountry.GetNameNoFlag]"
   communism_je_1_complete_tt: "The [ROOT.GetCountry.GetAdjectiveNoFlag] socialist movement will be weakened for the near future"
 
   modifier_defeated_initial_socialist_movement: "Victories Against Socialism"
@@ -827,50 +827,38 @@
 
   slow_cultural_development_progress_tt: "The development of a uniquely [SCOPE.sCulture('new_national_culture').GetName] culture will be #bold slowed#!, but not averted"
 
-  notification_brz_brazil_coup_name: "Republican Coup in [SCOPE.sCountry('brazil_scope').GetName]"
+  notification_brz_brazil_coup_name: "Republican coup in [SCOPE.sCountry('brazil_scope').GetName]"
   notification_brz_brazil_coup_desc: "The [SCOPE.sCountry('brazil_scope').GetAdjective] monarchy has fallen to a coup led by the [SCOPE.gsInterestGroup('landowners_ig').GetName] and [SCOPE.gsInterestGroup('armed_forces_ig').GetName]. A Republic has been declared over the former Empire of Brazil."
-  notification_brz_brazil_coup_tooltip: "#header $notification_brz_brazil_coup_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brz_brazil_coup_desc$"
 
   notification_pbc_peru_bolivia_collapse_name: "Collapse of the Peru-Bolivian Confederation"
   notification_pbc_peru_bolivia_collapse_desc: "The Peru-Bolivian Confederation has collapsed to internal and external pressure, with its former constituent nations abrogating their legal ties."
-  notification_pbc_peru_bolivia_collapse_tooltip: "#header $notification_pbc_peru_bolivia_collapse_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pbc_peru_bolivia_collapse_desc$"
 
-  notification_pbc_peru_bolivia_success_name: "Treaty of [SCOPE.sState('arequipa_state').GetNameNoFormatting] Signed"
+  notification_pbc_peru_bolivia_success_name: "Treaty of [SCOPE.sState('arequipa_state').GetNameNoFormatting] signed"
   notification_pbc_peru_bolivia_success_desc: "Representatives of Peru and Bolivia have ratified a formal constitution over the union, finally realizing the solidification of the [SCOPE.sCountry('pbc_scope').GetName]."
-  notification_pbc_peru_bolivia_success_tooltip: "#header $notification_pbc_peru_bolivia_success_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pbc_peru_bolivia_success_desc$"
 
-  notification_gco_unification_name: "The Restoration of [SCOPE.sCountry('gco_scope').GetName]"
+  notification_gco_unification_name: "The restoration of [SCOPE.sCountry('gco_scope').GetName]"
   notification_gco_unification_desc: "The government of [SCOPE.sCountry('gco_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('gco_scope').GetRuler.GetFullName] has declared the restoration of the state of [SCOPE.sCountry('gco_scope').GetName]."
-  notification_gco_unification_tooltip: "#header $notification_gco_unification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_gco_unification_desc$"
 
-  notification_fnd_unification_name: "[SCOPE.sCountry('federation_scope').GetName] Declared"
+  notification_fnd_unification_name: "[SCOPE.sCountry('federation_scope').GetName] declared"
   notification_fnd_unification_desc: "The government of [SCOPE.sCountry('federation_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('federation_scope').GetRuler.GetFullName] has declared the formation of the [SCOPE.sCountry('federation_scope').GetName], a vast superstate unifying much of Hispanophone America."
-  notification_fnd_unification_tooltip: "#header $notification_fnd_unification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_fnd_unification_desc$"
 
-  notification_plt_unification_name: "The Declaration of [SCOPE.sCountry('plt_scope').GetName]"
+  notification_plt_unification_name: "The declaration of [SCOPE.sCountry('plt_scope').GetName]"
   notification_plt_unification_desc: "The government of [SCOPE.sCountry('plt_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('plt_scope').GetRuler.GetFullName] has declared the restoration of [SCOPE.sCountry('plt_scope').GetName], claiming the territory of the former Viceroyalty and United Provinces."
-  notification_plt_unification_tooltip: "#header $notification_fnd_unification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_fnd_unification_desc$"
 
-  notification_brz_isabel_accession_name: "The Death of Dom Pedro II"
+  notification_brz_isabel_accession_name: "The death of Dom Pedro II"
   notification_brz_isabel_accession_desc: "The Emperor of Brazil, Pedro II, has passed away, with [SCOPE.sCountry('brazil_scope').GetRuler.GetPrimaryRoleTitle] [SCOPE.sCountry('brazil_scope').GetRuler.GetFullName] assuming the throne in his wake."
-  notification_brz_isabel_accession_tooltip: "#header $notification_brz_isabel_accession_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brz_isabel_accession_desc$"
 
-  notification_sa_culture_genesis_name: "Genesis of the [SCOPE.sCulture('new_national_culture').GetName] Culture"
+  notification_sa_culture_genesis_name: "Genesis of the [SCOPE.sCulture('new_national_culture').GetName] culture"
   notification_sa_culture_genesis_desc: "[SCOPE.sCountry('south_america_nation_scope').GetName], formerly known as a [SCOPE.sCulture('old_national_culture').GetName] nation, has experienced a widespread cultural awakening, transitioning towards a distinct [SCOPE.sCulture('new_national_culture').GetName] culture."
-  notification_sa_culture_genesis_tooltip: "#header $notification_sa_culture_genesis_name$#!\n$TOOLTIP_DELIMITER$\n$notification_sa_culture_genesis_desc$"
 
-  notification_brz_cultural_unification_name: "[SCOPE.sCountry('brazil_scope').GetName] Unifies National Culture"
+  notification_brz_cultural_unification_name: "[SCOPE.sCountry('brazil_scope').GetName] unifies national culture"
   notification_brz_cultural_unification_desc: "The [SCOPE.sCountry('brazil_scope').GetAdjective] has successfully consolidated its disparate regional cultures into a single [SCOPE.sCulture('brazilian_culture_scope').GetName] identity."
-  notification_brz_cultural_unification_tooltip: "#header $notification_brz_cultural_unification_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brz_cultural_unification_desc$"
 
-  notification_brz_navy_completed_name: "[SCOPE.sCountry('brazil_scope').GetName] Modernizes Navy"
+  notification_brz_navy_completed_name: "[SCOPE.sCountry('brazil_scope').GetName] modernizes navy"
   notification_brz_navy_completed_desc: "A long period of naval modernization and enlargement by the [SCOPE.sCountry('brazil_scope').GetAdjective] [SCOPE.gsInterestGroup('navy_scope').GetName] has come to fruition, with the [SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting] now being one of the most formidable in the world."
-  notification_brz_navy_completed_tooltip: "#header $notification_brz_navy_completed_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brz_navy_completed_desc$"
 
-  notification_brz_amazon_border_treaty_colombia_name: "Treaty of Bogotá Signed"
+  notification_brz_amazon_border_treaty_colombia_name: "Treaty of Bogotá signed"
   notification_brz_amazon_border_treaty_colombia_desc: "[SCOPE.sCountry('colombia_border_treaty_country_scope').GetName] and [SCOPE.sCountry('brazil_scope').GetName] have signed a border treaty, codifying their respective borders and consolidating more of the northern Amazon Rainforest under [SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting] control."
-  notification_brz_amazon_border_treaty_colombia_tooltip: "#header $notification_brz_amazon_border_treaty_colombia_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brz_amazon_border_treaty_colombia_desc$"
 
-  notification_brz_amazon_border_treaty_bolivia_name: "Treaty of Ayacucho Signed"
+  notification_brz_amazon_border_treaty_bolivia_name: "Treaty of Ayacucho signed"
   notification_brz_amazon_border_treaty_bolivia_desc: "[SCOPE.sCountry('bolivia_border_treaty_country_scope').GetName] and [SCOPE.sCountry('brazil_scope').GetName] have signed a border treaty, codifying their respective borders and consolidating more of the southern Amazon Rainforest under [SCOPE.sCountry('brazil_scope').GetAdjectiveNoFormatting] control."
-  notification_brz_amazon_border_treaty_bolivia_tooltip: "#header $notification_brz_amazon_border_treaty_bolivia_name$#!\n$TOOLTIP_DELIMITER$\n$notification_brz_amazon_border_treaty_bolivia_desc$"

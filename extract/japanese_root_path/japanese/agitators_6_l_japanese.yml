@@ -12,7 +12,7 @@
  bluff_called: "ハッタリの暴露"
  expert_agreed_with_gov: "専門家の好意"
  professional_agreed_with_gov: "プロフェッショナルの好意"
- scandalous: "公開スキャンダル"
+ modifier_scandalous: "公開スキャンダル"
  whistleblower: "誠実な顔"
  unopposed_whistleblower: "誠実な顔のみ"
  successful_law_ram: "計画の成功"

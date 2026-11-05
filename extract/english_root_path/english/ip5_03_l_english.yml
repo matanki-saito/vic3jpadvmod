@@ -1,0 +1,205 @@
+﻿l_english:
+
+# Russification Content
+je_russification: "The Western Border"
+je_russification_reason: "Years of political rivalries and war have shaped the frontiers of our western borderlands. After the [Glossary('glossary_annexation_of_finland','annexation of $FIN|q$ in 1809')] and [Glossary('glossary_establishment_of_congress_poland','$dyn_c_congress_poland|q$ in 1815')], concessions were made to secure the support of the upper classes. Elsewhere in the [Glossary('glossary_annexation_baltic_governorates','Baltic borderlands')], where nobility retained local privileges, the organization of society and economy has remained separate from the heart of [ROOT.GetCountry.GetAdjectiveNoFormatting] administration. Our authority beyond [ROOT.GetCountry.GetCapital.GetCityHubName] in the west can only be protected if there is administrative integration in the region."
+
+je_russification_map_owned_tt: "[THIS.GetState.GetCustom('je_russification_state_owned_by_russia')] $je_russification_is_owned_by_tt$"
+je_russification_map_incorporated_tt: "[THIS.GetState.GetCustom('je_russification_state_is_incorporated')] $TRIGGER_IS_INCORPORATED$"
+je_russification_map_turmoil_tt: "[THIS.GetState.GetCustom('je_russification_state_turmoil')] [concept_turmoil] is less than [THIS.ScriptValue('je_russification_state_turmoil_max')|v%1] ([THIS.GetState.CalcTurmoil|v%1])"
+je_russification_map_culture_tt: "[THIS.GetState.GetCustom('je_russification_state_is_assimilated')] [THIS.ScriptValue('je_russification_state_russian_culture_min')|v%1] [GetCulture('russian').GetName] [concept_culture] ([THIS.ScriptValue('russian_culture_fraction')|v%1])"
+
+je_russification_is_owned_by_tt: "Is owned by [SelectLocalization(ROOT.GetCountry.IsValid, ROOT.GetCountry.GetName, 'RUS')]"
+
+russification.1.t: "Beyond [ROOT.GetCountry.GetCapital.GetCityHubName]"
+russification.1.d1: "Leaders fear foreign influence poses a threat to the long term stability and integrity in our Western borderlands. We must assert our authority beyond [ROOT.GetCountry.GetCapital.GetCityHubName]."
+russification.1.d2: "$PRU$'s push for German unification poses a threat to the stability of our Western borderlands. We must assert our authority beyond [ROOT.GetCountry.GetCapital.GetCityHubName]."
+russification.1.d3: "Leaders in [ROOT.GetCountry.GetCapital.GetCityHubName] have grown concerned that the successful unification of $GER$ will risk the stability of our Western borderlands. We must assert our authority in the region to protect our interests."
+russification.1.f: ""...they, though not Russian by origin, should gradually and consciously become imbued with the healthy state principles upon which is founded the prosperity of the mighty Russian State..."\n\n–S.P. Sukhodolsky, #italic 1896 Kovno Governor's Report#!" # translated by Theodore R. Weeks
+russification.1.a: "Focus our efforts in [GetGeographicRegion('geographic_region_finland_old').GetName]."
+russification.1.b: "Direct our attention to [GetGeographicRegion('geographic_region_baltic_states_old').GetName]."
+russification.1.c: "We must concentrate on [GetGeographicRegion('geographic_region_poland_old').GetName]."
+russification.1.d: "Investing outside of [ROOT.GetCountry.GetCapital.GetCityHubName] is currently beyond us."
+
+modifier_regional_russification_payments: "Administrative Costs"
+modifier_regional_russification_efforts: "Regional Efforts"
+
+russification.2.t: "[ROOT.GetCountry.GetAdjectiveNoFormatting] by Fiat"
+russification.2.d: "With the successful integration of the Western borderlands, we have secured the future of [ROOT.GetCountry.GetNameNoFormatting] in the West."
+russification.2.f: "Once separate from the heart of [ROOT.GetCountry.GetAdjectiveNoFormatting] administration, the Western borderlands have now been integrated. Leaders in [ROOT.GetCountry.GetCapital.GetCityHubName] are greatly pleased with the results. They praise the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s success in the ambitious agenda.\n\nOne [ROOT.GetCountry.GetAdjectiveNoFormatting] official writes to [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]: "The future of [ROOT.GetCountry.GetNameNoFormatting] in the West is promising. Your influence has no doubt persuaded the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to take decisive action in this grand undertaking.""
+russification.2.a: "Our authority in the West will not be questioned."
+russification.2.b: "The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s rule is as strong as ever."
+modifier_je_russification_secured_ext: "Western Border Secured"
+modifier_je_russification_secured_int: "Renewed Ambitions"
+modifier_je_russification_ig_str: "Western Gains"
+modifier_je_russification_loyal_prominence_gain: "Favorable Future"
+russification_2b_character_modifier_tt: "A [concept_character] who is a [concept_favorite] or [concept_leader] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_je_russification_loyal_prominence_gain_tt $modifier_je_russification_loyal_prominence_gain$#! for #v [GetPlayer.MakeScope.ScriptValue('display_long_modifier_time')]#! years" # update russification_2b_character_modifier_tt if there are changes to modifier_je_russification_loyal_prominence_gain
+modifier_je_russification_loyal_prominence_gain_tt: "[GetStaticModifier('modifier_je_russification_loyal_prominence_gain').GetName|v]\n[GetStaticModifier('modifier_je_russification_loyal_prominence_gain').GetDesc]"
+
+russification.3.t: "Broken Borders"
+russification.3.d: "All of the former [ROOT.GetCountry.GetAdjectiveNoFormatting] Western territories have fallen out of our control. Our agenda to integrate the Western borderlands has decisively failed."
+russification.3.f: "As a prominent figure, [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] enjoys many privileges from [SCOPE.sCharacter('relevant_character').GetHerHis] seat of power. Few people dare to question [SCOPE.sCharacter('relevant_character').GetHerHis] authority in [ROOT.GetCountry.GetCapital.GetCityHubName]. But ever since the recent losses of the Western [ROOT.GetCountry.GetAdjectiveNoFormatting] territories, there have been whispers that #italic [SCOPE.sCharacter('relevant_character').GetSheHe]#! is culpable for this disastrous outcome. While [SCOPE.sCharacter('relevant_character').GetLastNameNoFormatting] knows there is more to this loss than meets the eye, public opinion is difficult to sway in [SCOPE.sCharacter('relevant_character').GetHerHis] favor. The fallout from this failure will foil [SCOPE.sCharacter('relevant_character').GetHerHis] political prospects for years to come."
+russification.3.a: "We must secure the integrity of our borders in the future."
+modifier_je_russification_loyal_prominence_loss: "Unfortunate Unfavorite"
+modifier_je_russification_approval_loss: "Unhappy Setbacks"
+modifier_je_russification_decline_approval_loss: "Russification Deferred"
+russification_3a_character_modifier_tt: "A [concept_character] who is a [concept_favorite] or [concept_leader] gets #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_je_russification_loyal_prominence_loss_tt $modifier_je_russification_loyal_prominence_loss$#! for #v [GetPlayer.MakeScope.ScriptValue('display_long_modifier_time')]#! years" # update russification_3a_character_modifier_tt if there are changes to modifier_je_russification_loyal_prominence_loss
+modifier_je_russification_loyal_prominence_loss_tt: "[GetStaticModifier('modifier_je_russification_loyal_prominence_loss').GetName|v]\n[GetStaticModifier('modifier_je_russification_loyal_prominence_loss').GetDesc]"
+
+russification.4.t: "The Attack"
+russification.4.d: "A painting in support of an independent [SCOPE.sCountry('finland_scope').GetName] has been exhibited secretly in [SCOPE.sCountry('finland_scope').GetCapital.GetCityHubName]. Thousands of reproductions of this painting have been found circulating in the Western borderlands of [ROOT.GetCountry.GetNameNoFormatting]."
+russification.4.f: "At a private villa in [SCOPE.sCountry('finland_scope').GetCapital.GetCityHubName], a young man seizes the opportunity to inspect this work of art. Like the artist and model of the painting, he was also born in the northernmost region of [SCOPE.sCountry('finland_scope').GetNameNoFormatting]. He admires how the painting perfectly captures a young maiden fiercely protecting a tome of [SCOPE.sCountry('finland_scope').GetAdjectiveNoFormatting] laws from a double-headed eagle that threatens to snatch it from her grasp. The young man is inspired to create a postcard variation of this daring painting."
+russification.4.a: "Ban the display of this painting at all costs."
+russification.4.b: "Copies of this work are harmless."
+
+russification.5.t: "Targeted Efforts"
+russification.5.d: "[SCOPE.sCharacter('relevant_character').GetFullName] has been selected to spearhead our efforts to incorporate [SCOPE.sState('relevant_state').GetName] as part of our agenda to integrate the Western borderlands."
+russification.5.f: "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] is fully aware of the slow progress [ROOT.GetCountry.GetNameNoFormatting] has made in assuming full control of the Western borderlands. As [SCOPE.sCharacter('relevant_character').GetSheHe] reads the missive requesting [SCOPE.sCharacter('relevant_character').GetHerHim] to oversee the development of [SCOPE.sState('relevant_state').GetNameNoFormatting], [SCOPE.sCharacter('relevant_character').GetSheHe] ponders what responsibilities it may entail and what scrutiny [SCOPE.sCharacter('relevant_character').GetSheHe] may endure should the endeavor fail.\n\nPicking up [SCOPE.sCharacter('relevant_character').GetHerHis] pen, [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] writes: "If I am called upon to defend our interests in the West, I will rise to the challenge.""
+russification.5.a: "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] is up to the task."
+russification.5.b: "[SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] has too many responsibilities. Let local administration handle this."
+modifier_candidate_reject_approval_loss: "Rejected Candidate"
+modifier_local_administration_autonomy: "Local Leadership"
+
+russification.6.t: "[SCOPE.sState('relevant_state').GetNameNoFormatting] Properly Incorporated"
+russification.6.d: "[SCOPE.sCharacter('relevant_character').GetFullName] has successfully led the initiative to incorporate [SCOPE.sState('relevant_state').GetName]. [ROOT.GetCountry.GetNameNoFormatting] is another step closer to securing control over the Western territories."
+russification.6.f: "In the heart of [SCOPE.sState('relevant_state').GetCityHubName], [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting] rejoices in the success of [SCOPE.sCharacter('relevant_character').GetHerHis] stewardship. To a group of [SCOPE.sCharacter('relevant_character').GetHerHis] peers, [SCOPE.sCharacter('relevant_character').GetSheHe] boasts: "[SCOPE.sState('relevant_state').GetCityHubName] is a prime example of the opportunity and promise of our expansion. As [SCOPE.sState('relevant_state').GetNameNoFormatting] becomes more integral to [ROOT.GetCountry.GetNameNoFormatting], the remainder of the Western territories will undoubtedly follow in our footsteps.""
+russification.6.a: "The [SCOPE.gsInterestGroup('relevant_ig').GetName] will benefit from [SCOPE.sCharacter('relevant_character').GetFullNameNoFormatting]'s successful endeavor."
+russification.6.b: "[SCOPE.sState('relevant_state').GetName] will undoubtedly flourish under our rule."
+modifier_russify_state_success: "Proven Track Record"
+modifier_western_territory_incorporated: "Western Settlement"
+
+# Single-Fire Russia Events
+russia_events.31.t: "To Double or Not to Double"
+russia_events.31.d: "Printed references have been circulating abroad about a [ROOT.GetCountry.GetAdjectiveNoFormatting] Grand Duke that introduced doubling to the game of backgammon. The practice is reportedly now flourishing in the New York milieu."
+russia_events.31.f: ""It must be admitted that doubling was originated with no such high purpose as the advancement of skill in the game. It was devised solely in order to obtain the maximum "action" in the shortest time — and in this its reputed father, the Grand Duke Dmitri, was eminently successful. It is highly probable that he did not realize ... that skilful analysis of relative position had thereby suddenly become essential to successful play, but ... it seems certain that this modern variation will consolidate its position as the Backgammon of the future."\n\n–John Longacre, #italic “To Double or Not to Double”#!" # July 1931
+russia_events.31.a: "How novel!"
+russia_events.31.b: "A doubly inventive idea!"
+modifier_doubling_origin: "Doubling Origins"
+modifier_early_doubler: "Early Doubler"
+
+russia_events.32.t: "Realists Revolt"
+russia_events.32.d: "The [GetBuildingType('building_art_academy').GetName] in [SCOPE.sState('relevant_state').GetName] refuses to give artists a free choice of art subject in an upcoming national competition. Disillusioned by the antiquated ways of the Academy, a group of expelled artists have formed an independent artistic society in protest."
+russia_events.32.f: "On the day that the national art competition commences, an artist paces in the Academy's conference hall awaiting the announcement of the competition theme. He is agitated that yet another one of the collective letters to the Academic Council has gone unanswered. He wonders: #italic 'Why can't we have free choice of subject?'#!\n\nUnable to contain his growing displeasure, the artist delivers a rousing speech to the other participants and declares: "If the Academy refuses to satisfy our request, then let us not take part in this competition and sell our work independent of this institution!""
+russia_events.32.a: "Outrageous! Order police to keep close watch over these artists."
+russia_events.32.b: "Such a shame that the Academy lost its top talent."
+modifier_surveilled_artists: "Surveilled Artists"
+modifier_ig_surveilled_artists_approval: "Creative Control"
+modifier_artel_of_artists: "Artel of Artists"
+
+russia_events.33.t: "Society for Travelling Art Exhibitions"
+russia_events.33.d: "A [Glossary('glossary_peredvizhniki_artists','group of realist artists')] who formed an independent artistic society have arranged for mobile art exhibitions to tour cities in [ROOT.GetCountry.GetNameNoFormatting] to bring art to the people. Their art, which has also gained recognition abroad, may soon surpass the value of Academy of Arts-sanctioned work."
+russia_events.33.f: ""If I say of the Russian landscape painter, Levitan, that he expressed Russian "soul" as no Russian ever expressed it before in terms of color, do I thereby formulate a theory or advance a fact? ...his painting of the Russian landscape expressed the Russian soul as it was never expressed before: with an eloquence and a poignancy and a magical power of evocation..."\n\n–Francis Haffkine Snow, #italic “Isaak Levitan — the Painter of the Russian Soul”#!" # October 1917
+russia_events.33.a: "Reform the Academy of Arts to incorporate the Peredvizhniki artists."
+russia_events.33.b: "Crackdown against the non-sanctioned works."
+modifier_peredvizhniki_art: "Peredvizhniki Society"
+modifier_peredvizhniki_political_movement: "Influential Exhibition"
+modifier_ig_approves_peredvizhniki_rejection: "Realist Rejection"
+
+russia_events.34.t: "Invitation to [SCOPE.sState('relevant_state').GetCityHubName] Grand Exhibition"
+russia_events.34.d: "[SCOPE.sCountry('relevant_country').GetName] will be hosting a Grand Exhibition in [SCOPE.sState('relevant_state').GetCityHubName]. Our ministers encourage [SCOPE.sCountry('russia_scope').GetName]'s participation to improve our international image."
+russia_events.34.f: "When the invitation from [SCOPE.sCountry('relevant_country').GetNameNoFormatting] arrives, the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] summons the Foreign Minister to advise on what benefits [ROOT.GetCountry.GetNameNoFormatting] may gain for participating in the [SCOPE.sState('relevant_state').GetCityHubName] Grand Exhibition.\n\nThe minister, enamored with the prospect of representing [ROOT.GetCountry.GetNameNoFormatting] on the world stage, argues that the opportunity is quite valuable: "Our participation will leave Europe with a lasting impression of our strides in industrial development.""
+russia_events.34.a: "Send exhibitors to promote our agricultural products."
+russia_events.34.b: "Arrange for our participation to showcase our armaments."
+russia_events.34.c: "Such frivolity is not worthy of our resources."
+russia_did_attend_worlds_fair_tt: "[SCOPE.sCountry('russia_scope').GetAdjective] exhibits #bold #g will#!#! be sent to [SCOPE.sState('relevant_state').GetCityHubName]"
+russia_did_not_attend_worlds_fair_tt: "[SCOPE.sCountry('russia_scope').GetAdjective] exhibits #bold #r will not#!#! be sent to [SCOPE.sState('relevant_state').GetCityHubName]"
+modifier_russia_participation_cost: "Grand Exhibition Costs"
+modifier_russia_participation_prestige: "Grand Exhibition Prestige"
+modifier_russia_agricultural_showcase: "Agricultural Advancements"
+modifier_russia_armaments_showcase: "Noteworthy Armaments"
+
+notification_russia_world_fair_participant_message_name: "[SCOPE.sCountry('russia_scope').GetName] participates in Grand Exhibition"
+notification_russia_world_fair_participant_message_desc: "[SCOPE.sCountry('russia_scope').GetName] will participate in our great cultural and economic exchange at the [SCOPE.sState('relevant_state').GetCityHubName] Grand Exhibition."
+
+russia_events.35.t: "The [SCOPE.sCountry('russia_scope').GetAdjectiveNoFormatting] Pavilion"
+russia_events.35.d: "[SCOPE.sCountry('russia_scope').GetName]'s participation in our Grand Exhibition has garnered much interest. The exhibits at the [SCOPE.sCountry('russia_scope').GetAdjective] Pavilion emphasize [SCOPE.sCountry('russia_scope').GetNameNoFormatting]'s industrial progress."
+russia_events.35.f: ""No country offers more contrasts. None was more difficult to summarize in the eyes of the visitor to the Exposition. The organizers of the Russian section nonetheless succeeded in giving us a comprehensive and vivid overview of that enormous empire. Those who know Russia will find it; those don’t know it will discover it."\n\n–Maurice Normand, #italic “La Russie à l’Exposition”#!" # May 1900
+russia_events.35.a: "What an astounding display."
+modifier_russia_expo_research_speed: "Astounding Exhibition"
+
+notification_russia_world_fair_showcase_message_name: "Successful showcase in [SCOPE.sCountry('relevant_country').GetName]"
+notification_russia_world_fair_showcase_message_desc: "[SCOPE.sCountry('russia_scope').GetName]'s participation in [SCOPE.sCountry('relevant_country').GetName]'s Grand Exhibition has resulted in a successful cultural exchange."
+
+chartering_the_stanitsas.1.t: "A New Line of Stanitsas"
+chartering_the_stanitsas.1.d: "With [SCOPE.sState('cossack_frontier_state').GetName] now answering to us, the elders of the host at [SCOPE.sState('cossack_host_state').GetName] have sent a delegation to petition for the land beyond the last picket line."
+chartering_the_stanitsas.1.f: ""A Cossack is a servant of his Fatherland and a defender of it from external and internal enemies."\n\n—General Chancellery of the Zaporozhian Host, #italic Register of the Zaporozhian Host of 1649#!"
+chartering_the_stanitsas.1.a: "Have them hold the line."
+chartering_the_stanitsas.1.b: "The frontier will have to keep itself without them."
+modifier_chartering_the_stanitsas_expense: "Stanitsa Charters"
+modifier_chartering_the_stanitsas_host_approval: "Land Granted to the Host"
+modifier_chartering_the_stanitsas_settlement: "Cossack Stanitsas"
+modifier_chartering_the_stanitsas_open_frontier: "Unsettled Frontier"
+modifier_chartering_the_stanitsas_native_approval: "Native Approval"
+
+# Rasputin Content
+rasputin.1.t: "Healer of [SCOPE.sCharacter('alexei_scope').GetFullNameNoFormatting]"
+rasputin1t_tt: "Healer of Alexei Romanov" # for rasputin1_active_tt
+rasputin.1.d: "[SCOPE.sCharacter('rasputin_scope').GetFullName], a healer from [GetStateRegion('STATE_TOBOLSK').GetName], has appeared when [SCOPE.sCharacter('alexei_scope').GetFullName] was on [SCOPE.sCharacter('alexei_scope').GetHerHis] deathbed. The [ROOT.GetCountry.GetCustom('get_rus_consort_title')], in awe of [SCOPE.sCharacter('rasputin_scope').GetHerHis] miraculous work, wishes to appoint [SCOPE.sCharacter('rasputin_scope').GetHerHim] as the [concept_favorite]."
+rasputin.1.f: "The [ROOT.GetCountry.GetCustom('get_rus_consort_title')] does not leave [SCOPE.sCharacter('alexei_scope').GetFullNameNoFormatting]'s bedside as [SCOPE.sCharacter('alexei_scope').GetSheHe] suffers from a life-threatening hemorrhage. She fervently prays, weeping each time [SCOPE.sCharacter('alexei_scope').GetFirstNameNoFormatting] cries out in pain. When the doctors inform her they expect [SCOPE.sCharacter('alexei_scope').GetFirstNameNoFormatting] won't survive the night, the [ROOT.GetCountry.GetCustom('get_rus_consort_title')] desperately calls for the faith healer from $STATE_TOBOLSK$.\n\nThe healer arrives promptly and strides in with confidence. Standing at the foot of [SCOPE.sCharacter('alexei_scope').GetFirstNameNoFormatting]'s bed, [SCOPE.sCharacter('rasputin_scope').GetFullNameNoFormatting] prays. Soon the fever is gone, the hemorrhage has stopped, and [SCOPE.sCharacter('alexei_scope').GetFirstNameNoFormatting]'s eyes are clear and bright. The danger is over."
+rasputin.1.a: "Appoint [SCOPE.sCharacter('rasputin_scope').GetFullNameNoFormatting] as [concept_favorite]."
+rasputin.1.b: "This was no miracle, merely luck."
+
+modifier_faith_healing: "Faith Healing"
+modifier_faith_healing_tt: "[GetStaticModifier('modifier_faith_healing').GetName|v]\n[GetStaticModifier('modifier_faith_healing').GetDesc]"
+
+revoke_current_favorite_effect_tt: "[SCOPE.sCharacter('current_favorite_scope').GetFullName] will no longer be the [concept_favorite] of [ROOT.GetCountry.GetRuler.GetFullNameWithTitle]"
+appoint_rasputin_favorite_effect_tt: "[SCOPE.sCharacter('rasputin_scope').GetFullName] becomes the [concept_favorite] of [ROOT.GetCountry.GetRuler.GetFullNameWithTitle]"
+alexei_health_deteriorates_tt: "\n@warning! While [SCOPE.sCharacter('rasputin_scope').GetFullName] is #b not#! the [concept_favorite] of [ROOT.GetCountry.GetRuler.GetFullNameWithTitle], [SCOPE.sCharacter('alexei_scope').GetFullName] is likely to die from [GetCharacterTrait('hemophilia').GetName]"
+alexei_health_improves_tt: "\n@information! While [SCOPE.sCharacter('rasputin_scope').GetFullName] is the [concept_favorite] of [ROOT.GetCountry.GetRuler.GetFullNameWithTitle], [SCOPE.sCharacter('alexei_scope').GetFullName] is less likely to die from [GetCharacterTrait('hemophilia').GetName] due to [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting]'s blessing of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_faith_healing_tt $modifier_faith_healing$#!"
+
+rasputin.2.t: "The Holy Devil"
+rasputin.2.d: "Reports of [SCOPE.sCharacter('rasputin_scope').GetFullName]'s strange behavior and growing influence over [ROOT.GetCountry.GetRuler.GetFullNameWithTitle] have greatly troubled the [SCOPE.gsInterestGroup('relevant_ig').GetName]. [SCOPE.sCharacter('relevant_leader_scope').GetFullName] demands [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting]'s immediate dismissal."
+rasputin.2.f: "The recently fired governess, who diligently looked after the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s children for years, has not hesitated to share the story of her lurid encounter with the impertinent faith healer. The liberties he takes are simply too much and improper. Such a blasphemous figure will surely harm not only the reputation of the Imperial family, but all of [ROOT.GetCountry.GetNameNoFormatting].\n\nThe former governess leverages all her social connections to gain an audience with the Grand Duchess, who she beseeches to talk sense into her sister, the [ROOT.GetCountry.GetCustom('get_rus_consort_title')]: "Never, in all my years, have I seen an ill-mannered peasant roam freely in the palace, let alone in the nurseries!""
+rasputin.2.a: "[SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting] stays."
+rasputin.2.b: "Send [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting] away."
+
+modifier_rasputin_not_dismissed: "Holy Devil Remains"
+
+revoke_rasputin_favorite_effect_tt: "[SCOPE.sCharacter('rasputin_scope').GetFullName] will no longer be the [concept_favorite] of [ROOT.GetCountry.GetRuler.GetFullNameWithTitle]"
+
+rasputin.3.t: "The Stabbing of [SCOPE.sCharacter('rasputin_scope').GetFullNameNoFormatting]"
+rasputin.3.d: "An attempt was made on [SCOPE.sCharacter('rasputin_scope').GetFullName]'s life just outside [SCOPE.sCharacter('rasputin_scope').GetHerHis] home in the early hours of the day. [SCOPE.sCharacter('rasputin_scope').GetSheHe|U] has been seriously wounded and is in need of medical care."
+rasputin.3.f: "The Imperial family receives news of the attempt on [SCOPE.sCharacter('rasputin_scope').GetFullNameNoFormatting]'s life while on a holiday cruise. The telegraph informs them that [SCOPE.sCharacter('rasputin_scope').GetSheHe] is on the brink of death and fighting for [SCOPE.sCharacter('rasputin_scope').GetHerHis] life after undergoing surgery. While the faith healer's fate remains uncertain, the [ROOT.GetCountry.GetCustom('get_rus_consort_title')] becomes frantic aboard the ship. She prays daily in the hopes that her son's savior survives.\n\n"My soul is tormented," the [ROOT.GetCountry.GetCustom('get_rus_consort_title')] laments. "Will my blessed redeemer soon no longer be of this world?""
+rasputin.3.a: "Ensure [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting] has the best care."
+rasputin.3.b: "Leave [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting]'s recovery to chance."
+
+rasputin_dies_tt: "[SCOPE.sCharacter('rasputin_scope').GetFullNameNoFormatting] dies from [SCOPE.sCharacter('rasputin_scope').GetHerHis] injuries"
+rasputin_lives_tt: "#b [SCOPE.sCharacter('rasputin_scope').GetFullNameNoFormatting] survives, barely#!"
+
+modifier_survived_assassination: "Survived Assassination"
+modifier_rasputin_legit_instability: "Holy Devil Survived"
+modifier_tsar_saved_rasputin: "Saved Unpopular Favorite"
+
+rasputin.4.t: "Attempted Assassination of [SCOPE.sCharacter('rasputin_scope').GetFullNameNoFormatting]"
+rasputin.4.d2: "Lured by the promise of meeting Princess Irina at a housewarming party, [SCOPE.sCharacter('rasputin_scope').GetFullName] has been found on the brink of death after a gruesome attack in the Yusupov Palace cellar. Investigators have named [SCOPE.sCharacter('conspirator_scope').GetFullName] as the architect of this plot."
+rasputin.4.d: "There has been another attempt on the life of [ROOT.GetCountry.GetRuler.GetFullNameWithTitle]'s [concept_favorite]. [SCOPE.sCharacter('rasputin_scope').GetFullName] has been found on the brink of death, [SCOPE.GetRootScope.GetCountry.GetCustom('rasputin_death_reason')] by [SCOPE.GetRootScope.GetCountry.GetCustom('rasputin_death_perpetrator')]."
+rasputin.4.f: "The savior of [SCOPE.sCharacter('alexei_scope').GetFullNameNoFormatting] has become known as an enemy of [ROOT.GetCountry.GetNameNoFormatting] throughout the court. Despite the numerous plots of conspirators to rid the Imperial family of [SCOPE.sCharacter('rasputin_scope').GetHerHis] influence, [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting] clings to life while on death's door. But has this faith healer's fortune run out?\n\nAll throughout [ROOT.GetCountry.GetCapital.GetCityHubName] people wait with bated breath to know the fate of the Imperial family's favored #italic starets#!."
+rasputin.4.a: "For the sake of [SCOPE.sCharacter('alexei_scope').GetFullName], [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting] must survive."
+rasputin.4.b: "[SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting]'s fate is in God's hands."
+rasputin_ig_instability_tt: "Applies #tooltippable;tooltip:[GetPlayer.GetTooltipTag],modifier_rasputin_ig_instability_tt $modifier_rasputin_ig_instability$#! to #b every#! [concept_interest_group] [concept_in_government] that does not already have it for #v [GetPlayer.MakeScope.ScriptValue('display_normal_modifier_time')]#! years"
+modifier_rasputin_ig_instability_tt: "[GetStaticModifier('modifier_rasputin_ig_instability').GetName|v]\n[GetStaticModifier('modifier_rasputin_ig_instability').GetDesc]"
+
+modifier_rasputin_ig_instability: "Political Outrage"
+
+# rasputin_death_reason
+rasputin_death_stab: "run through with a knife"
+rasputin_death_poison_cakes: "a victim of poisoned cakes"
+rasputin_death_shot: "shot in the chest"
+rasputin_death_dumbbell: "beaten with a dumbbell"
+rasputin_death_drowned: "drowned under a bridge"
+rasputin_death_bludgeoned: "bludgeoned with a heavy wooden cross"
+
+# rasputin_death_perpetrator
+rasputin_death_noble: "a disgruntled noble"
+rasputin_death_lover: "a former lover"
+rasputin_death_monk: "a mad monk"
+rasputin_death_conspirators: "a group of conspirators"
+rasputin_death_governess: "a scandalized governess"
+rasputin_death_bishop: "an outraged bishop"
+
+rasputin.5.t: "The Prince's Concern"
+rasputin.5.d: "An incriminating letter written by [SCOPE.sCharacter('felix_scope').GetFullName], a prominent aristocrat married to the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s niece, has been discovered. [SCOPE.sCharacter('felix_scope').GetLastNameNoFormatting] makes it no secret that [SCOPE.sCharacter('felix_scope').GetSheHe] vehemently opposes [SCOPE.sCharacter('rasputin_scope').GetLastName]'s influence in court and has turned to [SCOPE.sCharacter('relevant_character_scope').GetFullName] for support in ousting the #italic starets#!."
+rasputin.5.f: ""It is no wonder that many men and women are lured by the promises of this starets's methods. The magnetism of [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting]'s hypnotic powers and piercing gaze are undeniable," [SCOPE.sCharacter('felix_scope').GetFullNameNoFormatting] writes. "[SCOPE.sCharacter('rasputin_scope').GetHerHis|U] continued presence in court is insupportable and I now worry that [SCOPE.sCharacter('rasputin_scope').GetSheHe] is a threat to the future of [ROOT.GetCountry.GetNameNoFormatting]. [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting] must go. [SCOPE.sCharacter('relevant_character_scope').GetLastNameNoFormatting], do I have your support in this endeavor? I urge you to consider your stance on this matter.""
+rasputin.5.a: "The House of [SCOPE.sCharacter('felix_scope').GetLastNameNoFormatting] will always remain loyal to the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s interests."
+rasputin.5.b: "The prince must exercise caution when speaking of [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting]."
+modifier_felix_ig_upset: "Ignored Prince's Concerns"

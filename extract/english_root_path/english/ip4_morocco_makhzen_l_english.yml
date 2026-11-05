@@ -4,9 +4,9 @@
 
 # JE
  je_lands_of_anarchy: "Bilaad al-Siba"
- je_lands_of_anarchy_reason: "Over the centuries, the holy Makhzen and the uncivilized tribes scattered across our lands have coexisted in a mutually diplomatic relationship without much concern.\n\nWith an ambitious dream of becoming the #b $dyn_c_ottoman_empire$#! of the West, our nation is recognizing the importance of a strong central government with the means to reach every part of its realm.\n\nRecently, our [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] over these settled tribes of the deserts and highlands has begun to weaken. We must establish connections and reasons between the two lands and draw them out of their tents into urban life."
- je_lands_of_anarchy_complete_tt: "All [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] bars of the owned [Concept('concept_state','$concept_states$')] are above #bold 400#!."
- je_lands_of_anarchy_fail_tt: "All [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] bars of the owned [Concept('concept_state','$concept_states$')] are below #bold 100#!."
+ je_lands_of_anarchy_reason: "Over the centuries, the holy Makhzen and the uncivilized tribes scattered across our lands have coexisted in a mutually diplomatic relationship without much concern.\n\nWith an ambitious dream of becoming the #b $dyn_c_ottoman_empire$#! of the West, our nation is recognizing the importance of a strong central government with the means to reach every part of its realm.\n\nRecently, our [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] over these settled tribes of the deserts and highlands has begun to weaken. We must establish connections and reasons between the two lands and draw them out of their tents into urban life."
+ je_lands_of_anarchy_complete_tt: "All [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] bars of the owned [Concept('concept_state','$concept_states|q$')] are above #bold 400#!."
+ je_lands_of_anarchy_fail_tt: "All [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] bars of the owned [Concept('concept_state','$concept_states|q$')] are below #bold 100#!."
 
 # Scripted Buttons
  je_lands_of_anarchy_harka_activate_button: "Assemble the Harka"
@@ -17,14 +17,14 @@
  je_lands_of_anarchy_colonize_sahara_button_desc: "From the tribes of the Tekna to Tafilalt, from the oasis of Tuat to the mines of Mali. Once did Morocco control the movement of trade and people across the entire region, and now the time has come to look outwards once more."
 
 # Progress bar
- lands_of_anarchy_tribes_of_marrakech_bar: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] over the tribes of [GetStateRegion('STATE_MARRAKECH').GetName]"
- lands_of_anarchy_tribes_of_marrakech_bar_desc: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] over the tribes of [GetStateRegion('STATE_MARRAKECH').GetName]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/500)"
+ lands_of_anarchy_tribes_of_marrakech_bar: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] over the tribes of [GetStateRegion('STATE_MARRAKECH').GetName]"
+ lands_of_anarchy_tribes_of_marrakech_bar_desc: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] over the tribes of [GetStateRegion('STATE_MARRAKECH').GetName]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/500)"
 
- lands_of_anarchy_tribes_of_al_rif_bar: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] over the tribes of [GetStateRegion('STATE_AL_RIF').GetName]"
- lands_of_anarchy_tribes_of_al_rif_bar_desc: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] over the tribes of [GetStateRegion('STATE_AL_RIF').GetName]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/500)"
+ lands_of_anarchy_tribes_of_al_rif_bar: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] over the tribes of [GetStateRegion('STATE_AL_RIF').GetName]"
+ lands_of_anarchy_tribes_of_al_rif_bar_desc: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] over the tribes of [GetStateRegion('STATE_AL_RIF').GetName]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/500)"
 
- lands_of_anarchy_tribes_of_inner_morocco_bar: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] over the tribes of [GetStateRegion('STATE_INNER_MOROCCO').GetName]"
- lands_of_anarchy_tribes_of_inner_morocco_bar_desc: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] over the tribes of [GetStateRegion('STATE_INNER_MOROCCO').GetName]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/500)"
+ lands_of_anarchy_tribes_of_inner_morocco_bar: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] over the tribes of [GetStateRegion('STATE_INNER_MOROCCO').GetName]"
+ lands_of_anarchy_tribes_of_inner_morocco_bar_desc: "[Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] over the tribes of [GetStateRegion('STATE_INNER_MOROCCO').GetName]: ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|0]/500)"
 
 # Events
 #1 Initial Event
@@ -32,7 +32,7 @@
  lands_of_anarchy.1.d: "Time-honored tribes around the corners of our nation have become increasingly difficult to control. If we don't demonstrate our authority, they might slip out of our grasp."
  lands_of_anarchy.1.f: ""...secondly, asking for that much mahr is somewhat untraditional and quite rude. My nephew is thinking about withdrawing if she insists.\n\n"Ayrad, my old friend, since when do you judge our marriage contracts by the customs of urban people? At my age, I have yet to hear a shaykh lecture fiqh about limits on a bride's demands from the groom."\n\nSeeing the failure of his attempt, Elder Ayrad reconsidered his options."
  lands_of_anarchy.1.a: "They shall face the might of Makhzen."
- lands_of_anarchy.1_tt: "[SCOPE.sState('al_rif_state_scope').GetName], [SCOPE.sState('marrakech_state_scope').GetName] and [SCOPE.sState('inner_morocco_state_scope').GetName] have received a modifier named #bold State of Anarchy#!, with scaling penalties based on their [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] values shown in the #bold $je_lands_of_anarchy$#! [concept_journal_entry]."
+ lands_of_anarchy.1_tt: "[SCOPE.sState('al_rif_state_scope').GetName], [SCOPE.sState('marrakech_state_scope').GetName] and [SCOPE.sState('inner_morocco_state_scope').GetName] have received a modifier named #bold State of Anarchy#!, with scaling penalties based on their [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] values shown in the #bold $je_lands_of_anarchy$#! [concept_journal_entry]."
 
 #2 Complete Event
  lands_of_anarchy.2.t: "Lands of Harmony"
@@ -57,24 +57,24 @@
  lands_of_anarchy.4.d: "Within the last few weeks, the advisors have collected reports regarding connections between several interest groups and certain well-known tribal families."
  lands_of_anarchy.4.f: "The couple, isolated from the hall's conversations, had sincere insecurities, growing up among the #italic uncivilized#!.\n\nListening to a dull oud performance, the scent of mint tea and perfumes of royalty brightened their senses as they waited for their sly contact. They had never been whispered to so much compared to city life in recent months."
  lands_of_anarchy.4.a: "The tribes of [SCOPE.sState('marrakech_state_scope').GetName] are known to fight well."
- lands_of_anarchy.4.a_tt: "A suitable warrior from [SCOPE.sState('marrakech_state_scope').GetName] will be presented as the new leader of the [SCOPE.gsInterestGroup('armed_forces_scope').GetName], generating #bold 1.5#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] per month over the state as long as the character stays as the leader."
+ lands_of_anarchy.4.a_tt: "A suitable warrior from [SCOPE.sState('marrakech_state_scope').GetName] will be presented as the new leader of the [SCOPE.gsInterestGroup('armed_forces_scope').GetName], generating #bold 1.5#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] per month over the state as long as the character stays as the leader."
  lands_of_anarchy.4.b: "Who is the most knowledgable alim of [SCOPE.sState('al_rif_state_scope').GetName]?"
- lands_of_anarchy.4.b_tt: "A suitable scholar from [SCOPE.sState('al_rif_state_scope').GetName] will be presented as the new leader of the [SCOPE.gsInterestGroup('devout_scope').GetName], generating #bold 1.5#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] per month over the state as long as the character stays as the leader."
+ lands_of_anarchy.4.b_tt: "A suitable scholar from [SCOPE.sState('al_rif_state_scope').GetName] will be presented as the new leader of the [SCOPE.gsInterestGroup('devout_scope').GetName], generating #bold 1.5#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] per month over the state as long as the character stays as the leader."
  lands_of_anarchy.4.c: "Noone knows these lands better than [SCOPE.sState('inner_morocco_state_scope').GetName]'s natives."
- lands_of_anarchy.4.c_tt: "A suitable amghar from [SCOPE.sState('inner_morocco_state_scope').GetName] will be presented as the new leader of the [SCOPE.gsInterestGroup('rural_folk_scope').GetName], generating #bold 1.5#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] per month over the state as long as the character stays as the leader."
+ lands_of_anarchy.4.c_tt: "A suitable amghar from [SCOPE.sState('inner_morocco_state_scope').GetName] will be presented as the new leader of the [SCOPE.gsInterestGroup('rural_folk_scope').GetName], generating #bold 1.5#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] per month over the state as long as the character stays as the leader."
  lands_of_anarchy.4.e: "We are here to govern them, not the other way around."
- lands_of_anarchy.4.e_tt: "#bold -0.3#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] to all anarchy states for #bold 5 years#!."
+ lands_of_anarchy.4.e_tt: "#bold -0.3#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] to all anarchy states for #bold 5 years#!."
 
 #5 Urban Medi
  lands_of_anarchy.5.t: "Urban Medicine"
  lands_of_anarchy.5.d: "A plea for our aid has been sent out by a specific tribe in [SCOPE.sState('anarchy_state_scope').GetName] regarding an incurable pandemic by their means."
  lands_of_anarchy.5.f: "A smoke of despair rises from a central fire of distress, attempting to lure in foreigners for aid.\n\nRecitations of duas believed to ease the pain of the sick from different suffering families can be heard easily through the coughs of the weak, as they ask the Creator for a way out of this test of faith.\n\nUnaffected young men occasionally climb to the nearby dunes to see if a royal party is arriving to bring glad tidings, though so far, there has been no success."
  lands_of_anarchy.5.a: "Do not hesitate."
- lands_of_anarchy.5.a_tt: "Royal chemists will prepare medicine packages for [SCOPE.sState('anarchy_state_scope').GetName], generating #bold 1#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] per month over the state for our merciful gesture."
+ lands_of_anarchy.5.a_tt: "Royal chemists will prepare medicine packages for [SCOPE.sState('anarchy_state_scope').GetName], generating #bold 1#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] per month over the state for our merciful gesture."
  lands_of_anarchy.5.b: "Let the privileged take the hit."
- lands_of_anarchy.5.b_tt: "Rich folk in [SCOPE.sState('fez_scope').GetName] will have to sponsor the aid to [SCOPE.sState('anarchy_state_scope').GetName], generating #bold 1#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] per month over the state for saving their lives."
+ lands_of_anarchy.5.b_tt: "Rich folk in [SCOPE.sState('fez_scope').GetName] will have to sponsor the aid to [SCOPE.sState('anarchy_state_scope').GetName], generating #bold 1#! [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] per month over the state for saving their lives."
  lands_of_anarchy.5.c: "They have the ways of alternative medicine after all."
- lands_of_anarchy.5.c_tt: "Refusing to spend our resources to unruly tribes will make a part of our population in [SCOPE.sState('fez_scope').GetName] happy, but the tribesmen will not forget this for a long time, reducing [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] for [SCOPE.sState('anarchy_state_scope').GetName] by #bold 0.5#! per month"
+ lands_of_anarchy.5.c_tt: "Refusing to spend our resources to unruly tribes will make a part of our population in [SCOPE.sState('fez_scope').GetName] happy, but the tribesmen will not forget this for a long time, reducing [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] for [SCOPE.sState('anarchy_state_scope').GetName] by #bold 0.5#! per month"
 
 # Modifiers
  state_of_anarchy_scaled_mod: "State of Anarchy"
@@ -113,9 +113,9 @@
  lands_of_anarchy_legitimacy_tt: "[concept_government] [concept_legitimacy]"
  lands_of_anarchy_fez_education_access_tt: "[concept_capital_state] [concept_literacy]"
  lands_of_anarchy_fez_infrastructure_tt: "[concept_capital_state] [concept_infrastructure]"
- lands_of_anarchy_state_radicals_tt: "[Concept('concept_radical','$concept_radicals$')] in [concept_state]"
+ lands_of_anarchy_state_radicals_tt: "[Concept('concept_radical','$concept_radicals|q$')] in [concept_state]"
  lands_of_anarchy_on_harka_tt: "being on Harka"
- lands_of_anarchy_on_harka_button_tt: "#bold +1#! per month to all [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short$')] bars while assembled."
+ lands_of_anarchy_on_harka_button_tt: "#bold +1#! per month to all [Concept('concept_lands_of_anarchy_control','$concept_lands_of_anarchy_control_short|q$')] bars while assembled."
  harka_cooldown_tt: "The #bold Harka#! has not been disassembled within #bold 2 years#!."
  lands_of_anarchy_tribe_leader_tt: "an [concept_interest_group] having a tribal leader"
  lands_of_anarchy_tribe_leader_rejected_tt: "rejecting to appoint an [concept_interest_group] tribal leader"

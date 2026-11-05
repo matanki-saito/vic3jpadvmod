@@ -3,7 +3,7 @@
  objective_tutorial_desc: "Play a campaign guided by challenges that help you learn both how the game works and how to play it."
  objective_tutorial_idle_header: "Explore and play the game!"
  objective_tutorial_idle_hint: "More challenges will appear eventually"
- 
+
  objective_tutorial_name_SWE: "#v $SWE$#!"
  objective_tutorial_desc_SWE: "#lore $SWE_FLAVOR_TEXT$#!"
  objective_tutorial_name_BEL: "#v $BEL$#!"
@@ -14,12 +14,12 @@
  objective_tutorial_desc_DAI: "#lore $DAI_FLAVOR_TEXT$#!"
  objective_tutorial_name_CLM: "#v $CLM$#!"
  objective_tutorial_desc_CLM: "#lore $CLM_FLAVOR_TEXT$#!"
- 
+
  objective_economic_dominance: "Economic Dominance"
  objective_economic_dominance_desc: "Aim to expand your production, market reach, and trade influence until the world economy is firmly within your control. Your ultimate goal will be to control the lion's share of global GDP."
  objective_economic_dominance_idle_header: "Continue on your path"
  objective_economic_dominance_idle_hint: "More challenges will appear eventually"
- 
+
  objective_economic_dominance_name_USA: "#v United States#!"
  objective_economic_dominance_desc_USA: "#lore $USA_FLAVOR_TEXT$#!"
  objective_economic_dominance_name_GBR: "#v $GBR$#!"
@@ -28,7 +28,7 @@
  objective_economic_dominance_desc_BRZ: "#lore $BRZ_FLAVOR_TEXT$#!"
  objective_economic_dominance_name_TUR: "#v $dyn_c_ottoman_empire$#!"
  objective_economic_dominance_desc_TUR: "#lore $TUR_FLAVOR_TEXT$#!"
- 
+
  objective_hegemon: "Hegemony"
  objective_hegemon_desc: "Nothing short of complete domination of the global populace will satisfy you. Subjugate, conquer, or simply grow your own population until most of the world live inside your borders."
  objective_hegemon_idle_header: "Continue on your path"
@@ -56,7 +56,7 @@
  objective_egalitarian_society_desc_CHI: "#lore $CHI_FLAVOR_TEXT$#!"
  objective_egalitarian_society_name_MEX: "#v $MEX$#!"
  objective_egalitarian_society_desc_MEX: "#lore $MEX_FLAVOR_TEXT$#!"
- 
+
  OBJECTIVE_TYPE_RECOMMENDED_GAME_RULE_DESC: "The following Game Rule(s) are recommended:"
  OBJECTIVE_TYPE_RECOMMENDED_GAME_RULE_ITEM_TEXT: "- [GameRuleSetting.GetGameRule.GetName]: #variable [GameRuleSetting.GetName]#!"
  SELECTED_OBJECTIVE_RECOMMENDED_GAME_RULE_DESC: "[GameRuleSetting.GetDescription]. The "$NAME$" objective suggests the following setting: #variable $RULE$#!."
@@ -67,31 +67,38 @@
  # Economic Dominance
 
  economic_dominance_welcome: "Economic Dominance"
- economic_dominance_welcome_desc: "Through the course of this objective you will be given a series of [Concept('journal_entry','$Journal Entries$')] to complete. How you choose to complete these tasks will be left up to you, the player.\n\nNOTE: You will need to have an Iron or Coal mine in your country before getting your first Journal Entry."
+ economic_dominance_welcome_desc: "Through the course of this objective you will be given a series of [Concept('journal_entry','$Journal Entries|q$')] to complete. How you choose to complete these tasks will be left up to you, the player.\n\nNOTE: You will need to have an Iron or Coal mine in your country before getting your first Journal Entry."
  economic_dominance_lesson_button_skip: "Onwards!"
 
  je_objective_expand_goods_production: "Expand our Mining Industries"
  je_objective_expand_goods_production_status: "Expand the [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName]"
  je_objective_expand_goods_production_reason: "We should take our first steps towards increasing our domestic output. We should expand the [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName]. This will place us in a strong position to expand industries further in the future."
  je_objective_expand_goods_production_goal: "Increase [JournalEntry.GetTarget.GetBuilding.GetName] in [JournalEntry.GetTarget.GetBuilding.GetState.GetName] by one level."
+ je_objective_expand_goods_production_activation_tt: "[GetPlayer.GetName] has [GetBuildingType('building_iron_mine').GetName] or [GetBuildingType('building_coal_mine').GetName]"
 
  expand_goods_production_complete_1: "Production Increased!"
- expand_goods_production_complete_1_desc: "Well done! You have completed the first part of the Economic Dominance Objective. Continue to complete [Concept('journal_entry','$Journal Entries$')] to unlock additional tasks."
+ expand_goods_production_complete_1_desc: "Well done! You have completed the first part of the Economic Dominance Objective. Continue to complete [Concept('journal_entry','$Journal Entries|q$')] to unlock additional tasks."
 
  je_refining_goods: "Refining our Production"
  je_refining_goods_status: "Have a level 4 [GetBuildingType('building_steel_mill').GetName] in a state."
- je_refining_goods_reason: "Having increased our raw [Concept('concept_good','$concept_goods$')] production, we should now look to refine these $concept_goods$ to increase potential for profits across our nation. Why import from others when we can make it ourselves?"
+ je_refining_goods_reason: "Having increased our raw [Concept('concept_good','$concept_goods|q$')] production, we should now look to refine these $concept_goods$ to increase potential for profits across our nation. Why import from others when we can make it ourselves?"
+ je_refining_goods_activation_tt: "The #v $je_objective_expand_goods_production$#! [concept_journal_entry] has concluded"
 
  je_specialized_goods: "Specialized Goods Production"
  je_specialized_goods_status: "Have a level 2 [GetBuildingType('building_motor_industry').GetName] in a state."
  je_specialized_goods_reason: "We should look to diversify our goods production further. We have started production of one good, but if we begin producing even more expensive goods, we will be able to export it to all the corners of the globe."
+ je_specialized_goods_activation_tt: "The #v $je_refining_goods$#! [concept_journal_entry] has concluded"
 
  je_expanding_the_market: "Expanding our Market"
  je_expanding_the_market_status: "Have 8 nations a part of your [concept_customs_union]."
  je_expanding_the_market_reason: "We should look to expanding our $concept_customs_union$ with additional nations. This will allow for freer and more direct trade with other nations, without the need to [concept_trade] with the [concept_world_market]."
+ je_expanding_the_market_activation_tt: "The #v $je_specialized_goods$#! [concept_journal_entry] has concluded"
 
  je_strong_market: "The Strong Market"
  je_strong_market_reason: "The time has come to establish ourselves as the largest and most powerful market on the globe."
+ je_strong_market_activation_tt: "The #v $je_expanding_the_market$#! [concept_journal_entry] has concluded"
+ je_strong_market_activation_2_tt: "The #v $je_lower_production_costs$#! [concept_journal_entry] has concluded"
+ je_strong_market_activation_3_tt: "Either the #v $je_raise_exports_value$#! or the #v $je_utilizing_our_strength$#! [concept_journal_entry] has concluded"
 
  economic_dominance_complete_1: "Economic Dominance Completed"
  economic_dominance_complete_desc: "Well done! You have completed the Economic Dominance Objective. Feel free to continue playing the game or try a different objective."
@@ -100,18 +107,23 @@
 
  je_specialized_inputs: "Improving Production"
  je_specialized_inputs_reason: "With our production of industrialized products now well under way we should look to reinvest these goods back into our other buildings. We will then be able to free up other workers to work elsewhere.\n\nNOTE: Completing this journal entry will invalidate the Exporting our Profits journal entry."
+ je_specialized_inputs_activation_tt: "The #v $je_specialized_goods$#! [concept_journal_entry] has concluded"
 
  je_utilizing_our_strength: "Utilizing Our Strength"
  je_utilizing_our_strength_reason: "As we have decided to focus on using our industrial goods for ourselves. It would be best to keep the price of these goods as low as possible so as to not ramp up costs on other buildings that rely heavily on these goods to stay profitable."
+ je_utilizing_our_strength_activation_tt: "The #v $je_specialized_inputs$#! [concept_journal_entry] has been completed"
 
  je_exporting_profits: "Exporting Our Profits"
  je_exporting_profits_reason: "Now that we have a large stockpile of goods, we can begin exporting these goods as to increase the profitability of their production buildings.\n\nNOTE: Completing this journal entry will invalidate the Improving Production journal entry."
+ je_exporting_profits_activation_tt: "The #v $je_specialized_goods$#! [concept_journal_entry] has concluded"
 
  je_raise_exports_value: "Increasing Export Value"
  je_raise_exports_value_reason: "With our focus now being placed on the exportation of our valuable goods, the best course of action would be to increase the value of these goods to maximize the profits the buildings are earning."
- 
+ je_raise_exports_value_activation_tt: "The #v $je_exporting_profits$#! [concept_journal_entry] has been completed"
+
  je_lower_production_costs: "Lowering Consumption Prices"
  je_lower_production_costs_reason: "With our growing industries not only do we need to maintain a steady stream of goods into our factories, we also need to check that these input goods are not too expensive and negatively affecting production of additional more valuable goods."
+ je_lower_production_costs_activation_tt: "The #v $je_refining_goods$#! [concept_journal_entry] has concluded"
 
  tt_lower_production_costs_sub_obj: "Have [GetGoods('iron').GetName], [GetGoods('coal').GetName], and [GetGoods('steel').GetName] in [AccessPlayer.AccessFirstMarket.GetName] 20% cheaper than their [concept_base_price]"
  tt_raise_exports_value_sub_obj: "Have [GetGoods('engines').GetName] in [AccessPlayer.AccessFirstMarket.GetName] 50% pricier than their [concept_base_price]"
@@ -125,27 +137,41 @@
 
  je_objective_encourage_liberal_ideas: "Encourage Liberal Thought"
  je_objective_encourage_liberal_ideas_reason: "The first steps to creating any form of Egalitarian Society should be to get the right people in government. With them in a position to enact change, we can take our first steps towards a more equal society."
+ je_objective_encourage_liberal_ideas_activation_tt: "The [AccessPlayer.GetObjective.GetObjectiveType.GetName] objective is active"
 
  je_pass_laws: "Passing Laws"
  je_pass_laws_reason: "Now that we have a more powerful liberal element in our government, we should look to using their influence in passing more egalitarian laws.\n\nNOTE: Regressing any of these laws after completing this Journal will result in this Journal being hidden until the law is enacted again." #update number
+ je_pass_laws_activation_tt: "Either the #v $je_objective_encourage_liberal_ideas$#! or the #v $je_liberate_the_slaves$#! [concept_journal_entry] has concluded"
 
  je_public_services: "Public Services"
- je_public_services_reason: "With our laws in place we should look to expand our [Concept('concept_institution','$concept_institutions$')] so that they can become more readily available and accessible to our population.$egalitarian_objective_note_loc$"
+ je_public_services_reason: "With our laws in place we should look to expand our [Concept('concept_institution','$concept_institutions|q$')] so that they can become more readily available and accessible to our population.$egalitarian_objective_note_loc$"
+ je_public_services_activation_tt: "The #v $je_pass_laws$#! [concept_journal_entry] has concluded"
+ je_public_services_activation_2_tt: "[GetPlayer.GetName] has enacted [GetLawType('law_multicultural').GetName], [GetLawType('law_public_schools').GetName] and [GetLawType('law_protected_speech').GetName]"
+ je_public_services_activation_3_tt: "[GetPlayer.GetName] has no state religion"
 
  je_liberate_the_slaves: "Liberate the Slaves"
  je_liberate_the_slaves_reason: "How can we even begin to call ourselves an Egalitarian Society when we are still in the active practice of utilizing slavery within in our nation? It is vital that our first step should be to put a stop to this outdated and immoral practice."
+ je_liberate_the_slaves_activation_tt: "The [AccessPlayer.GetObjective.GetObjectiveType.GetName] objective is active"
 
  je_women_and_children: "Women and Children"
  je_women_and_children_reason: "We have taken many steps towards establishing our Egalitarian Society, but we still need to make sure that these rights are available to all. We should look towards ending unfair practices against women and children.$egalitarian_objective_note_loc$"
+ je_women_and_children_activation_tt: "The #v $je_public_services$#! [concept_journal_entry] has concluded"
+ je_women_and_children_activation_2_tt: "[GetPlayer.GetName] still upholds [GetLawType('law_multicultural').GetName], [GetLawType('law_public_schools').GetName] and [GetLawType('law_protected_speech').GetName]"
+ je_women_and_children_activation_3_tt: "[GetPlayer.GetName] has no state religion"
 
  je_egalitarian_society: "An Egalitarian Society"
  je_egalitarian_society_reason: "Now that we have all the laws and institutions in place, we should look to making sure that we have an equal society that allows for equal opportunities for all our citizens. Our nation should be seen as a shining beacon that will lead the world on an Egalitarian Path.$egalitarian_objective_note_loc$"
+ je_egalitarian_society_activation_tt: "The #v $je_women_and_children$#! [concept_journal_entry] has concluded"
+ je_egalitarian_society_activation_2_tt: "The #v $je_liberate_the_slaves$#! [concept_journal_entry] has concluded"
+ je_egalitarian_society_activation_3_tt: "[GetPlayer.GetName] still upholds [GetLawType('law_multicultural').GetName], [GetLawType('law_public_schools').GetName] and [GetLawType('law_protected_speech').GetName]"
+ je_egalitarian_society_activation_4_tt: "[GetPlayer.GetName] has enacted [GetLawType('law_compulsory_primary_school').GetName] and [GetLawType('law_womens_suffrage').GetName]"
+ je_egalitarian_society_activation_5_tt: "[GetPlayer.GetName] has no state religion"
 
  liberalizing_the_government_complete: "Liberal Thought"
  liberalizing_the_government_complete_desc: "Now that you have completed your first Journal Entry you are well on your way to completing the remaining parts of this objective and creating your Egalitarian Society."
 
  egalitarian_society_welcome: "Egalitarian Society"
- egalitarian_society_welcome_desc: "Welcome to the Egalitarian Society Player Objective. In this objective you will be given a series of [Concept('concept_journal_entry', '$concept_journal_entries$')] to complete that will guide you down a path towards an Egalitarian Society."
+ egalitarian_society_welcome_desc: "Welcome to the Egalitarian Society Player Objective. In this objective you will be given a series of [Concept('concept_journal_entry', '$concept_journal_entries|q$')] to complete that will guide you down a path towards an Egalitarian Society."
 
  liberalizing_the_government_complete_1: "Liberal Thinking"
  liberalizing_the_government_complete_1_desc: "Well done! You have just completed your first objective and now you are now well on the way to creating your Egalitarian Society."
@@ -153,7 +179,7 @@
  egalitarian_society_complete: "Egalitarian Society Completed"
  egalitarian_society_complete_desc: "Well done! You have completed the Egalitarian Society Objective. Feel free to continue playing the game or try a different objective."
 
- je_liberate_the_slaves_invalid_tooltip: "If [JournalEntry.GetTarget.GetCountry.GetName] is no longer exists."
+ je_liberate_the_slaves_invalid_tooltip: "If [JournalEntry.GetTarget.GetCountry.GetName] no longer exists."
 
  egalitarian_objective_note_loc: "\n\nNOTE: Regressing any of the laws passed in the previous Journal Entries will result in this Journal being hidden and you will be unable to progress further through this objective until the law is enacted again."
 
@@ -162,42 +188,62 @@
 
  je_colonization_laws: "A Colonial Power"
  je_colonization_laws_reason: "Our first steps to establishing our hegemony should be to expand our borders overseas. We should amend our laws to allow us to colonize, in order to further our goals."
+ je_colonization_laws_activation_tt: "The [AccessPlayer.GetObjective.GetObjectiveType.GetName] objective is active"
 
  je_african_colonies: "African Colonies"
  je_african_colonies_reason: "Now that our laws allow us to establish our own colonies, we should look towards acquiring new lands on the African Continent as our first steps in expanding our hegemony."
+ je_african_colonies_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] has concluded"
 
  je_expand_navy_and_army: "Bolstering the Military"
  je_expand_navy_and_army_reason: "With our first colonies established, we should be prepared for the worst. Our army doesn't need to be the strongest in the world, but we should aim to dissuade others from attempting a [concept_diplomatic_play] against us."
+ je_expand_navy_and_army_activation_tt: "The #v $je_african_colonies$#! [concept_journal_entry] has concluded"
 
  je_form_alliance: "Form Alliances"
  je_form_alliance_reason: "Maintaining a powerful army is important, but it is not the only way we can maintain our security. We should also create alliances with other powers around the globe that can come to our aid in case another nation wishes to attempt to take what is rightfully ours."
+ je_form_alliance_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] has concluded"
 
  je_take_subject: "Maintain Subjects"
  je_take_subject_reason: "With our power solidified, we should expand our sphere of influence over other nations. Subjugating a few nations will go a long way in increasing our influence on the international stage."
+ je_take_subject_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] has concluded"
 
  je_increase_technology: "Solidify Our Technological Advantage"
  je_increase_technology_reason: "Numbers are great, but we shouldn't have to rely on having an overwhelming amount of soldiers if it can be helped. We should look into getting our soldiers the right tools for the right jobs."
+ je_increase_technology_activation_tt: "The #v $je_expand_navy_and_army$#! [concept_journal_entry] has concluded"
 
  je_greatest_power: "The Greatest Power"
  je_greatest_power_reason: "We may be recognized on the global stage as a Great Power, but we should show the world that we are the Greatest Power, none should be our equal."
+ je_greatest_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] has concluded"
+ je_greatest_power_activation_2_tt: "[GetPlayer.GetName] started the game as a [Concept('concept_great_power','$concept_great_power|q$')]"
 
  je_greater_power: "A Great Power"
  je_greater_power_reason: "We have been a regional power, but now we should look to solidify our standing in the world and join the other Great Powers as a show of our might."
+ je_greater_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] has concluded"
+ je_greater_power_activation_2_tt: "[GetPlayer.GetName] started the game as a [Concept('concept_major_power','$concept_major_power|q$')]"
 
  je_great_power: "Major Power"
  je_great_power_reason: "We have never been the strongest, but that changes now! We will show the world we aren't some tiny speck of land off in the distance whose tiny voice should be ignored."
+ je_great_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] has concluded"
+ je_great_power_activation_2_tt: "[GetPlayer.GetName] started the game as a [Concept('concept_minor_power','$concept_minor_power|q$')] or lower"
 
  je_unrecognized_power: "Recognized Power"
  je_unrecognized_power_reason: "Shunned by so-called "civilized" powers, through toil and struggle we shall prove our worth to them, and secure for ourselves a respected place among the fellowship of nations. "
+ je_unrecognized_power_activation_tt: "#v $je_colonization_laws$#! [concept_journal_entry] has concluded"
+ je_unrecognized_power_activation_2_tt: "[GetPlayer.GetName] started the game as an [Concept('concept_unrecognized_power','$concept_unrecognized_major_power|q$')]"
 
  je_the_hegemon: "The Hegemon"
  je_the_hegemon_reason: "We have shown the world what we are capable of. We have made great strides. Now however we should make sure we have the population to back our global standing."
+ je_the_hegemon_activation_tt: "[GetPlayer.GetCustom('hegemon_rank_objective_je')] has concluded"
+ hegemon_rank_objective_je_greatest: "#v $je_greatest_power$#! [concept_journal_entry]"
+ hegemon_rank_objective_je_greater: "#v $je_greater_power$#! [concept_journal_entry]"
+ hegemon_rank_objective_je_great: "The #v $je_great_power$#! [concept_journal_entry]"
+ hegemon_rank_objective_je_unrecognized: "The #v $je_unrecognized_power$#! [concept_journal_entry]"
+ hegemon_rank_objective_je_fallback: "The rank advancement goal"
 
  colonization_law_passed_complete_1: "Colonial Power"
  colonization_law_passed_complete_1_desc: "Well done! You have just completed your first objective and are now well on your way to establishing your own hegemony."
 
  hegemon_welcome: "Hegemony"
- hegemon_welcome_desc: "Welcome to the Hegemony Player Objective. In this objective you will be given a series of [Concept('concept_journal_entry', '$concept_journal_entries$')] to complete that will guide you down a path towards creating your own hegemony."
+ hegemon_welcome_desc: "Welcome to the Hegemony Player Objective. In this objective you will be given a series of [Concept('concept_journal_entry', '$concept_journal_entries|q$')] to complete that will guide you down a path towards creating your own hegemony."
 
  hegemon_complete: "Hegemony Completed"
  hegemon_complete_desc: "Well done! You have completed the Hegemony Objective. Feel free to continue playing the game or try a different objective."

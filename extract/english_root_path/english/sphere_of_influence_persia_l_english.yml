@@ -1,19 +1,20 @@
 ﻿l_english:
  je_eastern_frontier: "The Eastern Frontier"
- je_eastern_frontier_reason: "The great expanse to our east, dominated by once bustling cities such as [SCOPE.sStateRegion('merv_scope').GetName] and [SCOPE.sStateRegion('herat_scope').GetName], have comprised part of [SCOPE.GetRootScope.GetCountry.GetAdjective] Khorasan ever since the days of Manochehr. While these lands have since been wrested from us by the passage of time and the domination of oppressive and powerful rulers, it can be so no longer.\n\nDecisive steps must be taken to reintegrate these wayward lands, so that no foreign power may invade and subjugate them again.\n\n#bold Turanian Captivity#!\nGenerations of Turkmen raids into our lands have resulted in large populations of Persian slaves toiling in oases such as [SCOPE.sStateRegion('uzbekia_scope').GetName] and [SCOPE.sStateRegion('khiva_scope').GetName]. Capturing these areas will allow us to liberate and #tooltippable #tooltip:je_eastern_frontier_tt_5 resettle#!#! enslaved Persian communties, if we so please."
+ je_eastern_frontier_reason: "The great expanse to our east, dominated by once bustling cities such as [GetStateRegion('STATE_MERZ').GetName] and [GetStateRegion('STATE_HERAT').GetName], have comprised part of [SCOPE.GetRootScope.GetCountry.GetAdjective] Khorasan ever since the days of Manochehr. While these lands have since been wrested from us by the passage of time and the domination of oppressive and powerful rulers, it can be so no longer.\n\nDecisive steps must be taken to reintegrate these wayward lands, so that no foreign power may invade and subjugate them again.\n\n#bold Turanian Captivity#!\nGenerations of Turkmen raids into our lands have resulted in large populations of Persian slaves toiling in oases such as [GetStateRegion('STATE_UZBEKIA').GetName] and [GetStateRegion('STATE_KHIVA').GetName]. Capturing these areas will allow us to liberate and #tooltippable #tooltip:je_eastern_frontier_tt_5 resettle#!#! enslaved Persian communties, if we so please."
  je_eastern_frontier_tt_1: "[GetGeographicRegion('geographic_region_greater_khorasan').GetName] is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."
  je_eastern_frontier_tt_2: "[GetGeographicRegion('geographic_region_chorasmia').GetName] is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."
  je_eastern_frontier_tt_3: "[GetGeographicRegion('geographic_region_transoxiana').GetName] is owned by [SCOPE.GetRootScope.GetCountry.GetName] or its subjects."
- je_eastern_frontier_tt_4: "We have conquered and #bold restored#! [SCOPE.sStateRegion('merv_scope').GetName]."
+ je_eastern_frontier_tt_4: "We have conquered and #bold restored#! [GetStateRegion('STATE_MERZ').GetName]."
  je_eastern_frontier_tt_5: "By using the [GetDecreeType('decree_emergency_relief').GetName] [concept_decree], any owned [concept_state] can be designated as a resettlement target."
- 
- khorasan_tt: "Required [Concept('concept_state_region','$concept_state_regions$')]:\n$STATE_HERAT$\n$STATE_KABUL$\n$STATE_KANDAHAR$\n$STATE_BALKH$\n$STATE_CENTRAL_HIGHLANDS$\n$STATE_MERZ$\n$STATE_NORTHERN_BALUCHISTAN$"
- chorasmia_tt: "Required [Concept('concept_state_region','$concept_state_regions$')]:\n$STATE_KHIVA$\n$STATE_TURKMENIA$"
- transoxiana_tt: "Required [Concept('concept_state_region','$concept_state_regions$')]:\n$STATE_FERGANA$\n$STATE_TAJIKISTAN$\n$STATE_UZBEKIA$"
+ je_eastern_frontier_activation_tt: "Is #v $PER$#!"
+
+ khorasan_tt: "Required [Concept('concept_state_region','$concept_state_regions|q$')]:\n$STATE_HERAT$\n$STATE_KABUL$\n$STATE_KANDAHAR$\n$STATE_BALKH$\n$STATE_CENTRAL_HIGHLANDS$\n$STATE_MERZ$\n$STATE_NORTHERN_BALUCHISTAN$"
+ chorasmia_tt: "Required [Concept('concept_state_region','$concept_state_regions|q$')]:\n$STATE_KHIVA$\n$STATE_TURKMENIA$"
+ transoxiana_tt: "Required [Concept('concept_state_region','$concept_state_regions|q$')]:\n$STATE_FERGANA$\n$STATE_TAJIKISTAN$\n$STATE_UZBEKIA$"
 
  greater_khorasan_button: "Claim Greater Khorasan"
- greater_khorasan_button_desc: "While [SCOPE.GetRootScope.GetCountry.GetAdjective] claims to Greater Khorasan stretch back millennia, in recent centuries our control of the area have ranged from loose to nominal. Nader Shah's eastern campaigns briefly saw the restoration of Persian control to Khorasan, but his achievements proved fleeting and would not outlast his reign.\n\nWhat Nader Shah begun, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] shall finish, with a grand campaign that will see Persian rule restored in the east for perpetuity. [SCOPE.sStateRegion('herat_scope').GetName], the Pearl of Khorasan and our key to the east will serve as the lynchpin of this great undertaking."
- greater_khorasan_button_tt: "Depending on our mutual [concept_relations], [SCOPE.sCountry('britain_scope').GetName] may react negatively to our occupation of [SCOPE.sStateRegion('herat_scope').GetName]."
+ greater_khorasan_button_desc: "While [SCOPE.GetRootScope.GetCountry.GetAdjective] claims to Greater Khorasan stretch back millennia, in recent centuries our control of the area have ranged from loose to nominal. Nader Shah's eastern campaigns briefly saw the restoration of Persian control to Khorasan, but his achievements proved fleeting and would not outlast his reign.\n\nWhat Nader Shah begun, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] shall finish, with a grand campaign that will see Persian rule restored in the east for perpetuity. [GetStateRegion('STATE_HERAT').GetName], the Pearl of Khorasan and our key to the east will serve as the lynchpin of this great undertaking."
+ greater_khorasan_button_tt: "Depending on our mutual [concept_relations], [SCOPE.sCountry('britain_scope').GetName] may react negatively to our occupation of [GetStateRegion('STATE_HERAT').GetName]."
 
  persian_baluchistan_button: "Pacify the Turkmens"
  persian_baluchistan_button_desc: "To our north, unruly [SCOPE.sCountry('turkmenia_scope').GetAdjectiveNoFlag] tribes defy our authority by raiding our lands, abducting thousands of our subjects every year to be sold off in the great slave markets of Bukhara and Khiva—ever while squatting on rightful Persian lands. Let us kill two birds with one stone and force these bandits to heel."
@@ -33,8 +34,8 @@
  persia_british_aid_button_desc: "Request the $GBR_ADJ$ government dispatch a military mission to help modernize our army, in return for certain diplomatic and extraterritorial consessions.\n\nThe first mission sent will establish the #bold South Persia Rifles#! as a #bold permanent#! military institution."
  persia_british_aid_button_cooldown_tt: "Has not used the $persia_british_aid_button$ decision in the past #variable 10#! years#!"
 
- persia_resettle_merv_button: "Restore [SCOPE.sStateRegion('merv_scope').GetName]"
- persia_resettle_merv_button_desc: "Once seen as the capital of the eastern Islamic world, and sporting a population of near half a million, #bold Merv the Great#! has since fallen on hard times. Following centuries of decline, in the late 18th century Merv would be razed for good by Shah Murad of Bukhara, who broke the dams sustaining the oasis and transplanted tens of thousands of its [SCOPE.sCulture('persian_culture').GetName] inhabitants to [SCOPE.sStateRegion('uzbekia_scope').GetName].\n\nNow, only sparse ruins remain, with [SCOPE.sCulture('turkmen_culture').GetName] tribes grazing livestock in the decrepit corpse of the old city. Restoring it will not be an easy task, but restore it we shall."
+ persia_resettle_merv_button: "Restore [GetStateRegion('STATE_MERZ').GetName]"
+ persia_resettle_merv_button_desc: "Once seen as the capital of the eastern Islamic world, and sporting a population of near half a million, #bold Merv the Great#! has since fallen on hard times. Following centuries of decline, in the late 18th century Merv would be razed for good by Shah Murad of Bukhara, who broke the dams sustaining the oasis and transplanted tens of thousands of its [SCOPE.sCulture('persian_culture').GetName] inhabitants to [GetStateRegion('STATE_UZBEKIA').GetName].\n\nNow, only sparse ruins remain, with [SCOPE.sCulture('turkmen_culture').GetName] tribes grazing livestock in the decrepit corpse of the old city. Restoring it will not be an easy task, but restore it we shall."
 
  persia_events.1.t: "Land of the Rising Sun"
  persia_events.1.d: "With the eastern borders of [SCOPE.GetRootScope.GetCountry.GetName] restored in full, [SCOPE.GetRootScope.GetCountry.GetRuler.GetPrimaryRoleTitle] [SCOPE.GetRootScope.GetCountry.GetRuler.GetFirstName] has overseen the final righting of a great historical wrong."
@@ -77,7 +78,7 @@
  persia_events.5.a: "Bismillah, unshackle every Persian found."
  persia_events.5.b: "Free them, and facilitate their relocation."
  persia_events.5.c: "Leave them in place, they are not worth the trouble."
- persia_events.5.tt: "If a [concept_state] has the [GetDecreeType('decree_emergency_relief').GetName] [concept_decree], a random state with that decree will be designated as the target for the freed [Concept('concept_pop','$concept_pops$')]. If not, then they will relocate to the province they were captured from."
+ persia_events.5.tt: "If a [concept_state] has the [GetDecreeType('decree_emergency_relief').GetName] [concept_decree], a random state with that decree will be designated as the target for the freed [Concept('concept_pop','$concept_pops|q$')]. If not, then they will relocate to the province they were captured from."
  modifier_slave_relocation_costs_persia: "Resettlement Expenses"
 
  persia_events.6.t: "[SCOPE.sCountry('persia_scope').GetNameNoFormatting] Occupies Herat"
@@ -106,60 +107,63 @@
  PER_appealed_to_rival_tt: "Does not have a pending or accepted request to a European [concept_great_power]"
  PER_GBR_support_request_rejected_tt: "$GBR$ has #bold not rejected#! a request for support in the last #variable 10 years#!"
  PER_RUS_support_request_rejected_tt: "$RUS$ has #bold not rejected#! a request for support in the last #variable 10 years#!"
- 
- notification_persian_assistance_request_accepted_name: "[SCOPE.sCountry('relevant_country').GetName] Accepts Request for Support"
- notification_persian_assistance_request_accepted_desc: "[SCOPE.sCountry('relevant_country').GetName] has accepted our request for a military mission."
- notification_persian_assistance_request_accepted_tooltip: "#header $notification_persian_assistance_request_accepted_name$#!\n$TOOLTIP_DELIMITER$\n$notification_persian_assistance_request_accepted_desc$"
 
- notification_persian_assistance_request_rejected_name: "[SCOPE.sCountry('relevant_country').GetName] Rejects Request for Support"
+ notification_persian_assistance_request_accepted_name: "[SCOPE.sCountry('relevant_country').GetName] accepts request for support"
+ notification_persian_assistance_request_accepted_desc: "[SCOPE.sCountry('relevant_country').GetName] has accepted our request for a military mission."
+
+ notification_persian_assistance_request_rejected_name: "[SCOPE.sCountry('relevant_country').GetName] rejects request for support"
  notification_persian_assistance_request_rejected_desc: "[SCOPE.sCountry('relevant_country').GetName] has sent a generic reply to our request for a military mission, stating that they cannot commit to assistance at this time."
- notification_persian_assistance_request_rejected_tooltip: "#header $notification_persian_assistance_request_rejected_name$#!\n$TOOLTIP_DELIMITER$\n$notification_persian_assistance_request_rejected_desc$"
 
  herat_war: "Herat War"
 
  je_secure_influence_over_persia: "Secure Influence over Persia"
  je_secure_influence_over_persia_reason: "Rich in wealth and resources, Persia also serves as a springboard for armies bound for the Indian and Central Asian heartlands. Any great power with stakes in these regions would be wise to secure this land for themselves, and wiser still to deny it to their adversaries."
+ je_secure_influence_over_persia_activation_tt: "Is #v $GBR$#! or #v $RUS$#!"
+ je_secure_influence_over_persia_activation_2_tt: "Has an [Concept('concept_interest','$concept_interest|q$')] in [GetStrategicRegion('region_greater_persia').GetName]"
  persia_puppeted_tt: "#v $PER$#! is our [concept_subject]"
 
  je_consolidate_persia: "Consolidate Persia"
  je_consolidate_persia_reason: "Governmental control of the Persian provinces have long been of a tenuous nature, with autonomous sheikhdoms and foreign powers holding more sway than the nominal governors appointed by [SCOPE.GetRootScope.GetCountry.GetCapital.GetCityHubName].\n\nIf we are to effectively modernize the state, the sovereignty of the central government must be enforced."
+ je_consolidate_persia_activation_tt: "Is #v $PER$#!"
 
  je_achieve_sovereignty: "Achieve Sovereignty"
  je_achieve_sovereignty_reason: "As long as we are not recognized as an equal by the wider international community, foreign meddling in our domestic affairs will remain endemic.\n\nWe should strive to stake out a place for ourselves at their table, so that our nation does not go the way of Old Chorasmia."
  je_achieve_sovereignty_tt: "We have been a [concept_subject] for #bold 10#! consecutive years. (Currently #variable [ROOT.GetCountry.MakeScope.Var('achieve_sovereignty_var').GetValue]#!)"
  je_achieve_sovereignty_tt_2: "By maintaining our independence in the face of European aggression, we will progress towards ending the Great Game in our favor."
  je_achieve_sovereignty_tt_3: "[ROOT.GetCountry.GetName] is a [concept_recognized_power]"
+ je_achieve_sovereignty_activation_tt: "Is #v $PER$#! or an Afghan nation"
+ je_achieve_sovereignty_activation_2_tt: "Is an [concept_unrecognized_power]"
 
  request_recognition: "Request Embassy"
  request_recognition_desc: "An [concept_instant_diplomatic_action] targeting a [concept_great_power] that increases your country's progress towards becoming a [concept_recognized_power]."
  request_recognition_tt: "The #bold Progress Bar#! of the $je_earn_recognition$ [concept_journal_entry] will advance by a value of #bold 20#!"
  request_recognition_action_name: "Request Embassy"
- request_recognition_proposal_accepted_name: "$request_recognition_action_name$ Accepted"
+ request_recognition_proposal_accepted_name: "$request_recognition_action_name$ accepted"
  request_recognition_proposal_accepted_desc: "[TARGET_COUNTRY.GetName] accepted our request for an embassy"
- request_recognition_proposal_declined_name: "$request_recognition_action_name$ Declined"
+ request_recognition_proposal_declined_name: "$request_recognition_action_name$ declined"
  request_recognition_proposal_declined_desc: "[TARGET_COUNTRY.GetName] declined our request for an embassy"
  request_recognition_proposal_notification_name: "Request to dispatch Diplomatic Mission"
  request_recognition_proposal_notification_desc: "[INITIATOR_COUNTRY.GetName] requests that we dispatch an embassy to them."
- request_recognition_proposal_third_party_accepted_name: "$request_recognition_action_name$ Accepted"
+ request_recognition_proposal_third_party_accepted_name: "$request_recognition_action_name$ accepted"
  request_recognition_proposal_third_party_accepted_desc: "[TARGET_COUNTRY.GetName] accepted a request for an embassy by [INITIATOR_COUNTRY.GetName]:\n$STATES_DESC$"
- request_recognition_proposal_third_party_declined_name: "$request_recognition_action_name$ Declined"
+ request_recognition_proposal_third_party_declined_name: "$request_recognition_action_name$ declined"
  request_recognition_proposal_third_party_declined_desc: "[TARGET_COUNTRY.GetName] declined a request for an embassy by [INITIATOR_COUNTRY.GetName]:\n$STATES_DESC$"
  request_recognition_proposal_notification_effects_desc: "If we accept, their progress towards becoming a [concept_recognized_power] will increase."
 
  je_earn_recognition: "Earning Recognition"
- je_earn_recognition_reason: "The status of the #bold Progress Bar#! will #tooltippable;tooltip:[Country.GetTooltipTag],je_earn_recognition_advance advance#! or #tooltippable;tooltip:[Country.GetTooltipTag],je_earn_recognition_deplete retreat#! based on certain conditions. The #bold Progress Bar#! reaching #bold 200#! will result in [SCOPE.GetRootScope.GetCountry.GetName] becoming a [concept_recognized_power].\n\nFor too long has [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] been denied proper diplomatic recognition by the so-called civilized nations of the world, leaving us vulnerable to their advances and without the ability to properly exercise our own sovereign rights.\n\nWe should do our utmost to rectify this situation, and claim a seat for ourselves at their table as respected equals."
+ je_earn_recognition_reason: "The #bold Progress Bar#! reaching #bold 200#! will result in [SCOPE.GetRootScope.GetCountry.GetName] becoming a [concept_recognized_power].\n\nFor too long has [SCOPE.GetRootScope.GetCountry.GetNameNoFormatting] been denied proper diplomatic recognition by the so-called civilized nations of the world, leaving us vulnerable to their advances and without the ability to properly exercise our own sovereign rights.\n\nWe should do our utmost to rectify this situation, and claim a seat for ourselves at their table as respected equals."
  je_earn_recognition_complete_tt: "The #bold Progress Bar#! has reached #bold 200#!, signifying that our international standing has improved in the eyes of the world"
  is_subject_of_great_power_tt: "Is a direct or indirect [concept_subject] of a #b [concept_great_power]#!"
 
- je_earn_recognition_advance: "• Enforcing a [concept_war_goal] on a [concept_major_power] or above\n• Having a [concept_gdp] in the top 10\n• Having a [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')] in the top 20\n• Having a [concept_sol] in the top 20\n• Having a [concept_literacy] rating above 40%\n• Having [Concept('concept_votes','$concept_voting_rights$')]\n• The #bold $offer_embassy$#! [concept_article] is active" ##bold Request Embassy#! [concept_diplomatic_action] is active
+ je_earn_recognition_advance: "• Enforcing a [concept_war_goal] on a [concept_major_power] or above\n• Having a [concept_gdp] in the top 10\n• Having a [Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short|q$')] in the top 20\n• Having a [concept_sol] in the top 20\n• Having a [concept_literacy] rating above 40%\n• Having [Concept('concept_votes','$concept_voting_rights|q$')]\n• The #bold $offer_embassy$#! [concept_article] is active" ##bold Request Embassy#! [concept_diplomatic_action] is active
  je_earn_recognition_deplete: "• Having a [concept_war_goal] enforced on you\n• Having a [concept_gdp] below the top 30\n• Having a [concept_literacy] rating below 20%\n• Having #bold not#! abolished [concept_slavery].\n• Having [GetLawType('law_serfdom').GetName]\n• Having [GetLawType('law_traditionalism').GetName]\n• Having [GetLawType('law_isolationism').GetName]\n• Having [GetLawType('law_outlawed_dissent').GetName]"
 
  earning_recognition_progress_bar: "Earning Recognition"
  earning_recognition_progress_bar_desc: "Progress: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/200)"
 
  earning_recognition_progress_gdp_tt: "[concept_gdp] in top 10"
- earning_recognition_progress_gdpc_tt: "[Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')] in top 20"
- earning_recognition_progress_voting_tt: "having [Concept('concept_votes','$concept_voting_rights$')]"
+ earning_recognition_progress_gdpc_tt: "[Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short|q$')] in top 20"
+ earning_recognition_progress_voting_tt: "having [Concept('concept_votes','$concept_voting_rights|q$')]"
  earning_recognition_literacy_tt: "[concept_literacy] rate above #v 40%#!"
  earning_recognition_slavery_tt: "#bold not#! abolished [concept_slavery]"
  earning_recognition_serfdom_tt: "having [GetLawType('law_serfdom').GetName]"
@@ -167,14 +171,14 @@
  earning_recognition_isolationism_tt: "having [GetLawType('law_isolationism').GetName]"
  earning_recognition_outlawed_dissent_tt: "having [GetLawType('law_outlawed_dissent').GetName]"
  earning_recognition_low_literacy_tt: "[concept_literacy] rate below #v 20%#!"
- earning_recognition_low_gdpc_tt: "[Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short$')] below top 50"
+ earning_recognition_low_gdpc_tt: "[Concept('concept_gdp_per_capita','$concept_gdp_per_capita_short|q$')] below top 50"
  earning_recognition_low_gdp_tt: "[concept_gdp] below top 30"
  earning_recognition_low_sol_tt: "[concept_sol] below top 50"
 
  state_trait_mount_lebanon: "Mount Lebanon"
 
  custom_lobby_union: "Union"
- custom_lobby_association: "Association" 
+ custom_lobby_association: "Association"
  custom_lobby_society: "Society"
  custom_lobby_friendship_committee: "Friendship Committee"
  custom_lobby_fellowship: "Fellowship"
@@ -203,7 +207,7 @@
  je_earn_recognition_tt: "We will sign a #bold [SCOPE.GetRootScope.GetCountry.GetCustom('treaty_names_custom_loc')]#! with a relevant [concept_great_power], granting us recognition in the eyes of the world."
 
  earn_recognition_events.1.t: "The [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting]-[SCOPE.sCountry('treaty_partner_country_scope').GetAdjectiveNoFormatting] [SCOPE.GetRootScope.GetCountry.GetCustom('treaty_names_custom_loc')]"
- earn_recognition_events.1.d: "Signed earlier this afternoon in [SCOPE.sCountry('treaty_partner_country_scope').GetCapital.GetCityHubName], this landmark treaty officially abrogates any previous unequal treaties between [SCOPE.sCountry('treaty_partner_country_scope').GetName] and [SCOPE.GetRootScope.GetCountry.GetName] in favour of a new one negotiated between peers."
+ earn_recognition_events.1.d: "Signed earlier this afternoon in [SCOPE.sCountry('treaty_partner_country_scope').GetCapital.GetCityHubName], this landmark treaty officially abrogates any previous unequal treaties between [SCOPE.sCountry('treaty_partner_country_scope').GetName] and [SCOPE.GetRootScope.GetCountry.GetName] in favor of a new one negotiated between peers."
  earn_recognition_events.1.f: ""The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] of [ROOT.GetCountry.GetNameNoFormatting] and the [SCOPE.sCountry('treaty_partner_country_scope').GetRuler.GetPrimaryRoleTitle] of [SCOPE.sCountry('treaty_partner_country_scope').GetNameNoFormatting], being equally desirous of maintaining the relations of good understanding which happily exist between them, by extending and increasing the intercourse between their respective States, and being convinced that this object cannot better be accomplished than by revising the Treaties hitherto existing between the two countries, have resolved to complete such a revision, based upon principles of equity and mutual benefit.""
  earn_recognition_events.1.a: "A new dawn for [SCOPE.GetRootScope.GetCountry.GetNameNoFlag]. Ratify the treaty."
 
@@ -287,7 +291,7 @@
  modifier_has_annexed_another_subject: "Our [concept_overlord] Has Annexed Another [concept_subject]"
 
  puppeted_for_too_long_tt: "We have been a [concept_subject] for #bold 60#! consecutive months. (Currently #variable [ROOT.GetCountry.MakeScope.Var('great_game_subjected_var').GetValue]#!)"
- not_in_european_power_bloc_tt: "Is #b not#! in a [concept_power_bloc] with a European [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short$')]"
+ not_in_european_power_bloc_tt: "Is #b not#! in a [concept_power_bloc] with a European [Concept('concept_power_bloc_leader','$concept_power_bloc_leader_extra_short|q$')]"
  europeans_forced_to_end_great_game_tt: "All European powers will lose the #bold Great Game#! [concept_journal_entry]"
 
   # Dracula Events
@@ -301,7 +305,7 @@
  umbral_coup_modifier: "Umbral Coup"
  dracula_leaves_tt: "Wordlessly, the Count boards his carriage."
  dracula_passive_tt: "Dracula keeps his current ideology"
- 
+
  spooky_halloween_events.2.t: "A Midnight Visitor"
  spooky_halloween_events.2.d: "Having inconspicuously arrived at the residence of [SCOPE.sCharacter('fair_maiden_scope').GetFullName], [SCOPE.sCharacter('dracula_scope').GetFullName] strides past its languid guards, into the long, dark corridors leading towards her study, where a solitary light still shines over piles of correspondence."
  spooky_halloween_events.2.f: "[SCOPE.sCharacter('fair_maiden_scope').GetFullNameNoFormatting] did not recognize the man that stood at her doorstep, nor did she recognize the words that came out of his mouth, even as they were clearly in her own tongue. Scenes of formal dinner parties and gallas briefly flickered in her mind, until her mind and gaze were both seized by the stranger's eyes.\n\nThey blazed with such terrible light that she could not bear to look at them, but nor could she look away. As the stranger took one step forward, slowly baring his teeth, she made one final effort to avert her eyes, trying to will words, any words, to escape from her mouth."
@@ -323,23 +327,23 @@
  spooky_halloween_events.3.e: "The old must make way for the new."
 
  # Old modifiers from the modifiers file
- modifier_conscientious_objection_denied:1 "Disapproves of No Conscientious Objection"
+ modifier_conscientious_objection_denied: "Disapproves of No Conscientious Objection"
  modifier_conscientious_objection_rejected:0 "Disapproves of Conscientious Objection"
- modifier_conscientious_objection_approved:1 "Approves of No Conscientious Objection"
+ modifier_conscientious_objection_approved: "Approves of No Conscientious Objection"
  modifier_conscientious_objection_rejected_good:0 "Approves of Conscientious Objection"
- modifier_conscription_rate_lowered:1 "Conscientious Objectors"
+ modifier_conscription_rate_lowered: "Conscientious Objectors"
  modifier_objectors_conscription_law:0 "Conscientious Objectors Allowed"
  modifier_objectors_conscription_bad_law:0 "Conscientious Objectors Rejected"
- modifier_police_ignored:1 "Disapproves of Ignoring Police"
+ modifier_police_ignored: "Disapproves of Ignoring Police"
  modifier_secret_police_supported:0 "Secret Police request implemented"
  modifier_mine_regulations_enforced:0 "Disapproves of enforced mining regulations"
  modifier_mine_regulations_not_enforced:0 "Approves of unenforced mining regulations"
  modifier_mine_regulations_not_enforced_state:0 "Unenforced mining regulations"
- modifier_ignored_intelligentsia_request:1 "Ignored Secular Schools Request"
+ modifier_ignored_intelligentsia_request: "Ignored Secular Schools Request"
 
  modifier_small_expedition_cost:0 "Small Expedition Budget"
  modifier_medium_expedition_cost:0 "Medium Expedition Budget"
- modifier_large_expedition_cost:1 "Expedition Budget"
+ modifier_large_expedition_cost: "Expedition Budget"
 
  modifier_expedition_film:0 "Film of Expedition"
  modifier_niger_river_expedition_complete:0 "Explored the Niger River"
@@ -368,7 +372,7 @@
 
  # London Conference
  je_conference_of_london: "London Conference"
- je_conference_of_london_reason: "The great powers have sent their delegations to London to decide on a solution to the unsolved border issues between Netherlands and Belgium. \n\n#variable [GetGlobalVariable( 'je_conference_of_london_participants_var' ).GetValue]#! [Concept('concept_great_power', '$concept_great_powers$')] are participating in the Conference.\n#bold #tooltippable #tooltip:favour_belgium_button_desc $favour_belgium_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_1' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:favour_netherlands_button_desc $favour_netherlands_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_2' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:partition_compromise_button_desc $partition_compromise_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_3' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:luxembourg_compromise_button_desc $luxembourg_compromise_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_conference_of_london_proposal_4' ).GetValue]#! total [concept_prestige]\n\nThe conference will conclude in #variable [GetGlobalVariable('je_conference_of_london_timer').GetValue]#! months. The proposal with the most prestige #tooltippable #tooltip:london_treaty_voting_rules supporting#!#! it will then be selected as the conference's offical solution.\n\n#Bold Result#!\nThe Conference has [ROOT.GetCountry.GetCustom('treaty_of_london_coutcome')][ROOT.GetCountry.GetCustom('treaty_of_london_acceptance_timer')]"
+ je_conference_of_london_reason: "The great powers have sent their delegations to London to decide on a solution to the unsolved border issues between Netherlands and Belgium. \n\n#variable [JournalEntry.MakeScope.Var('je_conference_of_london_participants_var').GetValue]#! [Concept('concept_great_power', '$concept_great_powers|q$')] are participating in the Conference.\n#bold #tooltippable #tooltip:favour_belgium_button_desc $favour_belgium_button$#!#!#! is backed by #variable [JournalEntry.MakeScope.Var('je_conference_of_london_proposal_1').GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:favour_netherlands_button_desc $favour_netherlands_button$#!#!#! is backed by #variable [JournalEntry.MakeScope.Var('je_conference_of_london_proposal_2').GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:partition_compromise_button_desc $partition_compromise_button$#!#!#! is backed by #variable [JournalEntry.MakeScope.Var('je_conference_of_london_proposal_3').GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:luxembourg_compromise_button_desc $luxembourg_compromise_button$#!#!#! is backed by #variable [JournalEntry.MakeScope.Var('je_conference_of_london_proposal_4').GetValue]#! total [concept_prestige]\n\nThe conference will conclude in #variable [JournalEntry.MakeScope.Var('je_conference_of_london_timer').GetValue]#! months. The proposal with the most prestige #tooltippable #tooltip:london_treaty_voting_rules supporting#!#! it will then be selected as the conference's offical solution.\n\n#Bold Result#!\nThe Conference has [SCOPE.sCountry('belgium_scope').GetCustom('treaty_of_london_coutcome')][SCOPE.sCountry('belgium_scope').GetCustom('treaty_of_london_acceptance_timer')]"
  je_conference_of_london_tt_1: "The Conference has decided how to settle the Belgian question."
  je_conference_of_london_tt_2: "#v $BEL$#! has accepted the outcome of the Conference"
  je_conference_of_london_tt_4: "#v $NET$#! has accepted the outcome of the Conference"
@@ -376,16 +380,16 @@
  je_conference_of_london_tt_5: "Hostilities have broken out between #v $BEL$#! and #v $NET$#!"
  london_conference_made_choice_tt: "We have #bold not#! backed a proposal"
  london_treaty_voting_rules: "In the case where two leading proposals receive the same amount of [concept_prestige] supporting them, the proposal backed by the [concept_great_power] with the highest [concept_rank] will be chosen.\n\nIf you have not officially favored a solution by the time the conference concludes, your delegates will act independently and select one for you."
- favour_belgium_button: "Favour Belgian Claims"
- favour_belgium_button_desc: "#v $BEL$#! is to receive the provinces of Limburg and Luxemburg in full.\n\nIn order to compensate #v $NET$#! for the loss of the two provinces, #v $BEL$#! must assume the total public [Concept('concept_credit','$concept_credit_debt$')] of the former #tooltippable #tooltip:london_treaty_public_debt_info #bold United Kingdom of the Netherlands#!#!#!."
- favour_netherlands_button: "Favour Dutch Claims"
- favour_netherlands_button_desc: "#v $NET$#! is to receive the provinces of Limburg and Luxemburg in full.\n\nIn order to compensate #v $BEL$#! for the loss of the two provinces, #v $NET$#! must assume the total public [Concept('concept_credit','$concept_credit_debt$')] of the former #tooltippable #tooltip:london_treaty_public_debt_info #bold United Kingdom of the Netherlands#!#!#!."
- partition_compromise_button: "Favour Twenty-Four Points"
+ favour_belgium_button: "Favor Belgian Claims"
+ favour_belgium_button_desc: "#v $BEL$#! is to receive the provinces of Limburg and Luxemburg in full.\n\nIn order to compensate #v $NET$#! for the loss of the two provinces, #v $BEL$#! must assume the total public [Concept('concept_credit','$concept_credit_debt|q$')] of the former #tooltippable #tooltip:london_treaty_public_debt_info #bold United Kingdom of the Netherlands#!#!#!."
+ favour_netherlands_button: "Favor Dutch Claims"
+ favour_netherlands_button_desc: "#v $NET$#! is to receive the provinces of Limburg and Luxemburg in full.\n\nIn order to compensate #v $BEL$#! for the loss of the two provinces, #v $NET$#! must assume the total public [Concept('concept_credit','$concept_credit_debt|q$')] of the former #tooltippable #tooltip:london_treaty_public_debt_info #bold United Kingdom of the Netherlands#!#!#!."
+ partition_compromise_button: "Favor Twenty-Four Points"
  partition_compromise_button_desc: "The provinces of Limburg and Luxemburg will be partitioned between #v $BEL$#! and #v $NET$#!.\n\nIn order to compenstate the German Federation for the loss of Western Luxemburg, $LIM$ will be established as a $NET_ADJ$ [concept_subject] and a nominal member of the German Confederation."
- luxembourg_compromise_button: "Favour Alternate Partition"
- luxembourg_compromise_button_desc:1 "#v $BEL$#! will retain the entire province of Limburg, in exchange for #v $NET$#! receiving the entirety of Luxemburg."
- we_chose_this_london_treaty_tt: "[ROOT.GetCountry.GetName] will officially favour this proposal."
- london_treaty_public_debt_info: "Since #bold Belgium's#! 1830 secession from the #bold Kingdom of the Netherlands#!, the two parties have faced ongoing challenges in determining how to divide the national [Concept('concept_credit','$concept_credit_debt$')] of their once-united kingdom."
+ luxembourg_compromise_button: "Favor Alternate Partition"
+ luxembourg_compromise_button_desc: "#v $BEL$#! will retain the entire province of Limburg, in exchange for #v $NET$#! receiving the entirety of Luxemburg."
+ we_chose_this_london_treaty_tt: "[ROOT.GetCountry.GetName] will officially favor this proposal."
+ london_treaty_public_debt_info: "Since #bold Belgium's#! 1830 secession from the #bold Kingdom of the Netherlands#!, the two parties have faced ongoing challenges in determining how to divide the national [Concept('concept_credit','$concept_credit_debt|q$')] of their once-united kingdom."
  london_conference_approve_button: "Ratify the Treaty of London"
  london_conference_approve_button_desc: "The agreed upon proposal is acceptable. Instruct our men in London to sign the document."
  london_conference_approve_button_tt: "[ROOT.GetCountry.GetName] ratifies the treaty. Should both $NET$ and $BEL$ agree, the treaty will then enter into effect."
@@ -394,14 +398,14 @@
  london_conference_disapprove_button_tt: "Negotiations between $BEL$ and $NET$ will break down."
  london_conference_has_concluded_loc: "The London Conference has concluded."
  improve_relations_with_german_confederation_tt: "The following will be true for every German-cultured [concept_country] in Europe:"
- je_conference_of_london_acceptance_timer_tt: "\n\nWe will automatically accept the outcome of the conference in #variable [GetGlobalVariable('je_conference_of_london_acceptance_timer').GetValue]#! months."
+ je_conference_of_london_acceptance_timer_tt: "\n\n#v $BEL$#! and #v $NET$#! will automatically accept the outcome of the conference in #variable [GetGlobalVariable('je_conference_of_london_acceptance_timer').GetValue]#! months."
 
  treaty_of_london_events.1.t: "The Belgian Question"
  treaty_of_london_events.1.d: "Since the secession of [SCOPE.sCountry('belgium_scope').GetName] in 1830, [ROOT.GetCountry.GetAdjective] efforts to reunify the country have all met with failure. Weary of the effects of the current, uneasy truce, many are now urging the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to commit to a final, negotiated settlement."
  treaty_of_london_events.1.f: ""The revolution of 1830 is and will remain the greatest state error of this century, but our efforts to reclaim these lands by force have failed and our prospects are looking bleaker by the day.\n\nWe currently stand to gain more from arbitration than we do through force of arms. Sir, I implore you to dispatch a mission to Brussels as soon as humanly possible.""
  treaty_of_london_events.1.a: "Agreed. Call for a conference to settle the matter at last."
  treaty_of_london_events.1.b: "We do not negotiate with rebels."
- treaty_of_london_explanation_tt: "Participating [Concept('concept_great_power', '$concept_great_powers$')] will vote on a solution to be ratified by $BEL$ and $NET$."
+ treaty_of_london_explanation_tt: "Participating [Concept('concept_great_power', '$concept_great_powers|q$')] will vote on a solution to be ratified by $BEL$ and $NET$."
 
  treaty_of_london_events.2.t: "The Hague Call for a Conference"
  treaty_of_london_events.2.d: "Weary of the uneasy truce existing between our two countries, the [SCOPE.sCountry('netherlands_scope').GetAdjective] government has approached us with a proposal for a conference to resolve our current territorial and legal disputes."

@@ -145,9 +145,8 @@
  mon_less_raiding_tt: "襲撃頻度を再び減少させるには、少なくとも6か月待つ必要がある。"
  mon_discourage_raiding_tt: "[concept_raiding_frequency]を25%減少させる"
  #If not longer bordering notification that raiding stops
- notification_je_montenegrin_raiding_fail_name: "襲撃を中止する"
+ notification_je_montenegrin_raiding_fail_name: "我が国が[concept_raiding]を中止"
  notification_je_montenegrin_raiding_fail_desc: "オスマン帝国と国境を接する領土がないため、我々の部族は襲撃を中止せざるを得なくなりました。"
- notification_je_montenegrin_raiding_fail_tooltip: "#header $notification_je_montenegrin_raiding_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_je_montenegrin_raiding_fail_desc$"
  #JE RAIDING EVENTS
  #montenegrin_raiding.1
  montenegrin_raiding.1.t: "兄弟の死"
@@ -214,7 +213,6 @@
  raiding_income_greater_tt: "[concept_raiding]からの収入は@money!+700未満でなければならない"
  notification_je_mon_austria_alliance_fail_name: "[SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetName, 'AUS')]が提案を撤回しました"
  notification_je_mon_austria_alliance_fail_desc: "最近の出来事を受け、[SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetNameNoFlag, 'AUS')]はもはや、我々に我々の港を返還することを検討することはない。"
- notification_je_mon_austria_alliance_fail_tooltip: "#header $notification_je_mon_austria_alliance_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_je_mon_austria_alliance_fail_desc$"
  #Austria hands back coast event
  mon_state_formation.4.t: "モンテネグロ海岸"
  mon_state_formation.4.d: "モンテネグロの艦艇が、新たな同盟国[SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetName, 'AUS')]から返還された港町#v コトル#!を出航し、再び地中海を航行する。"
@@ -304,7 +302,7 @@
  mon_state_formation.13.b: "安価な銃を作る。"
  mon_state_formation.13.c: "大量の銃を作る。"
  je_tur_raided: "不従順な山"
- je_tur_raided_reason: "モンテネグロ人は自らを独立国家だと信じているが、実際には彼らは宗教の自由を実践するためにある程度の自治権を与えられた、我が国の従属国である。長い間黙認されてきたために、彼らは我々の徴税人を殺し、我々の国民に危害を加えてきた。\n\nもし我々が彼らを剣で処刑すれば、それは我々の領土における他の反乱者への警告となるだろう。しかし、列強が関与して、小国の[SelectLocalization(SCOPE.sCountry('montenegro').IsValid, SCOPE.sCountry('montenegro').GetNameNoFlag, 'MON')]がヨーロッパの火薬庫に点火するマッチにならないよう、用心しなければならない。\n\n#v 襲撃:#! \n襲撃された[Concept('concept_state', '$concept_states$')]は、[concept_taxes]にペナルティを受け、より[concept_turmoil]の悪影響を受ける。"
+ je_tur_raided_reason: "モンテネグロ人は自らを独立国家だと信じているが、実際には彼らは宗教の自由を実践するためにある程度の自治権を与えられた、我が国の従属国である。長い間黙認されてきたために、彼らは我々の徴税人を殺し、我々の国民に危害を加えてきた。\n\nもし我々が彼らを剣で処刑すれば、それは我々の領土における他の反乱者への警告となるだろう。しかし、列強が関与して、小国の[SelectLocalization(SCOPE.sCountry('montenegro').IsValid, SCOPE.sCountry('montenegro').GetNameNoFlag, 'MON')]がヨーロッパの火薬庫に点火するマッチにならないよう、用心しなければならない。\n\n#v 襲撃:#! \n襲撃された[Concept('concept_state', '$concept_states|q$')]は、[concept_taxes]にペナルティを受け、より[concept_turmoil]の悪影響を受ける。"
  je_tur_raided_target: "[SelectLocalization(SCOPE.sCountry('montenegro').IsValid, SCOPE.sCountry('montenegro').GetNameNoFlag, 'MON')]が[GetGlobalVariable('mon_raid_state').GetState.GetName]を襲撃している！"
  je_tur_raided_no_target: "モンテネグロ人は襲撃を停止している。今のところは…"
  je_montenegrin_tur_raid_back: "反撃を開始する"

@@ -13,7 +13,7 @@
   bluff_called: "Caught Bluffing"
   expert_agreed_with_gov: "Favored by Expertise"
   professional_agreed_with_gov: "Favored by Professionals"
-  scandalous: "Publicly Known Scandal"
+  modifier_scandalous: "Publicly Known Scandal"
   whistleblower: "An Honest Face"
   unopposed_whistleblower: "Only Honest Face"
   successful_law_ram:1 "Successful Scheme"

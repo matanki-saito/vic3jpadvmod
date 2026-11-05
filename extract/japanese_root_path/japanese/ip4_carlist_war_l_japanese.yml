@@ -1,7 +1,7 @@
 ﻿l_japanese:
  # Journal Entries
  je_the_first_carlist_war: "カルリスタ戦争"
- je_the_first_carlist_war_reason: "@information! [concept_guerilla_war]中は、戦闘に勝利しても占領スコアは付与されず、代わりに両陣営とも勝利した戦闘ごとにスコアを獲得し、獲得したスコアに応じて、#b 王室遠征#!の開始時にプラスの補正が付与される。遠征の戦力はそれぞれ$concept_guerilla_war$中に達成したスコアに依存する。#b その後、$concept_guerilla_war$は通常の戦争へと移行する#!。\n$TOOLTIP_DELIMITER$\n#b 1833年に王のフェルナンド7世#!が崩御したことで、スペインは王位継承の危機に陥った。#b 1830年の国事詔書#!により、伝統的にサリカ法で継承を扱っていたスペイン王国において、王女#b イザベラ#!が王位に就く道が開かれた。\nこの措置は保守的な貴族層を怒らせ、王の弟#b カルロス#!を正統な後継者として擁立する動きが起こった。\n\nやがてこれが#b カルリスモ#!（カルロス派）と呼ばれる複数の個別の反乱勢力へと発展し、国の北部、とりわけ#b ナバラ王国#!の#b バスク領#!で主に支持されるようになった。彼らは長年、国家のさらなる中央集権化や慣習の統合に反対して戦ってきた者たちであった。\n[concept_bio_tomas_de_zumalacarregui]の指揮の下、この反乱勢力は強力な戦闘集団へと組織され、マエストラスゴやカタルーニャの同盟勢力との合流を許せば首都を脅かすほどの力を持つようになった。"
+ je_the_first_carlist_war_reason: "@information! [concept_guerilla_war]中は、戦闘に勝利しても占領スコアは付与されず、代わりに両陣営とも勝利した戦闘ごとにスコアを獲得し、獲得したスコアに応じて、#b 王室遠征#!の開始時にプラスの補正が付与される。遠征の戦力はそれぞれ$concept_guerilla_war$中に達成したスコアに依存する。#b その後、$concept_guerilla_war$は通常の戦争へと移行する#!。\n$TOOLTIP_DELIMITER$\n#b 1833年に王のフェルナンド7世#!が崩御したことで、スペインは王位継承の危機に陥った。#b 1830年の国事詔書#!により、伝統的にサリカ法で継承を扱っていたスペイン王国において、王女#b イザベラ#!が王位に就く道が開かれた。\nこの措置は保守的な貴族層を怒らせ、王の弟#b カルロス#!を正統な後継者として擁立する動きが起こった。\n\nやがてこれが#b カルリスモ#!（カルロス派）と呼ばれる複数の個別の反乱勢力へと発展し、国の北部、とりわけ#b ナバラ王国#!の#b バスク領#!で主に支持されるようになった。彼らは長年、国家のさらなる中央集権化や慣習の統合に反対して戦ってきた者たちであった。\n[glossary_tomas_de_zumalacarregui]の指揮の下、この反乱勢力は強力な戦闘集団へと組織され、マエストラスゴやカタルーニャの同盟勢力との合流を許せば首都を脅かすほどの力を持つようになった。"
  je_the_first_carlist_war_status: "戦争は[concept_guerilla_war]フェーズ"
  je_the_first_carlist_war_status_royal_expedition: "#b 王室遠征#!が開始！"
  je_the_first_carlist_war_complete: "カルリスタ戦争に勝った"
@@ -15,9 +15,6 @@
  je_the_first_carlist_war_royal_expedition_desc: "我らの軍は統制を欠いており、もはや維持が難しい状態だ。クリスティーナ派は日を追うごとに勢力を増している。王は散在する軍勢を結集し、敵を攻撃して首都を奪還する時期を検討しなければならない。"
  je_the_first_carlist_flush_them_out: "一掃せよ"
  je_the_first_carlist_flush_them_out_desc: "反乱軍の勢いは削がれた。今こそ攻勢に転じる時だ。"
- # Character Bios
- concept_bio_tomas_de_zumalacarregui: "トマス・デ・ズマラカレギ"
- concept_bio_tomas_de_zumalacarregui_desc: "#tooltip_header トマス・ズマラカレギ・アイマツ#!\n$TOOLTIP_DELIMITER$\n#v 1788年12月29日#!、ギプスコア州オルマイステギ生まれ\n#v 1835年6月24日#!、ギプスコア州ゼガマで死去\n\nトマス・デ・ズマラカレギ・エ・アイマツは兵士たちから「トマスおじさん」とも呼ばれたバスク出身の軍人であり、ナバラとバスク地方のカルリスタ軍の総司令官として、軍の組織化とカルリスタの初期の決定的な勝利に貢献した人物である。\n1835年の初夏、戦場での銃撃による彼の突然の死は、ドン・カルロスの野望に大きな打撃を与えた。"
  # Battle Conditions
  battle_condition_guerilla_skirmish: "小競り合い"
  battle_condition_guerilla_skirmish_desc: "この司令官は、敵との一連の小競り合いで連合部隊を率いている。"
@@ -100,5 +97,4 @@
  # Notifications
  notification_carlist_war_carlist_terror_name: "$spa_carlist_terror$"
  notification_carlist_war_carlist_terror_desc: "カルリスタの支持者と地元の盗賊団が[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に恐怖を広げています！\n$notification_carlist_War_carlist_terror_TT_HAS_HAPPENED$"
- notification_carlist_war_carlist_terror_tooltip: "#header $notification_carlist_war_carlist_terror_name$#!\n$TOOLTIP_DELIMITER$\n$notification_carlist_war_carlist_terror_desc$"
  notification_carlist_War_carlist_terror_TT_HAS_HAPPENED: "発生済み:\n#indent_newline:3 $EFFECT_LIST_BULLET$[SCOPE.ScriptValue('carlist_war_carlist_terror_devastation')|n0]の[concept_devastation]と#tooltippable;tooltip:[GetRawTextTooltipTag(GetStaticModifier('spa_carlist_terror').GetDesc)] [GetStaticModifier('spa_carlist_terror').GetName]#!を[SCOPE.sState('upper_andalusia_scope').GetName]と[SCOPE.sState('lower_andalusia_scope').GetName]に追加#!"

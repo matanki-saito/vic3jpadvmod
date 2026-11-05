@@ -1,5 +1,5 @@
 ﻿l_english:
- # General 
+ # General
  SETTING_VALUE_NONE: "$VALUE$"
  SETTING_VALUE_TOTAL_PERCENTAGE: "$VALUE|%/0$"
  SETTING_VALUE_PERCENTAGE: "$VALUE|%0$"
@@ -164,6 +164,8 @@
  SETTING_AUDIO_OPTION_TV_TOOLTIP: "#T $SETTING_AUDIO_OPTION_TV$\n#!Mix for $SETTING_AUDIO_OPTION_TV$ and monitor speakers."
  SETTING_AUDIO_OPTION_NIGHTMODE: "Night Mode"
  SETTING_AUDIO_OPTION_NIGHTMODE_TOOLTIP: "#T $SETTING_AUDIO_OPTION_NIGHTMODE$\n#!Softens the sound for night play, dimming higher pitches and compressing the dynamic range."
+ SETTING_MUSIC_SHUFFLE_MODE: "Shuffle Mode"
+ SETTING_MUSIC_SHUFFLE_MODE_TOOLTIP: "$MUSIC_PLAYER_SHUFFLE_MODE_DESC$.\n\n$MUSIC_PLAYER_SHUFFLE_MODE_LEAST_PLAYED$: $MUSIC_PLAYER_SHUFFLE_MODE_LEAST_PLAYED_DESC$.\n$MUSIC_PLAYER_SHUFFLE_MODE_RANDOM$: $MUSIC_PLAYER_SHUFFLE_MODE_RANDOM_DESC$.\n$MUSIC_PLAYER_SHUFFLE_MODE_WEIGHTED$: $MUSIC_PLAYER_SHUFFLE_MODE_WEIGHTED_DESC$."
  SETTING_MUSIC_DENSITY: "Music Density"
  SETTING_MUSIC_DENSITY_TOOLTIP: "Controls the balance between full songs, silence and mood music segments.\n\nIntense = Mostly songs playing one after the other, similar to a ‘radio station’.\nBalanced = The perfect balance between songs, silence, and mood setting\nRelaxed = Mostly relaxing music segments that provide a better mood experience and less sense of repetition after several hours of playing”"
   # Game

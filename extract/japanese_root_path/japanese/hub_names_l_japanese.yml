@@ -828,10 +828,10 @@
  HUB_NAME_STATE_TVER_mine: "ヴイシニー・ヴォロチョーク" #14-11-2023
  HUB_NAME_STATE_TVER_farm: "ルジェフ" #14-11-2023
  HUB_NAME_STATE_TVER_wood: "オスタシコフ" #14-11-2023
- HUB_NAME_STATE_GALICH_city: "ヴォログダ" #14-11-2023
- HUB_NAME_STATE_GALICH_mine: "トチマ" #14-11-2023
- HUB_NAME_STATE_GALICH_farm: "ウスチ・スィソリスク" #14-11-2023
- HUB_NAME_STATE_GALICH_wood: "ヴェリキイ・ウスチュグ" #14-11-2023
+ HUB_NAME_STATE_VOLOGDA_city: "ヴォログダ" #14-11-2023
+ HUB_NAME_STATE_VOLOGDA_mine: "トチマ" #14-11-2023
+ HUB_NAME_STATE_VOLOGDA_farm: "ウスチ・スィソリスク" #14-11-2023
+ HUB_NAME_STATE_VOLOGDA_wood: "ヴェリキイ・ウスチュグ" #14-11-2023
  HUB_NAME_STATE_MOSCOW_city: "モスクワ" #14-11-2023
  HUB_NAME_STATE_MOSCOW_mine: "セルギエフ・ポサード" #14-11-2023
  HUB_NAME_STATE_MOSCOW_farm: "コロムナ" #14-11-2023
@@ -840,10 +840,10 @@
  HUB_NAME_STATE_KAZAN_mine: "アリメチエフスク" #14-11-2023
  HUB_NAME_STATE_KAZAN_farm: "チストポリ" #14-11-2023
  HUB_NAME_STATE_KAZAN_wood: "エラブガ" #14-11-2023
- HUB_NAME_STATE_TARTARIA_city: "サラトフ" #14-11-2023
- HUB_NAME_STATE_TARTARIA_mine: "ノボウゼンスク" #14-11-2023
- HUB_NAME_STATE_TARTARIA_farm: "シンビルスク" #14-11-2023
- HUB_NAME_STATE_TARTARIA_wood: "バラショフ" #14-11-2023
+ HUB_NAME_STATE_SARATOV_city: "サラトフ" #14-11-2023
+ HUB_NAME_STATE_SARATOV_mine: "ノボウゼンスク" #14-11-2023
+ HUB_NAME_STATE_SARATOV_farm: "シンビルスク" #14-11-2023
+ HUB_NAME_STATE_SARATOV_wood: "バラショフ" #14-11-2023
  HUB_NAME_STATE_ROSTOV_city: "ロストフ・ナ・ドヌ" #14-11-2023
  HUB_NAME_STATE_ROSTOV_port: "タガンログ" #14-11-2023
  HUB_NAME_STATE_ROSTOV_mine: "アレクサンドロ＝グルシェフスカヤ" #14-11-2023
@@ -928,7 +928,7 @@
  HUB_NAME_STATE_CHUKOTKA_wood: "プロヴィデニヤ" #14-11-2023
  HUB_NAME_STATE_KAMCHATKA_city: "ペトロパヴロフスク＝カムチャツキー" #14-11-2023
  HUB_NAME_STATE_KAMCHATKA_port: "ウスチ・カムチャツク" #14-11-2023
- HUB_NAME_STATE_KAMCHATKA_mine: "マニリー" #14-11-2023
+ HUB_NAME_STATE_KAMCHATKA_mine: "アナディリ" #14-11-2023
  HUB_NAME_STATE_KAMCHATKA_farm: "ニジネカムチャツク" #14-11-2023
  HUB_NAME_STATE_KAMCHATKA_wood: "ミルコヴォ" #14-11-2023
  HUB_NAME_STATE_BURYATIA_city: "ヴェルフネウジンスク" #14-11-2023
@@ -940,9 +940,13 @@
  HUB_NAME_STATE_KOLYMA_farm: "ザシウェレセケ" #14-11-2023
  HUB_NAME_STATE_KOLYMA_wood: "アラフ＝ユニ" #14-11-2023
  HUB_NAME_STATE_ORYOL_city: "オリョール"
- HUB_NAME_STATE_ORYOL_mine: "トゥーラ"
+ HUB_NAME_STATE_ORYOL_mine: "エレツ"
  HUB_NAME_STATE_ORYOL_farm: "ブリャンスク"
- HUB_NAME_STATE_ORYOL_wood: "カルーガ"
+ HUB_NAME_STATE_ORYOL_wood: "ボルホフ"
+ HUB_NAME_STATE_TULA_city: "トゥーラ"
+ HUB_NAME_STATE_TULA_mine: "カルーガ"
+ HUB_NAME_STATE_TULA_farm: "エフレーモフ"
+ HUB_NAME_STATE_TULA_wood: "ボロフスク"
  HUB_NAME_STATE_RYAZAN_city: "リャザン"
  HUB_NAME_STATE_RYAZAN_mine: "カシモフ"
  HUB_NAME_STATE_RYAZAN_farm: "エゴリエフスク"
@@ -962,7 +966,7 @@
  HUB_NAME_STATE_YAROSLAVL_city: "ヤロスラヴリ"
  HUB_NAME_STATE_YAROSLAVL_mine: "イヴァノヴォ"
  HUB_NAME_STATE_YAROSLAVL_farm: "ウラジーミル"
- HUB_NAME_STATE_YAROSLAVL_wood: "コストロマ"
+ HUB_NAME_STATE_YAROSLAVL_wood: "ルイビンスク"
  HUB_NAME_STATE_KOLA_city: "コラ"
  HUB_NAME_STATE_KOLA_port: "ロマノフ・ナ・ムルマン"
  HUB_NAME_STATE_KOLA_mine: "オレネゴルスク"
@@ -992,6 +996,10 @@
  HUB_NAME_STATE_KALMYKIA_mine: "サドヴォエ"
  HUB_NAME_STATE_KALMYKIA_farm: "ラガニ"
  HUB_NAME_STATE_KALMYKIA_wood: "ヤシュクリ"
+ HUB_NAME_STATE_KOSTROMA_city: "コストロマ"
+ HUB_NAME_STATE_KOSTROMA_mine: "ガーリチ"
+ HUB_NAME_STATE_KOSTROMA_farm: "ユリエヴェツ"
+ HUB_NAME_STATE_KOSTROMA_wood: "ヴェトルガ"
  #Sakhalin
  HUB_NAME_STATE_SAKHALIN_city: "アイ" #Vladimirovka / Toyohara
  HUB_NAME_STATE_SAKHALIN_port: "クシュンコタン" #Korsakov / Otomari
@@ -1045,7 +1053,7 @@
  HUB_NAME_STATE_AKMOLINSK_city: "アクモリンスク"
  HUB_NAME_STATE_AKMOLINSK_mine: "カラガンダ"
  HUB_NAME_STATE_AKMOLINSK_farm: "コスタナイ"
- HUB_NAME_STATE_AKMOLINSK_wood: "コクチェタフ"
+ HUB_NAME_STATE_AKMOLINSK_wood: "ペトロパヴロフスク"
  HUB_NAME_STATE_AKTOBE_city: "アクトベ"
  HUB_NAME_STATE_AKTOBE_mine: "コブダ"
  HUB_NAME_STATE_AKTOBE_farm: "テミル"
@@ -1104,11 +1112,11 @@
  HUB_NAME_STATE_TARTU_mine: "ヌウスタク"
  HUB_NAME_STATE_TARTU_farm: "ヴィリャンディ"
  HUB_NAME_STATE_TARTU_wood: "ヴォル"
- HUB_NAME_STATE_KAUNAS_city: "カウナス"
- HUB_NAME_STATE_KAUNAS_mine: "ウクメルゲ"
- HUB_NAME_STATE_KAUNAS_farm: "シャウレイ"
- HUB_NAME_STATE_KAUNAS_wood: "ヴィルカヴィシュキス"
- HUB_NAME_STATE_KAUNAS_port: "パランガ"
+ HUB_NAME_STATE_LITHUANIA_city: "カウナス"
+ HUB_NAME_STATE_LITHUANIA_mine: "ウクメルゲ"
+ HUB_NAME_STATE_LITHUANIA_farm: "シャウレイ"
+ HUB_NAME_STATE_LITHUANIA_wood: "ヴィルカヴィシュキス"
+ HUB_NAME_STATE_LITHUANIA_port: "パランガ"
  HUB_NAME_STATE_VILNIUS_city: "ヴィルニュス"
  HUB_NAME_STATE_VILNIUS_farm: "ドルスキニンカイ"
  HUB_NAME_STATE_VILNIUS_wood: "シュヴェンチョニース"
@@ -1691,7 +1699,7 @@
  HUB_NAME_STATE_MADRAS_wood: "マドゥライ"
  HUB_NAME_STATE_CIRCARS_city: "ビシャーカパトナム"
  HUB_NAME_STATE_CIRCARS_port: "マスリパトナム"
- HUB_NAME_STATE_CIRCARS_mine: "ジャイプル"
+ HUB_NAME_STATE_CIRCARS_mine: "ジェイポール"
  HUB_NAME_STATE_CIRCARS_farm: "ネロール"
  HUB_NAME_STATE_CIRCARS_wood: "ラージャムンドリ"
  HUB_NAME_STATE_HYDERABAD_city: "ハイデラバード"

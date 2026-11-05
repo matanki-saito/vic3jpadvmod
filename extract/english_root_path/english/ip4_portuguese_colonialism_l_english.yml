@@ -9,16 +9,16 @@
  je_the_pink_map: "The Pink Map"
  je_the_pink_map_reason: "With multiple colonies successfully established on east and west coasts of Africa, we can take the opportunity to connect them with a corridor in the belly of the continent.\n\nWe have developed a proposal called #bold The Pink Map#!, which outlines our goals for which areas to colonize. Accomplishing such a goal will evolve us into an unmatchable power in the colonial race."
 
- owned_by_root_or_a_colonial_subject_tt: "Is owned by [ROOT.GetCountry.GetName] or any of her #v $colonial$#! or #v $company$#! [Concept('concept_subject', '$concept_subjects$')]"
- does_not_own_any_state_in_angola_or_mozambique_tt: "[ROOT.GetCountry.GetName] or any of her #v $colonial$#! or #v $company$#! [Concept('concept_subject', '$concept_subjects$')] do #b not#! own any [Concept('concept_state', '$concept_states$')] in #v $geographic_region_angola$#! or #v $geographic_region_mozambique$#!"
- does_not_own_any_state_in_angola_mozambique_or_zambezi_basin_tt: "[ROOT.GetCountry.GetName] or any of her #v $colonial$#! or #v $company$#! [Concept('concept_subject', '$concept_subjects$')] do #b not#! own any [Concept('concept_state', '$concept_states$')] in #v $geographic_region_angola$#!, #v $geographic_region_mozambique$#!, or #v $geographic_region_zambezi_basin$#!"
- three_states_or_more_tt: "At least #v 3#! [Concept('concept_state', '$concept_states$')]:"
+ owned_by_root_or_a_colonial_subject_tt: "Is owned by [ROOT.GetCountry.GetName] or any of her #v $colonial$#! or #v $company$#! [Concept('concept_subject', '$concept_subjects|q$')]"
+ does_not_own_any_state_in_angola_or_mozambique_tt: "[ROOT.GetCountry.GetName] or any of her #v $colonial$#! or #v $company$#! [Concept('concept_subject', '$concept_subjects|q$')] do #b not#! own any [Concept('concept_state', '$concept_states|q$')] in #v $geographic_region_angola$#! or #v $geographic_region_mozambique$#!, and are #b not#! at war over them"
+ does_not_own_any_state_in_angola_mozambique_or_zambezi_basin_tt: "[ROOT.GetCountry.GetName] or any of her #v $colonial$#! or #v $company$#! [Concept('concept_subject', '$concept_subjects|q$')] do #b not#! own any [Concept('concept_state', '$concept_states|q$')] in #v $geographic_region_angola$#!, #v $geographic_region_mozambique$#!, or #v $geographic_region_zambezi_basin$#!, and are #b not#! at war over them"
+ three_states_or_more_tt: "At least #v 3#! [Concept('concept_state', '$concept_states|q$')]:"
 
  # Decisions
  # The Pink Map
  pink_map: "Propose the Pink Map"
  pink_map_desc: "Send a delegation of diplomats to Britain to negotiate our ambitions for the Pink Map. Also referred to as the #bold Rose-Coloured Map#!, this campaign strives to establish a land connection between our colonies of [GetGeographicRegion('geographic_region_angola').GetNameNoFormatting] and [GetGeographicRegion('geographic_region_mozambique').GetNameNoFormatting]."
- pink_map_tt2:1 "Should we decide to pursue this endeavor, our diplomats will prepare a presentation and travel to #bold Britain#! to solicit their approval. They may simply grant their approval, request a reciprocal favor, or deny our proposal. We will retain the option to proceed with the campaign regardless of their response."
+ pink_map_tt2: "Should we decide to pursue this endeavor, our diplomats will prepare a presentation and travel to #bold Britain#! to solicit their approval. They may simply grant their approval, request a reciprocal favor, or deny our proposal. We will retain the option to proceed with the campaign regardless of their response."
 
  # Goa
  goa_decision: "Incorporate Goa"
@@ -45,7 +45,7 @@
  portuguese_colonialism.2.a: "We must rapidly populate these colonies."
  portuguese_colonialism.2.b: "Let our objectors know that the old [SCOPE.sCountry('por_scope').GetName] is back."
  portuguese_colonialism.2.c: "The whole world shall realize our greatness."
- portuguese_colonialism.2.the_pink_map_tt:1 "The #b $pink_map$#! [concept_decision] is now available"
+ portuguese_colonialism.2.the_pink_map_tt: "The #b $pink_map$#! [concept_decision] is now available"
 
  #3 Fail
  portuguese_colonialism.3.t: "A Fruitless Establishment"
@@ -124,27 +124,22 @@
 
  notification_pink_map_britain_portugal_intractable_name: "Intractable [SCOPE.sCountry('por_scope').GetName]"
  notification_pink_map_britain_portugal_intractable_desc: "Despite our stance, [SCOPE.sCountry('por_scope').GetName] has declared that they shall pursue their ambition of realizing The Pink Map."
- notification_pink_map_britain_portugal_intractable_tooltip: "#header $notification_pink_map_britain_portugal_intractable_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_portugal_intractable_desc$"
 
- notification_pink_map_britain_accepts_with_gift_name: "[SCOPE.sCountry('por_scope').GetName] Dispatches Gift"
+ notification_pink_map_britain_accepts_with_gift_name: "[SCOPE.sCountry('por_scope').GetName] dispatches gift"
  notification_pink_map_britain_accepts_with_gift_desc: "The [SCOPE.sCountry('por_scope').GetAdjective] officials have sent us a beautiful piece of art in return of our blessing of The Pink Map.\n\nOur [concept_prestige] has increased accordingly."
- notification_pink_map_britain_accepts_with_gift_tooltip: "#header $notification_pink_map_britain_accepts_with_gift_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_accepts_with_gift_desc$"
 
- notification_pink_map_britain_portugal_backs_down_name: "[SCOPE.sCountry('por_scope').GetName] Abandons the Pink Map"
+ notification_pink_map_britain_portugal_backs_down_name: "[SCOPE.sCountry('por_scope').GetName] abandons the Pink Map"
  notification_pink_map_britain_portugal_backs_down_desc: "[SCOPE.sCountry('por_scope').GetName] has decided to abandon the Pink Map. They will need to look elsewhere for expansion.\n\nOur [concept_prestige] has increased accordingly."
- notification_pink_map_britain_portugal_backs_down_tooltip: "#header $notification_pink_map_britain_portugal_backs_down_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_portugal_backs_down_desc$"
 
- notification_pink_map_britain_accepts_with_favor_name: "[SCOPE.sCountry('por_scope').GetName] Grants Compensation"
+ notification_pink_map_britain_accepts_with_favor_name: "[SCOPE.sCountry('por_scope').GetName] grants compensation"
  notification_pink_map_britain_accepts_with_favor_desc: "[SCOPE.sCountry('por_scope').GetName] has acquiesced to our request for compensation in return for our approval of the Pink Map."
- notification_pink_map_britain_accepts_with_favor_tooltip: "#header $notification_pink_map_britain_accepts_with_favor_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_accepts_with_favor_desc$"
 
- notification_pink_map_britain_portugal_ignores_name: "[SCOPE.sCountry('por_scope').GetName] Ignores Our Demand"
+ notification_pink_map_britain_portugal_ignores_name: "[SCOPE.sCountry('por_scope').GetName] ignores our demand"
  notification_pink_map_britain_portugal_ignores_desc: "The [SCOPE.sCountry('por_scope').GetAdjective] have rejected our demand, stating their commitment to realizing the Pink Map without compromises.\n\nOur [concept_prestige] has decreased, and [concept_relations] with [SCOPE.sCountry('por_scope').GetNameNoFormatting] have suffered."
- notification_pink_map_britain_portugal_ignores_tooltip: "#header $notification_pink_map_britain_portugal_ignores_name$#!\n$TOOLTIP_DELIMITER$\n$notification_pink_map_britain_portugal_ignores_desc$"
 
  #15 Goa decision
- portuguese_colonialism.15.t:1 "The State of India"
- portuguese_colonialism.15.d:1 "The recent census of [SCOPE.sState('goa_scope').GetName] has made it clear that it deserves an official act of recognition from the government to incorporate it as a [SCOPE.sCountry('por_scope').GetAdjective] state."
+ portuguese_colonialism.15.t: "The State of India"
+ portuguese_colonialism.15.d: "The recent census of [SCOPE.sState('goa_scope').GetName] has made it clear that it deserves an official act of recognition from the government to incorporate it as a [SCOPE.sCountry('por_scope').GetAdjective] state."
  portuguese_colonialism.15.f: "Goa’s Carnival, a lively pre-Lenten festival, is a legacy of our rule that brings two cultures together.\n\n#italic Entrudo#!— People splashed water, eggs, and sometimes colored liquids on each other in the streets.\n\n#italic Masquerades#!—Participants wore colorful costumes and masks, and danced to Portuguese and Goan music.\n\n#italic Rex Momus #!—A “#bold King Momo#!” figure presided over festivities, declaring days of revelry before Lent."
  portuguese_colonialism.15.a: "Keep working on Lusitanization."
  portuguese_colonialism.15.b: "Let our people prosper."

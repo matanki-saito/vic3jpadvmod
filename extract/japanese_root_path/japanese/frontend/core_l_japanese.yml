@@ -30,6 +30,7 @@
  MISSING_DLC_ENTRY: "#indent_newline: $EFFECT_LIST_BULLET$$DLC_NAME$#!"
  MISSING_MODS_HEADER: "@warning! #X MODがありません:#!\n"
  MISSING_MODS: "@warning! #X MODがありません#!"
+ MISSING_DLCS: "@warning! #X DLCがありません#!"
  MISSING_DLC: "@warning! #X DLCがありません#!"
  MISSING_CONTINUE_SAVE_GAME_TITLE: "セーブデータがありません"
  MISSING_CONTINUE_SAVE_GAME_DESC: "セーブデータが見つかりません：\n$SAVE_GAME$"

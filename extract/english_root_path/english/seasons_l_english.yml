@@ -1,0 +1,19 @@
+﻿l_english:
+ COLD_SEVERITY_NAME_INSIGNIFICANT: "$concept_cold_intensity_insignificant$"
+ COLD_SEVERITY_NAME_MODERATE: "$concept_cold_intensity_moderate$"
+ COLD_SEVERITY_NAME_SEVERE: "$concept_cold_intensity_severe$"
+
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP: "#header [concept_cold_intensity]#!\n#b [STATE_REGION.GetColdSeverityName]#! (#v [STATE_REGION.GetColdEffect|%0]#!) in [STATE_REGION.GetName]\n$TOOLTIP_DELIMITER$\n#title Effects:#!#indent_newline:3 \n$EFFECTS$#!"
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP_SEA_EFFECTS: "@ship_speed! [STATE_REGION.GetColdFleetSpeedMultiplier|%0+=] [concept_ship_speed]\n@supply! [STATE_REGION.GetColdSupplyShipMultiplier|%0-=] [Concept('concept_supply_ship','$concept_supply_ships|q$')] needed by [Concept('concept_supply_route','$concept_supply_routes|q$')] passing through"
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP_LAND_EFFECTS: "[STATE.GetWorldMarketAccessColdMultiplier|%0+=] [concept_world_market_access] in [STATE.GetNameWithCountryFlag] from #b [STATE.GetWorldMarketHub.GetStateRegion.GetNavalExitStateRegion.GetColdSeverityName]#! (#v [STATE.GetWorldMarketHub.GetStateRegion.GetNavalExitStateRegion.GetColdEffect|%0]#!) $concept_cold_intensity$ in [STATE.GetWorldMarketHub.GetStateRegion.GetNavalExitStateRegion.GetName], where its [concept_world_market_hub] [STATE.GetWorldMarketHub.GetNameWithCountryFlag] reaches the sea"
+ STATE_REGION_COLD_EFFECT_MAP_TOOLTIP_NO_EFFECTS: "#italic No effects#!"
+
+ STATE_STATUS_ITEM_COLD: "[concept_cold_intensity]\n#b [State.GetStateRegion.GetColdSeverityName]#! (#v [State.GetStateRegion.GetColdEffect|%0]#!)"
+ STATE_TT_COLD_INTENSITY: "[concept_cold_intensity]: #b [State.GetStateRegion.GetColdSeverityName]#! (#v [State.GetStateRegion.GetColdEffect|%0]#!)"
+ WORLD_MARKET_ACCESS_COLD_FACTOR: "#n x$VALUE|2$#! from #b $COLD_SEVERITY$#! (#v [STATE_REGION.GetColdEffect|%0]#!) [concept_cold_intensity] in [STATE_REGION.GetName]"
+
+ MILITARY_FORMATION_COLD_SUPPLY_FACTOR_DESC: "#v [MilitaryFormation.GetColdSupplyFactor|%0-]#! due to #b [SelectLocalization(MilitaryFormation.IsSupplyRouteInSevereCold, 'concept_cold_intensity_severe', 'concept_cold_intensity_moderate')]#! (#v [MilitaryFormation.GetSupplyRouteColdEffect|%0]#!) [concept_cold_intensity] in a [concept_sea_node] along the supply route"
+ FLEET_TRAVEL_TIME_SPEED_BREAKDOWN_ENTRY_COLD: "@ship_speed! #v $SPEED|D$#!/day in [STATE_REGION.GetName] ($MULT|v%0+$ from a [concept_cold] level of [STATE_REGION.GetColdEffect|v%0])"
+ TRAVEL_TIME_WEATHER_WARNING: "@warning! The weather along the route affects [concept_ship_speed], so travel time changes with the seasons"
+ TRAVEL_TIME_WEATHER_WARNING_SHORT: "@warning! Weather affects [concept_ship_speed]"
+ FLEET_SPEED_COLD_EFFECT_TITLE: "the [concept_cold] in [STATE_REGION.GetName]"

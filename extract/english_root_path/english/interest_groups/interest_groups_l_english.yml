@@ -31,18 +31,18 @@
  ig_catholic_church_desc:0 "Catholicism is the largest sect of Christianity. Believers hold that the Archbishop of Rome, the Pope, is the uninterrupted successor to the authority of Jesus Christ via Saint Peter. Other important beliefs include veneration of the saints and of the Virgin Mary."
  ig_orthodox_church:0 "Orthodox Church"
  ig_orthodox_church_desc:0 "The Orthodox churches tend to be Eastern churches not in communion with the Pope."
- ig_oriental_orthodox_church:1 "Oriental Orthodox Church"
- ig_oriental_orthodox_church_desc:1 "The Oriental Orthodox churches tend to be Middle Eastern churches not in communion with the Pope."
+ ig_oriental_orthodox_church: "Oriental Orthodox Church"
+ ig_oriental_orthodox_church_desc: "The Oriental Orthodox churches tend to be Middle Eastern churches not in communion with the Pope."
  ig_anglican_church:0 "Anglican Church"
  ig_anglican_church_desc:0 "The Anglican Church was created by King Henry VIII during the Protestant Reformation. Anglicans believe that the Bible is the main authority on Christian dogma, rejecting the Pope while being less radical than other Evangelical churches."
  ig_evangelical_church:0 "Evangelical Church"
  ig_evangelical_church_desc:0 "The Evangelical churches were created mostly in Northern Europe during the Protestant Reformation. Evangelicals believe that the Bible is the sole authority on Christian dogma, rejecting the Pope and seeing the Catholic veneration of the saints as bordering on idolatry."
  ig_rabbinical_council:0 "Rabbinical Council"
  ig_rabbinical_council_desc:0 "The leadership of a country’s Jewish populace tend to be well-educated Rabbis with strong traditions of debate and scholarship."
- ig_sunni_madrasahs:1 "Sunni Ulema"
- ig_sunni_madrasahs_desc:1 "Sunnism is the largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his uncle, Abu Bakr, as opposed to the Shi’a view that his son-in-law Ali was the legitimate successor."
- ig_shia_madrasahs:1 "Shi’a Ulema"
- ig_shia_madrasahs_desc:1 "Shi’ism is the second largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his son-in-law, Ali, as opposed to the Sunni view that his uncle Abu Bakr was the legitimate successor."
+ ig_sunni_madrasahs: "Sunni Ulema"
+ ig_sunni_madrasahs_desc: "Sunnism is the largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his uncle, Abu Bakr, as opposed to the Shi’a view that his son-in-law Ali was the legitimate successor."
+ ig_shia_madrasahs: "Shi’a Ulema"
+ ig_shia_madrasahs_desc: "Shi’ism is the second largest sect of Islam. Believers hold that Muhammad was succeeded as Caliph of Islam by his son-in-law, Ali, as opposed to the Sunni view that his uncle Abu Bakr was the legitimate successor."
  ig_ibadi_madrasahs: "Ibadi Ulema"
  ig_ibadi_madrasahs_desc: "Ibadism is a sect of Islam that believes that faithful should be led by local imams, chosen based on their piety and learnedness. Believers hold that Muhammad was succeeded as Caliph of Islam by his son-in-law, Ali, but that Ali later became unfit for rule and was succeeded by Abdullah ibn Wahb al-Rasibi, the first Ibadi imam."
  ig_hindu_priesthood:0 "Hindu Priesthood"
@@ -78,7 +78,7 @@
  ig_evangelicals:0 "Evangelicals"
  ig_evangelicals_desc:0 "Ardent Christians from a surprisingly wide variety of Protestant denominations, the Evangelicals all agree that the nation needs to find its own spiritual awakening in order to save itself."
  ig_yeoman_farmers:0 "Yeoman Farmers"
- ig_yeoman_farmers_desc:1 "The smallholding American rural class, regarded by many of the Founding Fathers as the bedrock of the nation. The yeoman class has long established itself as the vanguard of both American rural populism and Westwards expansion."
+ ig_yeoman_farmers_desc: "The smallholding American rural class, regarded by many of the Founding Fathers as the bedrock of the nation. The yeoman class has long established itself as the vanguard of both American rural populism and Westwards expansion."
 
   # Ottoman IGs
  ig_local_governors:0 "Local Governors"
@@ -93,8 +93,8 @@
  ig_confucian_desc:0 "More of a social tradition, Confucianism coexists comfortably with a multitude of faiths, but nonetheless demands social harmony and strong morals from those that follow it."
 
   # Papal IGs
- ig_roman_landowners:1 "Civic Nobility"
- ig_roman_landowners_desc:1 "Consisting of noble families and landholding elites granted titles by the Pope, the Roman civic nobility serve as people of wealth, influence, and temporal power across the Holy See’s territories."
+ ig_roman_landowners: "Civic Nobility"
+ ig_roman_landowners_desc: "Consisting of noble families and landholding elites granted titles by the Pope, the Roman civic nobility serve as people of wealth, influence, and temporal power across the Holy See’s territories."
  ig_roman_curia:0 "Roman Curia"
  ig_roman_curia_desc:0 "The Roman Curia, or "Court of Rome" as it is sometimes known, is the administrative institution of the Holy See, exercising both ecclesiastical and temporal powers."
 
@@ -107,7 +107,7 @@
  ig_daimyo_desc: "The Daimyō are the powerful feudal lords of Japan, and the most influential supporters of the Shogunate. Their political interests lie in upholding Japan's traditional order."
  ig_kazoku: "Kazoku"
  ig_kazoku_desc: "The Kazoku are the new aristocracy of Japan, formed from the amalgamation of the daimyō and traditional #italic kuge#! courtier class. Though the Restoration has eroded their formal privileges, they retain their lands and social connections."
- ig_peasants:1 "Heimin"
+ ig_peasants: "Heimin"
  ig_peasants_desc:0 "Heimin denotes the Japanese class of commoners, born without any kind of social privileges, and with political interests primarily reflecting those of rural farmers."
  ig_jisha: "Jisha"
  ig_jisha_desc: "Existing alongside, and often at odds with the native Japanese belief in kami, by the 19th century Buddhism has been present in Japan for over a millennium. The Buddhist schools patronized by the state throughout the Edo era emphasize the syncretic relationship between kami and buddhas."
@@ -165,8 +165,12 @@
  austrian_aristocracy_desc: "The Austrian Aristocracy represents the established noble class of Austria, historically awarded with noble titles by the Habsburg Holy Roman Emperors and Archdukes of Austria, and possessing great influence within the imperial court."
 
   # Misc Igs
- ig_red_army:0 "Red Army"
- ig_red_army_desc:0 "The Red Army is an institution dedicated to the defense and propagation of the Revolution, born through the amalgamation of the traditional armed forces with the proletariat and Communist ideology."
+ ig_red_army: "Red Army"
+ ig_red_army_desc: "The Red Army is an institution dedicated to the defense and propagation of the Revolution, organized from a base of armed and regimented proletarians."
+
+ ig_nomenklatura: "Nomenklatura"
+ ig_nomenklatura_desc: "The Nomenklatura is a class of appointed bureaucrats and state officials. They favor the professionalization of the bureaucracy, and consolidation of the state in the face of foreign threats."
+
  ig_fellahin: "Fellahin"
  ig_fellahin_desc: "Gaining their name from the plows they work and the fields they till, the fellahin are the farmers and peasants of Egypt."
 

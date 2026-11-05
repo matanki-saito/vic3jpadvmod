@@ -34,21 +34,25 @@
  movement_anti_slavery_name: "$movement_anti_slavery$"
  movement_anti_slavery_icon: "@movement_anti_slavery!"
 
- movement_royalist_constitutional: "Royalist Movement"
+ movement_royalist_constitutional: "[COUNTRY.GetCustom('royalist_or_tsarist_movement')] Movement"
  movement_royalist_constitutional_short: "Royalist"
  movement_royalist_constitutional_name: "$movement_royalist_constitutional$"
  movement_royalist_constitutional_icon: "@movement_royalist_constitutional!"
 
- movement_royalist_absolutist: "Absolutist Movement"
+ movement_royalist_absolutist: "[COUNTRY.GetCustom('absolutist_or_tsarist_movement')] Movement"
  movement_royalist_absolutist_short: "Absolutist"
  movement_royalist_absolutist_name: "$movement_royalist_absolutist$"
  movement_royalist_absolutist_icon: "@movement_royalist_absolutist!"
+
+ absolutist_movement: "Absolutist"
+ royalist_movement: "Royalist"
+ tsarist_movement: "Tsarist"
 
  movement_india_pan_national: "Indian National Movement"
  movement_india_pan_national_name: "$movement_india_pan_national$"
  movement_india_pan_national_short: "Indian National"
  movement_india_pan_national_icon: "@movement_india_pan_national!"
- 
+
  custom_moral_majority: "Moral Majority"
  custom_preservation_movement: "Preservation Movement"
  custom_fraternal_association: "Fraternal Association"
@@ -89,6 +93,9 @@
  movement_liberal: "Liberal Movement"
  movement_liberal_short: "Liberal"
  movement_liberal_name: "$movement_liberal$"
+ movement_anti_communist: "White Movement"
+ movement_anti_communist_short: "White"
+ movement_anti_communist_name: "$movement_anti_communist$"
  movement_radical: "Radical Movement"
  movement_radical_short: "Radical"
  movement_radical_name: "$movement_radical$"
@@ -166,3 +173,7 @@
  movement_tokugawa_loyalist_short: "Tokugawa Loyalist"
  movement_tokugawa_loyalist_name: "Sabaku Movement"
  movement_tokugawa_loyalist_icon: "@movement_tokugawa_loyalist!"
+
+ movement_cossack: "Cossack Movement"
+ movement_cossack_name: "$movement_cossack$"
+ movement_cossack_short: "Cossack"

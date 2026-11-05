@@ -1,0 +1,9 @@
+﻿l_japanese:
+ amendment_orthodox_conversions: "正教への改宗"
+ amendment_orthodox_conversions_desc: "減税や土地の下賜があるという噂や、[GetCulture('east_german').GetName]の地主に対抗したいという思いから、[GetCulture('latvian').GetName]と[GetCulture('estonian').GetName]の農民が「ツァーリの信仰」への集団改宗を始めている。"
+ amendment_factory_councils: "工場評議会"
+ amendment_factory_councils_desc: "革命的な状況によって労働者が急進化し、自らの職場を掌握して、従来の経営構造を一掃した。\n\n@information! [GetLawType('law_council_republic').GetName]が制定されると、この[concept_amendment]は[concept_law]となる"
+ amendment_bourgeois_specialists: "ブルジョワ専門家"
+ amendment_bourgeois_specialists_desc: "労働者階級には経営の専門知識が不足していた。それを補うため、旧体制に仕えていた学のある専門職の人々が、手厚い報酬と引き換えに国家機構内の役職を与えられている。"
+ amendment_cossacks: "コサック軍"
+ amendment_cossacks_desc: "コサックは国家に取り込まれた半遊牧の農民集団であり、辺境地域への入植と平定を任されてきた。"

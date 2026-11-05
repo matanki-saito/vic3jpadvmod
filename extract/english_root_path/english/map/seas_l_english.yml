@@ -171,4 +171,4 @@
  STATE_ARCTIC_OCEAN_01:0 "Arctic Ocean"
  STATE_MASCARENES:0 "Mascarenes"
  STATE_NORTH_PHILIPPINES_SEA:0 "North Philippines Sea"
- STATE_SOUTH_PHILIPPINES_SEA:1 "South Philippines Sea"
+ STATE_SOUTH_PHILIPPINES_SEA: "South Philippines Sea"

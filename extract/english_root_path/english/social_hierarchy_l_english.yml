@@ -33,4 +33,4 @@
  dalit: "Dalit"
  dalit_desc: "A term used to describe those born out of the four castes. Dalits have no way to join the hierarchy. As such, they are and have been, ostracized and marginalized for generations. Dalits are forced to do menial labor and are afforded no rights or privileges."
 
- STRATA_CONCEPTS_DEPEND_ON_SOCIAL_HIERARCHY: "Which $concept_pops$ belong to this Strata depends on the [Concept('concept_country','$concept_country_possessive$')] [concept_social_hierarchy]."
+ STRATA_CONCEPTS_DEPEND_ON_SOCIAL_HIERARCHY: "Which $concept_pops$ belong to this Strata depends on the [Concept('concept_country','$concept_country_possessive|q$')] [concept_social_hierarchy]."

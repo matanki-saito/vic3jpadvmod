@@ -129,9 +129,9 @@ disapproval_pact_action_notification_desc: "#v $RUS$#! disapproves of #v Montene
 disapproval_pact_action_propose_name: "Disapproval"
 disapproval_pact_action_break_name: "Cease Disapproval"
 disapproval_pact_pact_desc: "#v Montenegro's#! raiding and headhunting is difficult for #v $RUS$#! to stomach, as much as the small nation may otherwise serve Russian interests."
-disapproval_pact_action_notification_break_name: "Disapproval Ceased"
+disapproval_pact_action_notification_break_name: "Disapproval ceased"
 disapproval_pact_action_notification_break_desc: "#v $RUS$#! is pleased to see a civilized respect for borders is in effect."
-treaty_name_rus_mon:1 "Protection of Orthodox Christians"
+treaty_name_rus_mon: "Protection of Orthodox Christians"
 
 
 #JE RAIDING and related
@@ -150,7 +150,7 @@ je_montenegrin_raiding_reason_rus2: "$RUS$"
 montenegrin_raiding_progress_bar: "Raiding Fervour"
 montenegrin_raiding_progress_bar_desc: "[concept_raiding_frequency]: #v [JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)]%#!"
 #[SCOPE.GetRootScope.GetCountry.GetCustom('american_outlaw_gang')]
-montenegrin_raiding_stop_tt:1 "#b $MON$#! will stop [concept_raiding]"
+montenegrin_raiding_stop_tt: "#b $MON$#! will stop [concept_raiding]"
 #"The question is not whether to raid or not to raid, but rather how often we should raid, and how many heads should we bring back?"
 
 #JE raiding buttons
@@ -164,9 +164,8 @@ mon_less_raiding_tt: "We have to wait at least six months to decrease raiding ag
 mon_discourage_raiding_tt: "Decreases [concept_raiding_frequency] by 25%"
 
 #If not longer bordering notification that raiding stops
- notification_je_montenegrin_raiding_fail_name: "We cease Raiding"
+ notification_je_montenegrin_raiding_fail_name: "We cease [concept_raiding]"
  notification_je_montenegrin_raiding_fail_desc: "With no territory bordering the Ottoman's, our tribes are forced to stop their raids."
- notification_je_montenegrin_raiding_fail_tooltip: "#header $notification_je_montenegrin_raiding_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_je_montenegrin_raiding_fail_desc$"
 
 
 
@@ -247,7 +246,6 @@ raiding_income_greater_tt: "Our income from [concept_raiding] must be less than 
 
  notification_je_mon_austria_alliance_fail_name: "[SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetName, 'AUS')] retracts its offer"
  notification_je_mon_austria_alliance_fail_desc: "After recent events, [SelectLocalization(SCOPE.sCountry('austria').IsValid, SCOPE.sCountry('austria').GetNameNoFlag, 'AUS')] is no longer willing to consider returning our port to us."
- notification_je_mon_austria_alliance_fail_tooltip: "#header $notification_je_mon_austria_alliance_fail_name$#!\n$TOOLTIP_DELIMITER$\n$notification_je_mon_austria_alliance_fail_desc$"
 
 #Austria hands back coast event
 mon_state_formation.4.t: "The Montenegrin Coast"
@@ -354,7 +352,7 @@ mon_state_formation.13.c: "Make lots of guns."
 
 
 je_tur_raided: "The Disobedient Mountain"
-je_tur_raided_reason: "The Montenegrins believe themselves to be an independent state, when in fact they are our subjects given a degree of autonomy in order to practice their religious freedom. For too long they have been tolerated, killing our tax collectors and harming our people. \n\nIf we were to put them to the sword, it would send a message to other rebels in our lands. However, we must be cautious, lest the Great Powers become involved, and small [SelectLocalization(SCOPE.sCountry('montenegro').IsValid, SCOPE.sCountry('montenegro').GetNameNoFlag, 'MON')] becomes the match that ignites the powder keg of Europe. \n\n#v Raiding:#! \nRaided [Concept('concept_state', '$concept_states$')] suffer penalties to [concept_taxes] and worse effects from [concept_turmoil]."
+je_tur_raided_reason: "The Montenegrins believe themselves to be an independent state, when in fact they are our subjects given a degree of autonomy in order to practice their religious freedom. For too long they have been tolerated, killing our tax collectors and harming our people. \n\nIf we were to put them to the sword, it would send a message to other rebels in our lands. However, we must be cautious, lest the Great Powers become involved, and small [SelectLocalization(SCOPE.sCountry('montenegro').IsValid, SCOPE.sCountry('montenegro').GetNameNoFlag, 'MON')] becomes the match that ignites the powder keg of Europe. \n\n#v Raiding:#! \nRaided [Concept('concept_state', '$concept_states|q$')] suffer penalties to [concept_taxes] and worse effects from [concept_turmoil]."
 je_tur_raided_target: "[SelectLocalization(SCOPE.sCountry('montenegro').IsValid, SCOPE.sCountry('montenegro').GetNameNoFlag, 'MON')] is raiding [GetGlobalVariable('mon_raid_state').GetState.GetName]!"
 je_tur_raided_no_target: "The Montenegrins have ceased raiding, for now..."
 je_montenegrin_tur_raid_back: "Launch Counterattack"

@@ -1,9 +1,9 @@
 ﻿l_japanese:
- no_veterancy: "雇用"
+ no_veterancy: "新規"
  veterancy1: "正規"
- veterancy2: "熟達者"
- veterancy3: "ベテラン"
- veterancy4: "エリート"
+ veterancy2: "熟練"
+ veterancy3: "歴戦"
+ veterancy4: "精鋭"
  ship_veterancy_none: "$no_veterancy$"
  ship_veterancy_1: "$veterancy1$"
  ship_veterancy_2: "$veterancy2$"
