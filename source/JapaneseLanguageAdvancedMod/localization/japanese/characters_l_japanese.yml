@@ -14,7 +14,7 @@
  HAS_APPOINTMENT_FILTER_NAME:0 "任命されている"
  NO_APPOINTMENT_FILTER_NAME:0 "任命されていない"
  HISTORICAL_FILTER_NAME:0 "$FILTER_HISTORICAL$"
- NON_HISTORICAL_FILTER_NAME:0 "架空"
+ NON_HISTORICAL_FILTER_NAME:0 "非史実"
  ideology_child:0 "子ども"
  ideology_child_desc:0 "このキャラクターは子どもであり、まだ政治イデオロギーを形成していない。"
  holding_revenue_magnate_scale:0 "[concept_holding][concept_revenue]"

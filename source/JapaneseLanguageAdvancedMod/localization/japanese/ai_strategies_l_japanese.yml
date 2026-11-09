@@ -195,7 +195,7 @@
  AI_ATTITUDE_SCORE_BREAKDOWN:0 "#header [concept_attitude]スコア : $SCORE$#!\n$TOOLTIP_DELIMITER$\n$SCORE_REASONS$"
  AI_STRATEGIC_DESIRE_LAST_CATALYST_DESC:0 "彼らは$CATALYST$が原因で、この#v $concept_strategic_desire$#!を採用しました"
  OUR_ENTIRE_COUNTRY:0 "我が[concept_country]全体"
- AI_REASON_WANTS_TREATY_PORTS:0 "[COUNTRY.GetName]は$DETAILS$に[Concept('concept_treaty_port','$concept_treaty_ports|q$')]が欲しいと考えています"
+ AI_REASON_WANTS_TREATY_PORTS:0 "[COUNTRY.GetName]は$DETAILS$に[Concept('concept_treaty_port','$concept_treaty_ports|q$')]を欲しがっている"
  AI_REASON_LIBERTY_DESIRE:0 "[COUNTRY.GetName]の[concept_liberty_desire]"
  ai_strategy_tanzimat_reforms:0 "タンジマート改革を実行"
  ai_strategy_tanzimat_reforms_desc:0 "[COUNTRY.GetName]は自国に対し、急進的ではあるが不可欠な改革の実行を目指します"

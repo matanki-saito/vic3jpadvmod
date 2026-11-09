@@ -200,7 +200,7 @@
  DATA_CHARACTER_TOOLTIP_IN_BATTLE:0 "現在、#b [Character.GetBattle.GetName]#!で[SelectLocalization(Character.IsAttackingInBattle,'CHARACTER_ADVANCING','CHARACTER_DEFENDING')]の状態にある"
  CHARACTER_ADVANCING:0 "#b 進軍中#!"
  CHARACTER_DEFENDING:0 "#b 防衛中#!"
- DATA_CHARACTER_COMMANDER_DETAILS_ORDER:0 "[concept_order] : #b [Character.GetOrderType.GetName]#![AddTextIf(Character.GetAssignedState.IsValid,Concatenate(' assigned to ',Character.GetAssignedState.GetName))]"
+ DATA_CHARACTER_COMMANDER_DETAILS_ORDER:0 "[concept_order] : #b [Character.GetOrderType.GetName]#![AddTextIf(Character.GetAssignedState.IsValid,Concatenate(Character.GetAssignedState.GetName,'にて'))]"
  DATA_CHARACTER_ADMIRAL_DEFEATED:0 "現在、[concept_admiral_defeated][AddLocalizationIf(Character.HasInvasionPlan,'DATA_CHARACTER_ADMIRAL_DEFEATED_IN_INVASION')]"
  DATA_COMPANY_NAME_FORMAT_TOOLTIP:0 "[Company.GetCountry.GetName]の[Concept('concept_building_level','$concept_building_levels|q$')][Company.GetBuilding.GetNumOwnedLevels|v]に影響 : "
  COMPANY_DOES_NOT_HAVE_BONUS:0 "\n$COMPANY_PROSPERITY_MODIFIER_HEADER$\n"

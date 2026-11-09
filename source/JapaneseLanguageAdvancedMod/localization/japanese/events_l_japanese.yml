@@ -516,7 +516,7 @@
  custom_newspaper_sentinel:0 "センチネル"
  custom_newspaper_informer:0 "インフォーマー"
  custom_newspaper_bulletin:0 "ブレティン"
- notification_west_america_expedition_progress_average_name:0 "アメリカ西部遠征は続いています"
+ notification_west_america_expedition_progress_average_name:0 "アメリカ西部遠征が継続中"
  notification_west_america_expedition_progress_average_desc:0 "アメリカ西部遠征は問題なく続いています。"
  expedition_events.200.t:0 "アメリカ西部のフロンティアを測量のための遠征"
  expedition_events.200.d:0 "西部フロンティアの未知の地形を地図にするため、遠征隊を派遣します。"

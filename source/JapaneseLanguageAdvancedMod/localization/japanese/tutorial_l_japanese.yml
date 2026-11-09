@@ -654,7 +654,7 @@
  lesson_recruit_promote_commander_how_10_continue:0 "$concept_commander$を昇進させてチュートリアルを終了します。"
  lesson_recruit_promote_commander_complete:0 "新たに$concept_commander$が昇進しました！"
  lesson_recruit_promote_commander_complete_desc:0 "別の$concept_commander$を雇用および昇進させることで、命令可能な[Concept('concept_unit','$concept_units|q$')]の潜在数を増やすことができ、$concept_commander$の直接的な指揮下にある$concept_units$の数も増やすことができます。\n\nまた、これによっていずれ頭角を現すであろう[Concept('concept_character_trait','$concept_character_traits|q$')]を持つ新キャラクターも利用できるようになります。新しい$concept_commander$の[concept_interest_group]が有する[concept_clout]も増大します。これらはすべて対価として@bur![concept_bureaucracy]を必要とします。\n\nこれらの効果は$concept_commander$が死亡した時や退役を迫られた時まで継続します。後に$concept_commander$を退役させると、彼らの$concept_interest_group$による[concept_approval]にも影響を及ぼします。"
- lesson_declare_interest_how_1:0 "関心を確立する方法"
+ lesson_declare_interest_how_1:0 "関心の表明を行う方法"
  lesson_declare_interest_how_1_desc:0 "[Concept('concept_interest','$concept_interests|q$')]は、関連する[concept_strategic_region]で[concept_involvement]を蓄積することにより確立されます。\n\n$HOW_TO_INCREASE_INVOLVEMENT$"
  lesson_declare_interest_how_1_continue:0 "#b 外交#!レンズから#b 関心の表明#!を見つけてクリックする"
  lesson_declare_interest_how_2:0 "$lesson_declare_interest_how_1$"

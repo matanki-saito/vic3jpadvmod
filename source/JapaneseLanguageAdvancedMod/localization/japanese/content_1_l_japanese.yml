@@ -1361,7 +1361,7 @@
  trail_of_tears_enactment:0 "涙の道 : 政治への憤り"
  indian_removal_approval:0 "インディアンの強制移住"
  indian_removal_end:0 "強制移住が阻止されない場合、チェロキーは多大な犠牲を伴う移住を強要されることになります。"
- indian_removal_fail_tt:0 "アメリカ合衆国に留まっているチェロキー[Concept('concept_pop','$concept_pops|q$')]は存在しません"
+ indian_removal_fail_tt:0 "アメリカ合衆国に留まっているチェロキー[Concept('concept_pop','$concept_pops|q$')]が存在しない"
  native_american_rights:0 "インディアンの強制移住の終焉"
  movement_investigation_isolation:0 "殺人捜査"
  notification_victoria_notification_name:0 "[SCOPE.sCountry('britain_victoria_country_scope').GetName]と[SCOPE.sCountry('hannover_victoria_scope').GetName]の連合が終了"
