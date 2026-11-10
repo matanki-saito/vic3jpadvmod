@@ -1431,7 +1431,7 @@
  rubber_always_spread_tt:0 "このイベントは表示されなくなります。今後、ゴムの隆盛が発生した際には、上記の効果が自動的に適用されます。"
  rubber_always_concentrate_tt:0 "このイベントは表示されなくなります。今後、ゴムの隆盛が発生しそうになると、[SCOPE.sBuilding('rubber_plantation').GetName]が最も多く存在する[concept_state]に、上記の効果が自動的に適用されます。"
  state_rubber_nexus_modifier:0 "容赦なきゴム産業"
- TSUNAMI_LIST_HEADER:0 "$TOOLTIP_DELIMITER$\n現在、[GetHarvestConditionType('津波').GetName]の[concept_devastation]を受けている自身の[Concept('concept_state','$concept_states|q$')]は以下の通り : "
+ TSUNAMI_LIST_HEADER:0 "$TOOLTIP_DELIMITER$\n現在、[GetHarvestConditionType('tsunami').GetName]の[concept_devastation]を受けている自身の[Concept('concept_state','$concept_states|q$')]は以下の通り : "
  TSUNAMI_LIST_CONTENT:0 "#indent_newline:3 \n[GetScriptedGui('je_krakatoa_tsunami_states_sgui').ExecuteTooltip(GuiScope.SetRoot(ROOT.GetCountry.MakeScope).End)]#!"
  TSUNAMI_LIST_ENTRY:0 "[THIS.GetState.GetName] : [THIS.GetState.GetDevastationLevel|-%0]"
  TSUNAMI_LIST_EMPTY_STATE:0 "現在、[GetHarvestConditionType('tsunami').GetNameNoFormatting|b]の影響を受けている[concept_state]はない"

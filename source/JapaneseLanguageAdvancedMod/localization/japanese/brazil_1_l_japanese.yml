@@ -143,7 +143,7 @@
  dona_key:0 "ドナ"
  brz_navy_loyalists:0 "レベル#Bold 5#!以上の[GetBuildingType('building_naval_administration').GetName]を持つすべての[Concept('concept_state','$concept_states|q$')]が以下を獲得 : "
  je_caudillo:0 "カウディーリョ時代"
- je_caudillo_reason:0 "#bold 進捗ゲージ#!が#bold 100#!に達すると、[SCOPE.sCountry('caudillo_country_scope').GetName]の軍有力者の権力が確固たるものになる。\n\n進捗ゲージを枯渇させ、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]を政府から締め出すことで、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の#bold 軍事独裁主義#!を破滅させ、国内の軍有力者の脅威を終わらせることができる。\n\n$je_coup_loc$\n\nスペインからの独立後、植民地政府が解体された。そのあと間もなく権力の空白を埋めたのはカリスマ的軍事指導者。南米の政治の大部分を決めるのはこうした「軍事独裁者」だ。"
+ je_caudillo_reason:0 "#bold 進捗ゲージ#!が#bold 100#!に達すると、[SCOPE.sCountry('caudillo_country_scope').GetName]の軍有力者の権力が確固たるものになる。\n\n進捗ゲージを枯渇させ、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]を政府から締め出すことで、[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]の#bold カウディーリョ主義#!を破滅させ、国内の軍有力者の脅威を終わらせることができます。\n\n$je_coup_loc$\n\nスペインからの独立後、植民地政府が解体された。そのあと間もなく権力の空白を埋めたのはカリスマ的軍事指導者。南米の政治の大部分を決めるのはこうした「カウディーリョ」だ。"
  caudillo.1.t:0 "カウディーリョ時代"
  caudillo.1.d:0 "スペインからの[ROOT.GetCountry.GetAdjective]の独立後、植民地政府が消滅し、権力の空白ができたが、それはすぐにカリスマ的な[SCOPE.gsInterestGroup('army_scope').GetName]指導者によって埋められることになった。こうした「カウディーリョ」は南米の政治の大部分において決定権を持つようになった。"
  caudillo.1.f:0 "かつて、すべての植民地は母国の統治に服するという法令があった。あらゆる商品と言葉は母国の扉を通り、母国が公正に判断する。植民地に必要なのはただ母国のみだった。\n\nそしてボナパルトが現れ、母国は傀儡となった。子供たちが飛び立つ時が来たのかもしれない。そうして父の武力の下、子供たちは飛び立った。しかしこの物語はまだ終わっていない。"
