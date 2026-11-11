@@ -520,3 +520,5 @@
  gendarme_of_europe:0 "$je_tp_tsar_gendarme_of_europe$"
  caucasus_first:0 "$je_caucasian_war$"
  sponsor_of_the_balkan_league:0 "$je_the_balkan_league$"
+ modifier_dirge_of_third_rome_bonus:0 "$tsarpoints_events.1.t$"
+ modifier_dirge_of_third_rome_penalty:0 "$tsarpoints_events.1.t$"

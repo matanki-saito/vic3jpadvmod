@@ -40,7 +40,7 @@
  ACCEPTANCE_STATUS_SEGMENT_SIMPLE_TEXT_TOOLTIP:0 "#tooltip_header [AcceptanceStatus.GetName]#!\n[AcceptanceStatusSegment.GetPopulationDesc][ConcatIfNeitherEmpty('\n',AddLocalizationIf(GreaterThan_int64(AcceptanceStatusSegment.GetTotalPopulationIncreasingInAcceptance,'(int64)0'),'ACCEPTANCE_STATUS_SEGMENT_POPULATION_DECREASING'))]"
  CULTURE_TT_ACCEPTANCE_MOD:0 "$ACCEPTANCE_OF_CULTURE_TERM$ : [Culture.GetAcceptanceIn(GetPlayer)|=v]\n#indent_newline:3    [Culture.GetAcceptanceDescIn(GetPlayer)]#!"
  RELIGION_TT_ACCEPTANCE_MOD:0 "$ACCEPTANCE_OF_RELIGION_TERM$ : [Religion.GetAcceptanceIn(GetPlayer)|=v]\n#indent_newline:3    [Religion.GetAcceptanceDescIn(GetPlayer)]#!"
- ACCEPTANCE_FROM_PRIMARY_CULTURE:0 "[Concept('concept_primary_cultures','$concept_primary_culture|q$')]であることから#v $VALUE|=+0$#!"
+ ACCEPTANCE_FROM_PRIMARY_CULTURE:0 "#v $VALUE|=+0$#! ([Concept('concept_primary_cultures','$concept_primary_culture|q$')]である) "
  ACCEPTANCE_FROM_STATE_RELIGION:0 "#v $VALUE|=+0$#! ([concept_state_religion]である) "
  ACCEPTANCE_FROM_NO_RELIGIOUS_SIMILARITY:0 "#v $VALUE|=+0$#! ([concept_religion]の基本[concept_acceptance]) "
  ACCEPTANCE_FROM_LOCAL_ACCEPTANCE:0 "#v $VALUE|=+0$#! ([concept_cultural_community]の[concept_acceptance]) "

@@ -207,7 +207,7 @@
  resignation.3.c:0 "[SCOPE.sCharacter('abdicating_monarch').GetHerHis|U]の後継者は、[SCOPE.sCharacter('abdicating_monarch').GetSheHe]に欠けていた強さを持って支配しなければならない。"
  leader_abdicates_the_throne_tt:0 "[SCOPE.sCharacter('abdicating_monarch').GetPrimaryRoleTitle][SCOPE.sCharacter('abdicating_monarch').GetFullName]は[SCOPE.sCountry('country_scope').GetName]の王位を退きます"
  leader_abdicates_the_throne_display_tt:0 "我が国の[concept_ruler]が退位する"
- ideology_not_too_close_tt:0 "この[Concept('concept_character','$concept_character_possessive|q$')]の[concept_ideology]は我々の[concept_ruler]のものとあまり#b 似ていない#!"
+ ideology_not_too_close_tt:0 "この[Concept('concept_character','$concept_character_possessive|q$')]の[concept_ideology]が[concept_ruler]と近しく#b ない#!"
  modifier_exiled_leader:0 "追放されたリーダー"
  modifier_revolution_defeated_light:0 "無血革命"
  modifier_revolution_victorious_light:0 "革命の勝者"

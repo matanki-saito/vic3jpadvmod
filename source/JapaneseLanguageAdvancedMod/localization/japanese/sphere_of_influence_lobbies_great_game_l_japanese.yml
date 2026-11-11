@@ -827,3 +827,4 @@
  treaty_of_aigun_tt:0 "[SCOPE.sCountry('china_scope').GetName]が[SCOPE.sState('amur_scope').GetName][concept_state]を[ROOT.GetCountry.GetName]に割譲する"
  je_korean_rebellion_government_victory_conclusion_desc:0 "この$concept_journal_entry$は#b 政府#!の勝利で幕を閉じた"
  je_korean_rebellion_rebel_victory_conclusion_desc:0 "この$concept_journal_entry$は#b 反乱軍#!の勝利で幕を閉じた"
+ formation_reason_regime_change:0 "体制変更"

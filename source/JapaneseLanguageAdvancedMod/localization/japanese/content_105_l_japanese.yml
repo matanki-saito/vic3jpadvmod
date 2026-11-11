@@ -361,7 +361,7 @@
  discrimination_events.1.d.religion:0 "昨今、[ROOT.GetCountry.GetAdjective]国内では二等市民として扱われている[SCOPE.sPop('discriminated_religion_pop').GetReligion.GetName]の中から、経済的に成功した人々が現れています。彼らの中には、本来ならば門前払いされてしまうような施設を訪れる者も現れているようです。"
  discrimination_events.1.f:0 "「ここに住もう。子供たちも、安全な場所で暮らしたいはずだ」男は言った。\n\n女性は腕を組んで答える。\n\n「あなた、私たちにどんな視線が向けられているかくらい知っているでしょう？この国で『安全』というのは、私たちが安全に暮らせる、という意味ではないわ。その逆よ」"
  discrimination_events.1.a:0 "規制を強化しよう。国の治安を守らなくては。"
- discrimination_events.1.b:0 "彼らは自らの成功と、それに伴うすべての権利を正当に獲得した。"
+ discrimination_events.1.b:0 "彼らは成功者だ。成功は報われなくてはならない。"
  discrimination_events.2.t:0 "背後のナイフ"
  discrimination_events.2.d.culture:0 "昨今の軍事的敗北に屈辱を感じた多くの人々は、[ROOT.GetCountry.GetName]国内の[SCOPE.sPop('discriminated_culture_pop').GetCulture.GetName]人が銃後で我々の戦争努力を裏切ったからだと主張し、責任を転嫁しています。"
  discrimination_events.2.d.religion:0 "昨今の軍事的敗北に屈辱を感じた多くの人々は、[ROOT.GetCountry.GetName]国内の[SCOPE.sPop('discriminated_religion_pop').GetReligion.GetName]信者が銃後で我々の戦争努力を裏切ったからだと主張し、責任を転嫁しています"

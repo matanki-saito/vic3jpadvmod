@@ -776,3 +776,5 @@
  COUNTRY_STANDING_BATTALIONS_BREAKDOWN_SECTION:0 "\n$TOOLTIP_DELIMITER$\n#title 常備[Concept('concept_battalion','$concept_battalions|q$')]#!#indent_newline:3 \n$BREAKDOWN$#!"
  COUNTRY_CARRYING_CAPACITY_TOOLTIP:0 "#header [concept_carrying_capacity]#!\n合計@ship_carrying_capacity!#v [Country.GetCarryingCapacity|0]#![Country.GetCarryingCapacityBreakdown]"
  COUNTRY_RELATIVE_CARRYING_CAPACITY_TOOLTIP:0 "#header [concept_carrying_capacity]#!\n#v [Country.GetStandingBattalions|0]#!の常備[Concept('concept_battalion','$concept_battalions|q$')]に対して@ship_carrying_capacity!#v [Country.GetCarryingCapacity|0]#![Country.GetCarryingCapacityBreakdown][Country.GetStandingBattalionsBreakdown]"
+ AUTO_REPLACE_LOST_SHIPS_LABEL:0 "失った[Concept('concept_ship','$concept_ships|q$')]の代わりを自動で用意"
+ AUTO_REPLACE_LOST_SHIPS_TOOLTIP:0 "#header 失った[Concept('concept_ship','$concept_ships|q$')]の代わりを自動で用意#!\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetNameNoIcon]の$concept_ship$が[concept_naval_battle]で撃沈された場合、同じ[concept_ship_template]の$concept_ship$が[Concept('concept_ship_construction','$concept_ship_construction_short|q$')]キューに入り、この[concept_fleet]に割り当てられます。\n\n退役した$concept_ships$の代わりは用意されません。"
