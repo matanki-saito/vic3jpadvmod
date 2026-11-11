@@ -237,6 +237,8 @@
  SELECT_FLEET_AS_DEFAULT_SHIP_CONSTRUCTION: "Select [MilitaryFormation.GetName] to be the #b default#! [concept_fleet] for newly constructed [Concept('concept_ship','$concept_ships|q$')]"
  DEFAULT_SHIP_CONSTRUCTION_IS_NEW_FLEET: "New [concept_fleet]"
  DEFAULT_SHIP_CONSTRUCTION_IS_NEW_FLEET_TOOLTIP: "Select this for newly constructed [Concept('concept_ship','$concept_ships|q$')] to be added to a new [concept_fleet] when done"
+ AUTO_REPLACE_LOST_SHIPS_LABEL: "Automatically replace lost [Concept('concept_ship','$concept_ships|q$')]"
+ AUTO_REPLACE_LOST_SHIPS_TOOLTIP: "#header Automatically replace lost [Concept('concept_ship','$concept_ships|q$')]#!\n$TOOLTIP_DELIMITER$\nWhen a $concept_ship$ in [MilitaryFormation.GetNameNoIcon] is sunk in a [concept_naval_battle], a new $concept_ship$ of the same [concept_ship_template] is queued for [Concept('concept_ship_construction', '$concept_ship_construction_short|q$')] and assigned to this [concept_fleet].\n\n$concept_ships$ that are decommissioned are not replaced."
 
  MILITARY_FORMATION_SHIPS_TAB: "@ships! Ships"
  MILITARY_FORMATION_SHIPS_TAB_SELECTED: "@ships! #b Ships#!"

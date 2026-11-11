@@ -606,6 +606,7 @@
   formation_reason_technology_desc: "Lobby prioritizes $formation_reason_technology$"
   formation_reason_economy: "Economical Competition"
   formation_reason_economy_desc: "Lobby prioritizes $formation_reason_economy$"
+  formation_reason_regime_change: "Regime Change"
 
   lobby_core.1.a: "Locate lobbies."
   lobby_core.1.b: "Manually launch a catalyst."

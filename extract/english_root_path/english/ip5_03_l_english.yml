@@ -203,3 +203,45 @@ rasputin.5.f: ""It is no wonder that many men and women are lured by the promise
 rasputin.5.a: "The House of [SCOPE.sCharacter('felix_scope').GetLastNameNoFormatting] will always remain loyal to the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s interests."
 rasputin.5.b: "The prince must exercise caution when speaking of [SCOPE.sCharacter('rasputin_scope').GetLastNameNoFormatting]."
 modifier_felix_ig_upset: "Ignored Prince's Concerns"
+
+# Favorite Content
+favorites.1.t: "Lobbying Champion"
+favorites.1.d: "[SCOPE.sCharacter('current_favorite_scope').GetFullName], the appointed $concept_favorite$ of [ROOT.GetCountry.GetRuler.GetFullNameWithTitle], has been vehemently advocating for the [SCOPE.sPoliticalLobby('current_favorite_lobby_scope').GetName]'s interests. In response, [SCOPE.gsInterestGroup('opposition_ig_scope').GetLeader.GetFullName] has personally beseeched the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] to keep [SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s growing influence in check."
+favorites.1.f: "It took [SCOPE.gsInterestGroup('opposition_ig_scope').GetLeader.GetFullNameNoFormatting] a fortnight to gain a private audience with [ROOT.GetCountry.GetRuler.GetFullNameWithTitleNoFormatting]. Once alone, [SCOPE.gsInterestGroup('opposition_ig_scope').GetLeader.GetLastNameNoFormatting] does not waste a moment and launches into a tirade decrying the dangers of [SCOPE.sCharacter('current_favorite_scope').GetFullNameNoFormatting]'s recent political endeavors.\n\n"[SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s overreach is preposterous," [SCOPE.gsInterestGroup('opposition_ig_scope').GetLeader.GetLastNameNoFormatting] tells the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]. "Surely [SCOPE.sCharacter('current_favorite_scope').GetSheHe] does not need to interfere in foreign affairs.""
+favorites.1.a: "[SCOPE.gsInterestGroup('opposition_ig_scope').GetLeader.GetLastNameNoFormatting] ought to focus on matters pertaining to the [SCOPE.gsInterestGroup('opposition_ig_scope').GetName]."
+favorites.1.b: "[SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s input is invaluable."
+favorites.1.c: "Perhaps [SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting] should take a step away from public matters."
+modifier_favored_interests_ig_approval: "Favored Interests"
+
+favorites.2.t: "Fact or Fiction?"
+favorites.2.d: "The [ROOT.GetCountry.GetCapital.GetCityHubName] Gazette has reported on a scandal involving the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s appointed $concept_favorite$, [SCOPE.sCharacter('current_favorite_scope').GetFullName]. While the article has caused a public outcry, [SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting] insists it is a misunderstanding."
+favorites.2.f: "#bold [ROOT.GetCountry.GetCapital.GetCityHubName], [TimeKeeper.GetCurrentDate.GetString]—#! [SCOPE.sCharacter('current_favorite_scope').GetFullNameNoFormatting] has found [SCOPE.sCharacter('current_favorite_scope').GetHerselfHimself] in the center of a scandal. [SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting], trusted confidant of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle], has been accused of [SCOPE.GetRootScope.GetCountry.GetCustom('favorite_scandal_reason')]. Replying to [SCOPE.sCharacter('current_favorite_scope').GetHerHis] critics, [SCOPE.sCharacter('current_favorite_scope').GetSheHe] says: "This is an assassination of my character. These accusations are an embellishment of reality. We should focus on fact, not fiction!"\n\nDespite [SCOPE.sCharacter('current_favorite_scope').GetHerHis] denial of wrongdoing, a number of witnesses have come forward with expert testimony attesting to [SCOPE.sCharacter('current_favorite_scope').GetHerHis] scandalous misdeeds. Are the days of [SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s influence in [ROOT.GetCountry.GetCapital.GetCityHubName] numbered?\n\n#italic —The [ROOT.GetCountry.GetCapital.GetCityHubName] Gazette#!"
+favorites.2.a: "Cover up [SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s misdeeds."
+favorites.2.b: "[SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting] must go — this publicity has thoroughly ruined [SCOPE.sCharacter('current_favorite_scope').GetHerHis] reputation."
+modifier_favorite_embarrassment: "Public Embarrassment"
+
+# favorite_scandal_reason
+favorite_scandal_bribing_politicians: "bribing politicians"
+favorite_scandal_forging_securities: "forging securities of a railroad company"
+favorite_scandal_carousing: "partying and carousing in public parks"
+favorite_scandal_selling_counterfeits: "selling counterfeit art"
+favorite_scandal_affair: "having an affair with a married performer"
+favorite_scandal_secret_society: "meeting with a radical secret society"
+favorite_scandal_contraband: "importing contraband firearms"
+favorite_scandal_blackmailing: "blackmailing an official"
+favorite_scandal_drunken_misconduct: "drunken misconduct at the theater"
+
+favorites.3.t: "An Impassioned Speech"
+favorites.3.d: "[SCOPE.sCharacter('current_favorite_scope').GetFullName], enjoying a wave of popularity as the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]'s appointed $concept_favorite$, has become the leading proponent of [SCOPE.sLaw('current_law_scope').GetName] — even delivering a speech in [ROOT.GetCountry.GetCapital.GetCityHubName] backing its enactment."
+favorites.3.f: "#bold [ROOT.GetCountry.GetCapital.GetCityHubName], [TimeKeeper.GetCurrentDate.GetString]—#! Officials assembled in [ROOT.GetCountry.GetCapital.GetCityHubName] to debate the merits of [SCOPE.sLaw('current_law_scope').GetNameNoFormatting]. Notably present was [SCOPE.sCharacter('current_favorite_scope').GetFullNameNoFormatting], who delivered an impassioned speech in support of the policy.\n\nAn official, previously doubtful of the proposal, expressed his approval following [SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s speech: "[SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s [SCOPE.sCharacter('current_favorite_scope').GetCustom('favorite_law_speech')] presence has given me full confidence in [SCOPE.sLaw('current_law_scope').GetNameNoFormatting]. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] is right to have placed trust in [SCOPE.sCharacter('current_favorite_scope').GetHerHim]."\n\n#italic —The [ROOT.GetCountry.GetCapital.GetCityHubName] [SCOPE.GetRootScope.GetCountry.GetCustom('generic_newspaper_type')]#!"
+favorites.3.a: "[SCOPE.sCharacter('current_favorite_scope').GetLastNameNoFormatting]'s efforts won't go to waste."
+favorites.3.b: "This is exactly why the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] appointed [SCOPE.sCharacter('current_favorite_scope').GetHerHim] $concept_favorite$."
+
+modifier_rousing_speech: "Rousing Speech"
+modifier_crowd_charisma: "Crowd Charisma"
+modifier_favored_outcome: "Favored Outcome"
+
+# favorite_law_speech
+favorite_law_speech_persuasive: "charismatic"
+favorite_law_speech_determined: "candid"
+favorite_law_speech_intimidating: "commanding"

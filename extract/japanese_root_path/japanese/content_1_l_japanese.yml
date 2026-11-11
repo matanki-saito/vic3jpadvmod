@@ -377,7 +377,7 @@
  communism_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states|q$')]が[concept_turmoil]状態"
  communism_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states|q$')]に[Concept('concept_loyalist','$concept_loyalists|q$')]が存在"
  communism_progress_from_characters_tt: "[GetLawType('law_council_republic').GetName]を支持する[Concept('concept_character', '$concept_characters|q$')]の[Concept('concept_popularity', '人気')]"
- communism_progress_from_interest_groups_tt: "[GetLawType('law_council_republic').GetName]を支持する[Concept('concept_interest_group','$concept_interest_groups|q$')]"
+ communism_progress_from_interest_groups_tt: "[GetLawType('law_factory_councils').GetName]を支持する[Concept('concept_interest_group','$concept_interest_groups|q$')]"
  communism_progress_from_laws_tt: "#bold 警察活動#!および#bold 治安維持#![Concept('concept_institution', '$concept_institutions|q$')]のレベル"
  communism_progress_from_no_laws_tt: "#bold 警察活動#!または#bold 治安維持#![Concept('concept_institution', '$concept_institutions|q$')]の欠如"
  communism_progress_from_movement_activism_tt: "[GetIdeology('ideology_socialist_movement').GetName]、[GetIdeology('ideology_communist_movement').GetName]、[GetIdeology('ideology_anarchist_movement').GetName]の[Concept('concept_political_movement','$concept_political_movements|q$')]の[Concept('concept_activism', '$concept_activism_short|q$')]"

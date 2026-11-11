@@ -212,6 +212,8 @@
  SELECT_FLEET_AS_DEFAULT_SHIP_CONSTRUCTION: "新たに建造される[Concept('concept_ship','$concept_ships|q$')]の#b デフォルト#!の[concept_fleet]にする[MilitaryFormation.GetName]を選択"
  DEFAULT_SHIP_CONSTRUCTION_IS_NEW_FLEET: "新しい[concept_fleet]"
  DEFAULT_SHIP_CONSTRUCTION_IS_NEW_FLEET_TOOLTIP: "完成後、新しく建造された[Concept('concept_ship','$concept_ships|q$')]を新しい[concept_fleet]に追加するには、これを選択します"
+ AUTO_REPLACE_LOST_SHIPS_LABEL: "失った[Concept('concept_ship','$concept_ships|q$')]の代わりを自動で用意"
+ AUTO_REPLACE_LOST_SHIPS_TOOLTIP: "#header 失った[Concept('concept_ship','$concept_ships|q$')]の代わりを自動で用意#!\n$TOOLTIP_DELIMITER$\n[MilitaryFormation.GetNameNoIcon]の$concept_ship$が[concept_naval_battle]で撃沈された場合、同じ[concept_ship_template]の$concept_ship$が[Concept('concept_ship_construction', '$concept_ship_construction_short|q$')]キューに入り、この[concept_fleet]に割り当てられます。\n\n退役した$concept_ships$の代わりは用意されません。"
  MILITARY_FORMATION_SHIPS_TAB: "@ships! 艦船"
  MILITARY_FORMATION_SHIPS_TAB_SELECTED: "@ships! #b 艦船#!"
  MILITARY_FORMATION_CONSTRUCTION_QUEUE_TAB: "@ship_construction! キュー（[ShipList.GetNumShipsUnderConstruction]）"

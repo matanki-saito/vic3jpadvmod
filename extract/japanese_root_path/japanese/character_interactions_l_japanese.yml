@@ -23,6 +23,7 @@
  revoke_favorite_effect_tt: "[Character.GetFullName]が[Character.GetCountry.GetRuler.GetFullNameWithTitle]の[concept_favorite]ではなくなる"
  only_one_favorite_tt: "[GetPlayer.GetRuler.GetFullNameWithTitle]にはまだ[concept_favorite]がいない"
  rasputin1_active_tt: "イベント「#bold $rasputin1t_tt$#!」が有効なあいだ、[GetPlayer.GetRuler.GetFullNameWithTitle]は[concept_favorite]の任命も寵遇の取り消しもできません。"
+ favorite_event_active_tt: "$concept_favorite$が関与するイベントが有効なため、[GetPlayer.GetRuler.GetFullNameWithTitle]は[concept_favorite]の任命も寵遇の取り消しもできない。"
  grant_command_to_ruler: "指揮権を授与"
  remove_command_from_ruler: "司令官を退く"
  retire_commander: "司令官から退かせる"

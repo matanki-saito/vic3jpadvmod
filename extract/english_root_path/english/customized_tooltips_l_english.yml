@@ -212,7 +212,7 @@
  DATA_CHARACTER_NAME_TOOLTIP_COMMANDER_DETAILS: "[ConcatIfNeitherEmpty( '\n', AddTextIf( Character.IsCommander, Character.GetCommanderDetails ))]"
  DATA_CHARACTER_COMMANDER_DETAILS: "Rank: [Character.GetRankName|v]\n[concept_command_limit]: [SelectLocalization(Character.IsAdmiral, '@ships!', '@battalions!')] [Character.GetCommandLimit][ConcatIfNeitherEmpty( '\n\n', AddLocalizationIf( Not( Character.IsOffer ), 'DATA_CHARACTER_COMMANDER_LOCATION_TOOLTIP' ))][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( And(Character.GetOrderType.IsValid, Character.IsGeneral), 'DATA_CHARACTER_COMMANDER_DETAILS_ORDER' ))][ConcatIfNeitherEmpty( '\n', AddLocalizationIf( Character.IsDefeated, 'DATA_CHARACTER_ADMIRAL_DEFEATED' ) )]"
  DATA_CHARACTER_COMMANDER_DETAILS_ORDER: "[concept_order]: #b [Character.GetOrderType.GetName]#![AddTextIf(Character.GetAssignedState.IsValid,Concatenate(' assigned to ',Character.GetAssignedState.GetName))]"
- DATA_CHARACTER_ADMIRAL_DEFEATED: "Currently [concept_admiral_defeated] [AddLocalizationIf(Character.HasInvasionPlan, 'DATA_CHARACTER_ADMIRAL_DEFEATED_IN_INVASION')]"
+ DATA_CHARACTER_ADMIRAL_DEFEATED: "@admiral_defeated! Currently [concept_admiral_defeated] [AddLocalizationIf(Character.HasInvasionPlan, 'DATA_CHARACTER_ADMIRAL_DEFEATED_IN_INVASION')]"
  DATA_CHARACTER_ADMIRAL_DEFEATED_IN_INVASION: "in [Character.GetInvasion.GetName]"
 
  DATA_CHARACTER_TRAIT_NAME_TOOLTIP: "[CharacterTrait.GetModifiers]\n\n#lore [CharacterTrait.GetDesc]#!"

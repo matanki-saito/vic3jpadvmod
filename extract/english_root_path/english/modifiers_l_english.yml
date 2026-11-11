@@ -2935,6 +2935,8 @@ goods_output_fine_art_mult_desc: "A bonus or penalty to the amount of @fine_art!
  state_disallow_incorporation_bool_desc:0 "Cannot Incorporate State due to a modifier"
  state_disallow_barracks_construction_bool: "Disallow Army Building Construction"
  state_disallow_barracks_construction_bool_desc: "[GetBuildingGroup('bg_army').GetName] cannot be constructed in the [concept_state], and no new [Concept('concept_battalion','$concept_battalions|q$')] can be raised there"
+ state_disable_disband_prestige_penalty_bool: "No Prestige Penalty for Disbanding"
+ state_disable_disband_prestige_penalty_bool_desc: "Disbanding [Concept('concept_battalion','$concept_battalions|q$')] from the [concept_state] does not cost [concept_prestige]"
 
  state_allow_assimilation_in_homeland_bool: "Assimilation in Homeland States Allowed"
  state_allow_assimilation_in_homeland_bool_desc: "[concept_assimilation] of [Concept('concept_pop','$concept_pops|q$')] is allowed even if they are living in one of their [concept_homeland] [Concept('concept_state', '$concept_states|q$')]"

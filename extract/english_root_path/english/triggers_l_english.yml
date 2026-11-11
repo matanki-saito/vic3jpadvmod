@@ -2243,6 +2243,12 @@
  TRIGGER_NUM_BUILDING_ASSETS_OF_TYPE_FIRST_NOT: "[BUILDING.GetName] does #bold not#! own $COMPARATOR$ #variable $NUM|0$#! levels of $BUILDING_TYPE$"
  TRIGGER_NUM_BUILDING_ASSETS_OF_TYPE_THIRD: "[BUILDING.GetName] owns $COMPARATOR$ #variable $NUM|0$#! levels of $BUILDING_TYPE$"
  TRIGGER_NUM_BUILDING_ASSETS_OF_TYPE_THIRD_NOT: "[BUILDING.GetName] does #bold not#! own $COMPARATOR$ #variable $NUM|0$#! levels of $BUILDING_TYPE$"
+ TRIGGER_NUM_BUILDING_ASSETS_OF_GROUP: "Owns $COMPARATOR$ #variable $NUM|0$#! levels of [BUILDING_GROUP.GetName] buildings"
+ TRIGGER_NUM_BUILDING_ASSETS_OF_GROUP_NOT: "Does #bold not#! own $COMPARATOR$ #variable $NUM|0$#! levels of [BUILDING_GROUP.GetName] buildings"
+ TRIGGER_NUM_BUILDING_ASSETS_OF_GROUP_FIRST: "[BUILDING.GetName] owns $COMPARATOR$ #variable $NUM|0$#! levels of [BUILDING_GROUP.GetName] buildings"
+ TRIGGER_NUM_BUILDING_ASSETS_OF_GROUP_FIRST_NOT: "[BUILDING.GetName] does #bold not#! own $COMPARATOR$ #variable $NUM|0$#! levels of [BUILDING_GROUP.GetName] buildings"
+ TRIGGER_NUM_BUILDING_ASSETS_OF_GROUP_THIRD: "[BUILDING.GetName] owns $COMPARATOR$ #variable $NUM|0$#! levels of [BUILDING_GROUP.GetName] buildings"
+ TRIGGER_NUM_BUILDING_ASSETS_OF_GROUP_THIRD_NOT: "[BUILDING.GetName] does #bold not#! own $COMPARATOR$ #variable $NUM|0$#! levels of [BUILDING_GROUP.GetName] buildings"
 
  TRIGGER_MARKET_HAS_GOODS_SHORTAGE: "Has [Concept('concept_shortage', '$concept_shortages|q$')]"
  TRIGGER_MARKET_HAS_GOODS_SHORTAGE_NOT: "Does #bold not #!have [Concept('concept_shortage', '$concept_shortages|q$')]"

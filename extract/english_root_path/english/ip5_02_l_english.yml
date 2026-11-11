@@ -328,7 +328,8 @@
  tsarpoints_events.1.a: "[ROOT.GetCountry.GetName] has joined with the modern world."
  tsarpoints_events.1.b: "Is God no longer with us?"
  notify_upgraded_decrees_removed_tt: "\n@information! All [Concept('concept_decree', '$concept_decrees|q$')] empowered by [Concept('concept_ukaz', '$concept_ukase|q$')] have been restored to default"
-
+ modifier_dirge_of_third_rome_bonus: "$tsarpoints_events.1.t$"
+ modifier_dirge_of_third_rome_penalty: "$tsarpoints_events.1.t$"
 
  tsarpoints_events.2.t: "Imperial $concept_ukaz$ No. [ROOT.Var('ukaz_no_var').GetValue]"  # Law Passing
  tsarpoints_events.2.d: "Taking especial personal interest in the enactment of [SCOPE.sLaw('current_law_scope').GetName], [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukaz commanding the swift and Empire-wide implementation of the law."

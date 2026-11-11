@@ -24,6 +24,7 @@
  revoke_favorite_effect_tt: "[Character.GetFullName] will no longer be the [concept_favorite] of [Character.GetCountry.GetRuler.GetFullNameWithTitle]"
  only_one_favorite_tt: "[GetPlayer.GetRuler.GetFullNameWithTitle] does not already have a [concept_favorite]"
  rasputin1_active_tt: "[GetPlayer.GetRuler.GetFullNameWithTitle] cannot appoint a [concept_favorite] or rescind favoritism while the #bold $rasputin1t_tt$#! Event is active"
+ favorite_event_active_tt: "[GetPlayer.GetRuler.GetFullNameWithTitle] cannot appoint a [concept_favorite] or rescind favoritism because an Event featuring the $concept_favorite$ is active"
 
  grant_command_to_ruler: "Grant Command"
  remove_command_from_ruler: "Retire from Command"

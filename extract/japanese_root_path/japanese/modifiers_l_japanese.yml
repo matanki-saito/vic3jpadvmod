@@ -2695,6 +2695,8 @@
  state_disallow_incorporation_bool_desc: "補正により州を編入できません"
  state_disallow_barracks_construction_bool: "陸軍施設の建設禁止"
  state_disallow_barracks_construction_bool_desc: "この[concept_state]では[GetBuildingGroup('bg_army').GetName]を建設できず、新たな[Concept('concept_battalion','$concept_battalions|q$')]を編成することもできません"
+ state_disable_disband_prestige_penalty_bool: "解散による威信へのペナルティなし"
+ state_disable_disband_prestige_penalty_bool_desc: "[concept_state]の[Concept('concept_battalion','$concept_battalions|q$')]を解散しても[concept_prestige]は損なわれません"
  state_allow_assimilation_in_homeland_bool: "故郷の州での同化を許可"
  state_allow_assimilation_in_homeland_bool_desc: "[Concept('concept_pop','$concept_pops|q$')]の[concept_assimilation]は、自らの[concept_homeland][Concept('concept_state', '$concept_states|q$')]のいずれかに住んでいる場合でも許可されます。"
  state_allow_assimilation_without_presence_bool: "主要文化への同化は常に許可"

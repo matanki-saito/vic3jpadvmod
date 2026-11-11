@@ -390,7 +390,7 @@
  communism_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states|q$')] in [concept_turmoil]"
  communism_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states|q$')] with [Concept('concept_loyalist','$concept_loyalists|q$')]"
  communism_progress_from_characters_tt: "[concept_popularity] of [Concept('concept_character', '$concept_characters|q$')] supporting [GetLawType('law_council_republic').GetName]"
- communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','$concept_interest_groups|q$')] supporting [GetLawType('law_council_republic').GetName]"
+ communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','$concept_interest_groups|q$')] supporting [GetLawType('law_factory_councils').GetName]"
  communism_progress_from_laws_tt: "level of #bold Policing#! and #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions|q$')]"
  communism_progress_from_no_laws_tt: "lack of #bold Policing#! or #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions|q$')]"
  communism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short|q$')] of [GetIdeology('ideology_socialist_movement').GetName], [GetIdeology('ideology_communist_movement').GetName], and [GetIdeology('ideology_anarchist_movement').GetName] [Concept('concept_political_movement','$concept_political_movements|q$')]"

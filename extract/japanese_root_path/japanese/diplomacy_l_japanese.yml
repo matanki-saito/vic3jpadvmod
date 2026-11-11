@@ -2163,7 +2163,7 @@
  TREATY_DRAFT_OWE_OBLIGATION_ALREADY_ASKING: "@red_cross! [COUNTRY.GetName]は、[OTHER_COUNTRY.GetName]が[COUNTRY.GetName]に恩義を約束している間は、同時に[OTHER_COUNTRY.GetName]に[concept_obligation]を約束することができません"
  THREATEN_NAVAL_HOSTILITIES: "[concept_naval_hostilities]を示唆して脅す"
  THREATEN_NAVAL_HOSTILITIES_TOOLTIP: "#header [concept_naval_hostilities]を示唆して[COUNTRY.GetName]を脅します#!\n[COUNTRY.GetAdjective]の受容に対して#tooltippable;tooltip:$ACCEPTANCE_BREAKDOWN$ $ACCEPTANCE_VAL|+=$#!\n\n$INCIDENT_DESC$\n\n我々の提案が拒否された場合、$DURATION|v$日間の一時的な[concept_naval_hostilities]が開始します\n\n@information! $THREATEN_HOSTILITIES_NO_NEGOTIATION$"
- THREATEN_NAVAL_HOSTILITIES_ACCEPTANCE: "[concept_naval_hostilities]をちらつかせて威迫したことにより#tooltippable;tooltip:$BREAKDOWN$ $VALUE|D+=$#!"
+ THREATEN_NAVAL_HOSTILITIES_ACCEPTANCE: "[concept_naval_hostilities]をちらつかせて威迫したことにより#tooltippable;tooltip:$BREAKDOWN$ $VALUE|0+=$#!"
  THREATEN_NAVAL_HOSTILITIES_ALREADY_PENDING: "我々はすでに[concept_naval_hostilities]を示唆する[concept_treaty]の提案を保留中です"
  THREATEN_NAVAL_HOSTILITIES_ON_COOLDOWN: "我々は最近、[concept_naval_hostilities]をちらつかせてこの国を威迫しました。次に実行できるのは$DATE|v$（$DAYS|v$日後）です"
  THREATEN_NAVAL_HOSTILITIES_SUBJECT_PROTECTED: "[TARGET_COUNTRY.GetName]は[COUNTRY.GetName]によって保護されています"

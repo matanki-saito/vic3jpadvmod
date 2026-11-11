@@ -60,3 +60,6 @@
 
   provisional_government_name_tt: "For the duration of the #v $je_russia_provisional_government$#! [concept_journal_entry], #v $RUS$#! will be known as the #v $dyn_c_russian_provisional_government$#!"
   provisional_government_popular_opposition: "Popular Opposition"
+
+  notification_russia_non_russian_nationality_independence_name: "[SCOPE.sState('independent_national_state').GetOwner.GetName] declares autonomy"
+  notification_russia_non_russian_nationality_independence_desc: "[SCOPE.sCulture('independent_national_state_culture').GetName] revolutionaries have established an autonomous government in [SCOPE.sState('independent_national_state').GetName] due to high [concept_fervor|l]. It remains loyal to us for now."

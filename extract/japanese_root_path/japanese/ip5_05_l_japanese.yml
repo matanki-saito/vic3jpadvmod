@@ -59,3 +59,5 @@
  rcw.102.b: "何を言う！今ほど[SCOPE.GetRootScope.GetCountry.GetPowerBloc.GetName]が必要なときはない！"
  provisional_government_name_tt: "#v $je_russia_provisional_government$#!の[concept_journal_entry]が進行しているあいだ、#v $RUS$#!の国名は#v $dyn_c_russian_provisional_government$#!となる"
  provisional_government_popular_opposition: "民衆の反発"
+ notification_russia_non_russian_nationality_independence_name: "[SCOPE.sState('independent_national_state').GetOwner.GetName]が自治を宣言"
+ notification_russia_non_russian_nationality_independence_desc: "[SCOPE.sCulture('independent_national_state_culture').GetName]の革命派は、高まる[concept_fervor|l]を受け、[SCOPE.sState('independent_national_state').GetName]に自治政府を創設しました。今のところは、我が国に忠実なままです。"

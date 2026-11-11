@@ -480,6 +480,7 @@
  formation_reason_technology_desc: "圧力団体は$formation_reason_technology$を優先する"
  formation_reason_economy: "経済競争"
  formation_reason_economy_desc: "圧力団体は$formation_reason_economy$を優先します"
+ formation_reason_regime_change: "体制変更"
  lobby_core.1.a: "圧力団体を特定します。"
  lobby_core.1.b: "手動でカタリストを開始します。"
  lobby_core.1.c: "手動で圧力団体を作成します。"

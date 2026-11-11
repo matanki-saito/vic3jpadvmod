@@ -274,6 +274,8 @@
  tsarpoints_events.1.a: "これで[ROOT.GetCountry.GetName]も、近代世界の仲間入りを果たせたわけだ。"
  tsarpoints_events.1.b: "神はもはや、我らと共におられないのか…？"
  notify_upgraded_decrees_removed_tt: "\n@information! [Concept('concept_ukaz', '$concept_ukase|q$')]によって強化されたすべての[Concept('concept_decree', '$concept_decrees|q$')]が通常の状態に戻った"
+ modifier_dirge_of_third_rome_bonus: "$tsarpoints_events.1.t$"
+ modifier_dirge_of_third_rome_penalty: "$tsarpoints_events.1.t$"
  tsarpoints_events.2.t: "帝国$concept_ukaz$第[ROOT.Var('ukaz_no_var').GetValue]号" # Law Passing
  tsarpoints_events.2.d: "[SCOPE.sLaw('current_law_scope').GetName]の制定に格別の関心を寄せている[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle][ROOT.GetCountry.GetRuler.GetFirstName]は、この法律を帝国全土で速やかに施行するよう命じる勅令を発布した。"
  tsarpoints_events.2.f: "「[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は私の見識を買って、[GetPlayer.GetCustom('country_legislature_name')]の議員に任じてくださったのです！この改革には、まだ多くの疑問が残っています！」\n\n「ええ、そうでしょうとも。ですが今は、疑問を呈するよりも、そのご見識を行動に生かしていただきたい。[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]も、その違いを心得ていると信じておられますよ」"

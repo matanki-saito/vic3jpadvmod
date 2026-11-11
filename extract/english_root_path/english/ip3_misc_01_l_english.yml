@@ -459,13 +459,13 @@ because_lombardy_venetia_tt: "Because [ROOT.GetCountry.GetName] retains #b Lomba
 promised_slovakia_to_hungary_tt: "Because #b Slovakia#! has already been promised to #b Hungary#!, the effects of this option will #r worsen#!"
 promised_bukovina_to_romania_tt: "Because #b Bukovina#! has already been promised to #b Transylvania#!: #indent_newline:3 \n• [GetCulture('romanian').GetName] will be [Concept('concept_disqualified_culture','$concept_disqualified_culture_short|q$')] from future [Concept('concept_integrated_culture','$concept_integrated_culture_process|q$')]\n• [GetPlayer.MakeScope.ScriptValue('large_radicals')|-=1%] of [GetCulture('romanian').GetName] [Concept('concept_pop', '$concept_pops|q$')] become more [concept_radical]#!"
 
-danubian_tradition_traits_tt: "All #bold European#! [Concept('concept_culture', '$concept_cultures|q$')] with [Concept('concept_homeland','$concept_homelands|q$')] in our [Concept('concept_state', '$concept_states|q$')] in the [GetGeographicRegion('region_danubia').GetName], [GetGeographicRegion('region_balkans').GetName], [GetGeographicRegion('region_poland').GetName], or [GetGeographicRegion('region_south_germany').GetName] [Concept('concept_georegion','$concept_georegions|q$')] will adopt the #b Danubian#! [concept_tradition_trait]"
+danubian_tradition_traits_tt: "All #bold European#! [Concept('concept_culture', '$concept_cultures|q$')] with [Concept('concept_homeland','$concept_homelands|q$')] in our [Concept('concept_state', '$concept_states|q$')] in the [GetGeographicRegion('geographic_region_danubia_old').GetName], [GetGeographicRegion('geographic_region_balkans_old').GetName], [GetGeographicRegion('geographic_region_poland_old').GetName], or [GetGeographicRegion('geographic_region_south_germany_old').GetName] [Concept('concept_georegion','$concept_georegions|q$')] will adopt the #b Danubian#! [concept_tradition_trait]"
 
 danubian_federation_button_cooldown_tt: "Has #b not#! integrated a [concept_culture] in the past #v 180 days#!"
 
 not_already_used_this_interaction_tt: "Has #b not#! already used this interaction"
 
-capital_is_in_danubian_states_tt: "[concept_capital_state] is in the [GetGeographicRegion('region_danubia').GetName], [GetGeographicRegion('region_balkans').GetName], [GetGeographicRegion('region_poland').GetName], or [GetGeographicRegion('region_south_germany').GetName] [concept_georegion]"
+capital_is_in_danubian_states_tt: "[concept_capital_state] is in the [GetGeographicRegion('geographic_region_danubia_old').GetName], [GetGeographicRegion('geographic_region_balkans_old').GetName], [GetGeographicRegion('geographic_region_poland_old').GetName], or [GetGeographicRegion('geographic_region_south_germany_old').GetName] [concept_georegion]"
 
 modifier_greater_austria: "Union on the Danube"
 modifier_greater_austria_character: "Emperor of All Peoples"
