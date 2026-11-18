@@ -11,6 +11,7 @@ import time
 import urllib.request
 import zipfile
 from os.path import join
+from pathlib import Path
 from urllib.request import urlopen, Request
 
 _ = join
@@ -66,6 +67,150 @@ def download_trans_zip_from_paratranz(project_id,
         my_file.write(urllib.request.urlopen(req).read())
 
     return out_file_path
+
+
+def aggregation_stats_from_paratranz_files(ext_paratranz_main_dir_path: str):
+    # 集計結果
+    result = {}
+
+    for file_path in pathlib.Path(ext_paratranz_main_dir_path).glob('**/*.json'):
+        relative_path = file_path.relative_to(ext_paratranz_main_dir_path)
+        str_path = str(relative_path)
+        with open(file_path, 'r', encoding='utf_8_sig') as f:
+            for entry in json.load(f):
+                key = entry["key"]
+
+                # キーがファイルを超えて移動したりした場合。
+                if key in result:
+                    # debug用
+                    # print("DUP(JP) KEY: {}".format(key))
+                    pass
+                else:
+                    result[key] = {}
+
+                context = entry["context"] if "context" in entry else entry["original"]
+
+                # hidden ... -1
+                # これは非表示になっておりTranslationは入っていないのでオリジナルをそのまま使う
+                if entry["stage"] == -1:
+                    translation = entry["original"]
+
+                # untranslated ... 0 , disputed ... 2
+                # paratranzから出てくるcontextだと改行がエスケープされていない
+                elif entry["stage"] == 2 or entry["stage"] == 0:
+                    translation = re.sub(r'\n', '\\\\n', context)
+
+                else:
+                    translation = entry["translation"]
+
+                # ISSUE-493のWA
+                if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
+                    # [Nbsp]の表記ゆれを直して実態にする。
+                    translation = re.sub(r'\[[Nn][Bb][Ss][Pp]]', " ", translation)
+                    translation = translation.replace("##", "〒")
+                    translation = issue_242(translation)
+                    translation = issue_241(translation)
+                    translation = translation.replace("〒", "##")
+                else:
+                    print("skip:%s" % entry["key"])
+
+                # textのversionはParatranzに読み込めないので0とする
+                # "はエスケープしなくて良い
+
+                result[key][str_path.replace("_l_english.json", "")] = translation
+
+    return result
+
+
+def assembly_mod2(resource_paratranz_main_zip_file_path,
+                  out_dir_path,
+                  compatible_version):
+    """
+    Appモッドを作成
+    :param resource_paratranz_main_zip_file_path: ParatranzからダウンロードできるMain Mod zipファイルのパス
+    :param out_dir_path: 出力フォルダ
+    :return:
+    """
+
+    ext_paratranz_main_dir_path = _(".", "tmp2", "paratranz_ext_main")
+
+    # 初期化（github-actionsでは必要ない）
+    if os.path.exists(ext_paratranz_main_dir_path):
+        shutil.rmtree(ext_paratranz_main_dir_path)
+    if os.path.exists(out_dir_path):
+        shutil.rmtree(out_dir_path)
+    out_dir_loca = _(out_dir_path, "localization")
+    os.makedirs(out_dir_loca)
+
+    # zip展開する
+    with zipfile.ZipFile(resource_paratranz_main_zip_file_path) as existing_zip:
+        existing_zip.extractall(ext_paratranz_main_dir_path)
+
+    # paratranzの翻訳を集計。keyに対して対応するファイルがいくつあるか、それぞれの翻訳がどうであるかを集計する
+    aggregation_trans_data = aggregation_stats_from_paratranz_files(_(ext_paratranz_main_dir_path, "utf8"))
+
+    # 公式の日本語翻訳（extract/japanese_root_path）を元に作っていく
+    japanese_root_path: Path = Path("extract/japanese_root_path")
+    for file_path in pathlib.Path(japanese_root_path).glob('**/*.yml'):
+        relative_path = file_path.relative_to(japanese_root_path)
+        str_path = str(relative_path)
+
+        # 同じ名前の出力ファイルを出力フォルダに用意
+        export_dir = _(out_dir_loca, relative_path.parent)
+        os.makedirs(export_dir, exist_ok=True)
+        with open(_(out_dir_loca, relative_path),
+                  'wt', encoding='utf_8_sig', errors='ignore', newline='') as fw:
+            fw.write("l_japanese:\n")
+
+            # 公式の日本語翻訳にあるkeyだけを書き込んでいく
+            with open(file_path, 'r', encoding='utf_8_sig') as fr:
+                for line in fr:
+                    match = re.search(r'^\s*([^:#]+):\d*\s+\"(.*)\"[^\"]*$', line)
+                    if match:
+                        key = match.group(1)
+                        value = match.group(2)
+
+                        # paratranz上に存在するかどうか
+                        if key in aggregation_trans_data:
+                            # keyが複数のファイルに定義されているかどうかをdebug
+                            supported_files = dict.keys(aggregation_trans_data[key])
+                            if len(supported_files) > 1:
+                                # debug用
+                                # print("複数のファイルに定義あり", key, supported_files)
+                                pass
+
+                            # ファイルが一致するかどうかを確認する
+                            path_str = str_path.replace("_l_japanese.yml", "")
+                            if path_str in aggregation_trans_data[key]:
+                                fw.write(" %s: \"%s\"\n" % (key, value))
+                            else:
+                                print("キーは存在するが現行ファイルと一致しない:", key, path_str)
+                        else:
+                            print("Paratranzに存在しないキー:", key)
+
+    # jominiのフォルダをreplaceに移動する
+    os.makedirs(_(out_dir_path, "localization", "replace"), exist_ok=True)
+    shutil.move(src=_(out_dir_path, "localization", "jomini"),
+                dst=_(out_dir_path, "localization", "replace"))
+
+    # clausewitzのフォルダをreplaceに移動する
+    os.makedirs(_(out_dir_path, "localization", "replace"), exist_ok=True)
+    shutil.move(src=_(out_dir_path, "localization", "clausewitz"),
+                dst=_(out_dir_path, "localization", "replace"))
+
+    # 特殊対応
+    # ①は必要、②③は不要
+    # ① C:\Program Files (x86)\Steam\steamapps\common\Victoria 3\game\localization\english\modifiers_l_english.yml
+    # ② C:\Program Files (x86)\Steam\steamapps\common\Victoria 3\jomini\localization\modifiers\modifiers_l_english.yml
+    # ③ C:\Program Files (x86)\Steam\steamapps\common\Victoria 3\game\localization\modifiers\modifiers_l_english.yml
+    os.remove(_(out_dir_path, "localization", "replace", "jomini", "modifiers", "modifiers_l_japanese.yml"))
+    os.remove(_(out_dir_path, "localization", "replace", "jomini", "modifiers", "modifiers_v2_l_japanese.yml"))
+
+    # .metadata/metadata.jsonを入れる
+    os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
+    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), compatible_version)
+
+    return out_dir_path
 
 
 def assembly_mod(resource_paratranz_main_zip_file_path,
@@ -385,13 +530,16 @@ def update_source(mod_folder_path):
 
 
 def main():
-    version = get_extra_compatible(
-        project_id=5456,
-        secret=os.environ.get("PARATRANZ_SECRET"))
-
-    print(version)
-
     is_local = "IS_LOCAL" in os.environ and os.environ.get("IS_LOCAL") in ["True", "true", 1]
+
+    if not is_local:
+        version = get_extra_compatible(
+            project_id=5456,
+            secret=os.environ.get("PARATRANZ_SECRET"))
+    else:
+        version = 0
+
+    print("Version:", version)
 
     # 一時フォルダ用意
     os.makedirs(_(".", "tmp2"), exist_ok=True)
@@ -410,7 +558,7 @@ def main():
         p_file_main_path = zip_path
 
     # Modを構築する（フォルダのまま）
-    mod_folder_path = assembly_mod(
+    mod_folder_path = assembly_mod2(
         resource_paratranz_main_zip_file_path=p_file_main_path,
         out_dir_path=out_dir_path,
         compatible_version=version)
