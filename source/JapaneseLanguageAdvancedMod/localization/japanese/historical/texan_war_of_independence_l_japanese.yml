@@ -1,3 +1,3 @@
 ﻿l_japanese:
- modifier_texas_war_of_independence:0 "テキサス独立戦争"
- modifier_texas_war_of_independence_mexico:0 "$modifier_texas_war_of_independence$"
+ modifier_texas_war_of_independence: "テキサス独立戦争"
+ modifier_texas_war_of_independence_mexico: "$modifier_texas_war_of_independence$"
