@@ -372,6 +372,13 @@ communism_debug.1000.b: "Moralist! Idealist! Positivist! Saint-Simonian! Proudho
 
  if_quarter_of_world_gdp_swr_tt: "If this [Concept('concept_country','$concept_country_possessive|q$')] [concept_market] owns more than #v 25%#! of global [Concept('concept_gdp','$concept_gdp_short|q$')]: #indent_newline:3"
  socialist_world_republic_tt: "[THIS.GetCountry.GetName] will be known as the #v Socialist World Republic#!"
+ socialist_world_republic_primary_cultures_tt: "The #v 2#! most populous non-[concept_primary_cultures] in [THIS.GetCountry.GetName] will become $concept_primary_cultures$"
+ socialist_world_republic_formed_tt: "…the #b Socialist World Republic#!!"
+
+ communism.14.t: "New Planet's Birth"
+ communism.14.d: "The Revolution has claimed greater than half of the Earth's productive capacity, and the forces of reaction are scattered and broken. A new world—birthed by the proletariat, soon to be freed from class and nation—has come into being."
+ communism.14.f: "The woman on the bed had half of her face obscured by a ceramic mask. Beneath it were exposed teeth and scar tissue. One of the scars the shell fragment had left was visible above the mask, sending a pale line across her cheekbone. The visitor stood by her side, and raised the wax-cylinder recorder.\n\n"We're ready", she said. "It's recording."\n\nThe woman on the bed forced herself to a sitting position, and began to speak. Her voice started ragged, airy, yet each word was clearer than the last.\n\n"...my lifetime," she said, "has seen the victory of labor over the forces of capital, death, and reaction. The ones who once hid their faces before their betters now raise them to the brilliant sun. Damn the scars. I would not choose to live in any time but now.""
+ communism.14.a: "Rising from the ruins of the old society..."
 
  non_revolutionary_generals_will_resign_tt: "Non-#tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! [Concept('concept_commander','$concept_commanders|q$')] will have a chance of immediately retiring"
  new_revolutionary_generals_tt: "New #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_ideologies_list_tt Socialist#! [Concept('concept_commander','$concept_commanders|q$')] will replace all retired $concept_commanders$"

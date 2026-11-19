@@ -881,7 +881,7 @@
  gov_american_parliamentary: "民主主義議会"
  gov_american_parliamentary_desc: "民主的に[Concept('concept_election','$concept_elected|q$')]された立法府が[concept_country]を統治する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_american_parliamentary_dictator: "議会独裁制"
- gov_american_parliamentary_dictator_desc: "[Concept('concept_ruler','Dictator')]が立法機関を通じて[concept_country]を統治する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
+ gov_american_parliamentary_dictator_desc: "[Concept('concept_ruler','独裁者')]が立法機関を通じて[concept_country]を統治する[concept_government_type]です。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_anglo_parliamentary: "議会民主主義"
  gov_anglo_parliamentary_desc: "$gov_parliamentary_democracy_desc$"
  gov_anglo_parliamentary_provincial: "$gov_anglo_parliamentary$"

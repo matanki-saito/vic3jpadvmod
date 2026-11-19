@@ -992,7 +992,7 @@ lesson_recruit_promote_commander_how_2: "$lesson_recruit_promote_commander_how_1
 
  ### COMPLETE
  lesson_declare_interest_complete:0 "Interest declared!"
- lesson_declare_interest_complete_desc: "Your new [concept_interest] is now [Concept('concept_active_interest','$concept_active_interest_short|q$')], extending your reach to a new [concept_strategic_region]. This opens the door to start or participate in [Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')], establish new [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts|q$')], and even engage in [Concept('concept_colony','$concept_colonization|q$')] if there is suitable land in the $concept_strategic_region$."
+ lesson_declare_interest_complete_desc: "Your new [concept_interest] is now active, extending your reach to a new [concept_strategic_region]. This opens the door to start or participate in [Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')], establish new [Concept('concept_diplomatic_pact','$concept_diplomatic_pacts|q$')], and even engage in [Concept('concept_colony','$concept_colonization|q$')] if there is suitable land in the $concept_strategic_region$."
 
 
  ### Start Diplomatic Play

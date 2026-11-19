@@ -215,7 +215,7 @@
  amazonic_indemnities_brazil_1: "アヤクーチョ条約の賠償金支払い"
  amazonic_indemnities_recipient_1: "アヤクーチョ条約の賠償金支払い"
  amazonas.3.t: "ボゴタ条約"
- amazonas.3.d: "厳しい審議の結果、[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFlag]と[SCOPE.sCountry('colombia_border_treaty_country_scope').GetAdjective。]の使節団は合意に達した。[SCOPE.sState('amazonas_state_scope').GetName]で両国の国境を画定し、[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]には広大な土地が割譲された。"
+ amazonas.3.d: "厳しい審議の結果、[SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFlag]と[SCOPE.sCountry('colombia_border_treaty_country_scope').GetAdjective]の使節団は合意に達した。[SCOPE.sState('amazonas_state_scope').GetName]で両国の国境を画定し、[SCOPE.GetRootScope.GetCountry.GetNameNoFlag]には広大な土地が割譲された。"
  amazonas.3.f: "「タバチンガの南、ジャバリ川の向こう。その北、アパポリス川とジャプラ川の合流点です。大使、公平な取引だとおわかりになるでしょう」\n\n「国境を接する都市についてはどうですか？あなたは両国の代表ではないでしょう？悲劇的な結末は誰も必要としていません」\n\n「それはそうですよ！他の国を代弁しようなどとは夢にも思わない。しかし、次のあなたの最も賢明な行動はそれではないでしょうか？」"
  amazonas.3.a: "三位一体の名の下に、調印しよう。"
  treaty_of_bogota_tt: "[SCOPE.sCountry('colombia_border_treaty_country_scope').GetName]が[SCOPE.sState('ceded_amazonas_scope').GetName][concept_state]を[ROOT.GetCountry.GetName]に割譲する"

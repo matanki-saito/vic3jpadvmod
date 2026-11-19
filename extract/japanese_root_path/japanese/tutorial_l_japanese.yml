@@ -771,7 +771,7 @@
  lesson_declare_interest_why_2_desc: "[concept_interest]には様々な側面があります！ひょっとするとあなたは[concept_strategic_region]にある土地の征服や植民地化を望んでいるのかもしれません。あるいは単に他国が紛争を起こした際に介入できるような選択肢が欲しいだけなのかもしれません。\n\nもし他の[concept_country]と[GetDiplomaticActionType('rivalry').GetName]関係にある場合は、双方の国が$concept_interests$を示している$concept_strategic_region$一つにつき@inf![Nbsp][concept_influence]を追加で獲得することができます。また、どちらかが[Concept('concept_local_country', '$concept_local_country_short|q$')]とみなされた$concept_strategic_regions_short$では、双方が[concept_involvement]を獲得することになります。"
  ### COMPLETE
  lesson_declare_interest_complete: "利益が宣言されました！"
- lesson_declare_interest_complete_desc: "新しい[concept_interest]が[Concept('concept_active_interest','$concept_active_interest_short|q$')]になり、新しい[concept_strategic_region]に手が届くようになりました。これは[Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')]の開始または参加、そして[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts|q$')]創設への道を開き、$concept_strategic_region$に適した土地があれば[Concept('concept_colony','$concept_colonization|q$')]を行うことも可能です。"
+ lesson_declare_interest_complete_desc: "新しい[concept_interest]が有効になり、新しい[concept_strategic_region]に手が届くようになりました。これは[Concept('concept_diplomatic_play','$concept_diplomatic_plays|q$')]の開始または参加、そして[Concept('concept_diplomatic_pact','$concept_diplomatic_pacts|q$')]創設への道を開き、$concept_strategic_region$に適した土地があれば[Concept('concept_colony','$concept_colonization|q$')]を行うことも可能です。"
  ### Start Diplomatic Play
  ### HOW
  lesson_start_diplomatic_play_how_1: "$concept_diplomatic_play_short$の開始方法"

@@ -175,7 +175,7 @@
  je_tp_ukaz_flavour: "\n\n#lore [ScriptedButton.GetDesc]#!"
  je_tp_ukaz_repeatable: "@repeatable_action! Repeatable"
  je_tp_ukaz_one_time: "@single_use_action! Single Use"
- je_tp_ukaz_publish_button: "Publish Ukaz"
+ je_tp_ukaz_publish_button: "Publish Ukase"
 
  je_tp_tsar_gendarme_of_europe: "Gendarme of Europe"
  je_tp_tsar_gendarme_of_europe_reason: "Formulated by #b Sergey Uvarov#! in #b 1833#!, the ideological doctrine of #b 'Orthodoxy, Autocracy, and Nationality'#! exemplifies the personal and political outlook of [SCOPE.sCharacter('nicholas_i_scope').GetPrimaryRoleTitle] [SCOPE.sCharacter('nicholas_i_scope').GetFullName].\n\nA zealous arch-reactionary, the [SCOPE.sCharacter('nicholas_i_scope').GetPrimaryRoleTitle] is committed to the principles of order and autocracy, both domestically and internationally, and will not hesitate to use great force to prevent another [Glossary('glossary_decembrists','Decembrist')] or [GetCulture('polish').GetName] uprising from ever taking place again."
@@ -332,12 +332,12 @@
  modifier_dirge_of_third_rome_penalty: "$tsarpoints_events.1.t$"
 
  tsarpoints_events.2.t: "Imperial $concept_ukaz$ No. [ROOT.Var('ukaz_no_var').GetValue]"  # Law Passing
- tsarpoints_events.2.d: "Taking especial personal interest in the enactment of [SCOPE.sLaw('current_law_scope').GetName], [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukaz commanding the swift and Empire-wide implementation of the law."
+ tsarpoints_events.2.d: "Taking especial personal interest in the enactment of [SCOPE.sLaw('current_law_scope').GetName], [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukase commanding the swift and Empire-wide implementation of the law."
  tsarpoints_events.2.f: ""The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] appointed me to the [GetPlayer.GetCustom('country_legislature_name')] on account of trusting my good judgment! There are still many outstanding questions about these reforms."\n\n"Of course. However, at the present time, your good judgment is better applied to actions than to questions. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] trusts that you know the difference.""
  tsarpoints_events.2.a: "So it will be done."
 
  tsarpoints_events.3.t: "Imperial $concept_ukaz$ No. [ROOT.Var('ukaz_no_var').GetValue]"
- tsarpoints_events.3.d: "Alarmed by a rise in national sentiment amongst the Empire's minorities, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukaz decreeing a ban on all publication and performances in a minority language."
+ tsarpoints_events.3.d: "Alarmed by a rise in national sentiment amongst the Empire's minorities, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukase decreeing a ban on all publication and performances in a minority language."
  tsarpoints_events.3.f: ""Ah, I have heard this music before! Strange. I could swear that last time, there was singing to go along with it. I remember the lyrics."\n\nHis friend smiled. It was a strange sort of smile, sad and triumphant all at once.\n\n"If you remember them, then sing them in your heart. We all do.""
  tsarpoints_events.3.a: "There is no claim to an independent [GetCulture('ukrainian').GetName] culture."
  tsarpoints_events.3.b: "The [GetCulture('byelorussian').GetName] dialect is a seditious Polish construction."
@@ -347,12 +347,12 @@
  tsarpoints_events.3.h: "The [GetCulture('sorb').GetName] people are merely the Westernmost Russians."
 
  tsarpoints_events.4.t: "Imperial $concept_ukaz$ No. [ROOT.Var('ukaz_no_var').GetValue]"
- tsarpoints_events.4.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukaz emphasizing [ROOT.GetCountry.GetRuler.GetHerHis] role as Sovereign of many nations, placing additional scrutiny upon the loyalty of [ROOT.GetCountry.GetName]'s subject rulers."
+ tsarpoints_events.4.d: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukase emphasizing [ROOT.GetCountry.GetRuler.GetHerHis] role as Sovereign of many nations, placing additional scrutiny upon the loyalty of [ROOT.GetCountry.GetName]'s subject rulers."
  tsarpoints_events.4.f: ""We must never allow pragmatism to be mistaken for weakness. How many empires have scattered to the winds because they let local rulers believe that their authority to solve local problems conferred sovereignty? In these precarious times, when nationalism can seize even the most mild-mannered populations, it is imperative that those who rule under the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] see themselves as an extension of [ROOT.GetCountry.GetRuler.GetHerHis] hand, rather than one being raised against [ROOT.GetCountry.GetRuler.GetHerHim].""
  tsarpoints_events.4.a: "So it will be done."
 
  tsarpoints_events.5.t: "Imperial $concept_ukaz$ No. [ROOT.Var('ukaz_no_var').GetValue]"
- tsarpoints_events.5.d: "Seeking to ensure faith in [GetPlayer.GetCustom('country_legislature_name')], [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukaz commending [ROOT.GetCountry.GetRuler.GetHerHis] ministers for their work in realizing [ROOT.GetCountry.GetRuler.GetHerHis] vision for the Empire."
+ tsarpoints_events.5.d: "Seeking to ensure faith in [GetPlayer.GetCustom('country_legislature_name')], [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] has issued an Ukase commending [ROOT.GetCountry.GetRuler.GetHerHis] ministers for their work in realizing [ROOT.GetCountry.GetRuler.GetHerHis] vision for the Empire."
  tsarpoints_events.5.f: ""This is a lot of dramatic praise for the important work of men who, as far as I am aware, spend most of their time quibbling over details in the state budget."\n\n"Yes, the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] shows good judgment. Details in the state budget is exactly where I would expect an otherwise stable reign to start toppling over.""
  tsarpoints_events.5.a: "So it will be done."
 
@@ -364,15 +364,15 @@
  modifier_favorite_rebuffed: "Embarrassing Rebuffal"
 
  tsarpoints_events.7.t: "In the City of Constantine"
- tsarpoints_events.7.d: "With the [ROOT.GetCountry.GetAdjective] conquest of Constantinople, the city's four centuries under the Turkish yoke has come to an end. Now that this long-standing ambition has been  realized, [ROOT.GetCountry.GetCapital.GetCityHubName] stands poised to fully assume the mantle of Rome."
+ tsarpoints_events.7.d: "With the [ROOT.GetCountry.GetAdjective] conquest of Constantinople, the city's four centuries under the Turkish yoke has come to an end. Now that this long-standing ambition has been realized, [ROOT.GetCountry.GetCapital.GetCityHubName] stands poised to fully assume the mantle of Rome."
  tsarpoints_events.7.f: "As [ROOT.GetCountry.GetRuler.GetFirstName] rode through the city, despite its wartorn state, its ancient beauty shone through. This was not the worst it had endured. Perhaps it would be hubris to think it would not endure worse in the future.\n\n"It should have been old Konstantin Pavlovich," [ROOT.GetCountry.GetRuler.GetSheHe] thought to [ROOT.GetCountry.GetRuler.GetHerselfHimself], "but I will have to do.""
  tsarpoints_events.7.a: "Once more, the Cross adorns the dome of the Hagia Sophia."
  tsarpoints_events.7.b: "We must realize the dream of Catherine."
  tsarpoints_events.7.c: "The marbled king is roused from his long slumber."
  tsarpoints_events.7.tt_1: "Enables a [concept_decision] to settle the relationship between the #b Ecumenical Patriarchate#! and the #b Russian Church#!"
  tsarpoints_events.7.tt_2: "[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] will be declared #b Emperor of the Hellenes#! and a [GetCulture('greek').GetName] state in [concept_personal_union] with [ROOT.GetCountry.GetName] will be established with its capital in #b Constantinople#!"
- tsarpoints_events.7.tt_3: "All [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state', '$concept_states|q$')] owned by us or our [Concept('concept_subject', '$concept_subjects|q$')] will be transfered to the new country"
- tsarpoints_events.7.tt_4: "All [concept_subject] or #b independent#! [GetCulture('greek').GetName] [Concept('concept_country', '$concept_countries|q$')] will be invited to  #g join#! this new country: "
+ tsarpoints_events.7.tt_3: "All [GetCulture('greek').GetName] [concept_homeland] [Concept('concept_state', '$concept_states|q$')] owned by us or our [Concept('concept_subject', '$concept_subjects|q$')] will be transferred to the new country"
+ tsarpoints_events.7.tt_4: "All [concept_subject] or #b independent#! [GetCulture('greek').GetName] [Concept('concept_country', '$concept_countries|q$')] will be invited to #g join#! this new country: "
  tsarpoints_events.7.tt_5: "Change player's actively controlled country from [ROOT.GetCountry.GetName] to the #b $dyn_c_empire_of_the_hellenes$#!"
  modifier_true_heir_of_rome: "Modern Constantine"
  modifier_restoration_of_second_rome: "Return to the Second Rome"
@@ -383,7 +383,7 @@
  tsarpoints_events.8.d: "Having recently conquered Constantinople and declared a new [GetCulture('greek').GetName] Empire under their protection, [SCOPE.sCountry('russia_scope').GetName] has now proposed the joining of our state to theirs."
  tsarpoints_events.8.f: "How fortunate, they wail, are we, o heaven!\nOur heroes are alive today in the Russians who have come!\nHow humble they are toward us, how terrible their sight to the Turks!\nThe inhabitants of Argos and Nauplia prepare for war,\nCorinthians, do not fear—\nLeonidas is in Sparta.\n\n—V. P. Petrov, #italic On the Victories in Morea#!" # Translation by Andrei Zorin
  tsarpoints_events.8.a: "The marbled king wakes, and the world trembles."
- tsarpoints_events.8.b: "We will not trade our liberty away, not even for such grand a prize."
+ tsarpoints_events.8.b: "We will not trade our liberty away, not even for so grand a prize."
 
  tsarpoints_events.9.t: "The Synod of Polotsk"
  tsarpoints_events.9.d: "Assembled in the Cathedral of Holy Wisdom in Polotsk, and under heavy cossack guard, [GetPopType('clergymen').GetName] of the Ruthenian [GetReligion('catholic').GetName] Church debate the possible termination of the Union of Brest."
@@ -458,6 +458,19 @@
  tsarpoints_events.15.d: "The outbreak of Revolution across Europe has roused [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetFirstName] to action. The [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] has issued an order to [ROOT.GetCountry.GetAdjective] embassies in the West to aid the monarchies under threat, and for the Army to make ready for war."
  tsarpoints_events.15.f: "The door burst open, and in rushed a whirlwind of cold air, coats, and clunking boots. A dozen pairs of eyes snapped towards the source of the sound.\n\n"I have news from Sergey Alexandrovich!" gasped the man who had just rushed in. "He heard from his sergeant, who heard from a palace guardsman, who said the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] spoke at a ball, from among... among...." The breathless report was buried beneath a barrage of coughs. He doubled over against a bedframe.\n\nOne of the men on the bunks, his hands frozen in the middle of polishing a button, spoke up. "What did he say? Come on, man!"\n\n"He said... the guardsman heard it- "Saddle your horses, gentlemen, France is a Republic!"""
  tsarpoints_events.15.a: "The [ROOT.GetCountry.GetAdjectiveNoFormatting] Army shall set Europe straight."
+
+ tsarpoints_events.16.t: "The Ecumenical Question"
+ tsarpoints_events.16.d: "With Constantinople and most of the eparchies of the Ecumenical Throne under [ROOT.GetCountry.GetAdjective] rule, the Russian Holy Synod and the Ecumenical Patriarchate must settle their relations."
+ tsarpoints_events.16.f: "The Patriarch greeted the envoy in the courtyard of the restored basilica of Hagia Sophia, the first time such a meeting had taken place there in nearly half a millennium.\n\n"We have eagerly followed the discussions of our brethren in [ROOT.GetCountry.GetCapital.GetCityHubName], and have prayed that the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] would see wisdom in our counsel. Come now, #italic kýrie#!. The servants have prepared tea for us in the shade, and there is so much to discuss.""
+ tsarpoints_events.16.a: "Make the Phanar and its flock answer to the Russian Holy Synod."
+ tsarpoints_events.16.b: "Honor the primacy of the Ecumenical Patriarch."
+ modifier_synodal_supremacy: "Synodal Supremacy"
+ modifier_synodal_triumph: "Triumph of the Synod"
+ modifier_ecumenical_primacy: "Ecumenical Primacy"
+
+ rus_settle_ecumenical_question: "Settle the Ecumenical Question"
+ rus_settle_ecumenical_question_desc: "The institutional relationship between the Ecumenical Patriarchate in Constantinople and the Russian Holy Synod must be settled."
+ STATE_VALUE_ECUMENICAL_QUESTION: "#v $rus_settle_ecumenical_question$#! [concept_decision]"
 
  russia_monarchy.12.t: "The Accession of [SCOPE.sCharacter('tsar_scope').GetFirstNameNoFormatting]"
  russia_monarchy.12.d: "[SCOPE.sCharacter('tsar_scope').GetFullName] has ascended to the throne of [ROOT.GetCountry.GetName]."

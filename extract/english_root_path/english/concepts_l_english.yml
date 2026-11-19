@@ -945,10 +945,10 @@
  concept_default_unit_desc: "These are #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#! [Concept('concept_unit','$concept_units|q$')] in [Concept('concept_army','$concept_armies|q$')]."
 
  concept_kill_rate: "Kill Rate"
- concept_kill_rate_desc: "How effective a [concept_unit] is at ensuring their opponent's [concept_casualties] end up unable to come back to fight another day. Increases the ratio of [concept_casualties] that end up killed (instead of [concept_wounded]). $concept_kill_rate$ is countered by the enemy $concept_unit$'s [concept_recovery_rate]."
+ concept_kill_rate_desc: "How effective a [concept_unit] is at killing its opponents. Increases the share of the enemy's [concept_casualties] that are killed outright instead of [concept_wounded]. $concept_kill_rate$ is countered by the enemy $concept_unit$'s [concept_recovery_rate]."
 
  concept_recovery_rate: "Recovery Rate"
- concept_recovery_rate_desc: "The percentage of [concept_casualties] a [concept_unit] takes that survive, in some cases by becoming [concept_dependents]. Can be increased with #b [Concept('concept_mobilization_option','$concept_mobilization_options|q$')]. $concept_recovery_rate$ is countered by the enemy $concept_unit$'s [concept_kill_rate]."
+ concept_recovery_rate_desc: "How effective a [concept_unit] is at protecting its soldiers. Turns a share of the [concept_casualties] a $concept_unit$ takes into [concept_morale_demoralized] soldiers. Decreases the share of $concept_casualties$ that are killed outright instead of [concept_wounded]. This is countered by the enemy $concept_unit$'s [concept_kill_rate]. Can be increased with #b [Concept('concept_mobilization_option','$concept_mobilization_options|q$')]#!."
 
  concept_casualties: "Casualties"
  concept_casualties_desc: "[concept_manpower] who fall in battle or through [concept_attrition] are considered $concept_casualties$. A proportion of $concept_casualties$ are killed outright while the remainder are [concept_wounded]. This ratio is dependent on the [Concept('concept_unit','$concept_unit_possessive|q$')] [concept_recovery_rate] compared to their enemy's [concept_kill_rate]."
@@ -1568,7 +1568,7 @@
 
  concept_war_goal: "War Goal"
  concept_war_goals: "War Goals"
- concept_war_goal_desc: "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are fixed after the $concept_war$ has begun.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_primary_demand$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
+ concept_war_goal_desc: "$concept_war_goals$ are the objectives a [concept_country] is fighting a [concept_war] over. They are determined during the [concept_diplomatic_play] and are mostly fixed after the $concept_war$ has begun.\n\nThe first $concept_war_goal$ claimed as part of the $concept_diplomatic_play$ is considered your $concept_primary_demand$, and some $concept_diplomatic_plays$ require it to be included in all $concept_peace_deals$."
 
  concept_controlled_war_goal: "Controlled War Goal"
  concept_controlled_war_goals: "Controlled War Goals"
@@ -1580,7 +1580,16 @@
  concept_controlling_war_goal_short: "Controlling"
  concept_control_war_goal_short: "Control"
  concept_controls_war_goal_short: "Controls"
- concept_controlled_war_goal_desc: "If the holder of a [concept_war_goal], or their [Concept('concept_ally','$concept_allies|q$')], [Concept('concept_occupation','$concept_occupy|q$')] at least [GetDefine('NWar','STATE_PARTIAL_OCCUPATION_THRESHOLD')|%v] of the required [concept_state] or [Concept('concept_state','$concept_states|q$')], they are considered to have $concept_control_war_goal_short$ of this [concept_war_goal]. [concept_war_support] can only drop below #v 0#! if the opposing side $concept_controls_war_goal_short$ all their $concept_war_goals$."
+ concept_controlled_war_goal_desc: "If the holder of a [concept_war_goal], or their [Concept('concept_ally','$concept_allies|q$')], [Concept('concept_occupation','$concept_occupy|q$')] at least [GetDefine('NWar','STATE_PARTIAL_OCCUPATION_THRESHOLD')|%v] of the required [concept_state] or [Concept('concept_state','$concept_states|q$')], they are considered to have $concept_control_war_goal_short$ of this [concept_war_goal]. $concept_controlled_war_goal_short$ a $concept_war_goal$ affects the [concept_war_support] of both sides and makes the $concept_war_goal$ much easier to take in a [concept_peace_deal].\n\nMany $concept_war_goals$ will be automatically [Concept('concept_enforced_war_goal','$concept_enforced_war_goal_short|q$')] when $concept_controlled_war_goal_short$ for a sufficiently long time during a [concept_war]."
+
+ concept_enforced_war_goal: "Enforced War Goal"
+ concept_enforced_war_goals: "Enforced War Goals"
+ concept_enforced_war_goal_short: "Enforced"
+ concept_enforced_war_goal_desc: "A [concept_war_goal] that has been taken through [concept_occupation], or because its target capitulated, while the [concept_war] is still ongoing. An $concept_enforced_war_goal$ keeps affecting the [concept_war_support] of both sides for as long as its target remains in the $concept_war$.\n\nWhen a $concept_war_goal$ is $concept_enforced_war_goal_short$ through $concept_occupation$, the losing side usually receives a mirrored $concept_war_goal$ to win back what it lost, such as retaking a conquered [concept_state] or liberating an annexed [concept_country]. A mirrored $concept_war_goal$ costs no [concept_infamy]. If the mirrored $concept_war_goal$ is in turn $concept_enforced_war_goal_short$, the original $concept_war_goal$ is reversed."
+
+ concept_advancing_war_goal: "Advancing on War Goal"
+ concept_advancing_war_goal_short: "Advancing"
+ concept_advancing_war_goal_desc: "If the holder of a [concept_war_goal] or their [Concept('concept_ally','$concept_allies|q$')] are consistently making progress on a [concept_front] where capturing territory will eventually lead to a $concept_war_goal$ becoming [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short|q$')], they are considered to be $concept_advancing_war_goal_short$ on that $concept_war_goal$. $concept_advancing_war_goal_short$ on a $concept_war_goal$ affects the [concept_war_support] of both sides and makes the $concept_war_goal$ slightly easier to take in a [concept_peace_deal]."
 
  concept_primary_demand: "Primary Demand"
  concept_primary_demand_short: "Primary"
@@ -1677,7 +1686,7 @@
  concept_market_access_desc: "A measure of how well-connected a [concept_state] is to the rest of its [concept_market]. It starts at 100% and is reduced proportionally whenever the $concept_state$'s [concept_infrastructure_usage] exceeds its [concept_infrastructure]. It impacts both how many [concept_sell_orders] and [concept_buy_orders] are generated due to the $concept_state$'s [concept_good_production] and [concept_good_consumption], and also how much the [concept_market_price] affects the [concept_local_price] of [Concept('concept_good','$concept_goods|q$')]."
 
  concept_world_market_access: "World Market Access"
- concept_world_market_access_desc: "$concept_world_market_access$ exists if a [concept_state] is connected to the [concept_world_market] via a [concept_world_market_hub]. Its value is impacted by the $concept_state_possessive$ [concept_market_access], any [concept_blockade] of its $concept_world_market_hub$, and the distance to its $concept_world_market_hub$ if it has to trade through one other than its nearest."
+ concept_world_market_access_desc: "$concept_world_market_access$ reflects how well a [concept_state] is connected to the [concept_world_market]. When $concept_world_market_access$ falls below #v 100%#!, it proportionally reduces [concept_trade_capacity], [concept_trade_advantage], and weekly trades. At #v 0%#!, a $concept_state$ is unable to trade.\n\nThis value is based on the $concept_state_possessive$ [concept_market_access] and $concept_world_market_access$ at its [concept_world_market_hub]. If the $concept_world_market_hub$ loses $concept_world_market_access$ due to [concept_blockade], [concept_cold], or low [concept_infrastructure], the $concept_state$ may switch to a more remote $concept_world_market_hub_short$ with better access, taking a penalty based on distance."
 
  concept_world_market_hub: "World Market Hub"
  concept_world_market_hubs: "World Market Hubs"

@@ -180,6 +180,8 @@
  marx_spawn_tt: "[SCOPE.sCharacter('marx_scope').GetFullName] appears in [ROOT.GetCountry.GetNameNoFormatting]"
  marx_exile_tt: "[SCOPE.sCharacter('marx_scope').GetFullName] appears in [concept_exile]"
 
+ anarchist_agitator_tt: "An [GetIdeology('ideology_anarchist').GetName] [concept_agitator] appears in [ROOT.GetCountry.GetNameNoFormatting]"
+
  je_sol_1: "Poverty Crisis"
  je_sol_1_goal: "Improve the [concept_sol] in your country."
  je_sol_goal_desc: "Improve the [concept_sol] in your country by 3."

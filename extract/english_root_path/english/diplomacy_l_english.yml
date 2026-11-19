@@ -382,7 +382,7 @@
  DIPLOMATIC_ACCEPTANCE_MILITARY_SPENDING: "from [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] military spending of #v #n @money!-[SCOPE.GetRootScope.GetCountry.PredictTotalMilitaryExpenses|D]#!#!"
  DIPLOMATIC_ACCEPTANCE_MILITARY_SPENDING_FIRST: "from our military spending of #v #n @money!-[GetPlayer.PredictTotalMilitaryExpenses|D]#!#!"
  DIPLOMATIC_ACCEPTANCE_SAME_RELIGION: "from sharing the same [concept_state_religion] [SCOPE.GetRootScope.GetCountry.GetStateReligion.GetName]"
- DIPLOMATIC_ACCEPTANCE_DIFFERENT_RELIGION_BUT_SAME_TRAIT: "from [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [concept_state_religion] being different from ours but with a similar [concept_religious_trait]"
+ DIPLOMATIC_ACCEPTANCE_DIFFERENT_RELIGION_BUT_SAME_TRAIT: "from [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [concept_state_religion] being different from ours but with a similar [Concept('concept_discrimination_trait','$concept_religious_trait|q$')]"
  DIPLOMATIC_ACCEPTANCE_DIFFERENT_RELIGION: "from [SCOPE.GetRootScope.GetCountry.GetAdjectiveNoFormatting] [concept_state_religion] being different from ours"
  DIPLOMATIC_ACCEPTANCE_SAME_CULTURE: "from sharing the same [concept_primary_cultures]"
  DIPLOMATIC_ACCEPTANCE_CULTURAL_ACCEPTANCE: "from [concept_acceptance] of [concept_primary_cultures]"
@@ -579,7 +579,6 @@
  DIPLO_PACT_RELATIONS_BREAKDOWN_FORMAT: "#header [concept_relations] progress#!\n#v $DAYS$#! days to [SelectLocalization( LessThan_CFixedPoint( '(CFixedPoint)$PROGRESS_DAILY|5q$', '(CFixedPoint)0' ), '#r -', '#g ' )]100%#!\n$TOOLTIP_DELIMITER$\n#v $PROGRESS_DAILY|%2=+$#! daily progress due to:\n$BREAKDOWN$"
  DIPLO_PACT_RELATIONS_CHANGE_TOTAL: "\n$DESC$, due to: #indent_newline:3 \n$DESC_DETAILS$#!"
 
- FORCE_REGIME_CHANGE_GOV_PRINCIPLES_DIST_POWER_PROGRESSIVENESS_DIFFERENCE: "#indent_newline:3 [SCOPE.GetRootScope.GetCountry.GetName] and [SCOPE.sC('target_country').GetName] have very different [Concept('concept_law','$concept_laws|q$')] in the [GetLawGroup('lawgroup_governance_principles').GetName] and [GetLawGroup('lawgroup_distribution_of_power').GetName] categories\n[SCOPE.GetRootScope.GetCountry.GetName]: [SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_governance_principles').GetName] and [SCOPE.GetRootScope.GetCountry.GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]\n[SCOPE.sC('target_country').GetName]: [SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_governance_principles').GetName] and [SCOPE.sC('target_country').GetActiveLawFromGroup('lawgroup_distribution_of_power').GetName]#!"
 
  # Unilateral actions
  increase_relations: "Improve Relations"
@@ -2231,8 +2230,8 @@
  no_strait_closure_desc: ""
  no_strait_closure_effects_desc: "• Establishes an agreement between two [Concept('concept_country', '$concept_countries|q$')] where one $concept_country$ agrees to not restrict access to any [Concept('concept_strait', '$concept_straits|q$')] it controls."
  no_strait_closure_article_short_desc: "[SOURCE_COUNTRY.GetNameNoFormatting] will #bold_black not#! restrict access to $concept_straits$ it controls"
- TREATY_DRAFT_ARTICLE_FLAG_IS_NO_STRAIT_CLOSURE_EFFECT: "• [SOURCE_COUNTRY.GetName] will #bold_black not#! restrict access to [Concept('concept_strait', '$concept_straits|q$')] it controls"
- TREATY_ARTICLE_FLAG_IS_NO_STRAIT_CLOSURE_EFFECT: "• [SOURCE_COUNTRY.GetName] will #bold_black not#! restrict access to [Concept('concept_strait', '$concept_straits|q$')] it controls"
+ TREATY_DRAFT_ARTICLE_FLAG_IS_NO_STRAIT_CLOSURE_EFFECT: "• [SOURCE_COUNTRY.GetName] will #b not#! restrict access to [Concept('concept_strait', '$concept_straits|q$')] it controls"
+ TREATY_ARTICLE_FLAG_IS_NO_STRAIT_CLOSURE_EFFECT: "• [SOURCE_COUNTRY.GetName] will #b not#! restrict access to [Concept('concept_strait', '$concept_straits|q$')] it controls"
 
  toll_exemption: "Toll Exemption"
  toll_exemption_desc: ""

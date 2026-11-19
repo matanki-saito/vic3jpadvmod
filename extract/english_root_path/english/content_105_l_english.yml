@@ -631,6 +631,7 @@ always_oil_rush_tt: "This event will be hidden in the future, and the above effe
  slave_owner_paranoia_events.3.f: ""Oh, you consider [SCOPE.sCharacter('visiting_abolitionist_scope').GetHerHim] a 'moderate'? Have you heard [SCOPE.sCharacter('visiting_abolitionist_scope').GetHerHim] speak? [SCOPE.sCharacter('visiting_abolitionist_scope').GetSheHe|U] may not openly talk of the slaves rising up against their masters, but in every speech, the indictment of the institution itself and everyone who supports it is so severe that it is difficult to imagine an audience sympathetic to the cause drawing another conclusion. Slaves may not be permitted to listen, but even hearing that such speeches are being held here will embolden them. It is but a matter of time, mark my words.""
  slave_owner_paranoia_events.3.a: "Well-founded concerns. [SCOPE.sCharacter('visiting_abolitionist_scope').GetLastName] is a troublemaker."
  slave_owner_paranoia_events.3.b: "Speaking about liberty and justice must always be permitted."
+ slave_owner_paranoid_completion_tt: "The [SCOPE.sPoliticalMovement('slave_revolt_movement_scope').GetName] is no longer an active [concept_political_movement]"
  refused_slave_reprisals: "Refused Slave Conspiracy Reprisals"
  refused_attacking_hidden_communities: "Refused Attacking Hidden Communities"
  abolitionist_influence: "Abolitionist Influence"

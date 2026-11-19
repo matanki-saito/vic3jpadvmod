@@ -219,7 +219,7 @@ ACHIEVEMENT_DESC_achievement_federation_day: "Form the Federation of the Andes"
 achievement_federation_day_tt: "Has formed the Federation of the Andes"
 
 ACHIEVEMENT_achievement_not_yet_lost: "Not Yet Lost"
-ACHIEVEMENT_DESC_achievement_not_yet_lost: "As Krakow, form Poland-Lithuania and complete the Expanding the Commonwealth Journal Entry"
+ACHIEVEMENT_DESC_achievement_not_yet_lost: "As Krakow or Congress Poland, form Poland-Lithuania and complete the Expanding the Commonwealth Journal Entry"
 achievement_not_yet_lost_2_tt: "Has completed the Expanding the Commonwealth Journal Entry"
 achievement_not_yet_lost_tt: "Has formed Poland-Lithuania"
 
@@ -275,7 +275,7 @@ ACHIEVEMENT_achievement_new_order: "The New Order"
 ACHIEVEMENT_DESC_achievement_new_order: "Have a fully decked out power bloc"
 
 ACHIEVEMENT_achievement_great_game_no_re: "Great Game no re"
-ACHIEVEMENT_DESC_achievement_great_game_no_re: "As Great Britain or Russia, conclude the Great Game"
+ACHIEVEMENT_DESC_achievement_great_game_no_re: "As Great Britain or Russia, win the Great Game"
 
 ACHIEVEMENT_achievement_honor_and_life: "Honor and Life"
 ACHIEVEMENT_DESC_achievement_honor_and_life: "As Circassia, complete the Honor Before Life journal entry"

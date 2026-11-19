@@ -562,7 +562,6 @@
   populism_progress_from_movement_support_tt: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short|q$')] of [GetIdeology('ideology_modernizer').GetName], [GetIdeology('ideology_liberal').GetName], and [GetIdeology('ideology_positivist').GetName] [Concept('concept_political_movement','$concept_political_movements|q$')]"
   populism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short|q$')] of [GetIdeology('ideology_modernizer').GetName], [GetIdeology('ideology_liberal').GetName], and [GetIdeology('ideology_positivist').GetName] [Concept('concept_political_movement','$concept_political_movements|q$')]"
   populism_progress_from_pb_tt: "[concept_clout] of the #v $ig_petty_bourgeoisie$#!"
-  populism_progress_from_laws_tt: "#bold Policing#! and #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions|q$')]"
   populism_progress_from_events_tt: "$EVENTS_AND_OTHER_EFFECTS$"
 
   change_misc_populism_drift_1_down_tt: "Monthly #variable Populist Unrest#! progress will be #bold reduced#! by #bold 1#!"
@@ -803,9 +802,9 @@
   communism.10.f: ""...the development of Modern Industry, therefore, cuts from under its feet the very foundation on which the bourgeoisie produces and appropriates products. What the bourgeoisie therefore produces, above all, are its own grave-diggers. Its fall and the victory of the proletariat are equally inevitable."" #- The Communist Manifesto
   communism.10.a: "A storm approaches."
   communism.10.b: "The world will be free, one day."
-  communism_var_tick_05_tt: "#bold Socialist#! unrest will #bold increase#! by #variable 0.5#! every month"
-  communism_10_b_option_tt: "An [concept_interest_group] [concept_in_government] is of type $ig_trade_unions$ or has a [concept_leader] with a $ideology_socialist$ [concept_ideology]"
-  communism_10_b_option_not_tt: "No [concept_interest_group] [concept_in_government] is of type $ig_trade_unions$ or has a [concept_leader] with a $ideology_socialist$ [concept_ideology]"
+  communism_var_tick_025_tt: "#bold Socialist#! unrest will #bold increase#! by #variable 0.25#! every month"
+  communism_10_b_option_tt: "A non-[concept_marginalized] [concept_interest_group] is of type $ig_trade_unions$ or has a [concept_leader] with a $ideology_socialist$ [concept_ideology]"
+  communism_10_b_option_not_tt: "No non-[concept_marginalized] [concept_interest_group] is of type $ig_trade_unions$ or has a [concept_leader] with a $ideology_socialist$ [concept_ideology]"
 
   communism.11.t: "Firebreak"
   communism.11.d: "Whether through the trust of our people or the truncheons of our soldiers, [ROOT.GetCountry.GetName] has emerged unbroken from the wave of socialist agitation that threatened it."

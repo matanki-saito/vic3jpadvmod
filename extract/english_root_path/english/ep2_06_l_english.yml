@@ -57,7 +57,7 @@ je_taikyo_proclamation_button_desc: "Make Shinto, the worship of kami and revere
 je_taikyo_proclamation_conversion_tt: "Each [concept_interest_group] leader has a #v 75%#! chance to convert to [GetReligion('shinto').GetName]."
 je_elevate_buddhism: "Elevate Buddhism"
 je_elevate_buddhism_reason: "The Buddhist religious institutions in $JAP$ have strong historical ties to the administrative arm of the Shogunate. Having averted the end of the Shogunate once, strengthening these institutions could help us maintain its power and strengthen religious traditions for $JAP$ not focused on Emperor worship."
-je_elevate_buddhism_goal: "$je_communism_2_goal$"
+je_elevate_buddhism_goal: "The following must be true for at least 5 years:"
 arahitogami: "Arahitogami"
 extended_danka_system: "Extended Danka System"
 

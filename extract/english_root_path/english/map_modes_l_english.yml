@@ -57,7 +57,7 @@
  mm_country_interaction: "Country Interaction"
  mm_market_interaction: "Market Interaction"
  mm_strategic_region_interaction: "Strategic Region Interaction"
- mm_naval_mission_sea_regions_interaction: "$concept_naval_mission$ $concept_sea_regions$"
+ mm_naval_mission_sea_regions_selection: "$concept_naval_mission$ $concept_sea_regions$"
  mm_command_interaction: "Command Interaction"
  mm_harvest_conditions: "Harvest Conditions"
  mm_global_starvation: "Global Starvation"

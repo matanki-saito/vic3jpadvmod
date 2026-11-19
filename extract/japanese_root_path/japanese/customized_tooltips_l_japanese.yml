@@ -415,7 +415,7 @@
  POPTYPE_STRATA_BREAKDOWN_IN_COUNTRY_ENTRY: "$TAB$$TAB$$PEOPLE|kv$は$STRATA|v$の一部です"
  POP_LARGEST_POLITICAL_MOVEMENT_NONE: "主要[Concept('concept_political_movement','$concept_political_movement_short|q$')]: なし"
  POP_LARGEST_POLITICAL_MOVEMENT: "主要 [Concept('concept_political_movement','$concept_political_movement_short|q$')]：#tooltippable #tooltip:[Pop.GetTooltipTag],POP_POLITICAL_MOVEMENT_MEMBERSHIP_BREAKDOWN [Pop.GetLargestPoliticalMovement.GetNameNoFormatting]#!#!"
- POP_POLITICAL_MOVEMENT_MEMBERSHIP_BREAKDOWN: "#header [Pop.GetName]の[concept_political_movement]へのメンバーシップ#!\n$TOOLTIP_DELIMITER$\n[Pop.GetMovementMembershipDesc]"
+ POP_POLITICAL_MOVEMENT_MEMBERSHIP_BREAKDOWN: "#title #v [Pop.GetTotalSize|D]#!の[Pop.GetName]:#!#indent_newline:3 \n[Pop.GetMovementMembershipDesc]#!"
  POP_IG_SUPPORT_BREAKDOWN: "#header [concept_interest_group]による[Pop.GetName]の支持#!\n$TOOLTIP_DELIMITER$\n[Pop.GetIGMembershipDesc]"
  POP_ACCEPTANCE_STATUS: "[concept_acceptance_status]: [Pop.GetAcceptanceStatus.GetName] (#tooltippable #tooltip:[Pop.GetTooltipTag],POP_ACCEPTANCE_STATUS_NESTED [Pop.GetAcceptanceValue|Dv]#!#!)" #if you want full tooltip instead: #(#tooltippable #tooltip:[Pop.GetTooltipTag],EMPTY_STRING,PopAcceptanceTooltip [Pop.GetAcceptanceValue|Dv]#!#!)
  POP_ACCEPTANCE_STATUS_NESTED: "$POP_ACCEPTANCE_VALUE_WITH_BREAKDOWN$"

@@ -23,6 +23,8 @@
   russian_alignment_change_ruler: "[concept_ideology] of the [concept_ruler]"
   russian_alignment_change_movements: "[Concept('concept_political_movement_support', '$concept_political_movement_support_short|q$')] of aligned [Concept('concept_political_movement','$concept_political_movements|q$')]"
   russian_alignment_change_interest_groups: "[concept_clout] of aligned [Concept('concept_interest_group', '$concept_interest_groups|q$')]"
+  russian_alignment_reduced_pre_liberalism_ideological_strength: "Reduced Pre-Egalitarianism Ideological Strength"
+  russian_alignment_reduced_pre_socialism_ideological_strength: "Reduced Pre-Socialism Ideological Strength"
   russian_alignment_change_laws: "enacted [Concept('concept_law', '$concept_laws|q$')]"
   russian_revolutionary_leader_must_be: "The Revolution has a prominent figure to lead it"
   russian_revolutionary_leader_is: "\nRevolutionaries look to [ROOT.Var('russian_revolution_leader').GetCharacter.GetFullName] for leadership."

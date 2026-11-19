@@ -381,7 +381,7 @@
  communism_variable_at_full_tt: "The #bold Progress Bar#! has reached #variable 100%#!"
  communism_variable_at_zero_tt: "The #bold Progress Bar#! has been reduced to #variable 0%#!"
  je_communism_1: "The Spectre Haunting the World"
- je_communism_1_reason: "The rising prevalence of socialist unrest within [SCOPE.sCountry('root_country').GetName] has begun to coalesce into a movement that threatens the rule of the upper classes. Struggle between classes has acquired a sharper edge as [SCOPE.sCountry('root_country').GetAdjectiveNoFormatting] workers adopt the methods and principles of the socialist movement.\n\n#italic The voices of the proletariat cry out for liberty, for equality, and for bread. Workers of the world, unite!#!"
+ je_communism_1_reason: "#italic The proletarians have nothing to lose but their chains. They have a world to win. Workers of the world, unite!#!\n\n—Karl Marx and Friedrich Engels, #italic The Communist Manifesto#!\n\nThe rising prevalence of socialist unrest within [SCOPE.sCountry('root_country').GetName] has begun to coalesce into a movement that threatens the rule of the upper classes. Struggle between classes has acquired a sharper edge as [SCOPE.sCountry('root_country').GetAdjectiveNoFormatting] workers adopt the methods and principles of the [SelectLocalization(SCOPE.sPoliticalMovement('socialist_movement_scope').IsValid, SCOPE.sPoliticalMovement('socialist_movement_scope').GetName, 'movement_socialist')]."
 
  communism_progress_bar_at_full_tt: "#variable $communism_1_progress_bar$#! progress bar has reached #variable 100%#!"
 
@@ -390,10 +390,9 @@
  communism_progress_from_radicals_tt: "[Concept('concept_state', '$concept_states|q$')] in [concept_turmoil]"
  communism_progress_from_loyalists_tt: "[Concept('concept_state', '$concept_states|q$')] with [Concept('concept_loyalist','$concept_loyalists|q$')]"
  communism_progress_from_characters_tt: "[concept_popularity] of [Concept('concept_character', '$concept_characters|q$')] supporting [GetLawType('law_council_republic').GetName]"
- communism_progress_from_interest_groups_tt: "[Concept('concept_interest_group','$concept_interest_groups|q$')] supporting [GetLawType('law_factory_councils').GetName]"
- communism_progress_from_laws_tt: "level of #bold Policing#! and #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions|q$')]"
- communism_progress_from_no_laws_tt: "lack of #bold Policing#! or #bold Home Affairs#! [Concept('concept_institution', '$concept_institutions|q$')]"
- communism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short|q$')] of [GetIdeology('ideology_socialist_movement').GetName], [GetIdeology('ideology_communist_movement').GetName], and [GetIdeology('ideology_anarchist_movement').GetName] [Concept('concept_political_movement','$concept_political_movements|q$')]"
+ communism_progress_from_interest_groups_tt: "[concept_clout] of [Concept('concept_interest_group','$concept_interest_groups|q$')] supporting [GetLawType('law_factory_councils').GetName]"
+ communism_progress_from_work_to_rule_tt: "Active #b $ig_trait_work_to_rule$#! Trait"
+ communism_progress_from_movement_activism_tt: "[Concept('concept_activism', '$concept_activism_short|q$')] of #tooltippable;tooltip:[GetPlayer.GetTooltipTag],socialist_movements_list_tt Socialist#! [Concept('concept_political_movement','$concept_political_movements|q$')]"
  communism_progress_from_events_tt: "$EVENTS_AND_OTHER_EFFECTS$"
 
  je_communism_2: "The Worker's Republic"

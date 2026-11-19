@@ -605,8 +605,12 @@
   pebrine_cure_tt: "We have learned how to resolve the #BOLD pébrine#! epidemic, either from domestic research or from another nation"
   pebrine_cure_acquire_tt: "A method of mitigating the #BOLD pébrine#! epidemic through the [GetDecreeType('decree_encourage_agricultural_industry').GetName] decree has been discovered."
   pebrine_je_fail_tt: "The [SCOPE.sCountry('pebrine_country_scope').GetAdjective] silk industry has been crippled for the forseeable future."
+  pebrine_map_country_tt: "[THIS.GetCountry.GetName] is affected by #b $je_silkworm_diseases$#!"
+  pebrine_map_silk_tt: "[THIS.GetState.GetName] is a [GetGoods('silk').GetName] producing state"
+  pebrine_map_epidemic_tt: "[THIS.GetState.GetName] is experiencing a #b $modifier_pebrine_state_modifier$#!"
+  pebrine_map_decree_tt: "An #b $decree_encourage_agricultural_industry$#! decree is active in this [concept_state]"
 
-  modifier_pebrine_state_modifier: "Pébrine Epidemic"
+  modifier_pebrine_state_modifier: "Pébrine Outbreak"
   modifier_pebrine_research_funds: "Funding Silkworm Disease Research"
   modifier_art_silk_research_funds: "Synthetic Silk Research"
   modifier_art_silk_research: "Industrialists Patronized"
@@ -1185,6 +1189,7 @@
   modifier_fast_party_work: "Rapid Party Work"
   modifier_mass_party_work: "Expansive Party Work"
   modifier_parties_supporting_sps: "Widespread Party Support"
+  modifier_single_party_consolidation: "Party Consolidation"
   modifier_model_ig_in_system: "Model Supporters"
   modifier_fascist_repressed: "Fascism Repressed"
   modifier_modernization_of_regime: "The Modernization of the Regime"
@@ -1231,6 +1236,23 @@
   single_party_state.7.f:1 "Section 1:\nIn addition to the procedure prescribed by the constitution, laws of [ROOT.GetCountry.GetNameNoFormatting] may also be enacted by the government of [ROOT.GetCountry.GetNameNoFormatting].\n\nSection 2:\nLaws enacted by the government of [ROOT.GetCountry.GetNameNoFormatting] may deviate from the Constitution as long as they do not affect the institutions of [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')]. The rights of the [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] remain unaffected."
   single_party_state.7.a: "Only the [SCOPE.sParty('fascist_party_scope').GetName] can save [ROOT.GetCountry.GetName]!"
   single_party_state.7.b: "Damn the consequences, this is not democracy!"
+
+  single_party_state.8.t: "The Party-State"
+  single_party_state.8.d: "The process of transforming [ROOT.GetCountry.GetName] into a [GetLawType('law_single_party_state').GetName] has begun. Which of the remaining blocs in [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')] will be designated as the sole legal party?"
+  single_party_state.8.f: "The official felt an ache in his wrist as he looked over the paper. Everything was in order—every word, verified by [SCOPE.GetRootScope.GetCountry.GetCustom('country_legislature_name')], and now all he had to do was sign his name and check the correct box.\n\nYet, he could have forgotten his own name. Every page faded out of memory once he had turned it. Had he written the correct name and identification number on the third page? Had he missed some technicality that would cause his signature to outlaw himself?\n\nHe took a breath, and, forcing himself not to think, slashed his pen across the box."
+  single_party_state.8.a: "The [SCOPE.sParty('sps_agrarian_party').GetName]."
+  single_party_state.8.b: "The [SCOPE.sParty('sps_anarchist_party').GetName]."
+  single_party_state.8.c: "The [SCOPE.sParty('sps_communist_party').GetName]."
+  single_party_state.8.e: "The [SCOPE.sParty('sps_conservative_party').GetName]."
+  single_party_state.8.g: "The [SCOPE.sParty('sps_fascist_party').GetName]."
+  single_party_state.8.h: "The [SCOPE.sParty('sps_free_trade_party').GetName]."
+  single_party_state.8.i: "The [SCOPE.sParty('sps_liberal_party').GetName]."
+  single_party_state.8.j: "The [SCOPE.sParty('sps_military_party').GetName]."
+  single_party_state.8.k: "The [SCOPE.sParty('sps_radical_party').GetName]."
+  single_party_state.8.l: "The [SCOPE.sParty('sps_religious_party').GetName]."
+  single_party_state.8.m: "The [SCOPE.sParty('sps_socialist_party').GetName]."
+
+  set_government_party_as_only_legal_party_tt: "A selected [concept_party] [concept_in_government] will become the only legal $concept_party$ in [ROOT.GetCountry.GetNameNoFlag]"
 
   #Historical Agitators
 

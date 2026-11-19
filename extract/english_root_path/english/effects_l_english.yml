@@ -230,6 +230,10 @@
  PLAY_AS_FIRST:0 "Change player's actively controlled country from [COUNTRY.GetName] to [TARGET_COUNTRY.GetName]"
  PLAY_AS_THIRD:0 "Change player's actively controlled country from [COUNTRY.GetName] to [TARGET_COUNTRY.GetName]"
 
+ RENEGE_TREATY_PORTS_WITH: "All [concept_treaty_port] treaties with [TARGET_COUNTRY.GetName] are voided, and [TARGET_COUNTRY.GetName] keeps the ports as ordinary territory"
+ RENEGE_TREATY_PORTS_WITH_FIRST: "All [concept_treaty_port] treaties between [COUNTRY.GetNameNoFlag] and [TARGET_COUNTRY.GetName] are voided, and [TARGET_COUNTRY.GetName] keeps the ports as ordinary territory"
+ RENEGE_TREATY_PORTS_WITH_THIRD: "All [concept_treaty_port] treaties between [COUNTRY.GetName] and [TARGET_COUNTRY.GetName] are voided, and [TARGET_COUNTRY.GetName] keeps the ports as ordinary territory"
+
  REMOVE_INITIATOR_BACKERS:0 "[COUNTRY.GetName] leaves [TARGET_DIPLOMATIC_PLAY.GetName]"
  REMOVE_TARGET_BACKERS:0 "[COUNTRY.GetName] leaves [TARGET_DIPLOMATIC_PLAY.GetName]"
  ADD_INITIATOR_BACKERS:0 "[COUNTRY.GetName] joins [TARGET_DIPLOMATIC_PLAY.GetName] on the initiators side"
@@ -422,6 +426,9 @@
  ADD_JOURNAL_ENTRY:0 "Adds #variable $JOURNAL_ENTRY_NAME$#! to the Journal of [COUNTRY.GetName|v]"
  ADD_JOURNAL_ENTRY_FIRST:0 "Adds #variable $JOURNAL_ENTRY_NAME$#! to the Journal of [COUNTRY.GetNameNoFlag|v]"
  ADD_JOURNAL_ENTRY_THIRD:0 "Adds #variable $JOURNAL_ENTRY_NAME$#! to the Journal of [COUNTRY.GetName|v]"
+ CONCLUDE_JOURNAL_ENTRY: "Concludes #variable $JOURNAL_ENTRY_NAME$#! in the Journal of [COUNTRY.GetName|v]"
+ CONCLUDE_JOURNAL_ENTRY_FIRST: "Concludes #variable $JOURNAL_ENTRY_NAME$#! in the Journal of [COUNTRY.GetNameNoFlag|v]"
+ CONCLUDE_JOURNAL_ENTRY_THIRD: "Concludes #variable $JOURNAL_ENTRY_NAME$#! in the Journal of [COUNTRY.GetName|v]"
 
  ADD_CONTEXTLESS_JOURNAL_ENTRY: "Activates [JOURNAL_ENTRY_TYPE.GetName|v]"
 
@@ -771,9 +778,9 @@
  COPY_LAWS_FIRST: "[COUNTRY.GetNameNoFlag] copies the laws of [TARGET_COUNTRY.GetName]"
  COPY_LAWS_THIRD: "[COUNTRY.GetName] copies the laws of [TARGET_COUNTRY.GetName]"
 
- REGIME_CHANGE: "Enforces a [concept_regime_change]"
- REGIME_CHANGE_FIRST: "[COUNTRY.GetNameNoFlag] enforces a [concept_regime_change] on [TARGET_COUNTRY.GetName]"
- REGIME_CHANGE_THIRD: "[COUNTRY.GetName] enforces a [concept_regime_change] on [TARGET_COUNTRY.GetName]"
+ REGIME_CHANGE: "Enforces a [concept_regime_change][ConcatIfNeitherEmpty('\n','$LAWS|q$')]"
+ REGIME_CHANGE_FIRST: "[COUNTRY.GetNameNoFlag] enforces a [concept_regime_change] on [TARGET_COUNTRY.GetName][ConcatIfNeitherEmpty('\n','$LAWS|q$')]"
+ REGIME_CHANGE_THIRD: "[COUNTRY.GetName] enforces a [concept_regime_change] on [TARGET_COUNTRY.GetName][ConcatIfNeitherEmpty('\n','$LAWS|q$')]"
 
  CREATE_POWER_BLOC_FIRST: "[Country.GetNameNoFlag] creates a new [concept_power_bloc]"
  CREATE_POWER_BLOC_THIRD: "[Country.GetName] creates a new [concept_power_bloc]"

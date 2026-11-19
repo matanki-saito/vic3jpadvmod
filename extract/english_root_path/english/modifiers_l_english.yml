@@ -2504,6 +2504,8 @@ goods_output_fine_art_mult_desc: "A bonus or penalty to the amount of @fine_art!
  country_disable_nationalization_bool_desc: "Prevent [Concept('concept_building','$concept_buildings|q$')] from being [Concept('concept_nationalize','$concept_nationalized|q$')]"
  country_can_only_conscript_peasants_bool: "Allows only $combat_unit_group_infantry$ $concept_conscript_battalions$"
  country_can_only_conscript_peasants_bool_desc: "[Concept('concept_conscript_battalion', '$concept_conscript_battalions|q$')] can only consist of #b [GetCombatUnitGroup('combat_unit_group_infantry').GetName]#! [Concept('concept_unit', '$concept_combat_unit_types|q$')], except [GetCombatUnitType('combat_unit_type_mechanized_infantry').GetName]"
+ country_can_conscript_protected_subsistence_employment_bool: "$concept_conscription_centers$ ignore Protected Subsistence Employment"
+ country_can_conscript_protected_subsistence_employment_bool_desc: "Whether [Concept('concept_conscription_center','$concept_conscription_centers|q$')] can recruit from [Concept('concept_subsistence_building','$concept_subsistence_buildings|q$')] even when their employment is protected"
  country_disable_nationalization_without_compensation_bool: "Disable $concept_nationalization$ without compensation"
  country_disable_nationalization_without_compensation_bool_desc: "Prevent [Concept('concept_building','$concept_buildings|q$')] from being [Concept('concept_nationalize','$concept_nationalized|q$')] without compensation being paid to the owning [Concept('concept_pop', '$concept_pops|q$')]"
  country_force_privatization_bool: "Force $concept_privatization$"
@@ -2609,6 +2611,9 @@ goods_output_fine_art_mult_desc: "A bonus or penalty to the amount of @fine_art!
 
  STATE_RELIGION_SOL_MODIFIER: "[concept_sol] Modifier for $RELIGION$"
  STATE_RELIGION_SOL_MODIFIER_DESC: "A bonus or penalty to a specific religion's [concept_sol]"
+
+ STATE_DISCRIMINATION_TRAIT_MIGRATION_PULL_MODIFIER: "$concept_migration_pull$ for $TRAIT$ $concept_cultures$"
+ STATE_DISCRIMINATION_TRAIT_MIGRATION_PULL_MODIFIER_DESC: "A bonus or penalty to the state's ability to attract immigrants of [Concept('concept_culture', '$concept_cultures|q$')] with a specific trait within its [concept_market]."
 
  modifier_west_america_wildlife_photography:0 "Western America Wildlife Photography"
  modifier_west_america_plant_discovered:0 "Western American plant species discovered"
