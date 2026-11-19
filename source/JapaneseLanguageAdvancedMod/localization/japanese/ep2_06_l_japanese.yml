@@ -52,7 +52,7 @@
  je_taikyo_proclamation_conversion_tt: "各[concept_interest_group]のリーダーは#v 75%#!の確率で[GetReligion('shinto').GetName]に改宗する。"
  je_elevate_buddhism: "仏教の振興"
  je_elevate_buddhism_reason: "$JAP$の仏教界は、歴史的に幕府の統治機構と強く結びついている。一度は幕府の瓦解を回避したいま、これらの仏教諸勢力を強化すれば、幕府の権威を維持する助けとなり、天皇崇拝に依らない$JAP$の宗教的伝統を確固たるものにできるだろう。"
- je_elevate_buddhism_goal: "$je_communism_2_goal$"
+ je_elevate_buddhism_goal: "最低5年間、以下が成立していること : "
  arahitogami: "現人神"
  extended_danka_system: "檀家制度の拡張"
  japan_religion.1.t: "神宮寺"

@@ -55,7 +55,7 @@
  mm_country_interaction: "国行動"
  mm_market_interaction: "市場行動"
  mm_strategic_region_interaction: "戦略的重要地域行動"
- mm_naval_mission_sea_regions_interaction: "$concept_naval_mission$の$concept_sea_regions$"
+ mm_naval_mission_sea_regions_selection: "$concept_naval_mission$の$concept_sea_regions$"
  mm_command_interaction: "指揮行動"
  mm_harvest_conditions: "作況変動"
  mm_global_starvation: "世界的飢餓"

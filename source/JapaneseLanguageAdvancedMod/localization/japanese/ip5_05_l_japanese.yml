@@ -23,6 +23,8 @@
  russian_alignment_change_ruler: "[concept_ruler]の[concept_ideology]"
  russian_alignment_change_movements: "同調する[Concept('concept_political_movement','$concept_political_movements|q$')]の[Concept('concept_political_movement_support','$concept_political_movement_support_short|q$')]"
  russian_alignment_change_interest_groups: "同調する[Concept('concept_interest_group','$concept_interest_groups|q$')]の[concept_clout]"
+ russian_alignment_reduced_pre_liberalism_ideological_strength: "平等主義以前のイデオロギー強度の低下"
+ russian_alignment_reduced_pre_socialism_ideological_strength: "社会主義以前のイデオロギー強度の低下"
  russian_alignment_change_laws: "制定済みの[Concept('concept_law','$concept_laws|q$')]"
  russian_revolutionary_leader_must_be: "この革命は著名な人物に率いられている"
  russian_revolutionary_leader_is: "\n革命家たちは[ROOT.Var('russian_revolution_leader').GetCharacter.GetFullName]を指導者として仰いでいる。"

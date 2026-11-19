@@ -588,6 +588,7 @@
  slave_owner_paranoia_events.3.f: "「[SCOPE.sCharacter('visiting_abolitionist_scope').GetHerHim]が「穏健派」ですって？とんでもない。確かに大っぴらに「蜂起しろ」と言っているわけではありませんがね……ですが、あれだけ散々に奴隷制を批判して、農園主を非難しているんですよ。あんな演説を聞いて、取り巻きどもが思うことと言ったら、一つしかないでしょう。まあ、奴隷どもに聞かせるようなことは決してさせませんが。もし聞かれて、あいつらに変な気を起こされても困りますからね。次はうちの農場に来るかもしれませんし。貴方も気をつけた方が良いですよ」"
  slave_owner_paranoia_events.3.a: "その懸念には根拠がある。[SCOPE.sCharacter('visiting_abolitionist_scope').GetLastName]はトラブルメーカーだ。"
  slave_owner_paranoia_events.3.b: "自由と正義を語る権利は、常に認められなくてはならない。"
+ slave_owner_paranoid_completion_tt: "[SCOPE.sPoliticalMovement('slave_revolt_movement_scope').GetName]はもはや[concept_political_movement]として機能していない"
  refused_slave_reprisals: "奴隷の陰謀への反撃の拒否"
  refused_attacking_hidden_communities: "隠れたコミュニティへの攻撃の拒否"
  abolitionist_influence: "奴隷制廃止論者の影響"

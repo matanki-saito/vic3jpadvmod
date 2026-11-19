@@ -156,6 +156,7 @@
  exile_communist_agitator_tt: "[GetIdeology('ideology_communist_leader').GetName]の[concept_agitator]が[concept_exile]者として出現する"
  marx_spawn_tt: "[SCOPE.sCharacter('marx_scope').GetFullName]が[ROOT.GetCountry.GetNameNoFormatting]に出現する"
  marx_exile_tt: "[SCOPE.sCharacter('marx_scope').GetFullName]が[concept_exile]者として出現する"
+ anarchist_agitator_tt: "[GetIdeology('ideology_anarchist').GetName]の[concept_agitator]が[ROOT.GetCountry.GetNameNoFormatting]に出現する"
  je_sol_1: "貧困危機"
  je_sol_1_goal: "自国の[concept_sol]を改善する。"
  je_sol_goal_desc: "自国の[concept_sol]を3改善する。"

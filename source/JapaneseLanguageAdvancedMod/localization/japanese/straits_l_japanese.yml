@@ -76,6 +76,7 @@
  STRAIT_MILITARY_BLOCK_REQUIRES_FULL_CONTROL: "$STRAIT_TOTAL_BLOCK_REQUIRES_FULL_CONTROL$"
  STRAIT_ACCESS_SETTING_REDUNDANT: "現在の[concept_strait_access]の設定"
  STRAIT_ACCESS_SETTING_NOT_ALLOWED: "[concept_strait_access]設定は利用不可能"
+ STRAIT_ACCESS_SETTING_BLOCKED_BY_TREATY: "[concept_treaty]により、[concept_strait_access]を制限することはできない"
  TOLL_RATE_NOT_ALLOWED: "通行料は許可されていません"
  STRAIT_TOLL_RATE_ON_COOLDOWN: "[concept_tolls]は$DATE|v$まで再変更できません"
  STRAIT_TOLL_RATE_GRACE_PERIOD: "[concept_tolls]は$DATE|v$まで以前の料率にのみ戻せます"

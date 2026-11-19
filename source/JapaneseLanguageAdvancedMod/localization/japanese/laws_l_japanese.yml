@@ -448,6 +448,8 @@
  ruler_in_party_tt: "この[concept_country]の[concept_ruler]は、活発な政[concept_party]を有する[concept_interest_group]の一員である"
  sps_no_party_tt: "この[concept_country]には活発な[Concept('concept_party','政党')]が存在しない"
  sps_government_reshuffle_tt: "[concept_government]の構成は、単一の合法[concept_party]のメンバーで更新されます。"
+ sps_government_party_tt: "[concept_government]の[concept_interest_group]のいずれかが[concept_party]のメンバーである"
+ sps_dominant_party_tt: "[GetLawType('law_single_party_state').GetName]になると、[SCOPE.sParty('sps_dominant_party').GetName]が唯一の合法[concept_party]になる"
  law_organic_regulation: "基本法"
  law_organic_regulation_desc: "この国の政府は、列強によって課された一連の「基本法」によって構成されています。元首はボイェール寡頭制の代表者によって任命されます。"
  law_neo_absolutism: "新絶対主義"
