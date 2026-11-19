@@ -127,6 +127,7 @@ def assembly_mod2(resource_paratranz_main_zip_file_path,
                   compatible_version):
     """
     Appモッドを作成
+    :param compatible_version: 対応ゲームversion ex) 1.5.*
     :param resource_paratranz_main_zip_file_path: ParatranzからダウンロードできるMain Mod zipファイルのパス
     :param out_dir_path: 出力フォルダ
     :return:
@@ -182,7 +183,7 @@ def assembly_mod2(resource_paratranz_main_zip_file_path,
                             # ファイルが一致するかどうかを確認する
                             path_str = str_path.replace("_l_japanese.yml", "")
                             if path_str in aggregation_trans_data[key]:
-                                fw.write(" %s: \"%s\"\n" % (key, value))
+                                fw.write(" %s: \"%s\"\n" % (key, aggregation_trans_data[key][path_str]))
                             else:
                                 print("キーは存在するが現行ファイルと一致しない:", key, path_str)
                         else:
