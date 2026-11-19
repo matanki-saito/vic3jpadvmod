@@ -1,7 +1,7 @@
 ﻿l_japanese:
  portuguese_monarchs.1.t: "良き母"
  portuguese_monarchs.1.d: "長年にわたる王室医師の警告にもかかわらず、[ROOT.GetCountry.GetRuler.GetFirstName][ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]は、[ROOT.GetCountry.GetRuler.GetAge]歳での13回目の出産中に死亡した。"
- portuguese_monarchs.1.f: "「昨夜9時半ごろ、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]陛下は出産の兆候が表れはじめましたが、出産の継続に困難が生じたことから医師による手術が必要となり、洗礼を行った後にお子様が取り出されました。\n\n手術は午前10時に終わりましたが、残念ながら、1時間半後に陛下はあらゆる力を使い果たし、すべての秘跡を受けた後、神に魂を委ねられました。\n\n— フランシスコ・エリアス・ロドリゲス・ダ・シルべイラ、ケスラー博士、イグナシオ・アントニオ・ダ・フォンセカ・ベネビデス、アントニオ・ホアキン・ファルト」\n\n#italic 官報#!"
+ portuguese_monarchs.1.f: "「昨夜9時半ごろ、[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]陛下は出産の兆候が表れはじめましたが、出産の継続に困難が生じたことから医師による手術が必要となり、洗礼を行った後にお子様が取り出されました。\n\n手術は午前10時に終わりましたが、残念ながら、1時間半後に陛下はあらゆる力を使い果たし、すべての秘跡を受けた後、神に魂を委ねられました。\n\n― フランシスコ・エリアス・ロドリゲス・ダ・シルべイラ、ケスラー博士、イグナシオ・アントニオ・ダ・フォンセカ・ベネビデス、アントニオ・ホアキン・ファルト」\n\n#italic 官報#!"
  portuguese_monarchs.1.a: "彼女の遺志は、彼女の子孫が継承するだろう。"
  portuguese_monarchs.1_tt: "王冠を戴くにふさわしい後継者は、すでに選ばれている。"
  portuguese_monarchs.2.t: "どこからともなく"

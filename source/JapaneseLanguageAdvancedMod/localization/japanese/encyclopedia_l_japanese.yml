@@ -9,7 +9,7 @@
  ENCYCLOPEDIAGE_PREVIOUS_PAGE: "前のページ"
  ENCYCLOPEDIAGE_NEXT_PAGE: "次のページ"
  SEARCH_ENCYCLOPEDIA: "検索"
- SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T $SEARCH_ENCYCLOPEDIA$\n#!は、'[EncyclopediaPage.GetTitle]'で入力したテキストに合致する見出しを持つエントリーを見つけました"
+ SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T $SEARCH_ENCYCLOPEDIA$\n#!「[EncyclopediaPage.GetTitle]」で、入力されたテキストと見出しが一致するエントリを検索します"
  RESET_SEARCH_ENCYCLOPEDIA_TOOLTIP: "#T 検索クリア#!"
  ENCYCLOPEDIA_ALL_PAGES: "全ページ"
  ENCYCLOPEDIA_PREVIOUS_SEARCH_TOOLTIP: "#T 検索履歴を逆方向#!"

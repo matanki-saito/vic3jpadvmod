@@ -12,7 +12,7 @@
  glossary_uchikowashi: "打ち壊し"
  glossary_uchikowashi_desc: "#b;italic 打ち壊し#!とは、金貸し、米の買い占め人、価格をつり上げる商人など、道義に反するとみなされた者の財産を民衆が破壊する行為を指す。\n\nこれらの行為はしばしば略奪を伴ったが、打ち壊しの首謀者たちは多くの場合、自らの行為の正当性を示すために、あえて略奪を控えた。"
  glossary_zaibatsu: "財閥"
- glossary_zaibatsu_desc: "#b;italic 財閥#!とは、一族が所有し、垂直統合された産業・金融複合企業のことを指す。\n\n典型的な財閥は、持株会社と銀行を中核として組織されており、それらが複数の（主として産業系の）子会社の株式を保有する。財閥は江戸時代後期の商人一族による複合企業から生まれ、もともと持っていた資産と国家との結びつきを活用して、#b 日本#!の産業基盤の大部分に対する支配を固めた。\n\n財閥とみなされる$concept_companies$には、#v $company_mitsui$#!、#v $company_mitsubishi$#!、#v $company_yasuda$#!、#v $company_sumitomo$#!などがある。"
+ glossary_zaibatsu_desc: "#b;italic 財閥#!とは、一族が所有し、垂直統合された産業・金融複合企業のことを指す。\n\n典型的な財閥は、持株会社と銀行を中核として組織されており、それらが複数の (主として産業系の) 子会社の株式を保有する。財閥は江戸時代後期の商人一族による複合企業から生まれ、もともと持っていた資産と国家との結びつきを活用して、#b 日本#!の産業基盤の大部分に対する支配を固めた。\n\n財閥とみなされる$concept_companies$には、#v $company_mitsui$#!、#v $company_mitsubishi$#!、#v $company_yasuda$#!、#v $company_sumitomo$#!などがある。"
  glossary_gongen: "権現"
  glossary_gongen_desc: "#b;italic 権現#!とは、神の形を取って現れた仏を指す。これは土着の神格と、仏教的悟りをもたらす存在を結びつけたものである。"
  glossary_boddhisattva: "菩薩"

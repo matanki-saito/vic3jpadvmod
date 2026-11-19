@@ -95,7 +95,7 @@
  failure_of_non_cooperation: "非協力の失敗"
  india_non_cooperation.6.t: "低い自給率"
  india_non_cooperation.6.d: "[SCOPE.sCountry('probably_britain_scope').GetName]による[SCOPE.sCountry('india_scope').GetAdjectiveNoFormatting]市場支配の終了をめざした[SCOPE.sPoliticalMovement('indian_independence_movement').GetName]の取り組みは、大きな成功を収めることなく、立ち消えになりました。"
- india_non_cooperation.6.f: "小さな集会所だったが席は半分ほどしか埋まっていなかった。参会者全員が余裕で座れたにもかかわらず、彼らの間には息苦しい閉塞感が漂っていた。「我々は求めすぎたのかもしれない」一人が暗い表情で考え込んだ。「我々は抑圧者たちの力を見くびっていたのだ。この国は実際には——」\n\n「少し黙ってくれないか」隣に座る男が静かに頼んだ。「我々はもう十分傷ついてるんだ」"
+ india_non_cooperation.6.f: "小さな集会所だったが席は半分ほどしか埋まっていなかった。参会者全員が余裕で座れたにもかかわらず、彼らの間には息苦しい閉塞感が漂っていた。「我々は求めすぎたのかもしれない」一人が暗い表情で考え込んだ。「我々は抑圧者たちの力を見くびっていたのだ。この国は実際には――」\n\n「少し黙ってくれないか」隣に座る男が静かに頼んだ。「我々はもう十分傷ついてるんだ」"
  india_non_cooperation.6.a: "勝利できなければ本当に敗北なのか？"
  india_non_cooperation.7.t: "サティヤーグラハの勝利"
  india_non_cooperation.7.d: "[SCOPE.sPoliticalMovement('indian_independence_movement').GetName]は今日、大勝利を宣言しました。[SCOPE.sCountry('india_scope').GetName]が[SCOPE.sCountry('probably_britain_scope').GetAdjective]貿易に打ち勝ったことを称え、一国家として、そして一つの運動として共に大きな一歩を踏み出そうとしています。"
