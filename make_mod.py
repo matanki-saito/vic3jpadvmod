@@ -80,7 +80,7 @@ def aggregation_stats_from_paratranz_files(ext_paratranz_main_dir_path: str):
             for entry in json.load(f):
                 key = entry["key"]
 
-                # キーがファイルを超えて移動したりした場合。
+                # キーがファイルを超えて移動したりした場合
                 if key in result:
                     # debug用
                     # print("DUP(JP) KEY: {}".format(key))
@@ -88,38 +88,41 @@ def aggregation_stats_from_paratranz_files(ext_paratranz_main_dir_path: str):
                 else:
                     result[key] = {}
 
-                context = entry["context"] if "context" in entry else entry["original"]
-
-                # hidden ... -1
-                # これは非表示になっておりTranslationは入っていないのでオリジナルをそのまま使う
-                if entry["stage"] == -1:
-                    translation = entry["original"]
-
-                # untranslated ... 0 , disputed ... 2
-                # paratranzから出てくるcontextだと改行がエスケープされていない
-                elif entry["stage"] == 2 or entry["stage"] == 0:
-                    translation = re.sub(r'\n', '\\\\n', context)
-
-                else:
-                    translation = entry["translation"]
-
-                # ISSUE-493のWA
-                if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
-                    # [Nbsp]の表記ゆれを直して実態にする。
-                    translation = re.sub(r'\[[Nn][Bb][Ss][Pp]]', " ", translation)
-                    translation = translation.replace("##", "〒")
-                    translation = issue_242(translation)
-                    translation = issue_241(translation)
-                    translation = translation.replace("〒", "##")
-                else:
-                    print("skip:%s" % entry["key"])
-
-                # textのversionはParatranzに読み込めないので0とする
-                # "はエスケープしなくて良い
-
-                result[key][str_path.replace("_l_english.json", "")] = translation
-
+                result[key][str_path.replace("_l_english.json", "")] = entry
     return result
+
+
+def normalize_translation(entry):
+    context = entry["context"] if "context" in entry else entry["original"]
+
+    # hidden ... -1
+    # これは非表示になっておりTranslationは入っていないのでオリジナルをそのまま使う
+    if entry["stage"] == -1:
+        translation = entry["original"]
+
+    # untranslated ... 0 , disputed ... 2
+    # paratranzから出てくるcontextだと改行がエスケープされていない
+    elif entry["stage"] == 2 or entry["stage"] == 0:
+        translation = re.sub(r'\n', '\\\\n', context)
+
+    else:
+        translation = entry["translation"]
+
+    # ISSUE-493のWA
+    if not entry["key"] in ["RANK_TOOLTIP_NEXT", "RANK_TOOLTIP_PREV", "COUNTRY_RANK_TOOLTIP"]:
+        # [Nbsp]の表記ゆれを直して実態にする。
+        translation = re.sub(r'\[[Nn][Bb][Ss][Pp]]', " ", translation)
+        translation = translation.replace("##", "〒")
+        translation = issue_242(translation)
+        translation = issue_241(translation)
+        translation = translation.replace("〒", "##")
+    else:
+        print("skip:%s" % entry["key"])
+
+    # textのversionはParatranzに読み込めないので0とする
+    # "はエスケープしなくて良い
+
+    return translation
 
 
 def assembly_mod2(resource_paratranz_main_zip_file_path,
@@ -169,25 +172,79 @@ def assembly_mod2(resource_paratranz_main_zip_file_path,
                     match = re.search(r'^\s*([^:#]+):\d*\s+\"(.*)\"[^\"]*$', line)
                     if match:
                         key = match.group(1)
-                        value = match.group(2)
+                        original_jp_trans = match.group(2)
+                        result_trans = ""
 
                         # paratranz上に存在するかどうか
                         if key in aggregation_trans_data:
-                            # keyが複数のファイルに定義されているかどうかをdebug
-                            supported_files = dict.keys(aggregation_trans_data[key])
-                            if len(supported_files) > 1:
-                                # debug用
-                                # print("複数のファイルに定義あり", key, supported_files)
-                                pass
+                            entry_root = aggregation_trans_data[key]
 
-                            # ファイルが一致するかどうかを確認する
-                            path_str = str_path.replace("_l_japanese.yml", "")
-                            if path_str in aggregation_trans_data[key]:
-                                fw.write(" %s: \"%s\"\n" % (key, aggregation_trans_data[key][path_str]))
+                            this_file_name = str_path.replace("_l_japanese.yml", "")
+
+                            # keyが複数のファイルに定義されているかどうか
+                            supported_file_names = list(entry_root.keys())
+                            if len(supported_file_names) == 0:
+                                print("ERROR: キーに対するファイル定義がない:", key)
+                                exit(1)
+                            elif len(supported_file_names) == 1:
+                                # 一致するファイルがparatranzにあるかどうかを確認する
+                                if not this_file_name in supported_file_names:
+                                    print("WARN: Keyは1つだけ存在するが現行ファイルと一致しない:", key, this_file_name,
+                                          "", "別ファイルにある既存の翻訳を使用します", supported_file_names[0])
+                                    result_trans = normalize_translation(
+                                        aggregation_trans_data[key].get(supported_file_names[0]))
+                                else:
+                                    # ファイルが一致し１つだけ
+                                    result_trans = normalize_translation(entry_root.get(supported_file_names[0]))
+
+                            elif len(supported_file_names) == 2:
+                                # 一致するファイルがparatranzにあるかどうかを確認する
+                                if not this_file_name in supported_file_names:
+                                    print("WARN: Keyは2つ存在するが現行ファイルと一致しない:", key, this_file_name, "",
+                                          "paratranz側のUpdateを確認してください。今回は別ファイルにある既存の翻訳を使用します",
+                                          supported_file_names[0])
+                                    result_trans = normalize_translation(
+                                        aggregation_trans_data[key].get(supported_file_names[0]))
+                                else:
+                                    for entry_key, entry_val in entry_root.items():
+                                        if entry_key == this_file_name:
+                                            current_entry = entry_val
+                                        else:
+                                            prev_entry = entry_val
+
+                                    # 英文がエントリごとに異なる場合は旧ファイルは古くなったと判断して現行ファイルを使う
+                                    if current_entry["original"] != prev_entry["original"]:
+                                        result_trans = normalize_translation(current_entry)
+                                    else:
+                                        if current_entry["stage"] == 1:
+                                            # paratranzで新エントリがもし翻訳されていたらそちらを優先して使う
+                                            result_trans = normalize_translation(current_entry)
+                                        elif prev_entry["stage"] == 0:
+                                            # 旧エントリが未翻訳の場合にはバニラ翻訳を使う。ただし新エントリのバニラ翻訳を優先して使うようにする
+                                            result_trans = normalize_translation(current_entry)
+                                        else:
+                                            result_trans = normalize_translation(prev_entry)
+
                             else:
-                                print("キーは存在するが現行ファイルと一致しない:", key, path_str)
+                                if this_file_name in supported_file_names:
+                                    print("キーに対するファイルが3つ以上あり追跡不可能なため現行ファイルを優先", key,
+                                          this_file_name)
+                                    result_trans = normalize_translation(
+                                        aggregation_trans_data[key].get(this_file_name))
+                                else:
+                                    print("WARN: Keyが定義されたファイルが3つ以上存在するが現行ファイルと一致しない:",
+                                          key, this_file_name, "",
+                                          "paratranz側のUpdateを確認してください。今回は別ファイルにある既存の翻訳を使用します",
+                                          supported_file_names[0])
+                                    result_trans = normalize_translation(
+                                        aggregation_trans_data[key].get(supported_file_names[0]))
+
                         else:
-                            print("Paratranzに存在しないキー:", key)
+                            print("WARN: Paratranzに存在しないKey:", key, "vanilla日本語訳を使用します")
+                            result_trans = original_jp_trans
+
+                        # 書き込み
+                        fw.write(" %s: \"%s\"\n" % (key, result_trans))
 
     # jominiのフォルダをreplaceに移動する
     os.makedirs(_(out_dir_path, "localization", "replace"), exist_ok=True)
@@ -206,63 +263,6 @@ def assembly_mod2(resource_paratranz_main_zip_file_path,
     # ③ C:\Program Files (x86)\Steam\steamapps\common\Victoria 3\game\localization\modifiers\modifiers_l_english.yml
     os.remove(_(out_dir_path, "localization", "replace", "jomini", "modifiers", "modifiers_l_japanese.yml"))
     os.remove(_(out_dir_path, "localization", "replace", "jomini", "modifiers", "modifiers_v2_l_japanese.yml"))
-
-    # .metadata/metadata.jsonを入れる
-    os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
-    generate_metadata_json_file(_(out_dir_path, ".metadata"), os.environ.get("RUN_NUMBER"), compatible_version)
-
-    return out_dir_path
-
-
-def assembly_mod(resource_paratranz_main_zip_file_path,
-                 out_dir_path,
-                 compatible_version):
-    """
-    Appモッドを作成
-    :param resource_paratranz_main_zip_file_path: ParatranzからダウンロードできるMain Mod zipファイルのパス
-    :param out_dir_path: 出力フォルダ
-    :return:
-    """
-
-    ext_paratranz_main_dir_path = _(".", "tmp2", "paratranz_ext_main")
-
-    # 初期化（github-actionsでは必要ない）
-    if os.path.exists(ext_paratranz_main_dir_path):
-        shutil.rmtree(ext_paratranz_main_dir_path)
-    if os.path.exists(out_dir_path):
-        shutil.rmtree(out_dir_path)
-
-    # zip展開する
-    with zipfile.ZipFile(resource_paratranz_main_zip_file_path) as existing_zip:
-        existing_zip.extractall(ext_paratranz_main_dir_path)
-
-    # ①は必要、②③は不要
-    # ① C:\Program Files (x86)\Steam\steamapps\common\Victoria 3\game\localization\english\modifiers_l_english.yml
-    # ② C:\Program Files (x86)\Steam\steamapps\common\Victoria 3\jomini\localization\modifiers\modifiers_l_english.yml
-    # ③ C:\Program Files (x86)\Steam\steamapps\common\Victoria 3\game\localization\modifiers\modifiers_l_english.yml
-    shutil.move(src=_(ext_paratranz_main_dir_path, "utf8", "jomini", "modifiers", "modifiers_l_english.json"),
-                dst=_(ext_paratranz_main_dir_path, "utf8", "jomini", "modifiers", "ignore_modifiers_l_english.json"))
-
-    # v2ファイルもできたので同様に処理する
-    shutil.move(src=_(ext_paratranz_main_dir_path, "utf8", "jomini", "modifiers", "modifiers_v2_l_english.json"),
-                dst=_(ext_paratranz_main_dir_path, "utf8", "jomini", "modifiers", "ignore_modifiers_v2_l_english.json"))
-
-    # jsonをymlにする
-    shutil.copytree(src=_(ext_paratranz_main_dir_path, "utf8"),
-                    dst=_(out_dir_path, "localization"),
-                    ignore=shutil.ignore_patterns("ignore_modifiers_l_english.json",
-                                                  "ignore_modifiers_v2_l_english.json"))
-    convert_json_to_yml(_(out_dir_path, "localization"))
-
-    # jominiのフォルダをreplaceに移動する
-    os.makedirs(_(out_dir_path, "localization", "replace"), exist_ok=True)
-    shutil.move(src=_(out_dir_path, "localization", "jomini"),
-                dst=_(out_dir_path, "localization", "replace"))
-
-    # clausewitzのフォルダをreplaceに移動する
-    os.makedirs(_(out_dir_path, "localization", "replace"), exist_ok=True)
-    shutil.move(src=_(out_dir_path, "localization", "clausewitz"),
-                dst=_(out_dir_path, "localization", "replace"))
 
     # .metadata/metadata.jsonを入れる
     os.makedirs(_(out_dir_path, ".metadata"), exist_ok=True)
